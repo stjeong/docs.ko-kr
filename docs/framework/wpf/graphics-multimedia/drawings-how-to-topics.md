@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Drawing objects [WPF]
 - DrawingGroup objects [WPF]
 ms.assetid: 5f445633-529c-4091-8a2c-13035ac8c41b
-ms.openlocfilehash: 332c9fe35111b3fa7e4f604f4a2334694f0f89c3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 06891030228db9e41aa1865333c2d711df078058
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33556668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54670318"
 ---
 # <a name="drawings-how-to-topics"></a>그리기 방법 항목
-이 섹션의 항목을 사용 하는 방법을 설명 <xref:System.Windows.Media.Drawing> 도형, 이미지 또는 텍스트를 그리는 데 개체입니다.  
+이 섹션의에서 항목에서는 사용 하는 방법에 설명 <xref:System.Windows.Media.Drawing> 도형, 이미지 또는 텍스트를 그릴 개체입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Drawing에 GuidelineSet 적용](../../../../docs/framework/wpf/graphics-multimedia/how-to-apply-a-guidelineset-to-a-drawing.md)  
@@ -29,8 +29,8 @@ ms.locfileid: "33556668"
   [VideoDrawing을 사용하여 미디어 재생](../../../../docs/framework/wpf/graphics-multimedia/how-to-play-media-using-a-videodrawing.md)  
   [그림을 이미지 소스로 사용](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-drawing-as-an-image-source.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Drawing>  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Drawing>
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)

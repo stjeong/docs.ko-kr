@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 35bd458eb6046f57d37764e0a8e58616f2c2c3a1
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 52edc72e3714ceaf8cc92f272da6a374eb324dad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43778534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54661648"
 ---
 # <a name="cloneenumwbemclassobject-function"></a>CloneEnumWbemClassObject 함수
 열거형의 현재 위치를 유지하면서 열거자의 논리적 복사본을 만듭니다.  
@@ -71,8 +71,8 @@ HRESULT CloneEnumWbemClassObject (
 |상수  |값  |설명  |
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 사용 가능한 메모리가 부족 합니다. 작업을 완료 합니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 사용 가능한 메모리가 부족 합니다. 작업을 완료 합니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 현재 프로세스와 WMI 원격 프로시저 호출 (RPC) 연결 하지 못했습니다. |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
@@ -89,11 +89,11 @@ HRESULT CloneEnumWbemClassObject (
 예를 들어 참조 된 [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

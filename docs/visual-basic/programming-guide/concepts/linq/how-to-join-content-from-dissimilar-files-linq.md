@@ -2,12 +2,12 @@
 title: '방법: 서로 다른 파일 (LINQ) (Visual Basic)의 콘텐츠 조인'
 ms.date: 06/27/2018
 ms.assetid: e7530857-c467-41ea-9730-84e6b1065a4d
-ms.openlocfilehash: d82e43449651ead5f39ec9c9442d3087b34d10ef
-ms.sourcegitcommit: 9e18e4a18284ae9e54c515e30d019c0bbff9cd37
+ms.openlocfilehash: a3dbfc6593d838af0285d8dab73ceecf1b0340f0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37072048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655467"
 ---
 # <a name="how-to-join-content-from-dissimilar-files-linq-visual-basic"></a>방법: 서로 다른 파일 (LINQ) (Visual Basic)의 콘텐츠 조인
 
@@ -49,7 +49,7 @@ ms.locfileid: "37072048"
     Tucker,Michael,122  
     ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
 
 ```vb
 Imports System.Collections.Generic
@@ -123,13 +123,13 @@ End Class
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-만들기 하 고 다음 옵션 중 하나를 대상으로 하는 프로젝트를 컴파일하십시오.
+다음 옵션 중 하나를 대상으로 하는 프로젝트를 만들고 컴파일합니다.
 
-- .NET framework 버전 3.5 System.Core.dll에 대 한 참조입니다.
-- .NET framework 버전 4.0 이상이 합니다.
-- .NET core 버전 1.0 이상이 있습니다.
+- System.Core.dll에 대한 참조를 포함한 .NET Framework 버전 3.5
+- .NET Framework 버전 4.0 이상
+- .NET Core 버전 1.0 이상
   
 ## <a name="see-also"></a>참고자료
 
- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

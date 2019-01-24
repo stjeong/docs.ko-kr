@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms CheckedListBox 컨트롤에서 선택된 항목 확인'
+title: '방법: Windows Forms CheckedListBox 컨트롤에서 선택한 항목 확인'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - check boxes [Windows Forms], determining checked state
 - CheckedListBox control [Windows Forms], determining checked state
 ms.assetid: 178b477d-27c9-489c-8914-44a9623a4d41
-ms.openlocfilehash: 70884051ba440c5d0f9d282b7edf189c8f52807e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e1f8f7fa1f3f351314ac1d454d591f46654d8f81
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43505441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54643600"
 ---
-# <a name="how-to-determine-checked-items-in-the-windows-forms-checkedlistbox-control"></a>방법: Windows Forms CheckedListBox 컨트롤에서 선택된 항목 확인
+# <a name="how-to-determine-checked-items-in-the-windows-forms-checkedlistbox-control"></a>방법: Windows Forms CheckedListBox 컨트롤에서 선택한 항목 확인
 Windows Forms에서 데이터를 표시할 때 <xref:System.Windows.Forms.CheckedListBox> 컨트롤을 반복할 수 있습니다 하거나 컬렉션에 저장 합니다 <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> 속성 또는 사용 하 여 목록을 단계별로 <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> 선택한 항목을 확인 하는 방법. 합니다 <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> 메서드 항목 인덱스 번호를 인수로 받아서 반환 `true` 또는 `false`합니다. 예상 하는 것을 달리 합니다 <xref:System.Windows.Forms.ListBox.SelectedItems%2A> 및 <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> 결정 하는 항목 강조 표시 되어; 속성에서 선택한 항목을 결정 하지 않습니다.  
   
 ### <a name="to-determine-checked-items-in-a-checkedlistbox-control"></a>CheckedListBox 컨트롤에서 선택한 항목을 확인 하려면  
@@ -111,5 +111,5 @@ Windows Forms에서 데이터를 표시할 때 <xref:System.Windows.Forms.Checke
     MessageBox::Show(s);  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [옵션 목록 표시에 사용된 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+## <a name="see-also"></a>참고자료
+- [옵션 목록 표시에 사용된 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

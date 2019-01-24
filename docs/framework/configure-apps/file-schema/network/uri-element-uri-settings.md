@@ -2,12 +2,12 @@
 title: '&lt;Uri&gt; 요소 (Uri 설정)'
 ms.date: 03/30/2017
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-ms.openlocfilehash: 2ca5592bd0a66ded25c7da8f0b42367af990aa7a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 48769298246dd71e040aac1c682e0fddfb5de89b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655545"
 ---
 # <a name="lturigt-element-uri-settings"></a>&lt;Uri&gt; 요소 (Uri 설정)
 .NET Framework uniform resource identifier (Uri)를 사용 하 여 표현 하는 웹 주소를 처리 하는 방법을 지정 하는 설정을 포함 합니다.  
@@ -15,7 +15,7 @@ ms.locfileid: "50192189"
 ## <a name="schema-hierarchy"></a>스키마 계층 구조  
  [\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
   
- [\<uri >](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)  
+ [\<uri>](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ ms.locfileid: "50192189"
   
 |**요소**|**설명**|  
 |-----------------|---------------------|  
-|[구성](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|모든 네임 스페이스에 대 한 설정을 포함합니다.|  
+|[configuration](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|모든 네임 스페이스에 대 한 설정을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
  `uri` 요소 멤버에 대 한 설정을 포함 합니다 <xref:System.Uri> 클래스에 의해 사용 되는 클래스는 <xref:System.Net> 네임 스페이스. 이 설정은 IRI 및 IDN에 대 한 지원을 구성 합니다.  
@@ -67,5 +67,5 @@ ms.locfileid: "50192189"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 디자이너를 사용하여 Windows Forms 패널의 배경 설정'
+title: '방법: 디자이너를 사용 하 여 Windows Forms 패널의 배경 설정'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - background colors [Windows Forms], Windows Forms Panel controls
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Panel control [Windows Forms], background
 - colors [Windows Forms], Windows Forms Panel controls
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
-ms.openlocfilehash: 86ab8bc979765fe79ccc76db9a0566459fde6e46
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: be0359e13bcab868374189c6b42df392327b8eb8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645067"
 ---
-# <a name="how-to-set-the-background-of-a-windows-forms-panel-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms 패널의 배경 설정
+# <a name="how-to-set-the-background-of-a-windows-forms-panel-using-the-designer"></a>방법: 디자이너를 사용 하 여 Windows Forms 패널의 배경 설정
 Windows Forms <xref:System.Windows.Forms.Panel> 컨트롤 배경색 및 배경 이미지를 표시할 수 있습니다. <xref:System.Windows.Forms.Control.BackColor%2A> 속성 패널 레이블 등에서 포함 된 라디오 단추를 컨트롤에 대 한 배경색을 설정 합니다. 경우는 <xref:System.Windows.Forms.Control.BackgroundImage%2A> 속성을 설정 하지 않으면는 <xref:System.Windows.Forms.Control.BackColor%2A> 선택 패널의 모든 입력 됩니다. 경우는 <xref:System.Windows.Forms.Control.BackgroundImage%2A> 속성이 설정 되 면 이미지 패널에 포함 된 컨트롤 뒤에 표시 됩니다.  
   
- 다음 절차를 수행 하려면을 **Windows 응용 프로그램** 포함 된 폼을 사용 하 여 프로젝트를 <xref:System.Windows.Forms.Panel> 제어 합니다. 이러한 프로젝트를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: Windows 응용 프로그램 프로젝트를 만듭니다](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) 하 고 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다.  
+ 다음 절차를 수행 하려면을 **Windows 응용 프로그램** 포함 된 폼을 사용 하 여 프로젝트를 <xref:System.Windows.Forms.Panel> 제어 합니다. 이러한 프로젝트를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: Windows 응용 프로그램 프로젝트를 만듭니다](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) 고 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
@@ -36,9 +36,9 @@ Windows Forms <xref:System.Windows.Forms.Panel> 컨트롤 배경색 및 배경 �
   
 6.  에 **열려** 대화 상자를 표시 하려는 파일을 선택 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.Control.BackColor%2A>  
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
- [Panel 컨트롤](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  
- [Panel 컨트롤 개요](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
- [방법: 디자이너에서 Windows Forms 패널 컨트롤을 사용하여 컨트롤 그룹화](../../../../docs/framework/winforms/controls/group-controls-with-wf-panel-control-using-the-designer.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.Control.BackColor%2A>
+- <xref:System.Windows.Forms.Control.BackgroundImage%2A>
+- [Panel 컨트롤](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)
+- [Panel 컨트롤 개요](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)
+- [방법: 디자이너를 사용 하 여 Windows Forms 패널 컨트롤을 사용 하 여 그룹 컨트롤](../../../../docs/framework/winforms/controls/group-controls-with-wf-panel-control-using-the-designer.md)

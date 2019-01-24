@@ -7,12 +7,12 @@ helpviewer_keywords:
 - x:Uid attribute [XAML Services]
 - Uid attribute [XAML Services]
 ms.assetid: 81defade-483b-4a89-b76d-9b25bba34010
-ms.openlocfilehash: 7075f8258e617d2d13d4585fdd5fb7aefaa50664
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 361240c2d2c140c7bf521ece423df4aaed075ba4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745417"
 ---
 # <a name="xuid-directive"></a>x:Uid 지시문
 태그 요소에 대 한 고유 식별자를 제공합니다. 대부분의 시나리오에서이 고유 식별자는 XAML 지역화 프로세스와 도구에서 사용 됩니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "43528390"
 ## <a name="wpf-usage-notes"></a>WPF 사용 정보  
  역할에 대 한 자세한 내용은 `x:Uid` WPF 지역화 프로세스와 XAML의 BAML 양식에서 참조 [WPF의 전역화](../../../docs/framework/wpf/advanced/globalization-for-wpf.md) 또는 <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>  
- <xref:Microsoft.Build.Tasks.Windows.UidManager>  
- [WPF의 전역화](../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
+- <xref:Microsoft.Build.Tasks.Windows.UidManager>
+- [WPF의 전역화](../../../docs/framework/wpf/advanced/globalization-for-wpf.md)

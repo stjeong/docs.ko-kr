@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4b57233457c697dbe35ab0f68d6ce3557cee9b5c
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 6c3e9e58a8cfe5f18aba2e8db56f84d089cc49df
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54641150"
 ---
 # <a name="app-resources-for-libraries-that-target-multiple-platforms"></a>여러 플랫폼을 대상으로 하는 라이브러리의 앱 리소스
 .NET Framework를 사용 하 여 [이식 가능한 클래스 라이브러리](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) 프로젝트 형식에 여러 플랫폼에서 클래스 라이브러리의 리소스에에서 액세스할 수 있는지 확인 합니다. 이 프로젝트 형식은 Visual Studio 2012에서 사용할 수 및.NET Framework 클래스 라이브러리의 이식 가능한 하위 집합을 대상으로 합니다. [!INCLUDE[net_portable](../../../includes/net-portable-md.md)]을 사용할 경우 데스크톱 앱, Silverlight 앱, Windows Phone 앱 및 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 통해 라이브러리에 액세스할 수 있게 됩니다.
@@ -52,7 +52,7 @@ ms.locfileid: "48580091"
  [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] 프로젝트에 지역화된 리소스가 포함된 경우 허브 및 스포크 모델을 사용하여 데스크톱 응용 프로그램에서 라이브러리에 대해 수행하는 것처럼 배포합니다. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에서 주 리소스 파일과 지역화된 모든 리소스 파일을 사용하도록 주 어셈블리에 대한 참조를 추가합니다. 컴파일 타임에 Visual Studio는 주 리소스 파일 및 지역화된 리소스 파일에서 리소스를 추출하여 별도의 .resw 파일에 넣습니다. 그런 다음 런타임에 [!INCLUDE[wrt](../../../includes/wrt-md.md)]가 액세스하는 단일 PRI 파일로 .resw 파일을 컴파일합니다.
 
 <a name="NonLoc"></a>
-## <a name="example-non-localized-includenetportableincludesnet-portable-mdmd"></a>예제: 지역화되지 않은 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)]
+## <a name="example-non-localized-includenetportableincludesnet-portable-mdmd"></a>예제: 지역화 되지 않은 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)]
  다음 간단하고 지역화되지 않은 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] 예제는 리소스를 사용하여 열 이름을 지정하고 표 형식 데이터를 예약하는 문자 수를 확인하는 데 사용합니다. 예제에서는 LibResources.resx라는 파일을 사용하여 다음 테이블에 나열된 문자열 리소스를 저장합니다.
 
 |리소스 이름|리소스 값|
@@ -81,7 +81,7 @@ ms.locfileid: "48580091"
 
  [!code-csharp[Conceptual.Resources.PortableMetro#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetro/cs/blankpage.xaml.cs#1)]
 
-## <a name="example-localized-includenetportableincludesnet-portable-mdmd"></a>예제: 지역화된 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)]
+## <a name="example-localized-includenetportableincludesnet-portable-mdmd"></a>예제: 지역화 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)]
  다음의 지역화된 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] 예제에는 프랑스어(프랑스) 및 영어(미국) 문화권에 대한 리소스가 포함됩니다. 영어 (미국) 문화권은 앱의 기본 문화권; 해당 리소스의 표에 표시 됩니다는 [이전 섹션](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md#NonLoc)합니다. 프랑스어(프랑스) 문화권의 리소스 이름은 LibResources.fr-FR.resx라고 하며 다음 표에 나열된 문자열 리소스로 구성됩니다. `UILibrary` 클래스의 소스 코드는 이전 단원에 나와 있는 것과 동일합니다.
 
 |리소스 이름|리소스 값|
@@ -106,6 +106,6 @@ ms.locfileid: "48580091"
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Resources.ResourceManager>  
-- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)  
+- <xref:System.Resources.ResourceManager>
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
 - [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 643666df9f93d1aa5e09579359ae0db87908f10b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: b641f463eb9b664597b4806a6353278e8027d5b8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709106"
 ---
 # <a name="isymunmanagedwriter3openmethod2-method"></a>ISymUnmanagedWriter3::OpenMethod2 메서드
-메서드를 열고 하 고 이미지에 해당 실제 섹션 오프셋을 제공 합니다.  
+메서드를 열고 하 고 이미지의 해당 실제 섹션 오프셋을 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,20 +38,20 @@ HRESULT OpenMethod2(
   
 #### <a name="parameters"></a>매개 변수  
  `method`  
- [in] 열릴 메서드의 대 한 메타 데이터 토큰입니다.  
+ [in] 열려는 메서드에 대 한 메타 데이터 토큰입니다.  
   
  `isect`  
- [in] 이미지에서 섹션 오프셋입니다.  
+ [in] 이미지 섹션 오프셋입니다.  
   
  `offset`  
- [in] 이미지의 오프셋입니다.  
+ [in] 이미지 오프셋입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedWriter3 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)  
- [OpenMethod 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedWriter3 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)
+- [OpenMethod 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)

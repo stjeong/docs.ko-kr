@@ -2,12 +2,12 @@
 title: 리터럴(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 092ef693-6e5f-41b4-b868-5b9e82928abf
-ms.openlocfilehash: 90c065dff0f81a743cd66e224885de01f6129b56
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 71c77a3cb91d0981614e83221ad82d17067dc321
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54643106"
 ---
 # <a name="literals-entity-sql"></a>리터럴(Entity SQL)
 이 항목에서는 리터럴에 대한 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 지원을 설명합니다.  
@@ -15,9 +15,9 @@ ms.locfileid: "32767325"
 ## <a name="null"></a>Null  
  null 리터럴은 모든 형식의 null 값을 나타내는 데 사용됩니다. null 리터럴은 모든 형식과 호환됩니다.  
   
- 형식화된 null은 null 리터럴에 대한 캐스트를 통해 만들 수 있습니다. 자세한 내용은 참조 [캐스트](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)합니다.  
+ 형식화된 null은 null 리터럴에 대한 캐스트를 통해 만들 수 있습니다. 자세한 내용은 [캐스트](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)합니다.  
   
- 규칙에 대 한 자유 부동 null 리터럴을 사용할 수 있습니다, 참조 [Null 리터럴 및 형식 유추](../../../../../../docs/framework/data/adonet/ef/language-reference/null-literals-and-type-inference-entity-sql.md)합니다.  
+ 위치에 대 한 규칙 자유 부동 null 리터럴을 사용할 수 있습니다 참조 하십시오 [Null 리터럴 및 형식 유추](../../../../../../docs/framework/data/adonet/ef/language-reference/null-literals-and-type-inference-entity-sql.md)합니다.  
   
 ## <a name="boolean"></a>부울  
  Boolean 리터럴은 `true` 및 `false` 키워드로 표시됩니다.  
@@ -45,7 +45,7 @@ N"This is a string!"
 ## <a name="datetime"></a>DateTime  
  datetime 리터럴은 로캘과 무관하며 날짜 부분과 시간 부분으로 구성됩니다. 날짜 및 시간 부분은 모두 필수 요소이며 기본값은 없습니다.  
   
- 날짜 부분에 형식 이어야 합니다.: `YYYY` - `MM` - `DD`여기서 `YYYY` 는 0001에서 9999 사이의 4 자리 연도 값 `MM` 은 1에서 12 사이의 월 및 `DD` 은 지정된 된 월에 유효한 일 값은 `MM`합니다.  
+ 날짜 부분에는 형식 이어야 합니다.: `YYYY` - `MM` - `DD`여기서 `YYYY` 0001에서 9999 사이의 4 자리 연도 값인 `MM` 은 1에서 12 사이의 월 및 `DD` 는 지정된 된 달에 대 한 유효 날짜 값 `MM`합니다.  
   
  시간 부분의 형식은 `HH`:`MM`[:`SS`[.fffffff]]이어야 하며, 여기서 `HH`는 0에서 23 사이의 시간 값이고, `MM`은 0에서 59 사이의 분 값이며, `SS`는 0에서 59 사이의 초 값이며, fffffff는 0에서 9999999 사이의 소수로 나타낸 초 값입니다. 모든 값 범위에서 해당 시작 값과 끝 값이 포함됩니다. 소수로 나타낸 초는 선택적 요소입니다. 소수로 나타낸 초가 지정되지 않은 경우 초를 선택하며, 이 경우 초는 필수 요소입니다. 초 또는 소수로 나타낸 초가 지정되지 않은 경우에는 기본값 0이 대신 사용됩니다.  
   
@@ -67,7 +67,7 @@ TIME‘01:01:00.1234567’
 ```  
   
 ## <a name="datetimeoffset"></a>DateTimeOffset  
- datetimeoffset 리터럴은 로캘과 무관하며 날짜 부분, 시간 부분 및 오프셋 부분으로 구성됩니다. 날짜, 시간, 오프셋 부분은 모두 필수 요소이며 기본값은 없습니다. 날짜 부분의 형식은 YYYY-MM-DD여야 하며, 여기서 YYYY는 0001에서 9999 사이의 4자리 연도 값이고, MM은 1에서 12 사이의 월이며, DD는 지정된 월에 유효한 일 값입니다. 시간 부분의 형식은 HH:MM[:SS[.fffffff]]이어야 하며, 여기서 HH는 0에서 23 사이의 시간 값이고, MM은 0에서 59 사이의 분 값이며, SS는 0에서 59 사이의 초 값이며, fffffff는 0에서 9999999 사이의 소수로 나타낸 초 값입니다. 모든 값 범위에서 해당 시작 값과 끝 값이 포함됩니다. 소수로 나타낸 초는 선택적 요소입니다. 소수로 나타낸 초가 지정되지 않은 경우 초를 선택하며, 이 경우 초는 필수 요소입니다. 초 또는 소수로 나타낸 초가 지정되지 않은 경우에는 기본값 0이 대신 사용됩니다. 오프셋된 부분의 형식 이어야 합니다. {+&#124;-} hh: mm, HH와 MM가 시간 부분에서와 같이 의미 합니다. 하지만 오프셋의 경우 범위가 -14:00과 + 14:00 사이여야 합니다.  
+ datetimeoffset 리터럴은 로캘과 무관하며 날짜 부분, 시간 부분 및 오프셋 부분으로 구성됩니다. 날짜, 시간, 오프셋 부분은 모두 필수 요소이며 기본값은 없습니다. 날짜 부분의 형식은 YYYY-MM-DD여야 하며, 여기서 YYYY는 0001에서 9999 사이의 4자리 연도 값이고, MM은 1에서 12 사이의 월이며, DD는 지정된 월에 유효한 일 값입니다. 시간 부분의 형식은 HH:MM[:SS[.fffffff]]이어야 하며, 여기서 HH는 0에서 23 사이의 시간 값이고, MM은 0에서 59 사이의 분 값이며, SS는 0에서 59 사이의 초 값이며, fffffff는 0에서 9999999 사이의 소수로 나타낸 초 값입니다. 모든 값 범위에서 해당 시작 값과 끝 값이 포함됩니다. 소수로 나타낸 초는 선택적 요소입니다. 소수로 나타낸 초가 지정되지 않은 경우 초를 선택하며, 이 경우 초는 필수 요소입니다. 초 또는 소수로 나타낸 초가 지정되지 않은 경우에는 기본값 0이 대신 사용됩니다. 오프셋된 부분의 형식 이어야 합니다. {0} +&#124;-} hh: mm, HH 및 MM 있는 시간 부분을 동일한 의미를 갖습니다. 하지만 오프셋의 경우 범위가 -14:00과 + 14:00 사이여야 합니다.  
   
  DATETIMEOFFSET 기호와 리터럴 페이로드 사이에 들어갈 수 있는 공백의 수는 제한이 없지만 줄 바꿈은 허용되지 않습니다.  
   
@@ -92,7 +92,7 @@ X'' –- empty binary string
 ```  
   
 ## <a name="guid"></a>Guid  
- `GUID` 리터럴은 GUID(Globally Unique Identifier)를 나타냅니다. 키워드에 의해 구성 된 시퀀스는 `GUID` 리터럴은에서 16 진수 숫자가 차례로 표시 된 *레지스트리* 형식: 8-4-4-4-12 작은따옴표로 묶여 있습니다. 16진수는 대/소문자를 구분하지 않습니다.  
+ `GUID` 리터럴은 GUID(Globally Unique Identifier)를 나타냅니다. 것이 리터럴은 키워드 `GUID` 뒤에 16 진수 형식 이라고 *레지스트리* 형식: 작은따옴표로 묶인 8-4-4-4-12)의 16진수로 구성된 시퀀스입니다. 16진수는 대/소문자를 구분하지 않습니다.  
   
  GUID 기호와 리터럴 페이로드 사이에 들어갈 수 있는 공백의 수는 제한이 없지만 줄 바꿈은 허용되지 않습니다.  
   
@@ -101,5 +101,5 @@ Guid'1afc7f5c-ffa0-4741-81cf-f12eAAb822bf'
 GUID  '1AFC7F5C-FFA0-4741-81CF-F12EAAB822BF'  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

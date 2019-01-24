@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 77cd8b7d791d11f6d40386f4747c60cd4832521a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 2d534ae381e0dc105731cf0a537f81afe80d87e0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732741"
 ---
 # <a name="symlinedelta-structure"></a>SYMLINEDELTA 구조체
-편집한 이동 된 방법에 대 한 기호 처리기에 대 한 정보를 제공 합니다.  
+편집 결과로 이동 된 메서드에 대 한 기호 처리기에 대 한 정보를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ typedef struct _SYMLINEDELTA
 |멤버|설명|  
 |------------|-----------------|  
 |`mdMethod`|메서드의 메타 데이터 토큰입니다.|  
-|`delta`|메서드가 이동 된 줄 수 있습니다.|  
+|`delta`|메서드가 이동 된 줄의 수입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** CorSym.idl  
   
-## <a name="see-also"></a>참고 항목  
- [진단 기호 저장소 구조체](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+## <a name="see-also"></a>참고자료
+- [진단 기호 저장소 구조체](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)

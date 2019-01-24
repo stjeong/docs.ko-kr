@@ -14,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], integral
 - SByte data type
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-ms.openlocfilehash: b2ef4f083cd9b6f38dc91bf8bf0eac9cd21c2618
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1da5de4971928ca23a23c4dcfc5f338c4d7a3875
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719575"
 ---
 # <a name="sbyte-data-type-visual-basic"></a>SByte 데이터 형식 (Visual Basic)
 
@@ -72,13 +72,13 @@ Dim number As SByte = &H_F9
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.SByte?displayProperty=nameWithType> 구조체입니다.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
- <xref:System.SByte?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Short 데이터 형식](../../../visual-basic/language-reference/data-types/short-data-type.md)  
- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)  
- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.SByte?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Short 데이터 형식](../../../visual-basic/language-reference/data-types/short-data-type.md)
+- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)
+- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

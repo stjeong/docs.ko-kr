@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 5cfed154af93d72f69efc24c6475b432d0963580
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 8beb3ef041b153535afcb8bd92e1c29787e1f161
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48029289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654414"
 ---
 # <a name="ltremovegt-element-for-ltlistenersgt-for-ltsourcegt"></a>&lt;제거할&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;
 추적 소스의 `Listeners` 컬렉션에서 수신기를 제거합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<원본 >  
-\<원본 >  
-\<수신기 >  
+\<system.diagnostics>  
+\<sources>  
+\<source>  
+\<listeners>  
 \<remove>  
   
 ## <a name="syntax"></a>구문  
@@ -48,7 +48,7 @@ ms.locfileid: "48029289"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`sources`|추적 메시지를 시작하는 추적 소스가 포함되어 있습니다.|  
 |`source`|추적 메시지를 시작하는 추적 소스를 지정합니다.|  
@@ -81,9 +81,9 @@ ms.locfileid: "48029289"
 </configuration>   
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceSource.Listeners%2A>  
- <xref:System.Diagnostics.TraceSource>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)  
- [추적 수신기](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceSource.Listeners%2A>
+- <xref:System.Diagnostics.TraceSource>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)
+- [추적 수신기](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

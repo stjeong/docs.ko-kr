@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a691f61fcd25b7aaaae90e6adcc3c2ee0c421cf0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 4e7d4e449624f295c4011a4ccdad46226e742a8a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681159"
 ---
 # <a name="icorpublishenumskip-method"></a>ICorPublishEnum::Skip 메서드
-열거형에 커서를 앞으로 항목의 지정한 수 만큼 이동 합니다.  
+열거형에서 항목의 지정된 된 수 만큼 앞으로 커서를 이동합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,16 +37,16 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>매개 변수  
  `celt`  
- [in] 커서를 앞으로 이동 하려는 항목의 수입니다.  
+ [in] 커서를 앞으로 이동에 사용 되는 항목의 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorPub.idl, CorPub.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICorPublishEnum 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICorPublishEnum 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)

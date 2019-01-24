@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7078b2eb98c15b7229132076da8af4691032bb08
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8a4cc17bdcaea5099d0d2b0195ae4fa28e3d4744
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33441794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744607"
 ---
 # <a name="corimportoptions-enumeration"></a>CorImportOptions 열거형
 현재 범위를 벗어난 어셈블리를 가져오는 중의 동작을 제어하는 플래그 값을 포함합니다.  
@@ -48,22 +48,22 @@ typedef enum CorImportOptions {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`MDImportOptionDefault`|삭제 된 레코드는 건너 뜁니다 하는 기본 동작을 나타냅니다.|  
+|`MDImportOptionDefault`|삭제 된 레코드를 건너뛸 하는 기본 동작을 나타냅니다.|  
 |`MDImportOptionAll`|모든 메타 데이터를 열거 해야 함을 나타냅니다.|  
-|`MDImportOptionAllTypeDefs`|삭제 된 항목을 포함 하 여 모든 형식 정의 열거 해야 함을 나타냅니다.|  
-|`MDImportOptionAllMethodDefs`|모든 MethodDefs, 삭제 된 항목을 포함 하 여 열거 해야 함을 나타냅니다.|  
+|`MDImportOptionAllTypeDefs`|삭제 된 항목을 포함 하는 모든 형식 정의 열거 해야 함을 나타냅니다.|  
+|`MDImportOptionAllMethodDefs`|삭제 된 항목을 포함 하는 모든 MethodDefs 열거 해야 함을 나타냅니다.|  
 |`MDImportOptionAllFieldDefs`|삭제 된 항목을 포함 하 여 모든 Fielddef 열거 해야 함을 나타냅니다.|  
-|`MDImportOptionAllProperties`|모든 PropertyDefs, 삭제 된 항목을 포함 하 여 열거 해야 함을 나타냅니다.|  
+|`MDImportOptionAllProperties`|삭제 된 항목을 포함 하는 모든 PropertyDefs 열거 해야 함을 나타냅니다.|  
 |`MDImportOptionAllEvents`|삭제 된 항목을 포함 하 여 모든 Eventdef 열거 해야 함을 나타냅니다.|  
 |`MDImportOptionAllCustomAttributes`|삭제 된 항목을 포함 하 여 모든 사용자 지정 특성을 열거 해야 함을 나타냅니다.|  
-|`MDImportOptionAllExportedTypes`|삭제 된 항목을 포함 하는 모든 내보낸된 형식을 열거 해야 함을 나타냅니다.|  
+|`MDImportOptionAllExportedTypes`|삭제 된 항목을 비롯 한 모든 내보낸된 형식이 열거 해야 함을 나타냅니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

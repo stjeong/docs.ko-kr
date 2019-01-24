@@ -1,27 +1,27 @@
 ---
-title: WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침
+title: WIF 3.5를 사용하여 빌드된 애플리케이션을 WIF 4.5로 마이그레이션하는 지침
 ms.date: 03/30/2017
 ms.assetid: 7a32fe6e-5f68-4693-9371-19411fa8063c
 author: BrucePerlerMS
-ms.openlocfilehash: ec66803edc21f186fa9a8c5bcb91b5181789893d
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: d843f2d01072db8b848f4d6f26dba32b4e48f302
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696191"
 ---
-# <a name="guidelines-for-migrating-an-application-built-using-wif-35-to-wif-45"></a>WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침
+# <a name="guidelines-for-migrating-an-application-built-using-wif-35-to-wif-45"></a>WIF 3.5를 사용하여 빌드된 애플리케이션을 WIF 4.5로 마이그레이션하는 지침
 ## <a name="applies-to"></a>적용 대상  
   
 -   Microsoft® WIF(Windows® Identity Foundation) 3.5 및 4.5.  
   
 ## <a name="overview"></a>개요  
- WIF(Windows Identity Foundation)는 원래 .NET 3.5 SP1 기간에 릴리스되었습니다. 해당 버전의 WIF를 WIF 3.5라고 합니다. 별도의 런타임 및 SDK로 릴리스되었습니다. 즉, WIF 지원 응용 프로그램이 실행된 모든 컴퓨터에 WIF 런타임이 설치되어 있어야 하고, 개발자가 WIF 지원 응용 프로그램을 개발할 수 있는 Visual Studio 템플릿과 도구를 얻기 위해 WIF SDK를 다운로드하여 설치해야 했습니다. .NET 4.5부터 WIF는 완전히 .NET Framework에 통합되었습니다. 더 이상 별도의 런타임이 필요하지 않고 WIF 도구는 Visual Studio 2012에서 Visual Studio 확장 관리자를 사용하여 설치할 수 있습니다. 이 버전의 WIF를 WIF 4.5라고 합니다.  
+ WIF(Windows Identity Foundation)는 원래 .NET 3.5 SP1 기간에 릴리스되었습니다. 해당 버전의 WIF를 WIF 3.5라고 합니다. 별도의 런타임 및 SDK로 릴리스되었습니다. 즉, WIF 지원 애플리케이션이 실행된 모든 컴퓨터에 WIF 런타임이 설치되어 있어야 하고, 개발자가 WIF 지원 애플리케이션을 개발할 수 있는 Visual Studio 템플릿과 도구를 얻기 위해 WIF SDK를 다운로드하여 설치해야 했습니다. .NET 4.5부터 WIF는 완전히 .NET Framework에 통합되었습니다. 더 이상 별도의 런타임이 필요하지 않고 WIF 도구는 Visual Studio 2012에서 Visual Studio 확장 관리자를 사용하여 설치할 수 있습니다. 이 버전의 WIF를 WIF 4.5라고 합니다.  
   
- WIF를 .NET에 통합하려면 WIF API 화면에서 여러 항목을 변경해야 했습니다. WIF 4.5에는 Visual Studio에 대한 새로운 네임스페이스, 몇 가지 구성 요소 변경 및 새로운 도구가 포함됩니다. 이 항목에서는 WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션할 때 사용할 수 있는 지침을 제공합니다. Windows 8 또는 Windows Server 2012를 실행하는 컴퓨터에서 WIF 3.5를 사용하여 빌드된 레거시 응용 프로그램을 실행해야 하는 경우가 있을 수 있습니다. 이 항목에서는 이러한 운영 체제에서 WIF 3.5를 사용하도록 설정하는 방법에 대한 지침을 제공합니다.  
+ WIF를 .NET에 통합하려면 WIF API 화면에서 여러 항목을 변경해야 했습니다. WIF 4.5에는 Visual Studio에 대한 새로운 네임스페이스, 몇 가지 구성 요소 변경 및 새로운 도구가 포함됩니다. 이 항목에서는 WIF 3.5를 사용하여 빌드된 애플리케이션을 WIF 4.5로 마이그레이션할 때 사용할 수 있는 지침을 제공합니다. Windows 8 또는 Windows Server 2012를 실행하는 컴퓨터에서 WIF 3.5를 사용하여 빌드된 레거시 애플리케이션을 실행해야 하는 경우가 있을 수 있습니다. 이 항목에서는 이러한 운영 체제에서 WIF 3.5를 사용하도록 설정하는 방법에 대한 지침을 제공합니다.  
   
 ## <a name="changes-required-for-wif-45"></a>WIF 4.5에 필요한 변경 내용  
- 이 섹션에서는 WIF 3.5 응용 프로그램을 WIF 4.5로 마이그레이션하는 데 필요한 변경 내용을 설명합니다.  
+ 이 섹션에서는 WIF 3.5 애플리케이션을 WIF 4.5로 마이그레이션하는 데 필요한 변경 내용을 설명합니다.  
   
 ### <a name="assembly-and-namespace-changes"></a>어셈블리 및 네임스페이스 변경 내용  
  WIF 3.5에서 모든 WIF 클래스는 `Microsoft.IdentityModel` 어셈블리(microsoft.identitymicrosoft.identitymodel.dll)에 포함되었습니다. WIF 4.5에서 WIF 클래스는 `mscorlib`(mscorlib.dll), `System.IdentityModel`(System.IdentityModel.dll), `System.IdentityModel.Services`(System.IdentityModel.Services.dll) 및 `System.ServiceModel`(System.ServiceModel.dll) 어셈블리에 분할되었습니다.  
@@ -65,7 +65,7 @@ ms.locfileid: "48582517"
 -   Windows 토큰 서비스에 대한 클레임(c2wts) 및 `Microsoft.IdentityModel.WindowsTokenService` 네임스페이스의 해당 연결된 클래스가 제거됩니다.  
   
 ### <a name="wif-configuration-changes"></a>WIF 구성 변경  
- 구성 파일의 대부분 변경 내용은 WIF 4.5의 네임스페이스 업데이트로 인해 발생했습니다. 예를 들어 WS-Federation 인증 관리자를 응용 프로그램에 추가하려면 `<httpModules>` 섹션에서 다음 WIF 3.5 항목을 고려하세요.  
+ 구성 파일의 대부분 변경 내용은 WIF 4.5의 네임스페이스 업데이트로 인해 발생했습니다. 예를 들어 WS-Federation 인증 관리자를 애플리케이션에 추가하려면 `<httpModules>` 섹션에서 다음 WIF 3.5 항목을 고려하세요.  
   
 ```xml  
 <add name="WSFederationAuthenticationModule" type="Microsoft.IdentityModel.Web.WSFederationAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=abcd … 5678" />  
@@ -92,9 +92,9 @@ ms.locfileid: "48582517"
  WIF 4.5 구성 요소의 전체 목록을 보려면 [WIF 구성 스키마](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md)를 참조하세요.  
   
 ### <a name="visual-studio-tooling-changes"></a>Visual Studio 도구 변경  
- WIF 3.5 SDK에서는 WIF 사용 가능 응용 프로그램의 ID 관리를 STS(보안 토큰 서비스)로 아웃소싱하는 데 사용할 수 있는 독립 실행형 페더레이션 유틸리티, FedUtil.exe(FedUtil)를 제공했습니다. 이 도구는 응용 프로그램이 하나 이상의 STS에서 보안 토큰을 가져올 수 있도록 WIF 설정을 응용 프로그램 구성 파일에 추가하고 **Add STS Service Reference**(STS 서비스 참조 추가) 단추를 통해 Visual Studio에 표시되었습니다. FedUtil은 WIF 4.5와 함께 제공되지 않습니다. 대신에 WIF 4.5는 ID 관리를 STS로 아웃소싱하는 데 필요한 WIF 설정을 통해 응용 프로그램 구성 파일을 수정하는 데 사용할 수 있는 Visual Studio 2012용 ID 및 액세스 도구라는 새로운 Visual Studio 확장을 지원합니다. ID 및 액세스 도구는 WIF 사용 가능 응용 프로그램을 테스트하는 데 사용할 수 있는 로컬 STS라는 STS도 구현합니다. 대부분의 경우 이 기능을 사용하면 개발 시에 솔루션을 테스트하기 위해 WIF 3.5에서 종종 필요했던 사용자 지정 STS를 빌드할 필요가 없습니다. 따라서 STS 템플릿은 Visual Studio 2012에서 더는 지원되지 않지만 STS 개발을 지원하는 클래스는 WIF 4.5에서 계속 사용할 수 있습니다.  
+ WIF 3.5 SDK에서는 WIF 사용 가능 애플리케이션의 ID 관리를 STS(보안 토큰 서비스)로 아웃소싱하는 데 사용할 수 있는 독립 실행형 페더레이션 유틸리티, FedUtil.exe(FedUtil)를 제공했습니다. 이 도구는 애플리케이션이 하나 이상의 STS에서 보안 토큰을 가져올 수 있도록 WIF 설정을 애플리케이션 구성 파일에 추가하고 **Add STS Service Reference**(STS 서비스 참조 추가) 단추를 통해 Visual Studio에 표시되었습니다. FedUtil은 WIF 4.5와 함께 제공되지 않습니다. 대신에 WIF 4.5는 ID 관리를 STS로 아웃소싱하는 데 필요한 WIF 설정을 통해 애플리케이션 구성 파일을 수정하는 데 사용할 수 있는 Visual Studio 2012용 ID 및 액세스 도구라는 새로운 Visual Studio 확장을 지원합니다. ID 및 액세스 도구는 WIF 사용 가능 애플리케이션을 테스트하는 데 사용할 수 있는 로컬 STS라는 STS도 구현합니다. 대부분의 경우 이 기능을 사용하면 개발 시에 솔루션을 테스트하기 위해 WIF 3.5에서 종종 필요했던 사용자 지정 STS를 빌드할 필요가 없습니다. 따라서 STS 템플릿은 Visual Studio 2012에서 더는 지원되지 않지만 STS 개발을 지원하는 클래스는 WIF 4.5에서 계속 사용할 수 있습니다.  
   
- ID 및 액세스 도구는 Visual Studio의 확장 및 업데이트 관리자에서 설치하거나 코드 갤러리의 [Identity and Access Tool for Visual Studio 2012 on Code Gallery](https://go.microsoft.com/fwlink/?LinkID=245849)(코드 갤러리의 Visual Studio 2012용 ID 및 액세스 도구) 페이지에서 다운로드할 수 있습니다. Visual Studio 도구 변경 내용은 다음 목록에 요약되어 있습니다.  
+ 확장 및 업데이트 관리자에서 Visual Studio에서 Id 및 액세스 도구를 설치할 수 있습니다 하거나 코드 갤러리의 다음 페이지에서 다운로드할 수 있습니다. [Id 및 액세스 도구 코드 갤러리에서 Visual Studio 2012 용](https://go.microsoft.com/fwlink/?LinkID=245849)합니다. Visual Studio 도구 변경 내용은 다음 목록에 요약되어 있습니다.  
   
 -   STS 서비스 참조 추가 기능이 제거됩니다. 대신에 ID 및 액세스 도구가 사용됩니다.  
   
@@ -117,9 +117,9 @@ ms.locfileid: "48582517"
   
 ### <a name="active-wcfws-trust-scenarios"></a>활성(WCF/WS-Trust) 시나리오:  
   
--   `Microsoft.IdentityModel.Protocols.WSTrust` 네임스페이스는 WIF 4.5에서 주로 두 개의 네임스페이스로 분할되었습니다. WS-Trust 프로토콜에 관련된 아티팩트를 나타내는 클래스는 이제 <xref:System.IdentityModel.Protocols.WSTrust?displayProperty=nameWithType>에 있습니다. 여기에는 <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> 같은 클래스가 포함됩니다. WCF 응용 프로그램에서 WS-Trust 사용에 포함된 서비스 계약, 채널, 서비스 호스트 및 기타 아티팩트를 나타내는 클래스는 <xref:System.ServiceModel.Security?displayProperty=nameWithType>(예: <xref:System.ServiceModel.Security.IWSTrust13AsyncContract> 인터페이스)로 이동되었습니다.  
+-   `Microsoft.IdentityModel.Protocols.WSTrust` 네임스페이스는 WIF 4.5에서 주로 두 개의 네임스페이스로 분할되었습니다. WS-Trust 프로토콜에 관련된 아티팩트를 나타내는 클래스는 이제 <xref:System.IdentityModel.Protocols.WSTrust?displayProperty=nameWithType>에 있습니다. 여기에는 <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> 같은 클래스가 포함됩니다. WCF 애플리케이션에서 WS-Trust 사용에 포함된 서비스 계약, 채널, 서비스 호스트 및 기타 아티팩트를 나타내는 클래스는 <xref:System.ServiceModel.Security?displayProperty=nameWithType>(예: <xref:System.ServiceModel.Security.IWSTrust13AsyncContract> 인터페이스)로 이동되었습니다.  
   
--   WIF를 사용하도록 WCF 응용 프로그램을 구성하는 작업이 크게 간소화되었습니다. 이전에 `Microsoft.IdentityModel.Configuration.ConfigureServiceHostBehaviorExtensionElement`는 동작 확장으로 추가되어야 했고 이 기능은 `<federatedServiceHostConfiguration>` 요소를 지정하여 WIF를 서비스 동작에 밀어 넣는 데 사용되었습니다. WIF 4.5는 WCF와 더 엄격하게 통합되었습니다. 이제 다음 XML과 같이 `<system.serviceModel>`/`<behaviors>`/`<serviceBehaviors>`/`<serviceCredentials>` 요소에서 `useIdentityConfiguration` 특성을 지정하여 WCF 서비스에서 WIF를 사용할 수 있습니다.  
+-   WIF를 사용하도록 WCF 애플리케이션을 구성하는 작업이 크게 간소화되었습니다. 이전에 `Microsoft.IdentityModel.Configuration.ConfigureServiceHostBehaviorExtensionElement`는 동작 확장으로 추가되어야 했고 이 기능은 `<federatedServiceHostConfiguration>` 요소를 지정하여 WIF를 서비스 동작에 밀어 넣는 데 사용되었습니다. WIF 4.5는 WCF와 더 엄격하게 통합되었습니다. 이제 다음 XML과 같이 `<system.serviceModel>`/`<behaviors>`/`<serviceBehaviors>`/`<serviceCredentials>` 요소에서 `useIdentityConfiguration` 특성을 지정하여 WCF 서비스에서 WIF를 사용할 수 있습니다.  
   
     ```xml  
     <serviceCredentials useIdentityConfiguration="true">  
@@ -133,7 +133,7 @@ ms.locfileid: "48582517"
 -   WIF 3.5를 WCF로 밀어 넣는 데 사용되는 클래스가 더 이상 없습니다. 여기에는 `Microsoft.IdentityModel.Tokens` 네임스페이스의 `FederatedSecurityTokenManager`, `FederatedServiceCredentials` 및 `IdentityModelServiceAuthorizationManager` 클래스와 `Microsoft.IdentityModel.Configuration.ConfigureServiceHostBehaviorExtensionElement` 클래스가 포함됩니다.  
   
 ## <a name="enabling-wif-35-in-windows-8"></a>Windows 8에서 WIF 3.5 사용  
- WIF 4.5는 .NET 4.5의 일부이므로 Windows 8 및 Windows Server 2012를 실행하는 컴퓨터에서 자동으로 사용하도록 설정되고 WIF 4.5를 사용하여 빌드된 응용 프로그램은 기본적으로 Windows 8 또는 Windows Server 2012에서 실행됩니다. 그러나 Windows 8 또는 Windows Server 2012를 실행하는 컴퓨터에서 WIF 3.5를 사용하여 빌드된 응용 프로그램을 실행해야 할 수 있습니다. 이 경우 대상 컴퓨터에서 WIF 3.5를 사용하도록 설정해야 합니다. Windows 8을 실행하는 컴퓨터에서는 DISM(배포 이미지 서비스 및 관리) 도구를 사용하여 이 작업을 수행할 수 있습니다. Windows Server 2012를 실행하는 컴퓨터에서 DISM 도구를 사용하거나 Windows PowerShell `Add-WindowsFeature` cmdlet을 사용할 수 있습니다. 두 경우에 모두 명령줄에서 또는 Windows PowerShell 환경 내에서 해당 명령을 호출할 수 있습니다.  
+ WIF 4.5는 .NET 4.5의 일부이므로 Windows 8 및 Windows Server 2012를 실행하는 컴퓨터에서 자동으로 사용하도록 설정되고 WIF 4.5를 사용하여 빌드된 애플리케이션은 기본적으로 Windows 8 또는 Windows Server 2012에서 실행됩니다. 그러나 Windows 8 또는 Windows Server 2012를 실행하는 컴퓨터에서 WIF 3.5를 사용하여 빌드된 애플리케이션을 실행해야 할 수 있습니다. 이 경우 대상 컴퓨터에서 WIF 3.5를 사용하도록 설정해야 합니다. Windows 8을 실행하는 컴퓨터에서는 DISM(배포 이미지 서비스 및 관리) 도구를 사용하여 이 작업을 수행할 수 있습니다. Windows Server 2012를 실행하는 컴퓨터에서 DISM 도구를 사용하거나 Windows PowerShell `Add-WindowsFeature` cmdlet을 사용할 수 있습니다. 두 경우에 모두 명령줄에서 또는 Windows PowerShell 환경 내에서 해당 명령을 호출할 수 있습니다.  
   
  다음 명령은 명령줄에서 또는 Windows PowerShell 환경 내에서 DISM 도구를 사용하는 방법을 보여 줍니다. 기본적으로 DISM PowerShell 모듈은 Windows 8 및 Windows Server 2012에 포함되어 있고 가져올 필요가 없습니다. Windows PowerShell에서 DISM을 사용하는 방법에 대한 자세한 내용은 [Windows PowerShell에서 DISM 사용](https://go.microsoft.com/fwlink/?LinkId=254419)을 참조하세요.  
   
@@ -170,8 +170,8 @@ add-windowsfeature windows-identity-foundation
 > [!NOTE]
 >  WIF 3.5 및 WIF 4.5의 대부분 클래스는 동일한 이름을 공유하므로 WIF 3.5 및 WIF 4.5를 함께 사용할 경우 정규화된 클래스 이름을 사용하거나 네임스페이스 별칭을 사용하여 WIF 3.5 및 WIF 4.5의 클래스를 구별해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WIF 구성 스키마](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md)  
- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)  
- [Windows Identity Foundation 4.5의 새로운 기능](../../../docs/framework/security/whats-new-in-wif.md)  
- [Visual Studio 2012용 ID 및 액세스 도구](../../../docs/framework/security/identity-and-access-tool-for-vs.md)
+## <a name="see-also"></a>참고자료
+- [WIF 구성 스키마](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md)
+- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)
+- [Windows Identity Foundation 4.5의 새로운 기능](../../../docs/framework/security/whats-new-in-wif.md)
+- [Visual Studio 2012용 ID 및 액세스 도구](../../../docs/framework/security/identity-and-access-tool-for-vs.md)

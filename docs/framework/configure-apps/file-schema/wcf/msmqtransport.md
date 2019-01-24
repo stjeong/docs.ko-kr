@@ -2,21 +2,21 @@
 title: '&lt;msmqTransport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
-ms.openlocfilehash: a0406ae6e91755707656e10c75cbd25dd68d07c2
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 523f2fd030f40a6d55080a48773159ab4b5887ec
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660582"
 ---
 # <a name="ltmsmqtransportgt"></a>&lt;msmqTransport&gt;
 이 전송이 사용자 지정 바인딩에 포함되면 MSMQ 전송에서 채널이 메시지를 전송하도록 합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<msmqIntegration >  
+\<binding>  
+\<msmqIntegration>  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,7 +61,7 @@ ms.locfileid: "54147917"
 |maxPoolSize|풀의 최대 크기를 지정하는 양의 정수입니다. 기본값은 524288입니다.|  
 |maxReceivedMessageSize|헤더를 포함하는 최대 메시지 크기(바이트)를 지정하는 양의 정수입니다. 수신자에게 너무 큰 메시지를 보내면 메시지의 발신자에게 SOAP 오류가 발생합니다. 수신자는 메시지를 삭제하고 추적 로그에 이벤트 항목을 만듭니다. 기본값은 65536입니다.|  
 |maxRetryCycles|수신 응용 프로그램으로 메시지를 배달하려는 최대 재시도 주기 수를 지정하는 정수입니다. 기본값은 <xref:System.Int32.MaxValue>입니다.<br /><br /> 단일 재시도 주기는 지정된 횟수만큼 애플리케이션으로 메시지 배달을 시도합니다. 시도 횟수는 `maxImmediateRetries` 특성으로 설정합니다. 배달 시도를 모두 수행했으나 애플리케이션에서 메시지를 배달하지 못한 경우 그 메시지는 재시도 큐로 보내집니다. 후속 재시도 주기는 `retryCycleDelay` 특성에서 지정한 지연 시간이 지나고 응용 프로그램에서 메시지 배달을 다시 시도하기 위해 재시도 큐에서 응용 프로그램 큐로 반환되는 메시지로 구성됩니다. `maxRetryCycles` 특성은 응용 프로그램에서 메시지 배달 시도에 사용할 재시도 주기 수를 지정합니다.|  
-|queueTransferProtocol|이 바인딩에서 사용하는 대기 중인 통신 채널 전송을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -기본:  네이티브 MSMQ 프로토콜을 사용합니다.<br />-Srmp:  SRMP(SOAP Reliable Messaging Protocol)를 사용합니다.<br />-SrmpSecure: SRMPS(Soap Reliable Messaging Protocol Secure) 전송을 사용합니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.QueueTransferProtocol> 형식입니다.<br /><br /> Srmp 또는 Srmps이이 특성을 설정 하지 않아야 MSMQ는 SOAP 신뢰 메시징 프로토콜을 사용 하는 경우 Active Directory 주소 지정을 지원 하지 않으므로 때 `useActiveDirectory` 로 설정 된 `true`합니다.|  
+|queueTransferProtocol|이 바인딩에서 사용하는 대기 중인 통신 채널 전송을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -기본:  네이티브 MSMQ 프로토콜을 사용합니다.<br />-   Srmp:  SRMP(SOAP Reliable Messaging Protocol)를 사용합니다.<br />-   SrmpSecure: SRMPS(Soap Reliable Messaging Protocol Secure) 전송을 사용합니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.QueueTransferProtocol> 형식입니다.<br /><br /> Srmp 또는 Srmps이이 특성을 설정 하지 않아야 MSMQ는 SOAP 신뢰 메시징 프로토콜을 사용 하는 경우 Active Directory 주소 지정을 지원 하지 않으므로 때 `useActiveDirectory` 로 설정 된 `true`합니다.|  
 |rejectAfterLastRetry|최대 재시도 횟수만큼 시도한 후에 배달하지 못한 메시지에 대해 수행할 작업을 지정하는 부울 값입니다.<br /><br /> `true`인 경우 부정 승인이 발신자에게 반환되고 메시지가 삭제되며, `false`인 경우 메시지가 포이즌 메시지 큐로 보내집니다. 기본값은 `false`입니다.<br /><br /> 값이 `false`이면 수신 응용 프로그램에서는 포이즌 메시지 큐를 읽어 포이즌 메시지(배달하지 못한 메시지)를 처리할 수 있습니다.<br /><br /> MSMQ 3.0에서는 부정 승인을 발신자에게 반환할 수 없으므로 이 특성이 무시됩니다.|  
 |retryCycleDelay|즉시 배달할 수 없는 메시지를 배달하려고 할 때 재시도 주기 사이의 지연 시간을 지정하는 <xref:System.TimeSpan>입니다. 기본값은 00:10:00입니다.<br /><br /> 단일 재시도 주기는 지정된 횟수만큼 수신 애플리케이션으로 메시지 배달을 시도합니다. 시도 횟수는 `maxImmediateRetries` 특성으로 지정합니다. 지정된 횟수만큼 즉시 재시도가 수행되었으나 애플리케이션에서 메시지를 배달하지 못한 경우 그 메시지는 재시도 큐로 보내집니다. 후속 재시도 주기는 `retryCycleDelay` 특성에서 지정한 지연 시간이 지나고 응용 프로그램에서 메시지 배달을 다시 시도하기 위해 재시도 큐에서 응용 프로그램 큐로 반환되는 메시지로 구성됩니다. 재시도 주기 횟수는 `maxRetryCycles` 특성으로 지정합니다.|  
 |timeToLive|메시지가 만료되어 배달 못 한 큐에 배치되기 전에 메시지가 유효한 기간을 지정하는 <xref:System.TimeSpan>입니다. 기본값은 1일을 의미하는 1.00:00:00입니다.<br /><br /> 이 특성은 시간을 다투는 메시지가 수신 응용 프로그램에서 처리되기 전에 무효화되지 않도록 하기 위해 설정됩니다. 지정된 시간 간격 내에 수신 애플리케이션에서 사용하지 않은 큐의 메시지는 만료된 것으로 간주됩니다. 만료된 메시지는 배달 못한 편지 큐라는 특수 큐로 보내집니다. 배달 못 한 편지 큐의 위치는 보증에 따라 `customDeadLetterQueue` 특성으로 설정되거나 해당 기본값으로 설정됩니다.|  
@@ -73,7 +73,7 @@ ms.locfileid: "54147917"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<msmqTransportSecurity >](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqtransportsecurity.md)|이 바인딩의 전송 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement> 형식입니다.|  
+|[\<msmqTransportSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqtransportsecurity.md)|이 바인딩의 전송 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement> 형식입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -86,15 +86,15 @@ ms.locfileid: "54147917"
   
  이 바인딩 요소는 메시지 큐 표준 바인딩(`netMsmqBinding`)에 사용되는 기본 바인딩 요소입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.MsmqTransportElement>  
- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.MsmqTransportElement>
+- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

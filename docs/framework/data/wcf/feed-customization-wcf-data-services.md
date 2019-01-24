@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Atom Publishing Protocol [WCF Data Services]
 - WCF Data Services, customizing feeds
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
-ms.openlocfilehash: 1922351ffb11d5ff6541ef22dee623c20d153d6a
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: c54ea70049544e5205613ab76eb810798513fab2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44207494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680221"
 ---
 # <a name="feed-customization-wcf-data-services"></a>피드 사용자 지정(WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하 여는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 데이터 피드로 노출 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 피드의 Atom 및 개체 JSON (JavaScript Notation) 형식을 지원합니다. Atom 피드를 사용 하는 경우 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 같은 엔터티 및 관계를 HTTP 메시지의 본문에 포함 될 수 있는 XML 형식으로 데이터를 serialize 하는 표준 방법을 제공 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 엔터티에 포함 된 데이터 및 Atom 요소 간의 기본 엔터티 속성 매핑을 정의 합니다. 자세한 내용은 [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkID=185794)합니다.  
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하 여는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 데이터 피드로 노출 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 피드의 Atom 및 개체 JSON (JavaScript Notation) 형식을 지원합니다. Atom 피드를 사용 하는 경우 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 같은 엔터티 및 관계를 HTTP 메시지의 본문에 포함 될 수 있는 XML 형식으로 데이터를 serialize 하는 표준 방법을 제공 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 엔터티에 포함 된 데이터 및 Atom 요소 간의 기본 엔터티 속성 매핑을 정의 합니다. 자세한 내용은 참조 하세요. [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkID=185794)합니다.  
   
  데이터 서비스에서 반환된 속성 데이터를 표준 피드 형식이 아니라 사용자 지정 방식으로 serialize(직렬화)해야 하는 응용 프로그램 시나리오가 있을 수도 있습니다. 사용 하 여 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)], 엔터티의 속성을 사용 하지 않는 요소와 특성의 항목 또는 피드의 항목의 사용자 지정 요소에 매핑될 수 있도록 데이터 피드의 serialization을 사용자 지정할 수 있습니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "44207494"
  리플렉션 공급자를 사용하여 구현된 데이터 모델의 피드를 사용자 지정하려면 데이터 모델의 엔터티 형식을 나타내는 클래스에 <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> 특성 인스턴스를 하나 이상 추가합니다. <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> 클래스의 속성은 위 단원에 설명된 피드 사용자 지정 특성에 해당합니다. 다음은 두 속성에 모두 사용자 지정 피드 매핑을 정의하는 `Order` 형식의 선언 예제입니다.  
   
 > [!NOTE]
->  이 예제에 대 한 데이터 모델 항목에 정의 되어 [방법: 리플렉션 공급자를 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)합니다.  
+>  이 예제에 대 한 데이터 모델 항목에 정의 되어 [방법: 리플렉션 공급자를 사용 하 여 데이터 서비스를 만드는](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)합니다.  
   
  [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customorderfeed)]
  [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customorderfeed)]  
@@ -92,6 +92,6 @@ ms.locfileid: "44207494"
   
  자세한 내용은 [데이터 서비스 버전 관리](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [리플렉션 공급자](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)  
- [Entity Framework 공급자](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [리플렉션 공급자](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
+- [Entity Framework 공급자](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

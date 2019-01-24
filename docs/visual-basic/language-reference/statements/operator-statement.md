@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Operator statement [Visual Basic]
 - CType function [Visual Basic], Operator statement
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
-ms.openlocfilehash: 69dea99cf71bd1e091116e54e244abfca291ffdb
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9da2fc05824fa7e412c1c4802852fd00ba2709e0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47399874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54658197"
 ---
 # <a name="operator-statement"></a>Operator Statement
 연산자 기호, 피연산자 및 클래스 또는 구조체에서 연산자 프로시저를 정의 하는 코드를 선언 합니다.  
@@ -44,13 +44,13 @@ End Operator
  선택 사항입니다. 참조 [특성 목록](../../../visual-basic/language-reference/statements/attribute-list.md)합니다.  
   
  `Public`  
- 필수. 이 연산자 프로시저가 있음을 나타냅니다 [공용](../../../visual-basic/language-reference/modifiers/public.md) 액세스 합니다.  
+ 필수 요소. 이 연산자 프로시저가 있음을 나타냅니다 [공용](../../../visual-basic/language-reference/modifiers/public.md) 액세스 합니다.  
   
  `Overloads`  
  선택 사항입니다. 참조 [오버 로드](../../../visual-basic/language-reference/modifiers/overloads.md)합니다.  
   
  `Shared`  
- 필수. 이 연산자 프로시저 임을 나타냅니다는 [공유](../../../visual-basic/language-reference/modifiers/shared.md) 프로시저입니다.  
+ 필수 요소. 이 연산자 프로시저 임을 나타냅니다는 [공유](../../../visual-basic/language-reference/modifiers/shared.md) 프로시저입니다.  
   
  `Shadows`  
  선택 사항입니다. 참조 [그림자](../../../visual-basic/language-reference/modifiers/shadows.md)합니다.  
@@ -62,10 +62,10 @@ End Operator
  지정 하지 않으면 변환 연산자에 필요한 `Widening`합니다. 이 연산자 프로시저 정의 함을 나타냅니다는 [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md) 변환 합니다. 이 도움말 페이지에 "확대 변환과 축소 변환"을 참조 하세요.  
   
  `operatorsymbol`  
- 필수. 기호 또는이 연산자 프로시저 정의 하는 연산자의 식별자입니다.  
+ 필수 요소. 기호 또는이 연산자 프로시저 정의 하는 연산자의 식별자입니다.  
   
  `operand1`  
- 필수. 이름과 (변환 연산자를 포함 하 여) 단항 연산자의 단일 피연산자는 이항 연산자의 왼쪽된 피연산자의 형식입니다.  
+ 필수 요소. 이름과 (변환 연산자를 포함 하 여) 단항 연산자의 단일 피연산자는 이항 연산자의 왼쪽된 피연산자의 형식입니다.  
   
  `operand2`  
  이항 연산자에 필요합니다. 이름과 이항 연산자의 오른쪽 피연산자의 형식입니다.  
@@ -77,7 +77,7 @@ End Operator
 |파트|설명|  
 |----------|-----------------|  
 |`ByVal`|선택 사항 이지만 전달 메커니즘 이어야 합니다 [ByVal](../../../visual-basic/language-reference/modifiers/byval.md)합니다.|  
-|`operandname`|필수. 이 피연산자를 나타내는 변수의 이름입니다. 참조 [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.|  
+|`operandname`|필수 요소. 이 피연산자를 나타내는 변수의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.|  
 |`operandtype`|선택적 경우가 아니면 `Option Strict` 는 `On`합니다. 이 피연산자의 데이터 형식입니다.|  
   
  `type`  
@@ -87,10 +87,10 @@ End Operator
  선택 사항입니다. 블록에서 연산자 프로시저를 실행 하는 문입니다.  
   
  `returnvalue`  
- 필수. 연산자 프로시저가 호출 코드에 반환 하는 값입니다.  
+ 필수 요소. 연산자 프로시저가 호출 코드에 반환 하는 값입니다.  
   
  `End` `Operator`  
- 필수. 이 연산자 프로시저의 정의 종료합니다.  
+ 필수 요소. 이 연산자 프로시저의 정의 종료합니다.  
   
 ## <a name="remarks"></a>설명  
  사용할 수 있습니다 `Operator` 클래스 또는 구조체에만 합니다. 즉, 합니다 *선언 컨텍스트* 연산자는 소스 파일, 네임 스페이스, 모듈, 인터페이스, 프로시저 또는 블록 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
@@ -170,14 +170,14 @@ End Operator
   
  [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [IsFalse 연산자](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
- [IsTrue 연산자](../../../visual-basic/language-reference/operators/istrue-operator.md)  
- [확장](../../../visual-basic/language-reference/modifiers/widening.md)  
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [확대 변환과 축소 변환](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [연산자 프로시저](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
- [방법: 연산자 정의](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [방법: 변환 연산자 정의](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)  
- [방법: 연산자 프로시저 호출](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)  
- [방법: 연산자를 정의하는 클래스 사용](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)
+## <a name="see-also"></a>참고자료
+- [IsFalse 연산자](../../../visual-basic/language-reference/operators/isfalse-operator.md)
+- [IsTrue 연산자](../../../visual-basic/language-reference/operators/istrue-operator.md)
+- [확장](../../../visual-basic/language-reference/modifiers/widening.md)
+- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
+- [확대 변환과 축소 변환](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [연산자 프로시저](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
+- [방법: 연산자 정의](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [방법: 변환 연산자를 정의 합니다.](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [방법: 연산자 프로시저 호출](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)
+- [방법: 연산자를 정의 하는 클래스를 사용 합니다.](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)

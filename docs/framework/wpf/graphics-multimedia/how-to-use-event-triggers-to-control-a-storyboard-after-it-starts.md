@@ -6,12 +6,12 @@ helpviewer_keywords:
 - event triggers [WPF], controlling Storyboards
 - Storyboards [WPF], controlling after start
 ms.assetid: 3b115594-6a93-4972-b24d-61aa16f1c15f
-ms.openlocfilehash: f31b1233f00147fdccde5e0816fa4839ae33d549
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: e4cfaf2352c3cca2b67a8e6a5d4c933399583e5a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44183540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663650"
 ---
 # <a name="how-to-use-event-triggers-to-control-a-storyboard-after-it-starts"></a>방법: Storyboard를 시작한 후 이벤트 트리거를 사용하여 제어
 제어 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.Storyboard> 시작 합니다. 시작 하는 <xref:System.Windows.Media.Animation.Storyboard> 를 사용 하 여 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]를 사용 하 여 <xref:System.Windows.Media.Animation.BeginStoryboard>, 개체 및 속성에 애니메이션을 적용 하 고 시작한 다음 스토리 보드에 애니메이션을 배포 하는 합니다. 제공 하는 경우 <xref:System.Windows.Media.Animation.BeginStoryboard> 이름을 지정 하 여 해당 <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> 속성을 만들면 제어 가능한 storyboard입니다. 제어할 수 있습니다 다음 대화형으로 스토리 보드 시작 된 후.  
@@ -24,7 +24,7 @@ ms.locfileid: "44183540"
   
 -   <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>: Storyboard 속도 변경합니다.  
   
--   <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: 있는 경우 채우기 기간이의 끝에 스토리 보드를 이동 합니다.  
+-   <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: 있는 경우 해당 채우기 기간의 끝에 스토리 보드를 이동 합니다.  
   
 -   <xref:System.Windows.Media.Animation.StopStoryboard>: Storyboard를 중지 합니다.  
   
@@ -39,13 +39,13 @@ ms.locfileid: "44183540"
   
  추가 예제를 보려면 합니다 [애니메이션 예제 갤러리](https://go.microsoft.com/fwlink/?LinkID=159969)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.ResumeStoryboard>  
- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>  
- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>  
- <xref:System.Windows.Media.Animation.PauseStoryboard>  
- <xref:System.Windows.Media.Animation.StopStoryboard>  
- <xref:System.Windows.Media.Animation.SeekStoryboard>  
- [대화형 메서드를 사용하여 이미 시작된 Storyboard 제어](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.ResumeStoryboard>
+- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>
+- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>
+- <xref:System.Windows.Media.Animation.PauseStoryboard>
+- <xref:System.Windows.Media.Animation.StopStoryboard>
+- <xref:System.Windows.Media.Animation.SeekStoryboard>
+- [대화형 메서드를 사용하여 이미 시작된 Storyboard 제어](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - attribute list
 - attributes [Visual Basic], applying
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-ms.openlocfilehash: 23f2004a34f5d6dc27c8263f6e66642dd32c6a5f
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 9ab55187fef11fba9c794ff0266656860bea3d1f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672112"
 ---
 # <a name="attribute-list-visual-basic"></a>특성 목록(Visual Basic)
 선언 된 프로그래밍 요소에 적용할 특성을 지정 합니다. 여러 특성은 쉼표로 구분합니다. 다음은 하나의 특성에 대 한 구문입니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "37936931"
 |||
 |---|---|
 |`attributemodifier`|소스 파일의 시작 부분에 적용 되는 특성에 필요 합니다. 일 수 있습니다 [어셈블리](../../../visual-basic/language-reference/modifiers/assembly.md) 하거나 [모듈](../../../visual-basic/language-reference/modifiers/module-keyword.md)합니다.|
-|`attributename`| 필수. 특성의 이름입니다.|
+|`attributename`| 필수 요소. 특성의 이름입니다.|
 |`attributearguments`|선택 사항입니다. 이 특성에 대 한 위치 인수 목록입니다. 여러 인수는 쉼표로 구분 됩니다.|
 |`attributeinitializer`|선택 사항입니다. 이 특성에 대 한 변수 또는 속성 이니셜라이저 목록입니다. 여러 이니셜라이저는 쉼표로 구분 됩니다.|
   
@@ -46,15 +46,15 @@ ms.locfileid: "37936931"
   
 -   **인수입니다.** 특성에 대 한 모든 위치 인수에는 모든 변수 또는 속성 이니셜라이저 앞에 야 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  적용 하는 다음 예제는 <xref:System.Runtime.InteropServices.DllImportAttribute> 특성의 기본 정의 `Function` 프로시저입니다.  
   
  [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/attribute-list_1.vb)]  
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> 특성 사용된 하는 절차는 관리 되지 않는 동적 연결 라이브러리 (DLL)의 진입점을 나타낸다는 것을 나타냅니다. 특성 위치 인수로 DLL 이름 및 변수 이니셜라이저, 다른 정보를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [어셈블리](../../../visual-basic/language-reference/modifiers/assembly.md)  
- [모듈 \<키워드>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
- [특성 개요](../../../visual-basic/programming-guide/concepts/attributes/index.md)  
- [방법: 코드에서 문 분리 및 결합](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+## <a name="see-also"></a>참고자료
+- [어셈블리](../../../visual-basic/language-reference/modifiers/assembly.md)
+- [모듈 \<키워드>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
+- [특성 개요](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [방법: 코드에서 문 분리 및 결합](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

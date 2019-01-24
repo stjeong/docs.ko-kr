@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: f6e139a4e10ca10fac45510715110d156ddf82ff
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: bc193402120780c605f6139feac6f0d60a34118e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54674165"
 ---
 # <a name="redirecting-assembly-versions"></a>어셈블리 버전 리디렉션
 
@@ -67,7 +67,7 @@ ms.locfileid: "54145970"
 
 `<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`
 
-앱이 이전 버전.NET Framework의 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. 모든 어셈블리에 대 한 app.config 파일에서 바인딩 리디렉션 정보를 제공 하거나 바인딩 리디렉션 기능을 해제 하 여이 기본 동작을 재정의할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하세요. [방법: 사용 하도록 설정 하 고 자동 바인딩 리디렉션 사용 안 함](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)합니다.
+앱이 이전 버전.NET Framework의 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. 모든 어셈블리에 대 한 app.config 파일에서 바인딩 리디렉션 정보를 제공 하거나 바인딩 리디렉션 기능을 해제 하 여이 기본 동작을 재정의할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하세요. [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하세요.
 
 <a name="bypass_PP"></a>
 ### <a name="bypassing-publisher-policy"></a>게시자 정책 무시
@@ -154,7 +154,7 @@ ms.locfileid: "54145970"
 </assemblyBinding>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect > 요소](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /optioninfer compiler option [Visual Basic]
 - optioninfer compiler option [Visual Basic]
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
-ms.openlocfilehash: e7dbc4d5f06096978c4d93ea20677dcb60bc3fcb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 82a8667c32c6396a868375555b003d0082ce1a73
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33655927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709977"
 ---
 # <a name="-optioninfer"></a>-optioninfer
 변수 선언에서 지역 형식 유추를 사용하도록 설정합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33655927"
   
 1.  프로젝트를 선택 **솔루션 탐색기**합니다. **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-2.  에 **컴파일** 탭에서 값을 수정 된 **Option infer** 상자입니다.  
+2.  에 **컴파일할** 탭에서 값을 수정 합니다 **Option infer** 상자입니다.  
   
 ## <a name="example"></a>예제  
  다음 코드에서는 지역 형식 유추를 사용하도록 설정한 상태로 `test.vb`를 컴파일합니다.  
@@ -49,15 +49,15 @@ ms.locfileid: "33655927"
 vbc -optioninfer+ test.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Infer 문](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [지역 형식 유추](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [옵션 대화 상자, 프로젝트, Visual Basic 기본값](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
- [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)  
- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
- [명령줄에서 빌드](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Infer 문](../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [지역 형식 유추](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [옵션 대화 상자, 프로젝트, Visual Basic 기본값](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [명령줄에서 빌드](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)

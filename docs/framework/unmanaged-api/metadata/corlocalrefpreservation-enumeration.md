@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ee808ba403a513b897134420b45ebe8cd3537571
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e9ed3cdac726fbdbf9ee2b33f42565d8594bc36e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33442248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54669681"
 ---
 # <a name="corlocalrefpreservation-enumeration"></a>CorLocalRefPreservation 열거형
 로컬 참조의 처리에 대한 플래그 값을 포함합니다.  
@@ -42,15 +42,15 @@ typedef enum CorLocalRefPreservation
 |멤버|설명|  
 |------------|-----------------|  
 |`MDPreserveLocalRefsNone`|없는 로컬 참조를 유지 합니다.|  
-|`MDPreserveLocalTypeRef`|지역 형식 참조를 유지 합니다.|  
+|`MDPreserveLocalTypeRef`|로컬 형식 참조를 유지 합니다.|  
 |`MDPreserveLocalMemberRef`|로컬 멤버 참조를 유지 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

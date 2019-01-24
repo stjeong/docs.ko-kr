@@ -8,28 +8,28 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: e41cbf30f06547ef39553e31542e4e8b6df49a3b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: db0ce88f63be8d58cc1c1abf91eda6a0e56456c6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33589882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651519"
 ---
 # <a name="latebound-overload-resolution-cannot-be-applied-to-39ltprocedurenamegt39-because-the-accessing-instance-is-an-interface-type"></a>런타임에 바인딩 오버 로드 확인에 적용할 수 없습니다 &#39; &lt;procedurename&gt; &#39; 액세스 인스턴스가 인터페이스 형식 이므로
-컴파일러는 오버 로드 된 속성 또는 프로시저에 대 한 참조를 확인 하려고 합니다. 하지만 참조가 인수 형식 이므로 실패 `Object` 참조 하는 개체 인터페이스는 데이터 형식을 갖습니다. `Object` 인수를 사용 하면 컴파일러 바인딩이라고 참조를 확인할 수 있습니다.  
+컴파일러에서 오버 로드 된 속성 또는 프로시저에 대 한 참조를 확인 하려고 시도 하지만 인수 형식 이므로 참조 실패 `Object` 참조 하는 개체 인터페이스의 데이터 형식이 고 합니다. `Object` 인수를 사용 하면 런타임에 바인딩된으로 참조를 해결 하려면 컴파일러.  
   
- 이러한 경우에는 컴파일러 구현 하는 클래스 대신 기본 인터페이스를 통해 통해 오버 로드를 확인합니다. 클래스는 오버 로드 된 버전 중 하나를 이름을 바꾸거나, 컴파일러가 이름과 다르기 때문에 오버 로드 되도록 해당 버전을 고려 하지 않습니다. 이 다시 컴파일러가 참조를 해결 하려면 올바른 선택 되었을 때 이름이 변경 된 버전을 무시 합니다.  
+ 이러한 상황에서는 컴파일러 대신 기본 인터페이스를 통해 구현 클래스를 통해 오버 로드를 확인합니다. 클래스 이름 바꾸기 오버 로드 된 버전 중 하나, 컴파일러가 이름과 다르기 때문에 오버 로드 되도록 해당 버전을 고려 하지 않습니다. 이 컴파일러에서 참조를 해결 하려면 올바른 선택 되었을 때 이름이 바뀐된 버전을 무시 합니다.  
   
  **오류 ID:** BC30933  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   사용 하 여 `CType` 에서 인수를 캐스팅 `Object` 호출 하려는 오버 로드의 시그니처에 의해 지정 된 형식과 합니다.  
+-   사용 하 여 `CType` 에 있는 인수를 캐스팅할 `Object` 호출 하려는 오버 로드의 서명에서 지정 된 형식입니다.  
   
-     참고는 기본 인터페이스를 참조 하는 개체를 캐스팅 하는 데 도움이 되지는 않습니다. 이 오류를 방지 하려면 인수를 캐스팅 해야 합니다.  
+     참고를 참조 하는 기본 인터페이스에 개체를 캐스팅 하는 데 도움이 되지는 않습니다. 이 오류를 방지 하려면 인수를 캐스팅 해야 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 오버 로드 된에 대 한 호출 `Sub` 프로시저 컴파일 타임에이 오류가 발생 합니다.  
+ 다음 예제에서는 오버 로드에 대 한 호출 `Sub` 프로시저 컴파일 타임에이 오류가 발생 합니다.  
   
 ```  
 Module m1  
@@ -53,7 +53,7 @@ Module m1
 End Module  
 ```  
   
- 위의 예제에서는 컴파일러에 대 한 호출을 허용 하는 경우에 `s1` 확인이 클래스를 통해 작성 된 대로 수행 `c1` 인터페이스 대신 `i1`합니다. 이 컴파일러 고려 하지 않습니다 구성이 `s2` 이름에서 다르기 때문에 `c1`에 정의 된 대로 올바른 선택은 경우에 `i1`합니다.  
+ 위의 예제에서는 컴파일러에 대 한 호출을 허용 하는 경우 `s1` 확인이 클래스를 통해 작성 된 대로 수행 `c1` 인터페이스 대신 `i1`합니다. 컴파일러를 고려 하지 않습니다 의미 `s2` 해당 이름에서 다르기 때문 `c1`경우에 적합 한 것으로 정의 된 대로 `i1`입니다.  
   
  코드의 다음 줄 중 하나에 대 한 호출을 변경 하 여 오류를 해결할 수 있습니다.  
   
@@ -62,9 +62,9 @@ refer.s1(CType(o1, Integer))
 refer.s1(CType(o1, Double))  
 ```  
   
- 코드의 이전 줄의 각 명시적 캐스팅는 `Object` 변수 `o1` 오버 로드에 대해 정의 된 매개 변수 형식 중 하나에 있습니다.  
+ 코드의 이전 줄을 각각 명시적으로 캐스팅 합니다 `Object` 변수 `o1` 오버 로드에 대해 정의 된 매개 변수 형식 중 하나에 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [프로시저 오버로딩](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [오버로드 확인](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)  
- [CType 함수](../../../visual-basic/language-reference/functions/ctype-function.md)
+## <a name="see-also"></a>참고자료
+- [프로시저 오버로딩](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [오버로드 확인](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
+- [CType 함수](../../../visual-basic/language-reference/functions/ctype-function.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - PropertyPath object [WPF]
 - XAML [WPF], PropertyPath object
 ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
-ms.openlocfilehash: 24dd4ca5663f2e6d98ed3888f07329724fdc353d
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 7c6f658558618e0812ea2537837577cbf011edd4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648759"
 ---
 # <a name="propertypath-xaml-syntax"></a>PropertyPath XAML 구문
 합니다 <xref:System.Windows.PropertyPath> 개체가 지원 복잡 한 인라인 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 구문을 사용 하는 다양 한 속성을 설정 하기 위한는 <xref:System.Windows.PropertyPath> 형식을 값으로. 이 항목 문서는 <xref:System.Windows.PropertyPath> 구문 바인딩 및 애니메이션 구문에 적용 합니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "44042545"
 <object property="(ownerType.propertyName)" .../>  
 ```  
   
- 괄호를 표시 하는이 속성을 <xref:System.Windows.PropertyPath> 부분 정규화를 사용 하 여 생성 해야 합니다. XML 네임스페이스를 사용하여 적절한 매핑이 있는 형식을 찾을 수 있습니다. `ownerType` 있는 형식을 검색을 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 처리기는를 통해 액세스할 수는 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 각 어셈블리에서 선언 합니다. 대부분 응용 프로그램에서는 기본 XML 네임스페이스가 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임스페이스에 매핑되므로 접두사는 대개 사용자 지정 형식 또는 해당 네임스페이스 외부의 형식에만 필요합니다.  `propertyName`은 `ownerType`에 있는 속성의 이름으로 확인되어야 합니다. 일반적으로 이 구문은 다음 경우 중 하나에 사용됩니다.  
+ 괄호를 표시 하는이 속성을 <xref:System.Windows.PropertyPath> 부분 정규화를 사용 하 여 생성 해야 합니다. XML 네임스페이스를 사용하여 적절한 매핑이 있는 형식을 찾을 수 있습니다. `ownerType` 있는 형식을 검색을 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 처리기는를 통해 액세스할 수는 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 각 어셈블리에서 선언 합니다. 대부분 애플리케이션에서는 기본 XML 네임스페이스가 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임스페이스에 매핑되므로 접두사는 대개 사용자 지정 형식 또는 해당 네임스페이스 외부의 형식에만 필요합니다.  `propertyName`은 `ownerType`에 있는 속성의 이름으로 확인되어야 합니다. 일반적으로 이 구문은 다음 경우 중 하나에 사용됩니다.  
   
 -   경로는 지정된 대상 형식이 없는 스타일 또는 템플릿인 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]에 지정됩니다. 스타일이 아니고 템플릿이 아닌 경우에 속성은 형식이 아닌 인스턴스에 있으므로 일반적으로 이를 제외한 다른 경우에는 정규화된 사용이 적절하지 않습니다.  
   
@@ -168,7 +168,7 @@ or
   
  `propertyName2`는 `propertyName` 값인 개체에 있는 종속성 속성의 이름이어야 합니다. 즉, `propertyName2` 되는 형식에 종속성 속성으로 존재 해야 합니다 `propertyName` <xref:System.Windows.DependencyProperty.PropertyType%2A>합니다.  
   
- 적용된 스타일 및 템플릿 때문에 애니메이션의 간접 대상 지정이 필요합니다. 애니메이션을 대상으로 하려면를 <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> 는 대상 개체에서 이름으로 설정 됩니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 또는 <xref:System.Windows.FrameworkElement.Name%2A>합니다. 템플릿 및 스타일 요소에 이름이 있을 수 있지만 해당 이름은 스타일 및 템플릿의 네임스페이스 내에서만 유효합니다. 템플릿 및 스타일이 네임스페이스를 응용 프로그램 태그와 공유한 경우 이름이 고유하지 않습니다. 스타일 및 템플릿은 문자 그대로 인스턴스 간에 공유되고 중복 이름을 영구화합니다. 따라서 애니메이션 효과를 줄 요소의 개별 속성이 스타일이나 템플릿을 기반으로 한 경우 스타일 템플릿을 기반으로 하지 않은 명명된 요소 인스턴스로 시작한 다음 애니메이션 효과를 줄 속성에 도착할 스타일 또는 템플릿 시각적 트리를 대상으로 지정해야 합니다.  
+ 적용된 스타일 및 템플릿 때문에 애니메이션의 간접 대상 지정이 필요합니다. 애니메이션을 대상으로 하려면를 <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> 는 대상 개체에서 이름으로 설정 됩니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 또는 <xref:System.Windows.FrameworkElement.Name%2A>합니다. 템플릿 및 스타일 요소에 이름이 있을 수 있지만 해당 이름은 스타일 및 템플릿의 네임스페이스 내에서만 유효합니다. 템플릿 및 스타일이 네임스페이스를 애플리케이션 태그와 공유한 경우 이름이 고유하지 않습니다. 스타일 및 템플릿은 문자 그대로 인스턴스 간에 공유되고 중복 이름을 영구화합니다. 따라서 애니메이션 효과를 줄 요소의 개별 속성이 스타일이나 템플릿을 기반으로 한 경우 스타일 템플릿을 기반으로 하지 않은 명명된 요소 인스턴스로 시작한 다음 애니메이션 효과를 줄 속성에 도착할 스타일 또는 템플릿 시각적 트리를 대상으로 지정해야 합니다.  
   
  예를 들어를 <xref:System.Windows.Controls.Panel.Background%2A> 의 속성을 <xref:System.Windows.Controls.Panel> 된 완전 <xref:System.Windows.Media.Brush> (실제로 <xref:System.Windows.Media.SolidColorBrush>) 테마 템플릿에서 생성 하는. 애니메이션 효과를 주는 <xref:System.Windows.Media.Brush> 완전히 있습니다 해야는 BrushAnimation (아마도 하나에 대 한 모든 <xref:System.Windows.Media.Brush> 형식) 있고 형식이 없습니다. 브러시에 애니메이션 효과를 주는 대신 애니메이션 효과 줄 속성의 특정 <xref:System.Windows.Media.Brush> 형식입니다. 가져올 필요가 <xref:System.Windows.Media.SolidColorBrush> 에 해당 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 적용 하는 <xref:System.Windows.Media.Animation.ColorAnimation> 있습니다. 이 예제의 속성 경로는 `Background.Color`입니다.  
   
@@ -179,7 +179,7 @@ or
 <animation Storyboard.TargetProperty="(ownerType.propertyName)" .../>  
 ```  
   
- 괄호를 표시 하는이 속성을 <xref:System.Windows.PropertyPath> 부분 정규화를 사용 하 여 생성 해야 합니다. XML 네임스페이스를 사용하여 형식을 찾을 수 있습니다. `ownerType` 있는 형식을 검색을 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 처리기는를 통해 액세스할 수는 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 각 어셈블리에서 선언 합니다. 대부분 응용 프로그램에서는 기본 XML 네임스페이스가 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임스페이스에 매핑되므로 접두사는 대개 사용자 지정 형식 또는 해당 네임스페이스 외부의 형식에만 필요합니다. `propertyName`은 `ownerType`에 있는 속성의 이름으로 확인되어야 합니다. 로 지정 된 속성이 `propertyName` 이어야 합니다는 <xref:System.Windows.DependencyProperty>합니다. 모든 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 연결된 속성은 종속성 속성으로 구현되므로 이 문제는 사용자 지정 연결된 속성에만 관련됩니다.  
+ 괄호를 표시 하는이 속성을 <xref:System.Windows.PropertyPath> 부분 정규화를 사용 하 여 생성 해야 합니다. XML 네임스페이스를 사용하여 형식을 찾을 수 있습니다. `ownerType` 있는 형식을 검색을 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 처리기는를 통해 액세스할 수는 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 각 어셈블리에서 선언 합니다. 대부분 애플리케이션에서는 기본 XML 네임스페이스가 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임스페이스에 매핑되므로 접두사는 대개 사용자 지정 형식 또는 해당 네임스페이스 외부의 형식에만 필요합니다. `propertyName`은 `ownerType`에 있는 속성의 이름으로 확인되어야 합니다. 로 지정 된 속성이 `propertyName` 이어야 합니다는 <xref:System.Windows.DependencyProperty>합니다. 모든 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 연결된 속성은 종속성 속성으로 구현되므로 이 문제는 사용자 지정 연결된 속성에만 관련됩니다.  
   
 <a name="indexanim"></a>   
 ### <a name="indexers"></a>인덱서  
@@ -196,7 +196,7 @@ or
   
  일반적으로 <xref:System.Windows.PropertyPath> 는 두 가지 생성자, 간단한 애니메이션 사용와 바인딩 사용에 대 한 복잡 한 애니메이션 사용에 대 한 사용 하도록 설계 되었습니다. 사용 된 <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> 바인딩 사용, 여기서 개체는 문자열에 대 한 서명입니다. 사용 합니다 <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> 단계 애니메이션 경로 개체에 대 한 시그니처는 <xref:System.Windows.DependencyProperty>합니다. 사용 된 <xref:System.Windows.PropertyPath.%23ctor%28System.String%2CSystem.Object%5B%5D%29> 복잡 한 애니메이션에 대 한 서명입니다. 후자의 생성자는 첫 번째 매개 변수에 토큰 문자열을 사용하고 속성 경로 관계를 정의하기 위해 토큰 문자열의 위치를 채우는 개체 배열을 사용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.PropertyPath>  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.PropertyPath>
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

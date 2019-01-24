@@ -2,12 +2,12 @@
 title: Windows Workflow 개요
 ms.date: 03/30/2017
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
-ms.openlocfilehash: a516f454abc81ae8f6f1c15c815fe2b671ecd98f
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: af5ccd47dd7b3ff35dd283f8fe659ebef912d441
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54665164"
 ---
 # <a name="windows-workflow-overview"></a>Windows Workflow 개요
 워크플로 호출 하는 elemental 단위의 집합인 *활동* 실제 프로세스를 설명 하는 모델로 저장 되는 합니다. 워크플로를 통해 단기 실행 작업과 장기 실행 작업의 실행 순서와 종속 관계를 설명할 수 있습니다. 이 작업은 모델을 시작부터 끝까지 통과하며 활동은 사람이 실행하거나 시스템 함수로 실행될 수 있습니다.  
@@ -41,5 +41,5 @@ ms.locfileid: "47195451"
   
 -   <xref:System.Activities.CodeActivity> 추상 클래스에서 파생되는 사용자 지정 활동입니다. <xref:System.Activities.CodeActivity>는 <xref:System.Activities.CodeActivityContext> 메서드의 매개 변수로 사용되는 <xref:System.Activities.CodeActivity.Execute%2A>를 사용하여 런타임 기능(예: 추적 및 속성)에 액세스할 수 있습니다. 이러한 런타임 기능에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 하 고 [워크플로 실행 속성](../../../docs/framework/windows-workflow-foundation/workflow-execution-properties.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [BizTalk Server 2006과 WF 프로젝트에 적절 한 워크플로 도구 선택](https://go.microsoft.com/fwlink/?LinkId=154901)
+## <a name="see-also"></a>참고자료
+- [BizTalk Server 2006과 WF 프로젝트에 적절 한 워크플로 도구 선택](https://go.microsoft.com/fwlink/?LinkId=154901)

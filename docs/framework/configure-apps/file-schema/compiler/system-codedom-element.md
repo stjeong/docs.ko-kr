@@ -1,5 +1,5 @@
 ---
-title: '&lt;system.codedom&gt; 요소'
+title: '&lt;system.codedom&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: de0b026b0e4e76b7409e873813f4700c6ced9afd
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 235f3c2474acb488fecf34a64515973b45409e1b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54649429"
 ---
-# <a name="ltsystemcodedomgt-element"></a>&lt;system.codedom&gt; 요소
+# <a name="ltsystemcodedomgt-element"></a>&lt;system.codedom&gt; Element
 사용 가능한 언어 공급자에 대한 컴파일러 구성 설정을 지정합니다.  
   
  \<구성 > 요소  
@@ -48,11 +48,11 @@ ms.locfileid: "50187899"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
   
 ## <a name="remarks"></a>설명  
   
-## <a name="net-framework-version-20"></a>.NET framework 버전 2.0  
+## <a name="net-framework-version-20"></a>.NET Framework Version 2.0  
  합니다 [ \<system.codedom >](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) 요소와 같은.NET Framework와 함께 설치 되는 기본 공급자 외에도 컴퓨터에 설치 된 언어 공급자에 대 한 컴파일러 구성 설정을 포함 합니다 <xref:Microsoft.CSharp.CSharpCodeProvider> 하며 <xref:Microsoft.VisualBasic.VBCodeProvider>합니다. 합니다 [ \<컴파일러 >](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md) 요소에는 0 개 이상 포함 되어 [ \<컴파일러 >](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) 요소입니다. 각 [ \<컴파일러 >](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) 요소는 특정 언어 공급자에 대 한 컴파일러 구성 특성을 지정 합니다.  
   
  개발자 및 컴파일러 공급 구성 설정을 추가할 수 컴퓨터 구성 파일 (Machine.config)에 새 <xref:System.CodeDom.Compiler.CodeDomProvider> 구현 합니다. 사용 된 <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> 기본 언어 공급자 및 컴퓨터 컴파일러 구성 설정에 의해 식별 된 언어 공급자를 프로그래밍 방식으로 열거 하는 방법입니다.  
@@ -89,9 +89,9 @@ ms.locfileid: "50187899"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.CodeDom.Compiler.CompilerInfo>  
-- <xref:System.CodeDom.Compiler.CodeDomProvider>  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [컴파일러 및 언어 공급자 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.CodeDom.Compiler.CompilerInfo>
+- <xref:System.CodeDom.Compiler.CodeDomProvider>
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [컴파일러 및 언어 공급자 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
 - [\<compiler> 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

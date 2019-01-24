@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: c878e457-f715-46e4-a136-ff14d6c86018
-ms.openlocfilehash: f2df0dfa039fa37fd9d9b471d28b2a03f06b3037
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c6d00271f412829cb8e030c2b9a338f73327977b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724176"
 ---
 # <a name="walkthrough-simple-object-model-and-query-visual-basic"></a>연습: 간단한 개체 모델 및 쿼리(Visual Basic)
 이 연습에서는 간단한 기본 종단 간 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 시나리오에 대해 설명합니다. 샘플 Northwind 데이터베이스의 Customers 테이블을 모델링하는 엔터티 클래스를 만듭니다. 그런 다음 단순 쿼리를 만들어 London에 있는 고객을 나열합니다.  
@@ -42,32 +42,32 @@ ms.locfileid: "33365737"
 -   쿼리 실행 및 결과 검토  
   
 ## <a name="creating-a-linq-to-sql-solution"></a>LINQ to SQL 솔루션 만들기  
- 이 첫 번째 작업에서 빌드 및 실행 하는 데 필요한 참조가 포함 된 Visual Studio 솔루션을 만들는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트.  
+ 빌드 및 실행에 필요한 참조를 포함 하는 Visual Studio 솔루션을 만든이 첫 번째 태스크는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트입니다.  
   
 #### <a name="to-create-a-linq-to-sql-solution"></a>LINQ to SQL 솔루션을 만들려면  
   
 1.  **파일** 메뉴에서 **새 프로젝트**를 클릭합니다.  
   
-2.  에 **프로젝트 형식** 의 창은 **새 프로젝트** 대화 상자를 클릭 **Visual Basic**합니다.  
+2.  에 **프로젝트 형식** 창의 합니다 **새 프로젝트** 대화 상자에서 클릭 **Visual Basic**.  
   
-3.  **템플릿** 창에서 **콘솔 응용 프로그램**을 클릭합니다.  
+3.  **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.  
   
-4.  에 **이름** 상자에서 입력 **LinqConsoleApp**합니다.  
+4.  에 **이름을** 상자에 입력 **LinqConsoleApp**합니다.  
   
 5.  **확인**을 클릭합니다.  
   
 ## <a name="adding-linq-references-and-directives"></a>LINQ 참조 및 지시문 추가  
- 이 연습에서는 프로젝트에 기본적으로 설치되어 있지 않을 수 있는 어셈블리를 사용합니다. 경우 `System.Data.Linq` 프로젝트에 대 한 참조로 나열 되지 않은 (클릭 **모든 파일 표시** 에 **솔루션 탐색기** 확장는 **참조** 노드)에 설명 된 대로 추가 다음 단계입니다.  
+ 이 연습에서는 프로젝트에 기본적으로 설치되어 있지 않을 수 있는 어셈블리를 사용합니다. 하는 경우 `System.Data.Linq` 프로젝트에 대 한 참조로 나열 되지 않은 (클릭 **모든 파일 표시** 에서 **솔루션 탐색기** 확장 합니다 **참조** 노드)를에 설명 된 대로 추가 다음 단계입니다.  
   
 #### <a name="to-add-systemdatalinq"></a>System.Data.Linq를 추가하려면  
   
-1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 **참조**, 클릭 하 고 **참조 추가**합니다.  
+1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 **참조**를 클릭 하 고 **참조 추가**합니다.  
   
-2.  에 **참조 추가** 대화 상자를 클릭 **.NET**System.Data.Linq 어셈블리를 클릭 한 다음 클릭, **확인**합니다.  
+2.  에 **참조 추가** 대화 상자, 클릭 **.NET**, 필자는 System.Data.Linq 어셈블리를 클릭 한 다음 클릭 **확인**합니다.  
   
      어셈블리가 프로젝트에 추가됩니다.  
   
-3.  또한는 **참조 추가** 대화 상자를 클릭 **.NET**, 스크롤하여 및 System.Windows.Forms를 클릭 한 다음 클릭 **확인**합니다.  
+3.  또한 합니다 **참조 추가** 대화 상자, 클릭 **.NET**, 스크롤하여 및 System.Windows.Forms를 클릭 한 다음 클릭 **확인**합니다.  
   
      연습에서 메시지 상자를 지원하는 어셈블리가 프로젝트에 추가됩니다.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "33365737"
      [!code-vb[DLinqWalk1VB#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1VB/vb/Module1.vb#4)]  
   
 ## <a name="creating-a-simple-query"></a>단순 쿼리 작성  
- 이 단계에서는 데이터베이스 Customers 테이블에서 London에 있는 고객을 찾는 쿼리를 만듭니다. 이 단계의 쿼리 코드는 쿼리를 설명하기만 하고 실행하지는 않습니다. 이 방법은 라고 *지연 된 실행*합니다. 자세한 내용은 [LINQ 쿼리 소개(C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)를 참조하세요.  
+ 이 단계에서는 데이터베이스 Customers 테이블에서 London에 있는 고객을 찾는 쿼리를 만듭니다. 이 단계의 쿼리 코드는 쿼리를 설명하기만 하고 실행하지는 않습니다. 이 접근 방식 이라고 *지연 된 실행*합니다. 자세한 내용은 [LINQ 쿼리 소개(C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)를 참조하세요.  
   
  또한 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 생성하는 SQL 명령을 보여 주는 로그 출력을 만듭니다. <xref:System.Data.Linq.DataContext.Log%2A>를 사용하는 이 로깅 기능은 디버깅할 때와 데이터베이스로 전송되는 명령이 쿼리를 정확히 나타내는지 확인할 때 유용합니다.  
   
@@ -135,22 +135,22 @@ ms.locfileid: "33365737"
 2.  F5 키를 눌러 응용 프로그램을 디버깅합니다.  
   
     > [!NOTE]
-    >  응용 프로그램에서 런타임 오류를 생성할 경우의 문제 해결 섹션을 참조 하세요. [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)합니다.  
+    >  응용 프로그램에서 런타임 오류가 발생 하면 문제 해결 섹션을 참조 [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)합니다.  
   
      메시지 상자에 여섯 명의 고객이 나열됩니다. 콘솔 창에 생성된 SQL 코드가 표시됩니다.  
   
-3.  클릭 **확인** 메시지 상자를 닫습니다.  
+3.  **확인**을 클릭하여 메시지 상자를 닫습니다.  
   
      응용 프로그램을 닫습니다.  
   
-4.  에 **파일** 메뉴를 클릭 하 여 **모두 저장**합니다.  
+4.  **파일** 메뉴에서 **모두 저장**을 클릭합니다.  
   
      다음 연습을 계속하려면 이 응용 프로그램이 필요합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- [연습: 관계 간 쿼리 (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-visual-basic.md) 항목 계속 해 서이 연습에서는 완료할 합니다. 관계 간 쿼리 연습에서는 방법을 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 테이블, 유사한 쿼리 *조인* 관계형 데이터베이스에서입니다.  
+ [연습: 관계 간 쿼리 (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-visual-basic.md) 항목에서는이 연습에서는 끝나는 계속 합니다. 관계 간 쿼리 연습에서는 어떻게 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 비슷합니다 테이블에서 쿼리할 수 있습니다 *조인* 관계형 데이터베이스에서.  
   
  관계 간 쿼리 연습을 수행하려면 지금까지 완료한 연습에 대한 솔루션을 저장해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## <a name="see-also"></a>참고자료
+- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

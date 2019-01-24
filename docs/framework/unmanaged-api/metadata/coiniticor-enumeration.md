@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 56d90257389941189ff5036ebcb145fd0df17dc0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 224684bd76ec3318b2c7f8197263d66973ce27aa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33441428"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54716494"
 ---
 # <a name="coiniticor-enumeration"></a>COINITICOR 열거형
-사용 하는 상수를 지정 [CoInitializeCor](../../../../docs/framework/unmanaged-api/hosting/coinitializecor-function.md) 때 공용 언어 런타임을 초기화 합니다.  
+사용 하는 상수를 지정 [CoInitializeCor](../../../../docs/framework/unmanaged-api/hosting/coinitializecor-function.md) 공용 언어 런타임을 초기화할 때.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,13 +42,13 @@ typedef enum tagCOINITCOR
 |`COINITCOR`|기본 초기화 모드를 나타냅니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

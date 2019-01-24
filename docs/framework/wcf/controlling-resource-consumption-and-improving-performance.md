@@ -2,12 +2,12 @@
 title: 리소스 사용 제어 및 성능 향상
 ms.date: 03/30/2017
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
-ms.openlocfilehash: 1e0512ce62f5a7b25546e8824a745fdaabb5ec72
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 11d1333ed0ae8b46f8f87fa6f4643d4b31fac3ff
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54664163"
 ---
 # <a name="controlling-resource-consumption-and-improving-performance"></a>리소스 사용 제어 및 성능 향상
 이 항목에서는 리소스 소모를 작동 및 성능 메트릭에 영향을 주는 Windows Communication Foundation (WCF) 아키텍처의 다른 영역에서 다양 한 속성을 설명 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "43397877"
 ## <a name="performance-issues-when-hosting-wcf-services-under-aspnet"></a>WCF 서비스를 ASP.NET 호스팅할 때의 성능 문제
  WCF 서비스를 IIS 및 ASP.NET에 호스팅하는 경우 IIS 및 ASP.NET의 구성 설정이 WCF 서비스의 처리량 및 메모리 사용 공간에 영향을 줄 수 있습니다.  ASP.NET 성능에 대 한 자세한 내용은 참조 하세요. [ASP.NET 성능 향상](https://go.microsoft.com/fwlink/?LinkId=186462)합니다.  예상치 않은 결과를 일으킬 수 있는 설정 중 하나는 <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>의 속성인 <xref:System.Web.Configuration.ProcessModelSection>입니다. 응용 프로그램의 클라이언트 수가 고정되어 있거나 적은 경우 <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>를 2로 설정하면 다중 프로세서 컴퓨터에서 처리량이 크게 높아져 CPU 사용률이 100%에 가깝게 됩니다. 이러한 성능 증가는 비용을 초래합니다. 또한 메모리 사용량도 증가하여 확장성이 저하됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [관리 및 진단](../../../docs/framework/wcf/diagnostics/index.md)
 - [큰 데이터 및 스트리밍](../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)

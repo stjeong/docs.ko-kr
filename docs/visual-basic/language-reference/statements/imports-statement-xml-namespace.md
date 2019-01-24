@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Imports statement [Visual Basic]
 - namespaces [Visual Basic], importing
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-ms.openlocfilehash: 1100afd89b27e789c0db713291ed3656092fb0c7
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: e137b27ae5128e54eca466632cadad9908232045
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43802394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655987"
 ---
 # <a name="imports-statement-xml-namespace"></a>Imports 문(XML 네임스페이스)
 XML 리터럴과 XML 축 속성에 사용할 XML 네임 스페이스 접두사를 가져옵니다.  
@@ -30,7 +30,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
  선택 사항입니다. XML 특성과 해당 요소를 참조할 수는 문자열 `xmlNamespaceName`합니다. 없으면 `xmlNamespacePrefix` 는 제공 된 가져온된 XML 네임 스페이스는 기본 XML 네임 스페이스입니다. 올바른 XML 식별자 여야 합니다. 자세한 내용은 [XML 요소 선언 된 이름 및 특성](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)합니다.  
   
  `xmlNamespaceName`  
- 필수. 가져온 XML 네임 스페이스를 식별 하는 문자열입니다.  
+ 필수 요소. 가져온 XML 네임 스페이스를 식별 하는 문자열입니다.  
   
 ## <a name="remarks"></a>설명  
  사용할 수는 `Imports` 문에 전달 된 매개 변수 또는 XML 리터럴과 XML 축 속성을 사용 하 여 사용할 수 있는 전역 XML 네임 스페이스를 정의 하는 `GetXmlNamespace` 연산자. (사용에 관한 정보를 `Imports` 을 코드에서 형식 이름이 사용 되는 위치에 사용할 수 있는 별칭을 가져오기 위한 문 참조 [Imports 문 (.NET Namespace 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).) 구문을 사용 하 여 XML 네임 스페이스를 선언 합니다 `Imports` 문을 XML에서 사용 하는 구문과 동일 합니다. XML 파일에서 네임 스페이스 선언을 복사에 사용 하는 따라서는 `Imports` 문입니다.  
@@ -88,8 +88,8 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  `Patrick Hines`  
   
-## <a name="see-also"></a>참고 항목  
- [XML 요소 리터럴](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
- [GetXmlNamespace 연산자](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)
+## <a name="see-also"></a>참고자료
+- [XML 요소 리터럴](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)
+- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [GetXmlNamespace 연산자](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)

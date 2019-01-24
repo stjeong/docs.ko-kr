@@ -2,12 +2,12 @@
 title: USING(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 20f58b8f-6070-4456-b7e8-5ff3d6269273
-ms.openlocfilehash: 89306c8b4c317ebaba0d964869c4fe9e1028631a
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a07ee1c32a93ee22b7418784fbd893e7699c553e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32762340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744299"
 ---
 # <a name="using-entity-sql"></a>USING(Entity SQL)
 쿼리 식에 사용되는 네임스페이스를 지정합니다.  
@@ -28,7 +28,7 @@ USING [ alias = ] namespace
 ## <a name="example"></a>예제  
  다음 Entity SQL 쿼리에서는 USING 연산자를 사용하여 쿼리 식에 사용되는 네임스페이스를 지정합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
-1.  절차에 따라 [하는 방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
+1.  절차에 따라 [방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
   
 2.  다음 쿼리를 `ExecutePrimitiveTypeQuery` 메서드에 인수로 전달합니다.  
   
@@ -36,6 +36,6 @@ USING [ alias = ] namespace
 using SqlServer; RAND()  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [네임스페이스](../../../../../../docs/framework/data/adonet/ef/language-reference/namespaces-entity-sql.md)  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## <a name="see-also"></a>참고자료
+- [네임스페이스](../../../../../../docs/framework/data/adonet/ef/language-reference/namespaces-entity-sql.md)
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

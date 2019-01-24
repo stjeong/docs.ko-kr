@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XAML [XAML Services], TypeConverter
 - type conversion for XAML [XAML Services]
 ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
-ms.openlocfilehash: 25705b573be74ea5a2d71537b0c165a6f619d1d9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 79b4d972e5d82eaac6571efebb974ac7d764d30e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54659152"
 ---
 # <a name="type-converters-for-xaml-overview"></a>XAML을 위한 형식 변환기 개요
 형식 변환기는 XAML 태그의 문자열에서 개체 그래프의 특정 개체로 변환하는 논리를 개체 작성기에 제공합니다. .NET Framework XAML 서비스에서 형식 변환기는 <xref:System.ComponentModel.TypeConverter>에서 파생되는 클래스여야 합니다. 또한 일부 변환기는 XAML 저장 경로를 지원하며 serialization 태그에서 개체를 문자열 형식으로 직렬화하는 데 사용할 수 있습니다. 이 항목에서는 XAML의 형식 변환기가 호출되는 방법 및 시기에 대해 설명하고 <xref:System.ComponentModel.TypeConverter>의 메서드 재정의에 대한 구현 권장 사항을 제공합니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "43519155"
   
  이러한 멤버 중 가장 중요한 메서드는 입력 문자열을 필요한 개체 형식으로 변환하는 <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A>입니다. <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> 메서드는 광범위한 형식을 변환기의 지정된 대상 형식으로 변환하기 위해 구현할 수 있습니다. 따라서 런타임 변환 지원과 같이 XAML 이상으로 확장되는 용도로 사용할 수 있습니다. 그러나 XAML 용도에서는 <xref:System.String> 입력을 처리할 수 있는 코드 경로만 중요합니다.  
   
- 다음으로 중요한 메서드는 <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>입니다. 응용 프로그램이 태그 표현으로 변환되는 경우(예: 파일로 XAML에 저장되는 경우) <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> 는 XAML 텍스트 작성기에서 태그 표현을 생성하는 더 큰 시나리오에 포함됩니다. 이 경우 XAML에 중요한 코드 경로는 호출자가 `destinationType` 의 <xref:System.String>을 전달하는 경우입니다.  
+ 다음으로 중요한 메서드는 <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>입니다. 애플리케이션이 태그 표현으로 변환되는 경우(예: 파일로 XAML에 저장되는 경우) <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> 는 XAML 텍스트 작성기에서 태그 표현을 생성하는 더 큰 시나리오에 포함됩니다. 이 경우 XAML에 중요한 코드 경로는 호출자가 `destinationType` 의 <xref:System.String>을 전달하는 경우입니다.  
   
  <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A> 및 <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> 은 서비스에서 <xref:System.ComponentModel.TypeConverter> 구현의 기능을 쿼리할 때 사용되는 지원 메서드입니다. 변환기의 동일한 변환 메서드에서 지원하는 형식 관련 케이스에 대해 `true` 를 반환하려면 이러한 메서드를 구현해야 합니다. XAML 용도에서는 일반적으로 <xref:System.String> 형식을 의미합니다.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "43519155"
 ## <a name="type-converters-in-the-xaml-node-stream"></a>XAML 노드 스트림의 형식 변환기  
  XAML 노드 스트림을 사용하여 작업하는 경우 형식 변환기의 동작 또는 최종 결과가 아직 실행되지 않습니다. 로드 경로에서 로드하기 위해 결국 형식 변환이 필요한 특성 문자열은 시작 멤버 및 종료 멤버 내에서 텍스트 값으로 유지됩니다. 결국 이 작업에 필요한 형식 변환기는 <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> 속성을 사용하여 확인할 수 있습니다. 그러나 <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType>에서 유효한 값을 가져오려면 기본 멤버를 통해 이러한 정보에 액세스할 수 있는 XAML 스키마 컨텍스트 또는 멤버에서 사용하는 개체 값의 형식을 사용해야 합니다. 또한 형식 변환 동작을 호출하려면 형식 매핑이 필요하고 변환기 인스턴스를 만들어야 하므로 XAML 스키마 컨텍스트가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ComponentModel.TypeConverterAttribute>  
- [XAML을 위한 형식 변환기 및 태그 확장명](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ComponentModel.TypeConverterAttribute>
+- [XAML을 위한 형식 변환기 및 태그 확장명](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)
+- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

@@ -1,12 +1,12 @@
 ---
 title: $ (Visual Basic 참조)
 ms.date: 10/31/2017
-ms.openlocfilehash: f4651849241ec0ccf8052cc012ae97babd299e62
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 94c88b5f6d741bb35af775b56b1bab273bbf5b1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715428"
 ---
 # <a name="-visual-basic-reference"></a>$ (Visual Basic 참조)
 
@@ -18,6 +18,6 @@ ms.locfileid: "50183440"
 
 보간된 문자열에 대한 자세한 내용은 [보간된 문자열](../../programming-guide/language-features/strings/interpolated-strings.md) 항목을 참조하세요.
 
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 참조](../index.md)  
- [Visual Basic 특수 문자](index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 참조](../index.md)
+- [Visual Basic 특수 문자](index.md)

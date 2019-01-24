@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: eabaf1dd99fce7cd4c45f80666534f904fcdfdf9
-ms.sourcegitcommit: 895c7602386a6dfe7ca4facce3d965b27e5c6e87
+ms.openlocfilehash: e6615ab30fdc0d0ab65f135e1df4e206f5548dc7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34311977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743788"
 ---
 # <a name="ltlibrarygt-element-net-native"></a>&lt;라이브러리&gt; 요소(.NET 네이티브)
 런타임에 해당 메타데이터를 리플렉션에 사용할 수 있는 형식 및 형식 멤버가 포함된 어셈블리를 정의합니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "34311977"
   
  `<Library>` 요소는 런타임에 해당 메타데이터가 필요한 프로그램 요소를 정의하는 컨테이너로 사용되며 정책을 표현하지는 않습니다. 컴파일 타임에 컴파일러 도구는 `<Library>` 요소로 지정된 라이브러리에서만 자식 요소가 식별한 프로그램 요소를 검색합니다. 반면 .NET Framework 핵심 라이브러리를 비롯한 모든 라이브러리에서 [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) 요소의 자식 요소가 식별한 프로그램 요소를 검색합니다.  
   
- `<Library>` 지시문은 조건부로 사용할 수 있습니다. 하는 경우의 이름을 `<Library>` 요소 시작 되 고 별표로 끝나는 (\*), `<Library>` 지시문이 응용 프로그램에서 별표 사이 지정 된 어셈블리를 참조 하는 경우에 적용 합니다. 예를 들어 다음 런타임 지시문은 Utilities.dll 어셈블리를 앱이 참조하는 경우에만 적용됩니다.  
+ `<Library>` 지시문은 조건부로 사용할 수 있습니다. 경우의 이름을 합니다 `<Library>` 요소 시작 되 고 별표를 사용 하 여 끝나는 (\*), `<Library>` 지시문이 앱에서 별표 사이 지정 된 어셈블리를 참조할 경우에 적용 합니다. 예를 들어 다음 런타임 지시문은 Utilities.dll 어셈블리를 앱이 참조하는 경우에만 적용됩니다.  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -68,8 +68,8 @@ ms.locfileid: "34311977"
 </Directives>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [\<응용 프로그램 > 요소](../../../docs/framework/net-native/application-element-net-native.md)  
- [\<지시문 > 요소](../../../docs/framework/net-native/directives-element-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+## <a name="see-also"></a>참고자료
+- [\<응용 프로그램 > 요소](../../../docs/framework/net-native/application-element-net-native.md)
+- [\<지시문 > 요소](../../../docs/framework/net-native/directives-element-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fe5e1267b619d5900ed9af55dd6079a8f38d6550
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: c867945f8a75cade5c7405b2908e2819f5d261d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33406902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706974"
 ---
 # <a name="cordebugblockingreason-enumeration"></a>CorDebugBlockingReason 열거형
 지정된 개체에서 스레드가 차단될 수 있는 이유를 지정합니다.  
@@ -42,21 +42,21 @@ Typedef enum CorDebugBlockingReason
 |멤버|설명|  
 |------------|-----------------|  
 |`BLOCKING_NONE`|내부 전용입니다.|  
-|`BLOCKING_MONITOR_CRITICAL_SECTION`|스레드 임계 연결 된 개체에 대 한 모니터 잠금과 획득 하려고 합니다. 중 하나를 호출 하는 경우 일반적으로 발생이 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> 메서드.|  
-|`BLOCKING_MONITOR_EVENT`|스레드가 개체에 대 한 모니터 잠금과와 연결 하는 이벤트를 기다리고 있습니다. 중 하나를 호출 하는 경우 일반적으로 발생이 <xref:System.Threading.Monitor?displayProperty=nameWithType> `Wait` 메서드.|  
+|`BLOCKING_MONITOR_CRITICAL_SECTION`|스레드 개체에 대 한 모니터 잠금과 사용 하 여 연결 하는 중요 섹션을 획득 하려고 합니다. 일반적으로이 경우 중 하나를 호출 합니다 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> 메서드.|  
+|`BLOCKING_MONITOR_EVENT`|개체에 대 한 모니터 잠금과 연관 된 이벤트에 대 한 스레드를 기다리고 있습니다. 일반적으로이 경우 중 하나를 호출 합니다 <xref:System.Threading.Monitor?displayProperty=nameWithType> `Wait` 메서드.|  
   
 ## <a name="remarks"></a>설명  
- 때는 `BLOCKING_MONITOR_CRITICAL_SECTION` 또는 `BLOCKING_MONITOR_EVENT` 멤버에 사용 하는 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 구조는 `pBlockingObject` 구조 가리키는 입력 되 고 개체를 나타내는 "ICorDebugValue" 인터페이스의 멤버 . 구현 보장도 [ICorDebugHeapValue3](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-interface.md) 인터페이스입니다.  
+ 경우는 `BLOCKING_MONITOR_CRITICAL_SECTION` 또는 `BLOCKING_MONITOR_EVENT` 멤버는를 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 구조는 `pBlockingObject` 구조 가리킵니다 입력 중인 개체를 나타내는 "ICorDebugValue" 인터페이스 멤버 . 구현도 반드시 합니다 [ICorDebugHeapValue3](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-interface.md) 인터페이스입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 열거형](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 열거형](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)

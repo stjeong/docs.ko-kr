@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 57a350fadfa77fdad545ca7ccf2f63d28607c2ba
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 84b68638ed0f7a86156cf7e5fcc98d3c02cba18a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33403922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54662610"
 ---
 # <a name="addfile-method1"></a>AddFile Method1
-어셈블리에 파일을 추가합니다. 바인딩되지 않은 모듈을 만드는 데 사용할 수도 있습니다.  
+어셈블리 파일을 추가합니다. 바인딩되지 않은 모듈을 만드는 데 사용할 수도 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,16 +41,16 @@ HRESULT AddFile(
   
 #### <a name="parameters"></a>매개 변수  
  `AssemblyID`  
- 확대할 어셈블리의 고유 ID입니다.  
+ 확대 하 여 어셈블리의 고유 ID입니다.  
   
  `pszFilename`  
  추가할 파일의 정규화 된 이름입니다.  
   
  `dwFlags`  
- COM + FileDef 플래그와 같은 `ffContainsNoMetaData` 및 `ffWriteable`합니다. `dwFlags` 에 전달 [DefineFile 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md)합니다.  
+ COM + FileDef 플래그와 같은 `ffContainsNoMetaData` 고 `ffWriteable`입니다. `dwFlags` 에 전달 됩니다 [DefineFile 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md)합니다.  
   
  `pEmitter`  
- [IMetaDataEmit 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md) 필요한 경우 메타 데이터를 내보내는 데 사용할 인터페이스입니다.  
+ [IMetaDataEmit 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md) 인터페이스를 필요한 경우 메타 데이터를 내보내는 데 사용할 수 있습니다.  
   
  `pFileToken`  
  추가 된 파일의 고유 ID가 저장 될 위치에 대 한 포인터입니다.  
@@ -61,7 +61,7 @@ HRESULT AddFile(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

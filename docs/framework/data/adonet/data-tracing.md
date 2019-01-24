@@ -2,12 +2,12 @@
 title: ADO.NET의 데이터 추적
 ms.date: 03/30/2017
 ms.assetid: a6a752a5-d2a9-4335-a382-b58690ccb79f
-ms.openlocfilehash: 037db6f4e5695e00401c81e1490953efe2fc9b99
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ac9e290d4c9209cbf8ccf5eb3acdeceb68f9021b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54721908"
 ---
 # <a name="data-tracing-in-adonet"></a>ADO.NET의 데이터 추적
 ADO.NET ADO.NET 뿐만 아니라 SQL Server, Oracle, OLE DB 및 ODBC에 대 한.NET 데이터 공급자에서 지원 되는 기본 제공 데이터 추적 기능을 기능 <xref:System.Data.DataSet>, 및 SQL Server 네트워크 프로토콜입니다.  
@@ -51,7 +51,7 @@ add event rpc_completed (action (client_connection_id))
 add target ring_buffer with (track_causality=on)  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [.NET Framework의 네트워크 추적](../../../../docs/framework/network-programming/network-tracing.md)  
- [응용 프로그램 추적 및 조율](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [.NET Framework의 네트워크 추적](../../../../docs/framework/network-programming/network-tracing.md)
+- [응용 프로그램 추적 및 조율](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

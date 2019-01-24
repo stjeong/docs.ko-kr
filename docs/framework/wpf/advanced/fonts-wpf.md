@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - fonts [WPF]
 ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
-ms.openlocfilehash: 3a7accd2e98423bf3ab0133a5eb36610b3ebb414
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f1913832bf95d0ea7188637f5456e4ff8f24695e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33542612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718912"
 ---
 # <a name="fonts-wpf"></a>글꼴(WPF)
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 사용 하 여 텍스트의 풍부한 표시에 대 한 지원이 포함 되어 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴입니다. 샘플 팩 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴에 포함 되어는 [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)]합니다.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 사용 하 여 텍스트의 풍부한 기능의 프레젠테이션 지원 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴입니다. 샘플 팩 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴에 포함 된를 [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)]입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
@@ -22,8 +22,8 @@ ms.locfileid: "33542612"
  [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
  [방법 항목](../../../../docs/framework/wpf/advanced/fonts-how-to-topics.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.FontStyle>  
- <xref:System.Windows.SystemFonts>  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.FontStyle>
+- <xref:System.Windows.SystemFonts>
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

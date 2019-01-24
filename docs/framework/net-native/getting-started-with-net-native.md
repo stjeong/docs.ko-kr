@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 41679d4041a6a5a7b9b71a451a083c539d6b4c7b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: dd46266286687881956e5de31963ac5957dede84
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54641579"
 ---
 # <a name="getting-started-with-net-native"></a>.NET 네이티브 시작
 새로운 Windows 10용 Windows 앱을 작성하든지 기존 Windows 스토어 앱을 마이그레이션하든지 상관없이 동일한 절차 집합을 따르면 됩니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱을 만들려면 다음 단계를 수행합니다.  
@@ -26,10 +26,10 @@ ms.locfileid: "47196491"
 >  기존 Windows 스토어 앱을 [!INCLUDE[net_native](../../../includes/net-native-md.md)]로 마이그레이션하는 경우 [Windows 스토어 앱을 .NET 네이티브로 마이그레이션](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md).  
   
 <a name="Step1"></a>   
-## <a name="step-1-develop-and-test-debug-builds-of-your-uwp-app"></a>1단계: UWP 앱의 디버그 빌드 개발 및 테스트  
+## <a name="step-1-develop-and-test-debug-builds-of-your-uwp-app"></a>1단계: 개발 및 UWP 앱의 디버그 빌드를 테스트 합니다.  
  새 앱을 개발하든지 기존 앱을 마이그레이션하든지 상관없이 모든 Windows 앱에 동일한 프로세스를 따릅니다.  
   
-1.  Visual C# 또는 Visual Basic용 유니버설 Windows 앱 템플릿을 사용하여 Visual Studio에서 새 UWP 프로젝트를 만듭니다. 기본적으로 모든 UWP 응용 프로그램은 CoreCLR을 대상으로 하며 해당 릴리스 빌드는 .NET 네이티브 도구 체인을 사용하여 컴파일됩니다.  
+1.  Visual C# 또는 Visual Basic용 유니버설 Windows 앱 템플릿을 사용하여 Visual Studio에서 새 UWP 프로젝트를 만듭니다. 기본적으로 모든 UWP 애플리케이션은 CoreCLR을 대상으로 하며 해당 릴리스 빌드는 .NET 네이티브 도구 체인을 사용하여 컴파일됩니다.  
   
 2.  .NET 네이티브 도구 체인을 사용하는 UWP 앱 프로젝트 컴파일과 도구 체인이 없는 프로젝트 컴파일 간에 알려진 호환성 문제가 몇 가지 있습니다. 자세한 내용은 [마이그레이션 가이드](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md) 를 참조하세요.  
   
@@ -71,15 +71,15 @@ ms.locfileid: "47196491"
 >  런타임 지시문 파일에 사용되는 형식 이름은 정규화된 이름이어야 합니다. 예를 들어 파일이 "String"이 아닌 "System.String"을 지정해야 합니다.  
   
 <a name="Step3"></a>   
-## <a name="step-3-deploy-and-test-the-release-builds-of-your-app"></a>3단계: 앱의 릴리스 빌드 배포 및 테스트  
+## <a name="step-3-deploy-and-test-the-release-builds-of-your-app"></a>3단계: 배포 하 고 앱의 릴리스 빌드를 테스트 합니다.  
  런타임 지시문 파일을 업데이트한 후에는 앱의 릴리스 빌드를 다시 빌드하고 배포할 수 있습니다. .NET 네이티브 이진 파일은 프로젝트 **속성** 대화 상자 **컴파일** 탭의 **빌드 출력 경로** 텍스트 상자에 지정된 디렉터리의 ILC.out 하위 디렉터리에 저장됩니다. 이 폴더에 없는 이진 파일은 .NET 네이티브로 컴파일되지 않은 것입니다. 각각의 대상 플랫폼에서 앱을 철저하게 테스트하고 오류 시나리오를 비롯한 모든 시나리오를 테스트합니다.  
   
- 앱이 정상적으로 작동하지 않는 경우(특히 런타임에 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 또는 [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 예외가 throw되는 경우) 다음 섹션인 [4단계: 수동으로 누락된 메타데이터 문제 해결](#Step4)의 지침을 따릅니다. 첫째 예외를 사용하도록 설정하면 이러한 버그를 찾는 데 도움이 될 수 있습니다.  
+ 앱이 제대로 작동 하지 않는 경우 (throw 되는 경우에 특히 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 하거나 [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 런타임 시 예외), 다음의 지침에 따라 섹션에서는 [4 단계: 누락 된 메타 데이터를 수동으로 해결](#Step4)합니다. 첫째 예외를 사용하도록 설정하면 이러한 버그를 찾는 데 도움이 될 수 있습니다.  
   
  앱의 디버그 빌드를 테스트 및 디버그했으며 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 및 [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 예외가 제거되었음을 확인했으면 앱을 최적화된 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱으로 테스트해야 합니다. 이렇게 하려면 활성 프로젝트 구성을 **디버그** 에서 **릴리스**로 변경합니다.  
   
 <a name="Step4"></a>   
-## <a name="step-4-manually-resolve-missing-metadata"></a>4단계: 수동으로 누락된 메타데이터 문제 해결  
+## <a name="step-4-manually-resolve-missing-metadata"></a>4단계: 누락 된 메타 데이터를 수동으로 해결  
  데스크톱에서는 발생하지 않지만 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 에서는 발생하는 가장 흔한 오류는 런타임 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)또는 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외입니다. 경우에 따라서는 메타데이터가 없어서 예측할 수 없는 동작이 발생하거나 앱 자체에도 오류가 발생할 수 있습니다. 이 섹션에서는 런타임 지시문 파일에 지시문을 추가하여 이러한 예외를 디버그 및 해결하는 방법을 설명합니다. 런타임 지시문 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 참조하세요. 런타임 지시문을 추가한 후에는 다시 [앱을 배포 및 테스트](#Step3)하고 예외가 더 이상 발생하지 않을 때까지 새로 발생하는 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 및 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외를 해결해야 합니다.  
   
 > [!TIP]
@@ -106,17 +106,17 @@ ms.locfileid: "47196491"
   
  앱을 테스트할 때 발생하는 예외 및 기타 문제를 처리하는 몇 가지 구체적인 예제는 다음 항목을 참조하세요.  
   
--   [예: 데이터를 바인딩하는 경우 예외 처리](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)  
+-   [예제: 데이터를 바인딩하는 경우 예외를 처리](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)  
   
--   [예: 동적 프로그래밍 문제 해결](../../../docs/framework/net-native/example-troubleshooting-dynamic-programming.md)  
+-   [예제: 동적 프로그래밍 문제 해결](../../../docs/framework/net-native/example-troubleshooting-dynamic-programming.md)  
   
 -   [.NET 네이티브 앱의 런타임 예외](../../../docs/framework/net-native/runtime-exceptions-in-net-native-apps.md)  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [NIB:.NET 네이티브 설치 및 구성](https://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)  
- [.NET 네이티브 및 컴파일](../../../docs/framework/net-native/net-native-and-compilation.md)  
- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)  
- [리플렉션을 사용하는 API](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)  
- [Serialization 및 메타데이터](../../../docs/framework/net-native/serialization-and-metadata.md)  
- [Windows 스토어 앱을 .NET 네이티브로 마이그레이션](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)
+## <a name="see-also"></a>참고자료
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [NIB:.NET 네이티브 설치 및 구성](https://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)
+- [.NET 네이티브 및 컴파일](../../../docs/framework/net-native/net-native-and-compilation.md)
+- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)
+- [리플렉션을 사용하는 API](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)
+- [Serialization 및 메타데이터](../../../docs/framework/net-native/serialization-and-metadata.md)
+- [Windows 스토어 앱을 .NET 네이티브로 마이그레이션](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)
