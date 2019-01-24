@@ -2,12 +2,12 @@
 title: 전송 보안을 사용하여 메시지에 보안 설정
 ms.date: 03/30/2017
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
-ms.openlocfilehash: 660c3c002f1892a91a5c0eaefb2cc5c16bb460a3
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4a67cc8265254741a58c9b86bc45eff9c9366bcf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54747949"
 ---
 # <a name="securing-messages-using-transport-security"></a>전송 보안을 사용하여 메시지에 보안 설정
 이 단원에서는 큐에 보내는 메시지를 보안 설정하는 데 사용할 수 있는 메시지 큐(MSMQ) 전송 보안에 대해 설명합니다.  
@@ -96,7 +96,7 @@ ms.locfileid: "50187756"
   
  지원되는 알고리즘은 `MD5`, `SHA1`, `SHA256` 및 `SHA512`입니다. 기본값은 `SHA1`입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [메시지 큐](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)  
- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- [메시지 큐](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)
+- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

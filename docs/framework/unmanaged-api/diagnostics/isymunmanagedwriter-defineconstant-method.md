@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0c7cf800dafa9f3e213a012f49c73d51c78e7074
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e03339ff2c1205f66281bd31c3ef67439feea39c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33427407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726490"
 ---
 # <a name="isymunmanagedwriterdefineconstant-method"></a>ISymUnmanagedWriter::DefineConstant 메서드
 상수 값에 대 한 이름을 정의합니다.  
@@ -39,7 +39,7 @@ HRESULT DefineConstant(
   
 #### <a name="parameters"></a>매개 변수  
  `name`  
- [in] 에 대 한 포인터는 `WCHAR` 상수 이름을 정의 하는 합니다.  
+ [in] 에 대 한 포인터를 `WCHAR` 상수 이름을 정의 하는 합니다.  
   
  `value`  
  [in] 상수의 값입니다.  
@@ -51,11 +51,11 @@ HRESULT DefineConstant(
  [in] 상수에 대 한 형식 서명입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)  
- [DefineConstant2 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineconstant2-method.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [DefineConstant2 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineconstant2-method.md)

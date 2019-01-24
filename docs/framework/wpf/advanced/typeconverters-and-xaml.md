@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - XAML [WPF], TypeConverter class
 ms.assetid: f6313e4d-e89d-497d-ac87-b43511a1ae4b
-ms.openlocfilehash: 53e2d14cf331cf41b20300afbe8966538bf621ca
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 29286328c960707151fd5b6f2804346373000ad4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43407111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54748079"
 ---
 # <a name="typeconverters-and-xaml"></a>TypeConverter 및 XAML
 이 항목에서는 문자열에서 형식 변환의 용도를 일반 XAML 언어 기능으로 소개합니다. .NET framework에서 <xref:System.ComponentModel.TypeConverter> 클래스 XAML 특성 사용에서 속성 값으로 사용할 수 있는 관리 되는 사용자 지정 클래스 구현의 일부로 특정 용도로 사용 됩니다. 적용 해야 할 수는 사용자 지정 클래스를 작성 하는 경우 XAML 설정할 수 있는 특성 값으로 사용할 수 있으려면 클래스의 인스턴스를 <xref:System.ComponentModel.TypeConverterAttribute> 클래스에 사용자 지정 작성 <xref:System.ComponentModel.TypeConverter> 클래스 중 하나 또는 둘 다.  
@@ -24,7 +24,7 @@ ms.locfileid: "43407111"
  XAML 프로세서에서 특성 값을 처리하려면 두 가지 정보가 필요합니다. 첫 번째 정보는 설정되는 속성의 값 형식입니다. 특성 값을 정의하고 XAML에서 처리되는 모든 문자열은 결국 해당 형식의 값으로 변환되거나 확인되어야 합니다. 값이 숫자 값과 같이 XAML 파서에서 인식되는 기본 형식인 경우 문자열의 직접 변환이 시도됩니다. 값이 열거형인 경우에는 문자열은 이름이 해당 열거형에 명명된 상수와 일치하는지 확인하는 데 사용됩니다. 값이 파서에서 인식되는 기본 형식이나 열거형이 아닌 경우 해당 형식은 변환된 문자열에 따라 형식의 인스턴스나 값을 제공할 수 있어야 합니다. 이렇게 하려면 형식 변환기 클래스를 지정합니다. 실제로 형식 변환기는 XAML 시나리오와 .NET 코드의 코드 호출에서 다른 클래스의 값을 제공하기 위한 도우미 클래스입니다.  
   
 ### <a name="using-existing-type-conversion-behavior-in-xaml"></a>XAML에서 기존 형식 변환 동작 사용  
- 기본 XAML 개념에 대한 숙련도에 따라 자신도 모르게 기본 응용 프로그램 XAML에서 형식 변환 동작을 이미 사용하고 있을 수 있습니다. WPF는 수백 개의 형식의 값을 사용 하는 속성을 정의 하는 예를 들어 <xref:System.Windows.Point>합니다. A <xref:System.Windows.Point> 는 2 차원 좌표 공간의 좌표를 설명 하는 값 이며 실제로 두 가지 중요 한 속성이 있습니다: <xref:System.Windows.Point.X%2A> 및 <xref:System.Windows.Point.Y%2A>합니다. XAML의 시점을 지정 하는 경우 지정 구분 기호 (쉼표)를 사용 하 여 문자열로 간의 합니다 <xref:System.Windows.Point.X%2A> 및 <xref:System.Windows.Point.Y%2A> 제공 하는 값입니다. 예: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">`  
+ 기본 XAML 개념에 대한 숙련도에 따라 자신도 모르게 기본 애플리케이션 XAML에서 형식 변환 동작을 이미 사용하고 있을 수 있습니다. WPF는 수백 개의 형식의 값을 사용 하는 속성을 정의 하는 예를 들어 <xref:System.Windows.Point>합니다. A <xref:System.Windows.Point> 는 2 차원 좌표 공간의 좌표를 설명 하는 값 이며 실제로 두 가지 중요 한 속성이 있습니다: <xref:System.Windows.Point.X%2A> 및 <xref:System.Windows.Point.Y%2A>합니다. XAML의 시점을 지정 하는 경우 지정 구분 기호 (쉼표)를 사용 하 여 문자열로 간의 합니다 <xref:System.Windows.Point.X%2A> 및 <xref:System.Windows.Point.Y%2A> 제공 하는 값입니다. 예: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">`  
   
  도이 단순 유형의 <xref:System.Windows.Point> XAML에서의 간단한 사용법 형식 변환기가 필요 하 고 있습니다. 클래스는이 예제의 <xref:System.Windows.PointConverter>합니다.  
   
@@ -114,8 +114,8 @@ ms.locfileid: "43407111"
   
  또한 속성별로 형식 변환기를 제공할 수 있습니다. 적용 하는 대신 한 [!INCLUDE[TLA#tla_netframewkattr](../../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> 클래스 정의에 속성 정의에 적용 (기본 정의 하지는 `get` / `set` 그 구현). 속성의 형식은 사용자 지정 형식 변환기에서 처리되는 형식과 일치해야 합니다. XAML 프로세서에서 해당 속성의 값을 처리할 때 이 특성을 적용하면 입력 문자열을 처리하고 개체 인스턴스를 반환할 수 있습니다. 속성별 형식 변환기 기술은 Microsoft.NET Framework 또는 일부 다른 라이브러리에서 클래스 정의 제어할 수 없습니다 하 고 적용할 수 없습니다. 속성 형식을 사용 하려는 경우에 특히 유용는 <xref:System.ComponentModel.TypeConverterAttribute> 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ComponentModel.TypeConverter>  
- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
- [XAML 구문 정보](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ComponentModel.TypeConverter>
+- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [XAML 구문 정보](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)

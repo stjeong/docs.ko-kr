@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
-ms.openlocfilehash: f5b2775b2f0c8e35d398d5d0666d47bf0009a9e8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 783ecb35408f63c7f3e7299e503c3f0fda3f36ba
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54666438"
 ---
 # <a name="querying-across-relationships"></a>관계 간 쿼리
 클래스 정의에서 다른 개체 또는 다른 개체의 컬렉션에 대한 참조는 데이터베이스의 외래 키 관계에 직접적으로 해당합니다. 점 표기법을 사용하여 쿼리할 때 이러한 관계를 사용하여 관계 속성에 액세스하고 한 개체에서 다른 개체로 이동할 수 있습니다. 이러한 액세스 작업은 해당 SQL에서 더 복잡한 조인이나 연관된 하위 쿼리로 변환됩니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33360467"
  [!code-csharp[DLinqQueryConcepts#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#3)]
  [!code-vb[DLinqQueryConcepts#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#3)]  
   
- 작성 해야 관계 속성이 존재 하지 않은 경우 수동으로으로 *조인*것 처럼 다음 코드 에서처럼 SQL 쿼리를 수행 하려면:  
+ 작성 해야 관계 속성이 존재 하지 않으면으로 직접 *조인*, 다음 코드와 같이 SQL 쿼리의 경우와 마찬가지로:  
   
  [!code-csharp[DLinqQueryConcepts#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#4)]
  [!code-vb[DLinqQueryConcepts#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#4)]  
@@ -31,9 +31,9 @@ ms.locfileid: "33360467"
   
  이제 관계가 존재하므로 클래스에 정의된 관계 속성을 참조하여 쿼리를 작성할 수 있습니다. 이러한 관계 참조는 데이터베이스의 외래 키 관계에 해당합니다. 이러한 관계를 사용하는 작업은 해당 SQL에서 더 복잡한 조인으로 변환됩니다. <xref:System.Data.Linq.Mapping.AssociationAttribute> 특성을 사용하여 관계를 정의한 경우 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 명시적 조인을 코딩할 필요가 없습니다.  
   
- 이 가정을 유지 하기 위해 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 라는 기술을 구현 *지연 된 로드*합니다. 자세한 내용은 참조 [지연 된 실행과 즉시 로드 비교](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md)합니다.  
+ 이 가정을 유지 하는 데 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 라는 기술을 구현 *지연 된 로드*합니다. 자세한 내용은 [즉시 로드 비교 지연](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md)합니다.  
   
- 프로젝트의 목록에 다음 SQL 쿼리 `CustomerID` - `OrderID` 쌍:  
+ 프로젝트의 목록에 다음 SQL 쿼리에서 것이 좋습니다 `CustomerID` - `OrderID` 쌍:  
   
 ```  
 SELECT t0.CustomerID, t1.OrderID  
@@ -42,15 +42,15 @@ FROM   Customers AS t0 INNER JOIN
 WHERE  (t0.City = @p0)  
 ```  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]을 사용하여 동일한 결과를 얻으려면 이미 `Orders` 클래스에 있는 `Customer` 속성 참조를 사용합니다. `Orders` 프로젝트 쿼리를 실행 하는 데 필요한 정보를 제공 하는 참조는 `CustomerID` - `OrderID` 다음 코드 에서처럼 쌍:  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]을 사용하여 동일한 결과를 얻으려면 이미 `Orders` 클래스에 있는 `Customer` 속성 참조를 사용합니다. 합니다 `Orders` 참조에서는 쿼리 및 프로젝트를 실행 하는 데 필요한 정보를 제공 합니다 `CustomerID` - `OrderID` 다음 코드 에서처럼 쌍:  
   
  [!code-csharp[DLinqQueryConcepts#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#5)]
  [!code-vb[DLinqQueryConcepts#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#5)]  
   
- 반대로 할 수도 있습니다. 즉, `Orders`를 쿼리하고 해당 `Customer` 관계 참조를 사용하여 연관된 `Customer` 개체에 대한 정보에 액세스할 수 있습니다. 다음 코드와 동일한 `CustomerID` - `OrderID` 쿼리하여 이전 처럼 하지만이 이번 쌍 `Orders` 대신 `Customers`합니다.  
+ 반대로 할 수도 있습니다. 즉, `Orders`를 쿼리하고 해당 `Customer` 관계 참조를 사용하여 연관된 `Customer` 개체에 대한 정보에 액세스할 수 있습니다. 다음 코드는 동일한 프로젝트 `CustomerID` - `OrderID` 쿼리하여 이전과 마찬가지로 이번 쌍 `Orders` 대신 `Customers`합니다.  
   
  [!code-csharp[DLinqQueryConcepts#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#6)]
  [!code-vb[DLinqQueryConcepts#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#6)]  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+## <a name="see-also"></a>참고자료
+- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

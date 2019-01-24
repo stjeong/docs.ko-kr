@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
-ms.openlocfilehash: 86ded7351d435b3a7077f0354d8a923b33a3f2b6
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2f48f9486c5d29fc0b70e4487a12a1c499235cba
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44216505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732650"
 ---
 # <a name="creating-the-net-framework-client-application-wcf-data-services-quickstart"></a>.NET Framework 클라이언트 응용 프로그램 만들기(WCF Data Services 빠른 시작)
 
@@ -23,7 +23,7 @@ WCF Data Services 빠른 시작의 최종 작업입니다. 이 태스크에서�
 
 1.  **솔루션 탐색기**솔루션을 마우스 오른쪽 단추로 클릭, 클릭 **추가**를 클릭 하 고 **새 프로젝트**합니다.
 
-2.  왼쪽된 창에서 선택 **설치 됨** > [**Visual C#** 하거나 **Visual Basic**] > **Windows Desktop**를 선택한 다음 합니다 **WPF 앱** 템플릿.
+2.  왼쪽된 창에서 선택 **설치 됨** > [**시각적 C#**  또는 **Visual Basic**] > **Windows Desktop**를 선택한 다음 합니다  **WPF 앱** 템플릿.
 
 3.  입력 `NorthwindClient` 클릭 한 다음 확인 하 고 프로젝트 이름에 대 한 **확인**합니다.
 
@@ -86,7 +86,7 @@ WCF Data Services 빠른 시작의 최종 작업입니다. 이 태스크에서�
 
 OData에 액세스 하는 방법에 대 한 자세한 내용은에서 피드를 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 응용 프로그램을 참조 하세요 [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 - [리소스](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

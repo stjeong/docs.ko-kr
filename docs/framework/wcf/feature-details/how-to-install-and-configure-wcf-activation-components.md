@@ -1,17 +1,17 @@
 ---
-title: '방법: WCF Activation 구성 요소 설치 및 구성'
+title: '방법: 설치 하 고 WCF Activation 구성 요소를 구성 합니다.'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: 8b516bb4603f33828069b5356676d8b35dc961d2
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 0bc624bcacf5ab85a5ae0e833ea6b7a979946a27
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47088336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726899"
 ---
-# <a name="how-to-install-and-configure-wcf-activation-components"></a>방법: WCF Activation 구성 요소 설치 및 구성
+# <a name="how-to-install-and-configure-wcf-activation-components"></a>방법: 설치 하 고 WCF Activation 구성 요소를 구성 합니다.
 이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)을 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] HTTP를 통해 통신 하지 않는 서비스 네트워크 프로토콜을 Windows Communication Foundation (WCF)를 호스트 합니다. 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
   
 -   설치 (또는 설치를 확인) WCF activation 구성 요소입니다.  
@@ -100,8 +100,8 @@ ms.locfileid: "47088336"
     > [!NOTE]
     >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)  
- [MSMQ 활성화](../../../../docs/framework/wcf/samples/msmq-activation.md)  
- [NamedPipe 활성화](../../../../docs/framework/wcf/samples/namedpipe-activation.md)  
- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
+## <a name="see-also"></a>참고자료
+- [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)
+- [MSMQ 활성화](../../../../docs/framework/wcf/samples/msmq-activation.md)
+- [NamedPipe 활성화](../../../../docs/framework/wcf/samples/namedpipe-activation.md)
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -2,12 +2,12 @@
 title: '&lt;net.tcp&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-ms.openlocfilehash: 2a75a33eac61d85a0dab4732cb3b0de7f4703fa7
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 7df24d816b4eed8ceed542e14261413fbe7651a4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54728728"
 ---
 # <a name="ltnettcpgt"></a>&lt;net.tcp&gt;
 여러 프로세스에서 동일한 TCP 포트를 공유할 수 있도록 하는 NET.TCP Port Sharing Service에 대한 구성 설정을 지정합니다.  
@@ -73,7 +73,7 @@ ms.locfileid: "54145785"
 ## <a name="remarks"></a>설명  
  포트 공유에 대 한 자세한 내용은 참조 하세요. [Net.TCP 포트 공유](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)합니다. 포트 공유 서비스를 구성 하는 방법을 알아보려면 [Net.TCP Port Sharing Service 구성](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>  
- [Net.TCP 포트 공유](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
- [Net.TCP Port Sharing Service 구성](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
+- [Net.TCP 포트 공유](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)
+- [Net.TCP Port Sharing Service 구성](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

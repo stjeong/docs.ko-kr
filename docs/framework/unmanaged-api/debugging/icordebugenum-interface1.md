@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a4659bbc9c2e3c71a6cf85e51a06bee4f789356b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 97080f7d850e67d635f9a65ee85ad3ddddbb244d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33422307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732754"
 ---
 # <a name="icordebugenum-interface1"></a>ICorDebugEnum Interface1
 디버깅 응용 프로그램에서 사용 되는 열거자에 대 한 추상 기본 인터페이스로 사용 합니다.  
@@ -30,13 +30,13 @@ ms.locfileid: "33422307"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[Clone 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|이 파일의 복사본을 만듭니다 `ICorDebugEnum` 개체입니다.|  
-|[GetCount 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-getcount-method.md)|열거형에서 항목의 수를 가져옵니다.|  
-|[Reset 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-reset-method.md)|열거형의 시작 부분으로 커서를 이동합니다.|  
-|[Skip 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-skip-method.md)|열거형에 커서를 앞으로 항목의 지정한 수 만큼 이동 합니다.|  
+|[Clone 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|이 `ICorDebugEnum` 개체의 복사본을 만듭니다.|  
+|[GetCount 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-getcount-method.md)|열거형의 항목 수를 가져옵니다.|  
+|[Reset 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-reset-method.md)|열거형의 시작 부분에 커서를 이동합니다.|  
+|[Skip 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-skip-method.md)|열거형에서 항목의 지정된 된 수 만큼 앞으로 커서를 이동합니다.|  
   
 ## <a name="remarks"></a>설명  
- 파생 된 다음 열거자 `ICorDebugEnum`:  
+ 파생 되는 다음 열거자 `ICorDebugEnum`:  
   
 -   "ICorDebugAppDomainEnum"  
   
@@ -84,13 +84,13 @@ ms.locfileid: "33422307"
 >  이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

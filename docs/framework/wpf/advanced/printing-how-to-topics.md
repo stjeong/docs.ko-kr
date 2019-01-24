@@ -5,12 +5,12 @@ helpviewer_keywords:
 - printing [WPF]
 - print system management [WPF]
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
-ms.openlocfilehash: e9b54cd7e59a5a410bfc5c0fb1ba4973c5e482af
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 0bf581155bb32951a4614818edb50837f608939e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726444"
 ---
 # <a name="printing-how-to-topics"></a>인쇄 방법 항목
 이 섹션의에서 항목에서는 인쇄를 사용 하는 방법을 보여 줍니다 및 인쇄 시스템 관리 기능에 포함 된 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 뿐만 아니라 새 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 인쇄 경로입니다.  
@@ -46,10 +46,10 @@ ms.locfileid: "48837117"
  [PrintTicket 유효성 검사 및 병합](../../../../docs/framework/wpf/advanced/how-to-validate-and-merge-printtickets.md)  
  인쇄 티켓을 유효 하 고는 요청 하지 않는지 프린터에서 지원 되지 않는 모든 항목을 확인 하기 위한 지침입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Printing>  
- <xref:System.Printing.IndexedProperties>  
- <xref:System.Printing.Interop>  
- [인쇄 개요](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [XPS](https://www.microsoft.com/xps)
+## <a name="see-also"></a>참고자료
+- <xref:System.Printing>
+- <xref:System.Printing.IndexedProperties>
+- <xref:System.Printing.Interop>
+- [인쇄 개요](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [XPS](https://www.microsoft.com/xps)

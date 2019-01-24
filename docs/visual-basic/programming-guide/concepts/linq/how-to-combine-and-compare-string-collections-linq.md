@@ -1,15 +1,15 @@
 ---
-title: '방법: LINQ () (Visual Basic) 문자열 컬렉션 결합 및 비교'
+title: '방법: (LINQ) (Visual Basic) 문자열 컬렉션 결합 및 비교'
 ms.date: 07/20/2015
 ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
-ms.openlocfilehash: 0e8df8e6e324b2a575fb6232c54a223cb35a4ef2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9948cdb4aa40ca12f7dd058fe12ffcd6462cdaae
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33644448"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732663"
 ---
-# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a>방법: LINQ () (Visual Basic) 문자열 컬렉션 결합 및 비교
+# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a>방법: (LINQ) (Visual Basic) 문자열 컬렉션 결합 및 비교
 이 예제에서는 텍스트 줄이 포함된 파일을 병합하고 결과를 정렬하는 방법을 보여 줍니다. 특히, 두 개의 텍스트 줄 집합에 대한 단순 연결, 합집합 및 교집합을 수행하는 방법을 보여 줍니다.  
   
 ### <a name="to-set-up-the-project-and-the-text-files"></a>프로젝트 및 텍스트 파일을 설정하려면  
@@ -44,7 +44,7 @@ ms.locfileid: "33644448"
     El Yassir, Mehdi  
     ```  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```vb  
 Class ConcatenateStrings  
@@ -165,6 +165,6 @@ End Class
 ## <a name="compiling-the-code"></a>코드 컴파일  
  System.Core.dll에 대한 참조와 System.Linq 네임스페이스에 대한 `Imports` 문을 사용하여 .NET Framework 버전 3.5 이상을 대상으로 하는 프로젝트를 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## <a name="see-also"></a>참고자료
+- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

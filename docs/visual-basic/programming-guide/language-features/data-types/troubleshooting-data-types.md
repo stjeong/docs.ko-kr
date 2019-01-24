@@ -19,12 +19,12 @@ helpviewer_keywords:
 - floating-point numbers [Visual Basic], comparison
 - floating-point numbers
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-ms.openlocfilehash: 9bbc7f51de9899354184d051d8f1a584651dd030
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: e67339beac42fe6dc32925c8733bec2889739733
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54728072"
 ---
 # <a name="troubleshooting-data-types-visual-basic"></a>데이터 형식 문제 해결(Visual Basic)
 이 페이지는 기본 데이터 형식에 대 한 작업을 수행할 때 발생할 수 있는 몇 가지 일반적인 문제를 나열 합니다.  
@@ -112,11 +112,11 @@ ms.locfileid: "48850376"
 ### <a name="meaningless-values"></a>의미 없는 값  
  일반적으로 `String` 값 다른 데이터 형식에서는 의미가 없으며 변환이 매우 인위적인 하며 위험 합니다. 사용을 제한 해야 가능 하면 `String` 하도록 디자인 된 문자 시퀀스에는 변수입니다. 다른 형식에 해당 하는 값을 사용 하는 코드를 작성 하지 말아야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [데이터 형식의 효율적 사용](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## <a name="see-also"></a>참고자료
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [데이터 형식의 효율적 사용](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

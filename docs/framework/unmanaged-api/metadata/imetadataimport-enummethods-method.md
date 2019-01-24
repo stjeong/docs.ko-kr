@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 933694a6a033dbfe817e3848b9008f05b86f51f3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 668c7298a9543cce93cce324672334c9ec1e8cd2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33449014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732819"
 ---
 # <a name="imetadataimportenummethods-method"></a>IMetaDataImport::EnumMethods 메서드
 지정한 형식의 메서드를 나타내는 MethodDef 토큰을 열거합니다.  
@@ -44,33 +44,33 @@ HRESULT EnumMethods (
  [out에서] 열거자에 대 한 포인터입니다. 이 메서드의 첫 번째 호출에 대 한 NULL 이어야 합니다.  
   
  `cl`  
- [in] 열거 하는 메서드를 통해 형식을 나타내는 TypeDef 토큰입니다.  
+ [in] 열거 하는 메서드를 사용 하 여 형식을 나타내는 TypeDef 토큰입니다.  
   
  `rMethods`  
  [out] MethodDef 토큰을 저장할 배열입니다.  
   
  `cMax`  
- [in] MethodDef의 최대 크기 `rMethods` 배열입니다.  
+ [in] 최대 크기인 MethodDef `rMethods` 배열입니다.  
   
  `pcTokens`  
- [out] 반환 된 MethodDef 토큰 수 `rMethods`합니다.  
+ [out] MethodDef 토큰에서 반환 된 수가 `rMethods`합니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 |HRESULT|설명|  
 |-------------|-----------------|  
 |`S_OK`|`EnumMethods` 성공적으로 반환 합니다.|  
-|`S_FALSE`|열거할 MethodDef 토큰이 있습니다. 이 경우 `pcTokens` 은 0입니다.|  
+|`S_FALSE`|열거할 MethodDef 토큰이 있습니다. 이런 경우 `pcTokens` 0입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

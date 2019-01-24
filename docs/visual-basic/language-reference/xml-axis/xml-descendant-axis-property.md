@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], descendant
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.openlocfilehash: 6040401ce3e98c835677be3c4cc7698013348f37
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 3b8d13e606f28896cae88162d572470e49af3739
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54730284"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>XML 하위 항목 축 속성(Visual Basic)
 다음의 하위 항목에 액세스할 수:는 <xref:System.Xml.Linq.XElement> 개체를 <xref:System.Xml.Linq.XDocument> 개체의 컬렉션인 <xref:System.Xml.Linq.XElement> 개체나 컬렉션 <xref:System.Xml.Linq.XDocument> 개체입니다.  
@@ -28,21 +28,21 @@ object...<descendant>
   
 ## <a name="parts"></a>요소  
  `object`  
- 필수. <xref:System.Xml.Linq.XElement> 개체, <xref:System.Xml.Linq.XDocument> 개체, <xref:System.Xml.Linq.XElement> 개체의 모음 또는 <xref:System.Xml.Linq.XDocument> 개체의 모음입니다.  
+ 필수 요소. <xref:System.Xml.Linq.XElement> 개체, <xref:System.Xml.Linq.XDocument> 개체, <xref:System.Xml.Linq.XElement> 개체의 컬렉션 또는 <xref:System.Xml.Linq.XDocument> 개체의 컬렉션입니다.  
   
  ...<  
- 필수. 하위 축 속성의 시작을 나타냅니다.  
+ 필수 요소. 하위 축 속성의 시작을 나타냅니다.  
   
  `descendant`  
- 필수. 폼에 액세스 하려면 하위 노드의 이름을 [`prefix``:`]`name`합니다.  
+ 필수 요소. 폼에 액세스 하려면 하위 노드의 이름을 [`prefix``:`]`name`합니다.  
   
 |파트|설명|  
 |----------|-----------------|  
 |`prefix`|선택 사항입니다. 하위 노드에 대 한 XML 네임 스페이스 접두사입니다. 사용 하 여 정의 된 전역 XML 네임 스페이스 여야는 `Imports` 문입니다.|  
-|`name`|필수. 하위 노드의 로컬 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
+|`name`|필수 요소. 하위 노드의 로컬 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
   
  \>  
- 필수. 하위 축 속성의 끝을 나타냅니다.  
+ 필수 요소. 하위 축 속성의 끝을 나타냅니다.  
   
 ## <a name="return-value"></a>반환 값  
  <xref:System.Xml.Linq.XElement> 개체의 컬렉션입니다.  
@@ -75,9 +75,9 @@ object...<descendant>
   
  `Name: Patrick Hines`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement>  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XElement>
+- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

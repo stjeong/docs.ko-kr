@@ -2,12 +2,12 @@
 title: WCF Data Services 프로토콜 구현 정보
 ms.date: 03/30/2017
 ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c
-ms.openlocfilehash: 1d68e278fbac0137d1a5b2dca2daedba2294a7ee
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: fdaaa95bdcffa3ae053cc856753faa1a224eebc7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54728754"
 ---
 # <a name="wcf-data-services-protocol-implementation-details"></a>WCF Data Services 프로토콜 구현 정보
 ## <a name="odata-protocol-implementation-details"></a>OData 프로토콜 구현 정보  
@@ -22,6 +22,6 @@ ms.locfileid: "47195682"
 ### <a name="default-sorting-behavior"></a>기본 정렬 동작  
  데이터 서비스에 전송되는 쿼리 요청에 `$top` 또는 `$skip` 시스템 쿼리 옵션이 포함되어 있고 `$orderby` 시스템 쿼리 옵션이 없는 경우 반환된 피드가 키 속성을 기준으로 오름차순으로 정렬됩니다. 그 이유는 결과의 올바른 페이징을 보장하기 위해 정렬이 필요하기 때문입니다. 이를 위해 데이터 서비스가 쿼리에 정렬 식을 추가합니다. 이 동작은 데이터 서비스에 서버 기반 페이징이 활성화된 경우에도 발생합니다. 자세한 내용은 [데이터 서비스 구성](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)합니다. 반환 된 피드의 순서를 제어 하려면 포함 해야 `$orderby` 쿼리 URI에에서 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+## <a name="see-also"></a>참고자료
+- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

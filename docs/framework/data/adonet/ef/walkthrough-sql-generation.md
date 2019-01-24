@@ -2,12 +2,12 @@
 title: '연습: SQL 생성'
 ms.date: 03/30/2017
 ms.assetid: 16c38aaa-9927-4f3c-ab0f-81636cce57a3
-ms.openlocfilehash: cbc400671e5194494772580e77316af07b5669ff
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3210fb8872e1610c37070330082b11dddc37aa06
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54733443"
 ---
 # <a name="walkthrough-sql-generation"></a>연습: SQL 생성
 이 항목에서는 SQL 생성에서 발생 하는 방법을 보여 줍니다.는 [Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0)합니다. 다음 Entity SQL 쿼리는 샘플 공급자에 포함된 모델을 사용합니다.  
@@ -112,7 +112,7 @@ LEFT OUTER JOIN [dbo].[InternationalOrders] AS [Extent5] ON [Extent4].[OrderID] 
   
  Project 노드를 방문하면 VisitInputExpression이 입력(Join4)을 통해 호출되어 VisitJoinExpression 메서드에 의한 Join4의 방문을 트리거합니다. Join4가 맨 위의 조인이기 때문에 IsParentAJoin은 false를 반환하고 새 SqlSelectStatement(SelectStatement0)가 만들어져 SELECT 문 스택에 제공됩니다. 또한 새 범위(scope0)가 기호 테이블에 입력됩니다. 조인의 첫 번째(왼쪽) 입력을 방문하기 전에 'true'가 IsParentAJoin 스택에 제공됩니다. Join4의 왼쪽 입력인 Join1을 방문하기 직전의 방문자의 상태가 다음 그림에 표시되어 있습니다.  
   
- ![다이어그램](../../../../../docs/framework/data/adonet/ef/media/406d4f5f-6166-44ea-8e74-c5001d5d5d79.gif "406d4f5f-6166-44ea-8e74-c5001d5d5d79")  
+ ![Diagram](../../../../../docs/framework/data/adonet/ef/media/406d4f5f-6166-44ea-8e74-c5001d5d5d79.gif "406d4f5f-6166-44ea-8e74-c5001d5d5d79")  
   
  조인 방문 메서드가 Join4를 통해 호출되면 IsParentAJoin이 true이므로 현재 SELECT 문인 SelectStatement0를 다시 사용합니다. 새 범위(scope1)가 입력됩니다. 왼쪽 자식인 Extent1을 방문하기 전에 또 다른 true가 IsParentAJoin 스택에 제공됩니다.  
   
@@ -136,7 +136,7 @@ LEFT OUTER JOIN [dbo].[InternationalOrders] AS [Extent5] ON [Extent4].[OrderID] 
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/1ec61ed3-fcdd-4649-9089-24385be7e423.gif "1ec61ed3-fcdd-4649-9089-24385be7e423")  
   
- Join3에 대해 IsParentAJoin은 false를 반환하고 새 SqlSelectStatement(SelectStatement1)를 시작하여 스택에 제공해야 합니다. 이전의 조인을 처리할 때와 마찬가지로 처리가 계속되며 새 범위가 스택에 제공되고 자식이 처리됩니다. 왼쪽된 자식이 익스텐트 (Extent3) 이며,이 오른쪽 자식 새 SqlSelectStatement를 시작 해야 하는 조인 (Join2): SelectStatement2 합니다. Join2의 자식도 익스텐트이며 SelectStatement2로 집계됩니다.  
+ Join3에 대해 IsParentAJoin은 false를 반환하고 새 SqlSelectStatement(SelectStatement1)를 시작하여 스택에 제공해야 합니다. 이전의 조인을 처리할 때와 마찬가지로 처리가 계속되며 새 범위가 스택에 제공되고 자식이 처리됩니다. 왼쪽된 자식이 익스텐트 (Extent3) 이며,이 오른쪽 자식 새 SqlSelectStatement를 시작 해야 하는 조인 (Join2): SelectStatement2. Join2의 자식도 익스텐트이며 SelectStatement2로 집계됩니다.  
   
  Join2를 방문한 직후, 사후 처리(ProcessJoinInputResult)가 수행되기 전의 방문자의 상태가 다음 그림에 표시되어 있습니다.  
   
@@ -199,5 +199,5 @@ FROM: "[dbo].[Orders]", " AS ", <symbol_Extent4>,
   
  두 번째 단계가 끝날 때 최종 SQL 문이 생성됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [샘플 공급자의 SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)
+## <a name="see-also"></a>참고자료
+- [샘플 공급자의 SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)

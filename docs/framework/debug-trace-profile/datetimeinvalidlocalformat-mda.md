@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: c4a942bb-2651-4b65-8718-809f892a0659
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 54ce0f75ddfbf9f3b62917aa67f4d97140bbdc42
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 78d9d769deefedef0c72b847c86e7b9fc175288c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732676"
 ---
 # <a name="datetimeinvalidlocalformat-mda"></a>dateTimeInvalidLocalFormat MDA
 UTC(협정 세계 표준시)로 저장된 <xref:System.DateTime> 인스턴스가 로컬 <xref:System.DateTime> 인스턴스에만 사용해야 하는 형식을 사용하여 형식이 지정되면 `dateTimeInvalidLocalFormat` MDA가 활성화됩니다. 미지정 또는 기본 <xref:System.DateTime> 인스턴스의 경우 이 MDA는 활성화되지 않습니다.  
   
 ## <a name="symptom"></a>증상  
- 응용 프로그램이 로컬 형식을 사용하여 수동으로 UTC <xref:System.DateTime> 인스턴스를 직렬화하고 있습니다.  
+ 애플리케이션이 로컬 형식을 사용하여 수동으로 UTC <xref:System.DateTime> 인스턴스를 직렬화하고 있습니다.  
   
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;  
@@ -67,7 +67,7 @@ Serialize(myDateTime.ToString("o"));
 ```  
   
 ## <a name="example"></a>예제  
- 다음 방식으로 <xref:System.Xml.XmlConvert> 또는 <xref:System.Data.DataSet>을 사용하여 UTC <xref:System.DateTime> 값을 간접적으로 직렬화하고 있는 응용 프로그램을 고려해 보세요.  
+ 다음 방식으로 <xref:System.Xml.XmlConvert> 또는 <xref:System.Data.DataSet>을 사용하여 UTC <xref:System.DateTime> 값을 간접적으로 직렬화하고 있는 애플리케이션을 고려해 보세요.  
   
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;  
@@ -86,6 +86,6 @@ String serialized = XmlConvert.ToString(myDateTime,
     XmlDateTimeSerializationMode.RoundtripKind);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Globalization.DateTimeFormatInfo>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Globalization.DateTimeFormatInfo>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

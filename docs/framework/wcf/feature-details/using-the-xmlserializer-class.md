@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - XmlSerializer [WCF], using
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
-ms.openlocfilehash: abb679971771f6bff5bd1c84ff744e2fcbb9c45a
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 084a31ec008d1651bb66f7d59731a21d4ef0ece7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732858"
 ---
 # <a name="using-the-xmlserializer-class"></a>XmlSerializer 클래스 사용
 Windows Communication Foundation (WCF) 두 가지 다른 serialization 기술을 사용 하 여 클라이언트 및 서비스, 프로세스를 serialization 이라고 간에 전송 되는 XML로 응용 프로그램에서 데이터를 변환할 수 있습니다.  
@@ -87,7 +87,7 @@ Windows Communication Foundation (WCF) 두 가지 다른 serialization 기술을
  <xref:System.ServiceModel.MessageHeaderArrayAttribute> 특성은 <xref:System.Xml.Serialization.XmlSerializer>를 사용할 때 지원되지 않습니다.  
   
 > [!NOTE]
->  이 경우는 <xref:System.Xml.Serialization.XmlSerializer> WCF 전에 출시 된 다음 예외를 throw 합니다. "스키마의 최상위 수준에서 선언 된 요소 수 없습니다 `maxOccurs` > 1. `XmlArray` 대신 `XmlArrayItem` 또는 `XmlElementAttribute`을 사용하거나 Wrapper 매개 변수 스타일을 사용하여 ‘more’에 래퍼 요소를 제공하세요." 오류를 throw합니다.  
+>  이 경우에 <xref:System.Xml.Serialization.XmlSerializer> WCF 전에 출시 된 다음 예외를 throw 합니다. "스키마의 최상위 수준에서 선언 된 요소 없습니다 `maxOccurs` > 1. `XmlArray` 대신 `XmlArrayItem` 또는 `XmlElementAttribute`을 사용하거나 Wrapper 매개 변수 스타일을 사용하여 ‘more’에 래퍼 요소를 제공하세요." 오류를 throw합니다.  
 >   
 >  이러한 예외가 표시되면 이 경우에 해당하는지 확인하세요.  
   
@@ -163,7 +163,7 @@ Windows Communication Foundation (WCF) 두 가지 다른 serialization 기술을
   
 -   생성된 스키마가 올바른 데이터 계약 스키마가 아닐 수 있습니다. 예를 들어 스키마 공급자 메서드가 데이터 계약 모델에서 지원되지 않는 XML 특성과 관련된 스키마를 생성할 수 있습니다. 이 경우 스키마를 `IXmlSerializable` 형식으로 가져올 수 있습니다. 이 가져오기 모드는 기본적으로 설정 되지 않지만 쉽게 – 예를 들어와 함께 사용할 수는 `/importXmlTypes` 명령줄 스위치를 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 이에 자세히 설명 되어는 [스키마를 생성 하는 클래스를 가져와서](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)합니다. 형식 인스턴스에 대한 XML로 직접 작업해야 합니다. 보다 넓은 범위의 스키마를 지원하는 다른 serialization 기술을 사용할 수도 있습니다. `XmlSerializer` 사용에 대한 항목을 참조하세요.  
   
--   새 형식을 생성하는 대신 프록시의 기존 `IXmlSerializable` 형식을 다시 사용할 수 있습니다. 이 경우 스키마를 가져와서 형식 생성 항목에서 설명하는 참조된 형식 기능을 사용하여 다시 사용할 형식을 나타낼 수 있습니다. 사용 하 여 해당는 `/reference` 다시 사용할 형식이 포함 된 어셈블리를 지정 하는 svcutil.exe에 전환 합니다.  
+-   새 형식을 생성하는 대신 프록시의 기존 `IXmlSerializable` 형식을 다시 사용할 수 있습니다. 이 경우 스키마를 가져와서 형식 생성 항목에서 설명하는 참조된 형식 기능을 사용하여 다시 사용할 형식을 나타낼 수 있습니다. 이는 다시 사용할 형식이 포함된 어셈블리를 지정하는 svcutil.exe에 `/reference` 스위치를 사용하는 것에 같습니다.  
   
 ### <a name="xmlserializer-legacy-behavior"></a>XmlSerializer 레거시 동작  
  .NET Framework 4.0 및 이전 버전에서는 XmlSerializer가 파일에 C# 코드를 작성해서 임시 serialization 어셈블리를 생성했습니다. 그런 다음 파일이 어셈블리로 컴파일됩니다.  이 동작은 serializer가 느리게 시작하는 등의 좋지 않은 결과가 있었습니다. .NET Framework 4.5에서는 이 동작이 컴파일러를 사용하지 않고도 어셈블리를 생성할 수 있도록 변경되었습니다. 일부 개발자는 생성된 C# 코드를 보고 싶어할 수 있습니다. 다음과 같이 구성하면 이 레거시 동작을 사용하도록 지정할 수 있습니다.  
@@ -205,11 +205,11 @@ Windows Communication Foundation (WCF) 두 가지 다른 serialization 기술을
 > [!NOTE]
 >  `<xmlSerializer useLegacySerializerGeneration="true"/>` 스위치는 또는 실행 컴퓨터에서.NET Framework 4.5 이상 버전 에서만 작동 합니다. 위의 `appSettings` 방법은 모든.NET Framework 버전에서 작동 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.DataContractFormatAttribute>  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- <xref:System.ServiceModel.MessageHeaderArrayAttribute>  
- [서비스 계약에서 데이터 전송 지정](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [방법: XmlSerializer를 사용하여 WCF 클라이언트 응용 프로그램의 시작 시간 개선](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.DataContractFormatAttribute>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.ServiceModel.MessageHeaderArrayAttribute>
+- [서비스 계약에서 데이터 전송 지정](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [방법: 시작 시간의 WCF 클라이언트 응용 프로그램 개선 XmlSerializer를 사용 하 여](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

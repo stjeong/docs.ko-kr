@@ -2,12 +2,12 @@
 title: 동적 활동을 사용하여 런타임에 활동 만들기
 ms.date: 03/30/2017
 ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
-ms.openlocfilehash: 32a35d5220950d8547b1f934c431bdb9c3627e8e
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 17dda5643f86690c25067e70680a6b797dd172d3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54733209"
 ---
 # <a name="creating-an-activity-at-runtime-with-dynamicactivity"></a>동적 활동을 사용하여 런타임에 활동 만들기
 <xref:System.Activities.DynamicActivity>는 public 생성자를 사용하는 구체적이고 봉인된 클래스입니다. <xref:System.Activities.DynamicActivity>는 활동 DOM을 통해 런타임에 활동 기능을 어셈블하는 데 사용할 수 있습니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "48583876"
   
 #### <a name="to-create-an-activity-at-runtime-using-imperative-code"></a>명령적 코드를 사용하여 런타임에 활동을 만들려면  
   
-1.  OpenVisual Studio 2010입니다.  
+1.  OpenVisual Studio 2010.  
   
 2.  선택 **파일**를 **새**하십시오 **프로젝트**합니다. 선택 **Workflow 4.0** 아래에서 **Visual C#** 에 **프로젝트 형식** 창에서 선택한 합니다 **v2010** 노드. 선택 **순차 워크플로 콘솔 응용 프로그램** 에 **템플릿** 창입니다. 새 프로젝트의 이름을 DynamicActivitySample로 지정합니다.  
   
@@ -96,6 +96,6 @@ ms.locfileid: "48583876"
   
 8.  Workflow1.xaml 파일을 마우스 오른쪽 단추로 클릭 합니다 **솔루션 탐색기** 선택한 **코드 보기**합니다. 활동 클래스가 `x:Class`를 사용하여 만들어지고 속성은 `x:Property`를 사용하여 만들어집니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [명령형 코드를 사용하여 워크플로, 활동 및 식 작성](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)
