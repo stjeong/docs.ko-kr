@@ -12,12 +12,12 @@ helpviewer_keywords:
 - UDT (user-defined types)
 - types [Visual Basic], user-defined
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
-ms.openlocfilehash: 9377d889f56049720ab10439582300913f5cbb37
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 64ded285c74d61206618695c1d0bb6f158ce860d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54704906"
 ---
 # <a name="structure-statement"></a>Structure 문
 구조의 이름을 선언 하 고 변수, 속성, 이벤트 및 구조를 구성 하는 프로시저의 정의 소개 합니다.  
@@ -38,17 +38,17 @@ End Structure
 |용어|정의|  
 |---|---|  
 |`attributelist`|선택 사항입니다. 참조 [특성 목록](../../../visual-basic/language-reference/statements/attribute-list.md)합니다.|  
-|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [공용](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br/>- [Private Protected](../../language-reference/modifiers/private-protected.md) <br /><br /> [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.|  
+|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br/>- [Private Protected](../../language-reference/modifiers/private-protected.md) <br /><br /> [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.|  
 |`Shadows`|선택 사항입니다. 참조 [그림자](../../../visual-basic/language-reference/modifiers/shadows.md)합니다.|  
 |`Partial`|선택 사항입니다. 구조체의 부분 정의 나타냅니다. 참조 [부분](../../../visual-basic/language-reference/modifiers/partial.md)합니다.|  
-|`name`|필수. 이 구조체의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.|  
+|`name`|필수 요소. 이 구조체의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.|  
 |`Of`|선택 사항입니다. 제네릭 구조체 임을 지정 합니다.|  
 |`typelist`|사용 하는 경우 필요 합니다 [의](../../../visual-basic/language-reference/statements/of-clause.md) 키워드입니다. 이 구조에 대 한 형식 매개 변수의 목록입니다. 참조 [유형 목록](../../../visual-basic/language-reference/statements/type-list.md)합니다.|  
 |`Implements`|선택 사항입니다. 이 구조는 하나 이상의 인터페이스 멤버를 구현 함을 나타냅니다. 참조 [문을 구현](../../../visual-basic/language-reference/statements/implements-statement.md)합니다.|  
 |`interfacenames`|사용 하는 경우 필요 합니다 `Implements` 문입니다. 이 구조를 구현 하는 인터페이스의 이름입니다.|  
-|`datamemberdeclarations`|필수. 0 개 이상의 `Const`, `Dim`를 `Enum`, 또는 `Event` 선언 문을 *데이터 멤버* 구조입니다.|  
+|`datamemberdeclarations`|필수 요소. 0 개 이상의 `Const`, `Dim`를 `Enum`, 또는 `Event` 선언 문을 *데이터 멤버* 구조입니다.|  
 |`methodmemberdeclarations`|선택 사항입니다. 0 개 이상의 선언 `Function`, `Operator`, `Property`, 또는 `Sub` 역할을 하는 프로시저 *메서드 멤버* 구조입니다.|  
-|`End Structure`|필수. 종료는 `Structure` 정의 합니다.|  
+|`End Structure`|필수 요소. 종료는 `Structure` 정의 합니다.|  
   
 ## <a name="remarks"></a>설명  
  `Structure` 문은 사용자 지정할 수 있는 복합 값 형식을 정의 합니다. A *구조* 사용자 정의 형식의 (UDT) 이전 버전의 Visual Basic을 일반화 합니다. 자세한 내용은 [구조](../../../visual-basic/programming-guide/language-features/data-types/structures.md)합니다.  
@@ -104,14 +104,14 @@ End Structure
   
  [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Class 문](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Module 문](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Enum 문](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [Event 문](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Operator 문](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)  
- [구조체와 클래스](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+## <a name="see-also"></a>참고자료
+- [Class 문](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Module 문](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Enum 문](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [Event 문](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Operator 문](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)
+- [구조체와 클래스](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)

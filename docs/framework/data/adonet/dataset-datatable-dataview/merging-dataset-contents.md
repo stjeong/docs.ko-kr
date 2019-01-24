@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e5e9309a-3ebb-4a9c-9d78-21c4e2bafc5b
-ms.openlocfilehash: 38d716552c4a52e01ef803ce197e4d588ed562c3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 0cba481770708ae11aee9cb4e192019c733eba5d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45658797"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702589"
 ---
 # <a name="merging-dataset-contents"></a>데이터 세트 콘텐츠 병합
 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용하여 <xref:System.Data.DataSet>, <xref:System.Data.DataTable> 또는 <xref:System.Data.DataRow> 배열의 내용을 기존 `DataSet`으로 병합할 수 있습니다. 새 데이터가 기존 `DataSet`으로 병합되는 방법은 몇 가지 요소 및 옵션에 따라 달라집니다.  
@@ -78,10 +78,10 @@ ms.locfileid: "45658797"
  [!code-csharp[DataWorks DataSet.MergeAcceptChanges#2](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.MergeAcceptChanges/CS/source.cs#2)]
  [!code-vb[DataWorks DataSet.MergeAcceptChanges#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataSet.MergeAcceptChanges/VB/source.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [행 상태 및 행 버전](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)  
- [DataAdapter 및 DataReader](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ID 또는 일련 번호 값 검색](../../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [행 상태 및 행 버전](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)
+- [DataAdapter 및 DataReader](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ID 또는 일련 번호 값 검색](../../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

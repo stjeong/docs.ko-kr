@@ -2,18 +2,18 @@
 title: '&lt;net. pipe&gt;'
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: 8a525f0684902841a2be75823932935e7533ba8b
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 7997894bfad8d5bf874a7f52d2cade7526375b13
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715298"
 ---
 # <a name="ltnetpipegt"></a>&lt;net. pipe&gt;
 명명된 파이프 연결의 수명을 관리하고 명명된 파이프을 통해 수신되는 활성화 요청을 처리하는 Named Pipe Activation Service의 구성 설정을 지정합니다.  
   
  \<system.serviceModel.activation>  
-\<net. pipe >  
+\<net.pipe>  
   
 ## <a name="syntax"></a>구문  
   
@@ -66,5 +66,5 @@ ms.locfileid: "54151152"
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|수신기 프로세스 SMSvcHost.exe에 대한 구성 설정을 포함합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection>

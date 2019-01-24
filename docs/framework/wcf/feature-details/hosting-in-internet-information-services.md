@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting services [WCF], IIS
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
-ms.openlocfilehash: e9d0e5a165eb2eabae95da9fd1e744a9bd1c201b
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: edf3927fb9fdbd9855561b32aec2a425d7ee0638
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44085110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680910"
 ---
 # <a name="hosting-in-internet-information-services"></a>인터넷 정보 서비스에서의 호스팅
 Windows Communication Foundation (WCF) 서비스를 호스트 하는 한 가지 옵션은 인터넷 정보 서비스 (IIS) 응용 프로그램 내에서. 이 호스팅 모델은 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 및 ASP.NET 웹 서비스(ASMX) 웹 서비스에서 사용되는 모델과 비슷합니다.  
@@ -43,11 +43,11 @@ Windows Communication Foundation (WCF) 서비스를 호스트 하는 한 가지 
   
 -   IIS, ASP.NET, WCF 및 WCF HTTP 활성화 구성 요소가 올바르게 설치 되어 등록을 확인 합니다.  
   
--   새 IIS 응용 프로그램을 만들거나 기존 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 응용 프로그램을 다시 사용합니다.  
+-   새 IIS 애플리케이션을 만들거나 기존 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 애플리케이션을 다시 사용합니다.  
   
 -   WCF 서비스의.svc 파일을 만듭니다.  
   
--   IIS 응용 프로그램에 서비스 구현을 배포합니다.  
+-   IIS 애플리케이션에 서비스 구현을 배포합니다.  
   
 -   WCF 서비스를 구성 합니다.  
   
@@ -56,10 +56,10 @@ Windows Communication Foundation (WCF) 서비스를 호스트 하는 한 가지 
 ## <a name="wcf-services-and-aspnet"></a>WCF 서비스 및 ASP.NET  
  WCF 서비스 일 수 있습니다 하거나--함께 호스팅 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 또는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 호환 모드는 서비스에서 제공 하는 기능을 완전히 활용을 걸릴 수 있습니다는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 웹 응용 프로그램 플랫폼입니다. 이러한 기능 설명은 참조 하세요 [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ServiceHostFactory를 사용하여 호스팅 확장](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)  
- [인터넷 정보 서비스에서 호스트하는 WCF 서비스 배포](../../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md)  
- [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)  
- [인터넷 정보 서비스 호스팅을 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
- [Windows Communication Foundation에 대해 Internet Information Services 7.0 구성](../../../../docs/framework/wcf/feature-details/configuring-iis-for-wcf.md)  
- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
+## <a name="see-also"></a>참고자료
+- [ServiceHostFactory를 사용하여 호스팅 확장](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)
+- [인터넷 정보 서비스에서 호스트하는 WCF 서비스 배포](../../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md)
+- [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+- [인터넷 정보 서비스 호스팅을 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
+- [Windows Communication Foundation에 대해 Internet Information Services 7.0 구성](../../../../docs/framework/wcf/feature-details/configuring-iis-for-wcf.md)
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: a73c3e8f554d2c78252ca763a620d05c5b494884
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e51298e86c1b3167f822e060693d0a2ee4193b67
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54723474"
 ---
 # <a name="ltcompilersgt-element"></a>&lt;컴파일러&gt; 요소
 컴파일러 구성 요소용 컨테이너입니다. 0개 이상의 [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) 요소가 포함되어 있습니다.  
   
  \<configuration>  
-\<system.codedom >  
+\<system.codedom>  
 \<컴파일러 > 요소  
   
 ## <a name="syntax"></a>구문  
@@ -49,7 +49,7 @@ ms.locfileid: "50192930"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|[\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |[\<system.codedom > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|사용 가능한 언어 공급자에 대한 컴파일러 구성 설정을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -79,9 +79,9 @@ ms.locfileid: "50192930"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.CodeDom.Compiler.CompilerInfo>  
-- <xref:System.CodeDom.Compiler.CodeDomProvider>  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [컴파일러 및 언어 공급자 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.CodeDom.Compiler.CompilerInfo>
+- <xref:System.CodeDom.Compiler.CodeDomProvider>
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [컴파일러 및 언어 공급자 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
 - [\<compiler> 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

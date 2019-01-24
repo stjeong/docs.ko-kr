@@ -8,12 +8,12 @@ helpviewer_keywords:
 - lines [WPF], connected (see polylines)
 - drawing [WPF], polylines
 ms.assetid: 65db8935-d047-4295-87c4-b427ff3ad293
-ms.openlocfilehash: d065d3cead1ed9746a9615ce2bb6d3ec4cbd614d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: c4aab17958180710c392491a27cc22fa006f8c5f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54688976"
 ---
 # <a name="how-to-draw-a-polyline-by-using-the-polyline-element"></a>방법: Polyline 요소를 사용하여 다중선 그리기
 이 예제에서는 사용 하 여 일련의 연결 된 줄은 다중선 그리기를 <xref:System.Windows.Shapes.Polyline> 요소입니다.  
@@ -34,9 +34,9 @@ ms.locfileid: "43855432"
   
  이 예제는 더 큰 샘플;의 일부 전체 샘플을 참조 하세요 [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Shapes.Polyline>  
- <xref:System.Windows.Shapes.Polygon>  
- <xref:System.Windows.Shapes.Shape>  
- [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Shapes.Polyline>
+- <xref:System.Windows.Shapes.Polygon>
+- <xref:System.Windows.Shapes.Shape>
+- [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)

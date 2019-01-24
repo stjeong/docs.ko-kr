@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: acf2ba752ace49ae288857dc22819a8e7e429a34
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 510ef77f217cdd6e3441e3d6684d431fc31307fd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698923"
 ---
 # <a name="stacktracesimplecontext-structure"></a>StackTrace_SimpleContext 구조체
 전체 `CONTEXT` 구조체 대신 사용할 수 있는 단순 컨텍스트를 제공합니다.  
@@ -42,20 +42,20 @@ struct StackTrace_SimpleContext
   
 |멤버|설명|  
 |------------|-----------------|  
-|`StackOffset`|스택 포인터 또는 enter 스택 포인터 (ESP) x86 플랫폼입니다.|  
-|`FrameOffset`|프레임 오프셋 또는 EBP 레지스터 x86 플랫폼입니다.|  
-|`InstructionOffset`|명령 포인터 또는 enter 명령 포인터 (EIP) x86 플랫폼입니다.|  
+|`StackOffset`|스택 포인터 또는 x86 enter 스택 포인터 (ESP) 플랫폼입니다.|  
+|`FrameOffset`|프레임 오프셋 또는 x86의 EBP 레지스터 플랫폼입니다.|  
+|`InstructionOffset`|명령 포인터 또는 x86 enter 명령 포인터 (EIP) 플랫폼입니다.|  
   
 ## <a name="remarks"></a>설명  
- 선택적으로 사용할 수 스택 추적 기능 일반적으로 필요로 하므로 주소, 프레임 오프셋 및 스택 주소 반환 하는 `SimpleContext` 큰 아니라 구조가 `CONTEXT` 구조입니다.  
+ 일반적으로 스택 추적 함수 주소, 프레임 오프셋 및 스택 주소를 반환 해야, 하므로 필요에 따라 사용할 수는 `SimpleContext` 큰 대신 구조 `CONTEXT` 구조입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** SOS_Stacktrace.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 구조체](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 구조체](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)

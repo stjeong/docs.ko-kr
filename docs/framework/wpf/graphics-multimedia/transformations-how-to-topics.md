@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Transforms [WPF], how-to topics
 - transformations [WPF], how-to topics
 ms.assetid: ff71384e-8811-420f-8cc8-0a3332e0397f
-ms.openlocfilehash: 95e33f38fcad70b61ae565307915b60dcbfb905a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd480f7f9a4fec42aebc57fe0b9e61bd8993ee34
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33562377"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54697038"
 ---
 # <a name="transformations-how-to-topics"></a>변환 방법 항목
-이 섹션의 항목에는 개체에 다른 변환을 적용 하는 방법을 설명 합니다.  
+이 섹션의에서 항목에서는 개체에 여러 변환을 적용 하는 방법에 설명 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [이벤트가 발생할 때 요소에 변환 적용](../../../../docs/framework/wpf/graphics-multimedia/how-to-apply-a-transform-to-an-element-when-an-event-occurs.md)  
@@ -30,8 +30,8 @@ ms.locfileid: "33562377"
  [요소 변환](../../../../docs/framework/wpf/graphics-multimedia/how-to-translate-an-element.md)  
  [MatrixTransform을 사용하여 사용자 지정 변환 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-matrixtransform-to-create-custom-transforms.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Transform>  
- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Transform>
+- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)

@@ -2,18 +2,18 @@
 title: '&lt;mexTcpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
-ms.openlocfilehash: a69f0af60d3f6723285ceb239a86775c9a1b510f
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 4c3858ee0dc7fd20bd1269c74a4499998d530f03
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54733989"
 ---
 # <a name="ltmextcpbindinggt"></a>&lt;mexTcpBinding&gt;
 TCP를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바인딩의 설정을 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<mexTcpBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -51,13 +51,13 @@ TCP를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바�
 |-------------|-----------------|  
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|이 요소는 표준 및 사용자 지정 바인딩의 컬렉션을 보유합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.MexTcpBindingElement>  
- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding%2A>  
- [방법: 구성 파일을 사용 하는 서비스의 메타 데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
- [사용자 지정 바인딩을 통해 메타데이터 게시 및 검색](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
- [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.MexTcpBindingElement>
+- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding%2A>
+- [방법: 구성 파일을 사용 하는 서비스의 메타 데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [사용자 지정 바인딩을 통해 메타데이터 게시 및 검색](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)
+- [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

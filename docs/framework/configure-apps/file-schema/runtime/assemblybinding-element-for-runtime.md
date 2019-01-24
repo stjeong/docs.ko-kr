@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 33900f40aab85fd67540ecd6004a46e13e8eb8c2
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: c0060115360cd077fd1e390be916f2f8afbadd9a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713995"
 ---
 # <a name="ltassemblybindinggt-element-for-ltruntimegt"></a>&lt;assemblyBinding&gt; 요소에 대 한 &lt;런타임&gt;
 어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "53612038"
 |특성|설명|  
 |---------------|-----------------|  
 |**xmlns**|필수 특성입니다.<br /><br /> 어셈블리 바인딩에 필요한 XML 네임스페이스를 지정합니다. 문자열 string "urn:schemas-microsoft-com:asm.v1"을 값으로 사용합니다.|  
-|**AppliesTo**|.NET Framework 어셈블리 리디렉션이 적용되는 런타임 버전을 지정합니다. 이 선택적 특성은 .NET Framework 버전 번호를 사용하여 특성이 적용되는 버전을 지정합니다. **appliesTo** 특성이 지정되지 않으면 **\<assemblyBinding>** 요소는 .NET Framework의 모든 버전에 적용됩니다. 합니다 **appliesTo** 특성은.NET Framework 버전 1.1에서에서 도입 되었고;.NET Framework 버전 1.0에서 무시 됩니다. 즉, .NET Framework 버전 1.0을 사용할 때는 **appliesTo** 특성을 지정해도 모든 **\<assemblyBinding>** 요소가 적용됩니다.|  
+|**appliesTo**|.NET Framework 어셈블리 리디렉션이 적용되는 런타임 버전을 지정합니다. 이 선택적 특성은 .NET Framework 버전 번호를 사용하여 특성이 적용되는 버전을 지정합니다. **appliesTo** 특성이 지정되지 않으면 **\<assemblyBinding>** 요소는 .NET Framework의 모든 버전에 적용됩니다. 합니다 **appliesTo** 특성은.NET Framework 버전 1.1에서에서 도입 되었고;.NET Framework 버전 1.0에서 무시 됩니다. 즉, .NET Framework 버전 1.0을 사용할 때는 **appliesTo** 특성을 지정해도 모든 **\<assemblyBinding>** 요소가 적용됩니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -55,7 +55,7 @@ ms.locfileid: "53612038"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="example"></a>예제  
@@ -92,7 +92,7 @@ ms.locfileid: "53612038"
 </runtime>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

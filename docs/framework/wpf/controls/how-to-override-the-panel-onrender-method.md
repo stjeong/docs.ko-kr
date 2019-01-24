@@ -14,12 +14,12 @@ helpviewer_keywords:
 - OnRender method [WPF], overriding
 - Panel control [WPF], overriding OnRender method
 ms.assetid: 57397834-a085-4e36-90ab-416fad98f341
-ms.openlocfilehash: 8f3b65bdfe96efdc57c6b8d30991439d3bdb0bc5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bb2ccffd9eda46eff2c7ee098a5261fc8f128cab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702875"
 ---
 # <a name="how-to-override-the-panel-onrender-method"></a>방법: Panel의 OnRender 메서드 재정의
 재정의 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Panel.OnRender%2A> 메서드의 <xref:System.Windows.Controls.Panel> 레이아웃 요소를 사용자 지정 그래픽 효과 추가 하려면.  
@@ -30,8 +30,8 @@ ms.locfileid: "43506217"
  [!code-csharp[LightWeightCustomPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LightWeightCustomPanel/CSharp/OffsetPanel.cs#1)]
  [!code-vb[LightWeightCustomPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Panel>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [사용자 지정 방사형 패널 샘플](https://go.microsoft.com/fwlink/?LinkID=159982)  
- [방법 항목](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Panel>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [사용자 지정 방사형 패널 샘플](https://go.microsoft.com/fwlink/?LinkID=159982)
+- [방법 항목](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)

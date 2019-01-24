@@ -6,12 +6,12 @@ helpviewer_keywords:
 - brushes [WPF], preserving aspect ratios of background images
 - background images [WPF], preserving aspect ratios
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
-ms.openlocfilehash: 8cf0a3804172b90af33318299d60aa6c7eaa53f0
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: f8133ac4fcd01e08f41861b7a441e9ff1325f6ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698325"
 ---
 # <a name="how-to-preserve-the-aspect-ratio-of-an-image-used-as-a-background"></a>방법: 배경으로 사용된 이미지의 가로 세로 비율 유지
 사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.TileBrush.Stretch%2A> 의 속성을 <xref:System.Windows.Media.ImageBrush> 이미지의 가로 세로 비율을 유지 하기 위해.  
@@ -39,6 +39,6 @@ ms.locfileid: "43863088"
   
  이 코드 예제는 제공 된 큰 예제의 일부는 <xref:System.Windows.Media.ImageBrush> 클래스입니다. 전체 샘플을 참조 하세요 [ImageBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160005)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.TileBrush>  
- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.TileBrush>
+- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

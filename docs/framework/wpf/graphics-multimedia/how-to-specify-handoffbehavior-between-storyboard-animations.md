@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Storyboards [WPF], handoff behavior between animations
 - animation [WPF], handoff behavior between
 ms.assetid: 97bd6842-929b-49d9-813e-46553ae46472
-ms.openlocfilehash: 6846cde9fd0aa93a0ce57fd2da0f9e1df85ec5a4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 01c652e170e27da0be9b1ab5f7659d7089aee6f8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54677752"
 ---
 # <a name="how-to-specify-handoffbehavior-between-storyboard-animations"></a>방법: Storyboard 애니메이션 간의 HandoffBehavior 지정
 이 예제에서는 storyboard 애니메이션 간의 전달 동작을 지정 하는 방법을 보여 줍니다. 합니다 <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> 의 속성 <xref:System.Windows.Media.Animation.BeginStoryboard> 새로운 애니메이션 지정 속성에 이미 적용 된 기존 애니메이션과 상호 작용 합니다.  
@@ -20,9 +20,9 @@ ms.locfileid: "45615809"
   
  [!code-xaml[timingbehaviors_snip#HandoffBehaviorWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/HandoffBehaviorExample.xaml#handoffbehaviorwholepage)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.BeginStoryboard>  
- <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A>  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.BeginStoryboard>
+- <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A>
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

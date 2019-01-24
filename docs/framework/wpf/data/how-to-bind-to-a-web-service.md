@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Web service binding [WPF]
 - data binding [WPF], Web service
 ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
-ms.openlocfilehash: 84c5aee8d2bc7d31ebcfee98930d9a0847c527d5
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 0a738d52cfb01fff1cb21d0e6ebb8f1b7b28d57f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397087"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54695769"
 ---
 # <a name="how-to-bind-to-a-web-service"></a>방법: 웹 서비스 바인딩
 이 예제에서는 웹 서비스 메서드 호출에서 반환 된 개체에 바인딩하는 방법을 보여 줍니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "47397087"
   
  구조에 대 한 자세한 **getContentResponse**를 참조 하십시오 [콘텐츠 서비스 설명서](https://services.msdn.microsoft.com/ContentServices/ContentService.asmx)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [바인딩 소스 개요](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
- [XAML의 바인딩에 사용할 수 있는 데이터 만들기](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)
+## <a name="see-also"></a>참고자료
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [바인딩 소스 개요](../../../../docs/framework/wpf/data/binding-sources-overview.md)
+- [XAML의 바인딩에 사용할 수 있는 데이터 만들기](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)

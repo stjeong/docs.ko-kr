@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - clients [WCF], security considerations
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
-ms.openlocfilehash: 7090d5e9cd4b44a6f894cc92ad69b34761356118
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d76b7db8a3c8f2dcdc8bdbc325a1bb14b87229ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54721112"
 ---
 # <a name="securing-clients"></a>클라이언트에 보안 설정
 Windows Communication Foundation (WCF), 서비스는 클라이언트에 대 한 보안 요구 사항을 지정합니다. 즉, 서비스는 사용할 보안 모드 및 클라이언트가 자격 증명을 제공해야 하는지 여부를 지정합니다. 따라서 클라이언트 보안 설정 프로세스는 간단합니다. 서비스에서 가져온 메타데이터를 사용하여(게시된 경우) 클라이언트를 빌드하면 됩니다. 메타데이터는 클라이언트를 구성하는 방법을 지정합니다. 서비스에서 클라이언트가 자격 증명을 제공해야 하는 경우 요구 사항에 맞는 자격 증명을 가져와야 합니다. 이 항목에서는 이 과정을 자세히 설명합니다. 보안 서비스를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [Securing Services](../../../docs/framework/wcf/securing-services.md)합니다.  
@@ -134,7 +134,7 @@ Windows Communication Foundation (WCF), 서비스는 클라이언트에 대 한 
 > [!NOTE]
 >  예를 들어 사용자 이름 및 암호 또는 Windows 사용자 및 암호 값과 같은 일부 클라이언트 자격 증명 값은 응용 프로그램 구성 파일을 사용하여 설정할 수 없습니다. 이러한 자격 증명 값은 코드에서만 지정할 수 있습니다.  
   
- 클라이언트 자격 증명을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
+ 클라이언트 자격 증명을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 클라이언트 자격 증명 값 지정](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
   
 > [!NOTE]
 >  다음 예제 구성과 같이 `ClientCredentialType`가 `SecurityMode`로 설정된 경우 `"TransportWithMessageCredential",`은 무시됩니다.  
@@ -152,16 +152,16 @@ Windows Communication Foundation (WCF), 서비스는 클라이언트에 대 한 
 </wsHttpBinding>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>  
- <xref:System.ServiceModel.ClientBase%601>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>  
- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
- [Configuration Editor 도구(SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)  
- [WCF 클라이언트를 사용하여 서비스 액세스](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [방법: 클라이언트 자격 증명 값 지정](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [방법: 클라이언트 자격 증명 형식 지정](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
+- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>
+- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)
+- [Configuration Editor 도구(SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)
+- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)
+- [WCF 클라이언트를 사용하여 서비스 액세스](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [방법: 클라이언트 자격 증명 값 지정](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)
+- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [방법: 클라이언트 자격 증명 형식 지정](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)

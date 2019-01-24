@@ -6,12 +6,12 @@ helpviewer_keywords:
 - data binding [WPF], validation of binding
 - binding [WPF], validation of
 ms.assetid: eb98b33d-9866-49ae-b981-bc5ff20d607a
-ms.openlocfilehash: 5e91ab9fbd2fdeb0aa5d836a1eedfb5e0b45ecba
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e752ad5c3160ac7b73adac55b02a06bf802190ed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678358"
 ---
 # <a name="how-to-implement-binding-validation"></a>방법: 바인딩 유효성 검사 구현
 사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> 및 사용자 지정 유효성 검사 규칙을 기반으로 하는 잘못 된 값을 입력 하는 경우 사용자에 게 시각적 피드백을 제공 하는 스타일 트리거.  
@@ -37,6 +37,6 @@ ms.locfileid: "43510454"
   
  사용자 지정을 제공 하지 않는 경우 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> 유효성 검사 오류가 있을 때 사용자에 게 시각적 피드백을 제공 하는 기본 오류 템플릿이 나타납니다. 자세한 내용은 [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)의 “데이터 유효성 검사”를 참조하세요. 또한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]은 바인딩 소스 속성을 업데이트하는 동안 throw된 예외를 catch하는 기본 제공 유효성 검사 규칙을 제공합니다. 자세한 내용은 <xref:System.Windows.Controls.ExceptionValidationRule>을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 전송 보안 및 메시지 자격 증명 사용'
+title: '방법: 사용 하 여 전송 보안 및 메시지 자격 증명'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - TransportWithMessageCredentials
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
-ms.openlocfilehash: f678c4713bff342cb3e788a85d7e58fc6e47820c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7af670210b39da93e9f3efb37a0bfddce84ed2a2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54731870"
 ---
-# <a name="how-to-use-transport-security-and-message-credentials"></a>방법: 전송 보안 및 메시지 자격 증명 사용
+# <a name="how-to-use-transport-security-and-message-credentials"></a>방법: 사용 하 여 전송 보안 및 메시지 자격 증명
 최선의 방법으로 전송 및 메시지 보안 모드의 Windows Communication Foundation (WCF)에서 사용 전송 및 메시지 자격 증명을 사용 하 여 서비스를 보호 합니다. 요컨대, 전송 계층 보안은 무결성과 기밀성을 제공하고, 메시지 계층 보안은 엄격한 전송 보안 메커니즘에서는 제공되지 않는 다양한 자격 증명을 제공합니다. 이 항목에서는 <xref:System.ServiceModel.WSHttpBinding> 및 <xref:System.ServiceModel.NetTcpBinding> 바인딩을 사용하여 메시지 자격 증명을 통해 전송을 구현하는 기본 단계를 보여 줍니다. 보안 모드를 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 보안 모드 설정](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)합니다.  
   
  보안 모드를 `TransportWithMessageCredential`로 설정하면 전송에서 전송 수준 보안을 제공하는 실제 메커니즘을 결정합니다. HTTP의 경우 메커니즘이 HTTPS(HTTP를 통한 SSL(Secure Sockets Layer))이고, TCP의 경우 TCP 또는 Windows를 통한 SSL입니다.  
@@ -84,7 +84,7 @@ ms.locfileid: "50187610"
   
 #### <a name="to-use-the-wshttpbinding"></a>WSHttpBinding을 사용하려면  
   
-1.  포트에 바인딩된 SSL 인증서를 사용하여 컴퓨터를 구성합니다. (자세한 내용은 [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)). 설정할 필요가 없습니다를 <`transport`> 요소 값이 구성을 사용 합니다.  
+1.  포트에 바인딩된 SSL 인증서를 사용하여 컴퓨터를 구성합니다. (자세한 내용은 참조 하세요. [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)). 설정할 필요가 없습니다를 <`transport`> 요소 값이 구성을 사용 합니다.  
   
 2.  메시지 수준 보안에 대한 클라이언트 자격 증명 형식을 지정합니다. 다음 예제에서는 합니다 `clientCredentialType` 특성을 <`message`> 요소를 `UserName`입니다.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "50187610"
     </bindings>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 보안 모드 설정](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)  
- [서비스에 보안 설정](../../../../docs/framework/wcf/securing-services.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- [방법: 보안 모드 설정](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)
+- [서비스에 보안 설정](../../../../docs/framework/wcf/securing-services.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

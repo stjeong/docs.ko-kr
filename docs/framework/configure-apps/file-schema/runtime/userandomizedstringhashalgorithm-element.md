@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 15a86c1df3e7d6a9d8ddd102bd34aede46c08ba8
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 3bb4286ea6055d2df9111b2222b137f2668bfdfe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681042"
 ---
 # <a name="ltuserandomizedstringhashalgorithmgt-element"></a>&lt;UseRandomizedStringHashAlgorithm&gt; 요소
 공용 언어 런타임에서 문자열에 대 한 해시 코드를 계산할지 여부를 결정 한 응용 프로그램 도메인 별로 합니다.  
   
  \<configuration>  
 \<runtime>  
-\<UseRandomizedStringHashAlgorithm >  
+\<UseRandomizedStringHashAlgorithm>  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,7 +54,7 @@ ms.locfileid: "53612090"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -65,19 +65,19 @@ ms.locfileid: "53612090"
  해시 테이블에서 문자열 조회는 일반적으로 o (1) 작업입니다. 그러나 많은 충돌이 발생 했을 때 조회 될 수 있습니다는 O (n<sup>2</sup>) 작업입니다. 사용할 수는 `<UseRandomizedStringHashAlgorithm>` 에 해시 코드 계산 되는 키 데이터 입력을 기반으로 하는 경우에 특히 잠재적 충돌 수를 제한 하는 응용 프로그램 도메인당 임의 해싱 알고리즘을 생성 하는 구성 요소 사용자가 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 정의 `DisplayString` private 문자열 상수를 포함 하는 클래스 `s`, 값인 "는 문자열입니다." 메서드를 실행하는 응용 프로그램 도메인의 이름과 함께 문자열 값 및 해시 코드를 표시하는 `ShowStringHashCode` 메서드도 포함합니다.  
+ 다음 예제에서는 정의 `DisplayString` private 문자열 상수를 포함 하는 클래스 `s`, 값인 "는 문자열입니다." 메서드를 실행하는 애플리케이션 도메인의 이름과 함께 문자열 값 및 해시 코드를 표시하는 `ShowStringHashCode` 메서드도 포함합니다.  
   
  [!code-csharp[System.String.GetHashCode#2](../../../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS/perdomain.cs#2)]
  [!code-vb[System.String.GetHashCode#2](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.GetHashCode/VB/perdomain.vb#2)]  
   
- 구성 파일을 지정하지 않고 이 예제를 실행할 경우 다음과 유사한 출력이 표시됩니다. 문자열의 해시 코드는 두 응용 프로그램 도메인에서 동일합니다.  
+ 구성 파일을 지정하지 않고 이 예제를 실행할 경우 다음과 유사한 출력이 표시됩니다. 문자열의 해시 코드는 두 애플리케이션 도메인에서 동일합니다.  
   
 ```  
 String 'This is a string.' in domain 'PerDomain.exe': 941BCEAC  
 String 'This is a string.' in domain 'NewDomain': 941BCEAC  
 ```  
   
- 하지만 샘플 디렉터리에 다음의 구성을 추가하고 샘플을 실행하는 경우 동일 문자열의 해시 코드는 응용 프로그램 도메인에 의해 달라집니다.  
+ 하지만 샘플 디렉터리에 다음의 구성을 추가하고 샘플을 실행하는 경우 동일 문자열의 해시 코드는 애플리케이션 도메인에 의해 달라집니다.  
   
 ```xml  
 <?xml version ="1.0"?>  
@@ -95,7 +95,7 @@ String 'This is a string.' in domain 'PerDomain.exe': 5435776D
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
-- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

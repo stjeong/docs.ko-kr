@@ -2,12 +2,12 @@
 title: 'Windows Communication Foundation 채택 예상: 향후 마이그레이션 간소화'
 ms.date: 03/30/2017
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-ms.openlocfilehash: 306ffbae86058a2caad70d3788fb7bb4e7998eec
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 41deb6cb982e65b2af054840cdcb84e3d1db3451
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54695259"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Windows Communication Foundation 채택 예상: 향후 마이그레이션 간소화
 새 ASP.NET 응용 프로그램을 WCF의 향후 마이그레이션이 원활 해지 되도록 앞에서 설명한 권장 뿐만 아니라 다음 권장 사항을 따릅니다.  
@@ -124,5 +124,5 @@ throw new SoapException(
   
 -   서비스 리소스에 대한 액세스 권한을 부여할 때 ASP.NET 2.0 역할 공급자를 사용할 것을 고려해 보세요.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation 채택 예상: 향후 통합 간소화](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+## <a name="see-also"></a>참고자료
+- [Windows Communication Foundation 채택 예상: 향후 통합 간소화](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
