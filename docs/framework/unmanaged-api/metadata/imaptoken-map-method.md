@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f2633bfadaabf208a2b86fda83375c3a136b93b9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 31c18061ad5f21e26665cd0d6883b0eb26afd1d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33448174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54557478"
 ---
-# <a name="imaptokenmap-method"></a><span data-ttu-id="2ed92-102">IMapToken::Map 메서드</span><span class="sxs-lookup"><span data-stu-id="2ed92-102">IMapToken::Map Method</span></span>
-<span data-ttu-id="2ed92-103">메타 데이터 서명을 사용 하 여 어셈블리 간의 관계를 매핑합니다.</span><span class="sxs-lookup"><span data-stu-id="2ed92-103">Maps a relationship between the assemblies using metadata signatures.</span></span>  
+# <a name="imaptokenmap-method"></a><span data-ttu-id="0c9a3-102">IMapToken::Map 메서드</span><span class="sxs-lookup"><span data-stu-id="0c9a3-102">IMapToken::Map Method</span></span>
+<span data-ttu-id="0c9a3-103">메타 데이터 서명을 사용 하 여 어셈블리 간에 관계를 매핑합니다.</span><span class="sxs-lookup"><span data-stu-id="0c9a3-103">Maps a relationship between the assemblies using metadata signatures.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2ed92-104">구문</span><span class="sxs-lookup"><span data-stu-id="2ed92-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0c9a3-104">구문</span><span class="sxs-lookup"><span data-stu-id="0c9a3-104">Syntax</span></span>  
   
 ```  
 HRESULT Map (  
@@ -36,24 +36,24 @@ HRESULT Map (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="2ed92-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="2ed92-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="0c9a3-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="0c9a3-105">Parameters</span></span>  
  `tkImp`  
- <span data-ttu-id="2ed92-106">[in] 가져온된 코드 개체를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="2ed92-106">[in] The metadata token that represents the imported code object.</span></span>  
+ <span data-ttu-id="0c9a3-106">[in] 가져온된 코드 개체를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="0c9a3-106">[in] The metadata token that represents the imported code object.</span></span>  
   
  `tkEmit`  
- <span data-ttu-id="2ed92-107">[in] 내보낸된 코드 개체를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="2ed92-107">[in] The metadata token that represents the emitted code object.</span></span>  
+ <span data-ttu-id="0c9a3-107">[in] 내보낸된 코드가 개체를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="0c9a3-107">[in] The metadata token that represents the emitted code object.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="2ed92-108">설명</span><span class="sxs-lookup"><span data-stu-id="2ed92-108">Remarks</span></span>  
- <span data-ttu-id="2ed92-109">병합 하는 동안 발생 토큰 다시 매핑 가져온된 (원본) 메타 데이터 범위에서 원래 토큰 범위 지정 및 내보낸된 (대상) 메타 데이터 범위에서 새 토큰 범위가 지정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="2ed92-109">When the token re-map occurs during a merge, the original token is scoped in the imported (source) metadata scope and the new token is scoped in the emitted (target) metadata scope.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="0c9a3-108">설명</span><span class="sxs-lookup"><span data-stu-id="0c9a3-108">Remarks</span></span>  
+ <span data-ttu-id="0c9a3-109">토큰 다시 매핑하는 경우 병합 하는 동안 가져온된 (원본) 메타 데이터 범위에서 사용 하는 원래 토큰에서 범위를 지정 하 고 내보낸된 (대상) 메타 데이터 범위에서 사용 하는 새 토큰에서 범위를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="0c9a3-109">When the token re-map occurs during a merge, the original token is scoped in the imported (source) metadata scope and the new token is scoped in the emitted (target) metadata scope.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="2ed92-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="2ed92-110">Requirements</span></span>  
- <span data-ttu-id="2ed92-111">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="2ed92-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0c9a3-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="0c9a3-110">Requirements</span></span>  
+ <span data-ttu-id="0c9a3-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="0c9a3-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="2ed92-112">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="2ed92-112">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="0c9a3-112">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="0c9a3-112">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="2ed92-113">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="2ed92-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="0c9a3-113">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="0c9a3-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="2ed92-114">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2ed92-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="0c9a3-114">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0c9a3-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2ed92-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="2ed92-115">See Also</span></span>  
- [<span data-ttu-id="2ed92-116">IMapToken 인터페이스</span><span class="sxs-lookup"><span data-stu-id="2ed92-116">IMapToken Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)
+## <a name="see-also"></a><span data-ttu-id="0c9a3-115">참고자료</span><span class="sxs-lookup"><span data-stu-id="0c9a3-115">See also</span></span>
+- [<span data-ttu-id="0c9a3-116">IMapToken 인터페이스</span><span class="sxs-lookup"><span data-stu-id="0c9a3-116">IMapToken Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)

@@ -17,30 +17,30 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 98b54359e2ad659d0268d05d26c7a05759b1e775
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: fe72361d91e0f162b5585d2c8b4920adf5adb3e9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33453611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539118"
 ---
-# <a name="icorprofilerobjectenumreset-method"></a><span data-ttu-id="8d3c1-102">ICorProfilerObjectEnum::Reset 메서드</span><span class="sxs-lookup"><span data-stu-id="8d3c1-102">ICorProfilerObjectEnum::Reset Method</span></span>
-<span data-ttu-id="8d3c1-103">이 열거자의이 커서를 시퀀스의 시작 위치로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3c1-103">Moves this enumerator's cursor to the starting position of the sequence.</span></span>  
+# <a name="icorprofilerobjectenumreset-method"></a><span data-ttu-id="40870-102">ICorProfilerObjectEnum::Reset 메서드</span><span class="sxs-lookup"><span data-stu-id="40870-102">ICorProfilerObjectEnum::Reset Method</span></span>
+<span data-ttu-id="40870-103">이 열거자의이 커서를 시퀀스의 시작 위치로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="40870-103">Moves this enumerator's cursor to the starting position of the sequence.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8d3c1-104">구문</span><span class="sxs-lookup"><span data-stu-id="8d3c1-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="40870-104">구문</span><span class="sxs-lookup"><span data-stu-id="40870-104">Syntax</span></span>  
   
 ```  
 HRESULT Reset ();  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="8d3c1-105">요구 사항</span><span class="sxs-lookup"><span data-stu-id="8d3c1-105">Requirements</span></span>  
- <span data-ttu-id="8d3c1-106">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3c1-106">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="40870-105">요구 사항</span><span class="sxs-lookup"><span data-stu-id="40870-105">Requirements</span></span>  
+ <span data-ttu-id="40870-106">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="40870-106">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="8d3c1-107">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="8d3c1-107">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="40870-107">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="40870-107">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="8d3c1-108">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="8d3c1-108">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="40870-108">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="40870-108">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="8d3c1-109">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8d3c1-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="40870-109">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="40870-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8d3c1-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8d3c1-110">See Also</span></span>  
- [<span data-ttu-id="8d3c1-111">ICorProfilerObjectEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="8d3c1-111">ICorProfilerObjectEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)
+## <a name="see-also"></a><span data-ttu-id="40870-110">참고자료</span><span class="sxs-lookup"><span data-stu-id="40870-110">See also</span></span>
+- [<span data-ttu-id="40870-111">ICorProfilerObjectEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="40870-111">ICorProfilerObjectEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)
