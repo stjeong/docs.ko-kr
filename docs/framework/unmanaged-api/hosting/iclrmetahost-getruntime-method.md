@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c83f6dfe069b75f1ab3256f4e5a083f85b50adad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 273891b0814d9383d9640c79f5df959f2b9398b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33435918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54707906"
 ---
-# <a name="iclrmetahostgetruntime-method"></a><span data-ttu-id="f808f-102">ICLRMetaHost::GetRuntime 메서드</span><span class="sxs-lookup"><span data-stu-id="f808f-102">ICLRMetaHost::GetRuntime Method</span></span>
-<span data-ttu-id="f808f-103">가져옵니다는 [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) 공용 언어 런타임 (CLR)의 특정 버전에 해당 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-103">Gets the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface that corresponds to a particular version of the common language runtime (CLR).</span></span> <span data-ttu-id="f808f-104">이 메서드를 대체는 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) 사용한 함수는 [STARTUP_LOADER_SAFEMODE](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-104">This method supersedes the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) function used with the [STARTUP_LOADER_SAFEMODE](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) flag.</span></span>  
+# <a name="iclrmetahostgetruntime-method"></a><span data-ttu-id="ac18a-102">ICLRMetaHost::GetRuntime 메서드</span><span class="sxs-lookup"><span data-stu-id="ac18a-102">ICLRMetaHost::GetRuntime Method</span></span>
+<span data-ttu-id="ac18a-103">가져옵니다 합니다 [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) 는 CLR (공용 언어 런타임)의 특정 버전에 해당 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-103">Gets the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface that corresponds to a particular version of the common language runtime (CLR).</span></span> <span data-ttu-id="ac18a-104">이 메서드를 대체 합니다 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) 함수를 사용 합니다 [STARTUP_LOADER_SAFEMODE](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-104">This method supersedes the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) function used with the [STARTUP_LOADER_SAFEMODE](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) flag.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f808f-105">구문</span><span class="sxs-lookup"><span data-stu-id="f808f-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ac18a-105">구문</span><span class="sxs-lookup"><span data-stu-id="ac18a-105">Syntax</span></span>  
   
 ```  
 HRESULT GetRuntime (  
@@ -37,44 +37,44 @@ HRESULT GetRuntime (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="f808f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="f808f-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="ac18a-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="ac18a-106">Parameters</span></span>  
  `pwzVersion`  
- <span data-ttu-id="f808f-107">[in] .NET Framework 컴파일 버전 형식에서 메타 데이터에 "v*A*. *B*[. *X*] "입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-107">[in] The .NET Framework compilation version stored in the metadata, in the format "v*A*.*B*[.*X*]".</span></span> <span data-ttu-id="f808f-108">*A*, *B*, 및 *X* 는 주 버전, 부 버전 및 빌드 번호에 해당 하는 10 진수입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-108">*A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number.</span></span>  
+ <span data-ttu-id="ac18a-107">[in] .NET Framework 컴파일 버전 메타 데이터 형식으로 저장 "v*A*. *B*[. *X*] "입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-107">[in] The .NET Framework compilation version stored in the metadata, in the format "v*A*.*B*[.*X*]".</span></span> <span data-ttu-id="ac18a-108">*A*, *B*, 및 *X* 는 주 버전, 부 버전 및 빌드 번호에 해당 하는 10 진수입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-108">*A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="f808f-109">이 매개 변수 C:\Windows\Microsoft.NET\Framework 또는 C:\Windows\Microsoft.NET\Framework64 아래 표시 된 대로.NET Framework 버전에 대 한 디렉터리 이름과 같아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-109">This parameter must match the directory name for the .NET Framework version, as it appears under C:\Windows\Microsoft.NET\Framework or C:\Windows\Microsoft.NET\Framework64.</span></span>  
+>  <span data-ttu-id="ac18a-109">이 매개 변수는 C:\Windows\Microsoft.NET\Framework 또는 C:\Windows\Microsoft.NET\Framework64 아래 표시 된 대로.NET Framework 버전의 경우 디렉터리 이름이 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-109">This parameter must match the directory name for the .NET Framework version, as it appears under C:\Windows\Microsoft.NET\Framework or C:\Windows\Microsoft.NET\Framework64.</span></span>  
   
- <span data-ttu-id="f808f-110">예제 값은 "v1.0.3705", "v1.1.4322", "v2.0.50727" 및 "v4.0 합니다. *X*"여기서 *X* 설치 된 빌드 번호에 따라 달라 집니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-110">Example values are "v1.0.3705", "v1.1.4322", "v2.0.50727", and "v4.0.*X*", where *X* depends on the build number installed.</span></span> <span data-ttu-id="f808f-111">"V" 접두사는 필수입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-111">The "v" prefix is required.</span></span>  
+ <span data-ttu-id="ac18a-110">예제 값은 "v1.0.3705", "v1.1.4322", "v2.0.50727" 및 "v4.0"입니다. *X*", 여기서 *X* 설치 빌드 번호에 따라 달라 집니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-110">Example values are "v1.0.3705", "v1.1.4322", "v2.0.50727", and "v4.0.*X*", where *X* depends on the build number installed.</span></span> <span data-ttu-id="ac18a-111">"V" 접두사는 필수입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-111">The "v" prefix is required.</span></span>  
   
  `riid`  
- <span data-ttu-id="f808f-112">[in] 원하는 인터페이스에 대 한 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-112">[in] The identifier for the desired interface.</span></span> <span data-ttu-id="f808f-113">현재이 매개 변수에 대 한 유일한 유효 값이 IID_ICLRRuntimeInfo.</span><span class="sxs-lookup"><span data-stu-id="f808f-113">Currently, the only valid value for this parameter is IID_ICLRRuntimeInfo.</span></span>  
+ <span data-ttu-id="ac18a-112">[in] 원하는 인터페이스의 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-112">[in] The identifier for the desired interface.</span></span> <span data-ttu-id="ac18a-113">현재이 매개 변수에 대 한 유일한 유효 값은 IID_ICLRRuntimeInfo 합니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-113">Currently, the only valid value for this parameter is IID_ICLRRuntimeInfo.</span></span>  
   
  `ppRuntime`  
- <span data-ttu-id="f808f-114">[out] 에 대 한 포인터는 [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) 요청한 런타임에 해당 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-114">[out] A pointer to the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface that corresponds to the requested runtime.</span></span>  
+ <span data-ttu-id="ac18a-114">[out] 에 대 한 포인터를 [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) 요청된 된 런타임을에 해당 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-114">[out] A pointer to the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface that corresponds to the requested runtime.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="f808f-115">반환 값</span><span class="sxs-lookup"><span data-stu-id="f808f-115">Return Value</span></span>  
- <span data-ttu-id="f808f-116">이 메서드는 다음과 같은 특정 HRESULT뿐만 아니라 메서드 오류를 나타내는 HRESULT 오류도 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-116">This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="ac18a-115">반환 값</span><span class="sxs-lookup"><span data-stu-id="ac18a-115">Return Value</span></span>  
+ <span data-ttu-id="ac18a-116">이 메서드는 다음과 같은 특정 HRESULT뿐만 아니라 메서드 오류를 나타내는 HRESULT 오류도 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-116">This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.</span></span>  
   
-|<span data-ttu-id="f808f-117">HRESULT</span><span class="sxs-lookup"><span data-stu-id="f808f-117">HRESULT</span></span>|<span data-ttu-id="f808f-118">설명</span><span class="sxs-lookup"><span data-stu-id="f808f-118">Description</span></span>|  
+|<span data-ttu-id="ac18a-117">HRESULT</span><span class="sxs-lookup"><span data-stu-id="ac18a-117">HRESULT</span></span>|<span data-ttu-id="ac18a-118">설명</span><span class="sxs-lookup"><span data-stu-id="ac18a-118">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="f808f-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="f808f-119">S_OK</span></span>|<span data-ttu-id="f808f-120">메서드가 완료되었습니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-120">The method completed successfully.</span></span>|  
-|<span data-ttu-id="f808f-121">E_POINTER</span><span class="sxs-lookup"><span data-stu-id="f808f-121">E_POINTER</span></span>|<span data-ttu-id="f808f-122">`pwzVersion` 또는 `ppRuntime`이 null입니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-122">`pwzVersion` or `ppRuntime` is null.</span></span>|  
+|<span data-ttu-id="ac18a-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="ac18a-119">S_OK</span></span>|<span data-ttu-id="ac18a-120">메서드가 완료되었습니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-120">The method completed successfully.</span></span>|  
+|<span data-ttu-id="ac18a-121">E_POINTER</span><span class="sxs-lookup"><span data-stu-id="ac18a-121">E_POINTER</span></span>|<span data-ttu-id="ac18a-122">`pwzVersion` 또는 `ppRuntime`이 null입니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-122">`pwzVersion` or `ppRuntime` is null.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="f808f-123">설명</span><span class="sxs-lookup"><span data-stu-id="f808f-123">Remarks</span></span>  
- <span data-ttu-id="f808f-124">이 메서드와 상호 작용 일관 되 게 레거시 인터페이스와 같은 [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) 인터페이스 및 레거시 함수는 사용 되지 않는 등 `CorBindTo*` 함수 (참조 [사용 되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md) 호스팅 API는.NET Framework 2.0에서).</span><span class="sxs-lookup"><span data-stu-id="f808f-124">This method interacts consistently with legacy interfaces such as the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) interface and legacy functions such as the deprecated `CorBindTo*` functions (see [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md) in the .NET Framework 2.0 hosting API).</span></span> <span data-ttu-id="f808f-125">즉, 런타임이 레거시 API로 로드 되는 새로운 API를 표시 되 고 새 API와 함께 로드 된 런타임을 레거시 API에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-125">That is, runtimes that are loaded with the legacy API are visible to the new API, and runtimes that are loaded with the new API are visible to the legacy API.</span></span> <span data-ttu-id="f808f-126">이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-126">.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="ac18a-123">설명</span><span class="sxs-lookup"><span data-stu-id="ac18a-123">Remarks</span></span>  
+ <span data-ttu-id="ac18a-124">이 메서드가 상호 작용 하는 일관 되 게 레거시 인터페이스를 사용 하 여 같은 합니다 [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) 사용 되지 않는 등의 인터페이스 및 레거시 기능 `CorBindTo*` 함수 (참조 [사용 되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md) 호스팅 API는.NET Framework 2.0에서).</span><span class="sxs-lookup"><span data-stu-id="ac18a-124">This method interacts consistently with legacy interfaces such as the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) interface and legacy functions such as the deprecated `CorBindTo*` functions (see [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md) in the .NET Framework 2.0 hosting API).</span></span> <span data-ttu-id="ac18a-125">즉, 기존 API를 사용 하 여 로드 된 런타임을 새 API에 표시 되며 새 API를 사용 하 여 로드 된 런타임을 레거시 API에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ac18a-125">That is, runtimes that are loaded with the legacy API are visible to the new API, and runtimes that are loaded with the new API are visible to the legacy API.</span></span> <span data-ttu-id="ac18a-126">.</span><span class="sxs-lookup"><span data-stu-id="ac18a-126">.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="f808f-127">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f808f-127">Requirements</span></span>  
- <span data-ttu-id="f808f-128">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="f808f-128">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ac18a-127">요구 사항</span><span class="sxs-lookup"><span data-stu-id="ac18a-127">Requirements</span></span>  
+ <span data-ttu-id="ac18a-128">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="ac18a-128">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="f808f-129">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="f808f-129">**Header:** MetaHost.h</span></span>  
+ <span data-ttu-id="ac18a-129">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="ac18a-129">**Header:** MetaHost.h</span></span>  
   
- <span data-ttu-id="f808f-130">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="f808f-130">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="ac18a-130">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="ac18a-130">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="f808f-131">**.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="f808f-131">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="ac18a-131">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ac18a-131">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f808f-132">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f808f-132">See Also</span></span>  
- [<span data-ttu-id="f808f-133">ICLRMetaHost 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f808f-133">ICLRMetaHost Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)  
- [<span data-ttu-id="f808f-134">사용되지 않는 CLR 호스팅 인터페이스 및 Coclass</span><span class="sxs-lookup"><span data-stu-id="f808f-134">Deprecated CLR Hosting Interfaces and Coclasses</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-interfaces-and-coclasses.md)  
- [<span data-ttu-id="f808f-135">CLR 호스팅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f808f-135">CLR Hosting Interfaces</span></span>](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
- [<span data-ttu-id="f808f-136">사용되지 않는 CLR 호스팅 함수</span><span class="sxs-lookup"><span data-stu-id="f808f-136">Deprecated CLR Hosting Functions</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
- [<span data-ttu-id="f808f-137">호스팅</span><span class="sxs-lookup"><span data-stu-id="f808f-137">Hosting</span></span>](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## <a name="see-also"></a><span data-ttu-id="ac18a-132">참고자료</span><span class="sxs-lookup"><span data-stu-id="ac18a-132">See also</span></span>
+- [<span data-ttu-id="ac18a-133">ICLRMetaHost 인터페이스</span><span class="sxs-lookup"><span data-stu-id="ac18a-133">ICLRMetaHost Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
+- [<span data-ttu-id="ac18a-134">사용되지 않는 CLR 호스팅 인터페이스 및 Coclass</span><span class="sxs-lookup"><span data-stu-id="ac18a-134">Deprecated CLR Hosting Interfaces and Coclasses</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-interfaces-and-coclasses.md)
+- [<span data-ttu-id="ac18a-135">CLR 호스팅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="ac18a-135">CLR Hosting Interfaces</span></span>](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)
+- [<span data-ttu-id="ac18a-136">사용되지 않는 CLR 호스팅 함수</span><span class="sxs-lookup"><span data-stu-id="ac18a-136">Deprecated CLR Hosting Functions</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [<span data-ttu-id="ac18a-137">호스팅</span><span class="sxs-lookup"><span data-stu-id="ac18a-137">Hosting</span></span>](../../../../docs/framework/unmanaged-api/hosting/index.md)

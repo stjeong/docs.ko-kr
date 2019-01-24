@@ -17,33 +17,33 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fa79382d597d303d492e3a441c15a422697be279
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f7b4cf6c50d624f82a75f19b8e3f42c73910c4e5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33405969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709301"
 ---
-# <a name="icordebuginitialize-method"></a><span data-ttu-id="04781-102">ICorDebug::Initialize 메서드</span><span class="sxs-lookup"><span data-stu-id="04781-102">ICorDebug::Initialize Method</span></span>
-<span data-ttu-id="04781-103">초기화는 `ICorDebug` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="04781-103">Initializes the `ICorDebug` object.</span></span>  
+# <a name="icordebuginitialize-method"></a><span data-ttu-id="3b775-102">ICorDebug::Initialize 메서드</span><span class="sxs-lookup"><span data-stu-id="3b775-102">ICorDebug::Initialize Method</span></span>
+<span data-ttu-id="3b775-103">`ICorDebug` 개체를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="3b775-103">Initializes the `ICorDebug` object.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="04781-104">구문</span><span class="sxs-lookup"><span data-stu-id="04781-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3b775-104">구문</span><span class="sxs-lookup"><span data-stu-id="3b775-104">Syntax</span></span>  
   
 ```  
 HRESULT Initialize ();  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="04781-105">설명</span><span class="sxs-lookup"><span data-stu-id="04781-105">Remarks</span></span>  
- <span data-ttu-id="04781-106">디버거를 호출 해야 `Initialize` 디버깅 초기화에 시간이 서비스를 만들 때.</span><span class="sxs-lookup"><span data-stu-id="04781-106">The debugger must call `Initialize` at creation time to initialize the debugging services.</span></span> <span data-ttu-id="04781-107">이 메서드를 다른 메서드 전에 호출 해야 `ICorDebug` 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="04781-107">This method must be called before any other method on `ICorDebug` is called.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3b775-105">설명</span><span class="sxs-lookup"><span data-stu-id="3b775-105">Remarks</span></span>  
+ <span data-ttu-id="3b775-106">디버거를 호출 해야 `Initialize` 디버깅을 초기화 하는 시간을 만들 때 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="3b775-106">The debugger must call `Initialize` at creation time to initialize the debugging services.</span></span> <span data-ttu-id="3b775-107">이 메서드를 다른 메서드 전에 호출 해야 `ICorDebug` 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="3b775-107">This method must be called before any other method on `ICorDebug` is called.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="04781-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="04781-108">Requirements</span></span>  
- <span data-ttu-id="04781-109">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="04781-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="3b775-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3b775-108">Requirements</span></span>  
+ <span data-ttu-id="3b775-109">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="3b775-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="04781-110">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="04781-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="3b775-110">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3b775-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="04781-111">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="04781-111">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="3b775-111">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3b775-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="04781-112">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="04781-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="3b775-112">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3b775-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="04781-113">참고 항목</span><span class="sxs-lookup"><span data-stu-id="04781-113">See Also</span></span>  
- [<span data-ttu-id="04781-114">ICorDebug 인터페이스</span><span class="sxs-lookup"><span data-stu-id="04781-114">ICorDebug Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## <a name="see-also"></a><span data-ttu-id="3b775-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="3b775-113">See also</span></span>
+- [<span data-ttu-id="3b775-114">ICorDebug 인터페이스</span><span class="sxs-lookup"><span data-stu-id="3b775-114">ICorDebug Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

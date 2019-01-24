@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - fonts [WPF]
 ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
-ms.openlocfilehash: 3a7accd2e98423bf3ab0133a5eb36610b3ebb414
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f1913832bf95d0ea7188637f5456e4ff8f24695e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33542612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718912"
 ---
-# <a name="fonts-wpf"></a><span data-ttu-id="8eb47-102">글꼴(WPF)</span><span class="sxs-lookup"><span data-stu-id="8eb47-102">Fonts (WPF)</span></span>
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="8eb47-103"> 사용 하 여 텍스트의 풍부한 표시에 대 한 지원이 포함 되어 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴입니다.</span><span class="sxs-lookup"><span data-stu-id="8eb47-103"> includes support for rich presentation of text using [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts.</span></span> <span data-ttu-id="8eb47-104">샘플 팩 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴에 포함 되어는 [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="8eb47-104">A sample pack of [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts is included with the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)].</span></span>  
+# <a name="fonts-wpf"></a><span data-ttu-id="4c3fc-102">글꼴(WPF)</span><span class="sxs-lookup"><span data-stu-id="4c3fc-102">Fonts (WPF)</span></span>
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <span data-ttu-id="4c3fc-103">사용 하 여 텍스트의 풍부한 기능의 프레젠테이션 지원 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴입니다.</span><span class="sxs-lookup"><span data-stu-id="4c3fc-103">includes support for rich presentation of text using [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts.</span></span> <span data-ttu-id="4c3fc-104">샘플 팩 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴에 포함 된를 [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)]입니다.</span><span class="sxs-lookup"><span data-stu-id="4c3fc-104">A sample pack of [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts is included with the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)].</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="8eb47-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="8eb47-105">In This Section</span></span>  
- [<span data-ttu-id="8eb47-106">OpenType 글꼴 기능</span><span class="sxs-lookup"><span data-stu-id="8eb47-106">OpenType Font Features</span></span>](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
- [<span data-ttu-id="8eb47-107">응용 프로그램과 함께 글꼴 패키징</span><span class="sxs-lookup"><span data-stu-id="8eb47-107">Packaging Fonts with Applications</span></span>](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)  
- [<span data-ttu-id="8eb47-108">샘플 OpenType 글꼴 팩</span><span class="sxs-lookup"><span data-stu-id="8eb47-108">Sample OpenType Font Pack</span></span>](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
- [<span data-ttu-id="8eb47-109">방법 항목</span><span class="sxs-lookup"><span data-stu-id="8eb47-109">How-to Topics</span></span>](../../../../docs/framework/wpf/advanced/fonts-how-to-topics.md)  
+## <a name="in-this-section"></a><span data-ttu-id="4c3fc-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="4c3fc-105">In This Section</span></span>  
+ [<span data-ttu-id="4c3fc-106">OpenType 글꼴 기능</span><span class="sxs-lookup"><span data-stu-id="4c3fc-106">OpenType Font Features</span></span>](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
+ [<span data-ttu-id="4c3fc-107">응용 프로그램과 함께 글꼴 패키징</span><span class="sxs-lookup"><span data-stu-id="4c3fc-107">Packaging Fonts with Applications</span></span>](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)  
+ [<span data-ttu-id="4c3fc-108">샘플 OpenType 글꼴 팩</span><span class="sxs-lookup"><span data-stu-id="4c3fc-108">Sample OpenType Font Pack</span></span>](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
+ [<span data-ttu-id="4c3fc-109">방법 항목</span><span class="sxs-lookup"><span data-stu-id="4c3fc-109">How-to Topics</span></span>](../../../../docs/framework/wpf/advanced/fonts-how-to-topics.md)  
   
-## <a name="see-also"></a><span data-ttu-id="8eb47-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8eb47-110">See Also</span></span>  
- <xref:System.Windows.FontStyle>  
- <xref:System.Windows.SystemFonts>  
- [<span data-ttu-id="8eb47-111">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="8eb47-111">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [<span data-ttu-id="8eb47-112">WPF의 입력 체계</span><span class="sxs-lookup"><span data-stu-id="8eb47-112">Typography in WPF</span></span>](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+## <a name="see-also"></a><span data-ttu-id="4c3fc-110">참고자료</span><span class="sxs-lookup"><span data-stu-id="4c3fc-110">See also</span></span>
+- <xref:System.Windows.FontStyle>
+- <xref:System.Windows.SystemFonts>
+- [<span data-ttu-id="4c3fc-111">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="4c3fc-111">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [<span data-ttu-id="4c3fc-112">WPF의 입력 체계</span><span class="sxs-lookup"><span data-stu-id="4c3fc-112">Typography in WPF</span></span>](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

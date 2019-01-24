@@ -16,31 +16,31 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5304496da992b44c171ca3c6ffa3fffa35d6f9cf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 3e5f36e10fffebe89b805cee3cb57e88afd4df35
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33425368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745310"
 ---
-# <a name="ibindingdisplay-interface"></a><span data-ttu-id="a073c-102">IBindingDisplay 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a073c-102">IBindingDisplay Interface</span></span>
-<span data-ttu-id="a073c-103">실행 중인 응용 프로그램에 대 한 현재 바인딩 정보를 표시 하는 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a073c-103">Provides methods that display current binding information about the running application.</span></span>  
+# <a name="ibindingdisplay-interface"></a><span data-ttu-id="8d612-102">IBindingDisplay 인터페이스</span><span class="sxs-lookup"><span data-stu-id="8d612-102">IBindingDisplay Interface</span></span>
+<span data-ttu-id="8d612-103">실행 중인 응용 프로그램에 대 한 현재 바인딩 정보를 표시 하는 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="8d612-103">Provides methods that display current binding information about the running application.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="a073c-104">메서드</span><span class="sxs-lookup"><span data-stu-id="a073c-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="8d612-104">메서드</span><span class="sxs-lookup"><span data-stu-id="8d612-104">Methods</span></span>  
   
-|<span data-ttu-id="a073c-105">메서드</span><span class="sxs-lookup"><span data-stu-id="a073c-105">Method</span></span>|<span data-ttu-id="a073c-106">설명</span><span class="sxs-lookup"><span data-stu-id="a073c-106">Description</span></span>|  
+|<span data-ttu-id="8d612-105">메서드</span><span class="sxs-lookup"><span data-stu-id="8d612-105">Method</span></span>|<span data-ttu-id="8d612-106">설명</span><span class="sxs-lookup"><span data-stu-id="8d612-106">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="a073c-107">GetCurrentDisplay 메서드</span><span class="sxs-lookup"><span data-stu-id="a073c-107">GetCurrentDisplay Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-getcurrentdisplay-method.md)|<span data-ttu-id="a073c-108">현재 바인딩 표시 정보를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="a073c-108">Returns the current binding display information.</span></span>|  
-|[<span data-ttu-id="a073c-109">InitializeForProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="a073c-109">InitializeForProcess Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)|<span data-ttu-id="a073c-110">초기화는 `IBindingDisplay` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="a073c-110">Initializes the `IBindingDisplay` object.</span></span>|  
+|[<span data-ttu-id="8d612-107">GetCurrentDisplay 메서드</span><span class="sxs-lookup"><span data-stu-id="8d612-107">GetCurrentDisplay Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-getcurrentdisplay-method.md)|<span data-ttu-id="8d612-108">현재 바인딩 표시 정보를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8d612-108">Returns the current binding display information.</span></span>|  
+|[<span data-ttu-id="8d612-109">InitializeForProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="8d612-109">InitializeForProcess Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)|<span data-ttu-id="8d612-110">`IBindingDisplay` 개체를 초기화합니다.</span><span class="sxs-lookup"><span data-stu-id="8d612-110">Initializes the `IBindingDisplay` object.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="a073c-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a073c-111">Requirements</span></span>  
- <span data-ttu-id="a073c-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="a073c-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8d612-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="8d612-111">Requirements</span></span>  
+ <span data-ttu-id="8d612-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="8d612-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a073c-113">**헤더:** BindingDisplay.h</span><span class="sxs-lookup"><span data-stu-id="a073c-113">**Header:** BindingDisplay.h</span></span>  
+ <span data-ttu-id="8d612-113">**헤더:** BindingDisplay.h</span><span class="sxs-lookup"><span data-stu-id="8d612-113">**Header:** BindingDisplay.h</span></span>  
   
- <span data-ttu-id="a073c-114">**라이브러리:** BindingDisplay.idl</span><span class="sxs-lookup"><span data-stu-id="a073c-114">**Library:** BindingDisplay.idl</span></span>  
+ <span data-ttu-id="8d612-114">**라이브러리:** BindingDisplay.idl</span><span class="sxs-lookup"><span data-stu-id="8d612-114">**Library:** BindingDisplay.idl</span></span>  
   
- <span data-ttu-id="a073c-115">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a073c-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="8d612-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8d612-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a073c-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a073c-116">See Also</span></span>  
- [<span data-ttu-id="a073c-117">진단 기호 저장소 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a073c-117">Diagnostics Symbol Store Interfaces</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## <a name="see-also"></a><span data-ttu-id="8d612-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="8d612-116">See also</span></span>
+- [<span data-ttu-id="8d612-117">진단 기호 저장소 인터페이스</span><span class="sxs-lookup"><span data-stu-id="8d612-117">Diagnostics Symbol Store Interfaces</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

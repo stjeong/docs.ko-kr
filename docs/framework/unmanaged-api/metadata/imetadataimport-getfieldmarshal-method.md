@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 837b2142e200e224fe32c2c673be0f317633452a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 3bc90a17a0469cd716c1e3e990b5c0fb2ff8bf5a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33445360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54647579"
 ---
-# <a name="imetadataimportgetfieldmarshal-method"></a><span data-ttu-id="a8576-102">IMetaDataImport::GetFieldMarshal 메서드</span><span class="sxs-lookup"><span data-stu-id="a8576-102">IMetaDataImport::GetFieldMarshal Method</span></span>
-<span data-ttu-id="a8576-103">지정 된 필드 메타 데이터 토큰이 나타내는 필드의 관리 되지 않는 네이티브 형식에 대 한 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a8576-103">Gets a pointer to the native, unmanaged type of the field represented by the specified field metadata token.</span></span>  
+# <a name="imetadataimportgetfieldmarshal-method"></a><span data-ttu-id="ddb43-102">IMetaDataImport::GetFieldMarshal 메서드</span><span class="sxs-lookup"><span data-stu-id="ddb43-102">IMetaDataImport::GetFieldMarshal Method</span></span>
+<span data-ttu-id="ddb43-103">지정 된 필드 메타 데이터 토큰이 나타내는 필드의 네이티브, 관리 되지 않는 형식에 대 한 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="ddb43-103">Gets a pointer to the native, unmanaged type of the field represented by the specified field metadata token.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a8576-104">구문</span><span class="sxs-lookup"><span data-stu-id="a8576-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ddb43-104">구문</span><span class="sxs-lookup"><span data-stu-id="ddb43-104">Syntax</span></span>  
   
 ```  
 HRESULT GetFieldMarshal (  
@@ -37,25 +37,25 @@ HRESULT GetFieldMarshal (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="a8576-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="a8576-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="ddb43-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="ddb43-105">Parameters</span></span>  
  `tk`  
- <span data-ttu-id="a8576-106">[in] Interop 마샬링 정보를 가져올 필드를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="a8576-106">[in] The metadata token that represents the field to get interop marshaling information for.</span></span>  
+ <span data-ttu-id="ddb43-106">[in] Interop 마샬링 정보를 가져올 필드를 나타내는 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="ddb43-106">[in] The metadata token that represents the field to get interop marshaling information for.</span></span>  
   
  `ppvNativeType`  
- <span data-ttu-id="a8576-107">[out] 메타 데이터 서명의 필드의 네이티브 형식에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="a8576-107">[out] A pointer to the metadata signature of the field's native type.</span></span>  
+ <span data-ttu-id="ddb43-107">[out] 메타 데이터 서명의 필드의 네이티브 형식에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="ddb43-107">[out] A pointer to the metadata signature of the field's native type.</span></span>  
   
  `pcbNativeType`  
- <span data-ttu-id="a8576-108">[out] 바이트 크기 `ppvNativeType`합니다.</span><span class="sxs-lookup"><span data-stu-id="a8576-108">[out] The size in bytes of `ppvNativeType`.</span></span>  
+ <span data-ttu-id="ddb43-108">[out] 크기 (바이트) `ppvNativeType`합니다.</span><span class="sxs-lookup"><span data-stu-id="ddb43-108">[out] The size in bytes of `ppvNativeType`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a8576-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a8576-109">Requirements</span></span>  
- <span data-ttu-id="a8576-110">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="a8576-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ddb43-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="ddb43-109">Requirements</span></span>  
+ <span data-ttu-id="ddb43-110">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="ddb43-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a8576-111">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="a8576-111">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="ddb43-111">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="ddb43-111">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="a8576-112">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="a8576-112">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="ddb43-112">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="ddb43-112">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="a8576-113">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a8576-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="ddb43-113">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ddb43-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a8576-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a8576-114">See Also</span></span>  
- [<span data-ttu-id="a8576-115">IMetaDataImport 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a8576-115">IMetaDataImport Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [<span data-ttu-id="a8576-116">IMetaDataImport2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a8576-116">IMetaDataImport2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## <a name="see-also"></a><span data-ttu-id="ddb43-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="ddb43-114">See also</span></span>
+- [<span data-ttu-id="ddb43-115">IMetaDataImport 인터페이스</span><span class="sxs-lookup"><span data-stu-id="ddb43-115">IMetaDataImport Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [<span data-ttu-id="ddb43-116">IMetaDataImport2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="ddb43-116">IMetaDataImport2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
