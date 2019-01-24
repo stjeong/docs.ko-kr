@@ -2,12 +2,12 @@
 title: 개발을 기반으로 ASP.NET 웹 서비스와 WCF 비교
 ms.date: 03/30/2017
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
-ms.openlocfilehash: c4c07d24ba322c957aac5ba9fa6ed3a5f337fb9a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6bf9743410d3138efd5f3ea151b58f61e46ef683
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54496795"
 ---
 # <a name="comparing-aspnet-web-services-to-wcf-based-on-development"></a>개발을 기반으로 ASP.NET 웹 서비스와 WCF 비교
 Windows Communication Foundation (WCF)에 WCF 응용 프로그램을 프로그래밍 하 고 ASP.NET 웹 서비스와 마찬가지로 구성 동작을 모방 하는 ASP.NET 호환 모드 옵션이 있습니다. 다음 섹션에서는 ASP.NET 웹 서비스를 비교 하 고 WCF에 따라 두 기술을 사용 하 여 응용 프로그램을 개발 하는 데 필요한 키를 누릅니다.  
@@ -750,5 +750,5 @@ public void Receive(Message input)
 ## <a name="globalization"></a>전역화  
  ASP.NET 구성 언어를 사용하여 개별 서비스의 문화권을 지정할 수 있습니다. WCF에는 ASP.NET 호환 모드에서 제외 하 고 이러한 구성 설정을 지원 하지 않습니다. ASP.NET 호환 모드를 사용 하지 않는 WCF 서비스를 지역화 하려면 서비스 유형을 문화권별 어셈블리로 컴파일하고 각 문화권별 어셈블리가 별도 문화권별 끝점을 갖도록 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [용도와 사용되는 표준을 기반으로 ASP.NET 웹 서비스와 WCF 비교](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)
+## <a name="see-also"></a>참고자료
+- [용도와 사용되는 표준을 기반으로 ASP.NET 웹 서비스와 WCF 비교](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)

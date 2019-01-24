@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: b898c81700e95ec9bc94e04c5a76494b7ac4b0dc
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 82f89e74d6a09b2c157ff9a273f078e606222f63
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32754017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523898"
 ---
 # <a name="sectiongroup-element-for-configsections"></a>\<sectionGroup > 요소에 대 한 \<configSections >
 
 구성 섹션에 대 한 네임 스페이스를 정의합니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections >**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup >**
+&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
 
 ## <a name="syntax"></a>구문
 
@@ -48,15 +48,15 @@ ms.locfileid: "32754017"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<섹션 >**](~/docs/framework/configure-apps/file-schema/section-element.md) | 구성 섹션 선언을 포함합니다. |
+| [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) | 구성 섹션 선언을 포함합니다. |
 
 ## <a name="remarks"></a>설명
 
-선언 섹션 그룹 구성 섹션에 대 한 컨테이너 태그 만들고 다른 사용자에 의해 정의 된 구성 섹션 이름과 충돌 하지 없는지 확인 합니다. 중첩할 수  **\<sectionGroup >** 요소는 서로 합니다.
+구성 섹션에 대 한 컨테이너 태그를 만들고 하면 다른 사용자가 정의 하는 구성 섹션 이름과 충돌 하지 않습니다 섹션 그룹을 선언 합니다. 중첩할 수 있습니다  **\<sectionGroup >** 서로의 내부 요소입니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에는 섹션 그룹에 있는 섹션을 선언 하 고 섹션 그룹을 선언 하는 방법을 보여 줍니다.
+다음 예제에서는 섹션 그룹 내의 섹션을 선언 하 고 섹션 그룹을 선언 하는 방법을 보여 줍니다.
 
 ```xml
 <configuration>
@@ -76,8 +76,8 @@ ms.locfileid: "32754017"
 
 ## <a name="configuration-file"></a>구성 파일
 
-이 요소는 응용 프로그램 구성 파일을 컴퓨터 구성 파일에 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
+응용 프로그램 구성 파일을 컴퓨터 구성 파일에서이 요소를 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+- [.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

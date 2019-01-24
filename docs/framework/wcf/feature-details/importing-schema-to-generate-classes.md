@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, schema import and export
 - XsdDataContractImporter class
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
-ms.openlocfilehash: 0d18ee811763a1a3db6905bdbd18540ab5c97c05
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: e12b4967a84797432ec30cdc88863f8530ea9afd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620528"
 ---
 # <a name="importing-schema-to-generate-classes"></a>스키마를 가져와 클래스 생성
 Windows Communication Foundation (WCF)를 사용 하 여 사용할 수 있는 스키마에서 클래스를 생성 하려면 사용 된 <xref:System.Runtime.Serialization.XsdDataContractImporter> 클래스입니다. 이 항목에서는 프로세스와 변형에 대해 설명합니다.  
@@ -42,9 +42,9 @@ Windows Communication Foundation (WCF)를 사용 하 여 사용할 수 있는 �
     > [!NOTE]
     > 가져오기 중 오류가 발생하면 `CodeCompileUnit`는 예기치 않은 상태가 됩니다. 실패한 가져오기에서 생성된 `CodeCompileUnit`를 사용하면 보안상 취약해질 수 있습니다.  
   
-5. `CodeCompileUnit` 속성을 통해 <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A>에 액세스합니다.  
+5. `CodeCompileUnit` 속성을 통해 <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> 에 액세스합니다.  
   
-### <a name="import-options-customizing-the-generated-types"></a>가져오기 옵션: 생성된 형식 사용자 지정  
+### <a name="import-options-customizing-the-generated-types"></a>가져오기 옵션: 생성된 된 형식 사용자 지정  
  <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A>의 <xref:System.Runtime.Serialization.XsdDataContractImporter> 속성을 <xref:System.Runtime.Serialization.ImportOptions> 클래스의 인스턴스로 설정하여 가져오기 프로세스의 다양한 측면을 제어할 수 있습니다. 여러 가지 옵션은 생성되는 형식에 직접 영향을 줍니다.  
   
 #### <a name="controlling-the-access-level-generateinternal-or-the-internal-switch"></a>액세스 수준 제어(GenerateInternal 또는 /internal 스위치)  
@@ -143,7 +143,7 @@ Windows Communication Foundation (WCF)를 사용 하 여 사용할 수 있는 �
 > [!NOTE]
 >  Svcutil.exe를 사용 하는 경우 또는 (Visual Studio)를 **서비스 참조 추가** MsCorLib.dll에 있는 형식의 모든 도구를 자동으로 참조 됩니다.  
   
-#### <a name="import-options-importing-non-datacontract-schema-as-ixmlserializable-types"></a>가져오기 옵션: DataContract가 아닌 스키마를 IXmlSerializable 형식으로 가져오기  
+#### <a name="import-options-importing-non-datacontract-schema-as-ixmlserializable-types"></a>가져오기 옵션: IXmlSerializable 형식으로 datacontract가 아닌 스키마 가져오기  
  <xref:System.Runtime.Serialization.XsdDataContractImporter>는 스키마의 제한된 하위 집합을 지원합니다. 지원되지 않는 스키마 구문이 있으면(예: XML 특성) 예외와 함께 가져오기 시도가 실패합니다. 그러나 <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> 속성을 `true`로 설정하면 지원되는 스키마 범위가 확장됩니다. `true`는 <xref:System.Runtime.Serialization.XsdDataContractImporter>로 설정된 경우 <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 형식을 생성합니다. 이 경우 이러한 형식의 XML 표현에 직접 액세스할 수 있습니다.  
   
 ##### <a name="design-considerations"></a>디자인 고려 사항  
@@ -179,13 +179,13 @@ Windows Communication Foundation (WCF)를 사용 하 여 사용할 수 있는 �
   
 -   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> 속성. 이 속성을 사용하여 <xref:System.Runtime.Serialization.IDataContractSurrogate> 구현을 지정할 수 있습니다. <xref:System.Runtime.Serialization.IDataContractSurrogate>는 가져오기 프로세스를 사용자 지정합니다. 자세한 내용은 [데이터 계약 서로게이트](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)합니다. 기본적으로 서로게이트는 사용되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- <xref:System.Runtime.Serialization.XsdDataContractExporter>  
- <xref:System.Runtime.Serialization.ImportOptions>  
- [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
- [데이터 계약 서로게이트](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)  
- [스키마 가져오기 및 내보내기](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- [클래스에서 스키마 내보내기](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)  
- [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- <xref:System.Runtime.Serialization.XsdDataContractExporter>
+- <xref:System.Runtime.Serialization.ImportOptions>
+- [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- [데이터 계약 서로게이트](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)
+- [스키마 가져오기 및 내보내기](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
+- [클래스에서 스키마 내보내기](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)
+- [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)

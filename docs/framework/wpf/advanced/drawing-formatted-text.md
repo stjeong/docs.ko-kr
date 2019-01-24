@@ -10,15 +10,15 @@ helpviewer_keywords:
 - formatted text [WPF]
 - drawing [WPF], formatted text
 ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
-ms.openlocfilehash: 4cbf2a9ec9b742af3895f7c30b1a4dbbdbf5a635
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: a476b62e62b812b01da8deeb0c605e35ae6624ea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43804947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54562780"
 ---
 # <a name="drawing-formatted-text"></a>서식 있는 텍스트 그리기
-이 항목에서는의 기능 개요를 제공 합니다 <xref:System.Windows.Media.FormattedText> 개체입니다. 이 개체는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램에서 텍스트를 그리기 위한 하위 수준의 컨트롤을 제공합니다.  
+이 항목에서는의 기능 개요를 제공 합니다 <xref:System.Windows.Media.FormattedText> 개체입니다. 이 개체는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션에서 텍스트를 그리기 위한 하위 수준의 컨트롤을 제공합니다.  
   
   
 ## <a name="technology-overview"></a>기술 개요  
@@ -53,7 +53,7 @@ FormattedText 메서드를 사용하여 표시된 텍스트
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets1)]  
   
 ### <a name="font-size-unit-of-measure"></a>글꼴 크기 측정 단위  
- 다른 텍스트 개체와 마찬가지로 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램을 <xref:System.Windows.Media.FormattedText> 개체 측정 단위로 장치 독립적 픽셀을 사용 합니다. 그러나 대부분의 [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] 응용 프로그램에서는 포인트를 측정 단위로 사용합니다. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램에서 포인트 단위의 표시 텍스트를 사용하려면 [!INCLUDE[TLA#tla_dipixel#plural](../../../../includes/tlasharptla-dipixelsharpplural-md.md)]를 포인트로 변환해야 합니다. 다음 코드 예에서는 이 변환을 수행하는 방법을 보여줍니다.  
+ 다른 텍스트 개체와 마찬가지로 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램을 <xref:System.Windows.Media.FormattedText> 개체 측정 단위로 장치 독립적 픽셀을 사용 합니다. 그러나 대부분의 [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] 애플리케이션에서는 포인트를 측정 단위로 사용합니다. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램에서 포인트 단위의 표시 텍스트를 사용하려면 [!INCLUDE[TLA#tla_dipixel#plural](../../../../includes/tlasharptla-dipixelsharpplural-md.md)]를 포인트로 변환해야 합니다. 다음 코드 예에서는 이 변환을 수행하는 방법을 보여줍니다.  
   
  [!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
@@ -85,7 +85,7 @@ FormattedText 메서드를 사용하여 표시된 텍스트
  ![텍스트의 pathgeometry를 따르는 구](../../../../docs/framework/wpf/advanced/media/textpathgeometry01.gif "TextPathGeometry01")  
 텍스트의 PathGeometry를 따르는 구  
   
- 자세한 내용은 [방법: 텍스트의 PathGeometry 애니메이션 만들기](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)를 참조하세요.  
+ 자세한 내용은 [방법: 텍스트의 PathGeometry 애니메이션 만들기](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)합니다.  
   
  변환한 후 서식 있는 텍스트에 대 한 다른 흥미로운 사용을 만들 수 있습니다는 <xref:System.Windows.Media.PathGeometry> 개체입니다. 예를 들어 내부에 표시되도록 비디오를 클리핑할 수 있습니다.  
   
@@ -123,9 +123,9 @@ FormattedText 메서드를 사용하여 표시된 텍스트
 |DT_WORDBREAK|없음|필요하지 않음. 단어 분리를 사용 하 여 자동으로 이루어짐. <xref:System.Windows.Media.FormattedText> 개체입니다. 이 기능을 사용하지 않도록 설정할 수 없습니다.|  
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|사용 된 <xref:System.Windows.Media.FormattedText.Trimming%2A> 속성 값을 사용 하 여 <xref:System.Windows.TextTrimming.WordEllipsis>입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.FormattedText>  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [윤곽선이 있는 텍스트 만들기](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)  
- [방법: 텍스트의 PathGeometry 애니메이션 만들기](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.FormattedText>
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [윤곽선이 있는 텍스트 만들기](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)
+- [방법: 텍스트의 PathGeometry 애니메이션 만들기](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)
