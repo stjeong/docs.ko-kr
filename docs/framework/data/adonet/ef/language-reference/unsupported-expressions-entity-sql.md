@@ -4,18 +4,18 @@ ms.date: 03/30/2017
 ms.assetid: 5e79da7e-e78a-413c-8fb0-f3f9cd84f579
 dev_langs:
 - sql
-ms.openlocfilehash: bf20bb92010d5031e973cb1cc004b6b8f13d0091
-ms.sourcegitcommit: 22c3c8f74eaa138dbbbb02eb7d720fce87fc30a9
+ms.openlocfilehash: a47ff46ca99a84500bc5dfecc19bb31652e9b4b6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34234316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54628023"
 ---
 # <a name="unsupported-expressions"></a>지원 되지 않는 식
 
-이 항목에서는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서 지원되지 않는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 식에 대해 설명합니다. 자세한 내용은 참조 [Entity SQL 차이점 transact-sql에서](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md)합니다.
+이 항목에서는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서 지원되지 않는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 식에 대해 설명합니다. 자세한 내용은 [Entity SQL 차이점 TRANSACT-SQL에서](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md)합니다.
 
-## <a name="quantified-predicates"></a>정규화 된 조건자
+## <a name="quantified-predicates"></a>정량화 된 조건자
 
 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서는 다음 폼을 생성할 수 있습니다.
 
@@ -37,5 +37,5 @@ exists(select 0 from employees as e where sal > e.salary)
 
 ## <a name="see-also"></a>참고자료
 
-[Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
-[Entity SQL과 Transact-SQL의 차이점](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md)  
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL과 Transact-SQL의 차이점](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md)

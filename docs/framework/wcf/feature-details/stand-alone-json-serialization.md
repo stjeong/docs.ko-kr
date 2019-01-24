@@ -2,19 +2,19 @@
 title: 독립 실행형 JSON Serialization
 ms.date: 03/30/2017
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
-ms.openlocfilehash: b84e7dbb91c4f1e94ae0701dffcca50b7834df6c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 29c7dd6ebde07632ef7742b5e9bdd846fc632258
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54618424"
 ---
 # <a name="stand-alone-json-serialization"></a>독립 실행형 JSON Serialization
 JSON (JavaScript Object Notation)은 브라우저 내의 웹 페이지에서 실행되는 JavaScript 코드에 의해 사용되도록 특별히 디자인된 데이터 형식이며 Windows Communication Foundation (WCF)에서 만든 ASP.NET AJAX 서비스에서 사용 하는 기본 데이터 형식입니다.  
   
  이 형식은 ASP.NET과 결합하지 않고 AJAX 서비스를 만드는 경우에도 사용할 수 있습니다. 이 경우 XML이 기본값이지만 JSON을 선택할 수 있습니다.  
   
- 마지막으로 JSON 지원이 필요하지만 AJAX 서비스는 만들지 않을 경우 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>를 사용하면 .NET 개체를 JSON 데이터로 serialize하고 다시 .NET 형식의 인스턴스로 직접 해당 데이터를 deserialize할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 참조 [방법: Serialize and Deserialize JSON Data](../../../../docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md)합니다.  
+ 마지막으로 JSON 지원이 필요하지만 AJAX 서비스는 만들지 않을 경우 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>를 사용하면 .NET 개체를 JSON 데이터로 serialize하고 다시 .NET 형식의 인스턴스로 직접 해당 데이터를 deserialize할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 참조 [방법: 직렬화 및 역직렬화 JSON 데이터](../../../../docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md)합니다.  
   
  JSON으로 작업할 경우 몇 가지 예외를 제외하고는 <xref:System.Runtime.Serialization.DataContractSerializer>에서 지원하는 것과 같은 .NET 형식이 지원됩니다. 지원 되는 형식 목록을 참조 하세요 [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)합니다. 여기에는 대부분의 기본 형식, 대부분의 배열 및 컬렉션 형식뿐만 아니라 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute>를 사용하는 복합 형식도 포함됩니다.  
   
@@ -23,8 +23,8 @@ JSON (JavaScript Object Notation)은 브라우저 내의 웹 페이지에서 실
   
 |.NET 형식|JSON/JavaScript|노트|  
 |----------------|----------------------|-----------|  
-|모든 숫자 형식. 예: <xref:System.Int32>, <xref:System.Decimal> 또는 <xref:System.Double>|수|`Double.NaN`, `Double.PositiveInfinity` 및 `Double.NegativeInfinity`와 같은 특수한 값은 지원되지 않으므로 잘못된 JSON이 됩니다.|  
-|<xref:System.Enum>|수|이 항목의 뒷부분에 있는 "열거 및 JSON"을 참조하십시오.|  
+|모든 숫자 형식. 예: <xref:System.Int32>, <xref:System.Decimal> 또는 <xref:System.Double>|숫자|`Double.NaN`, `Double.PositiveInfinity` 및 `Double.NegativeInfinity`와 같은 특수한 값은 지원되지 않으므로 잘못된 JSON이 됩니다.|  
+|<xref:System.Enum>|숫자|이 항목의 뒷부분에 있는 "열거 및 JSON"을 참조하십시오.|  
 |<xref:System.Boolean>|부울|--|  
 |<xref:System.String>, <xref:System.Char>|문자열|--|  
 |<xref:System.TimeSpan>, <xref:System.Guid>, <xref:System.Uri>|문자열|이러한 유형의 JSON 형식이 XML 동일 (기본적으로 ISO 8601 기간 형식의 TimeSpan, "12345678-ABCD-ABCD-ABCD-1234567890AB" 형식의 GUID 및 자연 스러운 문자열 형태로 URI와 같은 "http://www.example.com"). 정확한 내용은 [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)합니다.|  
@@ -260,6 +260,6 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 ### <a name="valid-json-key-names"></a>유효한 JSON 키 이름  
  serializer는 유효한 XML 이름이 아닌 키 이름을 XML 인코딩합니다. 예를 들어 "123" 이름의 데이터 멤버는 인코딩된 이름을 갖게 됩니다와 같은 "\_x0031\_\_x0032\_\_x0033\_" "123" 이므로 잘못 된 XML 요소 이름 (시작을 숫자)입니다. XML 이름에 유효하지 않은 일부 국제 문자 집합이 포함되는 경우에도 비슷한 상황이 발생할 수 있습니다. JSON 처리에서이 결과 XML의 설명은 참조 하세요 [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고자료
 
 - [JSON 및 기타 데이터 전송 형식에 대한 지원](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)

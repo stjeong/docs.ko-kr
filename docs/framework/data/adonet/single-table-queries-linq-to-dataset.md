@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
-ms.openlocfilehash: 5a128349ea81cda7397b2dadbc2ce4096f692744
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3bde9a5f718dcc7bdf31f84369546d530dca38d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54637252"
 ---
 # <a name="single-table-queries-linq-to-dataset"></a>단일 클래스 쿼리(LINQ to DataSet)
-[!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] 쿼리 작업을 구현 하는 데이터 원본에는 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. <xref:System.Data.DataTable> 클래스에는 두 인터페이스가 구현되어 있지 않으므로 <xref:System.Data.DataTableExtensions.AsEnumerable%2A> 쿼리의 <xref:System.Data.DataTable> 절에서 `From`을 소스로 사용하려면 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 메서드를 호출해야 합니다.  
+[!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] 쿼리를 구현 하는 데이터 소스에서 작동 합니다 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. <xref:System.Data.DataTable> 클래스에는 두 인터페이스가 구현되어 있지 않으므로 <xref:System.Data.DataTableExtensions.AsEnumerable%2A> 쿼리의 <xref:System.Data.DataTable> 절에서 `From`을 소스로 사용하려면 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 메서드를 호출해야 합니다.  
   
  다음 예제에서는 SalesOrderHeader 테이블에서 모든 온라인 주문을 가져와서 주문 ID, 주문 날짜 및 주문 번호를 콘솔에 출력합니다.  
   
@@ -26,11 +26,11 @@ ms.locfileid: "33360480"
   
  그런 다음 `foreach` 루프에서는 `Select`에서 반환된 열거 가능한 개체를 열거하고 쿼리 결과를 생성합니다. 쿼리는 <xref:System.Linq.Enumerable>을 구현하는 <xref:System.Collections.Generic.IEnumerable%601> 형식이므로 `foreach` 루프를 사용하는 동안 쿼리 변수가 반복될 때까지 쿼리에 대한 계산이 지연됩니다. 쿼리 계산이 지연되면 여러 차례 계산할 수 있으면서 계산할 때마다 다른 결과가 나올 수 있는 값으로 쿼리를 유지할 수 있습니다.  
   
- <xref:System.Data.DataRowExtensions.Field%2A> 메서드는 <xref:System.Data.DataRow>의 열 값에 대한 액세스를 제공하며 이전 예제에서 나오지 않은 <xref:System.Data.DataRowExtensions.SetField%2A>는 <xref:System.Data.DataRow>의 열 값을 설정합니다. <xref:System.Data.DataRowExtensions.Field%2A> 메서드와 <xref:System.Data.DataRowExtensions.SetField%2A> 메서드에서는 nullable 형식이 처리되므로 명시적으로 null 값을 검사하지 않아도 됩니다. 또한 두 메서드 모두 제네릭 메서드이므로 반환 형식을 캐스팅하지 않아도 됩니다. <xref:System.Data.DataRow>의 기존 열 접근자(예: `o["OrderDate"]`)를 사용할 수도 있지만 그렇게 하려면 반환 개체를 적절한 형식으로 캐스팅해야 합니다.  열이 nullable인 경우에는 <xref:System.Data.DataRow.IsNull%2A> 메서드를 사용하여 값이 null인지 확인해야 합니다. 자세한 내용은 참조 [제네릭 Field 및 SetField 메서드](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)합니다.  
+ <xref:System.Data.DataRowExtensions.Field%2A> 메서드는 <xref:System.Data.DataRow>의 열 값에 대한 액세스를 제공하며 이전 예제에서 나오지 않은 <xref:System.Data.DataRowExtensions.SetField%2A>는 <xref:System.Data.DataRow>의 열 값을 설정합니다. <xref:System.Data.DataRowExtensions.Field%2A> 메서드와 <xref:System.Data.DataRowExtensions.SetField%2A> 메서드에서는 nullable 형식이 처리되므로 명시적으로 null 값을 검사하지 않아도 됩니다. 또한 두 메서드 모두 제네릭 메서드이므로 반환 형식을 캐스팅하지 않아도 됩니다. <xref:System.Data.DataRow>의 기존 열 접근자(예: `o["OrderDate"]`)를 사용할 수도 있지만 그렇게 하려면 반환 개체를 적절한 형식으로 캐스팅해야 합니다.  열이 nullable인 경우에는 <xref:System.Data.DataRow.IsNull%2A> 메서드를 사용하여 값이 null인지 확인해야 합니다. 자세한 내용은 [제네릭 Field 및 SetField 메서드](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)합니다.  
   
  `T` 메서드 및 <xref:System.Data.DataRowExtensions.Field%2A> 메서드의 제네릭 매개 변수 <xref:System.Data.DataRowExtensions.SetField%2A>에 지정된 데이터 형식은 내부 값의 형식과 일치해야 하며, 그렇지 않으면 <xref:System.InvalidCastException>이 throw됩니다. 지정된 열 이름도 <xref:System.Data.DataSet>의 열 이름과 일치해야 하며, 그렇지 않으면 <xref:System.ArgumentException>이 throw됩니다. 두 경우 모두 쿼리가 실행되는 런타임에 데이터 열거형에서 예외가 throw됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [크로스 테이블 쿼리](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)  
- [형식화된 데이터 집합 쿼리](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [제네릭 Field 및 SetField 메서드](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)
+## <a name="see-also"></a>참고자료
+- [크로스 테이블 쿼리](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)
+- [형식화된 데이터 집합 쿼리](../../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [제네릭 Field 및 SetField 메서드](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)

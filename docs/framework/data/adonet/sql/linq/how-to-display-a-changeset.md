@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 126e7245-c5a0-4ebf-800d-cc1fcf9cd0ab
-ms.openlocfilehash: c9664c6d32f78f455aa29311f111acaecb5c7905
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 773e72d52a934bc7c6fa80fe252d62e67f87a34b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596802"
 ---
 # <a name="how-to-display-a-changeset"></a>방법: 변경 집합 표시
 <xref:System.Data.Linq.DataContext>을 사용하여 <xref:System.Data.Linq.DataContext.GetChangeSet%2A>에 의해 추적된 변경 내용을 볼 수 있습니다.  
@@ -75,5 +75,5 @@ ms.locfileid: "33359987"
   
  `Total changes: {Added: 0, Removed: 0, Modified: 8}`  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 지원](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 지원](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

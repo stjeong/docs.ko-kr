@@ -14,12 +14,12 @@ helpviewer_keywords:
 - comments
 - code comments
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
-ms.openlocfilehash: fafc80cc4847e9ec05f19fc7f3d31d2d5b11197a
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 92aadfe851514dcba713455664cf8f7b0aa1c17b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44194592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597543"
 ---
 # <a name="comments-in-code-visual-basic"></a>코드 주석(Visual Basic)
 코드 예제를 읽다 보면 종종 주석 기호(`'`)를 보게 됩니다. 다음에 텍스트를 무시 하려면 Visual Basic 컴파일러에서는이 기호 또는 *주석*합니다. 주석이란 해당 코드를 읽을 사람의 편의를 위해 코드에 추가되는 간단한 설명입니다.  
@@ -59,9 +59,9 @@ ms.locfileid: "44194592"
 > [!NOTE]
 >  `REM` 키워드로 텍스트를 시작하여 코드에 주석을 추가할 수도 있습니다. 그러나 합니다 `'` 기호 및 **주석**/**주석** 단추는 쉽게 사용 하 고 필요한 공간 및 메모리도 절약할 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 주석 사용 하 여 코드 문서화](https://msdn.microsoft.com/magazine/dd722812.aspx)  
- [방법: XML 문서 만들기](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
- [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)  
- [프로그램 구조 및 코드 규칙](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
- [REM 문](../../../visual-basic/language-reference/statements/rem-statement.md)
+## <a name="see-also"></a>참고자료
+- [XML 주석 사용 하 여 코드 문서화](https://msdn.microsoft.com/magazine/dd722812.aspx)
+- [방법: XML 문서 만들기](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)
+- [프로그램 구조 및 코드 규칙](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [REM 문](../../../visual-basic/language-reference/statements/rem-statement.md)

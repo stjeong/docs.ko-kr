@@ -2,21 +2,21 @@
 title: '&lt;msmqIntegration&gt;'
 ms.date: 03/30/2017
 ms.assetid: ab677405-1ffe-457a-803f-00c1770e51e2
-ms.openlocfilehash: 6b1449ec385af2478ee278e9823a005c69ca8dc2
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 42197706a0c3f0f1940f8815fe0e41bb609a457a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603055"
 ---
 # <a name="ltmsmqintegrationgt"></a>&lt;msmqIntegration&gt;
 사용자 지정 바인딩에 MSMQ 전송을 지정합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<msmqIntegration >  
+\<binding>  
+\<msmqIntegration>  
   
 ## <a name="syntax"></a>구문  
   
@@ -62,7 +62,7 @@ ms.locfileid: "54147852"
 |maxRetryCycles|수신 응용 프로그램으로 메시지를 배달하려는 최대 재시도 주기 수를 지정하는 정수입니다. 기본값은 <xref:System.Int32.MaxValue>입니다.<br /><br /> 단일 재시도 주기는 지정된 횟수만큼 애플리케이션으로 메시지 배달을 시도합니다. 시도 횟수는 `maxImmediateRetries` 특성으로 설정합니다. 배달 시도를 모두 수행했으나 애플리케이션에서 메시지를 배달하지 못한 경우 그 메시지는 재시도 큐로 보내집니다. 후속 재시도 주기는 `retryCycleDelay` 특성에서 지정한 지연 시간이 지나고 응용 프로그램에서 메시지 배달을 다시 시도하기 위해 재시도 큐에서 응용 프로그램 큐로 반환되는 메시지로 구성됩니다. `maxRetryCycles` 특성은 응용 프로그램에서 메시지 배달 시도에 사용할 재시도 주기 수를 지정합니다.|  
 |rejectAfterLastRetry|최대 재시도 횟수만큼 시도한 후에 배달하지 못한 메시지에 대해 수행할 작업을 지정하는 부울 값입니다.<br /><br /> `true`인 경우 부정 승인이 발신자에게 반환되고 메시지가 삭제되며, `false`인 경우 메시지가 포이즌 메시지 큐로 보내집니다. 기본값은 `false`입니다.<br /><br /> 값이 `false`이면 수신 응용 프로그램에서는 포이즌 메시지 큐를 읽어 포이즌 메시지(배달하지 못한 메시지)를 처리할 수 있습니다.<br /><br /> MSMQ 3.0에서는 부정 승인을 발신자에게 반환할 수 없으므로 이 특성이 무시됩니다.|  
 |retryCycleDelay|즉시 배달할 수 없는 메시지를 배달하려고 할 때 재시도 주기 사이의 지연 시간을 지정하는 <xref:System.TimeSpan>입니다. 기본값은 00:10:00입니다.<br /><br /> 단일 재시도 주기는 지정된 횟수만큼 수신 애플리케이션으로 메시지 배달을 시도합니다. 시도 횟수는 `maxImmediateRetries` 특성으로 지정합니다. 지정된 횟수만큼 즉시 재시도가 수행되었으나 애플리케이션에서 메시지를 배달하지 못한 경우 그 메시지는 재시도 큐로 보내집니다. 후속 재시도 주기는 `retryCycleDelay` 특성에서 지정한 지연 시간이 지나고 응용 프로그램에서 메시지 배달을 다시 시도하기 위해 재시도 큐에서 응용 프로그램 큐로 반환되는 메시지로 구성됩니다. 재시도 주기 횟수는 `maxRetryCycles` 특성으로 지정합니다.|  
-|serializationFormat|MSMQ 메시지의 일부로 보내지는 개체를 serialize하는 데 사용되는 포맷터를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -ActiveX: ActiveX 포맷터는 COM 개체를 직렬화 할 때 사용 됩니다.<br />-이진:  개체를 이진 패킷으로 serialize합니다.<br />-ByteArray:  개체를 바이트 배열로 serialize합니다.<br />-Stream:  개체를 스트림으로 serialize합니다.<br />Xml:  개체를 XML 패킷으로 serialize합니다. 기본값은 XML입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat> 형식입니다.|  
+|serializationFormat|MSMQ 메시지의 일부로 보내지는 개체를 serialize하는 데 사용되는 포맷터를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -ActiveX: ActiveX 포맷터는 COM 개체를 직렬화 할 때 사용 됩니다.<br />-이진:  개체를 이진 패킷으로 serialize합니다.<br />-   ByteArray:  개체를 바이트 배열로 serialize합니다.<br />-Stream:  개체를 스트림으로 serialize합니다.<br />-   Xml:  개체를 XML 패킷으로 serialize합니다. 기본값은 XML입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat> 형식입니다.|  
 |timeToLive|메시지가 만료되어 배달 못 한 큐에 배치되기 전에 메시지가 유효한 기간을 지정하는 <xref:System.TimeSpan>입니다. 기본값은 1일을 의미하는 1.00:00:00입니다.<br /><br /> 이 특성은 시간을 다투는 메시지가 수신 응용 프로그램에서 처리되기 전에 무효화되지 않도록 하기 위해 설정됩니다. 지정된 시간 간격 내에 수신 애플리케이션에서 사용하지 않은 큐의 메시지는 만료된 것으로 간주됩니다. 만료된 메시지는 배달 못한 편지 큐라는 특수 큐로 보내집니다. 배달 못 한 편지 큐의 위치는 보증에 따라 `customDeadLetterQueue` 특성으로 설정되거나 해당 기본값으로 설정됩니다.|  
 |useMsmqTracing|이 바인딩이 처리하는 메시지를 추적할지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.<br /><br /> 추적 기능을 사용하면 메시지가 메시지 큐 컴퓨터에 들어가거나 나올 때마다 보고서 메시지가 만들어진 후 보고서 큐로 보내집니다.|  
 |useSourceJournal|이 바인딩이 처리하는 메시지의 복사본을 소스 업무 일지 큐에 저장해야 하는지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.<br /><br /> 대기 중 응용 프로그램에서 컴퓨터의 나가는 큐를 떠난 메시지의 레코드를 보존해야 할 경우 메시지를 업무 일지 큐에 복사할 수 있습니다. 메시지가 보내는 큐를 떠난 후 대상 컴퓨터에 수신되었다는 승인을 받으면 해당 메시지의 복사본이 보낸 컴퓨터의 시스템 업무 일지 큐에 보관됩니다.|  
@@ -79,14 +79,14 @@ ms.locfileid: "54147852"
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|사용자 지정 바인딩의 모든 바인딩 기능을 정의합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

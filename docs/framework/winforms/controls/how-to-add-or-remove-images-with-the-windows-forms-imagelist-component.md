@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms ImageList 구성 요소를 사용하여 이미지 추가 또는 제거'
+title: '방법: Windows Forms ImageList 구성 요소를 사용 하 여 이미지 추가 또는 제거'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - images [Windows Forms], adding to ImageList component
 - images [Windows Forms], displaying with controls
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
-ms.openlocfilehash: 28dce033064517a427750ef99b1cd4f8bccaaf09
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a81cf11ea5ca405e2013b7c7375a863aeb1f110f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50182972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609618"
 ---
-# <a name="how-to-add-or-remove-images-with-the-windows-forms-imagelist-component"></a>방법: Windows Forms ImageList 구성 요소를 사용하여 이미지 추가 또는 제거
+# <a name="how-to-add-or-remove-images-with-the-windows-forms-imagelist-component"></a>방법: Windows Forms ImageList 구성 요소를 사용 하 여 이미지 추가 또는 제거
 Windows Forms <xref:System.Windows.Forms.ImageList> 컨트롤과 연결 된 상태가 되기 전에 이미지를 사용 하 여 일반적으로 구성 요소를 채워집니다. 그러나 추가 하 고 이미지 목록 컨트롤을 사용 하 여 연결한 후 이미지를 제거할 수 있습니다.  
   
 > [!NOTE]
@@ -141,7 +141,7 @@ imageList1.Images.Clear();
 imageList1.Images.RemoveByKey("myPhoto");  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 - [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
 - [ImageList 구성 요소 개요](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)
 - [이미지, 비트맵 및 메타파일](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)

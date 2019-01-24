@@ -2,20 +2,20 @@
 title: Entity SQL과 Transact-SQL의 차이점
 ms.date: 03/30/2017
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
-ms.openlocfilehash: d34c6933e0f19c73b954446fdf18cea7243eae0d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: f193a3f7441a8bf7efacf07d8a9eb18362d7f91d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635964"
 ---
 # <a name="how-entity-sql-differs-from-transact-sql"></a>Entity SQL과 Transact-SQL의 차이점
-이 항목 간의 차이점을 설명 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 및 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]합니다.  
+이 항목에서는 차이점을 설명 합니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 고 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]입니다.  
   
 ## <a name="inheritance-and-relationships-support"></a>상속 및 관계 지원  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 개념적 엔터티 스키마를 직접 다루며 상속 및 관계와 같은 개념적 모델 기능을 지원합니다.  
   
- 상속 작업을 할 때 상위 형식 인스턴스 컬렉션에서 하위 형식의 인스턴스를 선택하는 것이 유용할 때가 많습니다. [oftype](../../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) 연산자 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (비슷합니다 `oftype` 시퀀스를 C#)이이 기능을 제공 합니다.  
+ 상속 작업을 할 때 상위 형식 인스턴스 컬렉션에서 하위 형식의 인스턴스를 선택하는 것이 유용할 때가 많습니다. 합니다 [oftype](../../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) 연산자 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (비슷합니다 `oftype` 에서 C# 시퀀스)이이 기능을 제공 합니다.  
   
 ## <a name="support-for-collections"></a>컬렉션 지원  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 컬렉션을 고급 엔터티로 취급합니다. 예를 들어:  
@@ -31,9 +31,9 @@ ms.locfileid: "32766298"
 -   컬렉션에 조인이 수행됩니다.  
   
 ## <a name="support-for-expressions"></a>식 지원  
- [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 하위 쿼리 (테이블)와 식 (행과 열)에 있습니다.  
+ [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 하위 쿼리 (테이블) 및 식 (행 및 열)에 있습니다.  
   
- 컬렉션 및 중첩된 컬렉션을 지원 하기 위해 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 모든 식을 만듭니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]보다 더 구성 가능하여, 모든 식을 어느 위치에서든 사용할 수 있습니다. 쿼리 식은 항상 프로젝션된 형식의 컬렉션을 생성하며, 컬렉션 식이 허용된 곳이라면 어디서든 쿼리 식을 사용할 수 있습니다. 에 대 한 내용은 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 식에서 지원 되지 않는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)], 참조 [지원 되지 않는 식](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md)합니다.  
+ 컬렉션 및 중첩된 컬렉션을 지원 하기 위해 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 모든 식을 만듭니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]보다 더 구성 가능하여, 모든 식을 어느 위치에서든 사용할 수 있습니다. 쿼리 식은 항상 프로젝션된 형식의 컬렉션을 생성하며, 컬렉션 식이 허용된 곳이라면 어디서든 쿼리 식을 사용할 수 있습니다. 에 대 한 자세한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 식에서 지원 되지 않는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]를 참조 하십시오 [지원 되지 않는 식](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md)합니다.  
   
  다음은 모두 유효한 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리입니다.  
   
@@ -47,7 +47,7 @@ set(e1)
 ```  
   
 ## <a name="uniform-treatment-of-subqueries"></a>일관된 하위 쿼리 처리  
- 테이블을 강조하는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서는 하위 쿼리를 문맥상으로 해석합니다. 예를 들어, `from` 절의 하위 쿼리는 multiset(테이블)로 간주됩니다. 하지만 동일한 하위 쿼리가 `select` 절에서 사용되면 스칼라 하위 쿼리로 간주됩니다. 왼쪽에 사용 되는 하위 쿼리 마찬가지로,는 `in` 연산자 우변 multiset 하위 쿼리로 것으로 예상 되지만 스칼라 하위 쿼리를 것으로 간주 됩니다.  
+ 테이블을 강조하는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서는 하위 쿼리를 문맥상으로 해석합니다. 예를 들어, `from` 절의 하위 쿼리는 multiset(테이블)로 간주됩니다. 하지만 동일한 하위 쿼리가 `select` 절에서 사용되면 스칼라 하위 쿼리로 간주됩니다. 왼쪽에서 사용 되는 하위 쿼리 마찬가지로 `in` 연산자는 스칼라 하위 쿼리를 multiset 하위 쿼리로 오른쪽에 있는 것으로 예상 되지만 되도록 것으로 간주 됩니다.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 이러한 구별이 없습니다. 식은 사용되는 컨텍스트와 관계없이 일관성 있게 해석되며 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 모든 하위 쿼리를 multiset 하위 쿼리로 간주 합니다. 하위 쿼리에서 스칼라 값이 필요한 경우, [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 컬렉션(여기서는 하위 쿼리)에 대해 작동하는 `anyelement` 연산자를 제공하여 컬렉션으로부터 singleton 값을 추출합니다.  
   
@@ -56,7 +56,7 @@ set(e1)
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 이러한 암시적 강제 변환이 지원되지 않습니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 컬렉션에서 singleton 값을 추출하도록 ANYELEMENT 연산자를 제공하며, 쿼리 식을 실행하는 중 행 래퍼가 생성되지 않도록 `select value` 절을 제공합니다.  
   
-## <a name="select-value-avoiding-the-implicit-row-wrapper"></a>값 선택: 암시적 행 래퍼 방지  
+## <a name="select-value-avoiding-the-implicit-row-wrapper"></a>Select Value: 암시적 행 래퍼 방지  
  Select 절에는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 하위 쿼리 절의 항목 주위에 행 래퍼를 암시적으로 만듭니다. 이는 스칼라 또는 개체의 컬렉션을 만들 수 없음을 의미합니다. [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 단일 필드를 갖는 rowtype과 동일한 데이터 형식의 singleton 값 사이 암시적 강제 변환을 허용합니다.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 암시적 행 생성을 건너뛰도록 `select value` 절을 제공합니다. `select value` 절 하나에는 항목 하나만 지정할 수 있습니다. 이 절을 사용하면 `select` 절의 항목 주위에 행 래퍼가 생성되지 않으며, `select value a`와 같이 원하는 모양의 컬렉션이 만들어질 수 있습니다.  
@@ -83,7 +83,7 @@ select k from T as t group by (t.x + t.y) as k
 ```  
   
 ## <a name="referencing-columns-properties-of-tables-collections"></a>테이블(컬렉션)의 열(속성) 참조  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)]의 모든 열 참조는 테이블 별칭으로 정규화해야 합니다. 다음 구문은 (있다고 가정할 경우 `a` 은 테이블의 유효한 열 `T`)에서 유효한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 아니라 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]합니다.  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)]의 모든 열 참조는 테이블 별칭으로 정규화해야 합니다. 다음 구문은 (가정 `a` 은 테이블의 유효한 열 `T`)에서 유효 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 되지 않습니다 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]합니다.  
   
 ```  
 select a from T  
@@ -111,7 +111,7 @@ p.Address.City
 ```  
   
 ## <a name="no-support-for-"></a>*를 지원하지 않음  
- [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 지원에서는 정규화 되지 않은 * 구문을 행 전체 및 정규화 된 별칭으로 \* 구문 (화\*) 해당 테이블의 필드에 대 한 바로 가기로 합니다. 또한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 특별 한 개수에 대 한 허용 (\*) null을 포함 하는 집계 합니다.  
+ [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 정규화 되지 않은 지원 * 전체 행을 지정 하 고 정규화 된 별칭으로 구문을 \* 구문 (t.\*) 해당 테이블의 필드에 대 한 바로 가기로 합니다. 또한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 특별 한 개수에 대 한 허용 (\*) null을 포함 하는 집계 합니다.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 * 구문을 지원하지 않습니다. [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 및 `select * from T` 형식의 `select T1.* from T1, T2...` 쿼리는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 각각 `select value t from T as t` 및 `select value t1 from T1 as t1, T2 as t2...`로 표현할 수 있습니다. 또한 이러한 구문은 상속(값 대체성)을 처리하지만, `select *` 변형은 선언된 형식의 최상위 속성으로 제한됩니다.  
   
@@ -168,7 +168,7 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## <a name="identifiers"></a>식별자  
- [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서 식별자 비교는 현재 데이터베이스의 데이터 정렬을 기반으로 합니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 식별자는 항상 대/소문자를 구분하지 않고 악센트를 구분합니다. 즉, [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 악센트 부호가 있는 문자와 악센트 부호가 없는 문자를 구분합니다. 예를 들어 'a'는 'ấ'와 같지 않습니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 나타나는 모양은 같지만 서로 다른 코드 페이지에서 가져온 문자 버전을 다른 문자로 처리합니다. 자세한 내용은 참조 [입력 문자 집합](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md)합니다.  
+ [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]에서 식별자 비교는 현재 데이터베이스의 데이터 정렬을 기반으로 합니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 식별자는 항상 대/소문자를 구분하지 않고 악센트를 구분합니다. 즉, [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 악센트 부호가 있는 문자와 악센트 부호가 없는 문자를 구분합니다. 예를 들어 'a'는 'ấ'와 같지 않습니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 나타나는 모양은 같지만 서로 다른 코드 페이지에서 가져온 문자 버전을 다른 문자로 처리합니다. 자세한 내용은 [입력 문자 집합](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md)합니다.  
   
 ## <a name="transact-sql-functionality-not-available-in-entity-sql"></a>Entity SQL에서 사용할 수 없는 Transact-SQL 기능  
  다음 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] 기능은 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 사용할 수 없습니다.  
@@ -189,13 +189,13 @@ SELECT C2.FirstName, C2.LastName
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 아직 분석 함수가 지원되지 않습니다.  
   
  기본 제공 함수, 연산자  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]의 기본 제공 함수 및 연산자 중 일부를 지원합니다. 이러한 연산자와 함수는 주요 저장소 공급자에서 주로 지원합니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 공급자 매니페스트에 선언된 저장소별 함수를 사용합니다. 또한는 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 기본 제공 선언할 수 있으며 기존 사용자 정의 저장소에 대 한 함수를 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 사용 하도록 합니다.  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]의 기본 제공 함수 및 연산자 중 일부를 지원합니다. 이러한 연산자와 함수는 주요 저장소 공급자에서 주로 지원합니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 공급자 매니페스트에 선언된 저장소별 함수를 사용합니다. 또한 합니다 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 기본 제공 선언할 수 있으며 기존 사용자 정의 함수에 대 한 저장소 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 사용 하도록 합니다.  
   
  참고  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 쿼리 참고의 메커니즘을 제공하지 않습니다.  
   
  쿼리 결과 일괄 처리  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 쿼리 결과 일괄 처리를 지원하지 않습니다. 예를 들어 다음은 유효한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] (일괄 처리로 보내는):  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 쿼리 결과 일괄 처리를 지원하지 않습니다. 예를 들어, 다음은 유효한 [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] (일괄 처리로 보내는):  
   
 ```  
 select * from products;  
@@ -211,6 +211,6 @@ Select value c from Categories as c;
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 결과 생성 쿼리 문을 명령당 하나만 지원합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [지원되지 않는 식](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [지원되지 않는 식](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md)

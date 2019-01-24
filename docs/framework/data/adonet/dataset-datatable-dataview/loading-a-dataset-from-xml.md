@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 49c083b7-a5ed-41cf-aabc-5aaba96f00e6
-ms.openlocfilehash: 3a781f17ac3cabebce17955b9a7e2edda4d4fd4b
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 7fb00046eb9ab92ed2514cd7615c41ea40124de9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594917"
 ---
 # <a name="loading-a-dataset-from-xml"></a>XML에서 데이터 집합 로드
 ADO.NET <xref:System.Data.DataSet>의 내용은 XML 스트림이나 문서로부터 만들 수 있습니다. 또한, .NET Framework를 사용하면 XML로부터 로드할 정보와 <xref:System.Data.DataSet>의 스키마나 관계형 구조를 만드는 방법을 매우 융통성 있게 선택할 수 있습니다.  
   
- 에 맞게를 <xref:System.Data.DataSet> XML에서 데이터를 사용 합니다 **ReadXml** 메서드의 <xref:System.Data.DataSet> 개체입니다. **ReadXml** 스트림, 파일에서 읽는 메서드 또는 **XmlReader**, XML 및 선택적인 원본 인수로 및 **XmlReadMode** 인수. (에 대 한 자세한 내용은 합니다 **XmlReader**를 참조 하세요 [NIB: XmlTextReader 사용 하 여 XML 데이터 읽기](https://msdn.microsoft.com/library/762c069b-b50c-41b8-936e-39eacfb0d540).) 합니다 **ReadXml** 메서드는 XML 스트림 또는 문서 및 로드의 콘텐츠를 읽습니다는 <xref:System.Data.DataSet> 데이터를 사용 하 여 합니다. 관계형 스키마 생성 합니다 <xref:System.Data.DataSet> 에 따라 합니다 **XmlReadMode** 지정 하 고 관계형 스키마를 이미 있는지 여부입니다.  
+ 에 맞게를 <xref:System.Data.DataSet> XML에서 데이터를 사용 합니다 **ReadXml** 메서드의 <xref:System.Data.DataSet> 개체입니다. **ReadXml** 스트림, 파일에서 읽는 메서드 또는 **XmlReader**, XML 및 선택적인 원본 인수로 및 **XmlReadMode** 인수. (에 대 한 자세한 내용은 합니다 **XmlReader**를 참조 하세요 [NIB: XmlTextReader 사용 하 여 XML 데이터를 읽는](https://msdn.microsoft.com/library/762c069b-b50c-41b8-936e-39eacfb0d540).) 합니다 **ReadXml** 메서드는 XML 스트림 또는 문서 및 로드의 콘텐츠를 읽습니다는 <xref:System.Data.DataSet> 데이터를 사용 하 여 합니다. 관계형 스키마 생성 합니다 <xref:System.Data.DataSet> 에 따라 합니다 **XmlReadMode** 지정 하 고 관계형 스키마를 이미 있는지 여부입니다.  
   
  다음 표에서 옵션을 설명 합니다 **XmlReadMode** 인수입니다.  
   
@@ -115,12 +115,12 @@ foreach (DataTable dataTable in dataSet.Tables)
 ## <a name="merging-data-from-xml"></a>XML로부터 데이터 병합  
  <xref:System.Data.DataSet>에 데이터가 이미 있으면 XML의 새 데이터는 <xref:System.Data.DataSet>에 이미 있는 데이터에 추가됩니다. **ReadXml** XML에서 병합 하지 않습니다는 <xref:System.Data.DataSet> 행 일치 하는 기본 키 정보입니다. XML에서 새 정보를 사용 하 여 기존 행 정보를 덮어쓸지를 사용 하 여 **ReadXml** 새 <xref:System.Data.DataSet>를 차례로 <xref:System.Data.DataSet.Merge%2A> 새 <xref:System.Data.DataSet> 기존 <xref:System.Data.DataSet>합니다. 사용 하 여 DiffGram을 로드 **ReadXML** 사용 하 여는 **XmlReadMode** 의 **DiffGram** 동일한 고유 식별자가 있는 행이 병합 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Data.DataSet.Merge%2A?displayProperty=nameWithType>  
- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
- [DiffGram](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md)  
- [XML 스키마에서 데이터 집합 관계형 구조 파생(XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
- [XML에서 데이터 집합 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)  
- [XML에서 데이터 집합 스키마 정보 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- <xref:System.Data.DataSet.Merge%2A?displayProperty=nameWithType>
+- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+- [DiffGram](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md)
+- [XML 스키마에서 데이터 세트 관계형 구조 파생(XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)
+- [XML에서 데이터 세트 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
+- [XML에서 데이터 세트 스키마 정보 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)
+- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

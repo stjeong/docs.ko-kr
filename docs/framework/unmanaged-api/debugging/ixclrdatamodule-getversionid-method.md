@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: ac4111abdf6a471aca1eca72a86e33698debbff6
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 5184db00b10b53011f24c5096b470608e84546b6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54416558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54567427"
 ---
 # <a name="ixclrdatamodulegetversionid-method"></a>IXCLRDataModule::GetVersionId 메서드
 
@@ -51,7 +51,7 @@ HRESULT GetVersionId(
 **라이브러리:** 없음  
 **.NET Framework 버전:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataModule 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)

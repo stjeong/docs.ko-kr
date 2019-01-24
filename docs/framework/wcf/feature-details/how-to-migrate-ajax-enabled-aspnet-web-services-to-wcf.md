@@ -2,12 +2,12 @@
 title: '방법: AJAX 사용 ASP.NET 웹 서비스를 WCF로 마이그레이션'
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: cd630fa8a583b5d1efdaefaf899cb6e345e7c7ad
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: de90f4b89f182c55dec3f6fee6836c64535aa2d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54638290"
 ---
 # <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>방법: AJAX 사용 ASP.NET 웹 서비스를 WCF로 마이그레이션
 이 항목에 해당 하는 AJAX 지원 Windows Communication Foundation (WCF) 서비스에 기본 ASP.NET AJAX 서비스를 마이그레이션하는 절차를 간략하게 설명 합니다. ASP.NET AJAX 서비스의 기능적 WCF 버전을 만드는 방법을 보여 줍니다. 두 서비스는 함께 사용할 수 있습니다 또는 WCF 서비스는 ASP.NET AJAX 서비스를 바꾸는 데 사용할 수 있습니다.
@@ -22,7 +22,7 @@ ms.locfileid: "48840916"
 
  이 항목에서 간략히 설명된 절차에서 얻어진 코드는 다음 예제에 나와 있습니다.
 
- AJAX 사용 끝점을 통해 WCF 서비스를 노출 하는 방법에 대 한 자세한 내용은 참조는 [방법: ASP.NET AJAX 끝점 추가 구성을 사용 하 여](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) 항목입니다.
+ AJAX 사용 끝점을 통해 WCF 서비스를 노출 하는 방법에 대 한 자세한 내용은 참조는 [방법: 구성을 사용 하 여 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) 항목입니다.
 
 ### <a name="to-create-and-test-the-aspnet-web-service-application"></a>ASP.NET 웹 서비스 응용 프로그램을 만들고 테스트하려면
 
@@ -36,7 +36,7 @@ ms.locfileid: "48840916"
 
 5.  **빌드** 메뉴에서 **솔루션 빌드**합니다.
 
-6.  **디버그** 메뉴에서 **디버깅 하지 않고 시작**합니다.
+6.  **디버그** 메뉴에서 **디버깅하지 않고 시작**을 선택합니다.
 
 7.  생성된 웹 페이지에서 `HelloWorld` 작업을 선택합니다.
 
@@ -212,5 +212,5 @@ d.Add("two", 2);
 |사전의 표현|KeyValuePair의 배열을\<K, V >, 문자열이 아닌 키 유형을 처리 합니다.|실제 JSON 개체로 문자열인 키 유형만 처리합니다.|
 |이스케이프된 문자|항상 이스케이프 슬래시(/)가 포함되고, "\n"과 같이 이스케이프되지 않은 잘못된 JSON 문자는 사용할 수 없습니다.|DateTime 값에 이스케이프 슬래시(/)가 포함됩니다.|
 
-## <a name="see-also"></a>참고 항목
- [방법: 구성을 사용하여 ASP.NET AJAX 엔드포인트 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+## <a name="see-also"></a>참고자료
+- [방법: 구성을 사용 하 여 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
