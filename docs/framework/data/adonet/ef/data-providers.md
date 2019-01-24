@@ -2,12 +2,12 @@
 title: Entity Framework 데이터 공급자
 ms.date: 03/30/2017
 ms.assetid: 5252e639-ff11-4818-82e7-07221ed6ae23
-ms.openlocfilehash: cd18e8b971af9103fdaecaebfe6f0c8e0ae9a0d3
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 502bfce39a9e645f36b9be13775a0357307d6c31
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54602834"
 ---
 # <a name="entity-framework-data-providers"></a>Entity Framework 데이터 공급자
 이 단원에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 지원하는 데이터 공급자에 대한 정보를 제공합니다.  
@@ -26,5 +26,5 @@ ms.locfileid: "44259599"
  [Entity Framework 용 타사 공급자](https://go.microsoft.com/fwlink/?LinkId=143699)  
  현재 Entity Framework에 사용할 수 있는 타사 데이터 공급자 목록입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 공급자 작업](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+## <a name="see-also"></a>참고자료
+- [데이터 공급자 작업](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)

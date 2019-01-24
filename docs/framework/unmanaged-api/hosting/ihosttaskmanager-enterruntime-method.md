@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f22ee94bf4594374071087fbbe93fc8e6a197a89
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 964e705376a404d3841a3d1de1f4d2a4d71ddfed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50180954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607097"
 ---
 # <a name="ihosttaskmanagerenterruntime-method"></a>IHostTaskManager::EnterRuntime 메서드
 관리 되지 않는 메서드를 호출 메서드를 호출 하는 플랫폼와 같은 실행 결과 제어가 반환 되는 CLR (공용 언어 런타임) 호스트에 알립니다.  
@@ -52,7 +52,7 @@ HRESULT EnterRuntime ();
 >  [ReverseEnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-reverseenterruntime-method.md) 호스트에 알리기 위해 호출 됩니다는는 관리 되지 않는 함수를 호출 하 여 이전 `LeaveRuntime` 만들어진, 관리 되는 코드로 호출을 수행 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
@@ -60,11 +60,11 @@ HRESULT EnterRuntime ();
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)  
- [방법: PInvoke를 사용하여 관리 코드로부터 네이티브 DLL 호출](/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke)  
- [ICLRTask 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)  
- [LeaveRuntime 메서드](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-leaveruntime-method.md)
+## <a name="see-also"></a>참고자료
+- [고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)
+- [방법: PInvoke를 사용 하 여 관리 되는 코드에서 네이티브 Dll 호출](/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke)
+- [ICLRTask 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
+- [ICLRTaskManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
+- [IHostTask 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+- [IHostTaskManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [LeaveRuntime 메서드](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-leaveruntime-method.md)

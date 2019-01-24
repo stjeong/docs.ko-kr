@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /libpath compiler option [Visual Basic]
 - -libpath compiler option [Visual Basic]
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-ms.openlocfilehash: d713a63c9503581f38048fe79c559883dc96efd2
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6285deb97b05659283071b8940fe8730890b98e8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50202974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609865"
 ---
 # <a name="-libpath"></a>-libpath
 참조 된 어셈블리의 위치를 지정 합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "50202974"
   
 |용어|정의|  
 |---|---|  
-|`dirList`|필수. 컴파일러가 참조 된 어셈블리에서에서 찾는 대 한 디렉터리의 세미콜론으로 구분 된 목록에 없는 하나는 현재 작업 디렉터리 (컴파일러를 호출 하는 디렉터리) 또는 공용 언어 런타임의 시스템 디렉터리입니다. 디렉터리 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").|  
+|`dirList`|필수 요소. 컴파일러가 참조 된 어셈블리에서에서 찾는 대 한 디렉터리의 세미콜론으로 구분 된 목록에 없는 하나는 현재 작업 디렉터리 (컴파일러를 호출 하는 디렉터리) 또는 공용 언어 런타임의 시스템 디렉터리입니다. 디렉터리 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").|  
   
 ## <a name="remarks"></a>설명  
  합니다 `-libpath` 옵션에서 참조 어셈블리의 위치를 지정 합니다 [-참조](../../../visual-basic/reference/command-line-compiler/reference.md) 옵션입니다.  
@@ -56,7 +56,7 @@ ms.locfileid: "50202974"
 vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

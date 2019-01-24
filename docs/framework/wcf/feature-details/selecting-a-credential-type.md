@@ -2,12 +2,12 @@
 title: 자격 증명 형식 선택
 ms.date: 03/30/2017
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
-ms.openlocfilehash: c2ee1b9062d14eaa44de0651985c2a385fe02f8e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 27e1bc4b9e4209fafd0e3707ad6674eb5db6e451
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43503393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577115"
 ---
 # <a name="selecting-a-credential-type"></a>자격 증명 형식 선택
 *자격 증명* 는 Windows Communication Foundation (WCF) 요청 된 id 또는 기능을 사용 하 여 데이터입니다. 예를 들어 여권은 정부에서 국가나 지역의 시민권을 입증하기 위해 발급하는 자격 증명입니다. Wcf에서 자격 증명에는 사용자 이름 토큰 및 X.509 인증서 등 다양 한 형식의 걸릴 수 있습니다. 이 항목에서는 자격 증명, wcf에서 사용 방법 및 응용 프로그램에 적합 한 자격 증명을 선택 하는 방법을 설명 합니다.  
@@ -26,8 +26,8 @@ ms.locfileid: "43503393"
 |설정|설명|  
 |-------------|-----------------|  
 |없음|클라이언트가 자격 증명을 제공할 필요가 없음을 지정합니다. 익명 클라이언트로 변환됩니다.|  
-|Basic|클라이언트에 대한 기본 인증을 지정합니다. 자세한 내용은 RFC2617을 참조 하세요.-[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkID=88313)합니다.|  
-|Digest|클라이언트에 대한 다이제스트 인증을 지정합니다. 자세한 내용은 RFC2617을 참조 하세요.-[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkID=88313)합니다.|  
+|Basic|클라이언트에 대한 기본 인증을 지정합니다. 자세한 내용은 RFC2617을 참조 하세요.-[HTTP 인증: 기본 인증 및 다이제스트 인증](https://go.microsoft.com/fwlink/?LinkID=88313)을 참조하세요.|  
+|Digest|클라이언트에 대한 다이제스트 인증을 지정합니다. 자세한 내용은 RFC2617을 참조 하세요.-[HTTP 인증: 기본 인증 및 다이제스트 인증](https://go.microsoft.com/fwlink/?LinkID=88313)을 참조하세요.|  
 |Ntlm|NTLM(NT LAN Manager) 인증을 지정합니다. 이 인증은 어떤 이유로 Kerberos 인증을 사용할 수 없는 경우에 사용됩니다. 용도 대체 (fallback) 설정 하 여 비활성화할 수도 있습니다는 <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> 속성을 `false`, NTLM을 사용 하는 경우 예외를 throw 하는 최상의 노력을 확인 하는 wcf입니다. 이 속성을 `false`로 설정하면 유선을 통해 NTLM 자격 증명을 보낼 수 있습니다.|  
 |Windows|Windows 인증을 지정합니다. Windows 도메인에서 Kerberos 프로토콜만 지정하려면 <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> 속성을 `false`로 설정합니다. 기본값은 `true`입니다.|  
 |인증서|X.509 인증서를 사용하여 클라이언트 인증을 수행합니다.|  
@@ -97,20 +97,20 @@ ms.locfileid: "43503393"
   
  자격 증명 및 보안 세션에 대 한 자세한 내용은 참조 하세요. [보안 세션에 대 한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.MessageSecurityOverMsmq.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>  
- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [WCF 보안 프로그래밍](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)  
- [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.MessageSecurityOverMsmq.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>
+- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [WCF 보안 프로그래밍](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+- [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

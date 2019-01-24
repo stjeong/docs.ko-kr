@@ -6,12 +6,12 @@ helpviewer_keywords:
 - keycontainer compiler option [Visual Basic]
 - /keycontainer compiler option [Visual Basic]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-ms.openlocfilehash: f64e47922aea35ac9ddf51428107af0d4002d33e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 1666c7743f1116f86bc4457af53711cb6f1a6b7b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185825"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579825"
 ---
 # <a name="-keycontainer"></a>-keycontainer
 어셈블리에 강력한 이름을 지정하는 키 쌍의 키 컨테이너 이름을 지정합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "50185825"
   
 |용어|정의|  
 |---|---|  
-|`container`|필수. 키가 포함 된 컨테이너 파일입니다. 파일 이름을 따옴표로 묶습니다 ("") 이름에 공백이 있습니다.|  
+|`container`|필수 요소. 키가 포함 된 컨테이너 파일입니다. 파일 이름을 따옴표로 묶습니다 ("") 이름에 공백이 있습니다.|  
   
 ## <a name="remarks"></a>설명  
  컴파일러는 공개 키를 어셈블리 매니페스트에 삽입 하 고 개인 키를 사용 하 여 최종 어셈블리에 서명 하 여 공유할 수 있는 구성 요소를 만듭니다. 키 파일을 생성하려면 명령줄에 `sn -k file`을 입력합니다. `-i` 옵션 컨테이너에 키 쌍을 설치 합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)]을 참조 하세요[Sn.exe (강력한 이름 도구)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
@@ -49,8 +49,8 @@ ms.locfileid: "50185825"
 vbc -keycontainer:key1 input.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

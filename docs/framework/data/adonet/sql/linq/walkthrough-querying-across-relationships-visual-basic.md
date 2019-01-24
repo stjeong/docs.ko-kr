@@ -1,17 +1,17 @@
 ---
-title: '연습: 관계 간 쿼리(Visual Basic)'
+title: '연습: 관계 간 쿼리 (Visual Basic)'
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: a7da43e3-769f-4e07-bcd6-552b8bde66f4
-ms.openlocfilehash: aa98a823a5d97d86144ea2f76953e990cde8edec
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2246ad1f9f36af2f8f4383647ccb97ee7be3b64b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585473"
 ---
-# <a name="walkthrough-querying-across-relationships-visual-basic"></a>연습: 관계 간 쿼리(Visual Basic)
+# <a name="walkthrough-querying-across-relationships-visual-basic"></a>연습: 관계 간 쿼리 (Visual Basic)
 이 연습에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] *연결* 데이터베이스에서 외래 키 관계를 나타내는입니다.  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
@@ -49,7 +49,7 @@ ms.locfileid: "33355206"
      [!code-vb[DLinqWalk2VB#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#2)]  
   
 ## <a name="creating-and-running-a-query-across-the-customer-order-relationship"></a>Customer 및 Order 관계에서 쿼리 만들기 및 실행  
- 이제 `Order` 개체에서 `Customer` 개체를 직접 액세스하거나 그 반대 방향으로 액세스할 수 있습니다. 명시적 필요가 *조인* customers와 orders 합니다.  
+ 이제 `Order` 개체에서 `Customer` 개체를 직접 액세스하거나 그 반대 방향으로 액세스할 수 있습니다. 명시적인 않아도 *조인* customers와 orders 간의 합니다.  
   
 #### <a name="to-access-order-objects-by-using-customer-objects"></a>Customer 개체를 사용하여 Order 개체에 액세스하려면  
   
@@ -86,10 +86,10 @@ ms.locfileid: "33355206"
   
 4.  콘솔 창에서 Enter 키를 눌러 응용 프로그램을 닫습니다.  
   
-5.  에 **파일** 메뉴를 클릭 하 여 **모두 저장** 이 응용 프로그램을 저장 하려는 경우.  
+5.  에 **파일** 메뉴에서 클릭 **모두 저장** 이 응용 프로그램을 저장 하려는 경우.  
   
 ## <a name="next-steps"></a>다음 단계  
  다음 연습 ([연습: 데이터 조작 (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-visual-basic.md)) 데이터를 조작 하는 방법을 보여 줍니다. 다음 연습에서는 이미 완료한 이 시리즈의 연습 두 개를 저장할 필요가 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## <a name="see-also"></a>참고자료
+- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

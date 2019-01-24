@@ -2,12 +2,12 @@
 title: LINQ to XML 이벤트 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 34923928-b99c-4004-956e-38f6db25e910
-ms.openlocfilehash: 216c2af87d2ae3a767548ccaa1efe118215cc6a0
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 5860a83c6475eb8cf150bb1c439bdd8499b6a2c1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54637799"
 ---
 # <a name="linq-to-xml-events-visual-basic"></a>LINQ to XML 이벤트 (Visual Basic)
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 이벤트를 통해 XML 트리가 변경될 때 알림을 받을 수 있습니다.  
@@ -114,5 +114,5 @@ Total:308
 </Root>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [고급 LINQ to XML 프로그래밍 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## <a name="see-also"></a>참고자료
+- [고급 LINQ to XML 프로그래밍 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

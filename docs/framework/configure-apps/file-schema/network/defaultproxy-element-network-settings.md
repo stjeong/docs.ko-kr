@@ -8,30 +8,30 @@ helpviewer_keywords:
 - defaultProxy element
 - <defaultProxy> element
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
-ms.openlocfilehash: 54185c7cca734ced166fbe0a52b96214321d4469
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 48c5f5a50563cdbea5fa806e7c7524e413ba3712
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596178"
 ---
 # <a name="ltdefaultproxygt-element-network-settings"></a>&lt;defaultProxy&gt; 요소 (네트워크 설정)
 HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.  
   
  \<configuration>  
 \<system.net>  
-\<defaultProxy >  
+\<defaultProxy>  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-      <defaultProxy  
-        enabled="true|false"  
-        useDefaultCredentials="true|false">  
-           <bypasslist> … </bypasslist>  
-           <proxy> … </proxy>  
-           <module> … </module>  
-      </defaultProxy>
+<defaultProxy  
+  enabled="true|false"  
+  useDefaultCredentials="true|false">  
+    <bypasslist>...</bypasslist>  
+    <proxy>...</proxy>  
+    <module>...</module>  
+</defaultProxy>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -50,7 +50,7 @@ HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.
 |-----------------|---------------------|  
 |[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|프록시를 사용하지 않는 주소를 설명하는 정규식 집합을 제공합니다.|  
 |[module](../../../../../docs/framework/configure-apps/file-schema/network/module-element-network-settings.md)|응용 프로그램에 새 프록시 모듈을 추가합니다.|  
-|[프록시](../../../../../docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md)|프록시 서버를 정의합니다.|  
+|[proxy](../../../../../docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md)|프록시 서버를 정의합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -86,6 +86,6 @@ HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

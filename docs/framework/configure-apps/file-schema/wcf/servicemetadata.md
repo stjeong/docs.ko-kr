@@ -2,21 +2,21 @@
 title: '&lt;serviceMetadata&gt;'
 ms.date: 03/30/2017
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
-ms.openlocfilehash: 4cff141d7e012e865280e4397e6e3d65075a8f45
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 3e363e90f9436073a30c228eca5c962763418e8c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54610211"
 ---
 # <a name="ltservicemetadatagt"></a>&lt;serviceMetadata&gt;
 서비스 메타데이터 및 관련 정보의 게시를 지정합니다.  
   
 \<system.serviceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
-\<serviceMetadata >  
+\<behavior>  
+\<serviceMetadata>  
   
 ## <a name="syntax"></a>구문  
   
@@ -58,7 +58,7 @@ ms.locfileid: "54150983"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
+|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  이 구성 요소를 사용하면 서비스의 메타데이터 게시 기능을 제어할 수 있습니다. 잠재적으로 중요 한 서비스 메타 데이터가 실수로 공개를 방지 하려면 Windows Communication Foundation (WCF) 서비스에 대 한 기본 구성 메타 데이터 게시를 해제 합니다. 이 동작은 기본적으로 안전하지만 구성에서 서비스의 메타데이터 게시 동작이 명시적으로 사용하도록 설정되어 있지 않은 경우 Svcutil.exe 등의 메타데이터 가져오기 도구를 사용하여 서비스를 호출하는 데 필요한 클라이언트 코드를 생성할 수 없습니다. 이 구성 요소를 사용하면 서비스에 대해 이 게시 동작을 사용하도록 설정할 수 있습니다.  
@@ -116,8 +116,8 @@ ms.locfileid: "54150983"
 </configuration>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [메타데이터 게시 동작](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [메타데이터 게시 동작](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)

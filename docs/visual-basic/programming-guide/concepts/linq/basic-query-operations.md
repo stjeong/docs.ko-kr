@@ -15,12 +15,12 @@ helpviewer_keywords:
 - grouping data [LINQ in Visual Basic]
 - Select clause [LINQ in Visual Basic]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-ms.openlocfilehash: bcaefce4621fbfe3b3ac1a65ca634136fd9870e4
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: d066b282604a53e2cf973ce0425af729fba6a118
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43461026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585619"
 ---
 # <a name="basic-query-operations-visual-basic"></a>기본 쿼리 작업(Visual Basic)
 이 항목에서는에 대 한 간략 한 소개 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] Visual Basic의 경우에 쿼리에서 수행 하는 작업의 일반적인 종류의 일부에 대 한 식입니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -103,7 +103,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  [!code-vb[VbLINQBasicOps#9](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_9.vb)]  
   
 > [!NOTE]
->  만든 학생의 목록을 사용 하 여이 코드를 실행할 수 있습니다 [방법: 항목 목록 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)합니다.  
+>  만든 학생의 목록을 사용 하 여이 코드를 실행할 수 있습니다 [방법: 항목 목록을 만드는](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)합니다.  
   
  합니다 `Join` 키워드는 해당 하는 `INNER JOIN` sql에서입니다. 두 컬렉션의 요소 간에 일치 하는 키 값을 기반으로 하는 두 컬렉션을 결합 합니다. 쿼리는 전체 또는 일부 일치 하는 키 값이 있는 컬렉션 요소를 반환 합니다. 예를 들어, 다음 코드는 이전 암시적 조인 작업을 복제합니다.  
   
@@ -116,7 +116,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  [!code-vb[VbLINQBasicOps#11](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_11.vb)]  
   
- 만든 학생 목록을 사용 하 여이 코드를 실행 하는 경우 [방법: 항목 목록 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)에서 출력을 `For Each` 문은:  
+ 만든 학생 목록을 사용 하 여이 코드를 실행 하는 경우 [방법: 항목 목록 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)에서 출력 된 `For Each` 문은:  
   
  연도: Junior  
   
@@ -132,7 +132,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  Omelchenko, Svetlana  
   
- 홍현아라, Michiko  
+ Osada, Michiko  
   
  Fakhouri, Fadi  
   
@@ -152,9 +152,9 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  에 대 한 자세한 내용은 `Group By`를 참조 하세요 [그룹 By 절](../../../../visual-basic/language-reference/queries/group-by-clause.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic.IEnumerable%601>  
- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)

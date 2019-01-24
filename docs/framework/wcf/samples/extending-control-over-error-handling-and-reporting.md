@@ -2,12 +2,12 @@
 title: 오류 처리 및 오류 보고에 대한 확장 제어
 ms.date: 03/30/2017
 ms.assetid: 45f996a7-fa00-45cb-9d6f-b368f5778aaa
-ms.openlocfilehash: 6492807b55b50662790cf25807a35ddd65fbe01d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 30b36f5373563ec9faba8e655ab1e31d47b23c99
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54622457"
 ---
 # <a name="extending-control-over-error-handling-and-reporting"></a>오류 처리 및 오류 보고에 대한 확장 제어
 이 샘플에는 오류 처리 및 오류 보고 사용 하 여 Windows Communication Foundation (WCF) 서비스에 대 한 제어를 확장 하는 방법을 보여 줍니다.는 <xref:System.ServiceModel.Dispatcher.IErrorHandler> 인터페이스입니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 일부 추가 코드 오류를 처리 하는 서비스에 추가 합니다. 클라이언트에서는 몇 가지 오류 조건을 발생시키고 서비스에서는 해당 오류를 가로채서 파일에 기록합니다.  
@@ -158,4 +158,4 @@ Fault: Reason = Invalid Argument: The argument must be greater than zero.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\ErrorHandling`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

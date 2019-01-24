@@ -2,12 +2,12 @@
 title: 사용자 지정 활동 디자이너에서 ExpressionTextBox 사용
 ms.date: 03/30/2017
 ms.assetid: f82e73e7-a256-4a4d-82b7-c0d62f4ab5e7
-ms.openlocfilehash: ee9da26625d772eda6100fc4d0db0469941bdb0d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 87f1052b5bf2c7c4e260aa606cb03b978726bb77
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54587871"
 ---
 # <a name="using-the-expressiontextbox-in-a-custom-activity-designer"></a>사용자 지정 활동 디자이너에서 ExpressionTextBox 사용
 이 샘플에서는 사용자 지정 활동 디자이너에서 <xref:System.Activities.Presentation.View.ExpressionTextBox>를 사용하는 방법을 보여 줍니다. 사용자 지정 활동인 `MultiAssign`은 두 개의 문자열 변수에 두 개의 문자열 값을 할당합니다. <xref:System.Activities.Presentation.View.ExpressionTextBox> 컨트롤 중 일부는 <xref:System.Activities.InArgument>에 바인딩되고 또 다른 일부는 <xref:System.Activities.OutArgument>에 바인딩됩니다.
@@ -46,6 +46,6 @@ ms.locfileid: "53149941"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\ExpressionTextBox`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Activities.Presentation.View.ExpressionTextBox>  
- [워크플로 디자이너로 응용 프로그램 개발](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)
+## <a name="see-also"></a>참고자료
+- <xref:System.Activities.Presentation.View.ExpressionTextBox>
+- [워크플로 디자이너로 응용 프로그램 개발](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

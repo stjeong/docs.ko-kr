@@ -2,21 +2,21 @@
 title: '&lt;policyImporter&gt;'
 ms.date: 03/30/2017
 ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
-ms.openlocfilehash: 22d90ff9d0cd5325300cf42437836f075cbf8c31
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 4075f7fcb1c65da3d9e2e5e5dab52452ca2c9b60
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54632168"
 ---
 # <a name="ltpolicyimportergt"></a>&lt;policyImporter&gt;
 바인딩에 대한 사용자 지정 정책 어설션의 가져오기를 제어하는 정책 가져오기를 지정합니다.  
   
  \<system.ServiceModel>  
 \<client>  
-\<메타 데이터 >  
-\<policyImporters >  
-\<policyImporter >  
+\<metadata>  
+\<policyImporters>  
+\<policyImporter>  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,15 +44,15 @@ ms.locfileid: "54148489"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<policyImporters >](../../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md)|바인딩에 대한 사용자 지정 정책 어설션의 가져오기를 제어하는 모든 정책 가져오기를 지정합니다.|  
+|[\<policyImporters>](../../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md)|바인딩에 대한 사용자 지정 정책 어설션의 가져오기를 제어하는 모든 정책 가져오기를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  정책 가져오기는, 바인딩 기능에 대한 사용자 지정 정책 어설션을 검색하거나 어설션에서 요구하는 기능을 구현하는 사용자 지정 바인딩 요소를 연결하는 데 사용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
- <xref:System.ServiceModel.Configuration.PolicyImporterElement>  
- <xref:System.ServiceModel.Configuration.MetadataElement>  
- <xref:System.ServiceModel.Description.MetadataImporter>  
- [WCF 클라이언트 구성](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [클라이언트](../../../../../docs/framework/wcf/feature-details/clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>
+- <xref:System.ServiceModel.Configuration.PolicyImporterElement>
+- <xref:System.ServiceModel.Configuration.MetadataElement>
+- <xref:System.ServiceModel.Description.MetadataImporter>
+- [WCF 클라이언트 구성](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [클라이언트](../../../../../docs/framework/wcf/feature-details/clients.md)

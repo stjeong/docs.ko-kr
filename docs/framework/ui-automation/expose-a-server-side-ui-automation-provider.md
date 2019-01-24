@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 247a353a3f68289a85e581fd9b9c308e442a9412
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 675d9c02503cd69c425a95cffabde053dd5cca59
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47455490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54568818"
 ---
 # <a name="expose-a-server-side-ui-automation-provider"></a>서버 쪽 UI 자동화 공급자 노출
 > [!NOTE]
@@ -24,12 +24,12 @@ ms.locfileid: "47455490"
   
  이 항목에는 <xref:System.Windows.Forms.Control?displayProperty=nameWithType> 창에 호스트되는 서버 쪽 UI 자동화 공급자를 노출하는 방법을 보여주는 예제 코드가 있습니다.  
   
- 이 예제에서는 클라이언트 응용 프로그램이 창에 대한 정보를 요청할 때 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 핵심 서비스가 보내는 메시지인 WM_GETOBJECT를 트랩하기 위해 창 프로시저를 재정의합니다.  
+ 이 예제에서는 클라이언트 애플리케이션이 창에 대한 정보를 요청할 때 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 핵심 서비스가 보내는 메시지인 WM_GETOBJECT를 트랩하기 위해 창 프로시저를 재정의합니다.  
   
 ## <a name="example"></a>예제  
  [!code-csharp[UIAFragmentProvider_snip#116](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#116)]
  [!code-vb[UIAFragmentProvider_snip#116](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#116)]  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 공급자 개요](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [서버 쪽 UI 자동화 공급자 구현](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 공급자 개요](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [서버 쪽 UI 자동화 공급자 구현](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

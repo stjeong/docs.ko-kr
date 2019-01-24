@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c3847ec6df2e4c6f0cd7116e8219f194792c8b78
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 7d1c3edd15ce1994c43a5c9419f7c0edb9421fca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33433049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509222"
 ---
 # <a name="iclrdebugmanagersetdacl-method"></a>ICLRDebugManager::SetDacl 메서드
 이 메서드가 구현되지 않았습니다.  
@@ -37,7 +37,7 @@ HRESULT SetDacl (
   
 #### <a name="parameters"></a>매개 변수  
  `pacl`  
- [in] 액세스 제어 목록 (ACL)에 포인터입니다.  
+ [in] 액세스 제어 목록 (ACL)를 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
@@ -46,16 +46,16 @@ HRESULT SetDacl (
 |E_NOTIMPL|메서드가 구현 되지 않았습니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICLRControl 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRDebugManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
- [GetDacl 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-getdacl-method.md)  
- [IHostControl 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICLRControl 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [ICLRDebugManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
+- [GetDacl 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-getdacl-method.md)
+- [IHostControl 인터페이스](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

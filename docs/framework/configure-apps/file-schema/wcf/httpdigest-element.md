@@ -2,22 +2,22 @@
 title: '&lt;httpDigest&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
-ms.openlocfilehash: 2211c593090d697ae07350fcf7ac491b9d23e2d0
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 146260a8f4b51ec51e749408b8351c7e71debab1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54510613"
 ---
 # <a name="lthttpdigestgt-element"></a>&lt;httpDigest&gt; 요소
 서비스에게 클라이언트를 인증하는 데 사용되는 다이제스트 형식 자격 증명을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
-\<httpDigest >  
+\<httpDigest>  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,14 +48,14 @@ ms.locfileid: "54150143"
   
  이 기능은 Windows 및 IIS(인터넷 정보 서비스)의 Active Directory를 통해 사용해야 합니다. 자세한 내용은 [IIS 6.0의 다이제스트 인증](https://go.microsoft.com/fwlink/?LinkId=88443)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>  
- <xref:System.ServiceModel.Configuration.HttpDigestClientElement>  
- <xref:System.ServiceModel.Security.HttpDigestClientCredential>  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>
+- <xref:System.ServiceModel.Configuration.HttpDigestClientElement>
+- <xref:System.ServiceModel.Security.HttpDigestClientCredential>
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

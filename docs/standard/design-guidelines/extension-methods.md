@@ -4,12 +4,12 @@ ms.date: 10/22/2008
 ms.technology: dotnet-standard
 ms.assetid: 5de945cb-88f4-49d7-b0e6-f098300cf357
 author: KrzysztofCwalina
-ms.openlocfilehash: 6fedd41e901035290995d7ece1b5aa23e76f345e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: bd5f67c3bd766625e7c22b3ca9986cfbca8854bf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54621762"
 ---
 # <a name="extension-methods"></a>확장명 메서드
 확장 메서드는 정적 메서드를 인스턴스 메서드 호출 구문을 사용 하 여 호출할 수 있도록 언어 기능. 이러한 메서드는 메서드를의 동작에 인스턴스를 나타내는 하나 이상의 매개 변수를 수행 해야 합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "53148298"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
+- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

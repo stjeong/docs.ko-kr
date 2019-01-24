@@ -2,12 +2,12 @@
 title: 고가용성 및 재해 복구에 대한 SqlClient 지원
 ms.date: 03/30/2017
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
-ms.openlocfilehash: 258922a1541c4594ce2b4673d4d68c279087aef2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 50f2e4c46fbb8c043237aac90ffee98112b8cefa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609124"
 ---
 # <a name="sqlclient-support-for-high-availability-disaster-recovery"></a>고가용성 및 재해 복구에 대한 SqlClient 지원
 이 항목에서는 고가용성, 재해 복구, AlwaysOn 가용성 그룹에 대한 SqlClient 지원([!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]에 추가됨)에 대해 설명합니다.  SQL Server 2012 AlwaysOn 가용성 그룹 기능이 추가 되었습니다. AlwaysOn 가용성 그룹에 대 한 자세한 내용은 SQL Server 온라인 설명서를 참조 합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "43513028"
 >  설정 `MultiSubnetFailover` 하 `true` 필요 하지 않습니다 [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] 이상 버전.
   
 ## <a name="connecting-with-multisubnetfailover"></a>MultiSubnetFailover를 사용하여 연결  
- 항상 지정 `MultiSubnetFailover=True` SQL Server 2012 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 연결할 때. `MultiSubnetFailover` 모든 가용성 그룹 및 또는 장애 조치 클러스터 인스턴스에 SQL Server 2012에는 단일 및 다중 서브넷 AlwaysOn 토폴로지에 대 한 장애 조치 시간을 크게 줄일 보다 빠르게 장애 조치할 수 있도록 합니다. 다중 서브넷 장애 조치가 수행되는 동안 클라이언트는 병렬로 연결을 시도합니다. 서브넷 장애 조치가 수행되는 동안 적극적으로 TCP 연결을 다시 시도합니다.  
+ SQL Server 2012 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치(Failover) 클러스터 인스턴스에 연결할 때는 항상 `MultiSubnetFailover=True`를 지정하십시오. `MultiSubnetFailover` 모든 가용성 그룹 및 또는 장애 조치 클러스터 인스턴스에 SQL Server 2012에는 단일 및 다중 서브넷 AlwaysOn 토폴로지에 대 한 장애 조치 시간을 크게 줄일 보다 빠르게 장애 조치할 수 있도록 합니다. 다중 서브넷 장애 조치가 수행되는 동안 클라이언트는 병렬로 연결을 시도합니다. 서브넷 장애 조치가 수행되는 동안 적극적으로 TCP 연결을 다시 시도합니다.  
   
  `MultiSubnetFailover` 는 응용 프로그램이 가용성 그룹 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 배포 되 고 SqlClient는 하려고 시도 하 여 주 SQL Server 인스턴스에서 데이터베이스에 연결 하려고 연결 속성을 나타냅니다 모든 IP 주소에 연결 합니다. 연결에 대해 `MultiSubnetFailover=True`가 지정되어 있으면 클라이언트는 운영 체제의 기본 TCP 재전송 간격보다 빠르게 TCP 연결을 다시 시도합니다. 따라서 AlwaysOn 가용성 그룹 또는 AlwaysOn 장애 조치 클러스터 인스턴스의 장애 조치 후 더 빠르게 다시 연결할 수 있으며, 이는 단일 및 다중 서브넷 가용성 그룹 또는 장애 조치 클러스터 인스턴스 모두에 적용됩니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "43513028"
   
 -   SQL Server에 연결 하 여 64 개 IP 주소를 사용 하 여 구성 하는 인스턴스 연결 오류가 발생 합니다.  
   
--   사용 하는 응용 프로그램의 동작은 `MultiSubnetFailover` 연결 속성이 인증의 유형에 따라 영향을 받지 않습니다: SQL Server 인증, Kerberos 인증 또는 Windows 인증입니다.  
+-   사용 하는 응용 프로그램의 동작을 `MultiSubnetFailover` 연결 속성이 인증의 유형에 따라 영향을 받지 않습니다. SQL Server 인증, Kerberos 인증 또는 Windows 인증입니다.  
   
 -   장애 조치 시간을 수용하고 응용 프로그램 연결 재시도를 줄이도록 `Connect Timeout` 값을 늘립니다.  
   
@@ -96,6 +96,6 @@ ms.locfileid: "43513028"
   
  읽기 전용 라우팅은 먼저 주 복제본에 연결한 다음 사용 가능한 최상의 읽기 가능 보조 복제본을 찾으므로 읽기 전용 라우팅의 경우 주 복제본에 연결하는 경우보다 시간이 더 걸릴 수 있습니다. 따라서 로그인 제한 시간을 늘려야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 기능 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 기능 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

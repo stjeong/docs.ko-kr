@@ -2,12 +2,12 @@
 title: 수정 SQL 생성
 ms.date: 03/30/2017
 ms.assetid: 2188a39d-46ed-4a8b-906a-c9f15e6fefd1
-ms.openlocfilehash: bfeb4f826022d39b2a45132a5b2bf344ef4c99c6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 0bacd974c4eb9bc98851d35d574a184fde4d9468
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580059"
 ---
 # <a name="modification-sql-generation"></a>수정 SQL 생성
 이 단원에서는 SQL:1999 규격 데이터베이스 공급자에 대한 수정 SQL 생성 모듈을 개발하는 방법에 대해 설명합니다. 이 모듈은 수정 명령 트리를 적절한 SQL INSERT, UPDATE 또는 DELETE 문으로 변환하는 작업을 담당합니다.  
@@ -286,5 +286,5 @@ delete [dbo].[Categories]
 where ([CategoryID] = @p0)  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Entity Framework 데이터 공급자 작성](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)
+## <a name="see-also"></a>참고자료
+- [Entity Framework 데이터 공급자 작성](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)

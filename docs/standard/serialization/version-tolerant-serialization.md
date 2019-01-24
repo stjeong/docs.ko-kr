@@ -13,12 +13,12 @@ helpviewer_keywords:
 - BinaryFormatter class, samples
 - serialization, attributes
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
-ms.openlocfilehash: f26de2dbf8ec200a4b53195ae97bbb174e815166
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: c899cfe1015a25adc25fc28ee84d0a37a397defe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54584690"
 ---
 # <a name="version-tolerant-serialization"></a>버전 독립적 Serialization
 .NET Framework의 버전 1.0과 1.1에서는 버전이 다른 응용 프로그램에서 재사용할 수 있는 serialize 가능한 형식을 만드는 작업에 문제가 있었습니다. 추가 필드를 추가하여 형식을 수정하면 다음 문제가 발생합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "44042649"
   
 -   데이터가 누락된 형식의 이전 버전을 deserialize할 때 응용 프로그램의 새 버전이 예외를 throw합니다.  
   
- VTS(버전 독립적 Serialization)는 .NET Framework 2.0에 추가된 기능 집합으로, serialize 가능한 형식을 시간이 지남에 따라 더 쉽게 수정할 수 있게 해 줍니다. 특히 VTS 기능은 제네릭 형식을 비롯하여 <xref:System.SerializableAttribute> 특성이 적용된 클래스에 사용할 수 있습니다. VTS를 사용하면 형식의 다른 버전과의 호환성을 휴지하면서 해당 클래스에 새 필드를 추가할 수 있습니다. 작동하는 응용 프로그램 예제는 [버전 독립적 serialization 기술 샘플](../../../docs/standard/serialization/version-tolerant-serialization-technology-sample.md)을 참조하세요.  
+ VTS(버전 독립적 Serialization)는 .NET Framework 2.0에 추가된 기능 집합으로, serialize 가능한 형식을 시간이 지남에 따라 더 쉽게 수정할 수 있게 해 줍니다. 특히 VTS 기능은 제네릭 형식을 비롯하여 <xref:System.SerializableAttribute> 특성이 적용된 클래스에 사용할 수 있습니다. VTS를 사용하면 형식의 다른 버전과의 호환성을 휴지하면서 해당 클래스에 새 필드를 추가할 수 있습니다. 작동하는 애플리케이션 예제는 [버전 독립적 serialization 기술 샘플](../../../docs/standard/serialization/version-tolerant-serialization-technology-sample.md)을 참조하세요.  
   
  VTS 기능은 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>를 사용할 때 활성화됩니다. 또한 <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>를 사용할 때 잘못 사용된 데이터 허용 범위를 제외한 모든 기능도 활성화됩니다. serialization에 이러한 클래스를 사용하는 방법에 대한 자세한 내용은 [이진 serialization](binary-serialization.md)을 참조하세요.  
   
@@ -282,15 +282,15 @@ End Class
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.SerializableAttribute>  
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
-- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
-- <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A>  
-- <xref:System.Runtime.Serialization.OptionalFieldAttribute>  
-- <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
-- <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
-- <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
-- <xref:System.Runtime.Serialization.OnSerializedAttribute>  
-- <xref:System.Runtime.Serialization.StreamingContext>  
-- <xref:System.NonSerializedAttribute>  
+- <xref:System.SerializableAttribute>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>
+- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>
+- <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A>
+- <xref:System.Runtime.Serialization.OptionalFieldAttribute>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute>
+- <xref:System.Runtime.Serialization.StreamingContext>
+- <xref:System.NonSerializedAttribute>
 - [이진 serialization](binary-serialization.md)
