@@ -2,12 +2,12 @@
 title: Oracle 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 89a75de8-dee8-45e2-a97f-254d7e62e7e1
-ms.openlocfilehash: 342c4cbe994eb983713be0f258e3a029df6739f8
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 80623a1abcaeee642b9206edc106d1a4ea74d63b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44217349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694466"
 ---
 # <a name="oracle-schema-collections"></a>Oracle 스키마 컬렉션
 Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬렉션을 비롯하여 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
@@ -107,7 +107,7 @@ Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬�
 |SECONDARY|문자열|Oracle9i 데이터 카트리지의 ODCIIndexCreate 메서드에서 만든 보조 개체 인지 여부 (Y&#124;N).|  
 |BUFFER_POOL|문자열|인덱스 블록에 사용할 기본 버퍼 풀의 이름입니다.|  
 |USER_STATS|문자열|사용자가 직접 통계를 입력했는지 여부입니다.|  
-|DURATION|문자열|임시 테이블의 지속 시간을 나타냅니다. 1)SYS$SESSION: 세션 지속 시간 동안 행이 유지됩니다. 2) SYS$TRANSACTION: COMMIT 이후에 행이 삭제됩니다. 3) 영구 테이블인 경우 Null입니다.|  
+|DURATION|문자열|임시 테이블의 지속 시간을 나타냅니다. 1) SYS$ 세션: 2) SYS$ TRANSACTION 세션의 기간에 대 한 행이 유지 됩니다. 3) 영구 테이블에 대 한 Null 커밋 후 행이 삭제 됩니다.|  
 |PCT_DIRECT_ACCESS|Decimal|인덱스 구성 테이블의 보조 인덱스인 경우 VALID 추측을 사용한 행의 백분율입니다.|  
 |ITYP_OWNER|문자열|도메인 인덱스인 경우 인덱스 형식 소유자입니다.|  
 |ITYP_NAME|문자열|도메인 인덱스인 경우 인덱스 형식 이름입니다.|  
@@ -115,7 +115,7 @@ Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬�
 |GLOBAL_STATS|문자열|구분된 인덱스인 경우 통계를 인덱스를 전체적으로 분석하여 수집했는지(YES) 또는 기본 인덱스 파티션 및 하위 파티션의 통계에서 추측했는지(NO) 여부를 나타냅니다.|  
 |DOMIDX_STATUS|문자열|도메인 인덱스의 상태를 나타냅니다. NULL: 지정한 인덱스는 도메인 인덱스가 아닙니다. VALID: 올바른 도메인 인덱스입니다. IDXTYP_INVLD: 이 도메인 인덱스의 인덱스 형식이 올바르지 않습니다.|  
 |DOMIDX_OPSTATUS|문자열|도메인 인덱스에서 수행한 작업의 상태를 나타냅니다. NULL: 지정한 인덱스는 도메인 인덱스가 아닙니다. VALID: 작업이 오류 없이 수행되었습니다. FAILED: 오류가 발생하여 작업을 수행하지 못했습니다.|  
-|FUNCIDX_STATUS|문자열|함수 기반 인덱스의 상태를 나타냅니다. NULL: 함수 기반 인덱스가 아닙니다. ENABLED: 함수 기반 인덱스가 활성화되었습니다. DISABLED: 함수 기반 인덱스가 비활성화되었습니다.|  
+|FUNCIDX_STATUS|문자열|함수 기반 인덱스의 상태를 나타냅니다. NULL: 이것이 함수 기반 인덱스를 사용: 함수 기반 인덱스가 활성화 되었습니다 사용 하지 않도록 설정: 함수 기반 인덱스가 비활성화 되었습니다.|  
 |JOIN_INDEX|문자열|조인 인덱스인지 여부를 나타냅니다.|  
   
 ## <a name="indexcolumns"></a>IndexColumns  
@@ -379,5 +379,5 @@ Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬�
 |CHAR_LENGTH|Decimal|문자열 데이터 형식의 문자 제한입니다.|  
 |CHAR_USED|문자열|문자열에 공식적으로 사용되는 것이 바이트 제한(B)인지 또는 문자열 제한(C)인지 여부를 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: bb88d113c84ce099eb0d7ec631abc125393e7e6e
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: be3b7206a171bd485eaa86e9abf2bf22514399ed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706763"
 ---
 # <a name="ui-automation-support-for-the-slider-control-type"></a>Slider 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -39,11 +39,11 @@ ms.locfileid: "48850272"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성|값|노트|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|전체 컨트롤이 포함된 가장 바깥쪽 사각형입니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|슬라이더 컨트롤의 전체 경계 사각형은 자식 컨트롤이 차지하기 때문에 대부분의 슬라이더 컨트롤은 <xref:System.Windows.Automation.NoClickablePointException> 을 발생시켜야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|메모를 참조하세요.|컨트롤이 키보드 포커스를 받을 수 있으면 해당 컨트롤은 이 속성을 지원해야 합니다.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|메모를 참조하세요.|편집 컨트롤의 이름은 일반적으로 정적 텍스트 레이블에서 생성됩니다. 정적 텍스트 레이블이 없는 경우 응용 프로그램 개발자가 `Name` 의 속성 값을 할당해야 합니다. `Name` 속성에는 편집 컨트롤의 텍스트 내용이 포함되지 않아야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|메모를 참조하세요.|편집 컨트롤의 이름은 일반적으로 정적 텍스트 레이블에서 생성됩니다. 정적 텍스트 레이블이 없는 경우 애플리케이션 개발자가 `Name` 의 속성 값을 할당해야 합니다. `Name` 속성에는 편집 컨트롤의 텍스트 내용이 포함되지 않아야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|메모를 참조하세요.|컨트롤과 연결된 정적 텍스트 레이블이 있는 경우, 이 속성은 해당 컨트롤에 대한 참조를 노출해야 합니다. 텍스트 컨트롤이 다른 컨트롤의 하위 구성 요소일 경우 이 컨트롤에 `LabeledBy` 속성 집합이 없습니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|슬라이더|이 값은 모든 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 프레임워크에 대해 동일합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"slider"|Edit 컨트롤 형식에 해당하는 지역화된 문자열입니다.|  
@@ -76,7 +76,7 @@ ms.locfileid: "48850272"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|필수|없음|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|필수|없음|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.Slider>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.Slider>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

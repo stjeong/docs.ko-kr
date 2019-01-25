@@ -7,12 +7,12 @@ helpviewer_keywords:
 - fundamentals [WCF]
 - Windows Communication Foundation [WCF], concepts
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
-ms.openlocfilehash: 9957b937dd59f82a5d1962fee33593d7a0c1b7c1
-ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
+ms.openlocfilehash: 66aa257c0d7f0e66e69d83ddeba48c33ea7a5ff5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53286561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54664024"
 ---
 # <a name="fundamental-windows-communication-foundation-concepts"></a>기본적인 Windows Communication Foundation 개념
 이 문서에서는 Windows Communication Foundation (WCF) 아키텍처의 상위 수준 보기를 제공 합니다. 또한 핵심 개념 및 이러한 개념이 서로 어떻게 연결되는지에 대해 설명합니다. WCF 서비스 및 클라이언트의 가장 간단한 버전을 만드는 방법에 대 한 자습서를 참조 하세요 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md)합니다. WCF 프로그래밍에 알아보려면 [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)합니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "53286561"
  message  
  본문 및 헤더를 포함하여 여러 부분으로 구성될 수 있는 독립적인 데이터 단위입니다.  
   
- service  
+ 서비스  
  하나 이상의 엔드포인트를 노출하는 구문이며 각 엔드포인트는 하나 이상의 서비스 작업을 노출합니다.  
   
  엔드포인트(endpoint)  
@@ -65,7 +65,7 @@ ms.locfileid: "53286561"
  인프라 엔드포인트  
  필요한 기능을 활용하기 위해 인프라에 의해 노출되거나 서비스 계약과 관련 없는 서비스에 의해 제공되는 엔드포인트입니다. 예를 들어, 서비스에는 메타데이터 정보를 제공하는 인프라 엔드포인트가 포함될 수 있습니다.  
   
- address  
+ 주소  
  메시지가 수신될 위치를 지정하며, URI(Uniform Resource Identifier)로 지정됩니다. URI 스키마 부분은 HTTP 및 TCP와 같은 주소에 도달하는 데 사용할 전송 메커니즘 이름을 지정합니다. URI의 계층적 부분에는 전송 메커니즘에 따라 다른 고유한 위치 형식이 포함됩니다.  
   
  엔드포인트 주소를 사용하면 서비스의 각 엔드포인트마다 고유한 엔드포인트 주소를 만들거나 특정한 조건으로 여러 엔드포인트 간에 주소를 공유할 수 있습니다. 다음 예제에서는 기본 이외의 포트를 가진 HTTPS 프로토콜을 사용하는 주소를 보여 줍니다.  
@@ -152,7 +152,7 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
  WS-*  
  WS-Security, WS-ReliableMessaging 등과 같이 WCF에서 구현되고 계속 업데이트되는 WS(웹 서비스) 사양 집합의 약어입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation 정의](../../../docs/framework/wcf/whats-wcf.md)  
- [Windows Communication Foundation 아키텍처](../../../docs/framework/wcf/architecture.md)  
- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+## <a name="see-also"></a>참고자료
+- [Windows Communication Foundation 정의](../../../docs/framework/wcf/whats-wcf.md)
+- [Windows Communication Foundation 아키텍처](../../../docs/framework/wcf/architecture.md)
+- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

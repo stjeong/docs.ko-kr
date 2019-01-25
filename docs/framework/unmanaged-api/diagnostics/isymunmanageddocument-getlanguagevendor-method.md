@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0a6830f47d5cac2cf9c84144c18486489b0ec581
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: b73c9d6fa802a90e59345eb477bccfe80cf2275e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54704932"
 ---
 # <a name="isymunmanageddocumentgetlanguagevendor-method"></a>ISymUnmanagedDocument::GetLanguageVendor 메서드
 이 문서의 언어 공급 업체를 가져옵니다.  
@@ -41,5 +41,5 @@ HRESULT GetLanguageVendor(
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

@@ -2,12 +2,12 @@
 title: 공용 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 50127ced-2ac8-4d7a-9cd1-5c98c655ff03
-ms.openlocfilehash: 157330304ac656ddbdbb18408ca5144566746808
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: dfd1e28a117ca71cac6c792058c1aeb17a0c4f69
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700964"
 ---
 # <a name="common-schema-collections"></a>공용 스키마 컬렉션
 공통 스키마 컬렉션은 각 .NET Framework 관리 공급자를 통해 구현되는 스키마 컬렉션입니다. 호출 하 여 지원 되는 스키마 컬렉션 목록을 확인 하려면.NET Framework 관리 공급자를 쿼리할 수 있습니다 합니다 **GetSchema** 메서드 인수 없이 또는 "metadatacollections 라는" 스키마 컬렉션 이름입니다. 그러면 지원되는 스키마 컬렉션의 목록, 각자 지원하는 제약 조건 수 및 사용하는 식별자 부분 수가 포함된 <xref:System.Data.DataTable>이 반환됩니다. 이 컬렉션은 필요한 모든 열을 설명합니다. 공급자는 필요에 따라 열을 추가할 수 있습니다. 예를 들어, `SqlClient` 및 `OracleClient`는 ParameterName 을 Restrictions 컬렉션에 추가합니다.  
@@ -94,7 +94,7 @@ ms.locfileid: "44260271"
 |----------------|--------------|-----------------|  
 |ReservedWord|string|공급자 관련 예약어입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [데이터베이스 스키마 정보 검색](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [GetSchema 및 Schema 컬렉션](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터베이스 스키마 정보 검색](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [GetSchema 및 Schema 컬렉션](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

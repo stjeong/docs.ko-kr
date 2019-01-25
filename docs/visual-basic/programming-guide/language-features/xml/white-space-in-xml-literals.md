@@ -5,12 +5,12 @@ helpviewer_keywords:
 - white space [XML in Visual Basic]
 - XML literals [Visual Basic], white space
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
-ms.openlocfilehash: 60ee90c69aeda38f95107a6043801a4994972079
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 56466856bc70f4bde428f7087efdf4e71a50021f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689148"
 ---
 # <a name="white-space-in-xml-literals-visual-basic"></a>XML 리터럴의 공백(Visual Basic)
 Visual Basic 컴파일러를 만들 때 XML 리터럴에서 유효 공백 문자만 포함 된 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체입니다. 불필요 한 공백 문자는 포함 되지 않습니다.  
@@ -46,5 +46,5 @@ Visual Basic 컴파일러를 만들 때 XML 리터럴에서 유효 공백 문자
 </outer>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

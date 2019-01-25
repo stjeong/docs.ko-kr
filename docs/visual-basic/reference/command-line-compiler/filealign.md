@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /filealign compiler option [Visual Basic]
 - filealign compiler option [Visual Basic]
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-ms.openlocfilehash: db70749f28592ae6711b6d9544f8704af9416490
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 551d151ab923110c73a528a5def639fb383c889f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715922"
 ---
 # <a name="-filealign"></a>-filealign
 출력 파일의 섹션에 맞출 위치를 지정합니다.  
@@ -39,5 +39,5 @@ ms.locfileid: "53128169"
 > [!NOTE]
 >  `-filealign` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 있는 명령줄에서 컴파일할 경우에 사용할 수 있는 것입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)

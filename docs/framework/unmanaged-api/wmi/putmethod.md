@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 98ef688c1136a81a5b57c3fdfee73c53024186e7
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 74654cf18d87fed8ad5ce9a4cd4249d56fdb4343
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50191044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54693453"
 ---
 # <a name="putmethod-function"></a>PutMethod 함수
 메서드를 만듭니다.
@@ -68,7 +68,7 @@ HRESULT PutMethod (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
 | `WBEM_E_INVALID_DUPLICATE_PARAMETER` | 0x80041043 | `[in, out]` 둘 다 지정 하는 메서드 매개 변수를 *pInSignature* 하 고 *pOutSignature* 개체에 다른 한정자입니다.
 | `WBEM_E_MISSING_PARAMETER_ID` | 0x80041036 | 메서드 매개 변수가 지정 된 **ID** 한정자입니다. |
 | `WBEM_E_NONCONSECUTIVE_PARAMETER_IDS` | 0x80041038 | 메서드 매개 변수에 할당 된 ID 시리즈 연속 아니거나 0으로 시작 되지 않습니다. |
@@ -95,11 +95,11 @@ HRESULT PutMethod (
 예를 들어 참조 된 [IWbemClassObject::PutMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-putmethod) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

@@ -1,15 +1,15 @@
 ---
-title: '방법: 파일 확장명 (LINQ) (Visual Basic)으로 그룹화'
+title: '방법: 그룹 파일 확장명 (LINQ) (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 904dc6d7-7162-4655-a7f4-5785d669bc5a
-ms.openlocfilehash: 61b4ebee03511df8bb06b792ecfd700959d0696b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c52debf2e40c6ed6da2d7f3c7dbdb16e1f7396f5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33641009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54728228"
 ---
-# <a name="how-to-group-files-by-extension-linq-visual-basic"></a>방법: 파일 확장명 (LINQ) (Visual Basic)으로 그룹화
+# <a name="how-to-group-files-by-extension-linq-visual-basic"></a>방법: 그룹 파일 확장명 (LINQ) (Visual Basic)
 이 예제에서는 LINQ를 사용하여 파일 또는 폴더 목록에 대해 고급 그룹화 및 정렬 작업을 수행하는 방법을 보여 줍니다. 또한 <xref:System.Linq.Enumerable.Skip%2A> 및 <xref:System.Linq.Enumerable.Take%2A> 메서드를 사용하여 콘솔 창에서 출력을 페이징하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
@@ -91,11 +91,11 @@ Module GroupByExtension
 End Module  
 ```  
   
- 이 프로그램의 출력은 로컬 파일 시스템의 세부 정보 및 `startFolder`의 설정에 따라 길어질 수 있습니다. 모든 결과를 볼 수 있도록, 이 예제에서는 결과를 페이징하는 방법을 보여 줍니다. Windows 및 웹 응용 프로그램에 동일한 기법을 적용할 수 있습니다. 코드에서 그룹의 항목을 페이징하기 때문에 중첩된 `For Each` 루프가 필요합니다. 목록에서 현재 위치를 계산하며 사용자가 페이징을 중지하고 프로그램을 종료할 수 있도록 하는 몇 가지 추가 논리도 있습니다. 이 특정 사례에서는 페이징 쿼리가 원래 쿼리에서 캐시된 결과에 대해 실행됩니다. LINQ to SQL 등의 다른 컨텍스트에서는 이러한 캐싱이 필요하지 않습니다.  
+ 이 프로그램의 출력은 로컬 파일 시스템의 세부 정보 및 `startFolder`의 설정에 따라 길어질 수 있습니다. 모든 결과를 볼 수 있도록, 이 예제에서는 결과를 페이징하는 방법을 보여 줍니다. Windows 및 웹 애플리케이션에 동일한 기법을 적용할 수 있습니다. 코드에서 그룹의 항목을 페이징하기 때문에 중첩된 `For Each` 루프가 필요합니다. 목록에서 현재 위치를 계산하며 사용자가 페이징을 중지하고 프로그램을 종료할 수 있도록 하는 몇 가지 추가 논리도 있습니다. 이 특정 사례에서는 페이징 쿼리가 원래 쿼리에서 캐시된 결과에 대해 실행됩니다. LINQ to SQL 등의 다른 컨텍스트에서는 이러한 캐싱이 필요하지 않습니다.  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
- 대상.NET Framework 버전 3.5 이상 System.Core.dll에 대 한 참조는 프로젝트를 만들기 및 `Imports` System.Linq 네임 스페이스에 대 한 문입니다.  
+ .NET Framework 3.5 또는 System.Core.dll에 대 한 참조를 사용 하 여 더 높은 버전을 대상으로 하는 프로젝트 만들기 및 `Imports` System.Linq 네임 스페이스에 대 한 문입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Objects(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to Objects(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

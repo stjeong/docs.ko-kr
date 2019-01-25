@@ -2,12 +2,12 @@
 title: 메시지 로깅에 대한 보안 고려 사항
 ms.date: 03/30/2017
 ms.assetid: 21f513f2-815b-47f3-85a6-03c008510038
-ms.openlocfilehash: 5ed2529d82c3994a245d2132909cd1e88b6ed62d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0bee1543a6c29dc34abcb2af08ee520923766175
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732000"
 ---
 # <a name="security-concerns-for-message-logging"></a>메시지 로깅에 대한 보안 고려 사항
 이 항목에서는 메시지 로깅에 의해 생성된 이벤트뿐 아니라 중요한 데이터가 메시지 로그에서 노출되지 않도록 보호하는 방법에 대해 설명합니다.  
@@ -99,16 +99,16 @@ ms.locfileid: "50188809"
 ## <a name="events-triggered-by-message-logging"></a>메시지 로깅을 통해 트리거되는 이벤트  
  다음은 메시지 로깅을 통해 내보내지는 모든 이벤트의 목록입니다.  
   
--   Message logging on: 이 이벤트는 구성 시 메시지 로깅을 사용하도록 설정하거나 WMI를 통해 내보내집니다. 이벤트의 내용은 "메시지 로깅이 켜졌습니다. 메시지 본문과 같이 통신 중에 암호화된 경우에도 중요한 정보가 일반 텍스트로 기록됩니다."입니다.  
+-   로그온 메시지: 이 이벤트는 구성 또는 WMI를 통해 메시지 로깅을 사용 하도록 설정 하면 내보내집니다. 이벤트의 내용은 "메시지 로깅이 켜졌습니다. 메시지 본문과 같이 통신 중에 암호화된 경우에도 중요한 정보가 일반 텍스트로 기록됩니다."입니다.  
   
--   Message logging off: 이 이벤트는 WML을 통해 메시지 로깅을 사용하지 않도록 설정하면 내보내집니다. 이벤트의 내용은 "메시지 로깅이 꺼졌습니다."입니다.  
+-   메시지를 로그 오프: 이 이벤트는 WMI를 통해 메시지 로깅을 비활성화 되 면 내보내집니다. 이벤트의 내용은 "메시지 로깅이 꺼졌습니다."입니다.  
   
--   Log Known PII On: 이 이벤트는 알려진 PII의 로깅을 사용하도록 설정하면 내보내집니다. 이런 경우는 `enableLoggingKnownPii` 특성을 `machineSettings` 합니다 Machine.config 파일의 요소를로 `true`, 및 `logKnownPii` 특성을 `source` App.config또는Web.config파일의요소를로`true`.  
+-   알려진된 PII를 로그온 합니다. 이 이벤트는 알려진된 PII의 로깅이 사용 되 면 내보내집니다. 이런 경우는 `enableLoggingKnownPii` 특성을 `machineSettings` 합니다 Machine.config 파일의 요소를로 `true`, 및 `logKnownPii` 특성을 `source` App.config또는Web.config파일의요소를로`true`.  
   
--   Log Known PII Not Allowed: 이 이벤트는 알려진 PII의 로깅이 허용되지 않을 때 내보내집니다. 이런 경우를 `logKnownPii` 특성을 `source` App.config 또는 Web.config 파일의 요소를로 `true`, 하지만 `enableLoggingKnownPii` 특성를 `machineSettings` 합니다Machine.config파일의요소를로`false`. 예외가 throw되지 않습니다.  
+-   알려진된 PII 없습니다 로그: 이 이벤트는 알려진된 PII의 로깅이 허용 되지 않습니다 때 내보내집니다. 이런 경우를 `logKnownPii` 특성을 `source` App.config 또는 Web.config 파일의 요소를로 `true`, 하지만 `enableLoggingKnownPii` 특성를 `machineSettings` 합니다Machine.config파일의요소를로`false`. 예외가 throw되지 않습니다.  
   
  이러한 이벤트는 Windows에 포함된 이벤트 뷰어 도구에서 볼 수 있습니다. 이 대 한 자세한 내용은 참조 하세요. [이벤트 로깅](../../../../docs/framework/wcf/diagnostics/event-logging/index.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [메시지 로깅](../../../../docs/framework/wcf/diagnostics/message-logging.md)  
- [보안 고려 사항 및 추적에 대한 유용한 정보](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)
+## <a name="see-also"></a>참고자료
+- [메시지 로깅](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+- [보안 고려 사항 및 추적에 대한 유용한 정보](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)

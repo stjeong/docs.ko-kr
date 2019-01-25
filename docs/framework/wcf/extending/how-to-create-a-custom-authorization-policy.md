@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
-ms.openlocfilehash: 0bacf874e09aca82b2f2685a146612cdef0673db
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: ba5d8d02d0c8d5993e1b072298aadcaa5fe0fe35
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33804237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705906"
 ---
 # <a name="how-to-create-a-custom-authorization-policy"></a>방법: 사용자 지정 권한 부여 정책 만들기
-Id 모델 인프라 Windows Communication Foundation (WCF)에서 클레임 기반 권한 부여 모델을 지원합니다. 클레임은 토큰에서 추출되어 사용자 지정 권한 부여 정책에 의해 선택적으로 처리된 다음,이후에 권한 부여를 결정하기 위해 검사할 수 있는 <xref:System.IdentityModel.Policy.AuthorizationContext>에 배치됩니다. 사용자 지정 정책은 들어오는 토큰을 응용 프로그램에서 필요로 하는 클레임으로 변형하는 데 사용할 수 있습니다. 이러한 방식으로 WCF에서 지 원하는 다른 토큰 형식으로 된 다른 클레임에 대 한 세부 정보에서 점으로부터 보호 응용 프로그램 계층 될 수 있습니다. 이 항목에서는 사용자 지정 권한 부여 정책을 구현하는 방법과 이 정책을 서비스에 사용된 정책 컬렉션에 추가하는 방법에 대해 설명합니다.  
+Id 모델 인프라에 Windows Communication Foundation (WCF) 클레임 기반 권한 부여 모델을 지원합니다. 클레임은 토큰에서 추출되어 사용자 지정 권한 부여 정책에 의해 선택적으로 처리된 다음,이후에 권한 부여를 결정하기 위해 검사할 수 있는 <xref:System.IdentityModel.Policy.AuthorizationContext>에 배치됩니다. 사용자 지정 정책은 들어오는 토큰을 응용 프로그램에서 필요로 하는 클레임으로 변형하는 데 사용할 수 있습니다. 이러한 방식으로 응용 프로그램 계층 수 영향을 받지 않도록 WCF가 지 원하는 다른 토큰 형식으로 제공 되는 서로 다른 클레임에 대 한 세부 정보에서. 이 항목에서는 사용자 지정 권한 부여 정책을 구현하는 방법과 이 정책을 서비스에 사용된 정책 컬렉션에 추가하는 방법에 대해 설명합니다.  
   
 ### <a name="to-implement-a-custom-authorization-policy"></a>사용자 지정 권한 부여 정책을 구현하려면  
   
@@ -29,7 +29,7 @@ Id 모델 인프라 Windows Communication Foundation (WCF)에서 클레임 기�
   
 1.  두 매개 변수인 개체 참조와 <xref:System.IdentityModel.Policy.EvaluationContext> 클래스의 인스턴스를 이 메서드에 전달합니다.  
   
-2.  사용자 지정 권한 부여 정책에 추가 하는 경우 <xref:System.IdentityModel.Claims.ClaimSet> 의 현재 내용에 관계 없이 인스턴스에 <xref:System.IdentityModel.Policy.EvaluationContext>, 각를 추가할 `ClaimSet` 호출 하 여는 <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29> 메서드 및 반환 `true` 에서 <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> 메서드. `true`가 반환되면 권한 부여 정책의 작업이 수행되어 이를 다시 호출할 필요가 없음을 권한 부여 인프라에 알립니다.  
+2.  사용자 지정 권한 부여 정책을 추가 하는 경우 <xref:System.IdentityModel.Claims.ClaimSet> 의 현재 내용에 관계 없이 인스턴스를 <xref:System.IdentityModel.Policy.EvaluationContext>에 추가한 각 `ClaimSet` 호출 하 여를 <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29> 메서드와 반환 `true` 에서 <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> 메서드. `true`가 반환되면 권한 부여 정책의 작업이 수행되어 이를 다시 호출할 필요가 없음을 권한 부여 인프라에 알립니다.  
   
 3.  특정 클레임이 `EvaluationContext`에 이미 있는 경우에만 사용자 지정 권한 부여 정책을 통해 클레임 집합을 추가하려면 `ClaimSet` 속성에 의해 반환된 <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> 인스턴스를 검사하여 이러한 클레임을 찾습니다. 클레임이 있으면 <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29> 메서드를 호출하여 새로운 클레임 집합을 추가하고, 추가할 클레임 집합이 없으면 권한 부여 정책의 작업이 완료되었음을 권한 부여 인프라에 알리는 `true`를 반환합니다. 클레임이 없으면 `false`를 반환하는 데, 이는 다른 권한 부여 정책을 통해 클레임 집합을 `EvaluationContext`에 추가하려면 권한 부여 정책을 다시 호출해야 함을 알립니다.  
   
@@ -45,8 +45,8 @@ Id 모델 인프라 Windows Communication Foundation (WCF)에서 클레임 기�
       <behaviors>  
         <serviceAuthorization serviceAuthorizationManagerType=  
                   "Samples.MyServiceAuthorizationManager" >  
-          <authorizationPolicies>         
-            <add policyType="Samples.MyAuthorizationPolicy"  
+          <authorizationPolicies>  
+            <add policyType="Samples.MyAuthorizationPolicy" />  
           </authorizationPolicies>  
         </serviceAuthorization>  
       </behaviors>  
@@ -75,8 +75,8 @@ Id 모델 인프라 Windows Communication Foundation (WCF)에서 클레임 기�
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [방법: 클레임 비교](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)  
- [방법: 서비스에 대한 사용자 지정 권한 부여 관리자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [방법: 클레임 비교](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)
+- [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)

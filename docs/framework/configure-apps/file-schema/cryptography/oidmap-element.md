@@ -1,5 +1,5 @@
 ---
-title: '&lt;oidMap&gt; 요소'
+title: '&lt;oidMap&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#oidMap
@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: badab8200a4b10fdc13987dfe39ebfebd4d1f7cf
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 19983e4d17ac2843385685a6b8b247d16f4cc081
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700466"
 ---
-# <a name="ltoidmapgt-element"></a>&lt;oidMap&gt; 요소
+# <a name="ltoidmapgt-element"></a>&lt;oidMap&gt; Element
 ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.  
   
  \<configuration>  
-\<mscorlib >  
-\<cryptographySettings >  
-\<oidMap >  
+\<mscorlib>  
+\<cryptographySettings>  
+\<oidMap>  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,13 +42,13 @@ ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<oidEntry >](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|ASN.1 OID 이름에 매핑됩니다.|  
+|[\<oidEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|ASN.1 OID 이름에 매핑됩니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`cryptographySettings`|암호화 설정이 포함되어 있습니다.|  
 |`mscorlib`|포함 된 `cryptographySettings` 요소입니다.|  
   
@@ -75,9 +75,9 @@ ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
-- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
 - [개체 식별자를 암호화 알고리즘에 매핑](../../../../../docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md)

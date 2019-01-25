@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 04df65a29584f7e2de44389d815b915a541e38f0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 99b996cf848de968d71cc1d325d3bbda7bd5386f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715555"
 ---
 # <a name="spawnderivedclass-function"></a>SpawnDerivedClass 함수
 지정된 개체에서 새로 파생된 클래스 개체를 만듭니다.    
@@ -47,7 +47,7 @@ HRESULT SpawnDerivedClass (
 [in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.
 
 `lFlags`  
-[in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
+[in] 예약되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `ppNewClass`  
 [out] 새 클래스 정의 개체에 대 한 포인터를 받습니다. 오류가 발생 하는 새 개체가 없는 경우 반환 및 `ppNewClass` 왼쪽 수정 됩니다. 해당 값이 될 수 없습니다 `null`합니다.
@@ -61,8 +61,8 @@ HRESULT SpawnDerivedClass (
 | `WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
 | `WBEM_E_INVALID_OPERATION` | 0x80041016 | 클래스는 인스턴스를 생성 하는 등 잘못 된 작업 요청 되었습니다. |
 | `WBEM_E_INCOMPLETE_CLASS` | 완전히 원본 클래스 정의 되었거나 새 파생된 클래스는 허용 되지 않습니다 있도록 Windows 관리를 사용 하 여 등록 합니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | `ppNewClass`가 `null`인 경우 |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `ppNewClass`가 `null`인 경우 |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -74,11 +74,11 @@ HRESULT SpawnDerivedClass (
 반환 되는 새 개체 `ppNewClass` 현재 개체의 하위 클래스는 자동으로 됩니다. 이 동작을 재정의할 수 없습니다. 서브 클래스 (파생된 클래스)을 만들 수 있는 다른 메서드가 없는 합니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

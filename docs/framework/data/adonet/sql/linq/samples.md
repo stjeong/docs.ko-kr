@@ -2,12 +2,12 @@
 title: 샘플
 ms.date: 03/30/2017
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
-ms.openlocfilehash: 0732a876d678967d25e41b9fbe767df506257ecb
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 55d53642b1d98c798b164ca99d2a59d7ba299d22
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43503949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729030"
 ---
 # <a name="samples"></a>샘플
 이 항목에서는 포함 된 Visual Basic 및 C# 솔루션에 대 한 링크를 제공 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 샘플 코드입니다.  
@@ -27,6 +27,6 @@ ms.locfileid: "43503949"
   
 -   자세히 설명 하는 백서를 연구 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 기술, Visual Basic 및 C# 코드 예제를 사용 하 여 완료 합니다. 자세한 내용은 [LINQ to SQL:.net language-integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [LINQ to SQL 연습](https://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)
+## <a name="see-also"></a>참고자료
+- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to SQL 연습](https://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)

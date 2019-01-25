@@ -2,12 +2,12 @@
 title: 데이터 형식 및 함수
 ms.date: 03/30/2017
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
-ms.openlocfilehash: 34f8f0a59f1a962eaa6a747e124f47d1570ca455
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0a60c5f680937816cd97b4ef44ee7fd1ad510f73
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54711897"
 ---
 # <a name="data-types-and-functions"></a>데이터 형식 및 함수
 다음 표에 나열된 항목에서는 CLR(공용 언어 런타임)의 멤버, 구문 및 캐스트에 대한 LINQ to SQL의 지원 정보를 설명합니다. 지원되는 멤버와 구문은 LINQ to SQL 쿼리에 사용할 수 있습니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "43520741"
 |[System.TimeSpan 메서드](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|<xref:System.TimeSpan?displayProperty=nameWithType> 구조체의 멤버에 대한 LINQ to SQL의 지원 정보를 설명합니다.|  
 |[지원되지 않는 기능](../../../../../../docs/framework/data/adonet/sql/linq/unsupported-functionality.md)|[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 지원하지 않는 기능에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [SQL-CLR 형식 불일치](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)  
- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [Visual Studio에서.NET framework 클래스 라이브러리](https://msdn.microsoft.com/library/a03e374c-3d5c-4169-937b-49857ab273ae)
+## <a name="see-also"></a>참고자료
+- [SQL-CLR 형식 불일치](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
+- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Visual Studio에서.NET framework 클래스 라이브러리](https://msdn.microsoft.com/library/a03e374c-3d5c-4169-937b-49857ab273ae)

@@ -1,18 +1,18 @@
 ---
-title: '방법: Navigate 연산자로 관계 탐색'
+title: '방법: 와 관계 탐색을 연산자 이동'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 79996d2d-9b03-4a9d-82cc-7c5e7c2ad93d
-ms.openlocfilehash: 4327aacf4cb7ec8b30c2f46696e2a19b1b3ae18c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 4c0bb848d57fa3c920a153cc004689ad5ae6bd52
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45646326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709509"
 ---
-# <a name="how-to-navigate-relationships-with-the-navigate-operator"></a>방법: Navigate 연산자로 관계 탐색
+# <a name="how-to-navigate-relationships-with-the-navigate-operator"></a>방법: 와 관계 탐색을 연산자 이동
 이 항목에서는 <xref:System.Data.EntityClient.EntityCommand> 개체를 사용하여 개념적 모델에 대해 명령을 실행하는 방법과 <xref:System.Data.Metadata.Edm.RefType>를 사용하여 <xref:System.Data.EntityClient.EntityDataReader> 결과를 검색하는 방법을 보여 줍니다.  
   
 ### <a name="to-run-the-code-in-this-example"></a>이 예제의 코드를 실행하려면  
@@ -30,6 +30,6 @@ ms.locfileid: "45646326"
  [!code-csharp[DP EntityServices Concepts#NavigateWithNavOperatorWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#navigatewithnavoperatorwithentitycommand)]
  [!code-vb[DP EntityServices Concepts#NavigateWithNavOperatorWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#navigatewithnavoperatorwithentitycommand)]  
   
-## <a name="see-also"></a>참고 항목  
- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
- [Entity SQL 언어](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+## <a name="see-also"></a>참고자료
+- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [Entity SQL 언어](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)

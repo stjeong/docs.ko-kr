@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service behaviors, concurency sample
 - Concurrency Sample [Windows Communication Foundation]
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
-ms.openlocfilehash: f8925157714621f8b97893bc25e41685778416f5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d2aed72a075fb5fd6fc52d38a05488367b5e4467
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50186007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745495"
 ---
 # <a name="concurrency"></a>동시성
 Concurrency 샘플에서는 <xref:System.ServiceModel.ServiceBehaviorAttribute> 열거와 함께 <xref:System.ServiceModel.ConcurrencyMode>를 사용하여 서비스 인스턴스가 메시지를 순차적으로 처리하는지, 동시에 처리하는지를 제어하는 방법을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)를 구현 하는 `ICalculator` 서비스 계약입니다. 이 샘플에서는 `ICalculatorConcurrency`에서 상속되는 새 계약 `ICalculator`를 정의하여 서비스 동시성의 상태를 검사하는 두 가지 추가 작업을 제공합니다. 동시성 설정을 변경하여 클라이언트를 실행하면 동작의 변화를 확인할 수 있습니다.  
@@ -22,11 +22,11 @@ Concurrency 샘플에서는 <xref:System.ServiceModel.ServiceBehaviorAttribute> 
   
  다음과 같은 세 가지 동시성 모드를 사용할 수 있습니다.  
   
--   `Single`: 각 서비스 인스턴스에서 한 번에 하나의 메시지를 처리합니다. 이 모드가 기본 동시성 모드입니다.  
+-   `Single`: 각 서비스 인스턴스에서 한 번에 하나의 메시지를 처리 합니다. 이 모드가 기본 동시성 모드입니다.  
   
--   `Multiple`: 각 서비스 인스턴스에서 동시에 여러 메시지를 처리합니다. 이 동시성 모드를 사용하려면 스레드로부터 안전하게 서비스를 구현해야 합니다.  
+-   `Multiple`: 각 서비스 인스턴스는 동시에 여러 메시지를 처리합니다. 이 동시성 모드를 사용하려면 스레드로부터 안전하게 서비스를 구현해야 합니다.  
   
--   `Reentrant`: 각 서비스 인스턴스에서 한 번에 하나의 메시지를 처리하지만 재진입 호출을 허용합니다. 서비스는 호출되는 경우에만 이러한 호출을 허용합니다. 재진입에 설명 되어는 [ConcurrencyMode.Reentrant](../../../../docs/framework/wcf/samples/concurrencymode-reentrant.md) 샘플입니다.  
+-   `Reentrant`: 각 서비스 인스턴스에서 한 번에 하나의 메시지를 처리 하지만 재진입 호출을 허용 합니다. 서비스는 호출되는 경우에만 이러한 호출을 허용합니다. 재진입에 설명 되어는 [ConcurrencyMode.Reentrant](../../../../docs/framework/wcf/samples/concurrencymode-reentrant.md) 샘플입니다.  
   
  동시성 사용은 인스턴스 만들기 모드와 관련됩니다. <xref:System.ServiceModel.InstanceContextMode.PerCall> 인스턴스 만들기에서는 각 메시지가 새 서비스 인스턴스에 의해 처리되므로 동시성이 관련되지 않습니다. <xref:System.ServiceModel.InstanceContextMode.Single> 인스턴스 만들기에서는 단일 인스턴스에서 메시지를 순차적으로 처리하는지, 동시에 처리하는지에 따라 <xref:System.ServiceModel.ConcurrencyMode.Single> 또는 <xref:System.ServiceModel.ConcurrencyMode.Multiple> 동시성이 관련됩니다. <xref:System.ServiceModel.InstanceContextMode.PerSession> 인스턴스 만들기에서는 모든 동시성 모드가 관련될 수 있습니다.  
   
@@ -112,4 +112,4 @@ public class CalculatorService : ICalculatorConcurrency
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Concurrency`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

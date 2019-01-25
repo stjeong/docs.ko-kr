@@ -1,22 +1,22 @@
 ---
-title: '연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)'
+title: '연습: 비동기를 사용 하 여 웹 서비스에 액세스 하 고 Await (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
-ms.openlocfilehash: 8998ed715306402f4d8cc98be82cbb8e4aac3f8e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 51fb2a90a7398da5334e2fd4508f90d4594e5dc7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709496"
 ---
-# <a name="walkthrough-accessing-the-web-by-using-async-and-await-visual-basic"></a>연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)
+# <a name="walkthrough-accessing-the-web-by-using-async-and-await-visual-basic"></a>연습: 비동기를 사용 하 여 웹 서비스에 액세스 하 고 Await (Visual Basic)
 async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직관적인 방식으로 작성할 수 있습니다. 동기 코드처럼 보이는 비동기 코드를 작성하고 일반적으로 비동기 코드에 수반되는 어려운 콜백 함수 및 연속 작업을 컴파일러에서 처리하도록 할 수 있습니다.  
   
  비동기 기능에 대 한 자세한 내용은 참조 하세요. [Async 및 Await (Visual Basic)를 사용한 비동기 프로그래밍](../../../../visual-basic/programming-guide/concepts/async/index.md)합니다.  
   
- 이 연습은 웹 사이트 목록에 있는 바이트 수의 합계를 계산하는 동기 WPF(Windows Presentation Foundation) 응용 프로그램에서 시작합니다. 그런 다음 새로운 기능을 사용하여 응용 프로그램을 비동기 솔루션으로 변환합니다.  
+ 이 연습은 웹 사이트 목록에 있는 바이트 수의 합계를 계산하는 동기 WPF(Windows Presentation Foundation) 애플리케이션에서 시작합니다. 그런 다음 새로운 기능을 사용하여 애플리케이션을 비동기 솔루션으로 변환합니다.  
   
- 응용 프로그램을 직접 빌드하지 않으려면 [개발자 코드 샘플](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)에서 "Async 샘플: 웹 연습에 액세스(C# 및 Visual Basic)"를 다운로드할 수 있습니다.  
+ 응용 프로그램을 직접 작성 하지 않으려는 경우 다운로드할 수 있습니다 "Async 샘플: 웹 연습에 액세스 (C# 및 Visual Basic) "에서 [개발자 코드 샘플](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)합니다.  
   
  이 연습에서는 다음 작업을 완료합니다.  
   
@@ -133,7 +133,7 @@ async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직�
     resultsTextBox.Text &= vbCrLf & "Control returned to startButton_Click."  
     ```  
   
-     이 코드는 응용 프로그램 `SumPageSizes`를 구동하는 메서드를 호출하고 컨트롤이 `startButton_Click`으로 반환될 때 메시지를 표시합니다.  
+     이 코드는 애플리케이션 `SumPageSizes`를 구동하는 메서드를 호출하고 컨트롤이 `startButton_Click`으로 반환될 때 메시지를 표시합니다.  
   
 3.  동기 솔루션에 대한 코드에는 다음 네 가지 메서드가 포함되어 있습니다.  
   
@@ -250,7 +250,7 @@ async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직�
 ##  <a name="BKMK_ConvertGtBtArr"></a>   
 ###  <a name="GetURLContents"></a> GetURLContents를 비동기 메서드로 변환하려면  
   
-1.  동기 솔루션을 비동기 솔루션으로 변환하려면 `GetURLContents`에서 시작하는 것이 가장 좋습니다. <xref:System.Net.HttpWebRequest> 메서드 <xref:System.Net.HttpWebRequest.GetResponse%2A> 및 <xref:System.IO.Stream> 메서드 <xref:System.IO.Stream.CopyTo%2A> 호출은 응용 프로그램이 웹에 액세스하는 위치이기 때문입니다. .NET Framework는 두 메서드의 비동기 버전을 제공하여 변환을 쉽게 만듭니다.  
+1.  동기 솔루션을 비동기 솔루션으로 변환하려면 `GetURLContents`에서 시작하는 것이 가장 좋습니다. <xref:System.Net.HttpWebRequest> 메서드 <xref:System.Net.HttpWebRequest.GetResponse%2A> 및 <xref:System.IO.Stream> 메서드 <xref:System.IO.Stream.CopyTo%2A> 호출은 애플리케이션이 웹에 액세스하는 위치이기 때문입니다. .NET Framework는 두 메서드의 비동기 버전을 제공하여 변환을 쉽게 만듭니다.  
   
      `GetURLContents`에서 사용되는 메서드에 대한 자세한 내용은 <xref:System.Net.WebRequest>를 참조하세요.  
   
@@ -282,7 +282,7 @@ async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직�
   
      `webReq.GetResponseAsync`를 호출하면 `Task(Of WebResponse)` 또는 `Task<WebResponse>`가 반환됩니다. 됩니다 `Await` 연산자가 검색 하는 작업에 적용 된 `WebResponse` 값입니다.  
   
-     비동기 메서드가 작업의 완료에 따라 달라지지 않는 작업을 수행해야 하는 경우 메서드는 비동기 메서드를 호출한 후와 await 연산자가 적용되기 전의 두 문 사이에서 해당 작업을 계속할 수 있습니다. 예제를 참조 하세요. [방법: 여러 웹 요청을 사용 하 여 Async 및 Await (Visual Basic) 하 여 병렬로](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) 및 [방법: Task.WhenAll (Visual Basic)을 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)합니다.  
+     비동기 메서드가 작업의 완료에 따라 달라지지 않는 작업을 수행해야 하는 경우 메서드는 비동기 메서드를 호출한 후와 await 연산자가 적용되기 전의 두 문 사이에서 해당 작업을 계속할 수 있습니다. 예제는 [방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) 고 [방법: Task.WhenAll (Visual Basic)을 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)합니다.  
   
 3.  이전 단계에서 `Await` 연산자를 추가했으므로 컴파일러 오류가 발생합니다. 운영자로 표시 된 메서드에서만에서 사용할 수는 [비동기](../../../../visual-basic/language-reference/modifiers/async.md) 한정자입니다. `CopyTo` 호출을 `CopyToAsync` 호출로 바꾸는 변환 단계를 반복하는 동안에는 오류를 무시합니다.  
   
@@ -673,12 +673,12 @@ Class MainWindow
 End Class  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Async 샘플: 웹 연습에 액세스(C# 및 Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)  
- [Await 연산자](../../../../visual-basic/language-reference/operators/await-operator.md)  
- [비동기](../../../../visual-basic/language-reference/modifiers/async.md)  
- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [비동기 반환 형식(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)  
- [TAP(작업 기반 비동기 프로그래밍)](https://go.microsoft.com/fwlink/?LinkId=204847)  
- [방법: Task.WhenAll을 사용하여 비동기 연습 확장(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)  
- [방법: Async 및 Await를 사용하여 병렬로 여러 웹 요청 만들기(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
+## <a name="see-also"></a>참고자료
+- [비동기 샘플: 웹 연습에 액세스 (C# 및 Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
+- [Await 연산자](../../../../visual-basic/language-reference/operators/await-operator.md)
+- [비동기](../../../../visual-basic/language-reference/modifiers/async.md)
+- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [비동기 반환 형식(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)
+- [TAP(작업 기반 비동기 프로그래밍)](https://go.microsoft.com/fwlink/?LinkId=204847)
+- [방법: Task.WhenAll (Visual Basic)를 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

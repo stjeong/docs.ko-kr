@@ -11,12 +11,12 @@ helpviewer_keywords:
 - inferring type information [LINQ in Visual Basic]
 - relationships [LINQ in Visual Basic]
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
-ms.openlocfilehash: f1084ffcf0b5330185a44eda8721ef2a03413602
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 519b10cfa374290a2d924cce2bd3e39683ca080f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45989828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54731129"
 ---
 # <a name="type-relationships-in-query-operations-visual-basic"></a>쿼리 작업의 형식 관계(Visual Basic)
 사용 되는 변수 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 쿼리 작업은 강력한 형식 이어야 하며 서로 호환 되어야 합니다. 강력한 형식 지정 데이터 원본, 쿼리 자체 및 쿼리 실행에 사용 됩니다. 다음 그림에서는 설명 하는 용어를 식별 하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 합니다. 쿼리 부분에 대 한 자세한 내용은 참조 하세요. [기본 쿼리 작업 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md)합니다.  
@@ -117,10 +117,10 @@ Next
   
 3.  반복 변수 형식의 `For Each` 루프에는 2 단계에서 만든 익명 형식입니다. 형식에 사용 가능한 이름이 없으므로, 루프 반복 변수의 형식이 암시적으로 결정 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4ebc9fe36955bac8b93ec95e9a55fc8ac1197d9a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1f2ea9d0e20cb67cc36d0b5883e483ce98941b2f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33429123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743220"
 ---
 # <a name="ienumreferenceidentity-interface"></a>IEnumReferenceIdentity 인터페이스
 컬렉션의 열거자 역할을 `IReferenceIdentity` 개체입니다.  
@@ -30,18 +30,18 @@ ms.locfileid: "33429123"
   
 |메서드|설명|  
 |------------|-----------------|  
-|`IEnumReferenceIdentity::Clone`|새 인터페이스 포인터를 가져옵니다 `IEnumReferenceIdentity` 이와 동일한 멤버를 포함 하는 `IEnumReferenceIdentity`합니다.|  
-|`IEnumReferenceIdentity::Next`|지정된 된 수의 가져옵니다 `IReferenceIdentity` 개체를 현재 위치부터 시작 합니다.|  
-|`IEnumReferenceIdentity::Reset`|명령 포인터의 시작으로 이동 `IEnumReferenceIdentity`합니다.|  
-|`IEnumReferenceIdentity::Skip`|명령 포인터 앞으로 요소를 현재 위치부터 지정한 수 만큼 이동 합니다.|  
+|`IEnumReferenceIdentity::Clone`|새 인터페이스 포인터를 가져옵니다 `IEnumReferenceIdentity` 이 동일한 멤버를 포함 하는 `IEnumReferenceIdentity`합니다.|  
+|`IEnumReferenceIdentity::Next`|지정 된 수를 가져옵니다 `IReferenceIdentity` 개체를 현재 위치에서 시작 합니다.|  
+|`IEnumReferenceIdentity::Reset`|이 부분에 명령 포인터를 이동 `IEnumReferenceIdentity`합니다.|  
+|`IEnumReferenceIdentity::Skip`|요소를 현재 위치부터 지정한 수 만큼 앞으로 명령 포인터를 이동 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Isolation.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [Fusion 인터페이스](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
- [IReferenceIdentity 인터페이스](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
+## <a name="see-also"></a>참고자료
+- [Fusion 인터페이스](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [IReferenceIdentity 인터페이스](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)

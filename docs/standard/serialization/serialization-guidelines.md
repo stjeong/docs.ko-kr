@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: 2a372ba995f409fc3dd12492e21af80b93d20b8c
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.openlocfilehash: 20676b53d21931987139288e29c009c8348ce6ca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690893"
 ---
 # <a name="serialization-guidelines"></a>Serialization 지침
 이 문서에서는 serialize될 API를 디자인할 때 고려해야 할 지침을 보여 줍니다.  
@@ -138,12 +138,12 @@ ms.locfileid: "54058596"
      [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [데이터 계약 사용](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
-- [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
-- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
-- [이진 serialization](binary-serialization.md)  
-- [원격 개체](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
-- [XML 및 SOAP serialization](xml-and-soap-serialization.md)  
+- [데이터 계약 사용](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)
+- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [이진 serialization](binary-serialization.md)
+- [원격 개체](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)
+- [XML 및 SOAP serialization](xml-and-soap-serialization.md)
 - [보안 및 Serialization](../../../docs/framework/misc/security-and-serialization.md)

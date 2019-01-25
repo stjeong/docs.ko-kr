@@ -2,12 +2,12 @@
 title: UriTemplate 샘플
 ms.date: 03/30/2017
 ms.assetid: 0aaf91d0-ce18-468d-8006-bc9bc2e48231
-ms.openlocfilehash: 0dfb2cdc27460f3bc30a1c4302206bf43f7ef007
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 565e01fd591149e7eefb7e125b917ddb9acccbfe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54735479"
 ---
 # <a name="uritemplate-sample"></a>UriTemplate 샘플
 <xref:System.UriTemplate> 클래스에서는 공통의 구조를 공유하는 URI 집합으로 작업하는 데 사용되는 메서드를 제공합니다. 이 샘플에서는 `UriTemplate`와 관련된 다음 핵심 개념을 보여 줍니다.  
@@ -33,6 +33,6 @@ ms.locfileid: "43518872"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplate`  
   
-## <a name="see-also"></a>참고 항목  
- [UriTemplate 테이블](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
- [UriTemplate 테이블 디스패처](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+## <a name="see-also"></a>참고자료
+- [UriTemplate 테이블](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
+- [UriTemplate 테이블 디스패처](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)

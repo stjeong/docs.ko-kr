@@ -2,23 +2,23 @@
 title: '&lt;claimTypeRequirements&gt; 요소의 &lt;remove&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
-ms.openlocfilehash: 7610a8e95996f15133ae58ec33c4afd9e2309cac
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 33c6b935bb8d39f05e26646d4731ce1459beba81
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702147"
 ---
 # <a name="ltremovegt-of-ltclaimtyperequirementsgt-element"></a>&lt;claimTypeRequirements&gt; 요소의 &lt;remove&gt;
 페더레이션 자격 증명에서 제거할 클레임의 형식을 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<wsFederatedBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
 \<message>  
-\<claimTypeRequirements >  
+\<claimTypeRequirements>  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,9 +46,9 @@ ms.locfileid: "54146214"
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](../../../../../docs/framework/configure-apps/file-schema/wcf/claimtyperequirements-for-message.md)|필요한 클레임 형식의 컬렉션을 지정합니다. 각 요소는 <xref:System.ServiceModel.Configuration.ClaimTypeElement> 형식입니다.<br /><br /> 페더레이션 시나리오에서 서비스는 들어오는 자격 증명에 대한 요구 사항을 기술합니다. 예를 들어, 들어오는 자격 증명은 특정 집합의 클레임 형식이어야 합니다. 이 컬렉션의 각 요소는 페더레이션 자격 증명에 표시되어야 하는 필수 클레임 및 선택적 클레임의 형식을 지정합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>  
- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElement>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElement>

@@ -2,21 +2,21 @@
 title: '&lt;webMessageEncoding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
-ms.openlocfilehash: e8b45075c7c07efc49f84526382352a5b1a556b1
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 90102c25c1c5b83af8f629d18b790af9297fa88c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640253"
 ---
 # <a name="ltwebmessageencodinggt"></a>&lt;webMessageEncoding&gt;
 WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍스트 XML, JSON(JavaScript Object Notation) 메시지 인코딩 및 "원시" 이진 콘텐츠를 읽고 쓸 수 있게 합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<webMessageEncoding >  
+\<binding>  
+\<webMessageEncoding>  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +35,7 @@ WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍�
 |---------------|-----------------|  
 |`maxReadPoolSize`|새 판독기를 할당하지 않고 동시에 읽을 수 있는 메시지 수입니다. 풀 크기가 커지면 작업 집합이 커지는 단점이 있지만 동작이 많을 경우의 시스템 안정성이 높아집니다. 기본값으로 각 내부 인코더(텍스트, JSON 및 "원시")에 대해 64개의 판독기가 사용됩니다.<br /><br /> 이 값을 늘리면 메모리 사용량이 증가하지만, 판독기를 새로 만들 필요 없이 이미 만들어진 풀의 판독기를 사용할 수 있기 때문에 인코더가 갑자기 많은 메시지가 들어오는 경우에 대비할 수 있습니다.|  
 |`maxWritePoolSize`|새 작성기를 할당하지 않고 동시에 보낼 수 있는 메시지 수입니다. 풀 크기가 커지면 작업 집합이 커지는 단점이 있지만 동작이 많을 경우의 시스템 안정성이 높아집니다. 기본값으로 각 내부 인코더(텍스트, JSON 및 "원시")에 대해 16개의 작성기가 사용됩니다.<br /><br /> 이 값을 늘리면 메모리 사용량이 증가하지만, 작성기를 새로 만들 필요 없이 풀에서 이미 만들어진 작성기를 사용할 수 있기 때문에 인코더가 갑자기 많은 메시지가 나가는 경우에 대비할 수 있습니다.|  
-|`writeEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 지정합니다. 올바른 값은 다음과 같습니다.<br /><br /> -UnicodeFffeTextEncoding: 유니코드 Big Endian 인코딩<br />-Utf16TextEncoding: 유니코드 인코딩<br />-Utf8TextEncoding: 8 비트 인코딩입니다.<br /><br /> 기본값은 Utf8TextEncoding입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|`writeEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 지정합니다. 올바른 값은 다음과 같습니다.<br /><br /> -   UnicodeFffeTextEncoding: 유니코드 Big Endian 인코딩<br />-   Utf16TextEncoding: 유니코드 인코딩<br />-   Utf8TextEncoding: 8 비트 인코딩입니다.<br /><br /> 기본값은 Utf8TextEncoding입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -71,14 +71,14 @@ WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍�
                     textEncoding="utf-8" />
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
- <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>  
- [메시지 인코딩](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)  
- [메시지 인코더 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>
+- [메시지 인코딩](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)
+- [메시지 인코더 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;legacyCorruptedStateExceptionsPolicy&gt; 요소'
+title: '&lt;legacyCorruptedStateExceptionsPolicy&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <legacyCorruptedStateExceptionsPolicy> element
@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bdf2e69b307d55f778a5cb54f8cc77bc3c69a185
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 14b8940fa0c5c7ceb4a14fdd0f40867c7be9f65e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54737717"
 ---
-# <a name="ltlegacycorruptedstateexceptionspolicygt-element"></a>&lt;legacyCorruptedStateExceptionsPolicy&gt; 요소
+# <a name="ltlegacycorruptedstateexceptionspolicygt-element"></a>&lt;legacyCorruptedStateExceptionsPolicy&gt; Element
 공용 언어 런타임에서 액세스 위반 및 기타 손상 된 상태 예외를 catch 하는 관리 되는 코드를 허용 하는지 여부를 지정 합니다.  
   
  \<configuration>  
 \<runtime>  
-\<legacyCorruptedStateExceptionsPolicy >  
+\<legacyCorruptedStateExceptionsPolicy>  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,7 +50,7 @@ ms.locfileid: "53613494"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -77,7 +77,7 @@ ms.locfileid: "53613494"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

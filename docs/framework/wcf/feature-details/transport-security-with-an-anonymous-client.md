@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
-ms.openlocfilehash: 858ceb217ce30708a7d24c62ca18f8f59ba49d4c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d0582e40b21a981c5195fed215c2c234847f913f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696960"
 ---
 # <a name="transport-security-with-an-anonymous-client"></a>익명 클라이언트를 사용하는 전송 보안
 이 Windows Communication Foundation (WCF) 시나리오에서는 기밀성 및 무결성을 보장 하려면 전송 보안 (HTTPS)을 사용 합니다. 서버는 SSL(Secure Sockets Layer) 인증서로 인증되어야 하며 클라이언트는 서버의 인증서를 신뢰해야 합니다. 클라이언트는 어떤 메커니즘으로도 인증되지 않는 익명 클라이언트입니다.  
   
  샘플 응용 프로그램을 참조 하세요 [WS 전송 보안](../../../../docs/framework/wcf/samples/ws-transport-security.md)합니다. 전송 보안에 대 한 자세한 내용은 참조 하세요. [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)합니다.  
   
- 서비스에서 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md) 하 고 [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)합니다.  
+ 서비스에서 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md) 고 [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)합니다.  
   
  ![익명 클라이언트를 사용 하 여 전송 보안을 사용 하 여](../../../../docs/framework/wcf/feature-details/media/8fa2e931-0cfb-4aaa-9272-91d652b85d8d.gif "8fa2e931-0cfb-4aaa-9272-91d652b85d8d")  
   
@@ -44,7 +44,7 @@ ms.locfileid: "50183069"
  [!code-csharp[c_SecurityScenarios#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#5)]
  [!code-vb[c_SecurityScenarios#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#5)]  
   
-### <a name="configuration"></a>구성  
+### <a name="configuration"></a>구성하기  
  다음 코드에서는 구성을 사용하여 동일한 엔드포인트를 설정합니다. 클라이언트는 어떤 메커니즘으로도 인증되지 않는 익명 클라이언트입니다.  
   
 ```xml  
@@ -88,7 +88,7 @@ ms.locfileid: "50183069"
  [!code-csharp[c_SecurityScenarios#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#6)]
  [!code-vb[c_SecurityScenarios#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#6)]  
   
-### <a name="configuration"></a>구성  
+### <a name="configuration"></a>구성하기  
  다음 구성은 서비스 설정하는 데 코드 대신 사용할 수 있습니다.  
   
 ```xml  
@@ -114,8 +114,8 @@ ms.locfileid: "50183069"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [WS 전송 보안](../../../../docs/framework/wcf/samples/ws-transport-security.md)  
- [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [WS 전송 보안](../../../../docs/framework/wcf/samples/ws-transport-security.md)
+- [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

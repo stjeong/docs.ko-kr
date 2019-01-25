@@ -7,12 +7,12 @@ helpviewer_keywords:
 - white-space processing in XAML [XAML Services]
 - characters [XAML Services], East Asian
 ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
-ms.openlocfilehash: 3eea3d6c8a28ace0cc79cbfeb7eb3a7a52c9b8ab
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 750f054c908cd9d837a18ee6c8a537285b325288
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54728364"
 ---
 # <a name="white-space-processing-in-xaml"></a>공백에서 XAML 처리
 XAML에 대 한 언어 규칙에 따르면 해당 유효 공백에서 처리 되어야 합니다는 [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 프로세서 구현 합니다. 이 항목에서는 이들 XAML 언어 규칙에 대해 설명합니다. 정의한 추가 공백 처리도 문서화 된 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] XAML 프로세서 및 serialization에 대 한 XAML 작성기 구현의 합니다.  
@@ -53,7 +53,7 @@ XAML에 대 한 언어 규칙에 따르면 해당 유효 공백에서 처리 되
 ## <a name="preserving-white-space"></a>공백을 유지  
  원본에 대 한 공백을 유지 하는 것에 대 한 몇 가지 기술이 [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 영향을 받지 않는 최종 표시를 위해 [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 프로세서 공백 정규화 합니다.  
   
- **xml: space = "preserve"**: 공백 유지는 원할 경우 요소 수준에서이 특성을 지정 합니다. 이를 사용하면 코드 편집 응용 프로그램에 의해 "pretty-print" 맞춤 요소에 시각적으로 바로 확인되는 중첩으로 추가될 수 있는 공백이 포함된 모든 공백이 유지됩니다. 그러나 해당 공백의 렌더링 여부는 포함하는 요소의 콘텐츠 모델에서 결정됩니다. 지정 하지 않으려면 `xml:space="preserve"` 루트 수준에서 대부분의 개체 모델을 흰색 간주 해서는 안 되므로 공간 특성을 설정 하는 방법에 관계 없이 중요 한 것 처럼 합니다. `xml:space` 를 전역으로 설정하면 일부 구현에서는 XAML 처리(특히 serialization) 성능에 영향을 미칠 수 있습니다. 것만 문자열 내의 공백을 렌더링 된 공백 의미 컬렉션인 요소의 수준 특성을 설정 하는 것이 좋습니다.  
+ **xml:space="preserve"**: 공백 유지는 원할 경우 요소 수준에서이 특성을 지정 합니다. 이를 사용하면 코드 편집 애플리케이션에 의해 "pretty-print" 맞춤 요소에 시각적으로 바로 확인되는 중첩으로 추가될 수 있는 공백이 포함된 모든 공백이 유지됩니다. 그러나 해당 공백의 렌더링 여부는 포함하는 요소의 콘텐츠 모델에서 결정됩니다. 지정 하지 않으려면 `xml:space="preserve"` 루트 수준에서 대부분의 개체 모델을 흰색 간주 해서는 안 되므로 공간 특성을 설정 하는 방법에 관계 없이 중요 한 것 처럼 합니다. `xml:space` 를 전역으로 설정하면 일부 구현에서는 XAML 처리(특히 serialization) 성능에 영향을 미칠 수 있습니다. 것만 문자열 내의 공백을 렌더링 된 공백 의미 컬렉션인 요소의 수준 특성을 설정 하는 것이 좋습니다.  
   
  **엔터티 및 줄 바꿈하지 않는 공백**: [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 에서는 텍스트 개체 모델 내에 [!INCLUDE[TLA#tla_unicode](../../../includes/tlasharptla-unicode-md.md)] 엔터티를 배치하도록 지원합니다. 줄 바꿈하지 않는 공백 같은 전용된 엔터티를 사용할 수 있습니다 (&\#160에서 u t F-8 인코딩). 줄 바꿈하지 않는 공백 문자를 지원하는 서식 있는 텍스트 컨트롤을 사용할 수도 있습니다. 엔터티를 사용하여 들여쓰기 등의 레이아웃 특성을 시뮬레이트하는 경우 주의해야 합니다. 이는 엔터티의 런타임 출력은 패널 및 여백의 적절한 사용과 같은 일반적인 레이아웃 시스템에서 들여쓰기 결과를 생성하는 기능보다 더 많은 요소에 따라 달라지기 때문입니다. 예를 들어 엔터티는 글꼴에 매핑되고 사용자 글꼴 선택에 따라 크기가 변경될 수 있습니다.  
   
@@ -74,7 +74,7 @@ XAML에 대 한 언어 규칙에 따르면 해당 유효 공백에서 처리 되
   
  또한 흐름 문서 모델에서 줄 바꿈을 함축 하는 특정 인라인 요소는 의도적으로 공백을 추가 공백이 중요 한 컬렉션에도 합니다. 예를 들어를 <xref:System.Windows.Documents.LineBreak> 요소에 동일한 목적으로는 \<b R / > 태그 [!INCLUDE[TLA2#tla_html](../../../includes/tla2sharptla-html-md.md)], 태그의 가독성을 높이기 위해 일반적으로 <xref:System.Windows.Documents.LineBreak> 작성 된 줄 바꿈으로 후속 텍스트와에서 구분 됩니다. 후속 줄의 선행 공백이 될 수 있으므로 줄 바꿈을 정규화하면 안 됩니다. 해당 동작에 대 한 클래스 정의 사용 하도록 설정 하려면를 <xref:System.Windows.Documents.LineBreak> 요소에 적용 되는 <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute>을 해석 하 고 있는 [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 주변 공백 해당 의미에 대 한 프로세서 <xref:System.Windows.Documents.LineBreak> 항상 잘립니다.  
   
-## <a name="see-also"></a>참고자료  
- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [XML 문자 엔터티 및 XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)  
- [XAML에서 처리 하는 xml: space](../../../docs/framework/xaml-services/xml-space-handling-in-xaml.md)
+## <a name="see-also"></a>참고자료
+- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [XML 문자 엔터티 및 XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)
+- [XAML에서 처리 하는 xml: space](../../../docs/framework/xaml-services/xml-space-handling-in-xaml.md)

@@ -2,12 +2,12 @@
 title: SQL Server 기능 및 ADO.NET
 ms.date: 03/30/2017
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-ms.openlocfilehash: 2747af4ee2937f5b5d26217df5eb45c806606ac5
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 9e6f9d0404108428375aa859fa3f0b0939da6a24
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44085240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705376"
 ---
 # <a name="sql-server-features-and-adonet"></a>SQL Server 기능 및 ADO.NET
 이 단원의 항목에서는 ADO.NET을 사용하여 데이터베이스 응용 프로그램을 개발하는 데 사용할 수 있는 SQL Server 기능에 대해 설명합니다.  
@@ -46,9 +46,9 @@ ms.locfileid: "44085240"
  [LocalDB에 대한 SqlClient 지원](../../../../../docs/framework/data/adonet/sql/sqlclient-support-for-localdb.md)  
  LocalDB 데이터베이스를 위한 SqlClient 지원에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET에서 SQL Server 데이터 작업](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET에서 SQL Server 데이터 작업](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

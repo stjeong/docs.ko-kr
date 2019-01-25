@@ -2,12 +2,12 @@
 title: Version Tolerant Serialization 기술 샘플
 ms.date: 03/30/2017
 ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
-ms.openlocfilehash: 34dccc9065c0100a01a7969a1fe762001e2999a9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: b874a347924f6d15e2e6164092b819321384ca3f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44210856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681120"
 ---
 # <a name="version-tolerant-serialization-technology-sample"></a>Version Tolerant Serialization 기술 샘플
 [샘플 다운로드](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/VTS.zip.exe)  
@@ -38,7 +38,7 @@ ms.locfileid: "44210856"
   
 1.  명령 프롬프트 창에서 샘플 응용 프로그램을 빌드할 때 선택한 언어별 하위 디렉터리로 이동합니다.  
   
-2.  명령줄에 **runme.cmd**를 입력하여 두 응용 프로그램을 한 번에 실행합니다.  
+2.  명령줄에 **runme.cmd**를 입력하여 두 애플리케이션을 한 번에 실행합니다.  
   
  새 실행 파일이 있는 디렉터리로 이동한 다음 하나씩 순서대로 실행할 수도 있습니다.  
   
@@ -47,5 +47,5 @@ ms.locfileid: "44210856"
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>
 - <xref:System.IO.FileStream>

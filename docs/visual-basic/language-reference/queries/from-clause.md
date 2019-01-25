@@ -10,12 +10,12 @@ helpviewer_keywords:
 - From clause [Visual Basic]
 - From statement [Visual Basic]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-ms.openlocfilehash: 71573de48cc51c48291fc4b82a0628d2d0f96caa
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: fd11d00ebfa42eda272db39965d25b905bd5c841
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44198246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678787"
 ---
 # <a name="from-clause-visual-basic"></a>From 절(Visual Basic)
 하나 이상의 범위 변수 및 쿼리 하는 컬렉션을 지정합니다.  
@@ -31,9 +31,9 @@ From element [ As type ] In collection [ _ ]
   
 |용어|정의|  
 |---|---|  
-|`element`|필수. A *범위 변수* 컬렉션의 요소를 반복 하는 데 사용 합니다. 범위 변수는의 각 멤버에 대 한 참조를 사용 하는 `collection` 쿼리를 반복 하는 대로 `collection`합니다. 열거 가능한 형식 이어야 합니다.|  
+|`element`|필수 요소. A *범위 변수* 컬렉션의 요소를 반복 하는 데 사용 합니다. 범위 변수는의 각 멤버에 대 한 참조를 사용 하는 `collection` 쿼리를 반복 하는 대로 `collection`합니다. 열거 가능한 형식 이어야 합니다.|  
 |`type`|선택 사항입니다. `element`의 형식입니다. 없으면 `type` 지정 된 형식의 `element` 에서 유추 됩니다 `collection`합니다.|  
-|`collection`|필수. 컬렉션을 쿼리할 수를 가리킵니다. 열거 가능한 형식 이어야 합니다.|  
+|`collection`|필수 요소. 컬렉션을 쿼리할 수를 가리킵니다. 열거 가능한 형식 이어야 합니다.|  
   
 ## <a name="remarks"></a>설명  
  `From` 절을 사용 하는 쿼리 및 소스 컬렉션에서 요소를 참조 하는 데 사용 되는 변수에 대 한 원본 데이터를 식별 합니다. 이러한 변수 라고 *범위 변수*합니다. `From` 절이 필요한 경우를 제외 하 고 쿼리를 위해는 `Aggregate` 절은 반환에만 결과 집계 쿼리를 식별 하는 데 있습니다. 자세한 내용은 [Aggregate 절](../../../visual-basic/language-reference/queries/aggregate-clause.md)합니다.  
@@ -69,20 +69,20 @@ From element [ As type ] In collection [ _ ]
   
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [For...Next 문](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)  
- [Aggregate 절](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Distinct 절](../../../visual-basic/language-reference/queries/distinct-clause.md)  
- [Join 절](../../../visual-basic/language-reference/queries/join-clause.md)  
- [Group Join 절](../../../visual-basic/language-reference/queries/group-join-clause.md)  
- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Let 절](../../../visual-basic/language-reference/queries/let-clause.md)  
- [Skip 절](../../../visual-basic/language-reference/queries/skip-clause.md)  
- [Take 절](../../../visual-basic/language-reference/queries/take-clause.md)  
- [Skip While 절](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Take While 절](../../../visual-basic/language-reference/queries/take-while-clause.md)
+## <a name="see-also"></a>참고자료
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For...Next 문](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Aggregate 절](../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Distinct 절](../../../visual-basic/language-reference/queries/distinct-clause.md)
+- [Join 절](../../../visual-basic/language-reference/queries/join-clause.md)
+- [Group Join 절](../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Let 절](../../../visual-basic/language-reference/queries/let-clause.md)
+- [Skip 절](../../../visual-basic/language-reference/queries/skip-clause.md)
+- [Take 절](../../../visual-basic/language-reference/queries/take-clause.md)
+- [Skip While 절](../../../visual-basic/language-reference/queries/skip-while-clause.md)
+- [Take While 절](../../../visual-basic/language-reference/queries/take-while-clause.md)

@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 33dc6a863af0c03066d5f01e5101c9a6cc6d5859
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: edbd48c910c89c9dd5feea33d9598933fd63befa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33451125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729783"
 ---
 # <a name="icorprofilercallbackexceptionclrcatcherfound-method"></a>ICorProfilerCallback::ExceptionCLRCatcherFound 메서드
-될 때 호출 된 `catch` 공용 언어 런타임 (CLR) 자체 내부 예외를 찾을 수에 대 한 차단 합니다. 이 메서드는.NET Framework 버전 2.0에서에서 사용 되지 않습니다.  
+될 때 호출을 `catch` 예외는 CLR (공용 언어 런타임) 자체 내에서 차단 합니다. 이 메서드는.NET Framework 버전 2.0에서에서 사용 되지 않습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT ExceptionCLRCatcherFound();
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
@@ -42,6 +42,6 @@ HRESULT ExceptionCLRCatcherFound();
   
  **.NET framework 버전:** 1.0  
   
-## <a name="see-also"></a>참고 항목  
- [ICorProfilerCallback 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionCLRCatcherExecute 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionclrcatcherexecute-method.md)
+## <a name="see-also"></a>참고자료
+- [ICorProfilerCallback 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ExceptionCLRCatcherExecute 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionclrcatcherexecute-method.md)

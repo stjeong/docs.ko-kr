@@ -1,5 +1,5 @@
 ---
-title: '방법: 데이터 서비스 요청에 대한 클라이언트 자격 증명 지정(WCF Data Services)'
+title: '방법: 데이터 서비스에 대 한 클라이언트 자격 증명 요청 (WCF Data Services)를 지정 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, customizing requests
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
-ms.openlocfilehash: d0fbf01de05a02c03782af9e392a79b6dd3e8bee
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 786d4deaa1b2e4dfacab6c89c7d3d5e734bd3ffd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43402523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718132"
 ---
-# <a name="how-to-specify-client-credentials-for-a-data-service-request-wcf-data-services"></a>방법: 데이터 서비스 요청에 대한 클라이언트 자격 증명 지정(WCF Data Services)
+# <a name="how-to-specify-client-credentials-for-a-data-service-request-wcf-data-services"></a>방법: 데이터 서비스에 대 한 클라이언트 자격 증명 요청 (WCF Data Services)를 지정 합니다.
 기본적으로 클라이언트 라이브러리는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 서비스에 요청을 보낼 때 자격 증명을 제공하지 않습니다. 하지만 <xref:System.Net.NetworkCredential>의 <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> 속성에 대해 <xref:System.Data.Services.Client.DataServiceContext>을 제공하여 데이터 서비스에 요청을 인증하기 위해 자격 증명이 보내지도록 지정할 수 있습니다.  자세한 내용은 [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)을 참조하세요. 이 항목의 예제는 데이터 서비스의 데이터를 요청할 때 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트에 사용되는 자격 증명을 명시적으로 제공하는 방법을 나타냅니다.  
   
  이 항목의 예제에서는 Northwind 샘플 데이터 서비스 및 자동 생성된 클라이언트 데이터 서비스 클래스를 사용합니다. 이 서비스 및 클라이언트 데이터 클래스를 수행할 때 생성 됩니다는 [WCF Data Services 퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)합니다. 사용할 수도 있습니다는 [Northwind 샘플 데이터 서비스](https://go.microsoft.com/fwlink/?LinkId=187426) 에 게시 된는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] ; 웹 사이트를이 샘플 데이터 서비스는 읽기 전용 이며 변경 내용을 저장 하려고 하면 오류가 발생 합니다. 샘플 데이터 서비스는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 웹 사이트는 익명 인증을 허용 합니다.  
@@ -52,6 +52,6 @@ ms.locfileid: "43402523"
   
  자세한 내용은 [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF Data Services 보안](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)  
- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+## <a name="see-also"></a>참고자료
+- [WCF Data Services 보안](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)
+- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

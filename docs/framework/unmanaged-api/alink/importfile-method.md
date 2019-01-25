@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 54b0a02af7f22e775e3f9567de79664c9805b4e2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 116ed60dab3365cac052d3b13ce7b056caca0452
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619680"
 ---
 # <a name="importfile-method"></a>ImportFile 메서드
 어셈블리 및 바인딩되지 않은 모듈을 가져옵니다.  
@@ -47,13 +47,13 @@ HRESULT ImportFile(
  어셈블리에 링크 되어 파일의 이름을 사용할 수 있는 선택적 출력 파일 이름입니다.  
   
  `fSmartImport`  
- True 이면 ImportTypes 사용 되는, 그렇지 않으면 가져올 수 수동으로 수행 해야 합니다.  
+ TRUE 이면 ImportTypes 되, 그렇지 않으면 가져오기는 수동으로 수행 해야 합니다.  
   
  `pImportToken`  
- 고유한 파일 ID를 저장할 토큰에 대 한 포인터입니다. 파일은 어셈블리 또는 파일 일 수 있습니다.  
+ 고유한 파일 ID를 저장할 토큰에 대 한 포인터입니다. 어셈블리 또는 파일의 파일 수 있습니다.  
   
  `ppAssemblyScope`  
- 포인터를 받는 [IMetaDataAssemblyImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)합니다. 파일 어셈블리가 아닌 경우 NULL이 될 수 있습니다.  
+ 에 대 한 포인터를 받는 [IMetaDataAssemblyImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)합니다. 파일 어셈블리가 아닌 경우 NULL 일 수 있습니다.  
   
  `pdwCountOfScopes`  
  파일 및/또는 가져온 범위 수에 대 한 포인터입니다.  
@@ -64,7 +64,7 @@ HRESULT ImportFile(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

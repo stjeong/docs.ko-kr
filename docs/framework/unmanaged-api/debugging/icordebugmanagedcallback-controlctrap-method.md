@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a9758de5c2801f2c55b7eca149569016ec5b9243
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f13800bcecbf6e7bdc5fede4e11c2ea15ecdec93
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33412755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603900"
 ---
 # <a name="icordebugmanagedcallbackcontrolctrap-method"></a>ICorDebugManagedCallback::ControlCTrap 메서드
-디버깅 중인 프로세스에서 CTRL + C를 트래핑 디버거에 알립니다.  
+CTRL + C는 디버깅 중인 프로세스에서 포착 되는 디버거에 알립니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,16 +47,16 @@ HRESULT ControlCTrap (
 |S_FALSE|디버거는 CTRL + C 트랩을 처리 하지 않습니다.|  
   
 ## <a name="remarks"></a>설명  
- 프로세스 내에서 모든 응용 프로그램 도메인은이 콜백을 대 한 중지 됩니다.  
+ 이 콜백에 대 한 프로세스 내에서 모든 응용 프로그램 도메인 중지 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICorDebugManagedCallback 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICorDebugManagedCallback 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

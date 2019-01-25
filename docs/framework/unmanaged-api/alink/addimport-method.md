@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 98fefc0240f6496a3e7bfb491e27a57e98cfea1c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d2daed0450e04137621788e830bbedb467bd57c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33404068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706341"
 ---
 # <a name="addimport-method1"></a>AddImport Method1
-Imports 어셈블리에 추가 합니다.  
+어셈블리에 가져오기를 추가합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ HRESULT AddImport(
   
 #### <a name="parameters"></a>매개 변수  
  `AssemblyID`  
- 확대할 어셈블리의 고유 ID입니다.  
+ 확대 하 여 어셈블리의 고유 ID입니다.  
   
  `ImportToken`  
- 검색 된 고유 ID [ImportFile 메서드](../../../../docs/framework/unmanaged-api/alink/importfile-method.md), 파일을 가져와야 합니다.  
+ 고유한 ID를 검색할 [ImportFile 메서드](../../../../docs/framework/unmanaged-api/alink/importfile-method.md)를 가져올 파일의 합니다.  
   
  `dwFlags`  
- COM + FileDef 플래그와 같은 `ffContainsNoMetaData` 및 `ffWriteable`합니다. `dwFlags` 에 전달 [DefineFile 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md)합니다.  
+ COM + FileDef 플래그와 같은 `ffContainsNoMetaData` 고 `ffWriteable`입니다. `dwFlags` 에 전달 됩니다 [DefineFile 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md)합니다.  
   
  `pFileToken`  
  결과 파일에 대 한 ID를 받는 토큰에 대 한 포인터입니다.  
@@ -57,7 +57,7 @@ HRESULT AddImport(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

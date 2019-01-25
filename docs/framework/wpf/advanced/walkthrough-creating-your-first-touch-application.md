@@ -1,5 +1,5 @@
 ---
-title: '연습: 첫 응용 프로그램 만들기'
+title: '연습: 첫 번째 터치 응용 프로그램 만들기'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - touch-sensitive applications [WPF], creating
 - creating a touchscreen application [WPF]
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
-ms.openlocfilehash: 935999fd5ada93bedebb38462f9faa93b8ec923f
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 34a534653455449233c2908f4226cdb3a9bb9867
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724241"
 ---
-# <a name="walkthrough-creating-your-first-touch-application"></a>연습: 첫 응용 프로그램 만들기
+# <a name="walkthrough-creating-your-first-touch-application"></a>연습: 첫 번째 터치 응용 프로그램 만들기
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램이 터치에 응답할 수 있습니다. 예를 들어, 하나를 사용 하 여 응용 프로그램을 조작할 수 있습니다 또는이 연습에서는 사용자가 이동할 수 있는 응용 프로그램을 만듭니다 원하는 터치 스크린과 같은 터치 감지 장치에서 손가락을 크기를 조정 하거나 터치를 사용 하 여 단일 개체를 회전 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -27,13 +27,13 @@ ms.locfileid: "49086728"
   
 -   Windows Touch를 지 원하는 터치 스크린과 같은 터치식 입력을 허용 하는 장치입니다.  
   
- 또한 응용 프로그램을 만드는 방법의 기본적인 이해를 해야 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], 특히 구독 하 고 이벤트를 처리 하는 방법입니다. 자세한 내용은 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)을 참조하세요.  
+ 또한 응용 프로그램을 만드는 방법의 기본적인 이해를 해야 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], 특히 구독 하 고 이벤트를 처리 하는 방법입니다. 자세한 내용은 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다.  
   
-## <a name="creating-the-application"></a>응용 프로그램 작성  
+## <a name="creating-the-application"></a>애플리케이션 작성  
   
 #### <a name="to-create-the-application"></a>응용 프로그램을 만들려면  
   
-1.  Visual Basic 또는 Visual C#에서 `BasicManipulation`이라는 새 WPF 응용 프로그램 프로젝트를 만듭니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)를 참조하세요.  
+1.  Visual Basic 또는 Visual C#에서 `BasicManipulation`이라는 새 WPF 애플리케이션 프로젝트를 만듭니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)합니다.  
   
 2.  MainWindow.xaml의 내용을 다음 XAML을 사용 하 여 대체 합니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "49086728"
 
      창에 나타나는 빨간색 사각형이 표시 됩니다.
 
-## <a name="testing-the-application"></a>응용 프로그램 테스트
+## <a name="testing-the-application"></a>애플리케이션 테스트
  응용 프로그램을 테스트 하려면 다음 조작을 시도 합니다. 동시에 다음 중 하나 이상 수행할 수 있습니다 note 합니다.
 
 -   이동 하는 <xref:System.Windows.Shapes.Rectangle>, 위에 손가락을 놓고는 <xref:System.Windows.Shapes.Rectangle> 화면에서 손가락을 이동 하 고 합니다.
@@ -81,7 +81,7 @@ ms.locfileid: "49086728"
 
  관성 시킬 이전 조작을 수행 하면 화면에서 손가락을 발생 신속 하 게 합니다. <xref:System.Windows.Shapes.Rectangle> 이동, 크기 조정 또는 중지 하기 전에 몇 초간 회전 계속 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>
 - <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>
