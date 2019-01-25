@@ -2,18 +2,18 @@
 title: '&lt;basicHttpContextBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
-ms.openlocfilehash: ed115a736b9dc98164537269cb4e49d66e46ad6c
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1b21d7e9dcca886ce0f34c12407d2e3a0856113b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720472"
 ---
 # <a name="ltbasichttpcontextbindinggt"></a>&lt;basicHttpContextBinding&gt;
 HTTP 쿠키를 교환 메커니즘으로 사용하도록 설정하여 교환할 <xref:System.ServiceModel.BasicHttpBinding>의 컨텍스트를 제공하는 바인딩을 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<basicHttpContextBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -76,7 +76,7 @@ HTTP 쿠키를 교환 메커니즘으로 사용하도록 설정하여 교환할 
 |`proxyAddress`|HTTP 프록시의 주소를 포함하는 URI입니다. `useSystemWebProxy`를 `true`로 설정할 경우 이 설정은 `null`이어야 합니다. 기본값은 `null`입니다.|  
 |`receiveTimeout`|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:10:00입니다.|  
 |`sendTimeout`|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />-   UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |`transferMode`|메시지가 요청 또는 응답에서 버퍼링되는지 또는 스트리밍되는지를 지정하는 유효한 <xref:System.ServiceModel.TransferMode> 값입니다.|  
 |`useDefaultWebProxy`|시스템의 자동 구성된 HTTP 프록시가 있는 경우 이를 사용할지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
   
@@ -96,13 +96,13 @@ HTTP 쿠키를 교환 메커니즘으로 사용하도록 설정하여 교환할 
 ## <a name="remarks"></a>설명  
  이 바인딩 요소는 `BasicHttpBinding` 컨텍스트의 일부로 보호 수준과 교환 메커니즘을 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.BasicHttpContextBinding>  
- <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>  
- <xref:System.ServiceModel.Channels.ContextBindingElement>  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.BasicHttpContextBinding>
+- <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>
+- <xref:System.ServiceModel.Channels.ContextBindingElement>
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)

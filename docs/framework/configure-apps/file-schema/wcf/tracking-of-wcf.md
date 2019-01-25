@@ -2,12 +2,12 @@
 title: WCF의 &lt;tracking&gt;
 ms.date: 03/30/2017
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
-ms.openlocfilehash: 7162d66917660a8730f851811643723cd398147c
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 52efc1b5284c2a64eae30ea18995e5ee761dc2e7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582606"
 ---
 # <a name="lttrackinggt-of-wcf"></a>WCF의 &lt;tracking&gt;
 워크플로 서비스에 대한 추적 설정을 정의하기 위한 구성 섹션을 나타냅니다.  
@@ -97,6 +97,6 @@ ms.locfileid: "54146734"
 ## <a name="remarks"></a>설명  
  추적은 워크플로 실행을 검사하는 기능을 제공합니다. 워크플로 추적 인프라는 실행 중 주요 이벤트를 반영하는 레코드를 내보내기 위한 워크플로를 계측합니다. 예를 들어 워크플로 인스턴스가 시작되거나 완료되면 추적 레코드가 내보내집니다. 추적에서는 워크플로 변수와 연결된 비즈니스 관련 데이터를 추출할 수도 있습니다. 예를 들어 워크플로가 주문 처리 시스템을 나타내는 경우 주문 ID가 추적 레코드와 함께 추출될 수 있습니다. 일반적으로 WF 추적을 사용하면 워크플로 실행에 대한 진단 또는 비즈니스 분석에 도움이 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>       
- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

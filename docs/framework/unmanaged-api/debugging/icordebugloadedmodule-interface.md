@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 34be6369-2e75-4a95-a538-3b29ac97cf6d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 07d6dcc1873e24f84f97c877e8198c27eceef0c6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f8f3a881a1beceb7d4aa35e2bd9a5e9e5419a391
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33420793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654869"
 ---
 # <a name="icordebugloadedmodule-interface"></a>ICorDebugLoadedModule 인터페이스
 로드된 모듈에 대한 정보를 제공합니다.  
@@ -29,14 +29,14 @@ ms.locfileid: "33420793"
 >  이 인터페이스는 .NET 네이티브에서만 사용할 수 있습니다. .NET 네이티브 외부의 ICorDebug 시나리오에 대해 이 인터페이스를 구현하는 경우 공용 언어 런타임에서 이 인터페이스를 무시합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)

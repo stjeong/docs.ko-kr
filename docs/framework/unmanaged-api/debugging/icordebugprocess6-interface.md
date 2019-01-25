@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: 34a10ac2-882c-4797-8369-f120e8e640c7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 103a37d7549d7ec18617b74c777506b3ad225a18
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1c084042aa79170d46d179928956bd39a0731ddb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33422861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54714921"
 ---
 # <a name="icordebugprocess6-interface"></a>ICorDebugProcess6 인터페이스
-가상 모듈 분할 및 네이티브 예외 디버그 이벤트에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 사용 하도록 설정 하려면 ICorDebugProcess 인터페이스를 논리적으로 확장 합니다.  
+네이티브 예외 디버그 이벤트, 가상 모듈 분할에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 사용 하도록 설정 하려면 ICorDebugProcess 인터페이스를 논리적으로 확장 합니다.  
   
 ## <a name="methods"></a>메서드  
   
@@ -31,14 +31,14 @@ ms.locfileid: "33422861"
 >  이 인터페이스는 .NET 네이티브에서만 사용할 수 있습니다. .NET 네이티브 외부의 ICorDebug 시나리오에 대해 `QueryInterface`를 호출하여 인터페이스 포인터를 검색하려고 하면 `E_NOINTERFACE`가 반환됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)

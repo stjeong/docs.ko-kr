@@ -4,12 +4,12 @@ ms.date: 04/23/2017
 helpviewer_keywords:
 - tuples [Visual Basic]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-ms.openlocfilehash: c0198cde88b66f5e115c82b5454bd8a32db7ef96
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 146e9c2360cea153d2f487769d5b983516861e8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143716"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694729"
 ---
 # <a name="tuples-visual-basic"></a>튜플 (Visual Basic)
 
@@ -163,7 +163,7 @@ Visual Basic 튜플은의 인스턴스를 **System.ValueTuple** .NET Framework 4
 
 - 속성을 **튜플** 인스턴스는 읽기 전용; 튜플은 변경할 수 없습니다. Visual Basic 튜플 및 **ValueTuple** 형식, 튜플 필드는 읽기-쓰기; 튜플은 변경할 수 있습니다.
 
-- 제네릭 **튜플** 형식은 참조 형식입니다. 이 사용 하 여 **튜플** 형식 개체를 할당 하는 의미입니다. 실행 부하 과다 경로에서는 이로 인해 응용 프로그램 성능이 크게 영향을 받을 수 있습니다. Visual Basic 튜플 및 **ValueTuple** 형식은 값 형식입니다.
+- 제네릭 **튜플** 형식은 참조 형식입니다. 이 사용 하 여 **튜플** 형식 개체를 할당 하는 의미입니다. 실행 부하 과다 경로에서는 이로 인해 애플리케이션 성능이 크게 영향을 받을 수 있습니다. Visual Basic 튜플 및 **ValueTuple** 형식은 값 형식입니다.
 
 확장 메서드는 <xref:System.TupleExtensions> 클래스를 쉽게 Visual Basic 튜플와.NET 간 변환 **튜플** 개체입니다. **ToTuple** 메서드는.NET Visual Basic 튜플을 변환 합니다 **튜플** 개체와 **ToValueTuple** 메서드를.NET으로 변환 합니다 **튜플** Visual Basic 튜플 개체입니다.
 
@@ -173,4 +173,4 @@ Visual Basic 튜플은의 인스턴스를 **System.ValueTuple** .NET Framework 4
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Basic 언어 참조](index.md)  
+- [Visual Basic 언어 참조](index.md)

@@ -2,12 +2,12 @@
 title: MULTISET (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: eb90a377-e47a-43a5-b308-e993b6d611e6
-ms.openlocfilehash: 64069e1bf2af61748a9e23a469dcdbc74fa9fac7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ad54450b8f987da9a7a502d6561a58794a24b207
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655181"
 ---
 # <a name="multiset-entity-sql"></a>MULTISET (Entity SQL)
 값 목록에서 multiset 인스턴스를 만듭니다. MULTISET 생성자의 모든 값은 호환되는 `T`형식이어야 합니다. 빈 multiset 생성자는 사용할 수 없습니다.  
@@ -50,6 +50,6 @@ or
   
  [!code-csharp[DP EntityServices Concepts 2#MULTISET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#multiset)]  
   
-## <a name="see-also"></a>참고 항목  
- [형식 생성](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## <a name="see-also"></a>참고자료
+- [형식 생성](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

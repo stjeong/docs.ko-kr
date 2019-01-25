@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 229f341a-477f-434e-b877-4db9973068eb
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 58a7395d78feb30ceac4bc42e9d90ec106ed9972
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ec2783e3841a74ddfbca0d719569242ba5e61224
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47204536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654986"
 ---
 # <a name="ui-automation-support-for-the-treeitem-control-type"></a>TreeItem 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -45,7 +45,7 @@ ms.locfileid: "47204536"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성|값|노트|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|전체 컨트롤이 포함된 가장 바깥쪽 사각형입니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|이 속성은 항목이 선택 상태를 변경하거나 포커스를 받을 수 있는 항목의 위치를 반환해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|TreeItem|이 값은 모든 UI 프레임워크에 대해 동일합니다.|  
@@ -94,7 +94,7 @@ ms.locfileid: "47204536"
 |<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty> 속성 변경 이벤트.|종속|없음|  
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> 속성 변경 이벤트.|종속|없음|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.TreeItem>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.TreeItem>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

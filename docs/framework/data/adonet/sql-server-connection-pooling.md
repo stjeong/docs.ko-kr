@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
-ms.openlocfilehash: 7086bdfbbd2ebace25f2999a0787bcee48494ab8
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 640e8976b95b5228f1caa967c053ffd95d2553ac
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651606"
 ---
 # <a name="sql-server-connection-pooling-adonet"></a>SQL Server 연결 풀링(ADO.NET)
 데이터베이스 서버에 연결하는 과정은 일반적으로 시간이 많이 걸리는 여러 단계로 이루어져 있습니다. 즉, 소켓이나 명명된 파이프 같은 실제 채널을 설정하고 서버와의 초기 핸드셰이크를 발생시키며 연결 문자열 정보를 구문 분석할 뿐 아니라 서버에 연결을 인증하고 현재 트랜잭션에 인리스트먼트하기 위해 검사를 실행해야 하는 등의 단계를 거쳐야 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "53147680"
  연결 풀링을 사용하면 응용 프로그램의 성능 및 확장성을 대폭 향상시킬 수 있습니다. [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에서 연결 풀링은 기본적으로 활성화되어 있습니다. 이를 명시적으로 비활성화하지 않는 한, 풀러는 응용 프로그램에서 열리고 닫히는 연결을 최적화합니다. 또한 여러 개의 연결 문자열 한정자를 지정하여 연결 풀링 동작을 제어할 수 있습니다. 자세한 내용은 이 항목 뒷부분에 있는 "연결 문자열 키워드를 사용하여 연결 풀링 제어"를 참조하세요.  
   
 > [!NOTE]
->  연결 풀링을 사용하는 경우와 시간 초과 오류나 기타 로그인 오류가 발생하면 예외가 throw되고 이후 연결 시도가 "차단 기간"인 다음 5초 동안 적용되지 않습니다. 응용 프로그램에서 차단 기간 내에 연결을 시도하면 첫 번째 예외가 다시 throw됩니다. 차단 기간이 끝난 후 또 다른 연결이 실패하면 이전 차단 기간의 두 배에서 최대 1분에 이르는 새 차단 기간이 적용됩니다.  
+>  연결 풀링을 사용하는 경우와 시간 초과 오류나 기타 로그인 오류가 발생하면 예외가 throw되고 이후 연결 시도가 "차단 기간"인 다음 5초 동안 적용되지 않습니다. 애플리케이션에서 차단 기간 내에 연결을 시도하면 첫 번째 예외가 다시 throw됩니다. 차단 기간이 끝난 후 또 다른 연결이 실패하면 이전 차단 기간의 두 배에서 최대 1분에 이르는 새 차단 기간이 적용됩니다.  
   
 ## <a name="pool-creation-and-assignment"></a>풀 만들기 및 할당  
  연결이 처음 열리면 연결에서 풀과 연결 문자열을 연결하는 정확한 일치 알고리즘에 따라 연결 풀이 만들어집니다. 각 연결 풀은 고유한 연결 문자열과 연결됩니다. 새 연결이 열릴 때 연결 문자열이 기존 풀과 정확히 일치하지 않으면 새 풀이 만들어집니다. 연결은 프로세스, 응용 프로그램 도메인, 연결 문자열을 기준으로 풀링되며 통합 보안을 사용하는 경우에는 Windows ID를 기준으로 풀링됩니다. 연결 문자열은 정확히 일치해야 합니다. 동일한 연결에 다른 순서로 제공된 키워드는 개별적으로 풀링됩니다.  
@@ -129,8 +129,8 @@ using (SqlConnection connection = new SqlConnection(
 ### <a name="application-role-alternatives"></a>응용 프로그램 역할의 대안  
  응용 프로그램 역할 대신 사용할 수 있는 보안 메커니즘을 사용하는 것이 좋습니다. 자세한 내용은 [SQL Server의 응용 프로그램 역할 만들기](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)  
- [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)
+- [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

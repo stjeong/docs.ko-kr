@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 505d6f479a77c8a8579eba192250c08e932aea09
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: caff2d714711f941855621a89294f67e7a36b046
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706776"
 ---
 # <a name="ui-automation-support-for-the-document-control-type"></a>Document 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "48836130"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성|값|노트|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|전체 컨트롤이 포함된 가장 바깥쪽 사각형입니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|문서에는 클릭 가능한 지점이 있으며, 이 지점을 통해 문서 컨테이너에 있는 요소 중 하나의 문서에 포커스를 배치할 수 있습니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|문서|이 값은 모든 UI 프레임워크에 대해 동일합니다.|  
@@ -82,7 +82,7 @@ ms.locfileid: "48836130"
 |<xref:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent>|필수|없음|  
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> 속성 변경 이벤트.|Never|없음|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.Document>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.Document>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

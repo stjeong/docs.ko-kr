@@ -2,20 +2,20 @@
 title: '&lt;customBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
-ms.openlocfilehash: d0a14af56f888c5c4c2c3924625f2e6d45ed2eeb
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: c80a4a34d5315dbc5a22d3953fee437ebe2e938f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573454"
 ---
 # <a name="ltsecuritygt-of-ltcustombindinggt"></a>&lt;customBinding&gt;의 &lt;security&gt;
 사용자 지정 바인딩에 대한 보안 옵션을 지정합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
   
 ## <a name="syntax"></a>구문  
@@ -53,7 +53,7 @@ ms.locfileid: "54146253"
 |includeTimestamp|각 메시지에 타임스탬프가 포함되는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |keyEntropyMode|메시지 보안 설정을 위한 키의 계산 방식을 지정합니다. 키는 클라이언트 키 자료만을 기반으로 하거나 서비스 키 자료만을 기반으로 하거나 두 가지의 조합을 기반으로 할 수 있습니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `ClientEntropy`: 세션 키는 클라이언트가 제공한 키 데이터를 기반으로 합니다.<br />-   `ServerEntropy`: 세션 키는 서버가 제공한 키 데이터를 기반으로 합니다.<br />-   `CombinedEntropy`: 세션 키는 클라이언트 및 서비스가 제공한 키 데이터를 기반으로 합니다.<br /><br /> 기본값은 `CombinedEntropy`입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> 형식입니다.|  
 |MessageProtectionOrder|메시지 수준 보안 알고리즘이 메시지에 적용되는 순서를 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `SignBeforeEncrypt`: 첫째, 로그인 한 다음 암호화 합니다.<br />-   `SignBeforeEncryptAndEncryptSignature`: 먼저 로그인 하 고 암호화 한 다음 서명을 암호화 합니다.<br />-   `EncryptBeforeSign`: 먼저 암호화 한 다음 로그인 합니다.<br /><br /> 기본값은 사용되는 WS-Security 버전에 따라 달라집니다. WS-Security 1.1을 사용하는 경우 기본값은 `SignBeforeEncryptAndEncryptSignature`입니다. WS-Security 1.0을 사용하는 경우 기본값은 `SignBeforeEncrypt`입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.MessageProtectionOrder> 형식입니다.|  
-|messageSecurityVersion|선택 사항입니다. 사용되는 WS-Security 버전을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />-WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />-WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> 기본값은 WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11이며 간단하게 `Default`와 같이 XML로 나타낼 수 있습니다. 이 특성은 <xref:System.ServiceModel.MessageSecurityVersion> 형식입니다.|  
+|messageSecurityVersion|선택 사항입니다. 사용되는 WS-Security 버전을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />-   WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />-   WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> 기본값은 WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11이며 간단하게 `Default`와 같이 XML로 나타낼 수 있습니다. 이 특성은 <xref:System.ServiceModel.MessageSecurityVersion> 형식입니다.|  
 |requireDerivedKeys|키를 원본 증명 키에서 파생할 수 있는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |requireSecurityContextCancellation|선택 사항입니다. 더 이상 필요하지 않은 보안 컨텍스트를 취소 및 종료할지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |requireSignatureConfirmation|선택 사항입니다. WS-Security 시그니처 확인을 사용할 수 있는지 여부를 지정하는 부울 값입니다. `true`로 설정되면 응답자는 메시지 시그니처를 확인합니다.  사용자 지정 바인딩이 상호 인증서에 대해 구성되었거나 발급된 토큰(WSS 1.1 바인딩)을 사용하도록 구성된 경우 이 특성은 기본적으로 `true`로 설정됩니다. 그렇지 않으면 기본값은 `false`입니다.<br /><br /> 서비스가 요청을 완전히 인식하고 응답하는지 확인하기 위해 시그니처 확인이 사용됩니다.|  
@@ -91,9 +91,9 @@ ms.locfileid: "54146253"
 |요소|설명|  
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|현재 발급된 토큰을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement> 형식입니다.|  
-|[\<localClientSettings >](../../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)|이 바인딩에 대한 로컬 클라이언트의 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement> 형식입니다.|  
-|[\<localServiceSettings >](../../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md)|이 바인딩에 대한 로컬 서비스의 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement> 형식입니다.|  
-|[\<secureConversationBootstrap >](../../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md)|보안 대화 서비스 개시에 사용되는 기본값을 지정합니다.|  
+|[\<localClientSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)|이 바인딩에 대한 로컬 클라이언트의 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement> 형식입니다.|  
+|[\<localServiceSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md)|이 바인딩에 대한 로컬 서비스의 보안 설정을 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement> 형식입니다.|  
+|[\<secureConversationBootstrap>](../../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md)|보안 대화 서비스 개시에 사용되는 기본값을 지정합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -166,13 +166,13 @@ ms.locfileid: "54146253"
 </configuration>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.SecurityElement>  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
- [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.SecurityElement>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

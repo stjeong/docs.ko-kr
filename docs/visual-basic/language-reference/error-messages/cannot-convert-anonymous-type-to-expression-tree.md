@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36548
 ms.assetid: 27de068f-080e-4160-86bf-1ec23fd1925a
-ms.openlocfilehash: 2f97a0de74428ce42a088644580a78bf8fd99945
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: a6ddbaa358709fe306f1529112d1f2bd0a715a91
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646947"
 ---
 # <a name="cannot-convert-anonymous-type-to-expression-tree-because-it-contains-a-field-that-is-used-in-the-initialization-of-another-field"></a>익명 형식이 다른 필드를 초기화하는 데 사용되는 필드를 포함하고 있으므로 식 트리로 변환할 수 없습니다.
 컴파일러를 익명 형식의 다른 속성을 초기화 하려면 익명 형식의 속성을 하나 사용 하는 경우에 익명의 식 트리로 변환할을 사용할 수 없습니다. 예를 들어, 다음 코드에서에서 `Prop1` 초기화 목록에서 선언 되 고 그런 다음에 대 한 초기 값으로 사용 `Prop2`합니다.  
@@ -48,6 +48,6 @@ End Module
   
 ## <a name="see-also"></a>참고자료
 
-[익명 형식 (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
-[식 트리(Visual Basic)](../../programming-guide/concepts/expression-trees/index.md)  
-[방법: 식 트리를 사용 하 여 동적 쿼리 (Visual Basic)](../../programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)  
+- [익명 형식 (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [식 트리(Visual Basic)](../../programming-guide/concepts/expression-trees/index.md)
+- [방법: 식 트리를 사용 하 여 동적 쿼리 (Visual Basic)](../../programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)

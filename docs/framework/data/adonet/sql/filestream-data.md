@@ -2,12 +2,12 @@
 title: FILESTREAM 데이터
 ms.date: 03/30/2017
 ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8
-ms.openlocfilehash: 843aa890ba80ab2816af0726170eacb77f419d50
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4002f95e47b3c1ac7d8415d590b8c4c8a5d95a91
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50197030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701094"
 ---
 # <a name="filestream-data"></a>FILESTREAM 데이터
 FILESTREAM 저장소 특성은 varbinary(max) 열에 저장된 이진(BLOB) 데이터에 사용됩니다. FILESTREAM 이전에는 이진 데이터를 저장하려면 특별한 처리가 필요했습니다. 텍스트 문서, 이미지 및 비디오 같이 구조화되지 않은 데이터는 대개 데이터베이스의 외부에 저장되어 관리가 어렵습니다.  
@@ -37,7 +37,7 @@ Values(1, 0x00, default)
 GO  
 ```  
   
-### <a name="example-reading-overwriting-and-inserting-filestream-data"></a>예제: FILESTREAM 데이터 읽기, 덮어쓰기 및 삽입  
+### <a name="example-reading-overwriting-and-inserting-filestream-data"></a>예제: FILESTREAM 데이터 삽입 및 읽기, 덮어쓰기  
  다음 샘플에서는 FILESTREAM에서 데이터를 읽는 방법을 보여 줍니다. 이 코드에서는 `FileAccess`를 `Read`로 설정하고 `FileOptions`를 `SequentialScan`으로 설정하여 파일의 논리 경로를 가져옵니다. 그런 다음 코드에서는 SqlFileStream의 바이트를 버퍼로 읽어오고 콘솔 창에 바이트를 씁니다.  
   
  이 샘플에서는 FILESTREAM에 데이터를 써서 기존의 모든 데이터를 덮어쓰는 방법도 보여 줍니다. 이 코드에서는 `SqlFileStream`를 `FileAccess`로 설정하고 `Write`를 `FileOptions`으로 설정하여 파일의 논리 경로를 가져오고 `SequentialScan`을 만듭니다. 그런 다음 `SqlFileStream`에 단일 바이트를 써서 파일의 모든 데이터를 대체합니다.  
@@ -178,9 +178,9 @@ namespace FileStreamTest
 |[FILESTREAM 데이터용 클라이언트 응용 프로그램 만들기](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|FILESTREAM 데이터로 작업하기 위한 Win32 API 함수에 대해 설명합니다.|  
 |[FILESTREAM 및 기타 SQL Server 기능](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|SQL Server의 다른 기능과 함께 FILESTREAM 데이터를 사용할 경우의 고려 사항, 지침 및 제한 사항을 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)  
- [SQL Server 이진 및 큰 값 데이터](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [ADO.NET 개요](../../../../../docs/framework/data/adonet/ado-net-overview.md)
+## <a name="see-also"></a>참고자료
+- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
+- [SQL Server 이진 및 큰 값 데이터](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
+- [ADO.NET 개요](../../../../../docs/framework/data/adonet/ado-net-overview.md)

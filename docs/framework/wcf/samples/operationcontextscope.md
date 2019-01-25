@@ -2,12 +2,12 @@
 title: OperationContextScope
 ms.date: 03/30/2017
 ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
-ms.openlocfilehash: 499d3e9824ede493043b996d581b079ec23938f8
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 46180c47512fd4bdb5955ed0febb63892fc27b19
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54656793"
 ---
 # <a name="operationcontextscope"></a>OperationContextScope
 OperationContextScope 샘플에는 헤더를 사용 하 여 Windows Communication Foundation (WCF) 호출에서 추가 정보를 보내는 방법을 보여 줍니다. 이 샘플에서는 서버와 클라이언트 모두가 콘솔 응용 프로그램입니다.  
@@ -130,4 +130,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\OperationContextScope`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

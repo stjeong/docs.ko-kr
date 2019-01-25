@@ -2,20 +2,20 @@
 title: '&lt;userDefinedType&gt;'
 ms.date: 03/30/2017
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
-ms.openlocfilehash: 7c8b8e0403fe108f4e8d25dd1de274acc40c9fcc
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1a4f371737e9e801f3b929f4d65ac310d5fe0e28
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642950"
 ---
 # <a name="ltuserdefinedtypegt"></a>&lt;userDefinedType&gt;
 서비스 계약에 포함될 UDT(사용자 정의 형식)를 나타냅니다.  
   
  \<system.ServiceModel>  
 \<comContracts>  
-\<comContract >  
-\<userDefinedTypes >  
+\<comContract>  
+\<userDefinedTypes>  
   
 ## <a name="syntax"></a>구문  
   
@@ -90,10 +90,10 @@ ms.locfileid: "54148736"
   
  서비스가 초기화될 때 통합 런타임에서는 지정된 형식을 찾아 지정된 계약의 알려진 형식 컬렉션에 이를 추가합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes%2A>  
- <xref:System.ServiceModel.Configuration.ComUdtElementCollection>  
- <xref:System.ServiceModel.Configuration.ComUdtElement>  
- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  
- [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes%2A>
+- <xref:System.ServiceModel.Configuration.ComUdtElementCollection>
+- <xref:System.ServiceModel.Configuration.ComUdtElement>
+- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
+- [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

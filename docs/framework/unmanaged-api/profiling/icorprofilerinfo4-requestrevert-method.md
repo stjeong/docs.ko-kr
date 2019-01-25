@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 43a1954d75d37f68eb967eb714070a097573100a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 9578b8148efed1cac2ee25c86054c3507b84b254
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33460326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718756"
 ---
 # <a name="icorprofilerinfo4requestrevert-method"></a>ICorProfilerInfo4::RequestRevert 메서드
 지정된 함수의 모든 인스턴스를 원래 버전으로 되돌립니다.  
@@ -56,8 +56,8 @@ HRESULT RequestRevert (
 |HRESULT|설명|  
 |-------------|-----------------|  
 |S_OK|모든 요청을 되돌리려고 했습니다. 그러나 반환된 상태 배열을 검사하여 성공적으로 되돌려진 함수를 확인해야 합니다.|  
-|CORPROF_E_CALLBACK4_REQUIRED|프로파일러를 구현 해야 합니다는 [ICorProfilerCallback4](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md) 지원 되는 데이 호출에 대 한 인터페이스입니다.|  
-|CORPROF_E_REJIT_NOT_ENABLED|JIT 다시 컴파일이 사용하도록 설정되지 않았습니다. 사용 하 여 초기화 하는 동안 JIT 다시 컴파일을 사용 하도록 설정 해야 하면는 [icorprofilerinfo:: Seteventmask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md) 설정 하는 메서드는 `COR_PRF_ENABLE_REJIT` 플래그입니다.|  
+|CORPROF_E_CALLBACK4_REQUIRED|프로파일러를 구현 해야 합니다 [ICorProfilerCallback4](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md) 지원 되는 데이 호출에 대 한 인터페이스입니다.|  
+|CORPROF_E_REJIT_NOT_ENABLED|JIT 다시 컴파일이 사용하도록 설정되지 않았습니다. 초기화 하는 동안 JIT 다시 컴파일을 사용 하 여 설정 해야 합니다는 [icorprofilerinfo:: Seteventmask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md) 설정 하는 메서드를 `COR_PRF_ENABLE_REJIT` 플래그입니다.|  
 |E_INVALIDARG|`cFunctions`가 0이거나 `moduleIds` 또는 `methodIds`가 `NULL`입니다.|  
 |E_OUTOFMEMORY|메모리 부족 때문에 CLR에서 요청을 완료하지 못했습니다.|  
   
@@ -76,15 +76,15 @@ HRESULT RequestRevert (
  되돌려진 함수 인스턴스 중 하나를 다음에 호출하면 함수의 원래 버전이 실행됩니다. 함수가 이미 실행되고 있으면 실행 중인 버전의 실행을 완료합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICorProfilerInfo4 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)  
- [프로파일링 인터페이스](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [프로파일링](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## <a name="see-also"></a>참고자료
+- [ICorProfilerInfo4 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
+- [프로파일링 인터페이스](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [프로파일링](../../../../docs/framework/unmanaged-api/profiling/index.md)

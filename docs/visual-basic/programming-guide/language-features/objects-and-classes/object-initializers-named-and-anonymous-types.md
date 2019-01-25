@@ -1,5 +1,5 @@
 ---
-title: '개체 이니셜라이저: 명명된 형식과 익명 형식(Visual Basic)'
+title: '개체 이니셜라이저: 명명 된 형식과 익명 형식 (Visual Basic)'
 ms.date: 07/20/2015
 f1_keywords:
 - vb.ObjectInitializer
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - initializers [Visual Basic]
 - named types [Visual Basic]
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
-ms.openlocfilehash: 612b1dcea0f776dfd4580803e76f2785e7d28da6
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: f65352ebd9ca12aaed6b469c5df136301e9f839c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620541"
 ---
-# <a name="object-initializers-named-and-anonymous-types-visual-basic"></a>개체 이니셜라이저: 명명된 형식과 익명 형식(Visual Basic)
+# <a name="object-initializers-named-and-anonymous-types-visual-basic"></a>개체 이니셜라이저: 명명 된 형식과 익명 형식 (Visual Basic)
 개체 이니셜라이저를 사용 하는 단일 식을 사용 하 여 복잡 한 개체에 대 한 속성을 지정할 수 있습니다. 명명 된 형식 및 무명 형식의 인스턴스를 만드는 데 사용할 수 있습니다.  
   
 ## <a name="declarations"></a>선언  
@@ -125,12 +125,12 @@ ms.locfileid: "42930592"
   
      [!code-vb[VbVbalrObjectInit#15](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/VisualBasic/object-initializers-named-and-anonymous-types_15.vb)]  
   
-     익명 형식에서 속성을 정의 하기 위한 옵션에 대 한 자세한 내용은 참조 하세요. [방법: 속성 이름 유추 및 익명 형식 선언에서 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)합니다.  
+     익명 형식에서 속성을 정의 하기 위한 옵션에 대 한 자세한 내용은 참조 하세요. [방법: 무명 형식 선언에서 속성 이름 및 형식 유추](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [방법: 익명 형식 선언에서 속성 이름 및 형식 유추](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)  
- [키](../../../../visual-basic/language-reference/modifiers/key.md)  
- [방법: 개체 이니셜라이저를 사용하여 개체 선언](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
+## <a name="see-also"></a>참고자료
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [방법: 무명 형식 선언에서 속성 이름 및 형식 유추](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
+- [키](../../../../visual-basic/language-reference/modifiers/key.md)
+- [방법: 개체 이니셜라이저를 사용 하 여 개체 선언](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)

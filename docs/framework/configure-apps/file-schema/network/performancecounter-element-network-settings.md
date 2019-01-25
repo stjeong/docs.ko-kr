@@ -8,12 +8,12 @@ helpviewer_keywords:
 - performanceCounter element
 - <performanceCounter> element
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
-ms.openlocfilehash: 445b57747bbcb04df0d6bc6b3e90743b8c9600f4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: ea0eba097505741aba31bce4f23e0cc9ca1d4608
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712485"
 ---
 # <a name="ltperformancecountergt-element-network-settings"></a>&lt;performanceCounter&gt; 요소 (네트워크 설정)
 네트워킹 성능 카운터를 사용할지 설정 합니다.  
@@ -73,8 +73,8 @@ ms.locfileid: "50187078"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
-- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
 - [네트워킹 성능 카운터](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)

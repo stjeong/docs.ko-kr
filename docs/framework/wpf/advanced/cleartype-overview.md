@@ -5,12 +5,12 @@ helpviewer_keywords:
 - typography [WPF], ClearType technology
 - ClearType [WPF], technology
 ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
-ms.openlocfilehash: 236d6dec444c8169c164e9f096c7f81a336fdca4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 08fb3b7a6d2af4ede27ebeb1454b040d2bd3eb43
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45593194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719224"
 ---
 # <a name="cleartype-overview"></a>ClearType 개요
 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에 있는 [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] 기술에 대해 간략하게 설명합니다.  
@@ -66,5 +66,5 @@ ClearType y 방향 앤티앨리어싱으로 표시된 텍스트
   
  [ClearType Tuner PowerToy](https://www.microsoft.com/typography/ClearTypePowerToy.mspx)  
   
-## <a name="see-also"></a>참고 항목  
- [ClearType 레지스트리 설정](../../../../docs/framework/wpf/advanced/cleartype-registry-settings.md)
+## <a name="see-also"></a>참고자료
+- [ClearType 레지스트리 설정](../../../../docs/framework/wpf/advanced/cleartype-registry-settings.md)

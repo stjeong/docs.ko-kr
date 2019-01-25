@@ -5,12 +5,12 @@ helpviewer_keywords:
 - timing behaviors [WPF]
 - behaviors [WPF], timing
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
-ms.openlocfilehash: b4b89047cb1b85c4386f1bd9d2a16a06ec112b73
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: c0f31f753a45bf4c13280febb164324535b0fdeb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715584"
 ---
 # <a name="timing-behaviors-overview"></a>타이밍 동작 개요
 이 항목에서는 애니메이션 및 기타의 타이밍 동작을 설명 <xref:System.Windows.Media.Animation.Timeline> 개체입니다.  
@@ -118,13 +118,13 @@ ms.locfileid: "43858140"
   
 -   <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> – 시간이 진행 되는 부모 기준으로 하는 속도 지정 합니다.는 <xref:System.Windows.Media.Animation.Timeline>합니다. 1 보다 큰 값의 속도 높일 합니다 <xref:System.Windows.Media.Animation.Timeline> 및 해당 자식 <xref:System.Windows.Media.Animation.Timeline> 개체, 값 0과 1 사이의 속도가 저하 됩니다. 값이 1 이면 <xref:System.Windows.Media.Animation.Timeline> 부모와 같은 속도로 진행 합니다. 합니다 <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> 컨테이너 타임 라인의 설정은 모든 자식 <xref:System.Windows.Media.Animation.Timeline> 개체도 합니다.  
   
--   <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – 비율을 지정 합니다.는 <xref:System.Windows.Media.Animation.Timeline.Duration%2A> 타임 라인 소요 된 시간의 가속화 합니다. 예를 들어 참조 [방법: 가속 또는 감속 애니메이션](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md)합니다. 
+-   <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – 비율을 지정 합니다.는 <xref:System.Windows.Media.Animation.Timeline.Duration%2A> 타임 라인 소요 된 시간의 가속화 합니다. 예는 [방법: 가속 또는 감속 애니메이션](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md)합니다. 
   
--   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> --비율을 지정 하는 중의 <xref:System.Windows.Media.Animation.Timeline.Duration%2A> 타임 라인의 감속 합니다. 예를 들어 참조 [방법: 가속 또는 감속 애니메이션](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md)합니다.  
+-   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> --비율을 지정 하는 중의 <xref:System.Windows.Media.Animation.Timeline.Duration%2A> 타임 라인의 감속 합니다. 예는 [방법: 가속 또는 감속 애니메이션](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [애니메이션 및 타이밍 시스템 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
- [타이밍 이벤트 개요](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)
+## <a name="see-also"></a>참고자료
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [애니메이션 및 타이밍 시스템 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)
+- [타이밍 이벤트 개요](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)

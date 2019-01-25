@@ -2,12 +2,12 @@
 title: 비동기 프로그래밍
 ms.date: 10/18/2018
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.openlocfilehash: 51adef080726c43d896cd8bb432c1a2c114a7f8b
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 8069ff646a124c6922358dda57de3e598ef62262
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54692888"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
@@ -816,5 +816,5 @@ class Program {
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)

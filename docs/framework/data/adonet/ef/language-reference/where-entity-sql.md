@@ -2,15 +2,15 @@
 title: WHERE(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
-ms.openlocfilehash: 43c038e9ff0acfdeff88492aa2ca34fbf4ada94a
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0b9cf9bdb211a74acd8fc229c53f3565b48e5ddd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54670578"
 ---
 # <a name="where-entity-sql"></a>WHERE(Entity SQL)
-WHERE 절 뒤에 직접 적용 되는 [FROM](../../../../../../docs/framework/data/adonet/ef/language-reference/from-entity-sql.md) 절.  
+WHERE 절 바로 다음에 적용 되는 [FROM](../../../../../../docs/framework/data/adonet/ef/language-reference/from-entity-sql.md) 절.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,6 +33,6 @@ select c from cs as c where e
   
  WHERE 절은 FROM 절 바로 다음에, 모든 그룹화나 정렬 또는 프로젝션 이전에 적용됩니다. FROM 절에 정의된 모든 요소 이름은 WHERE 절 식에 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [쿼리 식](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [쿼리 식](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - properties [WPF], DefaultDrawingAttributes
 - DefaultDrawingAttributes property [WPF]
 ms.assetid: 66a3129d-9577-43eb-acbd-56c147282016
-ms.openlocfilehash: 25f9c0141a97d8e52e0883b14fd3e1f4574a05ea
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 4da833256183f10eb62b43c3f665d76a6fc2ba80
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46004283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54711800"
 ---
 # <a name="collect-ink"></a>잉크 수집
 
@@ -88,7 +88,7 @@ MainWindow 클래스 내에서 파일의 코드를 다음에 다음 단추 이�
 
 표시 하는 방법을 <xref:System.Windows.Controls.StackPanel> 위쪽에 단추를 배치 합니다 <xref:System.Windows.Controls.InkCanvas>합니다. 단추 위에 잉크로 채우려고 시도 합니다 <xref:System.Windows.Controls.InkCanvas> 수집 하 고 단추 뒤에서 잉크를 렌더링 합니다. 단추의 형제 이기 때문에 이것이 <xref:System.Windows.Controls.InkCanvas> 자식이 아니라 합니다. 또한 단추가 z 순서에서 더 앞서기 때문에 잉크가 단추 뒤에서 렌더링됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.Ink.DrawingAttributes>
 - <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>

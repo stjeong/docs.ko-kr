@@ -1,5 +1,5 @@
 ---
-title: '&lt;appDomainManagerAssembly&gt; 요소'
+title: '&lt;appDomainManagerAssembly&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <appDomainManagerAssembly> element
@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 23c0edd99d09417c8e657045407a02a07338d7b2
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 4e2c43a5cfba89df3ae90950f09a7a947729f51b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53610192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54746598"
 ---
-# <a name="ltappdomainmanagerassemblygt-element"></a>&lt;appDomainManagerAssembly&gt; 요소
-프로세스의 기본 응용 프로그램 도메인용 응용 프로그램 도메인 관리자를 제공하는 어셈블리를 지정합니다.  
+# <a name="ltappdomainmanagerassemblygt-element"></a>&lt;appDomainManagerAssembly&gt; Element
+프로세스의 기본 애플리케이션 도메인용 애플리케이션 도메인 관리자를 제공하는 어셈블리를 지정합니다.  
   
  \<configuration>  
 \<runtime>  
-\<appDomainManagerAssembly >  
+\<appDomainManagerAssembly>  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ ms.locfileid: "53610192"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -73,10 +73,10 @@ ms.locfileid: "53610192"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
-- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
-- [\<appDomainManagerType > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
+- [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [SetAppDomainManagerType 메서드](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

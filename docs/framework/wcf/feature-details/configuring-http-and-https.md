@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring HTTP [WCF]
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-ms.openlocfilehash: 3094c82382292be3295238ef9cf2687f6eeb98f8
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 5c87b0f411c187e1497c8ec55771b80bb94c3629
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635679"
 ---
 # <a name="configuring-http-and-https"></a>HTTP 및 HTTPS 구성
 WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있습니다. HTTP/HTTPS 설정은 IIS(인터넷 정보 서비스)나 명령줄 도구를 사용하여 구성합니다. WCF 서비스가 IIS 아래에서 호스팅되거나 IIS에서 inetmgr.exe 도구를 사용하여 HTTP 또는 HTTPS 설정을 구성할 수 있는 경우입니다. WCF 서비스가 자체 호스팅되는 경우 HTTP 또는 HTTPS 설정은 명령줄 도구를 사용하여 구성됩니다.  
@@ -90,6 +90,6 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
 ## <a name="issues-specific-to-windows-xp"></a>Windows XP 관련 문제  
  IIS는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]에서 포트 공유를 지원하지 않습니다. IIS를 실행 하 고 WCF 서비스가 동일한 포트를 사용 하 여 네임 스페이스를 사용 하려고 하는 경우 WCF 서비스가 시작 되지 않습니다. IIS 및 WCF 모두 기본적으로 포트 80을 사용 합니다. 서비스 중 하나에 대 한 포트 할당을 변경 하거나 IP 수신 대기 목록을 사용 하 여 WCF 서비스를 IIS에서 사용 되지 네트워크 어댑터에 할당 합니다. HTTP Server API를 사용할 수 있도록 IIS 6.0 이상이 다시 디자인되었습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.WSDualHttpBinding>  
- [어떻게: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)

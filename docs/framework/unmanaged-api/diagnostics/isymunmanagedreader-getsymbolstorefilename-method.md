@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b36f4007f286938169cc5d583908493916b9e6f3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 6199a0d0444f07c57e88d0369f192684755d301c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33425342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705273"
 ---
 # <a name="isymunmanagedreadergetsymbolstorefilename-method"></a>ISymUnmanagedReader::GetSymbolStoreFileName 메서드
 기호 저장소의 디스크에 파일 이름을 제공합니다.  
@@ -42,16 +42,16 @@ HRESULT GetSymbolStoreFileName (
  [in] 크기는 `szName` 버퍼입니다.  
   
  `pcchName`  
- [out] 반환 되는 이름 길이 받는 변수에 대 한 포인터 `szName`, null 종결을 포함 합니다.  
+ [out] 반환 된 이름의 길이 받는 변수의에 대 한 포인터 `szName`, null 종결을 포함 합니다.  
   
  `szName`  
- [out] 기호 저장소의 파일 이름을 받는 변수에 대 한 포인터입니다.  
+ [out] 기호 저장소의 파일 이름을 받는 변수의 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

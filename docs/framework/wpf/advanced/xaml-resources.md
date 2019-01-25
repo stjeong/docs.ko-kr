@@ -7,15 +7,15 @@ helpviewer_keywords:
 - reusing commonly defined objects [WPF]
 - XAML [WPF], reusing resources
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
-ms.openlocfilehash: e02c80f4c1fdacbfdcb50ed57d89cc9df1f277f9
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 5898d3236f58cd40c5e1ccd446b756b94e3fb113
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718665"
 ---
 # <a name="xaml-resources"></a>XAML 리소스
-리소스는 응용 프로그램의 여러 위치에서 다시 사용할 수 있는 개체입니다. 리소스의 예로는 브러시와 스타일이 있습니다. 이 개요에서 리소스를 사용 하는 방법에 설명 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]합니다. 또한 만들고 하 하거나 코드 서로 바꿔 코드를 사용 하 여 리소스에 액세스 하 고 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]입니다. 자세한 내용은 [리소스 및 코드](../../../../docs/framework/wpf/advanced/resources-and-code.md)합니다.  
+리소스는 애플리케이션의 여러 위치에서 다시 사용할 수 있는 개체입니다. 리소스의 예로는 브러시와 스타일이 있습니다. 이 개요에서 리소스를 사용 하는 방법에 설명 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]합니다. 또한 만들고 하 하거나 코드 서로 바꿔 코드를 사용 하 여 리소스에 액세스 하 고 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]입니다. 자세한 내용은 [리소스 및 코드](../../../../docs/framework/wpf/advanced/resources-and-code.md)합니다.  
   
 > [!NOTE]
 >  이 항목에서 설명 하는 리소스 파일은 리소스 파일에 설명 된 다르지 [WPF 응용 프로그램 리소스, 콘텐츠 및 데이터 파일](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md) 포함 또는 연결 된 리소스에 설명 된 것과 다르며 [ 응용 프로그램 리소스 관리 (.NET)](https://msdn.microsoft.com/library/f2582734-8ada-4baa-8a7c-e2ef943ddf7e)합니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "53126405"
   
 -   응용 프로그램에 대해 만든 리소스의 전반적인 디자인 (페이지당, 응용 프로그램에서 느슨한 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]를 리소스 전용 어셈블리에서).  
   
--   응용 프로그램 기능: 응용 프로그램 요구 사항의 일부로서 실시간으로 리소스 업데이트.  
+-   애플리케이션 기능: 애플리케이션 요구 사항의 일부로서 실시간으로 리소스 업데이트.  
   
 -   해당 리소스 참조 형식의 각 조회 동작.  
   
@@ -56,11 +56,11 @@ ms.locfileid: "53126405"
 ### <a name="static-resources"></a>정적 리소스  
  정적 리소스 참조는 다음 환경에 가장 적합합니다.  
   
--   응용 프로그램 디자인에서는 대부분의 리소스를 페이지나 응용 프로그램 수준 리소스 사전에 집중합니다. 정적 리소스 참조는 페이지 다시 로드와 같은 런타임 동작을 기반으로 다시 평가하지 않으므로, 리소스와 응용 프로그램 디자인별로 필요하지 않을 때 다수의 동적 리소스 참조를 사용하지 않을 수 있다는 성능상의 이점이 있습니다.  
+-   애플리케이션 디자인에서는 대부분의 리소스를 페이지나 애플리케이션 수준 리소스 사전에 집중합니다. 정적 리소스 참조는 페이지 다시 로드와 같은 런타임 동작을 기반으로 다시 평가하지 않으므로, 리소스와 애플리케이션 디자인별로 필요하지 않을 때 다수의 동적 리소스 참조를 사용하지 않을 수 있다는 성능상의 이점이 있습니다.  
   
 -   에 있지 않은 속성의 값을 설정 하는 한 <xref:System.Windows.DependencyObject> 또는 <xref:System.Windows.Freezable>합니다.  
   
--   DLL로 컴파일되고 응용 프로그램의 일부로 컴파일되거나 응용 프로그램에 공유될 리소스 사전을 만듭니다.  
+-   DLL로 컴파일되고 애플리케이션의 일부로 컴파일되거나 애플리케이션에 공유될 리소스 사전을 만듭니다.  
   
 -   사용자 지정 컨트롤의 테마를 만들고 테마에서 사용되는 리소스를 정의합니다. 이 경우 일반적으로 동적 리소스 참조 조회 동작을 사용하지 않습니다. 대신, 조회가 예측 가능하고 테마에 자체 포함되도록 정적 리소스 참조 동작을 사용합니다. 동적 리소스 참조를 사용하면, 테마에 있는 참조까지도 런타임 시까지 평가되지 않은 상태로 남아 있게 되며, 테마를 적용할 때 일부 요소에서 테마가 참조하려는 키를 재정의하고 조회에서 로컬 요소가 테마 자체보다 앞에 옵니다. 이 경우 테마가 예상대로 작동하지 않습니다.  
   
@@ -74,18 +74,18 @@ ms.locfileid: "53126405"
   
 2.  그런 다음 조회 프로세스가 논리 트리를 상향식으로 통과하여 부모 요소와 해당 리소스 사전으로 이동합니다. 이 작업은 루트 요소에 도달할 때까지 계속됩니다.  
   
-3.  다음으로 응용 프로그램 리소스를 확인합니다. 응용 프로그램 리소스는 리소스 사전에서 정의한 내에서 리소스를 <xref:System.Windows.Application> 개체에 대 한 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
+3.  다음으로 애플리케이션 리소스를 확인합니다. 응용 프로그램 리소스는 리소스 사전에서 정의한 내에서 리소스를 <xref:System.Windows.Application> 개체에 대 한 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
   
  리소스 사전 내의 정적 리소스 참조는 리소스 참조 전에 사전순으로 이미 정의된 리소스를 참조해야 합니다. 전방 참조는 정적 리소스 참조로 확인할 수 없습니다. 따라서 정적 리소스 참조를 사용하는 경우, 리소스별 용도에 맞게 리소스를 각 리소스 사전의 시작 부분에 정의하도록 리소스 사전 구조를 디자인해야 합니다.  
   
- 정적 리소스 조회 테마 또는 시스템 리소스로 확장 될 수 있지만이 때문에 지원 합니다 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 로더에서 요청을 지연 합니다. 페이지가 로드될 때 런타임 테마가 응용 프로그램에 적절하게 적용되기 위해 지연이 필요합니다. 그러나 테마에만 존재하거나 시스템 리소스로 존재하는 것으로 알려진 키의 정적 리소스 참조는 사용하지 않는 것이 좋습니다. 사용자가 실시간으로 테마를 변경하는 경우 해당 참조가 다시 평가되지 않기 때문입니다. 동적 리소스 참조는 테마나 시스템 리소스를 요청할 때 더욱 안정적입니다. 테마 요소 자체가 다른 리소스를 요청할 때는 예외입니다. 이러한 참조는 앞서 설명한 이유때문에 정적 리소스 참조여야 합니다.  
+ 정적 리소스 조회 테마 또는 시스템 리소스로 확장 될 수 있지만이 때문에 지원 합니다 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 로더에서 요청을 지연 합니다. 페이지가 로드될 때 런타임 테마가 애플리케이션에 적절하게 적용되기 위해 지연이 필요합니다. 그러나 테마에만 존재하거나 시스템 리소스로 존재하는 것으로 알려진 키의 정적 리소스 참조는 사용하지 않는 것이 좋습니다. 사용자가 실시간으로 테마를 변경하는 경우 해당 참조가 다시 평가되지 않기 때문입니다. 동적 리소스 참조는 테마나 시스템 리소스를 요청할 때 더욱 안정적입니다. 테마 요소 자체가 다른 리소스를 요청할 때는 예외입니다. 이러한 참조는 앞서 설명한 이유때문에 정적 리소스 참조여야 합니다.  
   
  정적 리소스 참조가 없으면 다양한 예외 동작이 발생합니다. 리소스가 지연되면 런타임 시 예외가 발생합니다. 리소스가 지연되지 않으면 로드 시 예외가 발생합니다.  
   
 ### <a name="dynamic-resources"></a>동적 리소스  
  동적 리소스는 다음과 같은 환경에 가장 적합합니다.  
   
--   리소스 값은 런타임 시까지 알려지지 않은 조건에 따라 달라집니다. 여기에는 시스템 리소스 또는 사용자가 설정 가능한 리소스가 포함됩니다. 예를 들어로 노출 시스템 속성을 참조 하는 setter 값 만들 수 있습니다 <xref:System.Windows.SystemColors>, <xref:System.Windows.SystemFonts>, 또는 <xref:System.Windows.SystemParameters>합니다. 이러한 값은 궁극적으로 운영 체제와 사용자의 런타임 환경에서 오므로 정말로 동적입니다. 변경할 수 있는 응용 프로그램 수준 테마도 있습니다. 이 경우 페이지 수준 리소스 액세스를 통해서도 변경 사항을 캡처해야 합니다.  
+-   리소스 값은 런타임 시까지 알려지지 않은 조건에 따라 달라집니다. 여기에는 시스템 리소스 또는 사용자가 설정 가능한 리소스가 포함됩니다. 예를 들어로 노출 시스템 속성을 참조 하는 setter 값 만들 수 있습니다 <xref:System.Windows.SystemColors>, <xref:System.Windows.SystemFonts>, 또는 <xref:System.Windows.SystemParameters>합니다. 이러한 값은 궁극적으로 운영 체제와 사용자의 런타임 환경에서 오므로 정말로 동적입니다. 변경할 수 있는 애플리케이션 수준 테마도 있습니다. 이 경우 페이지 수준 리소스 액세스를 통해서도 변경 사항을 캡처해야 합니다.  
   
 -   사용자 지정 컨트롤의 테마 스타일을 만들거나 참조합니다.  
   
@@ -97,7 +97,7 @@ ms.locfileid: "53126405"
   
 -   setter 값이 테마나 다른 사용자 설정의 영향을 받는 다른 값에서 오는 스타일을 만듭니다.  
   
--   응용 프로그램 수명 중에 논리 트리에서 다시 부모가 지정될 수 있는 요소에 리소스를 적용합니다. 부모를 변경하면 리소스 조회 범위도 변경될 수 있으므로, 부모가 재지정된 요소의 리소스를 새 범위에 따라 재평가하려면 항상 동적 리소스 참조를 사용하세요.  
+-   애플리케이션 수명 중에 논리 트리에서 다시 부모가 지정될 수 있는 요소에 리소스를 적용합니다. 부모를 변경하면 리소스 조회 범위도 변경될 수 있으므로, 부모가 재지정된 요소의 리소스를 새 범위에 따라 재평가하려면 항상 동적 리소스 참조를 사용하세요.  
   
 #### <a name="dynamic-resource-lookup-behavior"></a>동적 리소스 조회 동작  
  동적 리소스 참조에 대 한 리소스 조회 동작 호출 하는 경우 코드의 조회 동작과 유사 <xref:System.Windows.FrameworkElement.FindResource%2A> 또는 <xref:System.Windows.FrameworkElement.SetResourceReference%2A>합니다.  
@@ -110,7 +110,7 @@ ms.locfileid: "53126405"
   
 2.  그런 다음 조회 프로세스가 논리 트리를 상향식으로 통과하여 부모 요소와 해당 리소스 사전으로 이동합니다. 이 작업은 루트 요소에 도달할 때까지 계속됩니다.  
   
-3.  다음으로 응용 프로그램 리소스를 확인합니다. 응용 프로그램 리소스는 리소스 사전에서 정의한 내에서 리소스를 <xref:System.Windows.Application> 개체에 대 한 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
+3.  다음으로 애플리케이션 리소스를 확인합니다. 응용 프로그램 리소스는 리소스 사전에서 정의한 내에서 리소스를 <xref:System.Windows.Application> 개체에 대 한 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
   
 4.  현재 활성 테마의 테마 리소스 사전을 확인합니다. 런타임 시 테마가 변경되면 값을 재평가합니다.  
   
@@ -133,7 +133,7 @@ ms.locfileid: "53126405"
   
 -   설정 되는 속성의 속성 이어야 합니다는 <xref:System.Windows.Freezable> 값으로 제공 되는 <xref:System.Windows.FrameworkElement> 또는 <xref:System.Windows.FrameworkContentElement> 속성인 또는 <xref:System.Windows.Setter> 값입니다.  
   
- 설정 되는 속성 이어야 하므로 <xref:System.Windows.DependencyProperty> 또는 <xref:System.Windows.Freezable> 속성, 속성 변경 (변경 된 동적 리소스 값) 속성 시스템에 의해 승인 되기 때문에 UI에 대부분의 속성 변경 내용을 전파할 수 있습니다. 대부분의 컨트롤 포함 하는 경우 컨트롤의 다른 레이아웃에 적용 됩니다는 논리는 <xref:System.Windows.DependencyProperty> 변경 내용 및 속성이 레이아웃에 영향을 줄 수 있습니다. 그러나 속성 중 일부만 있는 [DynamicResource 태그 확장](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) 해당 값으로 UI에 실시간으로에서 업데이트 하는 방식으로 값을 제공 하도록 보장 합니다. 이 기능은 속성 외에도 속성을 소유하는 형식, 심지어는 응용 프로그램의 논리 구조체에 따라서도 여전히 달라질 수 있습니다.  
+ 설정 되는 속성 이어야 하므로 <xref:System.Windows.DependencyProperty> 또는 <xref:System.Windows.Freezable> 속성, 속성 변경 (변경 된 동적 리소스 값) 속성 시스템에 의해 승인 되기 때문에 UI에 대부분의 속성 변경 내용을 전파할 수 있습니다. 대부분의 컨트롤 포함 하는 경우 컨트롤의 다른 레이아웃에 적용 됩니다는 논리는 <xref:System.Windows.DependencyProperty> 변경 내용 및 속성이 레이아웃에 영향을 줄 수 있습니다. 그러나 속성 중 일부만 있는 [DynamicResource 태그 확장](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) 해당 값으로 UI에 실시간으로에서 업데이트 하는 방식으로 값을 제공 하도록 보장 합니다. 이 기능은 속성 외에도 속성을 소유하는 형식, 심지어는 애플리케이션의 논리 구조체에 따라서도 여전히 달라질 수 있습니다.  
   
 <a name="stylesimplicitkeys"></a>   
 ## <a name="styles-datatemplates-and-implicit-keys"></a>스타일, DataTemplates 및 암시적 키  
@@ -153,12 +153,12 @@ ms.locfileid: "53126405"
   
  <xref:System.Windows.DataTemplate> 암시적 키가 있습니다. 에 대 한 암시적 키를 <xref:System.Windows.DataTemplate> 는 <xref:System.Windows.DataTemplate.DataType%2A> 속성 값입니다. <xref:System.Windows.DataTemplate.DataType%2A> 명시적으로 사용 하는 것이 아니라 형식의 이름으로 지정할 수도 있습니다 [{x: Type...} ](../../../../docs/framework/xaml-services/x-type-markup-extension.md). 자세한 내용은 참조 하세요 [데이터 템플릿 개요](../../../../docs/framework/wpf/data/data-templating-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.ResourceDictionary>  
- [응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [리소스 및 코드](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [리소스 정의 및 참조](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  
- [응용 프로그램 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [x:Type 태그 확장](../../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [StaticResource 태그 확장](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
- [DynamicResource 태그 확장](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.ResourceDictionary>
+- [응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [리소스 및 코드](../../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [리소스 정의 및 참조](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [응용 프로그램 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [x:Type 태그 확장](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [StaticResource 태그 확장](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+- [DynamicResource 태그 확장](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)

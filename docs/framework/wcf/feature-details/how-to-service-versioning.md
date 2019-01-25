@@ -2,12 +2,12 @@
 title: '방법: 서비스 버전 관리'
 ms.date: 03/30/2017
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
-ms.openlocfilehash: 5f79382eb121472ffa32d969cfaeee0e83d3375d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b02031493df1a63f62b4bdab80b56b1fb220aa92
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198399"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700600"
 ---
 # <a name="how-to-service-versioning"></a>방법: 서비스 버전 관리
 이 항목에서는 메시지를 동일한 서비스의 여러 버전에 라우트하는 라우팅 구성을 만드는 데 필요한 기본 단계에 대해 간략하게 설명합니다. 이 예제에서 메시지는 계산기 서비스의 서로 다른 두 버전인 `roundingCalc`(v1)와 `regularCalc`(v2)에 라우트됩니다. 두 구현 모두 같은 연산을 지원하지만 이전 버전인 `roundingCalc` 서비스에서는 반환 전에 가장 가까운 정수 값으로 모든 계산을 반올림합니다. 클라이언트 응용 프로그램에서는 새 버전인 `regularCalc` 서비스를 사용할지 여부를 나타낼 수 있어야 합니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "47198399"
   
 -   곱하기  
   
--   Divide  
+-   나누기  
   
  두 서비스 구현은 모두 같은 연산을 처리하고 반환하는 데이터를 제외하면 본질적으로 동일하므로 클라이언트 응용 프로그램에서 보낸 메시지에 포함된 기본 데이터는 요청을 라우트할 방법을 결정하기에는 고유성이 부족합니다. 예를 들어 두 서비스의 기본 동작이 같기 때문에 동작 필터를 사용할 수 없습니다.  
   
@@ -324,5 +324,5 @@ namespace Microsoft.Samples.AdvancedFilters
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [라우팅 서비스](../../../../docs/framework/wcf/samples/routing-services.md)
+## <a name="see-also"></a>참고자료
+- [라우팅 서비스](../../../../docs/framework/wcf/samples/routing-services.md)

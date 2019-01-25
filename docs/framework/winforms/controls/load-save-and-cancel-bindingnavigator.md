@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms BindingNavigator 컨트롤에 로드, 저장 및 취소 단추 추가'
+title: '방법: 저장, 로드를 추가 하 고 취소 단추는 Windows Forms BindingNavigator 컨트롤'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - controls [Windows Forms], manipulating
 - BindingNavigator control [Windows Forms], adding buttons
 ms.assetid: faa33042-186e-4bb2-8798-17ceb987ec62
-ms.openlocfilehash: 97be77b6591e4b7fa3db8176222dcb1feb3481bc
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: dc91a4a91d26cd51a06b1c08dcb76f8966c52594
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45972691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671111"
 ---
-# <a name="how-to-add-load-save-and-cancel-buttons-to-the-windows-forms-bindingnavigator-control"></a>방법: Windows Forms BindingNavigator 컨트롤에 로드, 저장 및 취소 단추 추가
+# <a name="how-to-add-load-save-and-cancel-buttons-to-the-windows-forms-bindingnavigator-control"></a>방법: 저장, 로드를 추가 하 고 취소 단추는 Windows Forms BindingNavigator 컨트롤
 합니다 <xref:System.Windows.Forms.BindingNavigator> 컨트롤은 특수 한 용도의 <xref:System.Windows.Forms.ToolStrip> 컨트롤 이동 및 데이터에 바인딩된 폼의 컨트롤을 조작 하기 위한 것입니다.  
   
  이기 때문에 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 <xref:System.Windows.Forms.BindingNavigator> 구성 요소는 사용자에 대 한 추가 또는 대체 명령 포함 하도록 쉽게 수정할 수 있습니다.  
@@ -109,9 +109,9 @@ ms.locfileid: "45972691"
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource.CancelEdit%2A> 메서드는 데이터의 행에 범위가 지정 됩니다. 다음 레코드로 이동 하기 전에 해당 개별 레코드를 보고 하는 동안 수행한 모든 변경 내용 저장 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.BindingNavigator>  
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.ToolStrip>  
- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [BindingSource 구성 요소 개요](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.BindingNavigator>
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.ToolStrip>
+- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [BindingSource 구성 요소 개요](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)

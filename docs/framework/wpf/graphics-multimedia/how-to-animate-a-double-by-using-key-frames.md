@@ -9,12 +9,12 @@ helpviewer_keywords:
 - animation [WPF], Doubles with key frames
 - key frames [WPF], animating Doubles with
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
-ms.openlocfilehash: 67466bbb5fd7e7a46c312e14666c23048bf43d80
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 60d939e9b63767a7efef059581983e8d8e8721ac
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45742587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54639395"
 ---
 # <a name="how-to-animate-a-double-by-using-key-frames"></a>방법: 키 프레임을 사용하여 Double에 애니메이션 효과 주기
 이 예제에서는 사용 하는 속성의 값에 애니메이션 효과 <xref:System.Double> 키 프레임을 사용 하 여 합니다.  
@@ -36,11 +36,11 @@ ms.locfileid: "45742587"
   
  다른 애니메이션 예제를 사용 하 여 일관성을 위해이 예제의 코드 버전 사용을 <xref:System.Windows.Media.Animation.Storyboard> 적용할 개체는 <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>합니다. 또는 코드에서 단일 애니메이션을 적용할 때 간단 하 게 사용 합니다 <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> 사용 하는 대신 메서드를 <xref:System.Windows.Media.Animation.Storyboard>입니다. 예제를 보려면 [Storyboard를 사용하지 않고 속성에 애니메이션 효과 주기](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>  
- <xref:System.Windows.Shapes.Rectangle>  
- <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame>  
- <xref:System.Windows.Media.Animation.DiscreteDoubleKeyFrame>  
- <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame>  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>
+- <xref:System.Windows.Shapes.Rectangle>
+- <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame>
+- <xref:System.Windows.Media.Animation.DiscreteDoubleKeyFrame>
+- <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame>
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
