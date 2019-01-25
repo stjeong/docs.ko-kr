@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], indexing
 ms.assetid: 0ed39f35-d68e-421d-ae14-460a5c0373b8
-ms.openlocfilehash: a0a42f72d94adf1c10865374017fa61e833df40f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: d4b2f73f8955b103e70e240e714e2b31d6198438
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43461672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535538"
 ---
 # <a name="zero-based-vs-one-based-string-access-in-visual-basic"></a>Vs 0부터 시작 합니다. Visual Basic의 1부터 시작 하는 문자열 액세스 비교
 이 항목에서는 Visual Basic 비교 및 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 문자열의 문자에 대 한 액세스를 제공 합니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Visual Basic 함수에 따라 0부터 시작 하 고 1부터 액세스를 제공 하는 반면 문자열에서 문자에 대 한 0부터 시작 액세스를 항상 제공 합니다.  
@@ -20,9 +20,9 @@ ms.locfileid: "43461672"
 ## <a name="zero-based"></a>0부터 시작  
  0부터 시작 Visual Basic 함수 예에 대 한 고려를 `Split` 함수입니다. 문자열을 분할 하 고 부분 문자열이 포함 된 배열을 반환 합니다. 합니다 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.String.Split%2A?displayProperty=nameWithType> 메서드는 문자열을 분할 및 부분 문자열이 포함 된 배열을 반환 합니다. 때문에 합니다 `Split` 함수 및 <xref:System.String.Split%2A> 메서드가 반환 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 배열 되는 0부터 시작 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
- <xref:Microsoft.VisualBasic.Strings.Split%2A>  
- <xref:System.String.Substring%2A>  
- <xref:System.String.Split%2A>  
- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.Strings.Mid%2A>
+- <xref:Microsoft.VisualBasic.Strings.Split%2A>
+- <xref:System.String.Substring%2A>
+- <xref:System.String.Split%2A>
+- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

@@ -4,21 +4,21 @@ ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 13dfdfd89bf91510146ce388620d3e51c2aa1f02
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 38894f57ec93fd44610b5c612326b399d477b723
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531186"
 ---
 # <a name="net-native-reflection-api-reference"></a>.NET 네이티브 리플렉션 API 참조
-[!INCLUDE[net_native](../../../includes/net-native-md.md)] 에는 새 예외 형식인 [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)및 [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)이 포함됩니다. 세 가지 예외 형식 모두에 대해 다음 사항을 확인하세요.  
+[!INCLUDE[net_native](../../../includes/net-native-md.md)] 세 가지 새 예외 형식이 포함 됩니다. [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)하십시오 [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), 및 [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) . 세 가지 예외 형식 모두에 대해 다음 사항을 확인하세요.  
   
  이러한 형식은 내부용으로만 사용됩니다.  
  이러한 세 가지 예외 형식은 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인에만 사용됩니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인이 프로그램을 계속 실행할 수 없게 하는 데이터 누락을 감지하면 예외가 throw됩니다.  
   
  이러한 예외를 코드에서 처리하지 마세요.  
- 이러한 예외는 응용 프로그램에 필요한 메타데이터가 없거나( [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 및 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 예외), 응용 프로그램에 필요한 구현 코드가 누락되었음( [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외)을 나타냅니다. 런타임 지시문(.rd.xml) 파일을 수정하여 필요한 메타데이터 또는 구현 코드를 런타임에 사용 가능하게 하는 방식으로 이러한 예외 조건을 수정합니다. 자세한 내용은 [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)을 참조하십시오. [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 및 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외를 제거하는 런타임 지시문 파일에 대한 적절한 항목을 제공하는 두 개의 문제 해결사를 사용할 수 있습니다.  
+ 이러한 예외는 애플리케이션에 필요한 메타데이터가 없거나( [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 및 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 예외), 애플리케이션에 필요한 구현 코드가 누락되었음( [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외)을 나타냅니다. 런타임 지시문(.rd.xml) 파일을 수정하여 필요한 메타데이터 또는 구현 코드를 런타임에 사용 가능하게 하는 방식으로 이러한 예외 조건을 수정합니다. 자세한 내용은 [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)을 참조하십시오. [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 및 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외를 제거하는 런타임 지시문 파일에 대한 적절한 항목을 제공하는 두 개의 문제 해결사를 사용할 수 있습니다.  
   
 -   형식의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
   
@@ -46,8 +46,8 @@ ms.locfileid: "49347525"
   
  이 네임스페이스의 다른 형식에 대한 설명서는 .NET Framework 설명서 집합에서 <xref:System.Runtime.CompilerServices> 를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [MissingInteropDataException 클래스](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  
- [MissingMetadataException 클래스](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
- [MissingRuntimeArtifactException 클래스](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)  
- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)
+## <a name="see-also"></a>참고자료
+- [MissingInteropDataException 클래스](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)
+- [MissingMetadataException 클래스](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)
+- [MissingRuntimeArtifactException 클래스](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)
+- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)

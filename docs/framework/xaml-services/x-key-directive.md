@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Key attribute in XAML [XAML Services]
 - XAML [XAML Services], x:Key attribute
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
-ms.openlocfilehash: f77f0a952224f79ee95a755cb848a4f8b68c9602
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 23c483daed0156dd29134b255e9da2f7922980ba
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47232770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492784"
 ---
 # <a name="xkey-directive"></a>x:Key 지시문
 고유 하 게 생성 및 XAML 정의 된 사전에서 참조 되는 요소를 식별 합니다. 추가 된 `x:Key` XAML 개체 요소 값은 WPF의 예를 들어 리소스 사전의 리소스를 식별 하는 가장 일반적인 방법은 <xref:System.Windows.ResourceDictionary>합니다.  
@@ -110,7 +110,7 @@ keyObject
 ## <a name="silverlight-usage-notes"></a>Silverlight 사용 정보  
  `x:Key` Silverlight 용은 별도로 설명 됩니다. 자세한 내용은 참조 하세요. [XAML Namespace (x:) 언어 기능 (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XAML 리소스](../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [리소스 및 코드](../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [StaticResource 태그 확장](../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+## <a name="see-also"></a>참고자료
+- [XAML 리소스](../../../docs/framework/wpf/advanced/xaml-resources.md)
+- [리소스 및 코드](../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [StaticResource 태그 확장](../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)

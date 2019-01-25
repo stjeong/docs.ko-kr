@@ -1,5 +1,5 @@
 ---
-title: '&lt;gcConcurrent&gt; 요소'
+title: '&lt;gcConcurrent&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent
@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5fa802ab9d1025bd130a6265b50050284aae0150
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 4c83576c5c46d9a32f990d23fa20b116be36e4c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612389"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54611998"
 ---
-# <a name="ltgcconcurrentgt-element"></a>&lt;gcConcurrent&gt; 요소
+# <a name="ltgcconcurrentgt-element"></a>&lt;gcConcurrent&gt; Element
 공용 언어 런타임이 별도 스레드에서 가비지 컬렉션을 실행하는지 여부를 지정합니다.  
   
  \<configuration>  
 \<runtime>  
-\<gcConcurrent >  
+\<gcConcurrent>  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,7 +55,7 @@ ms.locfileid: "53612389"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -89,7 +89,7 @@ ms.locfileid: "53612389"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [가비지 수집 기본 사항](../../../../../docs/standard/garbage-collection/fundamentals.md)

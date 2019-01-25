@@ -1,5 +1,5 @@
 ---
-title: '방법: 조인을 사용하여 데이터와 LINQ 결합(Visual Basic)'
+title: '방법: 조인 (Visual Basic)를 사용 하 여 데이터와 LINQ 결합'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [LINQ in Visual Basic], joins
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - joining [LINQ in Visual Basic]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.openlocfilehash: 4db5d288d79379b677bb19b2eba0d094e0d71bc8
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: fd1025d056dfb11d2253a39defb384c1d05efa32
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44177807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54553700"
 ---
-# <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>방법: 조인을 사용하여 데이터와 LINQ 결합(Visual Basic)
+# <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>방법: 조인 (Visual Basic)를 사용 하 여 데이터와 LINQ 결합
 Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용 하면 컬렉션 간의 공통 값을 기반으로 하는 여러 컬렉션의 콘텐츠를 결합할 수 있습니다. 이러한 값 이라고 *키* 값입니다. 관계형 데이터베이스 개념에 익숙한 개발자는 `Join` INNER JOIN으로 절 및 `Group Join` 으로 효과적으로 LEFT OUTER JOIN 절.  
   
  이 항목의 예제를 사용 하 여 데이터를 결합 하는 몇 가지 방법을 설명 합니다 `Join` 및 `Group Join` 쿼리 절.  
@@ -79,12 +79,12 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 2.  F5 키를 눌러 예제를 실행 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Join 절](../../../../visual-basic/language-reference/queries/join-clause.md)  
- [Group Join 절](../../../../visual-basic/language-reference/queries/group-join-clause.md)  
- [From 절](../../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where 절](../../../../visual-basic/language-reference/queries/where-clause.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ를 통한 데이터 변환(C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)
+## <a name="see-also"></a>참고자료
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Join 절](../../../../visual-basic/language-reference/queries/join-clause.md)
+- [Group Join 절](../../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [From 절](../../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where 절](../../../../visual-basic/language-reference/queries/where-clause.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ를 통한 데이터 변환(C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)

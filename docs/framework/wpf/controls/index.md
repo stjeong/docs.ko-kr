@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - controls [WPF], about WPF controls
 ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
-ms.openlocfilehash: fcef506f6be21b0c11a1c160ef6891a7ee53a5ec
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 83f044f403fe6d4d9c77c5b4d2045d58b50b97a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50189669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700665"
 ---
 # <a name="controls"></a>컨트롤
 <a name="introduction"></a>
@@ -20,18 +20,18 @@ ms.locfileid: "50189669"
 
 <a name="creating_an_instance_of_a_control"></a>   
 ## <a name="creating-an-instance-of-a-control"></a>컨트롤의 인스턴스 만들기  
- 사용 하 여 응용 프로그램 컨트롤을 추가할 수 있습니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 또는 코드입니다.  다음 예제에서는 사용자에게 이름과 성을 묻는 간단한 응용 프로그램을 만드는 방법을 보여 줍니다.  이 예제에서는 6 개의 컨트롤을 만듭니다: 두 개의 레이블, 두 개의 텍스트 상자 및에 2 개의 단추 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]합니다. 모든 컨트롤을 유사하게 만들 수 있습니다.  
+ 사용 하 여 응용 프로그램 컨트롤을 추가할 수 있습니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 또는 코드입니다.  다음 예제에서는 사용자에게 이름과 성을 묻는 간단한 애플리케이션을 만드는 방법을 보여 줍니다.  이 예제에서는 6 개의 컨트롤을 만듭니다: 두 개의 레이블, 두 개의 텍스트 상자 및에 2 개의 단추 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]합니다. 모든 컨트롤을 유사하게 만들 수 있습니다.  
   
  [!code-xaml[ControlsOverview#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/Window1.xaml#1)]  
   
- 다음 예제에서는 코드로 동일한 응용 프로그램을 만듭니다. 간 결함을 생성 합니다 <xref:System.Windows.Controls.Grid>, `grid1`, 샘플에서 제외 되었습니다. `grid1` 동일한 열과 행의 정의는 이전에 표시 된 것과 같이 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 예제입니다.  
+ 다음 예제에서는 코드로 동일한 애플리케이션을 만듭니다. 간 결함을 생성 합니다 <xref:System.Windows.Controls.Grid>, `grid1`, 샘플에서 제외 되었습니다. `grid1` 동일한 열과 행의 정의는 이전에 표시 된 것과 같이 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 예제입니다.  
   
  [!code-csharp[ControlsOverview#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml.cs#2)]
  [!code-vb[ControlsOverview#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ControlsOverview/VisualBasic/AppInCode.xaml.vb#2)]  
   
 <a name="changing_the_appearance_of_a_control"></a>   
 ## <a name="changing-the-appearance-of-a-control"></a>컨트롤의 모양 변경  
- 일반적으로 응용 프로그램의 모양과 느낌에 맞게 컨트롤의 모양을 변경합니다. 수행하려는 작업에 따라 다음 중 하나를 수행하여 컨트롤의 모양을 변경할 수 있습니다.  
+ 일반적으로 애플리케이션의 모양과 느낌에 맞게 컨트롤의 모양을 변경합니다. 수행하려는 작업에 따라 다음 중 하나를 수행하여 컨트롤의 모양을 변경할 수 있습니다.  
   
 -   컨트롤의 속성 값을 변경합니다.  
   
@@ -98,13 +98,13 @@ ms.locfileid: "50189669"
   
  이러한 기본 클래스에 대 한 자세한 내용은 참조 하세요. [WPF 콘텐츠 모델](../../../../docs/framework/wpf/controls/wpf-content-model.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [범주별 컨트롤](../../../../docs/framework/wpf/controls/controls-by-category.md)  
- [컨트롤 라이브러리](../../../../docs/framework/wpf/controls/control-library.md)  
- [데이터 템플릿 개요](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [입력](../../../../docs/framework/wpf/advanced/input-wpf.md)  
- [명령 사용](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)  
- [연습: 사용자 지정 애니메이션 단추 만들기](../../../../docs/framework/wpf/controls/walkthroughs-create-a-custom-animated-button.md)  
- [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)
+## <a name="see-also"></a>참고자료
+- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [범주별 컨트롤](../../../../docs/framework/wpf/controls/controls-by-category.md)
+- [컨트롤 라이브러리](../../../../docs/framework/wpf/controls/control-library.md)
+- [데이터 템플릿 개요](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [입력](../../../../docs/framework/wpf/advanced/input-wpf.md)
+- [명령 사용](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)
+- [연습: 사용자 지정 애니메이션된 단추 만들기](../../../../docs/framework/wpf/controls/walkthroughs-create-a-custom-animated-button.md)
+- [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)

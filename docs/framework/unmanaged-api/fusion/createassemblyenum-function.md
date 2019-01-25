@@ -18,15 +18,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b2098d5d9ce1c01f232cf2904c1fd3e990dfbe2e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d809bbfa17ed9e9ae16505852740e874ca11248c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54621788"
 ---
 # <a name="createassemblyenum-function"></a>CreateAssemblyEnum 함수
-에 대 한 포인터를 가져옵니다는 [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) 지정 된 어셈블리에 있는 개체를 열거할 수 있는 인스턴스 [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)합니다.  
+포인터를 가져는 [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) 지정 된 어셈블리의 개체를 열거할 수 있는 인스턴스 [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,33 +42,33 @@ HRESULT CreateAssemblyEnum (
   
 #### <a name="parameters"></a>매개 변수  
  `pEnum`  
- [out] 요청 된 포함 된 메모리 위치에 대 한 포인터 `IAssemblyEnum` 포인터입니다.  
+ [out] 요청 된 요소가 있는 메모리 위치에 대 한 포인터 `IAssemblyEnum` 포인터입니다.  
   
  `pUnkReserved`  
- [in] 다음 버전의 확장에 대 한 예약 되어 있습니다. `pUnkReserved` null 참조 여야 합니다.  
+ [in] 향후 확장성을 위해 예약 되어 있습니다. `pUnkReserved` null 참조 여야 합니다.  
   
  `pName`  
- [in] `IAssemblyName` 요청된 된 어셈블리의 합니다. 이 이름은 열거형 필터링 사용 됩니다. 전역 어셈블리 캐시의 모든 어셈블리를 열거 null 일 수 있습니다.  
+ [in] `IAssemblyName` 요청된 된 어셈블리입니다. 이 이름은 열거형 필터링에 사용 됩니다. 전역 어셈블리 캐시의 모든 어셈블리를 열거 하는 null 일 수 있습니다.  
   
  `dwFlags`  
- [in] 열거자의 동작을 수정 하기 위한 플래그입니다. 이 매개 변수에 포함에서 정확히 하나의 비트만 [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) 열거 합니다.  
+ [in] 열거자의 동작을 수정 하기 위한 플래그입니다. 이 매개 변수에서 정확히 하나의 비트가 포함 된 [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) 열거형입니다.  
   
  `pvReserved`  
- [in] 다음 버전의 확장에 대 한 예약 되어 있습니다. `pvReserved` null 참조 여야 합니다.  
+ [in] 향후 확장성을 위해 예약 되어 있습니다. `pvReserved` null 참조 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
- `dwFlags` 에서 정확히 한 비트를 포함 하는 매개 변수는 `ASM_CACHE_FLAGS` 열거형입니다.  
+ 합니다 `dwFlags` 매개 변수에서 정확히 하나의 비트가 포함 된 `ASM_CACHE_FLAGS` 열거형입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Fusion.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IAssemblyEnum 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)  
- [IAssemblyName 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)  
- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## <a name="see-also"></a>참고자료
+- [IAssemblyEnum 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
+- [IAssemblyName 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

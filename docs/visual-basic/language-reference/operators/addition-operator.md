@@ -10,12 +10,12 @@ helpviewer_keywords:
 - strings [Visual Basic], concatenating
 - sum operator [Visual Basic]
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
-ms.openlocfilehash: 91806c204c313956b292eb9c9be078991f733b4e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: da0c6f492b068c9caa50468ead47cdc08559bfce
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47231482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54576358"
 ---
 # <a name="-operator-visual-basic"></a>+ 연산자(Visual Basic)
 두 숫자를 추가 하거나 숫자 식의 양수 값을 반환 합니다. 두 문자열 식을 연결할도 사용할 수 있습니다.  
@@ -32,7 +32,7 @@ expression1 + expression2
   
 |용어|정의|  
 |---|---|  
-|`expression1`|필수. 모든 숫자 또는 문자열 식입니다.|  
+|`expression1`|필수 요소. 모든 숫자 또는 문자열 식입니다.|  
 |`expression2`|필수 하지 않는 경우는 `+` 연산자가 음수 값을 계산 합니다. 모든 숫자 또는 문자열 식입니다.|  
   
 ## <a name="result"></a>결과  
@@ -83,7 +83,7 @@ expression1 + expression2
 >  사용 하는 경우는 `+` 연산자, 더하기 또는 문자열 연결 발생할 지 여부를 확인 하려면 못할 수 있습니다. 사용 된 `&` 모호성을 제거 하 고 자동 문서화 코드를 제공 하도록 연결에 대 한 연산자입니다.  
   
 ## <a name="overloading"></a>오버로딩  
- 합니다 `+` 연산자 *오버 로드 된*, 클래스 또는 구조체 수 할 동작 피연산자에 해당 클래스 또는 구조체 형식의 경우. 이 연산자를 사용 하 여 이러한 클래스나 구조체에는 코드를 다시 정의 된 동작을 이해 해야 합니다. 자세한 내용은 [연산자 프로시저](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)합니다.  
+ 합니다 `+` 연산자 *오버 로드 된*, 클래스 또는 구조체 수 할 동작 피연산자에 해당 클래스 또는 구조체 형식의 경우. 이 연산자를 사용 하 여 이러한 클래스나 구조체에는 코드를 다시 정의 된 동작을 이해 해야 합니다. 자세한 내용은 [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)을 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `+` 덧셈 연산자입니다. 피연산자가 두 숫자를 Visual Basic 산술 연산 결과 계산 합니다. 산술 연산 결과 두 피연산자의 합계를 나타냅니다.  
@@ -108,11 +108,11 @@ expression1 + expression2
   
  모호성을 제거 하려면 사용 해야 합니다 `&` 연산자 대신 `+` 연결 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [& 연산자](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
- [연결 연산자](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
- [산술 연산자](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [기능별 연산자 목록](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Visual Basic에서의 연산자 우선 순위](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Visual Basic의 산술 연산자](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## <a name="see-also"></a>참고자료
+- [& 연산자](../../../visual-basic/language-reference/operators/concatenation-operator.md)
+- [연결 연산자](../../../visual-basic/language-reference/operators/concatenation-operators.md)
+- [산술 연산자](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [기능별 연산자 목록](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Visual Basic에서의 연산자 우선 순위](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Visual Basic의 산술 연산자](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)

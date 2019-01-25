@@ -8,19 +8,19 @@ helpviewer_keywords:
 - application settings [Windows Forms], Windows Forms
 - application settings [Windows Forms], creating
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
-ms.openlocfilehash: 7a84fc85b42f2b78ccafcae3c815847633b9916d
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: ac89851ce9c655ebef3acf2d55ef6659815ca4c9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48581877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54558958"
 ---
 # <a name="how-to-create-application-settings"></a>방법: 응용 프로그램 설정 만들기
 관리 코드를 사용하여 새 응용 프로그램 설정을 만들고, 이러한 설정이 런타임에 자동으로 로드 및 저장되도록 폼의 속성이나 폼의 컨트롤에 바인딩할 수 있습니다.  
   
  다음 절차에서는 <xref:System.Configuration.ApplicationSettingsBase>에서 파생되는 래퍼 클래스를 수동으로 만듭니다. 노출하려는 각 응용 프로그램 설정에 대한 공개적으로 액세스 가능한 속성을 이 클래스에 추가합니다.  
   
- Visual Studio 디자이너에서 최소한의 코드로 이 절차를 수행할 수도 있습니다.  도 참조 하세요 [방법: 디자이너를 사용 응용 프로그램 설정 만들기](https://msdn.microsoft.com/library/wabtadw6\(v=vs.110\))합니다.  
+ Visual Studio 디자이너에서 최소한의 코드로 이 절차를 수행할 수도 있습니다.  또한 참조 [방법: 디자이너를 사용 하 여 응용 프로그램 설정 만들기](https://msdn.microsoft.com/library/wabtadw6\(v=vs.110\))합니다.  
   
 ### <a name="to-create-new-application-settings-programmatically"></a>새 응용 프로그램 설정을 프로그래밍 방식으로 만들려면  
   
@@ -46,8 +46,8 @@ ms.locfileid: "48581877"
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  기본 설정 공급자인 <xref:System.Configuration.LocalFileSettingsProvider>는 정보를 구성 파일에 일반 텍스트로 저장합니다. 이 경우 보안이 운영 체제에서 현재 사용자에 대해 제공하는 파일 액세스 보안으로 제한됩니다. 이 때문에 구성 파일에 정보를 저장할 때는 주의해야 합니다. 예를 들어 응용 프로그램 설정은 일반적으로 응용 프로그램의 데이터 저장소를 가리키는 연결 문자열을 저장하는 데 사용됩니다. 그러나 보안 문제 때문에 이러한 문자열은 암호를 포함하지 않아야 합니다. 연결 문자열에 대한 자세한 내용은 <xref:System.Configuration.SpecialSetting>을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Configuration.SpecialSettingAttribute>  
- <xref:System.Configuration.LocalFileSettingsProvider>  
- [응용 프로그램 설정 개요](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [방법: 응용 프로그램 설정 유효성 검사](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Configuration.SpecialSettingAttribute>
+- <xref:System.Configuration.LocalFileSettingsProvider>
+- [응용 프로그램 설정 개요](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
+- [방법: 응용 프로그램 설정 유효성 검사](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)

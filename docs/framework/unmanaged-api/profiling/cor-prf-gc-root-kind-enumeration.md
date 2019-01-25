@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0f5b12825c9a348cd16eed9f5be0f41e03c367c7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: fd8c5e05d3f331d46b2d31f3f2448a674f090eaf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33450845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54508622"
 ---
 # <a name="corprfgcrootkind-enumeration"></a>COR_PRF_GC_ROOT_KIND 열거형
-에 의해 노출 되는 가비지 수집 루트의 종류를 나타내는 [icorprofilercallback2:: Rootreferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md) 콜백 합니다.  
+에 의해 노출 되는 가비지 컬렉션 루트의 종류를 나타내는 합니다 [ICorProfilerCallback2::RootReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md) 콜백 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,18 +42,18 @@ typedef enum {
 |멤버|설명|  
 |------------|-----------------|  
 |`COR_PRF_GC_ROOT_STACK`|루트 스택에 변수입니다.|  
-|`COR_PRF_GC_ROOT_FINALIZER`|루트는 종료자 큐에 있는 항목입니다.|  
-|`COR_PRF_GC_ROOT_HANDLE`|루트에 대 한 가비지 컬렉션 핸들입니다.|  
-|`COR_PRF_GC_ROOT_OTHER`|루트의 종류 지정 되지 않았습니다.|  
+|`COR_PRF_GC_ROOT_FINALIZER`|루트는 종료자 큐의 항목입니다.|  
+|`COR_PRF_GC_ROOT_HANDLE`|루트는 가비지 컬렉션 핸들입니다.|  
+|`COR_PRF_GC_ROOT_OTHER`|루트 종류가 지정 되지 않습니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [프로파일링 열거형](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [프로파일링 열거형](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

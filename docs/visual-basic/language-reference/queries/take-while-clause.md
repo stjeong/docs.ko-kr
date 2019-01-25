@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Take While clause [Visual Basic]
 - Take While statement [Visual Basic]
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
-ms.openlocfilehash: 181cc641bb12329c898cc3bb226ea49f0836e979
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 3dfb70066d88683e60f3bf4199441ab3024ef36c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44085357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565113"
 ---
 # <a name="take-while-clause-visual-basic"></a>Take While 절(Visual Basic)
 지정된 조건이 `true`이면 컬렉션의 요소를 포함하고 나머지 요소를 무시합니다.  
@@ -28,7 +28,7 @@ Take While expression
   
 |용어|정의|  
 |---|---|  
-|`expression`|필수. 에 대 한 요소를 테스트 하는 조건을 나타내는 식입니다. 식을 반환 해야 합니다는 `Boolean` 값 또는 이와 동일한 기능 같은 `Integer` 으로 계산 되는 `Boolean`합니다.|  
+|`expression`|필수 요소. 에 대 한 요소를 테스트 하는 조건을 나타내는 식입니다. 식을 반환 해야 합니다는 `Boolean` 값 또는 이와 동일한 기능 같은 `Integer` 으로 계산 되는 `Boolean`합니다.|  
   
 ## <a name="remarks"></a>설명  
  합니다 `Take While` 일까 지 제공 된 쿼리 결과의 시작 부분에서 요소를 포함 하는 절 `expression` 반환 `false`합니다. 후 합니다 `expression` 반환 `false`, 나머지 모든 요소를 무시 하는 쿼리. `expression` 나머지 결과 대해 무시 됩니다.  
@@ -40,11 +40,11 @@ Take While expression
   
  [!code-vb[VbSimpleQuerySamples#2](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-while-clause_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Take 절](../../../visual-basic/language-reference/queries/take-clause.md)  
- [Skip While 절](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Take 절](../../../visual-basic/language-reference/queries/take-clause.md)
+- [Skip While 절](../../../visual-basic/language-reference/queries/skip-while-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)

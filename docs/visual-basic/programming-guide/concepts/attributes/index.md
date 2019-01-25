@@ -2,12 +2,12 @@
 title: 특성 개요(Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
-ms.openlocfilehash: e6d11daeac2f2392e1080eca8503c9b2c420ab35
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 282788f9aa5a1ac8c4ede95f04b45c26b9f56588
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33644487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54559300"
 ---
 # <a name="attributes-overview-visual-basic"></a>특성 개요(Visual Basic)
 특성은 메타데이터 또는 선언적 정보를 코드(어셈블리, 형식, 메서드, 속성 등)에 연결하는 강력한 방법을 제공합니다. 특성이 프로그램 엔터티와 연결되면 *리플렉션*이라는 기법을 사용하여 런타임에 특성이 쿼리될 수 있습니다. 자세한 내용은 [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)을 참조하세요.  
@@ -136,13 +136,13 @@ Module: CLSCompliant(True)>
   
 -   [리플렉션을 사용하여 특성 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
   
--   [방법: 특성을 사용하여 C/C++ 공용 구조체 만들기(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)  
+-   [방법: 특성 (Visual Basic)를 사용 하 여 C/c + + 공용 구조체 만들기](../../../../visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)  
   
 -   [일반 특성(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)  
   
 -   [호출자 정보(Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md)  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)  
- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
- [특성](../../../../standard/attributes/index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)
+- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
+- [특성](../../../../standard/attributes/index.md)

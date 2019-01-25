@@ -2,12 +2,12 @@
 title: 부분 신뢰 기능 호환성
 ms.date: 03/30/2017
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
-ms.openlocfilehash: 97a51fe29677f46f9d3053250b65b3d818ca47dc
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 404fe1a7fb14f28d264d4a97981eade8404141ee
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54564726"
 ---
 # <a name="partial-trust-feature-compatibility"></a>부분 신뢰 기능 호환성
 Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 하는 경우 기능의 제한 된 하위 집합을 지원 합니다. 부분 신뢰에서 지원되는 기능은 [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) 항목에서 설명한 대로 특정 시나리오 집합을 바탕으로 설계되었습니다.  
@@ -67,11 +67,11 @@ Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 하는 
   
 -   `[Serializable]`/ISerializable 프로그래밍 모델은 부분 신뢰 환경에서 지원되지 않습니다.  
   
--   코드 또는 시스템 수준 구성(machine.config)에서는 알려진 형식을 지정해야 합니다. 보안상의 이유로 응용 프로그램 수준 구성에서는 알려진 형식을 지정할 수 없습니다.  
+-   코드 또는 시스템 수준 구성(machine.config)에서는 알려진 형식을 지정해야 합니다. 보안상의 이유로 애플리케이션 수준 구성에서는 알려진 형식을 지정할 수 없습니다.  
   
 -   <xref:System.Runtime.Serialization.IObjectReference> 를 구현하는 형식은 부분 신뢰 환경에서 예외를 throw합니다.  
   
- 부분적으로 신뢰할 수 있는 응용 프로그램에서 [T:System.Runtime.Serialization.DataContractSerializer](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md) 를 안전하게 사용하는 경우의 보안에 대한 자세한 내용은 <xref:System.Runtime.Serialization.DataContractSerializer> 의 Serialization 단원을 참조하세요.  
+ 부분적으로 신뢰할 수 있는 애플리케이션에서 [T:System.Runtime.Serialization.DataContractSerializer](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md) 를 안전하게 사용하는 경우의 보안에 대한 자세한 내용은 <xref:System.Runtime.Serialization.DataContractSerializer> 의 Serialization 단원을 참조하세요.  
   
 ### <a name="collection-types"></a>컬렉션 형식  
  일부 컬렉션 형식은 <xref:System.Collections.Generic.IEnumerable%601> 및 <xref:System.Collections.IEnumerable>을 모두 구현합니다. 예제에는 <xref:System.Collections.Generic.ICollection%601>을 구현하는 형식이 포함되어 있습니다. 이러한 형식은 `public` 의 `GetEnumerator()`구현 및 `GetEnumerator()`의 명시적 구현을 구현할 수 있습니다. 이 경우 <xref:System.Runtime.Serialization.DataContractSerializer> 는 `public` 의 명시적 구현이 아니라 `GetEnumerator()`의 `GetEnumerator()`구현을 호출합니다. `GetEnumerator()` 구현이 모두 `public` 이 아니고 모든 구현이 명시적 구현인 경우 <xref:System.Runtime.Serialization.DataContractSerializer> 는 `IEnumerable.GetEnumerator()`를 호출합니다.  
@@ -88,13 +88,13 @@ Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 하는 
 ## <a name="enabling-common-behaviors-to-run"></a>일반 동작이 실행되도록 설정  
  사용 하 여 표시 되지 않은 서비스 또는 끝점 동작은 합니다 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 에 추가 되는 특성 (APTCA)를 [ \<commonBehaviors >](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) 구성 파일의 섹션에는 응용 프로그램이 부분 신뢰에서 실행 될 때 실행 되지 않습니다 이 경우 환경과 예외가 throw 됩니다. 일반 동작을 실행하려면 다음 옵션 중 하나를 수행해야 합니다.  
   
--   부분 신뢰 응용 프로그램으로 배포될 때 실행될 수 있도록 일반 동작을 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 특성으로 표시합니다. APTCA로 표시된 어셈블리가 실행되지 않도록 컴퓨터에 레지스트리 항목을 설정할 수 있습니다. 이어야 합니다.  
+-   부분 신뢰 애플리케이션으로 배포될 때 실행될 수 있도록 일반 동작을 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 특성으로 표시합니다. APTCA로 표시된 어셈블리가 실행되지 않도록 컴퓨터에 레지스트리 항목을 설정할 수 있습니다. 이어야 합니다.  
   
--   부분 신뢰 환경에서 응용 프로그램을 실행하기 위해 사용자가 코드 액세스 보안 설정을 수정할 수 없는 완전 신뢰 응용 프로그램으로서 응용 프로그램이 배포되는지 확인합니다. 사용자가 보안 설정을 수정할 수 있는 경우 동작이 실행되지 않고 예외가 throw되지 않습니다. 이 확인 하려면 참조는 **levelfinal** 사용 하 여 옵션 [Caspol.exe (코드 액세스 보안 정책 도구)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)합니다.  
+-   부분 신뢰 환경에서 애플리케이션을 실행하기 위해 사용자가 코드 액세스 보안 설정을 수정할 수 없는 완전 신뢰 애플리케이션으로서 애플리케이션이 배포되는지 확인합니다. 사용자가 보안 설정을 수정할 수 있는 경우 동작이 실행되지 않고 예외가 throw되지 않습니다. 이 확인 하려면 참조는 **levelfinal** 사용 하 여 옵션 [Caspol.exe (코드 액세스 보안 정책 도구)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)합니다.  
   
- 일반 동작의 예제를 참조 하세요 [방법: Lock Down Endpoints in 엔터프라이즈](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md)합니다.  
+ 일반 동작의 예제를 참조 하세요. [방법: 엔터프라이즈에서 끝점 잠그기](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md)합니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
  단, 부분적으로 신뢰할 수 있는 코드 로드할 수 있습니다 로컬에서 WCF 구성 섹션 `app.config` 파일입니다. Machine.config 또는 루트 WCF 섹션을 참조 하는 WCF 구성 섹션을 로드 하려면 web.config 파일 configurationpermission 합니다. 이 권한이 없으면 구성이 로드 되 면 WCF 구성 섹션 (동작, 바인딩) 외부 예외가 로컬 구성 파일 결과에 대 한 참조입니다.  
   
  한 가지 예외는 이 항목의 Serialization 단원에서 설명한 것처럼 serialization에 대한 알려진 형식 구성입니다.  
@@ -135,7 +135,7 @@ Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 하는 
   
 -   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=nameWithType>  
   
- 부분 신뢰 환경에서 추적을 사용하는 경우 응용 프로그램에 추적 수신기의 출력을 저장할 권한이 있는지 확인합니다. 예를 들어 <xref:System.Diagnostics.TextWriterTraceListener> 를 사용하여 추적 출력을 텍스트 파일에 기록하는 경우 응용 프로그램에 추적 파일을 기록하는 데 필요한 FileIOPermission이 있는지 확인합니다.  
+ 부분 신뢰 환경에서 추적을 사용하는 경우 애플리케이션에 추적 수신기의 출력을 저장할 권한이 있는지 확인합니다. 예를 들어 <xref:System.Diagnostics.TextWriterTraceListener> 를 사용하여 추적 출력을 텍스트 파일에 기록하는 경우 애플리케이션에 추적 파일을 기록하는 데 필요한 FileIOPermission이 있는지 확인합니다.  
   
 > [!NOTE]
 >  중복 오류를 사용 하 여 추적 파일 폭주를 방지 하려면 WCF 추적 리소스 또는 첫 번째 보안 실패 후 작업을 비활성화 합니다. 처음으로 리소스에 액세스하거나 작업을 수행할 때 실패한 각 리소스 액세스에 대해 한 가지 예외 추적이 있습니다.  
@@ -159,10 +159,10 @@ Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 하는 
 ## <a name="unlisted-features"></a>목록에 없는 기능  
  부분 신뢰 환경에서 실행할 때 사용할 수 없는 정보 또는 작업 부분을 검색하는 가장 좋은 방법은 리소스에 액세스하거나 `try` 블록 내의 작업을 수행한 다음 오류를 `catch` 하는 것입니다. 중복 오류를 사용 하 여 추적 파일 폭주를 방지 하려면 WCF 추적 리소스 또는 첫 번째 보안 실패 후 작업을 비활성화 합니다. 처음으로 리소스에 액세스하거나 작업을 수행할 때 실패한 각 리소스 액세스에 대해 한 가지 예외 추적이 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>  
- <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>  
- [지원되는 배포 시나리오](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md)  
- [부분 신뢰를 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>
+- [지원되는 배포 시나리오](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md)
+- [부분 신뢰를 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md)

@@ -2,12 +2,12 @@
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: 6d568c1c78677b53f4b79f5aefd3a56d71c2685f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 3d59fac08ee59ab5ede943de5109805ff1633d48
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50182933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623939"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 서비스 호스트를 생성하는 데 사용되는 팩터리를 호스트할 서비스 및 .svc 파일에 제공된 호스팅 코드에 액세스하거나 이를 컴파일하는 데 필요한 다른 프로그래밍 요소에 연결합니다.  
@@ -66,5 +66,5 @@ Factory="WebScriptServiceHostFactory"
 %>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [사용자 지정 서비스 호스트](../../../../../docs/framework/wcf/samples/custom-service-host.md)
+## <a name="see-also"></a>참고자료
+- [사용자 지정 서비스 호스트](../../../../../docs/framework/wcf/samples/custom-service-host.md)

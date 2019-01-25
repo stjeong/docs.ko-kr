@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 2fc6d08e960b0ba82c76945a318ec723546f71b9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 9796dd234611fd6bbdf2b949b8a0ed66527aaba9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54521259"
 ---
 # <a name="assemblyflags-enumeration"></a>AssemblyFlags 열거형
 어셈블리의 런타임 기능을 설명 하는 값을 포함 합니다.  
@@ -43,23 +43,23 @@ typedef enum {
 |멤버|설명|  
 |------------|-----------------|  
 |`afImplicitExportedTypes`|내보낸된 형식 정의 어셈블리를 구성 하는 파일 내에서 암시적 되도록 지정 합니다. .NET Framework 버전 1.0 및 1.1에서는이 값은 항상 설정으로 간주 됩니다.|  
-|`afImplicitResources`|리소스 정의 어셈블리를 구성 하는 파일 내에서 암시적 되도록 지정 합니다. .NET Framework 1.0 및 1.1이이 값은 항상 설정으로 간주 됩니다.|  
-|`afNonSideBySideAppDomain`|동일한 응용 프로그램 도메인에서 어셈블리를 다른 버전과 함께 실행할 수 없습니다 것을 지정 합니다.|  
-|`afNonSideBySideProcess`|어셈블리는 같은 프로세스에서 실행 하는 경우 다른 버전과 함께 실행할 수 없습니다 것을 지정 합니다.|  
-|`afNonSideBySideMachine`|동일한 컴퓨터에서 어셈블리를 다른 버전과 함께 실행할 수 없습니다 것을 지정 합니다.|  
+|`afImplicitResources`|리소스 정의 어셈블리를 구성 하는 파일 내에서 암시적 되도록 지정 합니다. .NET Framework 1.0 및 1.1에서는이 값은 항상 설정할으로 간주 됩니다.|  
+|`afNonSideBySideAppDomain`|동일한 응용 프로그램 도메인에서 어셈블리를 다른 버전과 함께 실행할 수 없습니다 지정 합니다.|  
+|`afNonSideBySideProcess`|동일한 프로세스에서 어셈블리를 다른 버전과 함께 실행할 수 없습니다 지정 합니다.|  
+|`afNonSideBySideMachine`|동일한 컴퓨터에 어셈블리를 다른 버전과 함께 실행할 수 없습니다 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 0x0010과 0x0070, inclusive, 사이의 값은 참조 된 어셈블리의 side-by-side-호환성 기능을 설명 하는 데 사용 됩니다. 이러한 값을 설정 하 여 병렬 호환 될 어셈블리 가정 합니다.  
+ 0x0010 사이의 경계가 0x0070 값 참조 된 어셈블리의 side-by-side-호환성 기능을 설명 하기 위해 사용 됩니다. 이러한 값을 설정 하는 경우 어셈블리는 side-by-side-호환 되는 수로 간주 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MsCorEE.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)  
- [IMetaDataAssemblyEmit 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [IMetaDataAssemblyEmit 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

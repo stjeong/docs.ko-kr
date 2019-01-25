@@ -1,5 +1,5 @@
 ---
-title: '&#39;&lt;membername&gt; &#39; 모호 합니다. 상속 된 인터페이스를 통해 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;interfacename2&gt;&#39;'
+title: '&#39;&lt;membername&gt; &#39; 상속 된 인터페이스를 통해 모호 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;interfacename2&gt;&#39;'
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30685
@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - BC30685
 ms.assetid: 756add7a-23d5-4b4f-a48d-8297d6459c73
-ms.openlocfilehash: 23d1a11bcee2a4faae40f2683d109d5820ee5f9c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e6d6a82331185060d6f08c3375dc5a628b65df1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33585303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506298"
 ---
-# <a name="39ltmembernamegt39-is-ambiguous-across-the-inherited-interfaces-39ltinterfacename1gt39-and-39ltinterfacename2gt39"></a>&#39;&lt;membername&gt; &#39; 모호 합니다. 상속 된 인터페이스를 통해 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;interfacename2&gt;&#39;
-동일한 이름 가진 둘 이상의 멤버가 여러 인터페이스에서 상속 합니다.  
+# <a name="39ltmembernamegt39-is-ambiguous-across-the-inherited-interfaces-39ltinterfacename1gt39-and-39ltinterfacename2gt39"></a>&#39;&lt;membername&gt; &#39; 상속 된 인터페이스를 통해 모호 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;interfacename2&gt;&#39;
+여러 인터페이스에서 동일한 이름의 두 개 이상의 멤버를 상속 하는 인터페이스입니다.  
   
  **오류 ID:** BC30685  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   기본 인터페이스에 사용할; 값 캐스팅 예를 들어:  
+-   사용 하려는 기본 인터페이스 값 캐스팅 예를 들어:  
   
     ```  
     Interface Left  
@@ -46,5 +46,5 @@ ms.locfileid: "33585303"
     End Module  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## <a name="see-also"></a>참고자료
+- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

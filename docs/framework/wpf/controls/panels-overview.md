@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Panel control [WPF], about Panel control
 - controls [WPF], Panel
 ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
-ms.openlocfilehash: f8fd3237d71bc1960678565192c7ef9ddcb2c366
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 77f8fc5057b8f31e684941b742f2cf696afd6b07
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525211"
 ---
 # <a name="panels-overview"></a>Panel 개요
 <xref:System.Windows.Controls.Panel> 요소는 요소의 렌더링을 제어 하는 구성 요소, 해당 크기와 차원, 위치, 자식 콘텐츠의 정렬 합니다. 합니다 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 다양 한 미리 정의 된 <xref:System.Windows.Controls.Panel> 사용자 지정을 작성할 수 있을 뿐만 아니라 요소 <xref:System.Windows.Controls.Panel> 요소입니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "47196631"
 #### <a name="attached-properties"></a>연결된 속성  
  파생 패널 요소는 연결된 속성을 광범위하게 사용합니다. 연결된 속성은 기존 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 속성 "래퍼"가 없는 종속성 속성의 특수 형식입니다. 연결된 속성에는 다음 여러 예제에서 확인할 수 있는 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]의 특수 구문이 있습니다.  
   
- 연결된 속성의 한 가지 목적은 자식 요소가 부모 요소를 통해 실제로 정의되는 속성의 고유 값을 저장하도록 하는 것입니다. 이 기능을 제공하는 응용 프로그램에서는 자식 요소가 자신이 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에 표시되는 방식을 부모에게 알립니다. 이 기능은 응용 프로그램 레이아웃에 매우 유용합니다. 자세한 내용은 [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)를 참조하세요.  
+ 연결된 속성의 한 가지 목적은 자식 요소가 부모 요소를 통해 실제로 정의되는 속성의 고유 값을 저장하도록 하는 것입니다. 이 기능을 제공하는 애플리케이션에서는 자식 요소가 자신이 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에 표시되는 방식을 부모에게 알립니다. 이 기능은 애플리케이션 레이아웃에 매우 유용합니다. 자세한 내용은 [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)를 참조하세요.  
   
 <a name="Panels_derived_elements"></a>   
 ## <a name="derived-panel-elements"></a>파생 패널 요소  
@@ -77,7 +77,7 @@ ms.locfileid: "47196631"
   
 <a name="Panels_main_UI_elements"></a>   
 ## <a name="user-interface-panels"></a>사용자 인터페이스 패널  
- 6 가지 panel 클래스에서 사용할 수 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 지원 하도록 최적화 된 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 시나리오: <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>를 <xref:System.Windows.Controls.Grid>를 <xref:System.Windows.Controls.StackPanel>를 <xref:System.Windows.Controls.VirtualizingStackPanel>, 및 <xref:System.Windows.Controls.WrapPanel>합니다. 이러한 패널 요소는 쉽게 사용할 수 있고, 유연하고, 대부분 응용 프로그램용으로 충분히 확장 가능합니다.  
+ 6 가지 panel 클래스에서 사용할 수 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 지원 하도록 최적화 된 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 시나리오: <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>를 <xref:System.Windows.Controls.Grid>를 <xref:System.Windows.Controls.StackPanel>를 <xref:System.Windows.Controls.VirtualizingStackPanel>, 및 <xref:System.Windows.Controls.WrapPanel>합니다. 이러한 패널 요소는 쉽게 사용할 수 있고, 유연하고, 대부분 애플리케이션용으로 충분히 확장 가능합니다.  
   
  각 파생 <xref:System.Windows.Controls.Panel> 요소 크기 조정 제약을 다르게 처리 합니다. 이해 하는 방법을 <xref:System.Windows.Controls.Panel> 가로 또는 세로 방향으로 핸들 제약 조건은 예측 가능성이 더욱 뛰어난 레이아웃을 만들 수 있습니다.  
   
@@ -110,7 +110,7 @@ ms.locfileid: "47196631"
  [!code-vb[CanvasOvwSample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasOvwSample/VisualBasic/canvas_vb.vb#1)]
  [!code-xaml[CanvasOvwSample#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/CanvasOvwSample/XAML/default.xaml#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![일반적인 Canvas 요소](../../../../docs/framework/wpf/controls/media/panel-intro-canvas.PNG "panel_intro_canvas")  
   
@@ -134,7 +134,7 @@ ms.locfileid: "47196631"
  [!code-vb[DockPanelOvwSample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelOvwSample/VisualBasic/dockpanel_vb.vb#1)]
  [!code-xaml[DockPanelOvwSample#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DockPanelOvwSample/XAML/default.xaml#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![일반적인 DockPanel 시나리오](../../../../docs/framework/wpf/controls/media/panel-intro-dockpanel.PNG "panel_intro_dockpanel")  
   
@@ -154,7 +154,7 @@ ms.locfileid: "47196631"
  [!code-csharp[GridRunDialog#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridRunDialog/CSharp/window1.xaml.cs#1)]
  [!code-vb[GridRunDialog#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![일반적인 Grid 요소](../../../../docs/framework/wpf/controls/media/avalon-run-dialog.PNG "avalon_run_dialog")  
   
@@ -174,7 +174,7 @@ ms.locfileid: "47196631"
   
  이 그림에서 렌더링 동작의 차이를 확인할 수 있습니다.  
   
- ![스크린샷: StackPanel 및 DockPanel 스크린샷](../../../../docs/framework/wpf/controls/media/layout-smiley-stackpanel.PNG "layout_smiley_stackpanel")  
+ ![스크린 샷: StackPanel 및 DockPanel 스크린샷](../../../../docs/framework/wpf/controls/media/layout-smiley-stackpanel.PNG "layout_smiley_stackpanel")  
   
 #### <a name="defining-and-using-a-stackpanel"></a>StackPanel 정의 및 사용  
  다음 예제에 사용 하는 방법을 보여 줍니다.는 <xref:System.Windows.Controls.StackPanel> 세로로 배치 된 단추 집합을 만들려고 합니다. 가로 위치 지정을 설정 합니다 <xref:System.Windows.Controls.StackPanel.Orientation%2A> 속성을 <xref:System.Windows.Controls.Orientation.Horizontal>입니다.  
@@ -182,7 +182,7 @@ ms.locfileid: "47196631"
  [!code-csharp[StackPanel_ovw2#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_ovw2/CSharp/StackPanel_Ovw_Sample2.cs#1)]
  [!code-vb[StackPanel_ovw2#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StackPanel_ovw2/VisualBasic/StackPanelOvw.vb#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![일반적인 StackPanel 요소](../../../../docs/framework/wpf/controls/media/panel-intro-stackpanel.PNG "panel_intro_stackpanel")  
   
@@ -207,7 +207,7 @@ ms.locfileid: "47196631"
  [!code-vb[WrapPanel_Intro#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WrapPanel_Intro/VisualBasic/WrapPanel_vb.vb#1)]
  [!code-xaml[WrapPanel_Intro#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/WrapPanel_Intro/XAML/default.xaml#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![일반적인 WrapPanel 요소](../../../../docs/framework/wpf/controls/media/wrappanel-element.PNG "WrapPanel_Element")  
   
@@ -215,14 +215,14 @@ ms.locfileid: "47196631"
 ## <a name="nested-panel-elements"></a>중첩 Panel 요소  
  <xref:System.Windows.Controls.Panel> 복잡 한 레이아웃을 생성 하기 위해 요소를 서로 중첩할 수 있습니다. 이 하나 있는 경우에 매우 유용 입증할 수 있습니다 <xref:System.Windows.Controls.Panel> 부분에 대 한 적합을 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], 있지만 다른 일부의 요구를 충족 하지 않을 수 있습니다는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]합니다.  
   
- 응용 프로그램에서 지원할 수 있는 중첩 횟수에는 실제로 제한이 없지만, 일반적으로 원하는 레이아웃에 실제로 필요한 패널만 사용하도록 응용 프로그램을 제한하는 것이 가장 좋습니다. 대부분의 경우에 <xref:System.Windows.Controls.Grid> 요소는 레이아웃 컨테이너로 서의 유연성 때문에 중첩된 패널 대신 사용할 수 있습니다. 이 요소를 통해 불필요한 요소를 트리에서 제거하여 응용 프로그램 성능을 향상할 수 있습니다.  
+ 애플리케이션에서 지원할 수 있는 중첩 횟수에는 실제로 제한이 없지만, 일반적으로 원하는 레이아웃에 실제로 필요한 패널만 사용하도록 애플리케이션을 제한하는 것이 가장 좋습니다. 대부분의 경우에 <xref:System.Windows.Controls.Grid> 요소는 레이아웃 컨테이너로 서의 유연성 때문에 중첩된 패널 대신 사용할 수 있습니다. 이 요소를 통해 불필요한 요소를 트리에서 제거하여 애플리케이션 성능을 향상할 수 있습니다.  
   
  다음 예제에서는 만드는 방법을 보여 줍니다.는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 는 중첩 된 <xref:System.Windows.Controls.Panel> 특정 레이아웃을 얻기 위해 요소입니다. 이 특정 예제의 <xref:System.Windows.Controls.DockPanel> 요소를 제공 하는 데 사용 됩니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 구조체와 중첩 <xref:System.Windows.Controls.StackPanel> 요소를 <xref:System.Windows.Controls.Grid>, 및 <xref:System.Windows.Controls.Canvas> 정확 하 게 부모 내의 자식 요소를 배치 하는 데 사용 됩니다 <xref:System.Windows.Controls.DockPanel>합니다.  
   
  [!code-csharp[Nested_Panels#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Nested_Panels/CSharp/nestedpanels.cs#1)]
  [!code-vb[Nested_Panels#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Nested_Panels/VisualBasic/nestedpanels.vb#1)]  
   
- 컴파일된 응용 프로그램은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
+ 컴파일된 애플리케이션은 다음과 같은 새 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다.  
   
  ![중첩된 패널의 이점을 활용하는 UI](../../../../docs/framework/wpf/controls/media/nested-panels.PNG "nested_panels")  
   
@@ -250,15 +250,15 @@ ms.locfileid: "47196631"
   
  <xref:System.Windows.Controls.DockPanel>를 <xref:System.Windows.Controls.Grid>, 및 <xref:System.Windows.Controls.StackPanel> 에 대 한 모든 적절 한 선택은 지역화할 수 있는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]합니다. <xref:System.Windows.Controls.Canvas> 하지만 적합 하지 않습니다, 위치에 배치 하므로 콘텐츠 물론 지역화 하기가 어렵습니다.  
   
- 지역화 가능한 [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]가 포함된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [자동 레이아웃 사용 개요](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)를 참조하세요.  
+ 지역화 가능한 [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]가 포함된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션을 만드는 방법에 대한 자세한 내용은 [자동 레이아웃 사용 개요](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
- [WPF 레이아웃 갤러리 샘플](https://go.microsoft.com/fwlink/?LinkID=160054)  
- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)  
- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)  
- [맞춤, 여백 및 안쪽 여백 개요](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
- [사용자 지정 콘텐츠 줄 바꿈 패널 샘플 만들기](https://go.microsoft.com/fwlink/?LinkID=159979)  
- [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
- [자동 레이아웃 사용 개요](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+## <a name="see-also"></a>참고자료
+- [연습: 내 첫 WPF 데스크톱 애플리케이션](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [WPF 레이아웃 갤러리 샘플](https://go.microsoft.com/fwlink/?LinkID=160054)
+- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
+- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)
+- [맞춤, 여백 및 안쪽 여백 개요](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)
+- [사용자 지정 콘텐츠 줄 바꿈 패널 샘플 만들기](https://go.microsoft.com/fwlink/?LinkID=159979)
+- [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
+- [자동 레이아웃 사용 개요](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)

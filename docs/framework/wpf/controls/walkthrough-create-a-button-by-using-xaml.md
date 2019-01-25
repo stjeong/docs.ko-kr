@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - buttons [WPF]
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
-ms.openlocfilehash: a28a027e3b804de8e40d8c7831e7556cc7f55188
-ms.sourcegitcommit: 81bd16c7435a8c9183d2a7e878a2a5eff7d04584
+ms.openlocfilehash: d88eca573d09c0c40575718a125a65b2d13593d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54249153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606785"
 ---
 # <a name="walkthrough-create-a-button-by-using-xaml"></a>연습: XAML을 사용하여 단추 만들기
 이 연습의 목적은 Windows Presentation Foundation (WPF) 응용 프로그램에서 사용 하기 위해 애니메이션된 단추를 만드는 방법에 알아봅니다. 이 연습에서는 스타일 및 템플릿을 사용 하 여 코드의 재사용 및 단추 선언에서 단추 논리의 분리 허용 하는 사용자 지정된 단추 리소스를 만듭니다. 이 연습에 완전히 기록 됩니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]합니다.  
@@ -361,7 +361,7 @@ ms.locfileid: "54249153"
   
      F5 키를 눌러 응용 프로그램을 실행 하 여 단추 중 하나를 클릭 합니다. 포커스를 여전히 있기 때문에 클릭 한 후 단추를 강조 표시에 유지 된다는 것을 확인 합니다. 또 다른 단추를 클릭 하면 마지막 손실 하는 동안 새 단추 포커스를 얻습니다.  
   
-4.  **추가 대 한 애니메이션** <xref:System.Windows.UIElement.MouseEnter> **하 고** <xref:System.Windows.UIElement.MouseLeave> **:  ** 다음 몇 가지 애니메이션 트리거를 추가합니다. 내에 다음 태그를 추가 합니다 `ControlTemplate.Triggers` 블록입니다.  
+4.  **추가 대 한 애니메이션** <xref:System.Windows.UIElement.MouseEnter> **하 고** <xref:System.Windows.UIElement.MouseLeave> **:** 다음 몇 가지 애니메이션 트리거를 추가합니다. 내에 다음 태그를 추가 합니다 `ControlTemplate.Triggers` 블록입니다.  
   
     ```xaml
     <!-- Animations that start when mouse enters and leaves button. -->  
@@ -431,9 +431,9 @@ ms.locfileid: "54249153"
   
 -   사용자 작업에 대 한 응답에 있는 단추에 대 한 동작을 사용자 지정 (같은 <xref:System.Windows.UIElement.MouseEnter>, <xref:System.Windows.UIElement.MouseLeave>, 및 <xref:System.Windows.Controls.Primitives.ButtonBase.Click>) 애니메이션 효과 포함 하는 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Microsoft Expression Blend를 사용하여 단추 만들기](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md)  
- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [비트맵 효과 개요](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects-overview.md)
+## <a name="see-also"></a>참고자료
+- [Microsoft Expression Blend를 사용하여 단추 만들기](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md)
+- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [비트맵 효과 개요](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects-overview.md)

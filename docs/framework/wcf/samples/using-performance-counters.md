@@ -2,12 +2,12 @@
 title: 성능 카운터 사용
 ms.date: 03/30/2017
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-ms.openlocfilehash: 787a3d08b463980721fb207d029057e14618db5e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 755d93e8165b9747f799571836d6b54e54a5fc45
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44214201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623159"
 ---
 # <a name="using-performance-counters"></a>성능 카운터 사용
 이 샘플에는 사용자 정의 성능 카운터를 만드는 방법과 Windows Communication Foundation (WCF) 성능 카운터에 액세스 하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
@@ -76,5 +76,5 @@ ms.locfileid: "44214201"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
-## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)
+## <a name="see-also"></a>참고자료
+- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

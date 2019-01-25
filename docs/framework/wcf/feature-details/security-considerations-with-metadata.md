@@ -2,18 +2,18 @@
 title: 메타데이터 관련 보안 고려 사항
 ms.date: 03/30/2017
 ms.assetid: e78ef8ab-4f63-4656-ab93-b1deab2666d5
-ms.openlocfilehash: 4afa040744b1b1a8a25addb954d5785436899434
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: fa1a79a0be6682a8459043955a7956f6f8444bf5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585567"
 ---
 # <a name="security-considerations-with-metadata"></a>메타데이터 관련 보안 고려 사항
 메타 데이터 기능에서 Windows Communication Foundation (WCF)을 사용 하는 경우 게시, 검색 및 서비스 메타 데이터를 사용 하 여 보안 문제를 고려 합니다.  
   
 ## <a name="when-to-publish-metadata"></a>메타데이터 게시 시기  
- WCF 서비스는 기본적으로 메타 데이터를 게시 하지 마십시오. WCF 서비스에 대 한 메타 데이터를 게시 하면 명시적으로 활성화 해야 메타 데이터 게시 서비스에 메타 데이터 끝점을 추가 하 여 (참조 [메타 데이터 게시](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)). 메타데이터 게시를 사용하지 않으면 서비스에서 공격 받을 수 있는 부분이 줄어들고 실수로 정보가 공개될 위험이 감소합니다. 모든 서비스에서 메타데이터를 게시해야 하는 것은 아닙니다. 메타데이터를 게시할 필요가 없는 경우 해제된 상태로 두세요. 직접 사용 하 여 서비스 어셈블리에서에서 메타 데이터와 클라이언트 코드를 생성할 수 있습니다 note 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. Svcutil.exe를 사용 하 여 메타 데이터 내보내기에 대 한 자세한 내용은 참조 하세요. [방법: 컴파일된 서비스 코드에서 메타 데이터 내보내기에 사용 하 여 Svcutil.exe](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)합니다.  
+ WCF 서비스는 기본적으로 메타 데이터를 게시 하지 마십시오. WCF 서비스에 대 한 메타 데이터를 게시 하면 명시적으로 활성화 해야 메타 데이터 게시 서비스에 메타 데이터 끝점을 추가 하 여 (참조 [메타 데이터 게시](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)). 메타데이터 게시를 사용하지 않으면 서비스에서 공격 받을 수 있는 부분이 줄어들고 실수로 정보가 공개될 위험이 감소합니다. 모든 서비스에서 메타데이터를 게시해야 하는 것은 아닙니다. 메타데이터를 게시할 필요가 없는 경우 해제된 상태로 두세요. 직접 사용 하 여 서비스 어셈블리에서에서 메타 데이터와 클라이언트 코드를 생성할 수 있습니다 note 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. Svcutil.exe를 사용 하 여 메타 데이터 내보내기에 대 한 자세한 내용은 참조 하세요. [방법: Svcutil.exe를 사용 하 여 컴파일된 서비스 코드에서 메타 데이터를 내보내려면](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)합니다.  
   
 ## <a name="publishing-metadata-using-a-secure-binding"></a>보안 바인딩을 사용하여 메타데이터 게시  
  WCF 안전 하지 않은 제공 하는 기본 메타 데이터 바인딩이 있으며 메타 데이터에 대 한 익명 액세스를 허용 합니다. WCF 서비스를 게시 하는 서비스 메타 데이터 서비스에 대 한 자세한 설명을 포함 하 고 의도적으로 또는 실수로 중요 한 정보가 포함 될 수 있습니다. 예를 들어 서비스 메타데이터에 공개적으로 브로드캐스팅하지 않으려는 인프라 작업 정보가 포함될 수 있습니다. 무단 액세스로부터 서비스 메타데이터를 보호하려면 메타데이터 끝점에 보안 바인딩을 사용합니다. 메타데이터 엔드포인트는 SSL(Secure Sockets Layer)을 사용하여 메타데이터 보안을 유지할 수 있는 HTTP/GET 요청에 응답합니다. 자세한 내용은 [방법: 메타 데이터 끝점 보안](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)합니다.  
@@ -38,6 +38,6 @@ ms.locfileid: "50187597"
 ## <a name="protecting-application-configuration-files"></a>응용 프로그램 구성 파일 보호  
  서비스의 응용 프로그램 구성 파일은 메타데이터 게시 방법과 게시 여부를 제어할 수 있습니다. 적절한 ACL로 응용 프로그램 구성 파일을 보호하여 공격자가 이러한 설정을 수정할 수 없도록 하는 것이 좋습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 메타데이터 엔드포인트 보안 설정](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)  
- [보안](../../../../docs/framework/wcf/feature-details/security.md)
+## <a name="see-also"></a>참고자료
+- [방법: 메타 데이터 끝점 보안](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)
+- [보안](../../../../docs/framework/wcf/feature-details/security.md)

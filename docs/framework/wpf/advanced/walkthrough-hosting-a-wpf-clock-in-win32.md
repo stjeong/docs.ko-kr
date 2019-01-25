@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Win32 code [WPF], WPF interoperation
 - interoperability [WPF], Win32
 ms.assetid: 555e55a7-0851-4ec8-b1c6-0acba7e9b648
-ms.openlocfilehash: ce8209c89430988f57c211d388c6e73b2dc17004
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 5cccc89c8346358bc4f719e1b089a181dd81f970
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579773"
 ---
 # <a name="walkthrough-hosting-a-wpf-clock-in-win32"></a>연습: Win32에서 WPF 시계 호스팅
 삽입할 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 내 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 응용 프로그램을 사용 하 여 <xref:System.Windows.Interop.HwndSource>를 포함 하는 HWND를 제공 하는 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠. 먼저 만듭니다는 <xref:System.Windows.Interop.HwndSource>, CreateWindow와 유사한 매개 변수를 제공 합니다.  그런 합니다 <xref:System.Windows.Interop.HwndSource> 에 대 한는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 내부에 넣으려는 콘텐츠입니다.  HWND를 마지막으로 표시 된 <xref:System.Windows.Interop.HwndSource>합니다. 이 연습에는 혼합을 만드는 방법을 보여 줍니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 안쪽 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 운영 체제를 다시 구현 하는 응용 프로그램 **날짜 및 시간 속성** 대화 합니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "46562257"
  참조 [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)합니다.  
   
 ## <a name="how-to-use-this-tutorial"></a>이 자습서를 사용하는 방법  
- 이 자습서는 상호 운용 응용 프로그램을 생성하는 중요한 단계에 대해 중점적으로 설명합니다. 자습서 샘플을 받으며 [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)하지만 샘플은 최종 제품의 반사 합니다. 기존 시작 된 것 처럼이 자습서의 단계를 설명 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 자신만의 프로젝트 및 아마도 기존 프로젝트를 추가 하는 호스팅된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다. 최종 제품을 비교할 수 있습니다 [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)합니다.  
+ 이 자습서는 상호 운용 애플리케이션을 생성하는 중요한 단계에 대해 중점적으로 설명합니다. 자습서 샘플을 받으며 [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)하지만 샘플은 최종 제품의 반사 합니다. 기존 시작 된 것 처럼이 자습서의 단계를 설명 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 자신만의 프로젝트 및 아마도 기존 프로젝트를 추가 하는 호스팅된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다. 최종 제품을 비교할 수 있습니다 [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)합니다.  
   
 ## <a name="a-walkthrough-of-windows-presentation-framework-inside-win32-hwndsource"></a>Win32 내에서 Windows Presentation Framework의 연습(HwndSource)  
  다음 그래픽에서는 이 자습서의 의도된 최종 제품을 보여 줍니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "46562257"
 ## <a name="clr"></a>/clr  
  이 관리 되지 않는 첫 번째 단계는 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 관리 코드를 호출할 수 있는 프로젝트입니다.  사용 및 사용에 대 한 기본 메서드를 조정 하려면 필요한 Dll에 연결 하는 /clr 컴파일러 옵션을 사용 하면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다.  
   
- C + + 프로젝트 내에서 관리 되는 코드를 사용 하도록 설정 하려면: win32clock 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  에 **일반적인** 속성 페이지 (기본값), 공용 언어 런타임 지원 변경 `/clr`합니다.  
+ C + + 프로젝트 내에서 관리 코드의 사용할 수 있도록 합니다. Win32clock 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  에 **일반적인** 속성 페이지 (기본값), 공용 언어 런타임 지원 변경 `/clr`합니다.  
   
  그런 다음에 대 한 필요한 Dll에 대 한 참조를 추가 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]: PresentationCore.dll, PresentationFramework.dll, System.dll, WindowsBase.dll, UIAutomationProvider.dll 및 UIAutomationTypes.dll 합니다. 다음 지침에서는 운영 체제가 C: 드라이브에 설치되어 있다고 가정합니다.  
   
@@ -58,13 +58,13 @@ ms.locfileid: "46562257"
   
 3.  클릭 **새 참조 추가**찾아보기 탭 클릭, C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationCore.dll을 입력 한 확인을 클릭 합니다.  
   
-4.  PresentationFramework.dll(C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationFramework.dll)에 대해 반복합니다.  
+4.  PresentationFramework.dll를 반복 합니다. C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationFramework.dll.  
   
-5.  WindowsBase.dll(C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\WindowsBase.dll)에 대해 반복합니다.  
+5.  WindowsBase.dll를 반복 합니다. C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\WindowsBase.dll.  
   
-6.  UIAutomationTypes.dll(C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationTypes.dll)에 대해 반복합니다.  
+6.  UIAutomationTypes.dll를 반복 합니다. C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationTypes.dll.  
   
-7.  UIAutomationProvider.dll(C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationProvider.dll)에 대해 반복합니다.  
+7.  UIAutomationProvider.dll를 반복 합니다. C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationProvider.dll.  
   
 8.  클릭 **새 참조 추가**System.dll을 선택 하 고 클릭 **확인**합니다.  
   
@@ -225,7 +225,7 @@ HWND clock = ManagedCode::GetHwnd(hDlg, point.x, point.y, width, height);
   
  이 스크린샷에서 생성 하는 코드를 최종 결과 비교 하려면 참조 [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Interop.HwndSource>  
- [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Interop.HwndSource>
+- [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+- [Win32 시계 상호 운용 샘플](https://go.microsoft.com/fwlink/?LinkID=160051)

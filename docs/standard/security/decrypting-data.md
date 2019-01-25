@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b3e48d5a088fc6cff3dbdaaa77e6fa561c33f400
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 7f41a61fe929bb3eaf691deb75749777c0880aea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530690"
 ---
 # <a name="decrypting-data"></a>데이터 해독
 암호 해독은 암호화의 반대 작업입니다. 비밀 키 암호화의 경우 데이터를 암호화하는 데 사용된 키 및 IV를 모두 알고 있어야 합니다. 공개 키 암호화의 경우 공개 키(개인 키를 사용하여 데이터가 암호화된 경우) 또는 개인 키(공개 키를 사용하여 데이터가 암호화된 경우)를 알고 있어야 합니다.  
@@ -174,7 +174,7 @@ class Class1
 ## <a name="asymmetric-decryption"></a>비대칭 암호 해독  
  일반적으로 당사자(당사자 A)는 공개 키와 개인 키를 둘 다 생성하고 메모리 또는 암호화 키 컨테이너에 키를 저장합니다.  당사자 A가 다른 당사자(당사자 B)에게 공개 키를 보냅니다.  구성원 B는 공개 키를 사용하여 데이터를 암호화하고 데이터를 다시 구성원 A에게 보냅니다. 구성원 A는 데이터를 받은 다음 해당하는 개인 키를 사용하여 데이터를 해독합니다.  암호 해독은 당사자 A가 당사자 B에서 데이터를 암호화하는 데 사용한 공개 키에 해당하는 개인 키를 사용하는 경우에만 성공합니다.  
   
- 안전한 암호화 키 컨테이너에 비대칭 키를 저장하는 방법 및 나중에 비대칭 키를 검색하는 방법에 대한 자세한 내용은 [방법: 키 컨테이너에 비대칭 키 저장](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)을 참조하세요.  
+ 나중에 비대칭 키를 검색 하는 방법과 안전한 암호화 키 컨테이너에 있는 비대칭 키를 저장 하는 방법에 대 한 정보에 대 한 참조 [방법: 키 컨테이너에 비대칭 키 저장](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)합니다.  
   
  다음 예제에서는 대칭 키 및 IV를 나타내는 두 바이트 배열의 암호 해독을 보여 줍니다.  제3자에게 쉽게 보낼 수 있는 형식으로 <xref:System.Security.Cryptography.RSACryptoServiceProvider> 개체에서 비대칭 공개 키를 추출하는 방법에 대한 자세한 내용은 [Encrypting Data](../../../docs/standard/security/encrypting-data.md)이라는 관리되는 스트림의 값으로 초기화합니다.  
   
@@ -204,6 +204,6 @@ SymmetricIV = RSA.Decrypt( EncryptedSymmetricIV , false);
   
 ## <a name="see-also"></a>참고자료
 
-- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)  
-- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)  
+- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)
+- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

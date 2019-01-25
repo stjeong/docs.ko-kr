@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
-ms.openlocfilehash: fe22dbdff0e5e9ea6bfe55fc24c492414e01cd6f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dceda9dce794e0a08cc9cd7905cf3cd0685898d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569156"
 ---
 # <a name="retrieving-objects-from-the-identity-cache"></a>ID 캐시에서 개체 검색
 이 항목은 <xref:System.Data.Linq.DataContext>에서 관리하는 ID 캐시에서 개체를 반환하는 LINQ to SQL 쿼리의 형식에 대해 설명합니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33357610"
  일반적으로 LINQ to SQL 쿼리의 경우 ID 캐시에서 개체를 반환하려면 쿼리가 개체의 기본 키를 기반으로 해야 하며 단일 개체를 반환해야 합니다. 특히 쿼리는 아래에 나와 있는 일반적인 형태 중 하나여야 합니다.  
   
 > [!NOTE]
->  미리 컴파일된 쿼리는 ID 캐시에서 개체를 반환하지 않습니다. 미리 컴파일된 쿼리에 대 한 자세한 내용은 참조 하십시오. <xref:System.Data.Linq.CompiledQuery> 및 [하는 방법: 저장소 및 쿼리를 다시 사용할](../../../../../../docs/framework/data/adonet/sql/linq/how-to-store-and-reuse-queries.md)합니다.  
+>  미리 컴파일된 쿼리는 ID 캐시에서 개체를 반환하지 않습니다. 미리 컴파일된 쿼리에 대 한 자세한 내용은 참조 하세요. <xref:System.Data.Linq.CompiledQuery> 고 [방법: 저장 및 쿼리를 다시 사용](../../../../../../docs/framework/data/adonet/sql/linq/how-to-store-and-reuse-queries.md)합니다.  
   
  ID 캐시에서 개체를 검색하려면 쿼리는 다음과 같은 일반적인 형태 중 하나로 되어 있어야 합니다.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "33357610"
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]
  [!code-vb[L2S_QueryCache#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb/module1.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
- [개체 ID](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [개체 ID](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)
+## <a name="see-also"></a>참고자료
+- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [개체 ID](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [개체 ID](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)

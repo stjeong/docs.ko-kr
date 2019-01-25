@@ -7,12 +7,12 @@ helpviewer_keywords:
 - delegate keyword [Visual Basic]
 - Delegate statement [Visual Basic]
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
-ms.openlocfilehash: 4718c0a6e332d644a7f54c79246df95f841058d0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 1ed2dc91d1a2ea9bade11902aac553e24c0607ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583667"
 ---
 # <a name="delegate-statement"></a>Delegate 문
 대리자를 선언 하는 데 사용 합니다. 대리자는 참조 형식을 참조 하는 `Shared` 메서드 형식 또는 개체의 인스턴스 메서드. 매개 변수 및 반환 형식을 일치 하는 프로시저는이 대리자 클래스의 인스턴스를 만드는 데 사용할 수 있습니다. 다음 대리자 인스턴스를 사용 하 여 프로시저에 나중에 호출할 수 있습니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "50199775"
 |`Shadows`|선택 사항입니다. 이 대리자는 동일 하 게 명명 된 프로그래밍 요소 또는 기본 클래스에서 오버 로드 된 요소 집합을 다시 선언 하 고 숨기도록를 나타냅니다. 모든 종류의 선언된 요소를 다른 종류로 섀도잉할 수 있습니다.<br /><br /> 섀도잉된 요소는 섀도잉 요소에 액세스할 수 없는 위치를 제외하고 해당 요소를 섀도잉하는 파생 클래스 내에서 사용할 수 없습니다. 예를 들어 경우는 `Private` 요소 기본 클래스 요소에 액세스할 수 있는 권한이 없는 코드를 숨기면는 `Private` 요소 대신 기본 클래스 요소에 액세스 합니다.|  
 |`Sub`|선택 사항 이지만 하나 `Sub` 또는 `Function` 나타나야 합니다. 이 절차를 대리자로 선언 `Sub` 값을 반환 하지 않는 프로시저입니다.|  
 |`Function`|선택 사항 이지만 하나 `Sub` 또는 `Function` 나타나야 합니다. 이 절차를 대리자로 선언 `Function` 값을 반환 하는 프로시저입니다.|  
-|`name`|필수. 대리자 형식의 이름 표준 변수 명명 규칙을 따릅니다.|  
+|`name`|필수 요소. 대리자 형식의 이름 표준 변수 명명 규칙을 따릅니다.|  
 |`typeparamlist`|선택 사항입니다. 이 대리자에 대 한 형식 매개 변수의 목록입니다. 여러 형식 매개 변수는 쉼표로 구분 됩니다. 필요에 따라 각 형식 매개 변수에 선언할 수 변형을 사용 하 여 `In` 고 `Out` 제네릭 한정자입니다. 묶어야 합니다 [형식 목록](../../../visual-basic/language-reference/statements/type-list.md) 괄호 안에 사용 하 여 정의 하 고는 `Of` 키워드.|  
 |`parameterlist`|선택 사항입니다. 호출 될 때 프로시저에 전달 되는 매개 변수의 목록입니다. 묶어야 합니다 [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md) 괄호 안에 있습니다.|  
 |`type`|지정 하는 경우 필요한를 `Function` 프로시저입니다. 반환 값의 데이터 형식입니다.|  
@@ -64,12 +64,12 @@ ms.locfileid: "50199775"
   
  [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)  
- [대리자](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [공 분산 및 반공 분산](../../programming-guide/concepts/covariance-contravariance/index.md)  
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+## <a name="see-also"></a>참고자료
+- [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Of](../../../visual-basic/language-reference/statements/of-clause.md)
+- [대리자](../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Visual Basic의 제네릭 형식](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [공 분산 및 반공 분산](../../programming-guide/concepts/covariance-contravariance/index.md)
+- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
