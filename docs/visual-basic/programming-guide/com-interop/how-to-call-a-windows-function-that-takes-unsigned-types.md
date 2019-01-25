@@ -1,5 +1,5 @@
 ---
-title: '방법: 부호 없는 형식을 사용하는 Windows 함수 호출(Visual Basic)'
+title: '방법: 부호 없는 형식 (Visual Basic)를 사용 하는 Windows 함수를 호출 합니다.'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Windows functions [Visual Basic], calling
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: d66b74f06abe6b337c24859c444f7a8c2aa52c13
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 092f1acf6e6a8468890a371836979db4e0692d1e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54669317"
 ---
-# <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>방법: 부호 없는 형식을 사용하는 Windows 함수 호출(Visual Basic)
+# <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>방법: 부호 없는 형식 (Visual Basic)를 사용 하는 Windows 함수를 호출 합니다.
 클래스, 모듈 또는 부호 없는 정수 형식의 멤버가 있는 구조를 사용 중인 경우에 Visual Basic을 사용 하 여 이러한 멤버를 액세스할 수 있습니다.  
   
 ### <a name="to-call-a-windows-function-that-takes-an-unsigned-type"></a>Windows 함수 호출을 사용 하는 부호 없는 형식  
@@ -77,9 +77,9 @@ ms.locfileid: "43524567"
     > [!IMPORTANT]
     >  Windows API를 호출 하려면 부분 신뢰 상황에서 해당 실행에 영향을 줄 수 있는 비관리 코드 권한이 있어야 합니다. 자세한 내용은 <xref:System.Security.Permissions.SecurityPermission> 하 고 [코드 액세스 권한](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [UInteger 데이터 형식](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
- [Declare 문](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+## <a name="see-also"></a>참고자료
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [UInteger 데이터 형식](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)
+- [Declare 문](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

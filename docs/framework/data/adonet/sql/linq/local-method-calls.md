@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c34b5012-aee9-4994-9364-1d99d12b7463
-ms.openlocfilehash: 366c174a13e9a1a1928ef943febf199ae8485dfb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 249ed8425f175b80cb55289c2a7fe68742d8389c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655727"
 ---
 # <a name="local-method-calls"></a>로컬 메서드 호출
 로컬 메서드 호출은 개체 모델 내에서 실행되는 작업입니다. 원격 메서드 호출은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 SQL로 변환하고 실행을 위해 데이터베이스 엔진으로 전송하는 작업입니다. 로컬 메서드 호출은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 호출을 SQL로 변환할 수 없는 경우 필요합니다. 그렇지 않으면 <xref:System.InvalidOperationException>이 throw됩니다.  
@@ -26,5 +26,5 @@ ms.locfileid: "33352440"
  [!code-csharp[DlinqLocalMethodCall#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqLocalMethodCall/cs/northwind.cs#2)]
  [!code-vb[DlinqLocalMethodCall#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqLocalMethodCall/vb/northwind.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## <a name="see-also"></a>참고자료
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

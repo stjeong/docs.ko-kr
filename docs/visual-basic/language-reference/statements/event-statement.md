@@ -18,12 +18,12 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic], Event statements
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-ms.openlocfilehash: 14e70a07469d6bb2701884d8646d161c78e65dc0
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3a13b1a3d3e44f2c309e031e23972a5326ed3faa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653621"
 ---
 # <a name="event-statement"></a>Event 문
 사용자 정의된 이벤트를 선언합니다.  
@@ -91,7 +91,7 @@ End Event
   
  `Event`는 모듈 수준에서만 사용할 수 있습니다. 즉, 합니다 *선언 컨텍스트* 이벤트 클래스, 구조체, 모듈 또는 인터페이스 여야 하 고 소스 파일, 네임 스페이스, 프로시저 또는 블록일 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
   
- 대부분의 경우 이 항목의 구문 섹션에 있는 첫 번째 구문을 이벤트 선언에 사용할 수 있습니다. 그러나 일부 시나리오에서는 이벤트의 세부 동작을 더 많이 제어해야 합니다. 이 항목의 구문 섹션에 있는 마지막 구문에서는 `Custom` 키워드를 사용하여 사용자 지정 이벤트를 정의할 수 있도록 함으로써 해당 제어를 제공합니다. 사용자 지정 이벤트에서는 코드가 이벤트에서 이벤트 처리기를 추가하거나 제거할 때 또는 코드에서 이벤트를 발생시킬 때 수행되는 동작을 정확히 지정합니다. 예를 들어 참조 [방법: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md) 고 [방법: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)합니다.  
+ 대부분의 경우 이 항목의 구문 섹션에 있는 첫 번째 구문을 이벤트 선언에 사용할 수 있습니다. 그러나 일부 시나리오에서는 이벤트의 세부 동작을 더 많이 제어해야 합니다. 이 항목의 구문 섹션에 있는 마지막 구문에서는 `Custom` 키워드를 사용하여 사용자 지정 이벤트를 정의할 수 있도록 함으로써 해당 제어를 제공합니다. 사용자 지정 이벤트에서는 코드가 이벤트에서 이벤트 처리기를 추가하거나 제거할 때 또는 코드에서 이벤트를 발생시킬 때 수행되는 동작을 정확히 지정합니다. 예제는 [방법: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md) 고 [방법: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 이벤트를 사용하여 10초부터 0초까지 카운트 다운합니다. 코드는 여러 가지 이벤트 관련 메서드, 속성 및 문을 보여 줍니다. 여기에는 `RaiseEvent` 문이 포함됩니다.  
@@ -117,15 +117,15 @@ End Event
 > [!NOTE]
 >  `My.Application.DoEvents` 메서드는 폼과 같은 방식으로 이벤트를 처리하지 않습니다. 폼에서 이벤트를 직접 처리하도록 하려면 다중 스레딩을 사용할 수 있습니다. 자세한 내용은 [관리 되는 스레딩](../../../standard/threading/index.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [RaiseEvent 문](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
- [Implements 문](../../../visual-basic/language-reference/statements/implements-statement.md)  
- [이벤트](../../../visual-basic/programming-guide/language-features/events/index.md)  
- [AddHandler 문](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler 문](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
- [Delegate 문](../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [어떻게: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)  
- [어떻게: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)  
- [공유](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+## <a name="see-also"></a>참고자료
+- [RaiseEvent 문](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+- [Implements 문](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [이벤트](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [AddHandler 문](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler 문](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Delegate 문](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [방법: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+- [방법: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)
+- [공유](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)

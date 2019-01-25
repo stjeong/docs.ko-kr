@@ -2,12 +2,12 @@
 title: ASP.NET AJAX용 WCF 서비스 만들기
 ms.date: 03/30/2017
 ms.assetid: 04c0402c-e617-4ba5-aedf-d17692234776
-ms.openlocfilehash: 4d3953046a796686a465cd8096b8f2ba930aa9fd
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d6d00b5b8839d519ffa3609eafffd4b086689449
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43743149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613531"
 ---
 # <a name="creating-wcf-services-for-aspnet-ajax"></a>ASP.NET AJAX용 WCF 서비스 만들기
 Microsoft ASP.NET AJAX를 사용하면 응답성이 높고 친숙한 사용자 인터페이스 요소를 통해 풍부한 사용자 경험을 제공하는 웹 페이지를 빠르게 만들 수 있습니다. ASP.NET AJAX는 크로스 브라우저 ECMAScript(JavaScript) 및 DHTML(동적 HTML) 기술을 통합하는 클라이언트 스크립트 라이브러리를 제공하며 ASP.NET 2.0 서버 기반 개발 플랫폼과 통합됩니다. ASP.NET AJAX를 사용하여 사용자 환경 및 웹 응용 프로그램의 효율성을 개선할 수 있습니다.  
@@ -20,9 +20,9 @@ Microsoft ASP.NET AJAX를 사용하면 응답성이 높고 친숙한 사용자 �
   
  Visual Studio 템플릿을 사용하지 않는 경우 다음 두 가지 방법으로 ASP.NET AJAX 엔드포인트를 만듭니다.  
   
--   구성을 사용하지 않고 동적 호스트 활성화를 사용하여 엔드포인트를 만듭니다. 이 방법은 WCF 구성 시스템에 익숙하지 않은 경우 사용할 수 있는 가장 기본적인 방법입니다. 자세한 내용은 [방법: ASP.NET AJAX 끝점 없이 사용 하 여 구성을 추가](../../../../docs/framework/wcf/feature-details/how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)합니다.  
+-   구성을 사용하지 않고 동적 호스트 활성화를 사용하여 엔드포인트를 만듭니다. 이 방법은 WCF 구성 시스템에 익숙하지 않은 경우 사용할 수 있는 가장 기본적인 방법입니다. 자세한 내용은 [방법: 구성을 사용 하지 않고 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)합니다.  
   
--   구성을 사용 하 여 WCF 서비스에 AJAX 사용 끝점을 추가 합니다. 자세한 내용은 [방법: ASP.NET AJAX 끝점 추가 구성을 사용 하 여](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)입니다.  
+-   구성을 사용 하 여 WCF 서비스에 AJAX 사용 끝점을 추가 합니다. 자세한 내용은 [방법: 구성을 사용 하 여 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)합니다.  
   
  에 설명 된 웹 프로그래밍 모델 합니다 [WCF 웹 HTTP 프로그래밍 모델 개요](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md) ASP.NET AJAX 서비스를 사용할 수 있습니다. 구체적으로는 다음과 같습니다.  
   
@@ -57,8 +57,8 @@ Microsoft ASP.NET AJAX를 사용하면 응답성이 높고 친숙한 사용자 �
   
  WCF에서 AJAX 끝점 ASP.NET AJAX 프레임 워크 없이 사용 될 수 있습니다. 이렇게 하면 WCF의 AJAX 지원 아키텍처 이해가 필요 합니다. 이 아키텍처의 논의 참조 하세요 [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)합니다. 이러한 방법을 보여 주는 코드 샘플을 참조 하세요. 합니다 [JSON 및 XML을 사용 하 여 AJAX 서비스](../../../../docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF 웹 HTTP 프로그래밍 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
- [방법: 구성을 사용하지 않고 ASP.NET AJAX 엔드포인트 추가](../../../../docs/framework/wcf/feature-details/how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)  
- [방법: 구성을 사용하여 ASP.NET AJAX 엔드포인트 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)  
- [방법: ASP.NET AJAX 엔드포인트에 대해 HTTP POST 및 HTTP GET 요청 중에서 선택](../../../../docs/framework/wcf/feature-details/http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md)
+## <a name="see-also"></a>참고자료
+- [WCF 웹 HTTP 프로그래밍 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [방법: 구성을 사용 하지 않고 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)
+- [방법: 구성을 사용 하 여 ASP.NET AJAX 끝점 추가](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+- [방법: ASP.NET AJAX 끝점에 대 한 요청에서 HTTP POST 및 HTTP GET 간의 선택](../../../../docs/framework/wcf/feature-details/http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md)

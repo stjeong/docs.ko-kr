@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 1887d31d-7006-4491-93b3-68fd5b05f71d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b5232a01d877484591df63afc68f672327d4b9d5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8f125d322a5a3e2841d6b1ba1f2f8d5fe9745870
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569705"
 ---
 # <a name="disconnectedcontext-mda"></a>disconnectedContext MDA
 `disconnectedContext` MDA(관리 디버깅 도우미)는 CLR이 COM 개체 관련 요청을 서비스하는 동안 연결이 끊어진 아파트 또는 컨텍스트로 전환하려고 하면 활성화됩니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "33386251"
 ## <a name="output"></a>출력  
  연결이 끊어진 아파트 또는 컨텍스트의 컨텍스트 쿠키를 보고합니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -46,7 +46,7 @@ ms.locfileid: "33386251"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)

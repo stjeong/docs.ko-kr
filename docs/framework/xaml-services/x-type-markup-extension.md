@@ -1,5 +1,5 @@
 ---
-title: x:Type 태그 확장명
+title: x:Type 태그 확장
 ms.date: 03/30/2017
 f1_keywords:
 - x:TypeExtension
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - TargetType attribute [XAML Services]
 - Type markup extension in XAML [XAML Services]
 ms.assetid: e0e0ce6f-e873-49c7-8ad7-8b840eb353ec
-ms.openlocfilehash: e4d56c5b5deda0bd1df8827020e0b76cc6276c1c
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 2fc44163db99be5a0f2ddb2820053a5bdda3ccbe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54668992"
 ---
-# <a name="xtype-markup-extension"></a>x:Type 태그 확장명
+# <a name="xtype-markup-extension"></a>x:Type 태그 확장
 CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기본 형식입니다.  
   
 ## <a name="xaml-attribute-usage"></a>XAML 특성 사용  
@@ -41,7 +41,7 @@ CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기
 |||  
 |-|-|  
 |`prefix`|선택 사항입니다. 기본이 아닌 XAML 네임 스페이스에 매핑되는 접두사입니다. 접두사 지정 자주 필요 하지 않습니다. 설명 부분을 참조하세요.|  
-|`typeNameValue`|필수. 현재 기본 XAML 네임 스페이스; 확인할 수 있는 형식 이름 지정 된 접두사 경우 매핑됩니다 또는 `prefix` 제공 됩니다.|  
+|`typeNameValue`|필수 요소. 현재 기본 XAML 네임 스페이스; 확인할 수 있는 형식 이름 지정 된 접두사 경우 매핑됩니다 또는 `prefix` 제공 됩니다.|  
   
 ## <a name="remarks"></a>설명  
  합니다 `x:Type` 태그 확장에는 비슷한 기능을 합니다 `typeof()` C# 연산자 또는 `GetType` Microsoft Visual Basic의 연산자입니다.  
@@ -52,7 +52,7 @@ CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기
   
  특정 프레임 워크 구현에서는 일부 속성을 수행할 <xref:System.Type> 으로 값 형식 이름의 직접 수락할 수 있습니다 (형식의 문자열 값 `Name`). 그러나이 동작을 구현 복잡 한 시나리오입니다. 예를 들어 다음에 나오는 "WPF 사용 정보" 섹션을 참조 합니다.  
   
- 특성 구문은 이러한 태그 확장에 가장 많이 사용되는 구문입니다. `x:Type` 식별자 문자열 다음에 나오는 문자열 토큰은 기본 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 확장명 클래스의 <xref:System.Windows.Markup.TypeExtension> 값으로 할당됩니다. 이 특성의 값은 CLR 형식에 따라.NET Framework XAML 서비스에 대 한 기본 XAML 스키마 컨텍스트에서 <xref:System.Reflection.MemberInfo.Name%2A> 원하는 형식의 포함 또는 <xref:System.Reflection.MemberInfo.Name%2A> 앞에 기본이 아닌 XAML 네임 스페이스에 대 한 접두사 매핑입니다.  
+ 특성 구문은 이러한 태그 확장에 가장 많이 사용되는 구문입니다. `x:Type` 식별자 문자열 다음에 나오는 문자열 토큰은 기본 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 확장 클래스의 <xref:System.Windows.Markup.TypeExtension> 값으로 할당됩니다. 이 특성의 값은 CLR 형식에 따라.NET Framework XAML 서비스에 대 한 기본 XAML 스키마 컨텍스트에서 <xref:System.Reflection.MemberInfo.Name%2A> 원하는 형식의 포함 또는 <xref:System.Reflection.MemberInfo.Name%2A> 앞에 기본이 아닌 XAML 네임 스페이스에 대 한 접두사 매핑입니다.  
   
  `x:Type` 개체 요소 구문에서 태그 확장을 사용할 수 있습니다. 이 경우 값을 지정 하는 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 제대로 확장을 초기화 하기 위해 속성이 필요한 합니다.  
   
@@ -79,8 +79,8 @@ CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기
   
  Wpf에서 느슨한 XAML (태그 컴파일되지 않은 XAML)의 경우에 XAML 2009 기능을 사용할 수 있습니다. WPF에 대한 태그로 컴파일된 XAML 및 BAML 형식의 XAML은 현재 XAML 2009 키워드 및 기능을 지원하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Style>  
- [스타일 지정 및 템플릿](../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [태그 확장 및 WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Style>
+- [스타일 지정 및 템플릿](../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [태그 확장 및 WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

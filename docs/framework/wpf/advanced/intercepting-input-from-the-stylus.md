@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ', '
 - ', '
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
-ms.openlocfilehash: c012eeb7ef7dad8c52b8b9a5f153582710c1fd73
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 5384a49461886ba184a0a128467c864b37c0efc9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43788167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54667035"
 ---
 # <a name="intercepting-input-from-the-stylus"></a>스타일러스에서 입력 가로채기
 합니다 <xref:System.Windows.Input.StylusPlugIns> 아키텍처를 통해 하위 수준 제어를 구현 하기 위한 메커니즘을 제공 <xref:System.Windows.Input.Stylus> 입력과 디지털 잉크 생성 <xref:System.Windows.Ink.Stroke> 개체입니다. <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> 클래스는 사용자 지정 동작을 구현 하 고 최적의 성능을 위해 스타일러스 장치에서 가져온 데이터의 스트림으로 적용 메커니즘을 제공 합니다.  
@@ -70,6 +70,6 @@ ms.locfileid: "43788167"
 ## <a name="conclusion"></a>결론  
  직접 파생 시켜 <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> 클래스에 삽입 하 <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> 컬렉션 디지털 잉크의 동작을 크게 향상 시킬 수 있습니다. 에 액세스할 수는 <xref:System.Windows.Input.StylusPoint> 데이터를 사용자 지정할 수 있으므로 생성 되는 <xref:System.Windows.Input.Stylus> 입력 합니다. 이러한 하위 수준 액세스를 갖고 있으므로 <xref:System.Windows.Input.StylusPoint> 데이터 잉크 모음 및 렌더링 최적의 성능으로 응용 프로그램을 구현할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [고급 잉크 처리](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)  
- [액세스 및 조작을 펜 입력](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [고급 잉크 처리](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)
+- [액세스 및 조작을 펜 입력](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

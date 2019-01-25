@@ -2,12 +2,12 @@
 title: Custom Secure Metadata Endpoint
 ms.date: 03/30/2017
 ms.assetid: 9e369e99-ea4a-49ff-aed2-9fdf61091a48
-ms.openlocfilehash: d9c1e8755e32f3d1a38287e2e88d1026c27af1e8
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d69bc43616ee54a06d5c8f61fbb0afd4618a0202
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50191235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676755"
 ---
 # <a name="custom-secure-metadata-endpoint"></a>Custom Secure Metadata Endpoint
 이 샘플에는 비 메타 데이터 교환 바인딩 중 하나를 사용 하는 보안 메타 데이터 끝점이 있는 서비스를 구현 하는 방법 및 구성 하는 방법을 보여 줍니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 또는 인출 하는 클라이언트는 이러한 메타 데이터 끝점에서 메타 데이터입니다. 메타데이터 엔드포인트를 노출하는 데 시스템에서 제공한 두 가지 바인딩, mexHttpBinding 및 mexHttpsBinding을 사용할 수 있습니다. mexHttpBinding은 HTTP를 통해 비보안 방식으로 메타데이터 엔드포인트를 노출하는 데 사용되고, mexHttpsBinding은 HTTPS를 통해 보안 방식으로 메타데이터 엔드포인트를 노출하는 데 사용됩니다. 이 샘플에서는 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 보안 메타데이터 엔드포인트를 노출하는 방법을 보여 줍니다. 바인딩의 보안 설정을 변경하려고 하지만 HTTPS를 사용하지 않으려는 경우 이 방법을 사용할 수 있습니다. mexHttpsBinding을 사용하면 메타데이터 엔드포인트가 보안되지만 바인딩 설정은 수정할 수 없습니다.  
@@ -140,7 +140,7 @@ ChannelFactory<ICalculator> cf = new    ChannelFactory<ICalculator>(endpoint.Bin
   
 1.  샘플 설치 폴더에서 Setup.bat를 실행하여 이 작업은 샘플 실행에 필요한 모든 인증서를 설치합니다. Setup.bat에서 setupCertTool.bat를 실행 하 여 설치 되는 FindPrivateKey.exe 도구를 사용 한다는 점에 유의 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
-2.  \MetadataResolverClient\bin 또는 \SvcutilClient\bin에서 클라이언트 응용 프로그램을 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
+2.  \MetadataResolverClient\bin 또는 \SvcutilClient\bin에서 클라이언트 응용 프로그램을 실행합니다. 클라이언트 콘솔 애플리케이션에 클라이언트 동작이 표시됩니다.  
   
 3.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
@@ -186,4 +186,4 @@ ChannelFactory<ICalculator> cf = new    ChannelFactory<ICalculator>(endpoint.Bin
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\CustomMexEndpoint`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

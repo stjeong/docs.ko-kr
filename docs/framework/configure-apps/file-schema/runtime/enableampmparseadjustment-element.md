@@ -4,19 +4,19 @@ ms.date: 03/30/2017
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cf56a2720ab407d05b8356280913445c15a17020
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 97bb5912ec4d384260e3809166efacded8e2b389
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679099"
 ---
 # <a name="ltenableampmparseadjustmentgt-element"></a>&lt;EnableAmPmParseAdjustment&gt; 요소
 날짜 및 시간 구문 분석 메서드에 일, 월, 시간 및 AM/PM 지정자를 포함 하는 날짜 문자열을 구문 분석 조정 된 규칙 집합을 사용할지 여부를 결정 합니다.  
   
  \<configuration>  
  \<runtime>  
-\<EnableAmPmParseAdjustment >  
+\<EnableAmPmParseAdjustment>  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,7 +47,7 @@ ms.locfileid: "53611076"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -76,11 +76,11 @@ ms.locfileid: "53611076"
   
  다음 표에서 차이 보여 줍니다.는 <xref:System.DateTime> 경우이 값을 <xref:System.DateTime.Parse%28System.String%29?displayProperty=nameWithType> 메서드 문자열을 구문 분석 하는 "" 4 월 10 6 AM "와 `<EnableAmPmParseAdjustment>` 요소의 `enabled` 속성이"0"또는"1"로 설정. 오늘 날짜가 2017 년 1 월 5 일 이며 지정된 된 문화권의 "G" 서식 문자열을 사용 하 여 형식이 처럼 날짜를 표시 가정 합니다.  
   
-|문화권 이름|사용 하도록 설정 "0" =|사용 하도록 설정 = "1"|  
+|문화권 이름|enabled="0"|enabled="1"|  
 |------------------|------------------|------------------|  
 |en-US|2017 년 1 월 5 오전 4 시|2017 년 4 월 10 6시: 00 AM|  
 |en-GB|5/1/2017 6:00:00|10/4/2017 6:00:00|  
   
-## <a name="see-also"></a>참고 항목  
-- [\<런타임 > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)  
+## <a name="see-also"></a>참고자료
+- [\<런타임 > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
 - [\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)

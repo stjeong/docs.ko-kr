@@ -7,17 +7,17 @@ dev_langs:
 helpviewer_keywords:
 - structured navigation [WPF]
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26
-ms.openlocfilehash: 2264686f34123e74bf7d24ce80877742d952f35d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 61a0684b55ae1e40f264db2af3607b07f2fb33a9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45970294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612036"
 ---
 # <a name="structured-navigation-overview"></a>구조적 탐색 개요
-호스팅될 수 있는 콘텐츠를 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)], <xref:System.Windows.Controls.Frame>, 또는 <xref:System.Windows.Navigation.NavigationWindow> 팩에서 식별할 수 있는 페이지로 구성 됩니다 [!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)] 하이퍼링크 탐색 하 고 있습니다. 하이퍼링크를 통해 정의되는 페이지 및 페이지 탐색 방법의 구조를 탐색 토폴로지라고 합니다. 이 토폴로지는 다양한 응용 프로그램 형식, 특히 문서를 탐색하는 응용 프로그램에 적합합니다. 해당 응용 프로그램의 경우 한쪽 페이지가 다른 페이지에 대해 아무것도 알 필요 없이 사용자가 페이지 사이에서 이동할 수 있습니다.  
+호스팅될 수 있는 콘텐츠를 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)], <xref:System.Windows.Controls.Frame>, 또는 <xref:System.Windows.Navigation.NavigationWindow> 팩에서 식별할 수 있는 페이지로 구성 됩니다 [!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)] 하이퍼링크 탐색 하 고 있습니다. 하이퍼링크를 통해 정의되는 페이지 및 페이지 탐색 방법의 구조를 탐색 토폴로지라고 합니다. 이 토폴로지는 다양한 애플리케이션 형식, 특히 문서를 탐색하는 애플리케이션에 적합합니다. 해당 애플리케이션의 경우 한쪽 페이지가 다른 페이지에 대해 아무것도 알 필요 없이 사용자가 페이지 사이에서 이동할 수 있습니다.  
   
- 하지만 다른 유형의 응용 프로그램 형식에는 페이지를 탐색할 때 알아야 하는 페이지가 있습니다. 예를 들어 조직의 모든 직원을 나열하는 하나의 "직원 목록" 페이지가 있는 인사 관리 응용 프로그램을 살펴보겠습니다. 이 페이지에서 사용자는 하이퍼링크를 클릭하여 새 직원을 추가할 수 있습니다. 클릭되면 페이지가 "직원 추가" 페이지로 이동하여 새 직원의 세부 정보를 수집하고 이를 "직원 목록" 페이지로 반환하여 새 직원을 만들고 목록을 업데이트합니다. 이 탐색 스타일은 처리를 수행하고 값을 반환하는 구조적 프로그래밍이라고 알려진 메서드 호출과 비슷합니다. 마찬가지로 이 탐색 스타일을 *구조적 탐색*이라고 합니다.  
+ 하지만 다른 유형의 애플리케이션 형식에는 페이지를 탐색할 때 알아야 하는 페이지가 있습니다. 예를 들어 조직의 모든 직원을 나열하는 하나의 "직원 목록" 페이지가 있는 인사 관리 애플리케이션을 살펴보겠습니다. 이 페이지에서 사용자는 하이퍼링크를 클릭하여 새 직원을 추가할 수 있습니다. 클릭되면 페이지가 "직원 추가" 페이지로 이동하여 새 직원의 세부 정보를 수집하고 이를 "직원 목록" 페이지로 반환하여 새 직원을 만들고 목록을 업데이트합니다. 이 탐색 스타일은 처리를 수행하고 값을 반환하는 구조적 프로그래밍이라고 알려진 메서드 호출과 비슷합니다. 마찬가지로 이 탐색 스타일을 *구조적 탐색*이라고 합니다.  
   
  <xref:System.Windows.Controls.Page> 클래스에는 구조적된 탐색에 대 한 지원을 구현 하지 않습니다. 대신 합니다 <xref:System.Windows.Navigation.PageFunction%601> 클래스에서 파생 되며 <xref:System.Windows.Controls.Page> 구조적된 탐색에 필요한 기본 생성자를 사용 하 여 확장 하 고 있습니다. 이 항목에서는 구조적된 탐색에 사용 하 여 설정 하는 방법을 보여 줍니다. <xref:System.Windows.Navigation.PageFunction%601>합니다.  
   
@@ -167,9 +167,9 @@ ms.locfileid: "45970294"
   
  예를 들어 사용자로부터 충분한 데이터를 수집하거나 작업을 수행하기 위해 호출 페이지에 여러 페이지가 필요한 경우가 있습니다. 여러 페이지를 사용하는 것을 "마법사"라고 합니다.  
   
- 다른 경우에는 구조적 탐색을 기반으로 효과적으로 작동하는 복잡한 탐색 토폴로지가 응용 프로그램에 포함될 수 있습니다. 자세한 내용은 [탐색 토폴로지 개요](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)를 참조하세요.  
+ 다른 경우에는 구조적 탐색을 기반으로 효과적으로 작동하는 복잡한 탐색 토폴로지가 애플리케이션에 포함될 수 있습니다. 자세한 내용은 [탐색 토폴로지 개요](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Navigation.PageFunction%601>  
- <xref:System.Windows.Navigation.NavigationService>  
- [탐색 토폴로지 개요](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Navigation.PageFunction%601>
+- <xref:System.Windows.Navigation.NavigationService>
+- [탐색 토폴로지 개요](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)

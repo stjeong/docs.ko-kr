@@ -20,12 +20,12 @@ helpviewer_keywords:
 - quotation mark (") [XAML Services]
 - less-than (<) character [XAML Services]
 ms.assetid: 6896d0ce-74f7-420a-9ab4-de9bbf390e8d
-ms.openlocfilehash: 5ef489498cdc8716f7599124138f9ecf8945ac9a
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 03ce1645b859e9c3ebe470131ae2aee578cb366f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33564773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54661351"
 ---
 # <a name="xml-character-entities-and-xaml"></a>XML 문자 엔터티 및 XAML
 XAML은 특수 문자를 위해 XML에 정의된 문자 엔터티를 사용합니다. 이 항목에서는 일부 특정 문자 엔터티 및 XAML의 다른 XML 개념에 대한 일반적인 고려 사항을 설명합니다.  
@@ -62,8 +62,8 @@ XAML은 특수 문자를 위해 XML에 정의된 문자 엔터티를 사용합�
 ## <a name="xml-processing-instructions"></a>XML 처리 명령  
  XAML은 XML 처리 명령을 XML 사양에 따라 처리합니다. 이 사양에서는 이 명령을 거쳐야 한다고 지정합니다. .NET Framework XAML 서비스에서 처리 하는 XAML 처리 지침을 사용 하지 않습니다. XAML을 사용하는 다른 기존 프레임워크에서도 XAML의 처리 명령을 사용하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [태그 확장 및 WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
- [XamlName 문법](../../../docs/framework/xaml-services/xamlname-grammar.md)  
- [공백에서 XAML 처리](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)
+## <a name="see-also"></a>참고자료
+- [XAML 개요(WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [태그 확장 및 WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [XamlName 문법](../../../docs/framework/xaml-services/xamlname-grammar.md)
+- [공백에서 XAML 처리](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)

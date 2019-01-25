@@ -2,18 +2,18 @@
 title: '&lt;contractTypeNames&gt;'
 ms.date: 03/30/2017
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df
-ms.openlocfilehash: 60647e6ec31e7228f09d084ff669a1829770ca14
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2c3f501f44d9e3c601e654041eb9d5a7de8a0a07
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54144733"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626773"
 ---
 # <a name="ltcontracttypenamesgt"></a>&lt;contractTypeNames&gt;
 검색할 서비스의 계약 이름인 계약 형식 이름 목록 및 서비스를 검색할 때 일반적으로 사용되는 기준을 지정하는 구성 섹션입니다. 둘 이상의 계약 이름이 지정되면 모든 계약과 일치하는 서비스 엔드포인트만 응답합니다. Windows Communication Foundation (WCF), 끝점 수 하나의 계약만 지원할 참고 합니다.  
   
  \<system.ServiceModel>  
-\<standardEndpoints >  
+\<standardEndpoints>  
   
 ## <a name="syntax"></a>구문  
   
@@ -58,9 +58,9 @@ ms.locfileid: "54144733"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<findCriteria >](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|클라이언트 응용 프로그램에서 검색 서비스를 찾기 위해 사용하는 조건 집합을 제공하는 구성 요소입니다. 조건 (찾으려는 서비스 지정) 하는 검색 조건으로 그룹화 할 수 있습니다 및 찾기 종료 조건 (검색 지속 기간).|  
+|[\<findCriteria>](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|클라이언트 응용 프로그램에서 검색 서비스를 찾기 위해 사용하는 조건 집합을 제공하는 구성 요소입니다. 조건 (찾으려는 서비스 지정) 하는 검색 조건으로 그룹화 할 수 있습니다 및 찾기 종료 조건 (검색 지속 기간).|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Discovery.FindCriteria>  
- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>  
- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Discovery.FindCriteria>
+- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
+- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>

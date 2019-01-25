@@ -8,21 +8,21 @@ helpviewer_keywords:
 - arrays [Visual Basic], structure elements
 - nested structures [Visual Basic]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
-ms.openlocfilehash: 7b375c5a45998fc0bd06f7c075f23a30dd377295
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ed406254435602dcd98bc97716cc88710a470ed1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33652027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679593"
 ---
 # <a name="structures-and-other-programming-elements-visual-basic"></a>구조체 및 기타 프로그래밍 요소(Visual Basic)
-배열, 개체 및 프로시저 및 상호 함께 구조를 사용할 수 있습니다. 이러한 요소를 개별적으로 사용 하는 대로 동일한 구문을 사용 하는 상호 작용 합니다.  
+함께 서로 뿐만 아니라 배열, 개체 및 프로시저를 사용 하 여 구조를 사용할 수 있습니다. 이러한 요소를 개별적으로 사용 하는 대로 동일한 구문을 사용 하 여 상호 작용 합니다.  
   
 > [!NOTE]
->  구조체 선언에서 구조체 요소를 초기화할 수 없습니다. 구조 형식으로 선언 된 변수는 요소에만 값을 할당할 수 있습니다.  
+>  구조체 선언에서는 구조 요소를 초기화할 수 없습니다. 구조 형식으로 선언 된 변수는 요소에만 값을 할당할 수 있습니다.  
   
-## <a name="structures-and-arrays"></a>구조체 및 배열을  
- 구조체의 요소가 하나 이상으로 배열을 포함할 수 있습니다. 다음은 이에 대한 예입니다.  
+## <a name="structures-and-arrays"></a>구조체 및 배열  
+ 구조체의 해당 요소 중 하나 이상으로 배열을 포함할 수 있습니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
 Public Structure systemInfo  
@@ -33,7 +33,7 @@ Public Structure systemInfo
 End Structure   
 ```  
   
- 구조 내에서 배열 값에는 개체에 속성에 액세스 하는 동일한 방식으로 액세스 합니다. 다음은 이에 대한 예입니다.  
+ 개체의 속성에 액세스 하는 동일한 방식으로 구조 내에서 배열의 값 액세스할 수 있습니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
 Dim mySystem As systemInfo  
@@ -56,7 +56,7 @@ allSystems(5).diskDrives(2) = "100M SCSI"
 ```  
   
 ## <a name="structures-and-objects"></a>구조 및 개체  
- 구조체의 요소가 하나 이상으로 개체를 포함할 수 있습니다. 다음은 이에 대한 예입니다.  
+ 구조체의 해당 요소 중 하나 이상으로 개체를 포함할 수 있습니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
 Protected Structure userInput  
@@ -66,7 +66,7 @@ Protected Structure userInput
 End Structure  
 ```  
   
- 이러한 선언에는 특정 개체 클래스를 사용 해야 대신 `Object`합니다.  
+ 이러한 선언에서 특정 개체 클래스를 사용 해야 하면 대신 `Object`합니다.  
   
 ## <a name="structures-and-procedures"></a>구조 및 프로시저  
  프로시저 인수로 구조체를 전달할 수 있습니다. 다음은 이에 대한 예입니다.  
@@ -81,9 +81,9 @@ Public Sub fillSystem(ByRef someSystem As systemInfo)
 End Sub  
 ```  
   
- 위 예제 전달 구조 *참조에 의해*, 호출 코드에서 변경 내용이 적용 되도록 해당 요소를 수정 하는 절차를 허용 하는 합니다. 이러한 수정 으로부터 구조를 보호 하려는 값으로 전달 합니다.  
+ 앞의 예제에서는 구조체를 전달 *참조별*, 호출 코드에서 변경 내용이 적용 되도록 해당 요소를 수정 하는 절차를 허용 하는 합니다. 이러한 수정에 대 한 구조를 보호 하려는 경우 값으로 전달 합니다.  
   
- 구조체를 반환할 수도 있습니다는 `Function` 프로시저입니다. 다음은 이에 대한 예입니다.  
+ 구조를 반환할 수도 있습니다는 `Function` 프로시저입니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
 Dim allSystems(100) As systemInfo  
@@ -96,7 +96,7 @@ Function findByDate(ByVal searchDate As Date) As systemInfo
 End Function  
 ```  
   
-## <a name="structures-within-structures"></a>구조체 내에서 구조  
+## <a name="structures-within-structures"></a>구조 내에서 구조  
  구조체는 다른 구조를 포함할 수 있습니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
@@ -118,18 +118,18 @@ ReDim allSystems(1).diskDrives(3)
 allSystems(1).diskDrives(0).type = "Floppy"  
 ```  
   
- 다른 모듈에 정의 된 구조 내에서 한 개의 모듈에 정의 된 구조체를 캡슐화 하이 기술을 사용할 수도 있습니다.  
+ 또한 다른 모듈에 정의 된 구조 내에서 하나의 모듈에 정의 된 구조체를 캡슐화 하이 기법을 사용할 수 있습니다.  
   
- 구조를 중첩 다른 구조를 포함할 수 있습니다.  
+ 구조에는 다른 구조를 임의 깊이까지 포함할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [방법: 구조체 선언](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [구조체 변수](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)  
- [구조체와 클래스](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
- [Structure 문](../../../../visual-basic/language-reference/statements/structure-statement.md)
+## <a name="see-also"></a>참고자료
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [방법: 구조 선언](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [구조체 변수](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)
+- [구조체와 클래스](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [Structure 문](../../../../visual-basic/language-reference/statements/structure-statement.md)

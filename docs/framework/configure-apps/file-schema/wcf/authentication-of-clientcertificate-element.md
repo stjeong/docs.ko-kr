@@ -2,23 +2,23 @@
 title: '&lt;clientCertificate&gt; 요소의 &lt;authentication&gt;'
 ms.date: 03/30/2017
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
-ms.openlocfilehash: 97c742cbcaeba10bc7fcf88a461360b96beebc22
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1e15bd10495a2dff4a844f89a3ba5124235eea7c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54656851"
 ---
 # <a name="ltauthenticationgt-of-ltclientcertificategt-element"></a>&lt;clientCertificate&gt; 요소의 &lt;authentication&gt;
 서비스에서 사용되는 클라이언트 인증서에 대한 인증 동작을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<serviceCredentials>  
-\<clientCertificate >  
-\<인증 >  
+\<clientCertificate>  
+\<authentication>  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,7 +55,7 @@ ms.locfileid: "54147111"
   
 |값|설명|  
 |-----------|-----------------|  
-|열거형|다음 값 중 하나입니다. None, PeerTrust, ChainTrust, PeerOrChainTrust, 사용자 지정 합니다.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
+|열거형|다음 값 중 하나입니다. None, PeerTrust, ChainTrust, PeerOrChainTrust, Custom.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 특성  
   
@@ -76,7 +76,7 @@ ms.locfileid: "54147111"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<clientCertificate >](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)|서비스에 클라이언트를 인증하는 데 사용되는 X.509 인증서를 정의합니다.|  
+|[\<clientCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)|서비스에 클라이언트를 인증하는 데 사용되는 X.509 인증서를 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
  `<authentication>` 요소는 <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> 클래스에 해당합니다. 이것은 클라이언트가 인증되는 방법을 사용자 지정할 수 있습니다. `certificateValidationMode` 특성을 `None`, `ChainTrust`, `PeerOrChainTrust`, `PeerTrust` 또는 `Custom`으로 설정할 수 있습니다. 기본적으로 수준 설정 `ChainTrust`에서 종료 되는 인증서의 계층 구조에서 각 인증서를 찾을 수 해야를 지정 하는 *루트 기관* 체인의 맨 위에 있는 합니다. 이 모드가 가장 안전한 모드입니다. 또한 값을 `PeerOrChainTrust`로 설정할 수 있으며, 이는 자체 발급된 인증서(신뢰 피어)가 신뢰 체인에 있는 인증서와 함께 수락됨을 지정합니다. 자체 발급 인증서를 신뢰할 수 있는 기관에서 구입할 필요 없기 때문에 클라이언트 및 서비스를 개발 및 디버깅하는 경우 이 값이 사용됩니다. 클라이언트를 배포하는 경우 `ChainTrust` 값을 대신 사용합니다.  
@@ -104,12 +104,12 @@ ms.locfileid: "54147111"
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>  
- <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [방법: 사용자 지정 인증서 유효성 검사기를 사용 하는 서비스 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>
+- <xref:System.ServiceModel.Security.X509CertificateValidationMode>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [방법: 사용자 지정 인증서 유효성 검사기를 사용 하는 서비스 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

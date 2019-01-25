@@ -1,5 +1,5 @@
 ---
-title: '&lt;bindingRedirect&gt; 요소'
+title: '&lt;bindingRedirect&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/bindingRedirect
@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: fc2c5fb906856365e901c27bfe6624375f1e0137
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 7fb610357772b3c74129074096c53bf3f149501a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54714752"
 ---
-# <a name="ltbindingredirectgt-element"></a>&lt;bindingRedirect&gt; 요소
+# <a name="ltbindingredirectgt-element"></a>&lt;bindingRedirect&gt; Element
 어셈블리 버전을 다른 버전으로 리디렉션합니다.  
   
  \<configuration>  
 \<runtime>  
 \<assemblyBinding>  
-\<dependentAssembly >  
-\<bindingRedirect >  
+\<dependentAssembly>  
+\<bindingRedirect>  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ newVersion="new assembly version"/>
   
 |특성|설명|  
 |---------------|-----------------|  
-|`oldVersion`|필수 특성입니다.<br /><br /> 원래 요청된 어셈블리 버전을 지정합니다. 어셈블리 버전 번호의 형식은 *major.minor.build.revision*합니다. 이 버전 번호의 각 부분에 사용할 수 있는 값은 0부터 65535까지입니다.<br /><br /> 다음 형식으로 다양한 버전을 지정할 수도 있습니다.<br /><br /> *n.n.n.n-n.n.n.n*|  
+|`oldVersion`|필수 특성입니다.<br /><br /> 원래 요청된 어셈블리 버전을 지정합니다. 어셈블리 버전 번호의 형식은 *major.minor.build.revision*합니다. 이 버전 번호의 각 부분에 사용할 수 있는 값은 0부터 65535까지입니다.<br /><br /> 다음 형식으로 다양한 버전을 지정할 수도 있습니다.<br /><br /> *n.n.n.n - n.n.n.n*|  
 |`newVersion`|필수 특성입니다.<br /><br /> 형식에서 원래 요청 된 버전 대신 사용할 어셈블리의 버전을 지정 합니다. *n.n.n.n*<br /><br /> 이 값은 `oldVersion`보다 이전 버전을 지정할 수 있습니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -56,7 +56,7 @@ newVersion="new assembly version"/>
 |요소|설명|  
 |-------------|-----------------|  
 |`assemblyBinding`|어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`dependentAssembly`|각 어셈블리에 대한 바인딩 정책 및 어셈블리 위치를 캡슐화합니다. 각 어셈블리에 dependentAssembly 요소를 하나만 사용할 수 있습니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
@@ -86,7 +86,7 @@ newVersion="new assembly version"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

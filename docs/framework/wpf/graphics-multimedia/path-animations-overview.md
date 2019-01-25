@@ -8,12 +8,12 @@ helpviewer_keywords:
 - animation [WPF], paths
 - path animations [WPF]
 ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
-ms.openlocfilehash: 0f795ad00823e7b1c37221f7417b09d3982c4c18
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 610ef2721bef18e1cb1e87500a9dc9cf2729c867
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614255"
 ---
 # <a name="path-animations-overview"></a>경로 애니메이션 개요
 <a name="introduction"></a> 이 항목에서는 기하학적 경로를 사용하여 출력 값을 생성할 수 있도록 하는 경로 애니메이션을 소개합니다. 경로 애니메이션은 복잡한 경로를 따라 개체를 이동하고 회전하는 데 유용합니다.  
@@ -89,9 +89,9 @@ ms.locfileid: "48266834"
   
  에 사용 되는 경로 구문에 대 한 자세한 내용은 합니다 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 예제에서는 참조를 [경로 태그 구문](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) 개요.  
   
-## <a name="see-also"></a>참고 항목  
- [경로 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160028)  
- [경로 태그 구문](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)  
- [경로 애니메이션 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [속성 애니메이션 기술 개요](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
+## <a name="see-also"></a>참고자료
+- [경로 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160028)
+- [경로 태그 구문](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)
+- [경로 애니메이션 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [속성 애니메이션 기술 개요](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)

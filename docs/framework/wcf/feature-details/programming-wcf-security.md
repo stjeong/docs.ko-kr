@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - message security [WCF], programming overview
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-ms.openlocfilehash: 1cb18f1be8e418ace4c9f9f71b7f97ac37ff8074
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 2b49031b0001ddba01a888806206360c1cbdbacb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54699469"
 ---
 # <a name="programming-wcf-security"></a>WCF 보안 프로그래밍
 이 항목에서는 보안 Windows Communication Foundation (WCF) 응용 프로그램을 만드는 데 기본 프로그래밍 작업을 설명 합니다. 이 항목에서는 인증, 기밀성 및 무결성을 통틀어 *전송 보안*합니다. 이 항목에서는 권한 부여 (리소스 또는 서비스에 대 한 액세스 제어);를 다루지 않습니다. 권한 부여에 대 한 내용은 참조 하세요 [권한 부여](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "50193892"
   
     1.  `Transport`  
   
-         전송 보안은 선택한 바인딩에서 사용하는 메커니즘에 종속됩니다. 예를 들어, `WSHttpBinding`을 사용하는 경우 보안 메커니즘은 SSL(Secure Sockets Layer)(또한 HTTPS에 대한 메커니즘)입니다. 일반적으로 전송 보안의 주요 이점은 사용 중인 전송에 관계 없이 처리 능력이 우수하다는 점입니다. 그러나 두 가지 제한이 있습니다. 첫째, 전송 메커니즘이 사용자를 인증하는 데 사용되는 자격 증명 형식을 지정합니다. 이는 서비스가 다른 형식의 자격 증명을 요구하는 다른 서비스와 상호 작용해야 하는 경우에만 단점이 됩니다. 둘째는 메시지 수준에서 보안이 적용되지 않기 때문에 종단 간 방식 대신 hop-by-hop 방식으로 보안이 구현됩니다. 이 제한은 클라이언트와 서비스 사이의 메시지 경로에 매개자가 포함되어 있는 경우에만 문제가 됩니다. 사용 하는 전송에 대 한 자세한 내용은 참조 하세요. [전송 선택](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)합니다. 전송 보안을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)합니다.  
+         전송 보안은 선택한 바인딩에서 사용하는 메커니즘에 종속됩니다. 예를 들어, `WSHttpBinding`을 사용하는 경우 보안 메커니즘은 SSL(Secure Sockets Layer)(또한 HTTPS에 대한 메커니즘)입니다. 일반적으로 전송 보안의 주요 이점은 사용 중인 전송에 관계 없이 처리 능력이 우수하다는 점입니다. 그러나는 것은 두 가지 제한이 있습니다. 첫 번째는 전송 메커니즘에 따라 사용자를 인증 하는 데 자격 증명 형식이 결정 됩니다. 이는 서비스가 다른 형식의 자격 증명을 요구하는 다른 서비스와 상호 작용해야 하는 경우에만 단점이 됩니다. 둘째는 메시지 수준에서 보안이 적용되지 않기 때문에 종단 간 방식 대신 hop-by-hop 방식으로 보안이 구현됩니다. 이 제한은 클라이언트와 서비스 사이의 메시지 경로에 매개자가 포함되어 있는 경우에만 문제가 됩니다. 사용 하는 전송에 대 한 자세한 내용은 참조 하세요. [전송 선택](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)합니다. 전송 보안을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)합니다.  
   
     2.  `Message`  
   
@@ -101,6 +101,6 @@ ms.locfileid: "50193892"
  [!code-csharp[c_TcpClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpclient/cs/source.cs#1)]
  [!code-vb[c_TcpClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpclient/vb/source.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [기본 WCF 프로그래밍](../../../../docs/framework/wcf/basic-wcf-programming.md)  
- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
+## <a name="see-also"></a>참고자료
+- [기본 WCF 프로그래밍](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)

@@ -13,30 +13,30 @@ helpviewer_keywords:
 - icons [Windows Forms], toolbar buttons
 - ToolBar control [Windows Forms], adding icons to buttons
 ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
-ms.openlocfilehash: 9c396f861307d1c8e722beaf38c6cb914d0630c6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fa622245155a1e7bdeb0184b0cd5ff07f651bfbc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33531913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54644796"
 ---
 # <a name="how-to-define-an-icon-for-a-toolbar-button"></a>방법: 도구 모음 단추의 아이콘 정의
 > [!NOTE]
 >  <xref:System.Windows.Forms.ToolStrip> 컨트롤은 <xref:System.Windows.Forms.ToolBar> 컨트롤을 대체하고 여기에 다른 기능을 추가하여 새로 도입된 컨트롤이지만 이전 버전과의 호환성 및 이후 사용 가능성을 고려하여 <xref:System.Windows.Forms.ToolBar> 컨트롤을 계속 유지하도록 선택할 수 있습니다.  
   
- <xref:System.Windows.Forms.ToolBar> 단추는 사용자가 쉽게 식별 하기 위해 그 안에서 아이콘을 표시할 수 있습니다. 이미지에 추가 통해 그렇게는 [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) 구성 요소와 연결 하는 방법의 <xref:System.Windows.Forms.ImageList> 구성 요소는 <xref:System.Windows.Forms.ToolBar> 컨트롤.  
+ <xref:System.Windows.Forms.ToolBar> 단추는 사용자가 쉽게 식별할 수 있도록 내에 아이콘을 표시할 수 있습니다. 추가 이미지를 통해 얻을 수는 [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) 구성 요소와 연결 하는 방법의 <xref:System.Windows.Forms.ImageList> 구성 요소는 <xref:System.Windows.Forms.ToolBar> 컨트롤입니다.  
   
 ### <a name="to-set-an-icon-for-a-toolbar-button-programmatically"></a>도구 모음 단추의 아이콘을 프로그래밍 방식으로 설정 하려면  
   
-1.  프로시저에서 인스턴스화하는 <xref:System.Windows.Forms.ImageList> 구성 요소와 <xref:System.Windows.Forms.ToolBar> 제어 합니다.  
+1.  프로시저에서 인스턴스화하는 <xref:System.Windows.Forms.ImageList> 구성 요소 및 <xref:System.Windows.Forms.ToolBar> 제어 합니다.  
   
-2.  동일한 절차에서 이미지를 할당 된 <xref:System.Windows.Forms.ImageList> 구성 요소입니다.  
+2.  동일한 프로시저를 할당 하려면 이미지를 <xref:System.Windows.Forms.ImageList> 구성 요소입니다.  
   
-3.  다른 프로시저에서 할당의 <xref:System.Windows.Forms.ImageList> 컨트롤을 <xref:System.Windows.Forms.ToolBar> 제어 하 고 할당는 <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> 개별 도구 모음 단추 속성입니다.  
+3.  동일한 프로시저를 할당 합니다 <xref:System.Windows.Forms.ImageList> 컨트롤을 <xref:System.Windows.Forms.ToolBar> 제어 하 고 할당을 <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> 개별 도구 모음 단추 속성.  
   
-     다음 코드 예제에서는 이미지의 위치 설정 된 경로 **내 문서** 폴더입니다. 이 도구를 실행 하므로 대부분의 Windows 운영 체제 실행 컴퓨터는이 디렉터리를 포함 되어 있습니다. 또한 최소한의 시스템 액세스 수준을 가진 사용자가 안전하게 응용 프로그램을 실행할 수 있습니다. 다음 예제에서는 가정 된 폼을 <xref:System.Windows.Forms.PictureBox> 컨트롤이 이미 추가 합니다.  
+     다음 코드 예제에서는 이미지의 위치 설정 된 경로 **내 문서** 폴더입니다. 이렇게 하면 수 없으므로 Windows 운영 체제를 실행 하는 대부분의 컴퓨터는이 디렉터리를 포함 합니다. 또한 최소한의 시스템 액세스 수준을 가진 사용자가 안전하게 애플리케이션을 실행할 수 있습니다. 아래 예제에서는 가정 된 폼을 <xref:System.Windows.Forms.PictureBox> 이미 추가 된 컨트롤입니다.  
   
-     위의 단계에 따라 아래 표시 된 것과 유사한 코드가 작성 합니다.  
+     위의 단계를 다음 아래 표시 된 것과 유사한 코드가 작성 합니다.  
   
     ```vb  
     Public Sub InitializeMyToolBar()  
@@ -115,8 +115,8 @@ ms.locfileid: "33531913"
        }  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.ToolBar>  
- [방법: Toolbar 단추의 메뉴 이벤트 트리거](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
- [ToolBar 컨트롤](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
- [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.ToolBar>
+- [방법: Toolbar 단추의 메뉴 이벤트 트리거](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar 컨트롤](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+- [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)

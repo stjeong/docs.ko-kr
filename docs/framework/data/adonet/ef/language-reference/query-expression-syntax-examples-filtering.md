@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
-ms.openlocfilehash: 667c67cea4dfa3f9a63554286d6c137280332c7e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 53087a773f6a639a6f2b421a0b30133927e294f2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54675201"
 ---
 # <a name="query-expression-syntax-examples-filtering"></a>쿼리 식 구문 예제: 필터링
 이 항목의 예제에 사용 하는 방법을 보여 줍니다 합니다 `Where` 및 `Where…Contains` 쿼리 하는 메서드는 [AdventureWorks Sales 모델](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) 쿼리 식 구문을 사용 합니다. 참고로 위치...`Contains` 일부로 사용할 수 없습니다는 [컴파일된 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "43749667"
  [!code-csharp[DP L2E Examples#ImportsUsing](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#importsusing)]
  [!code-vb[DP L2E Examples#ImportsUsing](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#importsusing)]  
   
-## <a name="where"></a>Where  
+## <a name="where"></a>위치  
   
 ### <a name="example"></a>예제  
  다음 예제에서는 모든 온라인 주문을 반환합니다.  
@@ -65,5 +65,5 @@ ms.locfileid: "43749667"
  [!code-csharp[DP L2E ArraysAndListsInQueries#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e arraysandlistsinqueries/cs/program.cs#2)]
  [!code-vb[DP L2E ArraysAndListsInQueries#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb/module1.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Entities에서 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to Entities에서 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)

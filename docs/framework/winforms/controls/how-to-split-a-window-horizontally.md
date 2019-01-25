@@ -1,5 +1,5 @@
 ---
-title: '방법: 가로로 창 분할'
+title: '방법: 가로로 창 분합니다'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - splitter windows [Windows Forms], horizontal
 - windows [Windows Forms], splitting horizontally
 ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
-ms.openlocfilehash: 1e097ce5623fab4c3c8c1d59d9bc8c9206abee2c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 651e265b337b106779aeefdfa49decd3725f1a53
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33533129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701458"
 ---
-# <a name="how-to-split-a-window-horizontally"></a>방법: 가로로 창 분할
-다음 코드 예제에서는 나누는 분할자를 사용 하면는 <xref:System.Windows.Forms.SplitContainer> 컨트롤을 가로로 합니다.  
+# <a name="how-to-split-a-window-horizontally"></a>방법: 가로로 창 분합니다
+다음 코드 예제에서는 분할 하는 분할자는 <xref:System.Windows.Forms.SplitContainer> 컨트롤을 가로로 합니다.  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.SplitContainer.Orientation%2A> 의 속성은 <xref:System.Windows.Forms.SplitContainer> 컨트롤 컨트롤 자체 아닌 분할자의 방향을 결정 합니다.  
+>  합니다 <xref:System.Windows.Forms.SplitContainer.Orientation%2A> 의 속성을 <xref:System.Windows.Forms.SplitContainer> 컨트롤 컨트롤 자체가 아닌 분할자의 방향을 결정 합니다.  
   
 ### <a name="to-split-a-window-horizontally"></a>가로로 창 분할 하려면  
   
-1.  프로시저 내에서 설정할는 <xref:System.Windows.Forms.SplitContainer.Orientation%2A> 의 속성은 <xref:System.Windows.Forms.SplitContainer> 컨트롤을 <xref:System.Windows.Forms.Orientation.Horizontal>합니다.  
+1.  프로시저 내에서 설정 합니다 <xref:System.Windows.Forms.SplitContainer.Orientation%2A> 의 속성을 <xref:System.Windows.Forms.SplitContainer> 컨트롤을 <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
     ```vb  
     Sub ShowSplitContainer()  
@@ -55,6 +55,6 @@ ms.locfileid: "33533129"
     }  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.SplitContainer>  
- [SplitContainer 컨트롤](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.SplitContainer>
+- [SplitContainer 컨트롤](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

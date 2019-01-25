@@ -2,12 +2,12 @@
 title: MSMQ 활성화
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 20287af1c1d93bbdcfa83d88e5790284fbbff170
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0b3d90ed756b2bb2b9bebc0ac9e36789a80df1d7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745443"
 ---
 # <a name="msmq-activation"></a>MSMQ 활성화
 이 샘플에서는 메시지 큐에서 읽은 WAS(Windows Process Activation Service)에서 응용 프로그램을 호스트하는 방법을 보여 줍니다. 이 샘플에서는 합니다 `netMsmqBinding` 기반으로 합니다 [양방향 통신](../../../../docs/framework/wcf/samples/two-way-communication.md) 샘플입니다. 이 경우 서비스는 웹 호스팅 응용 프로그램이고 클라이언트는 자체 호스트되며 전송된 구매 주문의 상태를 확인하기 위해 콘솔에 출력됩니다.  
@@ -219,7 +219,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 2.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다. 또한 WCF NON-HTTP activation 구성 요소를 설치 해야 합니다.  
   
-    1.  **시작** 메뉴 선택 **제어판**합니다.  
+    1.  **시작** 메뉴에서 **제어판**을 선택합니다.  
   
     2.  선택 **프로그램 및 기능**합니다.  
   
@@ -305,7 +305,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
     > [!WARNING]
     >  배치 파일을 실행하면 DefaultAppPool이 .NET Framework 버전 2.0을 사용하여 실행되도록 다시 설정됩니다.  
   
- 기본적으로 `netMsmqBinding` 바인딩 전송을 사용하여 보안이 설정됩니다. `MsmqAuthenticationMode` 및 `MsmqProtectionLevel` 속성은 모두 전송 보안의 형식을 결정합니다. 기본적으로 인증 모드는 `Windows`로 설정되고 보호 수준은 `Sign`으로 설정됩니다. MSMQ에서 인증 및 서명 기능을 제공하려면 도메인에 속해 있어야 합니다. 도메인에 속하지 않은 컴퓨터에서 이 샘플을 실행할 경우 "사용자의 내부 메시지 큐 인증서가 없습니다."라는 오류 메시지가 표시됩니다.  
+ 기본적으로 `netMsmqBinding` 바인딩 전송을 사용하여 보안이 설정됩니다. `MsmqAuthenticationMode` 및 `MsmqProtectionLevel` 속성은 모두 전송 보안의 형식을 결정합니다. 기본적으로 인증 모드는 `Windows`로 설정되고 보호 수준은 `Sign`으로 설정됩니다. MSMQ에서 인증 및 서명 기능을 제공하려면 도메인에 속해 있어야 합니다. 도메인의 일부가 아닌 컴퓨터에서이 샘플을 실행 하는 경우에 다음 오류 메시지가 나타납니다. "사용자의 내부 메시지 큐 인증서가 없습니다"입니다.  
   
 ### <a name="to-run-the-sample-on-a-computer-joined-to-a-workgroup"></a>작업 그룹에 가입된 컴퓨터에서 샘플을 실행하려면  
   
@@ -350,5 +350,5 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
     sc sidtype netmsmqactivator unrestricted  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)
+## <a name="see-also"></a>참고자료
+- [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)

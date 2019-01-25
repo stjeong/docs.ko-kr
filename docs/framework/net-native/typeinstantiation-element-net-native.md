@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5277b056c11de4c3e32d33c72bafc8f64ee17d05
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 818a52ceb1428327c5bcb778f85015458990578f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612566"
 ---
 # <a name="lttypeinstantiationgt-element-net-native"></a>&lt;TypeInstantiation&gt; 요소(.NET 네이티브)
 생성된 제네릭 형식에 런타임 리플렉션 정책을 적용합니다.  
@@ -116,7 +116,7 @@ ms.locfileid: "53154833"
 </Directives>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## <a name="see-also"></a>참고자료
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

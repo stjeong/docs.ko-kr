@@ -1,25 +1,25 @@
 ---
-title: 응용 프로그램 설정 특성
+title: 애플리케이션 설정 특성
 ms.date: 03/30/2017
 helpviewer_keywords:
 - application settings [Windows Forms], attributes
 - attributes [Windows Forms], application settings
 - wrapper classes [Windows Forms], application settings
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
-ms.openlocfilehash: 9ed549cb1e10b22c4fa34d984133a6be11dfab44
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 09fb5c26f7ecccd427155836c3864773153dddfa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54668953"
 ---
-# <a name="application-settings-attributes"></a>응용 프로그램 설정 특성
+# <a name="application-settings-attributes"></a>애플리케이션 설정 특성
 응용 프로그램 설정 아키텍처는 응용 프로그램 설정 래퍼 클래스 또는 해당 개별 속성에 적용할 수 있는 여러 특성을 제공 합니다. 이러한 특성은 맞게 사용자 지정 래퍼 명시 된 요구 사항에 기능을 조절 하기 위해 종종 특별히 설정 공급자를 응용 프로그램 설정 인프라에서 런타임에 검사 합니다.  
   
  다음 표에서 응용 프로그램 설정 래퍼 클래스,이 클래스의 개별 속성 또는 둘 다에 적용할 수 있는 특성을 나열 합니다. 정의상, 단일 범위 특성만 —**UserScopedSettingAttribute** 또는 **ApplicationScopedSettingAttribute**-각 설정 속성에 적용 되어야 합니다.  
   
 > [!NOTE]
->  파생 된 사용자 지정 설정 공급자를 합니다 <xref:System.Configuration.SettingsProvider> 클래스를 다음 세 가지 특성을 인식 하도록 하기만 하면 됩니다. **ApplicationScopedSettingAttribute**, **UserScopedSettingAttribute**, 및 **DefaultSettingValueAttribute**합니다.  
+>  파생 된 사용자 지정 설정 공급자를 <xref:System.Configuration.SettingsProvider> 클래스를 다음 세 가지 특성을 인식 하도록 하기만 하면 됩니다. **ApplicationScopedSettingAttribute**하십시오 **UserScopedSettingAttribute**, 및 **DefaultSettingValueAttribute**합니다.  
   
 |특성|대상|설명|  
 |---------------|------------|-----------------|  
@@ -37,8 +37,8 @@ ms.locfileid: "43525114"
   
  *클래스* 특성을 응용 프로그램 설정 래퍼 클래스에만 적용 되어야 함을 나타냅니다. *속성* 특성 설정 속성에만 적용할된 수 있음을 나타냅니다. *둘 다* 각 수준에서 특성을 적용할 수 있음을 나타냅니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Configuration.ApplicationSettingsBase>  
- <xref:System.Configuration.SettingsProvider>  
- [응용 프로그램 설정 아키텍처](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
- [방법: 응용 프로그램 설정 만들기](https://msdn.microsoft.com/library/53b3af80-1c02-4e35-99c6-787663148945)
+## <a name="see-also"></a>참고자료
+- <xref:System.Configuration.ApplicationSettingsBase>
+- <xref:System.Configuration.SettingsProvider>
+- [응용 프로그램 설정 아키텍처](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
+- [방법: 응용 프로그램 설정 만들기](https://msdn.microsoft.com/library/53b3af80-1c02-4e35-99c6-787663148945)

@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0460086874af38cad348c965237f8c423f18e868
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: adad8854052d76476076e5e1357f6d3e2dec1052
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33436002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54629477"
 ---
 # <a name="isymunmanageddocumentgetdocumenttype-method"></a>ISymUnmanagedDocument::GetDocumentType 메서드
 이 문서의 문서 유형을 가져옵니다.  
@@ -36,10 +36,10 @@ HRESULT GetDocumentType(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 문서 종류를 수신 하는 변수에 대 한 포인터입니다.  
+ [out] 문서 유형을 수신 하는 변수에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

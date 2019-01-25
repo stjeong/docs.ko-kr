@@ -2,20 +2,20 @@
 title: '&lt;clientCredentials&gt; 요소의 &lt;peer&gt;'
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: 9846a25a8df165f51290aa8a26f907d40b6b159f
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: f933e4c6719437d530e0cf90e3aa1da3a8143060
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54616214"
 ---
 # <a name="ltpeergt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;peer&gt;
 피어 투 피어 클라이언트를 인증할 때 사용하는 자격 증명을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
 \<peer>  
   
@@ -52,17 +52,17 @@ ms.locfileid: "54150567"
 ## <a name="remarks"></a>설명  
  이 구성 요소는 피어 노드가 메시에서 다른 노드로부터 인증을 얻는 데 사용하는 자격 증명과 피어 노드가 다른 피어 노드를 인증하는 데 사용하는 인증 설정을 지정합니다. 자세한 내용은 [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95) 하 고 [피어 채널 응용 프로그램 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Peer%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.Peer%2A>  
- <xref:System.ServiceModel.Security.PeerCredential>  
- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Peer%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.Peer%2A>
+- <xref:System.ServiceModel.Security.PeerCredential>
+- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)
+- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)
+- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)
+- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a5333e19-8e55-4aa9-82dc-ca8745e516ed
-ms.openlocfilehash: c164490464d839dacefaf570c8956bf15caeb7de
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: be9cae6f702b72306875246e874b99e7c79eb113
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43856506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743038"
 ---
 # <a name="enabling-query-notifications"></a>쿼리 알림 사용
 쿼리 알림을 사용하는 응용 프로그램에는 공통적인 요구 사항이 적용됩니다. SQL 쿼리 알림을 지원하도록 데이터 소스를 올바르게 구성해야 하며, 사용자는 올바른 클라이언트측 및 서버측 권한을 가지고 있어야 합니다.  
@@ -84,6 +84,6 @@ CREATE SERVICE ContactChangeNotifications
 ### <a name="using-sqlnotificationrequest"></a>SqlNotificationRequest 사용  
  이와 반대로 <xref:System.Data.Sql.SqlNotificationRequest>를 사용하려면 전체 수신 인프라를 직접 구현해야 합니다. 또한 큐, 서비스, 큐에서 지원하는 메시지 유형 같은 모든 지원되는 Service Broker 개체를 정의해야 합니다. 이 수동 접근 방식은 응용 프로그램에 특별한 알림 메시지 또는 알림 동작이 필요하거나 응용 프로그램이 보다 큰 Service Broker 응용 프로그램에 속해 있는 경우에 유용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

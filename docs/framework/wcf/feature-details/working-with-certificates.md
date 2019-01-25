@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: 4302ee961fcd396c7e6a6ddb0d9bbe1bdb714cfc
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: d9bf6bd6b142fadbf8326c96f7220c9b74fbc1d0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54693612"
 ---
 # <a name="working-with-certificates"></a>인증서 작업
 WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반적으로 X.509 디지털 인증서를 사용하여 클라이언트 및 서버를 인증하고, 암호화하고, 메시지에 디지털 서명합니다. 이 항목에서는 X.509 디지털 인증서 기능과 WCF에서 인증서 기능을 사용하는 방법을 간략하게 설명하며, 이러한 개념을 자세히 설명하거나 WCF 및 인증서를 사용하여 일반 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.  
@@ -24,7 +24,7 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
  인증서는 인증 기관에서 발급해야 합니다. 인증 기관이 인증서의 타사 발급자인 경우도 있습니다. Windows 도메인의 경우 도메인에서 컴퓨터에 인증서를 발급하는 데 사용할 수 있는 인증 기관이 포함되어 있습니다.  
   
 ## <a name="viewing-certificates"></a>인증서 보기  
- 인증서로 작업하려면 인증서를 표시하여 해당 속성을 검사해야 하는 경우가 종종 있습니다. 이 작업은 MMC(Microsoft Management Console) 스냅인 도구를 사용하여 쉽게 수행할 수 있습니다. 자세한 내용은 [방법: MMC 스냅인을 사용하여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)를 참조하세요.  
+ 인증서로 작업하려면 인증서를 표시하여 해당 속성을 검사해야 하는 경우가 종종 있습니다. 이 작업은 MMC(Microsoft Management Console) 스냅인 도구를 사용하여 쉽게 수행할 수 있습니다. 자세한 내용은 [방법: MMC 스냅인을 사용 하 여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)합니다.  
   
 ## <a name="certificate-stores"></a>인증서 저장소  
  인증서는 저장소에 있습니다. 하위 저장소로 세분화되는 두 가지 주 저장소 위치가 있습니다. 컴퓨터의 관리자는 MMC 스냅인 도구를 사용하여 두 주 저장소를 모두 볼 수 있습니다. 관리자가 아닌 사용자는 현재 사용자 저장소만 볼 수 있습니다.  
@@ -49,15 +49,15 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
 -   WCF 서비스가 Windows 서비스에 호스팅된 경우 **로컬 컴퓨터** 저장소를 사용합니다. 인증서를 로컬 컴퓨터 저장소에 설치하려면 관리자 권한이 필요합니다.  
   
--   서비스 또는 클라이언트가 사용자 계정에서 실행되는 응용 프로그램인 경우 **현재 사용자** 저장소를 사용합니다.  
+-   서비스 또는 클라이언트가 사용자 계정에서 실행되는 애플리케이션인 경우 **현재 사용자** 저장소를 사용합니다.  
   
 ### <a name="accessing-stores"></a>저장소 액세스  
- 저장소는 컴퓨터에 있는 폴더처럼 ACL(액세스 제어 목록)에 의해 보호됩니다. IIS(인터넷 정보 서비스)에 의해 호스팅되는 서비스를 만들 경우 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 프로세스가 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 계정에서 실행됩니다. 이 계정은 서비스에 사용되는 인증서가 들어 있는 저장소에 대한 액세스 권한이 있어야 합니다. 각각의 주 저장소는 기본 액세스 목록으로 보호되지만, 목록을 수정할 수 있습니다. 저장소 액세스를 위한 개별 역할을 만들 경우 해당 역할에 액세스 권한을 부여해야 합니다. WinHttpCertConfig.exe 도구를 사용하여 액세스 목록을 수정하는 방법에 대한 자세한 내용은 [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)를 참조하세요. IIS에서 클라이언트 인증서 사용에 대한 자세한 내용은 [ASP.NET 웹 응용 프로그램에서 인증을 위해 클라이언트 인증서를 사용하여 웹 서비스를 호출하는 방법](https://go.microsoft.com/fwlink/?LinkId=88914)을 참조하세요.  
+ 저장소는 컴퓨터에 있는 폴더처럼 ACL(액세스 제어 목록)에 의해 보호됩니다. IIS(인터넷 정보 서비스)에 의해 호스팅되는 서비스를 만들 경우 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 프로세스가 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 계정에서 실행됩니다. 이 계정은 서비스에 사용되는 인증서가 들어 있는 저장소에 대한 액세스 권한이 있어야 합니다. 각각의 주 저장소는 기본 액세스 목록으로 보호되지만, 목록을 수정할 수 있습니다. 저장소 액세스를 위한 개별 역할을 만들 경우 해당 역할에 액세스 권한을 부여해야 합니다. WinHttpCertConfig.exe 도구를 사용 하 여 액세스 목록을 수정 하는 방법에 알아보려면 참조 [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)합니다. IIS에서 클라이언트 인증서 사용에 대한 자세한 내용은 [ASP.NET 웹 애플리케이션에서 인증을 위해 클라이언트 인증서를 사용하여 웹 서비스를 호출하는 방법](https://go.microsoft.com/fwlink/?LinkId=88914)을 참조하세요.  
   
 ## <a name="chain-trust-and-certificate-authorities"></a>신뢰 체인 및 인증 기관  
  인증서는 개별 인증서가 인증서를 발급한 CA에 연결되는 계층 구조에 만들어집니다. 이 링크는 CA의 인증서로 연결됩니다. CA의 인증서 다음 원래 CA의 인증서를 발급 한 CA에 대 한 링크입니다. 이 프로세스는 루트 CA의 인증서에 도달할 때까지 반복됩니다. 루트 CA의 인증서는 본질적으로 신뢰할 수 있는 인증서입니다.  
   
- 디지털 인증서는 *신뢰 체인*이라고도 하는 이 계층 구조를 사용하여 엔터티를 인증하는 데 사용됩니다. 인증서를 두 번 클릭한 다음 **인증서 경로** 탭을 클릭하여 MMC 스냅인을 통해 인증서의 체인을 볼 수 있습니다. 인증 기관의 인증서 체인 가져오기에 대한 자세한 내용은 [방법: 서명을 확인하는 데 사용되는 인증 기관 인증서 체인 지정](../../../../docs/framework/wcf/feature-details/specify-the-certificate-authority-chain-verify-signatures-wcf.md)을 참조하세요.  
+ 디지털 인증서는 *신뢰 체인*이라고도 하는 이 계층 구조를 사용하여 엔터티를 인증하는 데 사용됩니다. 인증서를 두 번 클릭한 다음 **인증서 경로** 탭을 클릭하여 MMC 스냅인을 통해 인증서의 체인을 볼 수 있습니다. 인증 기관에 대 한 인증서 체인 가져오기에 대 한 자세한 내용은 참조 하세요. [방법: 서명을 확인 하는 데 인증서 기관 인증서 체인 지정](../../../../docs/framework/wcf/feature-details/specify-the-certificate-authority-chain-verify-signatures-wcf.md)합니다.  
   
 > [!NOTE]
 >  신뢰할 수 있는 루트 기관 인증서 저장소에 발급자의 인증서를 넣어 발급자를 신뢰할 수 있는 루트 기관으로 지정할 수 있습니다.  
@@ -96,7 +96,7 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
 3.  루트 기관 인증서를 신뢰할 수 있는 루트 인증 기관 저장소로 가져옵니다.  
   
-4.  단계별 지침은 [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)를 참조하세요.  
+4.  단계별 지침을 참조 하세요. [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)합니다.  
   
 ## <a name="which-certificate-to-use"></a>사용할 인증서  
  인증서에 대한 일반적인 질문은 사용할 인증서와 그 이유에 대한 것입니다. 대답은 클라이언트를 프로그래밍하는지 서비스를 프로그래밍하는지에 따라 달라집니다. 다음 정보에서는 일반적인 지침을 제공하며 이러한 질문에 대한 세부적인 대답은 아닙니다.  
@@ -170,9 +170,9 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
  WCF의 첫 번째 릴리스에서는 도메인 정책을 참조하지 않고 매핑을 수행했습니다. 따라서 매핑을 실행할 때 X.509 인증서가 도메인 정책에 맞지 않을 경우 첫 번째 릴리스에서 작동했던 이전 응용 프로그램이 실패할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels>  
- <xref:System.ServiceModel.Security>  
- <xref:System.ServiceModel>  
- <xref:System.Security.Cryptography.X509Certificates.X509FindType>  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels>
+- <xref:System.ServiceModel.Security>
+- <xref:System.ServiceModel>
+- <xref:System.Security.Cryptography.X509Certificates.X509FindType>
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
