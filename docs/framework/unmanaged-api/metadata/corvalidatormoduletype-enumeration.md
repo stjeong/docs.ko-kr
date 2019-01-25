@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 97e9ae5a7c35b4f9b6e2b4ca7e754b5b7480dfa6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ee1cfe52caa9d727a132d7adc23b03575293db65
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54716780"
 ---
 # <a name="corvalidatormoduletype-enumeration"></a>CorValidatorModuleType 열거형
 모듈의 형식을 지정합니다.  
@@ -45,22 +45,22 @@ typedef enum
   
 |멤버|설명|  
 |------------|-----------------|  
-|`ValidatorModuleTypeInvalid`|모듈에 잘못 된 형식입니다.|  
-|`ValidatorModuleTypeMin`|최소 값은 `CorValidatorModuleType` 열거형입니다.|  
-|`ValidatorModuleTypePE`|모듈에는 이식 가능한 실행 (PE) 파일입니다.|  
-|`ValidatorModuleTypeObj`|모듈은.obj 파일.|  
-|`ValidatorModuleTypeEnc`|모듈은는 편집 하며 계속 하기 디버거 세션입니다.|  
-|`ValidatorModuleTypeIncr`|모듈은 증분 빌드할입니다.|  
-|`ValidatorModuleTypeMax`|최대값은 `CorValidatorModuleType` 열거형입니다.|  
+|`ValidatorModuleTypeInvalid`|모듈에는 잘못 된 형식입니다.|  
+|`ValidatorModuleTypeMin`|최소값을 `CorValidatorModuleType` 열거형입니다.|  
+|`ValidatorModuleTypePE`|모듈에는 pe (이식 가능) 파일입니다.|  
+|`ValidatorModuleTypeObj`|모듈에는.obj 파일입니다.|  
+|`ValidatorModuleTypeEnc`|모듈은 편집 및 계속 디버거 세션을 합니다.|  
+|`ValidatorModuleTypeIncr`|모듈은 증분 방식으로 빌드된입니다.|  
+|`ValidatorModuleTypeMax`|최대값을 `CorValidatorModuleType` 열거형입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

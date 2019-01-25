@@ -2,12 +2,12 @@
 title: 인스턴싱 초기화
 ms.date: 03/30/2017
 ms.assetid: 154d049f-2140-4696-b494-c7e53f6775ef
-ms.openlocfilehash: 651029783f4632fc0b404bea8df8bd3790622bfd
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f4162eb454a0cdeb0db68c1e469da289b8e7ba78
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720969"
 ---
 # <a name="instancing-initialization"></a>인스턴싱 초기화
 이 샘플을 확장 합니다 [풀링](../../../../docs/framework/wcf/samples/pooling.md) 인터페이스를 정의 하 여 샘플 `IObjectControl`, 활성화 및 비활성화 하 여 개체의 초기화를 사용자 지정 하는 합니다. 클라이언트에서는 개체를 풀로 반환하는 메서드와 개체를 풀로 반환하지 않는 메서드를 호출합니다.  
@@ -23,9 +23,9 @@ ms.locfileid: "43516140"
 ## <a name="iinstanceprovider"></a>IInstanceProvider  
  Wcf에서 EndpointDispatcher를 구현 하는 인스턴스 공급자를 사용 하 여 서비스 클래스의 인스턴스를 만듭니다는 <xref:System.ServiceModel.Dispatcher.IInstanceProvider> 인터페이스입니다. 이 인터페이스에는 다음과 같은 두 개의 메서드만 있습니다.  
   
--   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>: 메시지가 도착하면 디스패처가 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> 메서드를 호출하여 메시지를 처리할 서비스 클래스의 인스턴스를 만듭니다. 이 메서드의 호출 빈도는 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성에 의해 결정됩니다. 예를 들어 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성이 <xref:System.ServiceModel.InstanceContextMode.PerCall?displayProperty=nameWithType>로 설정된 경우 도착하는 각 메시지를 처리하기 위해 서비스 클래스의 새 인스턴스가 만들어지므로, 메시지가 도착할 때마다 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>가 호출됩니다.  
+-   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>: 메시지가 도착할 때 하십시오 디스패처에서 호출을 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> 메시지를 처리할 서비스 클래스의 인스턴스를 만드는 메서드. 이 메서드의 호출 빈도는 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성에 의해 결정됩니다. 예를 들어 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성이 <xref:System.ServiceModel.InstanceContextMode.PerCall?displayProperty=nameWithType>로 설정된 경우 도착하는 각 메시지를 처리하기 위해 서비스 클래스의 새 인스턴스가 만들어지므로, 메시지가 도착할 때마다 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>가 호출됩니다.  
   
--   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A>: 서비스 인스턴스가 메시지 처리 작업을 마치면 EndpointDispatcher는 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> 메서드를 호출합니다. <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> 메서드에서와 마찬가지로 이 메서드의 호출 빈도는 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성에 의해 결정됩니다.  
+-   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A>: EndpointDispatcher를 호출 하는 서비스 인스턴스가 메시지를 처리 완료 되 면를 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> 메서드. <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> 메서드에서와 마찬가지로 이 메서드의 호출 빈도는 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 속성에 의해 결정됩니다.  
   
 ## <a name="the-object-pool"></a>개체 풀  
  `ObjectPoolInstanceProvider` 클래스에는 개체 풀이 구현되어 있습니다. 이 클래스는 <xref:System.ServiceModel.Dispatcher.IInstanceProvider> 인터페이스를 구현하여 서비스 모델 계층과 상호 작용합니다. EndpointDispatcher가 새 인스턴스를 만드는 대신 <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> 메서드를 호출하면 사용자 지정 구현에서 메모리 내의 풀에 있는 기존 개체를 찾습니다. 사용할 수 있는 개체가 있으면 반환되고, 그렇지 않으면 `ObjectPoolInstanceProvider`는 `ActiveObjectsCount` 속성(풀에서 반환된 개체의 개수)이 최대 풀 크기에 도달했는지 확인합니다. 이 크기에 도달하지 않았으면 새 인스턴스가 만들어지고 호출자에게 반환하며 이어서 `ActiveObjectsCount`가 증가합니다. 도달했으면 구성된 시간 동안 개체 만들기 요청이 큐에 대기합니다. `GetObjectFromThePool`의 구현은 다음 샘플 코드에 표시되어 있습니다.  
@@ -138,11 +138,11 @@ if (activeObjectsCount == 0)
   
 -   서비스 동작: 전체 서비스 런타임을 사용자 지정할 수 있습니다.  
   
--   엔드포인트 동작: EndpointDispatcher를 포함한 특정 서비스 엔드포인트를 사용자 지정할 수 있습니다.  
+-   끝점 동작: EndpointDispatcher를 포함 하 여 특정 서비스 끝점을 사용자 지정할 수 있습니다.  
   
--   계약 동작: 클라이언트 또는 서비스에서 각각 <xref:System.ServiceModel.Dispatcher.ClientRuntime> 또는 <xref:System.ServiceModel.Dispatcher.DispatchRuntime> 클래스를 사용자 지정할 수 있습니다.  
+-   계약 동작: 사용자 지정할 수 <xref:System.ServiceModel.Dispatcher.ClientRuntime> 또는 <xref:System.ServiceModel.Dispatcher.DispatchRuntime> 클라이언트 또는 서비스에서 각각 클래스입니다.  
   
--   작업 동작: 클라이언트 또는 서비스에서 각각 <xref:System.ServiceModel.Dispatcher.ClientOperation> 또는 <xref:System.ServiceModel.Dispatcher.DispatchOperation> 클래스를 사용자 지정할 수 있습니다.  
+-   작업 동작: 사용자 지정할 수 <xref:System.ServiceModel.Dispatcher.ClientOperation> 또는 <xref:System.ServiceModel.Dispatcher.DispatchOperation> 클라이언트 또는 서비스에서 각각 클래스입니다.  
   
  개체 풀링 확장을 위해 엔드포인트 동작 또는 서비스 동작을 만들 수 있습니다. 이 예제에서는 서비스의 모든 엔드포인트에 개체 풀링 기능을 적용하는 서비스 동작을 사용합니다. 서비스 동작은 <xref:System.ServiceModel.Description.IServiceBehavior> 인터페이스를 구현하여 만듭니다. ServiceModel에 사용자 지정 동작을 인식시키는 방법에는 다음 여러 가지가 있습니다.  
   
@@ -156,9 +156,9 @@ if (activeObjectsCount == 0)
   
  합니다 <xref:System.ServiceModel.Description.IServiceBehavior> 인터페이스에는: <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A> `,` <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A> `,` 고 <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A>입니다. WCF에서 이러한 메서드를 호출 하는 경우는 <xref:System.ServiceModel.ServiceHost> 초기화 하는 중입니다. <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A?displayProperty=nameWithType>가 먼저 호출되어 서비스에 일관성을 검사할 수 있게 해 줍니다. <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A?displayProperty=nameWithType>이 다음으로 호출됩니다. 이 메서드는 고급 시나리오에서만 필요합니다. <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A?displayProperty=nameWithType>가 마지막으로 호출되며 런타임 구성을 담당합니다. 다음 매개 변수가 <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A?displayProperty=nameWithType>에 전달됩니다.  
   
--   `Description`: 이 매개 변수는 전체 서비스에 대한 서비스 설명을 제공합니다. 이 매개 변수를 사용하여 서비스의 엔드포인트, 계약, 바인딩 및 그 외 서비스와 관련된 데이터에 대한 설명 데이터를 검사할 수 있습니다.  
+-   `Description`: 이 매개 변수는 전체 서비스에 대 한 서비스 설명을 제공합니다. 이 매개 변수를 사용하여 서비스의 엔드포인트, 계약, 바인딩 및 그 외 서비스와 관련된 데이터에 대한 설명 데이터를 검사할 수 있습니다.  
   
--   `ServiceHostBase`: 이 매개 변수는 현재 초기화하고 있는 <xref:System.ServiceModel.ServiceHostBase>를 제공합니다.  
+-   `ServiceHostBase`: 이 매개 변수를 제공 합니다 <xref:System.ServiceModel.ServiceHostBase> 현재 초기화 되는 합니다.  
   
  사용자 지정 <xref:System.ServiceModel.Description.IServiceBehavior> 구현에서는 `ObjectPoolInstanceProvider`의 새 인스턴스가 인스턴스화되어 <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A>에 첨부된 각 <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>의 <xref:System.ServiceModel.ServiceHostBase> 속성에 할당됩니다.  
   
@@ -265,4 +265,4 @@ else if (pool.Count < minPoolSize)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Initialization`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

@@ -2,12 +2,12 @@
 title: UriTemplate 및 UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 66463248f66457aa61ceea22afd003f7b93717e1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3fd60325d2264a2ddeaabef7b0998844ca8c8cd6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54722610"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate 및 UriTemplateTable
 웹 개발자는 서비스가 응답하는 URI의 셰이프 및 레이아웃을 설명할 수 있어야 합니다. Windows Communication Foundation (WCF) 개발자에 게 해당 Uri에 대 한 제어를 제공 하는 두 개의 새 클래스를 추가 합니다. <xref:System.UriTemplate> 및 <xref:System.UriTemplateTable> wcf에서 URI 기반 디스패치 엔진의 기초를 형성 합니다. 이러한 클래스는 템플릿 및 URI를 활용 하려면 개발자가 자신의 매핑 메커니즘에서 WCF 서비스를 구현 하지 않고도 사용할 수도 있습니다.  
@@ -81,15 +81,15 @@ ms.locfileid: "47198412"
   
 - "{shoe}/boat"  
   
-- "{shoe} / {보트} /bed/ {quilt}"  
+- "{shoe}/{boat}/bed/{quilt}"  
   
 - "신발 / {보트}"  
   
-- "신발 / {보트} /\*"  
+- "shoe/{boat}/\*"  
   
-- "신발/재벌? x = 2"  
+- "shoe/boat?x=2"  
   
-- "신발 / {보트}? x = {평판}"  
+- "shoe/{boat}?x={bed}"  
   
 - "shoe/{boat}?x={bed}&y=band"  
   
@@ -99,7 +99,7 @@ ms.locfileid: "47198412"
   
  잘못된 템플릿 문자열의 예:  
   
-- "{shoe} / {SHOE} / x 2 ="-변수 이름이 중복 되었습니다.  
+- "{shoe}/{SHOE}/x=2" – Duplicate variable names.  
   
 - "{shoe} /boat/? bed = {shoe}"-변수 이름이 중복 되었습니다.  
   
@@ -129,7 +129,7 @@ ms.locfileid: "47198412"
 - /{shoe}{boat} - 변수를 리터럴로 구분해야 합니다.  
   
 ### <a name="matching-and-compound-path-segments"></a>복합 및 일치하는 경로 세그먼트  
- 복합 경로 세그먼트를 사용하면 단일 경로 세그먼트 내에 여러 변수가 포함된 UriTemplate을 정의할 수 있습니다. 다음은 템플릿 문자열의 예: "주소 / {state}. {city} "(state 및 city)의 두 변수가 동일한 세그먼트 안에 정의 됩니다. 이 템플릿은 같은 URL은 일치 `http://example.com/Washington.Redmond` 같은 URL을 정확히 일치도 `http://example.com/Washington.Redmond.Microsoft`입니다. 후자의 경우에서 상태 변수는 "워싱턴"를 포함 하 고 city 변수에 "redmond.microsoft"가 포함 됩니다. 이 경우 모든 텍스트(‘/’ 제외)가 {city} 변수와 일치합니다. "추가" 텍스트에 일치 하는 템플릿을 원한다 면 배치 변수의 별도 템플릿 세그먼트에 예를 들어: "주소 / {state} / {city}.  
+ 복합 경로 세그먼트를 사용하면 단일 경로 세그먼트 내에 여러 변수가 포함된 UriTemplate을 정의할 수 있습니다. 다음 템플릿 문자열의 예를 들어: "주소 / {state}입니다. {city} "(state 및 city)의 두 변수가 동일한 세그먼트 안에 정의 됩니다. 이 템플릿은 같은 URL은 일치 `http://example.com/Washington.Redmond` 같은 URL을 정확히 일치도 `http://example.com/Washington.Redmond.Microsoft`입니다. 후자의 경우에서 상태 변수는 "워싱턴"를 포함 하 고 city 변수에 "redmond.microsoft"가 포함 됩니다. 이 경우 모든 텍스트(‘/’ 제외)가 {city} 변수와 일치합니다. "추가" 텍스트에 일치 하는 템플릿을 원한다 면 변수를 예를 들어 별도 템플릿 세그먼트에 배치 합니다. "주소 / {state} / {city}.  
   
 ### <a name="named-wildcard-segments"></a>명명된 와일드카드 세그먼트  
  명명 된 와일드 카드 세그먼트는 변수 이름이 와일드 카드 문자를 사용 하 여 시작 경로 변수 세그먼트 '\*'. 다음 템플릿 문자열에는 이름이 “shoe”인 명명된 와일드카드 세그먼트가 포함되어 있습니다.  
@@ -328,9 +328,9 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 > [!NOTE]
 > 문자 á와 Á는 URI 경로 또는 <xref:System.UriTemplate> 경로 세그먼트 리터럴에 표시될 경우 서로 다른 문자로 간주됩니다. 그러나 문자 a와 A는 동일한 문자로 간주됩니다. 문자 á와 Á는 <xref:System.UriTemplate> {variableName} 또는 쿼리 문자열에 표시될 경우 동일한 문자로 간주됩니다. a와 A도 동일한 문자로 간주됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF 웹 HTTP 프로그래밍 모델 개요](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)  
- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)  
- [UriTemplate 테이블](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
- [UriTemplate 테이블 디스패처](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+## <a name="see-also"></a>참고자료
+- [WCF 웹 HTTP 프로그래밍 모델 개요](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
+- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)
+- [UriTemplate 테이블](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
+- [UriTemplate 테이블 디스패처](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)

@@ -2,12 +2,12 @@
 title: 키워드 참조
 description: 모든 정보에 대 한 링크를 찾습니다는 F# 언어 키워드입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 20592c57e09c6e0f09bb3acae021369ac5e511d6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5a94a30ca0f73538cc22e76fa75bd76741b70d99
+ms.sourcegitcommit: 5dcfeb59179e81071f54840d4902cbe00b184294
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579841"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54857907"
 ---
 # <a name="keyword-reference"></a>키워드 참조
 
@@ -73,7 +73,7 @@ ms.locfileid: "54579841"
 |`return!`|[계산 식](computation-expressions.md)<br /><br />[비동기 워크플로](asynchronous-workflows.md)|계산 식을 가리키는 데를 계산할 때 포함 하는 계산 식의 결과 제공 합니다.|
 |`select`|[쿼리 식](query-expressions.md)|쿼리 식의 필드 또는 추출 하는 열을 지정 하는 데 사용 합니다. 이 실제로 예약어 있지 않으며 적절 한 상황에 맞는 키워드 처럼만 작동 키워드 note 합니다.|
 |`static`|[멤버](members/index.md)|메서드 또는 속성 형식의 인스턴스 없이 호출할 수 있는 형식의 모든 인스턴스 간에 공유 되는 값 멤버를 나타내는 데 사용 합니다.|
-|`struct`|[구조체](structures.md)<br /><br />[제약 조건](generics/constraints.md)|구조체 형식을 선언 하는 데 사용 합니다.<br /><br />제네릭 매개 변수 제약 조건에도 사용 합니다.<br /><br />모듈 정의에 OCaml 호환성을 위해서 사용 합니다.|
+|`struct`|[구조체](structures.md)<br /><br /> [튜플](tuples.md)<br/><br/>[제약 조건](generics/constraints.md)|구조체 형식을 선언 하는 데 사용 합니다.<br /><br/>구조체 튜플을 지정 하는 데 사용 합니다.<br/><br />제네릭 매개 변수 제약 조건에도 사용 합니다.<br /><br />모듈 정의에 OCaml 호환성을 위해서 사용 합니다.|
 |`then`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)<br /><br />[생성자](members/constructors.md)|조건부 식에 사용 합니다.<br /><br />또한 개체 생성 후 파생 작업을 수행 하는 데 사용 합니다.|
 |`to`|[루프: `for...to` Expression](loops-for-to-expression.md)|에 사용 되는 `for` 루프 범위를 나타냅니다.|
 |`true`|[기본 형식](primitive-types.md)|부울 리터럴은으로 사용 됩니다.|

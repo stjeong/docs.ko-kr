@@ -6,12 +6,12 @@ dev_langs:
 helpviewer_keywords:
 - hosting WPF content in Win32 window [WPF]
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
-ms.openlocfilehash: 692105d464c005109cbf1ff704045efa7d1e9173
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: c56ef33d1a44b263466a293b06aa988885b2008d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54725599"
 ---
 # <a name="walkthrough-hosting-wpf-content-in-win32"></a>연습: Win32에서 WPF 콘텐츠 호스팅
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 응용 프로그램을 만들기 위한 다양한 환경을 제공합니다. 그러나 [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] 코드에 상당한 투자를 한 경우 원본 코드를 다시 작성하는 대신 응용 프로그램에 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 기능을 추가하는 것이 더 효과적일 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 호스팅에 대 한 간단한 메커니즘을 제공 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창입니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "48842803"
 ## <a name="the-basic-procedure"></a>기본 절차  
  이 섹션에서는를 사용 하는 기본 절차를 설명 합니다. 호스트 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창입니다. 나머지 섹션에서는 각 단계를 자세히 설명합니다.  
   
- 호스팅하는 데 핵심적인 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 기간은 <xref:System.Windows.Interop.HwndSource> 클래스입니다. 이 클래스가 래핑하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 통합할 수 있도록 창에 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 자식 창으로 합니다. 다음 접근 방식은 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 및 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 단일 응용 프로그램에 결합합니다.  
+ 호스팅하는 데 핵심적인 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 기간은 <xref:System.Windows.Interop.HwndSource> 클래스입니다. 이 클래스가 래핑하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 통합할 수 있도록 창에 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 자식 창으로 합니다. 다음 접근 방식은 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 및 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 단일 애플리케이션에 결합합니다.  
   
 1.  구현에 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠를 관리 되는 클래스로 합니다.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "48842803"
   
     3.  에 대 한 참조를 할당 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 개체를 <xref:System.Windows.Interop.HwndSource.RootVisual%2A> 의 속성은 <xref:System.Windows.Interop.HwndSource>합니다.  
   
-    4.  콘텐츠에 대한 HWND를 가져옵니다. <xref:System.Windows.Interop.HwndSource.Handle%2A> 개체의 <xref:System.Windows.Interop.HwndSource> 속성에는 창 핸들(HWND)이 포함됩니다. 응용 프로그램의 관리되지 않는 부분에서 사용할 수 있는 HWND를 가져오려면 `Handle.ToPointer()`를 HWND로 캐스팅합니다.  
+    4.  콘텐츠에 대한 HWND를 가져옵니다. <xref:System.Windows.Interop.HwndSource.Handle%2A> 개체의 <xref:System.Windows.Interop.HwndSource> 속성에는 창 핸들(HWND)이 포함됩니다. 애플리케이션의 관리되지 않는 부분에서 사용할 수 있는 HWND를 가져오려면 `Handle.ToPointer()`를 HWND로 캐스팅합니다.  
   
 5.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠에 대한 참조를 보유할 정적 필드가 포함된 관리되는 클래스를 구현합니다. 이 클래스를 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 코드에서 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 콘텐츠에 대한 참조를 가져올 수 있습니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "48842803"
 >  사용할 수도 있습니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 를 구현 하 여 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠입니다. 그러나 별도로 [!INCLUDE[TLA#tla_dll](../../../../includes/tlasharptla-dll-md.md)]로 컴파일하고 [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] 응용 프로그램에서 해당 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)]을 참조해야 합니다. 프로시저의 나머지 부분은 위에서 설명한 것과 비슷합니다.
 
 <a name="implementing_the_application"></a>
-## <a name="implementing-the-host-application"></a>호스트 응용 프로그램 구현
+## <a name="implementing-the-host-application"></a>호스트 애플리케이션 구현
  이 섹션에서는 설명 호스트 하는 방법 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서는 기본 콘텐츠 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 응용 프로그램입니다. 콘텐츠 자체는 [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]에서 관리되는 클래스로 구현됩니다. 대부분의 경우 간단한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 프로그래밍입니다. 콘텐츠 구현의 주요 사항에 대해서는 [WPF 콘텐츠 구현](#implementing_the_wpf_page)합니다.
 
 <a name="autoNestedSectionsOUTLINE1"></a>
@@ -76,7 +76,7 @@ ms.locfileid: "48842803"
 -   [WPF 콘텐츠와 통신](#communicating_with_the_page)
 
 <a name="the_basic_application"></a>
-### <a name="the-basic-application"></a>기본 응용 프로그램
+### <a name="the-basic-application"></a>기본 애플리케이션
  호스트 응용 프로그램에 대 한 시작 지점을 Visual Studio 2005 템플릿을 만드는 것 이었습니다.
 
 1.  Visual Studio 2005를 열고 **새 프로젝트** 에서 합니다 **파일** 메뉴.
@@ -89,7 +89,7 @@ ms.locfileid: "48842803"
 
  템플릿은 다음을 포함하여 기본 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 응용 프로그램을 만듭니다.
 
--   응용 프로그램에 대한 진입점
+-   애플리케이션에 대한 진입점
 
 -   연결된 창 프로시저(WndProc)가 있는 창
 
@@ -108,7 +108,7 @@ ms.locfileid: "48842803"
 4.  선택 **공용 언어 런타임 지원 (/ clr)** 드롭다운 목록 상자에서.
 
 > [!NOTE]
->  이 컴파일러 플래그를 통해 응용 프로그램에서 관리 코드를 사용할 수 있지만 비관리 코드는 계속 이전처럼 컴파일됩니다.
+>  이 컴파일러 플래그를 통해 애플리케이션에서 관리 코드를 사용할 수 있지만 비관리 코드는 계속 이전처럼 컴파일됩니다.
 
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 STA(단일 스레드 아파트) 스레딩 모델을 사용합니다. 제대로 작동 하려면는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 코드에서 설정 해야 응용 프로그램의 스레딩 모델을 STA 진입점에 특성을 적용 합니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "48842803"
 ### <a name="communicating-with-the-wpf-content"></a>WPF 콘텐츠와 통신
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠와의 통신에는 두 가지 유형이 있습니다. 응용 프로그램에서 정보를 수신 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 클릭할 때 콘텐츠를 **확인** 또는 **취소** 단추입니다. 응용 프로그램에는 사용자가 배경색 또는 기본 글꼴 크기와 같은 다양한 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 콘텐츠 속성을 변경할 수 있게 해주는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]도 있습니다.
 
- 위에서 설명했듯이 사용자가 단추 중 하나를 클릭하면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠에서 `OnButtonClicked` 이벤트를 발생시킵니다. 응용 프로그램은 이 이벤트에 처리기를 연결하여 이러한 알림을 수신합니다. 경우는 **확인** 단추를 클릭 했는지, 처리기에서 사용자 정보를 가져옵니다는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 및 정적 컨트롤 집합에 표시 합니다.
+ 위에서 설명했듯이 사용자가 단추 중 하나를 클릭하면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠에서 `OnButtonClicked` 이벤트를 발생시킵니다. 애플리케이션은 이 이벤트에 처리기를 연결하여 이러한 알림을 수신합니다. 경우는 **확인** 단추를 클릭 했는지, 처리기에서 사용자 정보를 가져옵니다는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 및 정적 컨트롤 집합에 표시 합니다.
 
  [!code-cpp[Win32HostingWPFPage#WPFButtonClicked](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#wpfbuttonclicked)]
 
@@ -161,7 +161,7 @@ ms.locfileid: "48842803"
 
  경우는 **확인** 단추, 처리기에 대 한 참조를 가져옵니다는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 컨테이너 클래스의 콘텐츠입니다. 그런 다음 연결된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 속성에 보유된 사용자 정보를 수집하고 정적 컨트롤을 사용하여 부모 창에 정보를 표시합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 데이터는 관리되는 문자열 형식이므로 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 컨트롤에서 사용하기 위해 마샬링해야 합니다. 경우는 **취소** 단추, 처리기는 정적 컨트롤에서 데이터를 지웁니다.
 
- [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 응용 프로그램은 사용자가 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠의 배경색 및 여러 글꼴 관련 속성을 수정할 수 있게 해주는 라디오 단추 집합을 제공합니다. 다음 예제는 응용 프로그램의 창 프로시저(WndProc) 및 각 메시지에서 배경색을 비롯한 다양한 속성을 설정하는 해당 메시지 처리에서 발췌한 내용입니다. 다른 예제도 비슷하며 표시되지는 않습니다. 자세한 내용과 컨텍스트는 전체 샘플을 참조하세요.
+ [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 응용 프로그램은 사용자가 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠의 배경색 및 여러 글꼴 관련 속성을 수정할 수 있게 해주는 라디오 단추 집합을 제공합니다. 다음 예제는 애플리케이션의 창 프로시저(WndProc) 및 각 메시지에서 배경색을 비롯한 다양한 속성을 설정하는 해당 메시지 처리에서 발췌한 내용입니다. 다른 예제도 비슷하며 표시되지는 않습니다. 자세한 내용과 컨텍스트는 전체 샘플을 참조하세요.
 
  [!code-cpp[Win32HostingWPFPage#WMCommandToBG](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#wmcommandtobg)]
 
@@ -180,7 +180,7 @@ ms.locfileid: "48842803"
 
 <a name="page_layout"></a>
 ### <a name="layout"></a>레이아웃
- [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 의 요소를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠는 5 개로 <xref:System.Windows.Controls.TextBox> 제어를 사용 하 여 연결 된 <xref:System.Windows.Controls.Label> 컨트롤: 이름, 주소, City, State 및 Zip입니다. 또한 두 개의 <xref:System.Windows.Controls.Button> 컨트롤 **확인** 고 **취소**
+ 합니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 의 요소를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠는 5 개로 <xref:System.Windows.Controls.TextBox> 제어를 사용 하 여 연결 된 <xref:System.Windows.Controls.Label> 컨트롤: 이름, 주소, 도시, 상태 및 Zip입니다. 또한 두 개의 <xref:System.Windows.Controls.Button> 컨트롤 **확인** 고 **취소**
 
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠는 `WPFPage` 클래스에서 구현됩니다. 레이아웃은 <xref:System.Windows.Controls.Grid> 레이아웃 요소에서 처리됩니다. 클래스는 <xref:System.Windows.Controls.Grid>에서 상속되며 효과적으로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠 루트 요소로 설정됩니다.
 
@@ -228,7 +228,7 @@ ms.locfileid: "48842803"
 
  [!code-cpp[Win32HostingWPFPage#WPFPageSetFontFamily](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagesetfontfamily)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.Interop.HwndSource>
 - [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

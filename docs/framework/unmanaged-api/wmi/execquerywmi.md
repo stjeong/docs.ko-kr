@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dc22edf51cbd726b69dff3da2f0540b2c3864f2e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6cd8992fc37c570b5ea20f8751bef729311bfb7e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718197"
 ---
 # <a name="execquerywmi-function"></a>ExecQueryWmi 함수
 쿼리를 실행하여 개체를 검색합니다.  
@@ -52,7 +52,7 @@ HRESULT ExecQueryWmi (
 [in] Windows 관리를 지 원하는 올바른 쿼리 언어를 사용 하 여 사용 되는 문자열입니다. WMI 쿼리 언어에 대 한 약칭 "WQL" 이어야 합니다.
 
 `strQuery`  
-[in] 쿼리의 텍스트입니다. 이 매개 변수 수 없습니다 `null`합니다.
+[in] 쿼리의 텍스트입니다. 이 매개 변수는 `null`일 수 없습니다.
 
 `lFlags`   
 [in] 이 함수의 동작에 영향을 주는 플래그의 조합입니다. 에 정의 된 다음 값을 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드: 
@@ -64,7 +64,7 @@ HRESULT ExecQueryWmi (
 | `WBEM_FLAG_FORWARD_ONLY` | 0x20 | 함수에는 정방향 전용 열거자를 반환합니다. 일반적으로 앞 으로만 이동 가능한 열거자 빠르고 기본 열거자 보다 적은 메모리를 사용 하지만 호출을 허용 하지 않습니다 [복제](clone.md)합니다. |
 | `WBEM_FLAG_BIDIRECTIONAL` | 0 | WMI가 릴리스될 때까지 enumration의 개체에 대 한 포인터를 유지 합니다. | 
 | `WBEM_FLAG_ENSURE_LOCATABLE` | 0x100 | 반환 된 모든 개체에 따라서 충분 한 정보가 포함 하면 해당 시스템 속성을 같은 **__PATH**를 **__RELPATH**, 및 **__SERVER**, 되지 `null`합니다. |
-| `WBEM_FLAG_PROTOTYPE` | 2 | 이 플래그는 프로토타이핑에 사용 됩니다. 쿼리를 실행 하지 않습니다 하 고 대신 일반적인 결과 개체를 같은 개체를 반환 합니다. |
+| `WBEM_FLAG_PROTOTYPE` | 2 | 이 플래그는 프로토타이핑에 사용됩니다. 쿼리를 실행 하지 않습니다 하 고 대신 일반적인 결과 개체를 같은 개체를 반환 합니다. |
 | `WBEM_FLAG_DIRECT_READ` | 0x200 | 원인 직접 부모 클래스 또는 서브 클래스에 관계 없이 지정 된 클래스에 대 한 공급자에 액세스 합니다. |
 
 권장 되는 플래그가 `WBEM_FLAG_RETURN_IMMEDIATELY` 고 `WBEM_FLAG_FORWARD_ONLY` 최상의 성능을 위해.
@@ -100,11 +100,11 @@ HRESULT ExecQueryWmi (
 |---------|---------|---------|
 | `WBEM_E_ACCESS_DENIED` | 0x80041003 | 사용자 함수를 반환할 수 있는 클래스 중 하나 이상을 볼 수 있는 권한이 없습니다. |
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 | `WBEM_E_INVALID_QUERY` | 0x80041017 | 쿼리 구문 오류가 발생을 했습니다. |
-| `WBEM_E_INVALID_QUERY_TYPE` | 0x80041018 | 요청한 쿼리 언어는 지원 되지 않습니다. |
+| `WBEM_E_INVALID_QUERY_TYPE` | 0x80041018 | 요청된 쿼리 언어가 지원되지 않는 경우 |
 | `WBEM_E_QUOTA_VIOLATION` | 0x8004106c | 쿼리는 너무 복잡 합니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 | `WBEM_E_SHUTTING_DOWN` | 0x80041033 | WMI는 아마도 중지 및 다시 시작 했습니다. 호출 [ConnectServerWmi](connectserverwmi.md) 다시 합니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 현재 프로세스와 WMI 원격 프로시저 호출 (RPC) 연결 하지 못했습니다. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | 쿼리는 존재 하지 않는 클래스를 지정 합니다. |
@@ -121,11 +121,11 @@ HRESULT ExecQueryWmi (
 함수 호출에 실패 하는 경우 호출 하 여 추가 오류 정보를 얻을 수 있습니다 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

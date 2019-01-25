@@ -2,12 +2,12 @@
 title: '&lt;issuerChannelBehaviors&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
-ms.openlocfilehash: 072e3f4e961f6bf45e7c8b48c64cda36d385cf2b
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: e0f49f71a3f9649492b3ad7ccf263114957ee4e3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729933"
 ---
 # <a name="ltaddgt-of-ltissuerchannelbehaviorsgt"></a>&lt;issuerChannelBehaviors&gt;의 &lt;add&gt;
 STS와 통신할 때 사용할 엔드포인트 동작을 추가합니다.  
@@ -16,11 +16,11 @@ STS와 통신할 때 사용할 엔드포인트 동작을 추가합니다.
 >  끝점 동작을 포함 하는 경우는 [ \<clientCredentials >](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) 요소에서 예외가 throw 됩니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 endpointBehaviors 섹션  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
-\<issuedToken >  
+\<issuedToken>  
 \<issuerChannelBehaviors > 요소  
 \<add>  
   
@@ -48,22 +48,22 @@ endpointBehaviors 섹션
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<issuerChannelBehaviors >](../../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md)|지정한 서비스 토큰 서비스와 통신할 때 사용 되는 Windows Communication Foundation (WCF) 클라이언트 끝점 동작의 컬렉션을 포함 합니다.|  
+|[\<issuerChannelBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md)|지정한 서비스 토큰 서비스와 통신할 때 사용 되는 Windows Communication Foundation (WCF) 클라이언트 끝점 동작의 컬렉션을 포함 합니다.|  
   
 ## <a name="remarks"></a>설명  
  `issuerAddress`는 클라이언트가 통신하려는 보안 토큰 서비스의 URI를 포함합니다. `behaviorConfiguration` 응용 프로그램 보안 토큰 서비스에서 발급 된 토큰을 가져오기 위해 Windows Communication Foundation (WCF)에서 만든 채널에서 사용 하는 끝점 동작을 가리킵니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>  
- <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>  
- <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>  
- <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A>  
- [서비스 ID 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [방법: 페더레이션된 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [방법: 로컬 발급자 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)  
- [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [\<issuerChannelBehaviors >](../../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>
+- <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>
+- <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>
+- <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A>
+- [서비스 ID 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)
+- [방법: 페더레이션된 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
+- [방법: 로컬 발급자 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)
+- [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [\<issuerChannelBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md)
