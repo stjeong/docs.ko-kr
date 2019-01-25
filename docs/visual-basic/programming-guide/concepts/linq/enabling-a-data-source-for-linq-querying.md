@@ -2,12 +2,12 @@
 title: LINQ Querying2 대 한 데이터 소스 활성화
 ms.date: 07/20/2015
 ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
-ms.openlocfilehash: 6d2601e807a00ce2a6f8c342a565f5542ffc8f5b
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: f705db90f4838479621117bd9303f5a374d33d4d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676499"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>LINQ 쿼리에 대한 데이터 소스 활성화
 
@@ -29,7 +29,7 @@ ms.locfileid: "48582829"
  메모리 내 데이터의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 방법에는 두 가지가 있습니다. 데이터가 <xref:System.Collections.Generic.IEnumerable%601>을 구현하는 형식이라면 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects를 사용하여 데이터를 쿼리할 수 있습니다. 하지만 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 구현하여 형식의 열거형을 활성화하는 것이 바람직하지 않다면 해당 형식에서 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 표준 쿼리 연산자 메서드를 정의하거나 해당 형식을 확장하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 표준 쿼리 연산자 메서드를 만들 수 있습니다. 표준 쿼리 연산자의 사용자 지정 구현에서는 지연된 실행을 사용하여 결과를 반환해야 합니다.
 
 ### <a name="remote-data"></a>원격 데이터
- 원격 데이터 소스의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 가장 좋은 방법은 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 것입니다. 하지만 이 방식은 데이터 소스에서 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 같은 공급자를 확장하는 방식과 다릅니다. 기존 확장 하기 위한 공급자 모델은 없습니다 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 기술과 같은 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]를 다른 유형의 데이터 소스는 Visual Studio 2008에서 사용할 수 있습니다.
+ 원격 데이터 소스의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 가장 좋은 방법은 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 것입니다. 하지만 이 방식은 데이터 소스에서 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 같은 공급자를 확장하는 방식과 다릅니다. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]과 같은 기존 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 기술을 Visual Studio 2008에서 사용할 수 있는 다른 데이터 소스 형식으로 확장하는 공급자 모델은 없습니다.
 
 ## <a name="iqueryable-linq-providers"></a>IQueryable LINQ 공급자
  <xref:System.Linq.IQueryable%601>을 구현하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자의 복잡성은 경우에 따라 크게 다릅니다. 이 단원에서는 이러한 복잡성의 차이에 대해 설명합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "48582829"
 
  `IQueryable` 공급자와 같은 복잡한 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 공급자가 전체 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 SQL과 같이 표현이 가능한 쿼리 언어로 변환할 수 있습니다. 복잡한 공급자가 덜 복잡한 공급자보다 더욱 다양하고 방대한 질문을 쿼리로 처리할 수 있기 때문에 더 일반적이라 할 수 있습니다. 또한 개방형 형식 시스템을 가지므로 사용자 정의 형식을 매핑하는 확장 인프라를 포함해야 합니다. 복잡성이 높은 공급자를 개발하려면 상당한 노력이 필요합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>

@@ -1,5 +1,5 @@
 ---
-title: '연습: Windows API 호출(Visual Basic)'
+title: '연습: Windows Api 호출 (Visual Basic)'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - DLLs, calling
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - DllImport attribute, calling Windows API
 - Declare statement [Visual Basic], declaring DLL functions
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-ms.openlocfilehash: bb98d842bfe65bdf637a789fc9a8319a70cb2bc8
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 59c316ccb3a35a650ac11b96717a3ad729e777a3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54657976"
 ---
-# <a name="walkthrough-calling-windows-apis-visual-basic"></a>연습: Windows API 호출(Visual Basic)
+# <a name="walkthrough-calling-windows-apis-visual-basic"></a>연습: Windows Api 호출 (Visual Basic)
 Windows Api는 Windows 운영 체제의 일부인 동적 연결 라이브러리 (Dll)입니다. 프로시저를 직접 작성 하기 어려운 경우 작업을 수행 하려면 사용할 수 있습니다. Windows 라는 함수를 제공 하는 예를 들어 `FlashWindowEx` 밝은 영역과 어두운 음영을 교대로 응용 프로그램의 제목 표시줄을 만들 수 있습니다.  
   
  Windows Api를 사용 하 여 코드에서의 장점은 여러 가지 유용한 함수가 이미 작성 된 되어 대기 중인 사용할 수 있기 때문에 개발 시간을 절약할 수 있습니다. 단점은 Windows Api와 철 문제가 발생할 때 작업이 어려울 수 있습니다.  
@@ -147,12 +147,12 @@ Windows Api는 Windows 운영 체제의 일부인 동적 연결 라이브러리 
   
 12. 클릭 **Button2**합니다. 파일을 이동할 수 있는 경우 "파일을 성공적으로 이동" 메시지가 표시 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.DllImportAttribute>  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Declare 문](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [자동](../../../visual-basic/language-reference/modifiers/auto.md)  
- [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [관리 코드에서 프로토타입 만들기](../../../framework/interop/creating-prototypes-in-managed-code.md)  
- [콜백 메서드로 대리자 마샬링](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.DllImportAttribute>
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Declare 문](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [자동](../../../visual-basic/language-reference/modifiers/auto.md)
+- [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [관리 코드에서 프로토타입 만들기](../../../framework/interop/creating-prototypes-in-managed-code.md)
+- [콜백 메서드로 대리자 마샬링](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)

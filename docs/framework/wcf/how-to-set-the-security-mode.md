@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: 6e01dd9f-b5dd-4474-b24c-06e124de4ff7
-ms.openlocfilehash: 9f4f83502016fb749c75776dd6c2dc2bd01476e6
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c5e6d26fd665fa750b5608002d7abc938075a6ca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663039"
 ---
 # <a name="how-to-set-the-security-mode"></a>방법: 보안 모드 설정
 Windows Communication Foundation (WCF) 보안에 가장 미리 정의 된 바인딩에서 발견 되는 세 가지 일반 보안 모드: 전송, 메시지 및 "메시지 자격 증명을 사용 하 여 전송 합니다." 두 개의 추가 모드는 두 바인딩에만 해당됩니다. 즉, "전송-자격 증명만" 모드는 <xref:System.ServiceModel.BasicHttpBinding>에서 사용되고, "모두" 모드는 <xref:System.ServiceModel.NetMsmqBinding>에서 사용됩니다. 그러나 이 항목에서는 세 가지 일반 보안 모드(<xref:System.ServiceModel.SecurityMode.Transport>, <xref:System.ServiceModel.SecurityMode.Message>, <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>)에 대해 중점적으로 설명합니다.  
@@ -113,13 +113,13 @@ Windows Communication Foundation (WCF) 보안에 가장 미리 정의 된 바인
   
  자세한 내용은 [방법: 전송 보안과 메시지 자격 증명을 사용 하 여](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: SSL 인증서로 포트 구성](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)  
- [방법: 전송 보안 및 메시지 자격 증명 사용](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
- [전송 보안](../../../docs/framework/wcf/feature-details/transport-security.md)  
- [메시지 보안](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)  
- [보안 개요](../../../docs/framework/wcf/feature-details/security-overview.md)  
- [시스템 제공 바인딩](../../../docs/framework/wcf/system-provided-bindings.md)  
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)  
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)  
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+## <a name="see-also"></a>참고자료
+- [방법: SSL 인증서로 포트 구성](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+- [방법: 사용 하 여 전송 보안 및 메시지 자격 증명](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)
+- [전송 보안](../../../docs/framework/wcf/feature-details/transport-security.md)
+- [메시지 보안](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
+- [보안 개요](../../../docs/framework/wcf/feature-details/security-overview.md)
+- [시스템 제공 바인딩](../../../docs/framework/wcf/system-provided-bindings.md)
+- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)
+- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)
+- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

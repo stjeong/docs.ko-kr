@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 04b6c04868efff31253b2d723c5783060382212b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: fc4e8140485902e4677bca0228bc125c64b497f2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33448975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671865"
 ---
 # <a name="imetadataimportgetfieldprops-method"></a>IMetaDataImport::GetFieldProps 메서드
 지정한 FieldDef 토큰이 참조하는 필드와 연결된 메타데이터를 가져옵니다.  
@@ -56,7 +56,7 @@ HRESULT GetFieldProps (
  [out] 필드의 이름입니다.  
   
  `cchField`  
- [in] 에 대 한 버퍼의 와이드 문자에서 크기 *szField*합니다.  
+ [in] 와이드 문자에 대 한 버퍼의 크기 *szField*합니다.  
   
  `pchField`  
  [out] 반환된 된 버퍼의 실제 크기입니다.  
@@ -68,7 +68,7 @@ HRESULT GetFieldProps (
  [in] 필드를 설명 하는 이진 메타 데이터 값에 대 한 포인터입니다.  
   
  `pcbSigBlob`  
- [out] 바이트 크기 `ppvSigBlob`합니다.  
+ [out] 크기 (바이트) `ppvSigBlob`합니다.  
   
  `pdwCPlusTypeFlag`  
  [out] 필드의 값 형식을 지정 하는 플래그입니다.  
@@ -77,17 +77,17 @@ HRESULT GetFieldProps (
  [out] 필드는 상수 값입니다.  
   
  `pcchValue`  
- [out] 크기의 문자에서 `ppValue`, 문자열이 없는 경우 0입니다.  
+ [out] 문자 크기 `ppValue`, 문자열이 없는 경우 0입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

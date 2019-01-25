@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [Visual Basic], calling recursively
 - recursion
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
-ms.openlocfilehash: 0bb89ac855d65d7677a062346db8665698dbb805
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1802785e38b58ce2c057d6ddbe1e54e73e079761
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660725"
 ---
 # <a name="recursive-procedures-visual-basic"></a>재귀 프로시저(Visual Basic)
 A *재귀* 절차는 자신을 호출 하는 것입니다. 일반적으로이 Visual Basic 코드를 작성 하는 가장 효과적인 방법은 없습니다.  
@@ -29,7 +29,7 @@ A *재귀* 절차는 자신을 호출 하는 것입니다. 일반적으로이 Vi
   
  **메모리 사용량**. 응용 프로그램에 제한 된 지역 변수의 공간. 프로시저가 자신을 호출할 때마다 사용 공간에 많은 지역 변수의 복사본을 더 합니다. 결과적으로 인해이 프로세스는 무기한 계속 되 면을 <xref:System.StackOverflowException> 오류입니다.  
   
- **효율성**합니다. 거의 항상 재귀 루프를 대체할 수 있습니다. 루프는 전달 인수를 추가 저장소를 초기화 하 고 값을 반환 하는 오버 헤드는 없습니다. 성능 재귀 호출 없이 훨씬 더 나은 수 있습니다.  
+ **효율성**- 거의 항상 재귀 루프를 대체할 수 있습니다. 루프는 전달 인수를 추가 저장소를 초기화 하 고 값을 반환 하는 오버 헤드는 없습니다. 성능 재귀 호출 없이 훨씬 더 나은 수 있습니다.  
   
  **상호 재귀**합니다. 서로 다른 두 프로시저 호출 하는 경우 성능이 매우 저하 또는 무한 루프도 알 수 있습니다. 이러한 설계는 단일 재귀 프로시저와 같은 문제를 표시 하지만 발견 하 여 디버깅 하기가 더 어렵습니다.  
   
@@ -37,15 +37,15 @@ A *재귀* 절차는 자신을 호출 하는 것입니다. 일반적으로이 Vi
   
  **테스트**합니다. 재귀 프로시저를 작성 하는 경우 일부 제한 조건이 항상 충족 하는지 확인 하려면 매우 신중 하 게 테스트 해야 있습니다. 또한 재귀 호출이 너무 많아서 인해 메모리에서 실행할 수 없음을 확인 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.StackOverflowException>  
- [절차](./index.md)  
- [Sub 프로시저](./sub-procedures.md)  
- [Function 프로시저](./function-procedures.md)  
- [속성 프로시저](./property-procedures.md)  
- [연산자 프로시저](./operator-procedures.md)  
- [프로시저 매개 변수 및 인수](./procedure-parameters-and-arguments.md)  
- [프로시저 오버로딩](./procedure-overloading.md)  
- [프로시저 문제 해결](./troubleshooting-procedures.md)  
- [루프 구조](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [예외 문제 해결: System.StackOverflowException](https://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)
+## <a name="see-also"></a>참고자료
+- <xref:System.StackOverflowException>
+- [절차](./index.md)
+- [Sub 프로시저](./sub-procedures.md)
+- [Function 프로시저](./function-procedures.md)
+- [속성 프로시저](./property-procedures.md)
+- [연산자 프로시저](./operator-procedures.md)
+- [프로시저 매개 변수 및 인수](./procedure-parameters-and-arguments.md)
+- [프로시저 오버로딩](./procedure-overloading.md)
+- [프로시저 문제 해결](./troubleshooting-procedures.md)
+- [루프 구조](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [예외 문제 해결: System.StackOverflowException](https://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)

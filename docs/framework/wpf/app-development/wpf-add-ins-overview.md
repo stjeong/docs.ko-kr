@@ -12,15 +12,15 @@ helpviewer_keywords:
 - add-ins [WPF], architecture
 - add-ins [WPF], limitations
 ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
-ms.openlocfilehash: 07c33aa49e6fc8f78acd86a92cf555ae389e200c
-ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
+ms.openlocfilehash: 48981a942461570c0ef822dba9b18cb9a41f59f8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53397035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54662740"
 ---
 # <a name="wpf-add-ins-overview"></a>WPF 추가 기능 개요
-<a name="Introduction"></a> .NET Framework 개발자가 추가 기능 확장성을 지 원하는 응용 프로그램을 만드는 데 사용할 추가 모델을 포함 합니다. 이 추가 기능 모델을 사용하면 응용 프로그램 기능과 통합하고 이 기능을 확장하는 추가 기능을 만들 수 있습니다. 일부 시나리오에서는 응용 프로그램 에서도 추가 기능을 통해 제공 되는 사용자 인터페이스를 표시 해야 합니다. 이 항목에서는 WPF 이러한 시나리오, 해당 이점 및 제한 사항 기반이 되는 아키텍처를 사용 하도록 설정 하려면.NET Framework 추가 기능에서 모델을 보강 하는 방법을 보여 줍니다.  
+<a name="Introduction"></a> .NET Framework 개발자가 추가 기능 확장성을 지 원하는 응용 프로그램을 만드는 데 사용할 추가 모델을 포함 합니다. 이 추가 기능 모델을 사용하면 애플리케이션 기능과 통합하고 이 기능을 확장하는 추가 기능을 만들 수 있습니다. 일부 시나리오에서는 응용 프로그램 에서도 추가 기능을 통해 제공 되는 사용자 인터페이스를 표시 해야 합니다. 이 항목에서는 WPF 이러한 시나리오, 해당 이점 및 제한 사항 기반이 되는 아키텍처를 사용 하도록 설정 하려면.NET Framework 추가 기능에서 모델을 보강 하는 방법을 보여 줍니다.  
   
 
   
@@ -30,7 +30,7 @@ ms.locfileid: "53397035"
   
 <a name="AddInsOverview"></a>   
 ## <a name="add-ins-overview"></a>추가 기능 개요  
- 응용 프로그램에서는 새 기능을 통합하기 위해 응용 프로그램을 다시 컴파일하여 배포하는 복잡한 작업을 방지하도록 확장성 메커니즘을 구현하여 개발자(자사 및 타사)가 새 기능을 통합하는 다른 응용 프로그램을 만들 수 있도록 합니다. 이러한 형식의 확장성을 지원하는 가장 일반적인 방법은 추가 기능(“추가 기능” 및 “플러그 인”이라고도 함)을 사용하는 것입니다. 추가 기능으로 확장성을 노출하는 실제 응용 프로그램의 예에는 다음이 있습니다.  
+ 애플리케이션에서는 새 기능을 통합하기 위해 애플리케이션을 다시 컴파일하여 배포하는 복잡한 작업을 방지하도록 확장성 메커니즘을 구현하여 개발자(자사 및 타사)가 새 기능을 통합하는 다른 애플리케이션을 만들 수 있도록 합니다. 이러한 형식의 확장성을 지원하는 가장 일반적인 방법은 추가 기능(“추가 기능” 및 “플러그 인”이라고도 함)을 사용하는 것입니다. 추가 기능으로 확장성을 노출하는 실제 애플리케이션의 예에는 다음이 있습니다.  
   
 -   Internet Explorer 추가 기능.  
   
@@ -38,15 +38,15 @@ ms.locfileid: "53397035"
   
 -   Visual Studio 추가 기능.  
   
- 예를 들어, Windows Media Player 추가 기능 모델을 사용하면 타사 개발자가 다양한 방식으로 Windows Media Player를 확장하는 “플러그 인”을 구현할 수 있습니다. 이러한 방식에는 Windows Media Player에서 기본적으로 지원하지 않는 미디어 형식(예: DVD, MP3)의 디코더와 인코더, 오디오 효과 및 스킨이 포함됩니다. 모든 추가 기능 모델에 공통인 동작과 엔터티가 여러 개 있지만, 각 추가 기능 모델은 응용 프로그램에 고유한 기능을 노출하도록 빌드되어 있습니다.  
+ 예를 들어, Windows Media Player 추가 기능 모델을 사용하면 타사 개발자가 다양한 방식으로 Windows Media Player를 확장하는 “플러그 인”을 구현할 수 있습니다. 이러한 방식에는 Windows Media Player에서 기본적으로 지원하지 않는 미디어 형식(예: DVD, MP3)의 디코더와 인코더, 오디오 효과 및 스킨이 포함됩니다. 모든 추가 기능 모델에 공통인 동작과 엔터티가 여러 개 있지만, 각 추가 기능 모델은 애플리케이션에 고유한 기능을 노출하도록 빌드되어 있습니다.  
   
- 일반적인 추가 기능 확장성 솔루션의 세 가지 기본 엔터티는 *계약*, *추가 기능* 및 *호스트 응용 프로그램*입니다. 계약은 추가 기능이 다음 두 방법으로 호스트 응용 프로그램과 통합하는 방법을 정의합니다.  
+ 일반적인 추가 기능 확장성 솔루션의 세 가지 기본 엔터티는 *계약*, *추가 기능* 및 *호스트 애플리케이션*입니다. 계약은 추가 기능이 다음 두 방법으로 호스트 애플리케이션과 통합하는 방법을 정의합니다.  
   
--   추가 기능은 호스트 응용 프로그램으로 구현된 기능과 통합됩니다.  
+-   추가 기능은 호스트 애플리케이션으로 구현된 기능과 통합됩니다.  
   
--   호스트 응용 프로그램에서 추가 기능과 통합될 기능을 노출합니다.  
+-   호스트 애플리케이션에서 추가 기능과 통합될 기능을 노출합니다.  
   
- 추가 기능을 사용하려면 호스트 응용 프로그램에서 해당 기능을 찾아 런타임 시 로드해야 합니다. 따라서 추가 기능을 지원하는 응용 프로그램에서는 다음과 같은 추가 작업을 담당합니다.  
+ 추가 기능을 사용하려면 호스트 애플리케이션에서 해당 기능을 찾아 런타임 시 로드해야 합니다. 따라서 추가 기능을 지원하는 애플리케이션에서는 다음과 같은 추가 작업을 담당합니다.  
   
 -   **검색**: 호스트 응용 프로그램에서 지원 되는 계약을 준수 하는 추가 기능 찾기.  
   
@@ -67,9 +67,9 @@ ms.locfileid: "53397035"
   
 <a name="NETFrameworkAddInModelOverview"></a>   
 ## <a name="net-framework-add-in-model-overview"></a>.NET Framework 추가 기능 모델 개요  
- .NET Framework 추가 기능에서 모델에 있는 <xref:System.AddIn> 네임 스페이스에는 추가 기능 확장성의 개발을 간소화 하도록 설계 된 형식의 집합을 포함 합니다. .NET Framework 추가 기능 모델의 기본 단위를 *계약*, 응용 프로그램을 호스트 하는 방법을 정의 하는 및의 추가 기능 서로 통신 합니다. 계약은 계약의 호스트-응용 프로그램별 *보기*를 사용하여 호스트 응용 프로그램에 노출됩니다. 마찬가지로 계약의 추가 기능별 *보기*가 추가 기능에 노출됩니다. 호스트 응용 프로그램과 추가 기능이 계약의 각 보기 간에 통신할 수 있도록 *어댑터*가 사용됩니다. 계약, 보기 및 어댑터를 세그먼트라고 하며, 관련 세그먼트 집합이 *파이프라인*을 구성합니다. 파이프라인에는.NET Framework 추가 기능 모델 지원 검색, 활성화, 보안 격리, 실행 격리 (응용 프로그램 도메인 및 프로세스를 모두 사용), 통신, 수명 관리 및 버전 관리 기반이 됩니다.  
+ .NET Framework 추가 기능에서 모델에 있는 <xref:System.AddIn> 네임 스페이스에는 추가 기능 확장성의 개발을 간소화 하도록 설계 된 형식의 집합을 포함 합니다. .NET Framework 추가 기능 모델의 기본 단위를 *계약*, 응용 프로그램을 호스트 하는 방법을 정의 하는 및의 추가 기능 서로 통신 합니다. 계약은 계약의 호스트-애플리케이션별 *보기*를 사용하여 호스트 애플리케이션에 노출됩니다. 마찬가지로 계약의 추가 기능별 *보기*가 추가 기능에 노출됩니다. 호스트 애플리케이션과 추가 기능이 계약의 각 보기 간에 통신할 수 있도록 *어댑터*가 사용됩니다. 계약, 보기 및 어댑터를 세그먼트라고 하며, 관련 세그먼트 집합이 *파이프라인*을 구성합니다. 파이프라인에는.NET Framework 추가 기능 모델 지원 검색, 활성화, 보안 격리, 실행 격리 (응용 프로그램 도메인 및 프로세스를 모두 사용), 통신, 수명 관리 및 버전 관리 기반이 됩니다.  
   
- 개발자는 이러한 지원을 모두 활용하여 호스트 응용 프로그램의 기능과 통합하는 추가 기능을 빌드할 수 있습니다. 그러나 일부 시나리오에는 추가 기능에서 제공 하는 사용자 인터페이스에 표시할 응용 프로그램을 호스트 해야 합니다. .NET Framework의 각 프레젠테이션 기술에 사용자 인터페이스를 구현 하기 위한 자체 모델 때문에.NET Framework 추가 기능 모델에는 어떠한 특정 프레젠테이션 기술을 지원 하지 않습니다. 대신 WPF는 UI 지 원하는 추가 기능에는.NET Framework 추가 기능 모델을 확장 합니다.  
+ 개발자는 이러한 지원을 모두 활용하여 호스트 애플리케이션의 기능과 통합하는 추가 기능을 빌드할 수 있습니다. 그러나 일부 시나리오에는 추가 기능에서 제공 하는 사용자 인터페이스에 표시할 응용 프로그램을 호스트 해야 합니다. .NET Framework의 각 프레젠테이션 기술에 사용자 인터페이스를 구현 하기 위한 자체 모델 때문에.NET Framework 추가 기능 모델에는 어떠한 특정 프레젠테이션 기술을 지원 하지 않습니다. 대신 WPF는 UI 지 원하는 추가 기능에는.NET Framework 추가 기능 모델을 확장 합니다.  
   
 <a name="WPFAddInModel"></a>   
 ## <a name="wpf-add-ins"></a>WPF 추가 기능  
@@ -155,19 +155,19 @@ ms.locfileid: "53397035"
  추가 기능의 종종 표시할 호스트 응용 프로그램에 대 한 여러 사용자 인터페이스를 제공 합니다. 예를 들어의 추가 기능 ui도 UI도 호스트 응용 프로그램에 상태 정보를 제공 하는 것이 좋습니다. 이와 같은 추가 기능은 [추가 기능이 사용자 인터페이스를 반환함](#ReturnUIFromAddInContract) 및 [추가 기능이 사용자 인터페이스임](#AddInIsAUI) 모델의 기술을 조합하여 구현할 수 있습니다.  
   
 <a name="AddInsAndXBAPs"></a>   
-## <a name="add-ins-and-xaml-browser-applications"></a>추가 기능 및 XAML 브라우저 응용 프로그램  
- 지금까지의 예에서는 호스트 응용 프로그램이 독립형 응용 프로그램으로 설치되었습니다. 다음과 같은 추가 빌드 및 구현 요구 사항이 있긴 하지만 [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]에서도 추가 기능을 호스팅할 수 있습니다.  
+## <a name="add-ins-and-xaml-browser-applications"></a>추가 기능 및 XAML 브라우저 애플리케이션  
+ 지금까지의 예에서는 호스트 애플리케이션이 독립형 애플리케이션으로 설치되었습니다. 다음과 같은 추가 빌드 및 구현 요구 사항이 있긴 하지만 [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]에서도 추가 기능을 호스팅할 수 있습니다.  
   
--   클라이언트 컴퓨터에서 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]와 동일한 폴더의 [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] 응용 프로그램 캐시에 파이프라인(폴더 및 어셈블리) 및 추가 기능 어셈블리를 다운로드하도록 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 응용 프로그램 매니페스트를 특별히 구성해야 합니다.  
+-   클라이언트 컴퓨터에서 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]와 동일한 폴더의 [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] 애플리케이션 캐시에 파이프라인(폴더 및 어셈블리) 및 추가 기능 어셈블리를 다운로드하도록 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 애플리케이션 매니페스트를 특별히 구성해야 합니다.  
   
--   추가 기능을 검색하고 로드하는 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 코드가 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]의 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 응용 프로그램 캐시를 파이프라인과 추가 기능 위치로 사용해야 합니다.  
+-   추가 기능을 검색하고 로드하는 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 코드가 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]의 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 애플리케이션 캐시를 파이프라인과 추가 기능 위치로 사용해야 합니다.  
   
--   추가 기능이 원본 사이트에 있는 느슨한 파일을 참조하는 경우 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]는 특수 보안 컨텍스트에 추가 기능을 로드해야 합니다. 추가 기능이 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]에서 호스팅된 경우 이러한 추가 기능은 호스트 응용 프로그램의 원본 사이트에 있는 느슨한 파일만 참조할 수 있습니다.  
+-   추가 기능이 원본 사이트에 있는 느슨한 파일을 참조하는 경우 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]는 특수 보안 컨텍스트에 추가 기능을 로드해야 합니다. 추가 기능이 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]에서 호스팅된 경우 이러한 추가 기능은 호스트 애플리케이션의 원본 사이트에 있는 느슨한 파일만 참조할 수 있습니다.  
   
  이러한 작업은 다음 하위 섹션에 자세히 설명되어 있습니다.  
   
 ### <a name="configuring-the-pipeline-and-add-in-for-clickonce-deployment"></a>ClickOnce 배포를 위한 파이프라인 및 추가 기능 구성  
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]는 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 배포 캐시의 안전한 폴더로 다운로드되고 이 폴더에서 실행됩니다. [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]가 추가 기능을 호스트하려면 파이프라인과 추가 기능 어셈블리도 안전한 폴더에 다운로드해야 합니다. 이 작업을 수행하려면 다운로드할 파이프라인과 추가 기능 어셈블리를 모두 포함하도록 응용 프로그램 매니페스트를 구성해야 합니다. [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 파이프라인 어셈블리를 검색하려면 파이프라인과 추가 기능 어셈블리가 호스트 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 프로젝트의 루트 폴더에 있어야 하지만, 이 작업은 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 가장 쉽게 수행됩니다.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]는 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 배포 캐시의 안전한 폴더로 다운로드되고 이 폴더에서 실행됩니다. [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]가 추가 기능을 호스트하려면 파이프라인과 추가 기능 어셈블리도 안전한 폴더에 다운로드해야 합니다. 이 작업을 수행하려면 다운로드할 파이프라인과 추가 기능 어셈블리를 모두 포함하도록 애플리케이션 매니페스트를 구성해야 합니다. [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 파이프라인 어셈블리를 검색하려면 파이프라인과 추가 기능 어셈블리가 호스트 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 프로젝트의 루트 폴더에 있어야 하지만, 이 작업은 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 가장 쉽게 수행됩니다.  
   
  결과적으로 첫 번째 단계에서는 각 파이프라인 어셈블리의 빌드 출력과 추가 기능 어셈블리 프로젝트를 설정하여 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 프로젝트의 루트에 파이프라인 및 추가 기능 어셈블리를 빌드합니다. 다음 표에서는 호스트 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 프로젝트와 동일한 솔루션 및 루트 폴더에 있는 파이프라인 어셈블리 프로젝트와 추가 기능 어셈블리 프로젝트의 빌드 출력 경로를 보여줍니다.  
   
@@ -187,13 +187,13 @@ ms.locfileid: "53397035"
   
 2.  **속성** 창에서 각 파이프라인 어셈블리 및 추가 기능 어셈블리의 **빌드 작업**을 **콘텐츠**로 설정.  
   
- 마지막 단계에서는 다운로드할 파이프라인 어셈블리 파일과 추가 기능 어셈블리 파일을 포함하도록 응용 프로그램 매니페스트를 구성합니다. 파일은 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 응용 프로그램이 차지하는 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 캐시의 폴더 루트에 있는 폴더에 있어야 합니다. 구성은 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 다음을 수행하여 구현할 수 있습니다.  
+ 마지막 단계에서는 다운로드할 파이프라인 어셈블리 파일과 추가 기능 어셈블리 파일을 포함하도록 애플리케이션 매니페스트를 구성합니다. 파일은 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 애플리케이션이 차지하는 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 캐시의 폴더 루트에 있는 폴더에 있어야 합니다. 구성은 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]에서 다음을 수행하여 구현할 수 있습니다.  
   
 1.  [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 프로젝트를 마우스 오른쪽 단추로 클릭하고, **속성**, **게시** 순으로 클릭한 다음 **응용 프로그램 파일** 단추를 클릭합니다.  
   
 2.  **응용 프로그램 파일** 대화 상자에서 각 파이프라인과 추가 기능 DLL의 **게시 상태**를 **포함(자동)** 으로 설정하고 각 파이프라인과 추가 기능 DLL에 대해 **그룹 다운로드**을 **(필수)** 로 설정합니다.  
   
-### <a name="using-the-pipeline-and-add-in-from-the-application-base"></a>응용 프로그램 기준 위치에서 파이프라인과 추가 기능 사용  
+### <a name="using-the-pipeline-and-add-in-from-the-application-base"></a>애플리케이션 기준 위치에서 파이프라인과 추가 기능 사용  
  파이프라인 및 추가 기능이 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 배포용으로 구성되면 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]와 동일한 [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] 캐시 폴더에 다운로드됩니다. [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]의 파이프라인과 추가 기능을 사용하려면 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 코드를 통해 응용 프로그램 기준 위치에서 가져와야 합니다. 다양 한 형식 및 멤버의.NET Framework 추가 기능에서 모델 파이프라인과 추가 기능을 사용 하 여이 시나리오에 대 한 특별 한 지원을 제공 합니다. 경로으로 식별 되는 먼저는 <xref:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase> 열거형 값입니다. 다음을 포함하는 파이프라인을 사용하기 위해 관련 추가 기능 멤버의 오버로드와 함께 이 값을 사용합니다.  
   
 -   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=nameWithType>  
@@ -205,7 +205,7 @@ ms.locfileid: "53397035"
 -   <xref:System.AddIn.Hosting.AddInStore.Update%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=nameWithType>  
   
 ### <a name="accessing-the-hosts-site-of-origin"></a>호스트의 원본 사이트에 액세스  
- 추가 기능이 원본 사이트의 파일을 참조할 수 있도록 호스트 응용 프로그램과 동일한 수준의 보안 격리로 추가 기능을 로드해야 합니다. 이 보안 수준으로 식별 되는 <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=nameWithType> 열거형 값을 전달할는 <xref:System.AddIn.Hosting.AddInToken.Activate%2A> 메서드 추가 기능이 활성화 되는 경우.  
+ 추가 기능이 원본 사이트의 파일을 참조할 수 있도록 호스트 애플리케이션과 동일한 수준의 보안 격리로 추가 기능을 로드해야 합니다. 이 보안 수준으로 식별 되는 <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=nameWithType> 열거형 값을 전달할는 <xref:System.AddIn.Hosting.AddInToken.Activate%2A> 메서드 추가 기능이 활성화 되는 경우.  
   
 <a name="WPFAddInModelArchitecture"></a>   
 ## <a name="wpf-add-in-architecture"></a>WPF 추가 기능 아키텍처  
@@ -244,7 +244,7 @@ ms.locfileid: "53397035"
   
     -   "추가-UI 임" 프로그래밍 모델에 대 한 재정의 <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> 추가 기능 쪽 어댑터 및 전화 <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> (앞의 예제에 표시 된 것)는 필요한 경우 추가 기능 쪽 어댑터를 호출 하는 대로 `QueryContract` 구현을 호스트 쪽 어댑터입니다.  
   
--   여러 응용 프로그램 도메인 실행 보호 제공. 응용 프로그램 도메인의 한계로 인해 추가 기능 응용 프로그램 도메인에서 throw된 처리되지 않은 예외가 발생하면 격리 경계가 있는 경우에도 전체 응용 프로그램이 중단됩니다. 그러나 WPF 및.NET Framework 추가 기능 모델에는이 문제를 해결 하 고 응용 프로그램 안정성을 개선 하는 간단한 방법을 제공 합니다. WPF 추가 기능에서 UI를 표시 하는 만드는 <xref:System.Windows.Threading.Dispatcher> 호스트 응용 프로그램은 WPF 응용 프로그램을 하는 경우 응용 프로그램 도메인에 실행 되는 스레드에 대 한 합니다. 처리 하 여 응용 프로그램 도메인에서 발생 하는 처리 되지 않은 모든 예외를 감지할 수 있습니다 합니다 <xref:System.Windows.Threading.Dispatcher.UnhandledException> 이벤트의 WPF 추가 기능의 <xref:System.Windows.Threading.Dispatcher>합니다. 가져올 수 있습니다 합니다 <xref:System.Windows.Threading.Dispatcher> 에서 <xref:System.Windows.Threading.Dispatcher.CurrentDispatcher%2A> 속성입니다.  
+-   여러 애플리케이션 도메인 실행 보호 제공. 애플리케이션 도메인의 한계로 인해 추가 기능 애플리케이션 도메인에서 throw된 처리되지 않은 예외가 발생하면 격리 경계가 있는 경우에도 전체 애플리케이션이 중단됩니다. 그러나 WPF 및.NET Framework 추가 기능 모델에는이 문제를 해결 하 고 응용 프로그램 안정성을 개선 하는 간단한 방법을 제공 합니다. WPF 추가 기능에서 UI를 표시 하는 만드는 <xref:System.Windows.Threading.Dispatcher> 호스트 응용 프로그램은 WPF 응용 프로그램을 하는 경우 응용 프로그램 도메인에 실행 되는 스레드에 대 한 합니다. 처리 하 여 응용 프로그램 도메인에서 발생 하는 처리 되지 않은 모든 예외를 감지할 수 있습니다 합니다 <xref:System.Windows.Threading.Dispatcher.UnhandledException> 이벤트의 WPF 추가 기능의 <xref:System.Windows.Threading.Dispatcher>합니다. 가져올 수 있습니다 합니다 <xref:System.Windows.Threading.Dispatcher> 에서 <xref:System.Windows.Threading.Dispatcher.CurrentDispatcher%2A> 속성입니다.  
   
 <a name="WPFAddInModelLimitations"></a>   
 ## <a name="wpf-add-in-limitations"></a>WPF 추가 기능 한계  
@@ -280,12 +280,12 @@ ms.locfileid: "53397035"
   
 <a name="PerformanceOptimization"></a>   
 ## <a name="performance-optimization"></a>성능 최적화  
- 기본적으로 여러 응용 프로그램 도메인을 사용 하는 경우 각 응용 프로그램에 필요한 다양 한.NET Framework 어셈블리는 모든 도메인에 로드 해당 응용 프로그램. 결과적으로 새 응용 프로그램 도메인을 만들고 이 도메인의 응용 프로그램을 시작하는 데 필요한 시간이 성능에 영향을 미칠 수 있습니다. 그러나.NET Framework 응용 프로그램을 이미 로드 된 경우 응용 프로그램 도메인 간에 어셈블리를 공유 하도록 지시 하 여 시작 시간을 줄일 수 있는 방법을 제공 합니다. 사용 하 여이 작업을 수행 합니다 <xref:System.LoaderOptimizationAttribute> 진입점 메서드를 적용 해야 하는 특성 (`Main`). 이 경우, 응용 프로그램 정의를 구현하는 코드만 사용해야 합니다([응용 프로그램 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md) 참조).  
+ 기본적으로 여러 응용 프로그램 도메인을 사용 하는 경우 각 응용 프로그램에 필요한 다양 한.NET Framework 어셈블리는 모든 도메인에 로드 해당 응용 프로그램. 결과적으로 새 애플리케이션 도메인을 만들고 이 도메인의 애플리케이션을 시작하는 데 필요한 시간이 성능에 영향을 미칠 수 있습니다. 그러나.NET Framework 응용 프로그램을 이미 로드 된 경우 응용 프로그램 도메인 간에 어셈블리를 공유 하도록 지시 하 여 시작 시간을 줄일 수 있는 방법을 제공 합니다. 사용 하 여이 작업을 수행 합니다 <xref:System.LoaderOptimizationAttribute> 진입점 메서드를 적용 해야 하는 특성 (`Main`). 이 경우, 애플리케이션 정의를 구현하는 코드만 사용해야 합니다([애플리케이션 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md) 참조).  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.LoaderOptimizationAttribute>  
- [추가 기능 및 확장성](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))  
- [응용 프로그램 도메인](../../../../docs/framework/app-domains/application-domains.md)  
- [.NET framework Remoting 개요](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
- [개체 사용 가능](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)  
- [방법 항목](../../../../docs/framework/wpf/app-development/how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.LoaderOptimizationAttribute>
+- [추가 기능 및 확장성](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
+- [응용 프로그램 도메인](../../../../docs/framework/app-domains/application-domains.md)
+- [.NET framework Remoting 개요](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)
+- [개체 사용 가능](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)
+- [방법 항목](../../../../docs/framework/wpf/app-development/how-to-topics.md)

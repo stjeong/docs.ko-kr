@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - sounds [Windows Forms], playing
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
-ms.openlocfilehash: 29399beebef3de3e7b4ae8ce7f3611e3d158296f
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: a93519cbc320def91c030e7344b33be2a10b4351
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48835583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54674338"
 ---
 # <a name="soundplayer-class"></a>SoundPlayer 클래스
 `SoundPlayer` 클래스를 사용하여 응용 프로그램에 소리를 쉽게 포함할 수 있습니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "48835583"
  [방법: Windows Form에서 경고음 재생](../../../../docs/framework/winforms/controls/how-to-play-a-beep-from-a-windows-form.md)  
  컴퓨터 경고음을 재생하는 코드를 제공합니다.  
   
- [방법: Windows Form에서 리소스에 포함된 소리 재생](../../../../docs/framework/winforms/controls/how-to-play-a-sound-embedded-in-a-resource-from-a-windows-form.md)  
+ [방법: Windows Form에서 리소스에 포함 된 소리 재생](../../../../docs/framework/winforms/controls/how-to-play-a-sound-embedded-in-a-resource-from-a-windows-form.md)  
  리소스에서 소리를 재생하는 코드를 제공합니다.  
   
  [방법: Windows Form에서 시스템 소리 재생](../../../../docs/framework/winforms/controls/how-to-play-a-system-sound-from-a-windows-form.md)  
@@ -51,6 +51,6 @@ ms.locfileid: "48835583"
  [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  사용 방법에 대한 정보 링크를 포함하는 Windows Forms 컨트롤의 전체 목록을 제공합니다.  
   
-## <a name="see-also"></a>참고자료 
+## <a name="see-also"></a>참고자료
 
 - [My.Computer 개체](../../../visual-basic/language-reference/objects/my-computer-object.md)

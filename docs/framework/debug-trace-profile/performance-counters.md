@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 39472662cd26799e9adbbbd199129e2c83dd0d93
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 5c9bf5d138be250d1dfeee012368153bac96b067
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672398"
 ---
 # <a name="performance-counters-in-the-net-framework"></a>.NET Framework의 성능 카운터
 이 항목에서 확인할 수 있는 성능 카운터의 목록을 제공 합니다 [Windows 성능 모니터](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29)합니다.  
@@ -237,7 +237,7 @@ for (int i = 0; i < Array.Length; i++)
   
 -   ".NET CLR 네트워킹 4.0.0.0" - 위의 모든 소켓 카운터 및 .NET Framework 버전 4 이상에서 지원되는 새 성능 카운터 이러한 새 카운터는 <xref:System.Net.HttpWebRequest> 개체에 대한 성능 정보를 제공합니다.  
   
- 응용 프로그램에서 성능 카운터에 액세스하고 관리하는 방법에 대한 자세한 내용은 [성능 카운터](../../../docs/framework/debug-trace-profile/performance-counters.md)를 참조하세요.  
+ 애플리케이션에서 성능 카운터에 액세스하고 관리하는 방법에 대한 자세한 내용은 [성능 카운터](../../../docs/framework/debug-trace-profile/performance-counters.md)를 참조하세요.  
   
 <a name="security"></a>   
 ## <a name="security-performance-counters"></a>보안 성능 카운터  
@@ -251,6 +251,6 @@ for (int i = 0; i < Array.Length; i++)
 |**Stack Walk Depth**|마지막 런타임 코드 액세스 보안 검사 중 스택의 깊이를 표시합니다. 런타임 코드 액세스 보안 검사는 스택을 따라 수행됩니다. 이 카운터는 평균이 아니라 마지막으로 관찰된 값만 표시합니다.|  
 |**Total Runtime Checks**|응용 프로그램이 시작된 이후 수행된 런타임 코드 액세스 보안 검사의 총수를 표시합니다. 런타임 코드 액세스 보안 검사는 호출자가 특정 권한을 요구하는 경우에 수행됩니다. 런타임 검사는 호출자에 의해 각 호출에서 수행되고 호출자의 현재 스레드 스택을 검사합니다. **Stack Walk Depth** 카운터와 함께 사용할 경우 이 카운터는 보안 검사에 대해 발생하는 성능 저하를 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [성능 카운터](../../../docs/framework/debug-trace-profile/performance-counters.md)  
- [런타임 프로파일링](../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+## <a name="see-also"></a>참고자료
+- [성능 카운터](../../../docs/framework/debug-trace-profile/performance-counters.md)
+- [런타임 프로파일링](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

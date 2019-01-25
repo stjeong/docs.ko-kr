@@ -7,12 +7,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], XML literals
 - literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.openlocfilehash: 03fc8c11b5553c9c3a63bdcb69bf6135050e2c89
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c6d2600b590e01fff062828f8e0f48d9cfad0190
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681393"
 ---
 # <a name="xml-literals-overview-visual-basic"></a>XML 리터럴 개요(Visual Basic)
 *XML 리터럴* Visual Basic 코드에 직접 XML을 통합할 수 있습니다. XML 리터럴 구문을 나타내는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체 되며 XML 1.0 구문과 비슷합니다. 이렇게 하면 쉽게 코드에 동일한 최종 XML 구조 때문에 XML 요소와 문서를 프로그래밍 방식으로 만들 수 있습니다.  
@@ -54,10 +54,10 @@ ms.locfileid: "43507650"
   
  [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement>  
- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML의 포함 식](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)  
- [XML 문서 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
- [XML 요소 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XElement>
+- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML의 포함 식](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
+- [XML 문서 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML 요소 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)

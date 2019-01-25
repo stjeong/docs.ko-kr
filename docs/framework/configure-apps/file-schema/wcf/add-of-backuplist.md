@@ -2,20 +2,20 @@
 title: '&lt;backupList&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
-ms.openlocfilehash: 4a8eb3df9be6b6b5bfe43aee330f3174ddca66ab
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2cc7cce62082317bb86218d68bd2881b74649771
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54670188"
 ---
 # <a name="ltaddgt-of-ltbackuplistgt"></a>&lt;backupList&gt;의 &lt;add&gt;
 백업 엔드포인트 요소를 정의하는 구성 요소를 나타냅니다.  
   
  \<system.serviceModel>  
 \<라우팅 >  
-\<backupLists >  
-\<backupList >  
+\<backupLists>  
+\<backupList>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -49,7 +49,7 @@ ms.locfileid: "54151477"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<라우팅 >](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|원하는 경우 기본 끝점에 연결할 수 없습니다를 사용 하도록 라우팅 서비스는 끝점의 목록을 포함 합니다.|  
+|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|원하는 경우 기본 끝점에 연결할 수 없습니다를 사용 하도록 라우팅 서비스는 끝점의 목록을 포함 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType> 
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WCF, privacy information
 - privacy information [WCF]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.openlocfilehash: 717e38b15767b744816c0a57c97827a1a35c95b3
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: ea3ff1e8ec4234e75b937cfef81b55bb8f71fa12
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54683971"
 ---
 # <a name="windows-communication-foundation-privacy-information"></a>Windows Communication Foundation 개인 정보 취급 방침
 Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할 것을 약속합니다. 버전 3.0, Windows Communication Foundation (WCF)를 사용 하 여 응용 프로그램을 빌드할 때 응용 프로그램의 최종 사용자가 개인 정보 보호를 달라질 수 있습니다. 예를 들어 응용 프로그램에서 사용자 연락처 정보를 명시적으로 수집하거나, 정보를 요청하거나 인터넷을 통해 정보를 웹 사이트로 보낼 수 있습니다. 응용 프로그램에 Microsoft 기술을 포함하는 경우 해당 기술의 동작이 개인 정보 보호에 영향을 줄 수 있습니다. WCF 보내지 않습니다 모든 정보를 Microsoft 응용 프로그램에서 우리에 게 보낼 사용자 또는 최종 사용자가 선택 하지 않으면.  
@@ -95,7 +95,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
 ### <a name="tracing"></a>추적  
  WCF 인프라의 진단 기능은 전송 및 서비스 모델 계층 및 활동 및 이러한 메시지와 연결 된 이벤트를 통해 전달 되는 메시지를 기록 합니다. 이 기능은 기본적으로 해제되어 있습니다. 응용 프로그램의 구성 파일을 사용 하 여 사용 여부와 WCF WMI 공급자를 사용 하 여 런타임에 추적 동작을 수정할 수 있습니다. 활성화되면 추적 인프라는 메시지, 동작 및 처리 이벤트가 포함된 진단 추적을 구성된 수신기로 내보냅니다. 출력 형식과 위치는 관리자가 선택한 수신기 구성에 의해 결정되지만 일반적으로 XML 형식 파일입니다. 관리자는 추적 파일에 대해 ACL(액세스 제어 목록)을 설정하는 작업을 담당합니다. 특히 WAS(Windows Activation System)에서 호스트할 때 관리자는 원하지 않을 경우 공용 가상 루트 디렉터리에서 파일이 제공되지 않도록 해야 합니다.  
   
- 메시지 로깅과 서비스 모델 진단 추적의 두 가지 추적 형식이 있으며, 이에 대해서는 다음 단원에서 설명합니다. 각 형식은 해당 추적 소스인 <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> 및 <xref:System.ServiceModel>을 통해 구성됩니다. 이러한 로깅 추적 소스는 모두 응용 프로그램의 로컬 데이터를 캡처합니다.  
+ 추적에는 다음과 같은 두 종류가 있습니다. 메시지 로깅과 서비스 모델 진단 추적, 다음 섹션에서 설명 합니다. 각 형식은 해당 추적 소스인 <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> 및 <xref:System.ServiceModel>을 통해 구성됩니다. 이러한 로깅 추적 소스는 모두 응용 프로그램의 로컬 데이터를 캡처합니다.  
   
 ### <a name="message-logging"></a>메시지 로깅  
  메시지 로깅 추적 소스(<xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>)를 사용하면 관리자가 시스템을 통과하는 메시지를 기록할 수 있습니다. 구성을 통해 사용자는 전체 메시지 또는 메시지 헤더만 기록할지, 전송 및/또는 서비스 모델 계층에 기록할지 여부 및 잘못된 형식의 메시지를 포함할지 여부를 결정할 수 있습니다. 또한 사용자는 필터링을 구성하여 기록할 메시지를 제한할 수 있습니다.  
@@ -189,13 +189,13 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  [any]*  
   
- \</ 통지 >?  
+ \</Advice>?  
   
  <\!-추상 기본 형식  
   
  \<문을 / > *  
   
- \<SubjectStatement >  
+ \<SubjectStatement>  
   
  \<제목 >  
   
@@ -211,7 +211,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  `</NameIdentifier>?`  
   
- \<SubjectConfirmation >  
+ \<SubjectConfirmation>  
   
  \<ConfirmationMethod>[anyUri]\</ConfirmationMethod>+  
   
@@ -257,7 +257,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  \</AuthenticationStatement>*  
   
- \<요소의 AttributeStatement >  
+ \<AttributeStatement>  
   
  [Subject]  
   
@@ -293,7 +293,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  \<Assertion>[assertion]\</Assertion>+  
   
- \</ 증명 정보 >?  
+ \</Evidence>?  
   
  \</AuthorizationDecisionStatement>*  
   
@@ -401,6 +401,6 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  WSDL(웹 서비스 기술 언어)에는 포트 정의가 들어 있습니다. 각 포트에는 끝점 주소와 응용 프로그램에서 사용하는 서비스를 나타내는 바인딩이 있습니다. 구성을 사용하여 WSDL 노출을 해제할 수 있습니다. 컴퓨터에는 정보가 보관되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation](https://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)  
- [보안](../../../docs/framework/wcf/feature-details/security.md)
+## <a name="see-also"></a>참고자료
+- [Windows Communication Foundation](https://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)
+- [보안](../../../docs/framework/wcf/feature-details/security.md)

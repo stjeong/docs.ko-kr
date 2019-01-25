@@ -1,20 +1,21 @@
 ---
-title: '방법: XML (Visual Basic)에서 텍스트 파일을 생성 합니다.'
+title: '방법: (Visual Basic) XML에서 텍스트 파일 생성'
 ms.date: 07/20/2015
 ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
-ms.openlocfilehash: 6b9e816fc61a583e8ea07045127b895480c03147
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bd3c8b0f9faf0b465d9b0f6a5c17ceef62ddb285
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687724"
 ---
-# <a name="how-to-generate-text-files-from-xml-visual-basic"></a>방법: XML (Visual Basic)에서 텍스트 파일을 생성 합니다.
+# <a name="how-to-generate-text-files-from-xml-visual-basic"></a>방법: (Visual Basic) XML에서 텍스트 파일 생성
 이 예제에서는 XML 파일에서 CSV(쉼표로 구분된 값) 파일을 생성하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
- Visual Basic 버전 절차적 코드를 사용 하 여 문자열의 컬렉션을 단일 문자열로 집계.  
+ Visual Basic 버전 절차적 코드를 사용 하 여 문자열의 컬렉션을 단일 문자열로 집계 합니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 고객 및 주문(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: Customers 및 Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md)합니다.  
   
 ```vb  
 Dim custOrd As XElement = XElement.Load("CustomersOrders.xml")  
@@ -50,5 +51,5 @@ LAZYK,Lazy K Kountry Store,John Steel,Marketing Manager,(509) 555-7969,12 Orches
 LETSS,Let's Stop N Shop,Jaime Yorres,Owner,(415) 555-5938,87 Polk St. Suite 5,San Francisco,CA,94117,USA  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [프로젝션 및 변형 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+## <a name="see-also"></a>참고자료
+- [프로젝션 및 변형 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

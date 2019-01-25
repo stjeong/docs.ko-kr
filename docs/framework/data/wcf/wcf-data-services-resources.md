@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, learn more
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
-ms.openlocfilehash: 790fe629ae709a9fcb57d5b551e9fa7aecfb04f5
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 9b1db3b3628719eca178ababd0dc9728b491e7b5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44177062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54658158"
 ---
 # <a name="wcf-data-services-resources"></a>WCF Data Services 리소스
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 개략적으로 소개하는 항목을 다음 위치에서 찾을 수 있습니다. 이들 항목 중 상당수에는 자세한 정보가 포함된 관련 항목 링크가 제공됩니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "44177062"
  [시작](../../../../docs/framework/data/adonet/ef/getting-started.md)  
  디자인 및 사용 하 여 데이터 서비스에 액세스 하는 방법을 설명 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]표시 된 것 처럼, 합니다 [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)합니다.  
   
- [응용 프로그램 시나리오](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
+ [애플리케이션 시나리오](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
  만드는 작업 기반 방법을 제공 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 에 액세스 하는 프로그램과 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 피드 합니다.  
   
  [Visual Studio 및.NET Framework 용어집](https://msdn.microsoft.com/library/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
@@ -56,8 +56,8 @@ ms.locfileid: "44177062"
  [Microsoft WCF Data Services 사용](https://go.microsoft.com/fwlink/?LinkID=131075)  
  클라이언트 응용 프로그램에서 데이터 서비스를 만들고 액세스하는 방법에 대한 추가 정보와 예제를 제공하는 백서입니다.  
   
- [엔터티-관계 모델: 통합 된 데이터 뷰에](https://go.microsoft.com/fwlink/?LinkId=91909) Peter Pin-shan Chen, Massachusetts Institute of Technology에서  
+ [The Entity-Relationship Model: 데이터의 통합 된 뷰에](https://go.microsoft.com/fwlink/?LinkId=91909) Peter Pin-shan Chen, Massachusetts Institute of Technology에서  
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에서 구현하는 엔터티 관계형 모델의 기초에 대해 설명합니다. 1976년에 작성되었으며 컴퓨터 분야에서 가장 흔히 인용되는 논문 중 하나입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)

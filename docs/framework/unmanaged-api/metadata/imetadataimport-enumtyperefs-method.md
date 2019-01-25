@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b8a4fe2a65244156abe1bb0da4266f949ddd3df6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8d096be8eb7f966d5a79e57a3a1b7ab7f63cd5ea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33447075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54659256"
 ---
 # <a name="imetadataimportenumtyperefs-method"></a>IMetaDataImport::EnumTypeRefs 메서드
 현재 메타데이터 범위에서 정의된 TypeRef 토큰을 열거합니다.  
@@ -49,27 +49,27 @@ HRESULT EnumTypeRefs (
  [in] `rTypeRefs` 배열의 최대 크기입니다.  
   
  `pcTypeRefs`  
- [out] 반환 된 TypeRef 토큰의 수에 대 한 포인터 `rTypeRefs`합니다.  
+ [out] 반환 된 TypeRef 토큰 수에 대 한 포인터 `rTypeRefs`합니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 |HRESULT|설명|  
 |-------------|-----------------|  
 |`S_OK`|`EnumTypeRefs` 성공적으로 반환 합니다.|  
-|`S_FALSE`|열거할 토큰이 있습니다. 이 경우 `pcTypeRefs` 은 0입니다.|  
+|`S_FALSE`|열거할 토큰이 있습니다. 이런 경우 `pcTypeRefs` 0입니다.|  
   
 ## <a name="remarks"></a>설명  
  TypeRef 토큰 형식에 대 한 참조를 나타냅니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

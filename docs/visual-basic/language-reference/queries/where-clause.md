@@ -8,12 +8,12 @@ helpviewer_keywords:
 - queries [Visual Basic], Where
 - Where clause [Visual Basic]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
-ms.openlocfilehash: de7b4bf3e7dc1145b7e95197c7bd05c66acdabd6
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5ecfc523573a6ab8142a04557156a3819eed440e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54662298"
 ---
 # <a name="where-clause-visual-basic"></a>Where 절(Visual Basic)
 쿼리에 대 한 필터링 조건을 지정합니다.  
@@ -26,7 +26,7 @@ Where condition
   
 ## <a name="parts"></a>요소  
  `condition`  
- 필수. 컬렉션의 현재 항목에 대 한 값을 출력 컬렉션에 포함 되는지 여부를 결정 하는 식입니다. 식은 해야 합니다는 `Boolean` 값 또는 해당을 `Boolean` 값입니다. 조건이 평가 되는 경우 `True`요소가 고 그렇지 않으면 쿼리 결과에 포함 된, 쿼리 결과에서 요소 제외 됩니다.  
+ 필수 요소. 컬렉션의 현재 항목에 대 한 값을 출력 컬렉션에 포함 되는지 여부를 결정 하는 식입니다. 식은 해야 합니다는 `Boolean` 값 또는 해당을 `Boolean` 값입니다. 조건이 평가 되는 경우 `True`요소가 고 그렇지 않으면 쿼리 결과에 포함 된, 쿼리 결과에서 요소 제외 됩니다.  
   
 ## <a name="remarks"></a>설명  
  `Where` 절 특정 조건을 충족 하는 요소만 선택 하 여 쿼리 데이터를 필터링 할 수 있습니다. 값이 해당 요소는 `Where` 절을 평가 하 `True` ; 쿼리 결과에 포함 된 다른 요소는 제외 됩니다. 에 사용 되는 식을 `Where` 절을 평가 해야 합니다는 `Boolean` 또는 해당 하는 `Boolean`, 등으로 계산 되는 정수 `False` 경우 해당 값은 0입니다. 여러 식을 결합할 수 있습니다는 `Where` 와 같은 논리 연산자를 사용 하 여 절 `And`, `Or`, `AndAlso`, `OrElse`를 `Is`, 및 `IsNot`합니다.  
@@ -45,9 +45,9 @@ Where condition
   
  [!code-vb[VbSimpleQuerySamples#31](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
