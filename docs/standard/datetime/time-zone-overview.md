@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0eb24c7c4f2c60a9c16d903ab1e845b058e280f7
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: e5fa4376cdb0496cfd25f4764257c4f3afbc7268
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46539306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54697051"
 ---
 # <a name="time-zone-overview"></a>표준 시간대 개요
 
@@ -40,7 +40,7 @@ ms.locfileid: "46539306"
 
 ## <a name="time-zone-terminology"></a>표준 시간대 용어
 
-다음 테이블에서는 표준 시간대를 사용하고 표준 시간대 인식 응용 프로그램을 개발할 때 일반적으로 사용되는 용어를 정의합니다.
+다음 테이블에서는 표준 시간대를 사용하고 표준 시간대 인식 애플리케이션을 개발할 때 일반적으로 사용되는 용어를 정의합니다.
 
 | 용어            | 정의 |
 | --------------- | ---------- |
@@ -59,7 +59,7 @@ ms.locfileid: "46539306"
 
 종속성을 <xref:System.TimeZoneInfo> 레지스트리 클래스 의미는 표준 시간대 인식 응용 프로그램의 특정 표준 시간대가 레지스트리에 정의 되어 있는지 확신할 수 없습니다. 결과적으로 현지 표준 시간대 또는 UTC를 나타내는 표준 시간대 이외의 특정 표준 시간대를 인스턴스화하려면 예외 처리를 사용해야 합니다. 일부 메서드는 필요한 경우 계속 하려면 응용 프로그램을 제공 해야 <xref:System.TimeZoneInfo> 레지스트리에서 개체를 인스턴스화할 수 없습니다.
 
-필요한 표준 시간대가 없는 경우에 <xref:System.TimeZoneInfo> 클래스에 포함 되어는 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드를 레지스트리에서 찾을 수 없는 사용자 지정 표준 시간대를 만드는 데 사용할 수 있습니다. 사용자 지정 표준 시간대를 만드는 방법에 대 한 세부 정보를 참조 하세요. [방법: 조정 규칙 없이 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) 및 [방법: 조정 규칙을 사용 하 여 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다. 또한 사용할 수 있습니다는 <xref:System.TimeZoneInfo.ToSerializedString%2A> 메서드를 새로 만든된 표준 시간대를 문자열로 변환 하 고 (예: 데이터베이스, 텍스트 파일, 레지스트리, 또는 응용 프로그램 리소스) 데이터 저장소에 저장 합니다. 사용할 수 있습니다 합니다 <xref:System.TimeZoneInfo.FromSerializedString%2A> 이 문자열을 변환 하는 방법으로는 <xref:System.TimeZoneInfo> 개체입니다. 세부 정보를 참조 하세요. [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) 하 고 [방법: 포함된 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)합니다.
+필요한 표준 시간대가 없는 경우에 <xref:System.TimeZoneInfo> 클래스에 포함 되어는 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드를 레지스트리에서 찾을 수 없는 사용자 지정 표준 시간대를 만드는 데 사용할 수 있습니다. 사용자 지정 표준 시간대를 만드는 방법에 대 한 세부 정보를 참조 하세요. [방법: 표준 시간대 조정 규칙 없이 만들](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) 고 [방법: 표준 시간대 조정 규칙을 사용 하 여 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다. 또한 사용할 수 있습니다는 <xref:System.TimeZoneInfo.ToSerializedString%2A> 메서드를 새로 만든된 표준 시간대를 문자열로 변환 하 고 (예: 데이터베이스, 텍스트 파일, 레지스트리, 또는 응용 프로그램 리소스) 데이터 저장소에 저장 합니다. 사용할 수 있습니다 합니다 <xref:System.TimeZoneInfo.FromSerializedString%2A> 이 문자열을 변환 하는 방법으로는 <xref:System.TimeZoneInfo> 개체입니다. 세부 정보를 참조 하세요. [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) 고 [방법: 포함된 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)합니다.
 
 각 표준 시간대가 기존 조정 규칙을 반영하는 UTC의 오프셋뿐만 아니라 UTC의 기본 오프셋을 특징으로 하기 때문에 표준 시간대의 시간은 다른 표준 시간대의 시간으로 쉽게 변환될 수 있습니다. 이 목적을 위해는 <xref:System.TimeZoneInfo> 개체에 포함 하 여 여러 가지 변환 메서드를 포함 합니다.
 
@@ -75,4 +75,4 @@ ms.locfileid: "46539306"
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)

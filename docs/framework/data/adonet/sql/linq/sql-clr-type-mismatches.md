@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
-ms.openlocfilehash: 61731c4d9590892bdae8e90717d77b4dddf1d71d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 0abb1bd25c40ba55806fe80b39db1ac418f3f308
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700951"
 ---
 # <a name="sql-clr-type-mismatches"></a>SQL-CLR 형식 불일치
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 개체 모델과 SQL Server 간의 변환을 대부분 자동화합니다. 하지만 정확한 변환이 불가능한 경우도 있습니다. 공용 언어 런타임 (CLR) 형식 및 SQL Server 데이터베이스 형식 간의 주요 이러한 불일치는 다음 섹션에 요약 되어 있습니다. 특정 형식 매핑 및 함수 변환에 대 한 자세한 정보를 찾을 수 있습니다 [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) 하 고 [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)합니다.  
@@ -33,7 +33,7 @@ Select DateOfBirth From Customer Where CustomerId = @id
   
     -   **부울**합니다. 이 형식은 1비트 또는 더 큰 숫자나 문자열로 매핑될 수 있습니다. 리터럴은 동일한 값으로 계산되는 식(예: SQL의 `1=1`과 CLS의 `True`)에 매핑할 수 있습니다.  
   
-    -   **TimeSpan**합니다. 이 형식은 두 `DateTime` 값의 차이를 나타내며 SQL Server의 `timestamp`에 대응되지 않습니다. 일부 경우에는 CLR의 <xref:System.TimeSpan?displayProperty=nameWithType>이 SQL Server의 `TIME` 형식에 매핑될 수 있습니다. SQL Server의 `TIME` 형식은 24시간 미만의 양수 값을 나타낼 때만 사용되지만 CLR의 <xref:System.TimeSpan>은 나타낼 수 있는 범위가 넓습니다.  
+    -   **TimeSpan**. 이 형식은 두 `DateTime` 값의 차이를 나타내며 SQL Server의 `timestamp`에 대응되지 않습니다. 일부 경우에는 CLR의 <xref:System.TimeSpan?displayProperty=nameWithType>이 SQL Server의 `TIME` 형식에 매핑될 수 있습니다. SQL Server의 `TIME` 형식은 24시간 미만의 양수 값을 나타낼 때만 사용되지만 CLR의 <xref:System.TimeSpan>은 나타낼 수 있는 범위가 넓습니다.  
   
     > [!NOTE]
     >  [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)]의 SQL Server 관련 <xref:System.Data.SqlTypes> 형식은 이러한 비교에 포함되지 않습니다.  
@@ -293,5 +293,5 @@ Where Col1 + Col2 > 4
   
  의미 체계의 차이 외에 SQL Server 및 CLR 형식 시스템을 거치는 동안 성능에 미치는 영향도 고려해야 합니다. 큰 데이터 집합의 경우 이러한 성능 문제에 따라 응용 프로그램의 배포 가능 여부가 결정될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## <a name="see-also"></a>참고자료
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

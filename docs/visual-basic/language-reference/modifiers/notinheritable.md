@@ -15,24 +15,24 @@ helpviewer_keywords:
 - sealed classes [Visual Basic]
 - classes [Visual Basic], not inheritable
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
-ms.openlocfilehash: 537d10e68061758234922157b5df14302f1451b5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 80f111c699de9c40960681812770b5007179da26
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33594703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54699196"
 ---
 # <a name="notinheritable-visual-basic"></a>NotInheritable(Visual Basic)
 클래스를 기본 클래스로 사용할 수 없음을 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- **용어를 대체**합니다. 상속할 수 없는 클래스 라고도 *봉인* 클래스입니다.  
+ **대체 용어**합니다. 상속할 수 없는 클래스 라고 한 *봉인* 클래스입니다.  
   
  `NotInheritable` 한정자는이 컨텍스트에서 사용할 수 있습니다.  
   
  [Class 문](../../../visual-basic/language-reference/statements/class-statement.md)  
   
-## <a name="see-also"></a>참고 항목  
- [Inherits 문](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [키워드](../../../visual-basic/language-reference/keywords/index.md)
+## <a name="see-also"></a>참고자료
+- [Inherits 문](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [키워드](../../../visual-basic/language-reference/keywords/index.md)

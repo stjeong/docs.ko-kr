@@ -6,20 +6,20 @@ helpviewer_keywords:
 - Custom Places [Windows Forms], Known Folder GUIDs
 - Windows Vista Known Folder GUIDs [Windows Forms], Custom Places
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
-ms.openlocfilehash: 69fa8837f616969e018e4ec7191f0b30a2df5b62
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 97d516e1c3ae99d639dea676f3f6798b6e7a849f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33541566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679398"
 ---
 # <a name="known-folder-guids-for-file-dialog-custom-places"></a>파일 대화 상자의 사용자 지정 위치에 대한 알려진 폴더 GUID
-사용 하면 한 <xref:System.Guid> 지정 하는 [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] 알려진 폴더에 폴더를 추가 하는 경우는 <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> 컬렉션입니다. 알려진 폴더 Guid 대/소문자 구분 하지 않으며에 KnownFolders.h 파일에 정의 되는 [!INCLUDE[winSDK](../../../../includes/winsdk-md.md)]합니다.  
+사용할를 <xref:System.Guid> 지정 하는 [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] 알려진 폴더에 폴더를 추가 하는 경우는 <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> 컬렉션입니다. 알려진 폴더 Guid 대/소문자 구분 없는 및의 KnownFolders.h 파일에 정의 된 [!INCLUDE[winSDK](../../../../includes/winsdk-md.md)]합니다.  
   
 > [!NOTE]
->  경우에 따라 알려진 폴더에 추가 된 <xref:System.Windows.Forms.FileDialogCustomPlacesCollection> 에 표시 되지 것입니다는 **즐겨찾기 링크** 영역입니다. 예를 들어 응용 프로그램을 실행 하는 컴퓨터에 지정 된 알려진 폴더가 없으면 알려진 폴더가 표시 되지 않습니다.  
+>  일부 경우에는 알려진 폴더에 추가 합니다 <xref:System.Windows.Forms.FileDialogCustomPlacesCollection> 에 표시 되지 것입니다는 **즐겨찾기 링크** 영역입니다. 예를 들어, 지정된 된 알려진 폴더를 응용 프로그램을 실행 하는 컴퓨터에 없는 경우에 알려진 폴더 표시 되지 않습니다.  
   
-## <a name="list-of-guids"></a>Guid 목록  
+## <a name="list-of-guids"></a>Guid의 목록  
  다음 표에서 [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] 알려진 폴더 및 이와 관련 된 <xref:System.Guid>합니다.  
   
  AddNewPrograms  
@@ -70,7 +70,7 @@ ms.locfileid: "33541566"
  연락처  
  56784854-C6CB-462B-8169-88E350ACB882  
   
- 제어판  
+ ControlPanel  
  82A74AEB-AEB4-465C-A014-D097EE346D63  
   
  쿠키  
@@ -193,7 +193,7 @@ ms.locfileid: "33541566"
  PublicVideos  
  2400183A-6185-49FB-A2D8-4A392A602BA3  
   
- 빠른 실행  
+ QuickLaunch  
  52A4F021-7B75-48A9-9F6B-4B87A210BC8F  
   
  최근 항목  
@@ -226,7 +226,7 @@ ms.locfileid: "33541566"
  SavedGames  
  4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4  
   
- savedSearches  
+ SavedSearches  
  7D1D3A04-DEBB-4115-95CF-2F29DA2920DA  
   
  SEARCH_CSC  
@@ -247,7 +247,7 @@ ms.locfileid: "33541566"
  SidebarParts  
  A75D362E-50FC-4FB7-AC2C-A8BEAA314493  
   
- 시작 메뉴  
+ StartMenu  
  625B53C3-AB48-4EC1-BA1F-A1EF4146FC19  
   
  Startup 클래스  
@@ -286,6 +286,6 @@ ms.locfileid: "33541566"
  Windows  
  F38BF404-1D43-42F2-9305-67DE0B28FC23  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.FileDialogCustomPlace>  
- [방법: 파일 대화 상자에 사용자 지정 위치 추가](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.FileDialogCustomPlace>
+- [방법: 파일 대화 상자에 사용자 지정 위치 추가](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)

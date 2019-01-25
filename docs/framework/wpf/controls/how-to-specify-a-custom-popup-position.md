@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - Popup control [WPF], specifying custom position
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
-ms.openlocfilehash: e6e81a6e0819ba3eb39a1c568e6872414e671544
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: b61ab6ab02d65d0549941b0055f7aef480d7d644
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726795"
 ---
 # <a name="how-to-specify-a-custom-popup-position"></a>방법: 사용자 지정 팝업 위치 지정
 이 예제에 대 한 사용자 지정 위치를 지정 하는 방법을 보여 줍니다를 <xref:System.Windows.Controls.Primitives.Popup> 시기를 제어 합니다 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성이 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>.  
@@ -32,7 +32,7 @@ ms.locfileid: "48261305"
   
  전체 샘플을 참조 하세요 [Popup 배치 샘플](https://go.microsoft.com/fwlink/?LinkID=160032)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Primitives.Popup>  
- [팝업 개요](../../../../docs/framework/wpf/controls/popup-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Primitives.Popup>
+- [팝업 개요](../../../../docs/framework/wpf/controls/popup-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)

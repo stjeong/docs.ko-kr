@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: e306834166051ae48fd283d51f18d9458091578f
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: c8d6e36687fd43bbc59304eee64dd42eb78101e3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54416663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676525"
 ---
 # <a name="ixclrdatamodule-interface"></a>IXCLRDataModule 인터페이스
 
@@ -47,7 +47,7 @@ ms.locfileid: "54416663"
 **라이브러리:** 없음  
 **.NET Framework 버전:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

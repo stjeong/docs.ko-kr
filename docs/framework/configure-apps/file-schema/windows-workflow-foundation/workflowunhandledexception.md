@@ -3,21 +3,21 @@ title: '&lt;workflowUnhandledException&gt;'
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
-ms.openlocfilehash: d9db6ecc2e95e0d1ec5738f1d2f4a09a89c57f21
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5c5dddc6d126811d7fd1eaae2f85df1e42c1cd41
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32755138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700873"
 ---
 # <a name="ltworkflowunhandledexceptiongt"></a>&lt;workflowUnhandledException&gt;
 워크플로 서비스 내에서 처리되지 않은 예외가 발생할 때 수행할 동작을 지정할 수 있는 서비스 동작입니다.  
   
 \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
-\<workflowUnhandledException >  
+\<behavior>  
+\<workflowUnhandledException>  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,6 +49,6 @@ ms.locfileid: "32755138"
 |-------------|-----------------|  
 |[\<동작 >의 \<serviceBehaviors >](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|동작 요소를 지정합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>  
- <xref:System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement>

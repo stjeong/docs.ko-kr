@@ -6,21 +6,21 @@ helpviewer_keywords:
 - Win32 code [WPF], WPF interoperation
 - interoperability [WPF], Win32
 ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
-ms.openlocfilehash: beb7d5e6e1f934b89bb7516eb7e9bbbaad696238
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fa0457cd44304084355f3882d9fc5c82b29c4827
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33547357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54725470"
 ---
 # <a name="hosting-win32-content-in-wpf"></a>WPF에서 Win32 콘텐츠 호스팅
 ## <a name="prerequisites"></a>전제 조건  
- 참조 [WPF 및 Win32 상호 운용](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)합니다.  
+ 참조 [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)합니다.  
   
-## <a name="a-walkthrough-of-win32-inside-windows-presentation-framework-hwndhost"></a>Windows Presentation Framework (HwndHost) 안에 win32 연습  
- 다시 사용 하려면 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 내부 콘텐츠 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 사용 하 여 <xref:System.Windows.Interop.HwndHost>, Hwnd 같이 표시 하는 컨트롤이 변수인 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠입니다.  와 같은 <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> 간단 하 게 사용 하는:에서 파생 <xref:System.Windows.Interop.HwndHost> 하 고 구현 `BuildWindowCore` 및 `DestroyWindowCore` 메서드를 인스턴스화할 프로그램 <xref:System.Windows.Interop.HwndHost> 클래스를 파생 하 고 안에 넣습니다 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
+## <a name="a-walkthrough-of-win32-inside-windows-presentation-framework-hwndhost"></a>Windows Presentation Framework (HwndHost) 내에서 win32 연습  
+ 다시 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 내의 콘텐츠 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 사용 하 여 <xref:System.Windows.Interop.HwndHost>, Hwnd 같이 하는 컨트롤인 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠입니다.  같은 <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> 사용 하기는 간단 하지만:에서 파생 <xref:System.Windows.Interop.HwndHost> 하 고 구현 `BuildWindowCore` 및 `DestroyWindowCore` 메서드를 인스턴스화할에 <xref:System.Windows.Interop.HwndHost> 클래스를 파생 하 고 내부에 배치 프로그램 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
   
- 경우에 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 논리를 컨트롤로 이미 패키지 된 않다면 `BuildWindowCore` 구현에 대 한 호출 보다 약간 더는 `CreateWindow`합니다.  예를 들어 한 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] LISTBOX 컨트롤의 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)]:  
+ 경우에 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 컨트롤로 이미 패키지 된 논리에 `BuildWindowCore` 구현에 대 한 호출 보다 약간 더 `CreateWindow`합니다.  예를 들어 한 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 에서 LISTBOX 컨트롤 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)]:  
   
 ```  
 virtual HandleRef BuildWindowCore(HandleRef hwndParent) override {  
@@ -43,28 +43,28 @@ virtual void DestroyWindowCore(HandleRef hwnd) override {
 }  
 ```  
   
- 가정 하지만 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 코드 그리 자체 포함 됩니다? 만들 수 있습니다는 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 대화 상자를 더 큰에 해당 내용을 포함 한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  이 샘플에서이 보여 줍니다 [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] 및 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)]다른 언어에서 또는 명령줄에서이 작업을 수행할 수도 있지만, 합니다.  
+ 가정 하지만 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 코드는 독립적인 그렇게 하지? 따라서 만들 수 있는 경우는 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 대화 상자 및 해당 내용을 더 큰 포함 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  이 샘플에서이 보여 줍니다 [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] 및 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)]이지만 다른 언어에서 또는 명령줄에서이 작업을 수행할 수 이기도 합니다.  
   
- 컴파일되는 간단한 대화 상자와 시작는 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] 프로젝트.  
+ 컴파일되는 간단한 대화 상자를 사용 하 여 시작 된 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] 프로젝트입니다.  
   
  다음으로,이 대화 상자를 더 큰 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램:  
   
--   컴파일하는 [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] 관리 되는 것 (`/clr`)  
+-   컴파일 합니다 [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] 관리 되는 (`/clr`)  
   
 -   대화 상자 컨트롤에 설정  
   
--   파생된 클래스의 정의 <xref:System.Windows.Interop.HwndHost> 와 `BuildWindowCore` 및 `DestroyWindowCore` 메서드  
+-   파생된 클래스를 정의 <xref:System.Windows.Interop.HwndHost> 사용 하 여 `BuildWindowCore` 고 `DestroyWindowCore` 메서드  
   
--   재정의 `TranslateAccelerator` 대화 상자 키를 처리 하는 메서드  
+-   재정의 `TranslateAccelerator` 대화 상자 키를 처리 하는 방법  
   
--   재정의 `TabInto` 탭 이동을 지원 하도록 메서드  
+-   재정의 `TabInto` 탭 이동을 지 원하는 방법  
   
--   재정의 `OnMnemonic` 니모닉을 지원 하도록 메서드  
+-   재정의 `OnMnemonic` 니모닉을 지원 방법  
   
--   인스턴스화하는 <xref:System.Windows.Interop.HwndHost> 하위 클래스와 오른쪽에서 관리 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 요소  
+-   인스턴스화하는 <xref:System.Windows.Interop.HwndHost> 서브 클래스 오른쪽 아래에 배치 하 고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 요소  
   
 ### <a name="turn-the-dialog-into-a-control"></a>대화 상자 컨트롤에 설정  
- 자식 WS_CHILD 및 DS_CONTROL 스타일을 사용 하 여 HWND에는 대화 상자를 설정할 수 있습니다.  대화가 정의 되어 있는 리소스 파일 (.rc)에 이동 하 고 대화 상자의 정의의 시작 부분을 찾습니다.  
+ WS_CHILD 및 DS_CONTROL 스타일 사용 HWND의 자식에 대화 상자를 설정할 수 있습니다.  대화가 정의 되어 있는 리소스 파일 (.rc)에 이동한 대화 상자의 정의의 시작 부분을 찾습니다.  
   
 ```  
 IDD_DIALOG1 DIALOGEX 0, 0, 303, 121  
@@ -77,10 +77,10 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 STYLE DS_SETFONT | WS_CHILD | WS_BORDER | DS_CONTROL  
 ```  
   
- 이 작업 않습니다; 자체 포함 된 컨트롤에 해당 패키지 완벽 하 게 호출 해야 `IsDialogMessage()` 하므로 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 특정 메시지를 처리할 수 않지만 다른 HWND 내부 이러한 컨트롤의 예는 직관적인 방식 제공 컨트롤을 변경 합니다.  
+ 이 작업은 자체 포함 된 컨트롤에에 해당 패키지 완벽 하 게 호출 해야 `IsDialogMessage()` 있도록 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 특정 메시지를 처리할 수 있지만 컨트롤을 변경은 다른 HWND 내에서 이러한 컨트롤을 배치 하는 간단한 방법을 제공 합니다.  
   
-## <a name="subclass-hwndhost"></a>HwndHost 하위 클래스  
- 다음 네임 스페이스를 가져옵니다.  
+## <a name="subclass-hwndhost"></a>서브 클래스 HwndHost  
+ 다음 네임스페이스를 가져옵니다.  
   
 ```  
 namespace ManagedCpp  
@@ -93,7 +93,7 @@ namespace ManagedCpp
     using namespace System::Runtime::InteropServices;  
 ```  
   
- 다음의 파생된 클래스를 만들어 <xref:System.Windows.Interop.HwndHost> 재정의 `BuildWindowCore` 및 `DestroyWindowCore` 메서드:  
+ 다음의 파생된 클래스를 만듭니다 <xref:System.Windows.Interop.HwndHost> 시키고 합니다 `BuildWindowCore` 및 `DestroyWindowCore` 메서드:  
   
 ```  
 public ref class MyHwndHost : public HwndHost, IKeyboardInputSink {  
@@ -115,7 +115,7 @@ public ref class MyHwndHost : public HwndHost, IKeyboardInputSink {
         }  
 ```  
   
- 사용 하는 여기에서 `CreateDialog` 컨트롤은 실제로 대화 상자를 만듭니다.  이 내부에서 호출 하는 첫 번째 방법 중 하나는 [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], 몇 가지 일반적인 수행 해야 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 나중 정의한 함수를 호출 하 여 초기화 호출 `InitializeGlobals()`:  
+ 여기서 사용은 `CreateDialog` 컨트롤이 실제로 대화 상자를 만듭니다.  내에서 호출 하는 첫 번째 메서드 중 하나 이므로이 [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], 몇 가지 일반적인 수행 해야 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 나중에 정의 된 함수를 호출 하 여 초기화 라는 `InitializeGlobals()`:  
   
 ```  
 bool initialized = false;  
@@ -133,8 +133,8 @@ bool initialized = false;
         MyRegisterClass(hInstance);  
 ```  
   
-### <a name="override-translateaccelerator-method-to-handle-dialog-keys"></a>대화 상자 키를 처리 하려면 TranslateAccelerator 메서드를 재정의 합니다.  
- 이 샘플을 실행 하는 경우 이제, 화면에 표시 되는 대화 상자 컨트롤을 얻을 수는 있지만 처리 하는 키보드의 모든 대화 상자가 기능 대화 상자는 무시 됩니다.  재정의 해야는 `TranslateAccelerator` 구현 (에서 제공 되는 `IKeyboardInputSink`, 인터페이스는 <xref:System.Windows.Interop.HwndHost> 구현)입니다.  이 메서드는 응용 프로그램이 WM_KEYDOWN 및 WM_SYSKEYDOWN 받으면 호출을 가져옵니다.  
+### <a name="override-translateaccelerator-method-to-handle-dialog-keys"></a>TranslateAccelerator 대화 상자 키를 처리 하는 메서드를 재정의 합니다.  
+ 이 샘플을 실행 하는 경우 이제 표시 하는 대화 상자 컨트롤 얻지만 처리 하는 키보드의 모든 대화 상자 기능 대화 상자는 무시 됩니다.  재정의 해야 합니다 `TranslateAccelerator` 구현 (에서 제공 되는 `IKeyboardInputSink`, 인터페이스는 <xref:System.Windows.Interop.HwndHost> 구현).  이 메서드는 WM_KEYDOWN 및 WM_SYSKEYDOWN 응용 프로그램이 수신 하는 경우 호출 됩니다.  
   
 ```  
 #undef TranslateAccelerator  
@@ -187,15 +187,15 @@ bool initialized = false;
         }  
 ```  
   
- 이 보다 자세한 설명을 사용할 수 있습니다 하나에 코드를 많이 합니다.  첫째, 사용 하 여 코드 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] 및 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] 매크로; 라는 매크로 이미는 해야 `TranslateAccelerator`, winuser.h에 정의 된:  
+ 이 과정은 한 부분에서 코드의 보다 자세한 설명을 사용 하 여 수 있도록 합니다.  먼저 사용 하는 코드가 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] 하 고 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] 매크로; 라는 매크로 이미 있는지 유의 해야 `TranslateAccelerator`, winuser.h에 정의 되어 있는:  
   
 ```  
 #define TranslateAccelerator  TranslateAcceleratorW  
 ```  
   
- 정의할 수 있는지 확인 한 `TranslateAccelerator` 메서드 및 not는 `TranslateAcceleratorW` 메서드.  
+ 정의 해야는 `TranslateAccelerator` 메서드 및 not을 `TranslateAcceleratorW` 메서드.  
   
- 마찬가지로, 없는 관리 되지 않는 winuser.h 메시지와 관리 되는 모두 `Microsoft::Win32::MSG` 구조체입니다.  사용 하 여 두 구분할 수 있습니다는 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] `::` 연산자입니다.  
+ 마찬가지로, 방법이 관리 되지 않는 winuser.h 메시지와 관리 되는 `Microsoft::Win32::MSG` 구조체입니다.  사용 하 여 구분할 수 있습니다 합니다 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] `::` 연산자입니다.  
   
 ```  
 virtual bool TranslateAccelerator(System::Windows::Interop::MSG% msg,   
@@ -204,7 +204,7 @@ virtual bool TranslateAccelerator(System::Windows::Interop::MSG% msg,
     ::MSG m = ConvertMessage(msg);  
 ```  
   
- 모두 Msg 동일한 데이터를 모두 제공 되었으나는이 샘플에는 명확한 변환 루틴을 정의할 수 있도록 관리 되지 않는 정의 작업할 쉽게:  
+ 모두 MSGs 동일한 데이터를 갖지만이 샘플에서 명확한 변환 루틴을 정의할 수 있습니다 관리 되지 않는 정의 함께 사용 하도록 쉽게:  
   
 ```  
 ::MSG ConvertMessage(System::Windows::Interop::MSG% msg) {  
@@ -225,7 +225,7 @@ virtual bool TranslateAccelerator(System::Windows::Interop::MSG% msg,
 }  
 ```  
   
- 돌아가기 `TranslateAccelerator`합니다.  기본적으로 호출 하는 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 함수 `IsDialogMessage` 최대한 많은 작업을 수행할 수 있지만 `IsDialogMessage` 대화 상자 외에 다른 동작에 대 한 액세스가 없습니다. 포커스를 설정 해야 하는 대화 상자에서 이동할 때 주위 사용자 탭이 대화 상자에서 마지막 컨트롤 실행 되는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 호출 하 여 부분 `IKeyboardInputSite::OnNoMoreStops`합니다.  
+ 다시 `TranslateAccelerator`입니다.  기본 원칙은 호출 하는 것을 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 함수 `IsDialogMessage` 최대한 많은 작업을 수행 하지만 `IsDialogMessage` 대화 상자 외부 항목에 액세스할 수 없습니다. 포커스를 설정 해야 하는 대화 상자에서 탭 이동 하면 관련 사용자 탭 대화 상자에서 마지막 컨트롤을 실행 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 를 호출 하 여 부분 `IKeyboardInputSite::OnNoMoreStops`합니다.  
   
 ```  
 // Win32's IsDialogMessage() will handle most of the tabbing, but doesn't know   
@@ -247,7 +247,7 @@ if (m.message == WM_KEYDOWN && m.wParam == VK_TAB) {
 }  
 ```  
   
- 마지막으로 `IsDialogMessage`를 호출합니다.  하지만의 업무 중 하나는 `TranslateAccelerator` 메서드 보면서 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 키 입력 처리 여부. 처리 하지 않은 경우에 입력된 이벤트 터널링 할 수 있습니다 및 응용 프로그램의 나머지 부분에 버블링 됩니다. 키보드 기초적인 처리와 특성에 입력된 아키텍처에는 노출 여기서 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)]합니다. 그러나 `IsDialogMessage` 특정 키를 처리 하는지 여부를 어떤 방식으로든에서 반환 하지 않습니다.  설상가상으로 호출 합니다 `DispatchMessage()` 처리 하지 않도록 하는 키 입력에!  리버스 엔지니어링 필요가 `IsDialogMessage`만 알고 있는 키를 처리할에 대 한 호출:  
+ 마지막으로 `IsDialogMessage`를 호출합니다.  맡는 역할 중 하나만 제외 하 고는 `TranslateAccelerator` 메서드는 지시 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 했으면 처리 여부. 입력된 이벤트를 처리 하지 않은 경우 터널링 및 응용 프로그램의 rest 통해 버블링 합니다. 이때를 노출할 수의 입력된 아키텍처의 특성과 키보드 기초적인 처리 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)]합니다. 아쉽게도 `IsDialogMessage` 특정 키 입력을 처리 하는지 여부를 어떤 방식으로 반환 하지 않습니다.  호출 설상가상으로 `DispatchMessage()` 처리 하지 않도록 하는 키 입력에!  리버스 엔지니어링 해야 하므로 `IsDialogMessage`만 알고 있는 키를 처리 하는 대 한 호출 합니다.  
   
 ```  
 // Only call IsDialogMessage for keys it will do something with.  
@@ -270,8 +270,8 @@ if (msg.message == WM_SYSKEYDOWN || msg.message == WM_KEYDOWN) {
     }  
 ```  
   
-### <a name="override-tabinto-method-to-support-tabbing"></a>탭 이동을 지원 하려면 TabInto 메서드를 재정의 합니다.  
- 구현 했으므로 `TranslateAccelerator`, 사용자는 대화 상자 내 주위 탭 수 상자와 탭 옵트아웃 큼에 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  하지만 대화 상자에 다시 사용자 탭 수 없습니다.  재정의 하는 문제를 해결 하려면 `TabInto`:  
+### <a name="override-tabinto-method-to-support-tabbing"></a>지원 탭을 TabInto 메서드를 재정의 합니다.  
+ 구현한 했으므로 `TranslateAccelerator`, 사용자는 대화 상자 내에서 관련 탭 수 상자와 탭 외부로 큼에 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  하지만 사용자는 대화 상자를 다시 탭 수 없습니다.  이 해결 하려면 재정의 `TabInto`:  
   
 ```  
 public:   
@@ -288,10 +288,10 @@ public:
     }  
 ```  
   
- `TraversalRequest` 매개 변수를 알려 탭 또는 shift 탭 탭 작업 인지 합니다.  
+ `TraversalRequest` 매개 변수 알려 탭 작업 탭 또는 shift 탭 인지 합니다.  
   
 ### <a name="override-onmnemonic-method-to-support-mnemonics"></a>니모닉을 지원 하도록 OnMnemonic 메서드 재정의  
- 키보드 처리 거의 완료 되었습니다. 하지만 하나도 가지 빠진 니모닉 작동 하지 않습니다.  포커스 doe로 이동 하지 않습니다는 사용자가 alt + F를 누르면는 "이름:" 상자를 편집 합니다. 재정의 하는 등의 `OnMnemonic` 메서드:  
+ 키보드 처리는 거의 완료 되었지만 한 가지 빠진 니모닉 작동 하지 않습니다.  사용자가 alt-F를 누르면 포커스가 doe 이동 하지는 "이름:" 입력란입니다. 따라서 재정의 하 여 `OnMnemonic` 메서드:  
   
 ```  
 virtual bool OnMnemonic(System::Windows::Interop::MSG% msg, ModifierKeys modifiers) override {  
@@ -321,10 +321,10 @@ virtual bool OnMnemonic(System::Windows::Interop::MSG% msg, ModifierKeys modifie
 };  
 ```  
   
- 호출 하지 않는 이유 `IsDialogMessage` 여기?  알릴 수 있게 되기를 원하는-하기 전에 동일한 문제가 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 여부, 사용자 코드 처리 키 입력으로 처리 되는지를 코드 및 `IsDialogMessage` 할 수 없습니다.  또한 두 번째 문제 때문에 않습니다 `IsDialogMessage` 니모닉 포커스가 지정 된 HWND 대화 상자 안에 없는 경우 처리를 거부 합니다.  
+ 호출 하지 않는 이유 `IsDialogMessage` 여기?  -하기 전에 해야 할 때 알릴 수 있으려면 동일한 문제가 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 코드를 키 입력을 처리 하는지 여부를 코드 및 `IsDialogMessage` 그렇게 할 수 없습니다.  이기도 한 두 번째 문제 때문에 `IsDialogMessage` 대화 상자 내에서 포커스가 있는 HWND 없으면 니모닉 처리를 거부 합니다.  
   
-### <a name="instantiate-the-hwndhost-derived-class"></a>인스턴스화하는 HwndHost 파생 클래스  
- 마지막으로, 모든 키 및 탭 지원이 이면 했으므로 넣을 수 있습니다 프로그램 <xref:System.Windows.Interop.HwndHost> 를 더 큰 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  주 응용 프로그램에서 작성 된 경우 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]를 빈 상태로 유지 하는 적절 한 위치에 배치 하는 가장 쉬운 방법은 <xref:System.Windows.Controls.Border> 배치 하려면 요소는 <xref:System.Windows.Interop.HwndHost>합니다.  만들 여기는 <xref:System.Windows.Controls.Border> 라는 `insertHwndHostHere`:  
+### <a name="instantiate-the-hwndhost-derived-class"></a>인스턴스화할 HwndHost 파생 클래스  
+ 마지막으로, 이제 모든 키 및 탭 지원이 위치에 넣을 수 있습니다 하 <xref:System.Windows.Interop.HwndHost> 를 더 큰 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  주 응용 프로그램 작성 된 경우 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], 빈 유지 하는 적절 한 위치에 배치 하는 가장 쉬운 방법은 <xref:System.Windows.Controls.Border> 실시 하려는 요소를 <xref:System.Windows.Interop.HwndHost>입니다.  만들려면 여기를 <xref:System.Windows.Controls.Border> 라는 `insertHwndHostHere`:  
   
 ```  
 <Window x:Class="WPFApplication1.Window1"  
@@ -341,7 +341,7 @@ virtual bool OnMnemonic(System::Windows::Interop::MSG% msg, ModifierKeys modifie
 </Window>  
 ```  
   
- 다음 남았습니다 좋은 위치를 인스턴스화하는 코드 시퀀스에서 찾을 수는 <xref:System.Windows.Interop.HwndHost> 에 연결 된 <xref:System.Windows.Controls.Border>합니다.  이 예제에서는 넣는 것에 대 한 생성자 내부는 <xref:System.Windows.Window> 파생 클래스:  
+ 다음에 좋은 출발점이를 인스턴스화하는 코드 시퀀스에서 찾을 수는 <xref:System.Windows.Interop.HwndHost> 연결 된 <xref:System.Windows.Controls.Border>합니다.  이 예에서 배치할 것에 대 한 생성자 내부를 <xref:System.Windows.Window> 클래스를 파생 합니다.  
   
 ```  
 public partial class Window1 : Window {  
@@ -355,9 +355,9 @@ public partial class Window1 : Window {
 }  
 ```  
   
- 제공합니다.  
+ 하면:  
   
  ![WPF 응용 프로그램 스크린 샷](../../../../docs/framework/wpf/advanced/media/interoparch09.PNG "InteropArch09")  
   
-## <a name="see-also"></a>참고 항목  
- [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+## <a name="see-also"></a>참고자료
+- [WPF 및 Win32 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

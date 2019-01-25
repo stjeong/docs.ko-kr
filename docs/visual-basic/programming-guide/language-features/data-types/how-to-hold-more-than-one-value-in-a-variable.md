@@ -1,5 +1,5 @@
 ---
-title: '방법: 변수에 두 개 이상의 값 사용(Visual Basic)'
+title: '방법: 변수에 둘 이상의 값 (Visual Basic)'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - classes [Visual Basic], composite data types
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - arrays [Visual Basic], compilation errors
 - types [Visual Basic], composite
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
-ms.openlocfilehash: 781f56c7e710f5130d821ca4796398379dfa4c6e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c6cd9c61c332fc98e99334143b50e395f4eabf47
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671501"
 ---
-# <a name="how-to-hold-more-than-one-value-in-a-variable-visual-basic"></a>방법: 변수에 두 개 이상의 값 사용(Visual Basic)
+# <a name="how-to-hold-more-than-one-value-in-a-variable-visual-basic"></a>방법: 변수에 둘 이상의 값 (Visual Basic)
 변수를 선언 하면 둘 이상의 값을 보유 한 *복합 데이터 형식*합니다.  
   
  [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md) 구조, 배열 및 클래스를 포함 합니다. 복합 데이터 형식 변수의 기본 데이터 형식 및 다른 복합 형식의 조합을 포함할 수 있습니다. 구조체 및 클래스 코드 뿐만 아니라 데이터를 포함할 수 있습니다.  
@@ -41,11 +41,11 @@ ms.locfileid: "43517965"
   
 5.  수행 된 `As` 키워드와 적절 한 복합 데이터 형식의 이름 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+## <a name="see-also"></a>참고자료
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
