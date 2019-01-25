@@ -2,22 +2,22 @@
 title: 강력한 형식 확장명 샘플
 ms.date: 03/30/2017
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
-ms.openlocfilehash: eccb0ce240d01ab8592a44daddcfa7aa3d2023fb
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: c5b135fb46d13ff5599e75cbd1489c0f6affbd78
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196072"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54691400"
 ---
 # <a name="strongly-typed-extensions-sample"></a>강력한 형식 확장명 샘플
 이 샘플에서는 예를 들기 위해 <xref:System.ServiceModel.Syndication.SyndicationFeed> 클래스를 사용하지만 이 샘플에 나온 패턴은 확장 데이터를 지원하는 모든 배포 클래스에서 사용할 수 있습니다.  
   
- 배포 개체 모델(<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem> 및 관련 클래스)은 <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> 및 <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> 속성을 사용하여 확장 데이터에 대한 자유로운 형식의 액세스를 지원합니다. 이 샘플에서는 특정 응용 프로그램 관련 확장을 강력한 형식의 속성으로 사용할 수 있게 하는 <xref:System.ServiceModel.Syndication.SyndicationFeed> 및 <xref:System.ServiceModel.Syndication.SyndicationItem>의 사용자 지정 파생 클래스를 구현하여 확장 데이터에 대해 강력한 형식의 액세스를 제공하는 방법을 보여 줍니다.  
+ 배포 개체 모델(<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem> 및 관련 클래스)은 <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> 및 <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> 속성을 사용하여 확장명 데이터에 대한 자유로운 형식의 액세스를 지원합니다. 이 샘플에서는 특정 응용 프로그램 관련 확장을 강력한 형식의 속성으로 사용할 수 있게 하는 <xref:System.ServiceModel.Syndication.SyndicationFeed> 및 <xref:System.ServiceModel.Syndication.SyndicationItem>의 사용자 지정 파생 클래스를 구현하여 확장 데이터에 대해 강력한 형식의 액세스를 제공하는 방법을 보여 줍니다.  
   
  한 예로 이 샘플에서는 제안된 Atom Threading Extensions RFC에 정의된 확장명 요소를 구현하는 방법을 보여 줍니다. 이 샘플은 데모용으로만 사용되며 제안된 사양을 전체 구현할 용도는 아닙니다.  
   
 ## <a name="sample-xml"></a>샘플 XML  
- 다음 XML 예제에서는 추가 `<in-reply-to>` 확장 요소가 포함된 Atom 1.0 항목을 보여 줍니다.  
+ 다음 XML 예제에서는 추가 `<in-reply-to>` 확장명 요소가 포함된 Atom 1.0 항목을 보여 줍니다.  
   
 ```xml  
 <entry>  
@@ -211,7 +211,7 @@ public class ThreadedFeed : SyndicationFeed
 }  
 ```  
   
- `ThreadedItem` 클래스는 `SyndicationItem`에서 상속되고 `InReplyToElement`를 강력한 형식의 속성으로 만듭니다. 이 클래스는 `InReplyTo` 확장 데이터에 대한 편리한 프로그래밍 액세스를 제공하며, 다음 코드에 나온 것처럼 이 클래스는 또한 확장 데이터를 읽고 쓰기 위한 `TryParseElement` 및 `WriteElementExtensions`를 구현합니다.  
+ `ThreadedItem` 클래스는 `SyndicationItem`에서 상속되고 `InReplyToElement`를 강력한 형식의 속성으로 만듭니다. 이 클래스는 `InReplyTo` 확장명 데이터에 대한 편리한 프로그래밍 액세스를 제공하며, 다음 코드에 나온 것처럼 이 클래스는 또한 확장 데이터를 읽고 쓰기 위한 `TryParseElement` 및 `WriteElementExtensions`를 구현합니다.  
   
 ```  
 public class ThreadedItem : SyndicationItem  
@@ -287,4 +287,4 @@ public class ThreadedItem : SyndicationItem
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\StronglyTypedExtensions`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

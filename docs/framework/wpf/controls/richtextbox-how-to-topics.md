@@ -7,12 +7,12 @@ helpviewer_keywords:
 - controls [WPF], RichTextBox
 - RichTextBox control [WPF], how-to topics
 ms.assetid: 36e9f98e-f968-42d8-adb6-9e78c814aec0
-ms.openlocfilehash: 8542076ca9552ae0d5ace74f1a287f5cd39aff21
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5eccafd3a7fb75f0458fa50b1c557f4b3ddb7c27
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720485"
 ---
 # <a name="richtextbox-how-to-topics"></a>RichTextBox 방법 항목
 이 섹션에서는 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 주는 예제를 제공 합니다 <xref:System.Windows.Controls.RichTextBox> 제어 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "43864331"
  [RichTextBox에서 사용자 지정 상황에 맞는 메뉴의 위치 지정](../../../../docs/framework/wpf/controls/how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
  [방법: RichTextBox의 기본 콘텐츠 호스트를 대체 합니다.](https://msdn.microsoft.com/library/dec1b2ce-9ca5-4bb2-bf54-f8a80a3c8beb)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.TextBox>  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [유동 문서 개요](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.TextBox>
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [유동 문서 개요](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

@@ -4,17 +4,17 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - PrintForm component [Visual Basic]
 ms.assetid: 03de98b8-b54c-4764-91d7-83c64e974750
-ms.openlocfilehash: 879d31c5a572689d84af6b2e46f3d33e1a8841c8
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: a093dbb674a0d182b9a981cf39668d9ca11d0e8c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47172156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54746197"
 ---
 # <a name="printform-component-visual-basic"></a>PrintForm 구성 요소(Visual Basic)
 <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> Visual Basic에 대 한 구성 요소를 사용 하면 런타임에 Windows Form의 이미지를 인쇄할 수 있습니다. 해당 동작은 이전 Visual Basic 버전에서 `PrintForm` 메서드의 동작을 대체합니다.  
   
- PowerPack 컨트롤은 더 이상 Visual Studio에 포함 되었지만 이러한에서 다운로드할 수 없습니다 합니다 [다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=25169)합니다.  
+ PowerPack 컨트롤은 Visual Studio에 더 포함되지 않지만 [다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=25169)에서 다운로드할 수 있습니다.  
   
 ## <a name="printform-component-overview"></a>PrintForm 구성 요소 개요  
  Windows Forms에 대한 일반적인 시나리오는 용지 형식이나 보고서와 유사하게 형식이 지정되는 폼을 만들고 나서 폼 이미지를 인쇄하는 것입니다. <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하여 이 작업을 할 수 있지만 많은 코드가 필요합니다. <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> 구성 요소를 사용하면 <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하지 않고 폼 이미지를 프린터, 인쇄 미리 보기 창 또는 파일로 인쇄할 수 있습니다.  
@@ -66,10 +66,10 @@ pf.PrintAction = PrintToPrinter
 pf.Print()  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>  
- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>  
- [방법: PrintForm 구성 요소를 사용하여 폼 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)  
- [방법: 폼의 클라이언트 영역 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)  
- [방법: 폼의 클라이언트 영역 및 비클라이언트 영역 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)  
- [방법: 스크롤 가능 폼 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>
+- <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>
+- [방법: PrintForm 구성 요소를 사용하여 폼 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)
+- [방법: 폼의 클라이언트 영역 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)
+- [방법: 폼의 클라이언트 영역 및 비클라이언트 영역 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)
+- [방법: 스크롤 가능 폼 인쇄](../../../visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)

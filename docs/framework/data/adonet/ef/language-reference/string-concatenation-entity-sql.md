@@ -2,12 +2,12 @@
 title: + (문자열 연결) (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 580130fa-6c7c-4f76-a47d-d22c27ccadf6
-ms.openlocfilehash: 8a1785d590c5f7fcc443856180d516bb40cfc28e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e53bd0a2607deb67d45edc44e51cf4ad283b21c6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54633925"
 ---
 # <a name="-string-concatenation-entity-sql"></a>+ (문자열 연결)(Entity SQL)
 두 문자열을 연결합니다.  
@@ -28,12 +28,12 @@ expression + expression
 ## <a name="example"></a>예제  
  다음 Entity SQL 쿼리에서는 + 연산자를 사용하여 두 문자열을 연결합니다. 쿼리는 AdventureWorks Sales 모델을 기반으로 합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
-1.  절차를 따릅니다 [방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
+1.  절차에 따라 [방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
   
 2.  다음 쿼리를 `ExecutePrimitiveTypeQuery` 메서드에 인수로 전달합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#CONCAT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#concat)]  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [개념적 모델 형식(CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)

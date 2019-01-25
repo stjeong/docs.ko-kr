@@ -1,18 +1,18 @@
 ---
-title: '방법: 중첩된 컬렉션을 반환하는 쿼리 실행'
+title: '방법: 중첩 컬렉션을 반환하는 쿼리 실행'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f7f385f3-ffcf-4f3b-af35-de8818938e5f
-ms.openlocfilehash: 5e282bce5f2519592babad0afcf7f8a326cf936d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f429b8e8f546669fba64b9ee04222d399971936e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654518"
 ---
-# <a name="how-to-execute-a-query-that-returns-nested-collections"></a>방법: 중첩된 컬렉션을 반환하는 쿼리 실행
+# <a name="how-to-execute-a-query-that-returns-nested-collections"></a>방법: 중첩 컬렉션을 반환하는 쿼리 실행
 여기에서는 <xref:System.Data.EntityClient.EntityCommand> 개체를 사용하여 개념적 모델에 대해 명령을 실행하는 방법 및 <xref:System.Data.EntityClient.EntityDataReader>를 사용하여 중첩 컬렉션 결과를 검색하는 방법을 보여 줍니다.  
   
 ### <a name="to-run-the-code-in-this-example"></a>이 예제의 코드를 실행하려면  
@@ -30,5 +30,5 @@ ms.locfileid: "43530570"
  [!code-csharp[DP EntityServices Concepts#ReturnNestedCollectionWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#returnnestedcollectionwithentitycommand)]
  [!code-vb[DP EntityServices Concepts#ReturnNestedCollectionWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#returnnestedcollectionwithentitycommand)]  
   
-## <a name="see-also"></a>참고 항목  
- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+## <a name="see-also"></a>참고자료
+- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)

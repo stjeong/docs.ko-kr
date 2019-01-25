@@ -29,12 +29,12 @@ helpviewer_keywords:
 - attribute syntax [XAML]
 - XAML [WPF], property element syntax
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
-ms.openlocfilehash: 31f9e31d7cd91f9f89e131a7b506cf1a53fce7e4
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 33e811369d7f1d419eb593b430ab939279d3713b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54510197"
 ---
 # <a name="xaml-syntax-in-detail"></a>XAML 구문 정보
 이 항목에서는 XAML 구문 요소에 설명 하는 데 사용 되는 용어를 정의 합니다. 이러한 용어는 특히 및 XAML 또는 System.Xaml 수준에서 XAML 언어 지원을 사용 하도록 설정 하는 기본 XAML 개념을 사용 하는 다른 프레임 워크에 대 한 WPF 설명서에 대 한 모두이 문서의 나머지 부분에서 자주 사용 됩니다. 이 항목에서는 확장 항목에 도입 하는 기본 용어 [XAML 개요 (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)합니다.  
@@ -315,10 +315,10 @@ ms.locfileid: "54030297"
   
  마찬가지로 하지만 *typeName*. *memberName* 특성에 대 한 폼 *baseTypeName*. *memberName* 는 태그에서 잘못 된 스타일 및 사용 하지 않아야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
- [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
- [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [TypeConverter 및 XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  
- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+## <a name="see-also"></a>참고자료
+- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)
+- [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)
+- [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [TypeConverter 및 XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)
+- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

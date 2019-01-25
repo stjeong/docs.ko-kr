@@ -2,12 +2,12 @@
 title: WCF의 메시지 보안
 ms.date: 03/30/2017
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
-ms.openlocfilehash: 81d9acde3c8fab1860904074199066cca55c7186
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 023798f3bbc283b11dbb6c132f7573ee65d18077
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54731350"
 ---
 # <a name="message-security-in-wcf"></a>WCF의 메시지 보안
 Windows Communication Foundation (WCF)는 보안을 제공 하는 두 가지 주요 모드 (`Transport` 하 고 `Message`)와 세 번째 모드 (`TransportWithMessageCredential`) 둘을 조합 하 합니다. 이 항목에서는 메시지 보안과 메시지 보안을 사용하는 이유에 대해 설명합니다.  
@@ -58,8 +58,8 @@ Windows Communication Foundation (WCF)는 보안을 제공 하는 두 가지 주
   
 -   XML 수준 보안 메커니즘과 WS-Security 사양 지원을 구현해야 합니다. 이로 인해 상호 운용성이 저하될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [전송 보안](../../../../docs/framework/wcf/feature-details/transport-security.md)  
- [방법: 전송 보안 및 메시지 자격 증명 사용](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
- [Microsoft Patterns and Practices의 3 장: 전송 구현 및 메시지 레이어 보안](https://go.microsoft.com/fwlink/?LinkId=88897)
+## <a name="see-also"></a>참고자료
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [전송 보안](../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [방법: 사용 하 여 전송 보안 및 메시지 자격 증명](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)
+- [Microsoft Patterns and Practices의 3 장: 전송 및 메시지 레이어 보안 구현](https://go.microsoft.com/fwlink/?LinkId=88897)

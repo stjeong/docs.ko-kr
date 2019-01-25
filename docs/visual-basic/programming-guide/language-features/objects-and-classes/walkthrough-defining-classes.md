@@ -15,14 +15,14 @@ helpviewer_keywords:
 - Terminate event [Visual Basic]
 - execution [Visual Basic], stopping
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
-ms.openlocfilehash: aac30a8b0272ae6c141138a91585953237ab8098
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: c41d3b2c8d905395f1249b15709da8dbdf5d4632
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43403544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640435"
 ---
-# <a name="walkthrough-defining-classes-visual-basic"></a>연습: 클래스 정의(Visual Basic)
+# <a name="walkthrough-defining-classes-visual-basic"></a>연습: 정의 클래스 (Visual Basic)
 
 이 연습에는 개체를 만드는 데 사용할 수 있는 클래스를 정의 하는 방법을 보여 줍니다. 또한 새 클래스에 속성 및 메서드를 추가 하는 방법을 표시 하 고 개체를 초기화 하는 방법에 설명 합니다.  
   
@@ -77,9 +77,9 @@ ms.locfileid: "43403544"
   
 1.  F5 키를 눌러 응용 프로그램을 실행 합니다. 테스트 프로시저를 호출 하려면 폼에서 단추를 클릭 합니다. 원래 했다는 메시지가 표시 `UserName` "MOORE, BOBBY" 이므로 프로시저가 호출 된 `Capitalize` 개체의 메서드.  
   
-2.  클릭 **확인** 메시지 상자를 닫습니다. `Button1 Click` 의 값을 변경 하는 절차는 `UserName` 속성의 새 값을 알려 주는 메시지를 표시 합니다 `UserName` "Worden, Joe" 됩니다.  
+2.  **확인**을 클릭하여 메시지 상자를 닫습니다. `Button1 Click` 의 값을 변경 하는 절차는 `UserName` 속성의 새 값을 알려 주는 메시지를 표시 합니다 `UserName` "Worden, Joe" 됩니다.  
   
 ## <a name="see-also"></a>참고자료
 
-[개체 지향 프로그래밍(Visual Basic)](../../concepts/object-oriented-programming.md)  
-[개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [개체 지향 프로그래밍(Visual Basic)](../../concepts/object-oriented-programming.md)
+- [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

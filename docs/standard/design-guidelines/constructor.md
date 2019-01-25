@@ -13,12 +13,12 @@ helpviewer_keywords:
 - static constructors
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
 author: KrzysztofCwalina
-ms.openlocfilehash: b140be34d9359cfdca1250a924db787563127d19
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 68192e3b75a120c73b82c34005d4dee650540bf3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54722170"
 ---
 # <a name="constructor-design"></a>생성자 디자인
 생성자의 두 가지가: 생성자 및 인스턴스 생성자를 입력 합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "53127786"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
+- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

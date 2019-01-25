@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 73d64242-6cbb-424c-92dd-dc69530b7899
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 60b2b8b8e07cfec9000ddd974891070b625fde01
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 4d8d2c8135e8f24f62b83837b610292ae2b258ce
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54546640"
 ---
 # <a name="implementing-the-ui-automation-scroll-control-pattern"></a>UI 자동화 Scroll 컨트롤 패턴 구현
 > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "48582673"
   
 -   <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty> 및 <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> 는 <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>와 관계가 없습니다.  
   
--   하는 경우 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty>  =  `false` 한 다음 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty> 100%로 설정 해야 하 고 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty> 로 설정 해야 <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>합니다. 마찬가지로, <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> = `false` 일 경우 <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty> 는 100%로 설정되어야 하며 <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty> 는 <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>를 참조하세요. 이렇게 하면 UI 자동화 클라이언트 내에서 이러한 속성 값을 사용 하는 <xref:System.Windows.Automation.ScrollPattern.SetScrollPercent%2A> 방지 하는 동안 메서드는 [경합](https://support.microsoft.com/default.aspx?scid=kb;en-us;317723) 스크롤 활성화 방향 클라이언트 관심이 없는 경우.  
+-   하는 경우 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty>  =  `false` 한 다음 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty> 100%로 설정 해야 하 고 <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty> 로 설정 해야 <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>합니다. 마찬가지로, <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> = `false` 일 경우 <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty> 는 100%로 설정되어야 하며 <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty> 는 <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>를 참조하세요. 따라서 클라이언트가 원하지 않는 스크롤 방향이 활성화되어 있는 경우 UI 자동화 클라이언트는 <xref:System.Windows.Automation.ScrollPattern.SetScrollPercent%2A> 경합 상태 [를 방지하면서](https://support.microsoft.com/default.aspx?scid=kb;en-us;317723) 메서드 내에서 이러한 속성 값을 사용할 수 있습니다.  
   
 -   <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A> 는 로캘과 관련됩니다. HorizontalScrollPercent = 100.0으로 설정하는 경우 왼쪽에서 오른쪽으로 읽는 언어(예: 영어)에서 컨트롤의 스크롤 위치는 맨 오른쪽 위치에 해당하는 값으로 설정해야 합니다. 또는 오른쪽에서 왼쪽으로 읽는 언어(예: 아랍어)의 경우 HorizontalScrollPercent = 100.0으로 설정할 경우 스크롤 위치는 맨 왼쪽 위치로 설정해야 합니다.  
   
@@ -72,9 +72,9 @@ ms.locfileid: "48582673"
 |<xref:System.ArgumentOutOfRangeException>|100보다 크거나 0보다 작은 값이 전달되는 경우(<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A> 에 해당하는 -1 제외) <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>가 이 예외를 발생시킵니다.|  
 |<xref:System.InvalidOperationException>|지원되지 않는 방향으로 스크롤이 시도되면 <xref:System.Windows.Automation.Provider.IScrollProvider.Scroll%2A> 및 <xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A> 둘 다 이 예외를 발생시킵니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - 3-D transformations
 - transformations [WPF], 3-D
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
-ms.openlocfilehash: d27e1bda296a153343b450c84c65fa35d55d72f2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 427840430a37f675ccc0f0ee4f423370f2a55550
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646372"
 ---
 # <a name="3-d-transformations-overview"></a>3차원 변환 개요
 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 그래픽 시스템에서 3차원 모델에 변환을 적용하는 방법을 설명합니다. 변환을 사용하면 개발자가 해당 항목을 정의하는 기준 값을 변경하지 않고도 모델의 위치, 크기 및 방향을 변경할 수 있습니다.  
@@ -67,7 +67,7 @@ ScaleCenter 예제
   
  [!code-xaml[animation3dgallery_snip#Rotate3DUsingAxisAngleRotation3DExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/Rotat3DUsingAxisAngleRotation3DExample.xaml#rotate3dusingaxisanglerotation3dexamplewholepage)]  
   
- 참고:[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 3차원은 오른손 시스템입니다. 즉, 회전 각도 값이 양이면 축을 중심으로 시계 반대 방향으로 회전됩니다.  
+ 참고:[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 3 차원 회전 각도 값 축에 대 한 시계 반대 방향으로 회전의 결과 즉 오른손 시스템 이며  
   
  에 대 한 값을 지정 하지 않으면 축-각도 회전은 원점을 회전을 가정 합니다 <xref:System.Windows.Media.Media3D.RotateTransform3D.CenterX%2A>, <xref:System.Windows.Media.Media3D.RotateTransform3D.CenterY%2A>, 및 <xref:System.Windows.Media.Media3D.RotateTransform3D.CenterZ%2A> RotateTransform3D의 속성입니다. 배율 조정과 마찬가지로 회전도 모델의 전체 좌표 공간을 변환한다는 점에 유의합니다. 모델이 원점을 기준으로 만들어지지 않았거나 이전에 모델을 좌표 이동한 경우 회전시키면 현재 위치에서 회전되는 것이 아니라 원점을 기준으로 "피벗"할 수 있습니다.  
   
@@ -105,7 +105,7 @@ ScaleCenter 예제
   
  카메라도 모델이므로 카메라 속성 또한 변환할 수 있습니다.  카메라 위치나 평면 거리를 변환하면 결과적으로 전체 장면 프로젝션을 변환하여 장면의 모양을 확실히 변경할 수 있지만 이와 같은 방법으로 얻는 효과 대부분은 장면에서 모델의 위치에 적용하는 변환만큼의 "시각적" 효과를 만들 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [3차원 그래픽 개요](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)  
- [Transform 개요](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
- [2차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)
+## <a name="see-also"></a>참고자료
+- [3차원 그래픽 개요](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+- [Transform 개요](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [2차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)

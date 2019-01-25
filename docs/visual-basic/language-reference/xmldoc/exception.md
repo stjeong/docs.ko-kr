@@ -5,12 +5,12 @@ helpviewer_keywords:
 - <exception> XML tag
 - exception XML tag
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
-ms.openlocfilehash: 047805ad91d87550da80448fd10883ae58647bd6
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: c2b6e13059e3b309e4734c56bf9fd5eb7b82daa7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45969498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540899"
 ---
 # <a name="ltexceptiongt-visual-basic"></a>&lt;예외&gt; (Visual Basic)
 예외를 throw 할 수를 지정 합니다.  
@@ -38,5 +38,5 @@ ms.locfileid: "45969498"
   
  [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/exception_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)
+## <a name="see-also"></a>참고자료
+- [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

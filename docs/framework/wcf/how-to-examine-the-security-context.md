@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WCF, security
 - Claimset class
 ms.assetid: 389b5a57-4175-4bc0-ada0-fc750d51149f
-ms.openlocfilehash: 64e566fb8d0cfadc2a46d0a335ddb2799739f9f9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: bcc23097a6778bb537421ba494dd94414b37f4e2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646268"
 ---
 # <a name="how-to-examine-the-security-context"></a>방법: 보안 컨텍스트 검사
 Windows Communication Foundation (WCF) 서비스를 프로그래밍 하는 경우 서비스 보안 컨텍스트를 사용 하면 클라이언트 자격 증명 및 서비스를 사용 하 여 인증 하는 데 사용 되는 클레임에 대 한 세부 정보를 확인할 수 있습니다. <xref:System.ServiceModel.ServiceSecurityContext> 클래스의 속성을 사용하여 이를 수행할 수 있습니다.  
@@ -54,6 +54,6 @@ Windows Communication Foundation (WCF) 서비스를 프로그래밍 하는 경�
   
 -   <xref:System.IdentityModel.Claims>  
   
-## <a name="see-also"></a>참고 항목  
- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)  
- [서비스 ID 및 인증](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+## <a name="see-also"></a>참고자료
+- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)
+- [서비스 ID 및 인증](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

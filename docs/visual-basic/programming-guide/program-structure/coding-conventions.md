@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Basic 코딩 규칙
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +6,12 @@ helpviewer_keywords:
 - examples [Visual Basic], coding conventions
 - Visual Basic code, conventions
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
-ms.openlocfilehash: b686747b46529b53b0802a7deb38b5b4949f4d5e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f2b1676ae959c5426af3021bbd340980115c5da6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33655363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724884"
 ---
 # <a name="visual-basic-coding-conventions"></a>Visual Basic 코딩 규칙
 Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니다. 사용자가 동일한 코딩 규칙을 따른다면, 다음과 같은 이점을 얻을 수 있습니다.  
@@ -67,7 +67,7 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
 ## <a name="program-structure"></a>프로그램 구조  
   
--   사용 하는 경우는 `Main` 새 콘솔 응용 프로그램에 대 한 기본 구조를 사용 하 고 사용 하는 메서드를 `My` 명령줄 인수에 대 한 합니다.  
+-   사용 하는 경우는 `Main` 메서드를 새 콘솔 응용 프로그램에 대 한 기본 구조를 사용 하 고 사용 하 여 `My` 명령줄 인수에 대 한 합니다.  
   
      [!code-vb[VbVbalrGuidelines#3](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_2.vb)]  
   
@@ -79,22 +79,22 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
      [!code-vb[VbVbalrGuidelines#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_3.vb)]  
   
--   루프에 문자열에 추가 하려면 사용 하 여는 <xref:System.Text.StringBuilder> 개체입니다.  
+-   문자열을 루프에 추가 하려면 사용 된 <xref:System.Text.StringBuilder> 개체입니다.  
   
      [!code-vb[VbVbalrGuidelines#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_4.vb)]  
   
 ### <a name="relaxed-delegates-in-event-handlers"></a>완화된 대리자 이벤트 처리기  
- 이벤트 처리기에 (개체 및 EventArgs) 인수를 명시적으로 적합 하지 않습니다. 이벤트 (예를 들어 보낸 사람 개체로, EventArgs e)에 전달 되는 이벤트 인수를 사용 하지 않는 경우에 완화 된 대리자를 사용 하 고 코드에서 이벤트 인수를:  
+ 이벤트 처리기에 인수 (개체 및 Eventarg)를 명시적으로 적합 하지 않습니다. 이벤트 (예를 들어, object, EventArgs와 발신자)에 전달 되는 이벤트 인수를 사용 하지 않는 경우 완화 된 대리자를 사용 하 여 및 코드에서 이벤트 인수를 생략 합니다.  
   
  [!code-vb[VbVbalrGuidelines#7](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_5.vb)]  
   
 ### <a name="unsigned-data-type"></a>부호 없는 데이터 형식  
   
--   사용 하 여 `Integer` 는 필요한 제외 하 고 부호 없는 형식 대신 합니다.  
+-   사용 하 여 `Integer` 필요한 되 제외한 부호 없는 형식 대신 합니다.  
   
 ### <a name="arrays"></a>배열  
   
--   선언 줄에서 배열을 초기화할 때 간단한 구문을 사용 합니다. 예를 들어 다음 구문을 사용 합니다.  
+-   선언 줄에서 배열을 초기화할 때는 간단한 구문을 사용 합니다. 예를 들어 다음 구문을 사용 합니다.  
   
      [!code-vb[VbVbalrGuidelines#8](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_6.vb)]  
   
@@ -102,11 +102,11 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
      [!code-vb[VbVbalrGuidelines#9](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_7.vb)]  
   
--   변수가 아니라 형식에 배열 지정자를 넣습니다. 예를 들어 다음 구문을 사용 합니다.  
+-   변수의 아니라 형식에 배열 지정자를 배치 합니다. 예를 들어 다음 구문을 사용 합니다.  
   
      [!code-vb[VbVbalrGuidelines#11](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_8.vb)]  
   
-     다음 구문을 사용 하지 마십시오.  
+     다음 구문을 사용 하지 않습니다.  
   
      [!code-vb[VbVbalrGuidelines#10](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_9.vb)]  
   
@@ -114,28 +114,28 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
      [!code-vb[VbVbalrGuidelines#12](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_10.vb)]  
   
-     다음 구문을 사용 하지 마십시오.  
+     다음 구문을 사용 하지 않습니다.  
   
      [!code-vb[VbVbalrGuidelines#13](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_11.vb)]  
   
-### <a name="use-the-with-keyword"></a>사용 하는 키워드와 함께  
- 사용 하는 일련의 하나 이상의 개체에 대 한 호출을 수행 하면 고려는 `With` 키워드:  
+### <a name="use-the-with-keyword"></a>사용 된 키워드를 사용 하 여  
+ 일련의 하나 이상의 개체에 대 한 호출을 수행 하면 사용을 고려 합니다 `With` 키워드:  
   
  [!code-vb[VbVbalrGuidelines#15](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_12.vb)]  
   
-### <a name="use-the-trycatch-and-using-statements-when-you-use-exception-handling"></a>Try 사용 함 Catch 및 문을 사용 하 여 예외 처리를 사용 하는 경우  
- 사용 하지 마십시오 `On Error Goto`합니다.  
+### <a name="use-the-trycatch-and-using-statements-when-you-use-exception-handling"></a>사용 하는 중... Catch 및 예외 처리를 사용 하는 경우 Using 문  
+ `On Error Goto`는 사용하지 마세요.  
   
-### <a name="use-the-isnot-keyword"></a>IsNot 키워드를 사용 하 여  
- 사용 하 여 `IsNot` 키워드 대신 `Not...Is Nothing`합니다.  
+### <a name="use-the-isnot-keyword"></a>IsNot 키워드 사용  
+ 사용 된 `IsNot` 대신 키워드 `Not...Is Nothing`합니다.  
   
-### <a name="new-keyword"></a>New 키워드  
+### <a name="new-keyword"></a>새 키워드  
   
 -   간단한 인스턴스를 사용 합니다. 예를 들어 다음 구문을 사용 합니다.  
   
      [!code-vb[VbVbalrGuidelines#21](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_13.vb)]  
   
-     앞의 줄이 같습니다.  
+     앞의 줄은이에 해당 합니다.  
   
      [!code-vb[VbVbalrGuidelines#22](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_14.vb)]  
   
@@ -149,43 +149,43 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
      [!code-vb[VbVbalrGuidelines#24](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_16.vb)]  
   
--   사용 하 여 `AddressOf`, 대리자를 명시적으로 인스턴스화합니다 않습니다:  
+-   사용 하 여 `AddressOf`, 및 대리자를 명시적으로 인스턴스화할 수 없습니다.  
   
      [!code-vb[VbVbalrGuidelines#25](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_17.vb)]  
   
--   이벤트를 정의 하는 경우 간단한 구문을 사용 하 고 고 컴파일러에서 대리자를 정의 합니다.  
+-   이벤트를 정의할 때는 간단한 구문을 사용 하 여 및 대리자를 정의 하 여 컴파일러가:  
   
      [!code-vb[VbVbalrGuidelines#26](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_18.vb)]  
   
--   이벤트 인지를 확인 하지 않습니다 `Nothing` (null)를 호출 하기 전에 `RaiseEvent` 메서드. `RaiseEvent` 에 대 한 확인 `Nothing` 전에 이벤트를 발생 시킵니다.  
+-   이벤트 인지를 확인 하지 않습니다 `Nothing` (null)를 호출 하기 전에 `RaiseEvent` 메서드. `RaiseEvent` 에 대 한 확인 `Nothing` 이벤트를 발생 시키기 전에 합니다.  
   
 ### <a name="using-shared-members"></a>공유 멤버 사용  
  호출 `Shared` 클래스 이름에서가 아니라 인스턴스 변수를 사용 하 여 멤버입니다.  
   
 ### <a name="use-xml-literals"></a>XML 리터럴을 사용 하십시오.  
- XML 리터럴의 XML (예를 들어, 로드, 쿼리 및 변환)를 사용 하 여 작업할 때 발생할 수 있는 가장 일반적인 작업을 간소화 합니다. XML로 개발 하는 경우 다음이 지침을 따르십시오.  
+ XML 리터럴의 XML (예를 들어, 로드, 쿼리 및 변환)를 사용 하 여 작업할 때 발생할 수 있는 가장 일반적인 작업을 간소화 합니다. XML을 사용 하 여 개발 하는 경우 다음이 지침을 따르세요.  
   
 -   XML 리터럴을 사용 하 여 XML 문서 및 XML Api를 직접 호출 하는 대신 조각을 만듭니다.  
   
--   XML 리터럴에 대 한 성능 최적화를 활용 하도록 파일 또는 프로젝트 수준에서 XML 네임 스페이스를 가져옵니다.  
+-   XML 리터럴의 성능 최적화를 활용 하기 위해 파일 또는 프로젝트 수준에서 XML 네임 스페이스를 가져옵니다.  
   
--   XML 축 속성을 사용 하 여 특성과 해당 요소는 XML 문서에 액세스할 수 있습니다.  
+-   특성과 해당 요소는 XML 문서에 액세스 하려면 XML 축 속성을 사용 합니다.  
   
--   포함된 식을 사용 하 여 값을 포함 하 고와 같은 API 호출을 사용 하는 대신 기존 값에서 XML을 만들 수는 `Add` 메서드:  
+-   포함된 식을 사용 하 여 값을 포함 하 고 같은 API 호출을 사용 하는 대신 기존 값에서 XML을 만들 수는 `Add` 메서드:  
   
      [!code-vb[VbVbalrGuidelines#27](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_19.vb)]  
   
 ### <a name="linq-queries"></a>LINQ 쿼리  
   
--   쿼리 변수에 대 한 의미 있는 이름을 사용 합니다.  
+-   쿼리 변수에 의미 있는 이름을 사용 합니다.  
   
      [!code-vb[VbVbalrGuidelines#28](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_20.vb)]  
   
--   익명 형식의 속성 이름이 올바르게 대문자로 표시 되도록 파스칼식을 사용 하 여 쿼리에서 요소에 대 한 이름을 제공 대/소문자 구분:  
+-   익명 형식의 속성 이름이 올바로 대문자로 표시 되도록 파스칼을 사용 하 여 쿼리에서 요소에 대 한 이름을 제공 대/소문자 구분:  
   
      [!code-vb[VbVbalrGuidelines#29](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_21.vb)]  
   
--   결과의 속성 이름이 모호하면 속성 이름을 바꿉니다. 예를 들어 쿼리에서 고객 이름 및 주문 ID를 반환 하는 경우 이름을 그대로 두는 대신 `Name` 및 `ID` 결과에서:  
+-   결과의 속성 이름이 모호하면 속성 이름을 바꿉니다. 예를 들어 쿼리에서 고객 이름과 주문 ID를 반환 바꿀로 남겨두지 않고 `Name` 고 `ID` 결과에서:  
   
      [!code-vb[VbVbalrGuidelines#30](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_22.vb)]  
   
@@ -197,13 +197,13 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
      [!code-vb[VbVbalrGuidelines#32](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_24.vb)]  
   
--   사용 하 여 `Where` 뒷부분의 쿼리 절 데이터의 필터링 된 집합에서 사용할 수 있도록 다른 앞에 절 쿼리 절:  
+-   사용 하 여 `Where` 나중 쿼리 절이 필터링 된 데이터 집합에서 실행 되도록 다른 앞 절 쿼리 절:  
   
      [!code-vb[VbVbalrGuidelines#33](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_25.vb)]  
   
--   사용 하 여는 `Join` 절을 사용 하는 대신 조인 작업을 명시적으로 정의 된 `Where` 암시적으로 조인 작업을 정의 하는 절:  
+-   사용 된 `Join` 절을 사용 하는 대신 조인 작업을 명시적으로 정의 `Where` 조인 작업을 암시적으로 정의 하는 절:  
   
      [!code-vb[VbVbalrGuidelines#34](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_26.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [보안 코딩 지침](../../../standard/security/secure-coding-guidelines.md)
+## <a name="see-also"></a>참고자료
+- [보안 코딩 지침](../../../standard/security/secure-coding-guidelines.md)

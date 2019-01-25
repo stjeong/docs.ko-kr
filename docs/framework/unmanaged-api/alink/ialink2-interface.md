@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0ddc2f50b42ba8adf7aa5f4d7fa0dc68469e7344
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 918b4f8c42b21878fa7eae5c79ae1171ef3e6b29
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54739448"
 ---
 # <a name="ialink2-interface"></a>IALink2 인터페이스
-보완은 [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) 와 같은 최신 메타 데이터 인터페이스에 작동 하는 메서드를 선언 하 여 [IMetaDataEmit2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)합니다. 또한 IALink2 원래 IALink 인터페이스를 통해 추가적인 사용 유연성을 제공 하는 메서드를 선언 합니다.  
+보완 합니다 [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) 와 같은 최신 메타 데이터 인터페이스에서 작동 하는 메서드를 선언 하 여 [IMetaDataEmit2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)합니다. 또한 IALink2 원래 IALink 인터페이스를 통해 추가 사용 유연성을 제공 하는 메서드를 선언 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [AddFile2 메서드](../../../../docs/framework/unmanaged-api/alink/addfile2-method.md)  
@@ -41,7 +41,7 @@ ms.locfileid: "33408463"
   
  [SetPEKind 메서드](../../../../docs/framework/unmanaged-api/alink/setpekind-method.md)  
   
-## <a name="see-also"></a>참고 항목  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [Al.exe(어셈블리 링커)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## <a name="see-also"></a>참고자료
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [Al.exe(어셈블리 링커)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

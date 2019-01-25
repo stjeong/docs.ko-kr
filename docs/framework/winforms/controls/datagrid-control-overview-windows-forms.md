@@ -20,12 +20,12 @@ helpviewer_keywords:
 - parent table navigation in DataGrid
 - child tables [Windows Forms], dataGrid control
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-ms.openlocfilehash: a4a8f33b45fa8433013cfa34fbc55f0db90737c4
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 05cc71ffb5d55c926dca50876a2329feeed8aedf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648471"
 ---
 # <a name="datagrid-control-overview-windows-forms"></a>DataGrid 컨트롤 개요(Windows Forms)
 > [!NOTE]
@@ -42,7 +42,7 @@ ms.locfileid: "48850689"
   
  <xref:System.Windows.Forms.DataGrid>에서는 데이터 집합, 관련 테이블 간의 탐색, 풍부한 형식 지정 및 편집 기능을 위한 사용자 인터페이스를 제공할 수 있습니다.  
   
- 데이터의 표시 및 조작은 별개 기능입니다. 컨트롤이 사용자 인터페이스를 처리하는 반면, 데이터 업데이트는 Windows Forms 데이터 바인딩 아키텍처 및 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 데이터 공급자에 의해 처리됩니다. 따라서 동일한 데이터 소스에 바인딩된 여러 컨트롤이 동기화 상태로 유지됩니다.  
+ 표시 및 조작은 데이터는 별도 함수: 컨트롤 사용자 인터페이스를 처리 하는 데이터 업데이트는 Windows Forms 데이터 바인딩 아키텍처에서 처리 되는 반면 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 데이터 공급자입니다. 따라서 동일한 데이터 소스에 바인딩된 여러 컨트롤이 동기화 상태로 유지됩니다.  
   
 > [!NOTE]
 >  Visual Basic 6.0의 DataGrid 컨트롤에 익숙한 경우 Windows Forms <xref:System.Windows.Forms.DataGrid> 컨트롤에서 몇 가지 중요한 차이점을 발견할 것입니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "48850689"
   
  바인딩된 데이터 세트의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:System.Windows.Forms.DataGrid> 컨트롤이 변경 내용을 반영합니다. 데이터 그리드 및 해당 표 스타일과 열 스타일 경우는 `ReadOnly` 속성이로 설정 `false`를 통해 데이터 집합의 데이터를 업데이트할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다.  
   
- 한 번에 하나의 테이블만 <xref:System.Windows.Forms.DataGrid>에 표시될 수 있습니다. 테이블 간에 부모-자식 관계가 정의된 경우 사용자가 관련 테이블 간에 이동하여 <xref:System.Windows.Forms.DataGrid> 컨트롤에 표시할 테이블을 선택할 수 있습니다. 바인딩에 대 한 정보에 대 한는 <xref:System.Windows.Forms.DataGrid> 컨트롤을 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 디자인 타임 또는 런타임 중 데이터 원본 참조 [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)합니다.  
+ 한 번에 하나의 테이블만 <xref:System.Windows.Forms.DataGrid>에 표시될 수 있습니다. 테이블 간에 부모-자식 관계가 정의된 경우 사용자가 관련 테이블 간에 이동하여 <xref:System.Windows.Forms.DataGrid> 컨트롤에 표시할 테이블을 선택할 수 있습니다. 바인딩에 대 한 정보에 대 한를 <xref:System.Windows.Forms.DataGrid> 컨트롤을 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 디자인 타임 또는 런타임 중 데이터 원본 참조 [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)합니다.  
   
  <xref:System.Windows.Forms.DataGrid>에 유효한 데이터 소스는 다음과 같습니다.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "48850689"
  ![DataGrid 컨트롤에 포함 된 개체](../../../../docs/framework/winforms/controls/media/vbcolumns1.gif "vbColumns1")  
 다음 그림에서는 DataGrid 컨트롤에 포함된 개체를 보여 줍니다.  
   
- 테이블 스타일과 열 스타일은 해당 `MappingName` 속성을 적절한 <xref:System.Data.DataTable.TableName%2A> 및 <xref:System.Data.DataColumn.ColumnName%2A> 속성으로 설정하여 <xref:System.Data.DataTable> 개체 및 <xref:System.Data.DataColumn> 개체와 동기화됩니다. 유효한 데이터 소스에 바인딩된 <xref:System.Windows.Forms.DataGrid> 컨트롤에 열 스타일이 없는 <xref:System.Windows.Forms.DataGridTableStyle>이 추가되고 해당 테이블 스타일의 <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> 속성이 유효한 <xref:System.Data.DataTable.TableName%2A> 속성으로 설정된 경우 해당 테이블 스타일에 대한 <xref:System.Windows.Forms.DataGridColumnStyle> 개체 컬렉션이 생성됩니다. <xref:System.Data.DataTable>의 <xref:System.Data.DataTable.Columns%2A> 컬렉션에서 발견된 각 <xref:System.Data.DataColumn>에 해당하는 <xref:System.Windows.Forms.DataGridColumnStyle>이 <xref:System.Windows.Forms.GridColumnStylesCollection>에 추가됩니다. <xref:System.Windows.Forms.GridColumnStylesCollection>은 <xref:System.Windows.Forms.DataGridTableStyle>의 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 속성을 통해 액세스됩니다. <xref:System.Windows.Forms.GridColumnStylesCollection>의 <xref:System.Windows.Forms.GridColumnStylesCollection.Add%2A> 또는 <xref:System.Windows.Forms.GridColumnStylesCollection.Remove%2A> 메서드를 사용하여 표 형태 창에서 열을 추가하거나 삭제할 수 있습니다. 자세한 내용은 [방법: Windows Forms DataGrid 컨트롤에 표 및 열 추가](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md) 및 [방법: Windows Forms DataGrid 컨트롤에서 열 숨기기 또는 삭제](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)를 참조하십시오.  
+ 테이블 스타일과 열 스타일은 해당 `MappingName` 속성을 적절한 <xref:System.Data.DataTable.TableName%2A> 및 <xref:System.Data.DataColumn.ColumnName%2A> 속성으로 설정하여 <xref:System.Data.DataTable> 개체 및 <xref:System.Data.DataColumn> 개체와 동기화됩니다. 유효한 데이터 소스에 바인딩된 <xref:System.Windows.Forms.DataGrid> 컨트롤에 열 스타일이 없는 <xref:System.Windows.Forms.DataGridTableStyle>이 추가되고 해당 테이블 스타일의 <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> 속성이 유효한 <xref:System.Data.DataTable.TableName%2A> 속성으로 설정된 경우 해당 테이블 스타일에 대한 <xref:System.Windows.Forms.DataGridColumnStyle> 개체 컬렉션이 생성됩니다. <xref:System.Data.DataTable>의 <xref:System.Data.DataTable.Columns%2A> 컬렉션에서 발견된 각 <xref:System.Data.DataColumn>에 해당하는 <xref:System.Windows.Forms.DataGridColumnStyle>이 <xref:System.Windows.Forms.GridColumnStylesCollection>에 추가됩니다. <xref:System.Windows.Forms.GridColumnStylesCollection>은 <xref:System.Windows.Forms.DataGridTableStyle>의 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 속성을 통해 액세스됩니다. <xref:System.Windows.Forms.GridColumnStylesCollection>의 <xref:System.Windows.Forms.GridColumnStylesCollection.Add%2A> 또는 <xref:System.Windows.Forms.GridColumnStylesCollection.Remove%2A> 메서드를 사용하여 표 형태 창에서 열을 추가하거나 삭제할 수 있습니다. 자세한 내용은 [방법: 테이블을 추가 하 고 열에는 Windows Forms DataGrid 컨트롤](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md) 고 [방법: 열 삭제 또는 숨기기에는 Windows Forms DataGrid 컨트롤](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)합니다.  
   
  열 형식 컬렉션은 풍부한 형식 지정 및 편집 기능을 통해 <xref:System.Windows.Forms.DataGridColumnStyle> 클래스를 확장합니다. 모든 열 형식이 <xref:System.Windows.Forms.DataGridColumnStyle> 기본 클래스에서 상속합니다. 생성되는 클래스는 <xref:System.Web.UI.WebControls.DataGridColumn>의 기반이 되는 <xref:System.Data.DataColumn>의 <xref:System.Data.DataColumn.DataType%2A> 속성에 따라 달라집니다. 예를 들어 해당 <xref:System.Data.DataColumn.DataType%2A> 속성이 <xref:System.Boolean>으로 설정된 <xref:System.Data.DataColumn>은 <xref:System.Windows.Forms.DataGridBoolColumn>에 연결됩니다. 다음 표에서는 이러한 열 형식을 각각 설명합니다.  
   
@@ -134,14 +134,14 @@ ms.locfileid: "48850689"
 >  많은 열 중에서 하나의 열만 조정하려는 경우도 있습니다. 예를 들어 데이터 세트는 50개의 열을 포함하지만 이 중에서 49개만 조정하려고 합니다. 이 경우 50개 열을 모두 가져오고 프로그래밍 방식으로 하나를 제거하는 것이 원하는 49개의 개별 열을 프로그래밍 방식으로 각각 추가하는 것보다 더 쉽습니다.  
   
 ## <a name="formatting"></a>서식  
- <xref:System.Windows.Forms.DataGrid> 컨트롤에 적용할 수 있는 형식 지정에는 테두리 스타일, 모눈선 스타일, 글꼴, 캡션 속성, 데이터 맞춤 및 교대로 반복되는 행의 배경색이 포함됩니다. 자세한 내용은 [방법: Windows Forms DataGrid 컨트롤 서식 지정](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)을 참조하십시오.  
+ <xref:System.Windows.Forms.DataGrid> 컨트롤에 적용할 수 있는 형식 지정에는 테두리 스타일, 모눈선 스타일, 글꼴, 캡션 속성, 데이터 맞춤 및 교대로 반복되는 행의 배경색이 포함됩니다. 자세한 내용은 [방법: Windows Forms DataGrid 컨트롤 서식 지정](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)합니다.  
   
 ## <a name="events"></a>이벤트  
  <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.Enter> 및 <xref:System.Windows.Forms.DataGrid.Scroll>과 같은 일반적인 컨트롤 이벤트 외에도 <xref:System.Windows.Forms.DataGrid> 컨트롤은 표 형태 창 내의 편집 및 탐색과 관련된 이벤트를 지원합니다. <xref:System.Windows.Forms.DataGrid.CurrentCell%2A> 속성은 선택된 셀을 확인합니다. 사용자가 새로운 셀로 이동하면 <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> 이벤트가 발생합니다. 사용자가 부모/자식 관계를 통해 새 테이블로 이동하면 <xref:System.Windows.Forms.DataGrid.Navigate> 이벤트가 발생합니다. 사용자가 자식 테이블을 보고 있을 때 뒤로 단추를 클릭하면 <xref:System.Windows.Forms.DataGrid.BackButtonClick> 이벤트가 발생하고, 부모 행 표시/숨기기 아이콘을 클릭하면 <xref:System.Windows.Forms.DataGrid.ShowParentDetailsButtonClick> 이벤트가 발생합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [DataGrid 컨트롤](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
- [방법: Windows Forms DataGrid 컨트롤에 테이블 및 열 추가](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
- [방법: Windows Forms DataGrid 컨트롤에서 열 삭제 또는 숨기기](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)  
- [방법: Windows Forms DataGrid 컨트롤 서식 지정](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)
+## <a name="see-also"></a>참고자료
+- [DataGrid 컨트롤](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)
+- [방법: Windows Forms DataGrid 컨트롤에 테이블과 열 추가](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
+- [방법: Windows Forms DataGrid 컨트롤에서 열 숨기기 또는 삭제](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
+- [방법: Windows Forms DataGrid 컨트롤 서식 지정](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)

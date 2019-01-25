@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF Data Services, learn more
 - WCF Data Services, scenarios
 ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
-ms.openlocfilehash: 5446ab5fe65bd6e2b5244e135c0723f3cb28e81a
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 2efa46abf5a1fcedee4a4055331f7a59963be794
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43803332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709158"
 ---
 # <a name="application-scenarios-wcf-data-services"></a>응용 프로그램 시나리오(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 핵심 시나리오 집합으로 데이터 제공 및 사용에 대 한 지원 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 피드 합니다. 이 항목에서는 이 시나리오와 관련된 항목으로 연결됩니다.  
@@ -20,19 +20,19 @@ ms.locfileid: "43803332"
   
 -   [서비스로 데이터 노출](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)  
   
--   [방법: ADO.NET Entity Framework 데이터 원본을 사용하여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md)  
+-   [방법: ADO.NET Entity Framework 데이터 원본을 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md)  
   
  임의의 CLR 데이터 클래스를 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드로 노출합니다.  
  -   [서비스로 데이터 노출](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)  
   
--   [방법: 리플렉션 공급자 사용하여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)  
+-   [방법: 리플렉션 공급자를 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)  
   
 -   [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
   
  .NET Framework 기반 클라이언트 응용 프로그램에서 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드를 사용합니다.  
  -   [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
   
--   [클라이언트 응용 프로그램에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
+-   [클라이언트 애플리케이션에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
   
 -   [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
   
@@ -44,7 +44,7 @@ ms.locfileid: "43803332"
 -   [방법: 데이터 서비스 (WCF Data Services/Silverlight) 컨트롤에 바인딩](https://msdn.microsoft.com/library/bda7d82e-7b1f-4690-8a33-c6297465bdd5)  
   
  AJAX 기반 클라이언트 응용 프로그램에서 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드를 사용합니다.  
- -   [클라이언트 응용 프로그램에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
+ -   [클라이언트 애플리케이션에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
   
 -   [OData: URI 규칙](https://go.microsoft.com/fwlink/?LinkId=185564)  
   
@@ -53,7 +53,7 @@ ms.locfileid: "43803332"
  사용 하는 종단 간 데이터 솔루션을 만들고 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 클라이언트와 서버 간에 데이터를 전송 합니다.  
  -   [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
   
--   [클라이언트 응용 프로그램에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
+-   [클라이언트 애플리케이션에서 데이터 서비스 사용](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
   
 -   [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
   
@@ -74,7 +74,7 @@ ms.locfileid: "43803332"
   
 -   [방법: Windows Presentation Foundation 요소에 데이터 바인딩](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)  
   
--   [방법: 프로젝트 데이터 원본을 사용하여 데이터 바인딩](../../../../docs/framework/data/wcf/how-to-bind-data-using-a-project-data-source-wcf-data-services.md)  
+-   [방법: 프로젝트 데이터 원본을 사용 하 여 데이터 바인딩](../../../../docs/framework/data/wcf/how-to-bind-data-using-a-project-data-source-wcf-data-services.md)  
   
  데이터 서비스에 들어오는 메시지를 가로채어 쿼리의 데이터 유효성 검사 및 역할 기반 필터링을 수행합니다.  
  -   [방법: 데이터 서비스 메시지 가로채기](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md)  
@@ -86,6 +86,6 @@ ms.locfileid: "43803332"
   
 -   [서비스 작업](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)  
   
-## <a name="see-also"></a>참고 항목  
- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
- [리소스](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)
+## <a name="see-also"></a>참고자료
+- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [리소스](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

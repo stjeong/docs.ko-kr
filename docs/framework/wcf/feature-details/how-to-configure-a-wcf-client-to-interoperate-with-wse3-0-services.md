@@ -1,18 +1,18 @@
 ---
-title: '방법: WSE3.0 서비스와 상호 운용하도록 WCF 클라이언트 구성'
+title: '방법: WSE3.0 서비스와 상호 운용 하도록 WCF 클라이언트 구성'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
-ms.openlocfilehash: 5cbe982049d1df6e2c714ca0b63de0db7577452e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 52793b6d077f1da33d2d675be3284ce134beb2d3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54730960"
 ---
-# <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>방법: WSE3.0 서비스와 상호 운용하도록 WCF 클라이언트 구성
+# <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>방법: WSE3.0 서비스와 상호 운용 하도록 WCF 클라이언트 구성
 Windows Communication Foundation (WCF) 클라이언트 WCF 클라이언트가 2004 년 8 월 버전의 Ws-addressing 사양 사용 하도록 구성 된 경우 Microsoft.NET (WSE) 서비스에 대 한 Web Services Enhancements 3.0과 유선 수준으로 호환 됩니다.  
   
 ### <a name="to-configure-a-wcf-client-to-interoperate-with-a-wse-30-web-service"></a>WSE 3.0 웹 서비스와 상호 운용하도록 WCF 클라이언트를 구성하려면  
@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) 클라이언트 WCF 클라이언트가 20
   
      WSE 웹 서비스의 경우 WCF 클라이언트 클래스 생성 됩니다.  
   
-     WCF 클라이언트 만들기에 대 한 자세한 내용은 참조는 [방법: 클라이언트 만들기](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
+     WCF 클라이언트 만들기에 대 한 자세한 내용은 참조는 [방법: 클라이언트를 만드는](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
   
 2.  WSE 3.0 웹 서비스와 통신할 수 있는 바인딩을 나타내는 클래스를 만듭니다.  
   
@@ -62,6 +62,6 @@ Windows Communication Foundation (WCF) 클라이언트 WCF 클라이언트가 20
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]
 [!code-vb[c_WCFClientToWSEService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#0)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.Binding>  
- [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.Binding>
+- [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

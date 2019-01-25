@@ -2,12 +2,12 @@
 title: 단순화된 구성
 ms.date: 03/30/2017
 ms.assetid: dcbe1f84-437c-495f-9324-2bc09fd79ea9
-ms.openlocfilehash: 7df686188099aea45cac81ea94a49b98e5c65f89
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: f6998b17747b5d250827066a41373d81c243773c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48838959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498361"
 ---
 # <a name="simplified-configuration"></a>단순화된 구성
 Windows Communication Foundation (WCF) 서비스를 구성 하면 복잡 한 작업을 수 있습니다. 다양한 옵션이 있을 수 있고 경우에 따라 필요한 설정을 확인하는 것이 쉽지 않을 수도 있습니다. 구성 파일을 사용 하면 WCF 서비스의 유연성, 문제를 발견 하기가 그만큼 이들은입니다. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]에서는 이러한 문제를 해결하고 서비스 구성의 크기와 복잡성을 줄일 수 있는 방법을 제공합니다.  
@@ -113,10 +113,10 @@ Windows Communication Foundation (WCF) 서비스를 구성 하면 복잡 한 작
 > [!IMPORTANT]
 >  이 기능은 클라이언트 구성이 아닌 WCF 서비스 구성에만 관련이 있습니다. 대부분, WCF 클라이언트 구성은 Visual Studio에서 서비스 참조를 추가하거나 svcutil.exe와 같은 도구에 의해 생성될 것입니다. WCF 클라이언트를 수동으로 구성 하는 경우 추가 해야 합니다는 \<클라이언트 > 요소를 구성 하 고 호출 하려는 끝점을 지정 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [구성 파일을 사용하여 서비스 구성](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
- [서비스에 대한 바인딩 구성](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)  
- [시스템 제공 바인딩 구성](../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [서비스 구성](../../../docs/framework/wcf/configuring-services.md)  
- [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
- [코드로 WCF 서비스 구성](../../../docs/framework/wcf/configuring-wcf-services-in-code.md)
+## <a name="see-also"></a>참고자료
+- [구성 파일을 사용하여 서비스 구성](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
+- [서비스에 대한 바인딩 구성](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)
+- [시스템 제공 바인딩 구성](../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [서비스 구성](../../../docs/framework/wcf/configuring-services.md)
+- [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [코드로 WCF 서비스 구성](../../../docs/framework/wcf/configuring-wcf-services-in-code.md)

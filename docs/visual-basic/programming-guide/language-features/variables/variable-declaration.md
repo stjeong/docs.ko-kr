@@ -17,12 +17,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 92a20e5fbe60c71ec3375ed35c919e1f88cf0a9c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 1a43cabfd3ab22ad9035ecb30435b21b75040308
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44207423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718795"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Visual Basic의 변수 선언
 이름 및 특성을 지정 하려면 변수를 선언 하면 됩니다. 변수에 대 한 선언문이 합니다 [Dim 문](../../../../visual-basic/language-reference/statements/dim-statement.md)합니다. 해당 위치 및 내용을 변수의 특성을 결정 합니다.  
@@ -73,17 +73,17 @@ Dim l, m As Long, x, y As Single
 ## <a name="characteristics-of-declared-variables"></a>선언 된 변수 특성  
  합니다 *수명* 변수의 기간 자신이 하는 동안 사용할 수 있습니다. 일반적으로 변수 (예: 프로시저 또는 클래스) 선언 하는 요소는 계속 존재으로 존재 합니다. 변수는 포함 하는 요소의 수명을 넘도록 기존 계속 하지 않아도, 선언에 특별히 무언가를 할 필요가 없습니다. 변수를 포함 하는 해당 요소 보다 더 오래 유지 하려면 필요한 경우 포함할 수 있습니다는 `Static` 나 `Shared` 키워드 해당 `Dim` 문. 자세한 내용은 [Visual Basic의 수명](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)합니다.  
   
- 합니다 *범위* 변수의 이름을 한정 하지 않고 변수를 참조할 수 있는 모든 코드의 집합입니다. 변수의 범위는 선언 된 위치에서 결정 됩니다. 지정된 된 지역에 있는 코드의 이름을 정규화 하지 않고도 해당 영역에 정의 된 변수를 사용할 수 있습니다. 자세한 내용은 [Visual Basic의 범위](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)합니다.  
+ 합니다 *범위* 변수의 이름을 한정 하지 않고 변수를 참조할 수 있는 모든 코드의 집합입니다. 변수의 범위는 선언 된 위치에서 결정 됩니다. 지정된 된 지역에 있는 코드의 이름을 정규화 하지 않고도 해당 영역에 정의 된 변수를 사용할 수 있습니다. 자세한 내용은 [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)을 참조하세요.  
   
  변수의 *액세스 수준* 액세스할 수 있는 권한을 가진 코드의 범위입니다. 액세스 한정자에 의해 결정 되기 (같은 [공개](../../../../visual-basic/language-reference/modifiers/public.md) 또는 [개인](../../../../visual-basic/language-reference/modifiers/private.md))에서 사용 하는 `Dim` 문입니다. 자세한 내용은 [액세스 수준을 Visual Basic의](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 새 변수 만들기](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
- [방법: 변수 값 저장 및 검색](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [보호됨](../../../../visual-basic/language-reference/modifiers/protected.md)  
- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
- [정적](../../../../visual-basic/language-reference/modifiers/static.md)  
- [선언 요소의 특징](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
+## <a name="see-also"></a>참고자료
+- [방법: 새 변수 만들기](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)
+- [방법: 및 변수 외부로 데이터 이동](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [보호됨](../../../../visual-basic/language-reference/modifiers/protected.md)
+- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)
+- [정적](../../../../visual-basic/language-reference/modifiers/static.md)
+- [선언 요소의 특징](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)

@@ -2,12 +2,12 @@
 title: SQL Server에서 동적 보안 SQL 작성
 ms.date: 03/30/2017
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc
-ms.openlocfilehash: 5357bb4ad82f5fe9a70f15a540aba355e847ad71
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 446a9f6a49b376f04d1c82d45463d567d89116d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745612"
 ---
 # <a name="writing-secure-dynamic-sql-in-sql-server"></a>SQL Server에서 동적 보안 SQL 작성
 SQL 삽입은 악의적 사용자가 유효한 입력 대신 Transact-SQL 문을 입력하는 데 사용하는 프로세스입니다. 이러한 공격으로 인해 입력이 유효성 검사를 거치지 않고 서버로 직접 전달되고 응용 프로그램이 삽입된 코드를 실행하면 데이터가 손상되거나 파괴될 수 있습니다.  
@@ -35,7 +35,7 @@ SQL 삽입은 악의적 사용자가 유효한 입력 대신 Transact-SQL 문을
   
 -   다중 계층 환경에서는 신뢰할 수 있는 영역으로 들어가는 모든 데이터의 유효성을 검사해야 합니다.  
   
--   파일 이름이 구성될 수 있는 필드에 AUX, CLOCK$, COM1-COM8, CON, CONFIG$, LPT1-LPT8, NUL 및 PRN 문자열을 허용하지 않습니다.  
+-   파일 이름을 생성 하는 데 사용 될 수도 있는 필드에 다음 문자열을 허용 하지 않습니다. AUX, CLOCK$, COM1부터 COM8, CON, CONFIG$, LPT1부터 LPT8, NUL, PRN과 합니다.  
   
 -   <xref:System.Data.SqlClient.SqlParameter> 개체를 저장 프로시저 및 명령과 함께 사용하여 형식 검사와 길이 유효성 검사를 제공합니다.  
   
@@ -66,11 +66,11 @@ SQL 삽입은 악의적 사용자가 유효한 입력 대신 Transact-SQL 문을
 |--------------|-----------------|  
 |[저장 프로시저](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) 및 [SQL 삽입](/sql/relational-databases/security/sql-injection)(SQL Server 온라인 설명서)|저장 프로시저를 만드는 방법과 SQL 삽입이 작동하는 방식을 설명하는 항목입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
- [SQL Server에서 저장 프로시저에 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
- [SQL Server에서 가장으로 권한 사용자 지정](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
+- [SQL Server에서 저장 프로시저에 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)
+- [SQL Server에서 가장으로 권한 사용자 지정](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

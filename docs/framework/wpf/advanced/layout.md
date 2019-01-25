@@ -9,12 +9,12 @@ helpviewer_keywords:
 - controls [WPF], layout system
 - layout system [WPF]
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
-ms.openlocfilehash: 869780f2b6a625923ce869bcaafbbd2319f6cb23
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: d6326ae34b53ca4f68bc58b85e395c10726a377d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46703026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54738828"
 ---
 # <a name="layout"></a>레이아웃
 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 레이아웃 시스템에 대해 설명합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 사용자 인터페이스를 만들려면 언제, 어떻게 레이아웃을 계산해야 하는지를 이해해야 합니다.  
@@ -62,7 +62,7 @@ ms.locfileid: "46703026"
 ## <a name="the-layout-system"></a>레이아웃 시스템  
  가장 간단한 레이아웃은 재귀 시스템이며 이를 통해 요소의 크기가 조정되고 요소가 배치되고 그려집니다. 레이아웃 측정 하 고 멤버를 정렬 하는 프로세스를 설명 하는 구체적으로 <xref:System.Windows.Controls.Panel> 요소의 <xref:System.Windows.Controls.Panel.Children%2A> 컬렉션입니다. 레이아웃은 집약적인 프로세스입니다. 더 큰 숫자를 <xref:System.Windows.Controls.Panel.Children%2A> 컬렉션, 수가 클수록 수행 해야 하는 계산 합니다. 정의한 레이아웃 동작에 따라 복잡성 나타날 수도 있습니다는 <xref:System.Windows.Controls.Panel> 컬렉션을 소유 하는 요소입니다. 상대적으로 간단한 <xref:System.Windows.Controls.Panel>와 같은 <xref:System.Windows.Controls.Canvas>, 보다 복잡 한 보다 성능을 크게 향상을 가질 수 있습니다 <xref:System.Windows.Controls.Panel>, 같은 <xref:System.Windows.Controls.Grid>합니다.  
   
- 때마다 자식 <xref:System.Windows.UIElement> 해당 위치를 변경할 레이아웃 시스템에 의해 새로운 단계가 트리거될 수에 합니다. 따라서 불필요한 호출로 인해 응용 프로그램 성능이 저하될 수 있으므로 레이아웃 시스템을 호출할 수 있는 이벤트를 이해해야 합니다. 다음에서 레이아웃 시스템이 호출될 때 발생하는 프로세스에 대해 설명합니다.  
+ 때마다 자식 <xref:System.Windows.UIElement> 해당 위치를 변경할 레이아웃 시스템에 의해 새로운 단계가 트리거될 수에 합니다. 따라서 불필요한 호출로 인해 애플리케이션 성능이 저하될 수 있으므로 레이아웃 시스템을 호출할 수 있는 이벤트를 이해해야 합니다. 다음에서 레이아웃 시스템이 호출될 때 발생하는 프로세스에 대해 설명합니다.  
   
 1.  자식 <xref:System.Windows.UIElement> 먼저 핵심 속성이 측정 되도록 하 여 레이아웃 프로세스를 시작 합니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "46703026"
 |<xref:System.Windows.Controls.DockPanel>|자식 요소를 서로 맞춰 가로 또는 세로로 정렬할 수 있는 영역을 정의합니다.|  
 |<xref:System.Windows.Controls.Grid>|열 및 행으로 구성되는 유연한 모눈 영역을 정의합니다.|  
 |<xref:System.Windows.Controls.StackPanel>|가로 또는 세로 방향으로 한 줄로 자식 요소를 정렬합니다.|  
-|<xref:System.Windows.Controls.VirtualizingPanel>|에 대 한 프레임 워크를 제공 <xref:System.Windows.Controls.Panel> 해당 자식 데이터 컬렉션을 가상화 하는 요소입니다. 이 클래스는 추상 클래스입니다.|  
+|<xref:System.Windows.Controls.VirtualizingPanel>|자식 데이터 컬렉션을 가상화하는 <xref:System.Windows.Controls.Panel> 요소를 위한 프레임워크를 제공합니다. 이 클래스는 추상 클래스입니다.|  
 |<xref:System.Windows.Controls.WrapPanel>|콘텐츠를 컨테이너의 가장자리에서 다음 줄로 나눠 왼쪽에서 오른쪽으로 자식 요소의 위치를 지정합니다. 위쪽에서에서 아래쪽으로 또는 오른쪽에서 왼쪽으로 값에 따라 순차적으로 발생 정렬 된 <xref:System.Windows.Controls.WrapPanel.Orientation%2A> 속성입니다.|  
   
  미리 정의 된 사용 가능 하지 않은 레이아웃이 필요한 응용 프로그램에 대 한 <xref:System.Windows.Controls.Panel> 에서 상속 하 여 요소를 사용자 지정 레이아웃 동작을 수행할 수 있습니다 <xref:System.Windows.Controls.Panel> 재정의 <xref:System.Windows.FrameworkElement.MeasureOverride%2A> 고 <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> 메서드. 예제는 [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982)(사용자 지정 방사형 패널 샘플)을 참조하세요.  
@@ -138,7 +138,7 @@ ms.locfileid: "46703026"
   
 <a name="LayoutSystem_LayoutRounding"></a>   
 ## <a name="sub-pixel-rendering-and-layout-rounding"></a>하위 픽셀 렌더링 및 레이아웃 반올림  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 시스템에서는 해상도와 장치의 영향을 받지 않기 위해 장치 독립적 단위를 사용합니다. 각 디바이스 독립적 픽셀은 시스템의 [!INCLUDE[TLA#tla_dpi](../../../../includes/tlasharptla-dpi-md.md)] 설정에 맞게 자동으로 크기가 조정됩니다. 이를 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에서 다양한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 설정에 적합하게 크기를 조정할 수 있으며 자동으로 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)]를 인식할 수 있도록 합니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 시스템에서는 해상도와 장치의 영향을 받지 않기 위해 장치 독립적 단위를 사용합니다. 각 디바이스 독립적 픽셀은 시스템의 [!INCLUDE[TLA#tla_dpi](../../../../includes/tlasharptla-dpi-md.md)] 설정에 맞게 자동으로 크기가 조정됩니다. 이를 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션에서 다양한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 설정에 적합하게 크기를 조정할 수 있으며 자동으로 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)]를 인식할 수 있도록 합니다.  
   
  그러나 이러한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 독립성은 앤티앨리어싱으로 인해 불규칙한 가장자리 렌더링을 만들 수 있습니다. 일반적으로 흐리거나 반투명한 가장자리로 표시되는 이러한 아티팩트는 가장자리의 위치가 디바이스 픽셀 사이가 아닌 디바이스 픽셀 가운데에 있을 때 발생할 수 있습니다. 레이아웃 시스템에서는 레이아웃 반올림을 사용하여 조정할 수 있는 방법을 제공합니다. 레이아웃 반올림에서 레이아웃 단계 동안 모든 비정수 픽셀 값을 레이아웃 시스템이 반올림합니다.  
   
@@ -148,9 +148,9 @@ ms.locfileid: "46703026"
 ## <a name="whats-next"></a>새로운 기능  
  요소의 측정 방법과 정렬 방법을 이해하는 것이 레이아웃을 이해하기 위한 첫 단계입니다. 자세한 내용은 사용 가능한 <xref:System.Windows.Controls.Panel> 요소를 참조 하세요 [Panel 개요](../../../../docs/framework/wpf/controls/panels-overview.md)합니다. 레이아웃에 영향을 줄 수 있는 다양한 배치 속성을 더 잘 이해하려면 [맞춤, 여백 및 안쪽 여백 개요](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)를 참조하세요. 사용자 지정의 예 <xref:System.Windows.Controls.Panel> 요소를 참조 하세요 [사용자 지정 방사형 패널 샘플](https://go.microsoft.com/fwlink/?LinkID=159982)합니다. 간단한 응용 프로그램에서 모두 함께 배치할 준비가 되었을 때 참조 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.UIElement>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [맞춤, 여백 및 안쪽 여백 개요](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.UIElement>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [맞춤, 여백 및 안쪽 여백 개요](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)
+- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Response object
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b
-ms.openlocfilehash: d5f49529a2593093a234babc22f64b591ea3cc61
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: c133e46b1adff0c100d49c4bfe5e17db4314a0bb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47399809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54738815"
 ---
 # <a name="myresponse-object"></a>My.Response 개체
 가져옵니다 합니다 <xref:System.Web.HttpResponse> 연관 된 개체는 <xref:System.Web.UI.Page>합니다. 이 개체를 사용하여 HTTP 응답 데이터를 클라이언트에 보낼 수 있고 이 개체는 해당 응답에 대한 정보를 포함합니다.  
@@ -27,6 +27,6 @@ ms.locfileid: "47399809"
   
  [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-response-object_1.aspx)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Web.HttpResponse>  
- [My.Request 개체](../../../visual-basic/language-reference/objects/my-request-object.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Web.HttpResponse>
+- [My.Request 개체](../../../visual-basic/language-reference/objects/my-request-object.md)

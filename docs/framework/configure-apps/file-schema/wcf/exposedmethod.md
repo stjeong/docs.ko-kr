@@ -2,20 +2,20 @@
 title: '&lt;exposedMethod&gt;'
 ms.date: 03/30/2017
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
-ms.openlocfilehash: c63689224e3bba69816f5904599425a235a51bae
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 0bfb56395217283eeba69c2f3b7569a89f576423
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702043"
 ---
 # <a name="ltexposedmethodgt"></a>&lt;exposedMethod&gt;
 COM+ 구성 요소의 인터페이스가 웹 서비스로 노출될 때 노출되는 COM+ 메서드를 나타냅니다.  
   
  \<system.ServiceModel>  
 \<comContracts>  
-\<comContract >  
-\<메서드 >  
+\<comContract>  
+\<methods>  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,7 +45,7 @@ COM+ 구성 요소의 인터페이스가 웹 서비스로 노출될 때 노출�
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<exposedMethods >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethods.md)|컬렉션인 [ \<exposedMethod >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) 요소입니다.|  
+|[\<exposedMethods>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethods.md)|컬렉션인 [ \<exposedMethod >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) 요소입니다.|  
   
 ## <a name="remarks"></a>설명  
  COM+ 통합 구성 도구(ComSvcConfig.exe)는 COM 인터페이스의 특정 메서드를 생성된 서비스 계약에 나타나도록 추가하는 데 사용할 수 있습니다.  
@@ -68,9 +68,9 @@ COM+ 구성 요소의 인터페이스가 웹 서비스로 노출될 때 노출�
   
  서비스 초기화 시 런타임에서 검토 하 고 목록에 포함 된 메서드만 추가 하 여 서비스 계약을 생성 하려고 [ \<exposedMethod >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) 요소입니다. 서비스 계약에 포함되지 않은 모든 인터페이스 메서드에 대해서는 추적이 생성됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ComMethodElementCollection>  
- <xref:System.ServiceModel.Configuration.ComMethodElement>  
- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  
- [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ComMethodElementCollection>
+- <xref:System.ServiceModel.Configuration.ComMethodElement>
+- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
+- [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

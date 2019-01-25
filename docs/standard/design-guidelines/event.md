@@ -11,12 +11,12 @@ helpviewer_keywords:
 - signatures, event handling
 ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
 author: KrzysztofCwalina
-ms.openlocfilehash: 54f98b3c685b77ecb9fe659522c599662aa8243c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 530c68ea5342263acd07f8dc8a8c8ce889652503
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129092"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54632025"
 ---
 # <a name="event-design"></a>이벤트 디자인
 이벤트는 자주 사용 하는 형식의 콜백 (사용자 코드를 호출 하기 위해 프레임 워크를 사용할 수 있는 구문)입니다. 대리자, 가상 멤버 및 인터페이스 기반 플러그 인을 수행 하는 멤버를 포함 하는 다른 콜백 메커니즘입니다. 유용성 연구에서 데이터는 대부분의 개발자는 더 편리한 다른 콜백 메커니즘을 사용 하는 것 보다 이벤트를 사용 하는 것을 나타냅니다. 이벤트는 Visual Studio 및 다양 한 언어와 원활 하 게 통합 됩니다.  
@@ -70,7 +70,7 @@ ms.locfileid: "53129092"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
+- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

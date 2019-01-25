@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 39d305d429490380c76e15bdcdde434f0d75457b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 6bb0e832f1fdc845c4150442547b55400f0aea89
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47202691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645953"
 ---
 # <a name="ltsystemwebgt-element-web-settings"></a>&lt;system.web&gt; 요소 (웹 설정)
 ASP.NET 호스팅 계층 프로세스 전반 동작을 관리 하는 방법에 대 한 정보를 포함 합니다.  
@@ -46,7 +46,7 @@ ASP.NET 호스팅 계층 프로세스 전반 동작을 관리 하는 방법에 �
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소를 지정합니다.|  
+|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  `system.web` 요소와 해당 자식의 `applicationPool` 요소에 추가 된 합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 의 [!INCLUDE[net_v35SP1_short](../../../../../includes/net-v35sp1-short-md.md)]합니다. 실행할 때 [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] 또는 통합된 모드의 이후 버전에서는이 요소 조합을 사용 하 여 ASP.NET 스레드를 관리 하는 방법 및 ASP.NET 응용 프로그램 IIS 풀에 호스팅되는 경우 요청 큐 하는 방법을 구성 합니다. 실행 하는 경우 [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] 이상을 ISAPI 또는 클래식 모드에서는 이러한 설정이 무시 됩니다.  
@@ -74,5 +74,5 @@ ASP.NET 호스팅 계층 프로세스 전반 동작을 관리 하는 방법에 �
 |유효성 검사 파일||  
 |비워 둘 수 있습니다.||  
   
-## <a name="see-also"></a>참고 항목  
- [\<applicationPool> 요소(웹 설정)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)
+## <a name="see-also"></a>참고자료
+- [\<applicationPool> 요소(웹 설정)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)

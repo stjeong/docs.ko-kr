@@ -2,12 +2,12 @@
 title: 주소 지정
 ms.date: 03/30/2017
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-ms.openlocfilehash: 0e18039db51a1060661b435640c356fd0610a68a
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 721b010fa8e1d8955515e003d14e1f0778e35a87
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642963"
 ---
 # <a name="addressing"></a>주소 지정
 Addressing 샘플에서는 엔드포인트 주소의 다양한 측면과 기능을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 이 샘플에서 서비스는 자체 호스트됩니다. 서비스와 클라이언트는 모두 콘솔 응용 프로그램입니다. 서비스는 상대 및 절대 끝점 주소를 조합하여 여러 끝점을 정의합니다.  
@@ -136,4 +136,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Addressing`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

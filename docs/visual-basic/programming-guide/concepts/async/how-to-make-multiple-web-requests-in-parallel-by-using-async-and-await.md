@@ -2,12 +2,12 @@
 title: '방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
-ms.openlocfilehash: 44531ef643df6402ad318957c0a2bdc058c5bcb0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 526ef4c14649c1840b8c310af45de9b5095909de
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54495947"
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)
 비동기 메서드에서 작업은 만들어질 때 시작됩니다. 합니다 [Await](../../../../visual-basic/language-reference/operators/await-operator.md) 연산자를 계속할 수 없습니다 작업이 완료 될 때까지 메서드 지점에서 작업에 적용 됩니다. 다음 예제와 같이 작업이 생성되는 즉시 대기되는 경우가 많습니다.  
@@ -44,9 +44,9 @@ Dim result = Await myTask
   
 ### <a name="to-set-up-the-project"></a>프로젝트를 설정하려면  
   
-1.  WPF 응용 프로그램을 설정하려면 다음 단계를 완료합니다. 이러한 단계에 대 한 자세한 지침을 찾을 수 있습니다 [연습:를 사용 하 여 Async 및 Await (Visual Basic) 하 여 웹에 액세스](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)합니다.  
+1.  WPF 애플리케이션을 설정하려면 다음 단계를 완료합니다. 이러한 단계에 대 한 자세한 지침을 찾을 수 있습니다 [연습: 비동기를 사용 하 여 웹 서비스에 액세스 하 고 (Visual Basic) Await](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)합니다.  
   
-    -   텍스트 상자와 단추가 포함된 WPF 응용 프로그램을 만듭니다. 단추의 이름을 `startButton`, 텍스트 상자의 이름을 `resultsTextBox`로 지정합니다.  
+    -   텍스트 상자와 단추가 포함된 WPF 애플리케이션을 만듭니다. 단추의 이름을 `startButton`, 텍스트 상자의 이름을 `resultsTextBox`로 지정합니다.  
   
     -   <xref:System.Net.Http>에 대한 참조를 추가합니다.  
   
@@ -64,7 +64,7 @@ Dim result = Await myTask
     resultsTextBox.Text &= vbCrLf & "Control returned to button1_Click."  
     ```  
   
-     코드는 응용 프로그램을 구동하는 비동기 메서드 `CreateMultipleTasksAsync`를 호출합니다.  
+     코드는 애플리케이션을 구동하는 비동기 메서드 `CreateMultipleTasksAsync`를 호출합니다.  
   
 3.  프로젝트에 다음과 같은 지원 메서드를 추가합니다.  
   
@@ -203,7 +203,7 @@ Class MainWindow
 End Class  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [방법: Task.WhenAll을 사용하여 비동기 연습 확장(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+## <a name="see-also"></a>참고자료
+- [연습: 비동기를 사용 하 여 웹 서비스에 액세스 하 고 Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [방법: Task.WhenAll (Visual Basic)를 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

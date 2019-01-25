@@ -1,5 +1,5 @@
 ---
-title: Windows Forms 응용 프로그램에 대한 양방향 지원
+title: Windows Forms 애플리케이션에 대한 양방향 지원
 ms.date: 09/30/2017
 helpviewer_keywords:
 - globalization [Windows Forms], bi-directional support in Windows
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - Windows Forms, bi-directional support
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b4c572e518c84dfb230ff26049369011d8d7aa70
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9e35f097380272822e9dbcda01617cce9fed8fc1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676850"
 ---
-# <a name="bi-directional-support-for-windows-forms-applications"></a>Windows Forms 응용 프로그램에 대한 양방향 지원
+# <a name="bi-directional-support-for-windows-forms-applications"></a>Windows Forms 애플리케이션에 대한 양방향 지원
 Visual Studio를 사용 하 여 아랍어 및 히브리어와 같은 양방향 (오른쪽에서 왼쪽) 언어를 지 원하는 Windows 기반 응용 프로그램을 만들 수 있습니다. 여기에는 표준 폼, 대화 상자, MDI 폼 및 이러한 폼에서 사용할 수 있는 모든 컨트롤(즉, <xref:System.Windows.Forms.Control> 네임스페이스의 모든 개체)이 포함됩니다.  
   
 ## <a name="culture-support"></a>문화권 지원  
- 문화권 및 UI 문화권 설정은 응용 프로그램에서 날짜, 시간, 통화 및 기타 정보를 사용하는 방법을 결정합니다. 양방향 언어에 대한 문화권 및 UI 문화권 지원은 다른 언어의 경우와 동일합니다.   [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.110\)) 또는 [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.120\))를 참조하세요.  
+ 문화권 및 UI 문화권 설정은 애플리케이션에서 날짜, 시간, 통화 및 기타 정보를 사용하는 방법을 결정합니다. 양방향 언어에 대한 문화권 및 UI 문화권 지원은 다른 언어의 경우와 동일합니다.   [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.110\)) 또는 [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.120\))를 참조하세요.  
   
 ## <a name="righttoleft-and-righttoleftlayout-properties"></a>RightToLeft 및 RightToLeftLayout 속성  
- 폼이 파생되는 기본 <xref:System.Windows.Forms.Control> 클래스는 폼과 해당 컨트롤의 읽기 순서를 변경하기 위해 설정할 수 있는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 포함합니다. 폼의 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 설정하는 경우 기본적으로 폼의 컨트롤이 이 설정을 상속합니다. 그러나 대부분의 컨트롤에서 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 개별적으로 설정할 수도 있습니다. [방법: 전역화를 위해 Windows Forms에서 오른쪽에서 왼쪽으로 텍스트 표시](https://msdn.microsoft.com/library/7d3337xw\(v=vs.110\))를 참조하세요.  
+ 폼이 파생되는 기본 <xref:System.Windows.Forms.Control> 클래스는 폼과 해당 컨트롤의 읽기 순서를 변경하기 위해 설정할 수 있는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 포함합니다. 폼의 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 설정하는 경우 기본적으로 폼의 컨트롤이 이 설정을 상속합니다. 그러나 대부분의 컨트롤에서 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 개별적으로 설정할 수도 있습니다. 또한 참조 [방법: 세계화를 위한 Windows Forms에서 오른쪽에서 왼쪽 텍스트를 표시할](https://msdn.microsoft.com/library/7d3337xw\(v=vs.110\))합니다.  
   
  <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성의 효과는 컨트롤마다 다를 수 있습니다. 일부 컨트롤에서는 속성이 <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.TreeView> 및 <xref:System.Windows.Forms.ToolTip> 컨트롤과 같이 읽기 순서만 설정합니다. 다른 컨트롤에서는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성이 읽기 순서와 레이아웃을 둘 다 변경합니다. 여기에는 <xref:System.Windows.Forms.RadioButton>, <xref:System.Windows.Forms.ComboBox> 및 <xref:System.Windows.Forms.CheckBox> 컨트롤이 포함됩니다. 다른 컨트롤에서는 레이아웃을 오른쪽에서 왼쪽으로 미러링하기 위해 <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> 속성을 적용해야 합니다. 다음 표에서는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 및 <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> 속성이 개별 Windows Forms 컨트롤에 미치는 영향에 대한 세부 정보를 제공합니다.  
   
@@ -79,7 +79,7 @@ Visual Studio를 사용 하 여 아랍어 및 히브리어와 같은 양방향 (
 |<xref:System.Windows.Forms.VScrollBar>|스크롤 가능한 컨트롤의 오른쪽이 아닌 왼쪽에 표시됩니다.|효과 없음|아니요|  
   
 ## <a name="encoding"></a>인코딩  
- Windows Forms는 유니코드를 지원하므로 양방향 응용 프로그램을 만들 때 모든 문자 집합을 포함할 수 있습니다. 그러나 모든 Windows Forms 컨트롤이 모든 플랫폼에서 유니코드를 지원하는 것은 아닙니다. 자세한 내용은 [인코딩 및 Windows Forms 전역화](../../../../docs/framework/winforms/advanced/encoding-and-windows-forms-globalization.md)를 참조하세요.  
+ Windows Forms는 유니코드를 지원하므로 양방향 애플리케이션을 만들 때 모든 문자 집합을 포함할 수 있습니다. 그러나 모든 Windows Forms 컨트롤이 모든 플랫폼에서 유니코드를 지원하는 것은 아닙니다. 자세한 내용은 [인코딩 및 Windows Forms 전역화](../../../../docs/framework/winforms/advanced/encoding-and-windows-forms-globalization.md)를 참조하세요.  
   
 ## <a name="gdi"></a>GDI+  
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]를 사용하여 오른쪽에서 왼쪽 읽기 순서로 텍스트를 그릴 수 있습니다. 텍스트를 그리는 데 사용되는 <xref:System.Drawing.Graphics.DrawString%2A> 메서드는 텍스트의 원점을 반대로 바꾸기 위해 <xref:System.Drawing.StringFormatFlags> 열거형의 <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> 멤버로 설정할 수 있는 `StringFormat` 매개 변수를 지원합니다.  
@@ -119,5 +119,5 @@ Visual Studio를 사용 하 여 아랍어 및 히브리어와 같은 양방향 (
   
 ## <a name="see-also"></a>참고자료
 
-[ASP.NET 웹 응용 프로그램에 대한 양방향 지원](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
-[Windows Forms 응용 프로그램 전역화](globalizing-windows-forms.md)
+- [ASP.NET 웹 응용 프로그램에 대한 양방향 지원](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [Windows Forms 응용 프로그램 전역화](globalizing-windows-forms.md)

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - localization [Windows Forms], character sets
 - globalization [Windows Forms], character sets
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
-ms.openlocfilehash: 1b1ac50bde87b22c3ce9ff7524edbf8750976788
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 3a9d891fe898cf691a5f0d36e6360c2a73fb199d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54629231"
 ---
 # <a name="encoding-and-windows-forms-globalization"></a>인코딩 및 Windows Forms 전역화
 Windows Forms 응용 프로그램은 완전히 유니코드를 사용할 수 있으므로 플랫폼, 프로그램 또는 언어에 관계없이 각 문자가 고유한 숫자로 표시됩니다. 유니코드에 대 한 자세한 내용은 참조는 [유니코드 컨소시엄 웹 사이트](https://www.unicode.org)합니다.  
@@ -38,4 +38,4 @@ Windows Forms 응용 프로그램은 완전히 유니코드를 사용할 수 있
   
 ## <a name="see-also"></a>참고자료
 
-[Windows Forms 응용 프로그램 전역화](globalizing-windows-forms.md)
+- [Windows Forms 응용 프로그램 전역화](globalizing-windows-forms.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: LINQ를 사용하여 데이터 개수, 합 또는 평균 계산(Visual Basic)'
+title: '방법: 개수, 합 또는 평균 데이터 LINQ (Visual Basic)를 사용 하 여'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - average operator [LINQ in Visual Basic]
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: 942cb889c595f8caaf86dee1c025a935bd7db1b1
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: e95f9d75ab9db07b55257bbf6ca951a898b2fb2f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54735093"
 ---
-# <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>방법: LINQ를 사용하여 데이터 개수, 합 또는 평균 계산(Visual Basic)
+# <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>방법: 개수, 합 또는 평균 데이터 LINQ (Visual Basic)를 사용 하 여
 언어 통합 쿼리 (LINQ)를 사용 하면 쉽게 데이터베이스 정보에 액세스 하 고 쿼리를 실행 합니다.  
   
  다음 예제에는 SQL Server 데이터베이스에 대 한 쿼리를 수행 하는 새 응용 프로그램을 만드는 방법을 보여 줍니다. 샘플 개수, 합계, 및를 사용 하 여 결과 평균 합니다 `Aggregate` 고 `Group By` 절. 자세한 내용은 [Aggregate 절](../../../../visual-basic/language-reference/queries/aggregate-clause.md) 하 고 [그룹 By 절](../../../../visual-basic/language-reference/queries/group-by-clause.md)합니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "44041313"
   
 ### <a name="to-add-tables-to-query-to-the-or-designer"></a>O/R 디자이너를 쿼리 하는 테이블을 추가 하려면  
   
-1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. 확장 된 **테이블** 폴더입니다.  
+1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. **테이블** 폴더를 확장합니다.  
   
      O/R 디자이너를 닫은 경우 이전에 추가한 northwind.dbml 파일을 두 번 클릭 하 여 다시 열 수 있습니다.  
   
@@ -77,10 +77,10 @@ ms.locfileid: "44041313"
   
 4.  F5 키를 눌러 프로젝트를 실행 하 고 결과 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)  
- [Aggregate 절](../../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Group By 절](../../../../visual-basic/language-reference/queries/group-by-clause.md)
+## <a name="see-also"></a>참고자료
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Aggregate 절](../../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Group By 절](../../../../visual-basic/language-reference/queries/group-by-clause.md)

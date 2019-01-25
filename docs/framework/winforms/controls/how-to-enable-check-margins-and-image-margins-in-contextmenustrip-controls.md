@@ -1,5 +1,5 @@
 ---
-title: '방법: ContextMenuStrip 컨트롤에서 선택 여백 및 이미지 여백 사용'
+title: '방법: 선택 여백 및 ContextMenuStrip 컨트롤에서 이미지 여백 사용'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - ToolStrip control [Windows Forms]
 - MenuStrip control [Windows Forms]
 ms.assetid: eb584e71-59da-4012-aaca-dbe1c7c7a156
-ms.openlocfilehash: f7128c8ba6e2a221e359cd761cdc4c3521bb2b99
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 1193889523b2735f62b81bd1b001850f52d74dff
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54670266"
 ---
-# <a name="how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls"></a>방법: ContextMenuStrip 컨트롤에서 선택 여백 및 이미지 여백 사용
+# <a name="how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls"></a>방법: 선택 여백 및 ContextMenuStrip 컨트롤에서 이미지 여백 사용
 확인 표시와 사용자 지정 이미지를 사용하여 <xref:System.Windows.Forms.MenuStrip> 컨트롤에서 <xref:System.Windows.Forms.ToolStripMenuItem> 개체를 사용자 지정할 수 있습니다.  
   
 ## <a name="example"></a>예제  
@@ -36,11 +36,11 @@ ms.locfileid: "44260258"
   
 -   System.Design, System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.ToolStripMenuItem>  
- <xref:System.Windows.Forms.ToolStripDropDownMenu>  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStrip>  
- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.ToolStripMenuItem>
+- <xref:System.Windows.Forms.ToolStripDropDownMenu>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStrip>
+- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

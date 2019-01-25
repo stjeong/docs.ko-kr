@@ -1,5 +1,5 @@
 ---
-title: '연습: DataRepeater 컨트롤의 데이터 표시(Visual Studio)'
+title: '연습: DataRepeater 컨트롤 (Visual Studio)의 데이터를 표시합니다.'
 ms.date: 07/20/2015
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - DataRepeater, walkthrough
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
-ms.openlocfilehash: 8e64a819e9670a29e97140a32c81f5ff9006f83e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 4153fecaecc80fc4c40fb6dd9026b07c49ec0fb7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43388554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729251"
 ---
-# <a name="walkthrough-displaying-data-in-a-datarepeater-control-visual-studio"></a>연습: DataRepeater 컨트롤의 데이터 표시(Visual Studio)
+# <a name="walkthrough-displaying-data-in-a-datarepeater-control-visual-studio"></a>연습: DataRepeater 컨트롤 (Visual Studio)의 데이터를 표시합니다.
 이 연습에서는 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤의 바인딩된 데이터를 표시하는 작업을 처음부터 끝까지 보여 주는 기본 시나리오를 제공합니다.  
   
 ## <a name="prerequisite"></a>필수 조건  
@@ -124,7 +124,7 @@ ms.locfileid: "43388554"
   
 7.  속성 창에서 **Size** 속성을 `427, 170`으로 설정합니다.  
   
- 이 시점에서 작동 중인 응용 프로그램에서는 고객의 반복 목록을 표시합니다. F5 키를 눌러 응용 프로그램을 실행하고, 데이터를 변경하고, 고객 레코드를 추가 또는 삭제할 수 있습니다.  
+ 이 시점에서 작동 중인 애플리케이션에서는 고객의 반복 목록을 표시합니다. F5 키를 눌러 애플리케이션을 실행하고, 데이터를 변경하고, 고객 레코드를 추가 또는 삭제할 수 있습니다.  
   
  다음 선택적 단계에서는 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤을 사용자 지정하는 방법을 알아봅니다.  
   
@@ -162,7 +162,7 @@ ms.locfileid: "43388554"
      [!code-csharp[VbPowerPacksDataRepeaterWalkthrough#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio_2.cs)]
      [!code-vb[VbPowerPacksDataRepeaterWalkthrough#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio_2.vb)]  
   
-7.  F5 키를 눌러 응용 프로그램을 실행하고 사용자 지정 항목을 확인합니다.  
+7.  F5 키를 눌러 애플리케이션을 실행하고 사용자 지정 항목을 확인합니다.  
   
 ## <a name="preventing-users-from-adding-or-deleting-records"></a>사용자가 레코드를 추가하거나 삭제하지 못하도록 지정  
  이 선택적 단계에서는 사용자가 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤의 레코드를 추가하거나 삭제하지 못하도록 지정하는 코드를 추가합니다.  
@@ -186,7 +186,7 @@ ms.locfileid: "43388554"
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource> 로 인해 현재 레코드가 변경될 때마다 **DeleteItem** 단추가 활성화되므로 이 단계를 수행해야 합니다.  
   
-5.  F5 키를 눌러 응용 프로그램을 실행합니다. **DeleteItem** 단추가 비활성화되므로 사용자가 Delete 키를 눌러 항목을 삭제할 수 없습니다.  
+5.  F5 키를 눌러 애플리케이션을 실행합니다. **DeleteItem** 단추가 비활성화되므로 사용자가 Delete 키를 눌러 항목을 삭제할 수 없습니다.  
   
 ## <a name="adding-search-capability-to-the-datarepeater-control"></a>DataRepeater 컨트롤에 검색 기능 추가  
  이 선택적 단계에서는 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤에서 값을 검색하는 기능을 구현합니다. 검색 문자열이 발견되면 컨트롤에서 값을 포함하는 항목을 선택하고 항목을 뷰로 스크롤합니다.  
@@ -208,7 +208,7 @@ ms.locfileid: "43388554"
      [!code-csharp[VbPowerPacksDataRepeaterWalkthrough#5](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio_5.cs)]
      [!code-vb[VbPowerPacksDataRepeaterWalkthrough#5](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio_5.vb)]  
   
-6.  F5 키를 눌러 응용 프로그램을 실행합니다. **SearchTextBox** 에 고객 ID를 입력하고 **Search** 단추를 클릭합니다.  
+6.  F5 키를 눌러 애플리케이션을 실행합니다. **SearchTextBox** 에 고객 ID를 입력하고 **Search** 단추를 클릭합니다.  
   
 ## <a name="adding-a-master-and-detail-table-to-the-datarepeater"></a>DataRepeater에 마스터 및 세부 테이블 추가  
  이 선택적 단계에서는 각 고객에 대한 관련 주문을 표시하는 두 번째 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤을 추가합니다.  
@@ -229,16 +229,16 @@ ms.locfileid: "43388554"
   
      **OrdersBindingSource** 구성 요소 및 **OrdersTableAdapter** 구성 요소가 구성 요소 트레이에 추가됩니다.  
   
-7.  F5 키를 눌러 응용 프로그램을 실행합니다. F5 키를 눌러 응용 프로그램을 실행합니다. 첫 번째 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤에서 각 고객을 선택하면 해당 고객에 대한 주문이 두 번째 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤에 표시됩니다.  
+7.  F5 키를 눌러 애플리케이션을 실행합니다. F5 키를 눌러 응용 프로그램을 실행합니다. 첫 번째 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤에서 각 고객을 선택하면 해당 고객에 대한 주문이 두 번째 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤에 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [DataRepeater 컨트롤 소개](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 컨트롤의 바인딩된 데이터 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 컨트롤의 바인딩되지 않은 컨트롤 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 컨트롤의 레이아웃 변경](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 컨트롤의 항목 머리글 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 컨트롤의 데이터 검색](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md)  
- [방법: 두 DataRepeater 컨트롤 (Visual Studio)를 사용 하 여 마스터/세부 폼 만들기](../../../visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md)  
- [방법: DataRepeater 컨트롤의 모양 변경](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md)  
- [방법: DataRepeater 항목 추가 및 삭제 사용 안 함](../../../visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md)  
- [DataRepeater 컨트롤 문제 해결](../../../visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md)
+## <a name="see-also"></a>참고자료
+- [DataRepeater 컨트롤 소개](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 컨트롤의 바인딩된 데이터 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 컨트롤의 바인딩되지 않은 컨트롤 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 컨트롤의 레이아웃 변경](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 컨트롤의 항목 머리글 표시](../../../visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 컨트롤의 데이터 검색](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md)
+- [방법: 두 개의 DataRepeater 컨트롤 (Visual Studio)를 사용 하 여 마스터/세부 폼 만들기](../../../visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md)
+- [방법: DataRepeater 컨트롤의 모양 변경](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md)
+- [방법: DataRepeater 항목 추가 및 삭제를 사용 하지 않도록 설정](../../../visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md)
+- [DataRepeater 컨트롤 문제 해결](../../../visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md)

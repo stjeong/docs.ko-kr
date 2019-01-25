@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - Grid control [WPF], positioning child elements
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
-ms.openlocfilehash: 5ccdcb3d166e1b703faff1dc8046e61ee213d12a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a1b567356588d6798bae5d73d3d410882d087986
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50186999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54538677"
 ---
 # <a name="how-to-position-the-child-elements-of-a-grid"></a>방법: Grid의 자식 요소 위치 지정
 이 예제에서는 get을 사용 하 고에 정의 된 메서드를 설정 하는 방법을 보여 줍니다 <xref:System.Windows.Controls.Grid> 자식 요소의 위치입니다.  
@@ -30,6 +30,6 @@ ms.locfileid: "50186999"
  
  ![스크린 샷 두 개의 열을 사용 하 여 WPF 사용자 인터페이스, 오른쪽 3x3 격자에 보여 주며 왼쪽에 열과 그리드의 행 색이 지정 된 사각형을 이동 하는 단추가 있습니다.](./media/grid-methods-sample.png) 
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Grid>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Grid>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)

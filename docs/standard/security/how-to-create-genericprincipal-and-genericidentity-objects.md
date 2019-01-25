@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 79b5e05fe9133eb2282eedefa001e64ece5e0f57
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 0567fd12bee19e860373affdf0fdc286d6d5405a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608065"
 ---
 # <a name="how-to-create-genericprincipal-and-genericidentity-objects"></a>방법: GenericPrincipal 및 GenericIdentity 개체 만들기
 사용할 수는 <xref:System.Security.Principal.GenericIdentity> 클래스와 함께 <xref:System.Security.Principal.GenericPrincipal> 존재 하는 권한 부여 체계를 Windows 도메인의 독립적인 만들 클래스입니다.  
@@ -132,7 +132,7 @@ public class Class1
 }  
 ```  
   
- 응용 프로그램을 실행하면 다음과 같은 결과가 표시됩니다.  
+ 애플리케이션을 실행하면 다음과 같은 결과가 표시됩니다.  
   
 ```  
 The Name is: MyIdentity  
@@ -142,8 +142,8 @@ Is this a Manager? True
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Security.Principal.GenericIdentity>  
-- <xref:System.Security.Principal.GenericPrincipal>  
-- <xref:System.Security.Permissions.PrincipalPermission>  
-- [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)  
+- <xref:System.Security.Principal.GenericIdentity>
+- <xref:System.Security.Principal.GenericPrincipal>
+- <xref:System.Security.Permissions.PrincipalPermission>
+- [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)
 - [Principal 개체 및 Identity 개체](../../../docs/standard/security/principal-and-identity-objects.md)

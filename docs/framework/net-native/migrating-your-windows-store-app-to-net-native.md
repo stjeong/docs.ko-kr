@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 27903899ca31166e160f32ca0175e353e54676cc
-ms.sourcegitcommit: 75567a3cb437009db55949c6092f4e77ed1a9da4
+ms.openlocfilehash: 9b04465d9141cdf595c4055ba64eb49083c1c514
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54307567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54667900"
 ---
 # <a name="migrating-your-windows-store-app-to-net-native"></a>Windows 스토어 앱을 .NET 네이티브로 마이그레이션
 .NET 네이티브 개발자의 컴퓨터 또는 Windows 스토어에서 앱의 정적 컴파일을 제공합니다. 이 기능은 디바이스의 [네이티브 이미지 생성기(Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) 또는 JIT(Just-In-Time) 컴파일러가 Windows 스토어 앱에 대해 수행하는 동적 컴파일과는 다릅니다. 다르기는 하지만.NET 네이티브 호환성을 유지 하려고 사용 하 여 합니다 [Windows 스토어 앱 용.NET](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)합니다. 대부분의 경우.NET 네이티브를 사용 하 여.NET에 대 한 Windows 스토어 앱에서 작동 하는 것도 작동 합니다.  그러나 동작이 변경되는 경우도 있습니다. 이 문서는 다음 영역에서 표준 Windows 스토어 앱 용.NET 및.NET 네이티브 이러한 차이점에 설명 합니다.  
@@ -652,8 +652,8 @@ ms.locfileid: "54307567"
   
  Windows 스토어 앱 프로젝트에 대 한 단위 테스트 라이브러리에서.NET 네이티브를 사용 하도록 설정 지원 되지 않으며 이렇게 하면 프로젝트를 빌드할 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [.NET Windows 스토어 용 앱 개요](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)  
- [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+## <a name="see-also"></a>참고자료
+- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [.NET Windows 스토어 용 앱 개요](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)
+- [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

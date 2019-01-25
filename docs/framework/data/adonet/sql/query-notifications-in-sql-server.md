@@ -2,12 +2,12 @@
 title: SQL Server에서 쿼리 알림
 ms.date: 03/30/2017
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
-ms.openlocfilehash: c4e58a3eecc18fb5693e9850163533b0a1a6a574
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 87335b5c9ad626e998fdb7bf0e71cae2542386f5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45749411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54636692"
 ---
 # <a name="query-notifications-in-sql-server"></a>SQL Server에서 쿼리 알림
 쿼리 알림은 Service Broker 인프라를 기반으로 하며 데이터가 변경된 경우 응용 프로그램에 이를 알릴 수 있습니다. 이 기능은 웹 응용 프로그램 같이 데이터베이스의 정보 캐시를 제공하고 원본 데이터가 변경되면 알림을 받아야 하는 응용 프로그램에 매우 유용합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "45749411"
  [쿼리 알림 사용](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md)  
  쿼리 알림 활성화 및 사용에 필요한 요구 사항 등 쿼리 알림 사용 방법을 설명합니다.  
   
- [ASP.NET 응용 프로그램의 SqlDependency](../../../../../docs/framework/data/adonet/sql/sqldependency-in-an-aspnet-app.md)  
+ [ASP.NET 애플리케이션의 SqlDependency](../../../../../docs/framework/data/adonet/sql/sqldependency-in-an-aspnet-app.md)  
  ASP.NET 응용 프로그램에서 쿼리 알림을 사용하는 방법에 대해 설명합니다.  
   
  [SqlDependency로 변경 내용 감지](../../../../../docs/framework/data/adonet/sql/detecting-changes-with-sqldependency.md)  
@@ -61,6 +61,6 @@ ms.locfileid: "45749411"
  <xref:System.Web.Caching.SqlCacheDependency>  
  <xref:System.Web.Caching.SqlCacheDependency> 클래스와 해당 멤버 전체에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

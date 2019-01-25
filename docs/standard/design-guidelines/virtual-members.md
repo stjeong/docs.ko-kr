@@ -8,12 +8,12 @@ helpviewer_keywords:
 - members [.NET Framework], virtual
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
 author: KrzysztofCwalina
-ms.openlocfilehash: 1719e9843252c25d1e799471330c6cb08211245b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4943ddcdf1bc4e3e32c8d664cbcc5c50ae3959bd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543830"
 ---
 # <a name="virtual-members"></a>가상 멤버
 가상 멤버를 재정의할 수 있습니다 따라서 서브 클래스의 동작을 변경 합니다. 콜백이 제공 되는 확장성 측면에서 매우 유사한 있지만 실행 성능 및 메모리 소비량 면에서 더 효율적입니다. 또한 가상 멤버는 만들어야 하는 특별 한 종류의 기존 유형 (특수화의 경우) 시나리오에서 자연스럽 게 느낄 합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "53128932"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
 - [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)

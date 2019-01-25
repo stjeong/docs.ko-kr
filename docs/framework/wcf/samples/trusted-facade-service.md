@@ -2,12 +2,12 @@
 title: 신뢰된 외관 서비스
 ms.date: 03/30/2017
 ms.assetid: c34d1a8f-e45e-440b-a201-d143abdbac38
-ms.openlocfilehash: 6acea5204ae2c05483978eb6187d1de02ae1b268
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 4b18f0eb4183a9dd6d0801dd022176cd3220c62c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43463184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640422"
 ---
 # <a name="trusted-facade-service"></a>신뢰된 외관 서비스
 이 시나리오 샘플에는 Windows Communication Foundation (WCF)를 사용 하 여 다른 서비스로 호출자의 id 정보를 전달 하는 방법을 보여 줍니다. 보안 인프라.  
@@ -274,9 +274,9 @@ Press <ENTER> to terminate client.
   
 4.  \FacadeService\bin 디렉터리에서 FacadeService.exe를 별도의 콘솔 창에 실행합니다.  
   
-5.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
+5.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 애플리케이션에 클라이언트 동작이 표시됩니다.  
   
-6.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+6.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
 #### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   
@@ -291,4 +291,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

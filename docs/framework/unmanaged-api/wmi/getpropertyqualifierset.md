@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fcddca2e435a3f5bf4b8d083784613254d9801a4
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: ec91a1f6fba70e3c9706541dc641ddd019d44841
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642206"
 ---
 # <a name="getpropertyqualifierset-function"></a>GetPropertyQualifierSet 함수
 특정 속성에 대한 한정자 집합을 검색합니다.
@@ -61,8 +61,8 @@ HRESULT GetPropertyQualifierSet (
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 메서드가 존재 하지 않습니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수는 `null`합니다. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수는 `null`합니다. |
 | `WBEM_E_SYSTEM_PROPERTY` | 0x80041030 | 함수는 시스템 속성의 한정자를 가져오려고 시도 합니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
@@ -77,11 +77,11 @@ HRESULT GetPropertyQualifierSet (
 함수를 반환 하는 시스템 속성 한정자가 있으므로 `WBEM_E_SYSTEM_PROPERTY` 가져오려고 시도 하는 경우는 [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 시스템 속성에 대 한 포인터입니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

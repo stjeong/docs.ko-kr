@@ -2,19 +2,19 @@
 title: 사용자 지정 식 편집기 사용
 ms.date: 03/30/2017
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
-ms.openlocfilehash: 4eb39fbd51cf4f1914f7fdca545f9c9fd8e83240
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3959fdb5b75ae6e48c19130cf6e825455d8f7103
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54526914"
 ---
 # <a name="using-a-custom-expression-editor"></a>사용자 지정 식 편집기 사용
 사용자 지정 식 편집기를 구현하여 보다 다양하거나 단순한 식 편집 환경을 제공할 수 있습니다. 사용자 지정 식 편집기는 다음과 같은 경우에 사용할 수 있습니다.  
   
--   IntelliSense와 다시 호스트된 Workflow Designer의 다른 다양한 편집 기능을 지원하려는 경우. 기본 Visual Studio 식 편집기는 재 호스트 된 응용 프로그램에서 사용할 수 없으므로이 기능을 제공 해야 합니다.  
+-   IntelliSense와 다시 호스트된 Workflow Designer의 다른 다양한 편집 기능을 지원하려는 경우. 이 기능은 재 호스트 된 응용 프로그램에서 기본 Visual Studio 식 편집기를 사용할 수 없기 때문에 제공 되어야 합니다.  
   
--   , 예를 들어 않아도 됩니다 Visual Basic 살펴보기 또는 Visual Basic 식이 다루기가 식 편집 환경을 비즈니스 분석가 사용자를 위한를 단순화 합니다.  
+-   쉬운 식 편집 환경을 비즈니스 분석가 사용자에 대 한 Visual Basic 학습 또는 Visual Basic 식을 사용 하 여 처리 예를 들어, 필요 하지는 않도록 합니다.  
   
  사용자 지정 식 편집기를 구현하는 데는 기본적으로 다음과 같은 세 단계가 필요합니다.  
   
@@ -276,9 +276,9 @@ namespace WpfApplication1
 ```  
   
 ### <a name="notes"></a>노트  
- 사용 하는 경우는 **ExpressionTextBox** 컨트롤 사용자 지정 활동 디자이너에 필요 없는 만들고 사용 하 여 식 편집기를 제거 하는 <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> 및 <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> 의 메서드는 <xref:System.Activities.Presentation.View.IExpressionEditorService> 인터페이스입니다. <xref:System.Activities.Presentation.View.ExpressionTextBox> 클래스가 이 부분을 자동으로 관리합니다.  
+ 사용 중인 경우는 **ExpressionTextBox** 컨트롤을 사용자 지정 활동 디자이너에서 필요 없는 만들고 사용 하 여 식 편집기를 제거 하는 <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> 및 <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> 의 메서드는 <xref:System.Activities.Presentation.View.IExpressionEditorService> 인터페이스. <xref:System.Activities.Presentation.View.ExpressionTextBox> 클래스가 이 부분을 자동으로 관리합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Activities.Presentation.View.IExpressionEditorService>  
- <xref:System.Activities.Presentation.View.IExpressionEditorInstance>  
- [사용자 지정 작업 디자이너에서 ExpressionTextBox 사용](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Activities.Presentation.View.IExpressionEditorService>
+- <xref:System.Activities.Presentation.View.IExpressionEditorInstance>
+- [사용자 지정 작업 디자이너에서 ExpressionTextBox 사용](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

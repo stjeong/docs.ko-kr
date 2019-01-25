@@ -8,12 +8,12 @@ helpviewer_keywords:
 - tool area [Windows Forms]
 - vertical space
 ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
-ms.openlocfilehash: 14ddd56540d8649a3705ef2d19726499fbfcaf9e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 86940b97ed373dc90f82520104b9b85019873cd2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33535430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745261"
 ---
 # <a name="toolstrippanel-control"></a>ToolStripPanel 컨트롤
 `ToolStripPanel` 컨트롤은 <xref:System.Windows.Forms.ToolStripContainer>의 4개 패널 및 중앙 패널이 필요하지 않은 경우 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 도킹 및 정렬할 때 도구 영역 내에서 가로 또는 세로 공간을 공유할 수 있게 해줍니다.  
@@ -34,5 +34,5 @@ ms.locfileid: "33535430"
  <xref:System.Windows.Forms.ToolStripPanel>  
  <xref:System.Windows.Forms.ToolStripPanel> 컨트롤에 대한 참조 설명서를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Forms에서 사용할 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

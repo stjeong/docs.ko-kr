@@ -2,12 +2,12 @@
 title: SQL Server에서 응용 프로그램 역할 만들기
 ms.date: 03/30/2017
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
-ms.openlocfilehash: 811654b73cd1cc0b8c17565b45613253de3c0e81
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4d3ee759a11417d5f4d36a295f20c7f7886d30d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54638134"
 ---
 # <a name="creating-application-roles-in-sql-server"></a>SQL Server에서 응용 프로그램 역할 만들기
 응용 프로그램 역할을 사용하면 데이터베이스 역할이나 사용자 대신 응용 프로그램에 권한을 할당할 수 있습니다. 사용자는 데이터베이스에 연결한 후 응용 프로그램 역할을 활성화하여 응용 프로그램에 부여된 권한을 사용할 수 있습니다. 응용 프로그램 역할에 부여된 권한은 연결되어 있는 동안 유효합니다.  
@@ -58,8 +58,8 @@ ms.locfileid: "43522015"
 |--------------|-----------------|  
 |[응용 프로그램 역할](/sql/relational-databases/security/authentication-access/application-roles)|SQL Server 2008에서 응용 프로그램 역할을 만들고 사용하는 방법에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

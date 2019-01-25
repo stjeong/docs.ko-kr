@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Char data type [Visual Basic], character data types
 - data types [Visual Basic], choosing
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-ms.openlocfilehash: 3b031c6e3dc04637128f95ca8e922d3298981287
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5ede86cca1bddb15cab6518e17405837bda008f4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54536895"
 ---
 # <a name="character-data-types-visual-basic"></a>문자 데이터 형식(Visual Basic)
 Visual Basic에서는 *문자 데이터 형식* 인쇄 하거나 표시할 수 있는 문자를 사용 하 여 처리 합니다. 유니코드 문자를 모두 처리 하는 동안 `Char` 반면 단일 문자를 포함 `String` 불특정 개수의 문자를 포함 합니다.  
@@ -39,11 +39,11 @@ Visual Basic에서는 *문자 데이터 형식* 인쇄 하거나 표시할 수 �
   
  자세한 내용은 [문자열 데이터 형식](../../../../visual-basic/language-reference/data-types/string-data-type.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [Visual Basic의 제네릭 형식](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+## <a name="see-also"></a>참고자료
+- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [복합 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [Visual Basic의 제네릭 형식](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 875052ed26e83de50807e33e9c74dcf89f7ee679
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 17217146d8e5ed53feb8305ca4ac16c8f96ddeb7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33440647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653862"
 ---
 # <a name="ivalidatorformateventinfo-method"></a>IValidator::FormatEventInfo 메서드
 지정 된 유효성 검사 오류에 해당 하는 오류 메시지를 가져옵니다.  
@@ -44,7 +44,7 @@ HRESULT FormatEventInfo(
  [in] 유효성 검사 오류 처리기로 전달 된 HRESULT 값입니다.  
   
  `Context`  
- [in] A `VEContext` 유효성 검사 오류에 대 한 컨텍스트 정보를 포함 하는 인스턴스입니다.  
+ [in] `VEContext` 유효성 검사 오류에 대 한 컨텍스트 정보를 포함 하는 인스턴스.  
   
  `msg`  
  [out에서] 반환 된 오류 메시지를 포함 하는 문자열입니다.  
@@ -56,13 +56,13 @@ HRESULT FormatEventInfo(
  [in] 오류를 설명 하는 추가 매개 변수를 포함 하는 안전 배열입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** IValidator.idl, IValidator.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- 
+## <a name="see-also"></a>참고자료
+

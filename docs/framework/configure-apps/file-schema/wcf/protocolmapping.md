@@ -2,18 +2,18 @@
 title: '&lt;protocolMapping&gt;'
 ms.date: 03/30/2017
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
-ms.openlocfilehash: a376f1eaa7c8790cf2174335749ed3001b403967
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 199a5d820a80565ccdfa2cb11fe749d63bd65087
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54644262"
 ---
 # <a name="ltprotocolmappinggt"></a>&lt;protocolMapping&gt;
 전송 프로토콜 체계 (예: http, net.tcp, net.pipe 등) 및 WCF 바인딩 간의 기본 프로토콜 매핑 집합을 정의 하기 위한 구성 섹션을 나타냅니다. 런타임에 기본 끝점을 만들 때 Windows Communication Foundation (WCF) 구성 된 매핑을 살펴봅니다 및 바인딩을 사용 하 여 특정 기본 주소를 결정 합니다.  
   
-[**\<system.serviceModel >**](system-servicemodel.md)  
-&nbsp;&nbsp;**\<protocolMapping >**  
+[**\<system.serviceModel>**](system-servicemodel.md)  
+&nbsp;&nbsp;**\<protocolMapping>**  
   
 ## <a name="syntax"></a>구문  
   
@@ -59,6 +59,6 @@ ms.locfileid: "54147306"
 </protocolMapping>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>       
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>

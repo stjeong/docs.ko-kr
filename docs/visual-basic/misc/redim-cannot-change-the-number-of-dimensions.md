@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrArray_RankMismatch
 ms.assetid: 52505298-9985-4682-8f6e-ff7d56077f34
-ms.openlocfilehash: ba3e389e3732d39f16e2c8ae884fae4e935e6ac9
-ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
+ms.openlocfilehash: 80546b427afdafaf6e9fcea493d58cf1019e79e9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53778725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54638459"
 ---
 # <a name="redim-cannot-change-the-number-of-dimensions"></a>'ReDim'으로 차수를 변경할 수 없습니다.
 작업에서 `ReDim` 문을 사용하여 배열 차수(차원 수)를 변경하려고 합니다. `ReDim` 은 이전에 선언된 배열의 차원 크기를 하나 이상 변경할 수 있지만 배열 차수를 변경할 수는 없습니다.  
@@ -18,8 +18,8 @@ ms.locfileid: "53778725"
   
 -   해당 차원의 크기가 아닌 배열의 차수를 변경하려는지 확인하고 가능한 경우 `Dim` 을 사용하여 원하는 차수의 새 배열을 선언합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 배열](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)  
- [Visual Basic의 배열 크기](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)  
- [ReDim 문](../../visual-basic/language-reference/statements/redim-statement.md)  
- [Dim 문](../../visual-basic/language-reference/statements/dim-statement.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 배열](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)
+- [Visual Basic의 배열 크기](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)
+- [ReDim 문](../../visual-basic/language-reference/statements/redim-statement.md)
+- [Dim 문](../../visual-basic/language-reference/statements/dim-statement.md)

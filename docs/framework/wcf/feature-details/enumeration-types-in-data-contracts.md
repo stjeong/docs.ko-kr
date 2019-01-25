@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], enumeration types
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
-ms.openlocfilehash: ed4a0c572f651793a40cb5ffcaa32aef884c1cec
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 21f1f948e0bcd088cbe14316760708e10285124b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54649312"
 ---
 # <a name="enumeration-types-in-data-contracts"></a>데이터 계약의 열거형 형식
 데이터 계약 모델에 열거형을 표현할 수 있습니다. 이 항목에서는 프로그래밍 모델을 설명하는 여러 예를 살펴봅니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "33494519"
  열거형 데이터 계약에도 보통 때와 같이 <xref:System.Runtime.Serialization.DataContractAttribute> 속성(<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> 및 <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>)을 사용할 수 있습니다.  
   
 ### <a name="enumeration-member-values"></a>열거형 멤버 값  
- 일반적으로 데이터 계약에는 숫자 값이 아닌 열거형 멤버 이름이 포함됩니다. 그러나 데이터 계약 모델을 사용 하 여 받는 쪽이 WCF 클라이언트를 내보낸된 스키마는 숫자 값 유지 됩니다. 이 하지는 경우 사용 하는 경우는 [XmlSerializer 클래스를 사용 하 여](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)합니다.  
+ 일반적으로 데이터 계약에는 숫자 값이 아닌 열거형 멤버 이름이 포함됩니다. 그러나 경우 받는 쪽이 WCF 클라이언트 데이터 계약 모델을 사용 하는 경우 내보낸된 스키마는 숫자 값을 유지 합니다. 이 되지 경우 사용 하는 경우는 [XmlSerializer 클래스를 사용 하 여](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)입니다.  
   
  앞의 예에서 `condition`이 `Used`로 설정되어 있고 데이터가 XML로 serialize된 경우 결과 XML은 `<condition>Used</condition>`이며 `<condition>1</condition>`이 아닙니다. 따라서 다음 데이터 계약은 `CarConditionEnum`의 데이터 계약에 해당됩니다.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "33494519"
   
 1.  숫자 값에 매핑되는 열거형 멤버를 찾아 봅니다(<xref:System.Runtime.Serialization.EnumMemberAttribute> 특성 적용). 찾은 경우 해당 멤버만 포함하는 목록을 보냅니다.  
   
-2.  합의 각 부분에 매핑되는 열거형 멤버가 있는(각각 <xref:System.Runtime.Serialization.EnumMemberAttribute> 특성 적용) 숫자 값을 합으로 정리해 봅니다. 해당되는 모든 멤버의 목록을 보냅니다. *탐욕 알고리즘* 를 사용 하 여 그런 합을 찾이 없기 때문에 그런 합이 존재 하는 경우에 발견 된 다 고 합니다. 이 문제를 방지하려면 열거형 멤버의 숫자 값이 2의 거듭제곱이어야 합니다.  
+2.  합의 각 부분에 매핑되는 열거형 멤버가 있는(각각 <xref:System.Runtime.Serialization.EnumMemberAttribute> 특성 적용) 숫자 값을 합으로 정리해 봅니다. 해당되는 모든 멤버의 목록을 보냅니다. 합니다 *greedy 알고리즘* 를 사용 하 여 그런 합을 찾이 되며 따라서 합계를 찾을 수 있는 경우에 보장할 수 없습니다. 이 문제를 방지하려면 열거형 멤버의 숫자 값이 2의 거듭제곱이어야 합니다.  
   
 3.  앞의 두 단계가 실패한 경우 숫자 값이 0이 아니면 <xref:System.Runtime.Serialization.SerializationException>이 throw됩니다. 숫자 값이 0이면 빈 목록을 보냅니다.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "33494519"
  [!code-csharp[c_DataContractEnumerations#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs/source.cs#5)]
  [!code-vb[c_DataContractEnumerations#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractenumerations/vb/source.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [서비스 계약에서 데이터 전송 지정](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [서비스 계약에서 데이터 전송 지정](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

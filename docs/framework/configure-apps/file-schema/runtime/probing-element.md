@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a5b9be3050da21c0a99931ca70cf990b0b8bf1fe
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 711903656d8bcce3a2d213af68160707a55a48e4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700002"
 ---
 # <a name="ltprobinggt-element"></a>&lt;검색&gt; 요소
 공용 언어 런타임에서 어셈블리를 로드할 때 검색할 하위 응용 프로그램 기본 디렉터리를 지정 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "53612311"
  \<configuration>  
 \<runtime>  
 \<assemblyBinding>  
-\<검색 >  
+\<probing>  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ ms.locfileid: "53612311"
 |요소|설명|  
 |-------------|-----------------|  
 |`assemblyBinding`|어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="example"></a>예제  
@@ -65,8 +65,8 @@ ms.locfileid: "53612311"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [런타임에서 어셈블리를 찾는 방법](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

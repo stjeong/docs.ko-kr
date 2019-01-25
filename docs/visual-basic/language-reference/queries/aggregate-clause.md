@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Aggregate statement [Visual Basic]
 - queries [Visual Basic], Aggregate
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
-ms.openlocfilehash: e3ce8ff7da647120e5fd9e3b4cd44cc603eb797d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a26ea220a807d3158d6874e2127db9a2f280a10c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54547094"
 ---
 # <a name="aggregate-clause-visual-basic"></a>Aggregate 절(Visual Basic)
 컬렉션에 하나 이상의 집계 함수를 적용 합니다.  
@@ -33,11 +33,11 @@ Aggregate element [As type] In collection _
   
 |용어|정의|  
 |---|---|  
-|`element`|필수. 컬렉션의 요소를 반복 하는 데 사용 하는 변수입니다.|  
+|`element`|필수 요소. 컬렉션의 요소를 반복 하는 데 사용 하는 변수입니다.|  
 |`type`|선택 사항입니다. `element`의 형식입니다. 형식이 지정 되지 않은, 경우 유형의 `element` 에서 유추 됩니다 `collection`합니다.|  
-|`collection`|필수. 에 적용할 컬렉션을 의미 합니다.|  
+|`collection`|필수 요소. 에 적용할 컬렉션을 의미 합니다.|  
 |`clause`|선택 사항입니다. 하나 이상의 절 등 쿼리는 `Where` aggregate 절 또는 절을 적용 하 여 쿼리 결과를 구체화할 절.|  
-|`expressionList`|필수. 하나 이상의 쉼표로 구분 된 식 컬렉션에 적용할 집계 함수를 식별 하는입니다. 쿼리 결과에 멤버 이름을 지정 하는 집계 함수에 별칭을 적용할 수 있습니다. 별칭 없음이 제공 하는 경우 집계 함수의 이름 사용 됩니다. 예를 들어이 항목의 뒷부분에 나오는 집계 함수에 대 한 섹션을 참조 합니다.|  
+|`expressionList`|필수 요소. 하나 이상의 쉼표로 구분 된 식 컬렉션에 적용할 집계 함수를 식별 하는입니다. 쿼리 결과에 멤버 이름을 지정 하는 집계 함수에 별칭을 적용할 수 있습니다. 별칭 없음이 제공 하는 경우 집계 함수의 이름 사용 됩니다. 예를 들어이 항목의 뒷부분에 나오는 집계 함수에 대 한 섹션을 참조 합니다.|  
   
 ## <a name="remarks"></a>설명  
  `Aggregate` 쿼리에서 집계 함수를 포함 하려면 절을 사용할 수 있습니다. 집계 함수는 값의 집합에 대해 검사 및 계산을 수행 하 고 단일 값을 반환 합니다. 쿼리 결과 형식의 멤버를 사용 하 여 계산 된 값에 액세스할 수 있습니다. 사용할 수 있는 표준 집계 함수를 `All`, `Any`, `Average`, `Count`, `LongCount`, `Max`, `Min`, 및 `Sum` 함수입니다. 이러한 함수는 sql에서 집계에 익숙한 개발자에 게 친숙 합니다. 이 항목의 다음 섹션에 설명 되어 있습니다.  
@@ -118,11 +118,11 @@ Aggregate element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#19](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_10.vb)]  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
-- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
-- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
-- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
-- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)  
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
 - [Group By 절](../../../visual-basic/language-reference/queries/group-by-clause.md)

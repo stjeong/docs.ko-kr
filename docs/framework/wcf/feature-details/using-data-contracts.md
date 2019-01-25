@@ -9,20 +9,20 @@ helpviewer_keywords:
 - WCF, data
 - data contracts [WCF]
 ms.assetid: a3ae7b21-c15c-4c05-abd8-f483bcbf31af
-ms.openlocfilehash: 992f35a9f7406ac161ddb5e31fdaf85756bfe31f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a93fb708ed6b1790027b1e3a2fc74ca8c5ff2024
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33503726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54571694"
 ---
 # <a name="using-data-contracts"></a>데이터 계약 사용
 *데이터 계약* 은 서비스와 클라이언트 사이에서 교환할 데이터를 추상적으로 설명한 공식 계약입니다. 즉, 클라이언트와 서비스가 같은 형식을 공유하지 않고 같은 데이터 계약만 공유해도 통신이 가능합니다. 데이터 계약에서는 각 매개 변수 또는 반환 형식에 대해 교환을 위해 serialize(XML로 변환)해야 할 데이터를 세밀하게 정의합니다.  
   
 ## <a name="data-contract-basics"></a>데이터 계약 기본 사항  
- Windows Communication Foundation (WCF) (변환할 XML 간에) 데이터 serialize 및 deserialize를 기본적으로 데이터 계약 Serializer 라는 serialization 엔진을 사용 합니다. 정수 및 문자열과 같은 모든 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 기본 형식 외에도 <xref:System.DateTime> 및 <xref:System.Xml.XmlElement>와 같이 기본 형식으로 취급되는 일부 형식을 별도의 준비 없이 serialize할 수 있으며 기본 데이터 계약이 있는 것으로 간주할 수 있습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 형식에도 기존 데이터 계약이 있는 것이 많습니다. 모든 serialize 가능 형식의 목록은 [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)을 참조하십시오.  
+ Windows Communication Foundation (WCF) (변환할 xml)는 데이터 직렬화 및 역직렬화를 기본적으로 데이터 계약 Serializer 라는 serialization 엔진을 사용 합니다. 정수 및 문자열과 같은 모든 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 기본 형식 외에도 <xref:System.DateTime> 및 <xref:System.Xml.XmlElement>와 같이 기본 형식으로 취급되는 일부 형식을 별도의 준비 없이 serialize할 수 있으며 기본 데이터 계약이 있는 것으로 간주할 수 있습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 형식에도 기존 데이터 계약이 있는 것이 많습니다. 모든 serialize 가능 형식의 목록은 [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)을 참조하십시오.  
   
- 새로 만든 복합 형식을 serialize하려면 데이터 계약이 정의되어 있어야 합니다. 기본적으로 <xref:System.Runtime.Serialization.DataContractSerializer> 는 데이터 계약을 유추하고 모든 공개 형식을 serialize합니다. 이 경우 형식의 모든 공개 읽기/쓰기 속성과 필드가 serialize됩니다. <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>를 사용하여 멤버의 serialization을 취소할 수 있습니다. 또한 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성을 사용하여 데이터 계약을 명시적으로 만들 수도 있습니다. 보통은 형식에 <xref:System.Runtime.Serialization.DataContractAttribute> 특성을 적용하면 됩니다. 이 특성을 클래스, 구조 및 열거에 적용할 수 있습니다. 그런 다음 데이터 계약 형식의 각 멤버에 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성을 적용하여 *데이터 멤버*이며 serialize되어야 한다는 것을 나타내야 합니다. 자세한 내용은 참조 [Serializable 형식](../../../../docs/framework/wcf/feature-details/serializable-types.md)합니다.  
+ 새로 만든 복합 형식을 serialize하려면 데이터 계약이 정의되어 있어야 합니다. 기본적으로 <xref:System.Runtime.Serialization.DataContractSerializer> 는 데이터 계약을 유추하고 모든 공개 형식을 serialize합니다. 이 경우 형식의 모든 공개 읽기/쓰기 속성과 필드가 serialize됩니다. <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>를 사용하여 멤버의 serialization을 취소할 수 있습니다. 또한 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성을 사용하여 데이터 계약을 명시적으로 만들 수도 있습니다. 보통은 형식에 <xref:System.Runtime.Serialization.DataContractAttribute> 특성을 적용하면 됩니다. 이 특성을 클래스, 구조 및 열거에 적용할 수 있습니다. 그런 다음 데이터 계약 형식의 각 멤버에 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성을 적용하여 *데이터 멤버*이며 serialize되어야 한다는 것을 나타내야 합니다. 자세한 내용은 [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)합니다.  
   
 ### <a name="example"></a>예제  
  다음 예제에서는 <xref:System.ServiceModel.ServiceContractAttribute> 및 <xref:System.ServiceModel.OperationContractAttribute> 특성이 명시적으로 적용된 서비스 계약(인터페이스)을 보여 줍니다. 이 예제는 기본 형식에는 데이터 계약이 필요 없지만 복합 형식에는 필요하다는 것을 보여 줍니다.  
@@ -66,17 +66,17 @@ ms.locfileid: "33503726"
   
  데이터 계약을 정의하는 WCF 서비스의 전체 코드 샘플을 보려면 [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md) 샘플을 참조하십시오.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- [직렬화 가능 형식](../../../../docs/framework/wcf/feature-details/serializable-types.md)  
- [데이터 계약 이름](../../../../docs/framework/wcf/feature-details/data-contract-names.md)  
- [데이터 계약 동등성](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [데이터 멤버 순서](../../../../docs/framework/wcf/feature-details/data-member-order.md)  
- [데이터 계약 알려진 형식](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [이후 버전과 호환되는 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)  
- [데이터 계약 버전 관리](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
- [버전 독립적 Serialization 콜백](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)  
- [데이터 멤버 기본값](../../../../docs/framework/wcf/feature-details/data-member-default-values.md)  
- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
- [방법: 클래스 또는 구조체에 대한 기본 데이터 계약 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- [직렬화 가능 형식](../../../../docs/framework/wcf/feature-details/serializable-types.md)
+- [데이터 계약 이름](../../../../docs/framework/wcf/feature-details/data-contract-names.md)
+- [데이터 계약 동등성](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [데이터 멤버 순서](../../../../docs/framework/wcf/feature-details/data-member-order.md)
+- [데이터 계약 알려진 형식](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [이후 버전과 호환되는 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
+- [데이터 계약 버전 관리](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
+- [버전 독립적 Serialization 콜백](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [데이터 멤버 기본값](../../../../docs/framework/wcf/feature-details/data-member-default-values.md)
+- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [방법: 클래스 또는 구조체에 대 한 기본 데이터 계약 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

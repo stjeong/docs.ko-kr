@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
-ms.openlocfilehash: 6b54f75afd52b5179693c5a92ebce2e8aa02f122
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: ca67a01d8f1bc76773a7794169e93d026fe222d7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32765466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54717966"
 ---
 # <a name="known-issues-and-considerations-in-linq-to-entities"></a>LINQ to Entities에서 알려진 문제 및 고려 사항
 이 단원에서는 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리와 관련하여 알려진 문제에 대한 정보를 제공합니다.  
   
--   [LINQ 쿼리를 캐시할 수 없습니다.](#LINQQueriesThatAreNotCached)  
+-   [LINQ 쿼리는 캐시할 수 없습니다.](#LINQQueriesThatAreNotCached)  
   
 -   [순서 정보 손실](#OrderingInfoLost)  
   
@@ -25,7 +25,7 @@ ms.locfileid: "32765466"
   
 -   [지원 되지 않는 스칼라가 아닌 변수 참조](#RefNonScalarClosures)  
   
--   [SQL Server 2000과 중첩된 쿼리가 실패할 수 있음](#NestedQueriesSQL2000)  
+-   [SQL Server 2000 사용 하 여 중첩된 쿼리가 실패할 수 있습니다.](#NestedQueriesSQL2000)  
   
 -   [익명 형식으로 프로젝션](#ProjectToAnonymousType)  
   
@@ -42,7 +42,7 @@ ms.locfileid: "32765466"
   
 <a name="UnsignedIntsUnsupported"></a>   
 ## <a name="unsigned-integers-not-supported"></a>부호 없는 정수 지원되지 않음  
- [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]에서 부호 없는 정수가 지원되지 않으므로 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 쿼리에서 부호 없는 정수 형식을 지정할 수 없습니다. 부호 없는 정수를 지정 하는 경우는 <xref:System.ArgumentException> 다음 예제와 같이 쿼리 식 변환 하는 동안 예외가 throw 됩니다. 다음 예제에서는 ID 48000인 주문을 쿼리합니다.  
+ [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]에서 부호 없는 정수가 지원되지 않으므로 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 쿼리에서 부호 없는 정수 형식을 지정할 수 없습니다. 부호 없는 정수를 지정 하는 경우는 <xref:System.ArgumentException> 다음 예와에서 같이 쿼리 식 변환 도중 예외가 throw 됩니다. 다음 예제에서는 ID 48000인 주문을 쿼리합니다.  
   
  [!code-csharp[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#uintasqueryparam)]
  [!code-vb[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#uintasqueryparam)]  
@@ -79,5 +79,5 @@ ms.locfileid: "32765466"
  [!code-csharp[DP L2E Conceptual Examples#ProjToAnonType2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#projtoanontype2)]
  [!code-vb[DP L2E Conceptual Examples#ProjToAnonType2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#projtoanontype2)]  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5cc2faf9768b60d49f573720df8763813000a6b4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 79e7a61f66a29ad4eeca1c6413b87d4b9ee9632e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54644341"
 ---
 # <a name="lttypeparametergt-element-net-native"></a>&lt;TypeParameter&gt; 요소(.NET 네이티브)
 메서드로 전달된 Type 인수가 나타내는 형식에 정책을 적용합니다.  
@@ -94,8 +94,8 @@ Object obj = JsonConvert.DeserializeObject(data, t);
   
  리플렉션 지시문은 런타임에 `StockQuote` 형식의 메타데이터를 NewtonSoft JSON serializer에 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [\<Method> 요소](../../../docs/framework/net-native/method-element-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+## <a name="see-also"></a>참고자료
+- [\<Method> 요소](../../../docs/framework/net-native/method-element-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)

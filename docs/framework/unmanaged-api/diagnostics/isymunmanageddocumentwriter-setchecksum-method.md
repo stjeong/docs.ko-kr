@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3b9b77b94e466a4aab4a575501ac6922293b3410
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d7a3fcd34f8cab6fa3c2949a4ee3270189b3dc77
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54730037"
 ---
 # <a name="isymunmanageddocumentwritersetchecksum-method"></a>ISymUnmanagedDocumentWriter::SetCheckSum 메서드
 체크섬 정보를 설정합니다.  
@@ -41,16 +41,16 @@ HRESULT SetCheckSum(
  [in] 알고리즘 식별자를 나타내는 GUID입니다.  
   
  `checkSumSize`  
- [in] A `ULONG32` 의 크기를 바이트 단위로 나타내는 `checkSum` 버퍼입니다.  
+ [in] A `ULONG32` 의 크기 (바이트) 나타내는 `checkSum` 버퍼입니다.  
   
  `checkSum`  
  [in] 체크섬 정보를 저장 하는 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedDocumentWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedDocumentWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)

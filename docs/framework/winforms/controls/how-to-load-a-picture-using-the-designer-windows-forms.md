@@ -1,5 +1,5 @@
 ---
-title: '방법: 디자이너를 사용하여 그림 로드(Windows Forms)'
+title: '방법: (Windows Forms) 디자이너를 사용 하 여 그림 로드'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - picture formats
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - forms [Windows Forms], displaying images
 - PictureBox control [Windows Forms], adding pictures
 ms.assetid: 4dc7b973-afb1-4276-8322-20825af96655
-ms.openlocfilehash: e01e5d1dc0fad8171e705e85debc2b15d6a506eb
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 6142474c2009e0998852dc28d346e73f4abbf1b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539092"
 ---
-# <a name="how-to-load-a-picture-using-the-designer-windows-forms"></a>방법: 디자이너를 사용하여 그림 로드(Windows Forms)
+# <a name="how-to-load-a-picture-using-the-designer-windows-forms"></a>방법: (Windows Forms) 디자이너를 사용 하 여 그림 로드
 Windows Forms를 사용 하 여 <xref:System.Windows.Forms.PictureBox> 컨트롤을 로드 하 고 설정 하 여 디자인 타임에 폼에 그림을 표시 합니다 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성을 유효한 그림을 합니다. 다음 표에서 허용 되는 파일 형식을 보여 줍니다.  
   
 |형식|파일 이름 확장명|  
@@ -43,9 +43,9 @@ Windows Forms를 사용 하 여 <xref:System.Windows.Forms.PictureBox> 컨트롤
   
 1.  에 **속성** 창에서를 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성과 이미지 개체의 이름 왼쪽에 표시 되는 작은 축소판 그림 이미지를 마우스 오른쪽 단추로 클릭 합니다. 선택할 **재설정**합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.PictureBox>  
- [PictureBox 컨트롤 개요](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)  
- [방법: 런타임에 그림의 크기 또는 위치 수정](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
- [방법: 런타임에 그림 설정](../../../../docs/framework/winforms/controls/how-to-set-pictures-at-run-time-windows-forms.md)  
- [PictureBox 컨트롤](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.PictureBox>
+- [PictureBox 컨트롤 개요](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)
+- [방법: 실행 시 크기 또는 그림의 위치 수정](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
+- [방법: 런타임에 그림 설정](../../../../docs/framework/winforms/controls/how-to-set-pictures-at-run-time-windows-forms.md)
+- [PictureBox 컨트롤](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)

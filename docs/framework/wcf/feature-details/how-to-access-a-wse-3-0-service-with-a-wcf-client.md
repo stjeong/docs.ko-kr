@@ -1,18 +1,18 @@
 ---
-title: '방법: WCF 클라이언트를 사용하여 WSE 3.0 서비스에 액세스'
+title: '방법: WSE 3.0 액세스 WCF 클라이언트를 사용 하 여 서비스'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
-ms.openlocfilehash: 3de4bb4546d3ee20e961ecf5a9d130e8e6c713a8
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d9824d4fdb7ffe78da8a8abaf3bac53d5c2e7ec2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580150"
 ---
-# <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>방법: WCF 클라이언트를 사용하여 WSE 3.0 서비스에 액세스
+# <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>방법: WSE 3.0 액세스 WCF 클라이언트를 사용 하 여 서비스
 Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가 2004 년 8 월 버전의 Ws-addressing 사양 사용 하도록 구성 된 하는 경우 Microsoft.NET 서비스용 유선 수준으로 호환 Web Services Enhancements (WSE) 3.0 사용 하 여 합니다. 그러나 WSE 3.0 서비스 지원 하지 않습니다 메타 데이터 교환 (MEX) 프로토콜은 지금 사용 하는 경우는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) WCF 클라이언트 클래스를 만들려면 보안 설정이 적용 되지 않습니다는 생성 된 WCF 클라이언트입니다. 따라서 보안 설정을 지정 해야 합니다는 WSE 3.0 서비스에 WCF 클라이언트 생성 된 후 필요 합니다.  
   
  WSE 3.0 서비스의 요구 사항 및 WSE 3.0 서비스와 WCF 클라이언트 간의 상호 운용 가능한 요구 사항을 고려해 야 할 사용자 지정 바인딩을 사용 하 여 이러한 보안 설정을 적용할 수 있습니다. 이러한 상호 운용성 요구 사항에는 앞에서 말한 August 2004 WS-Addressing 사양 및 WSE 3.0의 <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt> 기본 메시지 보호를 사용하는 것이 포함됩니다. WCF의 기본 메시지 보호는 <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>합니다. 이 항목에서는 WSE 3.0 서비스와 상호 운용 하는 WCF 바인딩을 만드는 방법을 자세히 설명 합니다. WCF는이 바인딩을 통합 하는 샘플도 제공 합니다. 이 샘플에 대 한 자세한 내용은 참조 하세요. [ASMX 웹 서비스와의 상호 운용](../../../../docs/framework/wcf/samples/interoperating-with-asmx-web-services.md)합니다.  
@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가
   
      WSE 3.0 웹 서비스의 경우 WCF 클라이언트 생성 됩니다. WSE 3.0이 MEX 프로토콜을 지원하지 않으므로 해당 도구를 사용하여 웹 서비스에 대한 보안 요구 사항을 검색할 수 없습니다. 응용 프로그램 개발자는 해당 클라이언트에 대한 보안 설정을 추가해야 합니다.  
   
-     WCF 클라이언트를 만드는 방법에 대 한 자세한 내용은 참조는 [방법: 클라이언트 만들기](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
+     WCF 클라이언트를 만드는 방법에 대 한 자세한 내용은 참조는 [방법: 클라이언트를 만드는](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
   
 2.  WSE 3.0 웹 서비스와 통신할 수 있는 바인딩을 나타내는 클래스를 만듭니다.  
   
@@ -62,6 +62,6 @@ Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가
   
   
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.Binding>  
- [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.Binding>
+- [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

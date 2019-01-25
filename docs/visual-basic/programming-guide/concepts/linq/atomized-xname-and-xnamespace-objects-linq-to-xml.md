@@ -1,16 +1,16 @@
 ---
-title: XName 및 XNamespace 개체 (LINQ to XML) 원자화 (Visual Basic)
+title: 원자화 된 XName 및 XNamespace 개체 (LINQ to XML) (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
-ms.openlocfilehash: e311de901a9a54bd4fc6ee56d425cc16b4978e8f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: adf766dcb69477fbad8581b075a7c0ee8a82f728
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623679"
 ---
-# <a name="atomized-xname-and-xnamespace-objects-linq-to-xml-visual-basic"></a>XName 및 XNamespace 개체 (LINQ to XML) 원자화 (Visual Basic)
-<xref:System.Xml.Linq.XName> 및 <xref:System.Xml.Linq.XNamespace> 개체는 *원자화*됩니다. 즉, 이들 개체의 정규화된 이름이 같으면 같은 개체를 참조합니다. 이를 통해 쿼리 성능이 향상될 수 있습니다. 두 개의 원자화된 이름이 같은지 비교하는 경우 기본 중간 언어에서 이 두 개의 참조가 같은 개체를 가리키는지 여부만 확인하면 됩니다. 기본 코드는 시간이 많이 걸리는 문자열 비교를 수행할 필요가 없습니다.  
+# <a name="atomized-xname-and-xnamespace-objects-linq-to-xml-visual-basic"></a>원자화 된 XName 및 XNamespace 개체 (LINQ to XML) (Visual Basic)
+<xref:System.Xml.Linq.XName> 및 <xref:System.Xml.Linq.XNamespace> 개체는 *원자화*됩니다. 즉, 이들 개체의 정규화된 이름이 같으면 같은 개체를 참조합니다. 이 쿼리 성능이 향상 됩니다. 두 개의 원자화 된 이름이 같은지를 비교 하는 경우 기본 중간 언어 복사본만 두 참조가 같은 개체를 가리키는지 여부를 결정 합니다. 기본 코드는 시간이 많이 걸리는 문자열 비교를 수행할 필요가 없습니다.  
   
 ## <a name="atomization-semantics"></a>원자화 의미 체계  
  원자화는 두 <xref:System.Xml.Linq.XName> 개체가 같은 로컬 이름을 갖고 있고 동일한 네임스페이스에 있는 경우 동일한 인스턴스를 공유함을 의미합니다. 마찬가지로 두 <xref:System.Xml.Linq.XNamespace> 개체가 같은 네임스페이스 URI를 갖고 있으면 같은 인스턴스를 공유합니다.  
@@ -69,5 +69,5 @@ Next
 <C1>1</C1>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [성능 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+## <a name="see-also"></a>참고자료
+- [성능 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)

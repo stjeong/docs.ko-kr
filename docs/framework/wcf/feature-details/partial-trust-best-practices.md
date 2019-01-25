@@ -2,15 +2,15 @@
 title: 부분 신뢰를 위한 최선의 방법
 ms.date: 03/30/2017
 ms.assetid: 0d052bc0-5b98-4c50-8bb5-270cc8a8b145
-ms.openlocfilehash: fca975ff4216384b970535273511eb07cd6ded68
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d63c9de4b1ea935b35f718056d191689f28c3813
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640110"
 ---
 # <a name="partial-trust-best-practices"></a>부분 신뢰를 위한 최선의 방법
-이 항목에서는 Windows Communication Foundation (WCF) 부분 신뢰 환경에서 실행 될 때 모범 사례를 설명 합니다.  
+이 항목에서는 부분 신뢰 환경에서 Windows Communication Foundation (WCF)를 실행 하는 경우 모범 사례를 설명 합니다.  
   
 ## <a name="serialization"></a>Serialization  
  부분 신뢰 응용 프로그램에서 <xref:System.Runtime.Serialization.DataContractSerializer>를 사용할 때 다음 방법을 적용합니다.  
@@ -45,26 +45,26 @@ ms.locfileid: "33497271"
 -   <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 인스턴스 메서드는 `public`여야 합니다.  
   
 ## <a name="using-wcf-from-fully-trusted-platform-code-that-allows-calls-from-partially-trusted-callers"></a>부분적으로 신뢰하는 호출자의 호출을 허용하는 완전히 신뢰할 수 있는 플랫폼 코드에서 WCF 사용  
- WCF 부분 신뢰 보안 모델에서는 WCF 공용 메서드 또는 속성의 모든 호출자가 호스팅 응용 프로그램의 코드 액세스 보안 (CA) 컨텍스트에서 실행 되 고 가정 합니다. WCF 각각에 대해 해당 하나의 응용 프로그램 보안 컨텍스트만 존재를 가정 합니다 <xref:System.AppDomain>, 및에이 컨텍스트에서 설치 된 <xref:System.AppDomain> 신뢰할 수 있는 호스트에 의해 생성 시간 (예를 들어를 호출 하 여 <xref:System.AppDomain.CreateDomain%2A> 또는 ASP.NET 응용 프로그램 관리자).  
+ WCF 부분 신뢰 보안 모델을 WCF 공용 메서드 또는 속성의 모든 호출자가 호스팅 응용 프로그램의 코드 액세스 보안 (CA) 컨텍스트에서 실행 되 고 있는지를 가정 합니다. WCF는 하나의 응용 프로그램 보안 컨텍스트만 존재 각각에 대해 가정 <xref:System.AppDomain>, 및이 컨텍스트의에 설치 된 <xref:System.AppDomain> 신뢰할 수 있는 호스트에서 만든 시간 (호출 하 여 예를 들어 <xref:System.AppDomain.CreateDomain%2A> 또는 ASP.NET 응용 프로그램 관리자가).  
   
- 이 보안 모델은 보통 신뢰 ASP.NET 응용 프로그램에서 실행되는 사용자 코드와 같은 추가 CAS 권한을 어설션할 수 없는 사용자가 작성한 응용 프로그램에 적용됩니다. 그러나 완전히 신뢰할 수 있는 플랫폼 코드 (예를 들어 전역 어셈블리 캐시에 설치 되 고 부분적으로 신뢰할 수 있는 코드의 호출을 허용 하는 타사 어셈블리) 주의 해야를 부분적으로 신뢰할 수 있는 응용 프로그램 대신 WCF를 호출할 경우 응용 프로그램 수준 보안 취약점 시 키 지 않도록 합니다.  
+ 이 보안 모델은 보통 신뢰 ASP.NET 응용 프로그램에서 실행되는 사용자 코드와 같은 추가 CAS 권한을 어설션할 수 없는 사용자가 작성한 응용 프로그램에 적용됩니다. 그러나 완전히 신뢰할 수 있는 플랫폼 코드 (예: 전역 어셈블리 캐시에 설치 되 고 부분적으로 신뢰할 수 있는 코드에서 호출을 수락 하는 타사 어셈블리) 주의 해야는 부분적으로 신뢰할 수 있는 응용 프로그램을 대신 하 여 WCF를 호출 하는 경우 응용 프로그램 수준 보안 취약점으로 인 한 않도록 해야 합니다.  
   
- 완전 신뢰 코드는 현재 스레드의 CAS 권한 집합을 변경 하지 않아야 (호출 하 여 <xref:System.Security.PermissionSet.Assert%2A>, <xref:System.Security.PermissionSet.PermitOnly%2A>, 또는 <xref:System.Security.PermissionSet.Deny%2A>) 부분적으로 신뢰할 수 있는 코드를 대신 하 여 WCF Api를 호출 하기 전에. 응용 프로그램 수준 보안 컨텍스트와 독립적인 스레드 관련 권한 컨텍스트를 어설션하거나 거부하거나 만들면 예기치 않은 동작이 발생할 수 있습니다. 응용 프로그램에 따라 이 동작으로 인해 응용 프로그램 수준의 보안이 취약해질 수 있습니다.  
+ 완전 신뢰 코드는 현재 스레드의 CAS 권한 집합을 변경 하지 않아야 (호출 하 여 <xref:System.Security.PermissionSet.Assert%2A>하십시오 <xref:System.Security.PermissionSet.PermitOnly%2A>, 또는 <xref:System.Security.PermissionSet.Deny%2A>) 부분적으로 신뢰할 수 있는 코드를 대신 하 여 WCF Api를 호출 하기 전에 합니다. 응용 프로그램 수준 보안 컨텍스트와 독립적인 스레드 관련 권한 컨텍스트를 어설션하거나 거부하거나 만들면 예기치 않은 동작이 발생할 수 있습니다. 응용 프로그램에 따라 이 동작으로 인해 응용 프로그램 수준의 보안이 취약해질 수 있습니다.  
   
- 스레드 관련 권한 컨텍스트를 사용 하 여 WCF에 대 한 호출이 발생할 수 있는 다음과 같은 상황을 처리할 준비가 되어 있어야 하는 코드의 경우:  
+ 스레드 관련 권한 컨텍스트를 사용 하 여 WCF에 대 한 호출은 발생할 수 있는 다음 상황을 처리할 준비가 되어 있어야 하는 코드:  
   
 -   작업을 수행하는 동안 스레드 관련 보안 컨텍스트가 유지되지 않을 수 있으며, 이로 인해 잠재적인 보안 예외가 발생할 수 있습니다.  
   
--   WCF는 내부 코드 뿐만 아니라 모든 사용자가 제공한 콜백은 원래 시작 된 호출은 1 보다 다른 보안 컨텍스트에서 실행할 수 있습니다. 이러한 컨텍스트는 다음과 같습니다.  
+-   내부 WCF 코드 뿐만 아니라 모든 사용자가 제공한 콜백은 원래 시작 된 호출 중인 것 보다 다른 보안 컨텍스트에서 실행할 수 있습니다. 이러한 컨텍스트는 다음과 같습니다.  
   
     -   응용 프로그램 권한 컨텍스트  
   
-    -   현재 실행 중인의 수명 동안 WCF를 호출 하는 데 사용 하는 다른 사용자 스레드가 이전에 만든 스레드 특정 권한 컨텍스트 <xref:System.AppDomain>합니다.  
+    -   현재 실행 중인 동안 WCF를 호출 하는 데는 다른 사용자 스레드가 이전에 만든 모든 스레드 관련 권한 컨텍스트 <xref:System.AppDomain>합니다.  
   
- WCF를 사용 하면 이러한 권한을 WCF 공용 Api 코드로 호출 하기 전에 완전히 신뢰할 수 있는 구성 요소에 의해 어설션 되지 않는 한 부분적으로 신뢰할 수 있는 코드 완전 신뢰 권한이 가져올 수 없습니다. 그러나 완전 신뢰 권한의 어설션 결과가 특정 스레드, 작업 또는 사용자 작업에만 적용되는 것은 아닙니다.  
+ WCF 보장 부분적으로 신뢰할 수 있는 코드는 WCF 공용 Api 코드로 호출 하기 전에 완전히 신뢰할 수 있는 구성 요소에서 이러한 권한을 어설션 하지 않는 한 완전 신뢰 권한이 가져올 수 없습니다. 그러나 완전 신뢰 권한의 어설션 결과가 특정 스레드, 작업 또는 사용자 작업에만 적용되는 것은 아닙니다.  
   
  가장 좋은 방법은 <xref:System.Security.PermissionSet.Assert%2A>, <xref:System.Security.PermissionSet.PermitOnly%2A> 또는 <xref:System.Security.PermissionSet.Deny%2A>를 호출하여 스레드 관련 권한 컨텍스트를 만들지 않는 것입니다. 대신 응용 프로그램 자체에 권한을 부여하거나 거부하면 <xref:System.Security.PermissionSet.Assert%2A>, <xref:System.Security.PermissionSet.Deny%2A> 또는 <xref:System.Security.PermissionSet.PermitOnly%2A>가 필요하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Xml.Serialization.IXmlSerializable>
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Xml.Serialization.IXmlSerializable>

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 78c511555065528d1ab34ee3ec9f8859a15bbc61
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 52077103277cdc4d32dfe3e44fcccffeec20295e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706867"
 ---
 # <a name="textpattern-and-embedded-objects-overview"></a>TextPattern 및 포함 개체 개요
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 개요에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에서 포함된 개체 또는 자식 요소를 텍스트 문서나 컨테이너 내에서 노출하는 방법을 설명합니다.  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 에서 포함된 개체란 예를 들어 이미지, 하이퍼링크, 테이블 또는 [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] 스프레드시트나 [!INCLUDE[TLA#tla_winmedia](../../../includes/tlasharptla-winmedia-md.md)] 파일 등의 문서 형식과 같이 텍스트가 아닌 범위를 가진 요소입니다. 이는 요소가 한 응용 프로그램에서 만들어져 다른 응용 프로그램 내에서 포함 또는 연결되는 표준 정의와 다릅니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서는 개체를 원래 응용 프로그램 내에서 편집할 수 있는지 여부가 중요하지 않습니다.  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 에서 포함된 개체란 예를 들어 이미지, 하이퍼링크, 테이블 또는 [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] 스프레드시트나 [!INCLUDE[TLA#tla_winmedia](../../../includes/tlasharptla-winmedia-md.md)] 파일 등의 문서 형식과 같이 텍스트가 아닌 범위를 가진 요소입니다. 이는 요소가 한 애플리케이션에서 만들어져 다른 애플리케이션 내에서 포함 또는 연결되는 표준 정의와 다릅니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서는 개체를 원래 응용 프로그램 내에서 편집할 수 있는지 여부가 중요하지 않습니다.  
   
 <a name="Embedded_Objects_and_the_UI_Automation_Tree"></a>   
 ## <a name="embedded-objects-and-the-ui-automation-tree"></a>포함된 개체 및 UI 자동화 트리  
@@ -150,12 +150,12 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 |<xref:System.Windows.Automation.GridPattern.GetItem%2A> 매개 변수는 (1,1)|테이블 셀의 내용을 나타내는 <xref:System.Windows.Automation.AutomationElement>를 반환합니다. 이 예제에서 요소는 텍스트 컨트롤입니다.|  
 |<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement>는 이전 `GetItem` 메서드에서 반환되는 개체입니다.|"Y"를 반환합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.TextPattern>  
- <xref:System.Windows.Automation.Text.TextPatternRange>  
- <xref:System.Windows.Automation.Provider.ITextProvider>  
- <xref:System.Windows.Automation.Provider.ITextRangeProvider>  
- [UI 자동화를 사용하여 포함 개체에 액세스](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)  
- [UI 자동화를 사용하여 표의 콘텐츠 노출](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)  
- [UI 자동화를 사용하여 텍스트 이동](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.TextPattern>
+- <xref:System.Windows.Automation.Text.TextPatternRange>
+- <xref:System.Windows.Automation.Provider.ITextProvider>
+- <xref:System.Windows.Automation.Provider.ITextRangeProvider>
+- [UI 자동화를 사용하여 포함 개체에 액세스](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
+- [UI 자동화를 사용하여 표의 콘텐츠 노출](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)
+- [UI 자동화를 사용하여 텍스트 이동](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)
+- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)

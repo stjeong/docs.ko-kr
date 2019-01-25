@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0a89474ddfe3bcde1c44271818b7e3c730469f48
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 023759ea3d1401dbc166873d14d2c51502a1a96c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744143"
 ---
 # <a name="net-native-and-compilation"></a>.NET 네이티브 및 컴파일
 .NET Framework를 대상으로 지정하는 Windows 8.1 응용 프로그램과 Windows 데스크톱 응용 프로그램은 특정 프로그래밍 언어로 작성되고 IL(중간 언어)로 컴파일됩니다. 런타임에 JIT(Just-In-Time) 컴파일러는 메서드가 처음 실행되기 바로 전에 로컬 컴퓨터에 대한 네이티브 코드로 IL을 컴파일합니다. 반대로 .NET 네이티브 도구 체인은 컴파일 타임에 소스 코드를 네이티브 코드로 변환합니다. 이 항목에서는 .NET Framework 앱에 사용할 수 있는 다른 컴파일 기술과 .NET 네이티브를 비교하고 .NET 네이티브로 컴파일된 코드에서 발생하는 예외가 JIT로 컴파일된 코드에서 발생하지 않는 이유를 이해하는 데 도움이 될 수 있는 네이티브 코드를 .NET 네이티브에서 생성하는 방법에 대한 실제적인 개요를 제공합니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "53152528"
   
 -   *\<appName>*.exe - 컨트롤을 *\<appName>*.dll의 특수 `Main` 내보내기에 전송하는 스텁 실행 파일.  
   
--   *\<appName>*.dll - 모든 응용 프로그램 코드와 종속성이 있는 .NET Framework 클래스 라이브러리 및 타사 라이브러리의 코드가 들어 있는 Windows 동적 링크 라이브러리.  Windows와 상호 운용하고 앱에서 개체를 직렬화하는 데 필요한 코드와 같은 지원 코드도 포함됩니다.  
+-   *\<appName&gt;*.dll - 모든 애플리케이션 코드와 종속성이 있는 .NET Framework 클래스 라이브러리 및 타사 라이브러리의 코드가 들어 있는 Windows 동적 링크 라이브러리.  Windows와 상호 운용하고 앱에서 개체를 직렬화하는 데 필요한 코드와 같은 지원 코드도 포함됩니다.  
   
 -   mrt100_app.dll - 가비지 수집과 같은 런타임 서비스를 제공하는 리팩터링된 런타임.  
   
@@ -100,8 +100,8 @@ ms.locfileid: "53152528"
   
 -   NGEN 이미지는 손상되기 쉽습니다. 예를 들어 종속성에 패치나 변경을 적용하려면 일반적으로 패치나 변경을 사용하는 어셈블리도 다시 NGEN되어야 합니다. 이는 특히 .NET Framework 클래스 라이브러리의 시스템 라이브러리에 적용됩니다. 반대로 .NET 네이티브에서는 응용 프로그램을 서로 독립적으로 처리할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 및 자동 기술 구성 요소](../../../docs/standard/metadata-and-self-describing-components.md)  
- [내부.NET 네이티브 (Channel 9 비디오)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)  
- [.NET 네이티브 일반 문제 해결](../../../docs/framework/net-native/net-native-general-troubleshooting.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 및 자동 기술 구성 요소](../../../docs/standard/metadata-and-self-describing-components.md)
+- [내부.NET 네이티브 (Channel 9 비디오)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
+- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)
+- [.NET 네이티브 일반 문제 해결](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

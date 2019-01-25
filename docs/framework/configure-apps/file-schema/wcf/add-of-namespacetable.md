@@ -2,19 +2,19 @@
 title: '&lt;namespaceTable&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: ef4f1c46a0ee3b94e5548b752e4e0a6a759fd45b
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1d3b61fa6653b3910e65b95fa96fd0657e72bf7d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54632911"
 ---
 # <a name="ltaddgt-of-ltnamespacetablegt"></a>&lt;namespaceTable&gt;의 &lt;add&gt;
 매핑을 앞에 붙인 다음 XPath 필터에서 라우팅에 사용할 수 있는 네임스페이스를 포함하는 구성 요소를 나타냅니다.  
   
  \<system.serviceModel>  
 \<라우팅 >  
-\<namespaceTable >  
+\<namespaceTable>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -48,7 +48,7 @@ ms.locfileid: "54149516"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<namespaceTable >](../../../../../docs/framework/configure-apps/file-schema/wcf/namespacetable.md)|매핑을 앞에 붙인 다음 XPath 필터에서 라우팅에 사용할 수 있는 네임스페이스를 포함하는 요소 집합을 정의하기 위한 구성 섹션을 나타냅니다.|  
+|[\<namespaceTable>](../../../../../docs/framework/configure-apps/file-schema/wcf/namespacetable.md)|매핑을 앞에 붙인 다음 XPath 필터에서 라우팅에 사용할 수 있는 네임스페이스를 포함하는 요소 집합을 정의하기 위한 구성 섹션을 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>    
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>

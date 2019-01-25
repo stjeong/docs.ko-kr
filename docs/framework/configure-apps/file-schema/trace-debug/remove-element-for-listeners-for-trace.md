@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 54fd529c571c8e8cf43c5dabe2398ae4a6cf4f11
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: d2e68a93840022776530bb9ed2f94a7505a8a3b6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642794"
 ---
 # <a name="ltremovegt-element-for-ltlistenersgt-for-lttracegt"></a>&lt;제거할&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
 수신기를 제거 합니다 **수신기** 컬렉션입니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<추적 >  
-\<수신기 >  
+\<system.diagnostics>  
+\<trace>  
+\<listeners>  
 \<remove>  
   
 ## <a name="syntax"></a>구문  
@@ -47,7 +47,7 @@ ms.locfileid: "48030539"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`listeners`|저장소를 수집 하는 수신기를 지정 하 고 메시지를 라우팅합니다. 수신기는 추적 출력을 적절 한 대상입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`trace`|ASP.NET 추적 서비스를 구성합니다.|  
@@ -72,9 +72,9 @@ ms.locfileid: "48030539"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

@@ -2,22 +2,22 @@
 title: '&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;'
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 82fb39f15ea0dbf38d9c9b41d7fbdd50daebb823
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2f1d95238a16bfd286a64973c6e5cfb95fe02dc4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744880"
 ---
 # <a name="ltservicecertificategt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;
 클라이언트에 대해 서비스를 인증할 때 사용할 인증서를 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
-\<serviceCertificate >  
+\<serviceCertificate>  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,8 +35,8 @@ ms.locfileid: "54151984"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<defaultCertificate >](../../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md)|서비스 또는 STS가 협상 프로토콜을 통해 인증서를 제공하지 않을 때 사용할 X.509 인증서를 지정합니다.|  
-|[\<scopedCertificates >](../../../../../docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md)|인증에 대해 범위가 지정된 특정 서비스가 제공하는 X.509 인증서 컬렉션을 나타냅니다. 이 컬렉션은 일반적으로 연합 시나리오에서 보안 토큰 서비스에 대한 서비스 인증서를 지정하는 데 사용됩니다.|  
+|[\<defaultCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md)|서비스 또는 STS가 협상 프로토콜을 통해 인증서를 제공하지 않을 때 사용할 X.509 인증서를 지정합니다.|  
+|[\<scopedCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md)|인증에 대해 범위가 지정된 특정 서비스가 제공하는 X.509 인증서 컬렉션을 나타냅니다. 이 컬렉션은 일반적으로 연합 시나리오에서 보안 토큰 서비스에 대한 서비스 인증서를 지정하는 데 사용됩니다.|  
 |[\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)|클라이언트에 사용되는 서비스 인증서의 인증 동작을 지정합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
@@ -50,14 +50,14 @@ ms.locfileid: "54151984"
   
  특성을 `serviceCertificate` 요소의 특성과 동일 합니다 [ \<clientCertificate >](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.ServiceCertificate%2A>  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

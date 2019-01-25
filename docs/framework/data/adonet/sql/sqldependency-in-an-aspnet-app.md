@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ff226ce3-f6b5-47a1-8d22-dc78b67e07f5
-ms.openlocfilehash: 5465238e4b9deaa13c76cb35122fcaded7acd7f7
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: e80d01c01ed0b2558c86aefea0f554926f40e509
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573665"
 ---
 # <a name="sqldependency-in-an-aspnet-application"></a>ASP.NET 응용 프로그램에서 SqlDependency
 이 단원의 예제에서는 ASP.NET <xref:System.Data.SqlClient.SqlDependency> 개체를 활용하여 <xref:System.Web.Caching.SqlCacheDependency>를 간접적으로 사용하는 방법을 보여 줍니다. <xref:System.Web.Caching.SqlCacheDependency> 개체에서는 <xref:System.Data.SqlClient.SqlDependency>를 사용하여 알림을 수신하고 캐시를 올바르게 업데이트합니다.  
@@ -52,11 +52,11 @@ ms.locfileid: "43864841"
      [!code-csharp[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#2)]
      [!code-vb[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#2)]  
   
-### <a name="testing-the-application"></a>응용 프로그램 테스트  
+### <a name="testing-the-application"></a>애플리케이션 테스트  
  응용 프로그램에서는 Web Form에 표시된 데이터를 캐시하고 활동이 없으면 3분마다 새로 고칩니다. 데이터베이스가 변경되면 즉시 캐시를 새로 고칩니다. Visual Studio에서 응용 프로그램을 실행합니다. 그러면 페이지가 브라우저로 로드됩니다. 표시된 캐시 새로 고침 시간은 캐시가 마지막으로 새로 고쳐진 시간을 나타냅니다. 3분을 기다렸다 페이지를 다시 고쳐서 포스트백 이벤트가 발생하도록 합니다. 페이지에 표시된 시간이 변경됩니다. 3분이 지나기 전에 페이지를 새로 고치면 페이지에 표시된 시간이 동일하게 유지됩니다.  
   
  이제 Transact-SQL UPDATE 명령을 사용하여 데이터베이스의 데이터를 업데이트하고 페이지를 새로 고칩니다. 이제 표시된 시간을 보면 캐시가 데이터베이스의 새 데이터로 새로 고쳐졌음을 알 수 있습니다. 캐시가 업데이트되었지만 포스트백 이벤트가 발생할 때까지는 페이지에 표시된 시간이 변경되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

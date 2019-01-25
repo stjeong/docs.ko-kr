@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-ms.openlocfilehash: d15765b7673f321d4362ceea0adb73959a7e7726
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 17042f60eb27c41640ef5d8c927c7acc5bc73183
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582660"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712628"
 ---
 # <a name="myforms-object"></a>My.Forms 개체
 현재 프로젝트에 선언 된 각 Windows form의 인스턴스에 액세스 하기 위한 속성을 제공 합니다.  
@@ -58,19 +58,19 @@ ms.locfileid: "48582660"
   
 |프로젝트 형식|사용 가능|  
 |---|---|  
-|Windows 응용 프로그램|**예**|  
+|Windows 애플리케이션|**예**|  
 |클래스 라이브러리|아니요|  
-|콘솔 응용 프로그램|아니요|  
+|콘솔 애플리케이션|아니요|  
 |Windows 컨트롤 라이브러리|아니요|  
 |웹 컨트롤 라이브러리|아니요|  
 |Windows 서비스|아니요|  
 |웹 사이트|아니요|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Form.Close%2A>  
- [개체](../../../visual-basic/language-reference/objects/index.md)  
- [Is 연산자](../../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot 연산자](../../../visual-basic/language-reference/operators/isnot-operator.md)  
- [응용 프로그램 폼 액세스](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Form.Close%2A>
+- [개체](../../../visual-basic/language-reference/objects/index.md)
+- [Is 연산자](../../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot 연산자](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [응용 프로그램 폼 액세스](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)

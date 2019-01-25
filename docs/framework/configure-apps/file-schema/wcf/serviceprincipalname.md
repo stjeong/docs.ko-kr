@@ -2,12 +2,12 @@
 title: '&lt;servicePrincipalName&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
-ms.openlocfilehash: a22a905744980d0b370023e6236734a9bb0d6357
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 5d65b5956491e30066ece54a48374f1d7014552e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54657594"
 ---
 # <a name="ltserviceprincipalnamegt"></a>&lt;servicePrincipalName&gt;
 SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.  
@@ -15,7 +15,7 @@ SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.
  SPN을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
   
  \<identity>  
-\<서비스 사용자 이름 >  
+\<servicePrincipalName>  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,10 +44,10 @@ SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.
 ## <a name="remarks"></a>설명  
  이 id 가진 끝점과 연결 하는 안전한 Windows Communication Foundation (WCF) 클라이언트 끝점과 SSPI 인증을 수행할 때 SPN을 사용 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
- <xref:System.ServiceModel.SpnEndpointIdentity>  
- [서비스 ID 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.SpnEndpointIdentity>
+- [서비스 ID 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

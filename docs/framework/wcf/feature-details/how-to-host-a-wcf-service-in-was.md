@@ -2,17 +2,17 @@
 title: '방법: WAS에서 WCF 서비스 호스팅'
 ms.date: 03/30/2017
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
-ms.openlocfilehash: fd48957f7f8410b4b0df39fe125c35e4fc98cb8e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 9094cf04ed1bc9fabe8d9df11b876007f322679a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43746826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651177"
 ---
 # <a name="how-to-host-a-wcf-service-in-was"></a>방법: WAS에서 WCF 서비스 호스팅
 호스 티 드 Windows Communication Foundation (WCF) 서비스를이 항목에서는 Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. WAS는 HTTP가 아닌 전송 프로토콜에서 사용하는 IIS(Internet Information Services) 기능의 일반화인 새 프로세스 활성화 서비스입니다. WCF는 TCP, 명명 된 파이프 및 메시지 큐와 같은 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 하는 수신기 어댑터 인터페이스를 사용 합니다.  
   
- 이 호스팅 옵션을 사용하려면 WAS 활성화 구성 요소를 적절히 설치하여 구성해야 하지만 호스팅 코드를 응용 프로그램의 일부로 작성하지 않아도 됩니다. WAS 설치 및 구성 하는 방법에 대 한 자세한 내용은 참조 하십시오 [방법: 설치 및 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
+ 이 호스팅 옵션을 사용하려면 WAS 활성화 구성 요소를 적절히 설치하여 구성해야 하지만 호스팅 코드를 응용 프로그램의 일부로 작성하지 않아도 됩니다. WAS 설치 및 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 설치 하 고 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
   
 > [!WARNING]
 >  웹 서버의 요청 처리 파이프라인이 클래식 모드로 설정된 경우 WAS 활성화가 지원되지 않습니다. WAS 활성화를 사용할 경우 웹 서버의 요청 처리 파이프라인이 통합 모드로 설정되어 있어야 합니다.  
@@ -98,6 +98,6 @@ ms.locfileid: "43746826"
   
 6.  클라이언트를 컴파일하고 실행합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)  
- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
+## <a name="see-also"></a>참고자료
+- [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

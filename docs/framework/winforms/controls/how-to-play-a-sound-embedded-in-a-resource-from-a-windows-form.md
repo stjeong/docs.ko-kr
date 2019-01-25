@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Form에서 리소스에 포함된 소리 재생'
+title: '방법: Windows Form에서 리소스에 포함 된 소리 재생'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - playing sounds [Windows Forms], from resources
 - SoundPlayer class [Windows Forms], playing sounds from resources
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
-ms.openlocfilehash: c9dc8499e2d12ed17f9b409a805148d08da894fc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 390f70acc99d8950a23ce514d90c79c3da765f2a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631336"
 ---
-# <a name="how-to-play-a-sound-embedded-in-a-resource-from-a-windows-form"></a>방법: Windows Form에서 리소스에 포함된 소리 재생
+# <a name="how-to-play-a-sound-embedded-in-a-resource-from-a-windows-form"></a>방법: Windows Form에서 리소스에 포함 된 소리 재생
 사용할 수는 <xref:System.Media.SoundPlayer> 포함된 리소스에서 소리를 재생 하는 클래스입니다.  
   
 ## <a name="example"></a>예제  
@@ -33,7 +33,7 @@ ms.locfileid: "33532137"
   
  "\<AssemblyName>"을 사운드 파일이 포함된 어셈블리의 이름으로 바꿉니다. ".dll" 접미사는 포함하지 마세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Media.SoundPlayer>  
- [방법: Windows Form에서 소리 재생](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
- [방법: Windows Form에서 소리 재생 반복](../../../../docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Media.SoundPlayer>
+- [방법: Windows Form에서 소리 재생](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+- [방법: Windows Form에서 소리 재생 반복](../../../../docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md)

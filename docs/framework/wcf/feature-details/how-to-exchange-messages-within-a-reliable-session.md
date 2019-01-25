@@ -2,12 +2,12 @@
 title: '방법: 신뢰할 수 있는 세션 내에서 메시지 교환'
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 53e5661bf140540cd0fc7a9fcb739b67488b8491
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0b03845f9638a3646c72b1210de12dd94cf4cc9f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720056"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>방법: 신뢰할 수 있는 세션 내에서 메시지 교환
 
@@ -75,8 +75,8 @@ ms.locfileid: "50195738"
 
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>
 
-신뢰할 수 있는 세션을 지 원하는 사용자 지정 바인딩을 만드는 방법의 예제를 참조 하세요 [방법: HTTPS를 사용 하 여 사용자 지정 신뢰할 수 있는 세션 바인딩 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md)합니다.
+신뢰할 수 있는 세션을 지 원하는 사용자 지정 바인딩을 만드는 방법의 예제를 참조 하세요. [방법: HTTPS를 사용 하 여 사용자 지정 신뢰할 수 있는 세션 바인딩 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[신뢰할 수 있는 세션](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [신뢰할 수 있는 세션](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)

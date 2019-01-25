@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], consuming services
 ms.assetid: d780af9f-73c5-42db-9e52-077a5e4de7fe
-ms.openlocfilehash: 0678300fca4442cf90dd15c5a4e011d80656eac6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 97340f8583ef0900645f6db5c453475e85549c55
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43478158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620198"
 ---
 # <a name="accessing-services-using-a-wcf-client"></a>WCF 클라이언트를 사용하여 서비스 액세스
 
@@ -52,7 +52,7 @@ Svcutil.exe <file1 [,file2]>
  파일 이름을 제공하면 해당 이름이 출력 파일의 이름이 됩니다. 두 개의 파일 이름을 제공하면 첫 번째 파일은 입력 구성 파일로, 해당 내용이 생성된 구성과 병합되어 두 번째 파일에 기록됩니다. 구성에 대 한 자세한 내용은 참조 하세요. [서비스에 대 한 바인딩을 구성](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)합니다.
 
 > [!IMPORTANT]
-> 보안되지 않은 메타데이터 요청은 보안되지 않은 네트워크 요청과 동일한 방식으로 특정 위험을 노출합니다. 통신하는 엔드포인트가 실제로 주장되는 엔드포인트인지 확실하지 않을 경우 검색한 정보가 악성 서비스의 메타데이터일 수 있습니다.
+> 특정 위험 모든 안전 하지 않은 네트워크 요청과 동일한 방식으로을 노출 하는 보안 되지 않은 메타 데이터 요청: 가 아닌 특정 사용자는 통신 하는 끝점을 검색 한 정보가 악성 서비스의 메타 데이터를 수 있습니다.
 
 ## <a name="add-service-reference-in-visual-studio"></a>Visual Studio의 서비스 참조 추가
 
@@ -178,22 +178,22 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
 WCF 클라이언트에서 throw 된 많은 예외는 서비스의 예외로 인해 발생 합니다. 다음은 이를 보여 주는 몇 가지 예입니다.
 
--   <xref:System.Net.Sockets.SocketException>: 기존 연결이 원격 호스트에 의해 강제로 닫혔습니다.
+-   <xref:System.Net.Sockets.SocketException>: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다.
 
 -   <xref:System.ServiceModel.CommunicationException>: 기본 연결이 예기치 않게 닫혔습니다.
 
--   <xref:System.ServiceModel.CommunicationObjectAbortedException>: 소켓 연결이 중단되었습니다. 이는 메시지 처리 오류, 원격 호스트에 의해 초과되는 수신 제한 시간 또는 기본 네트워크 리소스 문제로 인해 발생할 수 있습니다.
+-   <xref:System.ServiceModel.CommunicationObjectAbortedException>: 소켓 연결이 중단 되었습니다. 이는 메시지 처리 오류, 원격 호스트에 의해 초과되는 수신 제한 시간 또는 기본 네트워크 리소스 문제로 인해 발생할 수 있습니다.
 
 이러한 형식의 예외가 발생할 때 가장 좋은 문제 해결 방법은 서비스측에 추적 기능을 설정하고 발생한 예외를 확인하는 것입니다. 추적에 대 한 자세한 내용은 참조 하세요. [추적](../../../docs/framework/wcf/diagnostics/tracing/index.md) 하 고 [응용 프로그램 문제 해결을 사용 하 여 추적](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [방법: 이중 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [방법: 비동기적으로 서비스 작업 호출](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
-- [방법: 단방향 및 요청-회신 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
-- [방법: WSE 3.0 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [방법: 이중 계약을와 함께 access Services](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [방법: 서비스 작업을 비동기적으로 호출](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [방법: 단방향를 사용 하 여 서비스에 액세스 및 요청-회신 계약](../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [방법: WSE 3.0 액세스 서비스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
 - [생성된 클라이언트 코드 이해](../../../docs/framework/wcf/feature-details/understanding-generated-client-code.md)
-- [방법: XmlSerializer를 사용하여 WCF 클라이언트 응용 프로그램의 시작 시간 개선](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+- [방법: 시작 시간의 WCF 클라이언트 응용 프로그램 개선 XmlSerializer를 사용 하 여](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
 - [클라이언트 런타임 동작 지정](../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
 - [클라이언트 동작 구성](../../../docs/framework/wcf/configuring-client-behaviors.md)

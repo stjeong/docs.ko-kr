@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows 자격 증명을 사용하여 서비스에 보안 설정'
+title: '방법: Windows 자격 증명을 사용 하 여 서비스에 보안 설정'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-ms.openlocfilehash: c47539e0c614992efd74296171034b8091ba3f15
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 83b55ca42a3cebb6ceb2aec128202f14dc35da0a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54657560"
 ---
-# <a name="how-to-secure-a-service-with-windows-credentials"></a>방법: Windows 자격 증명을 사용하여 서비스에 보안 설정
+# <a name="how-to-secure-a-service-with-windows-credentials"></a>방법: Windows 자격 증명을 사용 하 여 서비스에 보안 설정
 이 항목에서는 Windows 도메인에 있고 동일한 도메인의 클라이언트에서 호출 되는 Windows Communication Foundation (WCF) 서비스에서 전송 보안을 사용 하는 방법을 보여 줍니다. 이 시나리오에 대 한 자세한 내용은 참조 하세요. [Windows 인증을 사용 하 여 전송 보안](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)합니다. 샘플 응용 프로그램에 대 한 참조를 [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플입니다.  
   
  이 항목에서는 사용자의 기존 계약 인터페이스 및 구현이 이미 정의되어 있다고 가정하고 여기에 더 추가합니다. 사용자는 기존 서비스 및 클라이언트를 수정할 수도 있습니다.  
@@ -74,7 +74,7 @@ ms.locfileid: "50183323"
   
 ##### <a name="to-use-a-binding-in-a-client-with-code"></a>코드를 통해 클라이언트에 바인딩을 사용하려면  
   
-1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드를 생성합니다. 자세한 내용은 [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다. 생성된 된 프록시 코드에서 상속 된 <xref:System.ServiceModel.ClientBase%601> 클래스를 사용 하면 모든 클라이언트에 필요한 생성자, 메서드 및 속성을 WCF 서비스와 통신 합니다. 이 예제에서 생성된 코드에는 `CalculatorClient` 인터페이스를 구현하는 `ICalculator` 클래스가 포함되어 서비스 코드와의 호환성을 지원합니다.  
+1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드를 생성합니다. 자세한 내용은 [방법: 클라이언트를 만드는](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다. 생성된 된 프록시 코드에서 상속 된 <xref:System.ServiceModel.ClientBase%601> 클래스를 사용 하면 모든 클라이언트에 필요한 생성자, 메서드 및 속성을 WCF 서비스와 통신 합니다. 이 예제에서 생성된 코드에는 `CalculatorClient` 인터페이스를 구현하는 `ICalculator` 클래스가 포함되어 서비스 코드와의 호환성을 지원합니다.  
   
 2.  이 프로시저의 코드는 클라이언트 프로그램에 대한 `Main` 메서드의 시작 부분에 삽입됩니다.  
   
@@ -127,7 +127,7 @@ ms.locfileid: "50183323"
   
 ##### <a name="to-use-a-binding-in-a-client-with-configuration"></a>구성을 통해 클라이언트에 바인딩을 사용하려면  
   
-1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드 및 구성 파일을 생성합니다. 자세한 내용은 [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
+1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드 및 구성 파일을 생성합니다. 자세한 내용은 [방법: 클라이언트를 만드는](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
   
 2.  대체는 [ \<바인딩 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) 이전 섹션에서 구성 코드를 사용 하 여 생성 된 구성 파일의 섹션입니다.  
   
@@ -147,9 +147,9 @@ ms.locfileid: "50183323"
  [!code-csharp[c_SecureWindowsClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#0)] 
  [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.WSHttpBinding>  
- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)  
- [보안 개요](../../../docs/framework/wcf/feature-details/security-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.WSHttpBinding>
+- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [서비스에 보안 설정](../../../docs/framework/wcf/securing-services.md)
+- [보안 개요](../../../docs/framework/wcf/feature-details/security-overview.md)

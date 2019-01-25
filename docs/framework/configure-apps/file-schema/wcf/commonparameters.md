@@ -2,20 +2,20 @@
 title: '&lt;commonParameters&gt;'
 ms.date: 03/30/2017
 ms.assetid: ffc20832-34d6-4622-8174-81924fd53514
-ms.openlocfilehash: d16807d9faae427d8c22aafc1e1f4f04e5cb13b7
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2b8a6e5ba670657afda6fd8c64024a330650a9b7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626838"
 ---
 # <a name="ltcommonparametersgt"></a>&lt;commonParameters&gt;
 여러 서비스에서 전역적으로 사용되는 매개 변수의 컬렉션을 나타냅니다. 일반적으로 이 컬렉션에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<workflowRuntime>  
 \<commonParameters>  
   
@@ -104,11 +104,11 @@ config.Save();
 </commonParameters>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>  
- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>  
- <xref:System.Workflow.Runtime.WorkflowRuntime>  
- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>  
- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>  
- [워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))  
- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-commonparameters.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
+- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
+- <xref:System.Workflow.Runtime.WorkflowRuntime>
+- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
+- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
+- [워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-commonparameters.md)

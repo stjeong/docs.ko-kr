@@ -9,12 +9,12 @@ helpviewer_keywords:
 - animation [WPF], Booleans with key frames
 - key frames [WPF], animating Booleans with
 ms.assetid: 4b0fac96-6231-4fcf-9775-4dd673ddc785
-ms.openlocfilehash: 0142748a5c8e9a4375802d1b48beec0501d37e7c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3752378d280708ffd40eaac160589af4674467e2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689106"
 ---
 # <a name="how-to-animate-a-boolean-by-using-key-frames"></a>방법: 키 프레임을 사용하여 부울에 애니메이션 효과 주기
 이 예제에서는 부울 속성 값에 애니메이션 효과 <xref:System.Windows.Controls.Button> 키 프레임을 사용 하 여 제어 합니다.  
@@ -28,9 +28,9 @@ ms.locfileid: "43521076"
   
  전체 샘플을 보려면 [키 프레임 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160012)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.BooleanAnimationUsingKeyFrames>  
- <xref:System.Windows.UIElement.IsEnabled%2A>  
- <xref:System.Windows.Controls.Button>  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.BooleanAnimationUsingKeyFrames>
+- <xref:System.Windows.UIElement.IsEnabled%2A>
+- <xref:System.Windows.Controls.Button>
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
