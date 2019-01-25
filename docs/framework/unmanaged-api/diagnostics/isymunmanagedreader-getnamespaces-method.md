@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f50a5cb1f16be44b03cd94b69fdf32efa9e9007b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5227de340bec85620f8c8d45538ad9a9d7f688fb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33425144"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54630959"
 ---
-# <a name="isymunmanagedreadergetnamespaces-method"></a><span data-ttu-id="43447-102">ISymUnmanagedReader::GetNamespaces 메서드</span><span class="sxs-lookup"><span data-stu-id="43447-102">ISymUnmanagedReader::GetNamespaces Method</span></span>
-<span data-ttu-id="43447-103">이 기호 저장소 내의 전역 범위에서 정의 된 네임 스페이스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="43447-103">Gets the namespaces defined at global scope within this symbol store.</span></span>  
+# <a name="isymunmanagedreadergetnamespaces-method"></a><span data-ttu-id="50351-102">ISymUnmanagedReader::GetNamespaces 메서드</span><span class="sxs-lookup"><span data-stu-id="50351-102">ISymUnmanagedReader::GetNamespaces Method</span></span>
+<span data-ttu-id="50351-103">이 기호 저장소 내의 전역 범위에서 정의 된 네임 스페이스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="50351-103">Gets the namespaces defined at global scope within this symbol store.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="43447-104">구문</span><span class="sxs-lookup"><span data-stu-id="43447-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="50351-104">구문</span><span class="sxs-lookup"><span data-stu-id="50351-104">Syntax</span></span>  
   
 ```  
 HRESULT GetNamespaces (  
@@ -38,21 +38,21 @@ HRESULT GetNamespaces (
         ISymUnmanagedNamespace*  namespaces[]);  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="43447-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="43447-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="50351-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="50351-105">Parameters</span></span>  
  `cNameSpaces`  
- <span data-ttu-id="43447-106">[in] 네임 스페이스 배열의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="43447-106">[in] The size of the namespaces array.</span></span>  
+ <span data-ttu-id="50351-106">[in] 네임 스페이스 배열의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="50351-106">[in] The size of the namespaces array.</span></span>  
   
  `pcNameSpaces`  
- <span data-ttu-id="43447-107">[out] 네임 스페이스 목록의 길이 받는 변수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="43447-107">[out] A pointer to a variable that receives the length of the namespace list.</span></span>  
+ <span data-ttu-id="50351-107">[out] 네임 스페이스 목록 길이 수신 하는 변수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="50351-107">[out] A pointer to a variable that receives the length of the namespace list.</span></span>  
   
  `namespaces`  
- <span data-ttu-id="43447-108">[out] 네임 스페이스 목록을 수신 하는 변수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="43447-108">[out] A pointer to a variable that receives the namespace list.</span></span>  
+ <span data-ttu-id="50351-108">[out] 네임 스페이스 목록에서 받는 변수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="50351-108">[out] A pointer to a variable that receives the namespace list.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="43447-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="43447-109">Return Value</span></span>  
- <span data-ttu-id="43447-110">메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="43447-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="50351-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="50351-109">Return Value</span></span>  
+ <span data-ttu-id="50351-110">메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="50351-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="43447-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="43447-111">Requirements</span></span>  
- <span data-ttu-id="43447-112">**Header:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="43447-112">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="50351-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="50351-111">Requirements</span></span>  
+ <span data-ttu-id="50351-112">**헤더:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="50351-112">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="43447-113">참고 항목</span><span class="sxs-lookup"><span data-stu-id="43447-113">See Also</span></span>  
- [<span data-ttu-id="43447-114">ISymUnmanagedReader 인터페이스</span><span class="sxs-lookup"><span data-stu-id="43447-114">ISymUnmanagedReader Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## <a name="see-also"></a><span data-ttu-id="50351-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="50351-113">See also</span></span>
+- [<span data-ttu-id="50351-114">ISymUnmanagedReader 인터페이스</span><span class="sxs-lookup"><span data-stu-id="50351-114">ISymUnmanagedReader Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

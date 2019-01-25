@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 93c8256ae95108f0800b56869d67570c4e42202e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 204cfc110ec6c8a11ec37505f8cf0c70d619e4b2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33416899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660816"
 ---
-# <a name="icordebugnativeframecansetip-method"></a><span data-ttu-id="da6a8-102">ICorDebugNativeFrame::CanSetIP 메서드</span><span class="sxs-lookup"><span data-stu-id="da6a8-102">ICorDebugNativeFrame::CanSetIP Method</span></span>
-<span data-ttu-id="da6a8-103">네이티브 코드에서 지정된 된 오프셋된 위치를은 IP (명령 포인터)를 설정할 수 있는지 여부를 나타내는 HRESULT를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="da6a8-103">Gets an HRESULT that indicates whether it is safe to set the instruction pointer (IP) to the specified offset location in native code.</span></span>  
+# <a name="icordebugnativeframecansetip-method"></a><span data-ttu-id="9a297-102">ICorDebugNativeFrame::CanSetIP 메서드</span><span class="sxs-lookup"><span data-stu-id="9a297-102">ICorDebugNativeFrame::CanSetIP Method</span></span>
+<span data-ttu-id="9a297-103">네이티브 코드에서 지정된 된 오프셋된 위치에는 IP (명령 포인터)를 설정할 수 인지 여부를 나타내는 HRESULT를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="9a297-103">Gets an HRESULT that indicates whether it is safe to set the instruction pointer (IP) to the specified offset location in native code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="da6a8-104">구문</span><span class="sxs-lookup"><span data-stu-id="da6a8-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9a297-104">구문</span><span class="sxs-lookup"><span data-stu-id="9a297-104">Syntax</span></span>  
   
 ```  
 HRESULT CanSetIP (  
@@ -35,21 +35,21 @@ HRESULT CanSetIP (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="da6a8-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="da6a8-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="9a297-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="9a297-105">Parameters</span></span>  
  `nOffset`  
- <span data-ttu-id="da6a8-106">[in] 명령 포인터에 대 한 원하는 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="da6a8-106">[in] The desired setting for the instruction pointer.</span></span>  
+ <span data-ttu-id="9a297-106">[in] 명령 포인터에 대 한 원하는 설정입니다.</span><span class="sxs-lookup"><span data-stu-id="9a297-106">[in] The desired setting for the instruction pointer.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="da6a8-107">설명</span><span class="sxs-lookup"><span data-stu-id="da6a8-107">Remarks</span></span>  
- <span data-ttu-id="da6a8-108">사용 하 여는 `CanSetIP` 메서드를 호출 하기 전에 [icordebugnativeframe:: Setip](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="da6a8-108">Use the `CanSetIP` method prior to calling the [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) method.</span></span> <span data-ttu-id="da6a8-109">경우 `CanSetIP` HRESULT를 반환 S_OK 이외의 실행할 수 있습니다 `ICorDebugNativeFrame::SetIP`, 하지만 디버거에서 디버깅 중인 코드를 안전 하 고 올바르게 실행할을 계속 해 서 보장 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="da6a8-109">If `CanSetIP` returns any HRESULT other than S_OK, you can still invoke `ICorDebugNativeFrame::SetIP`, but there is no guarantee that the debugger will continue the safe and correct execution of the code being debugged.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="9a297-107">설명</span><span class="sxs-lookup"><span data-stu-id="9a297-107">Remarks</span></span>  
+ <span data-ttu-id="9a297-108">사용 된 `CanSetIP` 메서드를 호출 하기 전에 [icordebugnativeframe:: Setip](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="9a297-108">Use the `CanSetIP` method prior to calling the [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) method.</span></span> <span data-ttu-id="9a297-109">하는 경우 `CanSetIP` HRESULT를 반환 S_OK 이외의 여전히를 호출할 수 있습니다 `ICorDebugNativeFrame::SetIP`, 이지만 디버거에서 디버깅 중인 코드가 안전 하 고 올바른 실행을 계속는 보장 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9a297-109">If `CanSetIP` returns any HRESULT other than S_OK, you can still invoke `ICorDebugNativeFrame::SetIP`, but there is no guarantee that the debugger will continue the safe and correct execution of the code being debugged.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="da6a8-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="da6a8-110">Requirements</span></span>  
- <span data-ttu-id="da6a8-111">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="da6a8-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="9a297-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="9a297-110">Requirements</span></span>  
+ <span data-ttu-id="9a297-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="9a297-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="da6a8-112">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="da6a8-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="9a297-112">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="9a297-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="da6a8-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="da6a8-113">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="9a297-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="9a297-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="da6a8-114">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="da6a8-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="9a297-114">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9a297-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="da6a8-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="da6a8-115">See Also</span></span>  
- 
+## <a name="see-also"></a><span data-ttu-id="9a297-115">참고자료</span><span class="sxs-lookup"><span data-stu-id="9a297-115">See also</span></span>
+
