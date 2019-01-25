@@ -18,17 +18,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 59b4c832a4bbc915749aadf435b204e084828698
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: eb2c560f8f906f20de752e5dfad995e2082caaea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33434348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654674"
 ---
-# <a name="identityattributeblob-structure"></a><span data-ttu-id="7893c-102">IDENTITY_ATTRIBUTE_BLOB 구조체</span><span class="sxs-lookup"><span data-stu-id="7893c-102">IDENTITY_ATTRIBUTE_BLOB Structure</span></span>
-<span data-ttu-id="7893c-103">어셈블리에서 단일 특성에 대 한 정보를 포함 하 고 3 개 구성 `DWORD`s입니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-103">Contains information about a single attribute in an assembly, and consists of three `DWORD`s.</span></span> <span data-ttu-id="7893c-104">각 `DWORD` 는 생성 되는 문자 버퍼 오프셋은 `CurrentIntoBuffer` 의 메서드는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7893c-104">Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) interface</span></span>  
+# <a name="identityattributeblob-structure"></a><span data-ttu-id="d4ef6-102">IDENTITY_ATTRIBUTE_BLOB 구조체</span><span class="sxs-lookup"><span data-stu-id="d4ef6-102">IDENTITY_ATTRIBUTE_BLOB Structure</span></span>
+<span data-ttu-id="d4ef6-103">어셈블리에서 단일 특성에 대 한 정보를 포함 하 고 세 개의 구성 `DWORD`s입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-103">Contains information about a single attribute in an assembly, and consists of three `DWORD`s.</span></span> <span data-ttu-id="d4ef6-104">각 `DWORD` 에서 생성 되는 문자 버퍼 오프셋 합니다 `CurrentIntoBuffer` 메서드는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4ef6-104">Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) interface</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7893c-105">구문</span><span class="sxs-lookup"><span data-stu-id="7893c-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d4ef6-105">구문</span><span class="sxs-lookup"><span data-stu-id="d4ef6-105">Syntax</span></span>  
   
 ```  
 typedef struct _IDENTITY_ATTRIBUTE_BLOB {  
@@ -38,24 +38,24 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
 }   IDENTITY_ATTRIBUTE_BLOB;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="7893c-106">멤버</span><span class="sxs-lookup"><span data-stu-id="7893c-106">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="d4ef6-106">멤버</span><span class="sxs-lookup"><span data-stu-id="d4ef6-106">Members</span></span>  
   
-|<span data-ttu-id="7893c-107">멤버</span><span class="sxs-lookup"><span data-stu-id="7893c-107">Member</span></span>|<span data-ttu-id="7893c-108">설명</span><span class="sxs-lookup"><span data-stu-id="7893c-108">Description</span></span>|  
+|<span data-ttu-id="d4ef6-107">멤버</span><span class="sxs-lookup"><span data-stu-id="d4ef6-107">Member</span></span>|<span data-ttu-id="d4ef6-108">설명</span><span class="sxs-lookup"><span data-stu-id="d4ef6-108">Description</span></span>|  
 |------------|-----------------|  
-|`ofsNamespace`|<span data-ttu-id="7893c-109">문자 버퍼에 대 한 첫 번째 오프셋 합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-109">The first offset into the character buffer.</span></span> <span data-ttu-id="7893c-110">이 오프셋에서 일련의 null 문자가 아니라 특성의 네임 스페이스 나오지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-110">This offset is not followed by the attribute's namespace, but by a series of null characters.</span></span> <span data-ttu-id="7893c-111">따라서 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-111">Therefore, it is not used.</span></span>|  
-|`ofsName`|<span data-ttu-id="7893c-112">문자 버퍼에 대 한 두 번째 오프셋 합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-112">The second offset into the character buffer.</span></span> <span data-ttu-id="7893c-113">이 위치는 특성의 이름의 시작 부분을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-113">This location marks the start of the attribute's name.</span></span>|  
-|`ofsValue`|<span data-ttu-id="7893c-114">문자 버퍼에 대 한 세 번째 오프셋 합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-114">The third offset into the character buffer.</span></span> <span data-ttu-id="7893c-115">이 위치는 특성 값의 시작을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-115">This location marks the start of the attribute's value.</span></span>|  
+|`ofsNamespace`|<span data-ttu-id="d4ef6-109">첫 번째 문자 버퍼 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-109">The first offset into the character buffer.</span></span> <span data-ttu-id="d4ef6-110">이 오프셋 된 특성의 네임 스페이스가 아니라 일련의 null 문자를 뒤 없습니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-110">This offset is not followed by the attribute's namespace, but by a series of null characters.</span></span> <span data-ttu-id="d4ef6-111">따라서 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-111">Therefore, it is not used.</span></span>|  
+|`ofsName`|<span data-ttu-id="d4ef6-112">두 번째 문자 버퍼 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-112">The second offset into the character buffer.</span></span> <span data-ttu-id="d4ef6-113">이 위치는 특성의 이름의 시작 부분을 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-113">This location marks the start of the attribute's name.</span></span>|  
+|`ofsValue`|<span data-ttu-id="d4ef6-114">세 번째 문자 버퍼 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-114">The third offset into the character buffer.</span></span> <span data-ttu-id="d4ef6-115">이 위치는 특성 값의 시작을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-115">This location marks the start of the attribute's value.</span></span>|  
   
-## <a name="sample"></a><span data-ttu-id="7893c-116">샘플</span><span class="sxs-lookup"><span data-stu-id="7893c-116">Sample</span></span>  
- <span data-ttu-id="7893c-117">다음 예제에서는 결과적으로 채워진에 몇 가지 기본 단계 `IDENTITY_ATTRIBUTE_BLOB` 구조:</span><span class="sxs-lookup"><span data-stu-id="7893c-117">The following example illustrates several basic steps, which eventually result in a populated `IDENTITY_ATTRIBUTE_BLOB` structure:</span></span>  
+## <a name="sample"></a><span data-ttu-id="d4ef6-116">샘플</span><span class="sxs-lookup"><span data-stu-id="d4ef6-116">Sample</span></span>  
+ <span data-ttu-id="d4ef6-117">다음 예제에서는 결과적으로 채워진에 몇 가지 기본 단계를 보여 줍니다. `IDENTITY_ATTRIBUTE_BLOB` 구조:</span><span class="sxs-lookup"><span data-stu-id="d4ef6-117">The following example illustrates several basic steps, which eventually result in a populated `IDENTITY_ATTRIBUTE_BLOB` structure:</span></span>  
   
-1.  <span data-ttu-id="7893c-118">가져올는 [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) 어셈블리에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-118">Obtain an [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) for the assembly.</span></span>  
+1.  <span data-ttu-id="d4ef6-118">가져올는 [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) 어셈블리에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-118">Obtain an [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) for the assembly.</span></span>  
   
-2.  <span data-ttu-id="7893c-119">호출 된 `IReferenceIdentity::EnumAttributes` 메서드를 가져오고,는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-119">Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md).</span></span>  
+2.  <span data-ttu-id="d4ef6-119">호출 된 `IReferenceIdentity::EnumAttributes` 메서드를 가져오고,는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-119">Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md).</span></span>  
   
-3.  <span data-ttu-id="7893c-120">문자 버퍼를 만들고로 캐스팅 한 `IDENTITY_ATTRIBUTE_BLOB` 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-120">Create a character buffer, and cast it as an `IDENTITY_ATTRIBUTE_BLOB` structure.</span></span>  
+3.  <span data-ttu-id="d4ef6-120">문자 버퍼를 만들고로 캐스팅을 `IDENTITY_ATTRIBUTE_BLOB` 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-120">Create a character buffer, and cast it as an `IDENTITY_ATTRIBUTE_BLOB` structure.</span></span>  
   
-4.  <span data-ttu-id="7893c-121">호출 된 `CurrentIntoBuffer` 의 메서드는 `IEnumIDENTITY_ATTRIBUTE` 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-121">Call the `CurrentIntoBuffer` method of the `IEnumIDENTITY_ATTRIBUTE` interface.</span></span> <span data-ttu-id="7893c-122">이 메서드는 특성을 복사 `Namespace`, `Name`, 및 `Value` 문자 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-122">This method copies the attributes `Namespace`, `Name`, and `Value` into the character buffer.</span></span> <span data-ttu-id="7893c-123">이러한 문자열에 대 한 세 가지 오프셋이 제공 될 예정 된 `IDENTITY_ATTRIBUTE_BLOB` 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-123">The three offsets to those strings will become available in the `IDENTITY_ATTRIBUTE_BLOB` structure.</span></span>  
+4.  <span data-ttu-id="d4ef6-121">호출 된 `CurrentIntoBuffer` 메서드는 `IEnumIDENTITY_ATTRIBUTE` 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-121">Call the `CurrentIntoBuffer` method of the `IEnumIDENTITY_ATTRIBUTE` interface.</span></span> <span data-ttu-id="d4ef6-122">이 메서드는 특성을 복사 `Namespace`, `Name`, 및 `Value` 문자 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-122">This method copies the attributes `Namespace`, `Name`, and `Value` into the character buffer.</span></span> <span data-ttu-id="d4ef6-123">이러한 문자열에 대 한 세 가지 오프셋이에서 사용할 수 있게 됩니다는 `IDENTITY_ATTRIBUTE_BLOB` 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-123">The three offsets to those strings will become available in the `IDENTITY_ATTRIBUTE_BLOB` structure.</span></span>  
   
 ```  
 // EnumAssemblyAttributes.cpp : main project file.  
@@ -221,29 +221,29 @@ Exit:
 }  
 ```  
   
-### <a name="to-run-the-sample"></a><span data-ttu-id="7893c-124">이 샘플을 실행하려면</span><span class="sxs-lookup"><span data-stu-id="7893c-124">To run the sample</span></span>  
- <span data-ttu-id="7893c-125">C:\\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</span><span class="sxs-lookup"><span data-stu-id="7893c-125">C:\\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</span></span>  
+### <a name="to-run-the-sample"></a><span data-ttu-id="d4ef6-124">이 샘플을 실행하려면</span><span class="sxs-lookup"><span data-stu-id="d4ef6-124">To run the sample</span></span>  
+ <span data-ttu-id="d4ef6-125">C:\\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</span><span class="sxs-lookup"><span data-stu-id="d4ef6-125">C:\\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</span></span>  
   
-### <a name="sample-output"></a><span data-ttu-id="7893c-126">샘플 출력</span><span class="sxs-lookup"><span data-stu-id="7893c-126">Sample output</span></span>  
- <span data-ttu-id="7893c-127">Culture = neutral</span><span class="sxs-lookup"><span data-stu-id="7893c-127">Culture = neutral</span></span>  
+### <a name="sample-output"></a><span data-ttu-id="d4ef6-126">샘플 출력</span><span class="sxs-lookup"><span data-stu-id="d4ef6-126">Sample output</span></span>  
+ <span data-ttu-id="d4ef6-127">Culture = neutral</span><span class="sxs-lookup"><span data-stu-id="d4ef6-127">Culture = neutral</span></span>  
   
- <span data-ttu-id="7893c-128">이름 = 시스템</span><span class="sxs-lookup"><span data-stu-id="7893c-128">name = System</span></span>  
+ <span data-ttu-id="d4ef6-128">name = System</span><span class="sxs-lookup"><span data-stu-id="d4ef6-128">name = System</span></span>  
   
- <span data-ttu-id="7893c-129">processorArchitecture = MSIL</span><span class="sxs-lookup"><span data-stu-id="7893c-129">processorArchitecture = MSIL</span></span>  
+ <span data-ttu-id="d4ef6-129">processorArchitecture = MSIL</span><span class="sxs-lookup"><span data-stu-id="d4ef6-129">processorArchitecture = MSIL</span></span>  
   
- <span data-ttu-id="7893c-130">PublicKeyToken = b77a5c561934e089</span><span class="sxs-lookup"><span data-stu-id="7893c-130">PublicKeyToken = b77a5c561934e089</span></span>  
+ <span data-ttu-id="d4ef6-130">PublicKeyToken = b77a5c561934e089</span><span class="sxs-lookup"><span data-stu-id="d4ef6-130">PublicKeyToken = b77a5c561934e089</span></span>  
   
- <span data-ttu-id="7893c-131">버전 2.0.0.0 =</span><span class="sxs-lookup"><span data-stu-id="7893c-131">Version = 2.0.0.0</span></span>  
+ <span data-ttu-id="d4ef6-131">Version = 2.0.0.0</span><span class="sxs-lookup"><span data-stu-id="d4ef6-131">Version = 2.0.0.0</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="7893c-132">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7893c-132">Requirements</span></span>  
- <span data-ttu-id="7893c-133">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="7893c-133">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d4ef6-132">요구 사항</span><span class="sxs-lookup"><span data-stu-id="d4ef6-132">Requirements</span></span>  
+ <span data-ttu-id="d4ef6-133">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="d4ef6-133">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="7893c-134">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="7893c-134">**Header:** Isolation.h</span></span>  
+ <span data-ttu-id="d4ef6-134">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="d4ef6-134">**Header:** Isolation.h</span></span>  
   
- <span data-ttu-id="7893c-135">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7893c-135">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="d4ef6-135">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d4ef6-135">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7893c-136">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7893c-136">See Also</span></span>  
- [<span data-ttu-id="7893c-137">IReferenceIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7893c-137">IReferenceIdentity Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)  
- [<span data-ttu-id="7893c-138">IEnumIDENTITY_ATTRIBUTE 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7893c-138">IEnumIDENTITY_ATTRIBUTE Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)  
- [<span data-ttu-id="7893c-139">IDENTITY_ATTRIBUTE 구조체</span><span class="sxs-lookup"><span data-stu-id="7893c-139">IDENTITY_ATTRIBUTE Structure</span></span>](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)  
- [<span data-ttu-id="7893c-140">Fusion 구조체</span><span class="sxs-lookup"><span data-stu-id="7893c-140">Fusion Structures</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+## <a name="see-also"></a><span data-ttu-id="d4ef6-136">참고자료</span><span class="sxs-lookup"><span data-stu-id="d4ef6-136">See also</span></span>
+- [<span data-ttu-id="d4ef6-137">IReferenceIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4ef6-137">IReferenceIdentity Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
+- [<span data-ttu-id="d4ef6-138">IEnumIDENTITY_ATTRIBUTE 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4ef6-138">IEnumIDENTITY_ATTRIBUTE Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)
+- [<span data-ttu-id="d4ef6-139">IDENTITY_ATTRIBUTE 구조체</span><span class="sxs-lookup"><span data-stu-id="d4ef6-139">IDENTITY_ATTRIBUTE Structure</span></span>](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)
+- [<span data-ttu-id="d4ef6-140">Fusion 구조체</span><span class="sxs-lookup"><span data-stu-id="d4ef6-140">Fusion Structures</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
