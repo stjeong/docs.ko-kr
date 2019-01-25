@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: e2abdd04-f571-4b97-8c16-2221b8588429
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4987b025450f2207a01a472a0c39fc6da2de0782
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c513ba06ac79eb3da229605120c4f59ab8d32665
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554545"
 ---
 # <a name="dllmainreturnsfalse-mda"></a>dllMainReturnsFalse MDA
 DLL_PROCESS_ATTACH로 인해 호출된 사용자 어셈블리의 관리되는 `DllMain` 함수가 FALSE를 반환하면 `dllMainReturnsFalse` MDA(관리 디버깅 도우미)가 활성화됩니다.  
@@ -34,7 +34,7 @@ DLL_PROCESS_ATTACH로 인해 호출된 사용자 어셈블리의 관리되는 `D
 ## <a name="output"></a>출력  
  DLL_PROCESS_ATTACH로 인해 호출되는 `DllMain` 함수가 FALSE를 반환했음을 나타내는 메시지입니다. 이 MDA는 `DllMain`이 관리 코드에서 구현된 경우에만 활성화됩니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -44,5 +44,5 @@ DLL_PROCESS_ATTACH로 인해 호출된 사용자 어셈블리의 관리되는 `D
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## <a name="see-also"></a>참고자료
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

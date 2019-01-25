@@ -10,21 +10,21 @@ helpviewer_keywords:
 - <bypasslist>, clear element
 - bypasslist, clear element
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
-ms.openlocfilehash: 5c26857496d52f9fb98ef76a72cb72fe8d852349
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 840833f2752115cb5f5639a25daf05bcbff3d452
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720917"
 ---
 # <a name="ltcleargt-element-for-bypasslist-network-settings"></a>&lt;지우기&gt; bypasslist (네트워크 설정)에 대 한 요소
 프록시 무시 목록을 지웁니다.  
   
  \<configuration>  
 \<system.net>  
-\<defaultProxy >  
-\<bypasslist >  
-\<지우기 >  
+\<defaultProxy>  
+\<bypasslist>  
+\<clear>  
   
 ## <a name="syntax"></a>구문  
   
@@ -70,6 +70,6 @@ ms.locfileid: "50201415"
 </configuration>   
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

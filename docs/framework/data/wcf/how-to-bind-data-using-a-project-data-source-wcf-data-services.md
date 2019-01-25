@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로젝트 데이터 원본을 사용하여 데이터 바인딩(WCF Data Services)'
+title: '방법: 프로젝트 데이터 원본 (WCF Data Services)를 사용 하 여 데이터 바인딩'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - data binding, WCF Data Services
 - WCF Data Services, data binding
 ms.assetid: 2477af0a-676f-44f7-b73d-e66208785509
-ms.openlocfilehash: 62a7e3bf7caf60c6a532dbffeb8aac8b6c59deb9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 465585d93d7bb20208720dc360b2cf8e6bb5f0e4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44216531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540756"
 ---
-# <a name="how-to-bind-data-using-a-project-data-source-wcf-data-services"></a>방법: 프로젝트 데이터 원본을 사용하여 데이터 바인딩(WCF Data Services)
+# <a name="how-to-bind-data-using-a-project-data-source-wcf-data-services"></a>방법: 프로젝트 데이터 원본 (WCF Data Services)를 사용 하 여 데이터 바인딩
 
 WCF Data Services 클라이언트 응용 프로그램에서 생성 된 데이터 개체를 기반으로 하는 데이터 원본을 만들 수 있습니다. 사용 하 여 데이터 서비스에 대 한 참조를 추가 하는 **서비스 참조 추가** 대화 상자에서 프로젝트 데이터 소스를 생성 된 클라이언트 데이터 클래스와 함께 만들어집니다. 데이터 서비스에서 노출하는 각 엔터티 집합에 대해 데이터 소스 하나가 만들어집니다. 이러한 데이터 원본 항목을 끌어 서비스에서 데이터를 표시 하는 폼을 만들 수 있습니다 합니다 **데이터 원본** 디자이너 창입니다. 이러한 항목은 데이터 소스에 바인딩된 컨트롤이 됩니다. 실행 하는 동안이 데이터 원본 인스턴스에 바인딩되는 <xref:System.Data.Services.Client.DataServiceCollection%601> 클래스를 데이터 서비스 쿼리에서 반환 되는 개체를 사용 하 여 채워집니다. 자세한 내용은 [컨트롤에 데이터 바인딩](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)합니다.
 
@@ -117,7 +117,7 @@ WCF Data Services 클라이언트 응용 프로그램에서 생성 된 데이터
 
 10. 이 코드에서는 Northwind 데이터 서비스에서 <xref:System.Data.Services.Client.DataServiceCollection%601>의 `Customers`을 반환하고 <xref:System.Data.Services.Client.DataServiceQuery%601>에 바인딩하는 <xref:System.Collections.Generic.IEnumerable%601>의 실행을 기준으로 `Customers` 형식에 대해 `customersBindingSource` 인스턴스를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
 - [방법: Windows Presentation Foundation 요소에 데이터 바인딩](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)

@@ -2,12 +2,12 @@
 title: WCF의 &lt;cancelRequestedQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b
-ms.openlocfilehash: 6b41721dcc0c489377c59bfccdd0b1a617f551b0
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 72fd23097760375738c2116b4535940873436986
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498270"
 ---
 # <a name="ltcancelrequestedquerygt-of-wcf"></a>WCF의 &lt;cancelRequestedQuery&gt;
 
@@ -17,11 +17,11 @@ ms.locfileid: "54149074"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<cancelRequestedQueries>  
-\<cancelRequestedQuery >  
+\<cancelRequestedQuery>  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,7 +61,7 @@ ms.locfileid: "54149074"
 |-------------|-----------------|  
 |[\<cancelRequestedQueries>](cancelrequestedqueries-of-wcf.md)|부모 활동에 의한 자식 활동 취소 요청을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

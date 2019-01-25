@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로시저 만들기(Visual Basic)'
+title: '방법: 프로시저 (Visual Basic) 만들기'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - procedures [Visual Basic], defining
@@ -8,60 +8,60 @@ helpviewer_keywords:
 - procedure declarations
 - procedures [Visual Basic], about procedures
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
-ms.openlocfilehash: da4cc299fbe35702990a62b5bf824e3ac71d5902
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 06fed04a0ebe7a0b3111a94308d15d01bcf47c1e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33649265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54636536"
 ---
-# <a name="how-to-create-a-procedure-visual-basic"></a>방법: 프로시저 만들기(Visual Basic)
-선언문의 시작 사이 프로시저를 묶습니다 (`Sub` 또는 `Function`) 및 선언문의 끝 (`End Sub` 또는 `End Function`). 프로시저의 모든 코드이 문 사이 표시 됩니다.  
+# <a name="how-to-create-a-procedure-visual-basic"></a>방법: 프로시저 (Visual Basic) 만들기
+선언문의 시작 사이 프로시저를 묶습니다 (`Sub` 나 `Function`) 및 선언문의 끝 (`End Sub` 또는 `End Function`). 프로시저의 모든 코드가 이러한 문 사이 존재 합니다.  
   
- 프로시저의 시작 및 끝 문은 다른 프로시저 밖에 서 있어야 하므로 다른 프로시저를 포함할 수 없습니다.  
+ 프로시저를 다른 프로시저 밖에 서 해당 시작 및 끝 문 이어야 하므로 다른 프로시저를 사용할 수 없습니다.  
   
- 서로 다른 위치에서 동일한 작업을 수행 하는 코드를 있는 경우 절차로 한 번 작업 쓰고 코드에서 다른 위치에서 호출 합니다.  
+ 여러 위치에서 동일한 작업을 수행 하는 코드를 사용 하는 경우에 절차로 한 번 작업을 작성 수 있으며 다음 코드의 다른 위치에서 호출할 수 있습니다.  
   
 ### <a name="to-create-a-procedure-that-does-not-return-a-value"></a>값을 반환 하지 않는 프로시저를 만들려면  
   
-1.  다른 프로시저 밖에 서 사용 하 여 한 `Sub` 문 다음에 `End Sub` 문.  
+1.  다른 프로시저 밖에 서 사용 하 여는 `Sub` 문 뒤에 `End Sub` 문입니다.  
   
-2.  에 `Sub` 문을 수행는 `Sub` 키워드와 프로시저를 지정한 다음 매개 변수 목록을 괄호로 이름 합니다.  
+2.  에 `Sub` 문을 따릅니다는 `Sub` 프로시저 이름이 매개 변수 목록 괄호를 사용 하 여 키워드.  
   
-3.  프로시저의 코드 문을 사이 `Sub` 및 `End Sub` 문.  
+3.  간의 프로시저의 코드 문을 배치 합니다 `Sub` 및 `End Sub` 문입니다.  
   
 ### <a name="to-create-a-procedure-that-returns-a-value"></a>값을 반환 하는 프로시저를 만들려면  
   
-1.  다른 프로시저 밖에 서 사용 하 여 한 `Function` 문 다음에 `End Function` 문.  
+1.  다른 프로시저 밖에 서 사용 하 여는 `Function` 문 뒤에 `End Function` 문입니다.  
   
-2.  에 `Function` 문을 수행는 `Function` 키워드와 프로시저를 지정한 다음 매개 변수 목록을 괄호로 이름 차례로 `As` 반환 값의 데이터 형식을 지정 하는 절.  
+2.  에 `Function` 문을 수행를 `Function` 키워드와 매개 변수 목록 괄호 안의 프로시저의 이름 차례로 `As` 반환 값의 데이터 형식을 지정 하는 절.  
   
-3.  프로시저의 코드 문을 사이 `Function` 및 `End Function` 문.  
+3.  간의 프로시저의 코드 문을 배치 합니다 `Function` 및 `End Function` 문입니다.  
   
-4.  사용 하 여 한 `Return` 호출 코드에 값을 반환 하는 문입니다.  
+4.  사용 된 `Return` 호출 코드에 값을 반환 하는 문입니다.  
   
 ### <a name="to-connect-your-new-procedure-with-the-old-repetitive-blocks-of-code"></a>오래 되 고 반복적인 코드 블록을 사용 하 여 새 프로시저를 연결 하려면  
   
-1.  이전 코드에 액세스할 수 있는 위치에서 새 프로시저를 정의 하 고 있는지 확인 합니다.  
+1.  이전 코드에 액세스할 수 있는 위치에 새 프로시저를 정의 해야 합니다.  
   
-2.  이전 반복 코드 블록을 호출 하는 단일 문 반복적인 작업을 수행 하는 문을 바꿉니다는 `Sub` 또는 `Function` 프로시저입니다.  
+2.  이전 반복 코드 블록을 호출 하는 단일 문 사용 하 여 반복적인 작업을 수행 하는 문을 바꿉니다 합니다 `Sub` 또는 `Function` 프로시저입니다.  
   
-3.  프로시저가 `Function` 값을 반환 하는, 하도록 하는 변수에 저장 하는 등의 반환된 값과 함께 동작을 수행 하는 호출 문에서 값이 손실 됩니다.  
+3.  프로시저가 `Function` 값을 반환 하는 호출 문에서 반환된 된 값을 변수에 저장 하는 등을 사용 하 여 작업을 수행 합니다. 그러지 않으면 값이 손실 됩니다을 확인 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 `Function` 프로시저 가장 긴 면 또는 다른 두 변에 대 한 값을 지정 하는 직각 삼각형의 빗변을 계산 합니다.  
+ 다음 `Function` 프로시저 제일 긴 쪽 또는 다른 두 가지 측면에 대 한 값이 지정 된 오른쪽 삼각형의 빗변을 계산 합니다.  
   
  [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
   
 ## <a name="see-also"></a>참고자료
 
- [절차](./index.md)  
- [Sub 프로시저](./sub-procedures.md)  
- [Function 프로시저](./function-procedures.md)  
- [속성 프로시저](./property-procedures.md)  
- [연산자 프로시저](./operator-procedures.md)  
- [프로시저 매개 변수 및 인수](./procedure-parameters-and-arguments.md)  
- [재귀 프로시저](./recursive-procedures.md)  
- [프로시저 오버로딩](./procedure-overloading.md)  
- [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [개체 지향 프로그래밍(Visual Basic)](../../concepts/object-oriented-programming.md)  
+- [절차](./index.md)
+- [Sub 프로시저](./sub-procedures.md)
+- [Function 프로시저](./function-procedures.md)
+- [속성 프로시저](./property-procedures.md)
+- [연산자 프로시저](./operator-procedures.md)
+- [프로시저 매개 변수 및 인수](./procedure-parameters-and-arguments.md)
+- [재귀 프로시저](./recursive-procedures.md)
+- [프로시저 오버로딩](./procedure-overloading.md)
+- [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [개체 지향 프로그래밍(Visual Basic)](../../concepts/object-oriented-programming.md)

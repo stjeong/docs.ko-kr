@@ -1,21 +1,21 @@
 ---
-title: '방법: 동시성 충돌에 테스트할 멤버 지정'
+title: '방법: 동시성 충돌에 테스트할 멤버를 지정 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d2cda293-1e2f-4878-af0e-5aaf0d092120
-ms.openlocfilehash: 7cabd8c799db4979642c462803df323d13139547
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1007cbc0961d01574fd60ec50eb63406ec7adef9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362428"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724582"
 ---
-# <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>방법: 동시성 충돌에 테스트할 멤버 지정
-에 세 가지 열거형 중 하나를 적용는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> 속성에는 <xref:System.Data.Linq.Mapping.ColumnAttribute> 낙관적 동시성 충돌 감지에 대 한 업데이트에 포함 될 멤버를 지정 하는 특성을 확인 합니다.  
+# <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>방법: 동시성 충돌에 테스트할 멤버를 지정 합니다.
+에 세 가지 열거형 중 하나를 적용 합니다 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> 속성을 <xref:System.Data.Linq.Mapping.ColumnAttribute> 낙관적 동시성 충돌 감지에 대 한 업데이트에 포함 될 멤버를 지정 하려면 특성 확인.  
   
- 디자인 타임에 매핑된 <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> 속성은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 런타임 동시성 기능과 함께 사용됩니다. 자세한 내용은 참조 [낙관적 동시성: 개요](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md)합니다.  
+ 디자인 타임에 매핑된 <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> 속성은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 런타임 동시성 기능과 함께 사용됩니다. 자세한 내용은 참조 하세요. [낙관적 동시성: 개요](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md)합니다.  
   
 > [!NOTE]
 >  `IsVersion=true`로 디자인된 멤버가 없으면 원래 멤버 값이 현재 데이터베이스 상태와 비교됩니다. 자세한 내용은 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>을 참조하세요.  
@@ -46,6 +46,6 @@ ms.locfileid: "33362428"
  [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
  [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 변경 내용 충돌 관리](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)  
- [데이터 변경 및 변경 내용 전송](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
+## <a name="see-also"></a>참고자료
+- [방법: 변경 내용 충돌 관리](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
+- [데이터 변경 및 변경 내용 전송](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 13f7e935ab999ccc3cd3ea1e308e8d686bed4171
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 95762cbda4a1a251dd64fd33b2815d474f1fe2b9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54685219"
 ---
 # <a name="garbage-collection-etw-events"></a>가비지 컬렉션 ETW 이벤트
 <a name="top"></a> 이들 이벤트는 가비지 수집과 관련된 정보를 수집합니다. 가비지 수집 수행 횟수, 가비지 수집 중에 해제된 메모리 양 등을 판별하는 작업을 포함하여 진단과 디버깅에 도움이 됩니다.  
@@ -237,7 +237,7 @@ ms.locfileid: "33396937"
   
 |필드 이름|데이터 형식|설명|  
 |----------------|---------------|-----------------|  
-|이유|win:UInt16|0x0 - 기타.<br /><br /> 0x1 - 가비지 수집.<br /><br /> 0x2 - 응용 프로그램 도메인 중지.<br /><br /> 0x3 - 코드 피칭.<br /><br /> 0x4 - 종료.<br /><br /> 0x5 - 디버거.<br /><br /> 0x6 - 가비지 수집 준비.|  
+|이유|win:UInt16|0x0 - 기타.<br /><br /> 0x1 - 가비지 수집.<br /><br /> 0x2 - 애플리케이션 도메인 중지.<br /><br /> 0x3 - 코드 피칭.<br /><br /> 0x4 - 종료.<br /><br /> 0x5 - 디버거.<br /><br /> 0x6 - 가비지 수집 준비.|  
 |개수|win:UInt32|해당 시점의 GC 개수입니다. 일반적으로 이 이벤트 뒤에 후속 GC 시작 이벤트가 확인되고 가비지 수집 중에 GC 인덱스를 늘리면 해당 개수는 이 개수 + 1이 됩니다.|  
 |ClrInstanceID|win:UInt16|CLR 또는 CoreCLR 인스턴스에 대한 고유 ID입니다.|  
   
@@ -366,5 +366,5 @@ ms.locfileid: "33396937"
   
  이벤트 데이터가 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+## <a name="see-also"></a>참고자료
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)

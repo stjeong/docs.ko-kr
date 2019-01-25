@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c34f531d-4b9b-4071-b2d7-342c402aa586
-ms.openlocfilehash: e7e687dfa6af47161be9d26054eb58f319a5099d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 69bdf4d23463cc07259a2b1de6b9efaa78f0f0de
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593760"
 ---
 # <a name="datarow-deletion"></a>DataRow 삭제
 두 가지 방법을 삭제 하는 데 사용할 수는 <xref:System.Data.DataRow> 에서 개체를 <xref:System.Data.DataTable> 개체:는 **제거** 메서드를 <xref:System.Data.DataRowCollection> 개체 및 <xref:System.Data.DataRow.Delete%2A> 메서드의 **DataRow**개체입니다. 반면 합니다 <xref:System.Data.DataRowCollection.Remove%2A> 메서드를 **DataRow** 에서 **DataRowCollection**, <xref:System.Data.DataRow.Delete%2A> 메서드는 삭제할 행을 표시만 합니다. 응용 프로그램 호출 때 실제 제거 합니다 **AcceptChanges** 메서드. <xref:System.Data.DataRow.Delete%2A>를 사용하면 행을 실제로 삭제하기 전에 삭제 표시된 행을 프로그래밍 방식으로 확인할 수 있습니다. 삭제 표시된 행의 <xref:System.Data.DataRow.RowState%2A> 속성은 <xref:System.Data.DataRow.Delete%2A>로 설정됩니다.  
@@ -44,9 +44,9 @@ workRow.Delete();
 > [!NOTE]
 >  경우는 **RowState** 의 **DataRow** 은 **Added**, 테이블에만 추가 되었습니다 의미 및 것으로 표시 됩니다 **Deleted**, 것 테이블에서 제거 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Data.DataRow>  
- <xref:System.Data.DataRowCollection>  
- <xref:System.Data.DataTable>  
- [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- <xref:System.Data.DataRow>
+- <xref:System.Data.DataRowCollection>
+- <xref:System.Data.DataTable>
+- [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

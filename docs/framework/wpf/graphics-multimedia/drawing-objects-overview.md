@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Drawing objects [WPF]
 - DrawingGroup objects [WPF]
 ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
-ms.openlocfilehash: 92cf4e7099c7880eb9bde9af765970abac698310
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4be6f3b06a0e9ab16469ad9a7f9e78799cc2e637
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54513674"
 ---
 # <a name="drawing-objects-overview"></a>Drawing 개체 개요
 이 항목에서는 소개 <xref:System.Windows.Media.Drawing> 개체 및 도형, 비트맵, 텍스트 및 미디어를 효율적으로 그리는 데 사용 하는 방법에 설명 합니다. 사용 하 여 <xref:System.Windows.Media.Drawing> 클립 아트를 만들 때 개체를 사용 하 여 그리는 <xref:System.Windows.Media.DrawingBrush>를 사용 하 여 또는 <xref:System.Windows.Media.Visual> 개체.  
@@ -180,12 +180,12 @@ DrawingGroup 작업의 순서
   
 |속성|설명|그림|  
 |--------------|-----------------|------------------|  
-|<xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>|선택한 부분의 불투명도 변경 합니다 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 예제를 보려면 [방법: 그리기의 불투명도 제어](https://msdn.microsoft.com/library/68580652-7d32-4d27-93cc-a5148cf4d5ee)를 참조하세요.|![불투명도 마스크가 있는 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-opmask.png "graphicsmm_opmask")|  
-|<xref:System.Windows.Media.DrawingGroup.Opacity%2A>|불투명도 균일 하 게 변경 합니다 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 이 속성을 사용 하 여 확인을 <xref:System.Windows.Media.Drawing> 투명 하거나 부분적으로 투명 합니다. 예제를 보려면 [방법: 도면에 불투명 마스크 적용](https://msdn.microsoft.com/library/d77b420b-9be2-479c-a45e-82f4da30eb9f)을 참조하세요.|![여러 불투명도 설정의 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-opacity.png "graphicsmm_opacity")|  
-|<xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>|적용을 <xref:System.Windows.Media.Effects.BitmapEffect> 에 <xref:System.Windows.Media.DrawingGroup> 콘텐츠입니다. 예제를 보려면 [방법: 그리기에 BitmapEffect 적용](https://msdn.microsoft.com/library/c5b1de83-8d09-47fb-96db-5f174471f4b5)을 참조하세요.|![BlurBitmapEffect가 적용된 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-bitmap.png "graphicsmm_bitmap")|  
-|<xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>|클립 합니다 <xref:System.Windows.Media.DrawingGroup> 사용을 설명 영역에 콘텐츠를 <xref:System.Windows.Media.Geometry>입니다. 예제를 보려면 [방법: 그림 자르기](https://msdn.microsoft.com/library/1f7d8a2c-c3c2-42cb-a542-e6796f9fb058)를 참조하세요.|![정의된 클립 영역이 있는 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-clipgeom.png "graphicsmm_clipgeom")|  
+|<xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>|선택한 부분의 불투명도 변경 합니다 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 예는 [방법: 그리기의 불투명도 제어](https://msdn.microsoft.com/library/68580652-7d32-4d27-93cc-a5148cf4d5ee)입니다.|![불투명도 마스크가 있는 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-opmask.png "graphicsmm_opmask")|  
+|<xref:System.Windows.Media.DrawingGroup.Opacity%2A>|불투명도 균일 하 게 변경 합니다 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 이 속성을 사용 하 여 확인을 <xref:System.Windows.Media.Drawing> 투명 하거나 부분적으로 투명 합니다. 예는 [방법: 그리기에서 불투명 마스크 적용할](https://msdn.microsoft.com/library/d77b420b-9be2-479c-a45e-82f4da30eb9f)합니다.|![여러 불투명도 설정의 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-opacity.png "graphicsmm_opacity")|  
+|<xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>|적용을 <xref:System.Windows.Media.Effects.BitmapEffect> 에 <xref:System.Windows.Media.DrawingGroup> 콘텐츠입니다. 예는 [방법: 그리기에 BitmapEffect 적용](https://msdn.microsoft.com/library/c5b1de83-8d09-47fb-96db-5f174471f4b5)합니다.|![BlurBitmapEffect가 적용된 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-bitmap.png "graphicsmm_bitmap")|  
+|<xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>|클립 합니다 <xref:System.Windows.Media.DrawingGroup> 사용을 설명 영역에 콘텐츠를 <xref:System.Windows.Media.Geometry>입니다. 예는 [방법: 그림 자르기](https://msdn.microsoft.com/library/1f7d8a2c-c3c2-42cb-a542-e6796f9fb058) 합니다.|![정의된 클립 영역이 있는 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-clipgeom.png "graphicsmm_clipgeom")|  
 |<xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>|지정된 지침에 따라 디바이스 독립적 픽셀을 디바이스 픽셀에 맞춥니다. 이 속성은 매우 세부적인 그래픽이 낮은 DPI 디스플레이에 선명하게 렌더링되도록 하는 데 유용합니다. 예제를 보려면 [Drawing에 GuidelineSet 적용](../../../../docs/framework/wpf/graphics-multimedia/how-to-apply-a-guidelineset-to-a-drawing.md)을 참조하세요.|![GuidelineSet이 있는 DrawingGroup과 없는 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-drawinggroup-guidelineset.png "graphicsmm_drawinggroup_guidelineset")|  
-|<xref:System.Windows.Media.DrawingGroup.Transform%2A>|변환 된 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 예제를 보려면 [방법: 그리기에 변환 적용](https://msdn.microsoft.com/library/0d525f2b-682d-4d67-9660-cf46929fbabd)을 참조하세요.|![회전된 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rotate.png "graphicsmm_rotate")|  
+|<xref:System.Windows.Media.DrawingGroup.Transform%2A>|변환 된 <xref:System.Windows.Media.DrawingGroup> 내용입니다. 예는 [방법: 그리기에 변환 적용](https://msdn.microsoft.com/library/0d525f2b-682d-4d67-9660-cf46929fbabd)합니다.|![회전된 DrawingGroup](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rotate.png "graphicsmm_rotate")|  
   
 <a name="usingimagedrawing"></a>   
 ## <a name="display-a-drawing-as-an-image"></a>그리기를 이미지로 표시  
@@ -233,13 +233,13 @@ DrawingBrush에 GeometryDrawing 사용
   
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Drawing>  
- <xref:System.Windows.Media.DrawingGroup>  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Drawing>
+- <xref:System.Windows.Media.DrawingGroup>
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)

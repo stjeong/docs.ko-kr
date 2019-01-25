@@ -6,12 +6,12 @@ helpviewer_keywords:
 - key frames [WPF], animating border thickness with
 - border thickness [WPF], animating with key frames
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
-ms.openlocfilehash: a601fd6779a4d912166366652435aff9ae37613f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: d30e414dd83e596da6415cc455c599820a22f3e0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43421412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689957"
 ---
 # <a name="how-to-animate-the-thickness-of-a-border-by-using-key-frames"></a>방법: 키 프레임을 사용하여 테두리 두께에 애니메이션 효과 주기
 애니메이션을 적용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Control.BorderThickness%2A> 의 속성을 <xref:System.Windows.Controls.Border>입니다.  
@@ -29,10 +29,10 @@ ms.locfileid: "43421412"
   
  전체 샘플을 보려면 [키 프레임 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160012)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>  
- <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>  
- <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)  
- [BorderThickness 값에 애니메이션 효과 주기](../../../../docs/framework/wpf/controls/how-to-animate-a-borderthickness-value.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>
+- <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>
+- <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [BorderThickness 값에 애니메이션 효과 주기](../../../../docs/framework/wpf/controls/how-to-animate-a-borderthickness-value.md)

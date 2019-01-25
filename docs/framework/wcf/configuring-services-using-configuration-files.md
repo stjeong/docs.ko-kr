@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring services [WCF]
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
-ms.openlocfilehash: a38b4202ba3402c2dff3884c1560752d0353e0ba
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 8d138bae794cac00b1542f63153f343fb95a24c7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54717404"
 ---
 # <a name="configuring-services-using-configuration-files"></a>구성 파일을 사용하여 서비스 구성
 디자인 타임에 대신 배포 지점에서 서비스 동작 데이터 및 끝점을 제공 하는 유연성을 제공 구성 파일을 사용 하 여 Windows Communication Foundation (WCF) 서비스를 구성 합니다. 이 항목에서는 사용할 수 있는 기본 기술에 대해 간략하게 설명합니다.  
@@ -108,12 +108,12 @@ ms.locfileid: "54029673"
 ### <a name="the-behaviors-element"></a>\<동작 > 요소  
  서비스의 동작을 정의하는 `behavior` 요소에 대한 컨테이너 요소입니다.  
   
- [\<동작 >](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
+ [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
   
 ### <a name="the-behavior-element"></a>\<동작 > 요소  
  각 `behavior` 요소는 `name` 특성으로 식별되며 <`throttling`>과 같은 시스템 제공 동작이나 사용자 지정 동작을 제공합니다. 이름을 지정하지 않는 경우 이 동작 요소는 기본 서비스 또는 엔드포인트 동작에 해당합니다.  
   
- [\<동작 >](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
+ [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
   
 ## <a name="how-to-use-binding-and-behavior-configurations"></a>바인딩 및 동작 구성 사용 방법  
  WCF 쉽게 참조 시스템을 사용 하 여 구성에서 끝점 간의 구성을 공유할 수 있습니다. 구성 값을 엔드포인트에 직접 할당하는 대신 바인딩 관련 구성 값은 `bindingConfiguration` 섹션의 `<binding>` 요소로 그룹화됩니다. 바인딩 구성은 바인딩에 대한 설정의 명명된 그룹입니다. 엔드포인트는 이름별로 `bindingConfiguration`을 참조할 수 있습니다.  
@@ -262,8 +262,8 @@ ms.locfileid: "54029673"
   
  자식 동작 컬렉션에 부모 동작 컬렉션에 이미 있는 동작이 포함되어 있으면 자식 동작이 부모 동작을 재정의합니다. 부모 동작 컬렉션 만약 `<serviceMetadata httpGetEnabled="False" />` 자식 동작 컬렉션 했으며 `<serviceMetadata httpGetEnabled="True" />`자식 동작은 동작 컬렉션의 부모 동작을 재정의 하 고 httpGetEnabled는 "true"입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md)  
- [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
- [\<binding>](../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md)
+- [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
+- [\<binding>](../../../docs/framework/misc/binding.md)

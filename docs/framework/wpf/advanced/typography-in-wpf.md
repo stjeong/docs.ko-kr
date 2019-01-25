@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - typography [WPF], about typography
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
-ms.openlocfilehash: 0ec1c227196e9118f9174feb103a3ecbf5bcb7c4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b4cfec6dd1b732729f32abd65c6e69ca53e2ad82
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54547490"
 ---
 # <a name="typography-in-wpf"></a>WPF의 입력 체계
 이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 주요 입력 체계 기능을 소개합니다. 이러한 기능에는 텍스트 렌더링의 향상된 품질 및 성능, [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 입력 체계 지원, 향상된 국가별 텍스트, 향상된 글꼴 지원 및 새 텍스트 API(응용 프로그래밍 인터페이스)가 포함됩니다.  
@@ -85,7 +85,7 @@ OpenType 표준 및 선단 장식 문자 모양을 사용하는 텍스트
 -   **고급 텍스트 서식 지정**. 사용자 지정 텍스트 엔진을 구현할 수 있습니다.  
   
 ### <a name="layout-and-user-interface"></a>레이아웃 및 사용자 인터페이스  
- 가장 높은 수준의 기능을 텍스트 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] 일반적인 제공 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 와 같은 컨트롤 <xref:System.Windows.Controls.Label>를 <xref:System.Windows.Controls.TextBlock>, 및 <xref:System.Windows.Controls.TextBox>합니다. 이러한 컨트롤은 응용 프로그램 내에서 기본 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소를 제공하며, 텍스트를 제공하고 텍스트와 상호 작용하는 쉬운 방법을 제공합니다. 와 같은 컨트롤 <xref:System.Windows.Controls.RichTextBox> 고 <xref:System.Windows.Controls.PasswordBox> 더 고급 또는 특수화 텍스트 처리 사용 합니다. 와 같은 클래스 <xref:System.Windows.Documents.TextRange>, <xref:System.Windows.Documents.TextSelection>, 및 <xref:System.Windows.Documents.TextPointer> 유용한 텍스트 조작을 사용 하도록 설정 합니다. 이러한 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 컨트롤 속성을 같은 제공 <xref:System.Windows.Controls.Control.FontFamily%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, 및 <xref:System.Windows.Controls.Control.FontStyle%2A>, 텍스트를 렌더링 하는 데 사용 되는 글꼴을 제어할 수 있도록 합니다.  
+ 가장 높은 수준의 기능을 텍스트 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] 일반적인 제공 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 와 같은 컨트롤 <xref:System.Windows.Controls.Label>를 <xref:System.Windows.Controls.TextBlock>, 및 <xref:System.Windows.Controls.TextBox>합니다. 이러한 컨트롤은 애플리케이션 내에서 기본 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소를 제공하며, 텍스트를 제공하고 텍스트와 상호 작용하는 쉬운 방법을 제공합니다. 와 같은 컨트롤 <xref:System.Windows.Controls.RichTextBox> 고 <xref:System.Windows.Controls.PasswordBox> 더 고급 또는 특수화 텍스트 처리 사용 합니다. 와 같은 클래스 <xref:System.Windows.Documents.TextRange>, <xref:System.Windows.Documents.TextSelection>, 및 <xref:System.Windows.Documents.TextPointer> 유용한 텍스트 조작을 사용 하도록 설정 합니다. 이러한 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 컨트롤 속성을 같은 제공 <xref:System.Windows.Controls.Control.FontFamily%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, 및 <xref:System.Windows.Controls.Control.FontStyle%2A>, 텍스트를 렌더링 하는 데 사용 되는 글꼴을 제어할 수 있도록 합니다.  
   
 #### <a name="using-bitmap-effects-transforms-and-text-effects"></a>비트맵 효과, 변환 및 텍스트 효과 사용  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 비트맵 효과, 변환 및 텍스트 효과 같은 기능을 사용하여 시각적으로 흥미로운 텍스트를 만들 수 있습니다. 다음 예제에서는 일반적인 형식의 그림자 효과가 적용된 텍스트를 보여 줍니다.  
@@ -158,21 +158,21 @@ FormattedText 개체를 사용하여 표시한 텍스트
  에 대 한 자세한 합니다 <xref:System.Windows.Media.FormattedText> 개체를 참조 하십시오 [서식 있는 텍스트 그리기](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)합니다.  
   
 ### <a name="advanced-text-formatting"></a>고급 텍스트 서식 지정  
- 가장 높은 수준의 텍스트 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 를 사용 하 여 사용자 지정 텍스트 레이아웃을 만들 수 있습니다 합니다 <xref:System.Windows.Media.TextFormatting.TextFormatter> 개체 및 다른 형식에는 <xref:System.Windows.Media.TextFormatting> 네임 스페이스. <xref:System.Windows.Media.TextFormatting.TextFormatter> 및 문자 형식, 단락 스타일을 사용자 고유의 정의 지 원하는 사용자 지정 텍스트 레이아웃을 구현할 수 줄 바꿈 규칙 및 국가별 텍스트에 대 한 기타 레이아웃 기능 관련된 클래스를 사용 합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 텍스트 레이아웃 지원의 기본 구현을 재정의하려는 경우는 거의 없습니다. 그러나 텍스트 편집 컨트롤이나 응용 프로그램을 만들려는 경우 기본 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 구현이 아닌 다른 구현이 필요할 수 있습니다.  
+ 가장 높은 수준의 텍스트 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 를 사용 하 여 사용자 지정 텍스트 레이아웃을 만들 수 있습니다 합니다 <xref:System.Windows.Media.TextFormatting.TextFormatter> 개체 및 다른 형식에는 <xref:System.Windows.Media.TextFormatting> 네임 스페이스. <xref:System.Windows.Media.TextFormatting.TextFormatter> 및 문자 형식, 단락 스타일을 사용자 고유의 정의 지 원하는 사용자 지정 텍스트 레이아웃을 구현할 수 줄 바꿈 규칙 및 국가별 텍스트에 대 한 기타 레이아웃 기능 관련된 클래스를 사용 합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 텍스트 레이아웃 지원의 기본 구현을 재정의하려는 경우는 거의 없습니다. 그러나 텍스트 편집 컨트롤이나 애플리케이션을 만들려는 경우 기본 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 구현이 아닌 다른 구현이 필요할 수 있습니다.  
   
  기존의 텍스트와 달리 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], <xref:System.Windows.Media.TextFormatting.TextFormatter> 콜백 메서드 집합을 통해 텍스트 레이아웃 클라이언트와 상호 작용 합니다. 구현에서 이러한 메서드를 제공 하기 위해 클라이언트 필요는 <xref:System.Windows.Media.TextFormatting.TextSource> 클래스입니다. 다음 다이어그램에서는 클라이언트 응용 프로그램 간의 텍스트 레이아웃 상호 작용 및 <xref:System.Windows.Media.TextFormatting.TextFormatter>합니다.  
   
  ![텍스트 레이아웃 클라이언트 및 TextFormatter의 다이어그램](../../../../docs/framework/wpf/advanced/media/textformatter01.png "TextFormatter01")  
-응용 프로그램과 TextFormatter 간의 상호 작용  
+애플리케이션과 TextFormatter 간의 상호 작용  
   
  사용자 지정 텍스트 레이아웃을 만드는 방법에 대한 자세한 내용은 [고급 텍스트 서식 지정](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.FormattedText>  
- <xref:System.Windows.Media.TextFormatting.TextFormatter>  
- [ClearType 개요](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
- [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
- [서식 있는 텍스트 그리기](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)  
- [고급 텍스트 서식 지정](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)  
- [텍스트](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [Microsoft 입력 체계](https://www.microsoft.com/typography/default.mspx)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.FormattedText>
+- <xref:System.Windows.Media.TextFormatting.TextFormatter>
+- [ClearType 개요](../../../../docs/framework/wpf/advanced/cleartype-overview.md)
+- [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+- [서식 있는 텍스트 그리기](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)
+- [고급 텍스트 서식 지정](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)
+- [텍스트](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
+- [Microsoft 입력 체계](https://www.microsoft.com/typography/default.mspx)

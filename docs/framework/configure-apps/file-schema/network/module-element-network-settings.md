@@ -8,20 +8,20 @@ helpviewer_keywords:
 - module element
 - <module> element
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
-ms.openlocfilehash: 2d263fd64475d119d536e7cef69896fcfa5ae42c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4daa0d133342d2bbbf4dd716246d8ba90e49ef9c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54685041"
 ---
 # <a name="ltmodulegt-element-network-settings"></a>&lt;모듈&gt; 요소 (네트워크 설정)
 응용 프로그램에 새 프록시 모듈을 추가합니다.  
   
  \<configuration>  
 \<system.net>  
-\<defaultProxy >  
-\<모듈 >  
+\<defaultProxy>  
+\<module>  
   
 ## <a name="syntax"></a>구문  
   
@@ -72,6 +72,6 @@ ms.locfileid: "50183700"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.IWebProxy?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.IWebProxy?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
