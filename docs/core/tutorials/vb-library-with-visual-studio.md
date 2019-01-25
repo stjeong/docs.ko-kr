@@ -1,20 +1,20 @@
 ---
-title: Visual Studio 2017에서 Visual Basic .NET Core 클래스 라이브러리 빌드
-description: Visual Studio 2017을 사용하여 Visual Basic으로 작성된 .NET Core 클래스 라이브러리를 빌드하는 방법 알아보기
+title: Visual Studio 2017에서 Visual Basic .NET Standard 클래스 라이브러리 빌드
+description: Visual Studio 2017을 사용하여 Visual Basic으로 작성된 .NET Standard 클래스 라이브러리를 빌드하는 방법 알아보기
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs:
 - vb
 ms.custom: vs-dotnet, seodec18
-ms.openlocfilehash: 04d866c0615d299fe3df72553bafce2514a1c121
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 1fddbfd84164a95505cff1783e241ea9001231f5
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168834"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362043"
 ---
-# <a name="build-a-class-library-with-visual-basic-and-the-net-core-sdk-in-visual-studio-2017"></a>Visual Studio 2017에서 Visual Basic 및 .NET Core SDK를 사용하여 클래스 라이브러리 빌드
+# <a name="build-a-net-standard-library-with-visual-basic-and-the-net-core-sdk-in-visual-studio-2017"></a>Visual Studio 2017에서 Visual Basic 및 .NET Core SDK를 사용하여 .NET Standard 라이브러리 빌드
 
 *클래스 라이브러리*는 애플리케이션에서 호출되는 형식 및 메서드를 정의합니다. .NET Standard 2.0을 대상으로 하는 클래스 라이브러리는 .NET Standard의 해당 버전을 지원하는 모든 .NET 구현에서 라이브러리를 호출할 수 있습니다. 클래스 라이브러리를 마칠 때 타사 구성 요소로 배포할지 또는 하나 이상의 애플리케이션과 함께 번들 구성 요소로 포함할지 결정할 수 있습니다.
 

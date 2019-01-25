@@ -7,14 +7,15 @@ helpviewer_keywords:
 - C# language, operators
 - operators [C#], about operators
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
-ms.openlocfilehash: e9518dcf2a9facfdc46c2f6245184ea2da95b819
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 8ec3cafec49ae2e05c67d177ad1ea1fdd9b73bca
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239003"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362498"
 ---
 # <a name="operators-c-programming-guide"></a>연산자(C# 프로그래밍 가이드)
+
 C#에서 *연산자* 는 식 또는 문에서 하나 이상의 *피연산자* 에 적용되는 프로그램 요소입니다. 증가 연산자(`++`)나 `new`같이 피연산자 하나를 사용하는 연산자를 *단항* 연산자라고 합니다. 산술 연산자(`+`,`-`,`*`,`/`) 같이 피연산자 두 개를 사용하는 연산자를 *이항* 연산자라고 합니다. 조건 연산자(`?:`)는 피연산자 세 개를 사용하며 이는 C#에서 유일한 삼진 연산자입니다.  
   
  다음 C# 문에는 단항 연산자 하나와 피연산자 하나가 들어 있습니다. 증가 연산자 `++`는 피연산자 `y`의 값을 수정합니다.  
@@ -25,7 +26,8 @@ C#에서 *연산자* 는 식 또는 문에서 하나 이상의 *피연산자* �
   
  [!code-csharp[csProgGuideStatements#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/operators_2.cs)]  
   
-## <a name="operators-evaluation-and-operator-precedence"></a>연산자, 평가, 및 연산자 우선 순위  
+## <a name="operators-evaluation-and-operator-precedence"></a>연산자, 평가 및 연산자 우선 순위
+
  피연산자는 모든 길이의 코드로 구성된 유효한 식이 될 수 있으며 모든 개수의 하위 식으로 구성될 수 있습니다. 여러 연산자를 포함하는 식에서 연산자가 적용되는 순서는 *operator precedence*, *associativity*및 괄호로 결정됩니다.  
   
  각 연산자에는 정의된 우선 순위가 있습니다. 다른 우선 순위 수준을 가진 여러 연산자가 포함된 식에서 연산자의 우선 순위는 연산자가 평가되는 순서를 결정합니다. 예를 들어, 다음 문은 `n1`에 3을 할당합니다.  
@@ -127,7 +129,8 @@ C#에서 *연산자* 는 식 또는 문에서 하나 이상의 *피연산자* �
 |x op= y|복합 할당. [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md) 연산자를 지원합니다.|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|익명 함수(람다 식)|  
   
-## <a name="associativity"></a>결합성  
+## <a name="associativity"></a>associativity
+
  우선 순위가 동일한 연산자 두 개 이상이 식 하나에 있으면 두 연산자의 결합성에 따라 연산 순서가 결정됩니다. 왼쪽 결합성이 있는 연산자는 왼쪽에서 오른쪽으로 계산됩니다. 예를 들어, `x * y / z` 는 `(x * y) / z`로 계산됩니다. 오른쪽 결합성이 있는 연산자는 오른쪽에서 왼쪽으로 계산됩니다. 예를 들어, 할당 연산자는 오른쪽 결합성이 있는 연산자입니다. 아닌 경우 다음 코드 오류가 발생합니다.  
   
 ```csharp  
@@ -154,7 +157,8 @@ a = (b = c);
 |`a = b - c + d`|a, b, c, -, d, +, =|  
 |`a += b -= c`|a, b, c, -=, +=|  
   
-## <a name="adding-parentheses"></a>괄호 추가  
+## <a name="adding-parentheses"></a>괄호 추가
+
  괄호를 사용하여 연산자 우선 순위와 연결을 통해 부과된 실행 순서를 변경할 수 있습니다. 예를 들어, `2 + 3 * 2` 는 일반적으로 승제 연산자가 가감 연산자보다 우선하기 때문에 8로 평가됩니다. 그러나 식을 `(2 + 3) * 2`처럼 작성하는 경우 곱셈 전에 덧셈이 계산되고 결과는 10입니다. 다음 예제는 괄호로 묶인 식의 계산 순서를 보여 줍니다. 이전 예제에서와 같이 피연산자는 연산자가 적용되기 전에 평가됩니다.  
   
 |문|계산 순서|  
@@ -163,10 +167,12 @@ a = (b = c);
 |`a = b - (c + d)`|a, b, c, d, +, -, =|  
 |`a = (b + c) * (d - e)`|a, b, c, +, d, e, -, *, =|  
   
-## <a name="operator-overloading"></a>연산자 오버로드  
+## <a name="operator-overloading"></a>연산자 오버로드
+
  사용자 지정 클래스 및 구조체에서 연산자의 동작을 변경할 수 있습니다. 이러한 과정을 *연산자 오버로드*라고 합니다. 자세한 내용은 [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) 및 [연산자](../../../csharp/language-reference/keywords/operator.md) 키워드 문서를 참조하세요.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 단원
+
  자세한 내용은 [연산자 키워드](../../../csharp/language-reference/keywords/operator-keywords.md) 및 [C# 연산자](../../../csharp/language-reference/operators/index.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목

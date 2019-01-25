@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 2017을 사용하여 Hello World 애플리케이션 게시
-description: 게시하면 애플리케이션을 실행하는 데 필요한 파일 집합이 만들어집니다.
+title: Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 게시
+description: 게시하면 .NET Core 애플리케이션을 실행하는 데 필요한 파일 집합이 만들어집니다.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/05/2017
 ms.custom: vs-dotnet, seodec18
-ms.openlocfilehash: 8d6d5cc7766334e10e7ae3a70af0c309c05bc98b
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: ae202d8102d470e4260394f427e861750d4f0ee6
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169120"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362472"
 ---
-# <a name="publish-your-hello-world-application-with-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Hello World 애플리케이션 게시
+# <a name="publish-your-net-core-hello-world-application-with-visual-studio-2017"></a>Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 게시
 
 [Visual Studio 2017에서 .NET Core를 사용하여 C# Hello World 애플리케이션 빌드](with-visual-studio.md) 또는 [Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 애플리케이션 빌드](vb-with-visual-studio.md)에서 Hello World 콘솔 애플리케이션을 빌드했습니다. [Visual Studio 2017을 사용하여 C# Hello World 애플리케이션 디버그](debugging-with-visual-studio.md)에서 Visual Studio 디버거를 사용하여 테스트했습니다. 예상대로 작동하는지 확인했으므로 다른 사용자가 실행할 수 있도록 게시할 수 있습니다. 게시하면 애플리케이션을 실행하는 데 필요한 파일 집합이 만들어지며, 이 파일을 대상 컴퓨터에 복사하여 배포할 수 있습니다.
 

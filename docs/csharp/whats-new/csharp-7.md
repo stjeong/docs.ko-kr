@@ -3,12 +3,12 @@ title: C# 7.0의 새로운 기능 - C# 가이드
 description: C# 언어의 새 버전 7에서 제공되는 새로운 기능을 간단히 살펴봅니다.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
-ms.openlocfilehash: 0a8b20606e5133c45f26377ea1c2eba58a1aa3af
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 08e9b9d1a991c6dd18477214dec60fba95afc6c9
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155290"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415730"
 ---
 # <a name="whats-new-in-c-70"></a>C# 7.0의 새로운 기능
 
@@ -105,7 +105,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 
 위 줄에서는 할당의 오른쪽에 있는 이름 `Alpha` 및 `Beta`가 왼쪽에 있는 이름 `First` 및 `Second`와 충돌하기 때문에 무시됨을 알리는 경고 `CS8123`을 생성합니다.
 
-위 예제에서는 튜플을 선언하는 기본 구문을 보여 줍니다. 튜플은 `private` 및 `internal` 메서드의 반환 형식으로 가장 유용합니다. 튜플은 여러 개별 값을 반환하기 위한 해당 메서드에 대한 간단한 구문을 제공합니다. 반환되는 형식을 정의하는 `class` 또는 `struct`를 작성하는 작업을 저장합니다. 새 형식을 만들 필요가 없습니다.
+위 예제에서는 튜플을 선언하는 기본 구문을 보여 줍니다. 튜플은 `private` 및 `internal` 메서드의 반환 형식으로 가장 유용합니다. 튜플은 이러한 메서드에 대해 여러 개의 불연속 값을 반환하는 간단한 구문을 제공합니다. 반환되는 형식을 정의하는 `class` 또는 `struct`를 작성하는 작업을 저장합니다. 새 형식을 만들 필요가 없습니다.
 
 튜플을 만드는 것이 더 효율적이고 더 생산적입니다.
 두 개 이상의 값을 전달하는 데이터 구조를 정의하는 것이 더 간단한 구문입니다. 아래 예제 메서드는 정수 시퀀스에서 발견된 최소값 및 최대값을 반환합니다.
@@ -168,7 +168,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 
 ### <a name="is-expression"></a>`is` 식
 
-`is` 패턴 식은 친숙한 `is` 연산자를 확장하여 형식을 넘어서서 개체를 쿼리합니다.
+`is` 패턴 식은 친숙한 [`is` 연산자](../language-reference/keywords/is.md#pattern-matching-with-is)를 확장하여 형식을 넘어서 개체를 쿼리합니다.
 
 먼저 간단한 시나리오를 살펴보겠습니다. 패턴 일치 식을 통해 관련되지 않은 형식을 사용하는 알고리즘을 단순화하는 기능을 이 시나리오에 추가합니다. 먼저 많은 주사위 굴리기의 합계를 계산하는 메서드를 살펴봅니다.
 
@@ -218,7 +218,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 
 패턴 일치에 대한 자세한 내용은 [C#의 패턴 일치](../pattern-matching.md)에 관련된 항목을 참조하세요.
 
-## <a name="ref-locals-and-returns"></a>ref 지역 및 반환
+## <a name="ref-locals-and-returns"></a>Ref local 및 return
 
 이 기능을 통해 다른 곳에 정의된 변수에 대한 참조를 사용 및 반환하는 알고리즘이 가능해집니다. 한 가지 예는 큰 매트릭스를 사용하고 특정 특징을 가진 하나의 위치를 찾는 것입니다. 하나의 메서드가 매트릭스에 있는 하나의 위치에 대한 두 개의 인덱스를 반환합니다.
 
@@ -277,7 +277,7 @@ C# 언어에는 `ref` local 및 return을 잘못 사용하는 경우를 방지�
 * `ref` local 및 return은 비동기 메서드와 함께 사용할 수 없습니다.
     - 컴파일러는 비동기 메서드가 반환될 때 참조된 변수가 최종 값으로 설정되었는지 여부를 알 수 없습니다.
 
-ref 지역 및 ref 반환을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
+ref local 및 ref return을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
 
 `ref`를 반환 값에 추가하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 기존 코드는 컴파일되지만, 참조 반환 값은 할당 시 복사됩니다. 호출자는 반환 값 스토리지를 `ref` 지역 변수로 업데이트하여 반환을 참조로 저장해야 합니다.
 
@@ -329,7 +329,7 @@ C# 6에서는 멤버 함수의 [식 본문 멤버](csharp-6.md#expression-bodied
 > [!NOTE]
 > 이 예제에는 종료자가 필요하지 않지만 구문을 보여 주기 위해 표시됩니다. 관리되지 않는 리소스를 릴리스해야 하는 경우가 아니면 클래스에서 종료자를 구현하면 안 됩니다. 관리되지 않는 리소스를 직접 관리하지 않고 <xref:System.Runtime.InteropServices.SafeHandle> 클래스를 사용하는 것도 고려해야 합니다.
 
-식 본문 멤버의 이러한 새 위치는 C# 언어에 대한 중요한 기준을 나타냅니다. 이러한 기능은 오픈 소스 [Roslyn](https://github.com/dotnet/Roslyn) 프로젝트에 대한 작업을 수행하는 커뮤니티 멤버가 구현했습니다.
+식 본문 멤버의 새 위치는 C# 언어의 중요한 마일스톤을 나타냅니다. 이러한 기능은 오픈 소스 [Roslyn](https://github.com/dotnet/Roslyn) 프로젝트에서 작업하는 커뮤니티 멤버에 의해 구현되었습니다.
 
 메서드를 식 본문 멤버로 변경하는 것은 [이진 호환 가능 변경](version-update-considerations.md#binary-compatible-changes)입니다.
 

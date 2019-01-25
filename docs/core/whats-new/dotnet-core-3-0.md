@@ -7,12 +7,12 @@ dev_langs:
 author: thraka
 ms.author: adegeo
 ms.date: 12/04/2018
-ms.openlocfilehash: 3ca833031eb8bb0f43a334f833f2e0075842d57d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 26fb7cb25b9bf7f00f87059fbe1848763f7f175d
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53156671"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415548"
 ---
 # <a name="whats-new-in-net-core-30-preview-1"></a>.NET Core 3.0(Preview 1)의 새로운 기능
 
@@ -30,15 +30,12 @@ Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3 Preview 1을 다운로�
 
 ## <a name="default-executables"></a>기본 실행 파일
 
-이제 .NET Core에서 기본적으로 실행 파일을 빌드합니다. 이는 전역으로 설치된 .NET Core 버전을 사용하는 애플리케이션을 위한 새로운 기능입니다. 지금까지는 [자체 포함 배포](../deploying/index.md#self-contained-deployments-scd)에만 실행 파일이 있었습니다.
+이제 .NET Core에서 기본적으로 [프레임워크 종속 실행 파일](../deploying/index.md#framework-dependent-executables-fde)을 빌드합니다. 이는 전역으로 설치된 .NET Core 버전을 사용하는 애플리케이션을 위한 새로운 기능입니다. 지금까지는 [자체 포함 배포](../deploying/index.md#self-contained-deployments-scd)만 실행 파일을 생성했습니다.
 
 사용 중인 SDK의 환경 및 플랫폼과 일치하는 경우 `dotnet build` 또는 `dotnet publish` 중에 실행 파일이 생성됩니다. 다른 네이티브 실행 파일과 마찬가지로 이러한 실행 파일에서도 다음과 같은 동일한 기능을 예상할 수 있습니다.
 
 * 실행 파일을 두 번 클릭할 수 있습니다.
 * Windows의 `myapp.exe`, Linux 및 macOS의 `./myapp`과 같은 애플리케이션을 명령 프롬프트에서 직접 시작할 수 있습니다.
-
-> [!NOTE]
-> 다른 런타임 환경의 경우 `dotnet publish -r` 또는 `dotnet build -r` 인수를 통해 특정 런타임을 지정할 수 없습니다.
 
 ## <a name="build-copies-dependencies"></a>빌드 복사본 종속성
 
@@ -274,7 +271,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 > [!NOTE]
 > [C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/)에서만 `await foreach` 구문을 지원합니다.
 
-## <a name="type-sequencereader"></a>형식: SequenceReader
+## <a name="type-sequencereader"></a>유형: SequenceReader
 
 .NET Core 3.0에서는 `ReadOnlySequence<T>`용 판독기로 사용할 수 있는 `System.Buffers.SequenceReader`가 추가되었습니다. 이를 통해 여러 지원 버퍼에 걸쳐 있을 수 있는 `System.IO.Pipelines` 데이터의 고성능, 저할당 구문 분석이 가능합니다. 
 
@@ -307,7 +304,7 @@ public static void ReadLines(ReadOnlySequence<byte> sequence)
 }
 ```
 
-## <a name="type-metadataloadcontext"></a>형식: MetadataLoadContext
+## <a name="type-metadataloadcontext"></a>유형: MetadataLoadContext
 
 호출자의 애플리케이션 도메인에 영향을 주지 않고 어셈블리 메타데이터를 읽을 수 있도록 하는 `MetadataLoadContext` 형식이 추가되었습니다. 현재 런타임 환경과 다른 아키텍처 및 플랫폼용으로 빌드된 어셈블리를 포함하여, 어셈블리는 데이터로 읽힙니다. `MetadataLoadContext`는 .NET Framework에서만 사용할 수 있는 <xref:System.Reflection.Assembly.ReflectionOnlyLoad*>와 겹칩니다.
 

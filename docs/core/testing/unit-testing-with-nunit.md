@@ -4,12 +4,12 @@ description: dotnet test 및 NUnit을 사용하여 샘플 솔루션을 단계별
 author: rprouse
 ms.date: 08/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 80c831a6d8ab9aa35435d0ff8f13334f7d169a3a
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 00be8c2fdef88861cc1119b1593155e027a3ade5
+ms.sourcegitcommit: 75567a3cb437009db55949c6092f4e77ed1a9da4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169042"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54307216"
 ---
 # <a name="unit-testing-c-with-nunit-and-net-core"></a>NUnit 및 .NET Core를 사용한 C# 유닛 테스트
 
@@ -109,10 +109,10 @@ GitHub의 [샘플 리포지토리](https://github.com/dotnet/samples/blob/master
         PrimeService.Tests.csproj
 ```
 
-*unit-testing-using-dotnet-test* 디렉터리에서 다음 명령을 실행합니다.
+*unit-testing-using-nunit* 디렉터리에서 다음 명령을 실행합니다.
 
 ```console
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## <a name="creating-the-first-test"></a>첫 번째 테스트 만들기

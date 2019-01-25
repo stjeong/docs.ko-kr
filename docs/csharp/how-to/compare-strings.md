@@ -1,16 +1,16 @@
 ---
 title: '방법: 문자열 비교 - C# 가이드'
 description: 문화권별 순서 지정 여부나 대/소문자와 상관없이 문자열 값을 비교하고 정렬하는 방법에 대해 알아봅니다.
-ms.date: 03/20/2018
+ms.date: 10/03/2018
 helpviewer_keywords:
 - strings [C#], comparison
 - comparing strings [C#]
-ms.openlocfilehash: 5b62dd37474dc0afb186c65d1f55f7ccaf7266ec
-ms.sourcegitcommit: 8598d446303b545eed2d520a6ccd061c1a7d00cb
+ms.openlocfilehash: 0eb8669e52099e35553d9e7842371045bd88a643
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53334836"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415886"
 ---
 # <a name="how-to-compare-strings-in-c"></a>C\#에서 문자열을 비교하는 방법
 
@@ -29,7 +29,13 @@ ms.locfileid: "53334836"
 
 ## <a name="default-ordinal-comparisons"></a>기본 서수 비교
 
-같은지를 테스트하는 가장 일반적인 메서드(<xref:System.String.Equals%2A?displayProperty=nameWithType> 및 <xref:System.String.op_Equality%2A?displayProperty=nameWithType>)는 대/소문자 구분 서수 비교를 사용합니다. 이 결과는 다음 예제에서 확인할 수 있습니다.
+가장 일반적인 작업인
+
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
+- <xref:System.String.Equals%2A?displayProperty=nameWithType>
+- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> 
+
+은(는) 서수 비교, 대/소문자 구분 비교를 사용하고 현재 문화권을 사용합니다. 결과는 다음 예제에서 확인할 수 있습니다.
 
 [!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
@@ -116,7 +122,7 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 
 ## <a name="reference-equality-and-string-interning"></a>참조 동일성과 문자열 인터닝
 
-샘플 중에 <xref:System.Object.ReferenceEquals%2A>를 사용한 것은 없습니다. 이 메서드는 두 문자열이 동일한 개체인지 확인합니다. 이로 인해 문자열 비교 시 일관성 없는 결과가 발생할 수 있습니다. 다음 예에서는 C#의 *문자열 인터닝* 기능을 보여줍니다. 프로그램이 두 개 이상의 동일 문자열 변수를 선언할 경우 컴파일러는 변수를 모두 같은 위치에 저장합니다. <xref:System.Object.ReferenceEquals%2A> 메서드를 호출하여 두 문자열이 실제로 메모리에서 같은 개체를 참조하는지 확인할 수 있습니다. 인터닝을 방지하려면 <xref:System.String.Copy%2A?displayProperty=nameWithType> 메서드를 사용합니다. 복사본이 생성된 후 두 개의 문자열은 동일한 값을 가지더라도 스토리지 위치가 다릅니다. `a`와 `b`가 *인터닝*되었음을, 즉 동일한 저장소를 공유한다는 것을 보여주는 다음 샘플을 실행합니다. 문자열 `a`와 `c`는 그렇지 않습니다.
+샘플 중에 <xref:System.Object.ReferenceEquals%2A>를 사용한 것은 없습니다. 이 메서드는 두 문자열이 동일한 개체인지 확인합니다. 이로 인해 문자열 비교 시 일관성 없는 결과가 발생할 수 있습니다. 다음 예에서는 C#의 *문자열 인터닝* 기능을 보여줍니다. 프로그램이 두 개 이상의 동일 문자열 변수를 선언할 경우 컴파일러는 변수를 모두 같은 위치에 저장합니다. <xref:System.Object.ReferenceEquals%2A> 메서드를 호출하여 두 문자열이 실제로 메모리에서 같은 개체를 참조하는지 확인할 수 있습니다. 인터닝을 방지하려면 <xref:System.String.Copy%2A?displayProperty=nameWithType> 메서드를 사용합니다. 복사본이 생성된 후 두 개의 문자열은 동일한 값을 가지더라도 스토리지 위치가 다릅니다. `a` 및 `b`가 *인터닝*되었음을, 즉 동일한 스토리지를 공유한다는 것을 보여주는 다음 샘플을 실행합니다. 문자열 `a`와 `c`는 그렇지 않습니다.
 
 [!code-csharp-interactive[Demonstrating string interning](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
 

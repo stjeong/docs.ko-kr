@@ -4,12 +4,12 @@ description: .NET Core 런타임의 작동 방식을 제어해야 하는 고급 
 author: mjrousos
 ms.date: 12/21/2018
 ms.custom: seodec18
-ms.openlocfilehash: d6ad3bc1b8f1795bfa3d83fbb83cb07120758f11
-ms.sourcegitcommit: 81bd16c7435a8c9183d2a7e878a2a5eff7d04584
+ms.openlocfilehash: deeda8b166d8a22aac88be313d2555e4b9fa5a1c
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54249101"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415522"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>사용자 지정 .NET Core 호스트를 작성하여 네이티브 코드에서 .NET 런타임 제어
 
@@ -90,7 +90,7 @@ mscoree.h 호스팅 API(아래에 설명)와 달리 CoreCLRHost.h API는 런타�
 
 ### <a name="step-5---run-managed-code"></a>5단계 - 관리 코드 실행
 
-런타임이 시작되면 호스트가 관리 코드를 호출할 수 있습니다. 이는 두 가지 방법으로 수행할 수 있습니다. 이 자습서에 연결된 샘플 코드는 `coreclr_create_delegate` 함수를 사용하여 정적 관리 메서드에 대한 대리자를 만듭니다. 이 API는 어셈블리 이름, 네임스페이스로 한정된 형식 이름, 메서드 이름을 입력으로 허용하고, 메서드를 호출하는 데 사용할 수 있는 대리자를 반환합니다.
+런타임이 시작되면 호스트가 관리 코드를 호출할 수 있습니다. 이는 두 가지 방법으로 수행할 수 있습니다. 이 자습서에 연결된 샘플 코드는 `coreclr_create_delegate` 함수를 사용하여 정적 관리 메서드에 대한 대리자를 만듭니다. 이 API는 [어셈블리 이름](../../framework/app-domains/assembly-names.md), 네임스페이스로 한정된 형식 이름, 메서드 이름을 입력으로 허용하고, 메서드를 호출하는 데 사용할 수 있는 대리자를 반환합니다.
 
 [!code-cpp[CoreClrHost#5](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#5)]
 
@@ -184,7 +184,7 @@ AppDomain이 실행 중이면 호스트에서 이제 관리 코드를 실행할 
 
 [!code-cpp[NetCoreHost#8](~/samples/core/hosting/HostWithMscoree/host.cpp#8)]
 
-`ExecuteAssembly`가 호스트의 요구 사항을 충족하지 않는 경우 `CreateDelegate`를 사용하여 정적 관리 메서드에 대한 함수 포인터를 만듭니다. 이 경우 호스트에서 호출하는 메서드의 시그니처를 알아야 하지만(함수 포인터 형식을 만들기 위해) 호스트는 어셈블리의 진입점이 아닌 코드를 호출할 수 있습니다.
+`ExecuteAssembly`가 호스트의 요구 사항을 충족하지 않는 경우 `CreateDelegate`를 사용하여 정적 관리 메서드에 대한 함수 포인터를 만듭니다. 이 경우 호스트에서 호출하는 메서드의 시그니처를 알아야 하지만(함수 포인터 형식을 만들기 위해) 호스트는 어셈블리의 진입점이 아닌 코드를 호출할 수 있습니다. 두 번째 매개 변수에 제공된 어셈블리 이름은 로드할 라이브러리의 [전체 관리형 어셈블리 이름](../../framework/app-domains/assembly-names.md) 입니다.
 
 ```C++
 void *pfnDelegate = NULL;

@@ -1,18 +1,18 @@
 ---
-title: '연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C#)'
+title: '연습: Visual Studio에서 관리형 어셈블리의 형식 포함(C#)'
 ms.date: 07/20/2015
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-ms.openlocfilehash: 1900c62d1ebaf611f141f8f1bdf95f8d11f82140
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 33686dcfee90db2d0a99339a728eb6e2bd7139f5
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46004327"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415717"
 ---
-# <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-c"></a>연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C#)
-강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 응용 프로그램에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
+# <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-c"></a>연습: Visual Studio에서 관리형 어셈블리의 형식 포함(C#)
+강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 애플리케이션에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
   
- 형식 포함은 Microsoft Office의 자동화 개체를 사용하는 응용 프로그램과 같은 COM interop에서 자주 사용됩니다. 형식 정보를 포함하면 서로 다른 컴퓨터의 서로 다른 Microsoft Office 버전에서 동일한 빌드의 프로그램을 작동할 수 있습니다. 그러나 완전하게 관리되는 솔루션에서도 형식 포함을 사용할 수 있습니다.  
+ 형식 포함은 Microsoft Office의 자동화 개체를 사용하는 애플리케이션과 같은 COM interop에서 자주 사용됩니다. 형식 정보를 포함하면 서로 다른 컴퓨터의 서로 다른 Microsoft Office 버전에서 동일한 빌드의 프로그램을 작동할 수 있습니다. 그러나 완전하게 관리되는 솔루션에서도 형식 포함을 사용할 수 있습니다.  
   
  다음과 같은 특징이 있는 어셈블리에서 형식 정보를 포함할 수 있습니다.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "46004327"
                 p_UserInput = Console.ReadLine();  
             }  
         }  
-    )  
+    }  
     ```  
   
 9. 프로젝트를 저장합니다.  
@@ -149,7 +149,7 @@ ms.locfileid: "46004327"
   
 1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 응용 프로그램**을 선택합니다. **이름** 상자에 `TypeEquivalenceClient`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
+2.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 애플리케이션**을 선택합니다. **이름** 상자에 `TypeEquivalenceClient`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
   
 3.  TypeEquivalenceClient 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **빌드** 탭을 클릭합니다. TypeEquivalenceInterface 프로젝트에서 사용한 것과 같은 위치로 출력 경로를 설정합니다(예: `C:\TypeEquivalenceSample`).  
   
@@ -193,7 +193,7 @@ ms.locfileid: "46004327"
   
 1.  Visual Studio의 **파일** 메뉴에서 **열기**를 가리킨 다음 **프로젝트/솔루션**을 클릭합니다.  
   
-2.  **프로젝트 열기** 대화 상자에서 TypeEquivalenceInterface 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **응용 프로그램** 탭을 클릭합니다. **어셈블리 정보** 단추를 클릭합니다. **어셈블리 버전** 및 **파일 버전** 값을 `2.0.0.0`으로 변경합니다.  
+2.  **프로젝트 열기** 대화 상자에서 TypeEquivalenceInterface 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **애플리케이션** 탭을 클릭합니다. **어셈블리 정보** 단추를 클릭합니다. **어셈블리 버전** 및 **파일 버전** 값을 `2.0.0.0`으로 변경합니다.  
   
 3.  SampleInterface.cs 파일을 엽니다. ISampleInterface 인터페이스에 다음 코드 줄을 추가합니다.  
   
@@ -213,7 +213,7 @@ ms.locfileid: "46004327"
   
 1.  Visual Studio의 **파일** 메뉴에서 **열기**를 가리킨 다음 **프로젝트/솔루션**을 클릭합니다.  
   
-2.  **프로젝트 열기** 대화 상자에서 TypeEquivalenceRuntime 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **응용 프로그램** 탭을 클릭합니다. **어셈블리 정보** 단추를 클릭합니다. **어셈블리 버전** 및 **파일 버전** 값을 `2.0.0.0`으로 변경합니다.  
+2.  **프로젝트 열기** 대화 상자에서 TypeEquivalenceRuntime 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **애플리케이션** 탭을 클릭합니다. **어셈블리 정보** 단추를 클릭합니다. **어셈블리 버전** 및 **파일 버전** 값을 `2.0.0.0`으로 변경합니다.  
   
 3.  SampleClass.cs 파일을 엽니다. SampleClass 클래스에 다음 코드 줄을 추가합니다.  
   

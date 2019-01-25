@@ -3,13 +3,13 @@ title: SourceLink 및 .NET 라이브러리
 description: SourceLink를 사용하여 .NET 라이브러리의 디버깅을 향상시키기 위한 모범 사례 권장 사항.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
-ms.openlocfilehash: 3bc72e158a5773b656095f9ce58b442469f91e67
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 01/15/2019
+ms.openlocfilehash: be97f868e2fcfc6c45e4bbac45b033f8914f4d99
+ms.sourcegitcommit: 5c36aaa8299a2437c155700c810585aff19edbec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128931"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54333540"
 ---
 # <a name="sourcelink"></a>SourceLink
 
@@ -35,9 +35,9 @@ SourceLink 사용에 대한 지침은 [dotnet/sourceLink](https://github.com/dot
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute>는 디버거가 코드를 한 단계씩 실행하는 대신 코드를 단계별로 실행하도록 디버거에 지시합니다.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute>는 멤버가 디버거 변수 창에 표시되는지 여부를 제어합니다.
 
-**✔️** 기호 파일(`*.pdb`)을 NuGet 패키지에 포함합니다.
+**✔️** 게시 기호 파일(`*.pdb`)을 고려합니다.
 
-> 일반적으로 [기호 패키지](./nuget.md#symbol-packages)에 기호 파일을 게시합니다. 현재, 기호 패키지의 기본 공용 호스트는 SDK 스타일 프로젝트에서 생성되는 이식 가능한 기호 파일(`*.pdb`)을 지원하지 않으며, 기호 패키지가 유용하지 않습니다.
+> 기호 파일 및 기호 패키지에 대한 자세한 내용은 [기호 패키지](./nuget.md#symbol-packages)를 참조하세요.
 
 >[!div class="step-by-step"]
 >[이전](dependencies.md)

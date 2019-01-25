@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 1c21ba1cc4c02336a204b1fe91b72e5f3e89228c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a0b3e75c6a93aebf979b8df758fe37460c046a15
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127136"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415938"
 ---
 # <a name="implement-a-microservice-domain-model-with-net-core"></a>.NET Core를 사용하여 마이크로 서비스 도메인 모델 구현 
 
@@ -17,7 +17,7 @@ ms.locfileid: "53127136"
 
 ## <a name="domain-model-structure-in-a-custom-net-standard-library"></a>사용자 지정 .NET Standard 라이브러리의 도메인 모델 구조
 
-eShopOnContainers 참조 응용 프로그램에 사용되는 폴더 조직에서는 응용 프로그램에 대한 DDD 모델을 보여 줍니다. 다른 폴더 구조가 응용 프로그램에 대해 선택한 설계와 더 분명하게 커뮤니케이션할 수도 있습니다. 그림 7-10에서 보듯 주문 도메인 모델에는 주문 집계와 구매자 집계 등의 두 가지 집계가 있습니다. 단일 도메인 개체로 구성된 집계를 가질 수도 있지만(집계 루트 또는 루트 엔터티) 각 집계는 도메인 엔터티 및 값 개체의 그룹입니다.
+eShopOnContainers 참조 애플리케이션에 사용되는 폴더 조직에서는 애플리케이션에 대한 DDD 모델을 보여 줍니다. 다른 폴더 구조가 애플리케이션에 대해 선택한 설계와 더 분명하게 커뮤니케이션할 수도 있습니다. 그림 7-10에서 보듯 주문 도메인 모델에는 주문 집계와 구매자 집계 등의 두 가지 집계가 있습니다. 단일 도메인 개체로 구성된 집계를 가질 수도 있지만(집계 루트 또는 루트 엔터티) 각 집계는 도메인 엔터티 및 값 개체의 그룹입니다.
 
 ![각 폴더에는 엔터티 클래스, 값 개체 파일 등을 포함하는 BuyerAggregate 및 OrderAggregate 폴더가 포함된 AggregatesModel 폴더를 보여주는 Ordering.Domain 프로젝트의 솔루션 탐색기 보기입니다. ](./media/image11.png)
 
@@ -122,7 +122,7 @@ myOrder.OrderItems.Add(myNewOrderItem);
 //...
 ```
 
-이 경우 Add 메서드는 순전히 OrderItems 컬렉션에 대한 직접 액세스를 통해 데이터를 추가하는 작업입니다. 따라서 자식 엔터티를 통해 해당 작업과 관련된 대부분의 도메인 논리, 규칙 또는 유효성 검사는 응용 프로그램 계층 전체에 고르게 퍼집니다(명령 처리기 및 Web API 컨트롤러).
+이 경우 Add 메서드는 순전히 OrderItems 컬렉션에 대한 직접 액세스를 통해 데이터를 추가하는 작업입니다. 따라서 자식 엔터티를 통해 해당 작업과 관련된 대부분의 도메인 논리, 규칙 또는 유효성 검사는 애플리케이션 계층 전체에 고르게 퍼집니다(명령 처리기 및 Web API 컨트롤러).
 
 집계 루트를 우회하면 집계 루트가 고정, 유효성 또는 일관성을 보장할 수 없습니다. 결국 복잡한 코드나 트랜잭션 스크립트 코드가 있게 됩니다.
 
@@ -172,7 +172,7 @@ EF Core 1.1 이상의 기능을 사용하여 열을 필드에 매핑하면 속�
   [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
 
 - **Julie Lerman. 도메인 기반 디자인의 코딩: 데이터 중심 개발을 위한 팁** \
-  [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/en-us/magazine/dn342868.aspx)
+  [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/magazine/dn342868.aspx)
 
 - **Udi Dahan. 완벽하게 캡슐화된 도메인 모델을 만드는 방법** \
   [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)

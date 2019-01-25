@@ -3,21 +3,21 @@ title: 지수 백오프를 사용하여 사용자 지정 HTTP 호출 다시 시�
 description: 가능한 HTTP 오류 시나리오를 처리하기 위해 지수 백오프를 사용하여 HTTP 호출 다시 시도를 처음부터 구현하는 방법을 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/08/2018
-ms.openlocfilehash: b7aaad9199bb275f45fd088a6207d707e8e5751c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 10/16/2018
+ms.openlocfilehash: fdbc09cddde34cb8897e1d5b105cb15c863b59ce
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145100"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362251"
 ---
 # <a name="explore-custom-http-call-retries-with-exponential-backoff"></a>지수 백오프를 사용하여 사용자 지정 HTTP 호출 다시 시도 탐색
 
 복원력 있는 마이크로 서비스를 만들려면 가능한 HTTP 오류 시나리오를 처리해야 합니다. 권장되지는 않지만 이러한 오류를 처리하는 한 가지 방법은 지수 백오프를 사용하여 다시 시도를 직접 구현하는 것입니다.
 
-**중요 참고:** 이 섹션에서는 HTTP 호출 다시 시도를 구현하는 사용자 고유의 사용자 지정 코드를 만드는 방법을 보여 줍니다. 그러나 사용자가 직접 수행하는 것은 권장되지 않으며, .NET Core 2.1부터 사용할 수 있는 Polly가 있는 `HttpClientFactory`와 같이 더 강력하고 신뢰할 수 있지만 간단한 메커니즘을 사용하는 것이 좋습니다. 다음 섹션에서는 이러한 권장 방법에 대해 설명합니다. 
+**중요 정보:** 이 섹션에서는 HTTP 호출 다시 시도를 구현하는 사용자 고유의 사용자 지정 코드를 만드는 방법을 보여 줍니다. 그러나 사용자가 직접 수행하는 것은 권장되지 않으며, .NET Core 2.1부터 제공되는 Polly 포함 `HttpClientFactory`와 같이 더 강력하고 신뢰할 수 있지만 간단한 메커니즘을 사용하는 것이 좋습니다. 다음 섹션에서는 이러한 권장 방법에 대해 설명합니다.
 
-초기 탐색에서 [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260)와 같이 지수 백오프에 대한 유틸리티 클래스를 사용하여 사용자 고유의 코드를 구현할 뿐만 아니라 다음과 같은 코드(이 [GitHub 리포지토리](https://gist.github.com/CESARDELATORRE/d80c6423a1aebaffaf387469f5194f5b)에서 제공됨)도 구현할 수 있습니다.
+초기 살펴보기로, [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260)와 같이 지수 백오프에 대한 유틸리티 클래스를 포함하는 고유한 코드와 다음과 같은 코드를 구현할 수 있습니다.
 
 ```csharp
 public sealed class RetryWithExponentialBackoff
@@ -90,7 +90,7 @@ public struct ExponentialBackoff
 }
 ```
 
-클라이언트 C\# 응용 프로그램(다른 웹 API 클라이언트 마이크로 서비스, ASP.NET MVC 응용 프로그램 또는 C\# Xamarin 응용 프로그램)에서 쉽게 이 코드를 사용할 수 있습니다. 다음 예제에서는 HttpClient 클래스를 사용하는 방법을 보여줍니다.
+클라이언트 C\# 애플리케이션(다른 웹 API 클라이언트 마이크로 서비스, ASP.NET MVC 애플리케이션 또는 C\# Xamarin 애플리케이션)에서 쉽게 이 코드를 사용할 수 있습니다. 다음 예제에서는 HttpClient 클래스를 사용하는 방법을 보여줍니다.
 
 ```csharp
 public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? type)
@@ -113,8 +113,7 @@ public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? t
 }
 ```
 
-이 코드는 개념 증명으로만 적합합니다. 다음 섹션에서는 HttpClientFactory를 사용하여 더 정교하지만 간단하게 사용할 수 있는 방법에 대해 설명합니다.
-HttpClientFactory는 Polly와 같이 입증된 복원력 라이브러리가 있는 .NET Core 2.1부터 사용할 수 있습니다. 
+이 코드는 개념 증명으로만 적합합니다. 다음 섹션에서는 HttpClientFactory를 사용하여 더 정교하지만 간단하게 사용할 수 있는 방법에 대해 설명합니다. HttpClientFactory는 Polly와 같이 입증된 복원력 라이브러리가 있는 .NET Core 2.1부터 사용할 수 있습니다.
 
 >[!div class="step-by-step"]
 >[이전](implement-resilient-entity-framework-core-sql-connections.md)

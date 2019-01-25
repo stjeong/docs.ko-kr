@@ -7,14 +7,14 @@ ms.date: 08/07/2017
 dev_langs:
 - vb
 ms.custom: vs-dotnet, seodec18
-ms.openlocfilehash: e743cb496aca101b4594435c86e48951870cf8ef
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: de7a423bb3e9a288d17c86e9e0afc3b00f6fd80b
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170030"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362264"
 ---
-# <a name="build-a-net-core-visual-basic-hello-world-application-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core Visual Basic Hello World 애플리케이션 빌드
+# <a name="build-a-visual-basic-hello-world-application-with-the-net-core-sdk-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core SDK를 사용하여 Visual Basic Hello World 애플리케이션 빌드
 
 이 항목에서는 Visual Studio 2017에서 Visual Basic을 사용하여 간단한 .NET Core 콘솔 애플리케이션을 빌드, 디버그 및 게시하는 과정을 단계별로 소개합니다. Visual Studio 2017은 .NET Core 애플리케이션 빌드를 위해 필요한 모든 기능을 갖춘 개발 환경을 제공합니다. 플랫폼 특정 종속성이 없는 애플리케이션은 .NET Core에서 대상으로 하는 모든 플랫폼과 .NET Core가 설치된 모든 시스템에서 실행할 수 있습니다.
 
@@ -78,9 +78,9 @@ ms.locfileid: "53170030"
 
 애플리케이션을 만들고 실행했습니다. 전문가 수준의 애플리케이션을 개발하려면 애플리케이션 릴리스 준비를 위해 몇 가지 추가 단계를 수행합니다.
 
-- 애플리케이션 디버그에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 C# Hello World 애플리케이션 디버그](debugging-with-visual-studio.md)를 참조하세요.
+- 애플리케이션을 디버그하려면 [Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 디버그](debugging-with-visual-studio.md)를 참조하세요.
 
-- 애플리케이션의 배포 가능한 버전을 개발 및 게시하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 C# Hello World 애플리케이션 게시](publishing-with-visual-studio.md)를 참조하세요.
+- 애플리케이션의 배포 가능한 버전을 게시하려면 [Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 게시](publishing-with-visual-studio.md)를 참조하세요.
 
 <!--
 ## Related topics

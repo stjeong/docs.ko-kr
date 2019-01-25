@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 05/22/2017
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.openlocfilehash: f9b4e3d885725afc4181256e02e3b174318e3ece
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: acd8e14e1d000f55f03017a4fee43347f50df3a7
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47232848"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415925"
 ---
 # <a name="tour-of-net"></a>.NET 둘러보기
 
@@ -119,13 +119,13 @@ LINQ는 데이터에 적용할 간단하고 선언적인 코드를 작성할 수
 
 ## <a name="native-interoperability"></a>기본 상호 운용성
 
-모든 운영 체제에는 시스템 서비스를 제공하는 API(응용 프로그래밍 인터페이스)가 있습니다. .NET은 이러한 API를 호출하는 여러 가지 방법을 제공합니다.
+모든 운영 체제에는 시스템 서비스를 제공하는 API(애플리케이션 프로그래밍 인터페이스)가 있습니다. .NET은 이러한 API를 호출하는 여러 가지 방법을 제공합니다.
 
 기본 상호 운용성은 대체로 “플랫폼 호출” 또는 줄여서 P/Invoke를 통해 수행되며, Linux 및 Windows 플랫폼에서 지원됩니다. 기본 상호 운용성을 수행하는 Windows 전용 방법은 “COM interop”라고 하며, 관리 코드에서 [COM 구성 요소](/cpp/atl/introduction-to-com)로 작업하는 데 사용됩니다. 이 방법은 P/Invoke 인프라를 기반으로 하지만 약간 다른 방식으로 작동합니다.
 
 Java 및 Objective-C에 대한 Mono(및 Xamarin)의 상호 운용성 지원은 대부분 비슷하게 작성되었습니다. 즉, 동일한 원칙을 사용합니다.
 
-기본 상호 운용성에 대한 자세한 내용은 [기본 상호 운용성](native-interop.md) 항목을 참조하세요.
+기본 상호 운용성에 대한 자세한 내용은 [기본 상호 운용성](native-interop/index.md) 문서를 참조하세요.
 
 ## <a name="unsafe-code"></a>안전하지 않은 코드
 

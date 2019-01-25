@@ -3,13 +3,13 @@ title: Polly를 통해 지수 백오프를 사용하여 HTTP 호출 다시 시�
 description: Polly와 HttpClientFactory를 사용하여 HTTP 오류를 처리하는 방법을 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/10/2018
-ms.openlocfilehash: 78de1440721e83459e455f5c31d10e52a1d3b1b6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 10/16/2018
+ms.openlocfilehash: 25b816cb56c30545b8d67986817f51e17b2ff770
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143989"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362758"
 ---
 # <a name="implement-http-call-retries-with-exponential-backoff-with-httpclientfactory-and-polly-policies"></a>HttpClientFactory 및 Polly 정책을 통해 지수 백오프를 사용하여 HTTP 호출 다시 시도 구현
 
@@ -36,9 +36,9 @@ services.AddHttpClient<IBasketService, BasketService>()
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
-**AddPolicyHandler()** 는 사용할 `HttpClient` 개체에 정책을 추가하는 메서드입니다. 이 경우 지수 백오프를 사용하는 Http 다시 시도에 대한 Polly 정책을 추가합니다.
+**AddPolicyHandler()** 는 사용할 `HttpClient` 개체에 정책을 추가하는 메서드입니다. 이 경우 지수 백오프를 사용하는 HTTP 다시 시도에 대한 Polly 정책을 추가합니다.
 
-좀 더 모듈화된 방법을 사용하기 위해 Http 재시도 정책은 다음 코드와 같이 ConfigureServices() 메서드 내에서 별도의 메서드로 정의할 수 있습니다.
+좀 더 모듈화된 방법을 사용하기 위해 HTTP 재시도 정책은 다음 코드와 같이 `Startup.cs` 파일 내에서 별도의 메서드로 정의할 수 있습니다.
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -51,11 +51,11 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 }
 ```
 
-Polly를 사용하면 HTTP 예외(예: 오류 로깅)가 발생하는 경우 수행할 다시 시도 횟수, 지수 백오프 구성 및 작업이 포함된 다시 시도 정책을 정의할 수 있습니다. 이 경우 정책은 2초에서 시작하여 지수 다시 시도를 6회 시도하도록 구성됩니다. 
+Polly를 사용하면 HTTP 예외(예: 오류 로깅)가 발생하는 경우 수행할 다시 시도 횟수, 지수 백오프 구성 및 작업이 포함된 재시도 정책을 정의할 수 있습니다. 이 경우 정책은 2초에서 시작하여 지수 다시 시도를 6회 시도하도록 구성됩니다. 
 
 그러면 메서드에서 다시 시도를 6회 시도하고, 각 다시 시도 사이의 시간(초)은 2초에서 시작하는 지수가 됩니다.
 
-### <a name="adding-a-jitter-strategy-to-the-retry-policy"></a>지터 전략을 재시도 정책에 추가
+## <a name="add-a-jitter-strategy-to-the-retry-policy"></a>재시도 정책에 지터 전략 추가
 
 일반 재시도 정책은 동시성, 확장성 및 경합이 높은 경우 시스템에 영향을 미칠 수 있습니다. 부분 작동 중단 상황에서 여러 클라이언트로부터 유사한 재시도가 대규모로 발생하는 문제를 해결하기 위해 재시도 알고리즘/정책에 지터 전략을 추가하면 좋습니다. 이렇게 하면 지수 백오프에 임의성을 추가하여 종단 간 시스템의 전체 성능을 높일 수 있습니다. 이렇게 문제가 발생했을 때 급증 문제를 분산시킵니다. 일반 Polly 정책을 사용하는 경우 지터를 구현하는 코드는 다음 예제와 같을 수 있습니다.
 
@@ -71,19 +71,17 @@ Policy
 
 ## <a name="additional-resources"></a>추가 자료
 
--   **패턴 다시 시도**
-    [*https://docs.microsoft.com/azure/architecture/patterns/retry*](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- **패턴 다시 시도**\
+  [*https://docs.microsoft.com/azure/architecture/patterns/retry*](/azure/architecture/patterns/retry)
 
--   **Polly 및 HttpClientFactory**
-    [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
+- **Polly 및 HttpClientFactory**\
+  [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
 
--   **Polly(.NET 복원력 및 transient-fault-handling 라이브러리)**
+- **Polly(.NET 복원력 및 transient-fault-handling 라이브러리)**\
+  [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
-    [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
-
--   **Marc Brooker. 지터: 임의성으로 더 효율적인 지터 만들기**
-
-    [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
+- **Marc Brooker. 지터: 임의성으로 더 효율적인 지터 만들기**\
+  [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
 
 >[!div class="step-by-step"]
 >[이전](explore-custom-http-call-retries-exponential-backoff.md)

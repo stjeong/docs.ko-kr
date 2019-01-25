@@ -1,12 +1,12 @@
 ---
 title: 특성(C#)
 ms.date: 04/26/2018
-ms.openlocfilehash: c33d93a4af91e0c61546e8d51ab470f2889c095c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: f211e8af48bdfef0bb9bf4341c7a5911b5695101
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44214149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573346"
 ---
 # <a name="attributes-c"></a>특성(C#)
 
@@ -72,7 +72,7 @@ ms.locfileid: "44214149"
 |`assembly`|전체 어셈블리|
 |`module`|현재 어셈블리 모듈|
 |`field`|클래스 또는 구조체의 필드|
-|`event`|이벤트(event)|
+|`event`|이벤트|
 |`method`|메서드 또는 `get` 및 `set` 속성 접근자|
 |`param`|메서드 매개 변수 또는 `set` 속성 접근자 매개 변수|
 |`property`|속성|
@@ -125,7 +125,7 @@ using System.Reflection;
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../index.md)  
-- [리플렉션(C#)](../reflection.md)  
-- [특성](../../../../standard/attributes/index.md)  
-- [C#에서 특성 사용](../../../tutorials/attributes.md)  
+- [C# 프로그래밍 가이드](../../index.md)
+- [리플렉션(C#)](../reflection.md)
+- [특성](../../../../standard/attributes/index.md)
+- [C#에서 특성 사용](../../../tutorials/attributes.md)

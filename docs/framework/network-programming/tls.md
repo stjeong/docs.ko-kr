@@ -12,24 +12,24 @@ helpviewer_keywords:
 - Internet, security
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
-ms.openlocfilehash: 9cb7dbdfb1ad221e00823d8d55e7fd3c52cabe8b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 2d7555d39b3aa92ca49368ca5ad59750e3603606
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194139"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415899"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 
-TLS(전송 계층 보안) 프로토콜은 인터넷을 통해 전달되는 개인 정보를 보호하는 데 도움이 되도록 설계된 업계 표준입니다. [TLS 1.2](https://tools.ietf.org/html/rfc5246)는 이전 버전보다 향상된 보안을 제공하는 표준입니다. TLS 1.2는 더 빠르고 보안이 향상된 가장 최근 릴리스된 표준 [TLS 1.3](https://tools.ietf.org/html/rfc8446)으로 대체됩니다. 이 문서에서는 TLS 프로토콜을 사용하는 .NET Framework 응용 프로그램을 보호하기 위한 권장 사항을 제공합니다.
+TLS(전송 계층 보안) 프로토콜은 인터넷을 통해 전달되는 개인 정보를 보호하는 데 도움이 되도록 설계된 업계 표준입니다. [TLS 1.2](https://tools.ietf.org/html/rfc5246)는 이전 버전보다 향상된 보안을 제공하는 표준입니다. TLS 1.2는 더 빠르고 보안이 향상된 가장 최근 릴리스된 표준 [TLS 1.3](https://tools.ietf.org/html/rfc8446)으로 대체됩니다. 이 문서에서는 TLS 프로토콜을 사용하는 .NET Framework 애플리케이션을 보호하기 위한 권장 사항을 제공합니다.
 
-.NET Framework 응용 프로그램이 안전하게 유지되도록 하려면 TLS 버전을 하드 코드하면 **안 됩니다**. .NET Framework 응용 프로그램에서는 OS(운영 체제)가 지원하는 TLS 버전을 사용해야 합니다.
+.NET Framework 애플리케이션이 안전하게 유지되도록 하려면 TLS 버전을 하드 코드하면 **안 됩니다**. .NET Framework 애플리케이션에서는 OS(운영 체제)가 지원하는 TLS 버전을 사용해야 합니다.
 
 이 문서는 다음과 같은 개발자를 대상으로 합니다.
 
 - <xref:System.Net> API(예: <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> 및 <xref:System.Net.Security.SslStream?displayProperty=nameWithType>)를 직접 사용하는 개발자.
 - <xref:System.ServiceModel?displayProperty=nameWithType> 네임스페이스를 통해 WCF 클라이언트 및 서비스를 직접 사용하는 개발자.
-- [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) 웹 및 작업자 역할을 사용하여 응용 프로그램을 호스트 및 실행하는 개발자. [Azure Cloud Services](#azure-cloud-services) 섹션을 참조하세요.
+- [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) 웹 및 작업자 역할을 사용하여 애플리케이션을 호스트 및 실행하는 개발자. [Azure Cloud Services](#azure-cloud-services) 섹션을 참조하세요.
 
 다음을 권장합니다.
 
@@ -48,15 +48,15 @@ TLS(전송 계층 보안) 프로토콜은 인터넷을 통해 전달되는 개�
 
 프로토콜 버전의 하드 코드를 피할 수 없는 경우에는 TLS 1.2를 지정하는 것이 좋습니다. TLS 1.0 종속성을 식별하고 제거하는 방법에 대한 지침은 [TLS 1.0 문제 해결](https://www.microsoft.com/download/details.aspx?id=55266) 백서를 다운로드합니다.
 
-WCF는 .NET Framework 4.7의 기본값으로 TLS 1.0, 1.1 및 1.2를 지원합니다. .NET Framework 4.7.1부터 WCF 기본값은 운영 체제에 구성된 버전으로 설정됩니다. 응용 프로그램이 명시적으로 `SslProtocols.None`으로 구성된 경우 WCF는 NetTcp 전송을 사용할 때 운영 체제 기본 설정을 사용합니다.
+WCF는 .NET Framework 4.7의 기본값으로 TLS 1.0, 1.1 및 1.2를 지원합니다. .NET Framework 4.7.1부터 WCF 기본값은 운영 체제에 구성된 버전으로 설정됩니다. 애플리케이션이 명시적으로 `SslProtocols.None`으로 구성된 경우 WCF는 NetTcp 전송을 사용할 때 운영 체제 기본 설정을 사용합니다.
 
 GitHub 문제 [.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례](https://github.com/dotnet/docs/issues/4675)에서 이 문서에 대한 질문을 할 수 있습니다.
 
 ## <a name="audit-your-code-and-make-code-changes"></a>코드 감사 및 변경
 
-ASP.NET 응용 프로그램의 경우 _web.config_의 `<system.web><httpRuntime targetFramework>` 요소를 검사하여 의도한 .NET Framework 버전을 사용하고 있는지 확인합니다.
+ASP.NET 애플리케이션의 경우 _web.config_의 `<system.web><httpRuntime targetFramework>` 요소를 검사하여 의도한 .NET Framework 버전을 사용하고 있는지 확인합니다.
 
-Windows Forms 및 기타 응용 프로그램의 경우 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)을 참조하세요.
+Windows Forms 및 기타 애플리케이션의 경우 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
 
 다음 섹션을 사용하여 특정 TLS 또는 SSL 버전을 사용하지 않는지 확인합니다.
 
@@ -88,8 +88,8 @@ WCF는 .NET Framework의 나머지와 동일한 네트워킹 스택을 사용합
 
 4.7.1을 대상으로 지정하면 다음 위치에 명시적으로 구성되지 않은 경우에 한해 WCF는 OS에서 기본적으로 가장 적합한 보안 프로토콜을 선택할 수 있도록 구성됩니다.
 
-- 응용 프로그램 구성 파일.
-- **또는**소스 코드의 응용 프로그램.
+- 애플리케이션 구성 파일.
+- **또는**소스 코드의 애플리케이션.
 
 기본적으로 .NET Framework 4.7 이상 버전은 TLS 1.2를 사용하도록 구성되고 TLS 1.1 또는 TLS 1.0을 사용하는 연결을 허용합니다. <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>을 사용하도록 바인딩을 구성하여 OS가 가장 적합한 보안 프로토콜을 선택할 수 있도록 WCF를 구성하세요. 이 구성은 <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>에서 설정할 수 있습니다. `SslProtocols.None`은 <xref:System.ServiceModel.NetTcpSecurity.Transport>에서 액세스할 수 있습니다. `NetTcpSecurity.Transport`는 <xref:System.ServiceModel.NetTcpBinding.Security>에서 액세스할 수 있습니다.
 
@@ -120,7 +120,7 @@ WCF 프레임워크는 프로토콜 버전을 명시적으로 구성하지 않�
 
 ### <a name="for-net-framework-35---452-and-not-wcf"></a>WCF가 아니고 .NET Framework 3.5~4.5.2인 경우
 
-앱을 .NET Framework 4.7 이상 버전으로 업그레이드하는 것이 좋습니다. 업그레이드할 수 없는 경우에는 다음 단계를 수행합니다. 향후 특정 시점에 .NET Framework 4.7 이상 버전으로 업그레이드할 때까지 응용 프로그램이 작동하지 않을 수 있습니다.
+앱을 .NET Framework 4.7 이상 버전으로 업그레이드하는 것이 좋습니다. 업그레이드할 수 없는 경우에는 다음 단계를 수행합니다. 향후 특정 시점에 .NET Framework 4.7 이상 버전으로 업그레이드할 때까지 애플리케이션이 작동하지 않을 수 있습니다.
 
 [SchUseStrongCrypto](#schusestrongcrypto) 및 [SystemDefaultTlsVersions](#systemdefaulttlsversions) 레지스트리 키를 1로 설정합니다. [Windows 레지스트리를 통해 보안 구성](#configuring-security-via-the-windows-registry)을 참조하세요. .NET Framework 버전 3.5는 명시적 TLS 값이 전달되는 경우에만 `SchUseStrongCrypto` 플래그를 지원합니다.
 
@@ -150,7 +150,7 @@ HTTP 네트워킹(<xref:System.Net.ServicePointManager>) 또는 TCP 소켓 네�
 
 ### <a name="switchsystemnetdontenableschusestrongcrypto"></a>Switch.System.Net.DontEnableSchUseStrongCrypto
 
-`Switch.System.Net.DontEnableSchUseStrongCrypto`가 `false` 값이면 앱에서 강력한 암호화가 사용됩니다. `DontEnableSchUseStrongCrypto`가 `false` 값이면 더 안전한 네트워크 프로토콜(TLS 1.2, TLS 1.1 및 TLS 1.0)이 사용되고 보안되지 않은 프로토콜은 차단됩니다. 자세한 내용은 [SCH_USE_STRONG_CRYPTO 플래그](#the-schusestrongcrypto-flag)를 참조하세요. `true` 값은 앱에 대해 강력한 암호화를 사용하지 않도록 설정합니다.
+`Switch.System.Net.DontEnableSchUseStrongCrypto`가 `false` 값이면 앱에서 강력한 암호화가 사용됩니다. `DontEnableSchUseStrongCrypto`가 `false` 값이면 더 안전한 네트워크 프로토콜(TLS 1.2, TLS 1.1 및 TLS 1.0)이 사용되고 보안되지 않은 프로토콜은 차단됩니다. 자세한 내용은 [SCH_USE_STRONG_CRYPTO 플래그](#the-sch_use_strong_crypto-flag)를 참조하세요. `true` 값은 앱에 대해 강력한 암호화를 사용하지 않도록 설정합니다.
 
 앱이 .NET Framework 4.6 이상 버전을 대상으로 하는 경우 이 스위치는 기본적으로 `false`로 설정됩니다. 이 값이 권장되는 안전한 기본값입니다. 앱이 .NET Framework 4.6에서 실행되지만 이전 버전을 대상으로 하는 경우 스위치는 기본적으로 `true`로 설정됩니다. 이 경우 스위치를 명시적으로 `false`로 설정해야 합니다.
 
@@ -164,22 +164,22 @@ HTTP 네트워킹(<xref:System.Net.ServicePointManager>) 또는 TCP 소켓 네�
 
 ### <a name="switchsystemservicemodeldisableusingservicepointmanagersecurityprotocols"></a>Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols
 
-`Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols`가 `false` 값이면 응용 프로그램에는 인증서 자격 증명을 사용하는 메시지 보안을 위해 `ServicePointManager.SecurityProtocols`에 정의된 값이 사용됩니다. `true` 값이면 TLS1.0까지 사용 가능한 최고 버전의 프로토콜이 사용됩니다.
+`Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols`가 `false` 값이면 애플리케이션에는 인증서 자격 증명을 사용하는 메시지 보안을 위해 `ServicePointManager.SecurityProtocols`에 정의된 값이 사용됩니다. `true` 값이면 TLS1.0까지 사용 가능한 최고 버전의 프로토콜이 사용됩니다.
 
-.NET Framework 4.7 이상 버전을 대상으로 하는 응용 프로그램의 경우 이 값은 기본적으로 `false`로 설정됩니다. .NET Framework 4.6.2 이하를 대상으로 하는 응용 프로그램의 경우 이 값은 기본적으로 `true`로 설정됩니다.
+.NET Framework 4.7 이상 버전을 대상으로 하는 애플리케이션의 경우 이 값은 기본적으로 `false`로 설정됩니다. .NET Framework 4.6.2 이하를 대상으로 하는 애플리케이션의 경우 이 값은 기본적으로 `true`로 설정됩니다.
 
 ### <a name="switchsystemservicemodeldontenablesystemdefaulttlsversions"></a>Switch.System.ServiceModel.DontEnableSystemDefaultTlsVersions
 
 `Switch.System.ServiceModel.DontEnableSystemDefaultTlsVersions`가 `false` 값이면 운영 체제가 프로토콜을 선택할 수 있도록 기본 구성이 설정됩니다. `true` 값이면 TLS1.2까지 사용 가능한 최고 버전의 프로토콜로 기본값이 설정됩니다.
 
-.NET Framework 4.7.1 이상 버전을 대상으로 하는 응용 프로그램의 경우 이 값은 기본적으로 `false`로 설정됩니다. .NET Framework 4.7 이하를 대상으로 하는 응용 프로그램의 경우 이 값은 기본적으로 `true`로 설정됩니다.
+.NET Framework 4.7.1 이상 버전을 대상으로 하는 애플리케이션의 경우 이 값은 기본적으로 `false`로 설정됩니다. .NET Framework 4.7 이하를 대상으로 하는 애플리케이션의 경우 이 값은 기본적으로 `true`로 설정됩니다.
 
 TLS 프로토콜에 대한 자세한 내용은 [완화: TLS 프로토콜](../migration-guide/mitigation-tls-protocols.md)을 참조하세요. `AppContext` 스위치에 대한 자세한 내용은 [ `<AppContextSwitchOverrides> Element` ](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md)를 참조하세요.
 
 ## <a name="configuring-security-via-the-windows-registry"></a>Windows 레지스트리를 통해 보안 구성
 
 > [!WARNING]
-> 레지스트리 키를 설정하면 시스템의 모든 응용 프로그램에 영향을 줍니다. 머신에 대한 모든 권한이 있고 레지스트리의 변경 내용을 제거할 수 있는 경우에만 이 옵션을 사용합니다.
+> 레지스트리 키를 설정하면 시스템의 모든 애플리케이션에 영향을 줍니다. 머신에 대한 모든 권한이 있고 레지스트리의 변경 내용을 제거할 수 있는 경우에만 이 옵션을 사용합니다.
 
 하나 또는 두 `AppContext` 스위치를 모두 설정할 수 없는 경우에는 이 섹션에 설명된 Windows 레지스트리 키와 함께 앱에서 사용하는 보안 프로토콜을 제어할 수 있습니다. 앱이 .NET Framework 4.5.2 이하 버전에서 실행되거나 구성 파일을 편집할 수 없는 경우에는 `AppContext` 스위치 중 하나 또는 모두를 사용할 수 없습니다. 레지스트리를 사용하여 보안을 구성하려면 코드에서 보안 프로토콜 값을 지정하지 마세요. 지정할 경우 레지스트리 설정이 재정의됩니다.
 
@@ -191,7 +191,7 @@ HTTP 네트워킹(<xref:System.Net.ServicePointManager>) 또는 TCP 소켓 네�
 
 ### <a name="schusestrongcrypto"></a>SchUseStrongCrypto
 
-`HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` 레지스트리 키의 값은 DWORD 형식입니다. 값이 1이면 앱에서 강력한 암호화가 사용됩니다. 강력한 암호화의 경우 더 안전한 네트워크 프로토콜(TLS 1.2, TLS 1.1 및 TLS 1.0)이 사용되고 보안되지 않은 프로토콜은 차단됩니다. 0 값은 강력한 암호화를 사용하지 않도록 설정합니다. 자세한 내용은 [SCH_USE_STRONG_CRYPTO 플래그](#the-schusestrongcrypto-flag)를 참조하세요.
+`HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` 레지스트리 키의 값은 DWORD 형식입니다. 값이 1이면 앱에서 강력한 암호화가 사용됩니다. 강력한 암호화의 경우 더 안전한 네트워크 프로토콜(TLS 1.2, TLS 1.1 및 TLS 1.0)이 사용되고 보안되지 않은 프로토콜은 차단됩니다. 0 값은 강력한 암호화를 사용하지 않도록 설정합니다. 자세한 내용은 [SCH_USE_STRONG_CRYPTO 플래그](#the-sch_use_strong_crypto-flag)를 참조하세요.
 
 앱이 .NET Framework 4.6 이상 버전을 대상으로 하는 경우 이 키는 기본적으로 1 값으로 설정됩니다. 이 값이 권장되는 안전한 기본값입니다. 앱이 .NET Framework 4.6에서 실행되지만 이전 버전을 대상으로 하는 경우 키는 기본적으로 0으로 설정됩니다. 이 경우 키 값을 명시적으로 1로 설정해야 합니다.
 
@@ -258,7 +258,7 @@ Windows Registry Editor Version 5.00
 참고 항목:
 
 - [.NET Framework 버전 및 종속성](../migration-guide/versions-and-dependencies.md)
-- [방법: 설치된 .NET Framework 버전 확인](../migration-guide/how-to-determine-which-versions-are-installed.md)
+- [방법: 설치된 .NET Framework 버전 확인](../migration-guide/how-to-determine-which-versions-are-installed.md)을 참조하세요.
 
 ## <a name="support-for-tls-12"></a>TLS 1.2에 대한 지원
 
@@ -294,7 +294,7 @@ Windows의 각 버전에서 기본적으로 사용하도록 설정되는 TLS/SSL
 
 ## <a name="azure-cloud-services"></a>Azure Cloud Services
 
-[Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) 웹 및 작업자 역할을 사용하여 응용 프로그램을 호스트하고 실행하는 경우에는 TLS 1.2를 지원하기 위해 몇 가지 고려할 사항이 있습니다.
+[Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) 웹 및 작업자 역할을 사용하여 애플리케이션을 호스트하고 실행하는 경우에는 TLS 1.2를 지원하기 위해 몇 가지 고려할 사항이 있습니다.
 
 ### <a name="net-framework-47-is-not-installed-on-azure-guest-os-by-default"></a>.NET Framework 4.7은 기본적으로 Azure 게스트 OS에 설치되지 않습니다.
 

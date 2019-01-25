@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9572a203336aa32f1a37a834b99bf0dac35c7f1c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 8ae7149e1f104863825fdea128729dcc80847c19
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679934"
 ---
 # <a name="handling-and-raising-events"></a>이벤트 처리 및 발생
 .NET Framework에서 이벤트는 대리자 모델을 기반으로 합니다. 대리자 모델은 구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 관찰자 디자인 패턴을 따릅니다. 이벤트 전송자는 이벤트가 발생했음을 알리고, 이벤트 수신자는 해당 알림을 수신하고 그에 대한 응답을 정의합니다. 이 문서에서는 대리자 모델의 주요 구성 요소, 애플리케이션에서 이벤트를 사용하는 방법 및 코드에서 이벤트를 구현하는 방법에 대해 설명합니다.  
@@ -85,14 +85,14 @@ ms.locfileid: "53127929"
 |[방법: 이벤트 발생 및 사용](../../../docs/standard/events/how-to-raise-and-consume-events.md)|이벤트의 발생 및 사용에 대한 예제를 포함합니다.|  
 |[방법: 이벤트 속성을 사용하여 여러 이벤트 처리](../../../docs/standard/events/how-to-handle-multiple-events-using-event-properties.md)|이벤트 속성을 사용하여 여러 이벤트를 처리하는 방법을 보여 줍니다.|  
 |[관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)|구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 디자인 패턴에 대해 설명합니다.|  
-|[방법: Web Forms 응용 프로그램에서 이벤트 사용](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Web Forms 컨트롤에서 발생한 이벤트를 처리하는 방법을 보여 줍니다.|  
+|[방법: Web Forms 애플리케이션에서 이벤트 사용](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Web Forms 컨트롤에서 발생한 이벤트를 처리하는 방법을 보여 줍니다.|  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.EventHandler>  
-- <xref:System.EventHandler%601>  
-- <xref:System.EventArgs>  
-- <xref:System.Delegate>  
-- [이벤트 및 라우팅 이벤트 개요(UWP 앱)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
-- [이벤트(Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
+- <xref:System.EventHandler>
+- <xref:System.EventHandler%601>
+- <xref:System.EventArgs>
+- <xref:System.Delegate>
+- [이벤트 및 라우팅 이벤트 개요(UWP 앱)](/windows/uwp/xaml-platform/events-and-routed-events-overview)
+- [이벤트(Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [이벤트(C# 프로그래밍 가이드)](../../csharp/programming-guide/events/index.md)

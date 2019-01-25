@@ -1,16 +1,16 @@
 ---
-title: Visual Studio 2017에서 C# Hello World 애플리케이션 .NET Core 빌드
+title: Visual Studio 2017에서 .NET Core를 사용하여 C# Hello World 애플리케이션 빌드
 description: Visual Studio 2017에서 C#을 사용하여 간단한 .NET Core 콘솔 애플리케이션을 빌드하는 방법을 알아봅니다.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 09/13/2017
 ms.custom: vs-dotnet, seodec18
-ms.openlocfilehash: 455058ad0a9155b8c6d2a267259783c2a7cc9815
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 7a2a7b251f38a2f1add39e50e32a832adaedc965
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168925"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362802"
 ---
 # <a name="build-a-c-hello-world-application-with-the-net-core-sdk-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core SDK를 사용하여 C# Hello World 애플리케이션 빌드
 
@@ -76,9 +76,9 @@ ms.locfileid: "53168925"
 
 애플리케이션을 만들고 실행했습니다. 전문가 수준의 애플리케이션을 개발하려면 애플리케이션 릴리스 준비를 위해 몇 가지 추가 단계를 수행합니다.
 
-- 애플리케이션 디버그에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 C# Hello World 애플리케이션 디버그](debugging-with-visual-studio.md)를 참조하세요.
+- 애플리케이션 디버그에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 디버그](debugging-with-visual-studio.md)를 참조하세요.
 
-- 애플리케이션의 배포 가능한 버전을 개발 및 게시하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 C# Hello World 애플리케이션 게시](publishing-with-visual-studio.md)를 참조하세요.
+- 애플리케이션의 배포 가능한 버전을 개발 및 게시하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 .NET Core Hello World 애플리케이션 게시](publishing-with-visual-studio.md)를 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 
