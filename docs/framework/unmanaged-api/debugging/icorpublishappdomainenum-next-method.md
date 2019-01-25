@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ac3c6698e4ca127257b7682f1f55acd663375280
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1492c9eac9d647c2b71c47cf758265152783d991
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33423730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54673885"
 ---
-# <a name="icorpublishappdomainenumnext-method"></a><span data-ttu-id="c4857-102">ICorPublishAppDomainEnum::Next 메서드</span><span class="sxs-lookup"><span data-stu-id="c4857-102">ICorPublishAppDomainEnum::Next Method</span></span>
-<span data-ttu-id="c4857-103">현재 위치부터 시작 하는 프로세스에 현재 존재 하는 응용 프로그램 도메인의 지정된 된 수를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-103">Gets the specified number of application domains that currently exist in the process, starting at the current position.</span></span>  
+# <a name="icorpublishappdomainenumnext-method"></a><span data-ttu-id="294b7-102">ICorPublishAppDomainEnum::Next 메서드</span><span class="sxs-lookup"><span data-stu-id="294b7-102">ICorPublishAppDomainEnum::Next Method</span></span>
+<span data-ttu-id="294b7-103">현재 위치에서 시작 하 여 프로세스에 현재 존재 하는 응용 프로그램 도메인의 지정 된 수를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="294b7-103">Gets the specified number of application domains that currently exist in the process, starting at the current position.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c4857-104">구문</span><span class="sxs-lookup"><span data-stu-id="c4857-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="294b7-104">구문</span><span class="sxs-lookup"><span data-stu-id="294b7-104">Syntax</span></span>  
   
 ```  
 HRESULT Next (  
@@ -38,24 +38,24 @@ HRESULT Next (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="c4857-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="c4857-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="294b7-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="294b7-105">Parameters</span></span>  
  `celt`  
- <span data-ttu-id="c4857-106">[in] 검색할 요소의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-106">[in] The number of elements to be retrieved.</span></span>  
+ <span data-ttu-id="294b7-106">[in] 검색할 요소의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="294b7-106">[in] The number of elements to be retrieved.</span></span>  
   
  `objects`  
- <span data-ttu-id="c4857-107">[out] 검색에 대 한 포인터의 배열에 [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) 각각 응용 프로그램 도메인을 나타내는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-107">[out] A pointer to the array of retrieved [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) objects, each of which represents an application domain.</span></span>  
+ <span data-ttu-id="294b7-107">[out] 검색의 배열에 대 한 포인터 [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) 각각 응용 프로그램 도메인을 나타내는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="294b7-107">[out] A pointer to the array of retrieved [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) objects, each of which represents an application domain.</span></span>  
   
  `pceltFetched`  
- <span data-ttu-id="c4857-108">[out] 실제로 반환 하는 응용 프로그램 도메인 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-108">[out] Pointer to the number of application domains actually returned.</span></span> <span data-ttu-id="c4857-109">이 값은 null 일 수 있으면 `celt` 하나입니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-109">This value may be null if `celt` is one.</span></span>  
+ <span data-ttu-id="294b7-108">[out] 실제로 반환 된 응용 프로그램 도메인 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="294b7-108">[out] Pointer to the number of application domains actually returned.</span></span> <span data-ttu-id="294b7-109">이 값은 null 일 수 있으면 `celt` 하나입니다.</span><span class="sxs-lookup"><span data-stu-id="294b7-109">This value may be null if `celt` is one.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="c4857-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="c4857-110">Requirements</span></span>  
- <span data-ttu-id="c4857-111">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="c4857-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="294b7-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="294b7-110">Requirements</span></span>  
+ <span data-ttu-id="294b7-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="294b7-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="c4857-112">**헤더:** CorPub.idl, CorPub.h</span><span class="sxs-lookup"><span data-stu-id="c4857-112">**Header:** CorPub.idl, CorPub.h</span></span>  
+ <span data-ttu-id="294b7-112">**헤더:** CorPub.idl, CorPub.h</span><span class="sxs-lookup"><span data-stu-id="294b7-112">**Header:** CorPub.idl, CorPub.h</span></span>  
   
- <span data-ttu-id="c4857-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="c4857-113">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="294b7-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="294b7-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="c4857-114">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c4857-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="294b7-114">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="294b7-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c4857-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c4857-115">See Also</span></span>  
- [<span data-ttu-id="c4857-116">ICorPublishAppDomainEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="c4857-116">ICorPublishAppDomainEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)
+## <a name="see-also"></a><span data-ttu-id="294b7-115">참고자료</span><span class="sxs-lookup"><span data-stu-id="294b7-115">See also</span></span>
+- [<span data-ttu-id="294b7-116">ICorPublishAppDomainEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="294b7-116">ICorPublishAppDomainEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)
