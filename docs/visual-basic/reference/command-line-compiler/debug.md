@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -debug compiler option [Visual Basic]
 - debug compiler option [Visual Basic]
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
-ms.openlocfilehash: 92ff9c5ea7352506c1949a77b4fb6291d63758d7
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e32ce702847375c85a805926c56fb965a057ff03
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193801"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54605504"
 ---
 # <a name="-debug-visual-basic"></a>-디버그 (Visual Basic)
 컴파일러에서 디버깅 정보를 생성 하 여 출력 파일에 배치 합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "50193801"
   
  기본적으로 디버깅 정보 생성 되지는 (`/debug-`). 내보낼 디버깅 정보 지정 `/debug` 또는 `/debug+`합니다.  
   
- 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md)를 참조하세요.  
+ 애플리케이션의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md)를 참조하세요.  
   
 |설정-Visual Studio 통합된 개발 환경에서 디버그|  
 |---|  
@@ -50,7 +50,7 @@ ms.locfileid: "50193801"
 vbc -debug -out:app.exe test.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

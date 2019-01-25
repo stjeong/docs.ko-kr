@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - binding configuration [WCF]
 ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c
-ms.openlocfilehash: 7b5a91091a0902928eb2b72bdf69612f2e3f2f48
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 52f93acacec434ce6f7ba93678615c104aa94b24
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54704045"
 ---
 # <a name="configuring-bindings-for-windows-communication-foundation-services"></a>Windows Communication Foundation 서비스에 대한 바인딩 구성
 응용 프로그램을 만들 때 응용 프로그램의 배포 후 관리자에게 결정을 맡겨야 할 경우가 있습니다. 예를 들어, 서비스 주소 또는 URI(Uniform Resource Identifier)가 무엇인지 미리 알 수 없는 경우가 있습니다. 주소를 하드 코딩하는 대신 관리자가 서비스를 작성한 후에 이를 수행하도록 하는 것이 좋습니다. 이러한 유연성은 구성을 통해 수행됩니다.  
@@ -161,8 +161,8 @@ ms.locfileid: "54029413"
 </bindings>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md)  
- [시스템 제공 바인딩](../../../docs/framework/wcf/system-provided-bindings.md)  
- [엔드포인트 만들기 개요](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md)
+- [시스템 제공 바인딩](../../../docs/framework/wcf/system-provided-bindings.md)
+- [엔드포인트 만들기 개요](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

@@ -2,12 +2,12 @@
 title: 연결 문자열 구문
 ms.date: 05/22/2018
 ms.assetid: 0977aeee-04d1-4cce-bbed-750c77fce06e
-ms.openlocfilehash: 3d8b37315ab3ceea2ddedd139787627e86b6a131
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f6cbfc9676c2c373ab833ac556cf04bb0ba15096
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524548"
 ---
 # <a name="connection-string-syntax"></a>연결 문자열 구문
 각 .NET Framework 데이터 공급자에는 `Connection`뿐 아니라 공급자별 <xref:System.Data.Common.DbConnection> 속성에서 상속되는 <xref:System.Data.Common.DbConnection.ConnectionString%2A> 개체가 있습니다. 각 공급자의 특정 연결 문자열 구문은 해당 `ConnectionString` 속성에 설명되어 있습니다. 다음 표에서는 .NET Framework에 포함되어 있는 네 개의 데이터 공급자를 보여 줍니다.  
@@ -113,13 +113,13 @@ Data Source=MySqlServer\MSSQL1;"
 |----------------------------------------------|---------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|------------|  
 |아니요|N/A|아니요(기본값)|무시됨|암호화가 수행되지 않습니다.|  
 |아니요|N/A|예|아니요(기본값)|확인 가능한 서버 인증서가 있으면 암호화가 설정되며 그렇지 않으면 연결이 실패합니다.|  
-|아니요|N/A|예|예|항상 암호화가 수행 되지만 자체 서명 된 서버 인증서를 사용할 수 있습니다.|  
+|아니요|N/A|예|예|항상 암호화가 수행되지만 자체 서명된 서버 인증서가 사용될 수 있습니다.|  
 |예|아니요|무시됨|무시됨|확인할 수 있는 서버 인증서; 필요한 경우에 암호화가 수행 그렇지 않은 경우 연결 시도가 실패합니다.|  
-|예|예|아니요(기본값)|무시됨|항상 암호화가 수행 되지만 자체 서명 된 서버 인증서를 사용할 수 있습니다.|  
+|예|예|아니요(기본값)|무시됨|항상 암호화가 수행되지만 자체 서명된 서버 인증서가 사용될 수 있습니다.|  
 |예|예|예|아니요(기본값)|확인할 수 있는 서버 인증서; 필요한 경우에 암호화가 수행 그렇지 않은 경우 연결 시도가 실패합니다.|  
-|예|예|예|예|항상 암호화가 수행 되지만 자체 서명 된 서버 인증서를 사용할 수 있습니다.|  
+|예|예|예|예|항상 암호화가 수행되지만 자체 서명된 서버 인증서가 사용될 수 있습니다.|  
   
- 자세한 내용은 [Using Encryption Without Validation](/sql/relational-databases/native-client/features/using-encryption-without-validation)합니다.
+ 자세한 내용은 [유효성 검사 없이 암호화 사용](/sql/relational-databases/native-client/features/using-encryption-without-validation)을 참조하세요.
   
 ## <a name="oledb-connection-strings"></a>OleDb 연결 문자열  
  <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>의 <xref:System.Data.OleDb.OleDbConnection> 속성을 사용하면 Microsoft Access와 같은 OLE DB 데이터 소스에 대한 연결 문자열을 가져오거나 설정할 수 있습니다. `OleDb` 클래스를 사용하여 런타임에 <xref:System.Data.OleDb.OleDbConnectionStringBuilder> 연결 문자열을 만들 수도 있습니다.  
@@ -138,7 +138,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System D
 ```  
   
 > [!IMPORTANT]
->  에 대 한 연결 정보를 제공할 수는 **OleDbConnection** 유니버설 데이터 링크 (UDL) 파일입니다; 그러나 하면 안 이렇게 합니다. UDL 파일은 암호화되지 않으므로 연결 문자열 정보를 일반 텍스트로 노출시킵니다. UDL 파일은 응용 프로그램에 대해 외부 파일 기반 리소스이므로 .NET Framework를 사용하여 보호할 수 없습니다. UDL 파일이 지원 되지 않습니다 **SqlClient**합니다.  
+>  에 대 한 연결 정보를 제공할 수는 **OleDbConnection** 유니버설 데이터 링크 (UDL) 파일입니다; 그러나 하면 안 이렇게 합니다. UDL 파일은 암호화되지 않으므로 연결 문자열 정보를 일반 텍스트로 노출시킵니다. UDL 파일은 애플리케이션에 대해 외부 파일 기반 리소스이므로 .NET Framework를 사용하여 보호할 수 없습니다. UDL 파일이 지원 되지 않습니다 **SqlClient**합니다.  
   
 ### <a name="using-datadirectory-to-connect-to-accessjet"></a>Access/Jet          DataDirectory     
  `DataDirectory`는 `SqlClient`와 같이 사용할 수 있습니다. 또한 <xref:System.Data.OleDb> 및 <xref:System.Data.Odbc> .NET 데이터 공급자와도 같이 사용할 수 있습니다. 다음 샘플 <xref:System.Data.OleDb.OleDbConnection> 문자열에서는 응용 프로그램의 app_data 폴더에 있는 Northwind.mdb에 연결하는 데 필요한 구문을 설명합니다. 시스템 데이터베이스(System.mdw)도 같은 위치에 저장됩니다.  
@@ -194,7 +194,7 @@ Data Source=Oracle9i;User ID=*****;Password=*****;
   
  ODBC 연결 문자열 구문에 대한 자세한 내용은 <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [연결 문자열](../../../../docs/framework/data/adonet/connection-strings.md)  
- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [연결 문자열](../../../../docs/framework/data/adonet/connection-strings.md)
+- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

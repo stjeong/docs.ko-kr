@@ -2,12 +2,12 @@
 title: SQL Server의 응용 프로그램 보안 시나리오
 ms.date: 03/30/2017
 ms.assetid: 0164f3a4-406e-4693-bec3-03c8e18b46d7
-ms.openlocfilehash: bf4f4adfd5f49bd210026e40bd5fa4e67da10d75
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 42afe27c11eadff935e162128b3d5f18c1cba8a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45994045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687455"
 ---
 # <a name="application-security-scenarios-in-sql-server"></a>SQL Server의 응용 프로그램 보안 시나리오
 안전한 SQL Server 클라이언트 응용 프로그램을 만드는 방법이 정확하게 한 가지만 존재하지는 않습니다. 모든 응용 프로그램은 요구 사항, 배포 환경 및 사용자 집단에 따라 고유합니다. 초기에 배포했을 때에는 비교적 안전했던 응용 프로그램도 시간이 지남에 따라 안전하지 못할 수 있습니다. 앞으로 생길 수 있는 위협을 정확히 예측하는 것은 불가능합니다.  
@@ -50,14 +50,14 @@ ms.locfileid: "45994045"
  [SQL Server에서 행 수준 권한 부여](../../../../../docs/framework/data/adonet/sql/granting-row-level-permissions-in-sql-server.md)  
  데이터 액세스를 제한하는 낮은 수준의 권한을 구현하는 방법에 대해 설명합니다.  
   
- [SQL Server에서 응용 프로그램 역할 만들기](../../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md)  
+ [SQL Server에서 애플리케이션 역할 만들기](../../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md)  
  응용 프로그램 역할의 특성과 기능에 대해 설명합니다.  
   
  [SQL Server에서 데이터베이스 간 액세스 활성화](../../../../../docs/framework/data/adonet/sql/enabling-cross-database-access-in-sql-server.md)  
  보안을 위협하지 않고 데이터베이스 간 액세스를 허용하는 방법에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 보안](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 보안](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

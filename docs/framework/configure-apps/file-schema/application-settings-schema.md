@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: f11be59941759687806591feb1edcce28b2119e6
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 7a4f60571fb4d30793f64c57317bf0b372ae4812
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701913"
 ---
 # <a name="application-settings-schema"></a>응용 프로그램 설정 스키마
 
@@ -26,9 +26,9 @@ ms.locfileid: "49123340"
 
 | 요소                    | 설명                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------- |
-| **\<applicationSettings >** | 모든 포함  **\<설정 >** 응용 프로그램에 특정 태그입니다.                         |
-| **\<userSettings >**        | 모든 포함  **\<설정 >** 현재 사용자에 게 특정 태그입니다.                        |
-| **\<설정 >**             | 설정을 정의합니다. 자식  **\<applicationSettings >** 하거나  **\<userSettings >** 합니다. |
+| **\<applicationSettings>** | 모든 포함  **\<설정 >** 응용 프로그램에 특정 태그입니다.                         |
+| **\<userSettings>**        | 모든 포함  **\<설정 >** 현재 사용자에 게 특정 태그입니다.                        |
+| **\<setting>**             | 설정을 정의합니다. 자식  **\<applicationSettings >** 하거나  **\<userSettings >** 합니다. |
 | **\<value>**               | 설정 값을 정의합니다. 자식의  **\<설정 >** 합니다.                                   |
 
 ## <a name="applicationsettings-element"></a>\<applicationSettings > 요소
@@ -45,8 +45,8 @@ ms.locfileid: "49123340"
 
 | 특성        | 설명 |
 | ---------------- | ----------- |
-| **name**         | 필수. 설정의 고유 ID입니다. Visual Studio를 통해 만든 설정을 이름으로 저장 됩니다 `ProjectName.Properties.Settings`합니다. |
-| **serializedAs** | 필수. 텍스트 값을 직렬화 하는 데 사용할 형식입니다. 올바른 값은 다음과 같습니다.<br><br>- `string`. 사용 하 여 문자열 값이 serialize 되는 <xref:System.ComponentModel.TypeConverter>합니다.<br>- `xml`. 값은 XML serialization을 사용 하 여 serialize 됩니다.<br>- `binary`. 값은 이진 serialization을 사용 하 여 텍스트 인코딩된 이진으로 serialize 됩니다.<br />- `custom`. 설정 공급자가이 설정에 대 한 기본 지식이 직렬화 및 역직렬화 합니다. |
+| **name**         | 필수 요소. 설정의 고유 ID입니다. Visual Studio를 통해 만든 설정을 이름으로 저장 됩니다 `ProjectName.Properties.Settings`합니다. |
+| **serializedAs** | 필수 요소. 텍스트 값을 직렬화 하는 데 사용할 형식입니다. 올바른 값은 다음과 같습니다.<br><br>- `string`. 사용 하 여 문자열 값이 serialize 되는 <xref:System.ComponentModel.TypeConverter>합니다.<br>- `xml`. 값은 XML serialization을 사용 하 여 serialize 됩니다.<br>- `binary`. 값은 이진 serialization을 사용 하 여 텍스트 인코딩된 이진으로 serialize 됩니다.<br />- `custom`. 설정 공급자가이 설정에 대 한 기본 지식이 직렬화 및 역직렬화 합니다. |
 
 ## <a name="value-element"></a>\<값 > 요소
 
@@ -92,5 +92,5 @@ ms.locfileid: "49123340"
 
 ## <a name="see-also"></a>참고자료
 
-[응용 프로그램 설정 개요](~/docs/framework/winforms/advanced/application-settings-overview.md)   
-[응용 프로그램 설정 아키텍처](~/docs/framework/winforms/advanced/application-settings-architecture.md)
+- [응용 프로그램 설정 개요](~/docs/framework/winforms/advanced/application-settings-overview.md)
+- [응용 프로그램 설정 아키텍처](~/docs/framework/winforms/advanced/application-settings-architecture.md)

@@ -2,12 +2,12 @@
 title: '방법: 사용자 지정 WSDL 내보내기'
 ms.date: 03/30/2017
 ms.assetid: 5c1e4b58-b76b-472b-9635-2f80d42a0734
-ms.openlocfilehash: 82f343d5e2637ff1330570a01b376e83567db4f4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 86c6be86febb21f3c676d28357b29db5dcca07db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33489052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645147"
 ---
 # <a name="how-to-export-custom-wsdl"></a>방법: 사용자 지정 WSDL 내보내기
 이 항목에서는 사용자 지정 WSDL 정보를 내보내는 방법에 대해 설명합니다. 이 작업을 수행하려면 서비스에서 생성되는 WSDL에 사용자 지정 정보를 추가할 `WsdlDocumentationAttribute`라는 새 코드 특성을 정의합니다.  
@@ -195,5 +195,5 @@ return lines;
   }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)

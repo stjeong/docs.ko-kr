@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fdbad4a5eb9a9d0c81ae8d29394652e9f6df136e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 43404ba24f6308d8da17b03df9997e893799c8d5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44214435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54643145"
 ---
 # <a name="contextswitchdeadlock-mda"></a>contextSwitchDeadlock MDA
 
@@ -62,7 +62,7 @@ STA 메시지 펌핑 관련 COM 규칙을 따릅니다.
 
 현재 컨텍스트 및 대상 컨텍스트를 설명하는 메시지입니다.
 
-## <a name="configuration"></a>구성
+## <a name="configuration"></a>구성하기
 
 ```xml
 <mdaConfig>
@@ -72,7 +72,7 @@ STA 메시지 펌핑 관련 COM 규칙을 따릅니다.
 </mdaConfig>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

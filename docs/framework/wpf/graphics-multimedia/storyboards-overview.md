@@ -9,18 +9,18 @@ helpviewer_keywords:
 - syntax [WPF], Storyboard
 - timelines [WPF]
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
-ms.openlocfilehash: d6b33df8574d9c25380d6d9319480d3c9df28660
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: fa0143aac4253b6a7648da589e01ac8abf9d4341
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44222476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492687"
 ---
 # <a name="storyboards-overview"></a>Storyboard 개요
 이 항목에서는 사용 하는 방법을 보여 줍니다. <xref:System.Windows.Media.Animation.Storyboard> 개체를 구성 하 고 애니메이션을 적용 합니다. 대화형으로 조작 하는 방법에 설명 합니다 <xref:System.Windows.Media.Animation.Storyboard> 개체 및 간접 속성 대상 지정 구문에 설명 합니다.  
   
 <a name="prerequisites"></a>   
-## <a name="prerequisites"></a>필수 조건  
+## <a name="prerequisites"></a>전제 조건  
  이 항목을 이해하려면 다양한 애니메이션 형식과 해당 기본 기능에 대해 잘 알고 있어야 합니다. 애니메이션 소개를 보려면 [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)를 참조하세요. 또한 연결된 속성을 사용하는 방법을 알아야 합니다. 연결된 속성에 대한 자세한 내용은 [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)를 참조하세요.  
   
 <a name="whatisatimeline"></a>   
@@ -63,7 +63,7 @@ ms.locfileid: "44222476"
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> 및 <xref:System.Windows.EventTrigger>|예|예|예|예|[Storyboard를 사용하여 속성에 애니메이션 효과 주기](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> 속성 <xref:System.Windows.Trigger>|아니요|예|예|예|[속성 값이 변경될 때 애니메이션 트리거](../../../../docs/framework/wpf/graphics-multimedia/how-to-trigger-an-animation-when-a-property-value-changes.md)|  
-|<xref:System.Windows.Media.Animation.BeginStoryboard> 및 <xref:System.Windows.DataTrigger>|아니요|예|예|예|[방법: 데이터가 변경될 때 애니메이션 트리거Changes](https://msdn.microsoft.com/library/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
+|<xref:System.Windows.Media.Animation.BeginStoryboard> 및 <xref:System.Windows.DataTrigger>|아니요|예|예|예|[방법: 데이터가 변경 될 때 애니메이션 트리거](https://msdn.microsoft.com/library/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> 메서드|예|아니요|아니요|아니요|[Storyboard를 사용하여 속성에 애니메이션 효과 주기](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
   
  다음 예제에서는 <xref:System.Windows.Media.Animation.Storyboard> 애니메이션 효과를 주는 합니다 <xref:System.Windows.FrameworkElement.Width%2A> 의 <xref:System.Windows.Shapes.Rectangle> 요소 및 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 의 <xref:System.Windows.Media.SolidColorBrush> 를 그리는 데 <xref:System.Windows.Shapes.Rectangle>.  
@@ -229,9 +229,9 @@ ms.locfileid: "44222476"
   
 -   <xref:System.Windows.Media.Animation.ResumeStoryboard>: 일시 중지 된 storyboard를 다시 시작합니다.  
   
--   <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>: Storyboard 속도 변경합니다.  
+-   <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>: 스토리 보드의 속도 변경합니다.  
   
--   <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: 있는 경우 채우기 기간이의 끝에 스토리 보드를 이동 합니다.  
+-   <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: 있는 경우 해당 채우기 기간의 끝에 스토리 보드를 이동 합니다.  
   
 -   <xref:System.Windows.Media.Animation.StopStoryboard>: Storyboard를 중지 합니다.  
   
@@ -261,7 +261,7 @@ ms.locfileid: "44222476"
   
  이러한 메서드를 사용 하는 이점은 만들 필요가 없습니다 <xref:System.Windows.Trigger> 또는 <xref:System.Windows.TriggerAction> 개체;를 제어할 수에 대 한 참조 하기만 하면 <xref:System.Windows.Media.Animation.Storyboard> 조작 하려고 합니다.  
   
- **참고:** 에서 수행 되는 모든 대화형 작업을 <xref:System.Windows.Media.Animation.Clock>, 및 또는 <xref:System.Windows.Media.Animation.Storyboard> 다음 렌더링 직전 발생 하는 타이밍 엔진의 다음 틱에서 발생 합니다. 예를 들어, 사용 하는 경우는 <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> 타이밍 엔진의 다음 틱에서 값을 변경 하는 대신, 속성 값을 애니메이션의 다른 지점으로 이동 하는 방법 즉시 변경 되지 않습니다.  
+ **참고:** 수행 되는 모든 대화형 작업을 <xref:System.Windows.Media.Animation.Clock>, 및 또는 <xref:System.Windows.Media.Animation.Storyboard> 다음 렌더링 직전 발생 하는 타이밍 엔진의 다음 틱에서 발생 합니다. 예를 들어, 사용 하는 경우는 <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> 타이밍 엔진의 다음 틱에서 값을 변경 하는 대신, 속성 값을 애니메이션의 다른 지점으로 이동 하는 방법 즉시 변경 되지 않습니다.  
   
  다음 예제에서는 적용의 대화형 메서드를 사용 하 여 애니메이션 제어 하는 방법을 보여 줍니다는 <xref:System.Windows.Media.Animation.Storyboard> 클래스입니다.  
   
@@ -302,7 +302,7 @@ ms.locfileid: "44222476"
   
  속성에 의해 적용 된 애니메이션 <xref:System.Windows.Trigger> 개체 보다 더 복잡 한 방식으로 동작 <xref:System.Windows.EventTrigger> 애니메이션이 나 애니메이션 사용을 시작 <xref:System.Windows.Media.Animation.Storyboard> 메서드.  이러한 "전달" 애니메이션을 사용 하 여 다른 정의한 <xref:System.Windows.Trigger> 개체를 사용 하 여 하지만 구성 <xref:System.Windows.EventTrigger> 및 메서드 트리거 애니메이션 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [속성 애니메이션 기술 개요](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)  
- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+## <a name="see-also"></a>참고자료
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [속성 애니메이션 기술 개요](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
+- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)

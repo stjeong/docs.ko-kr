@@ -15,15 +15,15 @@ helpviewer_keywords:
 - walkthroughs [Windows Forms], debugging
 - design-time debugging
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
-ms.openlocfilehash: 824c1e47cf50dc13a3a986e48a49158b15dbb935
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: ceee83c9deb318f5912eb724cbd237c3d7b73152
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54733339"
 ---
 # <a name="walkthrough-debugging-custom-windows-forms-controls-at-design-time"></a>연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버깅
-사용자 지정 컨트롤을 만들려면 확인할 수 있습니다 종종 해당 디자인 타임 동작을 디버그 하는 데 필요한 합니다. 사용자 지정 컨트롤에 대 한 사용자 지정 디자이너를 제작 하는 경우 특히 그렇습니다. 자세한 내용은 참조 하세요 [연습: 만들기는 Windows Forms 컨트롤 하는 Visual Studio 디자인 타임 기능 활용](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)합니다.  
+사용자 지정 컨트롤을 만들려면 확인할 수 있습니다 종종 해당 디자인 타임 동작을 디버그 하는 데 필요한 합니다. 사용자 지정 컨트롤에 대 한 사용자 지정 디자이너를 제작 하는 경우 특히 그렇습니다. 세부 정보를 참조 하세요. [연습: Visual Studio 디자인 타임 기능을 활용 하는 컨트롤을 Forms는 Windows 만들기](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)합니다.  
   
  다른.NET Framework 클래스를 디버그할 때 처럼 Visual Studio를 사용 하 여 사용자 지정 컨트롤을 디버그할 수 있습니다. 차이점은 사용자 지정 컨트롤의 코드를 실행 하는 Visual Studio의 개별 인스턴스를 디버깅 합니다.  
   
@@ -60,9 +60,9 @@ ms.locfileid: "45964846"
   
 1.  추가 된 **Windows 컨트롤 라이브러리** 프로젝트를 솔루션입니다.  
   
-2.  새 **UserControl** DebugControlLibrary 프로젝트 항목입니다. 자세한 내용은 참조 하세요 [NIB: 방법: 새 프로젝트 항목 추가](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce)합니다. 새 소스 파일 "DebugControl"의 기본 이름을 지정 합니다.  
+2.  새 **UserControl** DebugControlLibrary 프로젝트 항목입니다. 세부 정보를 참조 하세요. [NIB: 방법: 새 프로젝트 항목 추가](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce)합니다. 새 소스 파일 "DebugControl"의 기본 이름을 지정 합니다.  
   
-3.  사용 하는 **솔루션 탐색기**, 프로젝트의 기본 컨트롤의 기본 이름 사용 하 여 코드 파일을 삭제 하 여 삭제 "`UserControl1`". 자세한 내용은 참조 하세요 [NIB: 방법: 제거, 삭제 및 항목 제외](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73)합니다.  
+3.  사용 하는 **솔루션 탐색기**, 프로젝트의 기본 컨트롤의 기본 이름 사용 하 여 코드 파일을 삭제 하 여 삭제 "`UserControl1`". 세부 정보를 참조 하세요. [NIB: 방법: 제거, 삭제 및 항목을 제외](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73)합니다.  
   
 4.  솔루션을 빌드합니다.  
   
@@ -159,7 +159,7 @@ ms.locfileid: "45964846"
   
 4.  Form1을 엽니다는 **Forms 디자이너** 선택 합니다 **DebugControl** 제어 합니다.  
   
-5.  값을 변경 합니다 `DemoString` 속성입니다. 변경 내용을 커밋하면, Visual Studio의 디버깅 인스턴스 포커스를 획득 하 고 실행이 중단점에서 중지 되는 note 합니다. 속성 접근자를 통해 단일 단계 수와 마찬가지로 다른 코드입니다.  
+5.  `DemoString` 속성 값을 변경합니다. 변경 내용을 커밋하면, Visual Studio의 디버깅 인스턴스 포커스를 획득 하 고 실행이 중단점에서 중지 되는 note 합니다. 속성 접근자를 통해 단일 단계 수와 마찬가지로 다른 코드입니다.  
   
 6.  Visual Studio의 호스트 인스턴스를 해제 하거나 클릭 하 여 마쳤으면 디버깅 세션을 종료할 수 있습니다 합니다 **디버깅 중지** 디버깅 인스턴스에서 단추입니다.  
   
@@ -170,9 +170,9 @@ ms.locfileid: "45964846"
   
 -   일부의 특성이 컨트롤의 디자이너를 사용 하 여 사용자 지정 컨트롤의 상호 작용을 조작 하는 속성에 적용할 수 있습니다. 이러한 특성을 찾을 수 있습니다는 <xref:System.ComponentModel?displayProperty=nameWithType> 네임 스페이스입니다.  
   
--   사용자 지정 컨트롤에 대 한 사용자 지정 디자이너를 작성할 수 있습니다. Visual Studio에서 노출 하는 확장 가능한 디자이너 인프라를 사용 하 여 디자인 환경을 완전히 제어할 수 있습니다. 자세한 내용은 참조 하세요 [연습: 만들기는 Windows Forms 컨트롤 하는 Visual Studio 디자인 타임 기능 활용](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)합니다.  
+-   사용자 지정 컨트롤에 대 한 사용자 지정 디자이너를 작성할 수 있습니다. Visual Studio에서 노출 하는 확장 가능한 디자이너 인프라를 사용 하 여 디자인 환경을 완전히 제어할 수 있습니다. 세부 정보를 참조 하세요. [연습: Visual Studio 디자인 타임 기능을 활용 하는 컨트롤을 Forms는 Windows 만들기](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연습: Visual Studio의 디자인 타임 기능을 사용하는 Windows Forms 컨트롤 만들기](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
- [방법: 디자인 타임 서비스에 액세스](https://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f)  
- [방법: Windows Forms에서 디자인 타임 지원 액세스](https://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)
+## <a name="see-also"></a>참고자료
+- [연습: Visual Studio 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)
+- [방법: 디자인 타임 서비스에 액세스](https://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f)
+- [방법: Windows Forms에서 디자인 타임 지원 액세스](https://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)
