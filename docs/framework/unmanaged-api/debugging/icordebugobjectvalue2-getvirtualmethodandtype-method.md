@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c9a6978f35b5ea9fb71f8e933dbc7a08b1c390ad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: af07df53c094654ab86f5e6531fd78124aded988
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33416503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54630894"
 ---
-# <a name="icordebugobjectvalue2getvirtualmethodandtype-method"></a><span data-ttu-id="c3d7a-102">ICorDebugObjectValue2::GetVirtualMethodAndType 메서드</span><span class="sxs-lookup"><span data-stu-id="c3d7a-102">ICorDebugObjectValue2::GetVirtualMethodAndType Method</span></span>
-<span data-ttu-id="c3d7a-103">이 메서드는 아직 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="c3d7a-103">This method is not yet implemented.</span></span>  
+# <a name="icordebugobjectvalue2getvirtualmethodandtype-method"></a><span data-ttu-id="8d0ee-102">ICorDebugObjectValue2::GetVirtualMethodAndType 메서드</span><span class="sxs-lookup"><span data-stu-id="8d0ee-102">ICorDebugObjectValue2::GetVirtualMethodAndType Method</span></span>
+<span data-ttu-id="8d0ee-103">이 메서드는 아직 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="8d0ee-103">This method is not yet implemented.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c3d7a-104">구문</span><span class="sxs-lookup"><span data-stu-id="c3d7a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8d0ee-104">구문</span><span class="sxs-lookup"><span data-stu-id="8d0ee-104">Syntax</span></span>  
   
 ```  
 HRESULT GetVirtualMethodAndType (  
@@ -37,9 +37,9 @@ HRESULT GetVirtualMethodAndType (
 );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="c3d7a-105">설명</span><span class="sxs-lookup"><span data-stu-id="c3d7a-105">Remarks</span></span>  
- <span data-ttu-id="c3d7a-106">가장 많이 파생 된 메서드 및 지정 된 멤버 참조에 대 한 형식을 나타내는 "ICorDebugFunction" 및 "ICorDebugType" 인스턴스에 대 한 포인터의 인터페이스 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c3d7a-106">Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="8d0ee-105">설명</span><span class="sxs-lookup"><span data-stu-id="8d0ee-105">Remarks</span></span>  
+ <span data-ttu-id="8d0ee-106">가져옵니다 인터페이스 가장 많이 파생 된 메서드 및 지정 된 멤버 참조에 대 한 형식을 나타내는 "ICorDebugFunction" 및 "ICorDebugType" 인스턴스에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="8d0ee-106">Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c3d7a-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c3d7a-107">See Also</span></span>  
-    
- 
+## <a name="see-also"></a><span data-ttu-id="8d0ee-107">참고자료</span><span class="sxs-lookup"><span data-stu-id="8d0ee-107">See also</span></span>
+
+
