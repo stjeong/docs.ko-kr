@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
-ms.openlocfilehash: 930295073f9f75cf4101bf6fa3834561a4db8f58
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8e1db49f534b0f82bf54dc5cedaf46cef683363c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640992"
 ---
 # <a name="object-identity"></a>개체 ID
 런타임의 개체는 고유한 ID를 가집니다. 동일한 개체를 참조하는 두 개의 변수는 실제로 해당 개체의 동일한 인스턴스를 참조합니다. 따라서 하나의 변수를 통해 수행한 변경 내용을 다른 변수를 통해 즉시 볼 수 있습니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "33358471"
   
  개체의 경우 전혀 다른 결과가 발생합니다. <xref:System.Data.Linq.DataContext>에 동일한 정보를 반복해서 요청할 경우 실제로 동일한 개체 인스턴스가 제공될 것입니다. 개체가 응용 프로그램에 대해 특별한 의미를 가지며 동일한 개체로 작동할 것으로 예상되므로 이 동작이 발생합니다. 개체를 계층 구조나 그래프로 디자인하고 동일한 항목을 여러 번 요청했으면 개체는 이와 같이 검색되고 중복된 많은 인스턴스가 제공되지 않습니다.  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 <xref:System.Data.Linq.DataContext>는 개체 ID를 관리합니다. 데이터베이스에서 새 행을 검색할 때마다 해당 기본 키별로 ID 테이블에 행이 기록되고 새 개체가 만들어집니다. 동일한 해당 행을 검색할 때마다 원래 개체 인스턴스가 응용 프로그램에 다시 전달됩니다. 이와 같은 방식으로 <xref:System.Data.Linq.DataContext>는 데이터베이스에 인식하는 ID의 개념(즉, 기본 키)을 언어에서 인식하는 ID의 개념(즉, 인스턴스)으로 변환합니다. 응용 프로그램은 처음 검색된 상태로만 개체를 봅니다. 새 데이터는 다를 경우 삭제됩니다. 자세한 내용은 참조 [Id 캐시에서 개체 검색](../../../../../../docs/framework/data/adonet/sql/linq/retrieving-objects-from-the-identity-cache.md)합니다.  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 <xref:System.Data.Linq.DataContext>는 개체 ID를 관리합니다. 데이터베이스에서 새 행을 검색할 때마다 해당 기본 키별로 ID 테이블에 행이 기록되고 새 개체가 만들어집니다. 동일한 해당 행을 검색할 때마다 원래 개체 인스턴스가 응용 프로그램에 다시 전달됩니다. 이와 같은 방식으로 <xref:System.Data.Linq.DataContext>는 데이터베이스에 인식하는 ID의 개념(즉, 기본 키)을 언어에서 인식하는 ID의 개념(즉, 인스턴스)으로 변환합니다. 응용 프로그램은 처음 검색된 상태로만 개체를 봅니다. 새 데이터는 다를 경우 삭제됩니다. 자세한 내용은 [Id 캐시에서 개체 검색](../../../../../../docs/framework/data/adonet/sql/linq/retrieving-objects-from-the-identity-cache.md)합니다.  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 낙관적 업데이트를 지원하기 위해 이 방법을 사용하여 로컬 개체의 무결성을 관리합니다. 개체가 처음 만들어진 후에 발생한 변경만 응용 프로그램에 의해 수행된 변경이므로 응용 프로그램에서 의도하는 바를 분명히 알 수 있습니다. 도중에 외부로부터 변경이 발생한 경우에는 `SubmitChanges()`가 호출될 때 해당 변경 내용이 식별됩니다.  
   
@@ -42,5 +42,5 @@ ms.locfileid: "33358471"
  [!code-csharp[DLinqObjectIdentity#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs/Program.cs#2)]
  [!code-vb[DLinqObjectIdentity#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## <a name="see-also"></a>참고자료
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

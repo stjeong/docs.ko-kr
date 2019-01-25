@@ -2,12 +2,12 @@
 title: 형식화된 클라이언트
 ms.date: 03/30/2017
 ms.assetid: 62c40e8f-e9b4-4b1a-939a-93c37393d343
-ms.openlocfilehash: 0e4b52b81d30f61e30116dc1480e6c4e7f271a93
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 281e37e3ced4052e93de833e91f2c52943c12f1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44195467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652659"
 ---
 # <a name="typed-client"></a>형식화된 클라이언트
 이 샘플에서 생성 한 형식화 된 클라이언트로부터 정보를 가져올 하는 방법에 설명 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다. 이 샘플에서 클라이언트는 콘솔 응용 프로그램(.exe)이고 서비스는 IIS(인터넷 정보 서비스)를 통해 호스트됩니다.  
@@ -67,4 +67,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\TypedClient`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

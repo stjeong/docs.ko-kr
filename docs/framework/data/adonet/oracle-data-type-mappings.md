@@ -2,12 +2,12 @@
 title: Oracle 데이터 형식 Mappings1
 ms.date: 03/30/2017
 ms.assetid: ec34ae21-bbbb-4adb-b672-83865e2a8451
-ms.openlocfilehash: 9057a19abb1abc22924b5542f06e21a57a36ed94
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 91e8dce0891489b8dbe127e2d327dd2e6f5e9935
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43856337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54544317"
 ---
 # <a name="oracle-data-type-mappings"></a>Oracle 데이터 형식 매핑
 다음 표에는 Oracle 데이터 형식과 <xref:System.Data.OracleClient.OracleDataReader>에 대한 해당 데이터 형식의 매핑이 나열되어 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "43856337"
 |**RAW**|**Byte[]**|<xref:System.Data.OracleClient.OracleBinary>||  
 |**REF CURSOR**|||Oracle **REF CURSOR** 데이터 형식에서 지원 되지 않습니다는 <xref:System.Data.OracleClient.OracleDataReader> 개체입니다.|  
 |**ROWID**|**String**|<xref:System.Data.OracleClient.OracleString>||  
-|**타임 스탬프**|**DateTime**|<xref:System.Data.OracleClient.OracleDateTime>||  
+|**TIMESTAMP**|**DateTime**|<xref:System.Data.OracleClient.OracleDateTime>||  
 |**현지 표준 시간대를 사용 하 여 타임 스탬프**|**DateTime**|<xref:System.Data.OracleClient.OracleDateTime>||  
 |**표준 시간대를 사용 하 여 타임 스탬프**|**DateTime**|<xref:System.Data.OracleClient.OracleDateTime>||  
 |**부호 없는 정수**|**숫자**|<xref:System.Data.OracleClient.OracleNumber>|이 데이터 형식 별칭으로 사용 되는 **NUMBER(38)** 데이터 형식으로 설계 되었습니다 있도록를 <xref:System.Data.OracleClient.OracleDataReader> 반환을 **System.Decimal** 또는 <xref:System.Data.OracleClient.OracleNumber> 부호 없는 정수 값 대신 합니다. .NET Framework 데이터 형식을 사용하면 오버플로가 발생할 수 있습니다.|  
@@ -59,15 +59,15 @@ ms.locfileid: "43856337"
 |**NVARCHAR2**|**String**|**NVarChar**||  
 |**RAW**|**Binary**|**Raw**||  
 |**REF CURSOR**||**커서**|자세한 내용은 [Oracle REF Cursor](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)합니다.|  
-|**ROWID**|**AnsiString**|**rowid**||  
-|**타임 스탬프**|**DateTime**|**타임스탬프**|<xref:System.Data.OracleClient.OracleType>은 Oracle 9i 클라이언트 및 서버 소프트웨어를 모두 사용할 때만 사용할 수 있습니다.|  
+|**ROWID**|**AnsiString**|**Rowid**||  
+|**TIMESTAMP**|**DateTime**|**타임스탬프**|<xref:System.Data.OracleClient.OracleType>은 Oracle 9i 클라이언트 및 서버 소프트웨어를 모두 사용할 때만 사용할 수 있습니다.|  
 |**현지 표준 시간대를 사용 하 여 타임 스탬프**|**DateTime**|**TimestampLocal**|<xref:System.Data.OracleClient.OracleType>은 Oracle 9i 클라이언트 및 서버 소프트웨어를 모두 사용할 때만 사용할 수 있습니다.|  
 |**표준 시간대를 사용 하 여 타임 스탬프**|**DateTime**|**TimestampWithTz**|<xref:System.Data.OracleClient.OracleType>은 Oracle 9i 클라이언트 및 서버 소프트웨어를 모두 사용할 때만 사용할 수 있습니다.|  
-|**부호 없는 정수**|**Byte, UInt16, UInt32, UInt64, Decimal**|**Byte, UInt16, Uint32, 번호**|<xref:System.Data.OracleClient.OracleParameter.Size%2A> 결정 합니다 **System.Data.DBType** 고 <xref:System.Data.OracleClient.OracleType>입니다.|  
+|**부호 없는 정수**|**Byte, UInt16, UInt32, UInt64, Decimal**|**Byte, UInt16, Uint32, Number**|<xref:System.Data.OracleClient.OracleParameter.Size%2A> 결정 합니다 **System.Data.DBType** 고 <xref:System.Data.OracleClient.OracleType>입니다.|  
 |**VARCHAR2**|**AnsiString**|**VarChar**||  
   
  합니다 **InputOutput**, **출력**, 및 **ReturnValue** **ParameterDirection** 사용 된 값을 <xref:System.Data.OracleClient.OracleParameter.Value%2A> 속성을 <xref:System.Data.OracleClient.OracleParameter> 입력된 값을 Oracle 데이터 형식이 아닌 개체는.NET Framework 데이터 형식 (예를 들어 <xref:System.Data.OracleClient.OracleNumber> 또는 <xref:System.Data.OracleClient.OracleString>). 에 적용 되지 않습니다 **REF CURSOR**를 **BFILE**, 또는 **LOB** 데이터 형식입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Oracle 및 ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [Oracle 및 ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

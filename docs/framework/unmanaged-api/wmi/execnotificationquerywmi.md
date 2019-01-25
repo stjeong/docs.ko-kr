@@ -16,15 +16,15 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d314d85e7c1297636e8dd5cecaf050a527151518
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: bd00a1fa8099d5a87577271487c46e68a46794c4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43453053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566985"
 ---
 # <a name="execnotificationquerywmi-function"></a>ExecNotificationQueryWmi 함수
-이벤트를 수신 하는 쿼리를 실행 합니다. 호출이 즉시 반환 하 고 호출자에 게 도착 했을 때 반환 된 이벤트에 대 한 열거자를 폴링할 수 있습니다. 쿼리를 취소 반환 된 열거자를 해제 합니다.  
+쿼리를 실행하여 이벤트를 수신합니다. 호출이 즉시 반환 하 고 호출자에 게 도착 했을 때 반환 된 이벤트에 대 한 열거자를 폴링할 수 있습니다. 쿼리를 취소 반환 된 열거자를 해제 합니다.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -52,7 +52,7 @@ HRESULT ExecNotificationQueryWmi (
 [in] Windows 관리를 지 원하는 올바른 쿼리 언어를 사용 하 여 사용 되는 문자열입니다. WMI 쿼리 언어에 대 한 약칭 "WQL" 이어야 합니다.
 
 `strQuery`  
-[in] 쿼리의 텍스트입니다. 이 매개 변수 수 없습니다 `null`합니다.
+[in] 쿼리의 텍스트입니다. 이 매개 변수는 `null`일 수 없습니다.
 
 `lFlags`   
 [in] 이 함수의 동작에 영향을 주는 두 플래그의 조합입니다. 이러한 값은 정의 된 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드입니다. 
@@ -93,14 +93,14 @@ HRESULT ExecNotificationQueryWmi (
 |---------|---------|---------|
 | `WBEM_E_ACCESS_DENIED` | 0x80041003 | 사용자 함수를 반환할 수 있는 클래스 중 하나 이상을 볼 수 있는 권한이 없습니다. |
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 | `WBEM_E_INVALID_CLASS` | 0x80041010 | 쿼리는 존재 하지 않는 클래스를 지정 합니다. |
 | `WBEMESS_E_REGISTRATION_TOO_PRECISE` | 0x80042002 | 이벤트 전달 정확 하 게 너무 많이 요청 되었습니다. 더 큰 폴링 허용 오차를 지정 해야 합니다. |
 | `WBEMESS_E_REGISTRATION_TOO_BROAD` | 0x80042001 | 쿼리 requess Windows 관리 보다 더 많은 정보를 제공할 수 있습니다. 이 `HRESULT` 네임 스페이스의 모든 개체를 폴링 하려면 요청에서 이벤트 쿼리 결과 반환 됩니다. |
 | `WBEM_E_INVALID_QUERY` | 0x80041017 | 쿼리 구문 오류가 발생을 했습니다. |
-| `WBEM_E_INVALID_QUERY_TYPE` | 0x80041018 | 요청한 쿼리 언어는 지원 되지 않습니다. |
+| `WBEM_E_INVALID_QUERY_TYPE` | 0x80041018 | 요청된 쿼리 언어가 지원되지 않는 경우 |
 | `WBEM_E_QUOTA_VIOLATION` | 0x8004106c | 쿼리는 너무 복잡 합니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 | `WBEM_E_SHUTTING_DOWN` | 0x80041033 | WMI는 아마도 중지 및 다시 시작 했습니다. 호출 [ConnectServerWmi](connectserverwmi.md) 다시 합니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 현재 프로세스와 WMI 원격 프로시저 호출 (RPC) 연결 하지 못했습니다. |
 | `WBEM_E_UNPARSABLE_QUERY` | 0x80041058 | 쿼리를 구문 분석할 수 없습니다. |
@@ -117,11 +117,11 @@ HRESULT ExecNotificationQueryWmi (
 함수 호출에 실패 하는 경우 호출 하 여 추가 오류 정보를 얻을 수 있습니다 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

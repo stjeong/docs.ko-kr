@@ -8,12 +8,12 @@ helpviewer_keywords:
 - animation [WPF], From/to/by
 - From/to/by animation
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
-ms.openlocfilehash: c1aaaca83b8631a87a8987b9676b53161e821117
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 39a3cd059c0fa9aad1ef2c1ae50fa37b95df52d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54650446"
 ---
 # <a name="fromtoby-animations-overview"></a>From/To/By 애니메이션 개요
 이 항목에서는 From/To/By 애니메이션을 사용하여 종속성 속성에 애니메이션 효과를 적용하는 방법을 설명합니다. From/To/By 애니메이션은 두 값 간에 변환을 생성합니다.  
@@ -106,7 +106,7 @@ ms.locfileid: "43502518"
 ### <a name="by"></a>By  
  설정 하는 경우는 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션의 속성에는 애니메이션 효과 줄 속성의 기준 값 또는 해당 값과 지정 된 값의 합계 구성 애니메이션의 출력은 애니메이션이 적용 된 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 속성입니다.  
   
- 다음 예제에서는 방금 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 의 속성을 <xref:System.Windows.Media.Animation.DoubleAnimation> 300으로. 예제는 시작 값을 지정 하지 않으므로 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation> 의 기준 값을 사용 하 여는 <xref:System.Windows.FrameworkElement.Width%2A> 속성을 100으로 시작 값으로. 끝 값을 추가 하 여 결정 됩니다는 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션 시작 값 100: 400, 300의 값입니다. 결과적으로 <xref:System.Windows.FrameworkElement.Width%2A> 의 <xref:System.Windows.Shapes.Rectangle> 100에서 400으로 애니메이션 효과가 적용 됩니다.  
+ 다음 예제에서는 방금 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 의 속성을 <xref:System.Windows.Media.Animation.DoubleAnimation> 300으로. 예제는 시작 값을 지정 하지 않으므로 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation> 의 기준 값을 사용 하 여는 <xref:System.Windows.FrameworkElement.Width%2A> 속성을 100으로 시작 값으로. 끝 값을 추가 하 여 결정 됩니다는 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션 시작 값 100 300의 값: 400. 결과적으로 <xref:System.Windows.FrameworkElement.Width%2A> 의 <xref:System.Windows.Shapes.Rectangle> 100에서 400으로 애니메이션 효과가 적용 됩니다.  
   
  [!code-csharp[basicvalues_snip#ByAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#byanimationinline)]
  [!code-vb[basicvalues_snip#ByAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#byanimationinline)]  
@@ -114,7 +114,7 @@ ms.locfileid: "43502518"
 ### <a name="fromby"></a>From/By  
  설정 하는 경우는 <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> 및 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션의 속성, 지정 된 값은 애니메이션이 적용 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> 속성의 합으로 지정 된 값을는 <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> 및 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 속성입니다.  
   
- 다음 예제에서는 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> 의 속성을 <xref:System.Windows.Media.Animation.DoubleAnimation> 50 및 해당 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 속성을 300. 끝 값을 추가 하 여 결정 됩니다는 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션 시작 값 50: 350 300의 값입니다. 결과적으로 <xref:System.Windows.FrameworkElement.Width%2A> 의 <xref:System.Windows.Shapes.Rectangle> 50에서 350으로 애니메이션 효과가 적용 됩니다.  
+ 다음 예제에서는 합니다 <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> 의 속성을 <xref:System.Windows.Media.Animation.DoubleAnimation> 50 및 해당 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 속성을 300. 끝 값을 추가 하 여 결정 됩니다는 <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> 애니메이션 시작 값 50 300의 값: 350. 결과적으로 <xref:System.Windows.FrameworkElement.Width%2A> 의 <xref:System.Windows.Shapes.Rectangle> 50에서 350으로 애니메이션 효과가 적용 됩니다.  
   
  [!code-csharp[basicvalues_snip#FromByAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#frombyanimationinline)]
  [!code-vb[basicvalues_snip#FromByAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#frombyanimationinline)]  
@@ -140,12 +140,12 @@ ms.locfileid: "43502518"
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 고유한 사용자 지정 애니메이션 형식도 만들 수 있습니다. 자세한 내용은 참조는 [사용자 지정 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.Timeline>  
- <xref:System.Windows.Media.Animation.Storyboard>  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [경로 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)  
- [사용자 지정 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)  
- [From, To 및 By 애니메이션 대상 값 샘플](https://go.microsoft.com/fwlink/?LinkID=159988)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.Timeline>
+- <xref:System.Windows.Media.Animation.Storyboard>
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [경로 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)
+- [사용자 지정 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)
+- [From, To 및 By 애니메이션 대상 값 샘플](https://go.microsoft.com/fwlink/?LinkID=159988)

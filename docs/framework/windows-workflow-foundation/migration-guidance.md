@@ -2,12 +2,12 @@
 title: 마이그레이션 지침
 ms.date: 03/30/2017
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
-ms.openlocfilehash: 73488354a807d8bf7d90c97b95f1021d884efd27
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: a07fac293c6e598ff60c635286f8ab808e057b9c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676876"
 ---
 # <a name="migration-guidance"></a>마이그레이션 지침
 에 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microsoft는 두 번째 주요 버전의 Windows WF (Workflow Foundation)를 출시 합니다. [!INCLUDE[wf1](../../../includes/wf1-md.md)]는 [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)]에서 처음 릴리스되었고(System.Workflow.* 네임스페이스의 형식 포함. 현재 WF3이라고 함) [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]에서 기능이 향상되었습니다. WF3 이기도 부분 합니다 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], 새 워크플로 기술과 함께 존재 하지만 (System.Activities에서 형식\* 네임 스페이스 WF4 라고). WF4 사용을 고려하는 경우 타이밍을 제어한다는 점을 먼저 인식해야 합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "48850415"
  [WF 마이그레이션 개요](https://go.microsoft.com/fwlink/?LinkId=153873)  
  WF3과 WF4 간의 관계를 설명하고 .NET 4에서 워크플로 기술의 사용자 또는 잠재 사용자가 선택할 수 있는 사항을 설명합니다.  
   
- [WF 마이그레이션: WF3 개발 모범 사례](https://go.microsoft.com/fwlink/?LinkId=153852)  
+ [WF 마이그레이션: WF3 개발을 위한 모범 사례](https://go.microsoft.com/fwlink/?LinkId=153852)  
  WF4로 쉽게 마이그레이션할 수 있도록 WF3 아티팩트를 디자인하는 방법을 설명합니다.  
   
  [WF 지침: 규칙](https://go.microsoft.com/fwlink/?LinkId=153854)  
@@ -55,5 +55,5 @@ ms.locfileid: "48850415"
  [WF 지침: 워크플로 서비스](https://go.microsoft.com/fwlink/?LinkId=275564)  
  일반적인 기본 제공 활동의 시나리오에서 WF3으로 만들어진 WCF(Windows Communication Foundation) 웹 서비스(일반적으로 워크플로 서비스라고 함)를 구현하는 워크플로를 WF4를 사용하도록 다시 디자인하기 위한 단계별 지침을 예제 중심으로 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Activities.Statements.Interop>
+## <a name="see-also"></a>참고자료
+- <xref:System.Activities.Statements.Interop>

@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
-ms.openlocfilehash: b6155296e264bb3ae90aac2ee6b83797e632962e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ff727922aeee7aeaea801dabd842f913ce75c220
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33491155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54674783"
 ---
 # <a name="how-to-import-custom-policy-assertions"></a>방법: 사용자 지정 정책 어설션 가져오기
-정책 어설션은 서비스 끝점의 기능 및 요구 사항에 대해 설명합니다.  클라이언트 응용 프로그램은 서비스 메타데이터에서 정책 어설션을 사용하여 서비스 끝점에 대해 서비스 계약을 사용자 지정하거나 클라이언트 바인딩을 구성할 수 있습니다.  
+정책 어설션은 서비스 엔드포인트의 기능 및 요구 사항에 대해 설명합니다.  클라이언트 응용 프로그램은 서비스 메타데이터에서 정책 어설션을 사용하여 서비스 엔드포인트에 대해 서비스 계약을 사용자 지정하거나 클라이언트 바인딩을 구성할 수 있습니다.  
   
  <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> 인터페이스를 구현하고 해당 개체를 메타데이터 시스템에 전달하거나 응용 프로그램 구성 파일에 구현 형식을 등록하면 사용자 지정 정책 어설션을 가져올 수 있습니다.  <xref:System.ServiceModel.Description.IPolicyImportExtension> 인터페이스 구현 시 기본 생성자를 제공해야 합니다.  
   
@@ -25,7 +25,7 @@ ms.locfileid: "33491155"
   
 3.  구성 파일 사용 다음 절차를 참조하십시오.  
   
-4.  구성 파일을 사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 다음 절차를 참조하십시오.  
+4.  사용 하 여 구성 파일을 사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 다음 절차를 참조하십시오.  
   
 5.  정책 가져오기를 프로그래밍 방식으로 삽입 다음 절차를 참조하십시오.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "33491155"
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-using-a-configuration-file"></a>구성 파일을 사용하여 사용자 지정 정책 가져오기를 메타데이터 시스템에 삽입하려면  
   
-1.  가져오기에서 형식을 추가 하는 `<extensions>` 요소 안에 [ \<policyImporters >](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) 클라이언트 구성 파일의 요소입니다.  
+1.  가져오기 형식을 추가 합니다 `<extensions>` 내 요소를 [ \<policyImporters >](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) 클라이언트 구성 파일의 요소입니다.  
   
      [!code-xml[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]   
   
@@ -55,16 +55,16 @@ ms.locfileid: "33491155"
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-using-svcutilexe"></a>Svcutil.exe를 사용하여 사용자 지정 정책 가져오기를 메타데이터 시스템에 삽입하려면  
   
-1.  가져오기에서 형식을 추가 하는 `<extensions>` 요소 안에 [ \<policyImporters >](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) Svcutil.exe.config 구성 파일의 요소입니다. 또한 `/svcutilConfig` 옵션을 사용하여 다른 구성 파일에서 등록된 정책 가져오기 형식을 로드하도록 Svcutil.exe를 지정할 수 있습니다.  
+1.  가져오기 형식을 추가 합니다 `<extensions>` 요소 내 합니다 [ \<policyImporters >](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) Svcutil.exe.config 구성 파일의 요소입니다. 또한 `/svcutilConfig` 옵션을 사용하여 다른 구성 파일에서 등록된 정책 가져오기 형식을 로드하도록 Svcutil.exe를 지정할 수 있습니다.  
   
-2.  사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 가져올 메타 데이터 및 가져오기 도구는 자동으로 호출 합니다.  
+2.  사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 가져오기 및 메타 데이터를 가져오려는 자동으로 호출 됩니다.  
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-programmatically"></a>프로그래밍 방식으로 사용자 지정 정책 가져오기를 메타데이터 시스템에 삽입하려면  
   
 1.  메타데이터를 가져오기 전에 가져오기를 <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> 속성(예를 들어 <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>를 사용 중인 경우)에 추가합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
- [메타데이터 시스템 확장](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
+- [메타데이터 시스템 확장](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XAML [WPF], procedural code in lieu of
 - InkCanvas (WPF)
 ms.assetid: 760332dd-594a-475d-865b-01659db8cab7
-ms.openlocfilehash: 600d8528125606c6e1af5b031e2fc31aabb79206
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: eaaa8ad5273331941bc6915231460100e8ac24b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646242"
 ---
 # <a name="get-started-with-ink-in-wpf"></a>Wpf에서 잉크 시작
 
@@ -22,7 +22,7 @@ Windows Presentation Foundation (WPF)에 쉽게 앱에 디지털 잉크를 통�
 
 ## <a name="prerequisites"></a>전제 조건
 
-다음 예제에서는 먼저 사용 하도록 [Microsoft Visual Studio 설치](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)합니다. 또한 기본 WPF 앱을 작성 하는 방법을 알면 도움이 됩니다. WPF 시작 도움말을 참조 하세요 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다.
+다음 예제에서는 먼저 사용 하도록 [Microsoft Visual Studio 설치](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)합니다. 또한 기본 WPF 앱을 작성 하는 방법을 알면 도움이 됩니다. WPF 시작 도움말을 참조 하세요. [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다.
 
 ## <a name="quick-start"></a>빠른 시작
 
@@ -85,7 +85,7 @@ XAML을 사용 하면 매우 쉽게 사용자 인터페이스를 디자인, 실�
    [!code-csharp[DigitalInkTopics#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml.cs#4)]
    [!code-vb[DigitalInkTopics#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window2.xaml.vb#4)]
 
-1. 응용 프로그램을 실행합니다. 에 잉크를 일부 추가 마우스 오른쪽 단추로 클릭 또는 스타일러스를 사용 하 여 해당 하는 키를 눌러-대기를 수행 합니다.
+1. 애플리케이션을 실행합니다. 에 잉크를 일부 추가 마우스 오른쪽 단추로 클릭 또는 스타일러스를 사용 하 여 해당 하는 키를 눌러-대기를 수행 합니다.
 
    마우스 오른쪽 단추로 클릭할 때마다 디스플레이 확대 합니다.
 
@@ -108,7 +108,7 @@ XAML을 사용 하면 매우 쉽게 사용자 인터페이스를 디자인, 실�
 
 1. 키를 눌러 응용 프로그램을 빌드합니다 **F5**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디지털 잉크](../../../../docs/framework/wpf/advanced/digital-ink.md)
 - [잉크 수집](../../../../docs/framework/wpf/advanced/collecting-ink.md)

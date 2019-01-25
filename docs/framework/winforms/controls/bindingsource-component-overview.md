@@ -7,18 +7,18 @@ helpviewer_keywords:
 - BindingSource component [Windows Forms], about BindingSource component
 - data binding [Windows Forms], BindingSource component
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
-ms.openlocfilehash: 047df677ade3837e167845ace2bdc6ca14738c3c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6fbd089cef6f014979cf8bbdf376b2f76ac9bcf9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529606"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54686948"
 ---
 # <a name="bindingsource-component-overview"></a>BindingSource 구성 요소 개요
 <xref:System.Windows.Forms.BindingSource> 구성 요소는 내부 데이터 소스에 컨트롤을 바인딩하는 프로세스를 간소화하도록 설계되었습니다. <xref:System.Windows.Forms.BindingSource> 구성 요소는 바인딩하는 다른 컨트롤에 대한 통로 및 데이터 소스 역할을 합니다. 내부 데이터 목록에 명령을 전달하는 동안 폼의 데이터 연결에 대한 추상화를 제공합니다. 또한 구성 요소 자체가 데이터 소스 역할을 하도록 데이터를 직접 추가할 수 있습니다.  
   
 ## <a name="bindingsource-component-as-an-intermediary"></a>중개자로 작동하는 BindingSource 구성 요소  
- <xref:System.Windows.Forms.BindingSource> 구성 요소는 폼의 일부 또는 모든 컨트롤에 대한 데이터 소스 역할을 합니다. Visual Studio에서의 <xref:System.Windows.Forms.BindingSource> 방법으로 컨트롤에 바인딩할 수는 `DataBindings` 에서 액세스할 수 있는 속성의 **속성** 창. [방법: 디자이너를 사용하여 Windows Forms 컨트롤에 BindingSource 구성 요소 바인딩](../../../../docs/framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)을 참조하세요.  
+ <xref:System.Windows.Forms.BindingSource> 구성 요소는 폼의 일부 또는 모든 컨트롤에 대한 데이터 소스 역할을 합니다. Visual Studio에서의 <xref:System.Windows.Forms.BindingSource> 이용 하 여 컨트롤을 바인딩할 수 있습니다 합니다 `DataBindings` 속성에서 액세스할 수 있는 **속성** 창. 또한 참조 [방법: Windows Forms 컨트롤에 BindingSource 구성 요소 디자이너를 사용 하 여 바인딩](../../../../docs/framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)합니다.  
   
  개체의 단순 속성이나 기본 컬렉션(예: <xref:System.Collections.ArrayList>)과 같은 간단한 데이터 소스 및 데이터베이스 테이블과 같은 복잡한 데이터 소스 둘 다에 <xref:System.Windows.Forms.BindingSource> 구성 요소를 바인딩할 수 있습니다. <xref:System.Windows.Forms.BindingSource> 구성 요소는 바인딩 및 통화 관리 서비스를 제공하는 중간자 역할을 합니다. 디자인 타임 또는 런타임에 해당 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 및 <xref:System.Windows.Forms.BindingSource.DataMember%2A> 속성을 각각 데이터베이스와 테이블로 설정하여 <xref:System.Windows.Forms.BindingSource> 구성 요소를 복잡한 데이터 소스에 바인딩할 수 있습니다. 다음 그림에서는 <xref:System.Windows.Forms.BindingSource> 구성 요소가 기존 데이터 바인딩 아키텍처에 들어가는 위치를 보여 줍니다.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "33529606"
 |<xref:System.Windows.Forms.BindingSource.Sort%2A> 속성|데이터 소스가 <xref:System.ComponentModel.IBindingList>인 경우 정렬에 사용되는 열 이름과 정렬 순서 정보를 가져오거나 설정합니다. 데이터 소스가 <xref:System.ComponentModel.IBindingListView>이고 고급 정렬을 지원하는 경우 정렬에 사용되는 여러 개의 열 이름과 정렬 순서 정보를 가져옵니다.|  
 |<xref:System.Windows.Forms.BindingSource.Filter%2A> 속성|데이터 소스가 <xref:System.ComponentModel.IBindingListView>인 경우 표시할 행을 필터링하는 데 사용하는 식을 가져오거나 설정합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.BindingNavigator>  
- [BindingSource 구성 요소 아키텍처](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)  
- [BindingSource 구성 요소](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [Windows Forms 데이터 바인딩](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.BindingNavigator>
+- [BindingSource 구성 요소 아키텍처](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)
+- [BindingSource 구성 요소](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [Windows Forms 데이터 바인딩](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

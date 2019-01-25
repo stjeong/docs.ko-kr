@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XAML [XAML Services], x:Class attribute
 - x:Class attribute [XAML Services]
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
-ms.openlocfilehash: a29a645a05f0d3b0e8611dd722c5018f295f3070
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 2913782d8179fb882f8e916ed25feafcb5740a3a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43856194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690048"
 ---
 # <a name="xclass-directive"></a>x:Class 지시문
 태그와 코드 숨김 부분 클래스를 조인 하는 XAML 태그 컴파일을 구성 합니다. 코드 partial 클래스는 별도 코드 파일에 정의 된를 [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)] 언어 반면 태그 partial 클래스는 대개 XAML 컴파일하는 동안 코드 생성에서 만들어집니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "43856194"
 |||  
 |-|-|  
 |`namespace`|선택 사항입니다. 지정 된 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] 로 식별 되는 partial 클래스를 포함 하는 네임 스페이스 `classname`합니다. 하는 경우 `namespace` 지정 된 경우 점 (.) `namespace` 고 `classname`입니다. 설명 부분을 참조하세요.|  
-|`classname`|필수. 지정 된 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] 로드 된 XAML 및 코드 숨김에는 XAML에 대 한 연결 하는 partial 클래스의 이름입니다.|  
+|`classname`|필수 요소. 지정 된 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] 로드 된 XAML 및 코드 숨김에는 XAML에 대 한 연결 하는 partial 클래스의 이름입니다.|  
   
 ## <a name="dependencies"></a>종속성  
  `x:Class` XAML 프로덕션의 루트 요소에만 지정할 수 있습니다. `x:Class` 부모 XAML 프로덕션에 있는 모든 개체에 올바르지 않습니다. 자세한 내용은 [ \[MS XAML\] 4.3.1.6 섹션](https://go.microsoft.com/fwlink/?LinkId=114525)합니다.  
@@ -60,8 +60,8 @@ ms.locfileid: "43856194"
 ## <a name="silverlight-usage-notes"></a>Silverlight 사용 정보  
  `x:Class` Silverlight 용은 별도로 설명 됩니다. 자세한 내용은 참조 하세요. [XAML Namespace (x:) 언어 기능 (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [x:Subclass 지시문](../../../docs/framework/xaml-services/x-subclass-directive.md)  
- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
- [x:ClassModifier 지시문](../../../docs/framework/xaml-services/x-classmodifier-directive.md)  
- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+## <a name="see-also"></a>참고자료
+- [x:Subclass 지시문](../../../docs/framework/xaml-services/x-subclass-directive.md)
+- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [x:ClassModifier 지시문](../../../docs/framework/xaml-services/x-classmodifier-directive.md)
+- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

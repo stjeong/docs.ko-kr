@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de08662a825a84f19a40863cf73481d89364ebd0
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 995c697497876969edc1021350b7bfe28e4018bb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614512"
 ---
 # <a name="putclasswmi-function"></a>PutClassWmi 함수
 새 클래스를 만들거나 기존 클래스를 업데이트합니다.  
@@ -73,14 +73,14 @@ HRESULT PutClassWmi (
 |---------|---------|---------|
 | `WBEM_E_ACCESS_DENIED` | 0x80041003 | 사용자를 만들거나 클래스를 수정할 수 있는 권한이 없습니다. |
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
-| `WBEM_E_INVALID_CLASS` | 0x80041010 | 지정 된 클래스가 올바르지 않습니다. 일반적으로이 나타내는 `pObject` 인스턴스 개체를 지정 합니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_CLASS` | 0x80041010 | 지정된 클래스가 잘못된 경우 일반적으로이 나타내는 `pObject` 인스턴스 개체를 지정 합니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 | `WBEM_E_INVALID OPERATION` | 0x80041016 | 지정 된 클래스 이름이 잘못 되었습니다. |
 | `WBEM_E_CLASS_HAS_CHILDREN` | 0x80041025 | 서브 클래스를 무효화 하는 변경 하려고 했습니다. |
 | `WBEM_E_ALREADY_EXISTS` | 0x80041019 | `WBEM_FLAG_CREATE_ONLY` 플래그를 지정 하지만 클래스가 이미 존재 합니다. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | `WBEM_FLAG_UPDATE_ONLY` 에 지정 된 `lFlags`, 클래스를 찾을 수 없습니다. |
 | `WBEM_E_INCOMPLETE_CLASS` | 0x80041020 | 클래스에 대 한 필수 속성이 모두 설정 되었습니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 | `WBEM_E_SHUTTING_DOWN` | 0x80041033 | WMI는 아마도 중지 및 다시 시작 했습니다. 호출 [ConnectServerWmi](connectserverwmi.md) 다시 합니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 현재 프로세스와 WMI 원격 프로시저 호출 (RPC) 연결 하지 못했습니다. |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
@@ -94,11 +94,11 @@ HRESULT PutClassWmi (
 함수 호출에 실패 하는 경우 호출 하 여 추가 오류 정보를 얻을 수 있습니다 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

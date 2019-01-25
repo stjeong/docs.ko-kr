@@ -2,12 +2,12 @@
 title: WF에서 비동기 활동 만들기
 ms.date: 03/30/2017
 ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
-ms.openlocfilehash: 31c0d5a87a7979bc59c3e1d942ed0594d128c80a
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 1b7fe1c5c998660f054d2ca060c108c758e36db7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54650930"
 ---
 # <a name="creating-asynchronous-activities-in-wf"></a>WF에서 비동기 활동 만들기
 <xref:System.Activities.AsyncCodeActivity>는 활동 작성자가 파생 활동에서 비동기 실행 논리를 구현하는 데 사용할 수 있는 기본 클래스를 제공합니다. 이 기능은 워크플로 스케줄러 스레드를 유지하지 않고 병렬로 실행 가능한 활동을 차단하지 않으면서 비동기 작업을 수행해야 하는 사용자 지정 활동에 유용합니다. 이 항목에서는 <xref:System.Activities.AsyncCodeActivity>를 사용하여 사용자 지정 비동기 활동을 만드는 방법을 간략하게 설명합니다.  
@@ -44,9 +44,9 @@ ms.locfileid: "48266561"
  [!code-csharp[CFX_ActivityExample#9](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#9)]  
   
 ### <a name="scheduling-actions-or-child-activities-using-asynccodeactivity"></a>AsyncCodeActivity를 사용하여 작업 또는 자식 활동 예약  
- <xref:System.Activities.AsyncCodeActivity> 파생 사용자 지정 활동은 워크플로 스레드와 관련하여 작업을 비동기식으로 수행하는 메서드를 제공하지만 자식 활동이나 작업을 예약하는 기능은 제공하지 않습니다. 단 비동기식 동작은 구성을 통해 자식 활동의 예약으로 통합할 수 있습니다. 비동기 작업을 만든 다음 <xref:System.Activities.Activity> 또는 <xref:System.Activities.NativeActivity> 파생 작업을 통해 구성하여 비동기식 동작을 제공하고 자식 활동 또는 작업을 예약할 수 있습니다. 예를 들어 <xref:System.Activities.Activity>에서 파생되고, 활동의 논리를 구현하는 다른 활동뿐만 아니라 비동기 활동을 포함하는 <xref:System.Activities.Statements.Sequence> 구현으로 포함되도록 활동을 만들 수 있습니다. 에 대 한 자세한 예제를 사용 하 여 활동 작성 <xref:System.Activities.Activity> 및 <xref:System.Activities.NativeActivity>를 참조 하세요 [방법: 활동 만들기](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) 및 [활동 제작 옵션](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md)합니다.  
+ <xref:System.Activities.AsyncCodeActivity> 파생 사용자 지정 활동은 워크플로 스레드와 관련하여 작업을 비동기식으로 수행하는 메서드를 제공하지만 자식 활동이나 작업을 예약하는 기능은 제공하지 않습니다. 단 비동기식 동작은 구성을 통해 자식 활동의 예약으로 통합할 수 있습니다. 비동기 작업을 만든 다음 <xref:System.Activities.Activity> 또는 <xref:System.Activities.NativeActivity> 파생 작업을 통해 구성하여 비동기식 동작을 제공하고 자식 활동 또는 작업을 예약할 수 있습니다. 예를 들어 <xref:System.Activities.Activity>에서 파생되고, 활동의 논리를 구현하는 다른 활동뿐만 아니라 비동기 활동을 포함하는 <xref:System.Activities.Statements.Sequence> 구현으로 포함되도록 활동을 만들 수 있습니다. 에 대 한 자세한 예제를 사용 하 여 활동 작성 <xref:System.Activities.Activity> 하 고 <xref:System.Activities.NativeActivity>를 참조 [방법: 활동을 만드는](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) 하 고 [활동 제작 옵션](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 
-- <xref:System.Action>  
-- <xref:System.Func%602>  
+- <xref:System.Action>
+- <xref:System.Func%602>

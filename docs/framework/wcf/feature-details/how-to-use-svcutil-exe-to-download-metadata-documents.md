@@ -1,15 +1,15 @@
 ---
-title: '방법: Svcutil.exe를 사용하여 메타데이터 문서 다운로드'
+title: '방법: Svcutil.exe를 사용 하 여 메타 데이터 문서 다운로드'
 ms.date: 03/30/2017
 ms.assetid: 15524274-3167-4627-b722-d6cedb9fa8c6
-ms.openlocfilehash: 6643f0a5dba98afcef38870cf24d91e7d69a1440
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: dc3a1d402a9f6ffb69c1f692800698609f9fa84b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603276"
 ---
-# <a name="how-to-use-svcutilexe-to-download-metadata-documents"></a>방법: Svcutil.exe를 사용하여 메타데이터 문서 다운로드
+# <a name="how-to-use-svcutilexe-to-download-metadata-documents"></a>방법: Svcutil.exe를 사용 하 여 메타 데이터 문서 다운로드
 Svcutil.exe를 사용하면 실행 중인 서비스에서 메타데이터를 다운로드하여 로컬 파일에 저장할 수 있습니다. HTTP 및 HTTPS URL 스키마의 경우 Svcutil.exe에서 Ws-metadataexchange를 사용 하 여 메타 데이터를 검색 하려고 하 고 [XML 웹 서비스 검색](https://go.microsoft.com/fwlink/?LinkId=94950)합니다. 기타 URL 스키마의 경우 Svcutil.exe에서 WS-MetadataExchange만 사용합니다.  
   
  기본적으로 Svcutil.exe는 <xref:System.ServiceModel.Description.MetadataExchangeBindings> 클래스에 정의된 바인딩을 사용합니다. WS-MetadataExchange에 사용되는 바인딩을 구성하려면 `IMetadataExchange` 계약을 사용하고 메타데이터 엔드포인트 주소의 URI(Uniform Resource Identifier) 스키마와 이름이 같은 Svcutil.exe(svcutil.exe.config)의 구성 파일에서 클라이언트 엔드포인트를 정의해야 합니다.  
@@ -46,5 +46,5 @@ Svcutil.exe를 사용하면 실행 중인 서비스에서 메타데이터를 다
 svcutil /t:metadata http://service/metadataEndpoint  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## <a name="see-also"></a>참고자료
+- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

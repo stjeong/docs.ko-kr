@@ -2,12 +2,12 @@
 title: POCO 지원
 ms.date: 03/30/2017
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
-ms.openlocfilehash: bb4f8b0a5eb20be50a2d3ba9a15d66fd7fc573f8
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 8d94d6a9700c38014aa53ee9910b53239fc28b0a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49452812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640032"
 ---
 # <a name="poco-support"></a>POCO 지원
 이 샘플에서는 표시되지 않은 형식, 즉 serialization 특성이 적용되지 않은 형식을 소개합니다. 이러한 형식을 POCO(Plain Old CLR Object) 형식이라고도 합니다. <xref:System.Runtime.Serialization.DataContractSerializer>는 기본 생성자를 가진 표시되지 않은 모든 public 형식에 대한 데이터 계약을 유추합니다. 데이터 계약을 사용하면 서비스와 구조적 데이터를 주고 받을 수 있습니다. 표시 되지 않은 형식에 대 한 자세한 내용은 참조 하세요. [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)합니다.  
@@ -56,6 +56,6 @@ public class ComplexNumber
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\POCO`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>  
- [직렬화 가능 형식](../../../../docs/framework/wcf/feature-details/serializable-types.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
+- [직렬화 가능 형식](../../../../docs/framework/wcf/feature-details/serializable-types.md)

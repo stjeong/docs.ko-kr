@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], Value
 - XML Value property [Visual Basic]
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
-ms.openlocfilehash: 2b0719320db5843d5d010bfbd70e551646e3ded9
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 54bd18b050ca58c286bfca3972b242348c61fe45
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086341"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54737613"
 ---
 # <a name="xml-value-property-visual-basic"></a>XML Value 속성(Visual Basic)
 컬렉션의 첫 번째 요소의 값에 대 한 액세스를 제공 <xref:System.Xml.Linq.XElement> 개체입니다.  
@@ -29,7 +29,7 @@ object.Value
   
 |용어|정의|  
 |---|---|  
-|`object`|필수. <xref:System.Xml.Linq.XElement> 개체의 컬렉션입니다.|  
+|`object`|필수 요소. <xref:System.Xml.Linq.XElement> 개체의 컬렉션입니다.|  
   
 ## <a name="return-value"></a>반환 값  
  A `String` 컬렉션의 첫 번째 요소의 값이 포함 된 또는 `Nothing` 컬렉션이 비어 있는 경우.  
@@ -67,13 +67,13 @@ object.Value
   
  `work`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement>  
- <xref:System.Collections.Generic.IEnumerable%601>  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [확장명 메서드](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)  
- [확장명 인덱서 속성](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)  
- [XML Child 축 속성](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
- [XML Attribute 축 속성](../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XElement>
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [확장명 메서드](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [확장명 인덱서 속성](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)
+- [XML Child 축 속성](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Attribute 축 속성](../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)

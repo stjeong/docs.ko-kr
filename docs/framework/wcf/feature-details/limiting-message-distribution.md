@@ -2,12 +2,12 @@
 title: 메시지 분포 제한
 ms.date: 03/30/2017
 ms.assetid: 8b5ec4b8-1ce9-45ef-bb90-2c840456bcc1
-ms.openlocfilehash: bec5a28abeff23929d2c0f1c363f4e08872a63fa
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 3f660294bf9acea3ac5df7e0b4250885645a0835
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43738648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54686766"
 ---
 # <a name="limiting-message-distribution"></a>메시지 분포 제한
 피어 채널은 디자인상 브로드캐스트 메시입니다. 피어 채널의 기본 플러딩 모델에는 메시의 임의 멤버가 보낸 각 메시지를 해당 메시의 다른 모든 멤버에 배포하는 작업이 포함됩니다. 이는 멤버가 생성한 모든 메시지가 관련성을 지니며 다른 모든 멤버에 유용한 경우(예: 채트 방) 이상적입니다. 그러나 많은 응용 프로그램에서 메시지 배포를 제한해야 하는 경우가 발생합니다. 예를 들어 새 멤버가 메시에 참가하여 메시를 통해 전송된 마지막 메시지를 검색하려고 할 경우 이 요청을 메시의 모든 멤버에 플러딩하지 않아도 됩니다. 이러한 요청을 인접한 환경으로 제한하거나 로컬로 생성된 메시지를 필터링하여 제외할 수 있습니다. 메시지를 메시의 개별 노드로 보낼 수도 있습니다. 이 항목에서는 홉 수, 메시지 전파 필터, 로컬 필터 또는 직접 연결을 사용하여 전체 메시에서 메시지가 전달되는 방법에 대해 설명하고 접근 방식을 선택하기 위한 일반적인 지침을 제공합니다.  
@@ -44,25 +44,25 @@ ms.locfileid: "43738648"
   
  이러한 사항에 대해 생각해 보면 홉 수, 메시지 전파 필터, 로컬 필터, 직접 연결 중 어느 것을 사용할지 결정하는 데 도움이 됩니다. 다음과 같은 일반적인 지침을 고려해 보십시오.  
   
--   **는**  
+-   **Who**  
   
-    -   *개별 노드*: 로컬 필터 또는 직접 연결 합니다.  
+    -   *개별 노드*:  로컬 필터 또는 직접 연결 합니다.  
   
-    -   *특정 주변 인접*: PeerHopCount 합니다.  
+    -   *특정 주변 인접*:  PeerHopCount.  
   
-    -   *메시의 복잡 한 하위 집합*: MessagePropagationFilter 합니다.  
+    -   *메시의 복잡 한 하위 집합*:  MessagePropagationFilter.  
   
 -   **빈도**  
   
-    -   *매우 자주*: 연결, PeerHopCount, MessagePropagationFilter 지시 합니다.  
+    -   *매우 자주*:  Direct connection, PeerHopCount, MessagePropagationFilter.  
   
-    -   *가끔*: 로컬 필터입니다.  
+    -   *가끔*:  로컬 필터입니다.  
   
 -   **대역폭 사용**  
   
-    -   *높은*: 직접 연결, MessagePropagationFilter 또는 로컬 필터를 사용 하는 작은 것이 좋습니다.  
+    -   *높은*:  직접 연결으로 MessagePropagationFilter 또는 로컬 필터를 사용 하는 작은 것이 좋습니다.  
   
-    -   *낮은*: 필요하지 않을, 직접 연결 합니다.  
+    -   *낮은*:  있는 경우 직접 연결은 필요 하지 않습니다 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [피어 채널 응용 프로그램 빌드](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## <a name="see-also"></a>참고자료
+- [피어 채널 응용 프로그램 빌드](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

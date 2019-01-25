@@ -2,12 +2,12 @@
 title: 프로젝션 작업 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: b8d38e6d-21cf-4619-8dbb-94476f4badc7
-ms.openlocfilehash: f4d1f7531ee69ebdbfb4ccd283f9f5dcb2f000af
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4d92405d9f3da69df4fa3964468599d6549480cb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33647646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740965"
 ---
 # <a name="projection-operations-visual-basic"></a>프로젝션 작업 (Visual Basic)
 프로젝션은 주로 이후에 사용할 속성으로만 구성된 새 양식으로 개체를 변환하는 작업을 가리킵니다. 프로젝션을 사용하면 각 개체를 기반으로 만들어지는 새 형식을 생성할 수 있습니다. 속성을 프로젝션하고 속성에서 수학 함수를 수행할 수 있습니다. 원래 개체를 변경하지 않고 프로젝션할 수도 있습니다.  
@@ -49,7 +49,7 @@ MsgBox(sb.ToString())
 ```  
   
 ### <a name="selectmany"></a>SelectMany  
- 다음 예제에서는 여러 `From` 절 문자열의 목록에서 각 문자열에서 각 단어를 프로젝션 합니다.  
+ 다음 예제에서는 여러 `From` 문자열 목록의 각 문자열에서 각 단어를 프로젝션 절.  
   
 ```vb  
 Dim phrases = New List(Of String) From {"an apple a day", "the quick brown fox"}  
@@ -170,11 +170,11 @@ Sub SelectVsSelectMany()
 End Sub  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq>  
- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Select 절](../../../../visual-basic/language-reference/queries/select-clause.md)  
- [방법: 조인을 사용하여 데이터 결합](../../../../visual-basic/programming-guide/language-features/linq/how-to-combine-data-with-linq-by-using-joins.md)  
- [방법: 여러 원본 (LINQ) (Visual Basic)에서 개체 컬렉션 채우기](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)  
- [방법: LINQ 쿼리 결과를 특정 형식으로 반환](../../../../visual-basic/programming-guide/language-features/linq/how-to-return-a-linq-query-result-as-a-specific-type.md)  
- [방법: 한 파일 그룹 (LINQ) (Visual Basic)를 사용 하 여 여러 파일로 분할](../../../../visual-basic/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Linq>
+- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Select 절](../../../../visual-basic/language-reference/queries/select-clause.md)
+- [방법: 조인 사용 하 여 데이터를 결합 합니다.](../../../../visual-basic/programming-guide/language-features/linq/how-to-combine-data-with-linq-by-using-joins.md)
+- [방법: 여러 원본 (LINQ) (Visual Basic)에서 개체 컬렉션 채우기](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
+- [방법: 특정 형식으로 LINQ 쿼리 결과 반환 합니다.](../../../../visual-basic/programming-guide/language-features/linq/how-to-return-a-linq-query-result-as-a-specific-type.md)
+- [방법: 그룹 (LINQ) (Visual Basic)를 사용 하 여 여러 파일로 분합니다](../../../../visual-basic/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 41787927-df1f-4f4a-aba3-641662854fc4
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 7455ce7f0c1dbc71bed6e7656663d3cd67325447
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: c905dfbb0fffcf37c8b196e883003ea70e509b2d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534318"
 ---
 # <a name="ui-automation-textpattern-overview"></a>UI 자동화 TextPattern 개요
 > [!NOTE]
@@ -24,13 +24,13 @@ ms.locfileid: "48033560"
  컨트롤의 텍스트 콘텐츠 노출은 텍스트 컨테이너의 내용을 텍스트 스트림으로 나타내는 <xref:System.Windows.Automation.TextPattern> 컨트롤 패턴을 사용하여 수행됩니다. 다시, <xref:System.Windows.Automation.TextPattern> 을 사용하려면 형식 및 스타일 특성을 노출하는 <xref:System.Windows.Automation.Text.TextPatternRange> 클래스를 지원해야 합니다. <xref:System.Windows.Automation.Text.TextPatternRange>는 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 및 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트 컬렉션을 사용하여 텍스트 컨테이너의 연속 텍스트 범위나 여러 비연속 텍스트 범위를 나타내 <xref:System.Windows.Automation.TextPattern>을 지원합니다. <xref:System.Windows.Automation.Text.TextPatternRange> 는 선택, 비교, 검색 및 탐색 등의 기능을 지원합니다.  
   
 > [!NOTE]
->  <xref:System.Windows.Automation.TextPattern> 클래스는 텍스트를 삽입하거나 수정할 수 있는 방법을 제공하지 않습니다. 그러나 컨트롤에 따라 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] <xref:System.Windows.Automation.ValuePattern> 또는 직접 키보드 입력을 통해 이 작업을 수행할 수 있습니다. 참조 된 [TextPattern 텍스트 삽입 샘플](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16) 예입니다.  
+>  <xref:System.Windows.Automation.TextPattern> 클래스는 텍스트를 삽입하거나 수정할 수 있는 방법을 제공하지 않습니다. 그러나 컨트롤에 따라 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] <xref:System.Windows.Automation.ValuePattern> 또는 직접 키보드 입력을 통해 이 작업을 수행할 수 있습니다. 예제는 [TextPattern Insert Text Sample](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16) 을 참조하세요.  
   
  이 개요에 설명된 기능은 보조 기술 공급업체 및 최종 사용자에게 중요합니다. 보조 기술은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 를 사용하여 사용자에 대한 전체 텍스트 형식 정보를 수집하고 <xref:System.Windows.Automation.Text.TextUnit> (문자, 단어, 줄 또는 단락)별로 텍스트의 프로그래밍 방식 탐색 및 선택 기능을 제공합니다.  
   
 <a name="UI_Automation_TextPattern_vs__Cicero"></a>   
 ## <a name="ui-automation-textpattern-vs-text-services-framework"></a>UI 자동화 TextPattern과 텍스트 서비스 프레임워크 비교  
- [!INCLUDE[TLA#tla_tsf](../../../includes/tlasharptla-tsf-md.md)]는 데스크톱 및 응용 프로그램 내에서 자연 언어 서비스 및 고급 텍스트 입력을 사용할 수 있게 해주는 간단하고 확장 가능한 시스템 프레임워크입니다. 응용 프로그램에서 해당 텍스트 저장소를 노출하는 인터페이스를 제공할 뿐 아니라 해당 텍스트 저장소에 대한 메타데이터를 지원합니다.  
+ [!INCLUDE[TLA#tla_tsf](../../../includes/tlasharptla-tsf-md.md)]는 데스크톱 및 응용 프로그램 내에서 자연 언어 서비스 및 고급 텍스트 입력을 사용할 수 있게 해주는 간단하고 확장 가능한 시스템 프레임워크입니다. 애플리케이션에서 해당 텍스트 저장소를 노출하는 인터페이스를 제공할 뿐 아니라 해당 텍스트 저장소에 대한 메타데이터를 지원합니다.  
   
  그러나 [!INCLUDE[TLA2#tla_tsf](../../../includes/tla2sharptla-tsf-md.md)] 는 컨텍스트 인식 시나리오에 입력을 삽입해야 하는 응용 프로그램용으로 설계된 반면, <xref:System.Windows.Automation.TextPattern> 은 화면 읽기 프로그램 및 브라유 점자 디바이스용 텍스트 저장소에 최적화된 액세스를 제공하기 위한 읽기 전용 솔루션(위에서 언급한 제한된 해결 방법 사용)입니다.  
   
@@ -90,7 +90,7 @@ ms.locfileid: "48033560"
   
 -   [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 텍스트 공급자는 읽기 전용 인터페이스를 제공하며 컨트롤의 기존 텍스트를 변경하는 기능을 제공하지 않습니다.  
   
--   UI 자동화 클라이언트는 완전히 "신뢰할 수 있는" 경우에만 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 을 사용할 수 있습니다. 이러한 예로 알려져 있고 신뢰할 수 있는 응용 프로그램만 실행할 수 있는 보호된 로그온 화면이 있습니다.  
+-   UI 자동화 클라이언트는 완전히 "신뢰할 수 있는" 경우에만 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 을 사용할 수 있습니다. 이러한 예로 알려져 있고 신뢰할 수 있는 애플리케이션만 실행할 수 있는 보호된 로그온 화면이 있습니다.  
   
 -   UI 자동화 공급자의 개발자는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 을 통해 해당 컨트롤에 노출하도록 선택한 모든 정보가 기본적으로 공용이며 다른 코드에서 완전히 액세스할 수 있음을 알아야 합니다. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에서 UI 자동화 클라이언트를 신뢰할 수 있는지 확인하지 않으므로 UI 자동화 공급자는 보호된 콘텐츠나 중요한 텍스트 정보(예: 암호 필드)를 노출하면 안 됩니다.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "48033560"
   
     -   UIPI는 프로그램이 보다 "권한 있는” 다른 프로그램을 제어 및/또는 모니터링할 수 없도록 차단하여 사용자 입력을 스푸핑하는 크로스 프로세스 창 메시지 공격을 방지합니다.  
   
-    -   LUA는 Administrators 그룹의 사용자가 실행하는 응용 프로그램의 권한에 제한을 설정합니다. 응용 프로그램에 관리자 권한이 반드시 필요한 것은 아니며 필요한 최소 권한으로 실행됩니다. 결과적으로 LUA 시나리오에서는 몇 가지 제한 사항이 적용될 수 있습니다. 가장 주목할 만한 사항은 문자열 잘림(TextPattern 문자열 포함)입니다. 이 경우 응용 프로그램을 사용할 수 없게 되는 지점까지 강제로 메모리를 할당하지 않아도 되도록 관리자 수준 응용 프로그램에서 검색되는 문자열의 크기를 제한해야 할 수도 있습니다.  
+    -   LUA는 Administrators 그룹의 사용자가 실행하는 애플리케이션의 권한에 제한을 설정합니다. 애플리케이션에 관리자 권한이 반드시 필요한 것은 아니며 필요한 최소 권한으로 실행됩니다. 결과적으로 LUA 시나리오에서는 몇 가지 제한 사항이 적용될 수 있습니다. 가장 주목할 만한 사항은 문자열 잘림(TextPattern 문자열 포함)입니다. 이 경우 애플리케이션을 사용할 수 없게 되는 지점까지 강제로 메모리를 할당하지 않아도 되도록 관리자 수준 애플리케이션에서 검색되는 문자열의 크기를 제한해야 할 수도 있습니다.  
   
 <a name="Performance"></a>   
 ## <a name="performance"></a>성능  
@@ -129,11 +129,11 @@ ms.locfileid: "48033560"
  <xref:System.Windows.Automation.Text.TextUnit>  
  텍스트 범위의 논리적 세그먼트를 탐색하는 데 사용되는 미리 정의된 텍스트 단위(문자, 단어, 줄 또는 단락)입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)  
- [텍스트 서비스 프레임 워크](https://msdn.microsoft.com/library/default.asp?url=/library/tsf/tsf/text_services_framework.asp)
+## <a name="see-also"></a>참고자료
+- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
+- [텍스트 서비스 프레임워크 비교](https://msdn.microsoft.com/library/default.asp?url=/library/tsf/tsf/text_services_framework.asp)

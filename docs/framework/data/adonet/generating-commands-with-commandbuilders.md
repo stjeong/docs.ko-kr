@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6e3fb8b5-373b-4f9e-ab03-a22693df8e91
-ms.openlocfilehash: a8767ca492a514f3ee7a2d4688858282ec706ef7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f2aff8d5d8779e3c99644238ae54d30a13f00304
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54618950"
 ---
 # <a name="generating-commands-with-commandbuilders"></a>CommandBuilder를 사용하여 명령 생성
 사용자가 입력하는 텍스트 명령을 사용하는 쿼리 도구를 통해 지정하는 경우와 같이 `SelectCommand` 속성이 런타임에 동적으로 지정되는 경우에는 디자인 타임에 적절한 `InsertCommand`, `UpdateCommand` 또는 `DeleteCommand`를 지정하지 못할 수 있습니다. <xref:System.Data.DataTable>이 단일 데이터베이스 테이블에 매핑되거나 단일 데이터베이스 테이블에서 생성된 경우에는 <xref:System.Data.Common.DbCommandBuilder> 개체를 사용하여 `DeleteCommand`의 `InsertCommand`, `UpdateCommand` 및 <xref:System.Data.Common.DbDataAdapter>를 자동으로 생성할 수 있습니다.  
@@ -112,8 +112,8 @@ custDS.Tables.Remove(custDS.Tables["Customers"]);
 adapter.Fill(custDS, "Customers");  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [명령 실행](../../../../docs/framework/data/adonet/executing-a-command.md)  
- [DbConnection, DbCommand 및 DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [명령 실행](../../../../docs/framework/data/adonet/executing-a-command.md)
+- [DbConnection, DbCommand 및 DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

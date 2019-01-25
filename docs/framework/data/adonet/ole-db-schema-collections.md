@@ -2,12 +2,12 @@
 title: OLE DB 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 6380c36b-658e-4d67-91e8-7131ef4a7c2c
-ms.openlocfilehash: 1ab6426875b73b400a59b7e4cf155615d7472d05
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f753f35aab0a0200da5de463a73abb9813253d11
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54658457"
 ---
 # <a name="ole-db-schema-collections"></a>OLE DB 스키마 컬렉션
 이 단원에서는 Microsoft SQL Server, Oracle 및 Microsoft Jet용 OLE DB 공급자에서 지원하는 스키마 컬렉션에 대해 설명합니다.  
@@ -411,5 +411,5 @@ ms.locfileid: "43514491"
 |FILTER_CONDITION|문자열|  
 |INTEGRATED|부울|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

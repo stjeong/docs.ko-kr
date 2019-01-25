@@ -2,12 +2,12 @@
 title: HAVING (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: b5d52d97-8372-4335-beac-2d0b79dc3707
-ms.openlocfilehash: 75f30c19fb54d66be0e460ab64b61d283d650005
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0378aa365351dcd8c6c1b59674d785def1ee2648
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684829"
 ---
 # <a name="having-entity-sql"></a>HAVING (Entity SQL)
 그룹이나 집계에 대한 검색 조건을 지정합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "32764387"
  HAVING 절은 그룹화 결과에 추가 필터링 조건을 지정하는 데 사용됩니다. 쿼리 식에 GROUP BY 절이 지정되지 않으면 암시적인 단일 집합 그룹이 선택됩니다.  
   
 > [!NOTE]
->  HAVING에만 사용할 수 있습니다는 [선택](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) 문. 때 [GROUP BY](../../../../../../docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) 는 HAVING을 사용 하지는 WHERE 절 처럼 작동 합니다.  
+>  HAVING에만 사용할 수는 [선택](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) 문입니다. 때 [GROUP BY](../../../../../../docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) 는 HAVING을 사용 하지는 WHERE 절 처럼 동작 합니다.  
   
  HAVING 절은 GROUP BY 연산 이후에 적용된다는 점을 제외하고는 WHERE 절과 비슷하게 작동합니다. 다시 말해서, HAVING 절은 다음 예제와 같이 그룹화 별칭 및 집계만 참조합니다.  
   
@@ -40,12 +40,12 @@ HAVING SUM(o.Quantity) > 1
 ## <a name="example"></a>예제  
  다음 Entity SQL 쿼리에서는 HAVING 및 GROUP BY 연산자를 사용하여 그룹이나 집계에 대한 검색 조건을 지정합니다. 쿼리는 AdventureWorks Sales 모델을 기반으로 합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
-1.  절차에 따라 [하는 방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
+1.  절차에 따라 [방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)합니다.  
   
 2.  다음 쿼리를 `ExecutePrimitiveTypeQuery` 메서드에 인수로 전달합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#HAVING](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#having)]  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [쿼리 식](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [쿼리 식](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)

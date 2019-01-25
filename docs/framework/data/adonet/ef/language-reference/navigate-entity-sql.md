@@ -2,12 +2,12 @@
 title: NAVIGATE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: f107f29d-005f-4e39-a898-17f163abb1d0
-ms.openlocfilehash: c374261ad3702294f5720edb7881e21ba79d85bc
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e66a09276f40ab6d9ff7c11bb160385b4c1efb48
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54542563"
 ---
 # <a name="navigate-entity-sql"></a>NAVIGATE (Entity SQL)
 엔터티 사이에 설정된 관계를 탐색합니다.  
@@ -23,7 +23,7 @@ navigate(instance-expresssion, [relationship-type], [to-end [, from-end] ])
  엔터티의 인스턴스입니다.  
   
  `relationship-type`  
- CSDL(개념 스키마 정의 언어) 파일에 지정된, 관계의 형식 이름입니다. `relationship-type` 로 한정 됩니다 \<네임 스페이스 >.\< 관계 유형 이름 >.  
+ CSDL(개념 스키마 정의 언어) 파일에 지정된, 관계의 형식 이름입니다. 합니다 `relationship-type` 으로 한정 됩니다 \<네임 스페이스 >.\< 관계 유형 이름 >.  
   
  `to`  
  관계의 끝 부분입니다.  
@@ -50,7 +50,7 @@ Select o.Id, navigate(o, OrderCustomer, Customer, Order)
 From LOB.Orders as o  
 ```  
   
- 여기서 OrderCustomer는 `relationship`이고, Customer와 Order는 각각 관계의 `to-end` (고객)와 `from-end` (주문)입니다. OrderCustomer가 n:1 관계 경우 탐색 식의 결과 형식이 Ref\<고객 > 합니다.  
+ 여기서 OrderCustomer는 `relationship`이고, Customer와 Order는 각각 관계의 `to-end` (고객)와 `from-end` (주문)입니다. OrderCustomer가 n:1 관계 라면 탐색 식의 결과 형식은 Ref 경우\<고객 >.  
   
  이 식이 좀 더 단순화된 형태는 다음과 같습니다.  
   
@@ -59,7 +59,7 @@ Select o.Id, navigate(o, OrderCustomer)
 From LOB.Orders as o  
 ```  
   
- 위와 비슷하게 다음 형태의 쿼리에서 탐색 식은 생성 컬렉션 < Ref\<순서 >> 합니다.  
+ 마찬가지로, 다음 형태의 쿼리에서 탐색 식은 산출 컬렉션 < Ref\<순서 >> 합니다.  
   
 ```  
 Select c.Id, navigate(c, OrderCustomer, Order, Customer)  
@@ -71,12 +71,12 @@ From LOB.Customers as c
 ## <a name="example"></a>예제  
  다음 Entity SQL 쿼리는 NAVIGATE 연산자를 사용하여 Address 및 SalesOrderHeader 엔터티 형식 사이에 설정된 관계를 탐색합니다. 쿼리는 AdventureWorks Sales 모델을 기반으로 합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
-1.  [방법: StructuralType 결과를 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)의 절차를 따릅니다.  
+1.  절차에 따라 [방법: StructuralType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)합니다.  
   
 2.  다음 쿼리를 `ExecuteStructuralTypeQuery` 메서드에 인수로 전달합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#NAVIGATE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#navigate)]  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [방법: 탐색와 관계 탐색 연산자](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [방법: 이동 사용 하 여 관계 탐색 연산자](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md)

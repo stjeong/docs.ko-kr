@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DocumentDesigner class [Windows Forms]
 - walkthroughs [Windows Forms], controls
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
-ms.openlocfilehash: cb102ec9b3a7eb4673f42c2ca5ad876e049ff59c
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 8c5ab9ac832ebf98584273bb8c4a7de12b3b8085
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54595281"
 ---
 # <a name="walkthrough-creating-a-windows-forms-control-that-takes-advantage-of-visual-studio-design-time-features"></a>연습: Visual Studio 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기
 연결 된 사용자 지정 디자이너를 작성 하 여 사용자 지정 컨트롤에 대 한 디자인 타임 환경을 향상 시킬 수 있습니다.  
@@ -583,7 +583,7 @@ private IWindowsFormsEditorService editorService;
   
 6.  마우스 오른쪽 단추로 클릭 합니다 `DemoMarqueeControl` 와 바로 가기 메뉴에서에서를 **테스트 실행** 애니메이션을 시작 하는 옵션입니다. 클릭 **테스트 중지** 여 애니메이션을 중지 합니다.  
   
-7.  오픈 **Form1** 디자인 뷰에서 합니다.  
+7.  디자인 뷰에서 **Form1**을 엽니다.  
   
 8.  두 개의 배치 <xref:System.Windows.Forms.Button> 폼의 컨트롤입니다. 이름을 지정 하 여 `startButton` 및 `stopButton`를 변경 합니다 <xref:System.Windows.Forms.Control.Text%2A> 속성 값을 **시작** 및 **중지**, 각각.  
   
@@ -632,15 +632,15 @@ private void stopButton_Click(object sender, System.EventArgs e)
   
 -   컨트롤은 직렬화 하는 방법 및 코드에 생성 되는 방식을 제어 합니다. 자세한 내용은 [동적 소스 코드 생성 및 컴파일](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.Design.ParentControlDesigner>
 - <xref:System.Windows.Forms.Design.DocumentDesigner>
 - <xref:System.ComponentModel.Design.IRootDesigner>
-- <xref:System.ComponentModel.Design.DesignerVerb> 
+- <xref:System.ComponentModel.Design.DesignerVerb>
 - <xref:System.Drawing.Design.UITypeEditor>
 - <xref:System.ComponentModel.BackgroundWorker>
 - [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))
-- [디자인 타임 지원 확장](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) 
+- [디자인 타임 지원 확장](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [사용자 지정 디자이너](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h51z5c0x(v=vs.120))

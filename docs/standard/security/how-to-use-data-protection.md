@@ -1,5 +1,5 @@
 ---
-title: '방법: 데이터 보호 사용'
+title: '방법: 사용 하 여 데이터 보호'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -18,14 +18,14 @@ helpviewer_keywords:
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b043c5a2173cff9eb82497f6d4ee8b7c0aa3f14c
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: b90c8fc25b0d33d084fbfd4979088e568c0618df
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698396"
 ---
-# <a name="how-to-use-data-protection"></a>방법: 데이터 보호 사용
+# <a name="how-to-use-data-protection"></a>방법: 사용 하 여 데이터 보호
 .NET Framework는 현재 사용자 계정 또는 컴퓨터의 정보를 사용하여 데이터를 암호화할 수 있게 해주는 DPAPI(데이터 보호 API)에 대한 액세스를 제공합니다.  DPAPI를 사용하는 경우 명시적으로 암호화 키를 생성 및 저장하는 어려운 문제가 완화됩니다.  
   
  <xref:System.Security.Cryptography.ProtectedMemory> 클래스를 사용하여 메모리 내 바이트 배열을 암호화합니다.  이 기능은 Microsoft Windows XP 이상의 운영 체제에서 사용할 수 있습니다.  현재 프로세스에서 암호화된 메모리가 현재 프로세스에서만, 모든 프로세스에서 또는 동일한 사용자 컨텍스트에서 암호 해독할 수 있도록 지정할 수 있습니다.  <xref:System.Security.Cryptography.ProtectedMemory> 옵션에 대한 자세한 내용은 <xref:System.Security.Cryptography.MemoryProtectionScope> 열거형을 참조하세요.  
@@ -68,5 +68,5 @@ ms.locfileid: "49086624"
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Security.Cryptography.ProtectedMemory>  
+- <xref:System.Security.Cryptography.ProtectedMemory>
 - <xref:System.Security.Cryptography.ProtectedData>

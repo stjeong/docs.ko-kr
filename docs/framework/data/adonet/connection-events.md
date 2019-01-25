@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5a29de74-acfc-4134-8616-829dd7ce0710
-ms.openlocfilehash: c1ef9ff9cc4d77e4951e99ed74c96cf78eb71506
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 2d11a2e3a3ca7218aecd5d38dd9dd036f99d7687
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687819"
 ---
 # <a name="connection-events"></a>연결 이벤트
 .NET Framework 데이터 공급자의 모든 **연결** 데이터 원본에서 정보 메시지를 검색 또는 확인에 사용할 수 있는 두 개의 이벤트를 사용 하 여 개체의 상태를 **연결** 에 변경 합니다. 다음 표에서 이벤트를 설명 합니다 **연결** 개체입니다.  
@@ -105,6 +105,6 @@ protected static void OnStateChange(object sender,
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

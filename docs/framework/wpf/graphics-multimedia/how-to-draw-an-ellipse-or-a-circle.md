@@ -9,12 +9,12 @@ helpviewer_keywords:
 - graphics [WPF], drawing circles
 - graphics [WPF], drawing ellipses
 ms.assetid: 99763b8c-bfc8-44be-8231-8a70daf5481a
-ms.openlocfilehash: ddeada8619d1b6c8970f1efb7cca1bc98773d0c5
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 7aac743b0cd2119107e48493b3ee9563b81b391d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689119"
 ---
 # <a name="how-to-draw-an-ellipse-or-a-circle"></a>방법: 타원 또는 원 그리기
 사용 하 여 타원과 원을 그리는 방법을 보여 주는이 예제는 <xref:System.Windows.Shapes.Ellipse> 요소입니다. 타원을 그릴 만들기는 <xref:System.Windows.Shapes.Ellipse> 요소를 지정 하 고 해당 <xref:System.Windows.FrameworkElement.Width%2A> 및 <xref:System.Windows.FrameworkElement.Height%2A>합니다. 사용 하 여 해당 <xref:System.Windows.Shapes.Shape.Fill%2A> 속성을 지정 합니다 <xref:System.Windows.Media.Brush> 타원의 내부를 그리는 데 사용 되는 합니다. 사용 하 여 해당 <xref:System.Windows.Shapes.Shape.Stroke%2A> 속성을 지정 합니다 <xref:System.Windows.Media.Brush> 타원 윤곽선을 그리는 데 사용 되는 합니다. <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> 속성 타원 윤곽선의 두께 지정 합니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "46003947"
   
  이 예제는 더 큰 샘플;의 일부 전체 샘플을 참조 하세요 [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Shapes.Ellipse>  
- <xref:System.Windows.Shapes.Shape>  
- [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Shapes.Ellipse>
+- <xref:System.Windows.Shapes.Shape>
+- [도형 요소 샘플](https://go.microsoft.com/fwlink/?LinkID=160037)

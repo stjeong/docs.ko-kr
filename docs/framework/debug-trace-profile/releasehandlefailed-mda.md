@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 155cf7138d4074467195bdc1302e28c0789f93cf
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 69dea1adb2d751b44f6c8bc529353ff78cad60ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54673048"
 ---
 # <a name="releasehandlefailed-mda"></a>releaseHandleFailed MDA
 <xref:System.Runtime.InteropServices.SafeHandle> 또는 <xref:System.Runtime.InteropServices.CriticalHandle>에서 파생된 클래스의 <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> 메서드가 `false`를 반환하면 `releaseHandleFailed` MDA(관리 디버깅 도우미)가 활성화되고 개발자에게 알립니다.  
@@ -90,7 +90,7 @@ bool ReleaseHandle()
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)

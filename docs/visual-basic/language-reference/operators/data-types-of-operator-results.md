@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data types [Visual Basic], ranges
 - operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
-ms.openlocfilehash: 135c44217debcddb15fd4cef7e73ca2f98903c43
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 90e3c8b61bd920ab06090f3f889d6cc61c354294
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54650485"
 ---
 # <a name="data-types-of-operator-results-visual-basic"></a>연산자 결과의 데이터 형식(Visual Basic)
 Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작업의 결과 데이터 형식이 결정 합니다. 일부 경우에이 피연산자 중 하나가 보다 큰 범위의 데이터 형식일 수 있습니다.  
@@ -175,14 +175,14 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
   
  합니다 `Like` 연산자가 패턴 일치에 대해서만 정의 `String` 피연산자입니다. Visual Basic에서 필요에 따라 각 피연산자를 변환 하려고 `String` 작업 전에 합니다. 결과 데이터 형식은 항상 `Boolean`합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [연산자 및 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Visual Basic의 산술 연산자](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
- [연산자](../../../visual-basic/language-reference/operators/index.md)  
- [Visual Basic에서의 연산자 우선 순위](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [기능별 연산자 목록](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [산술 연산자](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [비교 연산자](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## <a name="see-also"></a>참고자료
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [연산자 및 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Visual Basic의 산술 연산자](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [연산자](../../../visual-basic/language-reference/operators/index.md)
+- [Visual Basic에서의 연산자 우선 순위](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [기능별 연산자 목록](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [산술 연산자](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [비교 연산자](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)

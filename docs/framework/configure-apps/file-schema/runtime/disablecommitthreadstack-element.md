@@ -1,5 +1,5 @@
 ---
-title: '&lt;disableCommitThreadStack&gt; 요소'
+title: '&lt;disableCommitThreadStack&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCommitThreadStack
@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 69b2c9f3bbd4fb7562272903d3ab78e3a4312298
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 3b02a5365aa2dc2292b0917820782405ba35ad92
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534071"
 ---
-# <a name="ltdisablecommitthreadstackgt-element"></a>&lt;disableCommitThreadStack&gt; 요소
+# <a name="ltdisablecommitthreadstackgt-element"></a>&lt;disableCommitThreadStack&gt; Element
 스레드가 시작될 때 전체 스레드 스택을 커밋할지 여부를 지정합니다.  
   
  \<configuration>  
 \<runtime>  
-\<disableCommitThreadStack >  
+\<disableCommitThreadStack>  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,7 +53,7 @@ ms.locfileid: "53611648"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -73,6 +73,6 @@ ms.locfileid: "53611648"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

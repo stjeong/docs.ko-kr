@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], freezing columns
 - DataGridView control [Windows Forms], columns always in view
 ms.assetid: 2ef8b1de-782e-4867-af8d-58171ab5c106
-ms.openlocfilehash: df8ac7e7db74d4e8df8872b5ec7f8f2ec774b3c8
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: b7a657af2d6caf2217aedf56422f135f0b2d667e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44183407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619420"
 ---
 # <a name="how-to-freeze-columns-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 열 고정
 사용자가 Windows Forms <xref:System.Windows.Forms.DataGridView> 컨트롤에 표시된 데이터를 볼 때 단일 열이나 열 집합을 자주 참조해야 하는 경우가 있습니다. 예를 들어 많은 열이 포함된 고객 정보 테이블을 표시하는 경우 다른 열을 표시되는 영역 바깥으로 스크롤할 수 있게 하면서 고객 이름은 항상 표시하는 것이 유용합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "44183407"
   
  열의 <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> 속성은 표에서 열이 항상 표시되는지 여부를 결정합니다.  
   
- Visual Studio에서는 이 작업이 지원됩니다.  도 참조 하세요 [방법: Windows Forms DataGridView 컨트롤 통해 디자이너에서 열 고정](https://msdn.microsoft.com/library/717ss6s6\(v=vs.110\))합니다.  
+ Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [방법: 고정 열에는 Windows Forms DataGridView 컨트롤 디자이너를 사용 하 여](https://msdn.microsoft.com/library/717ss6s6\(v=vs.110\))입니다.  
   
 ### <a name="to-freeze-a-column-programmatically"></a>프로그래밍 방식으로 열을 고정하려면  
   
@@ -42,8 +42,8 @@ ms.locfileid: "44183407"
   
 -   <xref:System?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView>  
- [Windows Forms DataGridView 컨트롤의 기본 열, 행 및 셀 기능](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
- [방법: Windows Forms DataGridView 컨트롤에서 열 다시 정렬 사용](../../../../docs/framework/winforms/controls/how-to-enable-column-reordering-in-the-windows-forms-datagridview-control.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView>
+- [Windows Forms DataGridView 컨트롤의 기본 열, 행 및 셀 기능](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)
+- [방법: Windows Forms DataGridView 컨트롤에서 열 다시 정렬 사용](../../../../docs/framework/winforms/controls/how-to-enable-column-reordering-in-the-windows-forms-datagridview-control.md)

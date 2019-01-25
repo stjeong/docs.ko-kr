@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GetXmlNamespace operator [Visual Basic]
 - GetXmlNamespace keyword [Visual Basic]
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
-ms.openlocfilehash: e21cf160d10f308990894d1a85c4f5d05b90f68d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: f9201aa4b2aa9280b9b3a4e0a2badf25ea819088
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43786611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684751"
 ---
 # <a name="getxmlnamespace-operator-visual-basic"></a>GetXmlNamespace 연산자(Visual Basic)
 가져옵니다는 <xref:System.Xml.Linq.XNamespace> 지정된 된 XML 네임 스페이스 접두사에 해당 하는 개체입니다.  
@@ -45,6 +45,6 @@ GetXmlNamespace(xmlNamespacePrefix)
   
  `Name: Patrick Hines`  
   
-## <a name="see-also"></a>참고 항목  
- [Imports 문(XML 네임스페이스)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
- [Visual Basic에서 XML에 액세스](../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
+## <a name="see-also"></a>참고자료
+- [Imports 문(XML 네임스페이스)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+- [Visual Basic에서 XML에 액세스](../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
