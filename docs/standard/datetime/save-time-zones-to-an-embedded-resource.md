@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 921874e774d18751c29db495dac1bc53d10cc8ad
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: c67a97193d186275e6a788f6b18bbc17c535f367
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45653354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592876"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>방법: 포함된 리소스에 표준 시간대 저장
 
@@ -37,9 +37,9 @@ ms.locfileid: "45653354"
 
 1. 새 표준 시간대를 만들거나 기존 표준 시간대를 검색 합니다.
 
-   기존 표준 시간대를 검색 하려면 다음을 참조 [방법: 미리 정의 된 UTC 및 현지 표준 시간대 개체에 액세스](../../../docs/standard/datetime/access-utc-and-local.md) 하 고 [방법: TimeZoneInfo 개체 인스턴스화](../../../docs/standard/datetime/instantiate-time-zone-info.md)합니다.
+   기존 표준 시간대를 검색 하려면 참조 [방법: 미리 정의 된 UTC 및 현지 표준 시간대 개체에 액세스할](../../../docs/standard/datetime/access-utc-and-local.md) 고 [방법: TimeZoneInfo 개체 인스턴스화](../../../docs/standard/datetime/instantiate-time-zone-info.md)합니다.
 
-   새 표준 시간대를 만들려면 오버 로드 중 하나를 호출 합니다 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드. 자세한 내용은 참조 하세요. [방법: 조정 규칙 없이 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) 및 [방법: 조정 규칙을 사용 하 여 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다.
+   새 표준 시간대를 만들려면 오버 로드 중 하나를 호출 합니다 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드. 자세한 내용은 [방법: 표준 시간대 조정 규칙 없이 만들](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) 고 [방법: 표준 시간대 조정 규칙을 사용 하 여 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다.
 
 2. 호출 된 <xref:System.TimeZoneInfo.ToSerializedString%2A> 시간대의 데이터가 들어 있는 문자열을 만드는 방법.
 
@@ -85,6 +85,6 @@ ms.locfileid: "45653354"
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-* [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
-* [방법: 포함 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
+- [방법: 포함된 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)

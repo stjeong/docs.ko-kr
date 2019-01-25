@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f53174bf060938d5a55cbd196944ac11916d59cd
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b0065b2cbbd17c5bb3dca6773951cdb8729e59fa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43778057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583563"
 ---
 # <a name="getnames-function"></a>GetNames 함수
 개체 속성의 하위 집합 또는 모든 이름을 검색합니다. 
@@ -68,8 +68,8 @@ HRESULT GetNames (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 하나 이상의 매개 변수가 잘못 된 경우 또는 플래그 및 매개 변수는 잘못 된 조합이 지정 되었습니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 하나 이상의 매개 변수가 잘못 된 경우 또는 플래그 및 매개 변수는 잘못 된 조합이 지정 되었습니다. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -105,11 +105,11 @@ HRESULT GetNames (
 함수는 항상 새 할당 `SAFEARRAY` 반환 `WBEM_S_NO_ERROR`, 및 `pstrNames` 항상 가리키도록로 설정 됩니다. 속성이 지정 된 필터와 일치 하는 경우 반환된 된 배열의 0 요소를 포함할 수 있습니다. 함수가 아닌 다른 값을 반환 하는 경우 `WBM_S_NO_ERROR`, 새 `SAFEARRAY` 구조 반환 되지 않습니다.
  
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - base classes, abstractions
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
 author: KrzysztofCwalina
-ms.openlocfilehash: 411596f342930c9387dc6523d25805bddad18687
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6811423258481fcbae24743c9b17f3f20c379c58
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565815"
 ---
 # <a name="base-classes-for-implementing-abstractions"></a>추상화 구현을 위한 기본 클래스
 엄격히 말해, 클래스는 다른 클래스에서 파생 됩니다 하는 경우 기본 클래스를 수 있습니다. 그러나이 섹션 기본 클래스는 클래스 주로 일반적인 추상화를 제공 하거나 일부를 재사용 하는 다른 클래스에 대 한 기본 구현 하지만 상속 하도록 설계 되었습니다. 기본 클래스는 일반적으로 중간 계층의 루트에 추상화 사이의 맨 아래에 몇 가지 사용자 지정 구현이 상속 계층 구조 배치 합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "53148675"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
 - [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)

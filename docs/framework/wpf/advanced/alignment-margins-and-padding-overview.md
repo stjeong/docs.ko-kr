@@ -10,12 +10,12 @@ helpviewer_keywords:
 - padding [WPF]
 - aligning [WPF]
 ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
-ms.openlocfilehash: 44c8814362ebb490d5e7676496309b2124782b78
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 5c716c07fabe5b93f13c86f8d347e4fd4d058145
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43800890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569956"
 ---
 # <a name="alignment-margins-and-padding-overview"></a>맞춤, 여백 및 안쪽 여백 개요
 <xref:System.Windows.FrameworkElement> 클래스는 자식 요소의 위치를 정확 하 게 하는 데 사용 되는 몇 가지 속성을 노출 합니다. 이 항목에서는 가장 중요 한 속성의 4 설명: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>를 <xref:System.Windows.Controls.Border.Padding%2A>, 및 <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>합니다. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램에서의 요소 위치를 제어하기 위한 기반을 제공하기 때문에 이 속성의 결과를 이해하는 것이 중요합니다.  
@@ -121,8 +121,8 @@ ms.locfileid: "43800890"
  [!code-xaml[MarginPaddingAlignmentSample#3](../../../../samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#3)]  
   
 <a name="wcpsdk_layout_amp_summary"></a>   
-## <a name="using-alignment-margins-and-padding-in-an-application"></a>응용 프로그램에서 맞춤, 여백 및 안쪽 여백 사용  
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>를 <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, 및 <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> 복잡 한을 만드는 데 필요한 위치 지정 제어를 제공 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]합니다. 각 속성의 결과를 사용하여 자식 요소 위치를 변경하면 동적 응용 프로그램과 사용자 환경을 만드는 유연성을 사용할 수 있습니다.  
+## <a name="using-alignment-margins-and-padding-in-an-application"></a>애플리케이션에서 맞춤, 여백 및 안쪽 여백 사용  
+ <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>를 <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, 및 <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> 복잡 한을 만드는 데 필요한 위치 지정 제어를 제공 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]합니다. 각 속성의 결과를 사용하여 자식 요소 위치를 변경하면 동적 애플리케이션과 사용자 환경을 만드는 유연성을 사용할 수 있습니다.  
   
  다음 예제에서는 이 항목에 설명된 각 개념을 보여 줍니다. 이 예제에서는이 항목의 첫 번째 예제에 나와 있는 구조를 토대로 <xref:System.Windows.Controls.Grid> 의 자식 요소로 <xref:System.Windows.Controls.Border> 첫 번째 샘플에서입니다. <xref:System.Windows.Controls.Border.Padding%2A> 부모를 적용할 <xref:System.Windows.Controls.Border> 요소입니다. 합니다 <xref:System.Windows.Controls.Grid> 세 명의 자식 간의 공간 분할 되 <xref:System.Windows.Controls.StackPanel> 요소입니다. <xref:System.Windows.Controls.Button> 요소는 다시의 여러 결과 표시 하는 데 사용 됩니다 <xref:System.Windows.FrameworkElement.Margin%2A> 고 <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>입니다. <xref:System.Windows.Controls.TextBlock> 각 요소가 추가 됩니다 <xref:System.Windows.Controls.ColumnDefinition> 향상에 적용 하는 다양 한 속성을 정의 하는 <xref:System.Windows.Controls.Button> 각 열에는 요소.  
   
@@ -131,7 +131,7 @@ ms.locfileid: "43800890"
  [!code-vb[MarginPaddingAlignmentSample#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#4)]
  [!code-xaml[MarginPaddingAlignmentSample#4](../../../../samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#4)]  
   
- 컴파일 시, 이전 응용 프로그램은 다음 그림과 유사한 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다. 다양 한 속성 값의 효과 요소 간의 간격 및 각 열에는 요소에 대 한 중요 한 속성 값 내에 표시 됩니다 <xref:System.Windows.Controls.TextBlock> 요소입니다.  
+ 컴파일 시, 이전 애플리케이션은 다음 그림과 유사한 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 생성합니다. 다양 한 속성 값의 효과 요소 간의 간격 및 각 열에는 요소에 대 한 중요 한 속성 값 내에 표시 됩니다 <xref:System.Windows.Controls.TextBlock> 요소입니다.  
   
  ![한 응용 프로그램에서 여러 개의 위치 지정 속성](../../../../docs/framework/wpf/advanced/media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
   
@@ -141,11 +141,11 @@ ms.locfileid: "43800890"
   
  자세하게 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃을 설명하는 추가 리소스를 사용할 수 있습니다. 합니다 [Panel 개요](../../../../docs/framework/wpf/controls/panels-overview.md) 다양 한 방법에 대 한 자세한 정보를 포함 하는 항목 <xref:System.Windows.Controls.Panel> 요소입니다. 항목 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) 레이아웃 요소를 사용 하 여 구성 요소를 배치 하 고 해당 작업을 데이터 소스에 바인딩할 고급 기법을 소개 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>  
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>  
- <xref:System.Windows.FrameworkElement.Margin%2A>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)  
- [WPF 레이아웃 갤러리 샘플](https://go.microsoft.com/fwlink/?LinkID=160054)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
+- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>
+- <xref:System.Windows.FrameworkElement.Margin%2A>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
+- [WPF 레이아웃 갤러리 샘플](https://go.microsoft.com/fwlink/?LinkID=160054)

@@ -2,12 +2,12 @@
 title: 지정된 이벤트 로그가 이 컴퓨터에 없습니다.
 ms.date: 07/20/2015
 ms.assetid: 974a23e7-37ea-4de2-b282-4cf46600694f
-ms.openlocfilehash: 764560e45ccfe12ad6dbeb42bfdea0b11326aa20
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ff16e2536bcb15d520cbc571ee90119e3f07fc19
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705886"
 ---
 # <a name="specified-event-log-does-not-exist-on-this-machine"></a>지정된 이벤트 로그가 이 컴퓨터에 없습니다.
 이 컴퓨터에 존재하지 않는 이벤트 로그에 액세스하려고 했습니다.  
@@ -16,6 +16,6 @@ ms.locfileid: "43521466"
   
 -   올바른 파일 이름 및 경로를 제공했는지 확인합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [이벤트 로그 관리](https://msdn.microsoft.com/library/35f53238-bdd2-417b-acd8-2fd9f7397f18)  
- [방법: 파일 경로의 구문 분석](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+## <a name="see-also"></a>참고자료
+- [이벤트 로그 관리](https://msdn.microsoft.com/library/35f53238-bdd2-417b-acd8-2fd9f7397f18)
+- [방법: 파일 경로의 구문 분석](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, providers
 ms.assetid: ef5ba300-6d7c-455e-a7bd-d0cc6d211ad4
-ms.openlocfilehash: 3c6885ee7976461379513e8e579f58160146769a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 12a23970b059e338df05a2f0b58ca67ad6fae6d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582567"
 ---
 # <a name="reflection-provider-wcf-data-services"></a>리플렉션 공급자(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]는 Entity Framework를 통해 데이터 모델의 데이터를 노출할 뿐 아니라 엔터티 기반 모델에 엄격하게 정의되지 않은 데이터를 노출할 수 있습니다. 리플렉션 공급자는 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 형식을 반환하는 클래스의 데이터를 노출합니다. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]는 리플렉션을 사용하여 이러한 클래스의 데이터 모델을 유추하고 리소스에 대한 주소 기반 쿼리를 노출된 <xref:System.Linq.IQueryable%601> 형식에 대한 LINQ(Language-Integrated Query) 기반 쿼리로 변환할 수 있습니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "33366010"
 > [!NOTE]
 >  <xref:System.Linq.Queryable.AsQueryable%2A> 인터페이스를 구현하는 모든 클래스에서 <xref:System.Linq.IQueryable%601> 메서드를 사용하여 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 반환할 수 있습니다. 이렇게 하면 가장 일반적인 컬렉션 형식을 데이터 서비스의 데이터 소스로 사용할 수 있습니다.  
   
- 리플렉션 공급자는 형식 계층 구조를 지원합니다. 자세한 내용은 참조 [하는 방법: 리플렉션 공급자를 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)합니다.  
+ 리플렉션 공급자는 형식 계층 구조를 지원합니다. 자세한 내용은 [방법: 리플렉션 공급자를 사용 하 여 데이터 서비스를 만드는](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)합니다.  
   
 ## <a name="inferring-the-data-model"></a>데이터 모델 유추  
  데이터 서비스를 만들면 공급자가 리플렉션을 사용하여 데이터 모델을 유추합니다. 다음 목록에서는 리플렉션 공급자가 데이터 모델을 유추하는 방법을 보여 줍니다.  
@@ -69,7 +69,7 @@ ms.locfileid: "33366010"
 >  .NET Framework nullable 값 형식은 null이 할당될 수 없는 해당 값 형식과 동일한 데이터 모델 형식으로 매핑됩니다.  
   
 ## <a name="enabling-updates-in-the-data-model"></a>데이터 모델에서 업데이트 사용  
- 이러한 종류의 데이터 모델을 통해 노출되는 데이터를 업데이트하려면 리플렉션 공급자는 <xref:System.Data.Services.IUpdatable> 인터페이스를 정의합니다. 이 인터페이스는 노출된 형식의 업데이트를 저장하는 방법을 데이터 서비스에 지시합니다. 데이터 모델에 의해 정의된 리소스를 업데이트하려면 엔터티 컨테이너 클래스에서 <xref:System.Data.Services.IUpdatable> 인터페이스를 구현해야 합니다. 구현에 대 한 예제는 <xref:System.Data.Services.IUpdatable> 인터페이스를 참조 [하는 방법: LINQ to SQL 데이터 원본을 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)합니다.  
+ 이러한 종류의 데이터 모델을 통해 노출되는 데이터를 업데이트하려면 리플렉션 공급자는 <xref:System.Data.Services.IUpdatable> 인터페이스를 정의합니다. 이 인터페이스는 노출된 형식의 업데이트를 저장하는 방법을 데이터 서비스에 지시합니다. 데이터 모델에 의해 정의된 리소스를 업데이트하려면 엔터티 컨테이너 클래스에서 <xref:System.Data.Services.IUpdatable> 인터페이스를 구현해야 합니다. 구현 예는 <xref:System.Data.Services.IUpdatable> 인터페이스를 참조 하십시오 [방법: LINQ to SQL 데이터 원본을 사용 하 여 데이터 서비스를 만드는](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)합니다.  
   
  <xref:System.Data.Services.IUpdatable> 인터페이스를 사용하려면 리플렉션 공급자를 통해 업데이트를 데이터 소스로 전파할 수 있도록 다음 멤버를 구현해야 합니다.  
   
@@ -89,10 +89,10 @@ ms.locfileid: "33366010"
 |<xref:System.Data.Services.IUpdatable.SetValue%2A>|리소스의 속성 값을 설정하는 기능을 제공합니다.|  
   
 ## <a name="handling-concurrency"></a>동시성 처리  
- [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]는 엔터티의 동시성 토큰을 정의할 수 있도록 하여 낙관적 동시성 모델을 지원합니다. 엔터티의 속성을 하나 이상 포함하는 이 동시성 토큰은 요청되거나 업데이트 또는 삭제되고 있는 데이터가 변경되었는지 여부를 데이터 서비스에서 확인하는 데 사용됩니다. 요청의 eTag에서 가져온 토큰 값이 엔터티의 현재 값과 다르면 데이터 서비스에서 예외가 발생합니다. 리플렉션 공급자에서 동시성 토큰을 정의하기 위해 <xref:System.Data.Services.ETagAttribute>가 엔터티 형식에 적용됩니다. 동시성 토큰에는 키 속성이나 탐색 속성이 포함될 수 없습니다. 자세한 내용은 참조 [데이터 서비스 업데이트](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md)합니다.  
+ [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]는 엔터티의 동시성 토큰을 정의할 수 있도록 하여 낙관적 동시성 모델을 지원합니다. 엔터티의 속성을 하나 이상 포함하는 이 동시성 토큰은 요청되거나 업데이트 또는 삭제되고 있는 데이터가 변경되었는지 여부를 데이터 서비스에서 확인하는 데 사용됩니다. 요청의 eTag에서 가져온 토큰 값이 엔터티의 현재 값과 다르면 데이터 서비스에서 예외가 발생합니다. 리플렉션 공급자에서 동시성 토큰을 정의하기 위해 <xref:System.Data.Services.ETagAttribute>가 엔터티 형식에 적용됩니다. 동시성 토큰에는 키 속성이나 탐색 속성이 포함될 수 없습니다. 자세한 내용은 [데이터 서비스 업데이트](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md)합니다.  
   
 ## <a name="using-linq-to-sql-with-the-reflection-provider"></a>리플렉션 공급자와 함께 LINQ to SQL 사용  
- Entity Framework는 기본적으로 지원되므로 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에 관계형 데이터를 사용하는 경우 이 데이터 공급자를 사용하는 것이 좋습니다. 그러나 리플렉션 공급자를 통해 데이터 서비스에 LINQ to SQL 클래스를 사용할 수 있습니다. <xref:System.Data.Linq.Table%601> 결과 집합에 메서드에 의해 반환 되는 <xref:System.Data.Linq.DataContext> LINQ to SQL 개체 관계형 디자이너 (O/R 디자이너) 구현에 의해 생성 된는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 이렇게 하면 리플렉션 공급자가 이러한 메서드에 액세스하고 생성된 LINQ to SQL 클래스를 사용하여 SQL Server에서 엔터티 데이터를 반환할 수 있습니다. 그러나 LINQ to SQL은 <xref:System.Data.Services.IUpdatable> 인터페이스를 구현하지 않으므로 기존 <xref:System.Data.Linq.DataContext> partial 클래스를 확장하여 <xref:System.Data.Services.IUpdatable> 구현을 추가하는 partial 클래스를 추가해야 합니다. 자세한 내용은 참조 [하는 방법: LINQ to SQL 데이터 원본을 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)합니다.  
+ Entity Framework는 기본적으로 지원되므로 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에 관계형 데이터를 사용하는 경우 이 데이터 공급자를 사용하는 것이 좋습니다. 그러나 리플렉션 공급자를 통해 데이터 서비스에 LINQ to SQL 클래스를 사용할 수 있습니다. <xref:System.Data.Linq.Table%601> 결과 집합의 메서드에 의해 반환 되는 합니다 <xref:System.Data.Linq.DataContext> LINQ to SQL 개체 관계형 디자이너 (O/R 디자이너) 구현에서 생성 된는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 이렇게 하면 리플렉션 공급자가 이러한 메서드에 액세스하고 생성된 LINQ to SQL 클래스를 사용하여 SQL Server에서 엔터티 데이터를 반환할 수 있습니다. 그러나 LINQ to SQL은 <xref:System.Data.Services.IUpdatable> 인터페이스를 구현하지 않으므로 기존 <xref:System.Data.Linq.DataContext> partial 클래스를 확장하여 <xref:System.Data.Services.IUpdatable> 구현을 추가하는 partial 클래스를 추가해야 합니다. 자세한 내용은 [방법: LINQ to SQL 데이터 원본을 사용 하 여 데이터 서비스를 만드는](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)

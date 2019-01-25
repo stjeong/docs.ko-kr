@@ -2,12 +2,12 @@
 title: SQL Server 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
-ms.openlocfilehash: 7f710af5c05942d2ff1718c9d59d4d776f45c6e7
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 2445ab2ffbe30b647e256e223f712300bcf19931
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635041"
 ---
 # <a name="sql-server-schema-collections"></a>SQL Server 스키마 컬렉션
 Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉션뿐만 아니라 다른 스키마 컬렉션도 추가적으로 지원합니다. 지원되는 스키마 컬렉션은 현재 사용하고 있는 SQL Sever 버전에 따라 조금씩 다를 수 있습니다. 확인 하려면 지원 되는 스키마 컬렉션 목록을 호출 합니다 **GetSchema** 메서드 인수 없이 또는 "metadatacollections 라는" 스키마 컬렉션 이름입니다. 그러면 지원되는 스키마 컬렉션의 목록, 각자 지원하는 제약 조건 수 및 사용하는 식별자 부분 수가 포함된 <xref:System.Data.DataTable>이 반환됩니다.  
@@ -51,7 +51,7 @@ Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉
   
 |열 이름|데이터 형식|설명|  
 |----------------|--------------|-----------------|  
-|type_desc|문자열|인덱스 형식은 다음 중 하나입니다.<br /><br /> -HEAP<br />클러스터<br />-비클러스터형<br />-   XML<br />공간|  
+|type_desc|문자열|인덱스 형식은 다음 중 하나입니다.<br /><br /> -   HEAP<br />-   CLUSTERED<br />-   NONCLUSTERED<br />-   XML<br />-   SPATIAL|  
   
 ## <a name="indexcolumns"></a>IndexColumns  
   
@@ -75,9 +75,9 @@ Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉
 |SPECIFIC_CATALOG|문자열|카탈로그의 특정 이름입니다.|  
 |SPECIFIC_SCHEMA|문자열|스키마의 특정 이름입니다.|  
 |SPECIFIC_NAME|문자열|카탈로그의 특정 이름입니다.|  
-|ROUTINE_CATALOG와|문자열|저장 프로시저가 속하는 카탈로그입니다.|  
+|ROUTINE_CATALOG|문자열|저장 프로시저가 속하는 카탈로그입니다.|  
 |ROUTINE_SCHEMA|문자열|저장 프로시저를 포함하는 스키마입니다.|  
-|ROUTINE_NAME과|문자열|저장 프로시저의 이름입니다.|  
+|ROUTINE_NAME|문자열|저장 프로시저의 이름입니다.|  
 |ROUTINE_TYPE|문자열|저장 프로시저에 대해서는 PROCEDURE를 반환하고 함수에 대해서는 FUNCTION을 반환합니다.|  
 |CREATED|DateTime|프로시저가 만들어진 시간입니다.|  
 |LAST_ALTERED|DateTime|프로시저가 마지막으로 수정된 시간입니다.|  
@@ -255,6 +255,6 @@ Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉
 |Create_Date|DateTime|어셈블리가 만들어져 등록된 날짜입니다.|  
 |Permission_set_desc|문자열|어셈블리의 권한 집합/보안 수준 이름입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [데이터베이스 스키마 정보 검색](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터베이스 스키마 정보 검색](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

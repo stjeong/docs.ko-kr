@@ -2,15 +2,15 @@
 title: 느슨한 형 확장명 샘플
 ms.date: 03/30/2017
 ms.assetid: 56ce265b-8163-4b85-98e7-7692a12c4357
-ms.openlocfilehash: f46cf3dfcdb60669f0a02337b54de97d4af3efdc
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 19d39e4a70022304262c5872636d3ea03a3b861b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54668485"
 ---
 # <a name="loosely-typed-extensions-sample"></a>느슨한 형 확장명 샘플
-배포 개체 모델은 확장 데이터, 즉 배포 피드의 XML 표현에는 있지만 <xref:System.ServiceModel.Syndication.SyndicationFeed> 및 <xref:System.ServiceModel.Syndication.SyndicationItem>과 같은 클래스에서 명시적으로 노출되지 않는 정보로 작업할 수 있도록 풍부한 지원을 제공합니다. 이 샘플에서는 확장명 데이터로 작업하는 기본적인 기술을 보여 줍니다.  
+배포 개체 모델은 확장명 데이터, 즉 배포 피드의 XML 표현에는 있지만 <xref:System.ServiceModel.Syndication.SyndicationFeed> 및 <xref:System.ServiceModel.Syndication.SyndicationItem>과 같은 클래스에서 명시적으로 노출되지 않는 정보로 작업할 수 있도록 풍부한 지원을 제공합니다. 이 샘플에서는 확장명 데이터로 작업하는 기본적인 기술을 보여 줍니다.  
   
  이 샘플에서는 예를 들기 위해 <xref:System.ServiceModel.Syndication.SyndicationFeed> 클래스를 사용하지만 이 샘플에 나온 패턴은 확장명 데이터를 지원하는 다음과 같은 모든 배포 클래스에서 사용할 수 있습니다.  
   
@@ -75,7 +75,7 @@ feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue
   
  요소 확장은 <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> 컬렉션에 항목을 추가하여 만듭니다. 이러한 확장은 문자열, .NET Framework 개체의 XML serialization 또는 직접 코딩한 XML 노드와 같은 기본값이 될 수 있습니다.  
   
- 다음 샘플 코드는 `simpleString`이라는 확장 요소를 만듭니다.  
+ 다음 샘플 코드는 `simpleString`이라는 확장명 요소를 만듭니다.  
   
 ```  
 feed.ElementExtensions.Add("simpleString", "", "hello, world!");  
@@ -155,6 +155,6 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
   
-## <a name="see-also"></a>참고 항목  
- [강력한 형식 확장명](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)  
- [WCF 배포](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)
+## <a name="see-also"></a>참고자료
+- [강력한 형식 확장명](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
+- [WCF 배포](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

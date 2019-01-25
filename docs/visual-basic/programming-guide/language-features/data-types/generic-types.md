@@ -36,12 +36,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: 3a419fb38d3b97b08c8aaa094265d8b426429ae4
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: b69fc668a63d1b4f834d5aa65ae8e27854d73e63
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54595580"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Visual Basic의 제네릭 형식(Visual Basic)
 *제네릭 형식* 은 다양한 데이터 형식에 대해 동일한 기능을 수행하도록 조정되는 단일 프로그래밍 요소입니다. 제네릭 클래스 또는 프로시저를 정의할 때는 해당 기능을 수행하고자 하는 각 데이터 형식마다 별도의 버전을 정의할 필요가 없습니다.  
@@ -53,13 +53,13 @@ ms.locfileid: "48266597"
   
  제네릭 형식을 정의할 때는 하나 이상의 데이터 형식을 사용하여 매개 변수를 지정할 수 있습니다. 이렇게 하면 코드를 사용하여 데이터 형식을 요구 사항에 맞출 수 있습니다. 각각 서로 다른 데이터 형식 집합에 대해 작동하는 여러 프로그래밍 요소를 제네릭 요소에서 선언할 수 있습니다. 하지만 선언된 요소는 사용하는 데이터 형식에 관계없이 모두 동일한 논리를 수행합니다.  
   
- 예를 들어 `String`과 같은 특정 데이터 형식에서 작동하는 큐 클래스를 만들어 사용할 수 있습니다. 이러한 클래스를 선언할 수 있습니다 <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>다음 예제와 같이 합니다.  
+ 예를 들어 `String`과 같은 특정 데이터 형식에서 작동하는 큐 클래스를 만들어 사용할 수 있습니다. 이러한 클래스는 다음과 같이 <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>에서 선언할 수 있습니다.  
   
  [!code-vb[VbVbalrDataTypes#1](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_1.vb)]  
   
  이제 `stringQ` 를 사용하여 `String` 값으로만 작업할 수 있습니다. `stringQ` 는 `String` 값에 일반화되는 것이 아니라 `Object` 에 한정되므로 런타임에 바인딩 또는 형식 변환이 없습니다. 이를 통해 실행 시간을 절약하고 런타임 오류를 줄일 수 있습니다.  
   
- 제네릭 형식 사용에 대한 자세한 내용은 [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)을 참조하세요.  
+ 제네릭 형식 사용에 대 한 자세한 내용은 참조 하세요. [방법: 제네릭 클래스를 사용 하 여](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)입니다.  
   
 ## <a name="example-of-a-generic-class"></a>제네릭 클래스의 예  
  다음 예에서는 제네릭 클래스의 기본 정의를 보여 줍니다.  
@@ -74,10 +74,10 @@ ms.locfileid: "48266597"
   
  [!code-vb[VbVbalrDataTypes#4](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_4.vb)]  
   
- 보다 완전 한 예제를 참조 하세요 [방법: 다른 데이터 형식에 클래스는 수 제공 동일한 기능을 정의](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)합니다.  
+ 보다 완전 한 예제를 참조 하세요. [방법: 다른 데이터 형식에 동일한 기능을 제공할 수 있는 클래스를 정의](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)합니다.  
   
 ## <a name="eligible-programming-elements"></a>적용 가능한 프로그래밍 요소  
- 제네릭 클래스, 구조체, 인터페이스, 프로시저 및 대리자를 정의하고 사용할 수 있습니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 에서는 많이 사용되는 제네릭 요소를 나타내는 몇 개의 제네릭 클래스, 구조체 및 인터페이스를 정의합니다. <xref:System.Collections.Generic?displayProperty=nameWithType> 사전, 목록, 큐 및 스택 네임 스페이스를 제공 합니다. 사용자 고유의 제네릭 요소를 정의 하기 전에 사용할 수 있는 이미 있는지 확인 하십시오 <xref:System.Collections.Generic?displayProperty=nameWithType>합니다.  
+ 제네릭 클래스, 구조체, 인터페이스, 프로시저 및 대리자를 정의하고 사용할 수 있습니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 에서는 많이 사용되는 제네릭 요소를 나타내는 몇 개의 제네릭 클래스, 구조체 및 인터페이스를 정의합니다. <xref:System.Collections.Generic?displayProperty=nameWithType> 네임스페이스는 사전, 목록, 큐, 스택 등을 제공합니다. 제네릭 요소를 직접 정의하기 전에 <xref:System.Collections.Generic?displayProperty=nameWithType>에 이미 있지 않은지 확인하세요.  
   
  프로시저는 형식이 아니지만 제네릭 프로시저를 정의하고 사용할 수 있습니다. [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)을 참조하세요.  
   
@@ -149,14 +149,14 @@ ms.locfileid: "48266597"
   
 ## <a name="see-also"></a>참고자료
 
-- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
-- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
-- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
-- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
-- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
-- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
-- [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
-- [Object 데이터 형식](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
-- [공 분산 및 반공 분산](../../concepts/covariance-contravariance/index.md)  
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
+- [As](../../../../visual-basic/language-reference/statements/as-clause.md)
+- [Object 데이터 형식](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [공 분산 및 반공 분산](../../concepts/covariance-contravariance/index.md)
 - [반복기](../../../../visual-basic/programming-guide/concepts/iterators.md)

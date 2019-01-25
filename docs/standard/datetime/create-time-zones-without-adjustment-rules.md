@@ -1,5 +1,5 @@
 ---
-title: '방법: 조정 규칙 없이 표준 시간대 만들기'
+title: '방법: 표준 시간대 조정 규칙 없이 만들기'
 ms.date: 04/10/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: a6af8647-7893-4f29-95a9-d94c65a6e8dd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3e06232a4e262b13439516114e65c81c07ba24ab
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: cb3ffc7b6f1f7baec7ce6beb5a50b706ff78bfa1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44192966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681718"
 ---
-# <a name="how-to-create-time-zones-without-adjustment-rules"></a>방법: 조정 규칙 없이 표준 시간대 만들기
+# <a name="how-to-create-time-zones-without-adjustment-rules"></a>방법: 표준 시간대 조정 규칙 없이 만들기
 
 응용 프로그램에 필요한 정확한 표준 시간대 정보를 여러 가지 이유로 특정 시스템에 존재할 수 있습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "44192966"
 > [!IMPORTANT]
 > 호출 하 여 만든 사용자 지정 표준 시간대를 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드를 레지스트리에 추가 되지 않습니다. 대신 반환한 개체 참조를 통해서만 액세스할 수 있습니다는 <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> 메서드를 호출 합니다.
 
-이 항목에서는 조정 규칙 없이 시간대를 만드는 방법을 보여 줍니다. 표준 시간대에서 일광 절약 시간 조정 규칙을 참조 하세요 [방법: 조정 규칙을 사용 하 여 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다.
+이 항목에서는 조정 규칙 없이 시간대를 만드는 방법을 보여 줍니다. 일광 절약 시간 조정 규칙을 지 원하는 표준 시간대를 만들려면 참조 [방법: 표준 시간대 조정 규칙을 사용 하 여 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)합니다.
 
 ### <a name="to-create-a-time-zone-without-adjustment-rules"></a>조정 규칙 없이 시간 영역을 만들려면
 
@@ -72,6 +72,6 @@ ms.locfileid: "44192966"
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-* [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
-* [방법: 조정 규칙을 사용하여 표준 시간대 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
+- [방법: 표준 시간대 조정 규칙을 사용 하 여 만들기](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)

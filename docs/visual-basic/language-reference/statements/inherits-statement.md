@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Inherits statement [Visual Basic]
 - Inherits statement [Visual Basic], syntax
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
-ms.openlocfilehash: 4a98ada39a04730b46f40fe139e72d1855d9b067
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 329b4f68874d29d141001800ed326a454a878ab8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43739505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502900"
 ---
 # <a name="inherits-statement"></a>Inherits Statement
 현재 클래스 또는 인터페이스가 다른 클래스나 인터페이스 집합에서 특성, 변수, 속성, 프로시저 및 이벤트를 상속 하도록 하면 됩니다.  
@@ -28,7 +28,7 @@ Inherits basetypenames
   
 |용어|정의|  
 |---|---|  
-|`basetypenames`|필수. 이 클래스가 파생 되는 클래스의 이름입니다.<br /><br /> 또는<br /><br /> 이 인터페이스 파생 되는 인터페이스의 이름입니다. 여러 이름을 구분 하려면 쉼표를 사용 합니다.|  
+|`basetypenames`|필수 요소. 이 클래스가 파생 되는 클래스의 이름입니다.<br /><br /> 또는<br /><br /> 이 인터페이스 파생 되는 인터페이스의 이름입니다. 여러 이름을 구분 하려면 쉼표를 사용 합니다.|  
   
 ## <a name="remarks"></a>설명  
  를 사용 하는 경우는 `Inherits` 문은 클래스 또는 인터페이스 정의에서 공백 및 주석이 아닌 첫 번째 줄을 이어야 합니다. 다음에 나와야 합니다 `Class` 또는 `Interface` 문입니다.  
@@ -63,9 +63,9 @@ Inherits basetypenames
   
  라는 인터페이스 `thisInterface` 이제에서 모든 정의 포함 합니다 <xref:System.IComparable>를 <xref:System.IDisposable>, 및 <xref:System.IFormattable> 상속된 된 멤버 각각에 대 한 제공 두 개체의 형식 고유의 비교를 해제 하는 인터페이스에 할당 된 리소스 개체의 값을 표현 하 고는 `String`합니다. 구현 하는 클래스 `thisInterface` 모든 기본 인터페이스의 모든 멤버를 구현 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [상속 기본 사항](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## <a name="see-also"></a>참고자료
+- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
+- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [상속 기본 사항](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

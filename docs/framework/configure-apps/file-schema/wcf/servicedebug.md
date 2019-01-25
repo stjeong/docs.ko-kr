@@ -2,21 +2,21 @@
 title: '&lt;serviceDebug&gt;'
 ms.date: 03/30/2017
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
-ms.openlocfilehash: e4f929e5c847c1f8db3a3ab5a8e72ec198c7d223
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 26a84f035246c02898deacfb8fcb2c2101fddf7d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524275"
 ---
 # <a name="ltservicedebuggt"></a>&lt;serviceDebug&gt;
 Windows Communication Foundation (WCF) 서비스에 대 한 디버깅 및 도움말 정보 기능을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
-\<serviceDebug >  
+\<behavior>  
+\<serviceDebug>  
   
 ## <a name="syntax"></a>구문  
   
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) 서비스에 대 한 디버깅 및 도움
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
+|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  설정 `includeExceptionDetailInFaults` 하 `true` 서비스를 사용 하 여 예외가 선언 되지 않은 경우에 응용 프로그램 코드에서 throw 되는 모든 예외를 반환할 수 있습니다는 <xref:System.ServiceModel.FaultContractAttribute>합니다. 이 설정은 서버가 예기치 않은 예외를 throw하는 경우를 디버깅할 때 유용합니다. 이 특성을 사용하면 알 수 없는 예외가 serialize된 형태로 반환되어 예외를 보다 자세하게 검토할 수 있습니다.  
@@ -70,9 +70,9 @@ Windows Communication Foundation (WCF) 서비스에 대 한 디버깅 및 도움
   
  선택적 `httpHelpPageBinding` 및 `httpHelpPageBinding` 특성을 사용하면 서비스 웹 페이지에 액세스하는 데 사용되는 바인딩을 구성할 수 있습니다. 바인딩을 지정하지 않으면 서비스 도움말 페이지 액세스에 기본 바인딩(HTTP의 경우 `HttpTransportBindingElement`, HTTPS의 경우 `HttpsTransportBindingElement`)이 적절하게 사용됩니다. 기본 제공 WCF 바인딩에는 이러한 특성을 사용할 수 없습니다. Xref:System.ServiceModel.Channels.IReplyChannel를 지 원하는 내부 바인딩 요소가 있는 바인딩만 > 지원 됩니다. 또한 바인딩의 <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> 속성은 <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>이어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceDebugElement>  
- <xref:System.ServiceModel.Description.ServiceDebugBehavior>  
- [계약 및 서비스에서 오류 지정 및 처리](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [예외 및 오류 처리](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)  
- [서비스 디버그 동작](../../../../../docs/framework/wcf/samples/service-debug-behavior.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceDebugElement>
+- <xref:System.ServiceModel.Description.ServiceDebugBehavior>
+- [계약 및 서비스에서 오류 지정 및 처리](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [예외 및 오류 처리](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)
+- [서비스 디버그 동작](../../../../../docs/framework/wcf/samples/service-debug-behavior.md)

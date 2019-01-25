@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Join statement [Visual Basic]
 - Join clause [Visual Basic]
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
-ms.openlocfilehash: b1551583079c66d1bf5f6963a42d5d24e518fff3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 2017e8edbb4d1bd25a3669b92553f2905b567594
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54514688"
 ---
 # <a name="join-clause-visual-basic"></a>Join 절(Visual Basic)
 두 컬렉션을 단일 컬렉션으로 결합합니다. 조인 연산은 일치 하는 키 기준으로 하며 사용 하 여 `Equals` 연산자입니다.  
@@ -31,10 +31,10 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
   
 ## <a name="parts"></a>요소  
  `element`  
- 필수. 조인 중인 컬렉션에 대 한 제어 변수입니다.  
+ 필수 요소. 조인 중인 컬렉션에 대 한 제어 변수입니다.  
   
  `collection`  
- 필수. 왼쪽에 식별 된 컬렉션과 결합할 컬렉션을 `Join` 연산자입니다. A `Join` 절의 다른 중첩 될 수 있습니다 `Join` 절 또는 `Group Join` 절.  
+ 필수 요소. 왼쪽에 식별 된 컬렉션과 결합할 컬렉션을 `Join` 연산자입니다. A `Join` 절의 다른 중첩 될 수 있습니다 `Join` 절 또는 `Group Join` 절.  
   
  `joinClause`  
  선택 사항입니다. 하나 이상의 추가 `Join` 쿼리를 구체화 하는 절을 추가 합니다.  
@@ -43,7 +43,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
  선택 사항입니다. 하나 이상의 추가 `Group Join` 쿼리를 구체화 하는 절을 추가 합니다.  
   
  `key1` `Equals` `key2`  
- 필수. 조인 중인 컬렉션에 대 한 키를 식별 합니다. 사용 해야는 `Equals` 조인 중인 컬렉션에서 키를 비교 하는 연산자입니다. 조인 조건을 사용 하 여 결합할 수 있습니다는 `And` 여러 키를 식별 하는 연산자입니다. `key1` 왼쪽에 있는 컬렉션에서 이어야 합니다는 `Join` 연산자입니다. `key2` 오른쪽에 있는 컬렉션에서 이어야 합니다는 `Join` 연산자입니다.  
+ 필수 요소. 조인 중인 컬렉션에 대 한 키를 식별 합니다. 사용 해야는 `Equals` 조인 중인 컬렉션에서 키를 비교 하는 연산자입니다. 조인 조건을 사용 하 여 결합할 수 있습니다는 `And` 여러 키를 식별 하는 연산자입니다. `key1` 왼쪽에 있는 컬렉션에서 이어야 합니다는 `Join` 연산자입니다. `key2` 오른쪽에 있는 컬렉션에서 이어야 합니다는 `Join` 연산자입니다.  
   
  조인 조건에 사용 되는 키 컬렉션에서 둘 이상의 항목을 포함 하는 식을 수 있습니다. 그러나 각 키 식에는 해당 컬렉션의 항목만 포함할 수 있습니다.  
   
@@ -87,10 +87,10 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
   
  `explorer (2424), File Explorer, Priority = 8`  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Group Join 절](../../../visual-basic/language-reference/queries/group-join-clause.md)  
- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Group Join 절](../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)

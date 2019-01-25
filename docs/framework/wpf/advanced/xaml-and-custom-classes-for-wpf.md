@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XAML [WPF], custom classes
 - classes [WPF], custom classes in XAML
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
-ms.openlocfilehash: acf3ba12a9a7e6ba9a8e378892098f5f265a23d9
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: f6709cad76ff05c3134c8430b36d5f34019b03ca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43779762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606584"
 ---
 # <a name="xaml-and-custom-classes-for-wpf"></a>WPF에 대한 XAML 및 사용자 지정 클래스
 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 프레임워크에서 구현된 XAML은 모든 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 언어로 사용자 지정 클래스 또는 구조체를 정의한 다음 XAML 태그를 사용하여 해당 클래스에 액세스하는 기능을 지원합니다. 일반적으로 사용자 지정 형식을 XAML 네임스페이스 접두사에 매핑하여 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 정의 형식과 사용자 지정 형식의 혼합을 동일한 태그 파일에서 함께 사용할 수 있습니다. 이 항목에서는 사용자 지정 클래스를 XAML 요소로 사용 가능하기 위해 만족해야 하는 요구 사항을 설명합니다.  
@@ -19,12 +19,12 @@ ms.locfileid: "43779762"
  
   
 <a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>   
-## <a name="custom-classes-in-applications-or-assemblies"></a>응용 프로그램 또는 어셈블리의 사용자 지정 클래스  
- XAML에서 사용되는 사용자 지정 클래스는 두 가지 방법으로 정의할 수 있습니다. 즉, 기본 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램을 생성하는 다른 코드 또는 코드 숨김 파일에서 정의하거나, 클래스 라이브러리로 사용되는 DLL 또는 실행 파일과 같은 별도 어셈블리의 클래스로 정의합니다. 각 방법에는 고유한 장점과 단점이 있습니다.  
+## <a name="custom-classes-in-applications-or-assemblies"></a>애플리케이션 또는 어셈블리의 사용자 지정 클래스  
+ XAML에서 사용되는 사용자 지정 클래스는 두 가지 방법으로 정의할 수 있습니다. 즉, 기본 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션을 생성하는 다른 코드 또는 코드 숨김 파일에서 정의하거나, 클래스 라이브러리로 사용되는 DLL 또는 실행 파일과 같은 별도 어셈블리의 클래스로 정의합니다. 각 방법에는 고유한 장점과 단점이 있습니다.  
   
--   클래스 라이브러리를 만드는 경우 사용자 지정 클래스를 서로 다른 여러 응용 프로그램에서 공유할 수 있다는 장점이 있습니다. 또한 별도 라이브러리 응용 프로그램의 버전 관리 문제를 더 쉽게 컨트롤하고 클래스를 XAML 페이지의 루트 요소로 사용하는 클래스를 간단하게 만들 수 있습니다.  
+-   클래스 라이브러리를 만드는 경우 사용자 지정 클래스를 서로 다른 여러 애플리케이션에서 공유할 수 있다는 장점이 있습니다. 또한 별도 라이브러리 애플리케이션의 버전 관리 문제를 더 쉽게 컨트롤하고 클래스를 XAML 페이지의 루트 요소로 사용하는 클래스를 간단하게 만들 수 있습니다.  
   
--   사용자 지정 클래스를 응용 프로그램에 정의하는 방법은 비교적 간단하며 기본 응용 프로그램 실행 파일이 아닌 별도의 어셈블리를 사용할 때 발생하는 배포 및 테스트 문제를 최소화할 수 있다는 장점이 있습니다.  
+-   사용자 지정 클래스를 애플리케이션에 정의하는 방법은 비교적 간단하며 기본 애플리케이션 실행 파일이 아닌 별도의 어셈블리를 사용할 때 발생하는 배포 및 테스트 문제를 최소화할 수 있다는 장점이 있습니다.  
   
 -   동일한 어셈블리에 정의되어 있는지 다른 어셈블리에 정의되어 있는지에 상관없이, 사용자 지정 클래스를 XAML에서 요소로 사용하려면 CLR 네임스페이스와 XML 네임스페이스 간에 매핑해야 합니다. [WPF XAML을 위한 XAML 네임스페이스 및 네임스페이스 매핑](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)을 참조하세요.  
   
@@ -79,11 +79,11 @@ ms.locfileid: "43779762"
   
 -   컬렉션 개체인 개체를 개체 요소 구문에 지정할 필요가 없습니다. 컬렉션 형식을 사용하는 XAML에 속성을 지정할 때마다 컬렉션 형식이 항상 암시적으로 존재합니다.  
   
--   태그에서 컬렉션 속성의 자식 요소는 컬렉션의 멤버로 처리됩니다. 일반적으로 컬렉션 멤버에 대한 코드 액세스는 `Add`와 같은 목록/사전 메서드를 통해 또는 인덱서를 통해 수행됩니다. 하지만 XAML 구문은 메서드나 인덱서를 지원하지 않습니다(예외: XAML 2009는 메서드를 지원할 수 있지만, XAML 2009를 사용하여 가능한 WPF 사용을 제한합니다. [XAML 2009 언어 기능](../../../../docs/framework/xaml-services/xaml-2009-language-features.md) 참조). 컬렉션은 요소 트리를 구성하는 데 있어 공통된 요구 사항이므로 선언적 XAML에서 이러한 컬렉션을 채우는 데 사용할 몇 가지 방법이 필요합니다. 따라서 컬렉션 속성의 자식 요소는 컬렉션 속성 형식 값인 컬렉션에 추가하여 처리됩니다.  
+-   태그에서 컬렉션 속성의 자식 요소는 컬렉션의 멤버로 처리됩니다. 일반적으로 컬렉션 멤버에 대한 코드 액세스는 `Add`와 같은 목록/사전 메서드를 통해 또는 인덱서를 통해 수행됩니다. 하지만 XAML 구문은 메서드나 인덱서를 지원 하지 않습니다 (예외: XAML 2009는 메서드를 지원할 수 있지만 XAML 2009를 사용 하면 가능한 WPF 사용; 제한 참조 [XAML 2009 언어 기능](../../../../docs/framework/xaml-services/xaml-2009-language-features.md)). 컬렉션은 요소 트리를 구성하는 데 있어 공통된 요구 사항이므로 선언적 XAML에서 이러한 컬렉션을 채우는 데 사용할 몇 가지 방법이 필요합니다. 따라서 컬렉션 속성의 자식 요소는 컬렉션 속성 형식 값인 컬렉션에 추가하여 처리됩니다.  
   
  .NET Framework XAML 서비스 구현과 WPF XAML 프로세서에서 컬렉션 속성을 구성하는 사항에 대한 다음 정의를 사용합니다. 속성의 형식은 다음 중 하나를 구현해야 합니다.  
   
--   구현 <xref:System.Collections.IList>합니다.  
+-   <xref:System.Collections.IList> 구현  
   
 -   구현 <xref:System.Collections.IDictionary> 또는 해당 제네릭 (<xref:System.Collections.Generic.IDictionary%602>).  
   
@@ -112,9 +112,9 @@ ms.locfileid: "43779762"
 ## <a name="serializing-xaml"></a>XAML Serialize  
  예를 들어 컨트롤 작성자인 경우 XAML에서 인스턴스화할 수 있는 개체 표현도 해당 XAML 태그로 다시 serialize할 수 있도록 하려는 경우가 있습니다. Serialization 요구 사항은 이 항목에서 설명하지 않습니다. [컨트롤 작성 개요](../../../../docs/framework/wpf/controls/control-authoring-overview.md) 및 [요소 트리 및 Serialization](../../../../docs/framework/wpf/advanced/element-tree-and-serialization.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [사용자 지정 종속성 속성](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [컨트롤 제작 개요](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
- [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
- [XAML 로드 및 종속성 속성](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)
+## <a name="see-also"></a>참고자료
+- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [사용자 지정 종속성 속성](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- [컨트롤 제작 개요](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+- [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [XAML 로드 및 종속성 속성](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)

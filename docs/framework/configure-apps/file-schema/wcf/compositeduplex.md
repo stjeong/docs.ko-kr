@@ -2,21 +2,21 @@
 title: '&lt;compositeDuplex&gt;'
 ms.date: 03/30/2017
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-ms.openlocfilehash: 4b84b4f2816dc68b7dcee784d957189728e5a4b2
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: e00cc6f3214dc9a040a9b6170271b1f4188d1631
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601625"
 ---
 # <a name="ltcompositeduplexgt"></a>&lt;compositeDuplex&gt;
 서비스에서 클라이언트에 메시지를 돌려 보낼 수 있도록 클라이언트가 서비스에 대한 엔드포인트를 공개해야 할 때 사용되는 바인딩 요소를 정의합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<compositeDuplex >  
+\<binding>  
+\<compositeDuplex>  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,11 +53,11 @@ ms.locfileid: "54149052"
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>  
- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>
+- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

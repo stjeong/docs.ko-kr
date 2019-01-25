@@ -2,12 +2,12 @@
 title: 청크 채널
 ms.date: 03/30/2017
 ms.assetid: e4d53379-b37c-4b19-8726-9cc914d5d39f
-ms.openlocfilehash: 660a20432b28f7db1c2933bd1a71bc6990a1d52a
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 3e98e4be3c5ad9d6d18990feeae86369775972b8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624242"
 ---
 # <a name="chunking-channel"></a>청크 채널
 Windows Communication Foundation (WCF)를 사용 하 여 큰 메시지를 보낼 때 해당 메시지를 버퍼링 하는 데 사용 되는 메모리의 양을 제한 하는 것이 좋습니다. 가능한 한 가지 솔루션은 본문에 대량의 데이터가 있다고 가정하고 메시지 본문을 스트리밍하는 것입니다. 그러나 일부 프로토콜에서는 전체 메시지를 버퍼링해야 합니다. 이와 같은 두 가지 예로 신뢰할 수 있는 메시징과 보안을 들 수 있습니다. 가능한 또 다른 솔루션은 큰 메시지를 청크라는 더 작은 메시지로 나누고 이러한 청크를 한 번에 하나씩 보낸 다음 받는 쪽에서 큰 메시지를 다시 구성하는 것입니다. 응용 프로그램은 이 청크 및 청크 취소를 직접 수행하거나 사용자 지정 채널을 사용하여 수행할 수 있습니다. 이 Chunking Channel 샘플에서는 사용자 지정 프로토콜이나 계층화된 채널을 사용하여 임의 크기의 메시지를 청크 및 청크 취소하는 방법을 보여 줍니다.  
@@ -203,11 +203,11 @@ as the ChunkingStart message.
   
  다음 하위 수준에서 `ChunkingChannel`은 서버 구성 요소에 의존하여 청크 프로토콜을 구현합니다. 보내는 쪽에서 채널은 실제 청크를 수행하는 `XmlDictionaryWriter`라는 사용자 지정 `ChunkingWriter`를 사용합니다. `ChunkingWriter`는 내부 채널을 직접 사용하여 청크를 보냅니다. 사용자 지정 `XmlDictionaryWriter`를 사용하면 원본 메시지의 큰 본문이 기록될 때 청크를 보낼 수 있습니다. 이는 전체 원본 메시지를 버퍼링하지 않는다는 것을 의미합니다.  
   
- ![청크 채널](../../../../docs/framework/wcf/samples/media/chunkingchannel1.gif "ChunkingChannel1")  
+ ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel1.gif "ChunkingChannel1")  
   
  받는 쪽 `ChunkingChannel`은 내부 채널의 메시지를 끌어와 `XmlDictionaryReader`라는 사용자 지정 `ChunkingReader`에 전달하여 들어오는 청크로부터 원본 메시지를 다시 구성합니다. `ChunkingChannel`은 `ChunkingReader`라는 사용자 지정 `Message` 구현에서 이 `ChunkingMessage`를 래핑하고 이 메시지를 위 계층에 반환합니다. 이렇게 `ChunkingReader`와 `ChunkingMessage`를 함께 사용하면 전체 원본 메시지 본문을 버퍼링하는 대신 위 계층에서 읽을 때 원본 메시지 본문의 청크를 취소할 수 있습니다. `ChunkingReader`에는 구성 가능한 최대 버퍼링된 청크 수까지 들어오는 청크를 버퍼링하는 큐가 있습니다. 이 최대 한도에 도달하면 판독기는 위 계층에서 원본 메시지 본문을 읽어서 큐의 메시지가 비워지기를 기다리거나 최대 수신 시간 제한에 도달할 때까지 기다립니다.  
   
- ![청크 채널](../../../../docs/framework/wcf/samples/media/chunkingchannel2.gif "ChunkingChannel2")  
+ ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel2.gif "ChunkingChannel2")  
   
 ## <a name="chunking-programming-model"></a>청크 프로그래밍 모델  
  서비스 개발자는 `ChunkingBehavior` 특성을 계약 내의 작업에 적용하여 청크할 메시지를 지정할 수 있습니다. 이 특성은 청크를 입력 메시지, 출력 메시지 또는 둘 다에 적용할지 여부를 개발자가 지정할 수 있게 하는 `AppliesTo` 속성을 노출합니다. 다음 예제에서는 `ChunkingBehavior` 특성의 사용법을 보여 줍니다.  
@@ -378,4 +378,4 @@ Service started, press enter to exit
  > Sent chunk 10 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
 ```  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - performance counters [WCF]
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
-ms.openlocfilehash: d0ad7ee0bc3ea1d15197e6b8d9888d60b21a2f15
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: c2bb9d2f67cfc0bf0a28492f77c16fdb39b07fe9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48846222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54595242"
 ---
 # <a name="wcf-performance-counters"></a>WCF 성능 카운터
 Windows Communication Foundation (WCF)에 다양 한 응용 프로그램의 성능을 측정할 수 있도록 성능 카운터가 포함 됩니다.  
@@ -27,11 +27,11 @@ Windows Communication Foundation (WCF)에 다양 한 응용 프로그램의 성�
   
  특정 유형의 성능 카운터를 활성화하도록 `performanceCounters` 특성을 설정할 수 있습니다. 유효한 값은 다음과 같습니다.  
   
--   All: 모든 범주 카운터(ServiceModelService, ServiceModelEndpoint, ServiceModelOperation)가 활성화됩니다.  
+-   모든: 모든 범주 카운터 (ServiceModelService, ServiceModelEndpoint 및 ServiceModelOperation)가 활성화 됩니다.  
   
--   ServiceOnly: ServiceModelService 범주 카운터만 활성화됩니다. 기본값입니다.  
+-   ServiceOnly: ServiceModelService 범주 카운터만 활성화 됩니다. 기본값입니다.  
   
--   Off: ServiceModel* 성능 카운터가 비활성화됩니다.  
+-   Off: ServiceModel * 성능 카운터가 비활성화 되었습니다.  
   
  모든 WCF 응용 프로그램에 대 한 성능 카운터를 사용 하도록 설정 하려는 경우 구성 설정을 합니다 Machine.config 파일에 배치할 수 있습니다.  참조 하십시오 합니다 **성능 카운터에 대 한 메모리 크기 늘리기** 컴퓨터에서 성능 카운터에 대 한 충분 한 메모리를 구성 하는 방법은 아래 섹션입니다.  
   
@@ -59,7 +59,7 @@ config.Save();
 ## <a name="increasing-memory-size-for-performance-counters"></a>성능 카운터에 대한 메모리 크기 늘리기  
  WCF 성능 카운터 범주에 대 한 별도 공유 메모리를 사용합니다.  
   
- 기본적으로 별도의 공유 메모리는 전역 성능 카운터 메모리 크기의 1/4로 설정됩니다. 기본 전역 성능 카운터 메모리는 524,288바이트입니다. 따라서 3 개의 WCF 성능 카운터 범주를 각각 약 128KB의 기본 크기를 갖습니다. 컴퓨터에서 WCF 응용 프로그램의 런타임 특성에 따라 성능 카운터 메모리가 부족할 수 있습니다. 이 경우 WCF 응용 프로그램 이벤트 로그에 오류를 기록 합니다. 오류 내용에는 성능 카운터가 로드되지 않았다는 설명이 표시되며, "System.InvalidOperationException: 사용자 지정 카운터 파일 뷰 메모리가 부족합니다."라는 예외가 항목에 포함됩니다. 오류 수준에서 추적 기능을 사용하도록 설정하면 이 오류도 추적됩니다. 성능 카운터 메모리가 부족 한 상태를 계속 사용 하도록 설정 하는 성능 카운터를 사용 하 여 WCF 응용 프로그램을 실행 성능이 저하 될 수 있습니다. 컴퓨터 관리자는 언제든지 최대 성능 카운터 수를 지원하는 데 충분한 메모리를 할당하도록 컴퓨터를 구성해야 합니다.  
+ 기본적으로 별도의 공유 메모리는 전역 성능 카운터 메모리 크기의 1/4로 설정됩니다. 기본 전역 성능 카운터 메모리는 524,288바이트입니다. 따라서 3 개의 WCF 성능 카운터 범주를 각각 약 128KB의 기본 크기를 갖습니다. 컴퓨터에서 WCF 응용 프로그램의 런타임 특성에 따라 성능 카운터 메모리가 부족할 수 있습니다. 이 경우 WCF 응용 프로그램 이벤트 로그에 오류를 기록 합니다. 성능 카운터가 로드 되지 않았습니다 하는 예외를 포함 하는 항목 오류의 콘텐츠 상태 "System.InvalidOperationException: 사용자 지정 카운터 파일 뷰 메모리가 부족 합니다. " 오류 수준에서 추적 기능을 사용하도록 설정하면 이 오류도 추적됩니다. 성능 카운터 메모리가 부족 한 상태를 계속 사용 하도록 설정 하는 성능 카운터를 사용 하 여 WCF 응용 프로그램을 실행 성능이 저하 될 수 있습니다. 컴퓨터 관리자는 언제든지 최대 성능 카운터 수를 지원하는 데 충분한 메모리를 할당하도록 컴퓨터를 구성해야 합니다.  
   
  레지스트리에서 WCF 범주에 대 한 성능 카운터 메모리 양을 변경할 수 있습니다. 그렇게 하려면 다음 세 위치에 `FileMappingSize`라는 새로운 DWORD 값을 추가하여 원하는 값(바이트)으로 설정해야 합니다. 컴퓨터를 다시 부팅하여 변경 내용을 적용합니다.  
   
@@ -72,9 +72,9 @@ config.Save();
  많은 수의 개체(예: ServiceHost)를 삭제할 때 가비지가 수집되기를 대기 중인 경우 `PrivateBytes` 성능 카운터는 매우 높은 수를 등록합니다. 이 문제를 해결하려면 응용 프로그램 관련 카운터를 추가하거나 `performanceCounters` 특성을 사용하여 서비스 수준 카운터만 활성화할 수 있습니다.  
   
 ## <a name="types-of-performance-counters"></a>성능 카운터 형식  
- 성능 카운터의 범위는 서비스, 끝점 및 작업의 세 가지 수준입니다.  
+ 성능 카운터는 세 가지 수준으로 범위가 지정 됩니다. 서비스, 끝점 및 작업입니다.  
   
- WMI를 사용하여 성능 카운터 인스턴스의 이름을 검색할 수 있습니다. 예를 들어 개체에 적용된  
+ WMI를 사용하여 성능 카운터 인스턴스의 이름을 검색할 수 있습니다. 예를 들면 다음과 같습니다.  
   
 -   WMI를 통해 서비스 카운터 인스턴스 이름을 가져올 수 있습니다 [서비스](../../../../../docs/framework/wcf/diagnostics/wmi/service.md) 인스턴스의 "CounterInstanceName" 속성입니다.  
   
@@ -138,5 +138,5 @@ ServiceName@ServiceBaseAddress
   
  카운터를 프로그래밍 방식으로 액세스 하는 방법에 대 한 자세한 내용은 참조 하세요. [성능 카운터 프로그래밍 아키텍처](https://go.microsoft.com/fwlink/?LinkId=95179)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)
+## <a name="see-also"></a>참고자료
+- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)

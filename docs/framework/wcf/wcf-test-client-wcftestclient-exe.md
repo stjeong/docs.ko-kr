@@ -2,12 +2,12 @@
 title: WCF 테스트 클라이언트(WcfTestClient.exe)
 ms.date: 03/30/2017
 ms.assetid: d4302855-677f-4640-aa90-c5d785d72fb7
-ms.openlocfilehash: 4e3531b91382c4d47aed73198bd8dd954ae4ca1f
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d48caebed857a3a61842b1ea1d3e8b2977d749ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54611386"
 ---
 # <a name="wcf-test-client-wcftestclientexe"></a>WCF 테스트 클라이언트(WcfTestClient.exe)
 Windows Communication Foundation (WCF) 테스트 클라이언트 (WcfTestClient.exe)는 테스트 매개 변수를 입력 하 여 해당 서비스에 입력을 사용 하면 서비스가 다시 보낸 응답을 확인 하는 GUI 도구입니다. 서비스를 매끄럽게 테스트할 WCF 서비스 호스트를 함께 사용 하면 환경을 제공 합니다.  
@@ -161,9 +161,9 @@ Windows Communication Foundation (WCF) 테스트 클라이언트 (WcfTestClient.
 ## <a name="closing-wcf-test-client"></a>WCF 테스트 클라이언트 닫기  
  다음과 같은 방법으로 WCF 테스트 클라이언트를 닫을 수 있습니다.  
   
--   에 **파일** 메뉴에서 클릭 **종료**합니다. 또는 WCF 테스트 클라이언트 주 창에서 클릭 **닫기**합니다. 이러한 작업의 또한 WCF 서비스 자동 호스트 종료와 Visual Studio에서 WCF 테스트 클라이언트를 시작한 경우 Visual Studio 디버깅 프로세스를 중지 합니다.  
+-   **파일** 메뉴에서 **끝내기**를 클릭합니다. 또는 WCF 테스트 클라이언트 주 창에서 클릭 **닫기**합니다. 이러한 작업의 또한 WCF 서비스 자동 호스트 종료와 Visual Studio에서 WCF 테스트 클라이언트를 시작한 경우 Visual Studio 디버깅 프로세스를 중지 합니다.  
   
 -   마우스 오른쪽 단추로 클릭 합니다 **WCF 서비스 호스트가** 클릭 한 다음 확인 하 고 알림 영역 아이콘 **종료 합니다.** 이 WCF 서비스 자동 호스트와 WCF 테스트 클라이언트를 종료 하 고 Visual Studio 디버깅 프로세스를 중지 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF 서비스 호스트(WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+## <a name="see-also"></a>참고자료
+- [WCF 서비스 호스트(WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

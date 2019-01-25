@@ -2,12 +2,12 @@
 title: 새로운&#39;ADO.NET의 새로운
 ms.date: 03/30/2017
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
-ms.openlocfilehash: a94833a513fa6ceef02b5ec64f0a7995779d323a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: cfb1546ccddc6a4f6f3668210832db3d7a88f632
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54501597"
 ---
 # <a name="what39s-new-in-adonet"></a>새로운&#39;ADO.NET의 새로운
 다음은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에서 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]의 새로운 기능입니다.  
@@ -48,11 +48,11 @@ ms.locfileid: "43511805"
 -   공간 데이터 형식이 포함되어 있는 Microsoft.SqlServer.Types.dll 어셈블리가 버전 10.0에서 버전 11.0으로 업그레이드되었습니다. 이 어셈블리를 참조하는 응용 프로그램은 제대로 실행되지 않을 수 있습니다. 자세한 내용은 [데이터베이스 엔진 기능의 주요 변경 내용](https://go.microsoft.com/fwlink/?LinkId=224367)합니다.  
   
 ## <a name="adonet-entity-framework"></a>ADO.NET Entity Framework  
- [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에는 Entity Framework 5.0을 사용할 경우 새로운 시나리오를 사용할 수 있게 하는 API가 추가되었습니다. Entity Framework 5.0에 추가 된 기능과 향상 된 기능에 대 한 자세한 내용은 다음 항목을 참조: [What's New](https://go.microsoft.com/fwlink/?LinkID=251106) 하 고 [Entity Framework 릴리스 및 버전 관리](https://go.microsoft.com/fwlink/?LinkId=234899)합니다.  
+ [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에는 Entity Framework 5.0을 사용할 경우 새로운 시나리오를 사용할 수 있게 하는 API가 추가되었습니다. Entity Framework 5.0에 추가 된 기능과 향상 된 기능에 대 한 자세한 내용은 다음 항목을 참조 하세요. [새로운 기능](https://go.microsoft.com/fwlink/?LinkID=251106) 하 고 [Entity Framework 릴리스 및 버전 관리](https://go.microsoft.com/fwlink/?LinkId=234899)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [WCF Data Services의 새로운 기능](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [WCF Data Services의 새로운 기능](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -2,12 +2,12 @@
 title: AttributeUsage (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 48757216-c21d-4051-86d5-8a3e03c39d2c
-ms.openlocfilehash: ae162c310511db160806501af895276a4a4bba5d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0e88c57b2a18afb7f9f7d567f355d38a78892b2f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648143"
 ---
 # <a name="attributeusage-visual-basic"></a>AttributeUsage (Visual Basic)
 사용자 지정 특성 클래스를 사용하는 방법을 결정합니다. `AttributeUsage`는 새 특성 적용 방법을 제어하기 위해 사용자 지정 특성 정의에 적용할 수 있는 특성입니다. 기본 설정은 명시적으로 적용될 경우 다음과 같이 표시됩니다.  
@@ -161,12 +161,12 @@ A3
 A2  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Attribute>  
- <xref:System.Reflection>  
- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)  
- [특성](../../../../standard/attributes/index.md)  
- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
- [특성(Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
- [사용자 지정 특성 만들기(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  
- [리플렉션을 사용하여 특성 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Attribute>
+- <xref:System.Reflection>
+- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)
+- [특성](../../../../standard/attributes/index.md)
+- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
+- [특성(Visual Basic)](../../../../visual-basic/language-reference/attributes.md)
+- [사용자 지정 특성 만들기(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [리플렉션을 사용하여 특성 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

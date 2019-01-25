@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bed903c7380bc73601f03a83d2c637ef34d9b9e8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 6d47ca3a9134266d1c40447cea6eb8aaf2cc9eb9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33405216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706299"
 ---
 # <a name="assemblyattributesgoheresm"></a>AssemblyAttributesGoHereSM
 ALink에서 사용자 지정 특성 정보를 저장하는 자리 표시자로 사용됩니다.  
@@ -43,7 +43,7 @@ AssemblyAttributeGoHereSM
 ## <a name="requirements"></a>요구 사항  
  mscorlib.dll  
   
-## <a name="see-also"></a>참고 항목  
- [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)  
- [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)  
- [AssemblyAttributesGoHereS](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheres.md)
+## <a name="see-also"></a>참고자료
+- [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)
+- [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)
+- [AssemblyAttributesGoHereS](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheres.md)

@@ -1,20 +1,20 @@
 ---
-title: '&lt;라우팅&gt;'
+title: '&lt;routing&gt;'
 ms.date: 03/30/2017
 ms.assetid: a210c209-3940-4288-9a8e-39b1e62606bc
-ms.openlocfilehash: 220c18ab8ea6222fcf7d9fb8a93950281c9de796
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 855faedfd2e9523e939174441b0cfa50e052b375
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565880"
 ---
-# <a name="ltroutinggt"></a>&lt;라우팅&gt;
+# <a name="ltroutinggt"></a>&lt;routing&gt;
 
 Windows Communication Foundation (WCF)의 형식을 결정 하는 라우팅 필터 집합을 정의 하기 위한 구성 섹션을 나타냅니다 <xref:System.ServiceModel.Dispatcher.MessageFilter> 사용할 대상 끝점을 정의 하는 들어오는 메시지를 평가할 수 있을 뿐만 아니라 라우팅 테이블 필터가 일치할 때에 메시지를 보냅니다.
 
-[**\<system.serviceModel >**](system-servicemodel.md)   
-&nbsp;&nbsp;**\<라우팅 >**
+[**\<system.serviceModel>**](system-servicemodel.md)   
+&nbsp;&nbsp;**\<routing>**
   
 ## <a name="syntax"></a>구문  
   
@@ -52,15 +52,15 @@ Windows Communication Foundation (WCF)의 형식을 결정 하는 라우팅 필�
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<필터 >**](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md) | 들어오는 메시지를 평가할 때 Windows Communication Foundation (WCF) messagefilter 형식을 사용할지를 결정 하는 라우팅 필터 집합을 포함 합니다. |
-| [**\<filterTables >**](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) | 필터가 일치할 때 사용할 엔드포인트를 지정하기 위한 라우팅 필터와 대상 엔드포인트 간의 매핑을 포함합니다. |
+| [**\<filters>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md) | 들어오는 메시지를 평가할 때 Windows Communication Foundation (WCF) messagefilter 형식을 사용할지를 결정 하는 라우팅 필터 집합을 포함 합니다. |
+| [**\<filterTables>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) | 필터가 일치할 때 사용할 엔드포인트를 지정하기 위한 라우팅 필터와 대상 엔드포인트 간의 매핑을 포함합니다. |
 
 ### <a name="parent-elements"></a>부모 요소
 
 |     | 설명 |
 | --- | ----------- |
-| **\<시스템입니다. ServiceModel >** | 모든 WCF 구성 요소의 루트 요소입니다. |
+| **\<system.ServiceModel>** | 모든 WCF 구성 요소의 루트 요소입니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-<xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>

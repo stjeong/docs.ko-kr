@@ -2,12 +2,12 @@
 title: (LINQ to XML) 연결 된 쿼리의 성능 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
-ms.openlocfilehash: d390fc0e45967cd98697320eb6f61a51cb1c19da
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8a4893a000bc80fa703e7d47aa5d73f02b95a8ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33645709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601872"
 ---
 # <a name="performance-of-chained-queries-linq-to-xml-visual-basic"></a>(LINQ to XML) 연결 된 쿼리의 성능 (Visual Basic)
 LINQ(및 LINQ to XML)의 가장 큰 이점 중 하나는 연결된 쿼리가 보다 크고 복잡한 하나의 쿼리처럼 잘 수행될 수 있다는 것입니다.  
@@ -44,5 +44,5 @@ Next
   
  따라서 `query2`의 반복은 소스로 사용된 첫 번째 쿼리의 항목 수에 정비례합니다. 즉, 선형 시간으로 실행됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [성능 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+## <a name="see-also"></a>참고자료
+- [성능 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - binding data [WPF], creating
 - data binding [WPF], creating
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
-ms.openlocfilehash: 2d13650cb3e9a4e97a6642992b7211f323b9ea96
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5b086629b6144a92e9a5eeecdd6adb1ca1bad27a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54610736"
 ---
 # <a name="how-to-create-a-binding-in-code"></a>방법: 코드에서 바인딩 만들기
 만들고 설정 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Data.Binding> 코드에서입니다.  
@@ -38,6 +38,6 @@ ms.locfileid: "43502260"
  [!code-csharp[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#bosetbinding)]
  [!code-vb[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#bosetbinding)]  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

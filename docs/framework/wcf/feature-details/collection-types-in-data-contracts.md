@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data contracts [WCF], collection types
 - collection types [WCF]
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
-ms.openlocfilehash: 0399c89e926611b076072e6475c52bf31ae83637
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: c0e65a6286ef4756bba305d41dce6ef2a85401dd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516134"
 ---
 # <a name="collection-types-in-data-contracts"></a>데이터 계약의 컬렉션 형식
 *컬렉션* 은 특정 형식의 항목으로 구성된 목록입니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 경우 이러한 목록은 배열이나 여러 형식(제네릭 목록, 제네릭 <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>또는 <xref:System.Collections.ArrayList>)을 사용하여 나타낼 수 있습니다. 예를 들어, 컬렉션은 지정된 고객에 대한 주소 목록을 보유할 수 있습니다. 실제 형식에 관계없이 이러한 컬렉션을 *목록 컬렉션*이라고 합니다.  
@@ -203,7 +203,7 @@ ms.locfileid: "53155186"
   
  알려진 형식은 또한 컬렉션의 내용에 필요합니다. 예를 들어, <xref:System.Collections.ArrayList> 에 `Type1` 및 `Type2`의 인스턴스가 실제로 있는 경우 이 두 가지 형식 모두 알려진 형식에 추가해야 합니다.  
   
- 다음 예제에서는 컬렉션 및 알려진 형식을 사용하여 올바르게 생성된 개체 그래프를 보여 줍니다. 일반적으로 실제 응용 프로그램에서는 다음 데이터 멤버를 `Object`로 정의하지 않고 알려진 형식/다형성 문제가 없기 때문에 이 예제는 실제와 다소 거리가 있습니다.  
+ 다음 예제에서는 컬렉션 및 알려진 형식을 사용하여 올바르게 생성된 개체 그래프를 보여 줍니다. 일반적으로 실제 애플리케이션에서는 다음 데이터 멤버를 `Object`로 정의하지 않고 알려진 형식/다형성 문제가 없기 때문에 이 예제는 실제와 다소 거리가 있습니다.  
   
  [!code-csharp[c_collection_types_in_data_contracts#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#6)]
  [!code-vb[c_collection_types_in_data_contracts#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#6)]  
@@ -395,5 +395,5 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ## <a name="collections-and-object-reference-preservation"></a>컬렉션 및 개체 참조 유지  
  serializer가 개체 참조를 유지하는 모드에서 작동하는 경우 개체 참조 유지도 컬렉션에 적용됩니다. 특히 개체 ID는 전체 컬렉션 및 컬렉션에 포함된 개별 항목 모두에 대해 유지됩니다. 사전의 경우 개체 ID는 키/값 쌍 개체, 개별 키 개체 및 값 개체 모두에 대해 유지됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>

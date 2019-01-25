@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 66f9f95b0cf19acb677daf7f7401d21cc81864a0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f756e8688299fbe9d53822851be83703f4aa6348
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33447609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54550632"
 ---
 # <a name="corsavesize-enumeration"></a>CorSaveSize 열거형
 저장 작업의 크기를 쿼리할 때 필요한 전체 자릿수 수준을 나타내는 값을 포함합니다.  
@@ -40,18 +40,18 @@ typedef enum CorSaveSize {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`cssAccurate`|반환 값은 정확 하 게 해야 함을 지정 합니다.|  
-|`cssQuick`|반환 값을 예상할 수 있는지를 지정 합니다.|  
-|`cssDiscardTransientCAs`|삭제 가능한 형식을 제거 하도록 지정 합니다.|  
+|`cssAccurate`|반환 값을 정확 하 게 되도록 지정 합니다.|  
+|`cssQuick`|반환 값을 예상 해야를 지정 합니다.|  
+|`cssDiscardTransientCAs`|삭제 가능한 형식 제거 해야 한다는 것을 지정 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
  **라이브러리:** MsCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

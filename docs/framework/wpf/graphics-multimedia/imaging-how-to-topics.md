@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Imaging API [WPF]
 - images [WPF], how-to topics
 ms.assetid: 96834ee4-a5fc-4dd0-9948-b9bbc9437a5c
-ms.openlocfilehash: 28df9bd2f313165f233c90149d26c60856b3926b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 872eb510e3e85046818987fc6aaf761fca21b320
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33563375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54493614"
 ---
 # <a name="imaging-how-to-topics"></a>이미징 방법 항목
-이 섹션의 항목을 사용 하는 방법을 보여 줍니다 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 표시 하거나 비트맵 이미지를 변경 하기 위해 합니다.  
+이 섹션의에서 항목에서는 사용 하는 방법을 보여 줍니다 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 표시 하거나 비트맵 이미지를 변경 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [XAML에서 BitmapImage 사용](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-bitmapimage.md)  
@@ -43,5 +43,5 @@ ms.locfileid: "33563375"
   
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
-## <a name="see-also"></a>참고 항목  
- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+## <a name="see-also"></a>참고자료
+- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

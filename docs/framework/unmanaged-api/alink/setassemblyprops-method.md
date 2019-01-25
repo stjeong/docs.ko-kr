@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: aed553a3a8d54b5229a122e76b61e3e58d4af3c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 65d6e929a0a6fb5e1933a6c9216dfc5b56342113
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54560648"
 ---
 # <a name="setassemblyprops-method"></a>SetAssemblyProps 메서드
 어셈블리 수준 속성을 할당합니다.  
@@ -42,10 +42,10 @@ HRESULT SetAssemblyProps(
  어셈블리의 ID입니다.  
   
  `FileToken`  
- 속성을 정의 하는 파일입니다. 경우 NULL이 될 수 `AssemblyID` 바인딩되지 않은 어셈블리를 나타내지 않습니다.  
+ 속성을 정의 하는 파일입니다. NULL 일 수 `AssemblyID` 는 바인딩되지 않은 netmodule를 나타내지 않습니다.  
   
  `Option`  
- 수정할 수 있는 옵션을 나타냅니다.  
+ 수정 하는 옵션을 나타냅니다.  
   
  `Value`  
  옵션의 새 값입니다.  
@@ -56,7 +56,7 @@ HRESULT SetAssemblyProps(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

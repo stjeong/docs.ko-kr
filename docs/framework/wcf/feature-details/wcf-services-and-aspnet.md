@@ -2,12 +2,12 @@
 title: WCF 서비스 및 ASP.NET
 ms.date: 03/30/2017
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
-ms.openlocfilehash: c4d747787529ce6755a25cbd791886cf1999b699
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 58b5a09f63b6efb3c48fb3836da63c24650c5b21
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43401439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712287"
 ---
 # <a name="wcf-services-and-aspnet"></a>WCF 서비스 및 ASP.NET
 이 항목에서는 호스팅 Windows Communication Foundation (WCF) 서비스-side-by-side ASP.NET 및 ASP.NET 호환 모드에서 호스트 하를 사용 하 여 설명 합니다.  
@@ -29,9 +29,9 @@ ms.locfileid: "43401439"
   
     -   HttpContext: <xref:System.Web.HttpContext.Current%2A> 항상 `null` WCF 서비스 내에서 액세스 하는 경우. 사용 하 여 <!--zz <xref:System.ServiceModel.OperationContext.Current.RequestContext>--> `RequestContext` 대신 합니다.  
   
-    -   파일 기반 권한 부여: 서비스 요청 권한이 있는지 결정 하는 경우 서비스의.svc 파일에 적용할 액세스 제어 목록 (ACL)에 대 한 WCF 보안 모델을 허용 하지 않습니다.  
+    -   파일 기반 권한 부여: WCF 보안 모델에서는 서비스 요청 권한이 있는지 결정 하는 경우 서비스의.svc 파일에 적용할 액세스 제어 목록 (ACL)에 대 한 수 없습니다.  
   
-    -   구성 기반 URL 권한 부여: 마찬가지로 WCF 보안 모델을 따르지 않으면 System.Web의에서 지정 된 URL 기반 권한 부여 규칙 \<권한 부여 > 구성 요소입니다. WCF 요청은 ASP로 보호 되는 URL 공간에 상주 하는 경우 이러한 설정은 무시 됩니다. NET의 URL 권한 부여 규칙입니다.  
+    -   구성 기반 URL 권한 부여: 마찬가지로, WCF 보안 모델을 따르지 않으면 System.Web의에서 지정 된 URL 기반 권한 부여 규칙 \<권한 부여 > 구성 요소입니다. WCF 요청은 ASP로 보호 되는 URL 공간에 상주 하는 경우 이러한 설정은 무시 됩니다. NET의 URL 권한 부여 규칙입니다.  
   
     -   HttpModule 확장성: WCF 호스팅 인프라 가로채 WCF 요청 하는 경우는 <xref:System.Web.HttpApplication.PostAuthenticateRequest> 이벤트가 발생 하 고 ASP.NET HTTP 파이프라인에 처리를 반환 하지 않습니다. 코딩 된 모듈은 파이프라인의 이후 단계에서 요청을 가로채도록 WCF 요청 가로채지 않습니다.  
   
@@ -58,11 +58,11 @@ ms.locfileid: "43401439"
   
 -   <xref:System.Web.HttpContext>: ASP.NET 호환 모드에서 실행 되는 WCF 서비스에 액세스할 수 <xref:System.Web.HttpContext.Current%2A> 및 연결 된 상태입니다.  
   
--   파일 기반 권한 부여: ASP.NET 호환 모드에서 실행 되는 WCF 서비스는 서비스의.svc 파일에 파일 시스템 액세스 제어 목록 (Acl)을 연결 하 여 보안 될 수 있습니다.  
+-   파일 기반 권한 부여: 파일 시스템 액세스 제어 목록 (Acl) 서비스의.svc 파일에 연결 하 여 ASP.NET 호환 모드에서 실행 되는 WCF 서비스 보안 될 수 있습니다.  
   
--   구성 가능한 URL 권한 부여: ASP 합니다. WCF 서비스가 ASP.NET 호환 모드에서 실행 중인 경우 WCF 요청에 대 한 NET의 URL 권한 부여 규칙이 적용 됩니다.  
+-   URL 권한 부여를 구성할 수 있습니다. ASP 합니다. WCF 서비스가 ASP.NET 호환 모드에서 실행 중인 경우 WCF 요청에 대 한 NET의 URL 권한 부여 규칙이 적용 됩니다.  
   
--   <xref:System.Web.HttpModuleCollection> 확장성: ASP.NET 호환 모드에서 실행 되는 때문에 WCF 서비스는 ASP.NET HTTP 요청 수명에 완전히 참여, HTTP 파이프라인에 구성 된 모든 HTTP 모듈은 서비스 호출 전후 WCF 요청에서 작동할 수 있습니다.  
+-   <xref:System.Web.HttpModuleCollection> 확장성: ASP.NET 호환 모드에서 실행 되는 WCF 서비스는 ASP.NET HTTP 요청 수명에 완전히 참여, 때문에 HTTP 파이프라인에 구성 된 모든 HTTP 모듈은 서비스 호출 전후 WCF 요청에서 작동할 수 있습니다.  
   
 -   ASP.NET 가장: ASP.NET의 현재 id를 사용 하 여 실행 하는 WCF 서비스 응용 프로그램에 대 한 ASP.NET 가장을 사용 하도록 설정 된 경우 IIS 프로세스 id를 다 수 있는 스레드를 가장 합니다. ASP.NET 가장 및 WCF 가장 모두 특정 서비스 작업을 사용 하는 경우 서비스 구현을 궁극적으로 WCF에서 가져온 id를 사용 하 여 실행 합니다.  
   
@@ -100,6 +100,6 @@ ms.locfileid: "43401439"
   
  WCF 서비스에 대 한 ASP.NET 호환 모드를 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> 하며 [ASP.NET 호환성](../../../../docs/framework/wcf/samples/aspnet-compatibility.md) 샘플입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>  
- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

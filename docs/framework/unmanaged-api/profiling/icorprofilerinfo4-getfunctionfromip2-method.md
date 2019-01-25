@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c4fe3eec4940b57001b7734c581076388f8ba0c6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: bded97c23013e60bf2d3c32c4eb25285870977e1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33456988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554194"
 ---
 # <a name="icorprofilerinfo4getfunctionfromip2-method"></a>ICorProfilerInfo4::GetFunctionFromIP2 메서드
-관리 되는 코드의 명령 포인터는 함수의 JIT 다시 컴파일된 버전에 매핑됩니다.  
+관리 코드 명령 포인터는 함수의 JIT 다시 컴파일된 버전에 매핑됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,19 +47,19 @@ HRESULT GetFunctionFromIP2(
  [out] 함수의 JIT 다시 컴파일된 버전의 id입니다.  
   
 ## <a name="remarks"></a>설명  
- `GetFunctionFromIP2` 유사한 `GetFunctionFromIP`제외 하 고 지정 된 IP 주소를 포함 하는 함수의 함수 ID가 아닌 JIT 다시 컴파일된 ID를 가져옵니다.  
+ `GetFunctionFromIP2` 비슷합니다 `GetFunctionFromIP`한다는 점을 제외 하는 지정 된 IP 주소를 포함 하는 함수의 함수 ID가 아닌 JIT 다시 컴파일된 ID를 가져옵니다.  
   
 > [!NOTE]
->  `GetFunctionFromIP2` 가비지 수집을 트리거할 수 있는 반면 `GetFunctionFromIP` 되지 것입니다.  자세한 내용은 참조 [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md)합니다.  
+>  `GetFunctionFromIP2` 반면 가비지 수집을 트리거할 수 `GetFunctionFromIP` 것입니다.  자세한 내용은 [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICorProfilerInfo 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICorProfilerInfo 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

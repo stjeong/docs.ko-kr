@@ -13,12 +13,12 @@ helpviewer_keywords:
 - type design guidelines, classes
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
 author: KrzysztofCwalina
-ms.openlocfilehash: 650acf0efaa88120678819b77b03fab61107c630
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a47e43b2387362500d46c8e531f16d004d823c4c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565867"
 ---
 # <a name="choosing-between-class-and-struct"></a>클래스와 구조체 간의 선택
 모든 프레임 워크 디자이너 얼굴 기본 디자인 결정 사항 중 하나 (참조 형식) 클래스 또는 구조체 (값 형식) 형식이 디자인 여부입니다. 값 형식과 참조 동작의 차이점 이해 하는 것은이 선택 하는 중요 합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "53131328"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [형식 디자인 지침](../../../docs/standard/design-guidelines/type.md)  
+- [형식 디자인 지침](../../../docs/standard/design-guidelines/type.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

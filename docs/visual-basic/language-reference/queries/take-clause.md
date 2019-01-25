@@ -8,12 +8,12 @@ helpviewer_keywords:
 - queries [Visual Basic], Take
 - Take clause [Visual Basic]
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
-ms.openlocfilehash: bfaccf470d93a6a72451e7ad8b41e8dbb1171c71
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: bdd12340c5a0bd522c09a22e74c7b4f487cc5821
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43856578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626734"
 ---
 # <a name="take-clause-visual-basic"></a>Take 절(Visual Basic)
 컬렉션의 시작 위치에서 지정된 수의 연속 요소를 반환합니다.  
@@ -26,7 +26,7 @@ Take count
   
 ## <a name="parts"></a>요소  
  `count`  
- 필수. 값 또는 반환 된 시퀀스의 요소 수가 계산 되는 식입니다.  
+ 필수 요소. 값 또는 반환 된 시퀀스의 요소 수가 계산 되는 식입니다.  
   
 ## <a name="remarks"></a>설명  
  `Take` 절로 인해 지정 된 수의 결과 목록 시작 지점에서 연속 요소를 포함 하도록 쿼리 합니다. 지정 된 요소를 포함할 수는 `count` 매개 변수입니다.  
@@ -42,11 +42,11 @@ Take count
   
  [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Take While 절](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- [Skip 절](../../../visual-basic/language-reference/queries/skip-clause.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Take While 절](../../../visual-basic/language-reference/queries/take-while-clause.md)
+- [Skip 절](../../../visual-basic/language-reference/queries/skip-clause.md)
