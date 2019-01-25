@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a51d88af20b3abbbe2f80134473ec1ba1b7a4b17
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 99f9162cc01d68d25304aed5cb8102b6cc21f7a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33454550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54727094"
 ---
-# <a name="icorprofilerinfo3getthreadstaticaddress2-method"></a><span data-ttu-id="748e4-102">ICorProfilerInfo3::GetThreadStaticAddress2 메서드</span><span class="sxs-lookup"><span data-stu-id="748e4-102">ICorProfilerInfo3::GetThreadStaticAddress2 Method</span></span>
-<span data-ttu-id="748e4-103">지정된 스레드 및 응용 프로그램 도메인의 범위에 있는 지정된 Thread 정적 필드의 주소를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-103">Gets the address of the specified thread-static field that is in the scope of the specified thread and application domain.</span></span>  
+# <a name="icorprofilerinfo3getthreadstaticaddress2-method"></a><span data-ttu-id="82890-102">ICorProfilerInfo3::GetThreadStaticAddress2 메서드</span><span class="sxs-lookup"><span data-stu-id="82890-102">ICorProfilerInfo3::GetThreadStaticAddress2 Method</span></span>
+<span data-ttu-id="82890-103">지정된 스레드 및 응용 프로그램 도메인의 범위에 있는 지정된 Thread 정적 필드의 주소를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="82890-103">Gets the address of the specified thread-static field that is in the scope of the specified thread and application domain.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="748e4-104">구문</span><span class="sxs-lookup"><span data-stu-id="748e4-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="82890-104">구문</span><span class="sxs-lookup"><span data-stu-id="82890-104">Syntax</span></span>  
   
 ```  
 HRESULT GetThreadStaticAddress2(  
@@ -38,43 +38,43 @@ HRESULT GetThreadStaticAddress2(
                 [out] void **ppAddress);  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="748e4-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="748e4-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="82890-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="82890-105">Parameters</span></span>  
  `classId`  
- <span data-ttu-id="748e4-106">[in] 요청 된 thread 정적 필드를 포함 하는 클래스의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-106">[in] The ID of the class that contains the requested thread-static field.</span></span>  
+ <span data-ttu-id="82890-106">[in] 요청 된 thread 정적 필드를 포함 하는 클래스의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-106">[in] The ID of the class that contains the requested thread-static field.</span></span>  
   
  `fieldToken`  
- <span data-ttu-id="748e4-107">[in] 요청 된 thread 정적 필드에 대 한 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-107">[in] The metadata token for the requested thread-static field.</span></span>  
+ <span data-ttu-id="82890-107">[in] 요청 된 thread 정적 필드에 대 한 메타 데이터 토큰입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-107">[in] The metadata token for the requested thread-static field.</span></span>  
   
  `appDomainId`  
- <span data-ttu-id="748e4-108">[in] 응용 프로그램 도메인의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-108">[in] The ID of the application domain.</span></span>  
+ <span data-ttu-id="82890-108">[in] 응용 프로그램 도메인의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-108">[in] The ID of the application domain.</span></span>  
   
  `threadId`  
- <span data-ttu-id="748e4-109">[in] 요청 된 정적 필드에 대 한 범위를 한 스레드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-109">[in] The ID of the thread that is the scope for the requested static field.</span></span>  
+ <span data-ttu-id="82890-109">[in] 요청 된 정적 필드에 대 한 범위는 스레드의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-109">[in] The ID of the thread that is the scope for the requested static field.</span></span>  
   
  `ppAddress`  
- <span data-ttu-id="748e4-110">[out] 지정 된 스레드 내에 있는 정적 필드의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-110">[out] A pointer to the address of the static field that is within the specified thread.</span></span>  
+ <span data-ttu-id="82890-110">[out] 지정된 된 스레드에 내에 있는 정적 필드의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-110">[out] A pointer to the address of the static field that is within the specified thread.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="748e4-111">설명</span><span class="sxs-lookup"><span data-stu-id="748e4-111">Remarks</span></span>  
- <span data-ttu-id="748e4-112">`GetThreadStaticAddress2` 메서드에서 다음 중 하나를 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-112">The `GetThreadStaticAddress2` method may return one of the following:</span></span>  
+## <a name="remarks"></a><span data-ttu-id="82890-111">설명</span><span class="sxs-lookup"><span data-stu-id="82890-111">Remarks</span></span>  
+ <span data-ttu-id="82890-112">`GetThreadStaticAddress2` 메서드 중 하나를 반환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="82890-112">The `GetThreadStaticAddress2` method may return one of the following:</span></span>  
   
--   <span data-ttu-id="748e4-113">지정된 된 정적 필드의 주소 지정된 된 컨텍스트에서 할당 되지 않은 경우 CORPROF_E_DATAINCOMPLETE HRESULT입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-113">A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.</span></span>  
+-   <span data-ttu-id="82890-113">지정 된 정적 필드에 지정 된 컨텍스트에서 주소 할당 되지 않은 경우 CORPROF_E_DATAINCOMPLETE HRESULT입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-113">A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.</span></span>  
   
--   <span data-ttu-id="748e4-114">가비지 수집 힙에서 있을 수 있는 개체의 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-114">The addresses of objects that may be in the garbage collection heap.</span></span> <span data-ttu-id="748e4-115">이러한 주소 가비지 수집 후 프로파일러 가정 하지 않아야 유효한 지 하므로 가비지 수집 후 잘못 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-115">These addresses may become invalid after garbage collection, so after garbage collection, profilers should not assume that they are valid.</span></span>  
+-   <span data-ttu-id="82890-114">가비지 컬렉션 힙에 있을 수 있는 개체의 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="82890-114">The addresses of objects that may be in the garbage collection heap.</span></span> <span data-ttu-id="82890-115">이러한 주소 가비지 수집 후 프로파일러 가정 하지 않아야 유효한 지 하므로 가비지 컬렉션 후 잘못 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="82890-115">These addresses may become invalid after garbage collection, so after garbage collection, profilers should not assume that they are valid.</span></span>  
   
- <span data-ttu-id="748e4-116">클래스의 클래스 생성자 완료 되기 전에 `GetThreadStaticAddress2` 정적 필드 중 일부를 초기화할 수 있습니다는 이미 있지만 CORPROF_E_DATAINCOMPLETE 정적의 모든 필드에 반환 하 고 가비지 수집 개체 루 팅입니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-116">Before a class’s class constructor is completed, `GetThreadStaticAddress2` will return CORPROF_E_DATAINCOMPLETE for all its static fields, although some of the static fields may already be initialized and rooting garbage collection objects.</span></span>  
+ <span data-ttu-id="82890-116">클래스의 클래스 생성자 완료 되기 전에 `GetThreadStaticAddress2` 정적 필드 중 일부를 초기화할 수는 이미 있지만 CORPROF_E_DATAINCOMPLETE 정적 해당 모든 필드에 대 한 반환 하 고 가비지 컬렉션 개체를 응원 하 합니다.</span><span class="sxs-lookup"><span data-stu-id="82890-116">Before a class’s class constructor is completed, `GetThreadStaticAddress2` will return CORPROF_E_DATAINCOMPLETE for all its static fields, although some of the static fields may already be initialized and rooting garbage collection objects.</span></span>  
   
- <span data-ttu-id="748e4-117">[icorprofilerinfo2:: Getthreadstaticaddress](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getthreadstaticaddress-method.md) 메서드는 비슷합니다는 `GetThreadStaticAddress2` 메서드를 하지만 응용 프로그램 도메인 인수를 허용 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-117">The [ICorProfilerInfo2::GetThreadStaticAddress](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getthreadstaticaddress-method.md) method is similar to the `GetThreadStaticAddress2` method, but does not accept an application domain argument.</span></span>  
+ <span data-ttu-id="82890-117">[ICorProfilerInfo2::GetThreadStaticAddress](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getthreadstaticaddress-method.md) 메서드는 비슷합니다는 `GetThreadStaticAddress2` 메서드 되었지만 응용 프로그램 도메인 인수를 수락 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="82890-117">The [ICorProfilerInfo2::GetThreadStaticAddress](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getthreadstaticaddress-method.md) method is similar to the `GetThreadStaticAddress2` method, but does not accept an application domain argument.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="748e4-118">요구 사항</span><span class="sxs-lookup"><span data-stu-id="748e4-118">Requirements</span></span>  
- <span data-ttu-id="748e4-119">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="748e4-119">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="82890-118">요구 사항</span><span class="sxs-lookup"><span data-stu-id="82890-118">Requirements</span></span>  
+ <span data-ttu-id="82890-119">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="82890-119">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="748e4-120">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="748e4-120">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="82890-120">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="82890-120">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="748e4-121">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="748e4-121">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="82890-121">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="82890-121">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="748e4-122">**.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="748e4-122">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="82890-122">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="82890-122">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="748e4-123">참고 항목</span><span class="sxs-lookup"><span data-stu-id="748e4-123">See Also</span></span>  
- [<span data-ttu-id="748e4-124">ICorProfilerInfo3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="748e4-124">ICorProfilerInfo3 Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)  
- [<span data-ttu-id="748e4-125">프로파일링 인터페이스</span><span class="sxs-lookup"><span data-stu-id="748e4-125">Profiling Interfaces</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [<span data-ttu-id="748e4-126">프로파일링</span><span class="sxs-lookup"><span data-stu-id="748e4-126">Profiling</span></span>](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## <a name="see-also"></a><span data-ttu-id="82890-123">참고자료</span><span class="sxs-lookup"><span data-stu-id="82890-123">See also</span></span>
+- [<span data-ttu-id="82890-124">ICorProfilerInfo3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="82890-124">ICorProfilerInfo3 Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
+- [<span data-ttu-id="82890-125">프로파일링 인터페이스</span><span class="sxs-lookup"><span data-stu-id="82890-125">Profiling Interfaces</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [<span data-ttu-id="82890-126">프로파일링</span><span class="sxs-lookup"><span data-stu-id="82890-126">Profiling</span></span>](../../../../docs/framework/unmanaged-api/profiling/index.md)

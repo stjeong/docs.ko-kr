@@ -16,35 +16,35 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4652bcb00d3437350b5fd3e1071b3c538403cfe3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5b7e91430b970e8a14e0c126b1b7ae2cb123d4eb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33418691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712878"
 ---
-# <a name="icordebugstepper2-interface1"></a><span data-ttu-id="e6e4a-102">ICorDebugStepper2 Interface1</span><span class="sxs-lookup"><span data-stu-id="e6e4a-102">ICorDebugStepper2 Interface1</span></span>
-<span data-ttu-id="e6e4a-103">내 코드만 (JMC) 디버깅에 대 한 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="e6e4a-103">Provides support for just my code (JMC) debugging.</span></span>  
+# <a name="icordebugstepper2-interface1"></a><span data-ttu-id="2a7bd-102">ICorDebugStepper2 Interface1</span><span class="sxs-lookup"><span data-stu-id="2a7bd-102">ICorDebugStepper2 Interface1</span></span>
+<span data-ttu-id="2a7bd-103">내 코드만 (JMC) 디버깅에 대 한 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="2a7bd-103">Provides support for just my code (JMC) debugging.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="e6e4a-104">메서드</span><span class="sxs-lookup"><span data-stu-id="e6e4a-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="2a7bd-104">메서드</span><span class="sxs-lookup"><span data-stu-id="2a7bd-104">Methods</span></span>  
   
-|<span data-ttu-id="e6e4a-105">메서드</span><span class="sxs-lookup"><span data-stu-id="e6e4a-105">Method</span></span>|<span data-ttu-id="e6e4a-106">설명</span><span class="sxs-lookup"><span data-stu-id="e6e4a-106">Description</span></span>|  
+|<span data-ttu-id="2a7bd-105">메서드</span><span class="sxs-lookup"><span data-stu-id="2a7bd-105">Method</span></span>|<span data-ttu-id="2a7bd-106">설명</span><span class="sxs-lookup"><span data-stu-id="2a7bd-106">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="e6e4a-107">SetJMC 메서드</span><span class="sxs-lookup"><span data-stu-id="e6e4a-107">SetJMC Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper2-setjmc-method.md)|<span data-ttu-id="e6e4a-108">응용 프로그램 개발자가 작성 하는 코드를 사용할 때만이 ICorDebugStepper 단계 있는지 여부를 지정 하는 값을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6e4a-108">Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer.</span></span>|  
+|[<span data-ttu-id="2a7bd-107">SetJMC 메서드</span><span class="sxs-lookup"><span data-stu-id="2a7bd-107">SetJMC Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper2-setjmc-method.md)|<span data-ttu-id="2a7bd-108">응용 프로그램의 개발자가 작성 된 코드를 통해서만이 ICorDebugStepper 단계 여부를 지정 하는 값을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="2a7bd-108">Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="e6e4a-109">설명</span><span class="sxs-lookup"><span data-stu-id="e6e4a-109">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="2a7bd-109">설명</span><span class="sxs-lookup"><span data-stu-id="2a7bd-109">Remarks</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="e6e4a-110">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e6e4a-110">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+>  <span data-ttu-id="2a7bd-110">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="2a7bd-110">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="e6e4a-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e6e4a-111">Requirements</span></span>  
- <span data-ttu-id="e6e4a-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="e6e4a-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="2a7bd-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="2a7bd-111">Requirements</span></span>  
+ <span data-ttu-id="2a7bd-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="2a7bd-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e6e4a-113">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e6e4a-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="2a7bd-113">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="2a7bd-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="e6e4a-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e6e4a-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="2a7bd-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="2a7bd-114">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="e6e4a-115">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e6e4a-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="2a7bd-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2a7bd-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e6e4a-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e6e4a-116">See Also</span></span>  
- [<span data-ttu-id="e6e4a-117">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e6e4a-117">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a><span data-ttu-id="2a7bd-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="2a7bd-116">See also</span></span>
+- [<span data-ttu-id="2a7bd-117">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="2a7bd-117">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
