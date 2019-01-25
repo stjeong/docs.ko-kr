@@ -1,12 +1,12 @@
 ---
 title: 특수 문자 (Visual Basic 참조)
 ms.date: 10/31/2017
-ms.openlocfilehash: 02e489a7712c740bf5dbd01a980454e43d7bc97a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c179ac69833404f0ad7e36cfcada1643d91d604d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626799"
 ---
 # <a name="special-characters-visual-basic-reference"></a>특수 문자 (Visual Basic 참조)
 
@@ -14,6 +14,6 @@ ms.locfileid: "50187129"
 
 - [$](interpolated.md), 보간된 문자열 문자입니다.
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고자료
 
 - [Visual Basic 참조](../../../visual-basic/language-reference/index.md)

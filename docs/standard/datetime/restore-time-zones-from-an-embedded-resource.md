@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 99d38b336b5e655dd1c96682eec90c5fbe8469d6
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 71fc4e04c87dfa3b83eabb06361d1da94a512a5e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54656806"
 ---
 # <a name="how-to-restore-time-zones-from-an-embedded-resource"></a>방법: 포함된 리소스에서 표준 시간대 복원
 
-이 항목에서는 리소스 파일에 저장 된 표준 시간대를 복원 하는 방법을 설명 합니다. 정보 및 표준 시간대 저장 하는 방법에 대 한 지침을 참조 하세요 [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)합니다.
+이 항목에서는 리소스 파일에 저장 된 표준 시간대를 복원 하는 방법을 설명 합니다. 정보 및 표준 시간대 저장 하는 방법에 대 한 지침을 참조 하세요. [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)합니다.
 
 ### <a name="to-deserialize-a-timezoneinfo-object-from-an-embedded-resource"></a>포함된 리소스에서 TimeZoneInfo 개체를 deserialize 하는 데
 
@@ -60,6 +60,6 @@ ms.locfileid: "48841061"
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-* [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
-* [방법: 포함 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [표준 시간대 개요](../../../docs/standard/datetime/time-zone-overview.md)
+- [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)

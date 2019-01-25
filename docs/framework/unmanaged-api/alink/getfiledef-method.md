@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b772ae37baed44b90e4f5420e0f7724201a56abe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: c6a8a9aedc5c2b09c6e6f6014142bce44f3a8297
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54668602"
 ---
 # <a name="getfiledef-method"></a>GetFileDef 메서드
-(반대로 ALink에서 할당 된 토큰) 메타 데이터에 사용 되는 실제 FileDef 토큰을 검색 합니다.  
+ALink에서 할당 된 토큰) (달리 메타 데이터에 사용 된 실제 FileDef 토큰을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ HRESULT GetFileDef(
  어셈블리의 ID입니다.  
   
  `TargetFile`  
- 토큰 추가 된 파일의 AddFile 메서드 또는 AddImport 메서드에서 검색 된 대로입니다.  
+ 토큰 추가 된 파일의 AddFile 메서드 또는 AddImport 메서드에서 검색 합니다.  
   
  `pScope`  
  FileDef 토큰을 받습니다.  
@@ -52,7 +52,7 @@ HRESULT GetFileDef(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

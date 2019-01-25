@@ -12,12 +12,12 @@ helpviewer_keywords:
 - properties [Visual Basic], setting at run time
 - CallByName function
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.openlocfilehash: 76be426049489bb58e50878822c03fa5cd5cca8e
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 865270cfc8089d0bf229d9de7a7775dd2a3361d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42911648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54731525"
 ---
 # <a name="calling-a-property-or-method-using-a-string-name-visual-basic"></a>문자열 이름을 사용하여 속성 또는 메서드 호출(Visual Basic)
 대부분의 경우에서 디자인 타임에 개체의 메서드와 속성을 검색 하 고 처리 하는 코드를 작성할 수 있습니다. 그러나 경우에 따라 모르고 개체의 속성 및 메서드에 대 한 사전에 또는 속성을 지정 하거나 런타임에 메서드를 실행 하려면 최종 사용자의 유연성 할 수 있습니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "42911648"
   
  `CallByName` 함수는 문자열을 사용 하 여 런타임 시 속성이 나 메서드를 지정할 수 있습니다. 시그니처는 `CallByName` 함수는 다음과 같습니다.  
   
- *결과* = `CallByName`(*개체*를 *ProcedureName*하십시오 *CallType*를 *인수*())  
+ *Result* = `CallByName`(*Object*, *ProcedureName*, *CallType*, *Arguments*())  
   
  첫 번째 인수 *개체*, 취할 하려는 개체의 이름을 사용 합니다. 합니다 *ProcedureName* 인수가 호출할 메서드 또는 속성 프로시저의 이름을 포함 하는 문자열을 사용 합니다. *CallType* 를 호출 하는 프로시저의 유형을 나타내는 상수를 사용 하는 인수: 메서드 (`Microsoft.VisualBasic.CallType.Method`), 속성 읽기 (`Microsoft.VisualBasic.CallType.Get`), 또는 속성 설정 (`Microsoft.VisualBasic.CallType.Set`). 합니다 *인수* 인수는 선택 사항인 형식의 배열을 사용 `Object` 프로시저에 인수를 포함 하는 합니다.  
   
@@ -46,6 +46,6 @@ ms.locfileid: "42911648"
 > [!NOTE]
 >  하는 동안 합니다 `CallByName` 함수는 일부 경우에 유용할 수 있습니다, 성능에 미치는 영향에 대 한 유용성을 평가 해야 합니다-사용 하 여 `CallByName` 프로시저를 호출 하는 런타임에 바인딩된 호출 보다 약간 더 느려집니다. 호출 되는 반복 해 서 같은 루프 내에서 함수를 호출 하는 경우 `CallByName` 성능에 심각한 영향을 줄 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>  
- [개체 형식 확인](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
+- [개체 형식 확인](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)

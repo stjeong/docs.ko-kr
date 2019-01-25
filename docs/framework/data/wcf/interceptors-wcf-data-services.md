@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - query interceptors [WCF Data Services]
 ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
-ms.openlocfilehash: c2086d451af72157785796052af123cd210ee036
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 14212c9993d936138df70160e4e49152cd5ff958
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47202726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626760"
 ---
 # <a name="interceptors-wcf-data-services"></a>인터셉터(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 응용 프로그램을 작업에 사용자 지정 논리를 추가할 수 있도록 요청 메시지를 가로챌 수 있습니다. 들어오는 메시지의 데이터 유효성을 검사 하려면이 사용자 지정 논리를 사용할 수 있습니다. 요청별로 사용자 지정 인증 정책을 삽입하는 등 쿼리 요청 범위를 추가로 제한하는 데에도 이 논리를 사용할 수 있습니다.  
@@ -40,13 +40,13 @@ ms.locfileid: "47202726"
   
  다음 특성은 가로채기에서 지원되지 않습니다.  
   
- **[QueryInterceptor (** *EntitySetName* **)]**  
+ **[QueryInterceptor(** *EntitySetName* **)]**  
  <xref:System.Data.Services.QueryInterceptorAttribute> 특성이 적용된 메서드는 대상 엔터티 집합 리소스에 대해 HTTP GET 요청을 받을 때 호출됩니다. 이 메서드는 항상 `Expression<Func<T,bool>>` 형식의 람다 식을 반환해야 합니다.  
   
- **[ChangeInterceptor (** *EntitySetName* **)]**  
+ **[ChangeInterceptor(** *EntitySetName* **)]**  
  <xref:System.Data.Services.ChangeInterceptorAttribute> 특성이 적용된 메서드는 대상 엔터티 집합 리소스에 대해 HTTP GET 요청 이외의 HTTP 요청을 받을 때 호출됩니다. 이 메서드는 항상 `void`(Visual Basic에서는 `Nothing`)를 반환해야 합니다.  
   
  자세한 내용은 [방법: 데이터 서비스 메시지 가로채기](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서비스 작업](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [서비스 작업](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)

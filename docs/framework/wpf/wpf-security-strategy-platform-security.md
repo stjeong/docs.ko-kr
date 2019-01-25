@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Windows Presentation Foundation [WPF], about security model
 - security model [WPF], operating system
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
-ms.openlocfilehash: 1b5bada61a9d6374a1b961603fcf575199dee591
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 2252214a8ec217c30842995ea7d4d141e127d5f3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640448"
 ---
 # <a name="wpf-security-strategy---platform-security"></a>WPF 보안 전략 - 플랫폼 보안
 운영 체제를 포함 하는 기본 플랫폼의 보안 기능도 활용 다양 한 보안 서비스를 제공 하는 Windows Presentation Foundation (WPF), 합니다 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], 및 [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]합니다. 이러한 계층이 결합되어 다음 그림과 같이 단일 실패 지점을 방지하는 강력한 심층 방어 보안 모델인 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]를 제공합니다.  
@@ -208,12 +208,12 @@ ms.locfileid: "49121404"
   
  [!INCLUDE[TLA2#tla_ie7](../../../includes/tla2sharptla-ie7-md.md)]에서는 보안을 위한 지속적인 노력의 일환으로 [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)]의 보안 기능을 통합하고 확장합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows XP SP2의 Microsoft Internet Explorer 6 보안 이해](https://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)  
- [이해 및 Internet Explorer 보호 모드에서 작업](https://msdn.microsoft.com/library/bb250462.aspx)  
- [Windows XP 서비스 팩 3](https://www.microsoft.com/windows/products/windowsxp/sp3/default.mspx)  
- [Windows Vista 보안 가이드](https://www.microsoft.com/downloads/details.aspx?familyid=a3d1bbed-7f35-4e72-bfb5-b84a526c1565&displaylang=en)  
- [코드 액세스 보안](../../../docs/framework/misc/code-access-security.md)  
- [보안](../../../docs/framework/wpf/security-wpf.md)  
- [WPF 부분 신뢰 보안](../../../docs/framework/wpf/wpf-partial-trust-security.md)  
- [WPF 보안 전략 - 보안 엔지니어링](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)
+## <a name="see-also"></a>참고자료
+- [Windows XP SP2의 Microsoft Internet Explorer 6 보안 이해](https://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)
+- [이해 및 Internet Explorer 보호 모드에서 작업](https://msdn.microsoft.com/library/bb250462.aspx)
+- [Windows XP 서비스 팩 3](https://www.microsoft.com/windows/products/windowsxp/sp3/default.mspx)
+- [Windows Vista 보안 가이드](https://www.microsoft.com/downloads/details.aspx?familyid=a3d1bbed-7f35-4e72-bfb5-b84a526c1565&displaylang=en)
+- [코드 액세스 보안](../../../docs/framework/misc/code-access-security.md)
+- [보안](../../../docs/framework/wpf/security-wpf.md)
+- [WPF 부분 신뢰 보안](../../../docs/framework/wpf/wpf-partial-trust-security.md)
+- [WPF 보안 전략 - 보안 엔지니어링](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)

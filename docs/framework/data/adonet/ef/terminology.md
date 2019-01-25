@@ -2,12 +2,12 @@
 title: Entity Framework 용어
 ms.date: 03/30/2017
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-ms.openlocfilehash: 4c0497f3c8069dc7d77bc742b1a7848716a5f4d2
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 3b46a695f5984ec23f4a5ef28bd871d6d651c6ea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857377"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684569"
 ---
 # <a name="entity-framework-terminology"></a>Entity Framework 용어
 이 항목에서는 자주 참조 되는 용어를 정의 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 설명서. 추가 정보를 볼 수 있는 관련 항목에 대한 링크가 제공됩니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "43857377"
 |ComplexType|키 속성이 없는, 엔터티 형식의 스칼라가 아닌 속성을 나타내는 데이터 형식의 지정입니다.<br /><br /> 자세한 내용은 [ComplexType 요소 (CSDL)](https://msdn.microsoft.com/library/f1c2f311-9889-4b87-abd8-a94f322052e3) 하 고 [복합 형식](../../../../../docs/framework/data/adonet/complex-type.md)합니다.|  
 |개념 모델(conceptual model)|[!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]의 응용 프로그램 도메인에 있는 엔터티 형식, 복합 형식, 연결, 엔터티 컨테이너, 엔터티 집합 및 연결 집합의 추상 지정입니다. 개념적 모델은 .csdl 파일에 CSDL로 정의됩니다.<br /><br /> 자세한 내용은 [모델링 및 매핑](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)합니다.|  
 |.csdl 파일|CSDL로 표현된 개념적 모델이 포함된 XML 파일입니다.|  
-|CSDL(개념 스키마 정의 언어)|개념 모델의 엔터티 형식, 연결, 엔터티 컨테이너, 엔터티 집합 및 연결 집합을 정의하는 데 사용되는 XML 기반 언어입니다.<br /><br /> 자세한 내용은 [CSDL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)합니다.|  
+|CSDL(개념 스키마 정의 언어)|개념 모델의 엔터티 형식, 연결, 엔터티 컨테이너, 엔터티 집합 및 연결 집합을 정의하는 데 사용되는 XML 기반 언어입니다.<br /><br /> 자세한 내용은 [CSDL Specification](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)을 참조하십시오.|  
 |컨테이너|엔터티 및 연결 집합의 논리적 그룹입니다.<br /><br /> 자세한 내용은 [EntityContainer 요소 (CSDL)](https://msdn.microsoft.com/library/06d03ecb-3b7a-4e7f-95d5-b95307d47a27) 하 고 [엔터티 컨테이너](../../../../../docs/framework/data/adonet/entity-container.md)합니다.|  
 |동시성|여러 사용자가 동시에 공유 데이터에 액세스하여 변경할 수 있도록 하는 프로세스입니다. 기본적으로 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 낙관적 동시성 모델을 구현합니다.|  
 |방향|일부 연결의 비대칭 특성을 나타냅니다. 방향은 스키마에 있는 `FromRole` 또는 `ToRole` 요소의 `NavigationProperty` 및 `ReferentialConstraint` 특성으로 지정됩니다.<br /><br /> 자세한 내용은 [NavigationProperty 요소 (CSDL)](https://msdn.microsoft.com/library/5829a238-a50e-4c81-901d-7b54fc00f27e) 하 고 [탐색 속성](../../../../../docs/framework/data/adonet/navigation-property.md)합니다.|  
@@ -50,7 +50,7 @@ ms.locfileid: "43857377"
 |MSL(매핑 사양 언어)|개념 모델에서 정의한 항목을 저장소 모델의 항목에 매핑하는 데 사용되는 XML 기반 언어입니다.<br /><br /> 자세한 내용은 [MSL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/msl-specification.md)합니다.|  
 |수정 함수|데이터 소스에 있는 데이터를 삽입, 업데이트 및 삭제하는 데 사용되는 저장 프로시저입니다. 이러한 함수는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 생성된 명령 대신 사용됩니다. 수정 함수는 저장소 모델의 `Function` 요소에 의해 정의됩니다. 합니다 [ModificationFunctionMapping](https://msdn.microsoft.com/library/b44b5b13-9937-448b-ba36-7a0cfefea782) 요소는 이러한 수정 함수를 삽입, 업데이트 및 삭제 개념적 모델에 정의 된 엔터티에 대 한 작업을 매핑합니다.|  
 |복합성|연결에서 정의된 대로 관계의 양쪽에 존재할 수 있는 엔터티 수입니다. 카디널리티라고도 합니다.<br /><br /> 자세한 내용은 [끝 요소 (CSDL)](https://msdn.microsoft.com/library/04f3c141-95bc-424b-989b-1c071b449e7c) 하 고 [연결 end](../../../../../docs/framework/data/adonet/association-end.md)합니다.|  
-|형식별 다중 엔터티 집합|둘 이상의 엔터티 집합에서 같은 엔터티 형식을 정의할 수 있는 기능입니다.<br /><br /> 자세한 내용은 참조 하세요. [EntitySet 요소 (CSDL)](https://msdn.microsoft.com/library/ec56db77-718d-4c0e-adc9-f1d33c896287) 하 고 [방법: 형식별 다중 엔터티 집합을 사용 하 여 모델 정의](https://msdn.microsoft.com/library/61aa4fca-5ac0-4f47-9bc8-46e8c2965ef7)합니다.|  
+|형식별 다중 엔터티 집합|둘 이상의 엔터티 집합에서 같은 엔터티 형식을 정의할 수 있는 기능입니다.<br /><br /> 자세한 내용은 [EntitySet 요소 (CSDL)](https://msdn.microsoft.com/library/ec56db77-718d-4c0e-adc9-f1d33c896287) 고 [방법: 형식별 다중 엔터티 집합을 사용 하 여 모델 정의](https://msdn.microsoft.com/library/61aa4fca-5ac0-4f47-9bc8-46e8c2965ef7)합니다.|  
 |탐색 속성(navigation property)|연결에서 정의된 대로 다른 엔터티 형식에 대한 관계를 나타내는 엔터티 형식의 속성입니다. 탐색 속성은 연결에서 반대쪽 End의 복합성에 따라 관련 개체를 <xref:System.Data.Objects.DataClasses.EntityCollection%601> 또는 <xref:System.Data.Objects.DataClasses.EntityReference%601>로 반환하는 데 사용됩니다.<br /><br /> 자세한 내용은 [NavigationProperty 요소 (CSDL)](https://msdn.microsoft.com/library/5829a238-a50e-4c81-901d-7b54fc00f27e) 하 고 [탐색 속성](../../../../../docs/framework/data/adonet/navigation-property.md)합니다.|  
 |쿼리 경로|개체 쿼리가 실행될 때 반환할 관련 개체를 지정하는 경로의 문자열 표현입니다. 쿼리 경로는 <xref:System.Data.Objects.ObjectQuery%601.Include%2A>의 <xref:System.Data.Objects.ObjectQuery%601> 메서드를 호출하여 정의됩니다.<br /><br /> 자세한 내용은 [관련 개체 로드](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1)합니다.|  
 |개체 컨텍스트|개념적 모델에서 정의된 엔터티 컨테이너를 나타냅니다. 기본 데이터 소스에 대한 연결을 포함하며, 변경 내용 추적 및 ID 확인과 같은 서비스를 제공합니다. 개체 컨텍스트는 <xref:System.Data.Objects.ObjectContext> 또는 `DbContext` 클래스 인스턴스로 표현됩니다.<br /><br /> `DbContext` 일부인 합니다 [Entity Framework 5.0](https://go.microsoft.com/fwlink/?LinkId=234900)합니다. Entity Framework 5.0은 .NET Framework의 일부가 아니지만 .NET Framework 4.5에 빌드되어 있습니다. Entity Framework 5.0은로 제공 합니다 [' Entity Framework'](https://go.microsoft.com/fwlink/?LinkID=215714)[NuGet](https://go.microsoft.com/fwlink/?LinkId=232488) 패키지 있습니다. 자세한 내용은 [Entity Framework 릴리스 및 버전 관리](https://go.microsoft.com/fwlink/?LinkId=234899)합니다.|  
@@ -67,16 +67,16 @@ ms.locfileid: "43857377"
 |역할(Role)|연결의 각 `End`에 지정되어 관계의 의미 체계를 설명하는 이름입니다.<br /><br /> 자세한 내용은 [끝 요소 (CSDL)](https://msdn.microsoft.com/library/04f3c141-95bc-424b-989b-1c071b449e7c) 하 고 [연결 end](../../../../../docs/framework/data/adonet/association-end.md)합니다.|  
 |스칼라 속성|저장소 모델의 단일 필드에 매핑되는 엔터티의 속성입니다.|  
 |자체 추적 엔터티|변경 내용을 스칼라 속성, 복합 속성 및 탐색 속성에 기록하는 기능이 있는 T4(Text Template Transformation Toolkit)에서 만들어진 엔터티입니다.|  
-|단순 형식|개념적 모델에서 속성을 정의하는 데 사용되는 기본 형식입니다.<br /><br /> 자세한 내용은 [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4) 하 고 [엔터티 데이터 모델: 기본 데이터 형식](../../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md)합니다.|  
-|분할 엔터티|저장소 모델에 있는 두 개의 별도 형식에 매핑되는 엔터티 형식입니다.<br /><br /> 자세한 내용은 [방법: 두 개의 테이블에 매핑된 단일 엔터티 사용 하 여 모델 정의](https://msdn.microsoft.com/library/01762517-e4ab-439d-99e6-564ab7d6f3ed)합니다.|  
+|단순 형식|개념적 모델에서 속성을 정의하는 데 사용되는 기본 형식입니다.<br /><br /> 자세한 내용은 [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4) 고 [엔터티 데이터 모델: 기본 데이터 형식을](../../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md)합니다.|  
+|분할 엔터티|저장소 모델에 있는 두 개의 별도 형식에 매핑되는 엔터티 형식입니다.<br /><br /> 자세한 내용은 [방법: 두 테이블에 매핑된 단일 엔터티를 사용 하 여 모델 정의](https://msdn.microsoft.com/library/01762517-e4ab-439d-99e6-564ab7d6f3ed)합니다.|  
 |저장소 모델|관계형 데이터베이스와 같은 지원되는 데이터 소스에 있는 데이터의 논리적 모델에 대한 정의입니다. 저장소 모델은 저장소 .ssdl 파일에서 SSDL로 정의됩니다.<br /><br /> 자세한 내용은 [모델링 및 매핑](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md) 하 고 [SSDL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/ssdl-specification.md)합니다.|  
 |.ssdl 파일|SSDL로 표현된 저장소 모델이 포함된 XML 파일입니다.|  
 |SSDL(저장소 스키마 정의 언어)|흔히 데이터베이스 스키마에 해당하는 저장소 모델의 엔터티 형식, 연결, 엔터티 컨테이너, 엔터티 집합 및 연결 집합을 정의하는 데 사용되는 XML 기반 언어입니다.<br /><br /> 자세한 내용은 [SSDL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/ssdl-specification.md)합니다.|  
 |계층당 하나의 테이블|형식 계층 구조를 모델링하는 방법 중 하나로, 계층 구조에 있는 모든 형식의 특성이 하나의 테이블에 포함됩니다.|  
 |형식당 하나의 테이블|데이터베이스의 형식 계층 구조를 모델링하는 방법 중 하나로, 일대일 관계의 여러 테이블을 사용하여 다양한 형식을 모델링합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)  
- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- [Entity Framework 리소스](../../../../../docs/framework/data/adonet/ef/resources.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)
+- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)
+- [Entity Framework 리소스](../../../../../docs/framework/data/adonet/ef/resources.md)

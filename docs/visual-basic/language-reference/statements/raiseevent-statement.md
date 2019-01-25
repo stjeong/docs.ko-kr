@@ -10,12 +10,12 @@ helpviewer_keywords:
 - RaiseEvent statement [Visual Basic]
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-ms.openlocfilehash: ba4c05b3ef69d180f43ac3b90aa8fd6dee9c80fb
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ccefe07c847c7a356e9ff8da301257bf6a90d1ed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655012"
 ---
 # <a name="raiseevent-statement"></a>RaiseEvent 문
 클래스, 폼 또는 문서의 모듈 수준에서 선언한 이벤트를 트리거합니다.  
@@ -75,9 +75,9 @@ RaiseEvent eventname[( argumentlist )]
 > [!NOTE]
 >  `My.Application.DoEvents` 메서드 이벤트를 처리 하지 동일한 방식으로 폼 마찬가지로 합니다. 폼에 직접 이벤트를 처리할 수 있도록을 따르면 다중 스레딩 합니다. 자세한 내용은 [관리 되는 스레딩](../../../standard/threading/index.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [이벤트](../../../visual-basic/programming-guide/language-features/events/index.md)  
- [Event 문](../../../visual-basic/language-reference/statements/event-statement.md)  
- [AddHandler 문](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler 문](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+## <a name="see-also"></a>참고자료
+- [이벤트](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Event 문](../../../visual-basic/language-reference/statements/event-statement.md)
+- [AddHandler 문](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler 문](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)

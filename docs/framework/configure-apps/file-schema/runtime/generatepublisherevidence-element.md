@@ -1,5 +1,5 @@
 ---
-title: '&lt;generatePublisherEvidence&gt; 요소'
+title: '&lt;generatePublisherEvidence&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - generatePublisherEvidence element
@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3b2cd047367820d249272ca220669835975dbf2d
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 33d4c023b7a649fd2aa3d9d52a90bb7111c59743
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54683036"
 ---
-# <a name="ltgeneratepublisherevidencegt-element"></a>&lt;generatePublisherEvidence&gt; 요소
+# <a name="ltgeneratepublisherevidencegt-element"></a>&lt;generatePublisherEvidence&gt; Element
 런타임을 만드는 지 여부를 지정 <xref:System.Security.Policy.Publisher> 코드 액세스 보안 (CA)에 대 한 증거입니다.  
   
  \<configuration>  
 \<runtime>  
-\<generatePublisherEvidence >  
+\<generatePublisherEvidence>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53611167"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -78,6 +78,6 @@ ms.locfileid: "53611167"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

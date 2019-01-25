@@ -2,24 +2,24 @@
 title: 개체 상태 및 변경 내용 추적
 ms.date: 03/30/2017
 ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
-ms.openlocfilehash: 482299f90a92acec9307649ec04a89f8ce6be414
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 89e9f44a6cd3579a5ef9cc2078609ca26e0d2ae5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33364257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54683312"
 ---
 # <a name="object-states-and-change-tracking"></a>개체 상태 및 변경 내용 추적
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 일부에 항상 포함 개체가 *상태*합니다. 예를 들어, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 새 개체를 만들 경우 개체는 `Unchanged` 상태입니다. 직접 만든 새 개체는 <xref:System.Data.Linq.DataContext>에 알려져 있지 않으며 `Untracked` 상태입니다. <xref:System.Data.Linq.DataContext.SubmitChanges%2A>를 실행하고 나면 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에 알려진 모든 개체는 `Unchanged` 상태가 됩니다. 유일한 예외는 데이터베이스에서 삭제된 개체로 이러한 개체는 `Deleted` 상태이고 해당 <xref:System.Data.Linq.DataContext> 인스턴스에서 사용할 수 없습니다.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 개체는 항상 일부에 참여할 *상태*합니다. 예를 들어, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 새 개체를 만들 경우 개체는 `Unchanged` 상태입니다. 직접 만든 새 개체는 <xref:System.Data.Linq.DataContext>에 알려져 있지 않으며 `Untracked` 상태입니다. <xref:System.Data.Linq.DataContext.SubmitChanges%2A>를 실행하고 나면 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에 알려진 모든 개체는 `Unchanged` 상태가 됩니다. 유일한 예외는 데이터베이스에서 삭제된 개체로 이러한 개체는 `Deleted` 상태이고 해당 <xref:System.Data.Linq.DataContext> 인스턴스에서 사용할 수 없습니다.  
   
 ## <a name="object-states"></a>개체 상태  
  다음 표에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 개체의 가능한 상태를 보여 줍니다.  
   
 |상태|설명|  
 |-----------|-----------------|  
-|`Untracked`|[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에 의해 추적되지 않는 개체입니다. 여기에는 다음과 같은 예가 포함됩니다.<br /><br /> -현재 통해 쿼리되지 않은 개체 <xref:System.Data.Linq.DataContext> (예: 새로 만든된 개체).<br />-Deserialization을 통해 만든 개체<br />-다른를 통해 쿼리 개체 <xref:System.Data.Linq.DataContext>합니다.|  
+|`Untracked`|[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에 의해 추적되지 않는 개체입니다. 여기에는 다음과 같은 예가 포함됩니다.<br /><br /> -현재 통해 쿼리되지 않은 개체 <xref:System.Data.Linq.DataContext> (예: 새로 만든된 개체).<br />Deserialization을 통해 만든-개체<br />-다른 통해 쿼리할 개체 <xref:System.Data.Linq.DataContext>합니다.|  
 |`Unchanged`|현재 <xref:System.Data.Linq.DataContext>를 사용하여 검색되었으며 만들어진 이후 수정된 것으로 알려지지 않은 개체입니다.|  
-|`PossiblyModified`|개체를 *연결* 에 <xref:System.Data.Linq.DataContext>합니다. 자세한 내용은 참조 [데이터 검색 및 CUD 작업 N 계층 응용 프로그램 (LINQ to SQL)에서](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md)합니다.|  
+|`PossiblyModified`|상태인 개체 *연결 된* 에 <xref:System.Data.Linq.DataContext>합니다. 자세한 내용은 [데이터 검색 및 CUD 작업에서 N 계층 애플리케이션 (LINQ to SQL)](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md)합니다.|  
 |`ToBeInserted`|현재 <xref:System.Data.Linq.DataContext>를 사용하여 검색되지 않은 개체입니다. 이로 인해 `INSERT` 동안 데이터베이스에 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 발생합니다.|  
 |`ToBeUpdated`|검색된 이후로 수정되었다는 것이 알려진 개체입니다. 이로 인해 `UPDATE` 동안 데이터베이스에 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 발생합니다.|  
 |`ToBeDeleted`|삭제되도록 표시된 개체이며 이로 인해 `DELETE` 동안 데이터베이스에 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 발생합니다.|  
@@ -28,7 +28,7 @@ ms.locfileid: "33364257"
 ## <a name="inserting-objects"></a>개체 삽입  
  `Inserts`을 사용하여 <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>를 명시적으로 요청할 수 있습니다. 또는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 업데이트해야 하는 알려진 개체 중 하나에 연결된 개체를 찾아 `Inserts`를 유추할 수 있습니다. 예를 들어 `Untracked` 개체를 <xref:System.Data.Linq.EntitySet%601>에 추가하거나 <xref:System.Data.Linq.EntityRef%601>을 `Untracked` 개체로 설정할 경우 그래프에서 추적된 개체를 통해 `Untracked` 개체에 연결할 수 있습니다. <xref:System.Data.Linq.DataContext.SubmitChanges%2A>를 처리하는 동안 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 추적된 개체를 순회하면서 추적되지 않는 도달 가능한 모든 영구 개체를 검색합니다. 이러한 개체는 데이터베이스에 삽입할 후보입니다.  
   
- 클래스는 상속 계층 구조에 대 한 <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>(`o`)로 지정 된 멤버의 값도 설정는 *판별자* 개체의 형식과 일치 하도록 `o`합니다. 기본 판별자 값과 일치하는 형식의 경우 이 작업이 수행되면 판별자 값을 기본값이 덮어씁니다. 자세한 내용은 참조 [상속 지원](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md)합니다.  
+ 클래스는 상속 계층 구조에 대 한 <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>(`o`)도로 지정 된 멤버의 값을 설정 합니다 *판별자* 개체의 유형과 일치 하도록 `o`합니다. 기본 판별자 값과 일치하는 형식의 경우 이 작업이 수행되면 판별자 값을 기본값이 덮어씁니다. 자세한 내용은 [상속 지원](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md)합니다.  
   
 > [!IMPORTANT]
 >  `Table`에 추가된 개체는 ID 캐시에 없습니다. ID 캐시는 데이터베이스에서 검색된 개체만 반영합니다. <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> 호출 이후 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 완료될 때까지 추가된 엔터티는 데이터베이스에 대한 쿼리에 표시되지 않습니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "33364257"
 > [!NOTE]
 >  테이블에서 개체를 제거하면 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 `DELETE` 시점에 해당 SQL <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 명령을 생성합니다. 이 작업으로 인해 캐시에서 개체가 제거되거나 관련된 개체에 삭제가 전파되지는 않습니다.  
 >   
->  삭제된 개체의 `id`를 회수하려면 새 <xref:System.Data.Linq.DataContext> 인스턴스를 사용합니다. 관련된 개체의 정리를 위해 사용할 수 있습니다는 *하위 삭제* 기능을 데이터베이스의 또는 수동으로 관련된 개체를 삭제 합니다.  
+>  삭제된 개체의 `id`를 회수하려면 새 <xref:System.Data.Linq.DataContext> 인스턴스를 사용합니다. 관련된 개체의 정리를 사용할 수 있습니다 합니다 *cascade delete* 데이터베이스입니다. 그렇지 않으면 수동으로 기능 관련된 개체를 삭제 합니다.  
 >   
 >  데이터베이스에서와 달리 관련 개체를 특정 순서로 삭제할 필요가 없습니다.  
   
@@ -62,6 +62,6 @@ ms.locfileid: "33364257"
   
  필수 참조와 해당 외래 키를 둘 다 업데이트할 경우 서로 일치하는지 확인해야 합니다. <xref:System.InvalidOperationException>를 호출할 때 두 항목이 동기화되지 않은 경우 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 예외가 throw됩니다. 외래 키 값 변경을 통해 기본 행 업데이트에 충분히 영향을 줄 수 있지만 개체 그래프의 연결과 관계의 양방향 일관성을 유지 관리하기 위해 참조를 변경해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [삽입, 업데이트 및 삭제 작업](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)
+## <a name="see-also"></a>참고자료
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [삽입, 업데이트 및 삭제 작업](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)

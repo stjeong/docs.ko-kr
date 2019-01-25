@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Microsoft Annotations Framework [WPF]
 - documents [WPF], annotations
 ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
-ms.openlocfilehash: d2f3fa70673c7ae5819346ab152b74acf93a164c
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: c98e9434f78980ca0dd8156b3828734abb223a8f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679515"
 ---
 # <a name="annotations-schema"></a>주석 스키마
 이 항목에서는 사용자 주석 데이터를 저장하고 검색하기 위해 Microsoft Annotations Framework에서 사용하는 XSD(XML 스키마 정의)에 대해 설명합니다.  
@@ -581,10 +581,10 @@ ms.locfileid: "54029842"
 </anc:Annotations>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Annotations>  
- <xref:System.Windows.Annotations.Storage>  
- <xref:System.Windows.Annotations.Annotation>  
- <xref:System.Windows.Annotations.Storage.AnnotationStore>  
- <xref:System.Windows.Annotations.Storage.XmlStreamStore>  
- [주석 개요](../../../../docs/framework/wpf/advanced/annotations-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Annotations>
+- <xref:System.Windows.Annotations.Storage>
+- <xref:System.Windows.Annotations.Annotation>
+- <xref:System.Windows.Annotations.Storage.AnnotationStore>
+- <xref:System.Windows.Annotations.Storage.XmlStreamStore>
+- [주석 개요](../../../../docs/framework/wpf/advanced/annotations-overview.md)

@@ -2,14 +2,14 @@
 title: Visual Studio (Visual Basic)에서 개체 유지
 ms.date: 07/20/2015
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
-ms.openlocfilehash: 25951327028b9b8ced8506b3ba6395e8c9e6abed
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 002c5470765b33d038ab0fd463fcc6ccfdf6f109
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690438"
 ---
-# <a name="walkthrough-persisting-an-object-in-visual-studio-visual-basic"></a>연습: Visual Studio에서 개체 유지(Visual Basic)
+# <a name="walkthrough-persisting-an-object-in-visual-studio-visual-basic"></a>연습: Visual Studio (Visual Basic)에서 개체 유지
 디자인 타임에 개체의 속성을 기본값으로 설정할 수 있지만, 런타임에 입력한 값은 개체가 소멸될 때 손실됩니다. serialization을 사용하면 인스턴스 간에 개체의 데이터를 유지할 수 있으므로, 다음에 개체를 인스턴스화할 때 값을 저장하고 검색할 수 있습니다.  
   
 > [!NOTE]
@@ -18,7 +18,7 @@ ms.locfileid: "43506985"
  이 연습에서는 간단한 `Loan` 개체를 만들고 데이터를 파일에 유지합니다. 그런 다음 개체를 다시 만들 때 파일에서 데이터를 검색합니다.  
   
 > [!IMPORTANT]
->  이 예제에서는 파일이 아직 없는 경우 새 파일을 만듭니다. 응용 프로그램에서 파일을 만들어야 하는 경우 해당 응용 프로그램은 폴더에 대한 `Create` 권한이 있어야 합니다. 권한은 액세스 제어 목록을 사용하여 설정됩니다. 파일이 이미 있는 경우, 응용 프로그램에는 더 낮은 권한인 `Write` 권한만 필요합니다. 가능한 경우 배포하는 동안 파일을 만드는 것이 안전하며, 폴더에 대한 Create 권한 대신 단일 파일에 대해 `Read` 권한만 부여하는 것이 더 안전합니다. 또한 루트 폴더나 Program Files 폴더보다 사용자 폴더에 데이터를 쓰는 것이 더 안전합니다.  
+>  이 예제에서는 파일이 아직 없는 경우 새 파일을 만듭니다. 애플리케이션에서 파일을 만들어야 하는 경우 해당 애플리케이션은 폴더에 대한 `Create` 권한이 있어야 합니다. 권한은 액세스 제어 목록을 사용하여 설정됩니다. 파일이 이미 있는 경우, 애플리케이션에는 더 낮은 권한인 `Write` 권한만 필요합니다. 가능한 경우 배포하는 동안 파일을 만드는 것이 안전하며, 폴더에 대한 Create 권한 대신 단일 파일에 대해 `Read` 권한만 부여하는 것이 더 안전합니다. 또한 루트 폴더나 Program Files 폴더보다 사용자 폴더에 데이터를 쓰는 것이 더 안전합니다.  
   
 > [!IMPORTANT]
 >  이 예제에서는 이진 파일에 데이터를 저장합니다. 이러한 형식은 암호 또는 신용 카드 정보와 같은 중요한 데이터에 사용하면 안 됩니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "43506985"
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="creating-the-loan-object"></a>Loan 개체 만들기  
- 첫 번째 단계는 `Loan` 클래스와 이 클래스를 사용하는 테스트 응용 프로그램을 만드는 것입니다.  
+ 첫 번째 단계는 `Loan` 클래스와 이 클래스를 사용하는 테스트 애플리케이션을 만드는 것입니다.  
   
 ### <a name="to-create-the-loan-class"></a>Loan 클래스를 만들려면  
   
@@ -75,9 +75,9 @@ ms.locfileid: "43506985"
   
  `Loan` 클래스를 사용하는 간단한 응용 프로그램도 만들어야 합니다.  
   
-### <a name="to-create-a-test-application"></a>테스트 응용 프로그램을 만들려면  
+### <a name="to-create-a-test-application"></a>테스트 애플리케이션을 만들려면  
   
-1.  Windows Forms 응용 프로그램 프로젝트를 솔루션에 추가하려면 **파일** 메뉴에서 **추가**, **새 프로젝트**를 차례로 선택합니다.  
+1.  Windows Forms 애플리케이션 프로젝트를 솔루션에 추가하려면 **파일** 메뉴에서 **추가**, **새 프로젝트**를 차례로 선택합니다.  
   
 2.  **새 프로젝트 추가** 대화 상자에서 **Windows Forms 응용 프로그램**을 선택하고, 프로젝트 이름으로 `LoanApp`를 입력한 다음, **확인**을 클릭하여 대화 상자를 닫습니다.  
   
@@ -118,9 +118,9 @@ ms.locfileid: "43506985"
     End Sub  
     ```  
   
- 이 시점에서 응용 프로그램을 빌드 및 실행할 수 있습니다. `Loan` 클래스의 기본값이 텍스트 상자에 나타납니다. 금리 값을 7.5에서 7.1로 변경한 다음 응용 프로그램을 닫고 다시 실행합니다. 값이 기본값인 7.5로 돌아갑니다.  
+ 이 시점에서 애플리케이션을 빌드 및 실행할 수 있습니다. `Loan` 클래스의 기본값이 텍스트 상자에 나타납니다. 금리 값을 7.5에서 7.1로 변경한 다음 애플리케이션을 닫고 다시 실행합니다. 값이 기본값인 7.5로 돌아갑니다.  
   
- 현실 세계에서 금리는 주기적으로 변경되지만, 애플리케이션이 실행될 때마다 변경되는 것은 아닙니다. 응용 프로그램이 실행될 때마다 사용자가 금리를 업데이트하도록 하는 대신 응용 프로그램 인스턴스 간에 가장 최근의 금리를 유지하는 것이 좋습니다. 다음 단계에서는 Loan 클래스에 serialization을 추가하여 이를 수행합니다.  
+ 현실 세계에서 금리는 주기적으로 변경되지만, 애플리케이션이 실행될 때마다 변경되는 것은 아닙니다. 애플리케이션이 실행될 때마다 사용자가 금리를 업데이트하도록 하는 대신 애플리케이션 인스턴스 간에 가장 최근의 금리를 유지하는 것이 좋습니다. 다음 단계에서는 Loan 클래스에 serialization을 추가하여 이를 수행합니다.  
   
 ## <a name="using-serialization-to-persist-the-object"></a>Serialization을 사용하여 개체 유지  
  Loan 클래스의 값을 유지하려면 먼저 클래스를 `Serializable` 속성으로 표시해야 합니다.  
@@ -146,7 +146,7 @@ ms.locfileid: "43506985"
       Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged  
     ```  
   
- 다음 단계는 LoanApp 응용 프로그램에 serialization 코드를 추가하는 것입니다. 클래스를 serialize하여 파일에 쓰려면 <xref:System.IO> 및 <xref:System.Xml.Serialization> 네임스페이스를 사용합니다. 정규화된 이름을 입력하지 않으려면 필요한 클래스 라이브러리에 대한 참조를 추가할 수 있습니다.  
+ 다음 단계는 LoanApp 애플리케이션에 serialization 코드를 추가하는 것입니다. 클래스를 serialize하여 파일에 쓰려면 <xref:System.IO> 및 <xref:System.Xml.Serialization> 네임스페이스를 사용합니다. 정규화된 이름을 입력하지 않으려면 필요한 클래스 라이브러리에 대한 참조를 추가할 수 있습니다.  
   
 ### <a name="to-add-references-to-namespaces"></a>네임스페이스에 대한 참조를 추가하려면  
   
@@ -213,8 +213,8 @@ ms.locfileid: "43506985"
     End Sub  
     ```  
   
- 이 시점에서 다시 응용 프로그램을 빌드 및 실행할 수 있습니다. 처음에는 텍스트 상자에 기본값이 나타납니다. 값을 변경하고 네 번째 텍스트 상자에 이름을 입력합니다. 응용 프로그램을 닫았다가 다시 엽니다. 이제 새 값이 텍스트 상자에 나타납니다.  
+ 이 시점에서 다시 애플리케이션을 빌드 및 실행할 수 있습니다. 처음에는 텍스트 상자에 기본값이 나타납니다. 값을 변경하고 네 번째 텍스트 상자에 이름을 입력합니다. 애플리케이션을 닫았다가 다시 엽니다. 이제 새 값이 텍스트 상자에 나타납니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Serialization(Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)  
- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)
+## <a name="see-also"></a>참고자료
+- [Serialization(Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)
