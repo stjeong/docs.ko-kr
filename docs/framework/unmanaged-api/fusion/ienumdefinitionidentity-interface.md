@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 34186ee8825c0981ec095cf855c76ff5f800907d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: a3ff37acd9b4dffe80112f0a0ebe9c9cd86ae66f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54668450"
 ---
-# <a name="ienumdefinitionidentity-interface"></a><span data-ttu-id="77396-102">IEnumDefinitionIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="77396-102">IEnumDefinitionIdentity Interface</span></span>
-<span data-ttu-id="77396-103">컬렉션의 열거자 역할을 `IDefinitionIdentity` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="77396-103">Serves as the enumerator for a collection of `IDefinitionIdentity` objects.</span></span>  
+# <a name="ienumdefinitionidentity-interface"></a><span data-ttu-id="866df-102">IEnumDefinitionIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="866df-102">IEnumDefinitionIdentity Interface</span></span>
+<span data-ttu-id="866df-103">컬렉션의 열거자 역할을 `IDefinitionIdentity` 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="866df-103">Serves as the enumerator for a collection of `IDefinitionIdentity` objects.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="77396-104">구문</span><span class="sxs-lookup"><span data-stu-id="77396-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="866df-104">구문</span><span class="sxs-lookup"><span data-stu-id="866df-104">Syntax</span></span>  
   
 ```  
 IEnumDefinitionIdentity : IUnknown {  
@@ -51,22 +51,22 @@ IEnumDefinitionIdentity : IUnknown {
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="77396-105">메서드</span><span class="sxs-lookup"><span data-stu-id="77396-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="866df-105">메서드</span><span class="sxs-lookup"><span data-stu-id="866df-105">Methods</span></span>  
   
-|<span data-ttu-id="77396-106">메서드</span><span class="sxs-lookup"><span data-stu-id="77396-106">Method</span></span>|<span data-ttu-id="77396-107">설명</span><span class="sxs-lookup"><span data-stu-id="77396-107">Description</span></span>|  
+|<span data-ttu-id="866df-106">메서드</span><span class="sxs-lookup"><span data-stu-id="866df-106">Method</span></span>|<span data-ttu-id="866df-107">설명</span><span class="sxs-lookup"><span data-stu-id="866df-107">Description</span></span>|  
 |------------|-----------------|  
-|`IEnumDefinitionIdentity::Clone`|<span data-ttu-id="77396-108">새 인터페이스 포인터를 가져옵니다 `IEnumDefinitionIdentity` 이와 동일한 멤버를 포함 하는 개체 `IEnumDefinitionIdentity`합니다.</span><span class="sxs-lookup"><span data-stu-id="77396-108">Gets an interface pointer to a new `IEnumDefinitionIdentity` object that contains the same members as this `IEnumDefinitionIdentity`.</span></span>|  
-|`IEnumDefinitionIdentity::Next`|<span data-ttu-id="77396-109">지정된 된 수의 가져옵니다 `IDefinitionIdentity` 개체를 현재 위치부터 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="77396-109">Gets the specified number of `IDefinitionIdentity` objects, starting at the current position.</span></span>|  
-|`IEnumDefinitionIdentity::Reset`|<span data-ttu-id="77396-110">명령 포인터의 시작으로 이동 `IEnumDefinitionIdentity`합니다.</span><span class="sxs-lookup"><span data-stu-id="77396-110">Moves the instruction pointer to the beginning of this `IEnumDefinitionIdentity`.</span></span>|  
-|`IEnumDefinitionIdentity::Skip`|<span data-ttu-id="77396-111">명령 포인터 앞으로 요소를 현재 위치부터 지정한 수 만큼 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="77396-111">Moves the instruction pointer forward by the specified number of elements, starting at the current position.</span></span>|  
+|`IEnumDefinitionIdentity::Clone`|<span data-ttu-id="866df-108">새 인터페이스 포인터를 가져옵니다 `IEnumDefinitionIdentity` 이 동일한 멤버를 포함 하는 개체 `IEnumDefinitionIdentity`합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-108">Gets an interface pointer to a new `IEnumDefinitionIdentity` object that contains the same members as this `IEnumDefinitionIdentity`.</span></span>|  
+|`IEnumDefinitionIdentity::Next`|<span data-ttu-id="866df-109">지정 된 수를 가져옵니다 `IDefinitionIdentity` 개체를 현재 위치에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-109">Gets the specified number of `IDefinitionIdentity` objects, starting at the current position.</span></span>|  
+|`IEnumDefinitionIdentity::Reset`|<span data-ttu-id="866df-110">이 부분에 명령 포인터를 이동 `IEnumDefinitionIdentity`합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-110">Moves the instruction pointer to the beginning of this `IEnumDefinitionIdentity`.</span></span>|  
+|`IEnumDefinitionIdentity::Skip`|<span data-ttu-id="866df-111">요소를 현재 위치부터 지정한 수 만큼 앞으로 명령 포인터를 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-111">Moves the instruction pointer forward by the specified number of elements, starting at the current position.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="77396-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="77396-112">Requirements</span></span>  
- <span data-ttu-id="77396-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="77396-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="866df-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="866df-112">Requirements</span></span>  
+ <span data-ttu-id="866df-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="866df-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="77396-114">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="77396-114">**Header:** Isolation.h</span></span>  
+ <span data-ttu-id="866df-114">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="866df-114">**Header:** Isolation.h</span></span>  
   
- <span data-ttu-id="77396-115">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="77396-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="866df-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="866df-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="77396-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="77396-116">See Also</span></span>  
- [<span data-ttu-id="77396-117">Fusion 인터페이스</span><span class="sxs-lookup"><span data-stu-id="77396-117">Fusion Interfaces</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
- [<span data-ttu-id="77396-118">IDefinitionIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="77396-118">IDefinitionIdentity Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)
+## <a name="see-also"></a><span data-ttu-id="866df-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="866df-116">See also</span></span>
+- [<span data-ttu-id="866df-117">Fusion 인터페이스</span><span class="sxs-lookup"><span data-stu-id="866df-117">Fusion Interfaces</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [<span data-ttu-id="866df-118">IDefinitionIdentity 인터페이스</span><span class="sxs-lookup"><span data-stu-id="866df-118">IDefinitionIdentity Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)

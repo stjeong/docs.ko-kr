@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b512389078ab022208c4b163edc8501a900669ac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 315ddf89d9c0653f357490dc31986dc302024622
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54662649"
 ---
-# <a name="init-method"></a><span data-ttu-id="6435e-102">Init 메서드</span><span class="sxs-lookup"><span data-stu-id="6435e-102">Init Method</span></span>
-<span data-ttu-id="6435e-103">구현 하는 개체를 준비는 [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="6435e-103">Prepares objects implementing the [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) for use.</span></span>  
+# <a name="init-method"></a><span data-ttu-id="af2fe-102">Init 메서드</span><span class="sxs-lookup"><span data-stu-id="af2fe-102">Init Method</span></span>
+<span data-ttu-id="af2fe-103">구현 하는 개체를 준비 합니다 [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="af2fe-103">Prepares objects implementing the [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) for use.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6435e-104">구문</span><span class="sxs-lookup"><span data-stu-id="6435e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="af2fe-104">구문</span><span class="sxs-lookup"><span data-stu-id="af2fe-104">Syntax</span></span>  
   
 ```  
 HRESULT Init(  
@@ -35,20 +35,20 @@ HRESULT Init(
 ) PURE;  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="6435e-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="6435e-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="af2fe-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="af2fe-105">Parameters</span></span>  
  `pDispenser`  
- <span data-ttu-id="6435e-106">[IMetaDataDispenserEx 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md) 메타 데이터 디스펜서에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="6435e-106">[IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md) pointer to the metadata dispenser.</span></span>  
+ <span data-ttu-id="af2fe-106">[IMetaDataDispenserEx 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md) 디스펜서 메타 데이터에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="af2fe-106">[IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md) pointer to the metadata dispenser.</span></span>  
   
  `pErrorHandler`  
- <span data-ttu-id="6435e-107">[IMetaDataError 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md) 인터페이스를 처리 하는 선택적 오류에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="6435e-107">[IMetaDataError Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md) pointer to an optional error handling interface.</span></span>  
+ <span data-ttu-id="af2fe-107">[IMetaDataError 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md) 인터페이스를 처리 하는 선택적 오류에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="af2fe-107">[IMetaDataError Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md) pointer to an optional error handling interface.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="6435e-108">반환 값</span><span class="sxs-lookup"><span data-stu-id="6435e-108">Return Value</span></span>  
- <span data-ttu-id="6435e-109">메서드가 성공 하면 S_OK를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="6435e-109">Returns S_OK if the method succeeds.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="af2fe-108">반환 값</span><span class="sxs-lookup"><span data-stu-id="af2fe-108">Return Value</span></span>  
+ <span data-ttu-id="af2fe-109">메서드가 성공 하면 S_OK를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="af2fe-109">Returns S_OK if the method succeeds.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="6435e-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6435e-110">Requirements</span></span>  
- <span data-ttu-id="6435e-111">Alink.h 필요</span><span class="sxs-lookup"><span data-stu-id="6435e-111">Requires alink.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="af2fe-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="af2fe-110">Requirements</span></span>  
+ <span data-ttu-id="af2fe-111">Alink.h 필요</span><span class="sxs-lookup"><span data-stu-id="af2fe-111">Requires alink.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6435e-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6435e-112">See Also</span></span>  
- [<span data-ttu-id="6435e-113">IALink 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6435e-113">IALink Interface</span></span>](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [<span data-ttu-id="6435e-114">IALink2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6435e-114">IALink2 Interface</span></span>](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [<span data-ttu-id="6435e-115">ALink API</span><span class="sxs-lookup"><span data-stu-id="6435e-115">ALink API</span></span>](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a><span data-ttu-id="af2fe-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="af2fe-112">See also</span></span>
+- [<span data-ttu-id="af2fe-113">IALink 인터페이스</span><span class="sxs-lookup"><span data-stu-id="af2fe-113">IALink Interface</span></span>](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [<span data-ttu-id="af2fe-114">IALink2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="af2fe-114">IALink2 Interface</span></span>](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [<span data-ttu-id="af2fe-115">ALink API</span><span class="sxs-lookup"><span data-stu-id="af2fe-115">ALink API</span></span>](../../../../docs/framework/unmanaged-api/alink/index.md)

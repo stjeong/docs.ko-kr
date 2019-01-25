@@ -9,26 +9,26 @@ helpviewer_keywords:
 - encoding image formats [WPF]
 - visuals [WPF], encoding to an image file
 ms.assetid: 2036385b-ea47-4d54-8027-5797f52c8149
-ms.openlocfilehash: a9e847a46941c37efb735d5bfd13bde2dd74271c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e8988256d4b7181c5e1af12252ca26e0248d016f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33560165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645225"
 ---
-# <a name="how-to-encode-a-visual-to-an-image-file"></a><span data-ttu-id="4810a-102">방법: 시각적 요소를 이미지 파일로 인코딩</span><span class="sxs-lookup"><span data-stu-id="4810a-102">How to: Encode a Visual to an Image File</span></span>
-<span data-ttu-id="4810a-103">인코딩하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Visual> 개체를 사용 하 여 이미지 파일에는 <xref:System.Windows.Media.Imaging.RenderTargetBitmap> 및 <xref:System.Windows.Media.Imaging.PngBitmapEncoder>합니다.</span><span class="sxs-lookup"><span data-stu-id="4810a-103">This example demonstrates how to encode a <xref:System.Windows.Media.Visual> object into an image file using a <xref:System.Windows.Media.Imaging.RenderTargetBitmap> and a <xref:System.Windows.Media.Imaging.PngBitmapEncoder>.</span></span>  
+# <a name="how-to-encode-a-visual-to-an-image-file"></a><span data-ttu-id="3bdac-102">방법: 시각적 요소를 이미지 파일로 인코딩</span><span class="sxs-lookup"><span data-stu-id="3bdac-102">How to: Encode a Visual to an Image File</span></span>
+<span data-ttu-id="3bdac-103">인코딩하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Visual> 개체를 사용 하 여 이미지 파일에는 <xref:System.Windows.Media.Imaging.RenderTargetBitmap> 및 <xref:System.Windows.Media.Imaging.PngBitmapEncoder>합니다.</span><span class="sxs-lookup"><span data-stu-id="3bdac-103">This example demonstrates how to encode a <xref:System.Windows.Media.Visual> object into an image file using a <xref:System.Windows.Media.Imaging.RenderTargetBitmap> and a <xref:System.Windows.Media.Imaging.PngBitmapEncoder>.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="4810a-104">예제</span><span class="sxs-lookup"><span data-stu-id="4810a-104">Example</span></span>  
- <span data-ttu-id="4810a-105"><xref:System.Windows.Media.DrawingVisual> 사용 하 여 만들어집니다는 <xref:System.Windows.Media.Imaging.BitmapImage> 및 <xref:System.Windows.Media.FormattedText> 으로 렌더링 되는 한 <xref:System.Windows.Media.Imaging.RenderTargetBitmap>합니다.</span><span class="sxs-lookup"><span data-stu-id="4810a-105">The <xref:System.Windows.Media.DrawingVisual> is created using a <xref:System.Windows.Media.Imaging.BitmapImage> and <xref:System.Windows.Media.FormattedText> which is rendered to a <xref:System.Windows.Media.Imaging.RenderTargetBitmap>.</span></span> <span data-ttu-id="4810a-106">렌더링 된 비트맵 다음 만드는 데 사용 되는 <xref:System.Windows.Media.Imaging.BitmapFrame> 에 추가 되는 <xref:System.Windows.Media.Imaging.PngBitmapEncoder> 새로 만들 수 [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)] 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="4810a-106">The rendered bitmap is then used to create a <xref:System.Windows.Media.Imaging.BitmapFrame> which is added to the <xref:System.Windows.Media.Imaging.PngBitmapEncoder> to create a new [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)] file.</span></span>  
+## <a name="example"></a><span data-ttu-id="3bdac-104">예제</span><span class="sxs-lookup"><span data-stu-id="3bdac-104">Example</span></span>  
+ <span data-ttu-id="3bdac-105"><xref:System.Windows.Media.DrawingVisual> 사용 하 여 만들어집니다를 <xref:System.Windows.Media.Imaging.BitmapImage> 하 고 <xref:System.Windows.Media.FormattedText> 으로 렌더링 되는 <xref:System.Windows.Media.Imaging.RenderTargetBitmap>합니다.</span><span class="sxs-lookup"><span data-stu-id="3bdac-105">The <xref:System.Windows.Media.DrawingVisual> is created using a <xref:System.Windows.Media.Imaging.BitmapImage> and <xref:System.Windows.Media.FormattedText> which is rendered to a <xref:System.Windows.Media.Imaging.RenderTargetBitmap>.</span></span> <span data-ttu-id="3bdac-106">렌더링 된 비트맵은 만드는 데 다음을 <xref:System.Windows.Media.Imaging.BitmapFrame> 에 추가 되는 <xref:System.Windows.Media.Imaging.PngBitmapEncoder> 새 [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)] 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="3bdac-106">The rendered bitmap is then used to create a <xref:System.Windows.Media.Imaging.BitmapFrame> which is added to the <xref:System.Windows.Media.Imaging.PngBitmapEncoder> to create a new [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)] file.</span></span>  
   
  [!code-csharp[ImagingSnippetGallery_procedural_snip#RTBEncodeInline1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/RenderTargetBitmapExample_Encode.cs#rtbencodeinline1)]
  [!code-vb[ImagingSnippetGallery_procedural_snip#RTBEncodeInline1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/RenderTargetBitmapExample_Encode.vb#rtbencodeinline1)]  
   
- <span data-ttu-id="4810a-107">A <xref:System.Windows.Media.Imaging.PngBitmapEncoder> 이 예제에서는 임의의 파생 된 사용한 <xref:System.Windows.Media.Imaging.BitmapEncoder> 개체 이미지 파일을 만드는 사용 되었을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4810a-107">A <xref:System.Windows.Media.Imaging.PngBitmapEncoder> was used in this example but any of the derived <xref:System.Windows.Media.Imaging.BitmapEncoder> objects could have been used to create the image file.</span></span>  
+ <span data-ttu-id="3bdac-107">A <xref:System.Windows.Media.Imaging.PngBitmapEncoder> 하지만 파생 된 모든이 예제에서 사용한 <xref:System.Windows.Media.Imaging.BitmapEncoder> 개체는 이미지 파일을 만드는 데 사용 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3bdac-107">A <xref:System.Windows.Media.Imaging.PngBitmapEncoder> was used in this example but any of the derived <xref:System.Windows.Media.Imaging.BitmapEncoder> objects could have been used to create the image file.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4810a-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4810a-108">See Also</span></span>  
- <xref:System.Windows.Media.DrawingContext>  
- [<span data-ttu-id="4810a-109">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="4810a-109">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [<span data-ttu-id="4810a-110">Drawing 개체 개요</span><span class="sxs-lookup"><span data-stu-id="4810a-110">Drawing Objects Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [<span data-ttu-id="4810a-111">DrawingVisual 개체 사용</span><span class="sxs-lookup"><span data-stu-id="4810a-111">Using DrawingVisual Objects</span></span>](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)
+## <a name="see-also"></a><span data-ttu-id="3bdac-108">참고자료</span><span class="sxs-lookup"><span data-stu-id="3bdac-108">See also</span></span>
+- <xref:System.Windows.Media.DrawingContext>
+- [<span data-ttu-id="3bdac-109">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="3bdac-109">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [<span data-ttu-id="3bdac-110">Drawing 개체 개요</span><span class="sxs-lookup"><span data-stu-id="3bdac-110">Drawing Objects Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [<span data-ttu-id="3bdac-111">DrawingVisual 개체 사용</span><span class="sxs-lookup"><span data-stu-id="3bdac-111">Using DrawingVisual Objects</span></span>](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)

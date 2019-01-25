@@ -17,33 +17,33 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6f4b767fe7134833ee2e404be30bb51bf1385ec9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: aa2872fec7765f38fba9589a6fab659e73131937
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33437039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620463"
 ---
-# <a name="igcthreadcontrolthreadisblockingforsuspension-method"></a><span data-ttu-id="2a1ee-102">IGCThreadControl::ThreadIsBlockingForSuspension 메서드</span><span class="sxs-lookup"><span data-stu-id="2a1ee-102">IGCThreadControl::ThreadIsBlockingForSuspension Method</span></span>
-<span data-ttu-id="2a1ee-103">호출 하는 스레드를 위해 차단 가비지 컬렉션이 나 다른 일시 중단 작업을 호스트에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="2a1ee-103">Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.</span></span>  
+# <a name="igcthreadcontrolthreadisblockingforsuspension-method"></a><span data-ttu-id="90799-102">IGCThreadControl::ThreadIsBlockingForSuspension 메서드</span><span class="sxs-lookup"><span data-stu-id="90799-102">IGCThreadControl::ThreadIsBlockingForSuspension Method</span></span>
+<span data-ttu-id="90799-103">아마도 다른 일시 중단 또는 가비지 컬렉션에 대 한 차단 하 려는 호출 하는 스레드는 호스트에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="90799-103">Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2a1ee-104">구문</span><span class="sxs-lookup"><span data-stu-id="2a1ee-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="90799-104">구문</span><span class="sxs-lookup"><span data-stu-id="90799-104">Syntax</span></span>  
   
 ```  
 HRESULT ThreadIsBlockingForSuspension ( );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="2a1ee-105">설명</span><span class="sxs-lookup"><span data-stu-id="2a1ee-105">Remarks</span></span>  
- <span data-ttu-id="2a1ee-106">호스트 내에서 선택할 수 있습니다는 `ThreadIsBlockingForSuspension` 콜백 스레드 일정을 변경 하려면 여부입니다.</span><span class="sxs-lookup"><span data-stu-id="2a1ee-106">The host may choose within the `ThreadIsBlockingForSuspension` callback whether to reschedule a thread.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="90799-105">설명</span><span class="sxs-lookup"><span data-stu-id="90799-105">Remarks</span></span>  
+ <span data-ttu-id="90799-106">호스트 내에서 선택할 수는 `ThreadIsBlockingForSuspension` 콜백 스레드를 예약 하기 위한 여부.</span><span class="sxs-lookup"><span data-stu-id="90799-106">The host may choose within the `ThreadIsBlockingForSuspension` callback whether to reschedule a thread.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="2a1ee-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="2a1ee-107">Requirements</span></span>  
- <span data-ttu-id="2a1ee-108">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="2a1ee-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="90799-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="90799-107">Requirements</span></span>  
+ <span data-ttu-id="90799-108">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="90799-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="2a1ee-109">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="2a1ee-109">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="90799-109">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="90799-109">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="2a1ee-110">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="2a1ee-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="90799-110">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="90799-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="2a1ee-111">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2a1ee-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="90799-111">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="90799-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2a1ee-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="2a1ee-112">See Also</span></span>  
- [<span data-ttu-id="2a1ee-113">IGCThreadControl 인터페이스</span><span class="sxs-lookup"><span data-stu-id="2a1ee-113">IGCThreadControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+## <a name="see-also"></a><span data-ttu-id="90799-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="90799-112">See also</span></span>
+- [<span data-ttu-id="90799-113">IGCThreadControl 인터페이스</span><span class="sxs-lookup"><span data-stu-id="90799-113">IGCThreadControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
