@@ -17,40 +17,40 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6c394690f6c8d7f3618b385b0a1432fc396fb819
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8cfb474eaa0a770c2bb101787d34072e4ed98714
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33458022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54501739"
 ---
-# <a name="icorprofilerinfo4enumthreads-method"></a><span data-ttu-id="d4fe6-102">ICorProfilerInfo4::EnumThreads 메서드</span><span class="sxs-lookup"><span data-stu-id="d4fe6-102">ICorProfilerInfo4::EnumThreads Method</span></span>
-<span data-ttu-id="d4fe6-103">프로 파일링된 프로세스의 모든 관리 되는 스레드의 컬렉션을 순차적으로 반복 하는 메서드를 제공 하는 열거자를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4fe6-103">Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.</span></span>  
+# <a name="icorprofilerinfo4enumthreads-method"></a><span data-ttu-id="54531-102">ICorProfilerInfo4::EnumThreads 메서드</span><span class="sxs-lookup"><span data-stu-id="54531-102">ICorProfilerInfo4::EnumThreads Method</span></span>
+<span data-ttu-id="54531-103">프로 파일링된 된 프로세스의 모든 관리 되는 스레드 컬렉션을 순차적으로 반복 하는 메서드를 제공 하는 열거자를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="54531-103">Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="d4fe6-104">구문</span><span class="sxs-lookup"><span data-stu-id="d4fe6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="54531-104">구문</span><span class="sxs-lookup"><span data-stu-id="54531-104">Syntax</span></span>  
   
 ```  
 HRESULT EnumThreads([out]  
             ICorProfilerThreadEnum** ppEnum);  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="d4fe6-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="d4fe6-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="54531-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="54531-105">Parameters</span></span>  
  `ppEnum`  
- <span data-ttu-id="d4fe6-106">[out] 에 대 한 포인터는 [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="d4fe6-106">[out] A pointer to an [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) interface.</span></span>  
+ <span data-ttu-id="54531-106">[out] 에 대 한 포인터를 [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="54531-106">[out] A pointer to an [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) interface.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="d4fe6-107">설명</span><span class="sxs-lookup"><span data-stu-id="d4fe6-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="54531-107">설명</span><span class="sxs-lookup"><span data-stu-id="54531-107">Remarks</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="d4fe6-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="d4fe6-108">Requirements</span></span>  
- <span data-ttu-id="d4fe6-109">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="d4fe6-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="54531-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="54531-108">Requirements</span></span>  
+ <span data-ttu-id="54531-109">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="54531-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="d4fe6-110">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="d4fe6-110">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="54531-110">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="54531-110">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="d4fe6-111">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="d4fe6-111">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="54531-111">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="54531-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="d4fe6-112">**.NET framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d4fe6-112">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
+ <span data-ttu-id="54531-112">**.NET Framework 버전:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="54531-112">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d4fe6-113">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d4fe6-113">See Also</span></span>  
- [<span data-ttu-id="d4fe6-114">ICorProfilerThreadEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4fe6-114">ICorProfilerThreadEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)  
- [<span data-ttu-id="d4fe6-115">ICorProfilerInfo4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4fe6-115">ICorProfilerInfo4 Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)  
- [<span data-ttu-id="d4fe6-116">프로파일링 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d4fe6-116">Profiling Interfaces</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [<span data-ttu-id="d4fe6-117">프로파일링</span><span class="sxs-lookup"><span data-stu-id="d4fe6-117">Profiling</span></span>](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## <a name="see-also"></a><span data-ttu-id="54531-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="54531-113">See also</span></span>
+- [<span data-ttu-id="54531-114">ICorProfilerThreadEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="54531-114">ICorProfilerThreadEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
+- [<span data-ttu-id="54531-115">ICorProfilerInfo4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="54531-115">ICorProfilerInfo4 Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
+- [<span data-ttu-id="54531-116">프로파일링 인터페이스</span><span class="sxs-lookup"><span data-stu-id="54531-116">Profiling Interfaces</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [<span data-ttu-id="54531-117">프로파일링</span><span class="sxs-lookup"><span data-stu-id="54531-117">Profiling</span></span>](../../../../docs/framework/unmanaged-api/profiling/index.md)

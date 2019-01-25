@@ -16,37 +16,37 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ed6ba8a738b4086b9150e0a1c7b300a519fa3092
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 102fcff6120822c5de0ede45d43a9cd064270085
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33419109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715480"
 ---
-# <a name="icordebughandlevalue-interface1"></a><span data-ttu-id="202e0-102">ICorDebugHandleValue Interface1</span><span class="sxs-lookup"><span data-stu-id="202e0-102">ICorDebugHandleValue Interface1</span></span>
-<span data-ttu-id="202e0-103">디버거에서 가비지 수집에 대 한 핸들을 만든 참조 값을 나타내는 ICorDebugReferenceValue의 하위 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-103">A subclass of ICorDebugReferenceValue that represents a reference value to which the debugger has created a handle for garbage collection.</span></span>  
+# <a name="icordebughandlevalue-interface1"></a><span data-ttu-id="458f2-102">ICorDebugHandleValue Interface1</span><span class="sxs-lookup"><span data-stu-id="458f2-102">ICorDebugHandleValue Interface1</span></span>
+<span data-ttu-id="458f2-103">디버거는 가비지 수집에 대 한 핸들을 만든 참조 값을 나타내는 ICorDebugReferenceValue의 하위 클래스.</span><span class="sxs-lookup"><span data-stu-id="458f2-103">A subclass of ICorDebugReferenceValue that represents a reference value to which the debugger has created a handle for garbage collection.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="202e0-104">메서드</span><span class="sxs-lookup"><span data-stu-id="202e0-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="458f2-104">메서드</span><span class="sxs-lookup"><span data-stu-id="458f2-104">Methods</span></span>  
   
-|<span data-ttu-id="202e0-105">메서드</span><span class="sxs-lookup"><span data-stu-id="202e0-105">Method</span></span>|<span data-ttu-id="202e0-106">설명</span><span class="sxs-lookup"><span data-stu-id="202e0-106">Description</span></span>|  
+|<span data-ttu-id="458f2-105">메서드</span><span class="sxs-lookup"><span data-stu-id="458f2-105">Method</span></span>|<span data-ttu-id="458f2-106">설명</span><span class="sxs-lookup"><span data-stu-id="458f2-106">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="202e0-107">Dispose 메서드</span><span class="sxs-lookup"><span data-stu-id="202e0-107">Dispose Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-dispose-method.md)|<span data-ttu-id="202e0-108">이 참조 하는 핸들을 해제 `ICorDebugHandleValue` 명시적으로 인터페이스 포인터를 해제 하지 않고 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-108">Releases the handle referenced by this `ICorDebugHandleValue` object without explicitly releasing the interface pointer.</span></span>|  
-|[<span data-ttu-id="202e0-109">GetHandleType 메서드</span><span class="sxs-lookup"><span data-stu-id="202e0-109">GetHandleType Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-gethandletype-method.md)|<span data-ttu-id="202e0-110">이 참조 하는 핸들의 종류를 설명 하는 CorDebugHandleType 값을 가져옵니다 `ICorDebugHandleValue`합니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-110">Gets a CorDebugHandleType value that describes the kind of handle referenced by this `ICorDebugHandleValue`.</span></span>|  
+|[<span data-ttu-id="458f2-107">Dispose 메서드</span><span class="sxs-lookup"><span data-stu-id="458f2-107">Dispose Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-dispose-method.md)|<span data-ttu-id="458f2-108">이 참조 하는 핸들을 해제 `ICorDebugHandleValue` 명시적으로 인터페이스 포인터를 해제 하지 않고 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="458f2-108">Releases the handle referenced by this `ICorDebugHandleValue` object without explicitly releasing the interface pointer.</span></span>|  
+|[<span data-ttu-id="458f2-109">GetHandleType 메서드</span><span class="sxs-lookup"><span data-stu-id="458f2-109">GetHandleType Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-gethandletype-method.md)|<span data-ttu-id="458f2-110">이 참조 하는 핸들의 종류를 설명 하는 CorDebugHandleType 값을 가져옵니다 `ICorDebugHandleValue`합니다.</span><span class="sxs-lookup"><span data-stu-id="458f2-110">Gets a CorDebugHandleType value that describes the kind of handle referenced by this `ICorDebugHandleValue`.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="202e0-111">설명</span><span class="sxs-lookup"><span data-stu-id="202e0-111">Remarks</span></span>  
- <span data-ttu-id="202e0-112">`ICorDebugReferenceValue` 개체 디버깅된 되는 코드의 실행이 중단 되 면 무효화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-112">An `ICorDebugReferenceValue` object is invalidated by a break in the execution of debugged code.</span></span> <span data-ttu-id="202e0-113">`ICorDebugHandleValue` 명시적으로 해제 될 때까지 중단과 continuation, 참조를 유지 합니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-113">An `ICorDebugHandleValue` maintains its reference through breaks and continuations, until it is explicitly released.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="458f2-111">설명</span><span class="sxs-lookup"><span data-stu-id="458f2-111">Remarks</span></span>  
+ <span data-ttu-id="458f2-112">`ICorDebugReferenceValue` 개체 디버깅된 코드의 실행이 중단 되 면 무효화 됩니다.</span><span class="sxs-lookup"><span data-stu-id="458f2-112">An `ICorDebugReferenceValue` object is invalidated by a break in the execution of debugged code.</span></span> <span data-ttu-id="458f2-113">`ICorDebugHandleValue` 명시적으로 해제 될 때까지 나누기 및 continuation, 참조를 유지 합니다.</span><span class="sxs-lookup"><span data-stu-id="458f2-113">An `ICorDebugHandleValue` maintains its reference through breaks and continuations, until it is explicitly released.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="202e0-114">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-114">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+>  <span data-ttu-id="458f2-114">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="458f2-114">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="202e0-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="202e0-115">Requirements</span></span>  
- <span data-ttu-id="202e0-116">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="202e0-116">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="458f2-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="458f2-115">Requirements</span></span>  
+ <span data-ttu-id="458f2-116">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="458f2-116">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="202e0-117">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="202e0-117">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="458f2-117">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="458f2-117">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="202e0-118">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="202e0-118">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="458f2-118">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="458f2-118">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="202e0-119">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="202e0-119">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="458f2-119">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="458f2-119">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="202e0-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="202e0-120">See Also</span></span>  
- [<span data-ttu-id="202e0-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="202e0-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a><span data-ttu-id="458f2-120">참고자료</span><span class="sxs-lookup"><span data-stu-id="458f2-120">See also</span></span>
+- [<span data-ttu-id="458f2-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="458f2-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
