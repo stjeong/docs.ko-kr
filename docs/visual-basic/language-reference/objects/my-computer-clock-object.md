@@ -4,25 +4,25 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer.Clock object
 ms.assetid: a362b270-8a1b-404a-95c8-516a60c607dd
-ms.openlocfilehash: 431610030480ce4eb54882e519a5a7f7bbffe90a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 654a4d8afc8ede633203cc44377cdcb759522c25
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672216"
 ---
-# <a name="mycomputerclock-object"></a><span data-ttu-id="5d4da-102">My.Computer.Clock 개체</span><span class="sxs-lookup"><span data-stu-id="5d4da-102">My.Computer.Clock Object</span></span>
-<span data-ttu-id="5d4da-103">시스템 시계에서 현재 현지 시간 및 협정 세계시(그리니치 표준시와 같음)에 액세스하기 위한 속성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4da-103">Provides properties for accessing the current local time and Universal Coordinated Time (equivalent to Greenwich Mean Time) from the system clock.</span></span>  
+# <a name="mycomputerclock-object"></a><span data-ttu-id="b7a3a-102">My.Computer.Clock 개체</span><span class="sxs-lookup"><span data-stu-id="b7a3a-102">My.Computer.Clock Object</span></span>
+<span data-ttu-id="b7a3a-103">시스템 시계에서 현재 현지 시간 및 협정 세계시(그리니치 표준시와 같음)에 액세스하기 위한 속성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="b7a3a-103">Provides properties for accessing the current local time and Universal Coordinated Time (equivalent to Greenwich Mean Time) from the system clock.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="5d4da-104">설명</span><span class="sxs-lookup"><span data-stu-id="5d4da-104">Remarks</span></span>  
- <span data-ttu-id="5d4da-105">메서드 및 속성에 대 한 자세한 합니다 `My.Computer.Clock` 개체를 참조 하십시오 <xref:Microsoft.VisualBasic.Devices.Clock>합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4da-105">For information about the methods and properties of the `My.Computer.Clock` object, see <xref:Microsoft.VisualBasic.Devices.Clock>.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="b7a3a-104">설명</span><span class="sxs-lookup"><span data-stu-id="b7a3a-104">Remarks</span></span>  
+ <span data-ttu-id="b7a3a-105">`My.Computer.Clock` 개체의 메서드 및 속성에 대한 자세한 내용은 <xref:Microsoft.VisualBasic.Devices.Clock>를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="b7a3a-105">For information about the methods and properties of the `My.Computer.Clock` object, see <xref:Microsoft.VisualBasic.Devices.Clock>.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="5d4da-106">요구 사항</span><span class="sxs-lookup"><span data-stu-id="5d4da-106">Requirements</span></span>  
- <span data-ttu-id="5d4da-107">**Namespace:** <xref:Microsoft.VisualBasic.Devices></span><span class="sxs-lookup"><span data-stu-id="5d4da-107">**Namespace:** <xref:Microsoft.VisualBasic.Devices></span></span>  
+## <a name="requirements"></a><span data-ttu-id="b7a3a-106">요구 사항</span><span class="sxs-lookup"><span data-stu-id="b7a3a-106">Requirements</span></span>  
+ <span data-ttu-id="b7a3a-107">**네임스페이스:** <xref:Microsoft.VisualBasic.Devices></span><span class="sxs-lookup"><span data-stu-id="b7a3a-107">**Namespace:** <xref:Microsoft.VisualBasic.Devices></span></span>  
   
- <span data-ttu-id="5d4da-108">**클래스:** <xref:Microsoft.VisualBasic.Devices.Clock></span><span class="sxs-lookup"><span data-stu-id="5d4da-108">**Class:** <xref:Microsoft.VisualBasic.Devices.Clock></span></span>  
+ <span data-ttu-id="b7a3a-108">**클래스:** <xref:Microsoft.VisualBasic.Devices.Clock></span><span class="sxs-lookup"><span data-stu-id="b7a3a-108">**Class:** <xref:Microsoft.VisualBasic.Devices.Clock></span></span>  
   
- <span data-ttu-id="5d4da-109">**어셈블리:** Visual Basic 런타임 라이브러리 (Microsoft.VisualBasic.dll)</span><span class="sxs-lookup"><span data-stu-id="5d4da-109">**Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)</span></span>  
+ <span data-ttu-id="b7a3a-109">**어셈블리:** Visual Basic 런타임 라이브러리(Microsoft.VisualBasic.dll)</span><span class="sxs-lookup"><span data-stu-id="b7a3a-109">**Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5d4da-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5d4da-110">See Also</span></span>  
- [<span data-ttu-id="5d4da-111">My.Computer 개체</span><span class="sxs-lookup"><span data-stu-id="5d4da-111">My.Computer Object</span></span>](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## <a name="see-also"></a><span data-ttu-id="b7a3a-110">참고자료</span><span class="sxs-lookup"><span data-stu-id="b7a3a-110">See also</span></span>
+- [<span data-ttu-id="b7a3a-111">My.Computer 개체</span><span class="sxs-lookup"><span data-stu-id="b7a3a-111">My.Computer Object</span></span>](../../../visual-basic/language-reference/objects/my-computer-object.md)

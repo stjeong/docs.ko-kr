@@ -7,26 +7,26 @@ helpviewer_keywords:
 - controls [WPF], Image
 - Image control [WPF]
 ms.assetid: 5707e860-ee4a-4c9f-b123-80c64996af19
-ms.openlocfilehash: 0e5fc4e97457858cfbf517726a6f2904a282727d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f8a7e9adb8ca7d9e21bbc30a346b12d8b584067a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33554007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54695801"
 ---
-# <a name="image"></a><span data-ttu-id="b5397-102">이미지</span><span class="sxs-lookup"><span data-stu-id="b5397-102">Image</span></span>
-<span data-ttu-id="b5397-103"><xref:System.Windows.Controls.Image> 에서 비트맵 이미지를 표시 하려면 요소를 사용 하는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램입니다.</span><span class="sxs-lookup"><span data-stu-id="b5397-103">The <xref:System.Windows.Controls.Image> element is used to display bitmap images in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.</span></span>  
+# <a name="image"></a><span data-ttu-id="0a1cc-102">이미지</span><span class="sxs-lookup"><span data-stu-id="0a1cc-102">Image</span></span>
+<span data-ttu-id="0a1cc-103">합니다 <xref:System.Windows.Controls.Image> 요소 안에 비트맵 이미지를 표시 하는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램입니다.</span><span class="sxs-lookup"><span data-stu-id="0a1cc-103">The <xref:System.Windows.Controls.Image> element is used to display bitmap images in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b5397-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="b5397-104">In This Section</span></span>  
- [<span data-ttu-id="b5397-105">방법 항목</span><span class="sxs-lookup"><span data-stu-id="b5397-105">How-to Topics</span></span>](../../../../docs/framework/wpf/controls/image-how-to-topics.md)  
+## <a name="in-this-section"></a><span data-ttu-id="0a1cc-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="0a1cc-104">In This Section</span></span>  
+ [<span data-ttu-id="0a1cc-105">방법 항목</span><span class="sxs-lookup"><span data-stu-id="0a1cc-105">How-to Topics</span></span>](../../../../docs/framework/wpf/controls/image-how-to-topics.md)  
   
-## <a name="reference"></a><span data-ttu-id="b5397-106">참조</span><span class="sxs-lookup"><span data-stu-id="b5397-106">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="0a1cc-106">참조</span><span class="sxs-lookup"><span data-stu-id="0a1cc-106">Reference</span></span>  
  <xref:System.Windows.Controls.Image>  
   
  <xref:System.Windows.Media.Imaging.BitmapImage>  
   
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
-## <a name="see-also"></a><span data-ttu-id="b5397-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b5397-107">See Also</span></span>  
- [<span data-ttu-id="b5397-108">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="b5397-108">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [<span data-ttu-id="b5397-109">방법 항목</span><span class="sxs-lookup"><span data-stu-id="b5397-109">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)
+## <a name="see-also"></a><span data-ttu-id="0a1cc-107">참고자료</span><span class="sxs-lookup"><span data-stu-id="0a1cc-107">See also</span></span>
+- [<span data-ttu-id="0a1cc-108">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="0a1cc-108">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [<span data-ttu-id="0a1cc-109">방법 항목</span><span class="sxs-lookup"><span data-stu-id="0a1cc-109">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)
