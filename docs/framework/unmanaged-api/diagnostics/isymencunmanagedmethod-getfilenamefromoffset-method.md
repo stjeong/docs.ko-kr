@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: db3e9cfa73672920ff70d9128541a8f513fca00f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e0582714c157de69293eb1e8dfa40e0cd2f44cba
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54621200"
 ---
-# <a name="isymencunmanagedmethodgetfilenamefromoffset-method"></a><span data-ttu-id="7bd35-102">ISymENCUnmanagedMethod::GetFileNameFromOffset 메서드</span><span class="sxs-lookup"><span data-stu-id="7bd35-102">ISymENCUnmanagedMethod::GetFileNameFromOffset Method</span></span>
-<span data-ttu-id="7bd35-103">오프셋와 관련 된 선에 대 한 파일 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-103">Gets the file name for the line associated with an offset.</span></span>  
+# <a name="isymencunmanagedmethodgetfilenamefromoffset-method"></a><span data-ttu-id="31db2-102">ISymENCUnmanagedMethod::GetFileNameFromOffset 메서드</span><span class="sxs-lookup"><span data-stu-id="31db2-102">ISymENCUnmanagedMethod::GetFileNameFromOffset Method</span></span>
+<span data-ttu-id="31db2-103">줄 오프셋을 사용 하 여 연결에 대 한 파일 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-103">Gets the file name for the line associated with an offset.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7bd35-104">구문</span><span class="sxs-lookup"><span data-stu-id="7bd35-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="31db2-104">구문</span><span class="sxs-lookup"><span data-stu-id="31db2-104">Syntax</span></span>  
   
 ```  
 HRESULT GetFileNameFromOffset(  
@@ -38,24 +38,24 @@ HRESULT GetFileNameFromOffset(
        length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="7bd35-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="7bd35-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="31db2-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="31db2-105">Parameters</span></span>  
  `dwOffset`  
- <span data-ttu-id="7bd35-106">[in] A `ULONG32` 오프셋을 포함 하는 합니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-106">[in] A `ULONG32` that contains the offset.</span></span>  
+ <span data-ttu-id="31db2-106">[in] `ULONG32` 오프셋을 포함 하는 합니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-106">[in] A `ULONG32` that contains the offset.</span></span>  
   
  `cchName`  
- <span data-ttu-id="7bd35-107">[in] A `ULONG32` 크기를 표시 하는 `szName` 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-107">[in] A `ULONG32` that indicates the size of the `szName` buffer.</span></span>  
+ <span data-ttu-id="31db2-107">[in] A `ULONG32` 의 크기를 나타내는 `szName` 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-107">[in] A `ULONG32` that indicates the size of the `szName` buffer.</span></span>  
   
  `pcchName`  
- <span data-ttu-id="7bd35-108">[out] 에 대 한 포인터는 `ULONG32` 문자의 파일 이름을 포함 하는 데 필요한 버퍼 크기를 받는 합니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-108">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the file names.</span></span>  
+ <span data-ttu-id="31db2-108">[out] 에 대 한 포인터를 `ULONG32` 문자의 파일 이름을 포함 하는 데 필요한 버퍼의 크기를 받는 합니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-108">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the file names.</span></span>  
   
  `szName`  
- <span data-ttu-id="7bd35-109">[out] 파일 이름을 포함 하는 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-109">[out] The buffer that contains the file names.</span></span>  
+ <span data-ttu-id="31db2-109">[out] 파일 이름을 포함 하는 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-109">[out] The buffer that contains the file names.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="7bd35-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="7bd35-110">Return Value</span></span>  
- <span data-ttu-id="7bd35-111">메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="7bd35-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="31db2-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="31db2-110">Return Value</span></span>  
+ <span data-ttu-id="31db2-111">메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="31db2-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="7bd35-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7bd35-112">Requirements</span></span>  
- <span data-ttu-id="7bd35-113">**Header:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="7bd35-113">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="31db2-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="31db2-112">Requirements</span></span>  
+ <span data-ttu-id="31db2-113">**헤더:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="31db2-113">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7bd35-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7bd35-114">See Also</span></span>  
- [<span data-ttu-id="7bd35-115">ISymENCUnmanagedMethod 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7bd35-115">ISymENCUnmanagedMethod Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## <a name="see-also"></a><span data-ttu-id="31db2-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="31db2-114">See also</span></span>
+- [<span data-ttu-id="31db2-115">ISymENCUnmanagedMethod 인터페이스</span><span class="sxs-lookup"><span data-stu-id="31db2-115">ISymENCUnmanagedMethod Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

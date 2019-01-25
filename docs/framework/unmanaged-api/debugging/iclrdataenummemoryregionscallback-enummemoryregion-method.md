@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d0ed92cbf5a859b9d5b7b8eddefda3ad34a98f27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 0f87107be14554d8d826c58108446ecd245549b6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33404052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603693"
 ---
-# <a name="iclrdataenummemoryregionscallbackenummemoryregion-method"></a><span data-ttu-id="3f4ed-102">ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion 메서드</span><span class="sxs-lookup"><span data-stu-id="3f4ed-102">ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion Method</span></span>
-<span data-ttu-id="3f4ed-103">에 의해 호출 [iclrdataenummemoryregions:: Enummemoryregions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) 메모리의 지정된 된 영역을 열거 하는 시도의 결과 디버거에 보고 하 합니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-103">Called by [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) to report to the debugger the result of an attempt to enumerate a specified region of memory.</span></span>  
+# <a name="iclrdataenummemoryregionscallbackenummemoryregion-method"></a><span data-ttu-id="7c4a6-102">ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion 메서드</span><span class="sxs-lookup"><span data-stu-id="7c4a6-102">ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion Method</span></span>
+<span data-ttu-id="7c4a6-103">호출한 [iclrdataenummemoryregions:: Enummemoryregions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) 메모리의 지정된 된 영역을 열거 하려고 하면 디버거를 보고 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-103">Called by [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) to report to the debugger the result of an attempt to enumerate a specified region of memory.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3f4ed-104">구문</span><span class="sxs-lookup"><span data-stu-id="3f4ed-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7c4a6-104">구문</span><span class="sxs-lookup"><span data-stu-id="7c4a6-104">Syntax</span></span>  
   
 ```  
 HRESULT EnumMemoryRegion (  
@@ -36,26 +36,26 @@ HRESULT EnumMemoryRegion (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="3f4ed-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3f4ed-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="7c4a6-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="7c4a6-105">Parameters</span></span>  
  `address`  
- <span data-ttu-id="3f4ed-106">[in] 시작 주소를 열거할 수 있는 메모리 영역입니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-106">[in] The starting address of the memory region that was to be enumerated.</span></span>  
+ <span data-ttu-id="7c4a6-106">[in] 시작 주소를 열거할 수 있는 메모리 영역입니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-106">[in] The starting address of the memory region that was to be enumerated.</span></span>  
   
  `size`  
- <span data-ttu-id="3f4ed-107">[in] 바이트 메모리 영역의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-107">[in] The size, in bytes, of the memory region.</span></span>  
+ <span data-ttu-id="7c4a6-107">[in] 메모리 영역의 바이트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-107">[in] The size, in bytes, of the memory region.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="3f4ed-108">설명</span><span class="sxs-lookup"><span data-stu-id="3f4ed-108">Remarks</span></span>  
- <span data-ttu-id="3f4ed-109">`ICLRDataEnumMemoryRegions::EnumMemoryRegions` 메모리 영역을 열거 하는 각 시도 후이 콜백 메서드를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-109">The `ICLRDataEnumMemoryRegions::EnumMemoryRegions` method will call this callback method after each attempt to enumerate a memory region.</span></span> <span data-ttu-id="3f4ed-110">열거형에는이 메서드는 오류를 나타내는 HRESULT를 반환 하는 경우에 계속 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-110">The enumeration will continue even if this method returns an HRESULT indicating failure.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="7c4a6-108">설명</span><span class="sxs-lookup"><span data-stu-id="7c4a6-108">Remarks</span></span>  
+ <span data-ttu-id="7c4a6-109">`ICLRDataEnumMemoryRegions::EnumMemoryRegions` 메서드 열거는 메모리 영역을 만들려고 할 때마다이 콜백 메서드를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-109">The `ICLRDataEnumMemoryRegions::EnumMemoryRegions` method will call this callback method after each attempt to enumerate a memory region.</span></span> <span data-ttu-id="7c4a6-110">열거형에는이 메서드는 실패를 나타내는 HRESULT를 반환 하는 경우에 계속 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-110">The enumeration will continue even if this method returns an HRESULT indicating failure.</span></span>  
   
- <span data-ttu-id="3f4ed-111">이 콜백은에서 보고 하는 지역 중복 되거나 겹쳐질 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-111">Regions reported by this callback may be duplicates or overlapping regions.</span></span>  
+ <span data-ttu-id="7c4a6-111">이 콜백에 의해 보고 되는 지역 중복 되거나 겹치는 영역 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-111">Regions reported by this callback may be duplicates or overlapping regions.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3f4ed-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3f4ed-112">Requirements</span></span>  
- <span data-ttu-id="3f4ed-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="3f4ed-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7c4a6-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7c4a6-112">Requirements</span></span>  
+ <span data-ttu-id="7c4a6-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="7c4a6-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3f4ed-114">**헤더:** ClrData.idl, ClrData.h</span><span class="sxs-lookup"><span data-stu-id="3f4ed-114">**Header:** ClrData.idl, ClrData.h</span></span>  
+ <span data-ttu-id="7c4a6-114">**헤더:** ClrData.idl, ClrData.h</span><span class="sxs-lookup"><span data-stu-id="7c4a6-114">**Header:** ClrData.idl, ClrData.h</span></span>  
   
- <span data-ttu-id="3f4ed-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3f4ed-115">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="7c4a6-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="7c4a6-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="3f4ed-116">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3f4ed-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="7c4a6-116">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7c4a6-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3f4ed-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3f4ed-117">See Also</span></span>  
- [<span data-ttu-id="3f4ed-118">ICLRDataEnumMemoryRegionsCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="3f4ed-118">ICLRDataEnumMemoryRegionsCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregionscallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="7c4a6-117">참고자료</span><span class="sxs-lookup"><span data-stu-id="7c4a6-117">See also</span></span>
+- [<span data-ttu-id="7c4a6-118">ICLRDataEnumMemoryRegionsCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7c4a6-118">ICLRDataEnumMemoryRegionsCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregionscallback-interface.md)

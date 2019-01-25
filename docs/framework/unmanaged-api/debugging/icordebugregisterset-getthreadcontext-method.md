@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 632d3912bae28da22e701078bb47d2d8dbfd3644
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 668b3849af9be24e019dc472a0b80067f0e1e0c1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33423405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612738"
 ---
-# <a name="icordebugregistersetgetthreadcontext-method"></a><span data-ttu-id="e1c90-102">ICorDebugRegisterSet::GetThreadContext 메서드</span><span class="sxs-lookup"><span data-stu-id="e1c90-102">ICorDebugRegisterSet::GetThreadContext Method</span></span>
-<span data-ttu-id="e1c90-103">현재 스레드의 컨텍스트를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-103">Gets the context of the current thread.</span></span>  
+# <a name="icordebugregistersetgetthreadcontext-method"></a><span data-ttu-id="e565f-102">ICorDebugRegisterSet::GetThreadContext 메서드</span><span class="sxs-lookup"><span data-stu-id="e565f-102">ICorDebugRegisterSet::GetThreadContext Method</span></span>
+<span data-ttu-id="e565f-103">현재 스레드의 컨텍스트를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-103">Gets the context of the current thread.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e1c90-104">구문</span><span class="sxs-lookup"><span data-stu-id="e1c90-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e565f-104">구문</span><span class="sxs-lookup"><span data-stu-id="e565f-104">Syntax</span></span>  
   
 ```  
 HRESULT GetThreadContext(  
@@ -37,27 +37,27 @@ HRESULT GetThreadContext(
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="e1c90-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e1c90-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="e565f-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e565f-105">Parameters</span></span>  
  `contextSize`  
- <span data-ttu-id="e1c90-106">[in] 를 바이트 단위로 크기의는 `context` 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-106">[in] The size, in bytes, of the `context` array.</span></span>  
+ <span data-ttu-id="e565f-106">[in] 크기 (바이트)의는 `context` 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-106">[in] The size, in bytes, of the `context` array.</span></span>  
   
  `context`  
- <span data-ttu-id="e1c90-107">[out에서] Win32를 구성 하는 바이트 배열을 `CONTEXT` 현재 플랫폼에 대 한 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-107">[in, out] An array of bytes that compose the Win32 `CONTEXT` structure for the current platform.</span></span>  
+ <span data-ttu-id="e565f-107">[out에서] Win32를 구성 하는 바이트 배열을 `CONTEXT` 현재 플랫폼에 대 한 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-107">[in, out] An array of bytes that compose the Win32 `CONTEXT` structure for the current platform.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="e1c90-108">설명</span><span class="sxs-lookup"><span data-stu-id="e1c90-108">Remarks</span></span>  
- <span data-ttu-id="e1c90-109">디버거에서 Win32 대신이 함수를 호출 해야 `GetThreadContext` 스레드 컨텍스트에 일시적으로 변경 하는 "도용된" 상태에 있을 수 때문에 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-109">The debugger should call this function instead of the Win32 `GetThreadContext` function, because the thread may be in a "hijacked" state where its context has been temporarily changed.</span></span> <span data-ttu-id="e1c90-110">반환 되는 데이터는 Win32 `CONTEXT` 현재 플랫폼에 대 한 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-110">The data returned is a Win32 `CONTEXT` structure for the current platform.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="e565f-108">설명</span><span class="sxs-lookup"><span data-stu-id="e565f-108">Remarks</span></span>  
+ <span data-ttu-id="e565f-109">디버거는 Win32 대신이 함수를 호출 해야 `GetThreadContext` 상황에 일시적으로 변경 "도용" 상태에서 스레드 수 있기 때문에 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-109">The debugger should call this function instead of the Win32 `GetThreadContext` function, because the thread may be in a "hijacked" state where its context has been temporarily changed.</span></span> <span data-ttu-id="e565f-110">반환 되는 데이터는 Win32 `CONTEXT` 현재 플랫폼에 대 한 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-110">The data returned is a Win32 `CONTEXT` structure for the current platform.</span></span>  
   
- <span data-ttu-id="e1c90-111">리프가 아닌 프레임에 대 한 클라이언트를 사용 하 여 있는 레지스터 올바른지 확인 해야 [icordebugregisterset:: Getregistersavailable](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregistersavailable-method.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-111">For non-leaf frames, clients should check which registers are valid by using [ICorDebugRegisterSet::GetRegistersAvailable](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregistersavailable-method.md).</span></span>  
+ <span data-ttu-id="e565f-111">비-리프 프레임에 대 한 클라이언트를 사용 하 여 어떤 레지스터 올바른지 확인 해야 [icordebugregisterset:: Getregistersavailable](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregistersavailable-method.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="e565f-111">For non-leaf frames, clients should check which registers are valid by using [ICorDebugRegisterSet::GetRegistersAvailable](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregistersavailable-method.md).</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="e1c90-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e1c90-112">Requirements</span></span>  
- <span data-ttu-id="e1c90-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="e1c90-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e565f-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e565f-112">Requirements</span></span>  
+ <span data-ttu-id="e565f-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="e565f-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e1c90-114">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e1c90-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="e565f-114">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e565f-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="e1c90-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e1c90-115">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="e565f-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e565f-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="e1c90-116">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e1c90-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="e565f-116">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e565f-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e1c90-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e1c90-117">See Also</span></span>  
- [<span data-ttu-id="e1c90-118">ICorDebugRegisterSet 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e1c90-118">ICorDebugRegisterSet Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)  
- [<span data-ttu-id="e1c90-119">ICorDebugRegisterSet2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e1c90-119">ICorDebugRegisterSet2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+## <a name="see-also"></a><span data-ttu-id="e565f-117">참고자료</span><span class="sxs-lookup"><span data-stu-id="e565f-117">See also</span></span>
+- [<span data-ttu-id="e565f-118">ICorDebugRegisterSet 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e565f-118">ICorDebugRegisterSet Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
+- [<span data-ttu-id="e565f-119">ICorDebugRegisterSet2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e565f-119">ICorDebugRegisterSet2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
