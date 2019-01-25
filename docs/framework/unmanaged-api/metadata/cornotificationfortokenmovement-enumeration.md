@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 96ab659e6ab6cc9601c0e9a1ab511da92905c242
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 745ba18fd1a36789f06bcd3dd4d183c9b28b9875
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33448258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54650108"
 ---
-# <a name="cornotificationfortokenmovement-enumeration"></a><span data-ttu-id="3ad82-102">CorNotificationForTokenMovement 열거형</span><span class="sxs-lookup"><span data-stu-id="3ad82-102">CorNotificationForTokenMovement Enumeration</span></span>
-<span data-ttu-id="3ad82-103">알림을 토큰 다시 매핑 발생할 때 메타 데이터 API 클라이언트에 보낼 수를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-103">Specifies the notifications that will be sent to the metadata API client when a token remap occurs.</span></span>  
+# <a name="cornotificationfortokenmovement-enumeration"></a><span data-ttu-id="603d9-102">CorNotificationForTokenMovement 열거형</span><span class="sxs-lookup"><span data-stu-id="603d9-102">CorNotificationForTokenMovement Enumeration</span></span>
+<span data-ttu-id="603d9-103">토큰 다시 매핑으로 발생할 때 메타 데이터 API 클라이언트에 보낼 알림을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-103">Specifies the notifications that will be sent to the metadata API client when a token remap occurs.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3ad82-104">구문</span><span class="sxs-lookup"><span data-stu-id="3ad82-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="603d9-104">구문</span><span class="sxs-lookup"><span data-stu-id="603d9-104">Syntax</span></span>  
   
 ```  
 typedef enum CorNotificationForTokenMovement {  
@@ -61,43 +61,43 @@ typedef enum CorNotificationForTokenMovement {
 } CorNotificationForTokenMovement;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="3ad82-105">멤버</span><span class="sxs-lookup"><span data-stu-id="3ad82-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="603d9-105">멤버</span><span class="sxs-lookup"><span data-stu-id="603d9-105">Members</span></span>  
   
-|<span data-ttu-id="3ad82-106">멤버</span><span class="sxs-lookup"><span data-stu-id="3ad82-106">Member</span></span>|<span data-ttu-id="3ad82-107">설명</span><span class="sxs-lookup"><span data-stu-id="3ad82-107">Description</span></span>|  
+|<span data-ttu-id="603d9-106">멤버</span><span class="sxs-lookup"><span data-stu-id="603d9-106">Member</span></span>|<span data-ttu-id="603d9-107">설명</span><span class="sxs-lookup"><span data-stu-id="603d9-107">Description</span></span>|  
 |------------|-----------------|  
-|`MDNotifyDefault`|<span data-ttu-id="3ad82-108">될 경우 알림을 `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, 또는 `mdFieldDef` 토큰 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-108">Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move.</span></span>|  
-|`MDNotifyAll`|<span data-ttu-id="3ad82-109">모든 토큰 이동 하면 알립니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-109">Notify when any token moves.</span></span>|  
-|`MDNotifyNone`|<span data-ttu-id="3ad82-110">토큰 이동에 알리지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-110">Do not notify when tokens move.</span></span>|  
-|`MDNotifyMethodDef`|<span data-ttu-id="3ad82-111">될 경우 알림을 `mdMethodDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-111">Notify when an `mdMethodDef` token moves.</span></span>|  
-|`MDNotifyMemberRef`|<span data-ttu-id="3ad82-112">될 경우 알림을 `mdMemberRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-112">Notify when an `mdMemberRef` token moves.</span></span>|  
-|`MDNotifyFieldDef`|<span data-ttu-id="3ad82-113">될 경우 알림을 `mdFieldDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-113">Notify when an `mdFieldDef` token moves.</span></span>|  
-|`MDNotifyTypeRef`|<span data-ttu-id="3ad82-114">될 경우 알림을 `mdTypeRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-114">Notify when an `mdTypeRef` token moves.</span></span>|  
-|`MDNotifyTypeDef`|<span data-ttu-id="3ad82-115">될 경우 알림을 `mdTypeDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-115">Notify when an `mdTypeDef` token moves.</span></span>|  
-|`MDNotifyParamDef`|<span data-ttu-id="3ad82-116">될 경우 알림을 `mdParamDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-116">Notify when an `mdParamDef` token moves.</span></span>|  
-|`MDNotifyInterfaceImpl`|<span data-ttu-id="3ad82-117">될 경우 알림을 `mdInterfaceImpl` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-117">Notify when an `mdInterfaceImpl` token moves.</span></span>|  
-|`MDNotifyProperty`|<span data-ttu-id="3ad82-118">될 경우 알림을 `mdProperty` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-118">Notify when an `mdProperty` token moves.</span></span>|  
-|`MDNotifyEvent`|<span data-ttu-id="3ad82-119">될 경우 알림을 `mdEvent` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-119">Notify when an `mdEvent` token moves.</span></span>|  
-|`MDNotifySignature`|<span data-ttu-id="3ad82-120">될 경우 알림을 `mdSignature` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-120">Notify when an `mdSignature` token moves.</span></span>|  
-|`MDNotifyTypeSpec`|<span data-ttu-id="3ad82-121">될 경우 알림을 `mdTypeSpec` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-121">Notify when an `mdTypeSpec` token moves.</span></span>|  
-|`MDNotifyCustomAttribute`|<span data-ttu-id="3ad82-122">될 경우 알림을 `mdCustomAttribute` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-122">Notify when an `mdCustomAttribute` token moves.</span></span>|  
-|`MDNotifySecurityValue`|<span data-ttu-id="3ad82-123">될 경우 알림을 `mdSecurityValue` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-123">Notify when an `mdSecurityValue` token moves.</span></span>|  
-|`MDNotifyPermission`|<span data-ttu-id="3ad82-124">될 경우 알림을 `mdPermission` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-124">Notify when an `mdPermission` token moves.</span></span>|  
-|`MDNotifyModuleRef`|<span data-ttu-id="3ad82-125">될 경우 알림을 `mdModuleRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-125">Notify when an `mdModuleRef` token moves.</span></span>|  
-|`MDNotifyNameSpace`|<span data-ttu-id="3ad82-126">될 경우 알림을 `mdNameSpace` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-126">Notify when an `mdNameSpace` token moves.</span></span>|  
-|`MDNotifyAssemblyRef`|<span data-ttu-id="3ad82-127">될 경우 알림을 `mdAssemblyRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-127">Notify when an `mdAssemblyRef` token moves.</span></span>|  
-|`MDNotifyFile`|<span data-ttu-id="3ad82-128">될 경우 알림을 `mdFile` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-128">Notify when an `mdFile` token moves.</span></span>|  
-|`MDNotifyExportedType`|<span data-ttu-id="3ad82-129">될 경우 알림을 `mdExportedType` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-129">Notify when an `mdExportedType` token moves.</span></span>|  
-|`MDNotifyResource`|<span data-ttu-id="3ad82-130">될 경우 알림을 `mdManifestResource` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-130">Notify when an `mdManifestResource` token moves.</span></span>|  
+|`MDNotifyDefault`|<span data-ttu-id="603d9-108">알립니다 `mdTypeRef`, `mdMethodDef`를 `mdMemberRef`, 또는 `mdFieldDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-108">Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move.</span></span>|  
+|`MDNotifyAll`|<span data-ttu-id="603d9-109">모든 토큰 이동할 때 알립니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-109">Notify when any token moves.</span></span>|  
+|`MDNotifyNone`|<span data-ttu-id="603d9-110">토큰 이동 하는 경우를 알리지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-110">Do not notify when tokens move.</span></span>|  
+|`MDNotifyMethodDef`|<span data-ttu-id="603d9-111">알릴 시기는 `mdMethodDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-111">Notify when an `mdMethodDef` token moves.</span></span>|  
+|`MDNotifyMemberRef`|<span data-ttu-id="603d9-112">알릴 시기는 `mdMemberRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-112">Notify when an `mdMemberRef` token moves.</span></span>|  
+|`MDNotifyFieldDef`|<span data-ttu-id="603d9-113">알릴 시기는 `mdFieldDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-113">Notify when an `mdFieldDef` token moves.</span></span>|  
+|`MDNotifyTypeRef`|<span data-ttu-id="603d9-114">알릴 시기는 `mdTypeRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-114">Notify when an `mdTypeRef` token moves.</span></span>|  
+|`MDNotifyTypeDef`|<span data-ttu-id="603d9-115">알릴 시기는 `mdTypeDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-115">Notify when an `mdTypeDef` token moves.</span></span>|  
+|`MDNotifyParamDef`|<span data-ttu-id="603d9-116">알릴 시기는 `mdParamDef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-116">Notify when an `mdParamDef` token moves.</span></span>|  
+|`MDNotifyInterfaceImpl`|<span data-ttu-id="603d9-117">알릴 시기는 `mdInterfaceImpl` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-117">Notify when an `mdInterfaceImpl` token moves.</span></span>|  
+|`MDNotifyProperty`|<span data-ttu-id="603d9-118">알릴 시기는 `mdProperty` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-118">Notify when an `mdProperty` token moves.</span></span>|  
+|`MDNotifyEvent`|<span data-ttu-id="603d9-119">알릴 시기는 `mdEvent` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-119">Notify when an `mdEvent` token moves.</span></span>|  
+|`MDNotifySignature`|<span data-ttu-id="603d9-120">알릴 시기는 `mdSignature` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-120">Notify when an `mdSignature` token moves.</span></span>|  
+|`MDNotifyTypeSpec`|<span data-ttu-id="603d9-121">알릴 시기는 `mdTypeSpec` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-121">Notify when an `mdTypeSpec` token moves.</span></span>|  
+|`MDNotifyCustomAttribute`|<span data-ttu-id="603d9-122">알릴 시기는 `mdCustomAttribute` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-122">Notify when an `mdCustomAttribute` token moves.</span></span>|  
+|`MDNotifySecurityValue`|<span data-ttu-id="603d9-123">알릴 시기는 `mdSecurityValue` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-123">Notify when an `mdSecurityValue` token moves.</span></span>|  
+|`MDNotifyPermission`|<span data-ttu-id="603d9-124">알릴 시기는 `mdPermission` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-124">Notify when an `mdPermission` token moves.</span></span>|  
+|`MDNotifyModuleRef`|<span data-ttu-id="603d9-125">알릴 시기는 `mdModuleRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-125">Notify when an `mdModuleRef` token moves.</span></span>|  
+|`MDNotifyNameSpace`|<span data-ttu-id="603d9-126">알릴 시기는 `mdNameSpace` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-126">Notify when an `mdNameSpace` token moves.</span></span>|  
+|`MDNotifyAssemblyRef`|<span data-ttu-id="603d9-127">알릴 시기는 `mdAssemblyRef` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-127">Notify when an `mdAssemblyRef` token moves.</span></span>|  
+|`MDNotifyFile`|<span data-ttu-id="603d9-128">알릴 시기는 `mdFile` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-128">Notify when an `mdFile` token moves.</span></span>|  
+|`MDNotifyExportedType`|<span data-ttu-id="603d9-129">알릴 시기는 `mdExportedType` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-129">Notify when an `mdExportedType` token moves.</span></span>|  
+|`MDNotifyResource`|<span data-ttu-id="603d9-130">알릴 시기는 `mdManifestResource` 토큰이 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="603d9-130">Notify when an `mdManifestResource` token moves.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="3ad82-131">설명</span><span class="sxs-lookup"><span data-stu-id="3ad82-131">Remarks</span></span>  
- <span data-ttu-id="3ad82-132">토큰을 다시 매핑할 수 (이동)이 표시 된 메타 데이터를 병합 하는 동안 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-132">A token may be re-mapped (that is, moved) during a metadata merge.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="603d9-131">설명</span><span class="sxs-lookup"><span data-stu-id="603d9-131">Remarks</span></span>  
+ <span data-ttu-id="603d9-132">토큰이 다시 매핑될 수 (이동)이 표시 된 메타 데이터를 병합 하는 동안.</span><span class="sxs-lookup"><span data-stu-id="603d9-132">A token may be re-mapped (that is, moved) during a metadata merge.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3ad82-133">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3ad82-133">Requirements</span></span>  
- <span data-ttu-id="3ad82-134">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="3ad82-134">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="603d9-133">요구 사항</span><span class="sxs-lookup"><span data-stu-id="603d9-133">Requirements</span></span>  
+ <span data-ttu-id="603d9-134">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="603d9-134">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3ad82-135">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="3ad82-135">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="603d9-135">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="603d9-135">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="3ad82-136">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3ad82-136">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="603d9-136">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="603d9-136">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3ad82-137">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3ad82-137">See Also</span></span>  
- [<span data-ttu-id="3ad82-138">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="3ad82-138">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a><span data-ttu-id="603d9-137">참고자료</span><span class="sxs-lookup"><span data-stu-id="603d9-137">See also</span></span>
+- [<span data-ttu-id="603d9-138">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="603d9-138">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
