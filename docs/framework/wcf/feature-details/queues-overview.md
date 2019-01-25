@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], MSMQ integration
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.openlocfilehash: c181a415c8702c3032077728139b23e86d85d1f0
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: a387627e95ce3bf5cfb095412c7100e1bfbe836d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600429"
 ---
 # <a name="queues-overview"></a>큐 개요
 이 단원에서는 큐를 사용하는 통신의 일반 개념과 핵심 개념을 소개합니다. 다음 섹션에서는 여기에 설명 된 큐 개념 Windows Communication Foundation (WCF)를 명시 되는 방법에 대 한 세부 정보로 이동 합니다.  
@@ -73,14 +73,14 @@ ms.locfileid: "46562137"
 ## <a name="poison-message-queue-programming"></a>포이즌 메시지 큐 프로그래밍  
  메시지가 대상 큐에 도달한 후에 서비스에서 메시지의 처리에 반복적으로 실패하는 경우가 있을 수 있습니다. 응용 프로그램에서 트랜잭션의 큐로부터 메시지를 읽는데, 데이터베이스를 업데이트할 때 일시적으로 데이터베이스 연결이 끊기는 경우가 있습니다. 이 경우 트랜잭션이 롤백되고 새 트랜잭션이 만들어진 다음 큐에서 메시지를 다시 읽습니다. 두 번째 시도에 성공할 수도 있고 실패할 수도 있습니다. 오류의 원인에 따라 응용 프로그램에 대한 메시지 배달이 반복적으로 실패할 수 있습니다. 이 경우 메시지를 "포이즌"으로 취급합니다. 그러한 메시지는 포이즌 처리 응용 프로그램에서 읽을 수 있는 포이즌 큐로 이동합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [세션 및 큐](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
- [배달 못 한 편지 큐](../../../../docs/framework/wcf/samples/dead-letter-queues.md)  
- [일시 대기 통신](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)  
- [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
- [메시지 큐(MSMQ) 설치](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
- [메시지 큐 통합 바인딩 샘플](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
- [메시지 큐에서 indows Communication Foundation으로](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
- [메시지 큐에 대한 메시지 보안](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+## <a name="see-also"></a>참고자료
+- [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [세션 및 큐](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
+- [배달 못 한 편지 큐](../../../../docs/framework/wcf/samples/dead-letter-queues.md)
+- [일시 대기 통신](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)
+- [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)
+- [메시지 큐(MSMQ) 설치](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)
+- [메시지 큐 통합 바인딩 샘플](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)
+- [메시지 큐에서 indows Communication Foundation으로](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)
+- [메시지 큐에 대한 메시지 보안](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)

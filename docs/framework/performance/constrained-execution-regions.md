@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 99354547-39c1-4b0b-8553-938e8f8d1808
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e7e653101faf9e0664f41e031c7bad05523825f3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b5854abd97c05cf0d57bfdd9a19826fea2fd7502
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566946"
 ---
 # <a name="constrained-execution-regions"></a>제약이 있는 실행 영역
 CER(제약이 있는 실행 영역)은 신뢰할 수 있는 관리 코드를 작성하기 위한 메커니즘에 포함됩니다. CER은 CLR(공용 언어 런타임 지원)이 영역의 전체 코드가 실행되지 않도록 하는 대역 외 예외를 throw하지 못하도록 제한되는 영역을 정의합니다. 해당 영역 내에서 사용자 코드는 대역 외 예외 throw를 초래하는 실행이 제한됩니다. <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> 메서드는 `try` 블록 바로 앞에 와야 하고 `catch`, `finally` 및 `fault` 블록을 제약이 있는 실행 영역으로 표시합니다. 제약이 있는 영역으로 표시된 후 코드는 강한 안정성 계약을 사용하여 다른 코드를 호출해야 하고 코드는 실패를 처리할 준비가 된 경우에만 준비되지 않거나 신뢰할 수 없는 메서드에 대한 가상 호출을 할당하거나 수행할 수 있습니다. CLR은 CER에서 실행되는 코드의 스레드 중단을 지연합니다.  
@@ -66,7 +66,7 @@ CER(제약이 있는 실행 영역)은 신뢰할 수 있는 관리 코드를 작
 ### <a name="corruption-levels"></a>손상 수준  
  <xref:System.Runtime.ConstrainedExecution.Consistency> 열거 값을 통해 표현되는 손상 수준은 상태가 특정 환경에서 손상될 수 있는 정도를 나타냅니다.  
   
--   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain>. 예외 조건에서 CLR(공용 언어 런타임)이 현재 응용 프로그램 도메인에서 상태 일관성에 관한 보장을 하지 않습니다.  
+-   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain>. 예외 조건에서 CLR(공용 언어 런타임)이 현재 애플리케이션 도메인에서 상태 일관성에 관한 보장을 하지 않습니다.  
   
 -   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance>. 예외 조건에서 메서드가 상태 손상을 현재 인스턴스로 제한하도록 보장합니다.  
   
@@ -114,5 +114,5 @@ CER(제약이 있는 실행 영역)은 신뢰할 수 있는 관리 코드를 작
   
 -   함수 포인터 및 대리자.  
   
-## <a name="see-also"></a>참고 항목  
- [안전성 모범 사례](../../../docs/framework/performance/reliability-best-practices.md)
+## <a name="see-also"></a>참고자료
+- [안전성 모범 사례](../../../docs/framework/performance/reliability-best-practices.md)

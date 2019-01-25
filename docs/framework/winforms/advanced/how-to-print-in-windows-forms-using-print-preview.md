@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms에서 인쇄 미리 보기를 사용하여 인쇄'
+title: '방법: 인쇄 미리 보기를 사용 하 여 Windows Forms에서 인쇄'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - printing [Windows Forms], with print preview
 - print preview
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
-ms.openlocfilehash: ff113b3abfb8363e65d7ccb101973b6821d97262
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: f412e5cbcf3014f57bc2632752a6d1ecbcf46dbc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596087"
 ---
-# <a name="how-to-print-in-windows-forms-using-print-preview"></a>방법: Windows Forms에서 인쇄 미리 보기를 사용하여 인쇄
-Windows Forms 프로그래밍에서는 인쇄 서비스 외에 인쇄 미리 보기를 제공하는 것이 일반적입니다. 인쇄 미리 보기 서비스를 응용 프로그램에 추가하는 편리한 방법은 파일 인쇄에 대한 <xref:System.Windows.Forms.PrintPreviewDialog> 이벤트 처리 논리와 함께 <xref:System.Drawing.Printing.PrintDocument.PrintPage> 컨트롤을 사용하는 것입니다.  
+# <a name="how-to-print-in-windows-forms-using-print-preview"></a>방법: 인쇄 미리 보기를 사용 하 여 Windows Forms에서 인쇄
+Windows Forms 프로그래밍에서는 인쇄 서비스 외에 인쇄 미리 보기를 제공하는 것이 일반적입니다. 인쇄 미리 보기 서비스를 애플리케이션에 추가하는 편리한 방법은 파일 인쇄에 대한 <xref:System.Windows.Forms.PrintPreviewDialog> 이벤트 처리 논리와 함께 <xref:System.Drawing.Printing.PrintDocument.PrintPage> 컨트롤을 사용하는 것입니다.  
   
 ### <a name="to-preview-a-text-document-with-a-printpreviewdialog-control"></a>PrintPreviewDialog 컨트롤을 사용하여 텍스트 문서를 미리 보려면  
   
@@ -34,7 +34,7 @@ Windows Forms 프로그래밍에서는 인쇄 서비스 외에 인쇄 미리 보
 3.  문서를 인쇄할 때와 마찬가지로, <xref:System.Drawing.Printing.PrintDocument.PrintPage> 이벤트 처리기에서 <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> 클래스의 <xref:System.Drawing.Printing.PrintPageEventArgs> 속성과 파일 내용을 사용하여 페이지당 줄 수를 계산하고 문서 내용을 렌더링합니다. 각 페이지가 그려진 후 마지막 페이지인지 확인하고 <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> 의 <xref:System.Drawing.Printing.PrintPageEventArgs> 속성을 적절하게 설정합니다. <xref:System.Drawing.Printing.PrintDocument.PrintPage> 가 <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> 가 될 때까지 `false`이벤트가 발생합니다. 문서 렌더링이 완료되면 렌더링할 문자열을 다시 설정합니다. 또한 <xref:System.Drawing.Printing.PrintDocument.PrintPage> 이벤트가 해당 이벤트 처리 메서드에 연결되어 있는지 확인합니다.  
   
     > [!NOTE]
-    >  응용 프로그램에서 인쇄를 구현한 경우 2단계와 3단계를 이미 완료했을 수도 있습니다.  
+    >  애플리케이션에서 인쇄를 구현한 경우 2단계와 3단계를 이미 완료했을 수도 있습니다.  
   
      다음 코드 예제에서 이벤트 처리기는 "testPage.txt" 파일을 폼에 사용된 것과 동일한 글꼴로 인쇄하는 데 사용됩니다.  
   
@@ -62,9 +62,9 @@ Windows Forms 프로그래밍에서는 인쇄 서비스 외에 인쇄 미리 보
   
 -   System, System.Windows.Forms, System.Drawing 어셈블리에 대한 참조  
   
--   Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
+-   Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: Windows Forms에서 다중 페이지 텍스트 파일 인쇄](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)  
- [Windows Forms 인쇄 지원](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
- [Windows Forms의 인쇄 추가 보안](../../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- [방법: Windows Forms에서 다중 페이지 텍스트 파일 인쇄](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)
+- [Windows Forms 인쇄 지원](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms의 인쇄 추가 보안](../../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)

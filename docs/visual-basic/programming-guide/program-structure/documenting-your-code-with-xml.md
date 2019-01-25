@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML comments, Visual Basic
 - Visual Basic code, documenting with XML
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
-ms.openlocfilehash: b99c37f30d595e114bb4625a2881a9f0b463f5e6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d3658076b994ae0f7aedb64e8d45f7d6b366018c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552296"
 ---
 # <a name="documenting-your-code-with-xml-visual-basic"></a>코드를 XML로 문서화(Visual Basic)
 Visual basic에서 XML을 사용 하 여 코드를 문서화할 수 있습니다.  
@@ -46,6 +46,6 @@ Visual basic에서 XML을 사용 하 여 코드를 문서화할 수 있습니다
   
 -   [Visual Studio의 XML 도구](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic을 사용한 응용 프로그램 개발](../../../visual-basic/developing-apps/index.md)  
- [Visual Basic 프로그래밍 가이드](../../../visual-basic/programming-guide/index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic을 사용한 애플리케이션 개발](../../../visual-basic/developing-apps/index.md)
+- [Visual Basic 프로그래밍 가이드](../../../visual-basic/programming-guide/index.md)

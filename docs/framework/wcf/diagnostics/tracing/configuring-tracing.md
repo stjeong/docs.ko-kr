@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - tracing [WCF]
 ms.assetid: 82922010-e8b3-40eb-98c4-10fc05c6d65d
-ms.openlocfilehash: c5064d90c8601ee44be593446b0fd5ad483e57f2
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: f80d89d66253df310395cdfa3139e8765da24edb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45650000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54584914"
 ---
 # <a name="configuring-tracing"></a>추적 구성
 이 항목에서는 추적을 사용하고, 추적을 내보내도록 추적 소스를 구성하고, 추적 수준을 설정하고, 종단 간 추적 상관 관계를 지원하도록 동작 추적 및 전파를 설정하고, 추적에 액세스하도록 추적 수신기를 설정하는 방법에 대해 설명합니다.  
@@ -58,17 +58,17 @@ ms.locfileid: "45650000"
 ## <a name="configuring-trace-sources-to-emit-traces"></a>추적을 내보내도록 추적 소스 구성  
  WCF는 각 어셈블리에 대 한 추적 소스를 정의 합니다. 어셈블리 내에 생성된 추적은 해당 소스에 대해 정의된 수신기를 통해 액세스합니다. 다음 추적 소스가 정의됩니다.  
   
--   System.ServiceModel: WCF 때마다 처리의 모든 단계를 기록 하 구성을 읽을, 전송에서 된 메시지를 처리 하는 사용자 코드에서 보안 처리 메시지를 디스패치 됩니다.  
+-   System.ServiceModel: WCF 때마다 처리 하는 모든 단계의 로그 구성을 읽을, 전송에서 된 메시지를 처리 하는 사용자 코드에서 보안 처리 메시지를 디스패치 됩니다.  
   
--   System.ServiceModel.MessageLogging: 시스템을 통해 이동하는 모든 메시지를 기록합니다.  
+-   System.ServiceModel.MessageLogging: 시스템을 통해 이동 하는 모든 메시지를 기록 합니다.  
   
 -   System.IdentityModel  
   
 -   System.ServiceModel.Activation  
   
--   System.IO.Log: CLFS(Common Log File System)에 대한 .NET Framework 인터페이스에 대해 기록합니다.  
+-   System.IO.Log: .NET Framework 인터페이스에는 로그 파일 시스템 CLFS (Common)에 대 한 로깅입니다.  
   
--   System.Runtime.Serialization: 개체를 읽거나 쓸 때 기록됩니다.  
+-   System.Runtime.Serialization: 개체는 읽거나 쓸 때 기록 합니다.  
   
 -   CardSpace  
   
@@ -142,7 +142,7 @@ ms.locfileid: "45650000"
   
  원격 데이터베이스와 같은 연결을 통해 추적을 보내도록 사용자 지정 추적 수신기를 구성할 수 있습니다. 응용 프로그램 배포자인 경우 원격 컴퓨터의 추적 로그에 적절한 액세스 제어를 적용해야 합니다.  
   
- 추적 수신기를 프로그래밍 방식으로 구성할 수도 있습니다. 자세한 내용은 [방법: 추적 수신기 만들기 및 초기화](https://go.microsoft.com/fwlink/?LinkId=94648) 하 고 [사용자 지정 TraceListener 만들기](https://go.microsoft.com/fwlink/?LinkId=96239).  
+ 추적 수신기를 프로그래밍 방식으로 구성할 수도 있습니다. 자세한 내용은 [방법: 추적 수신기 만들기 및 초기화](https://go.microsoft.com/fwlink/?LinkId=94648) 하 고 [사용자 지정 TraceListener 만들기](https://go.microsoft.com/fwlink/?LinkId=96239)합니다.  
   
 > [!CAUTION]
 >  `System.Diagnostics.XmlWriterTraceListener`는 스레드로부터 안전하지 않으므로 추적을 출력할 때 추적 소스가 리소스를 단독으로 잠글 수도 있습니다. 여러 스레드에서 이 수신기를 사용하도록 구성된 추적 소스로 추적을 출력하면 리소스 경합이 발생할 수 있으며, 이로 인해 성능이 크게 저하될 수 있습니다. 이 문제를 해결하려면 스레드로부터 안전한 사용자 지정 수신기를 구현해야 합니다.  
@@ -153,7 +153,7 @@ ms.locfileid: "45650000"
 |추적 수준|추적 이벤트의 특성|추적 이벤트의 내용|추적 이벤트|사용자 대상|  
 |-----------------|----------------------------------|-----------------------------------|--------------------|-----------------|  
 |끄기|N/A|N/A|내보낸 추적이 없습니다.|N/A|  
-|위험|"Negative" 이벤트: 예기치 않은 처리 또는 오류 조건을 나타내는 이벤트입니다.||다음을 포함하여 처리되지 않은 예외를 기록합니다.<br /><br /> -OutOfMemoryException<br />-ThreadAbortException (CLR이 threadabortexceptionhandler)<br />-StackOverflowException (낼 수 없습니다)<br />-ConfigurationErrorsException<br />-SEHException<br />-응용 프로그램 시작 오류<br />-Failfast 이벤트<br />시스템 중지<br />포이즌 메시지: 응용 프로그램 오류가 발생 하는 추적 메시지입니다.|관리자<br /><br /> 응용 프로그램 개발자|  
+|중요|"Negative" 이벤트: 예기치 않은 처리 또는 오류 조건을 나타내는 이벤트입니다.||다음을 포함하여 처리되지 않은 예외를 기록합니다.<br /><br /> -   OutOfMemoryException<br />-ThreadAbortException (CLR이 threadabortexceptionhandler)<br />-StackOverflowException (낼 수 없습니다)<br />-   ConfigurationErrorsException<br />-   SEHException<br />-응용 프로그램 시작 오류<br />-Failfast 이벤트<br />시스템 중지<br />포이즌 메시지: 응용 프로그램 오류가 발생 하는 추적 메시지입니다.|관리자<br /><br /> 응용 프로그램 개발자|  
 |Error|"Negative" 이벤트: 예기치 않은 처리 또는 오류 조건을 나타내는 이벤트입니다.|예기치 않은 처리가 발생했습니다. 응용 프로그램이 예상한 대로 작업을 수행하지 못했습니다. 그러나 응용 프로그램이 여전히 실행 중입니다.|모든 예외가 기록됩니다.|관리자<br /><br /> 응용 프로그램 개발자|  
 |경고|"Negative" 이벤트: 예기치 않은 처리 또는 오류 조건을 나타내는 이벤트입니다.|문제가 발생했거나 발생할 수도 있지만 응용 프로그램이 여전히 올바르게 작동합니다. 그러나 계속 올바르게 작동하지 않을 수도 있습니다.|-응용 프로그램이 해당 스로틀 설정이 허용 하는 것 보다 많은 요청 받고 있습니다.<br />-구성된 된 최대 용량 거의 수신 큐가 있습니다.<br />제한 시간을 초과 했습니다.<br />자격 증명 거부 됩니다.|관리자<br /><br /> 응용 프로그램 개발자|  
 |정보|"Positive" 이벤트: 성공적인 중요 시점을 표시 하는 이벤트|응용 프로그램이 올바르게 작동하는지 여부에 관계 없이 응용 프로그램 실행의 중요한 중요 시점과 성공적인 중요 시점입니다.|일반적으로 시스템 상태 모니터링 및 진단, 성능 측정 또는 프로파일링에 유용한 메시지가 생성됩니다. 용량 계획 및 성능 관리에 이러한 정보를 사용할 수 있습니다.<br /><br /> -채널 생성 됩니다.<br />끝점 수신기가 생성 됩니다.<br />메시지 전송 시작/종료 합니다.<br />보안 토큰이 검색 됩니다.<br />구성 설정을 읽습니다.|관리자<br /><br /> 응용 프로그램 개발자<br /><br /> 제품 개발자|  
@@ -180,8 +180,8 @@ ms.locfileid: "45650000"
   
  `propagateActivity` 특성은 사용자 정의 추적 소스에 사용할 수 없습니다. 사용자 코드 동작 ID 전파를 위해 ServiceModel `ActivityTracing`은 설정하지 않고 ServiceModel `propagateActivity` 특성은 `true`로 설정해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [방법: 추적 수신기 만들기 및 초기화](https://go.microsoft.com/fwlink/?LinkId=94648)  
- [사용자 지정 TraceListener 만들기](https://go.microsoft.com/fwlink/?LinkId=96239)
+## <a name="see-also"></a>참고자료
+- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [방법: 추적 수신기 만들기 및 초기화](https://go.microsoft.com/fwlink/?LinkId=94648)
+- [사용자 지정 TraceListener 만들기](https://go.microsoft.com/fwlink/?LinkId=96239)

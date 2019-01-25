@@ -16,15 +16,15 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 01de35a0cd4d359dfba0375a85fbce017e44b9f8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f56ce2da5cc1b79fded3788ddb9631d2c8a2fa7f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33455757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54693654"
 ---
 # <a name="initialize-function"></a>Initialize 함수
-WMI 초기화를 수행 합니다.  
+WMI 초기화를 수행합니다.  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -37,18 +37,18 @@ HRESULT Initialize(
 ## <a name="parameters"></a>매개 변수
 
 `bAllowIManagementObjectQI`   
-[in] `true` WMI 개체에서 QueryInterface 호출할 수 있도록; 나타내기 위해 `false` 그렇지 않은 경우.
+[in] `true` WMI 개체에서 QueryInterface 호출할 수 있도록; 나타내려면 `false` 그렇지 않은 경우.
 
 ## <a name="return-value"></a>반환 값
 
-함수는 항상 반환 `S_OK` (0).
+항상 반환 `S_OK` (0).
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.def  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

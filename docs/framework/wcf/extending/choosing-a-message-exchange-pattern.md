@@ -2,22 +2,22 @@
 title: 메시지 교환 패턴 선택
 ms.date: 03/30/2017
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
-ms.openlocfilehash: ac5ff841eb4e314c1c9d04c895d7a22766da003e
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 927324e0f707284e31baefa261d4d90b147e4e24
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594761"
 ---
 # <a name="choosing-a-message-exchange-pattern"></a>메시지 교환 패턴 선택
-결정 하는 사용자 지정 전송을 작성 하는 첫 번째 단계는 *메시지 교환 패턴* (즉, Mep)는 개발 중인 채널에 대 한 필요 합니다. 이 항목에서는 사용 가능한 옵션과 여러 가지 요구 사항에 대해 설명합니다. 이에 설명 된 채널 개발 작업 목록에서 첫 번째 작업이 [개발 채널](../../../../docs/framework/wcf/extending/developing-channels.md)합니다.  
+사용자 지정 전송을 작성 하는 첫 번째 단계를 결정 하는 것 *메시지 교환 패턴* (즉, Mep)을 개발 하는 채널에 대 한 필요 합니다. 이 항목에서는 사용 가능한 옵션과 여러 가지 요구 사항에 대해 설명합니다. 에 설명 된 채널 개발 작업 목록에서 첫 번째 작업 이것이 [개발 채널](../../../../docs/framework/wcf/extending/developing-channels.md)합니다.  
   
 ## <a name="six-message-exchange-patterns"></a>여섯 개의 메시지 교환 패턴  
  다음과 같은 세 개의 MEP가 있습니다.  
   
 -   데이터그램(<xref:System.ServiceModel.Channels.IInputChannel> 및 <xref:System.ServiceModel.Channels.IOutputChannel>)  
   
-     데이터 그램 MEP를 사용할 때 클라이언트가 사용 하 여 메시지를 보내는 *실행 후 제거 교환은* 교환 합니다. 실행 후 제거 교환은 성공적인 전달에 대한 out-of-band 확인이 필요한 교환입니다. 메시지는 전송 중에 손실되어 서비스에 전달되지 않을 수 있습니다. 보내기 작업이 클라이언트 쪽에서 완료되더라도 원격 끝점에서 메시지를 수신했다고 보장할 수는 없습니다. 데이터그램은 메시징을 위한 기본적인 빌딩 블록으로, 이 위에 신뢰할 수 있는 프로토콜 및 보안 프로토콜을 포함한 고유 프로토콜을 빌드할 수 있습니다. 클라이언트 데이터그램 채널은 <xref:System.ServiceModel.Channels.IOutputChannel> 인터페이스를 구현하고, 서비스 데이터그램 채널은 <xref:System.ServiceModel.Channels.IInputChannel> 인터페이스를 구현합니다.  
+     데이터 그램 MEP를 사용 하는 경우 클라이언트가 사용 하 여 메시지를 보내는 *를 실행 후 제거* 교환 합니다. 실행 후 제거 교환은 성공적인 전달에 대한 out-of-band 확인이 필요한 교환입니다. 메시지는 전송 중에 손실되어 서비스에 전달되지 않을 수 있습니다. 보내기 작업이 클라이언트 쪽에서 완료되더라도 원격 엔드포인트에서 메시지를 수신했다고 보장할 수는 없습니다. 데이터그램은 메시징을 위한 기본적인 빌딩 블록으로, 이 위에 신뢰할 수 있는 프로토콜 및 보안 프로토콜을 포함한 고유 프로토콜을 빌드할 수 있습니다. 클라이언트 데이터그램 채널은 <xref:System.ServiceModel.Channels.IOutputChannel> 인터페이스를 구현하고, 서비스 데이터그램 채널은 <xref:System.ServiceModel.Channels.IInputChannel> 인터페이스를 구현합니다.  
   
 -   요청-응답(<xref:System.ServiceModel.Channels.IRequestChannel> 및 <xref:System.ServiceModel.Channels.IReplyChannel>)  
   
@@ -30,7 +30,7 @@ ms.locfileid: "33805891"
  ![메시지 교환 패턴 선택](../../../../docs/framework/wcf/extending/media/wcfc-basicthreemepsc.gif "wcfc_BasicThreeMEPsc")  
 다음은 세 가지 기본 메시지 교환 패턴으로 위에서부터 차례로 데이터그램, 요청-응답 및 이중 교환 패턴입니다.  
   
- 도 지원할 수 있습니다 이러한 mep는 각각 *세션*합니다. 세션(및 <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> 형식의 <xref:System.ServiceModel.Channels.ISession?displayProperty=nameWithType> 구현)은 채널에서 주고 받는 모든 메시지와 상호 관련됩니다. 요청-응답 패턴은 요청과 회신이 상호 관련되어 있지만 독립 실행형 두 메시지 세션입니다. 반면, 세션을 지원하는 요청-응답 패턴은 해당 채널의 모든 요청/응답 쌍이 상호 관련되어 있음을 의미합니다. 이런 식으로 다음과 같이 총 여섯 개의 MEP가 제공됩니다.  
+ 이러한 mep는 각각 기능도 사용할 수 있습니다 *세션*합니다. 세션(및 <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> 형식의 <xref:System.ServiceModel.Channels.ISession?displayProperty=nameWithType> 구현)은 채널에서 주고 받는 모든 메시지와 상호 관련됩니다. 요청-응답 패턴은 요청과 회신이 상호 관련되어 있지만 독립 실행형 두 메시지 세션입니다. 반면, 세션을 지원하는 요청-응답 패턴은 해당 채널의 모든 요청/응답 쌍이 상호 관련되어 있음을 의미합니다. 이런 식으로 다음과 같이 총 여섯 개의 MEP가 제공됩니다.  
   
 -   데이터그램  
   
@@ -48,7 +48,7 @@ ms.locfileid: "33805891"
 >  UDP 전송의 경우 UDP는 본래 실행 후 제거 프로토콜이므로 데이터그램 MEP만 지원됩니다.  
   
 ## <a name="sessions-and-sessionful-channels"></a>세션 및 세션 채널  
- 네트워킹 환경에는 TCP와 같은 연결 지향 프로토콜과 UDP와 같은 연결 지양 프로토콜이 있습니다. WCF는 연결과 비슷한 논리적 추상을 나타내는 의미임 용어 세션을 사용 합니다. 세션 WCF 프로토콜은 연결 지향 네트워크 프로토콜과 비슷하며 세션 없는 WCF 프로토콜은 연결 지양 네트워크 프로토콜과 비슷합니다.  
+ 네트워킹 환경에는 TCP와 같은 연결 지향 프로토콜과 UDP와 같은 연결 지양 프로토콜이 있습니다. WCF 세션 이라는 용어를 사용 하 여 연결과 비슷한 논리적 추상 개념을 의미 합니다. 세션 WCF 프로토콜은 연결 지향 네트워크 프로토콜과 비슷하며 세션 없는 WCF 프로토콜은 연결 지양 네트워크 프로토콜과 비슷합니다.  
   
  채널 개체 모델에서 각각의 논리적 세션은 세션 채널의 인스턴스로 매니페스트됩니다. 따라서 클라이언트에서 만들어져 서비스에서 허용되는 모든 새 세션은 클라이언트와 서비스 측의 새 세션 채널에 해당합니다. 다음은 위와 아래에 세션 없는 채널 구조와 세션 채널 구조가 각각 표시된 다이어그램입니다.  
   
@@ -92,5 +92,5 @@ ms.locfileid: "33805891"
   
 -   채널에서 <xref:System.ServiceModel.ICommunicationObject.Abort%2A>를 호출하면 I/O가 수행되지 않고 세션이 갑자기 종료됩니다. 위에서 언급한 바와 같이, 이는 수행된 작업이 없거나 네트워크 연결 또는 일부 다른 리소스가 중단될 수 있음을 의미합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [채널 모델 개요](../../../../docs/framework/wcf/extending/channel-model-overview.md)
+## <a name="see-also"></a>참고자료
+- [채널 모델 개요](../../../../docs/framework/wcf/extending/channel-model-overview.md)

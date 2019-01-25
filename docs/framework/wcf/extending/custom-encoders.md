@@ -2,17 +2,17 @@
 title: 사용자 지정 인코더
 ms.date: 03/30/2017
 ms.assetid: fa0e1d7f-af36-4bf4-aac9-cd4eab95bc4f
-ms.openlocfilehash: 036cbff9046df2d1179c5cc0921dd8d89757558b
-ms.sourcegitcommit: 8145ad08288bf141d68e3256cb1f7a3ad842ca33
+ms.openlocfilehash: a438ad327cdd75e981af2ef8ca3999a2f482a2b3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "50034388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509366"
 ---
 # <a name="custom-encoders"></a>사용자 지정 인코더
 이 항목에서는 사용자 지정 인코더를 만드는 방법을 설명합니다.  
   
- Windows Communication Foundation (WCF)를 사용 하면를 *바인딩* 끝점 간에 네트워크를 통해 데이터를 전송 하는 방법을 지정 합니다. 시퀀스의 바인딩을 이루어집니다 *바인딩 요소*합니다. 필수 보안과 같은 선택적 프로토콜 바인딩 요소를 바인딩에 *메시지 인코더* 필수 전송 바인딩 요소 및 바인딩 요소입니다. 메시지 인코더는 메시지 인코딩 바인딩 요소로 표시됩니다. WCF의 세 가지 메시지 인코더가 포함 되어 있습니다: 이진, 전송 최적화 메커니즘 MTOM (Message), 및 텍스트입니다.  
+ Windows Communication Foundation (WCF)를 사용 하면를 *바인딩* 끝점 간에 네트워크를 통해 데이터를 전송 하는 방법을 지정 합니다. 시퀀스의 바인딩을 이루어집니다 *바인딩 요소*합니다. 필수 보안과 같은 선택적 프로토콜 바인딩 요소를 바인딩에 *메시지 인코더* 필수 전송 바인딩 요소 및 바인딩 요소입니다. 메시지 인코더는 메시지 인코딩 바인딩 요소로 표시됩니다. WCF의 세 가지 메시지 인코더가 포함 됩니다. 이진, MTOM (), Message Transmission Optimization Mechanism 및 텍스트입니다.  
   
  메시지 인코딩 바인딩 요소는 보내는 <xref:System.ServiceModel.Channels.Message>를 serialize한 다음 전송으로 전달하거나, 전송에서 serialize된 메시지 형식을 받은 다음 프로토콜 계층이 있으면 프로토콜 계층에 전달하고 없으면 응용 프로그램에 전달합니다.  
   
@@ -30,11 +30,11 @@ ms.locfileid: "50034388"
   
  WCF는 다음과 같은 유형의 파생 된 바인딩 요소를 제공 합니다 <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> 텍스트, 이진 및 메시지 전송 (Optimization Mechanism) 인코딩에 제공할 수 있는 클래스:  
   
--   <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: 상호 운용성이 가장 뛰어나지만 XML 메시지에 대해서는 효율성이 가장 낮은 인코더입니다. 웹 서비스 또는 웹 서비스 클라이언트는 일반적으로 텍스트 XML을 이해할 수 있습니다. 대량의 이진 데이터 블록을 텍스트로 전송하는 것은 비효율적입니다.  
+-   <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: 가장 뛰어나지만 XML 메시지에 대 한 효율성이 인코더. 웹 서비스 또는 웹 서비스 클라이언트는 일반적으로 텍스트 XML을 이해할 수 있습니다. 대량의 이진 데이터 블록을 텍스트로 전송하는 것은 비효율적입니다.  
   
--   <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: 이진 기반 XML 메시지에 사용되는 문자 인코딩 및 메시지 버전 관리를 지정하는 바인딩 요소를 나타냅니다. 이 가장 효율적인 인코딩 옵션인 하지만 최소 상호 운용 가능한 WCF 끝점에서만 지원 됩니다.  
+-   <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: 문자 인코딩을 지정 하는 바인딩 요소 및 메시지 버전 관리 사용 되며 이진 기반 XML 메시지를 나타냅니다. 이 가장 효율적인 인코딩 옵션인 하지만 최소 상호 운용 가능한 WCF 끝점에서만 지원 됩니다.  
   
--   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: MTOM(Message Transmission Optimization Mechanism) 인코딩을 사용하여 메시지에 사용되는 문자 인코딩 및 메시지 버전 관리를 지정하는 바인딩 요소를 나타냅니다. MTOM은 WCF 메시지의 이진 데이터를 전송하기 위한 효율적인 기술입니다. MTOM 인코더는 효율성과 호환성 간의 균형을 유지하려고 합니다. MTOM 인코딩은 대부분의 XML을 텍스트 형식으로 전송하지만, 큰 이진 데이터 블록의 경우에는 텍스트로 변환하지 않고 있는 그대로 전송하여 최적화합니다.  
+-   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: 메시지 전송 (Optimization Mechanism) 인코딩을 사용 하는 메시지에 사용 되는 메시지 버전 관리 및 문자 인코딩을 지정 하는 바인딩 요소를 나타냅니다. MTOM은 WCF 메시지의 이진 데이터를 전송하기 위한 효율적인 기술입니다. MTOM 인코더는 효율성과 호환성 간의 균형을 유지하려고 합니다. MTOM 인코딩은 대부분의 XML을 텍스트 형식으로 전송하지만, 큰 이진 데이터 블록의 경우에는 텍스트로 변환하지 않고 있는 그대로 전송하여 최적화합니다.  
   
  바인딩 요소는 이진, MTOM 또는 텍스트 <xref:System.ServiceModel.Channels.MessageEncoderFactory>를 만듭니다. 팩터리는 이진, MTOM 또는 텍스트 <xref:System.ServiceModel.Channels.MessageEncoderFactory> 인스턴스를 만듭니다. 일반적으로 인스턴스는 하나만 있습니다. 그러나 세션을 사용하는 경우에는 세션마다 다른 인코더가 제공될 수 있습니다. 이진 인코더는 이를 사용하여 동적 사전을 조정합니다(XML 인프라 참조).  
   
@@ -89,12 +89,12 @@ ms.locfileid: "50034388"
   
  그런 다음 이 팩터리의 인스턴스를 반환하도록 <xref:System.ServiceModel.Channels.MessageEncoderFactory> 메서드를 재정의하여 서비스 또는 클라이언트를 구성하는 데 사용되는 바인딩 요소 스택에 사용자 지정 <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A>를 연결합니다.  
   
- WCF를 사용 하 여 제공 된 샘플 코드를 사용 하 여이 프로세스를 보여 주는 두 개의 샘플: [사용자 지정 메시지 인코더: 사용자 지정 텍스트 인코더](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) 하 고 [사용자 지정 메시지 인코더: 압축 인코더](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md)합니다.  
+ WCF를 사용 하 여 제공 된 샘플 코드를 사용 하 여이 프로세스를 보여 주는 두 개의 샘플이 있습니다. [사용자 지정 메시지 인코더: 사용자 지정 텍스트 인코더](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) 고 [사용자 지정 메시지 인코더: 압축 인코더](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
- <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
- <xref:System.ServiceModel.Channels.MessageEncoder>  
- [데이터 전송 아키텍처 개요](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)  
- [메시지 인코더 선택](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
- [전송 선택](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.MessageEncoderFactory>
+- <xref:System.ServiceModel.Channels.MessageEncoder>
+- [데이터 전송 아키텍처 개요](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)
+- [메시지 인코더 선택](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+- [전송 선택](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)

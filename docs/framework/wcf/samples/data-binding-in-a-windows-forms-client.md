@@ -2,12 +2,12 @@
 title: Windows 폼 클라이언트 내 데이터 바인딩
 ms.date: 03/30/2017
 ms.assetid: a2a30b37-d6e2-4552-820e-e60b2bbe8829
-ms.openlocfilehash: a0eaa24cb521dfe4f0d6906d2d8bbbddd3a0d2e4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: afca572fcc2c4e519d799511010d66859dc8b472
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652109"
 ---
 # <a name="data-binding-in-a-windows-forms-client"></a>Windows 폼 클라이언트 내 데이터 바인딩
 이 샘플에서 Windows Communication Foundation (WCF) 서비스는 Windows Forms 응용 프로그램에 의해 반환 되는 데이터를 바인딩하는 방법을 보여 줍니다.  
@@ -38,4 +38,4 @@ ms.locfileid: "43529552"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DataBinding\WindowsForms`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

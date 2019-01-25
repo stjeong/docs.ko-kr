@@ -7,12 +7,12 @@ helpviewer_keywords:
 - RelativeSource markup extensions [WPF]
 - XAML [WPF], RelativeSource markup extension
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
-ms.openlocfilehash: 6ede7bc8a6c2a45630c48417c7ab90eb8decdc39
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 43201be232a037b14d783ae61546ef0030f486ee
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54559387"
 ---
 # <a name="relativesource-markupextension"></a>RelativeSource MarkupExtension
 속성을 지정는 <xref:System.Windows.Data.RelativeSource> 내에서 사용 되는 바인딩 원본의 [바인딩 태그 확장](../../../../docs/framework/wpf/advanced/binding-markup-extension.md), 설정 하는 경우 또는 <xref:System.Windows.Data.Binding.RelativeSource%2A> 속성을 <xref:System.Windows.Data.Binding> XAML에 설정 된 요소.  
@@ -105,11 +105,11 @@ ms.locfileid: "54029439"
   
  `RelativeSource`은 태그 확장입니다. 태그 확장은 특성 값을 리터럴 값 또는 처리기 이름이 아닌 다른 값이 되도록 이스케이프해야 하는 요구 사항이 있는 경우 일반적으로 구현되며 이러한 요구 사항은 특정 형식 또는 속성에 형식 변환기를 배치하는 것보다 더 포괄적입니다. XAML 사용의 모든 태그 확장을 `{` 고 `}` XAML 프로세서는 태그 확장이 특성을 처리 해야 한다는 것을 인식 하는 규칙은 특성 구문에서 문자입니다. 자세한 내용은 [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Data.Binding>  
- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [바인딩 선언 개요](../../../../docs/framework/wpf/data/binding-declarations-overview.md)  
- [x:Type 태그 확장](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Data.Binding>
+- [스타일 지정 및 템플릿](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [바인딩 선언 개요](../../../../docs/framework/wpf/data/binding-declarations-overview.md)
+- [x:Type 태그 확장](../../../../docs/framework/xaml-services/x-type-markup-extension.md)

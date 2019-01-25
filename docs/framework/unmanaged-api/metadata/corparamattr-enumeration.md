@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6ba2103003e3976e51e82ad6b42315a881582f5a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 7d07c6de47038d5c52d76ad8ca8e0a5684551d59
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54491469"
 ---
 # <a name="corparamattr-enumeration"></a>CorParamAttr 열거형
 메서드 매개 변수의 메타데이터를 설명하는 값을 포함합니다.  
@@ -48,20 +48,20 @@ typedef enum CorParamAttr {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`pdIn`|매개 변수 메서드 호출으로 전달 되도록 지정 합니다.|  
-|`pdOut`|전달 되도록 지정 매개 변수는 메서드의 반환 합니다.|  
-|`pdOptional`|매개 변수가 옵션 임을 지정 합니다.|  
+|`pdIn`|매개 변수를 메서드 호출으로 전달 되도록 지정 합니다.|  
+|`pdOut`|매개 변수가 전달 되도록 메서드에서 반환을 지정 합니다.|  
+|`pdOptional`|매개 변수를 선택적 요소로 지정합니다.|  
 |`pdReservedMask`|공용 언어 런타임에서 내부 용도로 예약 되어 있습니다.|  
-|`pdHasDefault`|매개 변수 기본값을 갖도록 지정 합니다.|  
-|`pdHasFieldMarshal`|매개 변수 마샬링 정보 갖도록 지정 합니다.|  
+|`pdHasDefault`|매개 변수가 기본값을 갖도록 지정합니다.|  
+|`pdHasFieldMarshal`|매개 변수 마샬링 정보를 지정 합니다.|  
 |`pdUnused`|사용되지 않습니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
