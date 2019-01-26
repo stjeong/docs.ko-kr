@@ -7,15 +7,15 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: bfed5c969466cb427e6c94d39bfcc6a6e007c320
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cee2768d0e7475d2df123491e2b506bf5c08785f
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066118"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>방법: 선언 구조체 (Visual Basic)
-먼저 사용 하 여 구조체 선언을 [Structure 문](../../../../visual-basic/language-reference/statements/structure-statement.md)를 종료 하 고는 `End` `Structure` 문. 두 문 사이 선언 해야 하나 이상의 *요소*합니다. 모든 데이터 형식의 요소 수는 있지만 비공유 변수 또는 비공유, 비 사용자 정의 이벤트를 하나 이상 이어야 합니다.  
+먼저 사용 하 여 구조체 선언을 [Structure 문](../../../../visual-basic/language-reference/statements/structure-statement.md)를 종료 하 고는 `End Structure` 문. 두 문 사이 선언 해야 하나 이상의 *요소*합니다. 모든 데이터 형식의 요소 수는 있지만 비공유 변수 또는 비공유, 비 사용자 정의 이벤트를 하나 이상 이어야 합니다.  
   
  구조체 선언에서는 구조 요소를 초기화할 수 없습니다. 구조체 형식 이어야 하는 변수를 선언할 때 값을 할당 하는 요소 변수를 통해 액세스 하 여.  
   

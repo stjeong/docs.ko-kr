@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: d58ac91f42e07e3f556389a818d8118d846653c4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e476674e99f0951148dc7cfc95deeeaede3862ae
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54518165"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066300"
 ---
 # <a name="ui-automation-support-for-the-spinner-control-type"></a>Spinner 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -41,7 +41,7 @@ ms.locfileid: "54518165"
 |------------------|------------------|  
 |Spinner<br /><br /> -Edit (0 또는 1)<br />-단추 (2)<br />목록 항목 (0 개 이상)|Spinner<br /><br /> -ListItem (0 개 이상)|  
   
- 컨트롤 뷰 하위 트리에서 두 개의 단추를 자동화된 테스트 도구로 구분하려면 `SmallIncrement` 또는 `SmallDecrement``AutomationId` 를 할당합니다. 일부 구현의 경우, 연결된 편집 컨트롤이 회전자 컨트롤의 피어일 수 있습니다.  
+ 할당 된 두 개의 단추 컨트롤 뷰 하위 트리에서 자동화 된 테스트 도구로 구분 되도록 합니다 `SmallIncrement` 하거나 `SmallDecrement` `AutomationId` 적절 하 게 합니다. 일부 구현의 경우, 연결된 편집 컨트롤이 회전자 컨트롤의 피어일 수 있습니다.  
   
 <a name="Required_UI_Automation_Properties"></a>   
 ## <a name="required-ui-automation-properties"></a>필요한 UI 자동화 속성  

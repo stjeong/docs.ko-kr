@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 126e7245-c5a0-4ebf-800d-cc1fcf9cd0ab
-ms.openlocfilehash: 773e72d52a934bc7c6fa80fe252d62e67f87a34b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e6030a48a773dcf985eee5c4c113b02386780707
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54596802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065819"
 ---
 # <a name="how-to-display-a-changeset"></a>방법: 변경 집합 표시
 <xref:System.Data.Linq.DataContext>을 사용하여 <xref:System.Data.Linq.DataContext.GetChangeSet%2A>에 의해 추적된 변경 내용을 볼 수 있습니다.  
@@ -22,58 +22,34 @@ ms.locfileid: "54596802"
  [!code-vb[DLinqDebuggingSupport#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb/Module1.vb#2)]  
   
  이 코드는 다음과 유사하게 출력됩니다. 맨 끝에 8개가 변경되었음을 요약하여 보여 줍니다.  
-  
- `CustomerID: AROUT`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: BSBEV`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: CONSH`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: EASTC`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: NORTS`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: PARIS`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: SEVES`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: SPECD`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- ``  
-  
- `Total changes: {Added: 0, Removed: 0, Modified: 8}`  
+
+ ```console
+CustomerID: AROUT
+   Original value: London
+   Updated value: Paris
+CustomerID: BSBEV
+   Original value: London
+   Updated value: Paris
+CustomerID: CONSH
+   Original value: London
+   Updated value: Paris
+CustomerID: EASTC
+   Original value: London
+   Updated value: Paris
+CustomerID: NORTS
+    Original value: London
+    Updated value: Paris
+CustomerID: PARIS
+    Original value: London
+    Updated value: Paris
+CustomerID: SEVES
+    Original value: London
+    Updated value: Paris
+CustomerID: SPECD
+    Original value: London
+    Updated value: Paris
+Total changes: {Added: 0, Removed: 0, Modified: 8}
+```
   
 ## <a name="see-also"></a>참고자료
 - [디버깅 지원](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

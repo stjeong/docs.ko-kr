@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], descendant
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.openlocfilehash: 3b8d13e606f28896cae88162d572470e49af3739
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 862a9177d9e10e9561da389fdbffa3e35aa3b51a
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065936"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>XML 하위 항목 축 속성(Visual Basic)
 다음의 하위 항목에 액세스할 수:는 <xref:System.Xml.Linq.XElement> 개체를 <xref:System.Xml.Linq.XDocument> 개체의 컬렉션인 <xref:System.Xml.Linq.XElement> 개체나 컬렉션 <xref:System.Xml.Linq.XDocument> 개체입니다.  
@@ -34,7 +34,7 @@ object...<descendant>
  필수 요소. 하위 축 속성의 시작을 나타냅니다.  
   
  `descendant`  
- 필수 요소. 폼에 액세스 하려면 하위 노드의 이름을 [`prefix``:`]`name`합니다.  
+ 필수 요소. 폼에 액세스 하려면 하위 노드의 이름을 [`prefix:]name`합니다.  
   
 |파트|설명|  
 |----------|-----------------|  

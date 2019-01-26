@@ -2,12 +2,12 @@
 title: XPath 사용자 (Visual Basic)를 위한 LINQ to XML
 ms.date: 07/20/2015
 ms.assetid: 0e64911c-a7cc-4c20-b927-ca99078b5656
-ms.openlocfilehash: 471bd4faa44bcb23ff488df6fb93f0a28cc48950
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 598acfa41d9644a07a553a2f6e8948bbf2fe3b77
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54568168"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066267"
 ---
 # <a name="linq-to-xml-for-xpath-users-visual-basic"></a>XPath 사용자 (Visual Basic)를 위한 LINQ to XML
 
@@ -32,7 +32,7 @@ ms.locfileid: "54568168"
 |[방법: 두 위치 경로 (XPath 및 LINQ to XML)의 공용 구조체 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath.md)|XPath에서 통합 연산자 <code>&#124;</code>를 사용하는 경우와 <xref:System.Linq.Enumerable.Concat%2A>에서 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 표준 쿼리 연산자를 사용하는 경우를 비교합니다.<br /><br /> 관련된 XPath 식은 <code>"//Category&#124;//Price"</code>입니다.|  
 |[방법: (XPath 및 LINQ to XML) 형제 노드 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 특정 이름을 가진 노드의 형제를 모두 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"../Book"`입니다.|  
 |[방법: (XPath 및 LINQ to XML) 부모의 특성 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 부모 요소를 탐색하고 연결된 특성을 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"../@id"`입니다.|  
-|[방법: (XPath 및 LINQ to XML) 특정 이름으로 형제의 특성 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 컨텍스트 노드에 대한 형제의 특정 특성을 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"``../Book/@id``"`입니다.|  
+|[방법: (XPath 및 LINQ to XML) 특정 이름으로 형제의 특성 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 컨텍스트 노드에 대한 형제의 특정 특성을 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"../Book/@id"`입니다.|  
 |[방법: 특정 특성 (XPath 및 LINQ to XML)으로 요소 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 특정 특성이 포함된 요소를 모두 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"./*[@Select]"`입니다.|  
 |[방법: 위치 (XPath 및 LINQ to XML)에 따라 자식 요소 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-child-elements-based-on-position.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 상대 위치를 기준으로 요소를 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"Test[position() >= 2 and position() <= 4]"`입니다.|  
 |[방법: (XPath 및 LINQ to XML) 직접 선행 형제 찾기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 노드의 바로 이전 형제를 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"preceding-sibling::*[1]"`입니다.|  

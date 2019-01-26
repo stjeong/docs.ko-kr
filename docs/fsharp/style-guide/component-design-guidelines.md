@@ -2,12 +2,12 @@
 title: F#구성 요소 디자인 지침
 description: 쓰기에 대 한 지침을 알아보려면 F# 다른 호출자가 사용 하기 위한 구성 요소입니다.
 ms.date: 05/14/2018
-ms.openlocfilehash: d72bfac1de5a57d5cce86f996f144af4bc181463
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: c61e4cd9098388b356c71c325d66c760fa866cf0
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415639"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066027"
 ---
 # <a name="f-component-design-guidelines"></a>F#구성 요소 디자인 지침
 
@@ -708,7 +708,7 @@ let checkNonNull` argName (arg: obj) =
 
 #### <a name="avoid-the-use-of-currying-of-parameters"></a>매개 변수 (currying)를 사용 하지 않도록
 
-대신,.NET 호출 규칙을 사용 하 여 ``Method(arg1,arg2,…,argN)``입니다.
+대신,.NET 호출 규칙을 사용 하 여 `Method(arg1,arg2,…,argN)`입니다.
 
 ```fsharp
 member this.TupledArguments(str, num) = String.replicate num str

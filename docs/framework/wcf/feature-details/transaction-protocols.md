@@ -2,12 +2,12 @@
 title: 트랜잭션 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 559b7ec1539a43ec27010031320be144d6f5e24b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 60b9da567e8c82edf505a974c9884f6f1738747b
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54533769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066238"
 ---
 # <a name="transaction-protocols"></a>트랜잭션 프로토콜
 Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination 프로토콜을 구현 합니다.  
@@ -118,7 +118,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
  R1232: 나가는 `wscoor:Register` 메시지를 사용 해야 합니다 `IssuedTokenOverTransport` 에 설명 된 인증 모드 [보안 프로토콜](../../../../docs/framework/wcf/feature-details/security-protocols.md)합니다.  
   
- 합니다 `wsse:Timestamp` 요소를 사용 하 여 서명 해야 합니다는 `SecurityContextToken``STx` 발급 합니다. 이 서명은 특정 트랜잭션과 연관된 토큰을 소유했음을 나타내며, 트랜잭션에 등록된 참가자를 인증하는 데 사용합니다. RegistrationResponse 메시지는 HTTPS를 통해 다시 보내집니다.  
+ 합니다 `wsse:Timestamp` 요소를 사용 하 여 서명 해야 합니다는 `SecurityContextToken STx` 발급 합니다. 이 서명은 특정 트랜잭션과 연관된 토큰을 소유했음을 나타내며, 트랜잭션에 등록된 참가자를 인증하는 데 사용합니다. RegistrationResponse 메시지는 HTTPS를 통해 다시 보내집니다.  
   
 #### <a name="2pc-protocol-binding-configuration"></a>2PC 프로토콜 바인딩 구성  
  WCF는 HTTPS를 통해 단방향 (데이터 그램) 메시지를 지원합니다. 메시지 간의 상관 관계는 구현 정보로 유지됩니다.  

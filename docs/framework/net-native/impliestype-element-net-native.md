@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fe590022f1354b3a41c709e4fed30f89e865fa0c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 867a11eae14c3e7b2fb09acac5849698119e72c7
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54548052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065975"
 ---
 # <a name="ltimpliestypegt-element-net-native"></a>&lt;ImpliesType&gt; 요소(.NET 네이티브)
 포함 형식 또는 메서드에 정책이 적용된 경우 해당 정책을 형식에 적용합니다.  
@@ -99,7 +99,7 @@ ms.locfileid: "54548052"
 </Type>  
 ```  
   
- `<ImpliesType>` 요소는 `<Method>` 내에서도 나타날 수 있습니다. 경우에 따라 제네릭 메서드를 인스턴스화하면 형식 인스턴스화에 대한 리플렉션이 수행될 수 있기 때문입니다. 지정한 라이브러리가 연결된 <xref:System.Collections.Generic.List%601> 및 <xref:System.Array> 형식과 함께 동적으로 액세스하는 제네릭 메서드 `IEnumerable<T> MakeEnumerable<T>(string` `spelling``, T` `defaultValue``)`의 경우를 예로 들 수 있습니다. 이 예는 다음 코드와 같이 표시될 수 있습니다.  
+ `<ImpliesType>` 요소는 `<Method>` 내에서도 나타날 수 있습니다. 경우에 따라 제네릭 메서드를 인스턴스화하면 형식 인스턴스화에 대한 리플렉션이 수행될 수 있기 때문입니다. 예를 들어 제네릭 메서드를 imagine `IEnumerable<T> MakeEnumerable<T>(string spelling, T defaultValue)` 지정한 라이브러리가 함께 연결 된 동적으로 액세스 하는 <xref:System.Collections.Generic.List%601> 고 <xref:System.Array> 형식입니다. 이 예는 다음 코드와 같이 표시될 수 있습니다.  
   
 ```xml  
 <Type Name="MyType">  

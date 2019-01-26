@@ -5,17 +5,17 @@ helpviewer_keywords:
 - events [Visual Basic], about events
 - events [Visual Basic]
 ms.assetid: 8fb0353a-e41b-4e23-b78f-da65db832f70
-ms.openlocfilehash: b69615a5cf05427a2bfde82af976cfafb41171b0
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 08bd3b3c7ff5608193de0cdc1a869e0918c9e96e
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065793"
 ---
 # <a name="events-visual-basic"></a>이벤트(Visual Basic)
 일련의 순서를 실제로 실행 되는 절차로 Visual Studio 프로젝트를 시각화할 수 있지만 대부분의 프로그램은 이벤트 구동 방식-라는 외부 발생 요인에 따라 결정 됩니다 실행 흐름이 *이벤트*합니다.  
   
- 이벤트는 중요한 문제가 발생했음을 응용 프로그램에 알리는 신호입니다. 예를 들어 사용자가 폼의 컨트롤을 클릭하면 폼이 `Click` 이벤트를 발생시키고 이벤트를 처리하는 프로시저를 호출할 수 있습니다. 또한 이벤트는 개별 작업이 통신할 수 있도록 합니다. 예를 들어 응용 프로그램이 주 응용 프로그램과는 별도로 정렬 작업을 수행한다고 가정해 봅니다. 사용자가 정렬을 취소하면 응용 프로그램은 정렬 프로세스를 중지하도록 지시하는 취소 이벤트를 전송할 수 있습니다.  
+ 이벤트는 중요한 문제가 발생했음을 애플리케이션에 알리는 신호입니다. 예를 들어 사용자가 폼의 컨트롤을 클릭하면 폼이 `Click` 이벤트를 발생시키고 이벤트를 처리하는 프로시저를 호출할 수 있습니다. 또한 이벤트는 개별 작업이 통신할 수 있도록 합니다. 예를 들어 애플리케이션이 주 애플리케이션과는 별도로 정렬 작업을 수행한다고 가정해 봅니다. 사용자가 정렬을 취소하면 애플리케이션은 정렬 프로세스를 중지하도록 지시하는 취소 이벤트를 전송할 수 있습니다.  
   
 ## <a name="event-terms-and-concepts"></a>이벤트 용어 및 개념  
  이 섹션에는 용어 및 Visual Basic의 이벤트와 함께 사용 하는 개념을 설명 합니다.  
@@ -87,7 +87,7 @@ ms.locfileid: "39332875"
  [!code-vb[VbVbalrEvents#38](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_7.vb)]  
   
 ## <a name="handling-events-inherited-from-a-base-class"></a>기본 클래스에서 상속된 이벤트 처리  
- 기본 클래스에서 특성을 상속하는 클래스인 *파생 클래스*는 `Handles``MyBase` 문을 사용하여 기본 클래스에 의해 발생된 이벤트를 처리할 수 있습니다.  
+ 기본 클래스에서 특성을 상속하는 클래스인 *파생 클래스*는 `Handles MyBase` 문을 사용하여 기본 클래스에 의해 발생된 이벤트를 처리할 수 있습니다.  
   
 #### <a name="to-handle-events-from-a-base-class"></a>기본 클래스의 이벤트를 처리하려면  
   
@@ -101,8 +101,8 @@ ms.locfileid: "39332875"
 |-----------|-----------------|  
 |[연습: 이벤트 선언 및 발생](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)|클래스의 이벤트를 선언하고 발생시키는 방법에 대한 단계별 설명을 제공합니다.|  
 |[연습: 이벤트 처리](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)|이벤트 처리기 프로시저를 작성하는 방법을 보여 줍니다.|  
-|[방법: 차단을 방지하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|이벤트 처리기를 비동기적으로 호출할 수 있는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
-|[방법: 메모리를 절약하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|이벤트가 처리될 때만 메모리를 사용하는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
+|[방법: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|이벤트 처리기를 비동기적으로 호출할 수 있는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
+|[방법: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|이벤트가 처리될 때만 메모리를 사용하는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
 |[Visual Basic에서 상속된 이벤트 처리기 관련 문제 해결](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|상속된 구성 요소의 이벤트 처리기에서 발생하는 일반적인 문제에 대해 설명합니다.|  
 |[이벤트](../../../../standard/events/index.md)|[!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]의 이벤트 모델 개요를 제공합니다.|  
 |[Windows Forms에서 이벤트 처리기 만들기](../../../../framework/winforms/creating-event-handlers-in-windows-forms.md)|Windows Forms 개체와 관련된 이벤트로 작업하는 방법을 설명합니다.|  

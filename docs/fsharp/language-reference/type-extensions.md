@@ -1,13 +1,13 @@
 ---
 title: 형식 확장명
 description: 에 대해 알아봅니다 하는 방법 F# 형식 확장을 이용 하면 이전에 정의 된 개체 형식에 새 멤버를 추가 합니다.
-ms.date: 07/20/2018
-ms.openlocfilehash: 9c0c6247eb5b94e9f42377859026ba7b466eb2e4
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.date: 01/23/2019
+ms.openlocfilehash: d52bc38850219a142ff4f5d840e418ea4bd50cca
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53614066"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066157"
 ---
 # <a name="type-extensions"></a>형식 확장명
 
@@ -78,7 +78,7 @@ type Variant with
 
 선택적 형식 확장에는 원래 모듈, 네임 스페이스 또는 확장 되는 형식의 어셈블리 외부에 표시 되는 확장이입니다.
 
-선택적 형식 확장의 직접 정의 하지 않은 형식을 확장 하는 데 유용 합니다. 예를 들면 다음과 같습니다.
+선택적 형식 확장의 직접 정의 하지 않은 형식을 확장 하는 데 유용 합니다. 예를 들어:
 
 ```fsharp
 module Extensions
@@ -105,7 +105,7 @@ type IEnumerable<'T> with
 
 형식 변수가 제한 되는 제네릭 형식에 형식 확장을 선언 하는 것이 가능 합니다. 요구 사항 확장 선언의 제약 조건이 선언 된 형식의 제약 조건과 일치 하는 합니다.
 
-그러나 제약 조건이 선언된 된 형식 사이의 형식 확장을 일치 하는 경우에 있기 제약 조건의 형식 매개 변수에 선언 된 형식 보다 다양 한 요구 사항을 적용 하는 확장된 멤버의 본문에서 유추할 수 있습니다. 예를 들면 다음과 같습니다.
+그러나 제약 조건이 선언된 된 형식 사이의 형식 확장을 일치 하는 경우에 있기 제약 조건의 형식 매개 변수에 선언 된 형식 보다 다양 한 요구 사항을 적용 하는 확장된 멤버의 본문에서 유추할 수 있습니다. 예를 들어:
 
 ```fsharp
 open System.Collections.Generic
@@ -121,7 +121,7 @@ type IEnumerable<'T> with
 
 * 그대로 합니다 `Sum` 멤버 다양 한 제약 조건을 갖기 `'T` (`static member get_Zero` 및 `static member (+)`) 형식 확장을 정의 하는 보다.
 * 형식 확장으로 동일한 제약 조건이 수정 `Sum` 더 이상 일치 하지 정의 된 제약 조건에서 `IEnumerable<'T>`합니다.
-* 멤버를 변경 하기 `member inline Sum` 형식 제약 조건이 일치 하지 않으면 오류가 표시 됩니다
+* 변경 `member this.Sum` 에 `member inline this.Sum` 형식 제약 조건이 일치 하지 않으면 오류가 표시 됩니다.
 
 경우 원하는 정적 메서드는 "공간에서 부동" 및 형식을 확장 하는 것 처럼 표시 될 수 있습니다. 확장 메서드 필요할입니다.
 
@@ -129,7 +129,7 @@ type IEnumerable<'T> with
 
 마지막으로, 확장 메서드 (라고도 "C# 확장 멤버 스타일")에서 선언할 수 있습니다 F# 클래스의 정적 멤버 메서드로 합니다.
 
-확장 메서드는 제네릭 형식 변수를 제한 하는 형식에 확장을 정의 하려는 경우 유용 합니다. 예를 들면 다음과 같습니다.
+확장 메서드는 제네릭 형식 변수를 제한 하는 형식에 확장을 정의 하려는 경우 유용 합니다. 예를 들어:
 
 ```fsharp
 namespace Extensions
@@ -167,7 +167,7 @@ type IEnumerableExtensions() =
 
 마지막으로, 한 형식에 대 한 여러 기본 형식 확장이 존재 하는 경우 모든 구성원은 고유 해야 합니다. 동일한 형식으로 서로 다른 형식 확장의 멤버는 선택적 형식 확장에 대 한 이름과 있을 수 있습니다. 모호성 오류가 클라이언트 코드는 동일한 멤버 이름을 정의 하는 두 개의 서로 다른 범위를가 하는 경우에 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)
 - [멤버](members/index.md)

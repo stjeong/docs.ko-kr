@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Presentation Foundation 요소에 데이터 바인딩(WCF Data Services)'
+title: '방법: Windows Presentation Foundation 요소 (WCF Data Services)에 데이터 바인딩'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - data binding, WCF Data Services
 - WCF Data Services, data binding
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
-ms.openlocfilehash: da89eebb366cebca9933a30b4753e1fbbe2707c0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 559857ab647d6a1e6d2ae7ffcc344e7583b48553
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33363897"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066177"
 ---
-# <a name="how-to-bind-data-to-windows-presentation-foundation-elements-wcf-data-services"></a>방법: Windows Presentation Foundation 요소에 데이터 바인딩(WCF Data Services)
-와 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], 같은 Windows Presentation Foundation (WPF) 요소를 바인딩할 수는 <xref:System.Windows.Controls.ListBox>' 또는 <xref:System.Windows.Controls.ComboBox> 의 인스턴스로 <xref:System.Data.Services.Client.DataServiceCollection%601>를 유지 하는 컨트롤에서 발생 한 이벤트를 처리 하는 <xref:System.Data.Services.Client.DataServiceContext> 변경 내용과 동기화 컨트롤의 데이터를 하려고 합니다. 자세한 내용은 참조 [컨트롤에 데이터 바인딩](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)합니다.  
+# <a name="how-to-bind-data-to-windows-presentation-foundation-elements-wcf-data-services"></a>방법: Windows Presentation Foundation 요소 (WCF Data Services)에 데이터 바인딩
+사용 하 여 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]와 같은 Windows Presentation Foundation (WPF) 요소를 바인딩할 수 있습니다를 <xref:System.Windows.Controls.ListBox> 또는 <xref:System.Windows.Controls.ComboBox> 인스턴스에 <xref:System.Data.Services.Client.DataServiceCollection%601>를 유지 하려면 컨트롤에 의해 발생 하는 이벤트를 처리 하는 <xref:System.Data.Services.Client.DataServiceContext> 변경 내용과 동기화 컨트롤의 데이터에 대 한 합니다. 자세한 내용은 [컨트롤에 데이터 바인딩](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)합니다.  
   
- 이 항목의 예제에서는 Northwind 샘플 데이터 서비스 및 자동 생성된 클라이언트 데이터 서비스 클래스를 사용합니다. 완료 하면이 서비스 및 클라이언트 데이터 클래스 생성 됩니다는 [WCF Data Services 퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)합니다.  
+ 이 항목의 예제에서는 Northwind 샘플 데이터 서비스 및 자동 생성된 클라이언트 데이터 서비스 클래스를 사용합니다. 이 서비스 및 클라이언트 데이터 클래스를 수행할 때 생성 됩니다는 [WCF Data Services 퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제는 WPF에서 `SalesOrders` 창을 정의하는 XAML(Extensible Application Markup Language) 페이지에 대한 코드 숨김 페이지에서 가져온 것입니다. 창을 로드하면 고객을 국가별로 필터링하여 반환하는 쿼리 결과를 기준으로 <xref:System.Data.Services.Client.DataServiceCollection%601>이 만들어집니다. 이 페이징 결과의 모든 페이지가 관련 주문과 함께 로드되고 WPF 창의 루트 레이아웃 컨트롤인 <xref:System.Windows.FrameworkElement.DataContext%2A>의 <xref:System.Windows.Controls.StackPanel> 속성에 바인딩됩니다. 자세한 내용은 참조 [지연 콘텐츠 로드](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)합니다.  
+ 다음 예제는 WPF에서 `SalesOrders` 창을 정의하는 XAML(Extensible Application Markup Language) 페이지에 대한 코드 숨김 페이지에서 가져온 것입니다. 창을 로드하면 고객을 국가별로 필터링하여 반환하는 쿼리 결과를 기준으로 <xref:System.Data.Services.Client.DataServiceCollection%601>이 만들어집니다. 이 페이징 결과의 모든 페이지가 관련 주문과 함께 로드되고 WPF 창의 루트 레이아웃 컨트롤인 <xref:System.Windows.FrameworkElement.DataContext%2A>의 <xref:System.Windows.Controls.StackPanel> 속성에 바인딩됩니다. 자세한 내용은 [지연 콘텐츠 로드](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)합니다.  
   
  [!code-csharp[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf3.xaml.cs#bindpageddata)]
  [!code-vb[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf3.xaml.vb#bindpageddata)]  

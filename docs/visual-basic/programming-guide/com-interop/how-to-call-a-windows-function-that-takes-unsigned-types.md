@@ -14,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: 092f1acf6e6a8468890a371836979db4e0692d1e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dbe73ed5574261f1aab6134a15a5aeb5fbb8596c
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54669317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065858"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>방법: 부호 없는 형식 (Visual Basic)를 사용 하는 Windows 함수를 호출 합니다.
 클래스, 모듈 또는 부호 없는 정수 형식의 멤버가 있는 구조를 사용 중인 경우에 Visual Basic을 사용 하 여 이러한 멤버를 액세스할 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "54669317"
   
 3.  이름 및 사용 되는 상수 값을 찾으려면 호출 하는 Windows 함수 설명서를 참조 하세요. 이러한 많은 WinUser.h 파일에 정의 됩니다.  
   
-4.  코드에서 필요한 상수를 선언 합니다. 많은 Windows 상수는 32 비트 부호 없는 값 및 이러한 선언 해야 `As``UInteger`합니다.  
+4.  코드에서 필요한 상수를 선언 합니다. 많은 Windows 상수는 32 비트 부호 없는 값 및 이러한 선언 해야 `As UInteger`합니다.  
   
 5.  일반적인 방법으로 함수를 호출 합니다. Windows 함수를 호출 하는 다음 예제에서는 `MessageBox`, 부호 없는 정수 인수입니다.  
   

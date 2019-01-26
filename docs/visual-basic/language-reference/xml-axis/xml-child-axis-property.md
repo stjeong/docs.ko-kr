@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XML child axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
-ms.openlocfilehash: 696d14630240dce094ace7d595232e1a210ea78e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 597a7bef66ac3908345aa5c8b59c838a3e65b2f4
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54527148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065884"
 ---
 # <a name="xml-child-axis-property-visual-basic"></a>XML 자식 축 속성(Visual Basic)
 <xref:System.Xml.Linq.XElement> 개체, <xref:System.Xml.Linq.XDocument> 개체, <xref:System.Xml.Linq.XElement> 개체 컬렉션 또는 <xref:System.Xml.Linq.XDocument> 개체 컬렉션 중 하나의 자식에 액세스할 수 있도록 합니다.  
@@ -32,7 +32,7 @@ object.<child>
 |---|---|  
 |`object`|필수 요소. <xref:System.Xml.Linq.XElement> 개체, <xref:System.Xml.Linq.XDocument> 개체, <xref:System.Xml.Linq.XElement> 개체의 모음 또는 <xref:System.Xml.Linq.XDocument> 개체의 모음입니다.|  
 |.<|필수 요소. 자식 축 속성의 시작을 나타냅니다.|  
-|`child`|필수 요소. 폼에 액세스 하려면 자식 노드의 이름 [`prefix``:`]`name`합니다.<br /><br /> -   `Prefix` -선택 사항입니다. 자식 노드에 대한 XML 네임스페이스 접두사입니다. `Imports` 문으로 정의되는 전역 XML 네임스페이스여야 합니다.<br />-   `Name` 필수. 로컬 자식 노드 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
+|`child`|필수 요소. 폼에 액세스 하려면 자식 노드의 이름 [`prefix:]name`합니다.<br /><br /> -   `Prefix` -선택 사항입니다. 자식 노드에 대한 XML 네임스페이스 접두사입니다. `Imports` 문으로 정의되는 전역 XML 네임스페이스여야 합니다.<br />-   `Name` 필수. 로컬 자식 노드 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
 |>|필수 요소. 자식 축 속성의 끝을 나타냅니다.|  
   
 ## <a name="return-value"></a>반환 값  

@@ -2,12 +2,12 @@
 title: 청크 채널
 ms.date: 03/30/2017
 ms.assetid: e4d53379-b37c-4b19-8726-9cc914d5d39f
-ms.openlocfilehash: 3e98e4be3c5ad9d6d18990feeae86369775972b8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: db14ceb956202bee06ff5e6b37b21fb837c6f1d9
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066417"
 ---
 # <a name="chunking-channel"></a>청크 채널
 Windows Communication Foundation (WCF)를 사용 하 여 큰 메시지를 보낼 때 해당 메시지를 버퍼링 하는 데 사용 되는 메모리의 양을 제한 하는 것이 좋습니다. 가능한 한 가지 솔루션은 본문에 대량의 데이터가 있다고 가정하고 메시지 본문을 스트리밍하는 것입니다. 그러나 일부 프로토콜에서는 전체 메시지를 버퍼링해야 합니다. 이와 같은 두 가지 예로 신뢰할 수 있는 메시징과 보안을 들 수 있습니다. 가능한 또 다른 솔루션은 큰 메시지를 청크라는 더 작은 메시지로 나누고 이러한 청크를 한 번에 하나씩 보낸 다음 받는 쪽에서 큰 메시지를 다시 구성하는 것입니다. 응용 프로그램은 이 청크 및 청크 취소를 직접 수행하거나 사용자 지정 채널을 사용하여 수행할 수 있습니다. 이 Chunking Channel 샘플에서는 사용자 지정 프로토콜이나 계층화된 채널을 사용하여 임의 크기의 메시지를 청크 및 청크 취소하는 방법을 보여 줍니다.  
@@ -271,7 +271,7 @@ interface ITestService
  `OnOpen`은 `innerChannel.Open`을 호출하여 내부 채널을 엽니다.  
   
 ### <a name="onclose"></a>OnClose  
- `OnClose`는 먼저 `stopReceive`를 `true`로 설정하여 보류 중인 `ReceiveChunkLoop`를 중지할 것을 알립니다. 그런 다음 합니다 `receiveStopped``ManualResetEvent`때 설정 된 `ReceiveChunkLoop` 중지 합니다. `ReceiveChunkLoop`가 지정된 시간 제한 내에 중지한다고 가정하고 `OnClose`는 남은 시간 제한을 사용하여 `innerChannel.Close`를 호출합니다.  
+ `OnClose`는 먼저 `stopReceive`를 `true`로 설정하여 보류 중인 `ReceiveChunkLoop`를 중지할 것을 알립니다. 그런 다음 `receiveStopped`가 중지할 때 설정되는 <xref:System.Threading.ManualResetEvent> `ReceiveChunkLoop`를 기다립니다. `ReceiveChunkLoop`가 지정된 시간 제한 내에 중지한다고 가정하고 `OnClose`는 남은 시간 제한을 사용하여 `innerChannel.Close`를 호출합니다.  
   
 ### <a name="onabort"></a>OnAbort  
  `OnAbort`는 `innerChannel.Abort`를 호출하여 내부 채널을 중단합니다. 보류 중인 `ReceiveChunkLoop`가 있을 경우 보류 중인 `innerChannel.Receive` 호출에서 예외를 가져옵니다.  

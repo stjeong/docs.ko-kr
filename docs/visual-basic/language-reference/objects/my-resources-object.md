@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: df9538bfb778d6838b51d3b0c525a433812d8131
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2bd120c11e42648d1ca0304bbf9338f1cf569c48
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54571823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065871"
 ---
 # <a name="myresources-object"></a>My.Resources 개체
 응용 프로그램의 리소스에 액세스 하기 위한 속성 및 클래스를 제공 합니다.  
@@ -26,9 +26,9 @@ ms.locfileid: "54571823"
  응용 프로그램의 문화권 관련 리소스 파일에서 액세스할 수는 `My.Resources` 개체입니다. 기본적으로 `My.Resources` 개체의 culture와 일치 하는 리소스 파일에서 리소스 조회는 <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A> 속성입니다. 그러나이 동작을 재정의 하 고 리소스에 사용할 특정 문화권을 지정할 수 있습니다. 자세한 내용은 [데스크톱 앱의 리소스](../../../framework/resources/index.md)를 참조하세요.  
   
 ## <a name="properties"></a>속성  
- 속성을 `My.Resources` 개체 응용 프로그램의 리소스에 대 한 읽기 전용 액세스를 제공 합니다. 리소스 추가 또는 제거를 사용 합니다 **프로젝트 디자이너**합니다. 통해 추가 리소스에 액세스할 수 합니다 **프로젝트 디자이너** 사용 하 여 `My.Resources.``resourceName`입니다.  
+ 속성을 `My.Resources` 개체 응용 프로그램의 리소스에 대 한 읽기 전용 액세스를 제공 합니다. 리소스 추가 또는 제거를 사용 합니다 **프로젝트 디자이너**합니다. 통해 추가 리소스에 액세스할 수 합니다 **프로젝트 디자이너** 사용 하 여 `My.Resources.` *resourceName*합니다.  
   
- 추가 하거나에서 프로젝트를 선택 하 여 리소스 파일을 제거할 수도 **솔루션 탐색기** 를 클릭 하 고 **새 항목 추가** 하거나 **기존 항목 추가** 에서  **프로젝트** 메뉴. 이 방식으로 사용 하 여 추가 리소스에 액세스할 수 있습니다 `My.Resources.``resourceFileName`.`resourceName`합니다.  
+ 추가 하거나에서 프로젝트를 선택 하 여 리소스 파일을 제거할 수도 **솔루션 탐색기** 를 클릭 하 고 **새 항목 추가** 하거나 **기존 항목 추가** 에서  **프로젝트** 메뉴. 이 방식으로 사용 하 여 추가 리소스에 액세스할 수 있습니다 `My.Resources.` *resourceFileName*`.`*resourceName*합니다.  
   
  각 리소스에 이름, 범주 및 값 및 이러한 리소스 설정에 따라 리소스를 액세스 하는 속성에 표시 되는 방식을 결정 합니다 `My.Resources` 개체입니다. 리소스에 추가 합니다 **프로젝트 디자이너**:  
   

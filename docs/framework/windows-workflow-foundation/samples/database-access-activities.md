@@ -2,12 +2,12 @@
 title: Database Access Activities
 ms.date: 03/30/2017
 ms.assetid: 174a381e-1343-46a8-a62c-7c2ae2c4f0b2
-ms.openlocfilehash: efcdd25ee3e6b86d87d551623b166eab4fa76845
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: db79f2d7605a71997ede134152b12395b9193f95
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850404"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066092"
 ---
 # <a name="database-access-activities"></a>Database Access Activities
 데이터베이스 액세스 활동을 사용하여 워크플로 내에서 데이터베이스에 액세스할 수 있습니다. 이러한 활동을 검색 하거나 정보를 수정 하 고 사용 하 여 데이터베이스에 액세스 허용 [ADO.NET](https://go.microsoft.com/fwlink/?LinkId=166081) 데이터베이스에 액세스할 수 있습니다.  
@@ -88,7 +88,7 @@ Public class DbUpdate: AsyncCodeActivity
 
  실행할 쿼리는 `Sql` 속성에서 구성하며 매개 변수는 `Parameters` 컬렉션을 통해 전달됩니다.
 
- 후 `DbQueryScalar` 는 실행에서 스칼라가 반환 됩니다 합니다 `Result``out` 인수 (형식의 `TResult`되는 기본 클래스에 정의 된 <xref:System.Activities.AsyncCodeActivity%601>).
+ 후 `DbQueryScalar` 는 실행에서 스칼라가 반환 됩니다 합니다 `Result out` 인수 (형식의 `TResult`되는 기본 클래스에 정의 된 <xref:System.Activities.AsyncCodeActivity%601>).
 
 ```
 public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
@@ -200,7 +200,7 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 
  실행할 쿼리는 `Sql` 속성에서 구성하며 매개 변수는 `Parameters` 컬렉션을 통해 전달됩니다.
 
- 후는 `DbQueryDataSet` 실행 되는 `DataSet` 반환 됩니다는 `Result``out` 인수 (형식의 `TResult`되는 기본 클래스에 정의 된 <xref:System.Activities.AsyncCodeActivity%601>).
+ 후는 `DbQueryDataSet` 실행 되는 `DataSet` 반환 됩니다는 `Result out` 인수 (형식의 `TResult`되는 기본 클래스에 정의 된 <xref:System.Activities.AsyncCodeActivity%601>).
 
 ```
 public class DbQueryDataSet : AsyncCodeActivity<DataSet>
@@ -247,7 +247,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 ## <a name="configuring-connection-information"></a>연결 정보 구성
  모든 DbActivity는 동일한 구성 매개 변수를 공유합니다. 다음과 같은 두 가지 방법으로 DbActivity를 구성할 수 있습니다.
 
--   `ConnectionString + InvariantName`: ADO.NET 공급자 고정 이름과 연결 문자열을 설정합니다.
+-   `ConnectionString + InvariantName`: ADO.NET 공급자 고정 이름과 연결 문자열을 설정 합니다.
 
     ```
     Activity dbSelectCount = new DbQueryScalar<DateTime>()
@@ -260,7 +260,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
     };
     ```
 
--   `ConfigName`: 연결 정보를 포함하는 구성 파일 섹션의 이름을 설정합니다.
+-   `ConfigName`: 연결 정보를 포함 하는 구성 섹션의 이름을 설정 합니다.
 
     ```xml
     <connectionStrings>
