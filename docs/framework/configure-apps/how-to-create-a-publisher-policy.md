@@ -7,14 +7,12 @@ helpviewer_keywords:
 - GAC (global assembly cache), publisher policy assembly
 - global assembly cache, publisher policy assembly
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 3969f066c0a17424d2c4527d2b4661b30f5bb6d4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5b69d6add9a01b890cdcc1c6f3be1b1d35f3cd78
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54530527"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083511"
 ---
 # <a name="how-to-create-a-publisher-policy"></a>방법: 게시자 정책 만들기
 어셈블리 공급 업체는 응용 프로그램 업그레이드 된 어셈블리를 사용 하 여 게시자 정책 파일을 포함 하 여 최신 버전의 어셈블리를 사용할지는 상태 수입니다. 게시자 정책 파일 어셈블리 리디렉션 및 코드 베이스 설정을 지정 하 고 응용 프로그램 구성 파일로 동일한 형식을 사용 합니다. 게시자 정책 파일을 어셈블리로 컴파일되고 전역 어셈블리 캐시에 배치 됩니다.  

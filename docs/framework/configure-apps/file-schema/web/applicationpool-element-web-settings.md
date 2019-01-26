@@ -5,14 +5,12 @@ helpviewer_keywords:
 - applicationPool element
 - <applicationPool> element
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 8700d58ff9b07c286c713544777205e043da40a8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3f2e325a05242a028c5bcda3a44a38e7bda77e1b
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643119"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55084005"
 ---
 # <a name="ltapplicationpoolgt-element-web-settings"></a>&lt;applicationPool&gt; 요소 (웹 설정)
 ASP.NET에서 ASP.NET 응용 프로그램 통합된 모드에서 실행 중인 경우 프로세스 전반 동작을 관리 하는 데 사용 되는 구성 설정을 지정 [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] 이상 버전.  

@@ -8,14 +8,12 @@ helpviewer_keywords:
 - <add> element for <listeners>
 - add element for <listeners>
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 3a5dfffa7892cb0cec837a2492e1a4ecdfe60be0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4edefcfdd56be56ccc0ccaf2bff118ba8266e226
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54520973"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083641"
 ---
 # <a name="ltaddgt-element-for-ltlistenersgt-for-lttracegt"></a>&lt;추가&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
 수신기를 추가 합니다 **수신기** 컬렉션입니다.  

@@ -10,14 +10,12 @@ helpviewer_keywords:
 - filters, trace listeners
 - trace listeners, filters
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 3de58fa9df1f856a6612d01d3ec9748c37e4a13e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a811d2ae8112bb1ab9386510fc8435d00f454f85
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54501323"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083797"
 ---
 # <a name="ltfiltergt-element-for-ltaddgt-for-ltsharedlistenersgt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;sharedListeners&gt;
 `sharedListeners` 컬렉션에 있는 수신기에 필터를 추가합니다.  

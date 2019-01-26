@@ -8,14 +8,12 @@ helpviewer_keywords:
 - <assert> element
 - assert element
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 43a3b4ea9d953d9dbb7a98c8481185ddc7e4d674
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 450ff1a6e4b5705a33f8869ed8a99ebd674b96e7
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701952"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55084486"
 ---
 # <a name="ltassertgt-element"></a>&lt;assert&gt; 요소
 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> 메서드를 호출할 때 메시지 상자를 표시할지 여부를 지정합니다. 또한 메시지를 작성할 파일의 이름도 지정합니다.  

@@ -24,14 +24,12 @@ helpviewer_keywords:
 - configuration files [.NET Framework], machine
 - configuration files [.NET Framework], format
 ms.assetid: 86bd26d3-737e-4484-9782-19b17f34cd1f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: e767218456dd4096939d3f353944cb7aeacb352d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 30e9e768ceef3e75d383232fcca1ea01c60199c6
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54601716"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083771"
 ---
 # <a name="configuring-apps-by-using-configuration-files"></a>구성 파일을 사용하여 앱 구성
 .NET Framework에서 개발자와 관리자는 구성 파일을 통해 응용 프로그램이 실행되는 방식을 유연하게 제어할 수 있습니다. 구성 파일은 필요에 따라 변경할 수 있는 XML 파일입니다. 관리자는 응용 프로그램에서 액세스할 수 있는 보호되는 리소스와 응용 프로그램에서 사용할 어셈블리 버전 그리고 원격 응용 프로그램과 개체의 위치를 제어할 수 있습니다. 개발자는 설정을 구성 파일에 저장할 수 있으므로, 설정이 변경될 때마다 매번 응용 프로그램을 다시 컴파일할 필요가 없습니다. 이 단원에서는 응용 프로그램 구성과 유용성에 대해 설명합니다.  

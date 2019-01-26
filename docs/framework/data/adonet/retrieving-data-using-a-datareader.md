@@ -1,16 +1,16 @@
 ---
 title: DataReader를 사용하여 데이터 검색
-ms.date: 10/259/2018
+ms.date: 10/29/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
-ms.openlocfilehash: 134bb68b9cf60cc5082afefdd9eb87d991b6e0ef
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 75d1dba6678be0bfa45be5f3e60e8e76f80a7e9e
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54692758"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083849"
 ---
 # <a name="retrieve-data-using-a-datareader"></a>DataReader를 사용 하 여 데이터를 검색 합니다.
 사용 하 여 데이터를 검색 하는 **DataReader**의 인스턴스를 만듭니다 합니다 **명령** 개체를 만든 다음을 **DataReader** 호출 하 여 **Command.ExecuteReader**  데이터 원본에서 행을 검색 합니다. 합니다 **DataReader** 절차적 논리 없이 효율적으로 데이터 소스에서 결과 순차적으로 처리할 수 있도록 데이터를 버퍼링 되지 않은 스트림을 제공 합니다. 합니다 **DataReader** 데이터가 메모리에 캐시 되지 않기 때문에 많은 양의 데이터를 검색 하는 경우 적합 합니다.

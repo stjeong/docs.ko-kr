@@ -21,14 +21,12 @@ helpviewer_keywords:
 - configuration settings [.NET Framework], applications
 - configuration file reference [.NET Framework]
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 4543802c3918a4761daa5a4fbbab366695823f73
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 37600331ac52add60a98c9fd573591dc34b94f5f
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48839049"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083966"
 ---
 # <a name="configuration-file-schema-for-the-net-framework"></a>.NET Framework의 구성 파일 스키마
 
@@ -61,15 +59,15 @@ ms.locfileid: "48839049"
 
 [컴파일러 및 언어 공급자 설정 스키마](~/docs/framework/configure-apps/file-schema/compiler/index.md) 사용 가능한 언어 공급자의 컴파일러 구성을 지정하는 요소에 대해 설명합니다.
 
-[응용 프로그램 설정 스키마](~/docs/framework/configure-apps/file-schema/application-settings-schema.md) Windows Forms 또는 ASP.NET 응용 프로그램에서 응용 프로그램 범위 및 사용자 범위 설정을 저장하고 검색하는 데 사용할 수 있는 요소에 대해 설명합니다.
+[애플리케이션 설정 스키마](~/docs/framework/configure-apps/file-schema/application-settings-schema.md) Windows Forms 또는 ASP.NET 애플리케이션에서 애플리케이션 범위 및 사용자 범위 설정을 저장하고 검색하는 데 사용할 수 있는 요소에 대해 설명합니다.
 
-[앱 설정 스키마](~/docs/framework/configure-apps/file-schema/appsettings/index.md) 파일 경로, XML Web services URL 또는 응용 프로그램의 기타 사용자 지정 구성 정보와 같은 사용자 지정 응용 프로그램 설정이 포함되어 있습니다.
+[앱 설정 스키마](~/docs/framework/configure-apps/file-schema/appsettings/index.md) 파일 경로, XML Web services URL 또는 애플리케이션의 기타 사용자 지정 구성 정보와 같은 사용자 지정 애플리케이션 설정이 포함되어 있습니다.
 
-[웹 설정 스키마](~/docs/framework/configure-apps/file-schema/web/index.md) ASP.NET이 IIS와 같은 호스트 응용 프로그램과 함께 작동하는 방법을 구성하기 위한 요소를 비롯한 웹 설정 스키마의 모든 요소입니다. *Aspnet.config* 파일에서 사용됩니다.
+[웹 설정 스키마](~/docs/framework/configure-apps/file-schema/web/index.md) ASP.NET이 IIS와 같은 호스트 애플리케이션과 함께 작동하는 방법을 구성하기 위한 요소를 비롯한 웹 설정 스키마의 모든 요소입니다. *Aspnet.config* 파일에서 사용됩니다.
 
-[Windows Forms 구성 스키마](winforms/index.md) 다중 모니터 및 높은 DPI 지원과 같은 사용자 지정을 비롯하여 Windows Forms 응용 프로그램 구성 섹션의 모든 요소입니다.
+[Windows Forms 구성 스키마](winforms/index.md) 다중 모니터 및 높은 DPI 지원과 같은 사용자 지정을 비롯하여 Windows Forms 애플리케이션 구성 섹션의 모든 요소입니다.
 
-[WCF 구성 스키마](~/docs/framework/configure-apps/file-schema/wcf/index.md) WCF 서비스 및 클라이언트 응용 프로그램을 구성하는 데 사용할 수 있는 모든 요소입니다.
+[WCF 구성 스키마](~/docs/framework/configure-apps/file-schema/wcf/index.md) WCF 서비스 및 클라이언트 애플리케이션을 구성하는 데 사용할 수 있는 모든 요소입니다.
 
 [WCF 지시문 구문](~/docs/framework/configure-apps/file-schema/wcf-directive/index.md) .svc 컴파일러에서 사용하는 페이지별 특성을 정의하는 `@ServiceHost` 지시문에 대해 설명합니다.
 
@@ -77,9 +75,9 @@ ms.locfileid: "48839049"
 
 ## <a name="related-sections"></a>관련 단원
 
-[원격 설정 스키마](https://msdn.microsoft.com/library/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e) 원격을 구현하는 클라이언트 및 서버 응용 프로그램을 구성하는 요소에 대해 설명합니다.
+[원격 설정 스키마](https://msdn.microsoft.com/library/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e) 원격을 구현하는 클라이언트 및 서버 애플리케이션을 구성하는 요소에 대해 설명합니다.
 
-[ASP.NET 설정 스키마](https://msdn.microsoft.com/library/b5ysx397\(v=vs.100\).aspx) ASP.NET 웹 응용 프로그램의 동작을 제어하는 요소에 대해 설명합니다.
+[ASP.NET 설정 스키마](https://msdn.microsoft.com/library/b5ysx397\(v=vs.100\).aspx) ASP.NET 웹 애플리케이션의 동작을 제어하는 요소에 대해 설명합니다.
 
 [웹 서비스 설정 스키마](https://msdn.microsoft.com/library/f84d6d55-1add-4eb7-ae46-33df5833ea2e) ASP.NET 웹 서비스와 해당 클라이언트의 동작을 제어하는 요소에 대해 설명합니다.
 

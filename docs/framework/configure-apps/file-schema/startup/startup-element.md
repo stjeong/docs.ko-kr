@@ -9,20 +9,18 @@ helpviewer_keywords:
 - <startup> element
 - startup element
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 82ee7b163efcefae0f2a169b74d29ea4c9f5398a
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 9fc5a555085369cdec249eb9b5b247f403bd12ed
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222742"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083719"
 ---
 # <a name="ltstartupgt-element"></a>&lt;시작&gt; 요소
 
 공용 언어 런타임 시작 정보를 지정합니다.
 
- \<구성 > \<시작 >
+ \<configuration> \<startup>
 
 ## <a name="syntax"></a>구문
 
@@ -98,6 +96,6 @@ ms.locfileid: "54222742"
 
 - [시작 설정 스키마](index.md)
 - [구성 파일 스키마](../index.md)
-- [방법: .NET Framework 4 또는 이상 버전을 지원 하도록 앱 구성](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+- [방법: .NET Framework 4 이상 버전을 지원하도록 앱 구성](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
 - [COM Interop에 대 한 Side-by-side-실행](https://msdn.microsoft.com/library/4302318c-3586-49bf-8620-b9a39cdf4a32)
 - [In-Process Side-by-Side 실행](../../../deployment/in-process-side-by-side-execution.md)

@@ -8,14 +8,12 @@ helpviewer_keywords:
 - cryptoClass element
 - <cryptoClass> element
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 726f13d778fc4cff9bdafed4518e9dee3eeab6b0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f97701a959db5babffb7da29892206efe57f630f
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54501284"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55084018"
 ---
 # <a name="ltcryptoclassgt-element"></a>&lt;cryptoClass&gt; 요소
 [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) 요소에 있는 이름에 매핑되는 암호화 클래스가 포함되어 있습니다.  

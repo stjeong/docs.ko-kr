@@ -9,14 +9,12 @@ helpviewer_keywords:
 - configuration files [ASP.NET]
 - configuration schema [.NET Framework], Web settings
 ms.assetid: ae1ac356-267d-4753-8d7a-7a04eb45a9be
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: bf461049aef20268bcdb514073b4e3cb392f2b4a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4bde008661e78fc85c428fa5100f81483936b460
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579930"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083602"
 ---
 # <a name="web-settings-schema"></a>웹 설정 스키마
 웹 설정은 CPU와 ASP.NET 호스팅 계층에서 관리하는 프로세스 전반 동작에 적용되는 실행 수준 ASP.NET 설정을 지정합니다. 이러한 설정은 ASP.NET 애플리케이션의 Web.config 파일에서 지정된 애플리케이션 도메인 유형 설정과 다릅니다.  

@@ -2,17 +2,21 @@
 title: 컴파일러 및 언어 공급자 설정 스키마
 ms.date: 03/30/2017
 helpviewer_keywords:
-  - 'configuration settings [.NET Framework], compilers'
-  - 'compiler configuration elements, schema'
-  - compiler configuration elements
-  - language providers
-  - 'compiler configuration settings, schema'
-  - 'configuration schema [.NET Framework], compiler settings'
-  - 'language providers, settings schema'
-  - compiler configuration settings
+- configuration settings [.NET Framework], compilers
+- compiler configuration elements, schema
+- compiler configuration elements
+- language providers
+- compiler configuration settings, schema
+- configuration schema [.NET Framework], compiler settings
+- language providers, settings schema
+- compiler configuration settings
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
-author: mcleblanc
-ms.author: markl
+ms.openlocfilehash: ab8225d664b658789f7eb9e7830d5ec527ded94a
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55084369"
 ---
 # <a name="compiler-and-language-provider-settings-schema"></a>컴파일러 및 언어 공급자 설정 스키마
 컴파일러 및 언어 공급자 설정은 사용 가능한 언어 공급자에 대한 컴파일러 구성 요소를 지정합니다. 각 컴파일러 구성 요소는 코드 공급자 형식 이름, 컴파일러 매개 변수, 지원되는 언어 이름 및 지원되는 파일 확장명을 지정합니다.  

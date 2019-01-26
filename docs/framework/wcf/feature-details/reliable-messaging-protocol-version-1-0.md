@@ -2,12 +2,12 @@
 title: Reliable Messaging 프로토콜 버전 1.0
 ms.date: 03/30/2017
 ms.assetid: a5509a5c-de24-4bc2-9a48-19138055dcce
-ms.openlocfilehash: cff07ae23e83a68c4cafa1ca122d84db98163d0d
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 02a0815f62999c27507ed5e1610f090e944c135a
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583963"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55073215"
 ---
 # <a name="reliable-messaging-protocol-version-10"></a>Reliable Messaging 프로토콜 버전 1.0
 이 항목에서는 Ws-reliable Messaging에 대 한 Windows Communication Foundation (WCF) 구현 세부 정보를 다룹니다 HTTP 전송을 사용 하 여 상호 운용에 필요한 2005년 2월 (버전 1.0) 프로토콜입니다. WCF에는 제약 조건 및 자세한 내용은이 항목에서에서 확인 된 내용과 함께 Ws-reliable Messaging 사양을 따릅니다. WS-ReliableMessaging 버전 1.0 프로토콜은 [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] 이상에서 구현됩니다.  
@@ -37,11 +37,11 @@ ms.locfileid: "48583963"
   
 -   B1101: WCF 시작자에서 선택적 Expires 요소를 생성 하지 않습니다는 `CreateSequence` 메시지 또는 경우에 때를 `CreateSequence` 메시지에 포함 되어는 `Offer` 요소를 선택적 `Expires` 요소에는 `Offer` 요소입니다.  
   
--   B1102:에 액세스 하는 경우는 `CreateSequence` 메시지를 WCF`Responder` 둘 다를 송수신 `Expires` 요소는 존재 하지만 해당 값을 사용 하지 않는 경우.  
+-   B1102: 에 액세스할 때 합니다 `CreateSequence` 메시지를 WCF`Responder` 둘 다를 송수신 `Expires` 요소는 존재 하지만 해당 값을 사용 하지 않는 경우.  
   
  WS-Reliable Messaging은 `Offer` 메커니즘을 사용하여 세션을 형성하는 상호 관련된 두 개의 역방향 시퀀스를 설정합니다.  
   
--   R1103: `CreateSequence`에 `Offer` 요소가 있는 경우 신뢰할 수 있는 메시징 응답자는 `CreateSequenceResponse` 요소가 포함된 `wsrm:Accept`와 함께 시퀀스 및 응답을 수락하여 상호 관련된 두 개의 역방향 시퀀스를 구성하거나 `CreateSequence` 요청을 거부해야 합니다.  
+-   R1103: 경우 `CreateSequence` 포함는 `Offer` 요소를 신뢰할 수 있는 메시징 응답자 중 시퀀스를 허용 하며 응답 `CreateSequenceResponse` 를 포함 하는 `wsrm:Accept` 요소를 형성 하는 상관 관계가 지정 된 두 개의 역방향 시퀀스 또는 거부 된 `CreateSequence`요청 합니다.  
   
 -   R1104: 역방향 시퀀스로 이동하는 `SequenceAcknowledgement` 및 응용 프로그램 메시지는 `ReplyTo`의 `CreateSequence` 엔드포인트 참조로 보내야 합니다.  
   
@@ -53,11 +53,11 @@ ms.locfileid: "48583963"
   
      WCF 하지 않지만 가정 [참조 매개 변수는]의 `AcksTo` 하 고 `ReplyTo` 에 `CreateSequence` 에서 [참조 매개 변수]를 사용 하 여 동일 `ReplyTo` 승인 및 역방향 시퀀스 메시지에 대 한 끝점 참조 합니다.  
   
--   R1107: `Offer` 메커니즘을 사용하여 두 개의 역방향 시퀀스가 설정된 경우 역방향 시퀀스로 이동하는 `SequenceAcknowledgement` 및 응용 프로그램 메시지를 `ReplyTo`의 `CreateSequence` 엔드포인트 참조로 보내야 합니다.  
+-   R1107: 두 개의 역방향 시퀀스를 사용 하 여 설정 된 경우는 `Offer` 메커니즘 `SequenceAcknowledgement` 및 역방향 시퀀스에서 응용 프로그램 메시지를 보내야 합니다를 `ReplyTo` 의 끝점 참조는 `CreateSequence`합니다.  
   
--   R1108: Offer 메커니즘을 사용하여 두 개의 역방향 시퀀스가 설정된 경우 `[address]`의 `wsrm:AcksTo` 요소에 대한 `wsrm:Accept` 엔드포인트 자식 요소의 `CreateSequenceResponse` 속성은 `CreateSequence`의 바이트별 대상 URI와 일치해야 합니다.  
+-   R1108: Offer 메커니즘을 사용 하 여 두 개의 역방향 시퀀스가 설정 된 경우는 `[address]` 의 속성을 `wsrm:AcksTo` 끝점 참조 자식 요소의 `wsrm:Accept` 요소의 `CreateSequenceResponse` 일치 해야 바이트 별 대상 URI는 `CreateSequence`.  
   
--   R1109: `Offer` 메커니즘을 사용하여 두 개의 역방향 시퀀스가 설정된 경우 개시자가 보낸 메시지 및 응답자의 메시지 승인을 같은 엔드포인트 참조로 보내야 합니다.  
+-   R1109: 두 개의 역방향 시퀀스를 사용 하 여 설정 된 경우는 `Offer` 메커니즘, 초기자 및 응답자의 메시지 승인을 보낸 메시지를 같은 끝점 참조로 보내야 합니다.  
   
      WCF는 개시자와 응답자 간에 신뢰할 수 있는 세션을 설정 하려면 Ws-reliable Messaging을 사용 합니다. WCF의 Ws-reliable Messaging 구현에서는 단방향, 요청-회신 및 전체에 대 한 신뢰할 수 있는 세션 제공 이중 메시징 패턴입니다. Ws-reliable Messaging `Offer` 메커니즘 `CreateSequence` / `CreateSequenceResponse` 두 상관 관계가 지정 된 역방향 시퀀스를 설정할 수 있습니다 하 고 모든 메시지 끝점에 적합 한 세션 프로토콜을 제공 합니다. WCF는 세션 무결성에 대 한 종단 간 보호를 포함 하 여 세션에 대 한 보안 보장을 제공 하므로 같은 상대방 메시지가 동일한 대상에 도착 하는 확인 여기이 유용 합니다. 이렇게 하면 응용 프로그램 메시지에서 피기백킹이라고 하는 시퀀스 승인을 사용할 수 있습니다. 따라서 제약 조건 R1104, R1105, 및 R1108 WCF에 적용 됩니다.  
   
@@ -167,9 +167,9 @@ ms.locfileid: "48583963"
 ### <a name="sequenceacknowledgement-header"></a>SequenceAcknowledgement 헤더  
  WCF는 Ws-reliable Messaging에 제공 된 시퀀스 승인에 피기백 메커니즘을 사용 합니다.  
   
--   R1401: `Offer` 메커니즘을 사용하여 두 개의 역방향 시퀀스가 설정된 경우 `SequenceAcknowledgement` 헤더가 받는 사람에게 전송된 응용 프로그램 메시지에 포함될 수 있습니다.  
+-   R1401: 두 개의 역방향 시퀀스를 사용 하 여 설정 된 경우는 `Offer` 메커니즘을 `SequenceAcknowledgement` 받는 사람된에 게 전송 된 모든 응용 프로그램 메시지에서 헤더를 포함 될 수 있습니다.  
   
--   B1402: WCF 시퀀스 메시지를 받기 전에 승인을 생성 해야 하는 경우 (예를 들어 충족 하는 `AckRequested` 메시지), WCF 생성를 `SequenceAcknowledgement` 다음 예제 에서처럼 0-0 범위가 포함 된 헤더.  
+-   B1402: WCF 시퀀스 메시지를 받기 전에 승인을 생성 해야 하면 (예를 들어 충족 하는 `AckRequested` 메시지), WCF 생성를 `SequenceAcknowledgement` 다음 예제 에서처럼 0-0 범위가 포함 된 헤더.  
   
     ```xml  
     <wsrm:SequenceAcknowledgement>  
@@ -180,12 +180,12 @@ ms.locfileid: "48583963"
     </wsrm:SequenceAcknowledgement>  
     ```  
   
--   B1403: WCF에서 생성 되지 않습니다 `SequenceAcknowledgement` 포함 하는 헤더를 `Nack` 요소가 있지만 지원 `Nack` 요소입니다.  
+-   B1403: WCF를 생성 하지 않습니다 `SequenceAcknowledgement` 포함 하는 헤더를 `Nack` 요소가 있지만 지원 `Nack` 요소입니다.  
   
 ### <a name="ws-reliablemessaging-faults"></a>WS-ReliableMessaging 오류  
  다음은 Ws-reliable Messaging 오류의 WCF 구현에 적용 되는 제약 조건의 목록입니다.  
   
--   B1501: WCF에서 생성 되지 않습니다 `MessageNumberRollover` 오류입니다.  
+-   B1501: WCF를 생성 하지 않습니다 `MessageNumberRollover` 오류입니다.  
   
 -   B1502:WCF 끝점 발생할 `CreateSequenceRefused` 사양에 설명 된 대로 오류가 발생 합니다.  
   
@@ -243,7 +243,7 @@ ms.locfileid: "48583963"
 ## <a name="protocol-composition"></a>프로토콜 구성  
   
 ### <a name="composition-with-ws-addressing"></a>WS-Addressing을 사용하여 구성  
- WCF에는 Ws-addressing의 두 가지 버전 지원: Ws-addressing 2004/08 [WS-ADDR] 및 W3C Ws-addressing 1.0 권장 사항 [WS-ADDR-CORE] 및 [SOAP-WS-ADDR].  
+ WCF에서는 두 가지 버전을의 Ws-addressing을 지원합니다. Ws-addressing 2004/08 [WS-ADDR]과 W3C Ws-addressing 1.0 권장 사항 [WS-ADDR-CORE] 및 [SOAP-WS-ADDR].  
   
  WS-Reliable Messaging 사양에는 WS-Addressing 2004/08만 언급되어 있지만 WS-Addressing 버전만 사용하도록 제한되지는 않습니다. 다음은 WCF에 적용 되는 제약 조건의 목록입니다.  
   
@@ -261,7 +261,7 @@ ms.locfileid: "48583963"
   
 -   R2302:AWS-보안 대화 세션 Ws-reliable Messaging 시퀀스를 설정 하기 전에 설정 해야 합니다.  
   
--   R2303: WS-Reliable Messaging 시퀀스 수명이 WS-Secure Conversation 세션의 수명을 초과하는 경우 WS-Secure Conversation을 사용하여 설정한 `SecurityContextToken`을 해당 WS-Secure Conversation 갱신 바인딩을 사용하여 갱신해야 합니다.  
+-   R2303: Ws-reliable Messaging 시퀀스 수명이 Ws-secure Conversation 세션의 수명을 초과 하는 경우는 `SecurityContextToken` Ws-secure Conversation 갱신을 해당 Ws-secure Conversation 갱신 바인딩을 사용 하 여 사용 하 여 설정 합니다.  
   
 -   B2304:WS-신뢰할 수 있는 메시징 시퀀스 또는 한 쌍의 상호 관련 된 역방향 시퀀스는 항상 단일 Ws-secureconversation 세션에 바인딩됩니다.  
   
@@ -274,7 +274,7 @@ ms.locfileid: "48583963"
   
 -   B3001: WCF 첨부 `wsrm:RMAssertion` Ws-policy Assertion을 `wsdl:binding` 요소입니다. WCF에는 첨부 파일을 모두 지 원하는 `wsdl:binding` 고 `wsdl:port` 요소입니다.  
   
--   B3002: WCF Ws-reliable Messaging 어설션의 다음과 같은 선택적 속성을 지원 하 고 WCF에 제어를 제공`ReliableMessagingBindingElement`:  
+-   B3002: Ws-reliable Messaging 어설션의 다음과 같은 선택적 속성을 지원 하 고 WCF에 제어를 제공 하는 WCF`ReliableMessagingBindingElement`:  
   
     -   `wsrm:InactivityTimeout`  
   
@@ -292,11 +292,11 @@ ms.locfileid: "48583963"
 ## <a name="flow-control-ws-reliable-messaging-extension"></a>흐름 제어 WS-Reliable Messaging 확장명  
  WCF를 시퀀스 메시지 흐름 선택적 추가 긴밀 하 게 제어할 수 있도록 확장성 Ws-reliable Messaging을 사용 합니다.  
   
- 흐름 제어를 설정 하 여 활성화 합니다 `ReliableSessionBindingElement`의 `FlowControlEnabled``bool` 속성을 `true`입니다. 다음은 WCF에 적용 되는 제약 조건의 목록입니다.  
+ 흐름 제어를 설정 하 여 활성화 합니다 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled?displayProperty=nameWithType> 속성을 `true`입니다. 다음은 WCF에 적용 되는 제약 조건의 목록입니다.  
   
--   B4001: 신뢰할 수 있는 메시징 흐름 제어를 사용 하는 경우 WCF 생성을 `netrm:BufferRemaining` 의 요소 확장성에 요소를 `SequenceAcknowledgement` 헤더입니다.  
+-   B4001: WCF를 생성 하는 신뢰할 수 있는 메시징 흐름 제어를 사용 하는 경우는 `netrm:BufferRemaining` 의 요소 확장성에 요소를 `SequenceAcknowledgement` 헤더입니다.  
   
--   B4002: 신뢰할 수 있는 메시징 흐름 제어를 사용 하는 경우 WCF는 필요 하지는 `netrm:BufferRemaining` 요소에 `SequenceAcknowledgement` 헤더를 다음 예제에서와 같이 합니다.  
+-   B4002: WCF 신뢰할 수 있는 메시징 흐름 제어를 사용 하는 경우 필요 하지 않습니다는 `netrm:BufferRemaining` 요소에 `SequenceAcknowledgement` 헤더를 다음 예제에서와 같이 합니다.  
   
     ```xml  
     <wsrm:SequenceAcknowledgement>  
@@ -310,7 +310,7 @@ ms.locfileid: "48583963"
     </wsrm:SequenceAcknowledgement>  
     ```  
   
--   B4003: WCF 사용 `netrm:BufferRemaining` 얼마나 많은 신뢰할 수 있는 메시징 대상에 새 메시지를 나타내기 위해 버퍼링 할 수 있습니다.  
+-   B4003: WCF를 사용 하 여 `netrm:BufferRemaining` 얼마나 많은 신뢰할 수 있는 메시징 대상에 새 메시지를 나타내기 위해 버퍼링 할 수 있습니다.  
   
 -   B4004: WCF 신뢰할 수 있는 메시징 서비스를 신뢰할 수 있는 메시징 대상 응용 프로그램은 메시지를 빠르게 수신할 수 있는 경우 전송 된 메시지의 수를 제한 합니다. 신뢰할 수 있는 메시징 대상은 메시지를 버퍼링하고 요소의 값을 0으로 줄입니다.  
   
@@ -319,9 +319,9 @@ ms.locfileid: "48583963"
 ## <a name="message-exchange-patterns"></a>메시지 교환 패턴  
  이 섹션에서는 다른 메시지 교환 패턴에 사용 되는 Ws-reliable Messaging 경우 WCF의 동작을 설명 합니다. 각 메시지 교환 패턴에 대해 다음 두 가지 배포 시나리오를 고려합니다.  
   
--   주소를 지정할 수 없는 개시자: 개시자가 방화벽으로 보호됩니다. 응답자는 HTTP 응답에서만 개시자에게 메시지를 배달할 수 있습니다.  
+-   주소를 지정할 수 없는 개시자: 개시자가 방화벽; 응답자는 HTTP 응답 에서만 개시자에 게 메시지를 배달할 수 있습니다.  
   
--   주소를 지정할 수 있는 개시자: 개시자와 응답자 모두 HTTP 요청을 받을 수 있습니다. 즉, 반대 방향의 HTTP 연결 두 개를 설정할 수 있습니다.  
+-   초기자 주소 지정 가능 합니다. 개시자와 응답자 모두 HTTP 요청에 보낼 수 즉, 두 개의 역방향 HTTP 연결을 설정할 수 있습니다.  
   
 ### <a name="one-way-non-addressable-initiator"></a>주소를 지정할 수 없는 단방향 개시자  
   

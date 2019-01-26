@@ -6,14 +6,12 @@ helpviewer_keywords:
 - caching [.NET Framework], configuration
 - <namedCaches> element
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: a824e958a2b75b28aa66a15212e0276d6c127739
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f00d973a2faff1709a98842d1164d69c59027c53
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54536531"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083615"
 ---
 # <a name="ltnamedcachesgt-element-cache-settings"></a>&lt;namedCaches&gt; 요소 (캐시 설정)
 명명 된 구성 설정의 컬렉션을 지정 <xref:System.Runtime.Caching.MemoryCache> 인스턴스. 합니다 <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> 하나 이상의 구성 설정의 컬렉션을 참조 하는 속성 `namedCaches` 구성 파일의 요소입니다.  

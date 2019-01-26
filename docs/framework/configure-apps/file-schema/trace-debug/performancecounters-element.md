@@ -8,14 +8,12 @@ helpviewer_keywords:
 - performanceCounters element
 - <perfomanceCounters> element
 ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: a7b32f9cf797729aa0ca0d176b31732d06e73907
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5afa38a98aa6ea0901849b01d6b1030d079f218e
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701926"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083979"
 ---
 # <a name="ltperformancecountersgt-element"></a>&lt;performanceCounters&gt; 요소
 성능 카운터에서 공유하는 전역 메모리의 크기를 지정합니다.  

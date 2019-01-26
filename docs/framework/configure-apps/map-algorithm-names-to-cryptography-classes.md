@@ -7,14 +7,12 @@ helpviewer_keywords:
 - cryptographic algorithms
 - names [.NET Framework], algorithm mapping
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 87b428fffac98b4490a67e4713b56ec6e8fdcfe9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6bf6e79923f0b3119c516ed97e0e86971368a34c
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569195"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083658"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>알고리즘 이름을 암호화 클래스에 매핑
 네 가지 방법으로 개발자는 암호화 하 여 개체를 만들 수는 [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
