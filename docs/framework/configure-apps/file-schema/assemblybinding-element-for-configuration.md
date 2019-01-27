@@ -7,23 +7,21 @@ helpviewer_keywords:
 - assemblyBinding Element
 - <assemblyBinding> Element
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 64985d4ed2c6a82c54a7623df4b13d7ec54bff33
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 12065d8bc484f7bbf77ae18c67df1de0845167b2
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54599350"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55083901"
 ---
-# <a name="assemblybinding-element-for-configuration"></a><span data-ttu-id="70703-102">\<assemblyBinding > 요소에 대 한 \<구성 ></span><span class="sxs-lookup"><span data-stu-id="70703-102">\<assemblyBinding> element for \<configuration></span></span>
+# <a name="assemblybinding-element-for-configuration"></a><span data-ttu-id="1413e-102">\<assemblyBinding > 요소에 대 한 \<구성 ></span><span class="sxs-lookup"><span data-stu-id="1413e-102">\<assemblyBinding> element for \<configuration></span></span>
 
-<span data-ttu-id="70703-103">구성 수준에서 어셈블리 바인딩 정책을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="70703-103">Specifies assembly binding policy at the configuration level.</span></span>
+<span data-ttu-id="1413e-103">구성 수준에서 어셈블리 바인딩 정책을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-103">Specifies assembly binding policy at the configuration level.</span></span>
 
-<span data-ttu-id="70703-104">[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) </span><span class="sxs-lookup"><span data-stu-id="70703-104">[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) </span></span>  
-<span data-ttu-id="70703-105">&nbsp;&nbsp;**\<assemblyBinding>**</span><span class="sxs-lookup"><span data-stu-id="70703-105">&nbsp;&nbsp;**\<assemblyBinding>**</span></span>
+<span data-ttu-id="1413e-104">[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) </span><span class="sxs-lookup"><span data-stu-id="1413e-104">[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) </span></span>  
+<span data-ttu-id="1413e-105">&nbsp;&nbsp;**\<assemblyBinding>**</span><span class="sxs-lookup"><span data-stu-id="1413e-105">&nbsp;&nbsp;**\<assemblyBinding>**</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="70703-106">구문</span><span class="sxs-lookup"><span data-stu-id="70703-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1413e-106">구문</span><span class="sxs-lookup"><span data-stu-id="1413e-106">Syntax</span></span>
 
 ```xml
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
@@ -31,34 +29,34 @@ ms.locfileid: "54599350"
 </assemblyBinding>
 ```
 
-## <a name="attribute"></a><span data-ttu-id="70703-107">특성</span><span class="sxs-lookup"><span data-stu-id="70703-107">Attribute</span></span>
+## <a name="attribute"></a><span data-ttu-id="1413e-107">특성</span><span class="sxs-lookup"><span data-stu-id="1413e-107">Attribute</span></span>
 
-|           | <span data-ttu-id="70703-108">설명</span><span class="sxs-lookup"><span data-stu-id="70703-108">Description</span></span> |
+|           | <span data-ttu-id="1413e-108">설명</span><span class="sxs-lookup"><span data-stu-id="1413e-108">Description</span></span> |
 | --------- | ----------- |
-| <span data-ttu-id="70703-109">**xmlns**</span><span class="sxs-lookup"><span data-stu-id="70703-109">**xmlns**</span></span> | <span data-ttu-id="70703-110">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="70703-110">Required attribute.</span></span><br><br><span data-ttu-id="70703-111">어셈블리 바인딩에 필요한 XML 네임스페이스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="70703-111">Specifies the XML namespace required for assembly binding.</span></span> <span data-ttu-id="70703-112">문자열 string "urn:schemas-microsoft-com:asm.v1"을 값으로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="70703-112">Use the string "urn:schemas-microsoft-com:asm.v1" as the value.</span></span> |
+| <span data-ttu-id="1413e-109">**xmlns**</span><span class="sxs-lookup"><span data-stu-id="1413e-109">**xmlns**</span></span> | <span data-ttu-id="1413e-110">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-110">Required attribute.</span></span><br><br><span data-ttu-id="1413e-111">어셈블리 바인딩에 필요한 XML 네임스페이스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-111">Specifies the XML namespace required for assembly binding.</span></span> <span data-ttu-id="1413e-112">문자열 string "urn:schemas-microsoft-com:asm.v1"을 값으로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-112">Use the string "urn:schemas-microsoft-com:asm.v1" as the value.</span></span> |
 
-## <a name="parent-element"></a><span data-ttu-id="70703-113">부모 요소</span><span class="sxs-lookup"><span data-stu-id="70703-113">Parent element</span></span>
+## <a name="parent-element"></a><span data-ttu-id="1413e-113">부모 요소</span><span class="sxs-lookup"><span data-stu-id="1413e-113">Parent element</span></span>
 
-|     | <span data-ttu-id="70703-114">설명</span><span class="sxs-lookup"><span data-stu-id="70703-114">Description</span></span> |
+|     | <span data-ttu-id="1413e-114">설명</span><span class="sxs-lookup"><span data-stu-id="1413e-114">Description</span></span> |
 | --- | ----------- |
-| [<span data-ttu-id="70703-115">**\<configuration>**</span><span class="sxs-lookup"><span data-stu-id="70703-115">**\<configuration>**</span></span>](~/docs/framework/configure-apps/file-schema/configuration-element.md) | <span data-ttu-id="70703-116">공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="70703-116">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span> |
+| [<span data-ttu-id="1413e-115">**\<configuration>**</span><span class="sxs-lookup"><span data-stu-id="1413e-115">**\<configuration>**</span></span>](~/docs/framework/configure-apps/file-schema/configuration-element.md) | <span data-ttu-id="1413e-116">공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-116">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span> |
 
-## <a name="child-element"></a><span data-ttu-id="70703-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="70703-117">Child element</span></span>
+## <a name="child-element"></a><span data-ttu-id="1413e-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="1413e-117">Child element</span></span>
 
-|     | <span data-ttu-id="70703-118">설명</span><span class="sxs-lookup"><span data-stu-id="70703-118">Description</span></span> |
+|     | <span data-ttu-id="1413e-118">설명</span><span class="sxs-lookup"><span data-stu-id="1413e-118">Description</span></span> |
 | --- | ----------- |
-| [<span data-ttu-id="70703-119">**\<linkedConfiguration>**</span><span class="sxs-lookup"><span data-stu-id="70703-119">**\<linkedConfiguration>**</span></span>](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | <span data-ttu-id="70703-120">포함할 구성 파일을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="70703-120">Specifies a configuration file to include.</span></span> |
+| [<span data-ttu-id="1413e-119">**\<linkedConfiguration>**</span><span class="sxs-lookup"><span data-stu-id="1413e-119">**\<linkedConfiguration>**</span></span>](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | <span data-ttu-id="1413e-120">포함할 구성 파일을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-120">Specifies a configuration file to include.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="70703-121">설명</span><span class="sxs-lookup"><span data-stu-id="70703-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1413e-121">설명</span><span class="sxs-lookup"><span data-stu-id="1413e-121">Remarks</span></span>
 
-<span data-ttu-id="70703-122">합니다 [  **\<linkedConfiguration >** ](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) 어셈블리를 포함 하도록 응용 프로그램 구성 파일의 구성 파일을 허용 하 여 구성 요소 어셈블리의 관리를 간소화 하는 요소 잘 알려진 위치 대신 복제 어셈블리 구성 설정.</span><span class="sxs-lookup"><span data-stu-id="70703-122">The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.</span></span>
+<span data-ttu-id="1413e-122">합니다 [  **\<linkedConfiguration >** ](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) 어셈블리를 포함 하도록 응용 프로그램 구성 파일의 구성 파일을 허용 하 여 구성 요소 어셈블리의 관리를 간소화 하는 요소 잘 알려진 위치 대신 복제 어셈블리 구성 설정.</span><span class="sxs-lookup"><span data-stu-id="1413e-122">The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="70703-123">합니다  **\<linkedConfiguration >** Windows side-by-side-매니페스트를 사용 하 여 응용 프로그램에 대 한 요소가 지원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="70703-123">The **\<linkedConfiguration>** element is not supported for applications with Windows side-by-side manifests.</span></span>
+> <span data-ttu-id="1413e-123">합니다  **\<linkedConfiguration >** Windows side-by-side-매니페스트를 사용 하 여 응용 프로그램에 대 한 요소가 지원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-123">The **\<linkedConfiguration>** element is not supported for applications with Windows side-by-side manifests.</span></span>
 
-## <a name="example"></a><span data-ttu-id="70703-124">예제</span><span class="sxs-lookup"><span data-stu-id="70703-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1413e-124">예제</span><span class="sxs-lookup"><span data-stu-id="1413e-124">Example</span></span>
 
-<span data-ttu-id="70703-125">다음 예제에서는 로컬 하드 디스크의 구성 파일을 포함 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="70703-125">The following example shows how to include a configuration file on the local hard disk:</span></span>
+<span data-ttu-id="1413e-125">다음 예제에서는 로컬 하드 디스크의 구성 파일을 포함 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="1413e-125">The following example shows how to include a configuration file on the local hard disk:</span></span>
 
 ```xml
 <configuration>
@@ -68,6 +66,6 @@ ms.locfileid: "54599350"
 </configuration>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="70703-126">참고자료</span><span class="sxs-lookup"><span data-stu-id="70703-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1413e-126">참고자료</span><span class="sxs-lookup"><span data-stu-id="1413e-126">See also</span></span>
 
-- [<span data-ttu-id="70703-127">.NET Framework의 구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="70703-127">Configuration file schema for the .NET Framework</span></span>](~/docs/framework/configure-apps/file-schema/index.md)
+- [<span data-ttu-id="1413e-127">.NET Framework의 구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="1413e-127">Configuration file schema for the .NET Framework</span></span>](~/docs/framework/configure-apps/file-schema/index.md)
