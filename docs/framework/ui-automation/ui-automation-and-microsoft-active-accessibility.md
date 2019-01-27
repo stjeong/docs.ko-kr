@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 1b7dbc8dffb15485ec035049d2da7aac6915eb58
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: f8dfe0520e0db676a208dcd46a45db8fefe98703
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48036216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603744"
 ---
 # <a name="ui-automation-and-microsoft-active-accessibility"></a>UI 자동화 및 Microsoft Active Accessibility
 > [!NOTE]
@@ -36,9 +36,9 @@ ms.locfileid: "48036216"
 ## <a name="servers-and-clients"></a>서버 및 클라이언트  
  [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서, 서버와 클라이언트 직접 통신하며 이러한 통신은 대부분 서버의 `IAccessible`구현을 통해 이루어집니다.  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 핵심 서비스는 서버(공급자라고 함)와 클라이언트 사이에 있습니다. 핵심 서비스 공급자는 공급자가 구현한 인터페이스를 호출하고, 요소에 대한 고유한 런타임 식별자 생성 등과 같은 추가적인 서비스를 제공합니다. 클라이언트 응용 프로그램은  라이브러리 함수를 사용하여 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 서비스를 호출합니다.  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 핵심 서비스는 서버(공급자라고 함)와 클라이언트 사이에 있습니다. 핵심 서비스 공급자는 공급자가 구현한 인터페이스를 호출하고, 요소에 대한 고유한 런타임 식별자 생성 등과 같은 추가적인 서비스를 제공합니다. 클라이언트 애플리케이션은  라이브러리 함수를 사용하여 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 서비스를 호출합니다.  
   
- UI 자동화 공급자는 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 클라이언트에 정보를 제공할 수 있으며, [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버는 UI 자동화 클라이언트 응용 프로그램에 정보를 제공할 수 있습니다. 그러나 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]만큼 많은 정보를 노출하지 않기 때문에 두 모델이 완전히 호환되지는 않습니다.  
+ UI 자동화 공급자는 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 클라이언트에 정보를 제공할 수 있으며, [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버는 UI 자동화 클라이언트 애플리케이션에 정보를 제공할 수 있습니다. 그러나 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]만큼 많은 정보를 노출하지 않기 때문에 두 모델이 완전히 호환되지는 않습니다.  
   
 <a name="UI_Elements_compare"></a>   
 ## <a name="ui-elements"></a>UI 요소  
@@ -48,21 +48,21 @@ ms.locfileid: "48036216"
   
 <a name="Tree_Views_and_Navigation_compare"></a>   
 ## <a name="tree-views-and-navigation"></a>트리 뷰 및 탐색  
- 화면의 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소는 데스크톱이 루트, 응용 프로그램 창이 직계 자식, 응용 프로그램 내의 요소가 추가적인 하위 항목인 트리 구조로 표시될 수 있습니다.  
+ 화면의 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소는 데스크톱이 루트, 애플리케이션 창이 직계 자식, 애플리케이션 내의 요소가 추가적인 하위 항목인 트리 구조로 표시될 수 있습니다.  
   
- [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서, 최종 사용자와 관련되지 않은 여러 자동화 요소가 트리에 노출됩니다. 클라이언트 응용 프로그램은 모든 요소를 확인하여 의미 있는 요소를 파악해야 합니다.  
+ [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서, 최종 사용자와 관련되지 않은 여러 자동화 요소가 트리에 노출됩니다. 클라이언트 애플리케이션은 모든 요소를 확인하여 의미 있는 요소를 파악해야 합니다.  
   
- UI 자동화 클라이언트 응용 프로그램은 필터링된 뷰를 통해 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 표시합니다. 이 뷰에는 사용자에게 정보를 제공하거나 상호 작용을 활성화하는 등 필요한 요소만 포함됩니다. 컨트롤 요소만 미리 정의된 뷰와 콘텐츠 요소만 미리 정의된 뷰를 사용할 수 있습니다. 또한 응용 프로그램이 사용자 지정 뷰를 정의할 수 있습니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 사용자에게 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 설명하고 응용 프로그램과 상호 작용할 수 있도록 도와주는 작업을 간소화합니다.  
+ UI 자동화 클라이언트 애플리케이션은 필터링된 뷰를 통해 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 표시합니다. 이 뷰에는 사용자에게 정보를 제공하거나 상호 작용을 활성화하는 등 필요한 요소만 포함됩니다. 컨트롤 요소만 미리 정의된 뷰와 콘텐츠 요소만 미리 정의된 뷰를 사용할 수 있습니다. 또한 애플리케이션이 사용자 지정 뷰를 정의할 수 있습니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 사용자에게 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 설명하고 응용 프로그램과 상호 작용할 수 있도록 도와주는 작업을 간소화합니다.  
   
  [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서, 요소 간 탐색은 공간(예: 화면 왼쪽에 있는 요소로 이동), 논리적(예: 다음 메뉴 항목으로 이동 또는 대화 상자 내에서 탭 순서대로 다음 항목으로 이동), 계층적(예: 컨테이너의 첫 번째 자식 이동 또는 자식에서 부모로 이동) 이동 방법 중 하나로 수행됩니다. 계층적 탐색의 경우, 자식 요소가 `IAccessible`을 구현하는 개체가 아닐 수도 있기 때문에 복잡한 방법입니다.  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 모든 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소는 동일한 기본 기능을 지원하는 <xref:System.Windows.Automation.AutomationElement> 개체입니다. (공급자의 관점에서에서 상속 된 인터페이스를 구현 하는 개체는 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple>.) 탐색은 주로 계층 구조입니다. 부모에서 자식으로, 한 형제에서 다른 형제로 탐색합니다. (형제 간 탐색은 탭 순서를 따를 수 있기 때문에 논리적 요소가 있습니다.) 사용 하 여 트리의 필터링된 된 뷰를 사용 하 여 모든 시작 지점에서 이동할 수는 <xref:System.Windows.Automation.TreeWalker> 클래스입니다. <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> 및 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>을 사용하여 특정 자식 또는 하위 항목을 탐색할 수도 있습니다. 예를 들어, 지정된 컨트롤 패턴을 지원하는 대화 상자 내에서 모든 요소를 쉽게 검색할 수 있습니다.  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 모든 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소는 동일한 기본 기능을 지원하는 <xref:System.Windows.Automation.AutomationElement> 개체입니다. (공급자의 관점에서 보면 이 개체는 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple>에서 상속된 인터페이스를 구현하는 개체입니다.) 탐색은 주로 계층 구조입니다. 부모에서 자식으로, 한 형제에서 다른 형제로 탐색합니다. (형제 간 탐색은 탭 순서를 따를 수 있기 때문에 논리적 요소가 있습니다.) <xref:System.Windows.Automation.TreeWalker> 클래스를 사용하여 트리의 필터링된 뷰를 통해 시작점에서 탐색할 수 있습니다. <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> 및 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>을 사용하여 특정 자식 또는 하위 항목을 탐색할 수도 있습니다. 예를 들어, 지정된 컨트롤 패턴을 지원하는 대화 상자 내에서 모든 요소를 쉽게 검색할 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 에서의 탐색은 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서 보다 일관적입니다. 드롭다운 목록 및 팝업 창과 같은 일부 요소는 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 트리에 두 번 나타나며, 이러한 요소를 탐색하면 예기치 않은 결과가 발생할 수 있습니다. 사실상 Rebar 컨트롤에 대해 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 를 올바르게 구현하는 것은 불가능합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 을 사용하면 부모 재지정 및 위치 변경이 가능하므로, 창 소유권에 의해 계층 구조가 적용되더라도 트리에서 요소를 원하는 위치에 배치할 수 있습니다.  
   
 <a name="Roles_and_Control_Types"></a>   
 ## <a name="roles-and-control-types"></a>역할 및 컨트롤 형식  
- [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 는 `accRole` 속성(`IAccessible::get_actRole`)을 사용하여 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에서 ROLE_SYSTEM_SLIDER 또는 ROLE_SYSTEM_MENUITEM과 같은 요소의 역할 설명을 검색합니다. 요소의 역할을 통해 사용 가능한 기능을 알 수 있습니다. `IAccessible::accSelect` 및 `IAccessible::accDoDefaultAction`과 같은 고정 메서드를 사용하여 컨트롤과 상호 작용할 수 있습니다. 클라이언트 응용 프로그램과 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 간의 상호 작용은 `IAccessible`을 통해서 수행할 수 있는 작업으로 제한됩니다.  
+ [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 는 `accRole` 속성(`IAccessible::get_actRole`)을 사용하여 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에서 ROLE_SYSTEM_SLIDER 또는 ROLE_SYSTEM_MENUITEM과 같은 요소의 역할 설명을 검색합니다. 요소의 역할을 통해 사용 가능한 기능을 알 수 있습니다. `IAccessible::accSelect` 및 `IAccessible::accDoDefaultAction`과 같은 고정 메서드를 사용하여 컨트롤과 상호 작용할 수 있습니다. 클라이언트 애플리케이션과 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 간의 상호 작용은 `IAccessible`을 통해서 수행할 수 있는 작업으로 제한됩니다.  
   
  한편, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 주로 예상 기능에서 요소의 컨트롤 형식( <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType%2A> 속성으로 설명됨)을 분리합니다. 기능은 특수화된 인터페이스의 구현을 통해 공급자가 지원하는 컨트롤 패턴에 의해 결정됩니다. 컨트롤 패턴을 조합하여 특정 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소가 지원하는 전체 기능 집합을 설명할 수 있습니다. 일부 공급자는 특정 컨트롤 패턴을 지원하는 데 필요합니다. 예를 들어, 확인란에 대한 공급자는 Toggle 컨트롤 패턴을 지원해야 합니다. 기타 공급자는 하나 이상의 컨트롤 패턴 집합을 지원하는 데 필요합니다. 예를 들어, 단추는 Toggle 또는 Invoke를 지원해야 합니다. 컨트롤 패턴을 지원하지 않는 공급자도 있습니다. 예를 들어 이동, 크기 조정 또는 도킹할 수 없는 창에는 컨트롤 패턴이 없습니다.  
   
@@ -134,8 +134,8 @@ ms.locfileid: "48036216"
 |`get_accValue`|<xref:System.Windows.Automation.ValuePattern.ValueProperty?displayProperty=nameWithType><br /><br /> <xref:System.Windows.Automation.RangeValuePattern.ValueProperty?displayProperty=nameWithType>|ValuePattern 또는 RangeValuePattern을 지원하는 컨트롤 형식에만 유효합니다. RangeValue 값은 MSAA 동작과 일관되도록 0-100으로 정규화됩니다. 값 항목은 문자열을 사용합니다.|  
 |`get_accHelp`|<xref:System.Windows.Automation.AutomationElement.HelpTextProperty>||  
 |`accLocation`|<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>||  
-|`get_accDescription`|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|`accDescription` 은 MSAA 내에서 명확한 사양이 없기 때문에, 공급자가 이 속성에 다양한 정보를 배치합니다.|  
-|`get_accHelpTopic`|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]||  
+|`get_accDescription`| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|`accDescription` 은 MSAA 내에서 명확한 사양이 없기 때문에, 공급자가 이 속성에 다양한 정보를 배치합니다.|  
+|`get_accHelpTopic`| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]||  
   
  다음 표는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 상태 상수에 해당하는 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 속성을 보여줍니다.  
   
@@ -164,19 +164,19 @@ ms.locfileid: "48036216"
   
 |[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 상태|설명|  
 |-----------------------------------------------------------------------|-------------|  
-|STATE_SYSTEM_BUSY|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
-|STATE_SYSTEM_DEFAULT|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
-|STATE_SYSTEM_ANIMATED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_BUSY| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_DEFAULT| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_ANIMATED| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |STATE_SYSTEM_EXTSELECTABLE|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
 |STATE_SYSTEM_MARQUEED|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
 |STATE_SYSTEM_SELFVOICING|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
-|STATE_SYSTEM_TRAVERSED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_TRAVERSED| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |STATE_SYSTEM_ALERT_HIGH|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
 |STATE_SYSTEM_ALERT_MEDIUM|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
 |STATE_SYSTEM_ALERT_LOW|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
 |STATE_SYSTEM_FLOATING|[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 서버에서 폭넓게 구현되지 않음|  
-|STATE_SYSTEM_HOTTRACKED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
-|STATE_SYSTEM_PRESSED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_HOTTRACKED| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
+|STATE_SYSTEM_PRESSED| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
   
  전체 목록은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 식별자를 참조 하세요 [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)합니다.  
   
@@ -231,7 +231,7 @@ ms.locfileid: "48036216"
 |EVENT_SYSTEM_SCROLLINGEND|<xref:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty> or <xref:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty> 속성 변경|  
 |EVENT_SYSTEM_SCROLLINGSTART|<xref:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty> or <xref:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty> 속성 변경|  
 |EVENT_SYSTEM_SOUND|동일한 요소 없음|  
-|EVENT_SYSTEM_SWITCHEND|동일한 요소가 없지만 <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> 이벤트는 새 응용 프로그램이 포커스를 받았음을 신호로 알립니다.|  
+|EVENT_SYSTEM_SWITCHEND|동일한 요소가 없지만 <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> 이벤트는 새 애플리케이션이 포커스를 받았음을 신호로 알립니다.|  
 |EVENT_SYSTEM_SWITCHSTART|동일한 요소 없음|  
 |동일한 요소 없음|<xref:System.Windows.Automation.MultipleViewPattern.CurrentViewProperty> 속성 변경|  
 |동일한 요소 없음|<xref:System.Windows.Automation.ScrollPattern.HorizontallyScrollableProperty> 속성 변경|  
@@ -251,5 +251,5 @@ ms.locfileid: "48036216"
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 모델에서는 다른 공급자 코드를 통해 호출하는 데 공급자가 필요하지 않습니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 핵심 서비스는 필요한 모든 집계를 수행합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 기본 사항](../../../docs/framework/ui-automation/index.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 기본 사항](../../../docs/framework/ui-automation/index.md)

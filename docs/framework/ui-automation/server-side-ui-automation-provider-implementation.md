@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 270267fa961e2d9420364bc11992be9eff03866b
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 94e9c510f7f3c183bf6cbde31e2ead04cc66bfb9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744117"
 ---
 # <a name="server-side-ui-automation-provider-implementation"></a>서버 쪽 UI 자동화 공급자 구현
 > [!NOTE]
@@ -71,7 +71,7 @@ ms.locfileid: "48837392"
   
 |기능|구현|  
 |-------------------|--------------------|  
-|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|제어 창에 전송된 WM_GETOBJECT 메시지에 대한 응답으로, <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> 을 구현하는 개체(또는 파생된 인터페이스)를 반환합니다. 조각의 경우, 이는 조각 루트에 대한 공급자여야 합니다.|  
+| [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|제어 창에 전송된 WM_GETOBJECT 메시지에 대한 응답으로, <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> 을 구현하는 개체(또는 파생된 인터페이스)를 반환합니다. 조각의 경우, 이는 조각 루트에 대한 공급자여야 합니다.|  
 |속성 값 제공|<xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A> 를 구현하여 값을 제공하거나 재정의합니다.|  
 |클라이언트에서 컨트롤을 조작할 수 있게 설정|<xref:System.Windows.Automation.Provider.IInvokeProvider>와 같은 컨트롤 패턴을 지원하는 인터페이스를 구현합니다. 이러한 패턴 공급자를 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A>구현에서 반환합니다.|  
 |이벤트 발생|<xref:System.Windows.Automation.Provider.AutomationInteropProvider> 의 정적 메서드 중 하나를 호출하여 클라이언트가 수신할 수 있는 이벤트를 발생시킵니다.|  
@@ -123,13 +123,13 @@ ms.locfileid: "48837392"
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationPropertyChangedEvent%2A>|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성이 변경되면 이벤트를 발생시킵니다.|  
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent%2A>|예를 들어 요소가 제거되거나 추가되는 등, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리가 변경되면 이벤트를 발생시킵니다.|  
   
- 이벤트의 목적은 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]에서 발생하는 상황과 이 활동이 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 시스템 자체에서 트리거되는지 여부를 클라이언트에 알리는 것입니다. 예를 들어 <xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> 로 식별되는 이벤트는 직접적인 사용자 입력을 통해서든 아니면 클라이언트 응용 프로그램이 <xref:System.Windows.Automation.InvokePattern.Invoke%2A>를 호출해서든 상관없이 컨트롤이 호출될 때마다 발생해야 합니다.  
+ 이벤트의 목적은 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]에서 발생하는 상황과 이 활동이 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 시스템 자체에서 트리거되는지 여부를 클라이언트에 알리는 것입니다. 예를 들어 <xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> 로 식별되는 이벤트는 직접적인 사용자 입력을 통해서든 아니면 클라이언트 애플리케이션이 <xref:System.Windows.Automation.InvokePattern.Invoke%2A>를 호출해서든 상관없이 컨트롤이 호출될 때마다 발생해야 합니다.  
   
- 성능을 최적화하기 위해 공급자는 선택적으로 이벤트를 발생시키거나 이벤트 수신을 등록한 클라이언트 응용 프로그램이 없는 경우에는 이벤트를 전혀 발생시키지 않을 수 있습니다. 최적화를 위해 다음 메서드가 사용됩니다.  
+ 성능을 최적화하기 위해 공급자는 선택적으로 이벤트를 발생시키거나 이벤트 수신을 등록한 클라이언트 애플리케이션이 없는 경우에는 이벤트를 전혀 발생시키지 않을 수 있습니다. 최적화를 위해 다음 메서드가 사용됩니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|<xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A>|이 정적 속성은 클라이언트 응용 프로그램이 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이벤트를 수신하도록 가입했는지 여부를 지정합니다.|  
+|<xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A>|이 정적 속성은 클라이언트 애플리케이션이 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이벤트를 수신하도록 가입했는지 여부를 지정합니다.|  
 |<xref:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents>|공급자가 조각 루트에 대해 이 인터페이스를 구현하면 클라이언트가 조각의 이벤트에 대해 이벤트 처리기를 등록하거나 등록 취소할 때 이에 대해 알림을 받을 수 있습니다.|  
   
 <a name="Non_WPF_Provider_Navigation"></a>   
@@ -171,12 +171,12 @@ ms.locfileid: "48837392"
   
  이를 위해 rebar에 대한 조각 루트 공급자는 밴드는 나타내는 일련의 자식 항목을 노출합니다. 각 밴드에는 속성 및 패턴을 노출할 수 있는 단일 공급자가 있습니다. <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A>구현에서 밴드 공급자는 <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>호출 후 컨트롤의 창 핸들에 전달하여 가져온 컨트롤 HWND에 대한 기본 창 공급자를 반환합니다. 마지막으로, rebar에 대한 조각 루트 공급자는 <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> 인터페이스를 구현하고 <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> 구현에서 지정된 HWND에 포함된 컨트롤에 적절한 밴드 공급자를 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 공급자 개요](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [서버 쪽 UI 자동화 공급자 노출](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)  
- [UI 자동화 공급자에서 속성 반환](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)  
- [UI 자동화 공급자에서 이벤트 발생](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)  
- [UI 자동화 조각 공급자에서 탐색 사용](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [단순 공급자 샘플](https://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)  
- [조각 공급자 샘플](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 공급자 개요](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [서버 쪽 UI 자동화 공급자 노출](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)
+- [UI 자동화 공급자에서 속성 반환](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)
+- [UI 자동화 공급자에서 이벤트 발생](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
+- [UI 자동화 조각 공급자에서 탐색 사용](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [단순 공급자 샘플](https://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)
+- [조각 공급자 샘플](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)

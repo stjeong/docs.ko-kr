@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 8241523f-d8e1-4fb6-bf6a-b29bfe07b38a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 009d70423a3eb29c97f3279a288c37623dac927e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fed8097c472be487256840f289c1d8252d978a93
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54637110"
 ---
 # <a name="runtime-directives-rdxml-configuration-file-reference"></a>런타임 지시문(rd.xml) 구성 파일 참조
 런타임 지시문(.rd.xml) 파일은 지정된 프로그램 요소를 리플렉션에 사용할 수 있는지 여부를 지정하는 XML 구성 파일입니다. 런타임 지시문 파일의 예는 다음과 같습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33397275"
 ## <a name="the-structure-of-a-runtime-directives-file"></a>지시문 런타임 파일의 구조  
  런타임 지시문 파일은 `http://schemas.microsoft.com/netfx/2013/01/metadata` 네임스페이스를 사용합니다.  
   
- 루트 요소는 [Directives](../../../docs/framework/net-native/directives-element-net-native.md) 요소입니다. 이 요소는 다음 구조에 나와 있는 것처럼 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소와 [Application](../../../docs/framework/net-native/application-element-net-native.md) 요소를 포함하지 않을 수도 있고 포함할 수도 있습니다. [Application](../../../docs/framework/net-native/application-element-net-native.md) 요소의 특성은 응용 프로그램 전체 런타임 리플렉션 정책을 정의할 수도 있고 자식 요소의 컨테이너로 사용될 수도 있습니다. 반면 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소는 단순한 컨테이너입니다. [Application](../../../docs/framework/net-native/application-element-net-native.md) 및 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소의 자식은 리플렉션에 사용할 수 있는 형식, 메서드, 필드, 속성 및 이벤트를 정의합니다.  
+ 루트 요소는 [Directives](../../../docs/framework/net-native/directives-element-net-native.md) 요소입니다. 이 요소는 다음 구조에 나와 있는 것처럼 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소와 [Application](../../../docs/framework/net-native/application-element-net-native.md) 요소를 포함하지 않을 수도 있고 포함할 수도 있습니다. [Application](../../../docs/framework/net-native/application-element-net-native.md) 요소의 특성은 애플리케이션 전체 런타임 리플렉션 정책을 정의할 수도 있고 자식 요소의 컨테이너로 사용될 수도 있습니다. 반면 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소는 단순한 컨테이너입니다. [Application](../../../docs/framework/net-native/application-element-net-native.md) 및 [Library](../../../docs/framework/net-native/library-element-net-native.md) 요소의 자식은 리플렉션에 사용할 수 있는 형식, 메서드, 필드, 속성 및 이벤트를 정의합니다.  
   
  참조 정보를 확인하려면 다음 구조체의 요소를 선택하거나 [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)를 참조하세요. 다음 계층 구조에서 줄임표는 재귀 구조를 표시합니다. 괄호 안의 정보는 해당 요소가 필수 항목인지 선택적 항목인지와 요소가 사용되는 경우 허용되는 인스턴스 수(하나 또는 여러 개)를 나타냅니다.  
   
@@ -43,24 +43,24 @@ ms.locfileid: "33397275"
  [Application](../../../docs/framework/net-native/application-element-net-native.md) [0:1]  
  [Assembly](../../../docs/framework/net-native/assembly-element-net-native.md) [0:M]  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
  [Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md)(포함 형식의 하위 클래스) [O:1]  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md)(포함 형식이 특성임) [O:1]  
  [GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]  
  [Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]  
@@ -73,9 +73,9 @@ ms.locfileid: "33397275"
  [Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]  
  [Parameter](../../../docs/framework/net-native/parameter-element-net-native.md) [0:M]  
  [TypeParameter](../../../docs/framework/net-native/typeparameter-element-net-native.md) [0:M]  
@@ -87,24 +87,24 @@ ms.locfileid: "33397275"
  [Library](../../../docs/framework/net-native/library-element-net-native.md) [0:M]  
  [Assembly](../../../docs/framework/net-native/assembly-element-net-native.md) [0:M]  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
  [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
  [Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md)(포함 형식의 하위 클래스) [O:1]  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md)(포함 형식이 특성임) [O:1]  
  [GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]  
  [Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]  
@@ -114,9 +114,9 @@ ms.locfileid: "33397275"
  [Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
  [Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)(생성된 제네릭 형식) [0:M]  
- 이어야 합니다. . 이어야 합니다.  
+ . . .  
  [Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]  
  [MethodInstantiation](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)(생성된 제네릭 메서드) [0:M]  
  [Property](../../../docs/framework/net-native/property-element-net-native.md) [0:M]  
@@ -386,7 +386,7 @@ ms.locfileid: "33397275"
   
 -   메서드가 제네릭이면 해당 메서드가 인스턴스화되는 형식이 `Browse` 정책으로 표시됩니다.  
   
--   `MethodInfo.Invoke`를 통해 메서드를 호출할 수 있으며 <xref:System.Reflection.MethodInfo.CreateDelegate%2A?displayProperty=nameWithType>를 통해 대리자를 만들 수 있습니다.  
+-    `MethodInfo.Invoke`를 통해 메서드를 호출할 수 있으며 <xref:System.Reflection.MethodInfo.CreateDelegate%2A?displayProperty=nameWithType>를 통해 대리자를 만들 수 있습니다.  
   
  필드에 `Dynamic` 정책을 적용하면 정책이 다음과 같이 변경됩니다.  
   
@@ -407,7 +407,7 @@ ms.locfileid: "33397275"
   
  메서드에 `Activation` 정책을 적용하면 정책이 다음과 같이 변경됩니다.  
   
--   <xref:System.Reflection.ConstructorInfo.Invoke%2A?displayProperty=nameWithType> 및 <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> 메서드를 통해 생성자를 호출할 수 있습니다. 메서드의 경우에는 `Activation` 정책이 생성자에만 적용됩니다.  
+-    <xref:System.Reflection.ConstructorInfo.Invoke%2A?displayProperty=nameWithType> 및 <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> 메서드를 통해 생성자를 호출할 수 있습니다. 메서드의 경우에는 `Activation` 정책이 생성자에만 적용됩니다.  
   
  필드에는 `Activation` 정책을 적용해도 아무런 영향이 없습니다.  
   
@@ -459,6 +459,6 @@ ms.locfileid: "33397275"
   
  자세한 내용은 [Windows 스토어 앱을 .NET 네이티브로 마이그레이션](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)에서 “직렬 변환기의 차이점” 섹션을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)
+## <a name="see-also"></a>참고자료
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)
