@@ -5,18 +5,18 @@ ms.technology: dotnet-standard
 ms.assetid: 1d33e22d-18e5-43f8-a466-2e3d0a8dd094
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cbd75768896b09097d9e07fb22905d7d14a81547
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 19aeab232f366818291bd682ab9c063a75be6687
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724501"
 ---
-# <a name="node-types-recognized-with-xpath-queries"></a><span data-ttu-id="e86b1-102">XPath 쿼리에서 인식하는 노드 형식</span><span class="sxs-lookup"><span data-stu-id="e86b1-102">Node Types Recognized with XPath Queries</span></span>
-<span data-ttu-id="e86b1-103">XPath 쿼리에서 인식하는 노드 형식은 DOM(문서 개체 모델)에 있는 노드 형식과 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-103">The types of nodes recognized in an XPath query are not the same node types found in the Document Object Model (DOM).</span></span>  
+# <a name="node-types-recognized-with-xpath-queries"></a><span data-ttu-id="ed86f-102">XPath 쿼리에서 인식하는 노드 형식</span><span class="sxs-lookup"><span data-stu-id="ed86f-102">Node Types Recognized with XPath Queries</span></span>
+<span data-ttu-id="ed86f-103">XPath 쿼리에서 인식하는 노드 형식은 DOM(문서 개체 모델)에 있는 노드 형식과 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-103">The types of nodes recognized in an XPath query are not the same node types found in the Document Object Model (DOM).</span></span>  
   
-## <a name="w3c-xpath-node-types"></a><span data-ttu-id="e86b1-104">W3C XPath 노드 형식</span><span class="sxs-lookup"><span data-stu-id="e86b1-104">W3C XPath Node Types</span></span>  
- <span data-ttu-id="e86b1-105">XPath 쿼리에서 인식하는 노드 형식은 DOM(문서 개체 모델)에 있는 노드 형식이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-105">The types of nodes recognized in an XPath query are not the types of nodes found in the Document Object Model (DOM).</span></span> <span data-ttu-id="e86b1-106">다음은 <xref:System.Xml.XPath.XPathNodeType> 열거형이 나타내는 XPath 노드 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-106">The following are the XPath node types represented by the <xref:System.Xml.XPath.XPathNodeType> enumeration.</span></span>  
+## <a name="w3c-xpath-node-types"></a><span data-ttu-id="ed86f-104">W3C XPath 노드 형식</span><span class="sxs-lookup"><span data-stu-id="ed86f-104">W3C XPath Node Types</span></span>  
+ <span data-ttu-id="ed86f-105">XPath 쿼리에서 인식하는 노드 형식은 DOM(문서 개체 모델)에 있는 노드 형식이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-105">The types of nodes recognized in an XPath query are not the types of nodes found in the Document Object Model (DOM).</span></span> <span data-ttu-id="ed86f-106">다음은 <xref:System.Xml.XPath.XPathNodeType> 열거형이 나타내는 XPath 노드 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-106">The following are the XPath node types represented by the <xref:System.Xml.XPath.XPathNodeType> enumeration.</span></span>  
   
 -   <xref:System.Xml.XPath.XPathNodeType.All>  
   
@@ -38,22 +38,22 @@ ms.locfileid: "43863639"
   
 -   <xref:System.Xml.XPath.XPathNodeType.Whitespace>  
   
- <span data-ttu-id="e86b1-107">이 노드 형식은 XML 정보 집합에서 노드가 파생되는 XPath 데이터 모델을 기반으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-107">These node types are based on the XPath data model, where the nodes are derived from the XML Information Set.</span></span> <span data-ttu-id="e86b1-108"><xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> 및 <xref:System.Xml.XPath.XPathNodeType.Whitespace> 노드 형식은 XPath 데이터 모델에서 설명하는 기본 노드 형식에 대한 Microsoft .NET Framework 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-108">The <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> and <xref:System.Xml.XPath.XPathNodeType.Whitespace> node types are Microsoft .NET Framework extensions to the base node types described in the XPath data model.</span></span>  
+ <span data-ttu-id="ed86f-107">이 노드 형식은 XML 정보 집합에서 노드가 파생되는 XPath 데이터 모델을 기반으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-107">These node types are based on the XPath data model, where the nodes are derived from the XML Information Set.</span></span> <span data-ttu-id="ed86f-108"><xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> 및 <xref:System.Xml.XPath.XPathNodeType.Whitespace> 노드 형식은 XPath 데이터 모델에서 설명하는 기본 노드 형식에 대한 Microsoft .NET Framework 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-108">The <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> and <xref:System.Xml.XPath.XPathNodeType.Whitespace> node types are Microsoft .NET Framework extensions to the base node types described in the XPath data model.</span></span>  
   
- <span data-ttu-id="e86b1-109">XPath 데이터 모델에서는 DOM에서와 다른 방식으로 특성 노드 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-109">The attribute node type is used differently in the XPath data model than it is in the DOM.</span></span> <span data-ttu-id="e86b1-110">XPath 데이터 모델에서 요소 노드는 관련된 특성 노드 집합을 가지고 있으며 요소 노드는 각 특성 노드의 부모입니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-110">In the XPath data model, the element node has a set of attribute nodes related to it and the element node is the parent of each attribute node.</span></span> <span data-ttu-id="e86b1-111">그러나 DOM에서 요소 노드는 부모가 아니라 소유자입니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-111">However, in the DOM, the element node is the owner and not the parent.</span></span> <span data-ttu-id="e86b1-112">두 모델에서 특성 및 네임스페이스 노드는 요소 노드의 자식 노드로 간주되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-112">In both models, attribute and namespace nodes are not considered child nodes of the element node.</span></span>  
+ <span data-ttu-id="ed86f-109">XPath 데이터 모델에서는 DOM에서와 다른 방식으로 특성 노드 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-109">The attribute node type is used differently in the XPath data model than it is in the DOM.</span></span> <span data-ttu-id="ed86f-110">XPath 데이터 모델에서 요소 노드는 관련된 특성 노드 집합을 가지고 있으며 요소 노드는 각 특성 노드의 부모입니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-110">In the XPath data model, the element node has a set of attribute nodes related to it and the element node is the parent of each attribute node.</span></span> <span data-ttu-id="ed86f-111">그러나 DOM에서 요소 노드는 부모가 아니라 소유자입니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-111">However, in the DOM, the element node is the owner and not the parent.</span></span> <span data-ttu-id="ed86f-112">두 모델에서 특성 및 네임스페이스 노드는 요소 노드의 자식 노드로 간주되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-112">In both models, attribute and namespace nodes are not considered child nodes of the element node.</span></span>  
   
- <span data-ttu-id="e86b1-113">네임스페이스 노드 형식은 XPath 데이터 모델에 추가된 것이며 인식되는 DOM 노드 형식이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="e86b1-113">The namespace node type is an addition to the XPath data model and is not a recognized DOM node type.</span></span>  
+ <span data-ttu-id="ed86f-113">네임스페이스 노드 형식은 XPath 데이터 모델에 추가된 것이며 인식되는 DOM 노드 형식이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="ed86f-113">The namespace node type is an addition to the XPath data model and is not a recognized DOM node type.</span></span>  
   
- <span data-ttu-id="e86b1-114">요소, 특성 및 네임스페이스 노드 탐색에 대한 자세한 내용은 [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) 및 [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md) 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e86b1-114">For more information about navigating element, attribute, and namespace nodes, see the [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) and [Attribute and Namespace Node Navigation Using XPathNavigator](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md) topics.</span></span>  
+ <span data-ttu-id="ed86f-114">요소, 특성 및 네임스페이스 노드 탐색에 대한 자세한 내용은 [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) 및 [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md) 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ed86f-114">For more information about navigating element, attribute, and namespace nodes, see the [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) and [Attribute and Namespace Node Navigation Using XPathNavigator](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md) topics.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e86b1-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e86b1-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ed86f-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ed86f-115">See also</span></span>
 
-- <xref:System.Xml.XmlDocument>  
-- <xref:System.Xml.XPath.XPathDocument>  
-- <xref:System.Xml.XPath.XPathNavigator>  
-- [<span data-ttu-id="e86b1-116">XPath 데이터 모델을 사용하여 XML 데이터 처리</span><span class="sxs-lookup"><span data-stu-id="e86b1-116">Process XML Data Using the XPath Data Model</span></span>](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
-- [<span data-ttu-id="e86b1-117">XPathNavigator를 사용하여 XML 데이터 선택</span><span class="sxs-lookup"><span data-stu-id="e86b1-117">Select XML Data Using XPathNavigator</span></span>](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
-- [<span data-ttu-id="e86b1-118">XPathNavigator를 사용하여 XPath 식 계산</span><span class="sxs-lookup"><span data-stu-id="e86b1-118">Evaluate XPath Expressions using XPathNavigator</span></span>](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
-- [<span data-ttu-id="e86b1-119">XPathNavigator를 사용하여 노드 일치시키기</span><span class="sxs-lookup"><span data-stu-id="e86b1-119">Matching Nodes using XPathNavigator</span></span>](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
-- [<span data-ttu-id="e86b1-120">XPath 쿼리 및 네임스페이스</span><span class="sxs-lookup"><span data-stu-id="e86b1-120">XPath Queries and Namespaces</span></span>](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
-- [<span data-ttu-id="e86b1-121">컴파일된 XPath 식</span><span class="sxs-lookup"><span data-stu-id="e86b1-121">Compiled XPath Expressions</span></span>](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [<span data-ttu-id="ed86f-116">XPath 데이터 모델을 사용하여 XML 데이터 처리</span><span class="sxs-lookup"><span data-stu-id="ed86f-116">Process XML Data Using the XPath Data Model</span></span>](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+- [<span data-ttu-id="ed86f-117">XPathNavigator를 사용하여 XML 데이터 선택</span><span class="sxs-lookup"><span data-stu-id="ed86f-117">Select XML Data Using XPathNavigator</span></span>](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
+- [<span data-ttu-id="ed86f-118">XPathNavigator를 사용하여 XPath 식 계산</span><span class="sxs-lookup"><span data-stu-id="ed86f-118">Evaluate XPath Expressions using XPathNavigator</span></span>](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)
+- [<span data-ttu-id="ed86f-119">XPathNavigator를 사용하여 노드 일치시키기</span><span class="sxs-lookup"><span data-stu-id="ed86f-119">Matching Nodes using XPathNavigator</span></span>](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
+- [<span data-ttu-id="ed86f-120">XPath 쿼리 및 네임스페이스</span><span class="sxs-lookup"><span data-stu-id="ed86f-120">XPath Queries and Namespaces</span></span>](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
+- [<span data-ttu-id="ed86f-121">컴파일된 XPath 식</span><span class="sxs-lookup"><span data-stu-id="ed86f-121">Compiled XPath Expressions</span></span>](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
