@@ -16,46 +16,46 @@ helpviewer_keywords:
 - -alignment compiler option [C#]
 - section alignment [C#]
 ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
-ms.openlocfilehash: 39b5aeecba39c0e5377fd4f76902dae4b678c324
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3437b0f90593eed2900829212866cf689ff54e8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660179"
 ---
-# <a name="-filealign-c-compiler-options"></a><span data-ttu-id="0d677-102">-filealign(C# 컴파일러 옵션)</span><span class="sxs-lookup"><span data-stu-id="0d677-102">-filealign (C# Compiler Options)</span></span>
-<span data-ttu-id="0d677-103">**-filealign** 옵션을 사용하여 출력 파일의 섹션 크기를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-103">The **-filealign** option lets you specify the size of sections in your output file.</span></span>  
+# <a name="-filealign-c-compiler-options"></a><span data-ttu-id="3824c-102">-filealign(C# 컴파일러 옵션)</span><span class="sxs-lookup"><span data-stu-id="3824c-102">-filealign (C# Compiler Options)</span></span>
+<span data-ttu-id="3824c-103">**-filealign** 옵션을 사용하여 출력 파일의 섹션 크기를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-103">The **-filealign** option lets you specify the size of sections in your output file.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="0d677-104">구문</span><span class="sxs-lookup"><span data-stu-id="0d677-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3824c-104">구문</span><span class="sxs-lookup"><span data-stu-id="3824c-104">Syntax</span></span>  
   
 ```console  
 -filealign:number  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="0d677-105">인수</span><span class="sxs-lookup"><span data-stu-id="0d677-105">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="3824c-105">인수</span><span class="sxs-lookup"><span data-stu-id="3824c-105">Arguments</span></span>  
  `number`  
- <span data-ttu-id="0d677-106">출력 파일의 섹션 크기를 지하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-106">A value that specifies the size of sections in the output file.</span></span> <span data-ttu-id="0d677-107">유효한 값은 512, 1024, 2048, 4096 및 8192입니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-107">Valid values are 512, 1024, 2048, 4096, and 8192.</span></span> <span data-ttu-id="0d677-108">이러한 값은 바이트 단위입니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-108">These values are in bytes.</span></span>  
+ <span data-ttu-id="3824c-106">출력 파일의 섹션 크기를 지하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-106">A value that specifies the size of sections in the output file.</span></span> <span data-ttu-id="3824c-107">유효한 값은 512, 1024, 2048, 4096 및 8192입니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-107">Valid values are 512, 1024, 2048, 4096, and 8192.</span></span> <span data-ttu-id="3824c-108">이러한 값은 바이트 단위입니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-108">These values are in bytes.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="0d677-109">설명</span><span class="sxs-lookup"><span data-stu-id="0d677-109">Remarks</span></span>  
- <span data-ttu-id="0d677-110">각 섹션은 **-filealign** 값의 배수인 경계에 맞춰집니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-110">Each section will be aligned on a boundary that is a multiple of the **-filealign** value.</span></span> <span data-ttu-id="0d677-111">고정된 기본값이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-111">There is no fixed default.</span></span> <span data-ttu-id="0d677-112">**-filealign**을 지정하지 않으면 공용언어 런타임에서 컴파일 시간에 기본값을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-112">If **-filealign** is not specified, the common language runtime picks a default at compile time.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3824c-109">주의</span><span class="sxs-lookup"><span data-stu-id="3824c-109">Remarks</span></span>  
+ <span data-ttu-id="3824c-110">각 섹션은 **-filealign** 값의 배수인 경계에 맞춰집니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-110">Each section will be aligned on a boundary that is a multiple of the **-filealign** value.</span></span> <span data-ttu-id="3824c-111">고정된 기본값이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-111">There is no fixed default.</span></span> <span data-ttu-id="3824c-112">**-filealign**을 지정하지 않으면 공용언어 런타임에서 컴파일 시간에 기본값을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-112">If **-filealign** is not specified, the common language runtime picks a default at compile time.</span></span>  
   
- <span data-ttu-id="0d677-113">섹션 크기를 지정하면 출력 파일의 크기에 영향을 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-113">By specifying the section size, you affect the size of the output file.</span></span> <span data-ttu-id="0d677-114">섹션 크기를 수정하면 더 작은 디바이스에서 실행되는 프로그램에 유용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-114">Modifying section size may be useful for programs that will run on smaller devices.</span></span>  
+ <span data-ttu-id="3824c-113">섹션 크기를 지정하면 출력 파일의 크기에 영향을 줍니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-113">By specifying the section size, you affect the size of the output file.</span></span> <span data-ttu-id="3824c-114">섹션 크기를 수정하면 더 작은 디바이스에서 실행되는 프로그램에 유용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-114">Modifying section size may be useful for programs that will run on smaller devices.</span></span>  
   
- <span data-ttu-id="0d677-115">출력 파일의 섹션에 대한 정보를 확인하려면 [DUMPBIN](/cpp/build/reference/dumpbin-options)을 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="0d677-115">Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.</span></span>  
+ <span data-ttu-id="3824c-115">출력 파일의 섹션에 대한 정보를 확인하려면 [DUMPBIN](/cpp/build/reference/dumpbin-options)을 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="3824c-115">Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.</span></span>  
   
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a><span data-ttu-id="0d677-116">Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면</span><span class="sxs-lookup"><span data-stu-id="0d677-116">To set this compiler option in the Visual Studio development environment</span></span>  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a><span data-ttu-id="3824c-116">Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면</span><span class="sxs-lookup"><span data-stu-id="3824c-116">To set this compiler option in the Visual Studio development environment</span></span>  
   
-1.  <span data-ttu-id="0d677-117">프로젝트 **속성** 페이지를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-117">Open the project's **Properties** page.</span></span>  
+1.  <span data-ttu-id="3824c-117">프로젝트 **속성** 페이지를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-117">Open the project's **Properties** page.</span></span>  
   
-2.  <span data-ttu-id="0d677-118">**빌드** 속성 페이지를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-118">Click the **Build** property page.</span></span>  
+2.  <span data-ttu-id="3824c-118">**빌드** 속성 페이지를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-118">Click the **Build** property page.</span></span>  
   
-3.  <span data-ttu-id="0d677-119">**고급** 단추를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-119">Click the **Advanced** button.</span></span>  
+3.  <span data-ttu-id="3824c-119">**고급** 단추를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-119">Click the **Advanced** button.</span></span>  
   
-4.  <span data-ttu-id="0d677-120">**파일 맞춤** 속성을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="0d677-120">Modify the **File Alignment** property.</span></span>  
+4.  <span data-ttu-id="3824c-120">**파일 맞춤** 속성을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="3824c-120">Modify the **File Alignment** property.</span></span>  
   
- <span data-ttu-id="0d677-121">이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0d677-121">For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>.</span></span>  
+ <span data-ttu-id="3824c-121">이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3824c-121">For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0d677-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0d677-122">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="3824c-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3824c-122">See also</span></span>
 
-- [<span data-ttu-id="0d677-123">C# 컴파일러 옵션</span><span class="sxs-lookup"><span data-stu-id="0d677-123">C# Compiler Options</span></span>](../../../csharp/language-reference/compiler-options/index.md)  
-- [<span data-ttu-id="0d677-124">프로젝트 및 솔루션 속성 관리</span><span class="sxs-lookup"><span data-stu-id="0d677-124">Managing Project and Solution Properties</span></span>](/visualstudio/ide/managing-project-and-solution-properties)
+- [<span data-ttu-id="3824c-123">C# 컴파일러 옵션</span><span class="sxs-lookup"><span data-stu-id="3824c-123">C# Compiler Options</span></span>](../../../csharp/language-reference/compiler-options/index.md)
+- [<span data-ttu-id="3824c-124">프로젝트 및 솔루션 속성 관리</span><span class="sxs-lookup"><span data-stu-id="3824c-124">Managing Project and Solution Properties</span></span>](/visualstudio/ide/managing-project-and-solution-properties)
