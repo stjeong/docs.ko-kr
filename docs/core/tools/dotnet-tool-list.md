@@ -2,12 +2,12 @@
 title: dotnet tool list 명령
 description: dotnet tool list 명령은 컴퓨터에서 지정한 .NET Core Global Tool을 나열합니다.
 ms.date: 05/29/2018
-ms.openlocfilehash: 0c17534beb80ed87a8f260342b0f82882a9e17b6
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: d3ff7fc90faf6ede3f7de0d5af5112c77ca140db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712924"
 ---
 # <a name="dotnet-tool-list"></a>dotnet tool list
 
@@ -59,4 +59,4 @@ Global Tool을 찾을 사용자 지정 위치를 지정합니다. PATH는 절대
 
 ## <a name="see-also"></a>참고 항목
 
-* [.NET Core Global Tool](global-tools.md)
+- [.NET Core Global Tool](global-tools.md)

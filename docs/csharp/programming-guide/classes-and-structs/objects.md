@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C#], about objects
 - variables [C#]
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
-ms.openlocfilehash: 439f001450d51885f943cb28752de1689dd4a748
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 12c31db32b2b3ff3da7ed0972ea2cf090701f3e4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54491744"
 ---
 # <a name="objects-c-programming-guide"></a>개체(C# 프로그래밍 가이드)
 클래스 또는 구조체 정의는 형식이 수행할 수 있는 작업을 지정하는 청사진과 비슷합니다. 개체는 기본적으로 청사진에 따라 구성 및 할당된 메모리 블록입니다. 프로그램에서 동일한 클래스의 많은 개체를 만들 수 있습니다. 개체를 인스턴스라고도 하며, 명명된 변수나 배열 또는 컬렉션에 저장할 수 있습니다. 클라이언트 코드는 이러한 변수를 사용하여 메서드를 호출하고 개체의 공용 속성에 액세스하는 코드입니다. C#과 같은 개체 지향 언어에서 일반적인 프로그램은 동적으로 상호 작용하는 여러 개체로 구성됩니다.  
@@ -63,10 +63,10 @@ ms.locfileid: "53235100"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [object](../../../csharp/language-reference/keywords/object.md)  
-- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
-- [struct](../../../csharp/language-reference/keywords/struct.md)  
-- [new 연산자](../../../csharp/language-reference/keywords/new-operator.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [object](../../../csharp/language-reference/keywords/object.md)
+- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [new 연산자](../../../csharp/language-reference/keywords/new-operator.md)
 - [공용 형식 시스템](../../../standard/base-types/common-type-system.md)

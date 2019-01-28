@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML documentation [C#]
 - C# language, XML documentation features
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
-ms.openlocfilehash: ce14de1f5aef4703a0c9b3868852104dc313e728
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 893dc726f7b4ee2d2afa69f63d13d1f11a4692db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54491638"
 ---
 # <a name="how-to-use-the-xml-documentation-features"></a>방법: XML 문서 기능 사용
 
@@ -134,6 +134,6 @@ XML 문서는 ///로 시작합니다. 새 프로젝트를 만드는 경우 마�
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [/doc(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
-- [XML 문서 주석](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [/doc(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
+- [XML 문서 주석](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

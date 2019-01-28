@@ -4,12 +4,12 @@ description: .NET Core SDK 및 빌드 서버의 도구를 사용하는 방법에
 author: guardrex
 ms.date: 05/18/2017
 ms.custom: seodec18
-ms.openlocfilehash: 4c651983bb900d000de37a0e413ef9ab0f7893c9
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: c9fd9e359a22467cc8639109538522e4088df5ef
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54704097"
 ---
 # <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci"></a>.NET Core SDK 및 CI(연속 통합)의 도구 사용
 
@@ -161,7 +161,7 @@ Azure DevOps Services에서 수동 설치 스크립트를 사용하려면 새 �
 
    ![빌드 단계 추가](./media/using-ci-with-cli/add-build-step.png)
 
-1. **작업 카탈로그**가 표시됩니다. 카탈로그에는 빌드에서 사용할 작업이 포함됩니다. 스크립트가 준비되면 **PowerShell: PowerShell 스크립트 실행**에 대해 **추가** 단추를 선택합니다.
+1. **작업 카탈로그**가 표시됩니다. 카탈로그에는 빌드에서 사용할 작업이 포함됩니다. 스크립트가 준비되면 **PowerShell: PowerShell 스크립트 실행**에 대해 추가 단추를 선택합니다.
 
    ![PowerShell 스크립트 단계 추가](./media/using-ci-with-cli/add-powershell-script.png)
 
@@ -177,4 +177,4 @@ Azure DevOps Services에서 수동 설치 스크립트를 사용하려면 새 �
 
 ## <a name="see-also"></a>참고 항목
 
-* [.NET 다운로드 - Linux](https://dotnet.microsoft.com/download?initial-os=linux)
+- [.NET 다운로드 - Linux](https://dotnet.microsoft.com/download?initial-os=linux)

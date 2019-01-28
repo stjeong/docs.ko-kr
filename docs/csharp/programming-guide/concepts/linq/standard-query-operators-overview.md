@@ -2,12 +2,12 @@
 title: 표준 쿼리 연산자 개요(C#)
 ms.date: 07/20/2015
 ms.assetid: 812fa119-5f65-4139-b4fa-55dccd8dc3ac
-ms.openlocfilehash: 397d1368a3c4e0b20a0bc9c694421ed60119d1aa
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7ce3a13c98bf08eae79906f1806427741568155e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54537961"
 ---
 # <a name="standard-query-operators-overview-c"></a>표준 쿼리 연산자 개요(C#)
 *표준 쿼리 연산자*는 LINQ 패턴을 형성하는 메서드입니다. 이 메서드 중 대부분은 시퀀스에서 작동합니다. 여기서 시퀀스란 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 형식의 개체입니다. 표준 쿼리 연산자는 필터링, 프로젝션, 집계, 정렬 등을 포함하여 쿼리 기능을 제공합니다.  
@@ -105,9 +105,9 @@ foreach (var obj in query)
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Linq.Enumerable>  
-- <xref:System.Linq.Queryable>  
-- [LINQ 쿼리 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
-- [표준 쿼리 연산자의 쿼리 식 구문(C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)  
-- [실행 방식에 따라 표준 쿼리 연산자 분류(C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)  
+- <xref:System.Linq.Enumerable>
+- <xref:System.Linq.Queryable>
+- [LINQ 쿼리 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [표준 쿼리 연산자의 쿼리 식 구문(C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
+- [실행 방식에 따라 표준 쿼리 연산자 분류(C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
 - [확장명 메서드](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

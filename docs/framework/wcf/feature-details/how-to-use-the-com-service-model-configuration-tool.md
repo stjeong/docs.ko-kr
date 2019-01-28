@@ -1,17 +1,17 @@
 ---
-title: '방법: COM+ 서비스 모델 구성 도구 사용'
+title: '방법: COM + 서비스 모델 구성 도구를 사용 합니다.'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM+ [WCF], using service model configuration tool
 ms.assetid: 7e68cd8d-5fda-4641-b92f-290db874376e
-ms.openlocfilehash: d26e3b127328a3de4df6bd58fb6015bee045f3c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 528e46a47daa6df865308592eb41658369a74b6e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736249"
 ---
-# <a name="how-to-use-the-com-service-model-configuration-tool"></a>방법: COM+ 서비스 모델 구성 도구 사용
+# <a name="how-to-use-the-com-service-model-configuration-tool"></a>방법: COM + 서비스 모델 구성 도구를 사용 합니다.
 적절한 호스팅 모드를 선택한 다음 COM+ 서비스 모델 구성 명령줄 도구(ComSvcConfig.exe)를 사용하여 웹 서비스로 노출될 응용 프로그램 인터페이스를 구성합니다.  
   
 > [!NOTE]
@@ -19,7 +19,7 @@ ms.locfileid: "33496242"
   
  Windows 7 컴퓨터에서 ComSvcConfig.exe를 사용하여 웹 서비스가 최신 서비스 모델 버전(현재 v4.5)을 사용하도록 구성하려면 다음 단계를 따르십시오.  
   
-1.  레지스트리 키 설정 `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` 0x00000001의 DWORD 값을  
+1.  레지스트리 키 설정 `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` DWORD 값 0x00000001  
   
 2.  Comsvcconfig.exe를 실행합니다.  
   
@@ -29,7 +29,7 @@ ms.locfileid: "33496242"
 >  이 레지스트리 키를 되돌리는 것은 중요합니다. 이 키는 호환성 키이므로 변경 내용을 되돌리지 않으면 컴퓨터에서 실행 중인 다른 .NET 응용 프로그램에 문제가 발생할 수 있습니다.  
   
 > [!WARNING]
->  Windows 8 컴퓨터 대화 상자에서 /install 라는 메시지가 표시 됩니다 ComSvcConfig.exe를 사용 하는 경우 "PC에 응용 프로그램에 다음 Windows 기능이 필요:.NET Framework 3.5 (.NET 2.0 및.NET 3.0 포함".NET Framework 3.5 설치 되지 않은 경우. 이 대화 상자는 무시해도 됩니다. 또는 OnlyUseLatestCLR 레지스트리 키를 DWORD 값 0x00000001로 설정해도 됩니다.  
+>  ComSvcConfig.exe를 사용 하는 경우 Windows 8 컴퓨터 대화 상자에서 /install 라는 메시지가 표시 됩니다 "PC에서 앱 필요한 Windows 기능:.NET Framework 3.5 (.NET 2.0 및.NET 3.0 포함".NET Framework 3.5를 설치 하지 않은 경우. 이 대화 상자는 무시해도 됩니다. 또는 OnlyUseLatestCLR 레지스트리 키를 DWORD 값 0x00000001로 설정해도 됩니다.  
   
 ### <a name="to-add-an-interface-to-the-set-of-interfaces-that-are-to-be-exposed-as-web-services-using-the-com-hosting-mode"></a>COM+ 호스팅 모드를 사용하여 웹 서비스로 노출될 인터페이스 집합에 인터페이스를 추가하려면  
   
@@ -109,5 +109,5 @@ ms.locfileid: "33496242"
     ComSvcConfig.exe /?  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [COM+ 응용 프로그램과 통합 개요](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)
+## <a name="see-also"></a>참고자료
+- [COM+ 애플리케이션과 통합 개요](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)
