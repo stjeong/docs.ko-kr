@@ -5,12 +5,12 @@ ms.date: 07/10/2017
 helpviewer_keywords:
 - nested types [C#]
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
-ms.openlocfilehash: b08a7e95e3ddf7e2392be30f2e69c4ec8f425107
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 32f434d9813b08254b72b713ec2f9a1bc9d1b06d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54725014"
 ---
 # <a name="nested-types-c-programming-guide"></a>중첩 형식(C# 프로그래밍 가이드)
 [클래스](../../../csharp/language-reference/keywords/class.md) 또는 [구조체](../../../csharp/language-reference/keywords/struct.md) 내에서 선언된 형식을 중첩 형식이라고 합니다. 예:  
@@ -43,7 +43,7 @@ ms.locfileid: "53244013"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
 - [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)

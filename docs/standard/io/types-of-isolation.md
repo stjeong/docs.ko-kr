@@ -20,17 +20,17 @@ helpviewer_keywords:
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 49708175f8501c735a77b0f7f965a106b6e086f2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 384fd14a136dbd94725d7ef478c769a1dfce0c4c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654661"
 ---
 # <a name="types-of-isolation"></a>격리 유형
 격리된 스토리지에 대한 액세스는 항상 스토리지를 만든 사용자로 제한됩니다. 이 유형의 격리를 구현하기 위해 공용 언어 런타임은 운영 체제에서 인식하고 저장소가 열릴 때 코드가 실행 중인 프로세스에 연결된 ID인 사용자 ID의 동일한 표기법을 사용합니다. 이 ID는 인증된 사용자 ID이지만 가장으로 인해 현재 사용자의 ID가 동적으로 변경될 수 있습니다.  
   
- 격리된 저장소에 대한 액세스는 애플리케이션의 도메인 및 어셈블리에 연결되거나 어셈블리에만 연결된 ID에 따라 제한됩니다. 런타임은 다음과 같은 방법으로 이러한 ID를 얻습니다.  
+ 격리된 스토리지에 대한 액세스는 애플리케이션의 도메인 및 어셈블리에 연결되거나 어셈블리에만 연결된 ID에 따라 제한됩니다. 런타임은 다음과 같은 방법으로 이러한 ID를 얻습니다.  
   
 -   도메인 ID는 애플리케이션의 증거를 나타내며 웹 애플리케이션의 경우 전체 URL일 수 있습니다. 셸에 호스트된 코드의 경우 도메인 ID는 애플리케이션 디렉터리 경로를 기반으로 할 수 있습니다. 예를 들어 실행 파일이 C:\Office\MyApp.exe 경로에서 실행되는 경우 도메인 ID는 C:\Office\MyApp.exe입니다.  
   
@@ -54,11 +54,11 @@ ms.locfileid: "47424456"
  로밍 저장소를 제외하고 격리된 스토리지는 지정된 컴퓨터에 로컬인 스토리지 시설을 사용하므로 항상 컴퓨터에서 암시적으로 격리됩니다.  
   
 > [!IMPORTANT]
->  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에는 격리된 저장소를 사용할 수 없습니다. 대신에 `Windows.Storage` API에 포함된 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 네임스페이스의 애플리케이션 데이터 클래스를 사용하여 로컬 데이터 및 파일을 저장합니다. 자세한 내용은 Windows 개발자 센터에서 [애플리케이션 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 참조하세요.  
+>  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에는 격리된 스토리지를 사용할 수 없습니다. 대신에 `Windows.Storage` API에 포함된 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 네임스페이스의 애플리케이션 데이터 클래스를 사용하여 로컬 데이터 및 파일을 저장합니다. 자세한 내용은 Windows 개발자 센터에서 [애플리케이션 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) 를 참조하세요.  
   
 <a name="UserAssembly"></a>   
 ## <a name="isolation-by-user-and-assembly"></a>사용자 및 어셈블리별 격리  
- 데이터 저장소를 사용하는 어셈블리를 애플리케이션 도메인에서 액세스할 수 있어야 하는 경우 사용자 및 어셈블리별로 격리하는 것이 적절합니다. 일반적으로 이 상황에서 격리된 저장소는 여러 애플리케이션에 적용되는 데이터를 저장하는 데 사용되며 사용자 이름 또는 라이선스 정보와 같은 특정 애플리케이션에 연결되지 않습니다. 사용자 및 어셈블리별로 격리된 저장소에 액세스하려면 애플리케이션 간에 정보를 전송하기 위해 코드를 신뢰할 수 있어야 합니다. 일반적으로 사용자 및 어셈블리별 격리는 인트라넷에서 허용되지만 인터넷에는 허용되지 않습니다. 정적 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=nameWithType> 메서드를 호출하고 사용자 및 어셈블리로 전달하면 <xref:System.IO.IsolatedStorage.IsolatedStorageScope>는 이 유형의 격리를 통해 스토리지를 반환합니다.  
+ 데이터 저장소를 사용하는 어셈블리를 애플리케이션 도메인에서 액세스할 수 있어야 하는 경우 사용자 및 어셈블리별로 격리하는 것이 적절합니다. 일반적으로 이 상황에서 격리된 스토리지는 여러 애플리케이션에 적용되는 데이터를 저장하는 데 사용되며 사용자 이름 또는 라이선스 정보와 같은 특정 애플리케이션에 연결되지 않습니다. 사용자 및 어셈블리별로 격리된 스토리지에 액세스하려면 애플리케이션 간에 정보를 전송하기 위해 코드를 신뢰할 수 있어야 합니다. 일반적으로 사용자 및 어셈블리별 격리는 인트라넷에서 허용되지만 인터넷에는 허용되지 않습니다. 정적 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=nameWithType> 메서드를 호출하고 사용자 및 어셈블리로 전달하면 <xref:System.IO.IsolatedStorage.IsolatedStorageScope>는 이 유형의 격리를 통해 스토리지를 반환합니다.  
   
  다음 코드 예제에서는 사용자 및 어셈블리별로 격리되는 저장소를 검색합니다. `isoFile` 개체를 통해 저장소에 액세스할 수 있습니다.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "47424456"
   
 <a name="UserDomainAssembly"></a>   
 ## <a name="isolation-by-user-domain-and-assembly"></a>사용자, 도메인 및 어셈블리별 격리  
- 애플리케이션에서 개인 데이터 저장소가 필요한 타사 어셈블리를 사용하는 경우 격리된 저장소를 사용하여 개인 데이터를 저장할 수 있습니다. 사용자, 도메인 및 어셈블리별 격리를 사용하면 어셈블리가 저장소를 만들 때 실행 중이던 애플리케이션에서 어셈블리가 사용될 경우 및 저장소를 만든 사용자가 애플리케이션을 실행하는 경우에만 지정된 어셈블리의 코드만 해당 데이터에 액세스할 수 있습니다. 사용자, 도메인 및 어셈블리별 격리를 사용하면 타사 어셈블리에 의해 데이터가 다른 애플리케이션으로 누출되지 않습니다. 격리된 스토리지를 사용하려고 하지만 어떤 격리 유형을 사용할지 확신할 수 없는 경우에는 기본적으로 이 격리 유형을 선택해야 합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile>의 정적 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> 메서드를 호출하고 사용자, 도메인 및 어셈블리로 전달하면 <xref:System.IO.IsolatedStorage.IsolatedStorageScope>는 이 유형의 격리를 통해 저장소를 반환합니다.  
+ 애플리케이션에서 개인 데이터 저장소가 필요한 타사 어셈블리를 사용하는 경우 격리된 스토리지를 사용하여 개인 데이터를 저장할 수 있습니다. 사용자, 도메인 및 어셈블리별 격리를 사용하면 어셈블리가 저장소를 만들 때 실행 중이던 애플리케이션에서 어셈블리가 사용될 경우 및 저장소를 만든 사용자가 애플리케이션을 실행하는 경우에만 지정된 어셈블리의 코드만 해당 데이터에 액세스할 수 있습니다. 사용자, 도메인 및 어셈블리별 격리를 사용하면 타사 어셈블리에 의해 데이터가 다른 애플리케이션으로 누출되지 않습니다. 격리된 스토리지를 사용하려고 하지만 어떤 격리 유형을 사용할지 확신할 수 없는 경우에는 기본적으로 이 격리 유형을 선택해야 합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile>의 정적 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> 메서드를 호출하고 사용자, 도메인 및 어셈블리로 전달하면 <xref:System.IO.IsolatedStorage.IsolatedStorageScope>는 이 유형의 격리를 통해 스토리지를 반환합니다.  
   
  다음 코드 예제에서는 사용자, 도메인 및 어셈블리별로 격리되는 저장소를 검색합니다. `isoFile` 개체를 통해 저장소에 액세스할 수 있습니다.  
   
@@ -108,5 +108,5 @@ ms.locfileid: "47424456"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
-- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
+- [격리된 스토리지](../../../docs/standard/io/isolated-storage.md)

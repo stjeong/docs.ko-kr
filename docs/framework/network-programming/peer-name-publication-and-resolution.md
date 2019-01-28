@@ -2,12 +2,12 @@
 title: 피어 이름 게시 및 확인
 ms.date: 03/30/2017
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
-ms.openlocfilehash: 98ccfc79a25d547c751d8153d0f290860e5eb743
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4ecdd6a4c6b52368ce8cdfe57288000631077b07
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54682984"
 ---
 # <a name="peer-name-publication-and-resolution"></a>피어 이름 게시 및 확인
 
@@ -45,7 +45,7 @@ PNRP 버전 2 노드에서는 다른 P2P ID만 확인하는 경우 PNRP ID를 �
   
 요청한 피어는 이 프로세스를 연속적으로 반복하여 PNRP ID를 등록한 노드를 찾습니다.  
   
- <xref:System.Net.PeerToPeer> 네임스페이스에서 엔드포인트를 포함하는 <xref:System.Net.PeerToPeer.PeerName> 레코드 및 이와 통신하는 PNRP 클라우드 또는 메시 간에는 다대다 관계가 있습니다. 중복 항목 또는 오래된 항목이 있거나 피어 이름이 같은 노드가 여러 개인 경우 PNRP 노드에서는 <xref:System.Net.PeerToPeer.PeerNameResolver> 클래스를 사용하여 최신 정보를 가져올 수 있습니다. <xref:System.Net.PeerToPeer.PeerNameResolver> 메서드에서는 단일 피어 이름을 사용하여 큐브 뷰를 하나의 피어 대 여러 피어 이름 레코드 및 마찬가지로 한 피어 대 여러 클라우드로 간소화합니다. 관계형 테이블 조인을 사용한 쿼리와 비슷합니다. 성공적으로 완료되면 확인자 개체에서 지정된 피어 이름에 대해 <xref:System.Net.PeerToPeer.PeerNameRecordCollection>을 반환합니다.  예를 들어 피어 이름은 컬렉션의 모든 피어 이름 레코드에 표시되며 클라우드별로 순서가 지정됩니다. PNRP 기반 응용 프로그램에서 요청할 수 있는 지원 데이터가 있는 피어 이름의 인스턴스입니다.  
+ <xref:System.Net.PeerToPeer> 네임스페이스에서 엔드포인트를 포함하는 <xref:System.Net.PeerToPeer.PeerName> 레코드 및 이와 통신하는 PNRP 클라우드 또는 메시 간에는 다대다 관계가 있습니다. 중복 항목 또는 오래된 항목이 있거나 피어 이름이 같은 노드가 여러 개인 경우 PNRP 노드에서는 <xref:System.Net.PeerToPeer.PeerNameResolver> 클래스를 사용하여 최신 정보를 가져올 수 있습니다. <xref:System.Net.PeerToPeer.PeerNameResolver> 메서드에서는 단일 피어 이름을 사용하여 큐브 뷰를 하나의 피어 대 여러 피어 이름 레코드 및 마찬가지로 한 피어 대 여러 클라우드로 간소화합니다. 관계형 테이블 조인을 사용한 쿼리와 비슷합니다. 성공적으로 완료되면 확인자 개체에서 지정된 피어 이름에 대해 <xref:System.Net.PeerToPeer.PeerNameRecordCollection>을 반환합니다.  예를 들어 피어 이름은 컬렉션의 모든 피어 이름 레코드에 표시되며 클라우드별로 순서가 지정됩니다. PNRP 기반 애플리케이션에서 요청할 수 있는 지원 데이터가 있는 피어 이름의 인스턴스입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 - <xref:System.Net.PeerToPeer>

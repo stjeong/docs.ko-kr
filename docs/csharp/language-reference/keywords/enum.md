@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - enum keyword [C#]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
-ms.openlocfilehash: f2439bb955f821b58acc818ede308c379d5b68a6
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 768d8da320022a686f2ecfe5222880eccacee7dd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54727640"
 ---
 # <a name="enum-c-reference"></a>enum(C# 참조)
 
@@ -72,7 +72,7 @@ int x = (int)Day.Sun;
 
 [!code-csharp[csrefKeywordsTypes#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#10)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 base-type 옵션을 사용하여 멤버가 `enum` 형식인 `long`을 선언합니다. 열거형의 기본 형식이 `long`인 경우에도 캐스트를 사용하여 열거형 멤버를 `long` 형식으로 명시적으로 변환해야 합니다.
 
@@ -98,11 +98,11 @@ int x = (int)Day.Sun;
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../index.md)  
-- [열거형 형식](../../programming-guide/enumeration-types.md)  
-- [C# 키워드](index.md)  
-- [정수 계열 형식 표](integral-types-table.md)  
-- [기본 제공 형식 표](built-in-types-table.md)  
-- [암시적 숫자 변환 표](implicit-numeric-conversions-table.md)  
-- [명시적 숫자 변환 표](explicit-numeric-conversions-table.md)  
+- [C# 참조](../index.md)
+- [열거형 형식](../../programming-guide/enumeration-types.md)
+- [C# 키워드](index.md)
+- [정수 계열 형식 표](integral-types-table.md)
+- [기본 제공 형식 표](built-in-types-table.md)
+- [암시적 숫자 변환 표](implicit-numeric-conversions-table.md)
+- [명시적 숫자 변환 표](explicit-numeric-conversions-table.md)
 - [열거형 명명 규칙](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

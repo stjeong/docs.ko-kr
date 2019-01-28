@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a7fa240ea42fe1bee4011a228595e48eb163e1a9
-ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
+ms.openlocfilehash: a3eae9ea2c5a776d702d0868bdc858f8489f8f78
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50982869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066325"
 ---
 # <a name="fundamentals-of-garbage-collection"></a>가비지 컬렉션 기본 사항
 <a name="top"></a> CLR(공용 언어 런타임)에서 가비지 수집은 자동 메모리 관리자 역할을 합니다. 가비지 수집은 다음과 같은 이점을 제공합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "50982869"
   
  관리되는 각 프로세스마다 관리되는 힙이 있습니다. 프로세스의 모든 스레드는 같은 힙에 개체 메모리를 할당합니다.  
   
- 메모리를 예약하기 위해 가비지 수집기는 Win32 [VirtualAlloc](https://msdn.microsoft.com/library/aa366887.aspx) 함수를 호출하며 관리되는 애플리케이션을 위해 한 번에 하나의 메모리 세그먼트를 예약합니다. 또한 가비지 수집기는 필요에 따라 세그먼트를 예약하고 Win32 [VirtualFree](https://msdn.microsoft.com/library/aa366892.aspx) 함수를 호출하여 세그먼트를 해제해 운영 체제로 돌려보냅니다(세그먼트에서 개체를 지운 후).  
+ 메모리를 예약하기 위해 가비지 수집기는 Win32 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) 함수를 호출하며 관리되는 애플리케이션을 위해 한 번에 하나의 메모리 세그먼트를 예약합니다. 또한 가비지 수집기는 필요에 따라 세그먼트를 예약하고 Win32 [VirtualFree](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree) 함수를 호출하여 세그먼트를 해제해 운영 체제로 돌려보냅니다(세그먼트에서 개체를 지운 후).  
   
 > [!IMPORTANT]
 >  가비지 수집기에서 할당되는 세그먼트 크기는 구현에 따라 다르며 정기적인 업데이트를 포함하여 언제든지 변경될 수 있습니다. 앱에서 특정 세그먼트 크기를 가정하거나 의존해서는 안 되며, 세그먼트 할당에 사용할 수 있는 메모리 크기를 구성하려고 해서도 안 됩니다.  

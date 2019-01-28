@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GC [.NET ], large object heap
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 822aedd3e08ad3f8950f6531fe687ec26df4622a
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: df8559dc5a09b65eb388808363bb0352bc8ed398
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066430"
 ---
 # <a name="the-large-object-heap-on-windows-systems"></a>Windows 시스템의 큰 개체 힙
 
@@ -34,7 +34,7 @@ ms.locfileid: "54415535"
 
 큰 개체는 2세대 수집 동안에만 수집되므로 2세대에 속합니다. 특정 세대가 수집되면 그 이전 세대도 모두 수집됩니다. 예를 들어 1세대 GC가 수행되면 0세대와 1세대가 모두 수집되고, 2세대 GC가 수행되면 전체 힙이 수집됩니다. 이러한 이유로 2세대 GC는 *전체 GC*라고도 합니다. 이 문서에서는 전체 GC 대신 2세대 GC를 언급하지만 용어는 서로 바꿔 사용할 수 있습니다.
 
-세대는 GC 힙의 논리적 뷰를 제공합니다. 실제로 개체는 관리되는 힙 세그먼트에 있습니다. *관리되는 힙 세그먼트*는 GC에서 관리 코드 대신 [VirtualAlloc 함수](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)를 호출하여 OS로부터 예약하는 메모리 청크입니다. CLR이 로드되면 GC에서 작은 개체(SOH 또는 작은 개체 힙)와 큰 개체(큰 개체 힙)에 대해 하나씩 두 개의 초기 힙 세그먼트를 할당합니다.
+세대는 GC 힙의 논리적 뷰를 제공합니다. 실제로 개체는 관리되는 힙 세그먼트에 있습니다. *관리되는 힙 세그먼트*는 GC에서 관리 코드 대신 [VirtualAlloc 함수](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc)를 호출하여 OS로부터 예약하는 메모리 청크입니다. CLR이 로드되면 GC에서 작은 개체(SOH 또는 작은 개체 힙)와 큰 개체(큰 개체 힙)에 대해 하나씩 두 개의 초기 힙 세그먼트를 할당합니다.
 
 그런 다음, 이러한 관리되는 힙 세그먼트에 관리되는 개체를 배치하여 할당 요청이 충족됩니다. 개체가 85,000바이트보다 작으면 SOH용 세그먼트에 배치되며, 그렇지 않으면 LOH 세그먼트에 배치됩니다. 세그먼트에 더 많은 개체가 할당됨에 따라 세그먼트가 더 작은 청크로 커밋됩니다.
 SOH의 경우 GC에 남아 있는 개체는 다음 세대로 승격됩니다. 0세대 수집에서 남아 있는 개체는 이제 1세대 개체로 간주되는 방식 등으로 승격됩니다. 그러나 가장 오래된 세대에 남아 있는 개체는 여전히 가장 오래된 세대로 간주됩니다. 즉 2세대에 남아 있는 개체는 2세대 개체가 되고, LOH에 남아 있는 개체는 LOH 개체가 됩니다(2세대와 함께 수집됨).
@@ -57,9 +57,9 @@ SOH의 경우 GC에 남아 있는 개체는 다음 세대로 승격됩니다. 0�
 
 큰 개체 할당 요청을 수용할 사용 가능한 공간이 부족한 경우 GC는 먼저 OS에서 더 많은 세그먼트를 획득하려고 시도합니다. 이 작업이 실패하면 일부 공간을 확보하기 위해 2세대 GC가 트리거됩니다.
 
-1세대 또는 2세대 GC 동안 가비지 수집기는 [VirtualFree 함수](https://msdn.microsoft.com/library/windows/desktop/aa366892(v=vs.85).aspx)를 호출하여 남아 있는 개체가 없는 세그먼트를 OS에 다시 릴리스합니다. 마지막 남아 있는 개체 뒤에서 세그먼트 끝까지의 공간은 커밋 해제됩니다(애플리케이션이 즉시 할당되기 때문에 가비지 수집기에서 커밋된 일부 개체를 유지하는 0세대/1세대가 남아 있는 임시 세그먼트는 제외). 그리고 사용 가능한 공간은 다시 설정되어도 커밋된 상태로 유지되므로 OS에서 데이터를 디스크에 다시 쓸 필요가 없습니다.
+1세대 또는 2세대 GC 동안 가비지 수집기는 [VirtualFree 함수](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree)를 호출하여 남아 있는 개체가 없는 세그먼트를 OS에 다시 릴리스합니다. 마지막 남아 있는 개체 뒤에서 세그먼트 끝까지의 공간은 커밋 해제됩니다(애플리케이션이 즉시 할당되기 때문에 가비지 수집기에서 커밋된 일부 개체를 유지하는 0세대/1세대가 남아 있는 임시 세그먼트는 제외). 그리고 사용 가능한 공간은 다시 설정되어도 커밋된 상태로 유지되므로 OS에서 데이터를 디스크에 다시 쓸 필요가 없습니다.
 
-LOH는 2세대 GC 동안에만 수집되므로 LOH 세그먼트는 이러한 GC 동안에만 해제될 수 있습니다. 그림 3에서는 가비지 수집기에서 한 세그먼트(세그먼트 2)를 OS로 다시 릴리스하고, 나머지 세그먼트에 대해 더 많은 공간을 커밋 해제하는 시나리오를 보여 줍니다. 큰 개체 할당 요청을 충족하기 위해 세그먼트 끝에 있는 커밋 해제된 공간을 사용해야 하는 경우 메모리를 다시 커밋합니다. 커밋/커밋 해제에 대한 설명은 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)에 대한 설명서를 참조하세요.
+LOH는 2세대 GC 동안에만 수집되므로 LOH 세그먼트는 이러한 GC 동안에만 해제될 수 있습니다. 그림 3에서는 가비지 수집기에서 한 세그먼트(세그먼트 2)를 OS로 다시 릴리스하고, 나머지 세그먼트에 대해 더 많은 공간을 커밋 해제하는 시나리오를 보여 줍니다. 큰 개체 할당 요청을 충족하기 위해 세그먼트 끝에 있는 커밋 해제된 공간을 사용해야 하는 경우 메모리를 다시 커밋합니다. 커밋/커밋 해제에 대한 설명은 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc)에 대한 설명서를 참조하세요.
 
 ![그림 3: 2세대 GC 이후의 LOH](media/loh/loh-figure-3.jpg)  
 그림 3: 2세대 GC 이후의 LOH
@@ -302,13 +302,13 @@ LOH는 압축되지 않으므로 LOH가 조각화의 원인으로 간주되는 �
 
 가비지 수집기에서 자주 OS로부터 새 관리되는 힙 세그먼트를 얻고 빈 세그먼트를 OS로 릴리스하는 데 필요한 임시 큰 개체로 인해 가상 메모리 조각화가 발생하는 경우가 더 일반적입니다.
 
-LOH로 인해 VM 조각화가 발생하는지 확인하려면 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) 및 [VirtualFree](https://msdn.microsoft.com/library/windows/desktop/aa366892(v=vs.85).aspx)에 중단점을 설정하고 이를 호출하는 사람을 확인하면 됩니다. 예를 들어 OS에서 8MB보다 큰 가상 메모리 청크를 할당하려고 한 사람을 확인하려면 다음과 같이 중단점을 설정할 수 있습니다.
+LOH로 인해 VM 조각화가 발생하는지 확인하려면 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) 및 [VirtualFree](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree)에 중단점을 설정하고 이를 호출하는 사람을 확인하면 됩니다. 예를 들어 OS에서 8MB보다 큰 가상 메모리 청크를 할당하려고 한 사람을 확인하려면 다음과 같이 중단점을 설정할 수 있습니다.
 
 ```console
 bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
 ```
 
-이 명령은 디버거를 시작하고 8MB(0x800000)보다 큰 할당 크기로 인해 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)가 호출되는 경우에만 호출 스택을 표시합니다.
+이 명령은 디버거를 시작하고 8MB(0x800000)보다 큰 할당 크기로 인해 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc)가 호출되는 경우에만 호출 스택을 표시합니다.
 
 CLR 2.0에는 크고 작은 개체 힙에 포함되는 세그먼트를 자주 획득하고 릴리스하는 시나리오에 유용할 수 있는 *VM Hoarding*(VM 비축)이라는 기능이 추가되었습니다. VM Hoarding을 지정하려면 호스팅 API를 통해 `STARTUP_HOARD_GC_VM`이라는 시작 플래그를 지정합니다. CLR은 빈 세그먼트를 OS로 다시 릴리스하는 대신, 이러한 세그먼트의 메모리를 커밋 해제하고 대기 목록에 배치합니다. (CLR은 너무 큰 세그먼트에 대해 이 작업을 수행하지 않습니다.) CLR은 나중에 새 세그먼트 요청을 충족하는 데 이러한 세그먼트를 사용합니다. 다음에 응용 프로그램에 새 세그먼트가 필요할 때 CLR에서 충분히 큰 세크먼트를 찾을 수 있으면 이 대기 목록에 있는 세그먼트를 사용합니다.
 

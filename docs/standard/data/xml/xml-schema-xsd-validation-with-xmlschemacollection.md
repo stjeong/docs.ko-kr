@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: ad0b5717-3d32-41ad-a4d7-072c3e492b82
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0c570f812ec06c6ead0d12dc14c33fcdfd1f075c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 4a7e381a90d56ca220e275d9179a50502b4969ef
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44204879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626686"
 ---
 # <a name="xml-schema-xsd-validation-with-xmlschemacollection"></a>XmlSchemaCollection을 사용하여 XSD(XML 스키마) 유효성 검사
 <xref:System.Xml.Schema.XmlSchemaCollection>을 사용하여 XSD(XML 스키마 정의 언어) 스키마에 대해 XML 문서의 유효성을 검사할 수 있습니다. <xref:System.Xml.Schema.XmlSchemaCollection>은 스키마를 컬렉션에 저장함으로써 유효성을 검사할 때마다 메모리에 로드되지 않으므로 성능이 향상됩니다. 스키마가 스키마 컬렉션에 있을 경우 `schemaLocation` 특성을 사용하여 컬렉션에서 스키마를 찾을 수 있습니다.  
@@ -210,7 +210,7 @@ while(vr.Read()) {
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.XmlParserContext>  
-- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>  
-- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.XmlParserContext>
+- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>
+- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>
 - [XmlSchemaCollection 스키마 컴파일](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)

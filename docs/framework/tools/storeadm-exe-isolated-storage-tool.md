@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 29dd8ae38e2635f92c5be2b4d856f03a2e3e5767
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 80923d32bfefb53c41b6588b87bac679bb380811
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713410"
 ---
 # <a name="storeadmexe-isolated-storage-tool"></a>Storeadm.exe(격리된 스토리지 도구)
 격리된 스토리지 도구를 사용하면 현재 사용자의 기존 저장소를 모두 표시하거나 제거할 수 있습니다.  
@@ -60,7 +60,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
   
  사용자에 대해 로밍이 실제로 사용되는지 여부는 Storeadm.exe의 관리에 영향을 주지 않습니다. 옵션 없이 이 도구를 실행하면 모든 작업이 로컬 저장소에 적용됩니다. **/roaming** 옵션을 지정하여 이 도구를 실행하면 모든 작업이 로밍 가능한 저장소에 적용됩니다. **/machine** 옵션을 지정하여 이 도구를 실행하면 모든 작업이 컴퓨터 저장소에 적용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [도구](../../../docs/framework/tools/index.md)  
- [격리된 스토리지](../../../docs/standard/io/isolated-storage.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- [도구](../../../docs/framework/tools/index.md)
+- [격리된 스토리지](../../../docs/standard/io/isolated-storage.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

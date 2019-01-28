@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: a0b3e75c6a93aebf979b8df758fe37460c046a15
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 884a558827e0e016e27315cee1ea9ed3e0d03dc4
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065910"
 ---
 # <a name="implement-a-microservice-domain-model-with-net-core"></a>.NET Core를 사용하여 마이크로 서비스 도메인 모델 구현 
 
@@ -169,7 +169,7 @@ EF Core 1.1 이상의 기능을 사용하여 열을 필드에 매핑하면 속�
 ### <a name="additional-resources"></a>추가 자료
 
 - **Vaughn Vernon. DDD 및 Entity Framework를 사용한 집계 모델링** 이것은 Entity Framework Core가 *아닙니다*. \
-  [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
+  <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
 
 - **Julie Lerman. 도메인 기반 디자인의 코딩: 데이터 중심 개발을 위한 팁** \
   [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/magazine/dn342868.aspx)

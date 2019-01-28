@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 202737692bae14ada229ee2c92a6630a3ed71344
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: a417c94106988e07e2b2ab2766c691f081ca7006
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54734518"
 ---
 # <a name="how-to-migrate-managed-code-dcom-to-wcf"></a>방법: 관리 코드 DCOM을 WCF로 마이그레이션
 WCF(Windows Communication Foundation)는 분산 환경에서 서버와 클라이언트 간에 관리 코드 호출에 대해 DCOM(Distributed Component Object Model)보다 권장되는 안전한 선택 항목입니다. 이 문서에서는 다음과 같은 시나리오에 대해 코드를 DCOM에서 WCF로 마이그레이션하는 방법을 보여 줍니다.  
@@ -421,8 +421,8 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [서비스 디자인 및 구현](../../../docs/framework/wcf/designing-and-implementing-services.md)  
- [클라이언트 빌드](../../../docs/framework/wcf/building-clients.md)  
- [이중 서비스](../../../docs/framework/wcf/feature-details/duplex-services.md)
+## <a name="see-also"></a>참고 항목
+- [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [서비스 디자인 및 구현](../../../docs/framework/wcf/designing-and-implementing-services.md)
+- [클라이언트 빌드](../../../docs/framework/wcf/building-clients.md)
+- [이중 서비스](../../../docs/framework/wcf/feature-details/duplex-services.md)

@@ -16,16 +16,16 @@ helpviewer_keywords:
 - time strings
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1d10384955e07198a4b5ea7202722bea4b831e02
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 4c8aa10c25fd7459bebb1de6d71a54b6e361e20e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44207618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54560817"
 ---
 # <a name="parsing-date-and-time-strings-in-net"></a>.NET에서 날짜 및 시간 문자열 구문 분석
 
-문자열을 구문 분석하여 <xref:System.DateTime> 개체로 변환하려면 날짜 및 시간을 텍스트로 나타내는 방법에 대한 정보를 지정해야 합니다. 문화권에 따라 일, 월 및 연도의 순서를 다르게 사용합니다. 시간 표현에서는 24시간제를 사용하는 경우도 있고 “AM”과 “PM”을 지정하기도 합니다. 응용 프로그램에 따라서는 날짜만 필요하거나 시간만 필요한 경우도 있고, 날짜와 시간을 모두 지정해야 하는 경우도 있습니다. 문자열을 <xref:System.DateTime> 개체로 변환하는 방법을 통해 필요한 형식과 응용 프로그램에 필요한 날짜 및 시간의 요소에 대한 자세한 정보를 제공할 수 있습니다. 텍스트를 <xref:System.DateTime>으로 올바로 변환하려면 다음 세 가지 하위 작업을 수행해야 합니다.
+문자열을 구문 분석하여 <xref:System.DateTime> 개체로 변환하려면 날짜 및 시간을 텍스트로 나타내는 방법에 대한 정보를 지정해야 합니다. 문화권에 따라 일, 월 및 연도의 순서를 다르게 사용합니다. 시간 표현에서는 24시간제를 사용하는 경우도 있고 “AM”과 “PM”을 지정하기도 합니다. 애플리케이션에 따라서는 날짜만 필요하거나 시간만 필요한 경우도 있고, 날짜와 시간을 모두 지정해야 하는 경우도 있습니다. 문자열을 <xref:System.DateTime> 개체로 변환하는 방법을 통해 필요한 형식과 애플리케이션에 필요한 날짜 및 시간의 요소에 대한 자세한 정보를 제공할 수 있습니다. 텍스트를 <xref:System.DateTime>으로 올바로 변환하려면 다음 세 가지 하위 작업을 수행해야 합니다.
 
 1. 날짜 및 시간을 나타내는 텍스트에 필요한 형식을 지정해야 합니다.
 1. 날짜 시간 형식의 문화권을 지정할 수 있습니다.
@@ -89,8 +89,8 @@ ms.locfileid: "44207618"
 
 ## <a name="see-also"></a>참고 항목
 
-- [문자열 구문 분석](parsing-strings.md)  
-- [형식 서식 지정](formatting-types.md)  
-- [.NET에서 형식 변환](type-conversion.md)  
-- [표준 날짜 및 시간 형식](standard-date-and-time-format-strings.md)  
+- [Parsing Strings](parsing-strings.md)
+- [형식 서식 지정](formatting-types.md)
+- [.NET에서 형식 변환](type-conversion.md)
+- [표준 날짜 및 시간 형식](standard-date-and-time-format-strings.md)
 - [사용자 지정 날짜 및 시간 형식 문자열](custom-date-and-time-format-strings.md)

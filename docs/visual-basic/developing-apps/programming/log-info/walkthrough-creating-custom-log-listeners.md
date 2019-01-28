@@ -5,12 +5,12 @@ helpviewer_keywords:
 - custom log listeners
 - My.Application.Log object, custom log listeners
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
-ms.openlocfilehash: 6139a1fef2b2c37bc2c8a6167febd060d8d01fb1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 12943e449f825516d37079e7ddac2a6705879066
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54710510"
 ---
 # <a name="walkthrough-creating-custom-log-listeners-visual-basic"></a>연습: 사용자 지정 로그 수신기 만들기(Visual Basic)
 이 연습에서는 사용자 지정 로그 수신기를 만들고 `My.Application.Log` 개체의 출력을 수신 대기하도록 구성하는 방법을 보여 줍니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33591653"
   
 #### <a name="to-create-the-listener"></a>수신기를 만들려면  
   
--   <xref:System.Diagnostics.TraceListener>에서 상속하는 이름이 `SimpleListener`인 클래스를 응용 프로그램에서 만듭니다.  
+-   <xref:System.Diagnostics.TraceListener>에서 상속하는 이름이 `SimpleListener`인 클래스를 애플리케이션에서 만듭니다.  
   
      [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_1.vb)]  
   
@@ -29,7 +29,7 @@ ms.locfileid: "33591653"
      <xref:System.Diagnostics.TraceListener.Write%2A> 및 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 메서드의 특정이 기본 클래스 메서드와 일치하도록 이 두 메서드에 <xref:System.Security.Permissions.HostProtectionAttribute> 특성이 적용됩니다. <xref:System.Security.Permissions.HostProtectionAttribute> 특성을 사용하면 코드를 실행하는 호스트에서는 코드가 호스트 보호 동기화를 노출하는지를 확인할 수 있습니다.  
   
     > [!NOTE]
-    >  <xref:System.Security.Permissions.HostProtectionAttribute> 특성은 공용 언어 런타임을 호스트하고 SQL Server와 같은 호스트 보호를 구현하는 관리되지 않는 응용 프로그램에서만 적용됩니다.  
+    >  <xref:System.Security.Permissions.HostProtectionAttribute> 특성은 공용 언어 런타임을 호스트하고 SQL Server와 같은 호스트 보호를 구현하는 관리되지 않는 애플리케이션에서만 적용됩니다.  
   
  `My.Application.Log`가 로그 수신기를 사용하도록 하려면 로그 수신기를 포함하는 어셈블리에 강력한 이름을 지정해야 합니다.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "33591653"
   
 7.  **확인**을 클릭합니다.  
   
-8.  응용 프로그램을 다시 빌드합니다.  
+8.  애플리케이션을 다시 빌드합니다.  
   
 ## <a name="adding-the-listener"></a>수신기 추가  
  이제 어셈블리에 강력한 이름을 지정했으므로 `My.Application.Log`에서 로그 수신기를 사용하도록 수신기의 강력한 이름을 결정해야 합니다.  
@@ -82,7 +82,7 @@ ms.locfileid: "33591653"
   
     1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
-    2.  **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**을 선택합니다.  
+    2.  **새 항목 추가** 대화 상자에서 **애플리케이션 구성 파일**을 선택합니다.  
   
     3.  **추가**를 클릭합니다.  
   
@@ -104,9 +104,9 @@ ms.locfileid: "33591653"
   
      수신기의 강력한 이름이 되도록 `SimpleLogStrongName`의 값을 변경합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- [응용 프로그램 로그 작업](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)  
- [방법: 예외 기록](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)  
- [방법: 로그 메시지 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)  
- [연습: My.Application.Log가 정보를 기록하는 위치 변경](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+## <a name="see-also"></a>참고 항목
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- [애플리케이션 로그 작업](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
+- [방법: 로그 예외](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)
+- [방법: 로그 메시지 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
+- [연습: My.Application.Log가 정보를 기록하는 위치 변경](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)

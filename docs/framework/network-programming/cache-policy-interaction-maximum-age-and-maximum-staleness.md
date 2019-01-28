@@ -9,15 +9,15 @@ helpviewer_keywords:
 - staleness of cached resources
 - age of cached resources
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-ms.openlocfilehash: 7a066f403e526c50054b58a099bb7978ef57e74d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: bb44aca802f6a0323e69fb33f64d8238406f8b48
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653647"
 ---
 # <a name="cache-policy-interactionmaximum-age-and-maximum-staleness"></a>캐시 정책 조작 -최대 사용 기간 및 최대 부실
-최신 콘텐츠가 클라이언트 응용 프로그램에 반환되도록 돕기 위해 클라이언트 캐시 정책 및 서버 유효성 재검사 요구 사항의 상호 작용 결과로 항상 가장 보수적인 캐시 정책이 생성됩니다. 이 항목의 모든 예제에서는 1월 1일에 캐시되었으며 1월 4일에 만료되는 리소스에 대한 캐시 정책을 보여 줍니다.  
+최신 콘텐츠가 클라이언트 애플리케이션에 반환되도록 돕기 위해 클라이언트 캐시 정책 및 서버 유효성 재검사 요구 사항의 상호 작용 결과로 항상 가장 보수적인 캐시 정책이 생성됩니다. 이 항목의 모든 예제에서는 1월 1일에 캐시되었으며 1월 4일에 만료되는 리소스에 대한 캐시 정책을 보여 줍니다.  
   
  다음 예제에서는 최대 부실 값(`maxStale`)이 최대 사용 기간(`maxAge`)과 함께 사용됩니다.  
   
@@ -35,10 +35,10 @@ ms.locfileid: "50181149"
   
 -   캐시 정책이 `maxAge` = 1일, `maxStale` = 1일을 설정하는 경우 1월 2일에 콘텐츠 유효성이 재검사됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [네트워크 응용 프로그램에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- [캐시 정책](../../../docs/framework/network-programming/cache-policy.md)  
- [위치 기반 캐시 정책](../../../docs/framework/network-programming/location-based-cache-policies.md)  
- [시간 기반 캐시 정책](../../../docs/framework/network-programming/time-based-cache-policies.md)  
- [네트워크 응용 프로그램에서 캐싱 구성](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)  
- [캐시 정책 상호 작용 - 최대 보존 기간 및 최소 새로 고침](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)
+## <a name="see-also"></a>참고 항목
+- [네트워크 애플리케이션에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
+- [캐시 정책](../../../docs/framework/network-programming/cache-policy.md)
+- [위치 기반 캐시 정책](../../../docs/framework/network-programming/location-based-cache-policies.md)
+- [시간 기반 캐시 정책](../../../docs/framework/network-programming/time-based-cache-policies.md)
+- [네트워크 애플리케이션에서 캐싱 구성](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)
+- [캐시 정책 상호 작용 - 최대 보존 기간 및 최소 새로 고침](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)

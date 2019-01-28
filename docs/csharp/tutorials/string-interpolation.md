@@ -3,12 +3,12 @@ title: C#의 문자열 보간
 description: 문자열 보간을 사용하여 C#으로 결과 문자열에 서식이 지정된 식 결과를 포함하는 방법을 알아봅니다.
 author: pkulikov
 ms.date: 05/09/2018
-ms.openlocfilehash: ef4358ff61cde43998fc0dc4ba174dc0f06bc2bd
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 702a586d6a1d6844e7f5efb14a86ec635d41445c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54727861"
 ---
 # <a name="string-interpolation-in-c"></a>C#의 문자열 보간 #
 
@@ -110,7 +110,7 @@ ms.locfileid: "54222495"
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.String.Format%2A?displayProperty=nameWithType>  
-- <xref:System.FormattableString?displayProperty=nameWithType>  
-- <xref:System.IFormattable?displayProperty=nameWithType>  
-- [문자열](../programming-guide/strings/index.md)  
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- [문자열](../programming-guide/strings/index.md)

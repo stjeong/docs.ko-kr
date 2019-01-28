@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - parameters [C#], ref
 - ref keyword [C#]
-ms.openlocfilehash: 187d2fb7399195c544bae59927d66e9853df5fa0
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: dc19638dc3753132be01235466a98f87bdce4569
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726652"
 ---
 # <a name="ref-c-reference"></a>ref(C# 참조)
 
@@ -119,7 +119,7 @@ C# 7.3부터 `foreach` 문의 반복 변수는 ref 지역 또는 ref readonly �
 
 ## <a name="ref-readonly-locals"></a>Ref readonly 로컬
 
-Ref readonly 로컬은 해당 시그니처에 `ref readonly`가 있고 `return ref`를 사용하는 메서드 또는 속성을 통해 반환된 값을 참조하는 데 사용됩니다. `ref readonly` 변수는 `ref` 지역 변수의 속성을 `readonly` 변수와 결합합니다. 이는 할당된 저장소의 별칭이고 수정할 수 없습니다. 
+Ref readonly 로컬은 해당 시그니처에 `ref readonly`가 있고 `return ref`를 사용하는 메서드 또는 속성을 통해 반환된 값을 참조하는 데 사용됩니다. `ref readonly` 변수는 `ref` 지역 변수의 속성을 `readonly` 변수와 결합합니다. 이는 할당된 스토리지의 별칭이고 수정할 수 없습니다. 
 
 ## <a name="a-ref-returns-and-ref-locals-example"></a>참조 반환 및 참조 로컬 예제
 
@@ -154,12 +154,12 @@ Ref readonly 로컬은 해당 시그니처에 `ref readonly`가 있고 `return r
   
 ## <a name="see-also"></a>참고 항목
 
-- [안전하고 효율적인 코드 작성](../../write-safe-efficient-code.md)  
+- [안전하고 효율적인 코드 작성](../../write-safe-efficient-code.md)
 - [Ref return 및 ref local](../../programming-guide/classes-and-structs/ref-returns.md)
 - [조건부 ref 식](../operators/conditional-operator.md#conditional-ref-expression)
 - [ref 대입 연산자](../operators/assignment-operator.md#ref-assignment-operator)
-- [매개 변수 전달](../../programming-guide/classes-and-structs/passing-parameters.md)  
-- [메서드 매개 변수](method-parameters.md)  
-- [C# 참조](../index.md)  
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
+- [매개 변수 전달](../../programming-guide/classes-and-structs/passing-parameters.md)
+- [메서드 매개 변수](method-parameters.md)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
 - [C# 키워드](index.md)

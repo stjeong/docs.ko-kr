@@ -15,12 +15,12 @@ helpviewer_keywords:
 - receiving data, Secure Sockets Layer
 - Internet, Secure Sockets Layer
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
-ms.openlocfilehash: 41baeb9724d142bb860e51fa3ee84fb6c3f6261e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5d095d4cd6d8ee204b6d05a7674dee67c35e46c9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694923"
 ---
 # <a name="using-secure-sockets-layer"></a>SSL(Secure Sockets Layer) 사용
 <xref:System.Net> 클래스는 SSL(Secure Sockets Layer)을 사용하여 여러 네트워크 프로토콜에 대한 연결을 암호화합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "50188692"
   
  <xref:System.Net.Security.SslStream> 클래스는 SSL에 대한 스트림 기반 추상화를 제공하고 SSL 핸드셰이크를 구성할 수 있는 여러 가지 방법을 제공합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ### <a name="code"></a>코드  
   
@@ -62,7 +62,7 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
   
 -   **System.Net** 네임스페이스에 대한 참조.  
   
-## <a name="see-also"></a>참고 항목  
- [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)  
- [.NET Framework의 네트워크 프로그래밍](../../../docs/framework/network-programming/index.md)  
- [인증서 선택 및 유효성 검사](../../../docs/framework/network-programming/certificate-selection-and-validation.md)
+## <a name="see-also"></a>참고 항목
+- [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [.NET Framework의 네트워크 프로그래밍](../../../docs/framework/network-programming/index.md)
+- [인증서 선택 및 유효성 검사](../../../docs/framework/network-programming/certificate-selection-and-validation.md)

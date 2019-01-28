@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 86376919d7456167c58ada4145d213b39e050e33
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 20050eb3eb5fe41778d7a979f94cdd258650b33e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46702779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54588927"
 ---
 # <a name="eventwaithandle"></a>EventWaitHandle
 <xref:System.Threading.EventWaitHandle> 클래스를 사용하면 여러 스레드가 신호를 보내고 신호를 대기하여 서로 통신할 수 있습니다. 이벤트 대기 핸들(단순히 이벤트라고도 함)은 하나 이상의 대기 스레드를 해제하기 위해 신호를 보낼 수 있는 대기 핸들입니다. 신호를 받은 후 이벤트 대기 핸들은 수동으로 또는 자동으로 다시 설정됩니다. <xref:System.Threading.EventWaitHandle> 클래스는 로컬 이벤트 대기 핸들(로컬 이벤트) 또는 명명된 시스템 이벤트 대기 핸들(모든 프로세스에 표시되는 명명된 이벤트 또는 시스템 이벤트)을 나타낼 수 있습니다.  
@@ -64,8 +64,8 @@ ms.locfileid: "46702779"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Threading.EventWaitHandle>  
-- <xref:System.Threading.WaitHandle>  
-- <xref:System.Threading.AutoResetEvent>  
-- <xref:System.Threading.ManualResetEvent>  
+- <xref:System.Threading.EventWaitHandle>
+- <xref:System.Threading.WaitHandle>
+- <xref:System.Threading.AutoResetEvent>
+- <xref:System.Threading.ManualResetEvent>
 - [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)

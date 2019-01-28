@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 127a059865250642c604288b0296b4152cf91f52
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 02568de0a1cc5cec6b92e646e000e69ae79b1646
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066391"
 ---
 # <a name="snexe-strong-name-tool"></a>Sn.exe(강력한 이름 도구)
 강력한 이름 도구(Sn.exe)를 사용하면 [강력한 이름](../../../docs/framework/app-domains/strong-named-assemblies.md)으로 어셈블리에 서명할 수 있습니다. Sn.exe를 실행하면 키 관리, 서명 생성 및 서명 확인을 위한 옵션이 제공됩니다.  
@@ -65,7 +65,7 @@ sn [-quiet][option [parameter(s)]]
 |**-t**[**p**] *infile*|*infile*에 저장된 공개 키의 토큰을 표시합니다. *infile*의 내용은 이전에 **-p**를 사용하여 키 쌍 파일로부터 생성된 공개 키여야 합니다.  **-t[p]** 옵션을 사용하여 키 쌍 파일에서 직접 토큰을 추출하지 마세요.<br /><br /> Sn.exe는 해시 함수를 사용하여 공개 키에서 토큰을 계산합니다. 공용 언어 런타임에서는 공간을 절약하기 위해 강력한 이름을 가진 어셈블리에 대한 종속성을 기록할 때 매니페스트의 공개 키 토큰을 다른 어셈블리에 대한 참조의 일부로 저장합니다. **-tp** 옵션을 사용하면 공개 키와 토큰이 모두 표시됩니다. <xref:System.Reflection.AssemblySignatureKeyAttribute> 특성이 어셈블리에 적용된 경우 토큰은 ID 키용이며 해시 알고리즘의 이름 및 ID 키가 표시됩니다.<br /><br /> 이 옵션은 어셈블리 서명을 확인하지 않으며 신뢰 결정을 내리는 데 사용해서는 안 됩니다.  이 옵션은 원시 공개 키 토큰 데이터만 표시합니다.|  
 |**-T**[**p**] *assembly*|*assembly*에 대한 공개 키 토큰을 표시합니다. *assembly*는 어셈블리 매니페스트가 들어 있는 파일의 이름이어야 합니다.<br /><br /> Sn.exe는 해시 함수를 사용하여 공개 키에서 토큰을 계산합니다. 런타임에서는 공간을 절약하기 위해 강력한 이름을 가진 어셈블리에 대한 종속성을 기록할 때 매니페스트의 공개 키 토큰을 다른 어셈블리에 대한 참조의 일부로 저장합니다. **-Tp** 옵션을 사용하면 공개 키와 토큰이 모두 표시됩니다. <xref:System.Reflection.AssemblySignatureKeyAttribute> 특성이 어셈블리에 적용된 경우 토큰은 ID 키용이며 해시 알고리즘의 이름 및 ID 키가 표시됩니다.<br /><br /> 이 옵션은 어셈블리 서명을 확인하지 않으며 신뢰 결정을 내리는 데 사용해서는 안 됩니다.  이 옵션은 원시 공개 키 토큰 데이터만 표시합니다.|  
 |`-TS` `assembly` `infile`|`assembly`의 키 쌍을 사용하여 서명되거나 부분적으로 서명된 `infile`의 서명을 테스트합니다.|  
-|-`TSc``assembly``container`|`assembly` 키 컨테이너의 키 쌍을 사용하여 서명되거나 부분적으로 서명된 `container`의 서명을 테스트합니다.|  
+|-`TSc` `assembly` `container`|`assembly` 키 컨테이너의 키 쌍을 사용하여 서명되거나 부분적으로 서명된 `container`의 서명을 테스트합니다.|  
 |**-v** *assembly*|*assembly*에 있는 강력한 이름을 확인합니다. 여기에서 *assembly*는 어셈블리 매니페스트가 들어 있는 파일의 이름입니다.|  
 |**-vf**  *assembly*|*assembly*에서 강력한 이름을 확인합니다. **-v** 옵션과 달리 **-vf** 옵션을 사용하면 **-Vr** 옵션으로 비활성화된 경우에도 확인이 수행됩니다.|  
 |**-Vk**  *regfile.reg* *assembly* [*userlist*] [*infile*]|확인을 건너뛸 지정된 어셈블리를 등록하는 데 사용할 수 있는 등록 항목 파일(.reg)을 만듭니다. **-Vr** 옵션에 적용되는 어셈블리 명명 규칙은 **–Vk**에도 적용됩니다. *userlist* 및 *infile* 옵션에 대한 자세한 내용은 **–Vr** 옵션을 참조하세요.|  
@@ -124,8 +124,8 @@ sn -v MyAsm.dll
 sn -d MyContainer  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [도구](../../../docs/framework/tools/index.md)  
- [Al.exe(어셈블리 링커)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- [도구](../../../docs/framework/tools/index.md)
+- [Al.exe(어셈블리 링커)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

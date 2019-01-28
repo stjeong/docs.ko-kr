@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# Language, access modifiers
 - access modifiers [C#], about
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
-ms.openlocfilehash: d315355db546c5be45d40fe0c5bcfc46d0f6ead8
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 7c20292a906ecfbf08311a616e05a02cd8f8a25c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54731701"
 ---
 # <a name="access-modifiers-c-programming-guide"></a>액세스 한정자(C# 프로그래밍 가이드)
 모든 형식과 형식 멤버에는 사용 중인 어셈블리나 기타 어셈블리의 다른 코드에서 사용될 수 있는지 여부를 제어하는 액세스 가능성 수준이 있습니다. 다음 액세스 한정자를 사용하여 형식 또는 멤버를 선언할 때 해당 항목의 액세스 가능성을 지정할 수 있습니다.  
@@ -76,15 +76,15 @@ ms.locfileid: "53240049"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)  
-- [private](../../../csharp/language-reference/keywords/private.md)  
-- [public](../../../csharp/language-reference/keywords/public.md)  
-- [internal](../../../csharp/language-reference/keywords/internal.md)  
-- [protected](../../../csharp/language-reference/keywords/protected.md)  
-- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)  
-- [private protected](../../../csharp/language-reference/keywords/private-protected.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
-- [struct](../../../csharp/language-reference/keywords/struct.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)
+- [private](../../../csharp/language-reference/keywords/private.md)
+- [public](../../../csharp/language-reference/keywords/public.md)
+- [internal](../../../csharp/language-reference/keywords/internal.md)
+- [protected](../../../csharp/language-reference/keywords/protected.md)
+- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)
+- [private protected](../../../csharp/language-reference/keywords/private-protected.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
 - [interface](../../../csharp/language-reference/keywords/interface.md)
