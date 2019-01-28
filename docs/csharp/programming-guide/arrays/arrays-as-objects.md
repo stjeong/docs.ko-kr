@@ -5,31 +5,31 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - arrays [C#], as objects
 ms.assetid: f76d4403-bd0a-42a0-9bc8-694c55b2c926
-ms.openlocfilehash: 0bbbf7ecc5eff650f7a2edc73546833afd2be094
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 0c4b5dcbd9e227e4edd5f549b687e3ded90ee9bc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740491"
 ---
-# <a name="arrays-as-objects-c-programming-guide"></a><span data-ttu-id="37a85-102">개체 형식 배열(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="37a85-102">Arrays as Objects (C# Programming Guide)</span></span>
+# <a name="arrays-as-objects-c-programming-guide"></a><span data-ttu-id="22e60-102">개체 형식 배열(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="22e60-102">Arrays as Objects (C# Programming Guide)</span></span>
 
-<span data-ttu-id="37a85-103">C#의 배열은 C 및 C++와 같이 인접한 메모리의 주소 지정 가능한 영역이 아니라 실제로 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-103">In C#, arrays are actually objects, and not just addressable regions of contiguous memory as in C and C++.</span></span> <span data-ttu-id="37a85-104"><xref:System.Array>는 모든 배열 형식의 추상 기본 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-104"><xref:System.Array> is the abstract base type of all array types.</span></span> <span data-ttu-id="37a85-105"><xref:System.Array>에 포함된 속성 및 다른 클래스 멤버를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-105">You can use the properties, and other class members, that <xref:System.Array> has.</span></span> <span data-ttu-id="37a85-106">이러한 예로 <xref:System.Array.Length%2A> 속성을 사용하여 배열의 길이를 가져오는 경우가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-106">An example of this would be using the <xref:System.Array.Length%2A> property to get the length of an array.</span></span> <span data-ttu-id="37a85-107">다음 코드에서는 `numbers` 배열의 길이(`5`)를 `lengthOfNumbers`라는 변수에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-107">The following code assigns the length of the `numbers` array, which is `5`, to a variable called `lengthOfNumbers`:</span></span>  
+<span data-ttu-id="22e60-103">C#의 배열은 C 및 C++와 같이 인접한 메모리의 주소 지정 가능한 영역이 아니라 실제로 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-103">In C#, arrays are actually objects, and not just addressable regions of contiguous memory as in C and C++.</span></span> <span data-ttu-id="22e60-104"><xref:System.Array>는 모든 배열 형식의 추상 기본 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-104"><xref:System.Array> is the abstract base type of all array types.</span></span> <span data-ttu-id="22e60-105"><xref:System.Array>에 포함된 속성 및 다른 클래스 멤버를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-105">You can use the properties, and other class members, that <xref:System.Array> has.</span></span> <span data-ttu-id="22e60-106">이러한 예로 <xref:System.Array.Length%2A> 속성을 사용하여 배열의 길이를 가져오는 경우가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-106">An example of this would be using the <xref:System.Array.Length%2A> property to get the length of an array.</span></span> <span data-ttu-id="22e60-107">다음 코드에서는 `numbers` 배열의 길이(`5`)를 `lengthOfNumbers`라는 변수에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-107">The following code assigns the length of the `numbers` array, which is `5`, to a variable called `lengthOfNumbers`:</span></span>  
   
  [!code-csharp[csProgGuideArrays#3](../../../csharp/programming-guide/arrays/codesnippet/CSharp/arrays-as-objects_1.cs)]  
   
- <span data-ttu-id="37a85-108"><xref:System.Array> 클래스는 배열의 정렬, 검색 및 복사를 위한 다른 여러 유용한 메서드와 속성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-108">The <xref:System.Array> class provides many other useful methods and properties for sorting, searching, and copying arrays.</span></span>  
+ <span data-ttu-id="22e60-108"><xref:System.Array> 클래스는 배열의 정렬, 검색 및 복사를 위한 다른 여러 유용한 메서드와 속성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-108">The <xref:System.Array> class provides many other useful methods and properties for sorting, searching, and copying arrays.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="37a85-109">예제</span><span class="sxs-lookup"><span data-stu-id="37a85-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="22e60-109">예제</span><span class="sxs-lookup"><span data-stu-id="22e60-109">Example</span></span>
 
- <span data-ttu-id="37a85-110">이 예제에서는 <xref:System.Array.Rank%2A> 속성을 사용하여 배열의 차원 수를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="37a85-110">This example uses the <xref:System.Array.Rank%2A> property to display the number of dimensions of an array.</span></span>  
+ <span data-ttu-id="22e60-110">이 예제에서는 <xref:System.Array.Rank%2A> 속성을 사용하여 배열의 차원 수를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="22e60-110">This example uses the <xref:System.Array.Rank%2A> property to display the number of dimensions of an array.</span></span>  
   
  [!code-csharp[csProgGuideArrays#2](../../../csharp/programming-guide/arrays/codesnippet/CSharp/arrays-as-objects_2.cs)]  
   
-## <a name="see-also"></a><span data-ttu-id="37a85-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="37a85-111">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="22e60-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="22e60-111">See also</span></span>
 
-- [<span data-ttu-id="37a85-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="37a85-112">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="37a85-113">배열</span><span class="sxs-lookup"><span data-stu-id="37a85-113">Arrays</span></span>](../../../csharp/programming-guide/arrays/index.md)  
-- [<span data-ttu-id="37a85-114">1차원 배열</span><span class="sxs-lookup"><span data-stu-id="37a85-114">Single-Dimensional Arrays</span></span>](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
-- [<span data-ttu-id="37a85-115">다차원 배열</span><span class="sxs-lookup"><span data-stu-id="37a85-115">Multidimensional Arrays</span></span>](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
-- [<span data-ttu-id="37a85-116">가변 배열</span><span class="sxs-lookup"><span data-stu-id="37a85-116">Jagged Arrays</span></span>](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+- [<span data-ttu-id="22e60-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="22e60-112">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)
+- [<span data-ttu-id="22e60-113">배열</span><span class="sxs-lookup"><span data-stu-id="22e60-113">Arrays</span></span>](../../../csharp/programming-guide/arrays/index.md)
+- [<span data-ttu-id="22e60-114">1차원 배열</span><span class="sxs-lookup"><span data-stu-id="22e60-114">Single-Dimensional Arrays</span></span>](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)
+- [<span data-ttu-id="22e60-115">다차원 배열</span><span class="sxs-lookup"><span data-stu-id="22e60-115">Multidimensional Arrays</span></span>](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+- [<span data-ttu-id="22e60-116">가변 배열</span><span class="sxs-lookup"><span data-stu-id="22e60-116">Jagged Arrays</span></span>](../../../csharp/programming-guide/arrays/jagged-arrays.md)
