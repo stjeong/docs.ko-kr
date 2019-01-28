@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], arithmetic operations
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa
-ms.openlocfilehash: 94e5d3fbf250f8b99560f83e14c063142ac7ad29
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: b0b75a6aa47cfc169157b229c4386ed7dc1e627b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54710198"
 ---
 # <a name="arithmetic-operations-on-pointers-c-programming-guide"></a>포인터에 대한 산술 연산(C# 프로그래밍 가이드)
 이 항목에서는 산술 연산자 `+` 및 `-`를 사용하여 포인터를 조작하는 방법을 설명합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "53242102"
   
  산술 연산이 포인터의 도메인을 오버플로하는 경우 예외가 생성되지 않고 결과는 구현에 따라 다릅니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
   
  [!code-csharp[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
@@ -38,13 +38,13 @@ ms.locfileid: "53242102"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
-- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
-- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
-- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [유형](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [유형](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

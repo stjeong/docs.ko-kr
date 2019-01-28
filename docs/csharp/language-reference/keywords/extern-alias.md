@@ -9,15 +9,15 @@ helpviewer_keywords:
 - aliases [C#], extern keyword
 - aliases, extern keyword
 ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
-ms.openlocfilehash: 0fd917d1af38ba558634dfcf5e3a1abf95420a9d
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 136d3959a52b793acddf21ae83b8d8eaec053eee
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54616279"
 ---
 # <a name="extern-alias-c-reference"></a>extern alias(C# 참조)
-정규화된 형식 이름이 동일한 어셈블리의 두 버전을 참조해야 할 수 있습니다. 예를 들어 동일한 응용 프로그램에서 어셈블리 버전을 두 개 이상 사용해야 할 수 있습니다. 외부 어셈블리 별칭을 사용하면 각 어셈블리의 네임스페이스를 별칭으로 명명된 루트 수준 네임스페이스 내에서 래핑하여 동일한 파일에서 사용하도록 할 수 있습니다.  
+정규화된 형식 이름이 동일한 어셈블리의 두 버전을 참조해야 할 수 있습니다. 예를 들어 동일한 애플리케이션에서 어셈블리 버전을 두 개 이상 사용해야 할 수 있습니다. 외부 어셈블리 별칭을 사용하면 각 어셈블리의 네임스페이스를 별칭으로 명명된 루트 수준 네임스페이스 내에서 래핑하여 동일한 파일에서 사용하도록 할 수 있습니다.  
   
 > [!NOTE]
 >  [extern](../../../csharp/language-reference/keywords/extern.md) 키워드는 메서드 한정자로도 사용되어 비관리 코드로 작성된 메서드를 선언합니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "53235374"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
-- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [/reference(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)

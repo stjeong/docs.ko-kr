@@ -6,12 +6,12 @@ f1_keywords:
 - nameof_CSharpKeyword
 - nameof
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-ms.openlocfilehash: 61c0744168a6fef0f8c8cfb589602e7aeff0c48b
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5641b31a7fe380b2d19969f4baa7a701d74de4c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54638720"
 ---
 # <a name="nameof-c-reference"></a>nameof(C# 참조)
 
@@ -104,7 +104,7 @@ class Test {
 }
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `nameof`에 대한 인수는 단순한 이름, 정규화된 이름, 멤버 액세스, 지정된 멤버를 사용한 기본 액세스 또는 지정된 멤버를 사용한 이 액세스여야 합니다.  인수 식은 코드 정의를 식별하지만 계산되지 않습니다.  
   
  인수는 구문상 식이어야 하므로 나열해도 유용하지 않은, 허용되지 않는 많은 항목이 있습니다.  오류를 생성하는 다음 항목은 주의해야 합니다. 미리 정의된 형식(예: `int` 또는 `void`), null 허용 형식(`Point?`), 배열 형식(`Customer[,]`), 포인터 형식(`Buffer*`), 정규화된 별칭(`A::B`), 바운딩되지 않은 제네릭 형식(`Dictionary<,>`), 전처리 기호(`DEBUG`) 및 레이블(`loop:`).  
@@ -137,6 +137,6 @@ class C {
  
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)

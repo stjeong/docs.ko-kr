@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wav files
 - .wav files
 ms.assetid: f7f62f53-e026-4c40-b221-3a26adb0c2c5
-ms.openlocfilehash: 101cd6fa044e181cf6f993fbea642c9dffe04008
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 94c90ed264c40c99b0c139948578c85e8c9855d7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696349"
 ---
 # <a name="how-to-use-platform-invoke-to-play-a-wave-file-c-programming-guide"></a>방법: 플랫폼 호출을 사용하여 웨이브 파일 재생(C# 프로그래밍 가이드)
 다음 C# 코드 예제에서는 플랫폼 호출 서비스를 사용하여 Windows 운영 체제에서 .wav 사운드 파일을 재생하는 방법을 설명합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "53236858"
   
 ### <a name="to-compile-the-code"></a>코드를 컴파일하려면  
   
-1.  Visual Studio에서 새 C# Windows 응용 프로그램 프로젝트를 만들고 이름을 **WinSound**로 지정합니다.  
+1.  Visual Studio에서 새 C# Windows 애플리케이션 프로젝트를 만들고 이름을 **WinSound**로 지정합니다.  
   
 2.  위의 코드를 복사하여 `Form1.cs` 파일 내용 위에 붙여넣습니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "53236858"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [상호 운용성 개요](../../../csharp/programming-guide/interop/interoperability-overview.md)  
-- [플랫폼 호출 자세히 보기](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [상호 운용성 개요](../../../csharp/programming-guide/interop/interoperability-overview.md)
+- [플랫폼 호출 자세히 보기](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
 - [플랫폼 호출을 사용하여 데이터 마샬링](../../../framework/interop/marshaling-data-with-platform-invoke.md)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - methods [C#]
 - C# language, methods
 ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
-ms.openlocfilehash: df2d7837217f4267f95ed73948a4eb479cc035c1
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: fa863a5606c7526ae32bc28a0cfeaa91f8c7b539
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712157"
 ---
 # <a name="methods-c-programming-guide"></a>메서드(C# 프로그래밍 가이드)
-메서드는 일련의 문을 포함하는 코드 블록입니다. 프로그램을 통해 메서드를 호출하고 필요한 메서드 인수를 지정하여 문을 실행합니다. C#에서는 실행된 모든 명령이 메서드의 컨텍스트에서 수행됩니다. Main 메서드는 모든 C# 응용 프로그램의 진입점이고 프로그램이 시작될 때 CLR(공용 언어 런타임)에서 호출됩니다.  
+메서드는 일련의 문을 포함하는 코드 블록입니다. 프로그램을 통해 메서드를 호출하고 필요한 메서드 인수를 지정하여 문을 실행합니다. C#에서는 실행된 모든 명령이 메서드의 컨텍스트에서 수행됩니다. Main 메서드는 모든 C# 애플리케이션의 진입점이고 프로그램이 시작될 때 CLR(공용 언어 런타임)에서 호출됩니다.  
   
 > [!NOTE]
 >  이 항목에서는 명명된 메서드에 대해 설명합니다. 익명 함수에 대한 자세한 내용은 [익명 함수](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)를 참조하세요.  
@@ -158,14 +158,14 @@ public Customer this[long id] => store.LookupCustomer(id);
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](index.md)  
-- [액세스 한정자](access-modifiers.md)  
-- [정적 클래스 및 정적 클래스 멤버](static-classes-and-static-class-members.md)  
-- [상속](inheritance.md)  
-- [추상/봉인된 클래스 및 클래스 멤버](abstract-and-sealed-classes-and-class-members.md)  
-- [params](../../../csharp/language-reference/keywords/params.md)  
-- [return](../../../csharp/language-reference/keywords/return.md)  
-- [out](../../../csharp/language-reference/keywords/out.md)  
-- [ref](../../../csharp/language-reference/keywords/ref.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](index.md)
+- [액세스 한정자](access-modifiers.md)
+- [정적 클래스 및 정적 클래스 멤버](static-classes-and-static-class-members.md)
+- [상속](inheritance.md)
+- [추상/봉인된 클래스 및 클래스 멤버](abstract-and-sealed-classes-and-class-members.md)
+- [params](../../../csharp/language-reference/keywords/params.md)
+- [return](../../../csharp/language-reference/keywords/return.md)
+- [out](../../../csharp/language-reference/keywords/out.md)
+- [ref](../../../csharp/language-reference/keywords/ref.md)
 - [매개 변수 전달](passing-parameters.md)

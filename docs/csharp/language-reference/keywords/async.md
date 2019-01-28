@@ -9,12 +9,12 @@ helpviewer_keywords:
 - async method [C#]
 - async [C#]
 ms.assetid: 16f14f09-b2ce-42c7-a875-e4eca5d50674
-ms.openlocfilehash: 7bf45a701b10372d8cc4061db13f347eb0ddae91
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: f902d6a92f9d982dc00c3446f7b516c372f1a30e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709522"
 ---
 # <a name="async-c-reference"></a>async(C# 참조)
 `async` 한정자를 사용하여 메서드, [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) 또는 [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)를 비동기로 지정합니다. 메서드 또는 식에 이 한정자를 사용하면 *비동기 메서드*라고 합니다. 다음 예제에서는 `ExampleMethodAsync`라는 비동기 메서드를 정의합니다. 
@@ -85,7 +85,7 @@ C# 7.0부터 `GetAwaiter` 메서드가 있는 다른 형식(일반적으로 값 
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>  
-- [await](../../../csharp/language-reference/keywords/await.md)  
-- [연습: Async 및 Await를 사용하여 웹에 액세스](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
+- [await](../../../csharp/language-reference/keywords/await.md)
+- [연습: Async 및 Await를 사용하여 웹에 액세스](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Async 및 Await를 사용한 비동기 프로그래밍](../../../csharp/programming-guide/concepts/async/index.md)

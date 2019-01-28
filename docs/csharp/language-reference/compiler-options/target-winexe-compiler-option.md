@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -target compiler options [C#], /target:winexe
 - target compiler options [C#], /target:winexe
 ms.assetid: b5a0619c-8caa-46a5-a743-1cf68408ad7a
-ms.openlocfilehash: f77137e3cc2f734435d3b1d391a303fcd3e16332
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: affb06c62baa7f53e46e1d66b522e9ce9e74d976
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45970177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54666061"
 ---
 # <a name="-targetwinexe-c-compiler-options"></a>-target:winexe(C# 컴파일러 옵션)
 **-target:winexe** 옵션을 사용하면 컴파일러가 Windows 프로그램 실행 파일(EXE)을 만듭니다.  
@@ -24,10 +24,10 @@ ms.locfileid: "45970177"
 -target:winexe  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  실행 파일은 .exe 확장명으로 생성됩니다. Windows 프로그램은 .NET Framework 라이브러리나 Win32 API를 통해 사용자 인터페이스를 제공하는 프로그램입니다.  
   
- [-target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md)를 사용하여 콘솔 응용 프로그램을 만듭니다.  
+ [-target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md)를 사용하여 콘솔 애플리케이션을 만듭니다.  
   
  [-out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) 옵션을 사용하여 지정하지 않으면 [Main](../../../csharp/programming-guide/main-and-command-args/index.md) 메서드가 포함된 입력 파일의 이름이 출력 파일의 이름으로 사용됩니다.  
   
@@ -39,20 +39,20 @@ ms.locfileid: "45970177"
   
 1.  프로젝트 **속성** 페이지를 엽니다.  
   
-2.  **응용 프로그램** 속성 페이지를 클릭합니다.  
+2.  **애플리케이션** 속성 페이지를 클릭합니다.  
   
 3.  **출력 형식** 속성을 수정합니다.  
   
- 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>를 참조하세요.  
+ 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>을 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `in.cs`를 Windows 프로그램으로 컴파일합니다.  
   
 ```console  
 csc -target:winexe in.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
+- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
 - [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)

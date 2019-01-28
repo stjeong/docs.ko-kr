@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#line directive [C#]'
 ms.assetid: 6439e525-5dd5-4acb-b8ea-efabb32ff95b
-ms.openlocfilehash: 5933cf04a3fc8a1e986bff95ad1f38481883a340
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 81c719698e1dc3462e13c149c0f6a26657052f5b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740552"
 ---
 # <a name="line-c-reference"></a>#line(C# 참조)
 `#line`을 사용하면 오류 및 경고에 대한 컴파일러의 줄 번호 매기기 및 파일 이름 출력(선택 사항)을 수정할 수 있습니다.
@@ -47,7 +47,7 @@ MainClass.cs(12,16): warning CS0168: The variable 's' is declared but never used
 MainClass.cs(13,16): warning CS0168: The variable 'd' is declared but never used
 ```
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `#line` 지시문은 빌드 프로세스의 자동화된 중간 단계에서 사용할 수 있습니다. 예를 들어 원래 소스 코드 파일에서 줄이 제거되었지만 여전히 컴파일러에서 파일의 원래 줄 번호 매기기에 따라 출력을 생성하려는 경우, 줄을 제거한 다음 `#line`을 사용하여 원래 줄 번호 매기기를 시뮬레이트할 수 있습니다.  
   
  `#line hidden` 지시문은 개발자가 코드를 단계별로 실행할 때 `#line hidden`과 다음 `#line` 지시문(다른 `#line hidden` 지시문이 아니라고 가정) 사이에 있는 모든 줄이 프로시저 단위로 실행되도록 디버거에서 연속되는 줄을 숨깁니다. 이 옵션을 사용하여 ASP.NET이 사용자 정의 코드와 컴퓨터에서 생성된 코드를 구분하도록 할 수도 있습니다. ASP.NET이 이 기능의 주 소비자지만 기능을 사용할 소스 생성기가 늘어날 가능성이 큽니다.  
@@ -79,6 +79,6 @@ class MainClass
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)

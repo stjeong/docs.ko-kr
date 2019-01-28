@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <permission> C# XML tag
 - permission C# XML tag
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
-ms.openlocfilehash: bd5849317fbcb5728033fe271f250401a5993ca3
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5d78261807ab06bd5f89b5438648c5eb0dc56ad9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54739461"
 ---
 # <a name="ltpermissiongt-c-programming-guide"></a>&lt;permission&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -32,7 +32,7 @@ ms.locfileid: "53238613"
  `description`  
  멤버 액세스 권한에 대한 설명입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  \<permission> 태그를 사용하면 멤버 액세스 권한을 문서화할 수 있습니다. <xref:System.Security.PermissionSet> 클래스를 사용하면 멤버 액세스 권한을 지정할 수 있습니다.  
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
@@ -42,5 +42,5 @@ ms.locfileid: "53238613"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

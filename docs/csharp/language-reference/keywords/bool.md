@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - bool keyword [C#]
 ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
-ms.openlocfilehash: a274083ad2e518f8f29384e51d692bcf9a9cb61e
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 958b58b31193dbf4c03709e4ab7ba38f7f30e0ac
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590485"
 ---
 # <a name="bool-c-reference"></a>bool(C# 참조)
 
@@ -40,7 +40,7 @@ C++에서 `bool` 형식의 값은 `int` 형식의 값으로 변환될 수 있습
 
 [!code-csharp[csrefKeywordsTypes#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#3)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 키보드에서 문자를 입력하면 프로그램에서 입력 문자가 문자인지 확인합니다. 문자인 경우 소문자 또는 대문자인지 확인합니다. 이러한 검사는 <xref:System.Char.IsLetter%2A> 및 <xref:System.Char.IsLower%2A>를 사용하여 수행되며, 둘 다 `bool` 형식을 반환합니다.
 
@@ -52,10 +52,10 @@ C++에서 `bool` 형식의 값은 `int` 형식의 값으로 변환될 수 있습
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

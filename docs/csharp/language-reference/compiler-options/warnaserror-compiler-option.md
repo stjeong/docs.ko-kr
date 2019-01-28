@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -warnaserror compiler option [C#]
 - warnaserror compiler option [C#]
 ms.assetid: 04680ec3-08d6-4e2e-a274-38310e10e33c
-ms.openlocfilehash: a29b0a6095453e3d2747cad9d9f71b463d8f6b1f
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: b208f6e4e768e400af203117d185944be285cb72
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44081503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54634612"
 ---
 # <a name="-warnaserror-c-compiler-options"></a>-warnaserror(C# 컴파일러 옵션)
 **-warnaserror+** 옵션은 모든 경고를 오류로 처리합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "44081503"
 -warnaserror[+ | -][:warning-list]  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  일반적으로 경고로 보고되는 메시지가 대신 오류로 보고되며, 빌드 프로세스가 중지됩니다(출력 파일이 작성되지 않음).  
   
  기본적으로 **-warnaserror-** 가 적용되며, 경고가 발생해도 출력 파일이 생성됩니다. **-warnaserror+** 와 동일한 **-warnaserror**는 경고가 오류로 처리되도록 합니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "44081503"
   
  프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.TreatWarningsAsErrors>를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `in.cs`를 컴파일하고 컴파일러에서 경고를 표시하지 않도록 합니다.  
   
 ```console  
@@ -51,7 +51,7 @@ csc -warnaserror in.cs
 csc -warnaserror:642,649,652 in.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

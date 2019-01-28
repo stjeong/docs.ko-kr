@@ -10,12 +10,12 @@ helpviewer_keywords:
 - reading data, text files
 - text files, reading
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
-ms.openlocfilehash: 67e98750af589a3deb5e9d0d51f8b1204fdaad84
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: f7ddfbec13fad073272c75c3e68a4f5c9c3eef9e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672242"
 ---
 # <a name="how-to-read-from-a-text-file-c-programming-guide"></a>방법: 텍스트 파일에서 읽기(C# 프로그래밍 가이드)
 이 예제에서는 <xref:System.IO.File?displayProperty=nameWithType> 클래스의 정적 메서드 <xref:System.IO.File.ReadAllText%2A> 및 <xref:System.IO.File.ReadAllLines%2A>를 사용하여 텍스트 파일의 내용을 읽습니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "53240309"
  [!code-csharp[csFilesandFolders#4](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-read-from-a-text-file_1.cs)]  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
- 코드를 복사하고 C# 콘솔 응용 프로그램에 붙여넣습니다.  
+ 코드를 복사하고 C# 콘솔 애플리케이션에 붙여넣습니다.  
   
  [방법: 텍스트 파일에 쓰기](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md)의 텍스트 파일을 사용하지 않는 경우 `ReadAllText` 및 `ReadAllLines`에 대한 인수를 사용자 컴퓨터의 적절한 경로 및 파일 이름으로 바꿉니다.  
   
@@ -43,6 +43,6 @@ ms.locfileid: "53240309"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)

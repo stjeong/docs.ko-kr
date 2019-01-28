@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <summary> C# XML tag
 - summary C# XML tag
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.openlocfilehash: 5aaa9b08b422c06cc6b009e5e9d781e8be46af7e
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5447b9ea129c26fdbb9effe1a3aeac6d7290764a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740036"
 ---
 # <a name="ltsummarygt-c-programming-guide"></a>&lt;summary&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -27,7 +27,7 @@ ms.locfileid: "53237300"
  `description`  
  개체에 대한 요약입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  \<summary > 태그를 사용하여 형식 또는 형식 멤버를 설명해야 합니다. [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md)를 사용하여 형식 설명에 보충 정보를 추가할 수 있습니다. [cref 특성](../../../csharp/programming-guide/xmldoc/cref-attribute.md)을 사용하면 [Sandcastle](https://github.com/EWSoftware/SHFB) 등의 설명서 도구를 통해 코드 요소의 설명서 페이지에 대한 내부 하이퍼링크를 만들 수 있습니다.  
   
  \<summary> 태그의 텍스트는 IntelliSense의 형식에 대한 유일한 정보 소스이며 개체 브라우저 창에도 표시됩니다.  
@@ -95,5 +95,5 @@ ms.locfileid: "53237300"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

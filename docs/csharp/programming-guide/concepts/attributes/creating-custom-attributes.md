@@ -2,12 +2,12 @@
 title: 사용자 지정 특성 만들기(C#)
 ms.date: 07/20/2015
 ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
-ms.openlocfilehash: 0a27924623cc462f6d3339149718a1b29999ac1d
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.openlocfilehash: 0277a88b7e5beda511f6490261a7009adcfed4ee
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54674637"
 ---
 # <a name="creating-custom-attributes-c"></a>사용자 지정 특성 만들기(C#)
 메타데이터에서 특성 정의를 빠르고 쉽게 식별할 수 있도록 하는 <xref:System.Attribute>에서 직접 또는 간접적으로 파생되는 특성 클래스를 정의하여 자체 사용자 지정 특성을 만들 수 있습니다. 형식을 작성한 프로그래머의 이름을 형식에 태그로 지정한다고 가정합니다. 사용자 지정 `Author` 특성 클래스를 정의할 수 있습니다.  
@@ -65,10 +65,10 @@ class SampleClass
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Reflection>  
-- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
-- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)  
-- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
-- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
-- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
+- <xref:System.Reflection>
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
+- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)
+- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)
+- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)
+- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
 - [AttributeUsage(C#)](../../../../csharp/programming-guide/concepts/attributes/attributeusage.md)

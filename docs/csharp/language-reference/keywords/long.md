@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - long keyword [C#]
 ms.assetid: f9b24319-1f39-48be-a42b-d528ee28a7fd
-ms.openlocfilehash: 7693de1502898a6ba8d35c0011d31756848fb461
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 3085fd9c5f0c379d4a2ef22f4adb0ec157f0b785
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585512"
 ---
 # <a name="long-c-reference"></a>long(C# 참조)
 
@@ -106,11 +106,11 @@ long y = (long)3.0;   // OK: explicit conversion
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Int64>  
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- <xref:System.Int64>
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
 - [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

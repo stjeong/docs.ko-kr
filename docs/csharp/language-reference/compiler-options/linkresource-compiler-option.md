@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -linkresource compiler option [C#]
 - linkresource compiler option [C#]
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-ms.openlocfilehash: feca4713fe0e704799e2abbae3818edd0f3a5c84
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 699ae27df2423638f38a22cc17dc83b828383394
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54711349"
 ---
 # <a name="-linkresource-c-compiler-options"></a>-linkresource(C# 컴파일러 옵션)
 출력 파일에 .NET Framework 리소스에 대한 링크를 만듭니다. 리소스 파일은 출력 파일에 추가되지 않습니다. 이 점에서 출력 파일에 리소스 파일을 포함하는 [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) 옵션과 다릅니다.  
@@ -31,13 +31,13 @@ ms.locfileid: "43523177"
  `filename`  
  어셈블리에서 연결할 .NET Framework 리소스 파일입니다.  
   
- `identifier`(선택 사항)  
+ `identifier` (선택 사항)  
  리소스의 논리적 이름으로, 리소스를 로드하는 데 사용되는 이름입니다. 기본값은 파일 이름입니다.  
   
- `accessibility-modifier`(선택 사항)  
+ `accessibility-modifier` (선택 사항)  
  리소스의 접근성으로, public 또는 private입니다. 기본값은 public입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기본적으로 연결된 리소스는 C# 컴파일러로 생성될 때 어셈블리에서 public입니다. 리소스를 private로 만들려면 접근성 한정자로 `private`를 지정합니다. `public` 또는 `private` 이외의 다른 한정자는 허용되지 않습니다.  
   
  **-linkresource**에는 **-target:module** 이외의 [-target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) 옵션 중 하나가 필요합니다.  
@@ -50,14 +50,14 @@ ms.locfileid: "43523177"
   
  이 컴파일러 옵션은 Visual Studio에서 사용할 수 없으며 프로그래밍 방식으로 변경할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `in.cs`를 컴파일하고 리소스 파일 `rf.resource`에 연결합니다.  
   
 ```console  
 csc -linkresource:rf.resource in.cs  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `A.cs`를 DLL로 컴파일하고, 네이티브 DLL N.dll에 연결한 다음 출력을 GAC(전역 어셈블리 캐시)에 넣습니다. 이 예제에서는 A.dll과 N.dll이 둘 다 GAC에 있습니다.  
   
 ```console  
@@ -65,7 +65,7 @@ csc -linkresource:N.dll -t:library A.cs
 gacutil -i A.dll  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 앞의 예제와 동일한 작업을 수행하지만 어셈블리 링커 옵션을 사용합니다.  
   
 ```console  
@@ -74,9 +74,9 @@ al -out:A.dll A.netmodule -link:N.dll
 gacutil -i A.dll  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
-- [Al.exe(어셈블리 링커)](../../../framework/tools/al-exe-assembly-linker.md)  
-- [어셈블리 및 전역 어셈블리 캐시 사용](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
+- [Al.exe(어셈블리 링커)](../../../framework/tools/al-exe-assembly-linker.md)
+- [어셈블리 및 전역 어셈블리 캐시 사용](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

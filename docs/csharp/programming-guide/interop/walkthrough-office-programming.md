@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Office programming [C#]
 - Office programming [Visual Basic]
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
-ms.openlocfilehash: 76d48b588db17a712ac698b604828520e38776a9
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: f76fb1d52754999c16021f2417aebb8825e46340
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54223158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700015"
 ---
 # <a name="walkthrough-office-programming-c-and-visual-basic"></a>연습: Office 프로그래밍(C# 및 Visual Basic)
 Visual Studio에서는 Microsoft Office 프로그래밍을 개선하는 C# 및 Visual Basic의 기능을 제공합니다. 유용한 C# 기능으로는 명명된 인수 및 선택적 인수, `dynamic` 형식의 반환 값 등이 있습니다. COM 프로그래밍에서 `ref` 키워드를 생략하면 인덱싱된 속성에 액세스할 수 있게 됩니다. Visual Basic의 기능으로는 자동 구현 속성, 람다 식의 문, 컬렉션 이니셜라이저 등이 있습니다.
@@ -192,21 +192,21 @@ Visual Studio에서는 Microsoft Office 프로그래밍을 개선하는 C# 및 V
   
 ## <a name="see-also"></a>참고 항목
 
-- [자동으로 구현된 속성(Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
-- [자동으로 구현된 속성(C#)](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
-- [컬렉션 이니셜라이저](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
-- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [선택적 매개 변수](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
-- [위치 및 이름으로 인수 전달](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)  
-- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
-- [초기 바인딩 및 런타임에 바인딩](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
-- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
-- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [람다 식(Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
-- [람다 식(C#)](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-- [방법: COM Interop 프로그래밍에서 인덱싱된 속성 사용](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)  
-- [연습: Microsoft Office 어셈블리의 형식 정보 포함](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)  
-- [연습: 관리되는 어셈블리의 형식 포함](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
-- [연습: Excel용 첫 VSTO 추가 기능 만들기](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)  
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [자동으로 구현된 속성(Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [자동으로 구현된 속성(C#)](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [컬렉션 이니셜라이저](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [선택적 매개 변수](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [위치 및 이름으로 인수 전달](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)
+- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)
+- [초기 바인딩 및 런타임에 바인딩](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)
+- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [람다 식(Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [람다 식(C#)](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [방법: COM Interop 프로그래밍에서 인덱싱된 속성 사용](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)
+- [연습: Microsoft Office 어셈블리의 형식 정보 포함](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
+- [연습: 관리되는 어셈블리의 형식 포함](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
+- [연습: Excel용 첫 VSTO 추가 기능 만들기](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
 - [상호 운용성](../../../csharp/programming-guide/interop/index.md)

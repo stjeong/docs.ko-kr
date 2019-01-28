@@ -7,12 +7,12 @@ helpviewer_keywords:
 - implicitly-typed arrays [C#]
 - C# language, implicitly typed arrays
 ms.assetid: e05be95c-6732-403d-ae42-b35f057cbbea
-ms.openlocfilehash: 9c235b6084238917c2cb3f2cd745aef0264f82ce
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 2b52bca57bde2fd198fd1621cb8a8f7dfc73ec9e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740764"
 ---
 # <a name="implicitly-typed-arrays-c-programming-guide"></a>암시적으로 형식화된 배열(C# 프로그래밍 가이드)
 
@@ -34,10 +34,10 @@ ms.locfileid: "53238275"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [암시적 형식 지역 변수](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)  
-- [배열](../../../csharp/programming-guide/arrays/index.md)  
-- [익명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
-- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [var](../../../csharp/language-reference/keywords/var.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [암시적 형식 지역 변수](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
+- [배열](../../../csharp/programming-guide/arrays/index.md)
+- [익명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [var](../../../csharp/language-reference/keywords/var.md)
 - [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)

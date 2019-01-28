@@ -2,12 +2,12 @@
 title: LINQ to XML 이벤트(C#)
 ms.date: 07/20/2015
 ms.assetid: ce7de951-cba7-4870-9962-733eb01cd680
-ms.openlocfilehash: 6308d81eac830e11b6d58f8e460dfa377663cd21
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: f7ce6ed99f7279d1dc774314cdc2dde345b6a84d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736866"
 ---
 # <a name="linq-to-xml-events-c"></a>LINQ to XML 이벤트(C#)
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 이벤트를 통해 XML 트리가 변경될 때 알림을 받을 수 있습니다.  
@@ -26,12 +26,12 @@ ms.locfileid: "49453309"
   
  다음 이벤트는 XML 트리를 수정할 때 발생합니다.  
   
-|이벤트(event)|설명|  
+|이벤트|설명|  
 |-----------|-----------------|  
 |<xref:System.Xml.Linq.XObject.Changing>|이 <xref:System.Xml.Linq.XObject> 또는 해당 하위 항목이 변경되기 직전에 발생합니다.|  
 |<xref:System.Xml.Linq.XObject.Changed>|<xref:System.Xml.Linq.XObject>가 변경되거나 해당 하위 항목이 변경될 때 발생합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
  XML 트리에 특정 집계 정보를 유지 관리하려는 경우 이벤트가 유용합니다. 예를 들어, 청구서의 개별 품목에 대한 합계인 청구서 총계를 유지 관리하려고 할 수 있습니다. 이 예제에서는 이벤트를 사용하여 복합 요소 `Items` 아래의 모든 자식 요소에 대한 총계를 유지 관리합니다.  

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - refout compiler option [C#]
 - /refout compiler option [C#]
 - -refout compiler option [C#]
-ms.openlocfilehash: e204a053f6f68a4b848d22c95c98f04edff58716
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 51029c071b3c5bdefe5af798f01238086b8e6d4f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589794"
 ---
 # <a name="-refout-c-compiler-options"></a>-refout(C# 컴파일러 옵션)
 
@@ -28,7 +28,7 @@ ms.locfileid: "43506627"
 
  `filepath` 참조 어셈블리의 파일 경로입니다. 일반적으로 주 어셈블리의 경로와 일치해야 합니다. 권장되는 규칙(MSBuild에서 사용됨)은 주 어셈블리에 상대적으로 “ref/” sub-폴더에 참조 어셈블리를 배치하는 것입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 메타데이터 전용 어셈블리에는 단일 `throw null` 본문으로 대체되는 메서드 본문이 있지만 익명 형식을 제외한 모든 멤버가 포함됩니다. 본문이 없는 경우와 대조적으로 `throw null` 본문을 사용하는 이유는 PEVerify가 실행 및 전달될 수 있도록 하여 메타데이터의 완전성을 검증하기 위한 것입니다.
 
@@ -46,5 +46,5 @@ ms.locfileid: "43506627"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
