@@ -9,12 +9,12 @@ helpviewer_keywords:
 - type conversion [C#], as keyword
 - as keyword [C#]
 ms.assetid: a9be126b-cbf4-4990-a70d-d0e1983cad0e
-ms.openlocfilehash: 7559c24151a3c9acc79c0554112c923a23a88564
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 33f7971a95b8573168da11d2bd2abc80fa74370e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736470"
 ---
 # <a name="as-c-reference"></a>as(C# 참조)
 `as` 연산자를 사용하여 호환되는 참조 형식 또는 [nullable 형식](../../../csharp/programming-guide/nullable-types/index.md) 간에 특정 형식의 변환을 수행할 수 있습니다. 다음 코드는 예제를 보여 줍니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "53244351"
 
 예제에 나와 있는 대로 `as` 식의 결과를 `null`과 비교하여 변환에 성공했는지 확인해야 합니다. C# 7.0부터는 [is](is.md) 식을 사용하여 변환에 성공했는지 테스트하고 변환 성공 시 조건부로 변수를 할당할 수 있습니다. 대부분 시나리오에서는 `as` 연산자를 사용하는 것보다 더 적합합니다. 자세한 내용은 [`is` 연산자](is.md) 문서의 [형식 패턴](is.md#type) 섹션을 참조하세요.
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `as` 연산자는 캐스트 작업과 비슷합니다. 하지만 변환할 수 없는 경우 `as`는 예외를 발생시키지 않고 `null`을 반환합니다. 다음 예제를 참조하세요.  
   
 ```csharp  
@@ -46,10 +46,10 @@ expression is type ? (type)expression : (type)null
 
 자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [as 연산자](~/_csharplang/spec/expressions.md#the-as-operator)를 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
  
-## <a name="see-also"></a>참고 항목  
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [is](../../../csharp/language-reference/keywords/is.md)  
-- [?: 연산자](../../../csharp/language-reference/operators/conditional-operator.md)  
+## <a name="see-also"></a>참고 항목
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [is](../../../csharp/language-reference/keywords/is.md)
+- [?: 연산자](../../../csharp/language-reference/operators/conditional-operator.md)
 - [연산자 키워드](../../../csharp/language-reference/keywords/operator-keywords.md)

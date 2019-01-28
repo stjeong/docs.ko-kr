@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: baa5b9f250fe7117838f936b09b050ba500b7209
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a40b9524990213eaaf2ed78503b6f831776306ec
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33389046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524314"
 ---
 # <a name="qualifying-net-types-for-interoperation"></a>상호 운용할 .NET 형식의 정규화
-어셈블리에서 형식을 COM 응용 프로그램으로 노출하려는 경우 디자인 타임에 COM interop의 요구 사항을 고려하세요. 다음 지침을 준수하면 관리되는 형식(클래스, 인터페이스, 구조체 및 열거형)이 COM 형식과 원활하게 통합됩니다.  
+어셈블리에서 형식을 COM 애플리케이션으로 노출하려는 경우 디자인 타임에 COM interop의 요구 사항을 고려하세요. 다음 지침을 준수하면 관리되는 형식(클래스, 인터페이스, 구조체 및 열거형)이 COM 형식과 원활하게 통합됩니다.  
   
 -   클래스에서 인터페이스를 명시적으로 구현해야 합니다.  
   
@@ -47,9 +47,9 @@ ms.locfileid: "33389046"
   
  COM으로 내보낼 때 관리되는 형식의 상속 계층 구조가 평면화됩니다. 관리되는 환경과 관리되지 않는 환경에서는 버전 관리도 다릅니다. COM에 노출된 형식에는 관리되는 다른 형식과 동일한 버전 관리 특성이 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.ComVisibleAttribute>  
- [.NET Framework 구성 요소를 COM에 노출](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [클래스 인터페이스 소개](com-callable-wrapper.md#introducing-the-class-interface)  
- [Interop 특성 적용](../../../docs/framework/interop/applying-interop-attributes.md)  
- [COM에서 사용할 어셈블리의 패키징](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Runtime.InteropServices.ComVisibleAttribute>
+- [.NET Framework 구성 요소를 COM에 노출](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [클래스 인터페이스 소개](com-callable-wrapper.md#introducing-the-class-interface)
+- [Interop 특성 적용](../../../docs/framework/interop/applying-interop-attributes.md)
+- [COM에서 사용할 어셈블리의 패키징](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

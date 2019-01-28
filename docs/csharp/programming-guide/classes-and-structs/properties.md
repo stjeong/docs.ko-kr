@@ -8,12 +8,12 @@ helpviewer_keywords:
 - properties [C#]
 - C# language, properties
 ms.assetid: e295a8a2-b357-4ee7-a12e-385a44146fa8
-ms.openlocfilehash: c37a273b4091d98ccc202f7d98859333658ccf7f
-ms.sourcegitcommit: 882a2f56bf6afdcb40d468e4ae9371296822b68c
+ms.openlocfilehash: 473109100c14f26d0e31b9f57513997044c5b2f6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676824"
 ---
 # <a name="properties-c-programming-guide"></a>속성(C# 프로그래밍 가이드)
 
@@ -76,8 +76,8 @@ ms.locfileid: "53451211"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [속성 사용](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
-- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
-- [get 키워드](../../../csharp/language-reference/keywords/get.md)    
-- [set 키워드](../../../csharp/language-reference/keywords/set.md)    
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [속성 사용](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)
+- [get 키워드](../../../csharp/language-reference/keywords/get.md)
+- [set 키워드](../../../csharp/language-reference/keywords/set.md)

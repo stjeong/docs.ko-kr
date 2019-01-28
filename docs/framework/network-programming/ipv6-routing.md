@@ -2,12 +2,12 @@
 title: IPv6 라우팅
 ms.date: 03/30/2017
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
-ms.openlocfilehash: 19277f05d2feffd52f81cb5f0b70cb401579eb1a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: dabf17f85330b884918d5c6e1bc9832a7a0dbd02
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694817"
 ---
 # <a name="ipv6-routing"></a>IPv6 라우팅
 유연한 라우팅 메커니즘은 IPv6의 장점입니다. IPv4 네트워크 ID가 할당된 방식으로 인해 인터넷 백본에 있는 라우터에서 대규모 라우팅 테이블을 유지해야 합니다. 이러한 라우터는 인터넷의 모든 노드로 방향이 지정되는 패킷을 전달하기 위해 모든 경로를 알고 있어야 합니다. 주소를 집계하는 기능을 통해 IPv6에서는 유연하게 주소를 지정할 수 있고 라우팅 테이블의 크기가 대폭 감소됩니다. 이 새로운 주소 지정 아키텍처에서는 적절하게 메시지를 전달하기 위해 중간 라우터를 통해 네트워크의 로컬 부분만 계속 추적해야 합니다.  
@@ -33,6 +33,6 @@ ms.locfileid: "50195348"
   
 -   리디렉션. 전송 노드의 특정 대상으로 더 유용한 다음 홉 주소를 알리기 위해 라우터에서 전송합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [인터넷 프로토콜 버전 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
- [소켓](../../../docs/framework/network-programming/sockets.md)
+## <a name="see-also"></a>참고 항목
+- [인터넷 프로토콜 버전 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
+- [소켓](../../../docs/framework/network-programming/sockets.md)

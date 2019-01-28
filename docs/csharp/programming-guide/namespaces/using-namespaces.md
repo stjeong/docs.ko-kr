@@ -8,18 +8,18 @@ helpviewer_keywords:
 - fully qualified names [C#]
 - namespaces [C#], how to use
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-ms.openlocfilehash: d29de118e928522dcc3a4b4ab32fe2d2c4d1f2f9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: e52e5857d9fbe70cbd71ec91f8aa0c49b0e85df8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552309"
 ---
 # <a name="using-namespaces-c-programming-guide"></a>네임스페이스 사용(C# 프로그래밍 가이드)
 네임스페이스는 C# 프로그램 내에서 두 가지 방법으로 많이 사용됩니다. 첫째, .NET Framework 클래스는 네임스페이스를 사용하여 많은 클래스를 구성합니다. 둘째, 고유한 네임스페이스를 선언하면 대규모 프로그래밍 프로젝트에서 클래스 및 메서드 이름의 범위를 제어할 수 있습니다.  
   
 ## <a name="accessing-namespaces"></a>네임스페이스 액세스  
- 대부분의 C# 응용 프로그램은 `using` 지시문 섹션으로 시작합니다. 이 섹션에는 응용 프로그램이 자주 사용하는 네임스페이스가 나열되어, 프로그래머가 내부에 포함된 메서드를 사용할 때마다 정규화된 이름을 지정할 필요가 없도록 합니다.  
+ 대부분의 C# 애플리케이션은 `using` 지시문 섹션으로 시작합니다. 이 섹션에는 애플리케이션이 자주 사용하는 네임스페이스가 나열되어, 프로그래머가 내부에 포함된 메서드를 사용할 때마다 정규화된 이름을 지정할 필요가 없도록 합니다.  
   
  예를 들어 다음 줄을 포함할 수 있습니다.  
   
@@ -90,9 +90,9 @@ ms.locfileid: "53235786"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
-- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
-- [. 연산자](../../../csharp/language-reference/operators/member-access-operator.md)  
-- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [. 연산자](../../../csharp/language-reference/operators/member-access-operator.md)
+- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

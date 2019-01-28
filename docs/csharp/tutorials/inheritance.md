@@ -5,12 +5,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 07/05/2018
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
-ms.openlocfilehash: 1938876bcf72fccd7582ede332d052fb3d759395
-ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
+ms.openlocfilehash: 6db3db3ebe3e1934a8e74212692f07158b88b1d5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54717521"
 ---
 # <a name="inheritance-in-c-and-net"></a>C# 및 .NET의 상속
 
@@ -298,5 +298,5 @@ public struct ValueStructure : ValueType // Generates CS0527.
 
 ## <a name="see-also"></a>참고 항목
 
-- [클래스 및 개체](../tour-of-csharp/classes-and-objects.md)   
+- [클래스 및 개체](../tour-of-csharp/classes-and-objects.md)
 - [상속(C# 프로그래밍 가이드)](../programming-guide/classes-and-structs/inheritance.md)

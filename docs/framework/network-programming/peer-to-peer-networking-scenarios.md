@@ -2,12 +2,12 @@
 title: 피어 투 피어 네트워킹 시나리오
 ms.date: 03/30/2017
 ms.assetid: d23b1a64-2e08-4014-882a-c1dd766bdcc2
-ms.openlocfilehash: 46e0be29d367db0d36b87c063779d55d1338b39e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 7795bae8fa9ea6b5192f16dfe616c0bf5d543c80
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54669005"
 ---
 # <a name="peer-to-peer-networking-scenarios"></a>피어 투 피어 네트워킹 시나리오
 피어 투 피어 네트워킹에서는 다음 시나리오를 사용하고 향상시킵니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "53129573"
   
 -   목표 해결 프로젝트 작업 영역  
   
- 공유 작업 영역 응용 프로그램을 사용하면 임시 작업 그룹을 만든 다음 작업 그룹 소유자가 그룹이 문제를 해결하는 데 사용할 수 있는 도구와 콘텐츠로 공유 작업 공간을 채우게 할 수 있습니다. 여기에는 메시지 보드, 생산성 도구 및 파일이 포함될 수 있습니다.  
+ 공유 작업 영역 애플리케이션을 사용하면 임시 작업 그룹을 만든 다음 작업 그룹 소유자가 그룹이 문제를 해결하는 데 사용할 수 있는 도구와 콘텐츠로 공유 작업 공간을 채우게 할 수 있습니다. 여기에는 메시지 보드, 생산성 도구 및 파일이 포함될 수 있습니다.  
   
 -   파일을 다른 사용자와 공유  
   
@@ -68,5 +68,5 @@ ms.locfileid: "53129573"
   
 -  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Net.PeerToPeer.Collaboration>
+## <a name="see-also"></a>참고 항목
+- <xref:System.Net.PeerToPeer.Collaboration>

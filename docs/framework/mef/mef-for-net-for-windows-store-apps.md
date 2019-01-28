@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 39b7228de775f4dc92e932731ad9967315437e6e
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: c2c6f28a88c709c27df82250fcbdc22de210e93a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663299"
 ---
 # <a name="mef-for-net-for-windows-store-apps"></a>Windows 스토어 앱용 .NET을 위한 MEF
 <xref:System.Composition?displayProperty=nameWithType> 및 자식 네임스페이스에는 MEF(Managed Extensibility Framework)를 사용하여 확장 가능한 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 개발하기 위한 형식이 포함되어 있습니다. 이러한 네임스페이스는 [!INCLUDE[win8](../../../includes/win8-md.md)] 운영 체제에 대한 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] 하위 집합의 일부입니다.  
@@ -20,13 +20,13 @@ ms.locfileid: "49121118"
   
 -   <xref:System.Composition.Convention?displayProperty=nameWithType>은 규칙 기반 구성 모델에서 MEF 사용을 지원하는 형식을 제공합니다.  
   
--   <xref:System.Composition.Hosting?displayProperty=nameWithType>은 호스트 응용 프로그램 개발자에게 유용한 MEF 형식을 제공합니다.  
+-   <xref:System.Composition.Hosting?displayProperty=nameWithType>은 호스트 애플리케이션 개발자에게 유용한 MEF 형식을 제공합니다.  
   
 -   <xref:System.Composition.Hosting.Core?displayProperty=nameWithType>은 컴포지션 엔진에서 내부적으로 사용되는 MEF 형식을 제공합니다.  
   
  [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] 및 여기에 포함된 네임스페이스 및 형식 목록에 대한 자세한 내용은 Windows 개발자 센터의 [Windows 스토어 앱용 .NET 개요](https://go.microsoft.com/fwlink/p/?LinkID=238312)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows 스토어 앱용 .NET 개요](https://go.microsoft.com/fwlink/p/?LinkID=238312)  
- [Windows 스토어 앱용 .NET – 지원되는 API](https://go.microsoft.com/fwlink/p/?LinkID=247912)  
- [MEF(Managed Extensibility Framework)](../../../docs/framework/mef/index.md)
+## <a name="see-also"></a>참고 항목
+- [Windows 스토어 앱용 .NET 개요](https://go.microsoft.com/fwlink/p/?LinkID=238312)
+- [Windows 스토어 앱용 .NET – 지원되는 API](https://go.microsoft.com/fwlink/p/?LinkID=247912)
+- [MEF(Managed Extensibility Framework)](../../../docs/framework/mef/index.md)

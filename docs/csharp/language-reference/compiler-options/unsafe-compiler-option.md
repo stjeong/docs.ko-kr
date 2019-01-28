@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -unsafe compiler option [C#]
 - unsafe compiler option [C#]
 - /unsafe compiler option [C#]
-ms.openlocfilehash: 138c7cce83fd069f44025c57e52b2d01bcb23432
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4a8f7d099b2cd3c1b4331c87f853b617fef505ae
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726535"
 ---
 # <a name="-unsafe-c-compiler-options"></a>-unsafe(C# 컴파일러 옵션)
 **-unsafe** 컴파일러 옵션을 사용하면 [unsafe](../../../csharp/language-reference/keywords/unsafe.md) 키워드를 사용하는 코드를 컴파일할 수 있습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "43518052"
 -unsafe  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  안전하지 않은 코드에 대한 자세한 내용은 [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)를 참조하세요.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
@@ -46,14 +46,14 @@ ms.locfileid: "43518052"
 
  이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.AllowUnsafeBlocks%2A>을 참조하십시오.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  안전하지 않은 모드에 대해 `in.cs` 컴파일:  
   
 ```console  
 csc -unsafe in.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

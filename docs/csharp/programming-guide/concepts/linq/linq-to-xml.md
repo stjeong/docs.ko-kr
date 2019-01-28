@@ -2,12 +2,12 @@
 title: LINQ to XML(C#)
 ms.date: 07/20/2015
 ms.assetid: 26c907b1-bc58-465f-bcdc-adbe89df6e55
-ms.openlocfilehash: 5b0eb7537a3f91093502e4c4efc3589838fa5d88
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: a1ce0c70f3d3982e5f28d976e4ecd23eb05247c2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642544"
 ---
 # <a name="linq-to-xml-c"></a>LINQ to XML(C#)
 LINQ to XML에서는 .NET LINQ(Language-Integrated Query) Framework를 사용하는 메모리 내 XML 프로그래밍 인터페이스를 제공합니다. LINQ to XML은 최신 .NET Framework 언어 기능을 사용하며 업데이트되고 다시 디자인된 DOM(문서 개체 모델) XML 프로그래밍 인터페이스와 유사합니다.  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bc160678817266dc649f60dc3f2cc77044c05691
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: eb1aba9e794928b0eb905722e2a5d7df84100ea4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33388621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729212"
 ---
 # <a name="identifying-functions-in-dlls"></a>DLL 함수 식별
 DLL 함수 ID는 다음 요소로 구성됩니다.  
@@ -27,7 +27,7 @@ DLL 함수 ID는 다음 요소로 구성됩니다.
   
 -   구현을 찾을 수 있는 DLL 파일의 이름  
   
- 예를 들어 User32.dll의 **MessageBox**함수는 함수(**MessageBox**) 및 해당 위치(User32.dll, User32 또는 user32)를 식별합니다. Microsoft Windows 응용 프로그램 프로그래밍 인터페이스(Win32 API)에는 문자와 문자열을 처리하는 각 함수의 두 가지 버전인 1바이트 문자 ANSI 버전 및 2바이트 문자 유니코드 버전이 포함될 수 있습니다. 지정하지 않을 경우 <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> 필드로 표현되는 문자 집합은 기본적으로 ANSI로 설정됩니다. 일부 함수에는 버전이 세 개 이상 있을 수 있습니다.  
+ 예를 들어 User32.dll의 **MessageBox**함수는 함수(**MessageBox**) 및 해당 위치(User32.dll, User32 또는 user32)를 식별합니다. Microsoft Windows 애플리케이션 프로그래밍 인터페이스(Win32 API)에는 문자와 문자열을 처리하는 각 함수의 두 가지 버전인 1바이트 문자 ANSI 버전 및 2바이트 문자 유니코드 버전이 포함될 수 있습니다. 지정하지 않을 경우 <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> 필드로 표현되는 문자 집합은 기본적으로 ANSI로 설정됩니다. 일부 함수에는 버전이 세 개 이상 있을 수 있습니다.  
   
  **MessageBoxA**는 **MessageBox** 함수의 ANSI 진입점이고 **MessageBoxW**는 유니코드 버전입니다. 다양한 명령줄 도구를 실행하여 user32.dll과 같은 특정 DLL에 대한 함수 이름을 나열할 수 있습니다. 예를 들어 `dumpbin /exports user32.dll` 또는 `link /dump /exports user32.dll`을 사용하여 함수 이름을 얻을 수 있습니다.  
   
@@ -45,9 +45,9 @@ DLL 함수 ID는 다음 요소로 구성됩니다.
   
  Win32 API에 대한 전체 설명서는 플랫폼 SDK를 참조하세요. 플랫폼 호출에서 사용되는 .NET 기반 선언을 생성하는 방법을 보여 주는 예제는 [플랫폼 호출을 사용하여 데이터 마샬링](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [관리되지 않는 DLL 함수 사용](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
- [진입점 지정](../../../docs/framework/interop/specifying-an-entry-point.md)  
- [DLL 함수가 포함된 클래스 만들기](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  
- [관리 코드에서 프로토타입 만들기](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
- [DLL 함수 호출](../../../docs/framework/interop/calling-a-dll-function.md)
+## <a name="see-also"></a>참고 항목
+- [관리되지 않는 DLL 함수 사용](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)
+- [진입점 지정](../../../docs/framework/interop/specifying-an-entry-point.md)
+- [DLL 함수가 포함된 클래스 만들기](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)
+- [관리 코드에서 프로토타입 만들기](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
+- [DLL 함수 호출](../../../docs/framework/interop/calling-a-dll-function.md)

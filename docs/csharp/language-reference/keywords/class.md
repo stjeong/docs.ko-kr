@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - class keyword [C#]
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690
-ms.openlocfilehash: d436dee14280d86062834ac131bbe4775705d748
-ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
+ms.openlocfilehash: 83e7d278b38e17dac668b32687a368211399d437
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53286496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652074"
 ---
 # <a name="class-c-reference"></a>class(C# 참조)
 
@@ -27,11 +27,11 @@ class TestClass
 }
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 C#에서는 단일 상속만 허용됩니다. 즉, 한 클래스는 하나의 기본 클래스에서만 구현을 상속할 수 있습니다. 그러나 한 클래스는 두 개 이상의 인터페이스를 구현할 수 있습니다. 다음 표에는 클래스 상속 및 인터페이스 구현에 대한 예제가 나와 있습니다.
 
-|상속|예|
+|상속|예제|
 |-----------------|-------------|
 |없음|`class ClassA { }`|
 |Single|`class DerivedClass: BaseClass { }`|
@@ -102,7 +102,7 @@ Console.Write(child1.name);   // Error
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
 - [참조 형식](../../../csharp/language-reference/keywords/reference-types.md)

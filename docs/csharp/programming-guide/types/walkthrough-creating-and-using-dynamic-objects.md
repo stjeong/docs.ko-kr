@@ -9,12 +9,12 @@ helpviewer_keywords:
 - dynamic objects
 - dynamic objects [C#]
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-ms.openlocfilehash: 8134a7c7c1f2c4e6432dd19889faf796a9284553
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: ff46fcc14a8a8e3d6c6d31dcb8c922640d6478c8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54691756"
 ---
 # <a name="walkthrough-creating-and-using-dynamic-objects-c-and-visual-basic"></a>연습: 동적 개체 만들기 및 사용(C# 및 Visual Basic)
 
@@ -47,7 +47,7 @@ ms.locfileid: "49347970"
   
 2.  **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-3.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 응용 프로그램**을 선택합니다. **이름** 상자에 `DynamicSample`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
+3.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 애플리케이션**을 선택합니다. **이름** 상자에 `DynamicSample`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
   
 4.  DynamicSample 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음 **클래스**를 클릭합니다. **이름** 상자에 `ReadOnlyFile`을 입력한 다음 **확인**을 클릭합니다. ReadOnlyFile 클래스가 포함된 새 파일이 추가됩니다.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49347970"
   
 3.  파일을 저장한 후 닫습니다.  
   
-#### <a name="to-create-a-sample-application-that-uses-the-custom-dynamic-object"></a>사용자 지정 동적 개체를 사용하는 샘플 응용 프로그램을 만들려면  
+#### <a name="to-create-a-sample-application-that-uses-the-custom-dynamic-object"></a>사용자 지정 동적 개체를 사용하는 샘플 애플리케이션을 만들려면  
   
 1.  **솔루션 탐색기**에서, Visual Basic을 사용 중인 경우 Module1.vb 파일, Visual C#을 사용 중인 경우 Program.cs 파일을 두 번 클릭합니다.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "49347970"
      [!code-csharp[VbDynamicWalkthrough#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/vbdynamicwalkthrough/cs/program.cs#8)]
      [!code-vb[VbDynamicWalkthrough#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthrough/vb/module1.vb#8)]
   
-3.  파일을 저장한 다음 Ctrl+F5를 눌러 응용 프로그램을 빌드하고 실행합니다.  
+3.  파일을 저장한 다음 Ctrl+F5를 눌러 애플리케이션을 빌드하고 실행합니다.  
   
 ## <a name="calling-a-dynamic-language-library"></a>동적 언어 라이브러리 호출  
 
@@ -132,7 +132,7 @@ ms.locfileid: "49347970"
   
 1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 응용 프로그램**을 선택합니다. **이름** 상자에 `DynamicIronPythonSample`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
+2.  **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**가 선택되었는지 확인합니다. **템플릿** 창에서 **콘솔 애플리케이션**을 선택합니다. **이름** 상자에 `DynamicIronPythonSample`를 입력한 다음 **확인**을 클릭합니다. 새 프로젝트가 만들어집니다.  
   
 3.  Visual Basic을 사용 중인 경우 DynamicIronPythonSample 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다. **참조** 탭을 클릭합니다. **추가** 단추를 클릭합니다. Visual C#을 사용 중인 경우 **솔루션 탐색기**에서 **References** 폴더를 마우스 오른쪽 단추로 클릭한 다음 **참조 추가**를 클릭합니다.  
   
@@ -155,13 +155,13 @@ ms.locfileid: "49347970"
      [!code-csharp[VbDynamicWalkthroughIronPython#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/cs/program.cs#3)]
      [!code-vb[VbDynamicWalkthroughIronPython#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/vb/module1.vb#3)]
   
-9. 파일을 저장한 다음 Ctrl+F5를 눌러 응용 프로그램을 빌드하고 실행합니다.  
+9. 파일을 저장한 다음 Ctrl+F5를 눌러 애플리케이션을 빌드하고 실행합니다.  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Dynamic?displayProperty=nameWithType>  
-- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
-- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [초기 바인딩 및 런타임에 바인딩](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
-- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
+- <xref:System.Dynamic?displayProperty=nameWithType>
+- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>
+- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [초기 바인딩 및 런타임에 바인딩](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)
 - [동적 인터페이스 구현(Microsoft TechNet에서 다운로드 가능한 PDF)](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e874d593a18be352e7053a15525f3168e7fcc9db
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 8c75d0631b05e4db53308efde8fe4c70a0778ebe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540570"
 ---
 # <a name="dynamic-language-runtime-overview"></a>동적 언어 런타임 개요
 
@@ -30,7 +30,7 @@ DLR(*동적 언어 런타임*)은 동적 언어에 대한 서비스 집합을 CL
 
 -   전체 코드에서 static 형식 선언을 변경할 필요가 없으므로 더 간편한 리팩터링 및 코드 수정.
 
-동적 언어는 우수한 스크립팅 언어를 만듭니다. 고객은 새로운 명령 및 기능을 사용하여 동적 언어를 통해 생성된 응용 프로그램을 쉽게 확장할 수 있습니다. 동적 언어는 웹 사이트 및 테스트 도구를 만들고, 서버 팜을 유지 관리하고, 다양한 유틸리티를 개발하고, 데이터 변형을 수행하는 데도 자주 사용됩니다.
+동적 언어는 우수한 스크립팅 언어를 만듭니다. 고객은 새로운 명령 및 기능을 사용하여 동적 언어를 통해 생성된 애플리케이션을 쉽게 확장할 수 있습니다. 동적 언어는 웹 사이트 및 테스트 도구를 만들고, 서버 팜을 유지 관리하고, 다양한 유틸리티를 개발하고, 데이터 변형을 수행하는 데도 자주 사용됩니다.
 
 DLR의 목적은 동적 언어 시스템이 .NET Framework에서 실행되고 동적 언어에 .NET 상호 운용성을 제공할 수 있도록 하는 것입니다. DLR은 C# 및 Visual Basic에 동적 개체를 추가하여 이러한 언어에서 동적 동작을 지원하고 동적 언어와의 상호 운용성을 가능하게 합니다.
 

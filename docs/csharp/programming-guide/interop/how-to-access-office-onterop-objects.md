@@ -10,12 +10,12 @@ helpviewer_keywords:
 - named arguments [C#], Office programming
 - Office programming [C#]
 ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
-ms.openlocfilehash: 803c3bd4099b838ddc71fea530565f26bd4142df
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5868d8782d093a4d3d566708684d3adeb39020ff
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54695116"
 ---
 # <a name="how-to-access-office-interop-objects-by-using-visual-c-features-c-programming-guide"></a>방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스(C# 프로그래밍 가이드)
 Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능이 있습니다. 새로운 기능에는 명명된 인수와 선택적 인수, `dynamic`이라는 새 형식 그리고 인수를 값 매개 변수처럼 COM 메서드의 참조 매개 변수로 전달하는 기능이 포함됩니다.  
@@ -28,7 +28,7 @@ Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-## <a name="to-create-a-new-console-application"></a>새 콘솔 응용 프로그램을 만들려면  
+## <a name="to-create-a-new-console-application"></a>새 콘솔 애플리케이션을 만들려면  
   
 1.  Visual Studio를 시작합니다.  
   
@@ -38,7 +38,7 @@ Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능
   
 4.  **새 프로젝트** 대화 상자 위쪽에서 **.NET Framework 4** 이상 버전이 대상 프레임워크로 선택되어 있는지 확인합니다.  
   
-5.  **템플릿** 창에서 **콘솔 응용 프로그램**을 클릭합니다.  
+5.  **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.  
   
 6.  **이름** 필드에 프로젝트의 이름을 입력합니다.  
   
@@ -110,7 +110,7 @@ Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능
   
 ## <a name="to-add-a-word-document"></a>Word 문서를 추가하려면  
   
-1.  [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 이상 버전에서 Office 프로그래밍을 향상시키는 추가 방식을 설명하기 위해 다음 코드는 Word 응용 프로그램을 열고 Excel 워크시트에 연결되는 아이콘을 만듭니다.  
+1.  [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 이상 버전에서 Office 프로그래밍을 향상시키는 추가 방식을 설명하기 위해 다음 코드는 Word 애플리케이션을 열고 Excel 워크시트에 연결되는 아이콘을 만듭니다.  
   
      이 단계의 뒷부분에서 제공되는 `CreateIconInWordDoc` 메서드를 `Program` 클래스에 붙여 넣습니다. `CreateIconInWordDoc`는 명명된 인수와 선택적 인수를 사용하여 <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> 및 <xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>에 대한 메서드 호출의 복잡성을 줄입니다. 이러한 호출에는 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)]에 도입된 다른 두 가지 새 기능이 통합됩니다. 이러한 기능은 참조 매개 변수가 포함된 COM 메서드 호출을 간소화합니다. 그 중 첫 번째 기능은 인수를 값 매개 변수처럼 참조 매개 변수로 전달하는 것입니다. 즉, 각 참조 매개 변수에 대한 변수를 만들지 않고 직접 값을 보낼 수 있습니다. 컴파일러는 인수 값을 저장하기 위한 임시 변수를 생성하고 호출에서 값이 반환되면 해당 변수를 삭제합니다. 두 번째 기능은 인수 목록의 `ref` 키워드를 생략하는 것입니다.  
   
@@ -168,15 +168,15 @@ Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능
   
      [!code-csharp[csProgGuideOfficeHowTo#17](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_16.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 전체 예제를 보여 줍니다.  
   
  [!code-csharp[csProgGuideOfficeHowTo#18](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_17.cs)]  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Type.Missing?displayProperty=nameWithType>  
-- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
-- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
+- <xref:System.Type.Missing?displayProperty=nameWithType>
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)
+- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)

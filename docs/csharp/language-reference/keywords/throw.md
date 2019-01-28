@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6f9729a3536a6611ed593f16ba3bc09e7af20a4c
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 4e29c0cc85f0ec6ccd3f428d64121f53b91ae9a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238821"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713852"
 ---
 # <a name="throw-c-reference"></a>throw(C# 참조)
 
@@ -70,10 +70,10 @@ C# 7.0부터 `throw`를 명령문뿐만 아니라 식으로도 사용할 수 있
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../index.md)  
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
-- [try-catch](try-catch.md)  
-- [C++의 try, catch 및 throw 문](try-catch.md)  
-- [C# 키워드](index.md)  
-- [예외 처리 문](exception-handling-statements.md)  
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [try-catch](try-catch.md)
+- [C++의 try, catch 및 throw 문](try-catch.md)
+- [C# 키워드](index.md)
+- [예외 처리 문](exception-handling-statements.md)
 - [방법: 명시적으로 예외 Throw](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

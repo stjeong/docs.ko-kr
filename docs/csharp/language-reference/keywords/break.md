@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C#]
 ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
-ms.openlocfilehash: 02d12ef92e1361bc8d46603d803a1b8b7c06a0a0
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 18be5171329dd43c419e977a1799e2e72c32404d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54727575"
 ---
 # <a name="break-c-reference"></a>break(C# 참조)
 
@@ -25,7 +25,7 @@ ms.locfileid: "53243203"
 
 [!code-csharp[csrefKeywordsJump#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#1)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서 `break` 문은 내부 중첩 루프를 중단하고 제어를 외부 루프에 반환하는 데 사용됩니다.
 
@@ -50,9 +50,9 @@ Sorry, invalid selection.
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [switch](../../../csharp/language-reference/keywords/switch.md)  
-- [점프 문](../../../csharp/language-reference/keywords/jump-statements.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [switch](../../../csharp/language-reference/keywords/switch.md)
+- [점프 문](../../../csharp/language-reference/keywords/jump-statements.md)
 - [반복 문](../../../csharp/language-reference/keywords/iteration-statements.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - object initializers [C#]
 - collection initializers [C#]
 ms.assetid: c58f3db5-d7d4-4651-bd2d-5a3a97357f61
-ms.openlocfilehash: 1dc28ac218eb0325095641840834b40594ad67ab
-ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
+ms.openlocfilehash: 44ae8acd1278d8a6163ac1c5bc6e0a0e030c02fa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54084864"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676967"
 ---
 # <a name="object-and-collection-initializers-c-programming-guide"></a>개체 및 컬렉션 이니셜라이저(C# 프로그래밍 가이드)
 
@@ -126,6 +126,6 @@ List<int> digits2 = new List<int> { 0 + 1, 12 % 3, MakeInt() };
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../index.md)  
-- [LINQ 쿼리 식](../linq-query-expressions/index.md)  
+- [C# 프로그래밍 가이드](../index.md)
+- [LINQ 쿼리 식](../linq-query-expressions/index.md)
 - [익명 형식](anonymous-types.md)

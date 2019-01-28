@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dc929aba10d8a18e2a084707b69d3fef5f91a701
-ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
+ms.openlocfilehash: 5429dfbf7b318b60d6c3150315dbe22ee73b4792
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563446"
 ---
 # <a name="attributed-programming-model-overview-mef"></a>특성을 사용하는 프로그래밍 모델 개요(MEF)
 MEF(Managed Extensibility Framework)에서 *프로그래밍 모델* 은 MEF가 작동하는 개념 개체 집합을 정의하는 특정 방법입니다. 이러한 개념 개체에는 파트, 가져오기 및 내보내기가 포함됩니다. MEF에서는 이러한 개체를 사용하지만 이러한 개체를 표현해야 하는 방법을 지정하지는 않습니다. 따라서 사용자 지정 프로그래밍 모델을 비롯한 매우 다양한 프로그래밍 모델이 가능합니다.  
@@ -957,6 +957,6 @@ public class PartSeven
   
  `IPartImportsSatisfiedNotification` 은 `OnImportsSatisfied`라는 메서드 하나를 포함합니다. 이 메서드는 컴퍼지션이 완료되고 파트의 가져오기가 사용할 준비가 되면 인터페이스를 구현하는 모든 파트에서 컴퍼지션 컨테이너에 의해 호출됩니다. 다른 파트의 가져오기를 채우기 위해 컴퍼지션 엔진에 의해 파트가 만들어집니다. 파트의 가져오기가 설정되기 전에는 파트 생성자의 가져온 값이 `ImportingConstructor` 특성을 사용하여 필수 구성 요소로 지정되지 않은 한 해당 값을 사용하거나 조작하는 모든 초기화를 수행할 수 없습니다. 이 방법은 일반적으로 선호되는 방법이지만 일부 경우 생성자 삽입을 사용하지 못할 수도 있습니다. 이러한 경우 `OnImportsSatisfied`에서 초기화를 수행할 수 있으며 파트가 `IPartImportsSatisfiedNotification`을 구현해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Channel 9 비디오: Managed Extensibility Framework로 애플리케이션 열기](https://channel9.msdn.com/events/TechEd/NorthAmerica/2009/DTL328)  
- [Channel 9 비디오: MEF(Managed Extensibility Framework) 2.0](https://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)
+## <a name="see-also"></a>참고 항목
+- [Channel 9 비디오: Managed Extensibility Framework로 애플리케이션 열기](https://channel9.msdn.com/events/TechEd/NorthAmerica/2009/DTL328)
+- [Channel 9 비디오: MEF(Managed Extensibility Framework) 2.0](https://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)

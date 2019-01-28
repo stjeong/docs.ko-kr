@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exceptions [C#], creating
 - exceptions [C#], throwing
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
-ms.openlocfilehash: c7775de75ddbf274f3a1555c9f0daaf63bbee713
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: dfa3b60e0c76e377a52243c534139d6c9025d46e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573329"
 ---
 # <a name="creating-and-throwing-exceptions-c-programming-guide"></a>예외 만들기 및 Throw(C# 프로그래밍 가이드)
 예외는 프로그램을 실행하는 동안 오류가 발생했음을 나타내는 데 사용됩니다. 오류를 설명하는 예외 개체가 만들어지고 [throw](../../../csharp/language-reference/keywords/throw.md) 키워드를 통해 *throw*됩니다. 그런 다음 런타임에 가장 호환성이 높은 예외 처리기를 검색합니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "53235347"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
-- [예외 계층](../../../standard/exceptions/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)
+- [예외 계층](../../../standard/exceptions/index.md)
 - [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: 48e7dcfd5bbe569a37ceb3ec746e7c3e53a7cdd9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 8d787f8deb8f3b7d1e59d99e71662960a5c04e15
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652087"
 ---
 # <a name="internal-c-reference"></a>internal(C# 참조)
 `internal` 키워드는 형식 및 형식 멤버에 대한 [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)입니다. 
@@ -34,7 +34,7 @@ public class BaseClass
   
  어셈블리에 대한 자세한 내용은 [어셈블리 및 전역 어셈블리 캐시](../../../csharp/programming-guide/concepts/assemblies-gac/index.md)를 참조하세요.  
   
- 내부 액세스는 구성 요소 그룹이 나머지 응용 프로그램 코드에 노출되지 않고 비공개 방식으로 상호 작용할 수 있도록 하기 때문에 일반적으로 구성 요소 기반 개발에 사용됩니다. 예를 들어 그래픽 사용자 인터페이스를 빌드하기 위한 프레임워크는 내부 액세스로 멤버를 사용하여 상호 작용하는 `Control` 및 `Form` 클래스를 제공할 수 있습니다. 이러한 멤버는 internal이므로 프레임워크를 사용하는 코드에 노출되지 않습니다.  
+ 내부 액세스는 구성 요소 그룹이 나머지 애플리케이션 코드에 노출되지 않고 비공개 방식으로 상호 작용할 수 있도록 하기 때문에 일반적으로 구성 요소 기반 개발에 사용됩니다. 예를 들어 그래픽 사용자 인터페이스를 빌드하기 위한 프레임워크는 내부 액세스로 멤버를 사용하여 상호 작용하는 `Control` 및 `Form` 클래스를 제공할 수 있습니다. 이러한 멤버는 internal이므로 프레임워크를 사용하는 코드에 노출되지 않습니다.  
   
  정의 시 사용된 어셈블리 외부에서 내부 액세스로 형식 또는 멤버를 참조하면 오류가 발생합니다.  
   
@@ -93,12 +93,12 @@ public class TestAccess
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
-- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)  
-- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
-- [public](../../../csharp/language-reference/keywords/public.md)  
-- [private](../../../csharp/language-reference/keywords/private.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)
+- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)
+- [public](../../../csharp/language-reference/keywords/public.md)
+- [private](../../../csharp/language-reference/keywords/private.md)
 - [protected](../../../csharp/language-reference/keywords/protected.md)

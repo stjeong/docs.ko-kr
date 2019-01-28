@@ -2,12 +2,12 @@
 title: 인증서 선택 및 유효성 검사
 ms.date: 03/30/2017
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
-ms.openlocfilehash: 2767f8fc62d44e480962690a3cbe379fea0f9662
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6d2c5470856f09d3da3bcae890717757c598a4c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50048374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54666668"
 ---
 # <a name="certificate-selection-and-validation"></a>인증서 선택 및 유효성 검사
 <xref:System.Net> 클래스는 SSL(Secure Sockets Layer) 연결에 대한 <xref:System.Security.Cryptography.X509Certificates>를 선택하고 유효성을 검사하는 여러 가지 방법을 지원합니다. 클라이언트는 서버에 인증하기 위해 하나 이상의 인증서를 선택할 수 있습니다. 서버는 인증을 위해 클라이언트 인증서에 하나 이상의 특정 특성이 있도록 요구할 수 있습니다.  
@@ -52,6 +52,6 @@ ms.locfileid: "50048374"
   
  이러한 도구 외에도 <xref:System.Security.Cryptography.X509Certificates.X509Certificate> 및 <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> 클래스는 파일 시스템에서 인증서를 로드하기 위한 메서드를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)  
- [.NET Framework의 네트워크 프로그래밍](../../../docs/framework/network-programming/index.md)
+## <a name="see-also"></a>참고 항목
+- [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [.NET Framework의 네트워크 프로그래밍](../../../docs/framework/network-programming/index.md)

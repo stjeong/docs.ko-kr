@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e9d1c6dff4a1a8722a2ca196763756336d512631
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 765dac0a6cf8a3403880bead1716b8477662052c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50203945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529530"
 ---
 # <a name="net-framework-system-requirements"></a>.NET Framework 시스템 요구 사항
 
@@ -108,6 +108,6 @@ ms.locfileid: "50203945"
 
 ## <a name="see-also"></a>참고 항목
 
-- [설치 가이드](../../../docs/framework/install/index.md)   
-- [시작](../../../docs/framework/get-started/index.md)   
+- [설치 가이드](../../../docs/framework/install/index.md)
+- [시작](../../../docs/framework/get-started/index.md)
 - [차단된 .NET Framework 설치 및 제거 문제 해결](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

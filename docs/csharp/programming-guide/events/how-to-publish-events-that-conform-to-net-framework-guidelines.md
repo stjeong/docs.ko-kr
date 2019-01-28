@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - events [C#], implementation guidelines
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
-ms.openlocfilehash: 8269c976f161ba6ae11bee8cbef44b2f7c878e61
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: bdc512ae1ac7fa51dec1307a9e759e5b1f97bf53
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563199"
 ---
 # <a name="how-to-publish-events-that-conform-to-net-framework-guidelines-c-programming-guide"></a>방법: .NET Framework 지침을 따르는 이벤트 게시(C# 프로그래밍 가이드)
 다음 절차에서는 표준 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 패턴을 따르는 이벤트를 클래스와 구조체에 추가하는 방법을 보여 줍니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 클래스 라이브러리의 모든 이벤트는 다음과 같이 정의된 <xref:System.EventHandler> 대리자를 기반으로 합니다.  
@@ -76,7 +76,7 @@ public delegate void EventHandler(object sender, EventArgs e);
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Delegate>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [이벤트](../../../csharp/programming-guide/events/index.md)  
+- <xref:System.Delegate>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [이벤트](../../../csharp/programming-guide/events/index.md)
 - [대리자](../../../csharp/programming-guide/delegates/index.md)

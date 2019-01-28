@@ -6,12 +6,12 @@ helpviewer_keywords:
 - pointers [C#], increment and decrement
 - pointer expressions [C#], increment and decrement
 ms.assetid: 1b8b9281-44ee-485a-9045-3db38a4b4b89
-ms.openlocfilehash: f28fc4f86e4ff01f90bfd49714f38eee7040f9d1
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: ead179c3711a5e63bbdc2ec2b5644d5991b82ee7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573272"
 ---
 # <a name="how-to-increment-and-decrement-pointers-c-programming-guide"></a>방법: 포인터 증가 및 감소(C# 프로그래밍 가이드)
 
@@ -32,7 +32,7 @@ p--;
   
  연산이 포인터의 도메인을 오버플로하는 경우 예외가 생성되지 않고 결과는 구현에 따라 다릅니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 포인터를 `int` 크기만큼 증가하여 배열을 단계별로 실행합니다. 각 단계에서 주소와 배열 요소의 내용을 표시합니다.  
   
  [!code-csharp[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_1.cs)]  
@@ -47,13 +47,13 @@ p--;
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
-- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
-- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [유형](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [유형](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
 - [sizeof](../../../csharp/language-reference/keywords/sizeof.md)

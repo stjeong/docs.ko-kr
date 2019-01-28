@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a8519f7ecfc430aaa9b888f9239f669e6e54eb02
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7e1227cbf85e72570bcb08f7f13168392b7c7b60
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592577"
 ---
 # <a name="overview-of-the-net-framework"></a>.NET Framework의 개요
 
@@ -75,17 +75,17 @@ Internet Explorer는 MIME 형식 확장의 형식으로 런타임을 호스트�
 
 개체 지향 클래스 라이브러리에서와 마찬가지로, .NET Framework 형식을 사용하면 문자열 관리, 데이터 수집, 데이터베이스 연결, 파일 액세스 등의 작업을 비롯한 일반적인 범위의 프로그래밍 작업을 수행할 수 있습니다. 이러한 일반적인 작업 외에도 클래스 라이브러리에는 특수화된 다양한 개발 시나리오를 지원하는 형식이 포함되어 있습니다. .NET Framework를 사용하여 다음과 같은 종류의 앱 및 서비스를 개발할 수 있습니다.
 
-- 콘솔 앱. [콘솔 응용 프로그램 만들기](../../../docs/standard/building-console-apps.md)를 참조하세요.
+- 콘솔 앱. [콘솔 애플리케이션 만들기](../../../docs/standard/building-console-apps.md)를 참조하세요.
 
 - Windows GUI 앱(Windows Forms). [Windows Forms](../../../docs/framework/winforms/index.md)를 참조하세요.
 
 - WPF(Windows Presentation Foundation) 앱. [Windows Presentation Foundation](../../../docs/framework/wpf/index.md)을 참조하세요.
 
-- ASP.NET 앱. [ASP.NET을 사용하여 개발한 웹 응용 프로그램](../../../docs/framework/develop-web-apps-with-aspnet.md)을 참조하세요.
+- ASP.NET 앱. [ASP.NET을 사용하여 개발한 웹 애플리케이션](../../../docs/framework/develop-web-apps-with-aspnet.md)을 참조하세요.
 
-- Windows 서비스. [Windows 서비스 응용 프로그램 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)를 참조하세요.
+- Windows 서비스. [Windows 서비스 애플리케이션 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)를 참조하세요.
 
-- WCF(Windows Communication Foundation )를 사용하는 서비스 기반 앱. [WCF를 사용하여 개발한 서비스 기반 응용 프로그램](../../../docs/framework/wcf/index.md)을 참조하세요.
+- WCF(Windows Communication Foundation )를 사용하는 서비스 기반 앱. [WCF를 사용하여 개발한 서비스 기반 애플리케이션](../../../docs/framework/wcf/index.md)을 참조하세요.
 
 - Windows WF(Workflow Foundation)를 사용하는 워크플로 사용 앱. [.NET Framework에서 워크플로 만들기](https://msdn.microsoft.com/library/cbf3880f-dc7b-466d-b808-1109b1223f4a)를 참조하세요.
 
@@ -93,9 +93,9 @@ Windows Forms 클래스는 Windows GUI 개발을 매우 단순하게 하는 다�
 
 ## <a name="see-also"></a>참고 항목
 
-- [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)   
-- [설치 가이드](../../../docs/framework/install/index.md)   
-- [개발 가이드](../../../docs/framework/development-guide.md)   
-- [도구](../../../docs/framework/tools/index.md)   
-- [.NET Framework 샘플](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)   
+- [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)
+- [설치 가이드](../../../docs/framework/install/index.md)
+- [개발 가이드](../../../docs/framework/development-guide.md)
+- [도구](../../../docs/framework/tools/index.md)
+- [.NET Framework 샘플](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)
 - [.NET Framework 클래스 라이브러리](https://go.microsoft.com/fwlink/?LinkID=227195)

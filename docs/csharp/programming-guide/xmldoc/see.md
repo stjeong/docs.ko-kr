@@ -11,12 +11,12 @@ helpviewer_keywords:
 - cross-references [C#]
 - see C# XML tag
 ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
-ms.openlocfilehash: 63476ff77f1a8286730f29149bb5b6b87779f144
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.openlocfilehash: fb8b7dd0f1620895ff95917977745ac391dadf61
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718600"
 ---
 # <a name="ltseegt-c-programming-guide"></a>&lt;see&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -40,5 +40,5 @@ ms.locfileid: "54058414"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

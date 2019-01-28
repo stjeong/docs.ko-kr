@@ -9,19 +9,19 @@ helpviewer_keywords:
 - read/write properties [C#]
 - accessors [C#], declaring properties with
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
-ms.openlocfilehash: 348fcf6605030396095a2d94970ffe46e8d19357
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 792c3a8f1b02f36775edb84bdf7f1ff296630fea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54725287"
 ---
 # <a name="how-to-declare-and-use-read-write-properties-c-programming-guide"></a>방법: 읽기/쓰기 속성 선언 및 사용(C# 프로그래밍 가이드)
 속성은 개체 데이터에 대한 액세스가 보호, 제어, 확인되지 않을 위험 없이 공용 데이터 멤버의 편리함을 제공합니다. 이를 위해 기본 데이터 멤버의 값을 할당하고 검색하는 특수 메서드인 *접근자*가 사용됩니다. [set](../../../csharp/language-reference/keywords/set.md) 접근자를 통해 데이터 멤버를 할당할 수 있으며, [get](../../../csharp/language-reference/keywords/get.md) 접근자는 데이터 멤버 값을 검색합니다.  
   
  이 샘플에서는 `Name`(string) 및 `Age`(int)의 두 속성이 있는 `Person` 클래스를 보여 줍니다. 두 속성 모두 `get` 및 `set` 접근자를 제공하므로 읽기/쓰기 속성으로 간주됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuideObjects#33](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-declare-and-use-read-write-properties_1.cs)]  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
@@ -57,6 +57,6 @@ person.SetAge(person.GetAge() + 1);
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)
 - [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)

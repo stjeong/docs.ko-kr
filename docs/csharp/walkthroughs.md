@@ -6,12 +6,12 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio], Visual C#
 - Visual C#, walkthroughs
 ms.assetid: 2d07b972-ef69-4676-9aef-e1784728e1ff
-ms.openlocfilehash: ae29c8fbe8d5d87ccee4d6a43a3c9285f0c41ee1
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: b7240295f154277e722f38e99beb221c1c4d9a34
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54522000"
 ---
 # <a name="c-walkthroughs"></a>C# 연습
 연습에서는 일반 시나리오에 대한 단계별 지침을 제공하므로 제품 또는 특정 기능 영역 파악을 효율적으로 시작할 수 있습니다.  
@@ -71,5 +71,5 @@ ms.locfileid: "53131107"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../csharp/programming-guide/index.md)
 - [Visual Studio 샘플](/visualstudio/ide/visual-studio-samples)

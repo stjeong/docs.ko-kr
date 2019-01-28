@@ -9,12 +9,12 @@ helpviewer_keywords:
 - float keyword [C#]
 - floating-point numbers [C#], float keyword
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
-ms.openlocfilehash: 4ca256bf7204cdaad7d49ed19c662ab81bb01bf9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 6bf8043b97d23fdb91ca5798ed46cdea783bad7e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54514133"
 ---
 # <a name="float-c-reference"></a>float(C# 참조)
 
@@ -66,12 +66,12 @@ float x = 3.5F;
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Single>  
-- [C# 참조](../index.md)  
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
-- [캐스팅 및 형식 변환](../../programming-guide/types/casting-and-type-conversions.md)  
-- [C# 키워드](index.md)  
-- [정수 계열 형식 표](integral-types-table.md)  
-- [기본 제공 형식 표](built-in-types-table.md)  
-- [암시적 숫자 변환 표](implicit-numeric-conversions-table.md)  
-- [명시적 숫자 변환 표](explicit-numeric-conversions-table.md)  
+- <xref:System.Single>
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [캐스팅 및 형식 변환](../../programming-guide/types/casting-and-type-conversions.md)
+- [C# 키워드](index.md)
+- [정수 계열 형식 표](integral-types-table.md)
+- [기본 제공 형식 표](built-in-types-table.md)
+- [암시적 숫자 변환 표](implicit-numeric-conversions-table.md)
+- [명시적 숫자 변환 표](explicit-numeric-conversions-table.md)

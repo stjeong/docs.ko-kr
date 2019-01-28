@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <paramref> C# XML tag
 - paramref C# XML tag
 ms.assetid: 756c24c1-f591-40e8-a838-559761539b0b
-ms.openlocfilehash: 90c22b81f17adb1fcfdb94f32047e85c0bd8f4e5
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 21f8eb293a006a748c876a3b816eae3a799d3d7c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640890"
 ---
 # <a name="ltparamrefgt-c-programming-guide"></a>&lt;paramref&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -27,7 +27,7 @@ ms.locfileid: "53243631"
  `name`  
  참조할 매개 변수의 이름입니다. 이름을 큰따옴표(“ ”)로 묶습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  \<paramref> 태그를 사용하면 \<summary>, \<remarks> 블록 등의 코드 주석에 포함된 단어가 매개 변수를 참조함을 나타낼 수 있습니다. XML 파일을 처리하여 굵게, 기울임꼴 글꼴 등의 고유한 방식으로 이 단어에 서식을 지정할 수 있습니다.  
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
@@ -37,5 +37,5 @@ ms.locfileid: "53243631"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

@@ -5,12 +5,12 @@ ms.date: 04/20/2018
 helpviewer_keywords:
 - unsafe code [C#], pointers
 - pointers [C#]
-ms.openlocfilehash: 5474d179005742c610d29ccd9dac7bf1dc94c9d2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 028497bbeae26ded126ba4d7ce459a6a85e0bcb5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724046"
 ---
 # <a name="pointer-types-c-programming-guide"></a>포인터 형식(C# 프로그래밍 가이드)
 
@@ -61,7 +61,7 @@ int* myVariable;
 
 여기서 `*myVariable` 식은 `int`에 포함된 주소에 있는 `myVariable` 변수를 가리킵니다.
 
-[fixed 문](../../language-reference/keywords/fixed-statement.md) 및 [포인터 변환](../../programming-guide/unsafe-code-pointers/pointer-conversions.md) 항목에 포인터에 대한 몇 가지 예제가 나와 있습니다. 다음 예제는 `unsafe` 키워드 및 `fixed` 문을 사용하고 정수 포인터를 증분하는 방법을 보여줍니다.  이 코드를 실행하려면 콘솔 응용 프로그램의 주 함수에 붙여 넣습니다. 이러한 예제는 [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) 컴파일러 옵션 집합으로 컴파일되어야 합니다.
+[fixed 문](../../language-reference/keywords/fixed-statement.md) 및 [포인터 변환](../../programming-guide/unsafe-code-pointers/pointer-conversions.md) 항목에 포인터에 대한 몇 가지 예제가 나와 있습니다. 다음 예제는 `unsafe` 키워드 및 `fixed` 문을 사용하고 정수 포인터를 증분하는 방법을 보여줍니다.  이 코드를 실행하려면 콘솔 애플리케이션의 주 함수에 붙여 넣습니다. 이러한 예제는 [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) 컴파일러 옵션 집합으로 컴파일되어야 합니다.
 
 [!code-csharp[Using pointer types](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#5)]
 
@@ -91,12 +91,12 @@ int* myVariable;
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../index.md)  
-- [안전하지 않은 코드 및 포인터](index.md)  
-- [포인터 변환](pointer-conversions.md)  
-- [포인터 식](pointer-expressions.md)  
-- [유형](../../language-reference/keywords/types.md)  
-- [unsafe](../../language-reference/keywords/unsafe.md)  
-- [fixed 문](../../language-reference/keywords/fixed-statement.md)  
-- [stackalloc](../../language-reference/keywords/stackalloc.md)  
+- [C# 프로그래밍 가이드](../index.md)
+- [안전하지 않은 코드 및 포인터](index.md)
+- [포인터 변환](pointer-conversions.md)
+- [포인터 식](pointer-expressions.md)
+- [유형](../../language-reference/keywords/types.md)
+- [unsafe](../../language-reference/keywords/unsafe.md)
+- [fixed 문](../../language-reference/keywords/fixed-statement.md)
+- [stackalloc](../../language-reference/keywords/stackalloc.md)
 - [boxing 및 unboxing](../types/boxing-and-unboxing.md)

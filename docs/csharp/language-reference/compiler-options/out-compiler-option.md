@@ -8,12 +8,12 @@ helpviewer_keywords:
 - out compiler option [C#]
 - -out compiler option [C#]
 ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
-ms.openlocfilehash: ea371dc968c8d8bf1569d17531cf7f6faff1d315
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 62a8835361e2e55d3d970cf3ae7cd2699e3c79fb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46004207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54725742"
 ---
 # <a name="-out-c-compiler-options"></a>-out(C# 컴파일러 옵션)
 **-out** 옵션은 출력 파일의 이름을 지정합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "46004207"
  `filename`  
  컴파일러에서 생성된 출력 파일의 이름입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  명령줄에서 컴파일에 대해 여러 출력 파일을 지정할 수 있습니다. 컴파일러는 **-out** 옵션 뒤에 하나 이상의 소스 코드 파일이 있을 것으로 예상합니다. 그런 다음 **-out** 옵션으로 지정된 출력 파일에 모든 소스 코드 파일이 컴파일됩니다.  
   
  만들려는 파일의 전체 이름과 확장명을 지정합니다.  
@@ -51,21 +51,21 @@ ms.locfileid: "46004207"
   
 1.  프로젝트 **속성** 페이지를 엽니다.  
   
-2.  **응용 프로그램** 속성 페이지를 클릭합니다.  
+2.  **애플리케이션** 속성 페이지를 클릭합니다.  
   
 3.  **어셈블리 이름** 속성을 수정합니다.  
   
      이 컴파일러 옵션을 프로그래밍 방식으로 설정하려면: <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A>은 프로젝트 형식(exe, 라이브러리 등)과 어셈블리 이름의 조합으로 결정되는 읽기 전용 속성입니다. 출력 파일 이름을 설정하려면 이러한 속성 중 하나 또는 둘 다를 수정해야 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `t.cs`를 컴파일하고 출력 파일 `t.exe`를 만들 뿐만 아니라 `t2.cs`를 작성하고 모듈 출력 파일 `mymodule.netmodule`을 만듭니다.  
   
 ```console  
 csc t.cs -out:mymodule.netmodule -target:module t2.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
-- [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
+- [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

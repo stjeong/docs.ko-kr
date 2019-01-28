@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 53b757417f1f37c1a76021a518570da85dc04ad2
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 87fb99ee8379a14a4a1d272a6eabb7fa8413bf64
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54724072"
 ---
 # <a name="assembly-versioning"></a>어셈블리 버전 관리
-공용 언어 런타임을 사용하는 어셈블리에 대한 모든 버전 관리는 어셈블리 수준에서 수행됩니다. 특정 어셈블리의 버전과 해당 종속 어셈블리 버전은 어셈블리 매니페스트에 기록됩니다. 런타임에서의 버전 정책은, 구성 파일(응용 프로그램 구성 파일, 게시자 정책 파일 및 컴퓨터의 관리자 구성 파일)의 명시적인 버전 정책에 의해 재정의된 경우를 제외하고는, 처음 빌드되고 테스트될 때 사용된 버전으로만 응용 프로그램이 실행되도록 합니다.  
+공용 언어 런타임을 사용하는 어셈블리에 대한 모든 버전 관리는 어셈블리 수준에서 수행됩니다. 특정 어셈블리의 버전과 해당 종속 어셈블리 버전은 어셈블리 매니페스트에 기록됩니다. 런타임에서의 버전 정책은, 구성 파일(애플리케이션 구성 파일, 게시자 정책 파일 및 컴퓨터의 관리자 구성 파일)의 명시적인 버전 정책에 의해 재정의된 경우를 제외하고는, 처음 빌드되고 테스트될 때 사용된 버전으로만 애플리케이션이 실행되도록 합니다.  
   
 > [!NOTE]
 >  버전 관리는 강력한 이름이 지정된 어셈블리에만 적용됩니다.  
@@ -31,14 +31,14 @@ ms.locfileid: "50187324"
   
 3.  원래의 어셈블리 참조 및 구성 파일에 지정된 모든 리디렉션으로부터 정확한 어셈블리를 확인한 다음 호출 어셈블리에 바인딩할 버전을 결정합니다.  
   
-4.  전역 어셈블리 캐시와 구성 파일에 지정된 코드 베이스를 확인한 다음 [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)에 설명된 규칙에 따라 응용 프로그램의 디렉터리 및 하위 디렉터리를 검색합니다.  
+4.  전역 어셈블리 캐시와 구성 파일에 지정된 코드 베이스를 확인한 다음 [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)에 설명된 규칙에 따라 애플리케이션의 디렉터리 및 하위 디렉터리를 검색합니다.  
   
  다음 예제에서는 이들 단계를 설명합니다.  
   
  ![.assembly extern myAssembly](../../../docs/framework/app-domains/media/versioningover.gif "versioningover")  
 어셈블리 바인딩 요청 확인  
   
- 응용 프로그램 구성에 대한 자세한 내용은 [앱 구성](../../../docs/framework/configure-apps/index.md)을 참조하세요. 바인딩 정책에 대한 자세한 내용은 [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)을 참조하세요.  
+ 애플리케이션 구성에 대한 자세한 내용은 [앱 구성](../../../docs/framework/configure-apps/index.md)을 참조하세요. 바인딩 정책에 대한 자세한 내용은 [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)을 참조하세요.  
   
 ## <a name="version-information"></a>버전 정보  
  각 어셈블리는 서로 다른 두 가지 방법으로 버전 정보를 표시합니다.  
@@ -54,9 +54,9 @@ ms.locfileid: "50187324"
   
  예를 들어, 버전 1.5.1254.0에서 1은 주 버전, 5는 부 버전, 1254는 빌드 번호 그리고 0은 수정 번호를 나타냅니다.  
   
- 버전 번호는 다른 ID 정보(어셈블리 이름, 공개 키, 해당 응용 프로그램과 연관된 다른 어셈블리의 ID 및 관계 등)와 함께 매니페스트에 저장됩니다.  
+ 버전 번호는 다른 ID 정보(어셈블리 이름, 공개 키, 해당 애플리케이션과 연관된 다른 어셈블리의 ID 및 관계 등)와 함께 매니페스트에 저장됩니다.  
   
- 어셈블리를 빌드할 때 개발 도구는 참조되는 각 어셈블리에 대한 종속 정보를 어셈블리 매니페스트에 기록합니다. 런타임에서는 관리자, 응용 프로그램 또는 게시자에서 설정한 구성 정보와 함께 이러한 버전 번호를 사용하여, 참조되는 어셈블리의 올바른 버전을 로드합니다.  
+ 어셈블리를 빌드할 때 개발 도구는 참조되는 각 어셈블리에 대한 종속 정보를 어셈블리 매니페스트에 기록합니다. 런타임에서는 관리자, 애플리케이션 또는 게시자에서 설정한 구성 정보와 함께 이러한 버전 번호를 사용하여, 참조되는 어셈블리의 올바른 버전을 로드합니다.  
   
  런타임에서는 버전 관리를 위해 일반 어셈블리와 강력한 이름의 어셈블리를 구분합니다. 버전 확인은 강력한 이름의 어셈블리에 대해서만 수행됩니다.  
   
@@ -70,8 +70,8 @@ ms.locfileid: "50187324"
   
  정보 버전은 사용자 지정 특성인 <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=nameWithType>를 사용하여 나타냅니다. 정보 버전 특성에 대한 자세한 내용은 [어셈블리 특성 설정](../../../docs/framework/app-domains/set-assembly-attributes.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
-- [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)  
-- [어셈블리 특성 설정](../../../docs/framework/app-domains/set-assembly-attributes.md)  
+## <a name="see-also"></a>참고 항목
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)
+- [어셈블리 특성 설정](../../../docs/framework/app-domains/set-assembly-attributes.md)
 - [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

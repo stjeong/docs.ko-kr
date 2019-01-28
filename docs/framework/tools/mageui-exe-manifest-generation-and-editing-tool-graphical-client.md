@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - MageUI.exe
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
-ms.openlocfilehash: a4dfd1bab04f32eefe82a6777ce6864d5a162e23
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 33ad1f4e260d90125d260e2ada0898be7f820b7b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572970"
 ---
 # <a name="mageuiexe-manifest-generation-and-editing-tool-graphical-client"></a>MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)
 
@@ -190,7 +190,7 @@ MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지�
 |----------------|-----------------|  
 |**매니페스트 선택**|애플리케이션 매니페스트를 선택할 수 있습니다. 애플리케이션 매니페스트를 선택하면 이 페이지의 모든 기타 필드가 채워집니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment)  
- [연습: 수동으로 ClickOnce 애플리케이션 배포](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)  
- [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+## <a name="see-also"></a>참고 항목
+- [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment)
+- [연습: 수동으로 ClickOnce 애플리케이션 배포](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
+- [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
