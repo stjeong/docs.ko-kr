@@ -7,12 +7,12 @@ helpviewer_keywords:
 - exceptions [C#], try/catch blocks
 - try/catch blocks [C#]
 ms.assetid: ca8e3773-980e-4767-8633-7408540e9818
-ms.openlocfilehash: db83eca52b204df1bb8273e94ae8664e61175aa7
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 17b3be52bb89a1cf74bb8171ca937e434a8d94f1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552530"
 ---
 # <a name="how-to-handle-an-exception-using-trycatch-c-programming-guide"></a>방법: try/catch를 사용하여 예외 처리(C# 프로그래밍 가이드)
 [try-catch](../../../csharp/language-reference/keywords/try-catch.md) 블록은 작업 코드에서 생성된 예외를 catch하고 처리하기 위한 것입니다. 일부 예외는 `catch` 블록에서 처리될 수 있으며, 예외가 다시 throw되지 않고 문제가 해결됩니다. 그러나 대체로 수행할 수 있는 작업은 적절한 예외가 throw되었는지 확인하는 것뿐입니다.  
@@ -27,6 +27,6 @@ ms.locfileid: "53244938"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)
 - [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)

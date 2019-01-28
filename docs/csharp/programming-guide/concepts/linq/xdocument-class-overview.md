@@ -2,12 +2,12 @@
 title: XDocument 클래스 개요(C#)
 ms.date: 07/20/2015
 ms.assetid: 63305603-ab54-49fc-84e4-f76eecc59549
-ms.openlocfilehash: 0d182593cfedd30042c4e3a5d776bb00ce267ff7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e3ef7d66cb9759bd71e69c1a0db3614a02f785b3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504860"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54604199"
 ---
 # <a name="xdocument-class-overview-c"></a>XDocument 클래스 개요(C#)
 이 항목에서는 <xref:System.Xml.Linq.XDocument> 클래스에 대해 소개합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "43504860"
   
 -   <xref:System.Xml.Linq.XElement> 개체 하나. 이 개체는 XML 문서의 루트 노드입니다.  
   
--   <xref:System.Xml.Linq.XProcessingInstruction> 개체(수에 제한 없음). 처리 명령은 XML을 처리하는 정보를 응용 프로그램에 전달합니다.  
+-   <xref:System.Xml.Linq.XProcessingInstruction> 개체(수에 제한 없음). 처리 명령은 XML을 처리하는 정보를 애플리케이션에 전달합니다.  
   
 -   <xref:System.Xml.Linq.XComment> 개체(수에 제한 없음). 주석은 루트 요소의 형제입니다. XML 문서는 주석으로 시작될 수 없으므로 <xref:System.Xml.Linq.XComment> 개체는 목록의 첫 번째 인수일 수 없습니다.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "43504860"
  기본적으로 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서는 버전을 "1.0"으로 설정하고 인코딩을 "utf-8"로 설정합니다.  
   
 ## <a name="using-xelement-without-xdocument"></a>XDocument 없이 XElement 사용  
- 앞에서 설명했듯이 <xref:System.Xml.Linq.XElement> 클래스는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 프로그래밍 인터페이스의 기본 클래스입니다. 응용 프로그램에서는 대부분의 경우 문서를 만들도록 요구하지 않습니다. <xref:System.Xml.Linq.XElement> 클래스를 사용하여 XML 트리를 만들고, XML 트리에 다른 XML 트리를 추가하고, XML 트리를 수정 및 저장할 수 있습니다.  
+ 앞에서 설명했듯이 <xref:System.Xml.Linq.XElement> 클래스는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 프로그래밍 인터페이스의 기본 클래스입니다. 애플리케이션에서는 대부분의 경우 문서를 만들도록 요구하지 않습니다. <xref:System.Xml.Linq.XElement> 클래스를 사용하여 XML 트리를 만들고, XML 트리에 다른 XML 트리를 추가하고, XML 트리를 수정 및 저장할 수 있습니다.  
   
 ## <a name="using-xdocument"></a>XDocument 사용  
  <xref:System.Xml.Linq.XDocument>를 생성하려면 <xref:System.Xml.Linq.XElement> 개체를 생성할 때와 마찬가지로 함수 생성을 사용합니다.  

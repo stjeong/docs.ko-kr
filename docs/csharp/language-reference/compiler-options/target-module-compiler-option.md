@@ -8,12 +8,12 @@ helpviewer_keywords:
 - target compiler options [C#], /target:module
 - /target compiler options [C#], /target:module
 ms.assetid: 9af1e4fa-c749-44e7-ae58-90a3d05d4e72
-ms.openlocfilehash: 7cc0e48a7a4a3ec3f28c89e80fadf6aa7e1130f2
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 89139867cb0a207dbe82168015629fcb9e2fa6eb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601898"
 ---
 # <a name="-targetmodule-c-compiler-options"></a>-target:module(C# 컴파일러 옵션)
 이 옵션은 컴파일러에서 어셈블리 매니페스트를 생성하지 않도록 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "43865064"
 -target:module  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기본적으로 이 옵션으로 컴파일하여 생성되는 출력 파일의 확장명은 .netmodule입니다.  
   
  어셈블리 매니페스트가 없는 파일은 .NET Framework 공용 언어 런타임에서 로드할 수 없습니다. 그러나 이러한 파일은 [-addmodule](../../../csharp/language-reference/compiler-options/addmodule-compiler-option.md)을 통해 어셈블리의 어셈블리 매니페스트에 통합할 수 있습니다.  
@@ -33,16 +33,16 @@ ms.locfileid: "43865064"
   
  Visual Studio 개발 환경에서는 모듈을 만들 수 없습니다.  
   
- 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>를 참조하세요.  
+ 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>을 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `in.cs`를 컴파일하고 `in.netmodule`을 만듭니다.  
   
 ```console  
 csc -target:module in.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
+- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
 - [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)

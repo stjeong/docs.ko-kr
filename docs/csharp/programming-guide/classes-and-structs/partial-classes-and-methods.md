@@ -7,15 +7,15 @@ helpviewer_keywords:
 - partial classes [C#]
 - C# language, partial classes and methods
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-ms.openlocfilehash: 222a47989537f09fd78c4a3b17fa8c1a5478d73f
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: b960bbf0a35a917d9143a0f47ce3219b6cb10ab4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713317"
 ---
 # <a name="partial-classes-and-methods-c-programming-guide"></a>Partial 클래스 및 메서드(C# 프로그래밍 가이드)
-[클래스](../../../csharp/language-reference/keywords/class.md), [구조체](../../../csharp/language-reference/keywords/struct.md), [인터페이스](../../../csharp/language-reference/keywords/interface.md) 또는 메서드의 정의를 둘 이상의 소스 파일에 분할할 수 있습니다. 각 소스 파일에는 형식 또는 메서드 정의 섹션이 있으며 모든 부분은 응용 프로그램이 컴파일될 때 결합됩니다.  
+[클래스](../../../csharp/language-reference/keywords/class.md), [구조체](../../../csharp/language-reference/keywords/struct.md), [인터페이스](../../../csharp/language-reference/keywords/interface.md) 또는 메서드의 정의를 둘 이상의 소스 파일에 분할할 수 있습니다. 각 소스 파일에는 형식 또는 메서드 정의 섹션이 있으며 모든 부분은 애플리케이션이 컴파일될 때 결합됩니다.  
   
 ## <a name="partial-classes"></a>partial 클래스  
  클래스 정의를 분할하는 것이 바람직한 몇 가지 상황이 있습니다.  
@@ -164,8 +164,8 @@ partial void onNameChanged()
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)  
-- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)
+- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)
 - [partial(형식)](../../../csharp/language-reference/keywords/partial-type.md)

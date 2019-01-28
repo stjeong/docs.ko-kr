@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ToString method, overriding in C#
 - inheritance [C#], overriding OnPaint and ToString
 ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
-ms.openlocfilehash: 0be35b64e9df3ec2a78c62735b1b7072e092f073
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 11ea1ed6bb96a477ec8351e7d865e6119e83eb80
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672958"
 ---
 # <a name="how-to-override-the-tostring-method-c-programming-guide"></a>방법: ToString 메서드 재정의(C# 프로그래밍 가이드)
 C#의 모든 클래스 또는 구조체는 <xref:System.Object> 클래스를 암시적으로 상속합니다. 따라서 C#의 모든 개체는 해당 개체의 문자열 표현을 반환하는 <xref:System.Object.ToString%2A> 메서드를 가져옵니다. 예를 들어 `int` 형식의 모든 변수에는 해당 내용을 문자열로 반환할 수 있도록 하는 `ToString` 메서드가 있습니다.  
@@ -45,12 +45,12 @@ C#의 모든 클래스 또는 구조체는 <xref:System.Object> 클래스를 암
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IFormattable>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [문자열](../../../csharp/programming-guide/strings/index.md)  
-- [string](../../../csharp/language-reference/keywords/string.md)  
-- [new](../../../csharp/language-reference/keywords/new.md)  
-- [override](../../../csharp/language-reference/keywords/override.md)  
-- [virtual](../../../csharp/language-reference/keywords/virtual.md)  
+- <xref:System.IFormattable>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [문자열](../../../csharp/programming-guide/strings/index.md)
+- [string](../../../csharp/language-reference/keywords/string.md)
+- [new](../../../csharp/language-reference/keywords/new.md)
+- [override](../../../csharp/language-reference/keywords/override.md)
+- [virtual](../../../csharp/language-reference/keywords/virtual.md)
 - [형식 서식 지정](../../../standard/base-types/formatting-types.md)

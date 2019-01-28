@@ -4,12 +4,12 @@ description: Visual Studio Code를 사용하여 C#에서 첫 번째 .NET Core �
 author: kendrahavens
 ms.date: 12/05/2018
 ms.custom: seodec18
-ms.openlocfilehash: bd1e5bf9df929c2c38f737ec3112d3687dba877c
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: ea8b93128e4acd435ad95fc42257df6ab22812fa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620554"
 ---
 # <a name="get-started-with-c-and-visual-studio-code"></a>C# 및 Visual Studio Code 시작
 
@@ -140,5 +140,5 @@ Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 �
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio Code 설치](https://code.visualstudio.com/docs/setup/setup-overview)
-* [Visual Studio Code의 디버깅](https://code.visualstudio.com/Docs/editor/debugging)
+- [Visual Studio Code 설치](https://code.visualstudio.com/docs/setup/setup-overview)
+- [Visual Studio Code의 디버깅](https://code.visualstudio.com/Docs/editor/debugging)

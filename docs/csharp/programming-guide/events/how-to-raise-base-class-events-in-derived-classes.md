@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - events [C#], in derived classes
 ms.assetid: 2d20556a-0aad-46fc-845e-f85d86ea617a
-ms.openlocfilehash: 11f34e230a1f953ba3d886e416f1ece4253e3c8d
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 6d6e84861ec48be5bccbc050624b0843947cb727
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539866"
 ---
 # <a name="how-to-raise-base-class-events-in-derived-classes-c-programming-guide"></a>방법: 파생 클래스에서 기본 클래스 이벤트 발생(C# 프로그래밍 가이드)
 다음 간단한 예제에서는 파생 클래스에서도 발생할 수 있도록 기본 클래스에서 이벤트를 선언하는 표준 방법을 보여 줍니다. 이 패턴은 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 클래스 라이브러리의 Windows Forms 클래스에서 광범위하게 사용됩니다.  
@@ -25,8 +25,8 @@ ms.locfileid: "53239620"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [이벤트](../../../csharp/programming-guide/events/index.md)  
-- [대리자](../../../csharp/programming-guide/delegates/index.md)  
-- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [이벤트](../../../csharp/programming-guide/events/index.md)
+- [대리자](../../../csharp/programming-guide/delegates/index.md)
+- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
 - [Windows Forms에서 이벤트 처리기 만들기](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)

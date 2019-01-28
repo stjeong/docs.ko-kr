@@ -7,12 +7,12 @@ helpviewer_keywords:
 - exceptions [C#], try/finally block
 - exception handling [C#], try/finally block
 ms.assetid: 1b1e5aef-3f32-4a88-9d39-b5fffb33bdaf
-ms.openlocfilehash: 67ef164232a27b8110dfcd108a0345d9d63e8f91
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: d1a95519b2c7fc1d90d677e7a62c549defe289ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596399"
 ---
 # <a name="how-to-execute-cleanup-code-using-finally-c-programming-guide"></a>방법: finally를 사용하여 정리 코드 실행(C# 프로그래밍 가이드)
 `finally` 문은 예외가 throw된 경우에도 개체, 일반적으로 외부 리소스를 포함하는 개체의 필요한 정리가 즉시 수행되도록 합니다. 이러한 정리 작업의 한 가지 예로 다음과 같이 개체가 공용 언어 런타임에 의해 수집될 때까지 기다리지 않고 사용 후 즉시 <xref:System.IO.FileStream>에서 <xref:System.IO.Stream.Close%2A>를 호출하는 것을 들 수 있습니다.  
@@ -30,10 +30,10 @@ ms.locfileid: "53244949"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
-- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)  
-- [using 문](../../../csharp/language-reference/keywords/using-statement.md)  
-- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)
+- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)
+- [using 문](../../../csharp/language-reference/keywords/using-statement.md)
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
 - [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - passing parameters [C#], structs vs. classes
 - methods [C#], passing classes vs. structs
 ms.assetid: 9c1313a6-32a8-4ea7-a59f-450f66af628b
-ms.openlocfilehash: c5963f45ee233f4413c4281a063c9c3d2a4c2a93
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: f131f647d5335a011c5f446f847ed43fda019ade
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54559282"
 ---
 # <a name="how-to-know-the-difference-between-passing-a-struct-and-passing-a-class-reference-to-a-method-c-programming-guide"></a>방법: 메서드에 대한 구조체 전달과 클래스 참조 전달 간의 차이점 이해(C# 프로그래밍 가이드)
 다음 예제에서는 [struct](../../../csharp/language-reference/keywords/struct.md)를 메서드에 전달하는 것과 [class](../../../csharp/language-reference/keywords/class.md) 인스턴스를 메서드에 전달하는 것이 어떻게 다른지를 보여 줍니다. 예제에서 두 인수(구조체와 클래스 인스턴스)는 모두 값으로 전달되며, 두 메서드 모두 인수의 한 필드 값을 변경합니다. 그러나 구조체를 전달할 때 전달되는 내용과 클래스 인스턴스를 전달할 때 전달되는 내용이 다르기 때문에 두 메서드의 결과는 서로 다릅니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "53245456"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)
 - [매개 변수 전달](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - char data type [C#]
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
-ms.openlocfilehash: 6acb40117c4f59deb084965cb3db9e4a96f7f61a
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: b0aaf6c0b2f614fa5ff8611407cea567da1faafb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54616317"
 ---
 # <a name="char-c-reference"></a>char(C# 참조)
 
@@ -43,13 +43,13 @@ ms.locfileid: "53242349"
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Char>  
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
+- <xref:System.Char>
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)
 - [문자열](../../../csharp/programming-guide/strings/index.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - optional arguments [C#], Office programming
 - named arguments [C#], Office programming
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
-ms.openlocfilehash: 20228886cabd47b976506509a29f6cfd50137e5f
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 96ffaff9b6d29a8630c161e2e560e7e60ad90ef0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498754"
 ---
 # <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용(C# 프로그래밍 가이드)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)]에서 도입된 명명된 인수 및 선택적 인수는 C# 프로그래밍의 편의성, 유연성 및 가독성을 향상합니다. 또한 이러한 기능은 Microsoft Office 자동화 API와 같은 COM 인터페이스에 대한 액세스에 큰 도움이 됩니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "53243805"
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-### <a name="to-create-a-new-console-application"></a>새 콘솔 응용 프로그램을 만들려면  
+### <a name="to-create-a-new-console-application"></a>새 콘솔 애플리케이션을 만들려면  
   
 1.  Visual Studio를 시작합니다.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "53243805"
   
 4.  **템플릿** 창의 맨 위에서 **.NET Framework 4**가 **대상 프레임워크** 상자에 표시되는지 확인합니다.  
   
-5.  **템플릿** 창에서 **콘솔 응용 프로그램**을 클릭합니다.  
+5.  **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.  
   
 6.  **이름** 필드에 프로젝트의 이름을 입력합니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "53243805"
   
 ### <a name="to-display-text-in-a-word-document"></a>Word 문서에 텍스트를 표시하려면  
   
-1.  Program.cs의 `Program` 클래스에서 다음 메서드를 추가하여 Word 응용 프로그램과 Word 문서를 만듭니다. [Add](<xref:Microsoft.Office.Interop.Word.Documents.Add%2A>) 메서드에는 선택적 매개 변수 4개가 있습니다. 이 예제에서는 해당 기본값을 사용합니다. 따라서 호출하는 문에 인수가 필요하지 않습니다.  
+1.  Program.cs의 `Program` 클래스에서 다음 메서드를 추가하여 Word 애플리케이션과 Word 문서를 만듭니다. [Add](<xref:Microsoft.Office.Interop.Word.Documents.Add%2A>) 메서드에는 선택적 매개 변수 4개가 있습니다. 이 예제에서는 해당 기본값을 사용합니다. 따라서 호출하는 문에 인수가 필요하지 않습니다.  
   
      [!code-csharp[csProgGuideNamedAndOptional#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_2.cs)]  
   
@@ -67,7 +67,7 @@ ms.locfileid: "53243805"
   
      [!code-csharp[csProgGuideNamedAndOptional#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_3.cs)]  
   
-### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면  
+### <a name="to-run-the-application"></a>애플리케이션을 실행하려면  
   
 1.  다음 문을 Main에 추가합니다.  
   

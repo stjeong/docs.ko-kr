@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, versioning
 - C# language, override and new
 ms.assetid: 88247d07-bd0d-49e9-a619-45ccbbfdf0c5
-ms.openlocfilehash: ddb34fd32d13224faed92bd8ba01933ca19c04a9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5c83ce79bede1ee4e5752ac0b1dcf9647df1f36c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555988"
 ---
 # <a name="versioning-with-the-override-and-new-keywords-c-programming-guide"></a>Override 및 New 키워드를 사용하여 버전 관리(C# 프로그래밍 가이드)
 C# 언어는 서로 다른 라이브러리의 [기본](../../../csharp/language-reference/keywords/base.md) 및 파생 클래스 간 버전 관리를 개발하고 이전 버전과의 호환성을 유지할 수 있도록 설계되었습니다. 예를 들어 파생 클래스의 멤버와 동일한 이름을 가진 기본 [클래스](../../../csharp/language-reference/keywords/class.md)에 새 멤버가 추가되면 C#이 완전히 지원되고 예기치 않은 동작이 발생하지 않습니다. 따라서 클래스는 메서드가 상속된 메서드를 재정의할지 아니면 메서드가 유사한 이름의 상속된 메서드를 숨기는 새 메서드인지를 명시적으로 지정해야 합니다.  
@@ -40,13 +40,13 @@ C# 언어는 서로 다른 라이브러리의 [기본](../../../csharp/language-
   
  [!code-csharp[csProgGuideInheritance#28](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_2.cs)]  
   
- 회사 A에서 `GraphicsClass`의 새 버전을 출시할 때까지 응용 프로그램은 문제없이 사용됩니다. 새 버전은 다음 코드와 유사합니다.  
+ 회사 A에서 `GraphicsClass`의 새 버전을 출시할 때까지 애플리케이션은 문제없이 사용됩니다. 새 버전은 다음 코드와 유사합니다.  
   
  [!code-csharp[csProgGuideInheritance#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_3.cs)]  
   
  `GraphicsClass`의 새 버전에는 이제 `DrawRectangle`이라는 메서드가 포함되어 있습니다. 처음에는 아무것도 발생하지 않습니다. 새 버전은 여전히 이전 버전과 호환되는 이진입니다. 새 클래스가 해당 컴퓨터 시스템에 설치되어 있어도 사용자가 배포한 소프트웨어는 계속 작동합니다. `DrawRectangle` 메서드에 대한 호출은 파생 클래스에서 계속 해당 버전을 참조합니다.  
   
- 그러나 `GraphicsClass`의 새 버전을 사용하여 응용 프로그램을 다시 컴파일하자마자 컴파일러에서 경고(CS0108)를 표시합니다. 이 경고는 `DrawRectangle` 메서드가 응용 프로그램에서 어떻게 작동할지를 고려해야 한다고 알립니다.  
+ 그러나 `GraphicsClass`의 새 버전을 사용하여 애플리케이션을 다시 컴파일하자마자 컴파일러에서 경고(CS0108)를 표시합니다. 이 경고는 `DrawRectangle` 메서드가 애플리케이션에서 어떻게 작동할지를 고려해야 한다고 알립니다.  
   
  메서드가 새로운 기본 클래스 메서드를 재정의하도록 하려면 `override` 키워드를 사용합니다.  
   
@@ -81,7 +81,7 @@ C# 언어는 서로 다른 라이브러리의 [기본](../../../csharp/language-
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)
 - [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

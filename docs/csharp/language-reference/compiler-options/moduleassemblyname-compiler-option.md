@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /moduleassemblyname compiler option [C#]
 - .moduleassemblyname compiler option [C#]
 ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
-ms.openlocfilehash: 975acb5b814bc5a250cba351e0d1559968f7e298
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: bc1bc1376271b3a01d9b720dd85f812ea55cf34c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54665047"
 ---
 # <a name="-moduleassemblyname-c-compiler-option"></a>-moduleassemblyname(C# 컴파일러 옵션)
 .netmodule에서 public이 아닌 형식에 액세스할 수 있는 어셈블리를 지정합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "43864708"
  `assembly_name`  
  .netmodule에서 public이 아닌 형식에 액세스할 수 있는 어셈블리의 이름입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  **-moduleassemblyname**은 .netmodule을 빌드할 때와 다음 조건이 충족되는 경우 사용해야 합니다.  
   
 -   .netmodule은 기존 어셈블리의 public이 아닌 형식에 액세스해야 합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "43864708"
   
  이 컴파일러 옵션은 Visual Studio에서 사용할 수 없으며 프로그래밍 방식으로 변경할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 샘플에서는 private 형식을 사용하여 어셈블리를 빌드하므로 friend 어셈블리가 csman_an_assembly라는 어셈블리에 액세스할 수 있습니다.  
   
 ```csharp  
@@ -65,7 +65,7 @@ class An_Internal_Class
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 샘플은 어셈블리 moduleassemblyname_1.dll에 public이 아닌 형식에 액세스하는 .netmodule을 빌드합니다. 이 .netmodule이 csman_an_assembly라는 어셈블리에 빌드될 것임을 알기 때문에 **-moduleassemblyname**을 지정하여 .netmodule이 friend 어셈블리(friend assembly)에 csman_an_assembly에 대한 액세스를 부여한 어셈블리의 public이 아닌 형식에 액세스하도록 할 수 있습니다.  
   
 ```csharp  
@@ -79,7 +79,7 @@ class B {
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 코드 샘플에서는 이전에 빌드한 어셈블리와 .netmodule을 참조하여 csman_an_assembly 어셈블리를 빌드합니다.  
   
 ```csharp  
@@ -95,7 +95,7 @@ class A {
   
 **An_Internal_Class.Test 호출됨**
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

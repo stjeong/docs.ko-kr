@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - decimal keyword [C#]
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
-ms.openlocfilehash: f26d812d8f4da8fae73ebbaee15441cd88860d04
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 7bc806cd5516666c86780bb53842725f0c0c1617
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600702"
 ---
 # <a name="decimal-c-reference"></a>decimal(C# 참조)
 
@@ -85,7 +85,7 @@ Console.WriteLine((double)dec + dub);
 
 [!code-csharp[csrefKeywordsTypes#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#6)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 통화 서식 문자열을 사용하여 출력 서식을 지정합니다. `x`는 소수 자릿수가 $0.99를 초과하기 때문에 반올림됩니다. 최대 자릿수를 나타내는 변수 `y`는 올바른 서식으로 정확하게 표시됩니다.
 
@@ -97,12 +97,12 @@ Console.WriteLine((double)dec + dub);
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Decimal>  
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- <xref:System.Decimal>
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

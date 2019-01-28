@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Visual C# compiler, enabling
 - compiling source code, from command line
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
-ms.openlocfilehash: 3563f668dfd4610e1c5cd7d7f8633943c654f193
-ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
+ms.openlocfilehash: ffc75a01230df078073f163c97a8c77229d3b2a1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53286444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590879"
 ---
 # <a name="how-to-set-environment-variables-for-the-visual-studio-command-line"></a>방법: Visual Studio 명령줄에 필요한 환경 변수 설정
 
@@ -49,6 +49,6 @@ VsDevCmd.BAT에 사용 가능한 옵션을 보려면 `-help` 옵션을 사용하
 VsDevCmd.bat -help
 ```
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
 - [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

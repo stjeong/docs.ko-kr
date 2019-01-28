@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], member access
 ms.assetid: 1e998498-8c85-4a78-8ce2-4d8c20f08342
-ms.openlocfilehash: 777c6e1aa057bd0abe81adc63bed1d947f11b837
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 153e5f1cfc1f4f8309a31ab58d699a273b417563
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54546493"
 ---
 # <a name="how-to-access-a-member-with-a-pointer-c-programming-guide"></a>방법: 포인터로 멤버에 액세스(C# 프로그래밍 가이드)
 안전하지 않은 컨텍스트에서 선언된 구조체 멤버에 액세스하기 위해 다음 예제에 제시된 멤버 액세스 연산자를 사용할 수 있습니다. 여기에서 `p`는 멤버 `x`가 포함된 [구조체](../../../csharp/language-reference/keywords/struct.md)에 대한 포인터입니다.  
@@ -32,10 +32,10 @@ p -> x = 25; //member access operator ->
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [유형](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [유형](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

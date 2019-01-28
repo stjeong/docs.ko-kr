@@ -2,12 +2,12 @@
 title: dotnet test 명령
 description: dotnet test 명령은 지정된 프로젝트에서 단위 테스트를 실행하는 데 사용됩니다.
 ms.date: 05/29/2018
-ms.openlocfilehash: 2cfe96b24e5f46ae679c970a1df028d38ebf6037
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 1b2a3917a930db0c0a49ebea41f568aaf4a58ee3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535284"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -304,5 +304,5 @@ RunSettings에 대한 자세한 내용은 [vstest.console.exe: Passing RunSettin
 
 ## <a name="see-also"></a>참고 항목
 
-* [프레임워크 및 대상](../../standard/frameworks.md)  
-* [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)
+- [프레임워크 및 대상](../../standard/frameworks.md)
+- [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)

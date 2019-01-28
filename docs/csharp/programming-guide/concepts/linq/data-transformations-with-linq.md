@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data sources [LINQ in C#], data transformations
 - data transformations [LINQ in C#]
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
-ms.openlocfilehash: a4060017a2d3d352b3db70b1d364eb14ec1e94ce
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 2e679e0ef18623aa2fdc312ff8ec6598ad239171
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635925"
 ---
 # <a name="data-transformations-with-linq-c"></a>LINQ를 통한 데이터 변환(C#)
 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]는 데이터 검색만 관련된 것이 아닙니다. 데이터 변환을 위한 강력한 도구이기도 합니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 사용하여 소스 시퀀스를 입력으로 사용하고 다양한 방법으로 수정하여 새 출력 시퀀스를 만들 수 있습니다. 정렬 및 그룹화를 통해 요소 자체를 수정하지 않고 시퀀스 자체를 수정할 수 있습니다. 하지만 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리의 가장 강력한 기능은 새 형식을 만드는 기능일 것입니다. 이 작업은 [select](../../../../csharp/language-reference/keywords/select-clause.md) 절에서 수행합니다. 예를 들어, 아래와 같은 작업을 수행할 수 있습니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "53147439"
  자세한 내용은 [개체 및 컬렉션 이니셜라이저](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) 및 [무명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)을 참조하세요.  
   
 ## <a name="transforming-in-memory-objects-into-xml"></a>메모리 내 개체를 XML로 변환  
- [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 통해 메모리 내 데이터 구조, SQL 데이터베이스, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 집합 및 XML 스트림이나 문서 간에 손쉽게 데이터를 변환할 수 있습니다. 다음 예제에서는 메모리 내 데이터 구조의 개체를 XML 요소로 변환합니다.  
+ [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 통해 메모리 내 데이터 구조, SQL 데이터베이스, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 세트 및 XML 스트림이나 문서 간에 손쉽게 데이터를 변환할 수 있습니다. 다음 예제에서는 메모리 내 데이터 구조의 개체를 XML 요소로 변환합니다.  
   
  [!code-csharp[CsLINQGettingStarted#9](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_3.cs)]  
   
@@ -99,9 +99,9 @@ ms.locfileid: "53147439"
   
 ## <a name="see-also"></a>참고 항목
 
-- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)  
-- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
-- [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
-- [LINQ to XML(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
-- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
+- [LINQ to XML(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)
+- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)
 - [select 절](../../../../csharp/language-reference/keywords/select-clause.md)

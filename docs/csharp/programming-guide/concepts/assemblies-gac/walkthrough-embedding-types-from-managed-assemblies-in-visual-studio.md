@@ -2,12 +2,12 @@
 title: '연습: Visual Studio에서 관리형 어셈블리의 형식 포함(C#)'
 ms.date: 07/20/2015
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-ms.openlocfilehash: 33686dcfee90db2d0a99339a728eb6e2bd7139f5
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 39452702a3e757456ff00ee22e6eb1f90160ef38
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500631"
 ---
 # <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-c"></a>연습: Visual Studio에서 관리형 어셈블리의 형식 포함(C#)
 강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 애플리케이션에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
@@ -234,7 +234,7 @@ ms.locfileid: "54415717"
   
 ## <a name="see-also"></a>참고 항목
 
-- [/link(C# 컴파일러 옵션)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
-- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
-- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)  
+- [/link(C# 컴파일러 옵션)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
+- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)
 - [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - implicit conversion operators [C#]
 - explicit conversion operators [C#]
 ms.assetid: caf36e89-c6c0-4b87-9f9e-85780a45c9a4
-ms.openlocfilehash: 908067c3ad6cae34dd223bd608a74ba1cd7a88a3
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: d6b271c0d716a9b5dfb49b825d843d4345471147
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54578574"
 ---
 # <a name="using-conversion-operators-c-programming-guide"></a>변환 연산자 사용(C# 프로그래밍 가이드)
 쉽게 사용할 수 있는 `implicit` 변환 연산자 또는 코드를 읽는 사람에게 형식을 변환함을 명확하게 나타내는 `explicit` 변환 연산자를 사용할 수 있습니다. 이 항목에서는 두 형식의 변환 연산자를 모두 보여 줍니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "53236872"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [변환 연산자](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [변환 연산자](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
 - [is](../../../csharp/language-reference/keywords/is.md)

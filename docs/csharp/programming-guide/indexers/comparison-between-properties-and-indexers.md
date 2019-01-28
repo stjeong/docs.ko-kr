@@ -6,12 +6,12 @@ helpviewer_keywords:
 - properties [C#], vs. indexers
 - indexers [C#], vs. properties
 ms.assetid: 3358a89f-44a0-4a4d-bf8c-07237a90af39
-ms.openlocfilehash: 053eb7ee0fe9333f049e5b4f8a8e709e42aa2119
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 41b27905edb8a0e00a6af5a4cce38988161326d0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53234463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54537727"
 ---
 # <a name="comparison-between-properties-and-indexers-c-programming-guide"></a>속성 및 인덱서 비교(C# 프로그래밍 가이드)
 인덱서는 속성과 비슷합니다. 다음 표에 나와 있는 차이점을 제외하면 속성 접근자에 대해 정의된 모든 규칙이 인덱서 접근자에도 적용됩니다.  
@@ -27,6 +27,6 @@ ms.locfileid: "53234463"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)
 - [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)

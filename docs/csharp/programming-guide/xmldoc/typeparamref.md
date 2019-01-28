@@ -8,12 +8,12 @@ helpviewer_keywords:
 - typeparamref C# XML tag
 - <typeparamref> C# XML tag
 ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
-ms.openlocfilehash: bbe9bed5a32e463424b98f4066e95374401931e2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: cfee16ad1cdc1e019a4133259c1603f5a0a09ac8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54536557"
 ---
 # <a name="lttypeparamrefgt-c-programming-guide"></a>&lt;typeparamref&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -26,7 +26,7 @@ ms.locfileid: "53243922"
  `name`  
  형식 매개 변수의 이름입니다. 이름을 큰따옴표(“ ”)로 묶습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  제네릭 형식 및 메서드의 형식 매개 변수에 대한 자세한 내용은 [제네릭](../../../csharp/programming-guide/generics/index.md)을 참조하세요.  
   
  이 태그를 사용하면 문서 파일의 소비자가 기울임꼴 등 다른 고유한 방식으로 단어의 서식을 지정할 수 있습니다.  
@@ -38,5 +38,5 @@ ms.locfileid: "53243922"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

@@ -2,12 +2,12 @@
 title: LINQ 쿼리에 대한 데이터 소스 활성화1
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
-ms.openlocfilehash: 1aa3a22028b0b3d7c705076a3e16379e09323271
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: d3faeb15c5c8deedec3c3347c6317cac872224f3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49122703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54515721"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>LINQ 쿼리에 대한 데이터 소스 활성화
 다양한 방법으로 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]를 확장하여 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 패턴에서 원하는 데이터 소스를 쿼리할 수 있습니다. 데이터 소스의 예를 몇 가지 들자면 데이터 구조, 웹 서비스, 파일 시스템 또는 데이터베이스가 있습니다. 쿼리의 구문과 패턴은 변경되지 않으므로 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 패턴을 사용하면 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리가 활성화된 데이터 소스를 클라이언트가 쉽게 쿼리할 수 있습니다. 다음은 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]를 다양한 데이터 소스로 확장할 수 있는 방법입니다.  
@@ -41,8 +41,8 @@ ms.locfileid: "49122703"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Linq.IQueryable%601>  
-- <xref:System.Collections.Generic.IEnumerable%601>  
-- <xref:System.Linq.Enumerable>  
-- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- <xref:System.Linq.IQueryable%601>
+- <xref:System.Collections.Generic.IEnumerable%601>
+- <xref:System.Linq.Enumerable>
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
