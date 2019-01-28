@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 77f29cb14af90854fa18f421acbeb701928bcd76
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 526805dff9fc59ed317a38b2512c8a97a711227a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50034367"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54661739"
 ---
 # <a name="xslt-security-considerations"></a>XSLT 보안 고려 사항
 XSLT 언어에는 강력하며 유연성 있는 풍부한 기능이 있습니다. 이러한 기능은 유용하지만 외부 소스에서 악용할 수도 있습니다. XSLT를 안전하게 사용하려면 XSLT를 사용할 때 발생하는 보안 문제 유형을 이해하고 이러한 위험 요소를 완화하기 위한 기본적인 전략을 알아야 합니다.  
@@ -58,6 +58,6 @@ XSLT 언어에는 강력하며 유연성 있는 풍부한 기능이 있습니다
   
 ## <a name="see-also"></a>참고 항목
 
-- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
-- [XSLT 처리 중 외부 리소스 확인](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)  
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT 처리 중 외부 리소스 확인](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)
 - [코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md)

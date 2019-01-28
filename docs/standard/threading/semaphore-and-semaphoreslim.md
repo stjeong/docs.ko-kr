@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e7d7f791fbc68a526f428f4f79d9b379a23ca771
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f20ae0b712a5db5cdfb6d5f6a3786af151820294
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54550489"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>세마포 및 SemaphoreSlim
 로컬 또는 명명된(시스템 전체) 세마포를 나타내는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스는 Win32 세마포 개체를 묶는 씬 래퍼입니다. Win32 세마포는 리소스 풀에 대한 액세스를 제어하는 데 사용할 수 있는 가산 세마포입니다.  
@@ -48,6 +48,6 @@ ms.locfileid: "50199489"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Threading.Semaphore>  
-- <xref:System.Threading.SemaphoreSlim>  
+- <xref:System.Threading.Semaphore>
+- <xref:System.Threading.SemaphoreSlim>
 - [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

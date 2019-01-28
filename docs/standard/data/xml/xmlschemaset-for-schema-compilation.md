@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c24fe637514ba773cecc7824de276b1707a4e90c
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: e56680a74bc6800242ff56d27bcf179ee372df74
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579591"
 ---
 # <a name="xmlschemaset-for-schema-compilation"></a>스키마 컴파일을 위한 XmlSchemaSet
 XSD(XML 스키마 정의 언어) 스키마를 저장하고 유효성을 검사할 수 있는 캐시인 <xref:System.Xml.Schema.XmlSchemaSet>에 대해 설명합니다.  
@@ -253,12 +253,12 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
-- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
-- [스키마 캐시로서 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>
+- [스키마 캐시로서 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
 - [XmlSchemaSet을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - single-dimensional arrays [C#]
 - arrays [C#], single-dimensional
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
-ms.openlocfilehash: 316f8f59b86294b1f344b31f7355017ebd992362
-ms.sourcegitcommit: 8598d446303b545eed2d520a6ccd061c1a7d00cb
+ms.openlocfilehash: b31eb8bfc5a933cc374528c9a4d7b97ad72a7412
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53334758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54604226"
 ---
 # <a name="single-dimensional-arrays-c-programming-guide"></a>1차원 배열(C# 프로그래밍 가이드)
 
@@ -57,8 +57,8 @@ ms.locfileid: "53334758"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Array>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [배열](../../../csharp/programming-guide/arrays/index.md)  
-- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
+- <xref:System.Array>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [배열](../../../csharp/programming-guide/arrays/index.md)
+- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
 - [가변 배열](../../../csharp/programming-guide/arrays/jagged-arrays.md)

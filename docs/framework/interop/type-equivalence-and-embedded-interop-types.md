@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 78892eba-2a58-4165-b4b1-0250ee2f41dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e3eeba609349bb9d5b7c68e15e0e0e6ff3f1b7ea
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9e26bab4823795ba5d8afc88266b05cd71f4daf8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33390935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54721034"
 ---
 # <a name="type-equivalence-and-embedded-interop-types"></a>형식 동등 및 포함된 Interop 형식
 
@@ -23,7 +23,7 @@ ms.locfileid: "33390935"
 형식 동등은 관리되는 어셈블리 간에 전달되는 COM 개체를 수신 어셈블리에서 적절한 관리되는 형식으로 캐스팅할 수 있음을 의미합니다.
 
 > [!NOTE]
-> 형식 동등 및 포함된 interop 형식은 응용 프로그램과 함께 interop 어셈블리를 배포할 필요가 없기 때문에 COM 구성 요소를 사용하는 응용 프로그램 및 추가 기능의 배포를 간소화합니다. 공유 COM 구성 요소의 개발자는 이전 버전의 .NET Framework에서 해당 구성 요소를 사용하려는 경우 여전히 PIA(주 interop 어셈블리)를 만들어야 합니다.
+> 형식 동등 및 포함된 interop 형식은 애플리케이션과 함께 interop 어셈블리를 배포할 필요가 없기 때문에 COM 구성 요소를 사용하는 애플리케이션 및 추가 기능의 배포를 간소화합니다. 공유 COM 구성 요소의 개발자는 이전 버전의 .NET Framework에서 해당 구성 요소를 사용하려는 경우 여전히 PIA(주 interop 어셈블리)를 만들어야 합니다.
 
 ## <a name="type-equivalence"></a>형식 동등
 
@@ -55,6 +55,6 @@ ms.locfileid: "33390935"
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Type.IsEquivalentTo%2A>  
-[관리 코드에서 COM 형식 사용](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))  
-[형식 라이브러리를 어셈블리로 가져오기](importing-a-type-library-as-an-assembly.md)  
+- <xref:System.Type.IsEquivalentTo%2A>
+- [관리 코드에서 COM 형식 사용](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))
+- [형식 라이브러리를 어셈블리로 가져오기](importing-a-type-library-as-an-assembly.md)

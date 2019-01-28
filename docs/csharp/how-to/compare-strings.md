@@ -5,12 +5,12 @@ ms.date: 10/03/2018
 helpviewer_keywords:
 - strings [C#], comparison
 - comparing strings [C#]
-ms.openlocfilehash: 0eb8669e52099e35553d9e7842371045bd88a643
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 479e6d9250c546943da3ddd837f2f03a5c4e7b1e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563992"
 ---
 # <a name="how-to-compare-strings-in-c"></a>C\#에서 문자열을 비교하는 방법
 
@@ -133,8 +133,8 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
-- <xref:System.StringComparer?displayProperty=nameWithType>  
-- [문자열](../programming-guide/strings/index.md)  
-- [문자열 비교](../../standard/base-types/comparing.md)  
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- [문자열](../programming-guide/strings/index.md)
+- [문자열 비교](../../standard/base-types/comparing.md)
 - [애플리케이션 전역화 및 지역화](/visualstudio/ide/globalizing-and-localizing-applications)

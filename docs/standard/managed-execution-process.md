@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 33c498e8379d68287bfe4a2e781d6797fd6b4c10
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: c3e6548484f3e41ce67522931f4eafef3acee1fe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44192595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652022"
 ---
 # <a name="managed-execution-process"></a>관리되는 실행 프로세스
 <a name="introduction"></a> 관리되는 실행 프로세스에는 이 항목의 뒷부분에서 설명하는 다음 단계가 포함됩니다.  
@@ -63,14 +63,14 @@ ms.locfileid: "44192595"
 -   .NET Framework [Ngen.exe(네이티브 이미지 생성기)](../../docs/framework/tools/ngen-exe-native-image-generator.md).  
   
 ### <a name="compilation-by-the-jit-compiler"></a>JIT 컴파일러에서 컴파일  
- JIT 컴파일은 어셈블리의 콘텐츠가 로드 및 실행되는 응용 프로그램 실행 시간에 요청 시 MSIL을 네이티브 코드로 변환합니다. 공용 언어 런타임은 지원되는 각 CPU 아키텍처에 대한 JIT 컴파일러를 제공하므로 개발자는 다양한 컴퓨터 아키텍처를 가진 여러 가지 컴퓨터에서 JIT로 컴파일되고 실행될 수 있는 MSIL 어셈블리 집합을 빌드할 수 있습니다. 그러나 관리 코드는 플랫폼 특정 네이티브 API 또는 플랫폼 특정 클래스 라이브러리를 호출할 경우 해당 운영 체제에서만 실행됩니다.  
+ JIT 컴파일은 어셈블리의 콘텐츠가 로드 및 실행되는 애플리케이션 실행 시간에 요청 시 MSIL을 네이티브 코드로 변환합니다. 공용 언어 런타임은 지원되는 각 CPU 아키텍처에 대한 JIT 컴파일러를 제공하므로 개발자는 다양한 컴퓨터 아키텍처를 가진 여러 가지 컴퓨터에서 JIT로 컴파일되고 실행될 수 있는 MSIL 어셈블리 집합을 빌드할 수 있습니다. 그러나 관리 코드는 플랫폼 특정 네이티브 API 또는 플랫폼 특정 클래스 라이브러리를 호출할 경우 해당 운영 체제에서만 실행됩니다.  
   
  JIT 컴파일은 일부 코드가 실행 중에 호출되지 않을 가능성을 고려합니다. PE 파일의 모든 MSIL을 네이티브 코드로 변환하는 데 시간과 메모리를 사용하는 대신 실행 중에 필요에 따라 MSIL을 변환하고 해당 프로세스의 컨텍스트에서 이후 호출을 위해 액세스할 수 있도록 결과 네이티브 코드를 메모리에 저장합니다. 로더는 형식이 로드되고 초기화될 때의 형식으로 스텁을 만들고 각 메서드에 연결합니다. 메서드가 처음 호출될 때 스텁은 JIT 컴파일러로 제어를 전달하고 JIT 컴파일러는 해당 메서드에 대한 MSIL을 네이티브 코드로 변환하고 생성된 네이티브 코드를 직접 가리키도록 스텁을 수정합니다. 따라서 JIT로 컴파일된 메서드에 대한 이후 호출은 직접 네이티브 코드로 이동합니다.  
   
 ### <a name="install-time-code-generation-using-ngenexe"></a>NGen.exe를 사용하여 설치 시간 코드 생성  
- JIT 컴파일러는 어셈블리에 정의된 개별 메서드가 호출될 때 해당 어셈블리의 MSIL을 네이티브 코드로 변환하므로 런타임에 성능이 저하됩니다. 대부분 경우에 저하된 성능은 허용 가능한 정도입니다. 더 중요한 것은 JIT 컴파일러에서 생성된 코드는 컴파일을 트리거한 프로세스에 바인딩된다는 점입니다. 이 코드는 여러 프로세스에서 공유할 수 없습니다. 생성된 코드를 여러 응용 프로그램 호출에서 또는 어셈블리 집합을 공유하는 여러 프로세스에서 공유할 수 있도록 공용 언어 런타임은 사전 컴파일 모드를 지원합니다. 이 사전 컴파일 모드에서는 [Ngen.exe(네이티브 이미지 생성기)](../../docs/framework/tools/ngen-exe-native-image-generator.md)를 사용하여 JIT 컴파일러가 변환하는 것처럼 MSIL 어셈블리를 네이티브 코드로 변환합니다. 그러나 Ngen.exe의 작업은 다음 세 가지 방법에서 JIT 컴파일러의 작업과 다릅니다.  
+ JIT 컴파일러는 어셈블리에 정의된 개별 메서드가 호출될 때 해당 어셈블리의 MSIL을 네이티브 코드로 변환하므로 런타임에 성능이 저하됩니다. 대부분 경우에 저하된 성능은 허용 가능한 정도입니다. 더 중요한 것은 JIT 컴파일러에서 생성된 코드는 컴파일을 트리거한 프로세스에 바인딩된다는 점입니다. 이 코드는 여러 프로세스에서 공유할 수 없습니다. 생성된 코드를 여러 애플리케이션 호출에서 또는 어셈블리 집합을 공유하는 여러 프로세스에서 공유할 수 있도록 공용 언어 런타임은 사전 컴파일 모드를 지원합니다. 이 사전 컴파일 모드에서는 [Ngen.exe(네이티브 이미지 생성기)](../../docs/framework/tools/ngen-exe-native-image-generator.md)를 사용하여 JIT 컴파일러가 변환하는 것처럼 MSIL 어셈블리를 네이티브 코드로 변환합니다. 그러나 Ngen.exe의 작업은 다음 세 가지 방법에서 JIT 컴파일러의 작업과 다릅니다.  
   
--   응용 프로그램이 실행되는 동안이 아니라 응용 프로그램을 실행하기 전에 MSIL에서 네이티브 코드로의 변환을 수행합니다.  
+-   애플리케이션이 실행되는 동안이 아니라 애플리케이션을 실행하기 전에 MSIL에서 네이티브 코드로의 변환을 수행합니다.  
   
 -   한 번에 한 메서드가 아니라 한 번에 전체 어셈블리를 컴파일합니다.  
   
@@ -109,12 +109,12 @@ ms.locfileid: "44192595"
   
 ## <a name="see-also"></a>참고 항목
 
-- [개요](../../docs/framework/get-started/overview.md)  
-- [언어 독립성 및 언어 독립적 구성 요소](../../docs/standard/language-independence-and-language-independent-components.md)  
-- [메타데이터 및 자동 기술 구성 요소](../../docs/standard/metadata-and-self-describing-components.md)  
-- [Ilasm.exe(IL 어셈블러)](../../docs/framework/tools/ilasm-exe-il-assembler.md)  
-- [보안](../../docs/standard/security/index.md)  
-- [비관리 코드와의 상호 운용](../../docs/framework/interop/index.md)  
-- [배포](../../docs/framework/deployment/net-framework-applications.md)  
-- [공용 언어 런타임의 어셈블리](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
-- [응용 프로그램 도메인](../../docs/framework/app-domains/application-domains.md)
+- [개요](../../docs/framework/get-started/overview.md)
+- [언어 독립성 및 언어 독립적 구성 요소](../../docs/standard/language-independence-and-language-independent-components.md)
+- [메타데이터 및 자동 기술 구성 요소](../../docs/standard/metadata-and-self-describing-components.md)
+- [Ilasm.exe(IL 어셈블러)](../../docs/framework/tools/ilasm-exe-il-assembler.md)
+- [보안](../../docs/standard/security/index.md)
+- [비관리 코드와의 상호 운용](../../docs/framework/interop/index.md)
+- [배포](../../docs/framework/deployment/net-framework-applications.md)
+- [공용 언어 런타임의 어셈블리](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [애플리케이션 도메인](../../docs/framework/app-domains/application-domains.md)

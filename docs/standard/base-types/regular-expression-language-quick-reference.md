@@ -1,4 +1,4 @@
-﻿---
+---
 title: 정규식 언어 - 빠른 참조
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 09f2886173bd3a80691b78a6e3ea71b034ebe34a
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 0b191a01995b7c36d733b225672a3d79f488a276
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531423"
 ---
 # <a name="regular-expression-language---quick-reference"></a>정규식 언어 - 빠른 참조
 <a name="top"></a> 정규식은 정규식 엔진이 입력 텍스트에서 찾으려고 하는 패턴입니다. 패턴은 하나 이상의 문자 리터럴, 연산자 또는 구문으로 구성됩니다.  간략하게 살펴보려면 [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)을 참조하세요.  
@@ -92,11 +92,11 @@ ms.locfileid: "54030401"
   
 |어설션|설명|무늬|요청 내용|  
 |---------------|-----------------|-------------|-------------|  
-|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-333-"의<br /><br /> "901"|  
-|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-901-333"의<br /><br /> "-333"|  
-|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-333-"의<br /><br /> "901"|  
-|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-901-333"의<br /><br /> "-333"|  
-|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-901-333"의<br /><br /> "-333"|  
+|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-"의<br /><br /> "901"|  
+|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-333"의<br /><br /> "-901-333"|  
+|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-"의<br /><br /> "901"|  
+|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-333"의<br /><br /> "-901-333"|  
+|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-333"의<br /><br /> "-901-333"|  
 |`\G`|일치 항목이 이전 일치 항목 찾기가 끝난 지점에 있어야 합니다.|`\G\(\d\)`|"(1)(3)(5)[7](9\)"의 "(1)", "(3)", "(5)"|  
 |`\b`|일치 항목이 `\w`(영숫자) 문자와 `\W`(영숫자가 아닌 문자) 문자 사이의 경계에 있어야 합니다.|`\b\w+\s\w+\b`|"them theme them them"의 "them theme", "them them"|  
 |`\B`|일치 항목이 `\b` 경계에 있어야 합니다.|`\Bend\w*\b`|"end sends endure lender"의 "ends", "ender"|  
@@ -111,7 +111,7 @@ ms.locfileid: "54030401"
 |------------------------|-----------------|-------------|-------------|  
 |`(` *subexpression* `)`|일치하는 하위 식을 캡처하고 서수(1부터 시작)를 할당합니다.|`(\w)\1`|"deep"의 "ee"|  
 |`(?<` *name* `>` *subexpression* `)`|일치하는 하위 식을 명령된 그룹에 캡처합니다.|`(?<double>\w)\k<double>`|"deep"의 "ee"|  
-|`(?<` *이름1* `-` *이름2* `>` *subexpression* `)`|균형 조정 그룹 정의를 정의합니다. 자세한 내용은 [그룹화 구문](grouping-constructs-in-regular-expressions.md)의 "균형 조정 그룹 정의" 섹션을 참조하세요.|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"3+2^((1-3)\*(3-1))"의 "((1-3)\*(3-1))"|  
+|`(?<` *이름1* `-` *이름2* `>` *subexpression* `)`|균형 조정 그룹 정의를 정의합니다. 자세한 내용은 [Grouping Constructs](grouping-constructs-in-regular-expressions.md)의 "균형 조정 그룹 정의" 섹션을 참조하세요.|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"3+2^((1-3)\*(3-1))"의 "((1-3)\*(3-1))"|  
 |`(?:` *subexpression* `)`|비캡처 그룹을 정의합니다.|`Write(?:Line)?`|"Console.WriteLine()"의 "WriteLine"<br /><br /> "Console.Write(값)"의 "Write"|  
 |`(?imnsx-imnsx:` *subexpression* `)`|*subexpression* 내에서 지정된 옵션을 적용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`A\d{2}(?i:\w+)\b`|"A12xl A12XL a12xl"의 "A12xl", "A12XL"|  
 |`(?=` *subexpression* `)`|너비가 0인 긍정 우측 어설션입니다.|`\w+(?=\.)`|"He is. The dog ran. The sun is out."의 "is", "ran" 및 "out"|  
@@ -185,7 +185,7 @@ ms.locfileid: "54030401"
   
 <a name="options"></a>   
 ## <a name="regular-expression-options"></a>정규식 옵션  
- 정규식 엔진이 정규식 패턴을 해석하는 방법을 제어하는 옵션을 지정할 수 있습니다. 옵션의 대부분은 인라인(정규식 패턴)에서 또는 1개 이상의 <xref:System.Text.RegularExpressions.RegexOptions> 상수로 지정될 수 있습니다. 이 빠른 참조는 인라인 옵션만 나열합니다. 인라인 및 <xref:System.Text.RegularExpressions.RegexOptions> 옵션에 대한 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.  
+ 정규식 엔진이 정규식 패턴을 해석하는 방법을 제어하는 옵션을 지정할 수 있습니다. 옵션의 대부분은 인라인(정규식 패턴)에서 또는 1개 이상의 <xref:System.Text.RegularExpressions.RegexOptions> 상수로 지정될 수 있습니다. 이 빠른 참조는 인라인 옵션만 나열합니다. 인라인 및 <xref:System.Text.RegularExpressions.RegexOptions> 옵션에 대한 자세한 내용은 [Regular Expression Options](regular-expression-options.md)을 참조하세요.  
   
  인라인 옵션을 두 가지 방법으로 지정할 수 있습니다.  
   
@@ -198,9 +198,9 @@ ms.locfileid: "54030401"
 |옵션|설명|무늬|요청 내용|  
 |------------|-----------------|-------------|-------------|  
 |`i`|대/소문자를 구분하지 않는 일치를 사용합니다.|`\b(?i)a(?-i)a\w+\b`|"aardvark AAAuto aaaAuto Adam breakfast"의 "aardvark", "aaaAuto"|  
-|`m`|여러 줄 모드를 사용합니다. `^` 및 `$` 는 각 줄의 시작 및 끝과 일치합니다(문자열의 시작 및 끝이 아님).|예제를 보려면 [정규식 옵션](regular-expression-options.md)에서 "여러 줄 모드" 섹션을 참조하세요.||  
-|`n`|명명되지 않은 그룹을 캡처하지 않습니다.|예를 들어 [정규식 옵션](regular-expression-options.md)에서 "명시적 캡처만 해당" 섹션을 참조하세요.||  
-|`s`|한 줄 모드를 사용합니다.|예제를 보려면 [정규식 옵션](regular-expression-options.md)에서 "한 줄 모드" 섹션을 참조하세요.||  
+|`m`|여러 줄 모드를 사용합니다. `^` 및 `$` 는 각 줄의 시작 및 끝과 일치합니다(문자열의 시작 및 끝이 아님).|예제를 보려면 [Regular Expression Options](regular-expression-options.md)에서 "여러 줄 모드" 섹션을 참조하세요.||  
+|`n`|명명되지 않은 그룹을 캡처하지 않습니다.|예를 들어 [Regular Expression Options](regular-expression-options.md)에서 "명시적 캡처만 해당" 섹션을 참조하세요.||  
+|`s`|한 줄 모드를 사용합니다.|예제를 보려면 [Regular Expression Options](regular-expression-options.md)에서 "한 줄 모드" 섹션을 참조하세요.||  
 |`x`|정규식 패턴에서 이스케이프되지 않은 공백은 무시합니다.|`\b(?x) \d+ \s \w+`|"1 aardvark 2 cats IV centurions"의 "1 aardvark", "2 cats"|  
   
  [맨 위로 이동](#top)  
@@ -217,10 +217,10 @@ ms.locfileid: "54030401"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
-- <xref:System.Text.RegularExpressions.Regex>  
-- [정규식](regular-expressions.md)  
-- [정규식 클래스](the-regular-expression-object-model.md)  
-- [정규식 예제](regular-expression-examples.md)  
-- [정규식 - 빠른 참조(Word 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex>
+- [정규식](regular-expressions.md)
+- [정규식 클래스](the-regular-expression-object-model.md)
+- [정규식 예제](regular-expression-examples.md)
+- [정규식 - 빠른 참조(Word 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 - [정규식 - 빠른 참조(PDF 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

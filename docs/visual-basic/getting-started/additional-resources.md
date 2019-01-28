@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Help, Visual Basic Web sites
 - Visual Basic, videos
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-ms.openlocfilehash: a0ff04bf67faea4c834570e8faa4197369289fb7
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 25d18b4e362481dfde8fb440911bac67f27eab40
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195674"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54636237"
 ---
 # <a name="additional-resources"></a>추가 자료
 
@@ -32,7 +32,7 @@ ms.locfileid: "50195674"
 
 |용어|정의|
 |----------|----------------|
-|[Code Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)(코드 갤러리)|샘플 응용 프로그램과 기타 리소스를 다운로드하고 개발자 커뮤니티와 공유할 수 있습니다.|
+|[Code Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)(코드 갤러리)|샘플 애플리케이션과 기타 리소스를 다운로드하고 개발자 커뮤니티와 공유할 수 있습니다.|
 |[Visual Basic 설명서 샘플](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)|Visual Basic 및 .NET 설명서 전체에서 사용되는 샘플을 포함합니다.|
 
 ### <a name="forums"></a>포럼
@@ -64,5 +64,5 @@ ms.locfileid: "50195674"
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Basic 시작](../../visual-basic/getting-started/index.md)  
-[의견 보내기](/visualstudio/ide/talk-to-us)  
+- [Visual Basic 시작](../../visual-basic/getting-started/index.md)
+- [의견 보내기](/visualstudio/ide/talk-to-us)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b05ac1016710109110c3ff9d0d318a71fe0827f1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 12a7b4cb29dcf2c799f17bb7f3a02c300c5f0d36
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555403"
 ---
 # <a name="default-marshaling-for-arrays"></a>배열에 대한 기본 마샬링
-전체적으로 관리 코드로 구성된 응용 프로그램에서는 공용 언어 런타임이 배열 형식을 In/Out 매개 변수로 전달합니다. 반면 interop 마샬러는 기본적으로 배열을 In 매개 변수로 전달합니다.  
+전체적으로 관리 코드로 구성된 애플리케이션에서는 공용 언어 런타임이 배열 형식을 In/Out 매개 변수로 전달합니다. 반면 interop 마샬러는 기본적으로 배열을 In 매개 변수로 전달합니다.  
   
  [고정 최적화](copying-and-pinning.md)를 통해 blittable 배열은 같은 아파트의 개체와 상호 작용할 때 In/Out 매개 변수로 사용되는 것으로 보일 수 있습니다. 그러나 나중에 컴퓨터 간 프록시를 생성하는 데 사용되는 형식 라이브러리에 코드를 내보내고 해당 라이브러리를 사용하여 아파트 간에 호출을 마샬링할 경우 호출은 실제 In 매개 변수 동작으로 되돌아갈 수 있습니다.  
   
@@ -372,8 +372,8 @@ public struct MyStruct {
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [기본 마샬링 동작](default-marshaling-behavior.md)  
- [Blittable 형식 및 비 Blittable 형식](blittable-and-non-blittable-types.md)  
- [방향 특성](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
- [복사 및 고정](copying-and-pinning.md)
+## <a name="see-also"></a>참고 항목
+- [기본 마샬링 동작](default-marshaling-behavior.md)
+- [Blittable 형식 및 비 Blittable 형식](blittable-and-non-blittable-types.md)
+- [방향 특성](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))
+- [복사 및 고정](copying-and-pinning.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 36526da1fc678e933a75e19bac9c8e1d0a40909c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 683a71b27d3e3dd1c0db4e49c2c188ccad0fb6d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45743390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607123"
 ---
 # <a name="implementing-a-dispose-method"></a>Dispose 메서드 구현
 
-응용 프로그램에서 사용되는 관리되지 않는 리소스를 해제하려면 <xref:System.IDisposable.Dispose%2A> 메서드를 구현합니다. .NET 가비지 수집기는 관리되지 않는 메모리를 할당하거나 해제하지 않습니다.  
+애플리케이션에서 사용되는 관리되지 않는 리소스를 해제하려면 <xref:System.IDisposable.Dispose%2A> 메서드를 구현합니다. .NET 가비지 수집기는 관리되지 않는 메모리를 할당하거나 해제하지 않습니다.  
   
 [삭제 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md)이라고도 하는 개체 삭제 패턴에서는 개체의 수명에 순서를 적용합니다. 삭제 패턴은 파일 핸들, 파이프 핸들, 레지스트리 핸들, 대기 핸들 또는 관리되지 않는 메모리의 블록에 대한 포인터와 같이 관리되지 않는 리소스에 액세스하는 개체에만 사용됩니다. 이는 가비지 수집기가 사용되지 않은 관리되는 개체를 회수하는 데 매우 효율적이지만, 관리되지 않는 개체는 회수할 수 없기 때문입니다.  
   
@@ -132,7 +132,7 @@ SafeHandle을 사용하는 파생된 클래스에 대한 삭제 패턴을 구현
 
 개체 종료자에 대한 코드를 작성하는 작업은 올바르게 수행되지 않을 경우 문제를 일으킬 수 있는 복잡한 작업입니다. 따라서 종료자를 구현하는 대신 <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> 개체를 생성하는 것이 좋습니다.  
   
-<xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> 클래스에서 파생된 클래스는 중단 없이 핸들을 할당 및 해제하여 개체 수명 문제를 단순화합니다. 여기에는 응용 프로그램 도메인을 언로드하는 동안 실행이 보장되는 중요한 종료자가 포함됩니다. SafeHandle을 사용하는 이점에 대한 자세한 내용은 <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>를 참조하세요. <xref:Microsoft.Win32.SafeHandles> 네임스페이스에서 다음과 같은 파생된 클래스가 SafeHandle을 제공합니다.  
+<xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> 클래스에서 파생된 클래스는 중단 없이 핸들을 할당 및 해제하여 개체 수명 문제를 단순화합니다. 여기에는 애플리케이션 도메인을 언로드하는 동안 실행이 보장되는 중요한 종료자가 포함됩니다. SafeHandle을 사용하는 이점에 대한 자세한 내용은 <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>를 참조하세요. <xref:Microsoft.Win32.SafeHandles> 네임스페이스에서 다음과 같은 파생된 클래스가 SafeHandle을 제공합니다.  
   
 * 파일, 메모리 매핑된 파일 및 파이프에 대한 <xref:Microsoft.Win32.SafeHandles.SafeFileHandle>, <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle> 및 <xref:Microsoft.Win32.SafeHandles.SafePipeHandle> 클래스  
   
@@ -162,11 +162,11 @@ SafeHandle을 사용하는 파생된 클래스에 대한 삭제 패턴을 구현
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.GC.SuppressFinalize%2A>   
-- <xref:System.IDisposable>   
-- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
-- <xref:Microsoft.Win32.SafeHandles>   
-- <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>   
-- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
-- [방법: 클래스 및 구조체 정의 및 사용(C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
+- <xref:System.GC.SuppressFinalize%2A>
+- <xref:System.IDisposable>
+- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Win32.SafeHandles>
+- <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>
+- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>
+- [방법: 클래스 및 구조체 정의 및 사용(C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)
 - [삭제 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md)

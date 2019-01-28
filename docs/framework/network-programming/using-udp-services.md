@@ -17,17 +17,17 @@ helpviewer_keywords:
 - sending data, UDP
 - application protocols, UDP
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
-ms.openlocfilehash: 40cf14936fef7c29f00112a143203ced605f482b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f89a0ad79dbf46c6d75d56106ad05a683482a501
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54511607"
 ---
 # <a name="using-udp-services"></a>UDP 서비스 사용
 <xref:System.Net.Sockets.UdpClient> 클래스는 UDP를 사용하여 네트워크 서비스와 통신합니다. <xref:System.Net.Sockets.UdpClient> 클래스의 속성 및 메서드는 UDP를 사용하여 데이터를 요청 및 수신하는 <xref:System.Net.Sockets.Socket>을 만들기 위한 세부 정보를 추상화합니다.
 
-UDP(User Datagram Protocol)는 원격 호스트에 데이터를 전달하기 위해 최상의 노력을 하는 간단한 프로토콜입니다. 그러나 UDP 프로토콜은 연결 없는 프로토콜이기 때문에 원격 엔드포인트에 전송된 UDP 데이터그램은 도착한다고 보장되지 않으며 전송된 동일한 순서로 도착한다고 보장되지도 않습니다. UDP를 사용하는 응용 프로그램은 누락, 중복 및 순서가 잘못된 데이터그램을 처리하도록 준비해야 합니다.
+UDP(User Datagram Protocol)는 원격 호스트에 데이터를 전달하기 위해 최상의 노력을 하는 간단한 프로토콜입니다. 그러나 UDP 프로토콜은 연결 없는 프로토콜이기 때문에 원격 엔드포인트에 전송된 UDP 데이터그램은 도착한다고 보장되지 않으며 전송된 동일한 순서로 도착한다고 보장되지도 않습니다. UDP를 사용하는 애플리케이션은 누락, 중복 및 순서가 잘못된 데이터그램을 처리하도록 준비해야 합니다.
 
 UDP를 사용하여 데이터그램을 보내려면 필요한 서비스를 호스트하는 네트워크 디바이스의 네트워크 주소와 서비스가 통신에 사용하는 UDP 포트 번호를 알고 있어야 합니다. IANA(Internet Assigned Numbers Authority)는 공통 서비스의 포트 번호를 정의합니다([서비스 이름 및 전송 프로토콜 포트 번호 레지스트리](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml) 참조). Iana 목록에 없는 서비스에는 1,024~65,535 범위의 포트 번호를 사용할 수 있습니다.
 
@@ -159,4 +159,5 @@ class Program
 ```
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Net.Sockets.UdpClient> <xref:System.Net.IPAddress>
+- <xref:System.Net.Sockets.UdpClient>
+- <xref:System.Net.IPAddress>

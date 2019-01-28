@@ -8,15 +8,15 @@ dev_langs:
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bc07779f03784cd32524e1b1189faae343710a05
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 376dd9df4666193f8e5a6be83f3fcaf5dc32f1a6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54544603"
 ---
 # <a name="converting-strings-to-net-framework-data-types"></a>문자열을 .NET Framework 데이터 형식으로 변환
-문자열을 .NET Framework 데이터 형식으로 변환하려면 응용 프로그램 요구 사항에 적합한 **XmlConvert** 메서드를 사용합니다. **XmlConvert** 클래스에서 사용 가능한 변환 메서드의 전체 목록은 <xref:System.Xml.XmlConvert>를 참조하세요.  
+문자열을 .NET Framework 데이터 형식으로 변환하려면 애플리케이션 요구 사항에 적합한 **XmlConvert** 메서드를 사용합니다. **XmlConvert** 클래스에서 사용 가능한 변환 메서드의 전체 목록은 <xref:System.Xml.XmlConvert>를 참조하세요.  
   
  **ToString** 메서드에서 반환된 문자열은 전달된 데이터를 문자열 버전으로 표시한 것입니다. 또한 일부 .NET Framework 형식에서는 **XmlConvert** 클래스를 사용하여 변환을 수행하지만, 이러한 형식은 **System.Convert** 클래스에 있는 메서드를 사용하지 않습니다. **XmlConvert** 클래스는 XSD(XML 스키마) 데이터 형식 사양을 준수하며, **XmlConvert**가 매핑할 수 있는 데이터 형식을 갖습니다.  
   
@@ -135,5 +135,5 @@ writer.WriteElementString("Infinity", XmlConvert.ToString(value));
   
 ## <a name="see-also"></a>참고 항목
 
-- [XML 데이터 형식 변환](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
+- [XML 데이터 형식 변환](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
 - [.NET Framework 형식을 문자열로 변환](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

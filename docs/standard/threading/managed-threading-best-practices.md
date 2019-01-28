@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ab33474fa8f3d62fb21c86a0699bbfcb75e7a270
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 907e85d2622ea07ddbb61092f439583ed72e0c50
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150617"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54560037"
 ---
 # <a name="managed-threading-best-practices"></a>관리 스레딩을 구현하는 최선의 방법
 다중 스레딩에는 신중한 프로그래밍이 필요합니다. 대부분의 작업의 경우 스레드 풀 스레드로 실행에 대한 요청을 큐에 대기시켜 복잡성을 줄일 수 있습니다. 이 항목에서는 다중 스레드의 작업 조정 또는 차단되는 스레드 처리 등의 더욱 어려운 상황을 다룹니다.  
@@ -64,7 +64,7 @@ else {
   
  경합 상태의 간단한 예는 필드를 증가시키는 경우입니다. 클래스에 `objCt++;`(C#) 또는 `objCt += 1`(Visual Basic)과 같은 코드를 사용하는, 클래스의 인스턴스가 생성될 때마다 증가되는 개인 **정적** 필드(Visual Basic에서 **Shared**)가 있다고 가정합니다. 이 작업은 `objCt`에서 레지스터로 값을 로드하고, 값을 증가시키고 `objCt`에 저장해야 합니다.  
   
- 다중 스레드 응용 프로그램에서 값을 로드하고 증가시킨 스레드는 세 단계 모두를 수행하는 다른 스레드에 의해 선점될 수 있습니다. 첫 번째 스레드가 실행을 다시 시작하고 해당 값을 저장할 때 그 사이에 값이 변경된 사실을 고려하지 않고 `objCt`를 덮어씁니다.  
+ 다중 스레드 애플리케이션에서 값을 로드하고 증가시킨 스레드는 세 단계 모두를 수행하는 다른 스레드에 의해 선점될 수 있습니다. 첫 번째 스레드가 실행을 다시 시작하고 해당 값을 저장할 때 그 사이에 값이 변경된 사실을 고려하지 않고 `objCt`를 덮어씁니다.  
   
  이 특정 경합 상태는 <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>와 같은 <xref:System.Threading.Interlocked> 클래스의 메서드를 사용하여 쉽게 피할 수 있습니다. 다중 스레딩 간에 데이터를 동기화하는 다른 기술에 대해 알아보려면 [다중 스레딩을 위한 데이터 동기화](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)를 참조하세요.  
   
@@ -92,9 +92,9 @@ else {
   
 -   기본 프로그램(예: 이벤트 사용)에서 작업자 스레드의 실행을 제어하지 마세요. 대신 작업자 스레드가 작업을 확보할 때까지 대기하고, 실행하고, 완료되면 프로그램의 다른 부분에 알릴 수 있도록 프로그램을 디자인합니다. 작업자 스레드가 차단되지 않는 경우 스레드 풀 스레드를 사용하는 것이 좋습니다. <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType>은 작업자 스레드가 차단되는 경우에 유용합니다.  
   
--   잠금 개체로 형식을 사용하지 마세요. 즉, C#에서 `lock(typeof(X))` 또는 Visual Basic에서 `SyncLock(GetType(X))`과 같은 코드를 피하거나 <xref:System.Type> 개체와 함께 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>을 사용하지 마세요. 제공된 형식의 경우 응용 프로그램 도메인당 <xref:System.Type?displayProperty=nameWithType> 인스턴스가 하나만 있습니다. 잠금을 사용하는 형식이 공용인 경우 개인 외의 코드는 잠금을 사용할 수 있으며 교착 상태가 발생합니다. 추가 문제는 [최선의 안정성 구현 방법](../../../docs/framework/performance/reliability-best-practices.md)을 참조하세요.  
+-   잠금 개체로 형식을 사용하지 마세요. 즉, C#에서 `lock(typeof(X))` 또는 Visual Basic에서 `SyncLock(GetType(X))`과 같은 코드를 피하거나 <xref:System.Type> 개체와 함께 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>을 사용하지 마세요. 제공된 형식의 경우 애플리케이션 도메인당 <xref:System.Type?displayProperty=nameWithType> 인스턴스가 하나만 있습니다. 잠금을 사용하는 형식이 공용인 경우 개인 외의 코드는 잠금을 사용할 수 있으며 교착 상태가 발생합니다. 추가 문제는 [최선의 안정성 구현 방법](../../../docs/framework/performance/reliability-best-practices.md)을 참조하세요.  
   
--   인스턴스를 잠글 때 주의합니다(예: C#에서 `lock(this)` 또는 Visual Basic에서 `SyncLock(Me)`). 형식 외부의 응용 프로그램에 있는 다른 코드가 개체에서 잠금을 사용하는 경우 교착 상태가 발생할 수 있습니다.  
+-   인스턴스를 잠글 때 주의합니다(예: C#에서 `lock(this)` 또는 Visual Basic에서 `SyncLock(Me)`). 형식 외부의 애플리케이션에 있는 다른 코드가 개체에서 잠금을 사용하는 경우 교착 상태가 발생할 수 있습니다.  
   
 -   모니터링을 시작한 스레드가 모니터링 중에 있는 동안 예외가 발생한 경우에도 항상 해당 모니터링을 유지하는지 확인합니다. C# [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) 문 및 Visual Basic [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) 문은 <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>이 호출되었는지 확인하는 **finally** 블록을 사용하여 이 동작을 자동으로 제공합니다. **Exit**이 호출될지 확인할 수 없는 경우 **뮤텍스**를 사용하도록 설계를 변경하는 것이 좋습니다. 뮤텍스는 현재 소유하고 있는 스레드가 종료되면 자동으로 해제됩니다.  
   
@@ -173,11 +173,11 @@ else {
   
 -   기본적으로 정적 데이터(Visual Basic에서 `Shared`)를 스레드로부터 안전하게 만듭니다.  
   
--   기본적으로 인스턴스 데이터를 스레드로부터 안전하게 만들지 마세요. 스레드로부터 안전한 코드를 만드는 잠금을 추가하면 성능을 저하시키고 잠금 경합이 증가하고 교착 상태가 발생할 가능성을 만듭니다. 공용 응용 프로그램 모델에서 한 번에 하나의 스레드만이 스레드 보안의 필요성을 최소화하는 사용자 코드를 실행합니다. 이러한 이유로 .NET Framework 클래스 라이브러리는 기본적으로 스레드로부터 안전하지 않습니다.  
+-   기본적으로 인스턴스 데이터를 스레드로부터 안전하게 만들지 마세요. 스레드로부터 안전한 코드를 만드는 잠금을 추가하면 성능을 저하시키고 잠금 경합이 증가하고 교착 상태가 발생할 가능성을 만듭니다. 공용 애플리케이션 모델에서 한 번에 하나의 스레드만이 스레드 보안의 필요성을 최소화하는 사용자 코드를 실행합니다. 이러한 이유로 .NET Framework 클래스 라이브러리는 기본적으로 스레드로부터 안전하지 않습니다.  
   
 -   정적 상태를 변경하는 정적 메서드를 제공 하지 마세요. 일반적인 서버 시나리오에서 정적 상태는 요청 간 공유되며 여러 스레드가 동시에 해당 코드를 실행할 수 있음을 의미합니다. 스레드 버그가 발생할 가능성을 엽니다. 요청 간에 공유되지 않는 인스턴스로 데이터를 캡슐화하는 디자인 패턴을 사용하는 것이 좋습니다. 또한 정적 데이터가 동기화되는 경우 상태를 변경하는 정적 메서드 간 호출은 성능에 부정적인 영향을 주어 교착 상태 또는 중복된 동기화를 발생시킬 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목
 
-- [스레딩](../../../docs/standard/threading/index.md)  
+- [스레딩](../../../docs/standard/threading/index.md)
 - [스레드 및 스레딩](../../../docs/standard/threading/threads-and-threading.md)

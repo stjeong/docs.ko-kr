@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a6c151798c807206cc7f4b2fbeb21e75e9142379
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3085812f2467c1e73d94335530441d6bb12db6af
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47234681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613807"
 ---
 # <a name="generic-interfaces"></a>제네릭 인터페이스
 이 항목에서는 여러 제네릭 형식 패밀리에 대해 공통 기능을 제공하는 제네릭 인터페이스에 대해 간략하게 설명합니다.  
@@ -44,9 +44,9 @@ ms.locfileid: "47234681"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections.Generic?displayProperty=nameWithType>  
-- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
-- [제네릭](../../../docs/standard/generics/index.md)  
-- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
-- [배열과 목록을 조작하기 위한 제네릭 대리자](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [제네릭](../../../docs/standard/generics/index.md)
+- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)
+- [배열과 목록을 조작하기 위한 제네릭 대리자](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
 - [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)

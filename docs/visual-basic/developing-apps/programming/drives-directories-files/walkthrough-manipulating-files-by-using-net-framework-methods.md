@@ -15,26 +15,26 @@ helpviewer_keywords:
 - text files [Visual Basic], reading
 - I/O [Visual Basic], reading text from files
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
-ms.openlocfilehash: 20150326308513325a9f1219de3e3023e6c5192b
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 89645c489cb9f21ffe415fb7c02ae09fca9a7444
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54505707"
 ---
 # <a name="walkthrough-manipulating-files-by-using-net-framework-methods-visual-basic"></a>연습: .NET Framework 메서드를 사용하여 파일 조작(Visual Basic)
 이 연습에서는 <xref:System.IO.StreamReader> 클래스를 사용하여 파일을 열고 읽는 방법, 파일이 액세스되고 있는지 확인하는 방법, <xref:System.IO.StreamReader> 클래스의 인스턴스로 파일 읽기 내에서 문자열을 검색하는 방법, <xref:System.IO.StreamWriter> 클래스를 사용하여 파일에 쓰는 방법을 보여 줍니다.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-## <a name="creating-the-application"></a>응용 프로그램 작성  
+## <a name="creating-the-application"></a>애플리케이션 작성  
  Visual Studio를 시작하고, 사용자가 지정된 파일에 작성하는 데 사용할 수 있는 양식을 만들어 프로젝트를 시작합니다.  
   
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면  
   
 1.  **파일** 메뉴에서 **새 프로젝트**를 선택합니다.  
   
-2.  **새 프로젝트** 창에서 **Windows 응용 프로그램**을 클릭합니다.  
+2.  **새 프로젝트** 창에서 **Windows 애플리케이션**을 클릭합니다.  
   
 3.  **이름** 상자에 `MyDiary`를 입력한 다음 **확인**을 클릭합니다.  
   
@@ -49,13 +49,13 @@ ms.locfileid: "39332976"
 |<xref:System.Windows.Forms.TextBox>|**이름**<br /><br /> **텍스트**<br /><br /> **Multiline**|`Entry`<br /><br /> **내용을 입력하세요.**<br /><br /> `False`|  
   
 ## <a name="writing-to-the-file"></a>파일에 쓰기  
- 응용 프로그램을 통해 파일에 쓰는 기능을 추가하려면 <xref:System.IO.StreamWriter> 클래스를 사용합니다. <xref:System.IO.StreamWriter>는 특정 인코딩에서 문자 출력용으로 설계된 반면, <xref:System.IO.Stream> 클래스는 바이트 입력 및 출력용으로 설계되었습니다. 표준 텍스트 파일에 정보의 줄을 쓰려면 <xref:System.IO.StreamWriter>를 사용합니다. <xref:System.IO.StreamWriter> 클래스에 대한 자세한 내용은 <xref:System.IO.StreamWriter>을 참조하세요.  
+ 애플리케이션을 통해 파일에 쓰는 기능을 추가하려면 <xref:System.IO.StreamWriter> 클래스를 사용합니다. <xref:System.IO.StreamWriter>는 특정 인코딩에서 문자 출력용으로 설계된 반면, <xref:System.IO.Stream> 클래스는 바이트 입력 및 출력용으로 설계되었습니다. 표준 텍스트 파일에 정보의 줄을 쓰려면 <xref:System.IO.StreamWriter>를 사용합니다. <xref:System.IO.StreamWriter> 클래스에 대한 자세한 내용은 <xref:System.IO.StreamWriter>을 참조하세요.  
   
 #### <a name="to-add-writing-functionality"></a>쓰기 기능을 추가하려면  
   
 1.  **보기** 메뉴에서 **코드**를 선택하여 코드 편집기를 엽니다.  
   
-2.  응용 프로그램은 <xref:System.IO> 네임스페이스를 참조하므로 다음 문을 코드의 시작 부분(`Public Class Form1`을 시작하는 양식에 대한 클래스 선언 전)에 추가합니다.  
+2.  애플리케이션은 <xref:System.IO> 네임스페이스를 참조하므로 다음 문을 코드의 시작 부분(`Public Class Form1`을 시작하는 양식에 대한 클래스 선언 전)에 추가합니다.  
   
      [!code-vb[VbVbcnMyFileSystem#35](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_1.vb)]  
   
@@ -102,7 +102,7 @@ ms.locfileid: "39332976"
   
      [!code-vb[VbVbcnMyFileSystem#41](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_7.vb)]  
   
-2.  코드를 테스트하려면 F5를 눌러 응용 프로그램을 컴파일한 다음 **항목 가져오기**를 클릭합니다. <xref:System.Windows.Forms.ComboBox>에서 드롭다운 화살표를 클릭하여 항목 날짜를 표시합니다.  
+2.  코드를 테스트하려면 F5를 눌러 애플리케이션을 컴파일한 다음 **항목 가져오기**를 클릭합니다. <xref:System.Windows.Forms.ComboBox>에서 드롭다운 화살표를 클릭하여 항목 날짜를 표시합니다.  
   
 #### <a name="to-choose-and-display-individual-entries"></a>개별 항목을 선택하고 표시하려면  
   
@@ -110,7 +110,7 @@ ms.locfileid: "39332976"
   
      [!code-vb[VbVbcnMyFileSystem#42](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_8.vb)]  
   
-2.  코드를 테스트하려면 F5를 눌러 응용 프로그램을 컴파일한 다음 항목을 제출합니다. **항목 가져오기**를 클릭하고 <xref:System.Windows.Forms.ComboBox>에서 항목을 선택한 다음, **표시**를 클릭합니다. 선택한 항목의 내용이 `DisplayEntry`<xref:System.Windows.Forms.TextBox>에 표시됩니다.  
+2.  코드를 테스트하려면 F5를 눌러 애플리케이션을 컴파일한 다음 항목을 제출합니다. **항목 가져오기**를 클릭하고 <xref:System.Windows.Forms.ComboBox>에서 항목을 선택한 다음, **표시**를 클릭합니다. 선택한 항목의 내용이 `DisplayEntry`<xref:System.Windows.Forms.TextBox>에 표시됩니다.  
   
 ## <a name="enabling-users-to-delete-or-modify-entries"></a>사용자가 항목을 삭제 또는 수정하도록 설정  
  마지막으로 `DeleteEntry` 및 `EditEntry` 단추를 사용하여, 사용자가 항목을 삭제 또는 수정하도록 설정하는 추가 기능을 포함할 수 있습니다. 항목이 표시되지 않으면 두 단추 모두 비활성화됩니다.  
@@ -145,9 +145,9 @@ ms.locfileid: "39332976"
   
      [!code-vb[VbVbcnMyFileSystem#47](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_13.vb)]  
   
- 코드를 테스트하려면 F5를 눌러 응용 프로그램을 컴파일합니다. **항목 가져오기**를 클릭하고 항목을 선택한 다음 **표시**를 클릭합니다. 항목이 `DisplayEntry`<xref:System.Windows.Forms.TextBox>에 나타납니다. **항목 편집**을 클릭합니다. 항목이 `Entry`<xref:System.Windows.Forms.TextBox>에 나타납니다. `Entry`<xref:System.Windows.Forms.TextBox>에서 항목을 편집하고 **편집 제출**을 클릭합니다. `MyDiary.txt` 파일을 열어 수정한 내용을 확인합니다. 이제 항목을 선택하고 **항목 삭제**를 클릭합니다. <xref:System.Windows.Forms.MessageBox>에 확인을 요청하는 메시지가 표시되면 **확인**을 클릭합니다. 응용 프로그램을 닫고 `MyDiary.txt`를 열어 삭제를 확인합니다.  
+ 코드를 테스트하려면 F5를 눌러 애플리케이션을 컴파일합니다. **항목 가져오기**를 클릭하고 항목을 선택한 다음 **표시**를 클릭합니다. 항목이 `DisplayEntry`<xref:System.Windows.Forms.TextBox>에 나타납니다. **항목 편집**을 클릭합니다. 항목이 `Entry`<xref:System.Windows.Forms.TextBox>에 나타납니다. `Entry`<xref:System.Windows.Forms.TextBox>에서 항목을 편집하고 **편집 제출**을 클릭합니다. `MyDiary.txt` 파일을 열어 수정한 내용을 확인합니다. 이제 항목을 선택하고 **항목 삭제**를 클릭합니다. <xref:System.Windows.Forms.MessageBox>에 확인을 요청하는 메시지가 표시되면 **확인**을 클릭합니다. 애플리케이션을 닫고 `MyDiary.txt`를 열어 삭제를 확인합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO.StreamReader>  
- <xref:System.IO.StreamWriter>  
- [연습](../../../../visual-basic/walkthroughs.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.IO.StreamReader>
+- <xref:System.IO.StreamWriter>
+- [연습](../../../../visual-basic/walkthroughs.md)

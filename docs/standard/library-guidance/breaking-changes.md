@@ -4,12 +4,12 @@ description: .NET 라이브러리를 만들 때 호환성이 손상되는 변경
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: e0e62cda1b7475cd5d1f8bcd3558dc2fe7f6e07c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a5cfd2dfb544b2e47a87bd0939990ae73e5eda9b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54564226"
 ---
 # <a name="breaking-changes"></a>호환성이 손상되는 변경
 
@@ -100,9 +100,9 @@ public class Document
 
 ## <a name="see-also"></a>참고 항목
 
-* [C# 개발자를 위한 버전 및 업데이트 고려 사항](../../csharp/whats-new/version-update-considerations.md)
-* [.NET에서의 API 주요 변경 내용에 대한 명확한 지침](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
-* [CoreFX 주요 변경 내용 규칙](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
+- [C# 개발자를 위한 버전 및 업데이트 고려 사항](../../csharp/whats-new/version-update-considerations.md)
+- [.NET에서의 API 주요 변경 내용에 대한 명확한 지침](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
+- [CoreFX 주요 변경 내용 규칙](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
 >[이전](versioning.md)

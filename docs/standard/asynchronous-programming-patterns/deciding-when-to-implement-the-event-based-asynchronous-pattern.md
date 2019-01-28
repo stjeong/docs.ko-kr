@@ -12,12 +12,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
-ms.openlocfilehash: af30f0d09ce772f20f342ec0936d0ca63f5465d7
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: acc732f72e9dae0796da78cdbb8ef4666ae9791a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46584226"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574432"
 ---
 # <a name="deciding-when-to-implement-the-event-based-asynchronous-pattern"></a>이벤트 기반 비동기 패턴 구현 시기 결정
 이벤트 기반 비동기 패턴은 클래스의 비동기 동작을 표시하기 위한 패턴을 제공합니다. 이 패턴의 도입에 따라 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]는 비동기 동작을 표시하기 위한 두 가지 패턴 즉, <xref:System.IAsyncResult?displayProperty=nameWithType> 인터페이스를 기반으로 하는 비동기 패턴 및 이벤트 기반 패턴을 정의합니다. 이 항목에서는 두 패턴을 모두 구현하는 것이 적절한 경우에 대해 설명합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "46584226"
   
 -   이벤트 기반 패턴을 기본 API로 사용하여 클래스의 비동기 동작을 표시합니다.  
   
--   클래스가 Windows Forms와 같은 클라이언트 응용 프로그램에서 주로 사용되는 경우 <xref:System.IAsyncResult> 패턴을 표시하지 않습니다.  
+-   클래스가 Windows Forms와 같은 클라이언트 애플리케이션에서 주로 사용되는 경우 <xref:System.IAsyncResult> 패턴을 표시하지 않습니다.  
   
 -   요구 사항을 충족하는 데 필요한 경우에만 <xref:System.IAsyncResult> 패턴을 표시합니다. 예를 들어 기존 API와의 호환성을 위해 <xref:System.IAsyncResult> 패턴을 표시해야 할 수 있습니다.  
   
@@ -82,8 +82,8 @@ ms.locfileid: "46584226"
   
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)  
-- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
-- [이벤트 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
-- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
+- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [이벤트 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)
+- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
 - [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)

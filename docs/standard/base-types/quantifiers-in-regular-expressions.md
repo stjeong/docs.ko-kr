@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4718dadddb2ad88ece05312b2f2b7232271d5b0e
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: b7ccee788a00e56da16d1e78597815553d3c6212
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678267"
 ---
 # <a name="quantifiers-in-regular-expressions"></a>정규식의 수량자
 수량자는 찾을 일치 항목의 입력에 있어야 하는 문자, 그룹 또는 문자 클래스의 인스턴스 수를 지정합니다.  다음 테이블에서는 .NET에서 지원하는 수량자를 보여 줍니다.  
@@ -273,5 +273,5 @@ ms.locfileid: "54221390"
   
 ## <a name="see-also"></a>참고 항목
 
-- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

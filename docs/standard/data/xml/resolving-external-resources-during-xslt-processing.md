@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 958699b8e3a00cfe3f8fd8ac4bb96914dcd0598c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 7f73edf5912f8158db51ed070da8816d5b988b8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44185128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555481"
 ---
 # <a name="resolving-external-resources-during-xslt-processing"></a>XSLT 처리 중 외부 리소스 확인
 다음과 같이 XSLT 변형 중에 외부 리소스를 확인해야 하는 몇 가지 경우가 있습니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "44185128"
   
 -   외부 리소스에 액세스하지 않도록 하려면 `null` 인수에 대해 <xref:System.Xml.XmlResolver>을 지정할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 네트워크 리소스에 저장된 스타일시트를 컴파일합니다. <xref:System.Xml.XmlUrlResolver> 개체는 스타일시트에 액세스하는 데 필요한 자격 증명을 지정합니다.  
   
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]
@@ -46,6 +46,6 @@ ms.locfileid: "44185128"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.Xsl.XslCompiledTransform>  
-- <xref:System.Xml.Xsl.XsltSettings>  
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- <xref:System.Xml.Xsl.XsltSettings>
 - [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)

@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b305158ac87f01044bae5455cea07ca3b3a2e491
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ae4dd9adbdad313afa53721e83d7b7d5212df91e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54564294"
 ---
 # <a name="creating-prototypes-in-managed-code"></a>관리 코드에서 프로토타입 만들기
 이 항목에서는 관리되지 않는 함수에 액세스하는 방법을 설명하고 관리 코드에서 메서드 정의에 주석을 다는 여러 특성 필드를 소개합니다. 플랫폼 호출에서 사용되는 .NET 기반 선언을 생성하는 방법을 보여 주는 예제는 [플랫폼 호출을 사용하여 데이터 마샬링](marshaling-data-with-platform-invoke.md)을 참조하세요.  
@@ -86,7 +86,7 @@ using namespace System::Runtime::InteropServices;
 |<xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>|이름 손상 및 문자열 인수가 함수로 마샬링되는 방법을 제어합니다. 기본값은 `CharSet.Ansi`입니다.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>|호출할 DLL 진입점을 지정합니다.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling>|문자 집합과 일치하도록 진입점을 수정해야 하는지를 제어합니다. 기본값은 프로프래밍 언어에 따라 달라집니다.|  
-|<xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>|HRESULT를 반환하고 반환 값에 대한 추가 [out, retval] 인수가 포함된 관리되지 않는 서명으로 관리되는 메서드 서명을 변환할지를 제어합니다.<br /><br /> 기본값은 `true`입니다(서명을 변환하지 않아야 함).|  
+|<xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>|HRESULT를 반환하고 반환 값에 대한 추가 [out, retval] 인수가 포함된 관리되지 않는 서명으로 관리되는 메서드 서명을 변환할지를 제어합니다.<br /><br /> 기본값은 `true`입니다(서명을 변형하지 않아야 함).|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError>|호출자가 `Marshal.GetLastWin32Error` API 함수를 사용하여 메서드를 실행하는 동안 오류가 발생했는지를 확인할 수 있도록 합니다. Visual Basic에서 기본값은 `true`이고, C# 및 C++에서 기본값은 `false`입니다.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.ThrowOnUnmappableChar>|ANSI "?" 문자로 변환되는 매핑할 수 없는 유니코드 문자에 대한 예외 throw를 제어합니다.|  
   
@@ -221,12 +221,12 @@ interface IDemandStubsItf
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [관리되지 않는 DLL 함수 사용](consuming-unmanaged-dll-functions.md)  
- [진입점 지정](specifying-an-entry-point.md)  
- [문자 집합 지정](specifying-a-character-set.md)  
- [플랫폼 호출 예제](platform-invoke-examples.md)  
- [플랫폼 호출 보안 고려 사항](https://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb(v=vs.100))  
- [DLL 함수 식별](identifying-functions-in-dlls.md)  
- [DLL 함수가 포함된 클래스 만들기](creating-a-class-to-hold-dll-functions.md)  
- [DLL 함수 호출](calling-a-dll-function.md)
+## <a name="see-also"></a>참고 항목
+- [관리되지 않는 DLL 함수 사용](consuming-unmanaged-dll-functions.md)
+- [진입점 지정](specifying-an-entry-point.md)
+- [문자 집합 지정](specifying-a-character-set.md)
+- [플랫폼 호출 예제](platform-invoke-examples.md)
+- [플랫폼 호출 보안 고려 사항](https://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb(v=vs.100))
+- [DLL 함수 식별](identifying-functions-in-dlls.md)
+- [DLL 함수가 포함된 클래스 만들기](creating-a-class-to-hold-dll-functions.md)
+- [DLL 함수 호출](calling-a-dll-function.md)

@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4e0d0a2a8d8c7fd75da7f2109619d588eac7b4a6
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 9c316ec79b519e1580f1d5dc7e122d770fb5b82e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583160"
 ---
 # <a name="xml-processing-options"></a>XML 처리 옵션
 XML 데이터를 처리하는 데 사용할 수 있는 Microsoft 기술 목록은 다음 표를 참조하세요.  
@@ -35,6 +35,6 @@ XML 데이터를 처리하는 데 사용할 수 있는 Microsoft 기술 목록�
   
 ## <a name="see-also"></a>참고 항목
 
-- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
-- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
 - [XSLT 컴파일러(xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)

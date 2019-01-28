@@ -6,12 +6,12 @@ helpviewer_keywords:
 - explicit interfaces [C#]
 - interfaces [C#], explicit
 ms.assetid: 181c901f-0d4c-4f29-97fc-895079617bf2
-ms.openlocfilehash: e985da878ca4160938f29911d4313ee6cd731aeb
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: c57ba732c5139d7ead85372323f9433bd3137622
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54570215"
 ---
 # <a name="explicit-interface-implementation-c-programming-guide"></a>명시적 인터페이스 구현(C# 프로그래밍 가이드)
 [클래스](../../../csharp/language-reference/keywords/class.md)가 시그니처가 동일한 멤버를 포함하는 두 인터페이스를 구현하는 경우, 해당 멤버를 클래스에 구현하면 양쪽 인터페이스 모두가 해당 멤버를 구현에 사용합니다. 다음 예제에서 `Paint`에 대한 모든 호출은 같은 메서드를 호출합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "53244832"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)
 - [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

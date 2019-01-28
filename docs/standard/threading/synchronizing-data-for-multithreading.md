@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1a7561a09b1b47827b3476b5525863503765064f
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: cb44fad991c8184686fcda90878bae2ec53260c5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842660"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54617917"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>다중 스레딩을 위한 데이터 동기화
 다중 스레드가 단일 개체의 속성 및 메서드에 대한 호출을 할 수 있는 경우 해당 호출을 동기화하는 것은 중요합니다. 그렇지 않으면 하나의 스레드는 다른 스레드가 수행하는 작업을 중단시킬 수 있으며 개체는 잘못된 상태로 남을 수 있습니다. 멤버가 그러한 중단으로부터 보호되는 클래스를 스레드로부터 안전하다고 합니다.  
@@ -69,8 +69,8 @@ ms.locfileid: "48842660"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
-- [스레드 및 스레딩](../../../docs/standard/threading/threads-and-threading.md)  
-- [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
-- [SyncLock 문](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
+- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>
+- [스레드 및 스레딩](../../../docs/standard/threading/threads-and-threading.md)
+- [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
+- [SyncLock 문](~/docs/visual-basic/language-reference/statements/synclock-statement.md)
 - [lock 문](~/docs/csharp/language-reference/keywords/lock-statement.md)

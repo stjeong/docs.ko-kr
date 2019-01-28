@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - file I/O classes
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-ms.openlocfilehash: 4c13b482ddbb3c1c109ca8dfe36ed76a2025d61a
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 9e84ac90054e4ac3d32bb436fc0756248e84fcd0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39333041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705325"
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>.NET Framework 파일 I/O 및 파일 시스템에 사용되는 클래스(Visual Basic)
 다음 표에는 .NET Framework 파일 I/O에 공통적으로 사용되고 파일 I/O 클래스로 범주화되는 클래스, 스트림을 만드는 데 사용되는 클래스 및 스트림을 읽고 스트림에 쓰는 데 사용되는 클래스가 나와 있습니다.  
@@ -56,8 +56,8 @@ ms.locfileid: "39333041"
 |<xref:System.IO.StringReader?displayProperty=nameWithType>|`String`에서 문자를 읽습니다. 출력은 인코딩의 스트림 또는 `String` 중 하나일 수 있습니다.|  
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|`String`에 문자를 씁니다. 출력은 인코딩의 스트림 또는 `String` 중 하나일 수 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [스트림 작성](../../../../standard/io/composing-streams.md)  
- [파일 및 스트림 I/O](../../../../standard/io/index.md)  
- [비동기 파일 I/O](../../../../standard/io/asynchronous-file-i-o.md)  
- [.NET Framework 파일 I/O 및 파일 시스템의 기본 사항(Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)
+## <a name="see-also"></a>참고 항목
+- [스트림 작성](../../../../standard/io/composing-streams.md)
+- [파일 및 스트림 I/O](../../../../standard/io/index.md)
+- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)
+- [.NET Framework 파일 I/O 및 파일 시스템의 기본 사항(Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)

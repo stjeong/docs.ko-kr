@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], vs. C++ templates
 ms.assetid: 1da6beeb-d4a4-4da0-87b7-0cfbe04920b7
-ms.openlocfilehash: 0dd06aead738bb5ea1dcee7e7dade99be80582b6
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 1bf3eb97d633322f6bd04f8e975ae3fc8ec54329
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651810"
 ---
 # <a name="differences-between-c-templates-and-c-generics-c-programming-guide"></a>C++ 템플릿과 C# 제네릭의 차이점(C# 프로그래밍 가이드)
 C# 제네릭 및 C++ 템플릿은 둘 다 매개 변수가 있는 형식을 지원하는 언어 기능입니다. 그러나 둘 사이에는 많은 차이가 있습니다. 구문 수준에서 C# 제네릭은 매개 변수가 있는 형식에 대한 더 간단한 접근 방식으로, C++ 템플릿의 복잡함이 없습니다. 또한 C#은 C++ 템플릿에서 제공하는 기능 중 일부를 제공하지 않습니다. 구현 수준에서 주요 차이점은 런타임에 C# 제네릭 형식 대체가 수행되어 인스턴스화된 개체에 대해 제네릭 형식 정보가 유지된다는 점입니다. 자세한 내용은 [런타임의 제네릭](../../../csharp/programming-guide/generics/generics-in-the-run-time.md)을 참조하세요.  
@@ -35,6 +35,6 @@ C# 제네릭 및 C++ 템플릿은 둘 다 매개 변수가 있는 형식을 지�
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)
 - [템플릿](/cpp/cpp/templates-cpp)

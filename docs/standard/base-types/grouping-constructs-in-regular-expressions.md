@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4e6a0b0a6fbad1c01ed26b5090cd18dcce3be057
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 2aa7c35ebc06fb67d9cf6216233d2bed65ae76ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645901"
 ---
 # <a name="grouping-constructs-in-regular-expressions"></a>정규식의 교체 그룹화 구문
 그룹화 구문은 정규식의 하위 식을 나타내며 입력 문자열의 부분 문자열을 캡처합니다. 그룹화 구문은 다음과 같은 경우에 사용할 수 있습니다.  
@@ -452,7 +452,7 @@ ms.locfileid: "44041602"
   
 -   최종 <xref:System.Text.RegularExpressions.Group> 개체 집합은 명명된 캡처링 그룹을 나타냅니다. 이러한 그룹은 정규식에서 정의된 순서로 왼쪽에서 오른쪽으로 나타납니다. 명명된 첫 번째 캡처링 그룹의 인덱스 값은 명명되지 않은 마지막 캡처링 그룹의 인덱스보다 1 큽니다. 정규식에 명명되지 않은 캡처링 그룹이 없는 경우 명명된 첫 번째 캡처링 그룹의 인덱스 값은 1입니다.  
   
- 캡처링 그룹에 수량자를 적용하는 경우 해당 <xref:System.Text.RegularExpressions.Group> 개체의 <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.Capture.Index%2A?displayProperty=nameWithType> 및 <xref:System.Text.RegularExpressions.Capture.Length%2A?displayProperty=nameWithType> 속성은 캡처링 그룹에 의해 캡처된 마지막 부분 문자열을 반영합니다. <xref:System.Text.RegularExpressions.CaptureCollection> 속성에서 반환하는 <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> 개체의 수량자를 포함하는 그룹에 의해 캡처된 부분 문자열의 전체 집합을 검색할 수 있습니다.  
+ 캡처링 그룹에 수량자를 적용하는 경우 해당 <xref:System.Text.RegularExpressions.Group> 개체의 <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.Capture.Index%2A?displayProperty=nameWithType>및 <xref:System.Text.RegularExpressions.Capture.Length%2A?displayProperty=nameWithType> 속성은 캡처링 그룹에 의해 캡처된 마지막 부분 문자열을 반영합니다. <xref:System.Text.RegularExpressions.CaptureCollection> 속성에서 반환하는 <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> 개체의 수량자를 포함하는 그룹에 의해 캡처된 부분 문자열의 전체 집합을 검색할 수 있습니다.  
   
  다음 예제에서는 <xref:System.Text.RegularExpressions.Group> 개체와 <xref:System.Text.RegularExpressions.Capture> 개체 간의 관계를 명확하게 보여 줍니다.  
   
@@ -472,5 +472,5 @@ ms.locfileid: "44041602"
   
 ## <a name="see-also"></a>참고 항목
 
-- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

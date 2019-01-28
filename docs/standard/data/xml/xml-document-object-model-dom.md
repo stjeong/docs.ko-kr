@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: b5e52844-4820-47c0-a61d-de2da33e9f54
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b98aa5b62718a2ff19cb50a09de1a0ddf55ddb91
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 2b3a2432deb1e956060ab3615db01821658f8782
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54508681"
 ---
 # <a name="xml-document-object-model-dom"></a>XML DOM(문서 개체 모델)
 XML DOM(문서 개체 모델) 클래스는 XML 문서의 메모리 내 표현입니다. DOM을 사용하여 XML 문서를 프로그래밍 방식으로 읽고, 조작하고, 수정할 수 있습니다. **XmlReader** 클래스로도 XML을 읽을 수는 있지만, 이 클래스는 캐시되지 않은 정방향 전용 및 읽기 전용 액세스를 제공합니다. 따라서 **XmlReader**로는 특성 값이나 요소의 내용을 편집할 수 없으며, 노드를 삽입하고 제거할 수도 없습니다. 편집은 DOM의 기본 기능입니다. 실제 XML 데이터는 파일에 저장될 때나 다른 개체에서 읽어 올 때 순차적인 방식으로 저장되지만 XML 데이터를 메모리에 표현하는 것은 일반적이고 구조적인 방식으로 수행됩니다. 다음은 XML 데이터입니다.  
@@ -78,5 +78,5 @@ XML 문서 구조
   
 ## <a name="see-also"></a>참고 항목
 
-- [XML 노드 형식](../../../../docs/standard/data/xml/types-of-xml-nodes.md)  
+- [XML 노드 형식](../../../../docs/standard/data/xml/types-of-xml-nodes.md)
 - [XML 데이터에 개체 계층 구조 매핑](../../../../docs/standard/data/xml/mapping-the-object-hierarchy-to-xml-data.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dfb73f6637be96d7994a808b8d9a2c77c2896838
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: f39f793d3d0a2cf815028ccdb49253c46dac2ec4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631310"
 ---
 # <a name="tlbimpexe-type-library-importer"></a>Tlbimp.exe(형식 라이브러리 가져오기)
 형식 라이브러리 가져오기 도구는 COM 형식 라이브러리에 있는 형식 정의를 공용 언어 런타임 어셈블리의 동등한 정의로 변환합니다. Tlbimp.exe의 출력은 원본 형식 라이브러리에 정의된 형식의 런타임 메타데이터를 포함하는 이진 파일(어셈블리)입니다. [Ildasm.exe](ildasm-exe-il-disassembler.md)와 같은 도구를 사용하여 이 파일을 검토할 수 있습니다.  
@@ -125,13 +125,13 @@ bool SomeMethod();
 void SomeMethod(out bool x);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [도구](index.md)  
- [Tlbexp.exe(형식 라이브러리 내보내기)](tlbexp-exe-type-library-exporter.md)  
- [형식 라이브러리를 어셈블리로 가져오기](../interop/importing-a-type-library-as-an-assembly.md)  
- [형식 라이브러리를 어셈블리로 변환 요약](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
- [Ildasm.exe(IL 디스어셈블러)](ildasm-exe-il-disassembler.md)  
- [Sn.exe(강력한 이름 도구)](sn-exe-strong-name-tool.md)  
- [강력한 이름의 어셈블리](../app-domains/strong-named-assemblies.md)  
- [Interop 어셈블리로 형식 라이브러리를 가져오는 특성](https://msdn.microsoft.com/library/81e587b8-393f-43e1-9add-c4b05e65cbfd(v=vs.100))  
- [명령 프롬프트](developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- [도구](index.md)
+- [Tlbexp.exe(형식 라이브러리 내보내기)](tlbexp-exe-type-library-exporter.md)
+- [형식 라이브러리를 어셈블리로 가져오기](../interop/importing-a-type-library-as-an-assembly.md)
+- [형식 라이브러리를 어셈블리로 변환 요약](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))
+- [Ildasm.exe(IL 디스어셈블러)](ildasm-exe-il-disassembler.md)
+- [Sn.exe(강력한 이름 도구)](sn-exe-strong-name-tool.md)
+- [강력한 이름의 어셈블리](../app-domains/strong-named-assemblies.md)
+- [Interop 어셈블리로 형식 라이브러리를 가져오는 특성](https://msdn.microsoft.com/library/81e587b8-393f-43e1-9add-c4b05e65cbfd(v=vs.100))
+- [명령 프롬프트](developer-command-prompt-for-vs.md)

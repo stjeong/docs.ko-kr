@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.openlocfilehash: 393d755276e281e923dfe3e52b5d3e9afdae38dd
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7aa2bcdad9584ecf05dfee35e0887ed70737795d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492835"
 ---
 # <a name="async-in-depth"></a>비동기에 대한 자세한 설명
 
@@ -28,7 +28,7 @@ ms.locfileid: "50183713"
 
 태스크는 태스크의 결과 값(`Task<T>`의 경우)을 모니터링, 대기 및 액세스하기 위한 API 프로토콜을 표시합니다. `await` 키워드가 있는 언어 통합에서는 태스크 사용을 위한 상위 수준 추상화를 제공합니다. 
 
-`await`를 사용하면 태스크가 완료될 때까지 해당 호출자에게 제어가 양도되므로 태스크가 실행되는 동안 응용 프로그램 또는 서비스에서 유용한 작업을 수행할 수 있습니다. 태스크가 완료된 후에는 코드에서 콜백 또는 이벤트를 사용하여 실행을 계속할 필요가 없습니다. 언어 및 태스크 API 통합에서 해당 작업을 자동으로 수행합니다. `Task<T>`를 사용하는 경우 `await` 키워드는 작업이 완료될 때 반환되는 값을 추가로 “래핑 해제”합니다.  작동 방식에 대한 자세한 내용은 아래에서 자세히 설명합니다.
+`await`를 사용하면 태스크가 완료될 때까지 해당 호출자에게 제어가 양도되므로 태스크가 실행되는 동안 애플리케이션 또는 서비스에서 유용한 작업을 수행할 수 있습니다. 태스크가 완료된 후에는 코드에서 콜백 또는 이벤트를 사용하여 실행을 계속할 필요가 없습니다. 언어 및 태스크 API 통합에서 해당 작업을 자동으로 수행합니다. `Task<T>`를 사용하는 경우 `await` 키워드는 작업이 완료될 때 반환되는 값을 추가로 “래핑 해제”합니다.  작동 방식에 대한 자세한 내용은 아래에서 자세히 설명합니다.
 
 [TAP(작업 기반 비동기 패턴)](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) 항목에서 작업 및 작업을 조작하는 다양한 방법에 대해 자세히 알아볼 수 있습니다.
 
@@ -146,7 +146,7 @@ public async Task<int> CalculateResult(InputData data)
 
 ## <a name="see-also"></a>참고 항목
 
-* [C#의 비동기 프로그래밍](~/docs/csharp/async.md)   
-* [async 및 await를 사용한 비동기 프로그래밍(C#)](../csharp/programming-guide/concepts/async/index.md)  
-* [F#의 비동기 프로그래밍](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
-* [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [C#의 비동기 프로그래밍](~/docs/csharp/async.md)
+- [async 및 await를 사용한 비동기 프로그래밍(C#)](../csharp/programming-guide/concepts/async/index.md)
+- [F#의 비동기 프로그래밍](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

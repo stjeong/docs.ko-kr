@@ -1,5 +1,5 @@
 ---
-title: 지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법
+title: 지역화 대비 애플리케이션 개발을 위한 최선의 구현 방법
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 35b8e062c9f207eba19bcee5593425095de2e267
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 465d5e8f37be3dad0d548387f9928a9f79fcebf6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565789"
 ---
-# <a name="best-practices-for-developing-world-ready-applications"></a>지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법
+# <a name="best-practices-for-developing-world-ready-applications"></a>지역화 대비 애플리케이션 개발을 위한 최선의 구현 방법
 이 단원에서는 지역화 대비 응용 프로그램을 개발할 때 따라야 할 최선의 구현 방법을 소개합니다.  
   
 ## <a name="globalization-best-practices"></a>최상의 전역화 방법  
@@ -74,7 +74,7 @@ ms.locfileid: "44041472"
   
 10. 전문적인 지역화(번역) 작업을 준비합니다.  
   
-11. 리소스 만들기 및 지역화에 대한 자세한 설명을 보려면 [응용 프로그램의 리소스](../../../docs/framework/resources/index.md)를 참조하세요.  
+11. 리소스 만들기 및 지역화에 대한 자세한 설명을 보려면 [애플리케이션의 리소스](../../../docs/framework/resources/index.md)를 참조하세요.  
   
 ## <a name="globalization-best-practices-for-aspnet-applications"></a>ASP.NET 응용 프로그램을 위한 최상의 전역화 방법  
   
@@ -102,5 +102,5 @@ ms.locfileid: "44041472"
   
 ## <a name="see-also"></a>참고 항목
 
-- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)
 - [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)

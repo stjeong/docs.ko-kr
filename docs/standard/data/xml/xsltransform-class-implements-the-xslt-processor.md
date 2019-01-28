@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 81d0ce4f697935908b8ad7084560bd1adacbdf2d
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: cd4ce0975fa071ee193e2b467bcc73f51462f5e5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "47863498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569610"
 ---
 # <a name="xsltransform-class-implements-the-xslt-processor"></a>XslTransform 클래스의 XSLT 프로세서 구현
 > [!NOTE]
@@ -104,7 +104,7 @@ public void Load(XPathNavigator, XmlResolver, Evidence);
   
 -   XSLT 스타일시트를 외부 소스에서 가져옵니다. 소스의 원본을 알 수 없습니다.  
   
-    -   증명 정보를 `null`로 설정합니다. 스크립트 블록이 처리되지 않고, XSLT `document()` 함수가 지원되지 않으며, 권한 있는 확장명 개체는 사용할 수 없습니다.  
+    -   증명 정보를 `null`로 설정합니다. 스크립트 블록이 처리되지 않고, XSLT `document()` 함수가 지원되지 않으며, 권한 있는 확장 개체는 사용할 수 없습니다.  
   
          또한 `resolver` 매개 변수를 `null`로 설정할 수 있습니다. 이렇게 하면 `xsl:import` 및 `xsl:include` 요소가 처리되지 않습니다.  
   
@@ -140,7 +140,7 @@ xsltransform.Transform("MyDocument.xml", "TransformResult.xml", null);
 ```  
   
 ## <a name="transforming-a-section-of-an-xml-document"></a>XML 문서의 섹션 변형  
- 변형은 문서 전체에 적용됩니다. 즉, 문서 루트 노드 이외의 노드에 전달해도 변환 프로세스에서 로드된 문서의 모든 노드에 액세스할 수 있습니다. 결과 트리 조각을 변환하려면 결과 트리 조각만 들어 있는 <xref:System.Xml.XmlDocument>를 만든 후 해당 <xref:System.Xml.XmlDocument>를 <xref:System.Xml.Xsl.XslTransform.Transform%2A> 메서드에 전달해야 합니다. 다음 예제에서는 결과 트리 조각에 대해 변형을 수행합니다.  
+ 변환은 문서 전체에 적용됩니다. 즉, 문서 루트 노드 이외의 노드에 전달해도 변환 프로세스에서 로드된 문서의 모든 노드에 액세스할 수 있습니다. 결과 트리 조각을 변환하려면 결과 트리 조각만 들어 있는 <xref:System.Xml.XmlDocument>를 만든 후 해당 <xref:System.Xml.XmlDocument>를 <xref:System.Xml.Xsl.XslTransform.Transform%2A> 메서드에 전달해야 합니다. 다음 예제에서는 결과 트리 조각에 대해 변형을 수행합니다.  
   
 ```vb  
 Dim xslt As New XslTransform()  
@@ -230,10 +230,10 @@ Root node is book.
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.Xsl.XslTransform>  
-- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
-- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
-- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
-- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
-- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
+- <xref:System.Xml.Xsl.XslTransform>
+- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)
+- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)
+- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)
+- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)
+- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)
 - [XslTransform에 대한 XmlDocument 입력](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)

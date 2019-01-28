@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7f086c5b6bf1d45f3f711112c618e2398c3a39ed
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 915ffcba4ad0dc361e3a3c392adc6215d2420a85
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592629"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe(네이티브 이미지 생성기)
 네이티브 이미지 생성기(Ngen.exe)는 관리되는 애플리케이션의 성능을 향상시키는 도구입니다. Ngen.exe는 컴파일된 프로세서별 컴퓨터 코드가 포함된 파일인 네이티브 이미지를 만들어서 로컬 컴퓨터의 네이티브 이미지 캐시에 설치합니다. 런타임은 JIT(Just-In-Time) 컴파일러를 사용하지 않고 캐시의 네이티브 이미지를 사용하여 원본 어셈블리를 컴파일할 수 있습니다.  
@@ -584,10 +584,10 @@ ngen executeQueuedItems
 ### <a name="service-interaction-with-clients"></a>클라이언트와 서비스의 상호 작용  
  .NET Framework 버전 2.0에서 네이티브 이미지 서비스와의 유일한 상호 작용은 명령줄 도구 Ngen.exe를 통해 수행됩니다. 설치 스크립트의 명령줄 도구를 사용하여 네이티브 이미지 서비스에 대한 작업을 큐에 대기시키고 서비스와 상호 작용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [도구](../../../docs/framework/tools/index.md)  
- [관리되는 실행 프로세스](../../../docs/standard/managed-execution-process.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- [도구](../../../docs/framework/tools/index.md)
+- [관리되는 실행 프로세스](../../../docs/standard/managed-execution-process.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
 
 [Native Image Service]: #native-image-service

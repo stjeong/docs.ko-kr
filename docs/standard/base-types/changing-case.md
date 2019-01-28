@@ -17,15 +17,15 @@ ms.assetid: 6805f81b-e9ad-4387-9f4c-b9bdb21b87c0
 author: rpetrusha
 ms.author: ronpet
 ms.custom: seodec18
-ms.openlocfilehash: 480e9a3f7d32bb891b54c7d2529affb45368545b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ce495ce01c970fb46cc7e7e374994fd34a7730a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648974"
 ---
 # <a name="changing-case-in-net"></a>.NET에서 대/소문자 바꾸기
-사용자 입력을 수락하는 응용 프로그램을 작성하는 경우 데이터를 입력할 때 사용하는 대/소문자를 확신할 수 없습니다. 특히 사용자 인터페이스에 표시하는 경우 문자열의 대/소문자를 일관되게 표시하려는 경우가 많습니다. 다음 표에서는 세 가지 대/소문자 변경 메서드를 설명합니다. 처음 두 메서드는 문화권을 수락하는 오버로드를 제공합니다.  
+사용자 입력을 수락하는 애플리케이션을 작성하는 경우 데이터를 입력할 때 사용하는 대/소문자를 확신할 수 없습니다. 특히 사용자 인터페이스에 표시하는 경우 문자열의 대/소문자를 일관되게 표시하려는 경우가 많습니다. 다음 표에서는 세 가지 대/소문자 변경 메서드를 설명합니다. 처음 두 메서드는 문화권을 수락하는 오버로드를 제공합니다.  
   
 |메서드 이름|사용|  
 |-----------------|---------|  
@@ -74,5 +74,5 @@ ms.locfileid: "53128650"
   
 ## <a name="see-also"></a>참고 항목
 
-- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
+- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)
 - [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

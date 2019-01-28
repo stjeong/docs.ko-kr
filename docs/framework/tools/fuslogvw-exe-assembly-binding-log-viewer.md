@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 17e8e00afd759a3408ca54930c15d0b8797ff947
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 57f62f6d03a95860e06e0a457884dd30d186643a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574159"
 ---
 # <a name="fuslogvwexe-assembly-binding-log-viewer"></a>Fuslogvw.exe(어셈블리 바인딩 로그 뷰어)
 어셈블리 바인딩 로그 뷰어는 어셈블리 바인딩에 대한 자세한 내용을 표시합니다. 이 정보를 검토하면 .NET Framework에서 런타임에 어셈블리를 찾지 못하는 이유를 진단할 수 있습니다. 이러한 오류는 일반적으로 어셈블리가 잘못된 위치에 배포되었거나 네이티브 이미지가 더 이상 유효하지 않거나 버전 번호 또는 문화권이 일치하지 않기 때문에 일어납니다. 공용 언어 런타임의 어셈블리 찾기 오류는 일반적으로 애플리케이션에서 <xref:System.TypeLoadException>으로 나타납니다.  
@@ -228,9 +228,9 @@ Discarding native image.
     > [!NOTE]
     >  Windows 8 이상에서만 상자가 활성화됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.TypeLoadException>  
- [도구](../../../docs/framework/tools/index.md)  
- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.TypeLoadException>
+- [도구](../../../docs/framework/tools/index.md)
+- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

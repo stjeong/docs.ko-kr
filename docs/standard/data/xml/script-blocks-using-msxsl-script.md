@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c4d7dee9ebaed20970f715026661c29aae701289
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: b45b8ebe048a5917019349ea3a6a357b7e90a9c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45970632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565646"
 ---
 # <a name="script-blocks-using-msxslscript"></a>msxsl:script를 사용하는 스크립트 블록
 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 `msxsl:script` 요소를 사용하여 포함 스크립트를 지원합니다. 스타일시트가 로드될 때 정의된 모든 함수는 CodeDOM(코드 문서 개체 모델)에 의해 MSIL(Microsoft Intermediate Language)로 컴파일되며 런타임 동안 실행됩니다. 포함된 스크립트 블록에서 생성된 어셈블리는 스타일시트에 대해 생성된 어셈블리와는 다릅니다.  
@@ -121,7 +121,7 @@ ms.locfileid: "45970632"
 </msxsl:script>  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 포함 스크립트를 사용하여 주어진 반지름으로 원의 원주를 계산합니다.  
   
  [!code-csharp[XSLT_Script#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XSLT_Script/CS/xslt_script.cs#1)]
@@ -150,5 +150,5 @@ ms.locfileid: "45970632"
   
 ## <a name="see-also"></a>참고 항목
 
-- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [동적 소스 코드 생성 및 컴파일](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)

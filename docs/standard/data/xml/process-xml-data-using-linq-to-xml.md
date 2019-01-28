@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 059d6b9d-63f7-4011-9ba8-8406f0bbae7d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8d24f379bcfdb494369b84173cad4daa800fb7a9
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 634c76c3510d594584f06ea14bed84b1b0423c31
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502180"
 ---
 # <a name="process-xml-data-using-linq-to-xml"></a>LINQ to XML을 사용하여 XML 데이터 처리
 LINQ to XML은 XML 데이터를 처리하기 위한 .NET Framework 버전 3.5의 새 모델입니다. LINQ to XML을 사용하여 XML 문서 쿼리, 수정, 작성, 저장, serialize 등 XML 데이터에 대한 모든 작업을 수행할 수 있습니다. 이 가운데 가장 실질적인 장점은 쿼리 및 작성 기능입니다.  
@@ -23,7 +23,7 @@ LINQ to XML은 XML 데이터를 처리하기 위한 .NET Framework 버전 3.5의
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.Linq>  
-- <xref:System.Linq>  
-- [LINQ to XML과 DOM 비교](https://msdn.microsoft.com/library/19b5ed02-feb2-455a-8897-f7f0fd76aca3)  
+- <xref:System.Xml.Linq>
+- <xref:System.Linq>
+- [LINQ to XML과 DOM 비교](https://msdn.microsoft.com/library/19b5ed02-feb2-455a-8897-f7f0fd76aca3)
 - [LINQ to XML과 기타 XML 기술 비교](https://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)

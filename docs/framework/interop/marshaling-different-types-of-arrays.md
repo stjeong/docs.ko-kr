@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b0c71284fbc925aa9bb10a8bf68cef581f78d7f4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d3e56faad9e65cff6037f11b332d7b0df52a79fc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50088756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589547"
 ---
 # <a name="marshaling-different-types-of-arrays"></a>여러 형식의 배열 마샬링
 배열은 동일한 형식의 요소를 하나 이상 포함하는 관리 코드의 참조 형식입니다. 배열은 참조 형식이지만 관리되지 않는 함수에 In 매개 변수로 전달됩니다. 이 동작은 관리되는 배열이 관리되는 개체에 전달되는 방식(In/Out 매개 변수로)과 일치하지 않습니다. 자세한 내용은 [복사 및 고정](copying-and-pinning.md)을 참조하세요.  
@@ -31,7 +31,7 @@ ms.locfileid: "50088756"
 |정수를 포함하는 구조체.|정수를 포함하는 구조체 배열을 In 매개 변수로 전달합니다.|  
 |문자열을 포함하는 구조체.|정수만 포함하는 구조체 배열을 In/Out 매개 변수로 전달합니다. 배열의 멤버를 변경할 수 있습니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 샘플에서는 다음 형식의 배열을 전달하는 방법을 보여 줍니다.  
   
 -   값 형식 정수 배열  
@@ -114,7 +114,7 @@ typedef struct _MYPERSON
  [!code-csharp[Conceptual.Interop.Marshaling#32](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#32)]
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   
-## <a name="see-also"></a>참고 항목  
- [형식 배열 마샬링](https://msdn.microsoft.com/library/049b1c1b-228f-4445-88ec-91bc7fd4b1e8(v=vs.100))  
- [플랫폼 호출 데이터 형식](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))  
- [관리 코드에서 프로토타입 만들기](creating-prototypes-in-managed-code.md)
+## <a name="see-also"></a>참고 항목
+- [형식 배열 마샬링](https://msdn.microsoft.com/library/049b1c1b-228f-4445-88ec-91bc7fd4b1e8(v=vs.100))
+- [플랫폼 호출 데이터 형식](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))
+- [관리 코드에서 프로토타입 만들기](creating-prototypes-in-managed-code.md)

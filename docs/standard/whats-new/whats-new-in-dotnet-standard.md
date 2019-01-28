@@ -6,12 +6,12 @@ ms.date: 04/12/2018
 ms.technology: dotnet-standard
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 19353bd068e3b04bc3d852c1e22db9c97ebef628
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 56f75e282e1b28f09eacd19f2da6293fd4e3ab7b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54628203"
 ---
 # <a name="whats-new-in-the-net-standard"></a>.NET Standard의 새로운 기능
 
@@ -37,7 +37,7 @@ ms.locfileid: "48583167"
 
 ### <a name="a-vastly-expanded-set-of-apis"></a>매우 폭넓은 API 집합
 
-버전 1.6을 통해 .NET Standard에는 비교적 작은 API 하위 집합이 포함되었습니다. 이들 중 .NET Framework 또는 Xamarin에서 일반적으로 사용된 많은 API가 제외되었습니다. 이로 인해 개발이 복잡해집니다. 개발자들이 여러 .NET 구현을 대상으로 하는 응용 프로그램과 라이브러리를 개발할 때 친숙한 API에 대한 적합한 대체 API를 찾아야 하기 때문입니다. .NET Standard 2.0은 이전 Standard 버전인 .NET Standard 1.6에서 제공된 것보다 20,000개 더 많은 API를 추가하여 이 제한 사항을 해결합니다. .NET Standard 2.0에 추가된 API의 목록은 [.NET Standard 2.0 및 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md)을 참조하세요.
+버전 1.6을 통해 .NET Standard에는 비교적 작은 API 하위 집합이 포함되었습니다. 이들 중 .NET Framework 또는 Xamarin에서 일반적으로 사용된 많은 API가 제외되었습니다. 이로 인해 개발이 복잡해집니다. 개발자들이 여러 .NET 구현을 대상으로 하는 애플리케이션과 라이브러리를 개발할 때 친숙한 API에 대한 적합한 대체 API를 찾아야 하기 때문입니다. .NET Standard 2.0은 이전 Standard 버전인 .NET Standard 1.6에서 제공된 것보다 20,000개 더 많은 API를 추가하여 이 제한 사항을 해결합니다. .NET Standard 2.0에 추가된 API의 목록은 [.NET Standard 2.0 및 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md)을 참조하세요.
 
 .NET Standard 2.0에서 <xref:System> 네임스페이스에 대한 일부 추가 기능은 다음과 같습니다.
 
@@ -93,5 +93,5 @@ dotnet new classlib -lang vb
 
 ## <a name="see-also"></a>참고 항목
 
-- [.NET Standard](../net-standard.md)  
+- [.NET Standard](../net-standard.md)
 - [.NET Standard 소개](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)

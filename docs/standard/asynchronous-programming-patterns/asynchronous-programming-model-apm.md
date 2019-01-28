@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3a1921f1a0f0e724bfc8d8289ac1b654cc8198d2
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: cff235fe45c75fda51e04d5b0b54bb3ee03051b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654310"
 ---
 # <a name="asynchronous-programming-model-apm"></a>APM(비동기 프로그래밍 모델)
 <xref:System.IAsyncResult> 디자인 패턴을 사용하는 비동기 작업은 각각 비동기 작업 *OperationName*을 시작하고 종료하는 `BeginOperationName` 및 `EndOperationName`이라는 두 개의 메서드로 구현됩니다. 예를 들어 <xref:System.IO.FileStream> 클래스는 파일에서 바이트를 비동기적으로 읽는 <xref:System.IO.FileStream.BeginRead%2A> 및 <xref:System.IO.FileStream.EndRead%2A> 메서드를 제공합니다. 이러한 메서드는 비동기 버전의 <xref:System.IO.FileStream.Read%2A> 메서드를 구현합니다.  
@@ -33,12 +33,12 @@ ms.locfileid: "53152385"
   
 |멤버|설명|  
 |------------|-----------------|  
-|<xref:System.IAsyncResult.AsyncState%2A>|비동기 작업에 대한 정보를 포함하는 응용 프로그램별 선택적 개체입니다.|  
-|<xref:System.IAsyncResult.AsyncWaitHandle%2A>|비동기 작업이 완료될 때까지 응용 프로그램 실행을 차단하기 위해 사용할 수 있는 <xref:System.Threading.WaitHandle> 입니다.|  
+|<xref:System.IAsyncResult.AsyncState%2A>|비동기 작업에 대한 정보를 포함하는 애플리케이션별 선택적 개체입니다.|  
+|<xref:System.IAsyncResult.AsyncWaitHandle%2A>|비동기 작업이 완료될 때까지 애플리케이션 실행을 차단하기 위해 사용할 수 있는 <xref:System.Threading.WaitHandle> 입니다.|  
 |<xref:System.IAsyncResult.CompletedSynchronously%2A>|비동기 작업이 별도의 <xref:System.Threading.ThreadPool> 스레드에서 완료되는 대신 `BeginOperationName`을 호출하는 데 사용된 스레드에서 완료되었는지 여부를 나타내는 값입니다.|  
 |<xref:System.IAsyncResult.IsCompleted%2A>|비동기 작업이 완료되었는지 여부를 나타내는 값입니다.|  
   
- `BeginOperationName` 메서드에는 값 또는 참조로 전달되는 동기 버전의 메서드 시그니처에 선언된 매개 변수가 사용됩니다. out 매개 변수는 `BeginOperationName` 메서드 시그니처의 일부가 아닙니다. `BeginOperationName` 메서드 시그니처에는 두 개의 추가 매개 변수도 포함되어 있습니다. 그중 첫 번째 매개 변수는 비동기 작업이 완료될 때 호출되는 메서드를 참조하는 <xref:System.AsyncCallback> 대리자를 정의합니다. 호출자는 작업이 완료될 때 호출되는 메서드를 원하지 않는 경우 `null`(Visual Basic에서는 `Nothing`)을 지정할 수 있습니다. 두 번째 추가 매개 변수는 사용자 정의 개체입니다. 이 개체를 사용하여 비동기 작업이 완료될 때 호출되는 메서드로 응용 프로그램별 상태 정보를 전달할 수 있습니다. 파일에서 읽은 바이트를 저장하는 바이트 배열과 같이 `BeginOperationName` 메서드에서 작업 관련 추가 매개 변수를 사용하는 경우 <xref:System.AsyncCallback> 및 애플리케이션 상태 개체는 `BeginOperationName` 메서드 시그니처의 마지막 매개 변수가 됩니다.  
+ `BeginOperationName` 메서드에는 값 또는 참조로 전달되는 동기 버전의 메서드 시그니처에 선언된 매개 변수가 사용됩니다. out 매개 변수는 `BeginOperationName` 메서드 시그니처의 일부가 아닙니다. `BeginOperationName` 메서드 시그니처에는 두 개의 추가 매개 변수도 포함되어 있습니다. 그중 첫 번째 매개 변수는 비동기 작업이 완료될 때 호출되는 메서드를 참조하는 <xref:System.AsyncCallback> 대리자를 정의합니다. 호출자는 작업이 완료될 때 호출되는 메서드를 원하지 않는 경우 `null` (Visual Basic에서는`Nothing` )을 지정할 수 있습니다. 두 번째 추가 매개 변수는 사용자 정의 개체입니다. 이 개체를 사용하여 비동기 작업이 완료될 때 호출되는 메서드로 애플리케이션별 상태 정보를 전달할 수 있습니다. 파일에서 읽은 바이트를 저장하는 바이트 배열과 같이 `BeginOperationName` 메서드에서 작업 관련 추가 매개 변수를 사용하는 경우 <xref:System.AsyncCallback> 및 애플리케이션 상태 개체는 `BeginOperationName` 메서드 시그니처의 마지막 매개 변수가 됩니다.  
   
  `BeginOperationName`은 호출 스레드에 대한 컨트롤을 즉시 반환합니다. `BeginOperationName` 메서드가 예외를 throw하면 이 예외는 이 비동기 작업이 시작되기 전에 throw됩니다. `BeginOperationName` 메서드가 예외를 throw하면 콜백 메서드는 호출되지 않습니다.  
   
@@ -53,13 +53,13 @@ ms.locfileid: "53152385"
 > [!NOTE]
 >  이 디자인 패턴의 구현자는 <xref:System.IAsyncResult.IsCompleted%2A> 를 true로 설정하여 비동기 콜백 메서드(지정된 경우)를 호출하고 <xref:System.IAsyncResult.AsyncWaitHandle%2A>을 신호로 보내서 비동기 작업이 완료되었다는 것을 호출자에게 알려야 합니다.  
   
- 응용 프로그램 개발자는 비동기 작업의 결과에 액세스하기 위해 여러 디자인을 선택할 수 있습니다. 어떤 선택이 올바른 선택인지는 응용 프로그램에 작업이 완료되는 동안 실행할 수 있는 지침이 있는지 여부에 따라 달라집니다. 비동기 작업의 결과를 받을 때까지 응용 프로그램이 추가 작업을 수행할 수 없는 경우 결과를 사용할 수 있을 때까지 응용 프로그램을 차단해야 합니다. 비동기 작업이 완료될 때까지 차단하려면 다음 방법 중 하나를 사용하면 됩니다.  
+ 애플리케이션 개발자는 비동기 작업의 결과에 액세스하기 위해 여러 디자인을 선택할 수 있습니다. 어떤 선택이 올바른 선택인지는 애플리케이션에 작업이 완료되는 동안 실행할 수 있는 지침이 있는지 여부에 따라 달라집니다. 비동기 작업의 결과를 받을 때까지 애플리케이션이 추가 작업을 수행할 수 없는 경우 결과를 사용할 수 있을 때까지 애플리케이션을 차단해야 합니다. 비동기 작업이 완료될 때까지 차단하려면 다음 방법 중 하나를 사용하면 됩니다.  
   
--   애플리케이션의 주 스레드에서 `EndOperationName`을 호출하여 작업이 완료될 때까지 애플리케이션 실행을 차단합니다. 이 기술을 설명하는 예제는 [비동기 작업을 종료하여 응용 프로그램 실행 차단](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md)을 참조하세요.  
+-   애플리케이션의 주 스레드에서 `EndOperationName`을 호출하여 작업이 완료될 때까지 애플리케이션 실행을 차단합니다. 이 기술을 설명하는 예제는 [비동기 작업을 종료하여 애플리케이션 실행 차단](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md)을 참조하세요.  
   
--   <xref:System.IAsyncResult.AsyncWaitHandle%2A> 을 사용하여 하나 이상의 작업이 완료될 때까지 응용 프로그램 실행을 차단할 수 있습니다. 이 방법을 설명하는 예제는 [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md)을 참조하세요.  
+-   <xref:System.IAsyncResult.AsyncWaitHandle%2A> 을 사용하여 하나 이상의 작업이 완료될 때까지 애플리케이션 실행을 차단할 수 있습니다. 이 방법을 설명하는 예제는 [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md)을 참조하세요.  
   
- 비동기 작업이 완료되는 동안 차단할 필요가 없는 응용 프로그램은 다음 방법 중 하나를 사용할 수 있습니다.  
+ 비동기 작업이 완료되는 동안 차단할 필요가 없는 애플리케이션은 다음 방법 중 하나를 사용할 수 있습니다.  
   
 -   주기적으로 <xref:System.IAsyncResult.IsCompleted%2A> 속성을 확인하고 작업이 완료되면 `EndOperationName`을 호출하여 작업 완료 상태를 폴링합니다. 이 방법을 설명하는 예제는 [Polling for the Status of an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md)을 참조하세요.  
   
@@ -67,6 +67,6 @@ ms.locfileid: "53152385"
   
 ## <a name="see-also"></a>참고 항목
 
-- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
-- [동기 메서드를 비동기 방식으로 호출](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [동기 메서드를 비동기 방식으로 호출](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
 - [AsyncCallback 대리자 및 상태 개체 사용](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md)

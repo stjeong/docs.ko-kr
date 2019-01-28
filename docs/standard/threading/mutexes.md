@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 31c99d38cd608e93e9ee3467e0ce425835a3d572
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: dededed9bcd4558296323532c0ecbfb60bf5b311
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54567921"
 ---
 # <a name="mutexes"></a>뮤텍스
-<xref:System.Threading.Mutex> 개체를 사용하여 리소스에 대한 전용 액세스를 제공할 수 있습니다. <xref:System.Threading.Mutex> 클래스는 <xref:System.Threading.Monitor> 클래스보다 많은 시스템 리소스를 사용하지만 응용 프로그램 도메인 경계를 넘어 마샬링될 수 있으며 여러 대기와 함께 사용될 수 있고 서로 다른 프로세스에서 스레드를 동기화하는 데 사용될 수 있습니다. 관리되는 동기화 메커니즘의 비교는 [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)를 참조하세요.  
+<xref:System.Threading.Mutex> 개체를 사용하여 리소스에 대한 전용 액세스를 제공할 수 있습니다. <xref:System.Threading.Mutex> 클래스는 <xref:System.Threading.Monitor> 클래스보다 많은 시스템 리소스를 사용하지만 애플리케이션 도메인 경계를 넘어 마샬링될 수 있으며 여러 대기와 함께 사용될 수 있고 서로 다른 프로세스에서 스레드를 동기화하는 데 사용될 수 있습니다. 관리되는 동기화 메커니즘의 비교는 [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)를 참조하세요.  
   
  코드 예제는 <xref:System.Threading.Mutex.%23ctor%2A> 생성자에 대한 참조 설명서를 참조하세요.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "50201480"
 > [!NOTE]
 >  .NET Framework 버전 1.0 및 1.1에서 중단된 <xref:System.Threading.Mutex>는 신호 받음 상태로 설정되고 다음 대기 스레드는 소유권을 가져옵니다. 대기 중인 스레드가 없는 경우 <xref:System.Threading.Mutex>는 신호 받음 상태로 유지됩니다. 예외가 throw되지 않습니다.  
   
- 시스템 차원 뮤텍스의 경우 중단된 뮤텍스는 응용 프로그램이 갑자기 종료되었음을 나타낼 수 있습니다(예: Windows 작업 관리자를 사용하여).  
+ 시스템 차원 뮤텍스의 경우 중단된 뮤텍스는 애플리케이션이 갑자기 종료되었음을 나타낼 수 있습니다(예: Windows 작업 관리자를 사용하여).  
   
 ## <a name="local-and-system-mutexes"></a>로컬 및 시스템 뮤텍스  
  뮤텍스는 로컬 뮤텍스 및 명명된 시스템 뮤텍스로 두 가지 유형입니다. 이름을 허용하는 생성자를 사용하여 <xref:System.Threading.Mutex> 개체를 만드는 경우 해당 이름의 운영 체제 개체에 연결됩니다. 명명된 시스템 뮤텍스는 운영 체제 전체에서 볼 수 있으며 프로세스 작업을 동기화하는 데 사용될 수 있습니다. 동일한 명명된 시스템 뮤텍스를 나타내는 여러 <xref:System.Threading.Mutex> 개체를 만들 수 있으며 <xref:System.Threading.Mutex.OpenExisting%2A> 메서드를 사용하여 기존 명명된 시스템 뮤텍스를 열 수 있습니다.  
@@ -51,11 +51,11 @@ ms.locfileid: "50201480"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Threading.Mutex?displayProperty=nameWithType>  
-- <xref:System.Threading.Mutex.%23ctor%2A?displayProperty=nameWithType>  
-- <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>  
+- <xref:System.Threading.Mutex?displayProperty=nameWithType>
+- <xref:System.Threading.Mutex.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>
 - <xref:System.Security.AccessControl.MutexAccessRule?displayProperty=nameWithType>
-- <xref:System.Threading.Monitor?displayProperty=nameWithType>  
-- [스레딩 개체 및 기능](threading-objects-and-features.md)  
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- [스레딩 개체 및 기능](threading-objects-and-features.md)
 - [스레드 및 스레딩](threads-and-threading.md)
-- [스레딩](index.md)  
+- [스레딩](index.md)

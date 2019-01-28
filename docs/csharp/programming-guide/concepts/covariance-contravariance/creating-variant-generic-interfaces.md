@@ -2,12 +2,12 @@
 title: Variant 제네릭 인터페이스 만들기(C#)
 ms.date: 07/20/2015
 ms.assetid: 30330ec4-9df2-4838-a535-6c406d0ed4df
-ms.openlocfilehash: d8e7e8a59aeff27531187e5171a76651440ffc4c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5ae3b309282712e3441b53ea4cfc316be3ca92d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614682"
 ---
 # <a name="creating-variant-generic-interfaces-c"></a>Variant 제네릭 인터페이스 만들기(C#)
 인터페이스에서 제네릭 형식 매개 변수를 공변(covariant) 또는 반공변(contravariant)으로 선언할 수 있습니다. *공변성(covariance)* 은 인터페이스 메서드가 제네릭 형식 매개 변수에 정의된 것보다 더 많은 수의 파생된 반환 형식을 갖도록 허용합니다. *반공변성(contravariance)* 은 인터페이스 메서드가 제네릭 매개 변수에 지정된 것보다 더 적은 수의 파생된 형식의 인수 형식을 갖도록 허용합니다. 공변(covariant) 또는 반공변(contravariant) 제네릭 형식 매개 변수가 포함된 제네릭 인터페이스를 *variant*라고 합니다.  
@@ -187,5 +187,5 @@ class Program
   
 ## <a name="see-also"></a>참고 항목
 
-- [제네릭 인터페이스의 가변성(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
+- [제네릭 인터페이스의 가변성(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [Func 및 Action 제네릭 대리자에 가변성 사용(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

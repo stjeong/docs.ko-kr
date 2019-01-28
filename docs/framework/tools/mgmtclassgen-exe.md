@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 282d6376b434121ed6d59297be2ce36ce361c589
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 333bd8c1793e4982b11208aa1a547e78fe680bb3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54628853"
 ---
 # <a name="mgmtclassgenexe-management-strongly-typed-class-generator"></a>Mgmtclassgen.exe(강력하게 형식화된 관리 클래스 생성기)
 강력하게 형식화된 관리 클래스 생성기 도구를 사용하면 지정된 WMI(Windows Management Instrumentation) 클래스에 대해 초기 바인딩 관리되는 클래스를 신속하게 생성할 수 있습니다. 생성된 클래스는 WMI 클래스의 인스턴스에 액세스할 때 작성해야 하는 코드를 단순화합니다.  
@@ -45,7 +45,7 @@ WMIClass [options]
 |**/u**  *user name*|**/m** 옵션으로 지정된 컴퓨터에 로그온할 때 사용할 사용자 이름을 지정합니다.|  
 |**/?**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  Mgmtclassgen.exe는 <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType> 메서드를 사용합니다. 따라서 사용자 지정 코드 공급자를 사용하여 C#, Visual Basic 및 JScript 이외의 관리되는 언어로 코드를 생성할 수 있습니다.  
   
  생성된 클래스는 생성 대상인 스키마에 바인딩됩니다. 기본 스키마가 변경되는 경우 스키마의 변경 사항을 클래스에 반영하려면 클래스를 다시 생성해야 합니다.  
@@ -63,7 +63,7 @@ WMIClass [options]
 |CIM_SINT64|**Int64**|  
 |CIM_UINT64|**UInt64**|  
 |CIM_REAL32|**Single**|  
-|CIM_REAL64|**Double**|  
+|CIM_REAL64|**double**|  
 |CIM_BOOLEAN|**Boolean**|  
 |CIM_String|**String**|  
 |CIM_DATETIME|**DateTime** 또는 **TimeSpan**|  
@@ -150,9 +150,9 @@ public class App
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Management>  
- <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>  
- <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>  
- [도구](../../../docs/framework/tools/index.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Management>
+- <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>
+- <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>
+- [도구](../../../docs/framework/tools/index.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 3db965b2-36a6-4b12-b76e-7f074ff7275a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 83efda175b7e5cef8c7042682827d2fe0562c207
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: e932b3af0b952fa88d33df453917cb11c3ceed33
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54517762"
 ---
 # <a name="sorted-collection-types"></a>Sorted 컬렉션 형식
 <xref:System.Collections.SortedList?displayProperty=nameWithType> 클래스, <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> 제네릭 클래스 및 <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=nameWithType> 제네릭 클래스는 <xref:System.Collections.Hashtable> 클래스 및 <xref:System.Collections.Generic.Dictionary%602> 제네릭 클래스와 유사합니다. 해당 항목은 여기서 <xref:System.Collections.IDictionary> 인터페이스를 구현하지만 키를 기준으로 한 정렬 순서로 해당 요소를 유지 관리하고 O(1) 삽입 및 해시 테이블의 검색 특성을 갖지 않습니다. 세 가지 클래스에는 공통적으로 다음과 같은 몇 가지 기능이 있습니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "44260086"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
-- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
+- <xref:System.Collections.IDictionary?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
 - [일반적으로 사용되는 컬렉션 형식](../../../docs/standard/collections/commonly-used-collection-types.md)

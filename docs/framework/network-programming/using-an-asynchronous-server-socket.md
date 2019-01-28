@@ -17,12 +17,12 @@ helpviewer_keywords:
 - protocols, sockets
 - Internet, sockets
 ms.assetid: 813489a9-3efd-41b6-a33f-371d55397676
-ms.openlocfilehash: 24bbbc304111b3735bc6e8f3965ef37e9374bda6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 5bc4e6e43d346c1543cf43d9782fd22718b4fef4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701900"
 ---
 # <a name="using-an-asynchronous-server-socket"></a>비동기 서버 소켓 사용
 비동기 서버 소켓은 .NET Framework 비동기 프로그래밍 모델을 사용하여 네트워크 서비스 요청을 처리합니다. <xref:System.Net.Sockets.Socket> 클래스는 표준 .NET Framework 비동기 명명 패턴을 따릅니다. 예를 들어 동기 <xref:System.Net.Sockets.Socket.Accept%2A> 메서드는 비동기 <xref:System.Net.Sockets.Socket.BeginAccept%2A> 및 <xref:System.Net.Sockets.Socket.EndAccept%2A> 메서드에 해당합니다.  
@@ -125,7 +125,7 @@ public void StartListening()
 }  
 ```  
   
- 허용 콜백 메서드(앞의 예제에서 `AcceptCallback`)는 주 응용 프로그램 스레드에 처리를 계속하도록 알리고, 클라이언트에 연결하고, 클라이언트에서 비동기 데이터 읽기를 시작합니다. 다음 예제에서는 `AcceptCallback` 메서드 구현의 첫 번째 부분을 보여 줍니다. 이 메서드 섹션은 주 응용 프로그램 스레드에 처리를 계속하도록 알리고 클라이언트에 연결합니다. `allDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
+ 허용 콜백 메서드(앞의 예제에서 `AcceptCallback`)는 주 애플리케이션 스레드에 처리를 계속하도록 알리고, 클라이언트에 연결하고, 클라이언트에서 비동기 데이터 읽기를 시작합니다. 다음 예제에서는 `AcceptCallback` 메서드 구현의 첫 번째 부분을 보여 줍니다. 이 메서드 섹션은 주 애플리케이션 스레드에 처리를 계속하도록 알리고 클라이언트에 연결합니다. `allDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
   
 ```vb  
 Public Sub AcceptCallback(ar As IAsyncResult)  
@@ -268,8 +268,8 @@ public static void ReadCallback(IAsyncResult ar)
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [동기 서버 소켓 사용](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
- [비동기 서버 소켓 예제](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)  
- [스레딩](../../../docs/standard/threading/index.md)  
- [소켓으로 수신](../../../docs/framework/network-programming/listening-with-sockets.md)
+## <a name="see-also"></a>참고 항목
+- [동기 서버 소켓 사용](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)
+- [비동기 서버 소켓 예제](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)
+- [스레딩](../../../docs/standard/threading/index.md)
+- [소켓으로 수신](../../../docs/framework/network-programming/listening-with-sockets.md)

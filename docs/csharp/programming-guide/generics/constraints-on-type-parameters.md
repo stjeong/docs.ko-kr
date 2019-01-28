@@ -7,12 +7,12 @@ helpviewer_keywords:
 - type constraints [C#]
 - type parameters [C#], constraints
 - unbound type parameter [C#]
-ms.openlocfilehash: daad986a1e62fe3b1d28fc25d3ebf6d2960d8b1d
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 38b8a0fc8c89975318b42380ca936869544af601
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694973"
 ---
 # <a name="constraints-on-type-parameters-c-programming-guide"></a>형식 매개 변수에 대한 제약 조건(C# 프로그래밍 가이드)
 
@@ -113,7 +113,7 @@ C# 7.3부터 <xref:System.Enum?displayProperty=nameWithType> 형식을 기본 �
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.Collections.Generic>
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
-- [제네릭 클래스](../../../csharp/programming-guide/generics/generic-classes.md)  
-- [new 제약 조건](../../../csharp/language-reference/keywords/new-constraint.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [제네릭 클래스](../../../csharp/programming-guide/generics/generic-classes.md)
+- [new 제약 조건](../../../csharp/language-reference/keywords/new-constraint.md)

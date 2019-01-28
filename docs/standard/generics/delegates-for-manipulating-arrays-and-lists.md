@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a8266db66abb46ffc9503bdaeaf4ec4078177760
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 2752ecd05caec207955b2366ed19b3713f571f91
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46696801"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613911"
 ---
 # <a name="generic-delegates-for-manipulating-arrays-and-lists"></a>배열과 목록을 조작하기 위한 제네릭 대리자
 이 항목에서는 배열 또는 컬렉션의 요소에 대해 수행할 작업, 검색 조건자 및 변환을 위한 제네릭 대리자에 대해 간략하게 설명합니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "46696801"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections.Generic?displayProperty=nameWithType>  
-- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
-- [제네릭](../../../docs/standard/generics/index.md)  
-- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
-- [제네릭 인터페이스](../../../docs/standard/generics/interfaces.md)  
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [제네릭](../../../docs/standard/generics/index.md)
+- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)
+- [제네릭 인터페이스](../../../docs/standard/generics/interfaces.md)
 - [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)

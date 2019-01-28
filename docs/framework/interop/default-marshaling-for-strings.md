@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 88604058bd460d80214be6051abef7dc561c7710
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0a91fd9d06e93813d440d6243ad42ea6dd70e739
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523092"
 ---
 # <a name="default-marshaling-for-strings"></a>문자열에 대한 기본 마샬링
 <xref:System.String?displayProperty=nameWithType> 및 <xref:System.Text.StringBuilder?displayProperty=nameWithType> 클래스는 마샬링 동작이 서로 유사합니다.  
@@ -263,8 +263,8 @@ public class Window {
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [기본 마샬링 동작](default-marshaling-behavior.md)  
- [Blittable 형식 및 비 Blittable 형식](blittable-and-non-blittable-types.md)  
- [방향 특성](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
- [복사 및 고정](copying-and-pinning.md)
+## <a name="see-also"></a>참고 항목
+- [기본 마샬링 동작](default-marshaling-behavior.md)
+- [Blittable 형식 및 비 Blittable 형식](blittable-and-non-blittable-types.md)
+- [방향 특성](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))
+- [복사 및 고정](copying-and-pinning.md)

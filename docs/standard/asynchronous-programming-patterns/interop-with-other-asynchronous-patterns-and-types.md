@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f120a5d9-933b-4d1d-acb6-f034a57c3749
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 05b53016712f75e45636979d77bfd27116ce8e14
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 4f6cb2d387e3b979ed0d4407e17287fb93fa0a20
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678345"
 ---
 # <a name="interop-with-other-asynchronous-patterns-and-types"></a>다른 비동기 패턴 및 형식과의 Interop
 .NET Framework 1.0에서는 <xref:System.IAsyncResult> 또는 [Begin/End](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md)패턴이라고도 하는 `Begin/End` 패턴이 도입되었습니다.  .NET Framework 2.0에서는 [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)이 추가되었습니다.  .NET Framework 4부터 [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) 이 APM과 EAP를 둘 다 대체하지만 이전 패턴에서 마이그레이션 루틴을 쉽게 빌드할 수 있는 기능을 제공합니다.  
@@ -115,6 +115,6 @@ ms.locfileid: "48850663"
   
 ## <a name="see-also"></a>참고 항목
 
-- [TAP(작업 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)  
-- [작업 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md)  
+- [TAP(작업 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)
+- [작업 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md)
 - [Consuming the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md)

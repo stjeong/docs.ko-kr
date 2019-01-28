@@ -20,12 +20,12 @@ ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 author: rpetrusha
 ms.author: ronpet
 ms.custom: seodec18
-ms.openlocfilehash: 3a61c65b108cba6bb256949a120afc76b58949f2
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: dcfa029f3feeafd9d75cd6cd19b36d32b0d5fce7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54615980"
 ---
 # <a name="backtracking-in-regular-expressions"></a>정규식의 역행 검사
 <a name="top"></a> 역추적은 정규식 패턴에 선택적인 [수량자](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) 또는 [교체 구문](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)이 포함되어 있고 정규식 엔진이 일치 항목을 계속 검색하기 위해 이전에 저장된 상태로 되돌아갈 때 발생합니다. 역추적은 정규식 성능의 핵심입니다. 역추적을 사용하면 식의 성능과 유연성을 높일 수 있으며 매우 복잡한 패턴도 검색할 수 있습니다. 하지만 이러한 장점에는 단점이 수반됩니다. 역추적은 종종 정규식 엔진의 성능에 영향을 주는 가장 중요한 단일 요소입니다. 다행히도 개발자는 정규식 엔진의 동작과 역추적 사용 방식을 제어할 수 있습니다. 이 항목에서는 역추적의 작동 방식 및 역추적을 제어할 수 있는 방법에 대해 설명합니다.  
@@ -130,7 +130,7 @@ ms.locfileid: "53130093"
   
 <a name="Timeout"></a>   
 ### <a name="defining-a-time-out-interval"></a>시간 제한 간격 정의  
- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]부터는 정규식 엔진이 시도를 포기하고 <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> 예외를 throw하기 전에 단일 일치 항목을 검색할 가장 긴 간격을 나타내는 시간 제한 값을 설정할 수 있습니다. <xref:System.TimeSpan> 값을 인스턴스 정규식을 위한 <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> 생성자에 제공하여 시간 제한 간격을 지정합니다. 또한, 각각의 정적 패턴 일치 메서드에 시간 제한 값을 지정할 수 있게 해주는 <xref:System.TimeSpan> 매개 변수의 오버로드가 있습니다. 기본적으로, 시간 제한 간격은 <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>으로 설정되고, 정규식 엔진의 시간이 초과되지 않습니다.  
+ [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]부터는 정규식 엔진이 시도를 포기하고 <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> 예외를 throw하기 전에 단일 일치 항목을 검색할 가장 긴 간격을 나타내는 시간 제한 값을 설정할 수 있습니다. <xref:System.TimeSpan> 값을 인스턴스 정규식을 위한 <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> 생성자에 제공하여 시간 제한 간격을 지정합니다. 또한, 각각의 정적 패턴 일치 메서드에 시간 제한 값을 지정할 수 있게 해주는 <xref:System.TimeSpan> 매개 변수의 오버로드가 있습니다. 기본적으로, 시간 제한 간격은 <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> 으로 설정되고, 정규식 엔진의 시간이 초과되지 않습니다.  
   
 > [!IMPORTANT]
 >  정규식이 역추적에 의존하는 경우에는 항상 시간 제한 간격을 설정하는 것이 좋습니다.  
@@ -164,7 +164,7 @@ ms.locfileid: "53130093"
   
  첫 번째 정규식 패턴 `^[0-9A-Z]([-.\w]*[0-9A-Z])*@`은(는) 다음 표와 같이 정의됩니다.  
   
-|패턴|설명|  
+|무늬|설명|  
 |-------------|-----------------|  
 |`^`|문자열의 시작 부분에서 검색을 시작합니다.|  
 |`[0-9A-Z]`|일치하는 영숫자 문자를 찾습니다. <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> 메서드가 <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.|  
@@ -196,7 +196,7 @@ ms.locfileid: "53130093"
   
  첫 번째 정규식 패턴 `^(([A-Z]\w*)+\.)*[A-Z]\w*$`은(는) 다음 표와 같이 정의됩니다.  
   
-|패턴|설명|  
+|무늬|설명|  
 |-------------|-----------------|  
 |`^`|문자열의 시작 부분에서 검색을 시작합니다.|  
 |`([A-Z]\w*)+\.`|0개 이상의 단어 문자와 마침표가 이어지는 영문자(A-Z)를 찾습니다. <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> 메서드가 <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.|  
@@ -219,8 +219,8 @@ ms.locfileid: "53130093"
   
 ## <a name="see-also"></a>참고 항목
 
-- [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)  
-- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
-- [수량자](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)  
-- [교체 구문](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)  
+- [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [수량자](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)
+- [교체 구문](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)
 - [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)

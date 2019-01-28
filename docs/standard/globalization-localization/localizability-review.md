@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b19bc78f44781923df6873ccc9720f4605731976
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: a4c205d61e6de3e835954e405cece143520b4d2c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623987"
 ---
 # <a name="localizability-review"></a>지역화 가능성 검토
 지역화 가능성 검토는 지역화 대비 응용 프로그램 개발의 중간 단계로, 전역화된 응용 프로그램이 지역화될 준비가 되어 있는지 점검하고 특별한 처리가 필요한 사용자 인터페이스의 모든 코드 또는 측면을 확인합니다. 또한 이 단계를 통해 지역화 과정 후에도 응용 프로그램에 기능적 결함이 발생되지 않도록 합니다. 지역화 가능성 검토에서 제기된 모든 문제가 해결되면 응용 프로그램은 지역화될 준비가 됩니다. 지역화 가능성 검토가 철저할 경우 지역화 과정 중에 소스 코드를 수정할 필요가 없습니다.  
@@ -34,11 +34,11 @@ ms.locfileid: "49086507"
   
 -   [문화권 구분 기능이 올바르게 처리되었습니까?](#culture)  
   
--   [국가별 데이터를 사용하여 응용 프로그램을 테스트했습니까?](#test)  
+-   [국가별 데이터를 사용하여 애플리케이션을 테스트했습니까?](#test)  
   
 <a name="global"></a>   
 ## <a name="implementing-globalization-recommendations"></a>전역화 권장 사항 구현  
- 지역화를 염두에 두고 응용 프로그램을 설계 및 개발했고 [세계화](../../../docs/standard/globalization-localization/globalization.md) 문서에 설명된 권장 사항을 따른 경우 지역화 가능성 검토는 대개 품질 보증 단계에서 통과하게 됩니다. 그러지 않은 경우 이 단계 중에 [세계화](../../../docs/standard/globalization-localization/globalization.md)를 위한 권장 사항을 검토 및 구현하고 지역화를 방해하는 소스 코드의 오류를 수정해야 합니다.  
+ 지역화를 염두에 두고 애플리케이션을 설계 및 개발했고 [세계화](../../../docs/standard/globalization-localization/globalization.md) 문서에 설명된 권장 사항을 따른 경우 지역화 가능성 검토는 대개 품질 보증 단계에서 통과하게 됩니다. 그러지 않은 경우 이 단계 중에 [세계화](../../../docs/standard/globalization-localization/globalization.md)를 위한 권장 사항을 검토 및 구현하고 지역화를 방해하는 소스 코드의 오류를 수정해야 합니다.  
   
 <a name="culture"></a>   
 ## <a name="handling-culture-sensitive-features"></a>문화권 구분 기능 처리  
@@ -71,11 +71,11 @@ ms.locfileid: "49086507"
   
 -   예기치 않은 결과를 반환하는 같음 비교 또는 문자열 비교.  
   
- 응용 프로그램을 개발할 때 세계화 권장 사항을 따르고 문화권 구분 기능을 올바르게 처리하고 테스트 중 발생한 지역화 문제를 해결했다면 다음 단계인 [지역화](../../../docs/standard/globalization-localization/localization.md)로 진행할 수 있습니다.  
+ 애플리케이션을 개발할 때 세계화 권장 사항을 따르고 문화권 구분 기능을 올바르게 처리하고 테스트 중 발생한 지역화 문제를 해결했다면 다음 단계인 [지역화](../../../docs/standard/globalization-localization/localization.md)로 진행할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목
 
-- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
-- [지역화](../../../docs/standard/globalization-localization/localization.md)  
-- [전역화](../../../docs/standard/globalization-localization/globalization.md)  
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)
+- [지역화](../../../docs/standard/globalization-localization/localization.md)
+- [전역화](../../../docs/standard/globalization-localization/globalization.md)
 - [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)

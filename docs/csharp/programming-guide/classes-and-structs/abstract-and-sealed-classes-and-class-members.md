@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C# language, abstract classes
 - C# language, sealed
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-ms.openlocfilehash: 8c0b8e9814bf692e486624dd8a4a99d98337bca9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 3257d365bb9816f4cb41d354f78c88ad4fa0f567
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523833"
 ---
 # <a name="abstract-and-sealed-classes-and-class-members-c-programming-guide"></a>추상 및 봉인 클래스와 클래스 멤버(C# 프로그래밍 가이드)
 [abstract](../../../csharp/language-reference/keywords/abstract.md) 키워드를 사용하면, 불완전하여 파생 클래스에서 구현해야 하는 클래스 및 [클래스](../../../csharp/language-reference/keywords/class.md) 멤버를 만들 수 있습니다.  
@@ -50,9 +50,9 @@ ms.locfileid: "53235857"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)
 - [방법: 추상 속성 정의](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)

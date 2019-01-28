@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: c21fb997-9f0e-40a5-8741-f73bba376bd8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 979989c3e1f90f3de47473aa1bd8bc5268520e57
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 135decebcd071c611cf6e72835fee33d49088070
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54493913"
 ---
 # <a name="building-console-applications-in-the-net-framework"></a>.NET Framework에서 콘솔 응용 프로그램 만들기
 .NET Framework의 응용 프로그램에서는 <xref:System.Console?displayProperty=nameWithType> 클래스를 사용하여 콘솔로부터 문자를 읽거나 콘솔에 문자를 쓸 수 있습니다. 콘솔의 데이터는 표준 입력 스트림에서 읽혀지고 표준 출력 스트림으로 쓰여지며, 콘솔의 오류 데이터는 표준 오류 출력 스트림으로 쓰여집니다. 이러한 스트림은 응용 프로그램이 시작될 때 콘솔과 자동으로 연결되며 <xref:System.Console.In%2A>, <xref:System.Console.Out%2A> 및 <xref:System.Console.Error%2A> 속성으로 나타납니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "48840156"
   
  Windows 기반 응용 프로그램 내에 콘솔이 존재하지 않을 경우 정보를 쓸 콘솔이 없으므로 표준 출력 스트림에 쓰여지는 출력은 보이지 않습니다. 액세스할 수 없는 콘솔에 정보를 쓸 경우 예외가 발생하지 않습니다.  
   
- 또는 Visual Studio를 사용하여 개발된 Windows 기반 응용 프로그램 내에서 콘솔의 읽기 및 쓰기를 설정하려면 프로젝트의 **속성** 대화 상자를 열고, **응용 프로그램** 탭을 클릭하고, **응용 프로그램 종류**를 **콘솔 응용 프로그램**으로 설정합니다.  
+ 또는 Visual Studio를 사용하여 개발된 Windows 기반 애플리케이션 내에서 콘솔의 읽기 및 쓰기를 설정하려면 프로젝트의 **속성** 대화 상자를 열고, **애플리케이션** 탭을 클릭하고, **애플리케이션 종류**를 **콘솔 애플리케이션**으로 설정합니다.  
   
  콘솔 응용 프로그램에는 기본적으로 시작되는 메시지 펌프가 없습니다. 따라서 Microsoft Win32 타이머에 대한 콘솔 호출이 실패할 수도 있습니다.  
   
@@ -34,5 +34,5 @@ ms.locfileid: "48840156"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Console?displayProperty=nameWithType>  
+- <xref:System.Console?displayProperty=nameWithType>
 - [형식 서식 지정](../../docs/standard/base-types/formatting-types.md)
