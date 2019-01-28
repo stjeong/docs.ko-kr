@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#if directive [C#]'
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-ms.openlocfilehash: df1b26b0e06d4fff81627ec633ce97f9d6ca036f
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 07679ed0334af26cd52353080ebd6fb39f9daecf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592551"
 ---
 # <a name="if-c-reference"></a>#if(C# 참조)
 
@@ -26,7 +26,7 @@ C# 컴파일러는 `#if` 지시문과 [#endif](preprocessor-endif.md) 지시문�
 
 [==](../operators/equality-comparison-operator.md)(같음) 및 [!=](../operators/not-equal-operator.md)(같지 않음) 연산자는 [true](../keywords/true.md) 또는 [false](../keywords/false.md)를 테스트할 때만 사용할 수 있습니다. true가 반환되면 기호가 정의된 것입니다. `#if DEBUG` 문의 의미는 `#if (DEBUG == true)`와 같습니다. [&&](../operators/conditional-and-operator.md)(및), [&#124;&#124;](../operators/conditional-or-operator.md)(또는), [!](../operators/logical-negation-operator.md)(아님) 연산자를 사용하면 여러 기호가 정의되었는지 여부를 평가할 수 있습니다. 기호와 연산자를 괄호로 묶을 수도 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `#if`를 [#else](preprocessor-else.md), [#elif](preprocessor-elif.md), [#endif](preprocessor-endif.md), [#define](preprocessor-define.md) 및 [#undef](preprocessor-undef.md) 지시문과 함께 사용하면 하나 이상의 기호 유무에 따라 코드를 포함하거나 제거할 수 있습니다. 따라서 코드를 디버그 빌드용으로 컴파일하거나 특정 구성용으로 컴파일할 때 유용할 수 있습니다.
 
@@ -40,7 +40,7 @@ C# 컴파일러는 `#if` 지시문과 [#endif](preprocessor-endif.md) 지시문�
 
 `#define`을 사용하여 만든 기호의 범위는 해당 기호가 정의된 파일입니다.
 
-빌드 시스템은 여러 [대상 프레임워크](../../../standard/frameworks.md)를 나타내는 미리 정의된 전처리기 기호도 인식합니다. 둘 이상의 .NET 구현 또는 버전을 대상으로 지정할 수 있는 응용 프로그램을 만들 때 유용합니다.
+빌드 시스템은 여러 [대상 프레임워크](../../../standard/frameworks.md)를 나타내는 미리 정의된 전처리기 기호도 인식합니다. 둘 이상의 .NET 구현 또는 버전을 대상으로 지정할 수 있는 애플리케이션을 만들 때 유용합니다.
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
@@ -89,7 +89,7 @@ public class MyClass
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 전처리기 지시문](index.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 전처리기 지시문](index.md)
 - [방법: 추적 및 디버그를 사용한 조건부 컴파일](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)

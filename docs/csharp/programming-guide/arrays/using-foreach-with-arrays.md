@@ -6,12 +6,12 @@ helpviewer_keywords:
 - arrays [C#], foreach
 - foreach statement [C#], using with arrays
 ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
-ms.openlocfilehash: a290cd709dd6491981658f467fa0163011290128
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 16f65bc4ddcc37bbc1abb5dfa6299670a738073b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54503575"
 ---
 # <a name="using-foreach-with-arrays-c-programming-guide"></a>배열에 foreach 사용(C# 프로그래밍 가이드)
 
@@ -29,9 +29,9 @@ ms.locfileid: "53238470"
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Array>  
-- [C# 프로그래밍 가이드](../index.md)  
-- [배열](index.md)  
-- [1차원 배열](single-dimensional-arrays.md)  
-- [다차원 배열](multidimensional-arrays.md)  
+- <xref:System.Array>
+- [C# 프로그래밍 가이드](../index.md)
+- [배열](index.md)
+- [1차원 배열](single-dimensional-arrays.md)
+- [다차원 배열](multidimensional-arrays.md)
 - [가변 배열](jagged-arrays.md)

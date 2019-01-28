@@ -6,12 +6,12 @@ helpviewer_keywords:
 - expressions [C#]
 - C# language, expressions
 ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
-ms.openlocfilehash: 1a9b80d90c8f5089744e9cd5a126f7730afbed44
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: 4fc6485b8ca1c2613df586a56c0c974e9e721380
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600494"
 ---
 # <a name="expressions-c-programming-guide"></a>식(C# 프로그래밍 가이드)
 *expression*은 단일 값, 개체, 메서드 또는 네임스페이스로 평가될 수 있는 하나 이상의 피연산자 및 0개 이상의 연산자 시퀀스입니다. 식은 리터럴 값, 메서드 호출, 연산자 및 피연산자, *단순 이름* 등으로 구성될 수 있습니다. 단순한 이름이란 변수, 형식 멤버, 메서드 매개 변수, 네임스페이스 또는 형식의 이름일 수 있습니다.  
@@ -75,9 +75,9 @@ C#에서는 메서드, 생성자, 종료자, 속성 및 인덱서에 대한 간�
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [대리자](../../../csharp/programming-guide/delegates/index.md)  
-- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
-- [유형](../../../csharp/programming-guide/types/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [대리자](../../../csharp/programming-guide/delegates/index.md)
+- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
+- [유형](../../../csharp/programming-guide/types/index.md)
 - [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)

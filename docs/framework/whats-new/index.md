@@ -525,7 +525,7 @@ ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요�
 
 .NET Framework 4.7은 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>를 통해 serialization을 향상합니다.
 
-**ECC(Elliptic Curve 암호화)로 향상된 기능***
+**ECC(Elliptic Curve 암호화)로 향상된 기능**\*
 
 .NET Framework 4.7에서는 `ImportParameters(ECParameters)` 메서드가 <xref:System.Security.Cryptography.ECDsa> 및 <xref:System.Security.Cryptography.ECDiffieHellman> 클래스에 추가되어 개체에서 이미 설정된 키를 나타낼 수 있습니다. 또한 명시적 곡선 매개 변수를 사용하여 키를 내보내기 위한 `ExportParameters(Boolean)` 메서드도 추가되었습니다.
 
@@ -543,7 +543,7 @@ GitHub에서 [.NET Framework 4.7 암호화 개선 예제](https://gist.github.co
 
 .NET Framework 4.7에서는 다음과 같은 네트워크 관련 기능을 추가합니다.
 
-**TLS 프로토콜에 대 한 기본 운영 체제 지원***
+**TLS 프로토콜에 대 한 기본 운영 체제 지원**\*
 
 <xref:System.Net.Security.SslStream?displayProperty=nameWithType>및 업스택 구성 요소(예: HTTP, FTP, SMTP)에서 사용되는 TLS 스택을 통해 개발자는 운영 체제에서 지원하는 기본 TLS 프로토콜을 사용할 수 있습니다. 개발자에게 더 이상 하드 코딩 TLS 버전은 필요하지 않습니다.
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - group keyword [C#]
 - group clause [C#]
 ms.assetid: c817242e-b12c-4baa-a57e-73ee138f34d1
-ms.openlocfilehash: 6c28f9f4cdcb2ec2d84f299dddb13dc821c1739a
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 160b25bd93f7d7c69ec104a31a0608e930e2dee3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534893"
 ---
 # <a name="group-clause-c-reference"></a>group 절(C# 참조)
 
@@ -82,18 +82,18 @@ group person by new {name = person.surname, city = person.city};
 
 [!code-csharp[cscsrefQueryKeywords#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#17)]
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `group` 절은 컴파일 시간에 <xref:System.Linq.Enumerable.GroupBy%2A> 메서드 호출로 변환됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Linq.IGrouping%602>  
-- <xref:System.Linq.Enumerable.GroupBy%2A>  
-- <xref:System.Linq.Enumerable.ThenBy%2A>  
-- <xref:System.Linq.Enumerable.ThenByDescending%2A>  
-- [쿼리 키워드](query-keywords.md)  
-- [LINQ(Language-Integrated Query)](../../linq/index.md)  
-- [중첩 그룹 만들기](../../linq/create-a-nested-group.md)  
-- [쿼리 결과 그룹화](../../linq/group-query-results.md)  
+- <xref:System.Linq.IGrouping%602>
+- <xref:System.Linq.Enumerable.GroupBy%2A>
+- <xref:System.Linq.Enumerable.ThenBy%2A>
+- <xref:System.Linq.Enumerable.ThenByDescending%2A>
+- [쿼리 키워드](query-keywords.md)
+- [LINQ(Language-Integrated Query)](../../linq/index.md)
+- [중첩 그룹 만들기](../../linq/create-a-nested-group.md)
+- [쿼리 결과 그룹화](../../linq/group-query-results.md)
 - [그룹화 작업에서 하위 쿼리 수행](../../linq/perform-a-subquery-on-a-grouping-operation.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: 8da1deec2238f74a9b594c85feab0445ec2a35b7
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: c231533604b4ebadfb709295b5a8b877f87bba1c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54493420"
 ---
 # <a name="extension-methods-c-programming-guide"></a>확장명 메서드(C# 프로그래밍 가이드)
 확장명 메서드를 사용하면 새 파생 형식을 만들거나 다시 컴파일하거나 원래 형식을 수정하지 않고도 기존 형식에 메서드를 "추가"할 수 있습니다. 확장 메서드는 특수한 종류의 정적 메서드이지만 확장 형식의 인스턴스 메서드인 것처럼 호출됩니다. C#, F# 및 Visual Basic에서 작성된 클라이언트 코드의 경우 확장명 메서드를 호출하는 것과 형식에 실제로 정의된 메서드를 호출하는 데는 명백한 차이가 없습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "53241316"
 using ExtensionMethods;  
 ```  
   
- 또한 다음 구문을 사용하여 응용 프로그램에서 확장 메서드를 호출할 수 있습니다.  
+ 또한 다음 구문을 사용하여 애플리케이션에서 확장 메서드를 호출할 수 있습니다.  
   
 ```csharp  
 string s = "Hello Extension Methods";  
@@ -81,11 +81,11 @@ using System.Linq;
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [병렬 프로그래밍 샘플(많은 예제 확장 메서드 포함)](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  
-- [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [병렬 프로그래밍 샘플(많은 예제 확장 메서드 포함)](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+- [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [표준 쿼리 연산자 개요](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [인스턴스 매개 변수의 변환 규칙 및 그에 따른 영향](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/conversion-rules-for-instance-parameters-and-their-impact)  
-- [언어 간 확장 메서드 상호 운용성](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/extension-methods-interoperability-between-languages)  
-- [확장 메서드 및 대리자 변환](https://blogs.msdn.microsoft.com/sreekarc/2007/05/01/extension-methods-and-curried-delegates)  
+- [인스턴스 매개 변수의 변환 규칙 및 그에 따른 영향](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/conversion-rules-for-instance-parameters-and-their-impact)
+- [언어 간 확장 메서드 상호 운용성](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/extension-methods-interoperability-between-languages)
+- [확장 메서드 및 대리자 변환](https://blogs.msdn.microsoft.com/sreekarc/2007/05/01/extension-methods-and-curried-delegates)
 - [확장 메서드 바인딩 및 오류 보고](https://blogs.msdn.microsoft.com/sreekarc/2007/04/26/extension-method-binding-and-error-reporting)

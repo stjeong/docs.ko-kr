@@ -2,12 +2,12 @@
 title: LINQ to XML 클래스 개요(C#)
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
-ms.openlocfilehash: d1454909591ff060f9d2a1d2484302e7112be149
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a50b58ad3e8f375d80701f454e74fef00e4d2203
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509664"
 ---
 # <a name="linq-to-xml-classes-overview-c"></a>LINQ to XML 클래스 개요(C#)
 이 항목에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 네임스페이스의 <xref:System.Xml.Linq> 클래스 목록을 제공하며 각 클래스에 대한 간략한 설명을 제공합니다.  
@@ -81,7 +81,7 @@ ms.locfileid: "43502393"
  <xref:System.Xml.Linq.XObjectChangeEventArgs>는 <xref:System.Xml.Linq.XObject.Changing> 및 <xref:System.Xml.Linq.XObject.Changed> 이벤트에 대한 데이터를 제공합니다.  
   
 ### <a name="xprocessinginstruction-class"></a>XProcessingInstruction 클래스  
- <xref:System.Xml.Linq.XProcessingInstruction>은 XML 처리 명령을 나타냅니다. 처리 명령은 XML을 처리하는 정보를 응용 프로그램에 전달합니다.  
+ <xref:System.Xml.Linq.XProcessingInstruction>은 XML 처리 명령을 나타냅니다. 처리 명령은 XML을 처리하는 정보를 애플리케이션에 전달합니다.  
   
 ### <a name="xtext-class"></a>XText 클래스  
  <xref:System.Xml.Linq.XText>는 텍스트 노드를 나타냅니다. 대부분의 경우 이 클래스를 사용할 필요가 없습니다. 이 클래스는 혼합 내용에 주로 사용됩니다.  

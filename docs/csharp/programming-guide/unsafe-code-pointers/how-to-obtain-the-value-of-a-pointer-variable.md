@@ -8,12 +8,12 @@ helpviewer_keywords:
 - variables [C#], pointers
 - pointers [C#], * operator
 ms.assetid: 460a813a-4995-44c1-9de2-213b91dc7668
-ms.openlocfilehash: b20642344b34b5426512ef64bde2ab33d55136b9
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 5fbc925b6770bc951a0d7ec856898f62c265462e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577154"
 ---
 # <a name="how-to-obtain-the-value-of-a-pointer-variable-c-programming-guide"></a>방법: 포인터 변수의 값 가져오기(C# 프로그래밍 가이드)
 포인터 간접 참조 연산자를 사용하여 포인터가 가리키는 위치에 있는 변수를 가져올 수 있습니다. 식의 형식은 다음과 같습니다. 여기서 `p`는 포인터 형식입니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "53236637"
   
  [null](../../../csharp/language-reference/keywords/null.md) 포인터에 간접 참조 연산자를 적용할 때의 결과는 구현에 따라 달라집니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 다양한 형식의 포인터를 사용하여 `char` 형식의 변수에 액세스합니다. 변수에 할당되는 물리적 주소가 변경될 수 있으므로 `theChar`의 주소는 실행할 때마다 달라집니다.  
   
  [!code-csharp[csProgGuidePointers#5](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-value-of-a-pointer-variable_1.cs)]  
@@ -40,10 +40,10 @@ ms.locfileid: "53236637"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [유형](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [유형](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

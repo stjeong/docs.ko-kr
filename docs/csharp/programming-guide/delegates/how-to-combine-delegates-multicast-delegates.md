@@ -6,12 +6,12 @@ helpviewer_keywords:
 - delegates [C#], combining
 - multicast delegates [C#]
 ms.assetid: 4e689450-6d0c-46de-acfd-f961018ae5dd
-ms.openlocfilehash: d835f9b22fef550d6e73cbd620a283bd71e393ec
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: ebfcba4d2ebebe2697aa01b7109bbf50b8f144e1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631557"
 ---
 # <a name="how-to-combine-delegates-multicast-delegatesc-programming-guide"></a>방법: 대리자 결합(멀티캐스트 대리자)(C# 프로그래밍 가이드)
 이 예제에서는 멀티캐스트 대리자를 만드는 방법을 보여 줍니다. [대리자](../../../csharp/language-reference/keywords/delegate.md) 개체의 유용한 속성은 `+` 연산자를 사용하여 하나의 대리자 인스턴스에 여러 개체를 할당할 수 있다는 것입니다. 멀티캐스트 대리자는 할당된 대리자 목록을 포함합니다. 멀티캐스트 대리자가 호출되면 목록에 있는 대리자가 순서대로 호출됩니다. 같은 형식의 대리자만 결합할 수 있습니다.  
@@ -23,6 +23,6 @@ ms.locfileid: "53237794"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.MulticastDelegate>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- <xref:System.MulticastDelegate>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [이벤트](../../../csharp/programming-guide/events/index.md)

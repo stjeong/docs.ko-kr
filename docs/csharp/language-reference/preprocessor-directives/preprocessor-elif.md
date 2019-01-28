@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#elif directive [C#]'
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
-ms.openlocfilehash: d7ca980146369174a202c8096cdba154712a438e
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 00a9298be6ecd6f5e775d930190ddb6e227e4711
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53239413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54587231"
 ---
 # <a name="elif-c-reference"></a>#elif(C# 참조)
 `#elif`를 사용하면 복합 조건부 지시문을 만들 수 있습니다. `#elif` 식이 계산되는 경우는 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)와 앞의 선택적 `#elif` 지시문 식이 모두 `true`로 계산되지 않는 경우입니다. `#elif` 식이 `true`이면 컴파일러는 `#elif`와 다음 조건부 지시문 사이에 있는 모든 코드를 평가합니다. 예:  
@@ -29,7 +29,7 @@ ms.locfileid: "53239413"
   
  `==`(같음), `!=`(같지 않음), `&&`(AND), `||`(OR) 연산자를 사용하여 여러 기호를 평가할 수 있습니다. 기호와 연산자를 괄호로 묶을 수도 있습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `#elif`는 다음 코드를 사용하는 것과 같습니다.  
   
 ```csharp
@@ -43,6 +43,6 @@ ms.locfileid: "53239413"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)

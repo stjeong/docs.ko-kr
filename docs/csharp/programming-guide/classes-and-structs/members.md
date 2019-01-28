@@ -6,12 +6,12 @@ helpviewer_keywords:
 - types [C#], nested types
 - C# language, type members
 ms.assetid: 4a30a4ab-d690-4936-9124-92ce9448665a
-ms.openlocfilehash: e8429df6ef633f11df50ee5526496f9688f845ea
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 246ddeeab9814f32b0a3bf0d3586007a434d3953
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592852"
 ---
 # <a name="members-c-programming-guide"></a>멤버(C# 프로그래밍 가이드)
 클래스 및 구조체에는 해당 데이터와 동작을 나타내는 멤버가 있습니다. 클래스의 멤버에는 클래스에서 선언된 모든 멤버가 상속 계층 구조의 모든 클래스에서 선언된 모든 멤버(생성자 및 종료자 제외)와 함께 포함됩니다. 기본 클래스의 private 멤버는 상속되지만 파생 클래스에서 액세스할 수 없습니다.  
@@ -33,15 +33,15 @@ ms.locfileid: "53245106"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
-- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
-- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
-- [이벤트](../../../csharp/programming-guide/events/index.md)  
-- [중첩 형식](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
-- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)
+- [이벤트](../../../csharp/programming-guide/events/index.md)
+- [중첩 형식](../../../csharp/programming-guide/classes-and-structs/nested-types.md)
+- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
 - [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)

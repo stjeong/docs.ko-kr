@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, private constructors
 - private constructors [C#]
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
-ms.openlocfilehash: a0ff8f69f7725b40eaac01acef74857c2a99247c
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: e406b72e5d2932464c407dce014dd8eceee59fb0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577297"
 ---
 # <a name="private-constructors-c-programming-guide"></a>전용 생성자(C# 프로그래밍 가이드)
 전용 생성자는 특수 인스턴스 생성자입니다. 일반적으로 정적 멤버만 포함하는 클래스에서 사용됩니다. 클래스에 하나 이상의 private 생성자가 있고 public 생성자가 없는 경우 중첩 클래스를 제외한 다른 클래스는 이 클래스의 인스턴스를 만들 수 없습니다. 예:  
@@ -37,9 +37,9 @@ ms.locfileid: "53240504"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
-- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-- [private](../../../csharp/language-reference/keywords/private.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [private](../../../csharp/language-reference/keywords/private.md)
 - [public](../../../csharp/language-reference/keywords/public.md)

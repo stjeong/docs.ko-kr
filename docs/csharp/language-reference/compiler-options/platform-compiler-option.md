@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -platform compiler option [C#]
 - /platform compiler option [C#]
 ms.assetid: c290ff5e-47f4-4a85-9bb3-9c2525b0be04
-ms.openlocfilehash: f52192087eb7b73ee930eea073e0c5716ad8c636
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1573e28f2a6f9dec7825d364debcdf1085ef7ff2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635666"
 ---
 # <a name="-platform-c-compiler-options"></a>-platform(C# 컴파일러 옵션)
 어셈블리를 실행할 수 있는 CLR(공용 언어 런타임) 버전을 지정합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "43507594"
  `string`  
  anycpu(기본값), anycpu32bitpreferred, ARM, x64, x86 또는 Itanium입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 -   **anycpu**(기본값)는 어셈블리를 모든 플랫폼에서 실행되도록 컴파일합니다. 응용 프로그램은 가능할 때마다 64비트로 실행되고 해당 모드를 사용할 수 있을 때만 32비트로 전환됩니다.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "43507594"
   
  **anycpu32bitpreferred** 설정은 실행 파일(.EXE)에 대해서만 유효하고 .NET Framework 4.5를 필요로 합니다.  
   
- Windows 64비트 운영 체제에서 실행할 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [64비트 응용 프로그램](../../../framework/64-bit-apps.md)을 참조하세요.  
+ Windows 64비트 운영 체제에서 실행할 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [64비트 애플리케이션](../../../framework/64-bit-apps.md)을 참조하세요.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
   
@@ -66,16 +66,16 @@ ms.locfileid: "43507594"
   
  **-platform**은 Visual C# Express의 개발 환경에서 사용할 수 없습니다.  
   
- 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.PlatformTarget%2A>를 참조하세요.  
+ 이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.PlatformTarget%2A>을 참조하세요.  
   
-## <a name="example"></a>예  
- 다음 예제에서는 **-platform** 옵션을 사용하여 응용 프로그램이 64비트 Windows 운영 체제의 64비트 CLR에서만 실행되도록 지정하는 방법을 보여 줍니다.  
+## <a name="example"></a>예제  
+ 다음 예제에서는 **-platform** 옵션을 사용하여 애플리케이션이 64비트 Windows 운영 체제의 64비트 CLR에서만 실행되도록 지정하는 방법을 보여 줍니다.  
   
 ```console  
 csc -platform:anycpu filename.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](index.md)  
+- [C# 컴파일러 옵션](index.md)
 - [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

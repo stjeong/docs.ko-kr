@@ -3,12 +3,12 @@ title: XML 주석을 사용하여 코드 문서화
 description: XML 문서 주석을 사용하여 코드를 문서화하고 컴파일 시간에 XML 문서 파일을 생성하는 방법을 알아봅니다.
 ms.date: 02/14/2017
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
-ms.openlocfilehash: 70da976861a9bca024d41dd329dc7be043d67c94
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 15bdd65b96159b4c9b6eb45016f8bdde58c1efe3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54576202"
 ---
 # <a name="documenting-your-code-with-xml-comments"></a>XML 주석을 사용하여 코드 문서화
 
@@ -222,5 +222,5 @@ Sandcastle 등의 도구는 [`<event>`](https://ewsoftware.github.io/XMLComments
 
 ## <a name="see-also"></a>참고 항목
 
-* [XML 문서 주석(C# 프로그래밍 가이드)](programming-guide/xmldoc/xml-documentation-comments.md)
-* [문서 주석에 대한 권장 태그(C# 프로그래밍 가이드)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [XML 문서 주석(C# 프로그래밍 가이드)](programming-guide/xmldoc/xml-documentation-comments.md)
+- [문서 주석에 대한 권장 태그(C# 프로그래밍 가이드)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

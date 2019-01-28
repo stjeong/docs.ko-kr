@@ -2,12 +2,12 @@
 title: 공통 특성(C#)
 ms.date: 07/20/2015
 ms.assetid: 785a0526-6c0e-4599-8c61-ccdc88dd9965
-ms.openlocfilehash: 3b02b750ad4801177cb2ee4e2ef4bf51ecb2f20f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4a1dd6200f7eb9e69caefe62d9e9defd90856ce1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54558590"
 ---
 # <a name="common-attributes-c"></a>공통 특성(C#)
 이 항목에서는 C# 프로그램에서 가장 일반적으로 사용되는 특성을 설명합니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "43504397"
 |<xref:System.Reflection.AssemblyName>|어셈블리의 ID를 완전히 설명합니다.|  
 |<xref:System.Reflection.AssemblyVersionAttribute>|어셈블리의 버전을 지정합니다.|  
 |<xref:System.Reflection.AssemblyCultureAttribute>|어셈블리에서 지원하는 문화권을 지정합니다.|  
-|<xref:System.Reflection.AssemblyFlagsAttribute>|어셈블리가 같은 컴퓨터, 같은 프로세스 또는 같은 응용 프로그램 도메인에서 Side-by-side 실행을 지원하는지 지정합니다.|  
+|<xref:System.Reflection.AssemblyFlagsAttribute>|어셈블리가 같은 컴퓨터, 같은 프로세스 또는 같은 애플리케이션 도메인에서 Side-by-side 실행을 지원하는지 지정합니다.|  
   
 ### <a name="informational-attributes"></a>정보 특성  
  정보 특성을 사용하여 어셈블리에 대한 추가 회사 또는 제품 정보를 제공할 수 있습니다. 다음 표에서는 <xref:System.Reflection?displayProperty=nameWithType> 네임스페이스에 정의된 정보 특성을 보여 줍니다.  
@@ -231,9 +231,9 @@ class SampleClass
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Reflection>  
-- <xref:System.Attribute>  
-- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
-- [특성](../../../../../docs/standard/attributes/index.md)  
-- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+- <xref:System.Reflection>
+- <xref:System.Attribute>
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
+- [특성](../../../../../docs/standard/attributes/index.md)
+- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)
 - [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

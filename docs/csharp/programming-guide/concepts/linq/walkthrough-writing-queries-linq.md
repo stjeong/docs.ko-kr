@@ -7,12 +7,12 @@ helpviewer_keywords:
 - queries [LINQ in C#], writing
 - writing LINQ queries
 ms.assetid: 2962a610-419a-4276-9ec8-4b7f2af0c081
-ms.openlocfilehash: ffff8317e6524acc877b7d0851e5a1b37967b1f0
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 085a5f27225589989cf5b9d4b5871226624843ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554978"
 ---
 # <a name="walkthrough-writing-queries-in-c-linq"></a>연습: C#에서 쿼리 작성(LINQ)
 이 연습에서는 LINQ 쿼리 식을 작성하는 데 사용되는 C # 언어 기능을 보여 줍니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "53154084"
   
      **새 프로젝트** 대화 상자가 열립니다.  
   
-3.  **설치됨**, **템플릿**, **Visual C#** 을 차례로 확장하고 **콘솔 응용 프로그램**을 선택합니다.  
+3.  **설치됨**, **템플릿**, **Visual C#** 을 차례로 확장하고 **콘솔 애플리케이션**을 선택합니다.  
   
 4.  **이름** 텍스트 상자에 다른 이름을 입력하거나 기본 이름을 선택한 다음 **확인** 단추를 선택합니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "53154084"
   
 #### <a name="to-create-a-simple-query"></a>단순 쿼리를 작성하려면  
   
--   응용 프로그램의 `Main` 메서드에서, 실행 시 첫 번째 테스트의 점수가 90보다 큰 모든 학생의 목록을 생성하는 간단한 쿼리를 만듭니다. 전체 `Student` 개체가 선택되므로 쿼리의 형식은 `IEnumerable<Student>`입니다. [var](../../../../csharp/language-reference/keywords/var.md) 키워드를 사용하여 코드에서 암시적 형식을 사용할 수도 있지만, 결과를 명확하게 설명하기 위해 명시적 형식이 사용됩니다. `var`에 대한 자세한 내용은 [암시적으로 형식화된 지역 변수](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)를 참조하세요.  
+-   애플리케이션의 `Main` 메서드에서, 실행 시 첫 번째 테스트의 점수가 90보다 큰 모든 학생의 목록을 생성하는 간단한 쿼리를 만듭니다. 전체 `Student` 개체가 선택되므로 쿼리의 형식은 `IEnumerable<Student>`입니다. [var](../../../../csharp/language-reference/keywords/var.md) 키워드를 사용하여 코드에서 암시적 형식을 사용할 수도 있지만, 결과를 명확하게 설명하기 위해 명시적 형식이 사용됩니다. `var`에 대한 자세한 내용은 [암시적으로 형식화된 지역 변수](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)를 참조하세요.  
   
      또한 쿼리의 범위 변수 `student`는 소스의 각 `Student`에 대한 참조로 사용되며, 각 개체에 대한 멤버 액세스를 제공합니다.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "53154084"
   
     -   이 변수의 형식은 `Student`이며, 쿼리 변수 형식은 `IEnumerable<Student>`과 호환됩니다.  
   
-2.  이 코드를 추가한 후 응용 프로그램을 빌드하고 실행하고 **콘솔** 창에서 결과를 확인하세요.  
+2.  이 코드를 추가한 후 애플리케이션을 빌드하고 실행하고 **콘솔** 창에서 결과를 확인하세요.  
   
  [!code-csharp[CsLINQGettingStarted#13](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_3.cs)]  
   
@@ -127,7 +127,7 @@ ms.locfileid: "53154084"
   
      [!code-csharp[CsLINQGettingStarted#15](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_5.cs)]  
   
-3.  응용 프로그램을 실행하고 **콘솔** 창에서 결과를 봅니다.  
+3.  애플리케이션을 실행하고 **콘솔** 창에서 결과를 봅니다.  
   
      자세한 내용은 [group 절](../../../../csharp/language-reference/keywords/group-clause.md)을 참조하세요.  
   
@@ -184,6 +184,6 @@ ms.locfileid: "53154084"
   
 ## <a name="see-also"></a>참고 항목
 
-- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)  
-- [C#에서 LINQ 시작](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+- [C#에서 LINQ 시작](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)

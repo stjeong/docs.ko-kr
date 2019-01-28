@@ -10,12 +10,12 @@ helpviewer_keywords:
 - casting [C#]
 - converting types [C#]
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
-ms.openlocfilehash: 8753e977007e46ea4227c8c0072671a2e9298645
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: bd0562c2c2f22a549af8f21e40b46ac130f8bf75
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54673061"
 ---
 # <a name="casting-and-type-conversions-c-programming-guide"></a>캐스팅 및 형식 변환(C# 프로그래밍 가이드)
 
@@ -91,12 +91,12 @@ Giraffe g2 = (Giraffe) a;
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [유형](../../../csharp/programming-guide/types/index.md)  
-- [() 연산자](../../../csharp/language-reference/operators/invocation-operator.md)  
-- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
-- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
-- [변환 연산자](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
-- [일반화된 형식 변환](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
-- [내보낸 형식 변환](https://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [유형](../../../csharp/programming-guide/types/index.md)
+- [() 연산자](../../../csharp/language-reference/operators/invocation-operator.md)
+- [explicit](../../../csharp/language-reference/keywords/explicit.md)
+- [implicit](../../../csharp/language-reference/keywords/implicit.md)
+- [변환 연산자](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
+- [일반화된 형식 변환](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)
+- [내보낸 형식 변환](https://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)
 - [방법: 문자열을 숫자로 변환](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

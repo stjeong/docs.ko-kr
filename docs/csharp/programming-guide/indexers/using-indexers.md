@@ -5,12 +5,12 @@ ms.date: 10/03/2018
 helpviewer_keywords:
 - indexers [C#], about indexers
 ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f
-ms.openlocfilehash: 8c0d145fab69e60a12ebb8b28f087ab643e508b9
-ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
+ms.openlocfilehash: a6e2ea41c463d5e6959ce7f05a3547ef24f08765
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53397061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601937"
 ---
 # <a name="using-indexers-c-programming-guide"></a>인덱서 사용(C# 프로그래밍 가이드)
 
@@ -75,6 +75,6 @@ C#은 인덱스 매개 변수 형식을 정수로 제한되지 않습니다. 예
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)
 - [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)

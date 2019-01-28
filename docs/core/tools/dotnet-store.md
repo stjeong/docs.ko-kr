@@ -4,12 +4,12 @@ description: "'dotnet store' 명령은 지정된 어셈블리를 런타임 패�
 author: bleroy
 ms.date: 05/29/2018
 ms.custom: seodec18
-ms.openlocfilehash: db1af95150a8949f218169b2999c92c00ac94d56
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 58889039d117a2231cda693e4aca7790f018d1b5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606753"
 ---
 # <a name="dotnet-store"></a>dotnet store
 
@@ -83,4 +83,4 @@ ms.locfileid: "53170732"
 
 ## <a name="see-also"></a>참고 항목
 
-* [런타임 패키지 저장소](../deploying/runtime-store.md)
+- [런타임 패키지 저장소](../deploying/runtime-store.md)

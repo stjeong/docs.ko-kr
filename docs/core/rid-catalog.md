@@ -2,12 +2,12 @@
 title: .NET Core RID(런타임 식별자) 카탈로그
 description: RID(런타임 식별자) 및 .NET Core에서 RID의 사용 방법에 관해 알아봅니다.
 ms.date: 07/19/2018
-ms.openlocfilehash: b801b7866b563ae06499d8ccd2d07cf5fd52b928
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 5a6dda260b4be85e54f4075f3edf12210b385289
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534545"
 ---
 # <a name="net-core-rid-catalog"></a>.NET Core RID 카탈로그
 
@@ -196,4 +196,4 @@ macOS RID는 이전 "OSX" 브랜딩을 사용합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-* [런타임 ID](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
+- [런타임 ID](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
