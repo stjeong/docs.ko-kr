@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7e0274b1f1f0bc0ec6de7490c4602e5813e4d46f
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 2284baf7057ec8c0c947325b1efeced7fdd4acbd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745924"
 ---
 # <a name="certmgrexe-certificate-manager-tool"></a>Certmgr.exe(인증서 관리자 도구)
 인증서 관리자 도구(Certmgr.exe)를 사용하면 인증서, CTL(인증서 신뢰 목록) 및 CRL(인증서 해지 목록)을 관리할 수 있습니다.  
@@ -137,7 +137,7 @@ certmgr /del /all /ctl /s my newStore.str
 certmgr /put /c /s my newFile  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [도구](../../../docs/framework/tools/index.md)  
- [Makecert.exe(인증서 작성 도구)](/windows/desktop/SecCrypto/makecert)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## <a name="see-also"></a>참고 항목
+- [도구](../../../docs/framework/tools/index.md)
+- [Makecert.exe(인증서 작성 도구)](/windows/desktop/SecCrypto/makecert)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

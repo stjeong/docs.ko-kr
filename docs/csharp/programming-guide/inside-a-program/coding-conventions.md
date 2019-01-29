@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C#, coding conventions
 - C# language, coding conventions
 ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
-ms.openlocfilehash: 598f0e75a96a43162d0c626d00320effb418c7fd
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 4bb5a8134bb9cbcdb70830628895338ec83b28a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614122"
 ---
 # <a name="c-coding-conventions-c-programming-guide"></a>C# 코딩 규칙(C# 프로그래밍 가이드)
  코딩 규칙은 다음과 같은 용도로 사용됩니다.  
@@ -198,5 +198,5 @@ ms.locfileid: "53241433"
   
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Basic 코딩 규칙](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)  
+- [Visual Basic 코딩 규칙](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)
 - [보안 코딩 지침](../../../standard/security/secure-coding-guidelines.md)
