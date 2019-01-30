@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - basic samples [WCF], getting started
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
-ms.openlocfilehash: 69cafb53feca392729c20efe0de3d1e74362dc77
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a69dad31e750143af8fee94de9ccdbfd609737fe
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54720563"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204485"
 ---
 # <a name="getting-started-sample"></a>Getting Started 샘플
 Getting Started 샘플에는 일반 서비스와 Windows Communication Foundation (WCF)를 사용 하 여 일반 클라이언트를 구현 하는 방법을 보여 줍니다. 이 샘플은 다른 모든 기본 기술 샘플의 기준이 됩니다.  
@@ -27,7 +27,7 @@ Getting Started 샘플에는 일반 서비스와 Windows Communication Foundatio
 >   
 >  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\GettingStarted\GettingStarted`  
+>  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\GettingStarted\GettingStarted`  
   
  서비스는 메타데이터로 공개적으로 노출하는 서비스 계약에서 수행하는 작업을 설명합니다. 또한 서비스에는 작업을 구현하기 위한 코드가 포함되어 있습니다.  
   
