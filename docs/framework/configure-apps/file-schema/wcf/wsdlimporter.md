@@ -1,15 +1,15 @@
 ---
-title: '&lt;wsdlImporter&gt;'
+title: <wsdlImporter>
 ms.date: 03/30/2017
 ms.assetid: 986b2165-8430-4dba-b1b8-00396841bb96
-ms.openlocfilehash: 5f3d53111c4d303146701b03d7e7b32833cd9edd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bd6c8661f94610d932ffee631aee7ad060f04c6b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54651047"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55269317"
 ---
-# <a name="ltwsdlimportergt"></a>&lt;wsdlImporter&gt;
+# <a name="wsdlimporter"></a>\<wsdlImporter>
 WS-Policy 첨부 파일과 함께 WSDL(웹 서비스 기술 언어) 1.1 메타데이터를 가져오는 모든 WSDL 가져오기를 지정합니다.  
   
 \<system.ServiceModel>  

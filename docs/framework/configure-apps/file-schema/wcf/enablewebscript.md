@@ -1,15 +1,15 @@
 ---
-title: '&lt;enableWebScript&gt;'
+title: <enableWebScript>
 ms.date: 03/30/2017
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
-ms.openlocfilehash: 1115b598776ca7d28698815974e06f3de57be598
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9c9bbb9ccc7879510ae3e2bee2fabd604fd52f65
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600104"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266652"
 ---
-# <a name="ltenablewebscriptgt"></a>&lt;enableWebScript&gt;
+# <a name="enablewebscript"></a>\<enableWebScript>
 이 요소는 ASP.NET AJAX 웹 페이지에서 서비스를 사용할 수 있게 하는 엔드포인트 동작을 설정합니다.  
   
  \<system.ServiceModel>  

@@ -1,21 +1,21 @@
 ---
-title: '&lt;serviceBehavior&gt;의 &lt;routing&gt;'
+title: <routing>의 <serviceBehavior>
 ms.date: 03/30/2017
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-ms.openlocfilehash: 0a007eb33063f8f44098a8c63708255b884b5fdc
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 3f23cbb45aa72b1aae18c845e68b426a4214d499
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146851"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261778"
 ---
-# <a name="ltroutinggt-of-ltservicebehaviorgt"></a>&lt;serviceBehavior&gt;의 &lt;routing&gt;
+# <a name="routing-of-servicebehavior"></a>\<라우팅 >의 \<serviceBehavior >
 라우팅 서비스에 대한 런타임 액세스를 제공하여 라우팅 구성의 동적 수정을 허용합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<라우팅 >  
   
 ## <a name="syntax"></a>구문  
@@ -50,7 +50,7 @@ ms.locfileid: "54146851"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
+|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  이 구성 요소가 서비스 동작 구성에 추가되면 서비스에 대한 라우팅을 사용할 수 있습니다. 서비스에서 실제로 사용할 라우팅 테이블을 이 요소에서 지정할 수 있습니다.  

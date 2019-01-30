@@ -1,15 +1,15 @@
 ---
-title: '&lt;주소&gt; 올바른 원격 파일 주소가 아닙니다.'
+title: <address> 올바른 원격 파일 주소가 아닙니다.
 ms.date: 07/20/2015
 ms.assetid: 2c312242-6c42-4754-a1f5-7e801a542604
-ms.openlocfilehash: 2fd919469efb8562ebaa5ad2b4fc5f27244645f6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 805c7ea3363d465e6fd92c494246f8eafa81e301
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730414"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261553"
 ---
-# <a name="ltaddressgt-is-not-a-valid-remote-file-address"></a>&lt;주소&gt; 올바른 원격 파일 주소가 아닙니다.
+# <a name="address-is-not-a-valid-remote-file-address"></a>\<주소 > 올바른 원격 파일 주소가 아닙니다.
 \<주소 > 올바른 원격 파일 주소가 아닙니다. 올바른 주소는 프로토콜, 경로 및 파일 이름을 포함해야 합니다.  
   
  작업 업로드 또는 다운로드에 대해 잘못된 주소가 지정되었습니다. 주소에는 `ftp` 또는 `http`와 같은 프로토콜, 올바른 경로 및 파일 이름이 포함되어야 합니다. 이 오류는 파일 경로를 잘못 구문 분석한 결과 발생할 수 있습니다.  

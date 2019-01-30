@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;bookmarkResumptionQueries&gt;
+title: <bookmarkResumptionQueries> WCF의
 ms.date: 03/30/2017
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3
-ms.openlocfilehash: 80d1c1e4bc61972d44c27bcbdd0eba14d97c2d6c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4b11543e240b482d52c157083d1184db4f81bb04
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54493952"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261272"
 ---
-# <a name="ltbookmarkresumptionqueriesgt-of-wcf"></a>WCF의 &lt;bookmarkResumptionQueries&gt;
+# <a name="bookmarkresumptionqueries-of-wcf"></a>\<bookmarkResumptionQueries > WCF의
   
 워크플로 인스턴스 내의 책갈피 다시 시작을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 책갈피 다시 시작 레코드를 구독하려면 쿼리가 필요합니다.  
   

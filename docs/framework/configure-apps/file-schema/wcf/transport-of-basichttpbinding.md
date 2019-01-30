@@ -1,15 +1,15 @@
 ---
-title: '&lt;basicHttpBinding&gt;의 &lt;transport&gt;'
+title: <transport>의 <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5
-ms.openlocfilehash: b98f6940c39fe8450f5c58ddd8d35d8829fc26b7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3d305c90233e4af7dde2a0b80e79e2adbe85c356
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54602496"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55264114"
 ---
-# <a name="lttransportgt-of-ltbasichttpbindinggt"></a>&lt;basicHttpBinding&gt;의 &lt;transport&gt;
+# <a name="transport-of-basichttpbinding"></a>\<전송 >의 \<basicHttpBinding >
 HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.  
   
  \<system.ServiceModel>  
