@@ -1,5 +1,5 @@
 ---
-title: 형식의 식은 &lt;형식&gt; 를 쿼리할 수 없습니다
+title: <type> 형식의 식은 쿼리할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - bc36593
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC36593
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
-ms.openlocfilehash: ce0831e0770e5733759c072b8d7c6f20b56f771b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 06b2a7f5c6bd838d09fd39f31778462c364fb8bd
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521493"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261258"
 ---
-# <a name="expression-of-type-lttypegt-is-not-queryable"></a>형식의 식은 &lt;형식&gt; 를 쿼리할 수 없습니다
+# <a name="expression-of-type-type-is-not-queryable"></a>형식의 식은 \<유형 >를 쿼리할 수 없습니다
 형식의 식은 \<유형 >를 쿼리할 수 없습니다. LINQ 공급자에 대 한 어셈블리 참조 및/또는 네임 스페이스 가져오기가 없습니다 있는지 확인 합니다.  
   
  쿼리 가능 형식에 정의 된 합니다 <xref:System.Linq>, <xref:System.Data.Linq>, 및 <xref:System.Xml.Linq> 네임 스페이스입니다. LINQ 쿼리를 수행 하려면 이러한 네임 스페이스를 하나 이상 가져와야 합니다.  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;allowAccounts&gt;의 &lt;add&gt;'
+title: <add>의 <allowAccounts>
 ms.date: 03/30/2017
 ms.assetid: 763c7b1f-e7b0-4d99-a42c-4506fcb8da00
-ms.openlocfilehash: 63f8e678b81838a25664180888e9e7a8eabd043d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6edf0bc2d532deb01f24450b9868bbc240bab413
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54722006"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55259623"
 ---
-# <a name="ltaddgt-of-ltallowaccountsgt"></a>&lt;allowAccounts&gt;의 &lt;add&gt;
+# <a name="add-of-allowaccounts"></a>\<추가 >의 \<allowAccounts >
 WCF 서비스를 호스팅하고 공유 서비스에 대 한 연결 액세스 권한이 부여 된 프로세스에 대 한 사용자 계정을 지정 합니다.  
   
  \<system.serviceModel.activation>  

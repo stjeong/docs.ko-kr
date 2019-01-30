@@ -1,5 +1,5 @@
 ---
-title: 변수 형식이 &#39; &lt;variablename&gt; &#39; 는 바깥쪽 범위의 필드에 바인딩되어 있으므로 유추 되지 것입니다
+title: "'<variablename>' 변수가 바깥쪽 범위의 필드에 바인딩되어 있으므로 변수의 형식을 유추할 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc42110
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: 6adcc1c2a449c9192e488a5d714e1c3271568be0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d7289b8ab0a141d6efdb0f4ca4b4547f15e0e182
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672385"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55259243"
 ---
-# <a name="the-type-for-variable-39ltvariablenamegt39-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>변수 형식이 &#39; &lt;variablename&gt; &#39; 는 바깥쪽 범위의 필드에 바인딩되어 있으므로 유추 되지 것입니다
+# <a name="the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>변수 형식이 '\<variablename >'는 바깥쪽 범위의 필드에 바인딩되어 있으므로 유추 되지 것입니다
 변수 형식이 '\<variablename >'는 바깥쪽 범위의 필드에 바인딩되어 있으므로 유추 되지 것입니다. 이름을 변경 하거나 '\<variablename >', 또는 정규화 된 이름 (예: 'Me.variablename' 또는 'MyBase.variablename')를 사용 합니다.  
   
  코드에서 루프 제어 변수를 클래스 또는 다른 바깥쪽 범위의 필드와 동일한 이름이 있습니다. 제어 변수 없이 사용 되기 때문에 `As` 절 바깥쪽 범위의 필드에 바인딩되어 및 컴파일러에 대 한 새 변수를 만들 하지 않거나 해당 형식을 유추 합니다.  
