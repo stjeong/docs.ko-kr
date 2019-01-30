@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms MonthCalendar 컨트롤을 변경&#39;모양'
+title: '방법: Windows Forms MonthCalendar 컨트롤의 모양 변경'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - examples [Windows Forms], calendar controls
 - MonthCalendar control [Windows Forms], formatting display
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
-ms.openlocfilehash: 5afee81d3db9452be352c875dbba0f7885592c02
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b7f321c1557bc7ea19213f2fc67767fe56328cf4
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624351"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258926"
 ---
-# <a name="how-to-change-the-windows-forms-monthcalendar-control39s-appearance"></a>방법: Windows Forms MonthCalendar 컨트롤을 변경&#39;모양
+# <a name="how-to-change-the-windows-forms-monthcalendar-controls-appearance"></a>방법: Windows Forms MonthCalendar 컨트롤의 모양 변경
 Windows Forms <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 사용 하면 여러 가지 방법으로 달력의 모양을 사용자 지정할 수 있습니다. 예를 들어, 색 구성표를 설정할 수 있으며 주 번호 및 현재 날짜를 표시 하거나 숨기려면 선택.  
   
 ### <a name="to-change-the-month-calendars-color-scheme"></a>월 달력의 색 구성표를 변경 하려면  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;additionalRequestParameters&gt; 요소'
+title: <additionalRequestParameters> 요소
 ms.date: 03/30/2017
 ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
-ms.openlocfilehash: 20faab16f5f3cd728eef5bc04654411c49f561fb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5077ea343bd49ceff3994ce639eeb8a5d0a01693
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54594436"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55259532"
 ---
-# <a name="ltadditionalrequestparametersgt-element"></a>&lt;additionalRequestParameters&gt; 요소
+# <a name="additionalrequestparameters-element"></a>\<additionalRequestParameters > 요소
 이 요소는 추가 요청 매개 변수를 지정하는 구성 요소 컬렉션을 포함합니다.  
   
 ## <a name="see-also"></a>참고자료

@@ -1,5 +1,5 @@
 ---
-title: '&lt;declaredTypes&gt; 요소의 &lt;add&gt;'
+title: <add> <declaredTypes> 요소
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - DataContractSerializer
 - DataContractAttribute
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
-ms.openlocfilehash: dd5972c2bb25367f2566bcf77e53e7a3341d89b4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e6aab0b1eca340e212c34e2d25b9b84984dcc7a0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54519465"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255512"
 ---
-# <a name="ltaddgt-of-ltdeclaredtypesgt-element"></a>&lt;declaredTypes&gt; 요소의 &lt;add&gt;
+# <a name="add-of-declaredtypes-element"></a>\<추가 >의 \<declaredTypes > 요소
 deserialization을 수행하는 동안 <xref:System.Runtime.Serialization.DataContractSerializer>에서 사용하는 형식을 추가합니다. 선언된 각 형식에는 선언된 형식의 필드 또는 속성으로 반환되는 알려진 형식이 포함됩니다.  
   
  system.runtime.serialization  
