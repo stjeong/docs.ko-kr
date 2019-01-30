@@ -1,26 +1,26 @@
 ---
-title: '&lt;commonParameters&gt;의 &lt;add&gt;'
+title: <add>의 <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.openlocfilehash: a5de8104b23de37144cb99ef2b90a4161a0396b4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 63ff98d91db7c8c112b0b00e9bd37c3262bcad6d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54670214"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258627"
 ---
-# <a name="ltaddgt-of-ltcommonparametersgt"></a><span data-ttu-id="28049-102">&lt;commonParameters&gt;의 &lt;add&gt;</span><span class="sxs-lookup"><span data-stu-id="28049-102">&lt;add&gt; of &lt;commonParameters&gt;</span></span>
-<span data-ttu-id="28049-103">여러 서비스에서 전역적으로 사용되는 매개 변수의 이름-값 쌍을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="28049-103">Specifies a name-value pair of parameters that are used globally across multiple services.</span></span> <span data-ttu-id="28049-104">일반적으로 이 매개 변수에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="28049-104">Typically this parameter includes the database connection string that might be shared by durable services.</span></span>  
+# <a name="add-of-commonparameters"></a><span data-ttu-id="25052-102">\<추가 >의 \<일반 매개 변수 ></span><span class="sxs-lookup"><span data-stu-id="25052-102">\<add> of \<commonParameters></span></span>
+<span data-ttu-id="25052-103">여러 서비스에서 전역적으로 사용되는 매개 변수의 이름-값 쌍을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="25052-103">Specifies a name-value pair of parameters that are used globally across multiple services.</span></span> <span data-ttu-id="25052-104">일반적으로 이 매개 변수에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="25052-104">Typically this parameter includes the database connection string that might be shared by durable services.</span></span>  
   
- <span data-ttu-id="28049-105">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="28049-105">\<system.ServiceModel></span></span>  
-<span data-ttu-id="28049-106">\<behaviors></span><span class="sxs-lookup"><span data-stu-id="28049-106">\<behaviors></span></span>  
-<span data-ttu-id="28049-107">\<serviceBehaviors></span><span class="sxs-lookup"><span data-stu-id="28049-107">\<serviceBehaviors></span></span>  
-<span data-ttu-id="28049-108">\<behavior></span><span class="sxs-lookup"><span data-stu-id="28049-108">\<behavior></span></span>  
-<span data-ttu-id="28049-109">\<workflowRuntime></span><span class="sxs-lookup"><span data-stu-id="28049-109">\<workflowRuntime></span></span>  
-<span data-ttu-id="28049-110">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="28049-110">\<commonParameters></span></span>  
-<span data-ttu-id="28049-111">\<add></span><span class="sxs-lookup"><span data-stu-id="28049-111">\<add></span></span>  
+ <span data-ttu-id="25052-105">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="25052-105">\<system.ServiceModel></span></span>  
+<span data-ttu-id="25052-106">\<behaviors></span><span class="sxs-lookup"><span data-stu-id="25052-106">\<behaviors></span></span>  
+<span data-ttu-id="25052-107">\<serviceBehaviors></span><span class="sxs-lookup"><span data-stu-id="25052-107">\<serviceBehaviors></span></span>  
+<span data-ttu-id="25052-108">\<behavior></span><span class="sxs-lookup"><span data-stu-id="25052-108">\<behavior></span></span>  
+<span data-ttu-id="25052-109">\<workflowRuntime></span><span class="sxs-lookup"><span data-stu-id="25052-109">\<workflowRuntime></span></span>  
+<span data-ttu-id="25052-110">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="25052-110">\<commonParameters></span></span>  
+<span data-ttu-id="25052-111">\<add></span><span class="sxs-lookup"><span data-stu-id="25052-111">\<add></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="28049-112">구문</span><span class="sxs-lookup"><span data-stu-id="28049-112">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="25052-112">구문</span><span class="sxs-lookup"><span data-stu-id="25052-112">Syntax</span></span>  
   
 ```xml  
 <workflowRuntime>
@@ -30,29 +30,29 @@ ms.locfileid: "54670214"
 </workflowRuntime>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="28049-113">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="28049-113">Attributes and Elements</span></span>  
- <span data-ttu-id="28049-114">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="28049-114">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="25052-113">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="25052-113">Attributes and Elements</span></span>  
+ <span data-ttu-id="25052-114">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="25052-114">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="28049-115">특성</span><span class="sxs-lookup"><span data-stu-id="28049-115">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="25052-115">특성</span><span class="sxs-lookup"><span data-stu-id="25052-115">Attributes</span></span>  
   
-|<span data-ttu-id="28049-116">특성</span><span class="sxs-lookup"><span data-stu-id="28049-116">Attribute</span></span>|<span data-ttu-id="28049-117">설명</span><span class="sxs-lookup"><span data-stu-id="28049-117">Description</span></span>|  
+|<span data-ttu-id="25052-116">특성</span><span class="sxs-lookup"><span data-stu-id="25052-116">Attribute</span></span>|<span data-ttu-id="25052-117">설명</span><span class="sxs-lookup"><span data-stu-id="25052-117">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="28049-118">name</span><span class="sxs-lookup"><span data-stu-id="28049-118">name</span></span>|<span data-ttu-id="28049-119">서비스에 지정한 매개 변수 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="28049-119">The name of the parameter specified for a service.</span></span>|  
-|<span data-ttu-id="28049-120">값</span><span class="sxs-lookup"><span data-stu-id="28049-120">value</span></span>|<span data-ttu-id="28049-121">서비스에 지정한 매개 변수 값입니다.</span><span class="sxs-lookup"><span data-stu-id="28049-121">The value of the parameter specified for a service.</span></span>|  
+|<span data-ttu-id="25052-118">name</span><span class="sxs-lookup"><span data-stu-id="25052-118">name</span></span>|<span data-ttu-id="25052-119">서비스에 지정한 매개 변수 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="25052-119">The name of the parameter specified for a service.</span></span>|  
+|<span data-ttu-id="25052-120">값</span><span class="sxs-lookup"><span data-stu-id="25052-120">value</span></span>|<span data-ttu-id="25052-121">서비스에 지정한 매개 변수 값입니다.</span><span class="sxs-lookup"><span data-stu-id="25052-121">The value of the parameter specified for a service.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="28049-122">자식 요소</span><span class="sxs-lookup"><span data-stu-id="28049-122">Child Elements</span></span>  
- <span data-ttu-id="28049-123">없음</span><span class="sxs-lookup"><span data-stu-id="28049-123">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="25052-122">자식 요소</span><span class="sxs-lookup"><span data-stu-id="25052-122">Child Elements</span></span>  
+ <span data-ttu-id="25052-123">없음</span><span class="sxs-lookup"><span data-stu-id="25052-123">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="28049-124">부모 요소</span><span class="sxs-lookup"><span data-stu-id="28049-124">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="25052-124">부모 요소</span><span class="sxs-lookup"><span data-stu-id="25052-124">Parent Elements</span></span>  
   
-|<span data-ttu-id="28049-125">요소</span><span class="sxs-lookup"><span data-stu-id="28049-125">Element</span></span>|<span data-ttu-id="28049-126">설명</span><span class="sxs-lookup"><span data-stu-id="28049-126">Description</span></span>|  
+|<span data-ttu-id="25052-125">요소</span><span class="sxs-lookup"><span data-stu-id="25052-125">Element</span></span>|<span data-ttu-id="25052-126">설명</span><span class="sxs-lookup"><span data-stu-id="25052-126">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="28049-127">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="28049-127">\<commonParameters></span></span>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)|<span data-ttu-id="28049-128">서비스에서 사용하는 일반 매개 변수 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="28049-128">A collection of common parameters used by services.</span></span> <span data-ttu-id="28049-129">일반적으로 이 컬렉션에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="28049-129">This collection will typically include the database connection string that might be shared by durable services.</span></span>|  
+|[<span data-ttu-id="25052-127">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="25052-127">\<commonParameters></span></span>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)|<span data-ttu-id="25052-128">서비스에서 사용하는 일반 매개 변수 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="25052-128">A collection of common parameters used by services.</span></span> <span data-ttu-id="25052-129">일반적으로 이 컬렉션에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="25052-129">This collection will typically include the database connection string that might be shared by durable services.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="28049-130">설명</span><span class="sxs-lookup"><span data-stu-id="28049-130">Remarks</span></span>  
- <span data-ttu-id="28049-131">`<commonParameters>` 요소는 여러 서비스에서 전역적으로 사용되는 모든 매개 변수를 정의합니다. 예를 들어 `ConnectionString`를 사용하는 경우 <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="28049-131">The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="25052-130">설명</span><span class="sxs-lookup"><span data-stu-id="25052-130">Remarks</span></span>  
+ <span data-ttu-id="25052-131">`<commonParameters>` 요소는 여러 서비스에서 전역적으로 사용되는 모든 매개 변수를 정의합니다. 예를 들어 `ConnectionString`를 사용하는 경우 <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="25052-131">The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.</span></span>  
   
- <span data-ttu-id="28049-132">작업 일괄 처리를 지속성 저장소에 커밋하는 서비스(예: <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> 및 <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>)의 경우 다음 예제와 같이 `EnableRetries` 매개 변수를 사용하여 트랜잭션을 다시 시도하도록 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="28049-132">For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:</span></span>  
+ <span data-ttu-id="25052-132">작업 일괄 처리를 지속성 저장소에 커밋하는 서비스(예: <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> 및 <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>)의 경우 다음 예제와 같이 `EnableRetries` 매개 변수를 사용하여 트랜잭션을 다시 시도하도록 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25052-132">For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:</span></span>  
   
 ```xml  
 <workflowRuntime name="SampleApplication"
@@ -70,11 +70,11 @@ ms.locfileid: "54670214"
 </workflowRuntime>
 ```  
   
- <span data-ttu-id="28049-133">`EnableRetries` 매개 변수에서 전역 수준을 설정할 수 있습니다 (에 표시 된 대로 합니다 *CommonParameters* 섹션) 개인에 대 한 지 원하는 서비스 또는 `EnableRetries` (에서처럼는 *Services*섹션).</span><span class="sxs-lookup"><span data-stu-id="28049-133">Notice that the `EnableRetries` parameter can be set at either a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).</span></span>  
+ <span data-ttu-id="25052-133">`EnableRetries` 매개 변수에서 전역 수준을 설정할 수 있습니다 (에 표시 된 대로 합니다 *CommonParameters* 섹션) 개인에 대 한 지 원하는 서비스 또는 `EnableRetries` (에서처럼는 *Services*섹션).</span><span class="sxs-lookup"><span data-stu-id="25052-133">Notice that the `EnableRetries` parameter can be set at either a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).</span></span>  
   
- <span data-ttu-id="28049-134">동작을 제어 하려면 구성 파일을 사용 하는 방법은 <xref:System.Workflow.Runtime.WorkflowRuntime> 개체는 Windows Workflow Foundation 호스트 응용 프로그램의 참조 [워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))합니다.</span><span class="sxs-lookup"><span data-stu-id="28049-134">For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).</span></span>  
+ <span data-ttu-id="25052-134">동작을 제어 하려면 구성 파일을 사용 하는 방법은 <xref:System.Workflow.Runtime.WorkflowRuntime> 개체는 Windows Workflow Foundation 호스트 응용 프로그램의 참조 [워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))합니다.</span><span class="sxs-lookup"><span data-stu-id="25052-134">For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="28049-135">예제</span><span class="sxs-lookup"><span data-stu-id="28049-135">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="25052-135">예제</span><span class="sxs-lookup"><span data-stu-id="25052-135">Example</span></span>  
   
 ```xml  
 <commonParameters>
@@ -85,11 +85,11 @@ ms.locfileid: "54670214"
 </commonParameters>
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="28049-136">참고자료</span><span class="sxs-lookup"><span data-stu-id="28049-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="25052-136">참고자료</span><span class="sxs-lookup"><span data-stu-id="25052-136">See also</span></span>
 - <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
 - <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
 - <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
-- <span data-ttu-id="28049-137">[워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))</span><span class="sxs-lookup"><span data-stu-id="28049-137">[Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))</span></span>
-- [<span data-ttu-id="28049-138">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="28049-138">\<commonParameters></span></span>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)
+- <span data-ttu-id="25052-137">[워크플로 구성 파일](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))</span><span class="sxs-lookup"><span data-stu-id="25052-137">[Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))</span></span>
+- [<span data-ttu-id="25052-138">\<commonParameters></span><span class="sxs-lookup"><span data-stu-id="25052-138">\<commonParameters></span></span>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)
