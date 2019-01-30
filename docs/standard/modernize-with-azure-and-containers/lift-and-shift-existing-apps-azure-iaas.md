@@ -4,16 +4,16 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
-ms.openlocfilehash: a6c13ba5bfd28cec87df1c021ed1f303d7d1f4f5
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 2b987d43f476f261bfdbd1b2af6ca7f792178cf8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154387"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266626"
 ---
 # <a name="lift-and-shift-existing-net-apps-to-azure-iaas-cloud-infrastructure-ready"></a>앱 리프트 앤 시프트 기존.NET Azure IaaS (클라우드 인프라 지원)로
 
-> 비전: 첫 번째 단계를 통해 온-프레미스 투자와 하드웨어 및 네트워킹 유지 관리의 총 비용을 줄이기 위해 단순히 rehost 클라우드에서 기존 응용 프로그램입니다.
+> Vision: 첫 번째 단계를 통해 온-프레미스 투자와 하드웨어 및 네트워킹 유지 관리의 총 비용을 줄이기 위해 단순히 rehost 클라우드에서 기존 응용 프로그램입니다.
 
 에 도달 하기 전에 *어떻게* 서비스 (IaaS) 플랫폼으로 Azure 인프라에 기존 응용 프로그램을 마이그레이션하기 위해 중요 한 이유를 분석 하 되 *이유* IaaS로 직접 마이그레이션하 시겠습니까 azure. 이 현대화 완성도 수준 시나리오는 기본적으로 Vm을 계속 현재 온-프레미스 인프라를 사용 하는 대신 클라우드에서 사용을 시작 하려면입니다.
 
@@ -89,7 +89,11 @@ Site Recovery에도 부분적으로 하이브리드 환경에 맞게 이루어�
 
 - **Azure Migrate**
 
-    [http://azuremigrationcenter.com/](http://azuremigrationcenter.com/)
+    [https://aka.ms/azuremigrate](https://aka.ms/azuremigrate)
+
+- **Azure 마이그레이션 센터**
+
+    [https://azure.microsoft.com/migration/](https://azure.microsoft.com/migration/)
 
 - **Site Recovery 사용 하 여 Azure로 마이그레이션**
 

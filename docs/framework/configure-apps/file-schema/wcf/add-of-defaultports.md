@@ -1,15 +1,15 @@
 ---
-title: '&lt;defaultPorts&gt;의 &lt;add&gt;'
+title: <add>의 <defaultPorts>
 ms.date: 03/30/2017
 ms.assetid: f162ce42-963b-4779-96a7-d6d8b4ea0d2f
-ms.openlocfilehash: 8b7a4730af6690616058a91cf23bb39734d81abc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 799715ef008274ead6b745e8ab97e769cb59e6b5
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54541718"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261602"
 ---
-# <a name="ltaddgt-of-ltdefaultportsgt"></a>&lt;defaultPorts&gt;의 &lt;add&gt;
+# <a name="add-of-defaultports"></a>\<추가 >의 \<a d d >
 클라이언트 응용 프로그램에서 수신하는 기본 통신 엔드포인트입니다.  
   
  \<system.ServiceModel>  

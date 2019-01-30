@@ -1,16 +1,16 @@
 ---
-title: 워크플로의 &lt;behaviors&gt;
+title: <behaviors> 워크플로
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 3c6017b6-0c4f-4192-bd67-9515f5d1ec82
-ms.openlocfilehash: b4ad7fb54cc8a03f5dd698055da5a29e719775c4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e61a2078c5989a3b100e77e6b2f753b0ee5dd934
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731675"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271789"
 ---
-# <a name="ltbehaviorsgt-of-workflow"></a>워크플로의 &lt;behaviors&gt;
+# <a name="behaviors-of-workflow"></a>\<동작 > 워크플로
 이 요소에 포함 된 **serviceBehaviors** 컬렉션입니다.  컬렉션의 각 요소는 워크플로 서비스에서 사용하는 동작 요소를 정의합니다. 각 동작 요소는 고유한으로 식별 되 **이름을** 특성입니다.  
   
  \<system.ServiceModel>  

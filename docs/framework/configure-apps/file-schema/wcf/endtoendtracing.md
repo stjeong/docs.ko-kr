@@ -1,15 +1,15 @@
 ---
-title: '&lt;endToEndTracing&gt;'
+title: <endToEndTracing>
 ms.date: 03/30/2017
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.openlocfilehash: c2f5e33eff4fdc6dfa85bcc10b59a7c1436cabb6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1867e307ba004af821045e7d1b5775c470d8a3e8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54519392"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266756"
 ---
-# <a name="ltendtoendtracinggt"></a>&lt;endToEndTracing&gt;
+# <a name="endtoendtracing"></a>\<endToEndTracing>
 서비스 응용 프로그램 실행 중에 종단 간 추적의 다양한 측면을 사용하거나 사용하지 않도록 설정할 수 있는 구성 요소입니다.  
   
  \<system.ServiceModel>  
