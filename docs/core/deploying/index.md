@@ -5,6 +5,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 12/03/2018
 ms.custom: seodec18
+ms.openlocfilehash: 78dfaf46d1531e9d416b25d7ad4a595d5b3f947b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266912"
 ---
 # <a name="net-core-application-deployment"></a>.NET Core 애플리케이션 배포
 
@@ -60,7 +66,7 @@ FDD 및 SCD 배포는 별도의 호스트 실행 파일을 사용하므로 게�
 
 - .NET Core뿐만 아니라 앱과 해당 타사 종속성도 포함해야 하므로 배포 패키지의 크기가 상대적으로 큽니다.
 
-  .NET Core 2.0부터 .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)(세계화 고정 모드)를 사용하여 Linux 시스템에서 배포 크기를 약 28MB까지 줄일 수 있습니다. 일반적으로 Linux에서 .NET Core는 세계화 지원에 대해 [ICU 라이브러리](https://github.com/dotnet/docs/issues/http%22//icu-project.org)를 사용합니다. 고정 모드에서 라이브러리는 배포에 포함되지 않으며, 모든 문화권은 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType)처럼 동작합니다.
+  .NET Core 2.0부터 .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)(세계화 고정 모드)를 사용하여 Linux 시스템에서 배포 크기를 약 28MB까지 줄일 수 있습니다. 일반적으로 Linux에서 .NET Core는 세계화 지원에 대해 [ICU 라이브러리](http://icu-project.org)를 사용합니다. 고정 모드에서 라이브러리는 배포에 포함되지 않으며, 모든 문화권은 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType)처럼 동작합니다.
 
 - 다양한 자체 포함 .NET Core 앱을 시스템에 배포하면 각 앱에서 .NET Core 파일을 중복하므로 엄청나게 많은 디스크 공간을 사용합니다.
 

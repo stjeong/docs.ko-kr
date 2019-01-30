@@ -4,12 +4,12 @@ description: 이식 프로세스를 이해하고 .NET Framework 프로젝트를 
 author: cartermp
 ms.date: 12/04/2018
 ms.custom: seodec18
-ms.openlocfilehash: 5c7cd8b01672e71b0db7255dad23d994a95ce532
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: e29750340cf272c2e05287482bcbeca703d8720a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170043"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266574"
 ---
 # <a name="port-your-code-from-net-framework-to-net-core"></a>.NET Framework에서 .NET Core로 코드 포팅
 
@@ -41,7 +41,7 @@ ms.locfileid: "53170043"
 
 다음 목록은 포팅 프로세스 중에 사용하면 도움이 되는 도구를 보여 줍니다.
 
-* .NET 이식성 분석기 - [명령줄 도구](https://github.com/Microsoft/dotnet-apiport/releases) 또는 [Visual Studio 확장](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)으로, 문제에 대한 어셈블리 단위 분석 결과를 사용하여 .NET Framework와 .NET Core 간에 코드를 포팅할 수 있는 정도에 대한 보고서를 생성할 수 있는 도구 체인입니다. 자세한 내용은 [.NET 이식성 분석기](../../standard/analyzers/portability-analyzer.md)를 참조하세요.
+* .NET 이식성 분석기 - [명령줄 도구](https://github.com/Microsoft/dotnet-apiport/releases) 또는 [Visual Studio 확장](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)으로, 문제에 대한 어셈블리 단위 분석 결과를 사용하여 .NET Framework와 .NET Core 간에 코드를 포팅할 수 있는 정도에 대한 보고서를 생성할 수 있는 도구 체인입니다. 자세한 내용은 [.NET 이식성 분석기](../../standard/analyzers/portability-analyzer.md)를 참조하세요.
 * .NET API 분석기 - 여러 플랫폼에서 C# API에 대한 잠재적 호환성 위험을 검색하고 사용되지 않는 API 호출을 탐지하는 Roslyn 분석기입니다. 자세한 내용은 [.NET API 분석기](../../standard/analyzers/api-analyzer.md)를 참조하세요.
 * 역방향 패키지 검색 - 형식을 검색하고 해당 형식을 포함하는 패키지를 찾을 수 있는 [유용한 웹 서비스](https://packagesearch.azurewebsites.net)입니다.
 
