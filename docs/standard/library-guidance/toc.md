@@ -4,7 +4,7 @@
 ## [강력한 이름 지정](strong-naming.md)
 ## [NuGet](nuget.md)
 ### [종속성](dependencies.md)
-### [SourceLink](sourcelink.md)
+### [소스 링크](sourcelink.md)
 ### [게시](publish-nuget-package.md)
 ## [버전 관리](versioning.md)
 ### [주요 변경 사항](breaking-changes.md)
