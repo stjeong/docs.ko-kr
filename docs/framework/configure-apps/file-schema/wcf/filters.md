@@ -1,15 +1,15 @@
 ---
-title: '&lt;filters&gt;'
+title: <filters>
 ms.date: 03/30/2017
 ms.assetid: 37a87222-ec78-4728-8105-9ca1bd961f0c
-ms.openlocfilehash: 5f50b1ad4abfa77022a17d6497b614721382ec1e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b840e17c2dccabce9e58cb658d757b0a98e1ffcf
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600195"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254264"
 ---
-# <a name="ltfiltersgt"></a>&lt;filters&gt;
+# <a name="filters"></a>\<filters>
 
 `filters` 요소는 메시지 로깅 제어에 사용되는 XPath 필터 컬렉션을 보유합니다.
 

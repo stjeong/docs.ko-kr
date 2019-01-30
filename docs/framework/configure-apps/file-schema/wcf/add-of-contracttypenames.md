@@ -1,15 +1,15 @@
 ---
-title: '&lt;contractTypeNames&gt;의 &lt;add&gt;'
+title: <add>의 <contractTypeNames>
 ms.date: 03/30/2017
 ms.assetid: 03aff6be-5dfb-4a64-ada3-e36227cd43c7
-ms.openlocfilehash: cf9a1ae28b53b841ac5d8d85d31e1548e36369ac
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fa67d2ec21494bb3d84861f4c2e2e39151aac28f
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54735729"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55253720"
 ---
-# <a name="ltaddgt-of-ltcontracttypenamesgt"></a>&lt;contractTypeNames&gt;의 &lt;add&gt;
+# <a name="add-of-contracttypenames"></a>\<추가 >의 \<contractTypeNames >
 검색할 서비스의 계약 이름 및 서비스를 검색할 때 일반적으로 사용되는 기준을 지정하는 구성 요소입니다. 둘 이상의 계약 이름이 지정되면 모든 계약과 일치하는 서비스 엔드포인트만 응답합니다. Windows Communication Foundation (WCF), 끝점 수 하나의 계약만 지원할 참고 합니다.  
   
  \<system.ServiceModel>  

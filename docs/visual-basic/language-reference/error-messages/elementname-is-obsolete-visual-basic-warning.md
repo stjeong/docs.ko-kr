@@ -1,5 +1,5 @@
 ---
-title: '&#39;&lt;elementname&gt; &#39; 가 사용 되지 않습니다 (Visual Basic 경고)'
+title: "'<elementname>'은(는) 사용되지 않습니다. (Visual Basic 경고)"
 ms.date: 07/20/2015
 f1_keywords:
 - vbc40008
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40008
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e
-ms.openlocfilehash: eeeca3354592bfc6d657b435c42ad5644fd2b97d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c6d927ef6681838d8a77a0c6018eb6bbe30913e8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54552392"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255864"
 ---
-# <a name="39ltelementnamegt39-is-obsolete-visual-basic-warning"></a>&#39;&lt;elementname&gt; &#39; 가 사용 되지 않습니다 (Visual Basic 경고)
+# <a name="elementname-is-obsolete-visual-basic-warning"></a>'\<elementname >'가 사용 되지 않습니다 (Visual Basic 경고)
 문에서 경고로 처리하는 <xref:System.ObsoleteAttribute> 특성 및 지시문으로 표시된 프로그래밍 요소에 액세스하려고 합니다.  
   
  프로그래밍 요소에 <xref:System.ObsoleteAttribute> 를 적용하여 더 이상 사용하지 않는 요소로 표시할 수 있습니다. 이렇게 하면 특성의 <xref:System.ObsoleteAttribute.IsError%2A> 속성을 `True` 또는 `False`로 설정할 수 있습니다. `True`로 설정하면 컴파일러가 요소를 사용하려는 시도를 오류로 처리합니다. `False`로 설정하거나 기본값인 `False`로 두면 컴파일러가 요소를 사용하려는 시도가 있을 경우 경고를 발생시킵니다.  

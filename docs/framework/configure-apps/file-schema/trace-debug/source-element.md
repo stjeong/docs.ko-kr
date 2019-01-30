@@ -1,5 +1,5 @@
 ---
-title: '&lt;원본&gt; 요소'
+title: <source> 요소
 ms.date: 09/29/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - <source> element
 - source element
-ms.openlocfilehash: 1e2fadc823c806077f69cd837c5d8443a2090e9f
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: a528e0f77efea6df7379a0f01495bc09d2ed0b24
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083871"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254485"
 ---
-# <a name="ltsourcegt-element"></a>&lt;원본&gt; 요소
+# <a name="source-element"></a>\<소스 > 요소
 추적 메시지를 시작하는 추적 소스를 지정합니다.  
   
  \<configuration>  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;commonParameters&gt;의 &lt;add&gt;'
+title: <add>의 <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.openlocfilehash: a5de8104b23de37144cb99ef2b90a4161a0396b4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 63ff98d91db7c8c112b0b00e9bd37c3262bcad6d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54670214"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258627"
 ---
-# <a name="ltaddgt-of-ltcommonparametersgt"></a>&lt;commonParameters&gt;의 &lt;add&gt;
+# <a name="add-of-commonparameters"></a>\<추가 >의 \<일반 매개 변수 >
 여러 서비스에서 전역적으로 사용되는 매개 변수의 이름-값 쌍을 지정합니다. 일반적으로 이 매개 변수에는 영속 서비스에서 공유할 수 있는 데이터베이스 연결 문자열이 포함됩니다.  
   
  \<system.ServiceModel>  

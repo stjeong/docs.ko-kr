@@ -1,5 +1,5 @@
 ---
-title: 멤버의 형식을 &#39; &lt;membername&gt; &#39; CLS 규격이 아님
+title: "'<membername>' 멤버의 형식이 CLS 규격이 아닙니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc40025
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40025
 ms.assetid: adbd34bb-43d2-4266-90e7-cd1afaf49b4e
-ms.openlocfilehash: b304b28aa7d43a33111c49507bf02f004fcdd9c6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9b23ebca955d961771b194df2c7316cb1b7f4a50
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603846"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254095"
 ---
-# <a name="type-of-member-39ltmembernamegt39-is-not-cls-compliant"></a>멤버의 형식을 &#39; &lt;membername&gt; &#39; CLS 규격이 아님
+# <a name="type-of-member-membername-is-not-cls-compliant"></a>형식의 멤버 '\<membername >' CLS 규격이 아님
 이 구성원은 지정한 데이터 형식 부분을 [Language Independence and Language-independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS). 이 아니므로 사용자 구성 요소에서 오류를 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 고 Visual Basic이 데이터 형식을 지원 합니다. 그러나 엄격 하 게 CLS 규격 코드 작성 하는 다른 구성 요소는이 데이터 형식은 지원 하지 않습니다. 이러한 구성 요소 구성 요소를 성공적으로 조작할 수 있습니다.  
   
  다음 Visual Basic 데이터 형식은 CLS 규격이 아닙니다.  

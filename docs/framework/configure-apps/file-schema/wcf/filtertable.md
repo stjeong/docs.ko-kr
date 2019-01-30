@@ -1,15 +1,15 @@
 ---
-title: '&lt;filterTable&gt;'
+title: <filterTable>
 ms.date: 03/30/2017
 ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4
-ms.openlocfilehash: 83339eebef9a4f1b7f69e0bd1dd16b8278a68258
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ba65d3858cdbdf6b49c50e60f4e3cc9624fef136
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54534607"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254407"
 ---
-# <a name="ltfiltertablegt"></a>&lt;filterTable&gt;
+# <a name="filtertable"></a>\<filterTable>
 필터가 true로 평가 될 경우에 대해 메시지 및 메시지를 라우팅할 클라이언트 끝점을 평가 하는 필터의 목록을 포함 하는 라우팅 테이블을 나타냅니다.  
   
  \<system.serviceModel>  

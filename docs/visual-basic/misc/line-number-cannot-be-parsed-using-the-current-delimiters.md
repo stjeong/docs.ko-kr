@@ -1,17 +1,17 @@
 ---
-title: 줄 &lt;번호&gt; 현재 구분 기호를 사용 하 여 구문 분석할 수 없습니다
+title: 줄 <number> 현재 구분 기호를 사용 하 여 구문 분석할 수 없습니다
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_MalFormedDelimitedLine
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
-ms.openlocfilehash: a5e4f5f5127322f4160ea73f627f59436bc83a3f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 776cf7ed231f63ec9ad4308305fe77d500a4fc1b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54652347"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257341"
 ---
-# <a name="line-ltnumbergt-cannot-be-parsed-using-the-current-delimiters"></a>줄 &lt;번호&gt; 현재 구분 기호를 사용 하 여 구문 분석할 수 없습니다
+# <a name="line-number-cannot-be-parsed-using-the-current-delimiters"></a>줄 \<수 > 현재 구분 기호를 사용 하 여 구문 분석할 수 없습니다
 지정된 것과 다른 구분 기호를 사용하기 때문에 지정한 줄을 구문 분석할 수 없습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

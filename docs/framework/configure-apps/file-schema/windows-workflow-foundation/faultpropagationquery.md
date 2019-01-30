@@ -1,16 +1,16 @@
 ---
-title: '&lt;faultPropagationQuery&gt;'
+title: <faultPropagationQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 4fb5c2b1-3dad-4eca-9c7f-3efb51899813
-ms.openlocfilehash: a91a6f61b39a780ed48ad8d5f5e0dfb9ef60da39
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1a6899eaa04ad16192e07f4bc2ad1abe6e4aedd5
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54538338"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257371"
 ---
-# <a name="ltfaultpropagationquerygt"></a>&lt;faultPropagationQuery&gt;
+# <a name="faultpropagationquery"></a>\<faultPropagationQuery>
 활동 내에서 발생하는 오류의 처리를 추적하는 데 사용되는 쿼리를 나타냅니다.  이 이벤트는 FaultHandler가 오류를 처리할 때마다 발생합니다. 활동 내에서 발생하는 오류 처리를 추적하려면 이러한 쿼리를 사용해야 합니다. 추적 참가자가 오류 전파 레코드를 구독하려면 쿼리가 필요합니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  

@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;workflow&gt;
+title: <workflow> WCF의
 ms.date: 03/30/2017
 ms.assetid: c0443eba-d3b4-4fae-886e-9878daf77691
-ms.openlocfilehash: 6c6efe9ee1ad582e25fc2bc578a15d6182eee2a9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9920a9b75a033515584f4108503faa45687b7203
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54639959"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255382"
 ---
-# <a name="ltworkflowgt-of-wcf"></a>WCF의 &lt;workflow&gt;
+# <a name="workflow-of-wcf"></a>\<워크플로 > WCF의
 런타임에서 내보내지는 추적 레코드를 수신하는 추적 참가자를 직접 구성하고 구성된 방식대로 처리합니다. 여기에는 특정 출력(예: 파일, 콘솔, ETW)에 쓰기, 레코드 처리/집계 또는 필요한 기타 조합이 포함됩니다.  
   
  워크플로 추적 및 추적 참가자에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 하 고 [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)합니다.  

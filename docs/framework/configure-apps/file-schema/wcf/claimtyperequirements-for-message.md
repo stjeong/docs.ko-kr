@@ -1,15 +1,15 @@
 ---
-title: '&lt;message&gt;의 &lt;claimTypeRequirements&gt;'
+title: <claimTypeRequirements> 에 대한 <message>
 ms.date: 03/30/2017
 ms.assetid: f95c5ecd-abb6-4b77-a6d7-a38727f4a142
-ms.openlocfilehash: 5c2bc05887701e78335629a37ce82815ac9abda5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9cf77f6c026df5f78cc8ae6e6783e91f1c86e282
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54628868"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55256610"
 ---
-# <a name="ltclaimtyperequirementsgt-for-ltmessagegt"></a>&lt;message&gt;의 &lt;claimTypeRequirements&gt;
+# <a name="claimtyperequirements-for-message"></a>\<claimTypeRequirements >에 대 한 \<메시지 >
 필요한 클레임 형식의 컬렉션을 지정합니다.  
   
  컬렉션은 필수 및 선택적 클레임을 지정하는 데 서비스에서 사용됩니다. 이러한 클레임은 클라이언트에서 서비스에 액세스하는 데 사용하는 발급된 토큰에 있어야 합니다. WSDL 게시가 활성화되어 있지만 WCF에서는 발급된 토큰이 지정된 클레임 형식을 포함하지 않아도 되는 경우 서비스는 필수 클레임 형식을 메타데이터로 노출합니다. 서비스에서 필수 클레임 형식을 표시하려면 인증 정책을 사용해야 합니다.  
