@@ -1,15 +1,15 @@
 ---
-title: '&lt;scopedCertificates&gt; 요소'
+title: <scopedCertificates> 요소
 ms.date: 03/30/2017
 ms.assetid: c7b6fc35-d4b2-4c18-98bd-83e09591f1d3
-ms.openlocfilehash: c6236093eada1b7be5244d98eabd99482017a395
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: de85b3230461e876ec48e98887805d767e981e0f
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54556498"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270391"
 ---
-# <a name="ltscopedcertificatesgt-element"></a>&lt;scopedCertificates&gt; 요소
+# <a name="scopedcertificates-element"></a>\<scopedCertificates > 요소
 인증에 대해 범위가 지정된 특정 서비스가 제공하는 X.509 인증서 컬렉션을 나타냅니다. 이 컬렉션은 일반적으로 연합 시나리오에서 보안 토큰 서비스에 대한 서비스 인증서를 지정하는 데 사용됩니다.  
   
  \<system.ServiceModel>  

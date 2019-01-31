@@ -1,5 +1,5 @@
 ---
-title: '&#39;모듈&#39; 문은 파일이 나 네임 스페이스 수준 에서만 사용할 수 있습니다'
+title: "'Module' 문은 파일이나 네임스페이스 수준에서만 사용할 수 있습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30617
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30617
 ms.assetid: 5e9de8e5-d26b-4fb2-9e28-814413fe9cef
-ms.openlocfilehash: bdbf8df5942e9df4b9696aeea4e3492121efe21a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0820763cce9cc27f9a379ed5e766e0691a75f36b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54746314"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271267"
 ---
-# <a name="39module39-statements-can-occur-only-at-file-or-namespace-level"></a>&#39;모듈&#39; 문은 파일이 나 네임 스페이스 수준 에서만 사용할 수 있습니다
+# <a name="module-statements-can-occur-only-at-file-or-namespace-level"></a>'Module' 문은 파일이나 네임스페이스 수준에서만 사용할 수 있습니다.
 `Module` 문을 소스 파일의 맨 위에 있는 나타나야 직후 `Option` 및 `Imports` 문, 전역 특성 및 네임 스페이스 선언을 다른 모든 선언 앞입니다.  
   
  **오류 ID:** BC30617  

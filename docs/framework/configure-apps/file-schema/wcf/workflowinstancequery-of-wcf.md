@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;workflowInstanceQuery&gt;
+title: <workflowInstanceQuery> WCF의
 ms.date: 03/30/2017
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
-ms.openlocfilehash: 01867171941db82260d28b0825bdf3453e46e66c
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 726d4db3bad9f57663790e2bb4e081faba28f1ef
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148177"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55278774"
 ---
-# <a name="ltworkflowinstancequerygt-of-wcf"></a>WCF의 &lt;workflowInstanceQuery&gt;
+# <a name="workflowinstancequery-of-wcf"></a>\<workflowInstanceQuery > WCF의
 
 시작된 이벤트나 완료된 이벤트와 같이 워크플로 인스턴스 수명 주기의 변경 내용을 추적하는 쿼리를 나타냅니다.  
   
@@ -17,11 +17,11 @@ ms.locfileid: "54148177"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<workflowInstanceQueries>  
-\<workflowInstanceQuery >  
+\<workflowInstanceQuery>  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,7 +55,7 @@ ms.locfileid: "54148177"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<상태 >](states-of-wcf-workflowinstancequery.md)|추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션입니다.|  
+|[\<states>](states-of-wcf-workflowinstancequery.md)|추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -91,7 +91,7 @@ ms.locfileid: "54148177"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>

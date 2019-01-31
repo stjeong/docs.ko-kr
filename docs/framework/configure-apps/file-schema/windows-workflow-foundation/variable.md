@@ -1,16 +1,16 @@
 ---
-title: '&lt;variable&gt;'
+title: <variable>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 46cc8cbc-10ec-4625-8813-3f5cd6c6afde
-ms.openlocfilehash: 185e7e7196f6679ec3d1fae8a2a256b934022ca9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e487e54ac5c70351d00df4275302bc9f4e92292c
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647883"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270604"
 ---
-# <a name="ltvariablegt"></a>&lt;variable&gt;
+# <a name="variable"></a>\<variable>
 이 활동 쿼리와 연결된 변수의 컬렉션을 나타냅니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  

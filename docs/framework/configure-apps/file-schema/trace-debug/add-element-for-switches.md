@@ -1,5 +1,5 @@
 ---
-title: '&lt;추가&gt; 요소에 대 한 &lt;스위치&gt;'
+title: <add>에 대한 <switches> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches/add
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - <add> element for <switches>
 - add element for <switches>
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-ms.openlocfilehash: 3b15cd7759eb36f95b93f2885151e2f6075d92d9
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 88cd8c9ba7244256ca9ddd3b2957f86d9485933c
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083342"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55273295"
 ---
-# <a name="ltaddgt-element-for-ltswitchesgt"></a>&lt;추가&gt; 요소에 대 한 &lt;스위치&gt;
+# <a name="add-element-for-switches"></a>\<추가 > 요소에 대 한 \<스위치 >
 추적 스위치를 설정하는 수준을 지정합니다.  
   
  \<configuration>  

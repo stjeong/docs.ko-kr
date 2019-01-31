@@ -1,17 +1,17 @@
 ---
-title: '&lt;MethodInstantiation&gt; 요소(.NET 네이티브)'
+title: <MethodInstantiation> 요소 (.NET 네이티브)
 ms.date: 03/30/2017
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e2d05f9c727672c4f249e388a32b1101aaafd2f4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ccc8cd22c3175a2b6456f71d9dc773ce85848949
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54538263"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275059"
 ---
-# <a name="ltmethodinstantiationgt-element-net-native"></a>&lt;MethodInstantiation&gt; 요소(.NET 네이티브)
+# <a name="methodinstantiation-element-net-native"></a>\<MethodInstantiation > 요소 (.NET 네이티브)
 생성된 제네릭 메서드에 런타임 리플렉션 정책을 적용합니다.  
   
 ## <a name="syntax"></a>구문  

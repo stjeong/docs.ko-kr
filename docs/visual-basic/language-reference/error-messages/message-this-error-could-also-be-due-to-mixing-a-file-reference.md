@@ -1,5 +1,5 @@
 ---
-title: '&lt;메시지&gt; 어셈블리에 대 한 프로젝트 참조를 사용 하는 파일 참조가 섞여 있기 때문에이 오류가 수도 있습니다 &#39; &lt;assemblyname&gt;&#39;'
+title: "'<message> 이 오류는 '<assemblyname>' 어셈블리에 대한 프로젝트 참조와 파일 참조가 섞여 있기 때문에 발생할 수도 있습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30971
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30971
 ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
-ms.openlocfilehash: d4fb2a8985a21ecea5056b83d2766e8dc468180d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f28327b4df5b15f368f736e7402179227035a06e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54528994"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55272554"
 ---
-# <a name="ltmessagegt-this-error-could-also-be-due-to-mixing-a-file-reference-with-a-project-reference-to-assembly-39ltassemblynamegt39"></a>&lt;메시지&gt; 어셈블리에 대 한 프로젝트 참조를 사용 하는 파일 참조가 섞여 있기 때문에이 오류가 수도 있습니다 &#39; &lt;assemblyname&gt;&#39;
+# <a name="message-this-error-could-also-be-due-to-mixing-a-file-reference-with-a-project-reference-to-assembly-assemblyname"></a>\<메시지 > 참조 어셈블리에 대 한 프로젝트 참조를 사용 하 여 파일 참조가 섞여 있기 때문에이 오류도 수 '\<assemblyname >'
 \<메시지 > 참조 어셈블리에 대 한 프로젝트 참조를 사용 하 여 파일 참조가 섞여 있기 때문에이 오류도 수 '\<assemblyname >. 이 경우에 대 한 파일 참조를 교체를 시도 '\<assemblyfilename >' 프로젝트에서 '\<projectname1 >'에 대 한 프로젝트 참조를 사용 하 여 '\<projectname2 >'입니다.  
   
  코드 프로젝트에서 다른 프로젝트의 멤버에 액세스할 수 있지만 솔루션의 구성 참조를 해결 하려면 Visual Basic 컴파일러를 허용 하지 않습니다.  

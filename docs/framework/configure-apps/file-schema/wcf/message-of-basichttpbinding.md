@@ -1,15 +1,15 @@
 ---
-title: '&lt;basicHttpBinding&gt;의 &lt;message&gt;'
+title: <message>의 <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.openlocfilehash: f4f50f0cf3010259677af2c8675cb2551c29ae42
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b954ec770ca0c59dec0b25634ccbc59f086d1a99
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54497057"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55274458"
 ---
-# <a name="ltmessagegt-of-ltbasichttpbindinggt"></a>&lt;basicHttpBinding&gt;의 &lt;message&gt;
+# <a name="message-of-basichttpbinding"></a>\<메시지 >의 \<basicHttpBinding >
 메시지 수준 보안 설정을 정의 합니다 [ \<basicHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)합니다.  
   
  \<system.ServiceModel>  

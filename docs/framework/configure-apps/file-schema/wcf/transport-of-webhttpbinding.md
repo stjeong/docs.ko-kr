@@ -1,15 +1,15 @@
 ---
-title: '&lt;webHttpBinding&gt;의 &lt;transport&gt;'
+title: <transport>의 <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: 657de92129d27e70834cb401cde42d24b633f7ed
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d2c7ee3512ddeefae6e5551a58b3bab76742ed30
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54677019"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55286418"
 ---
-# <a name="lttransportgt-of-ltwebhttpbindinggt"></a>&lt;webHttpBinding&gt;의 &lt;transport&gt;
+# <a name="transport-of-webhttpbinding"></a>\<전송 >의 \<webHttpBinding >
 HTTP 요청을 수신하도록 구성된 서비스 엔드포인트의 전송 수준 보안 설정을 정의합니다.  
   
  \<system.ServiceModel>  

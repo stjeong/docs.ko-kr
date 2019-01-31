@@ -1,15 +1,15 @@
 ---
-title: '&lt;wsFederationHttpBinding&gt;의 &lt;security&gt;'
+title: <security>의 <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
-ms.openlocfilehash: 288b907fbc72adea87fddf5d27623c004dbe8af9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5316060d4122a443dd0223ce1ee9cdd39efac0b8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642635"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55282063"
 ---
-# <a name="ltsecuritygt-of-ltwsfederationhttpbindinggt"></a>&lt;wsFederationHttpBinding&gt;의 &lt;security&gt;
+# <a name="security-of-wsfederationhttpbinding"></a>\<보안 >의 \<wsFederationHttpBinding >
 보안 설정을 정의 합니다 [ \<wsFederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)합니다.  
   
  \<system.ServiceModel>  

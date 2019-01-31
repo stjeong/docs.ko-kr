@@ -1,15 +1,15 @@
 ---
-title: '&lt;claimTypeRequirements&gt; 요소의 &lt;add&gt;'
+title: <add> <claimTypeRequirements> 요소
 ms.date: 03/30/2017
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
-ms.openlocfilehash: fb5e723f6cff9f6e573a45a1dabe008beb9399e6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6971837ef2e68de54179daaf225394b9de769987
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54687320"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275589"
 ---
-# <a name="ltaddgt-of-ltclaimtyperequirementsgt-element"></a>&lt;claimTypeRequirements&gt; 요소의 &lt;add&gt;
+# <a name="add-of-claimtyperequirements-element"></a>\<추가 >의 \<claimTypeRequirements > 요소
 페더레이션 자격 증명에 표시되어야 하는 필수 클레임 및 선택적 클레임의 형식을 지정합니다. 예를 들어, 서비스는 특정 집합의 클레임 형식이어야 하는 들어오는 자격 증명에 대한 요구 사항을 기술합니다.  
   
  \<system.ServiceModel>  

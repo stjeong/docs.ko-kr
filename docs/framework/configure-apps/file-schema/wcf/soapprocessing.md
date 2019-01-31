@@ -1,23 +1,23 @@
 ---
-title: '&lt;soapProcessing&gt;'
+title: <soapProcessing>
 ms.date: 03/30/2017
 ms.assetid: e8707027-e6b8-4539-893d-3cd7c13fbc18
-ms.openlocfilehash: 1eef89290b4fda08dd7145c0615edde2fa56676c
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 0bedcec1a87f8384a89f5e5931c18ccebe87f07e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54152010"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279671"
 ---
-# <a name="ltsoapprocessinggt"></a>&lt;soapProcessing&gt;
+# <a name="soapprocessing"></a>\<soapProcessing>
 
 서로 다른 바인딩 형식과 메시지 버전 간에 메시지 마샬링을 위해 사용되는 클라이언트 엔드포인트 동작을 정의합니다.
 
-**\<시스템입니다. ServiceModel >**   
-&nbsp;&nbsp;**\<동작 >**   
-&nbsp;&nbsp;&nbsp;&nbsp;**\<endpointBehaviors >**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<동작 >**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<soapProcessing >**
+**\<system.ServiceModel>**   
+&nbsp;&nbsp;**\<behaviors>**   
+&nbsp;&nbsp;&nbsp;&nbsp;**\<endpointBehaviors>**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<soapProcessing>**
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ ms.locfileid: "54152010"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<동작 >**](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) | 엔드포인트 동작을 지정합니다. |
+| [**\<behavior>**](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) | 엔드포인트 동작을 지정합니다. |
 
 ## <a name="remarks"></a>설명
 

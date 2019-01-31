@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;cancelRequestedQuery&gt;
+title: <cancelRequestedQuery> WCF의
 ms.date: 03/30/2017
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b
-ms.openlocfilehash: 72fd23097760375738c2116b4535940873436986
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bd6157e63761efa954744ab08ea6c66535def514
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54498270"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55281335"
 ---
-# <a name="ltcancelrequestedquerygt-of-wcf"></a>WCF의 &lt;cancelRequestedQuery&gt;
+# <a name="cancelrequestedquery-of-wcf"></a>\<cancelRequestedQuery > WCF의
 
 부모 활동에 의한 자식 활동 취소 요청을 추적하는 데 사용되는 쿼리를 나타냅니다. 추적 참가자가 취소 요청 레코드 개체를 구독하려면 쿼리가 필요합니다.  
   

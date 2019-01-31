@@ -1,15 +1,15 @@
 ---
-title: '&lt;endpointExtensions&gt;'
+title: <endpointExtensions>
 ms.date: 03/30/2017
 ms.assetid: 33396e0a-1fae-4616-b822-923584eebfd1
-ms.openlocfilehash: 3883a23c679abc83d7cfe9011b7cdb7e4154adfe
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 746f98b54285f95bb63e15136508909327c0d140
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146448"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55264611"
 ---
-# <a name="ltendpointextensionsgt"></a>&lt;endpointExtensions&gt;
+# <a name="endpointextensions"></a>\<endpointExtensions>
 이 섹션에서는 새 표준 엔드포인트를 컴퓨터 또는 응용 프로그램 구성 파일의 extensions 섹션에 등록합니다. `add` 키워드를 사용하고 요소의 `type` 특성을 해당 끝점 형식으로 설정하고, `name` 특성을 표준 끝점의 이름으로 설정하여 표준 끝점을 이 컬렉션에 추가할 수 있습니다.  
   
  다음 예제에서는 `add` 요소와 `name` 특성을 사용하여 구성 파일의 `<endpointExtensions>` 섹션에 표준 끝점을 추가합니다.  

@@ -1,5 +1,5 @@
 ---
-title: '임시 Win32 리소스 파일을 저장할 수 없습니다. &#39; &lt;filename&gt;&#39;: &lt;오류 메시지&gt;'
+title: "'<filename>' 임시 Win32 리소스 파일을 저장하는 동안 오류가 발생했습니다. <error message>"
 ms.date: 07/20/2015
 f1_keywords:
 - bc30137
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30137
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
-ms.openlocfilehash: 5339f994560c6c7e2c40651c5ea326f3713d3649
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3af4ff0ace8afcb2f576ec4fde022672def0b90b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595931"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265092"
 ---
-# <a name="error-saving-temporary-win32-resource-file-39ltfilenamegt39-lterror-messagegt"></a>임시 Win32 리소스 파일을 저장할 수 없습니다. &#39; &lt;filename&gt;&#39;: &lt;오류 메시지&gt;
+# <a name="error-saving-temporary-win32-resource-file-filename-error-message"></a>임시 Win32 리소스 파일을 저장할 수 없습니다. '\<파일 이름 >': \<오류 메시지 >
 Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 생성 하려면 어셈블리 링커 (Al.exe, Alink 라고도)를 호출 합니다. 링커가 메모리 내 리소스를 쓰는 데 사용할 파일 이름을 가져오는 동안 오류를 보고했습니다.  
   
  **오류 ID:** BC30137  

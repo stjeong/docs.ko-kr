@@ -1,15 +1,15 @@
 ---
-title: '&lt;baseAddresses&gt;'
+title: <baseAddresses>
 ms.date: 03/30/2017
 ms.assetid: 78918102-2898-46e0-9ea8-6b8afe65603e
-ms.openlocfilehash: 34d400e74b24e9eb4140d1b43597b0217b23d80c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dc4b31e729f9037da101bdf3e6cde28e91b1a070
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730128"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55277019"
 ---
-# <a name="ltbaseaddressesgt"></a>&lt;baseAddresses&gt;
+# <a name="baseaddresses"></a>\<baseAddresses>
 자체 호스팅 환경의 서비스 호스트에 대한 기준 주소인 `baseAddress` 요소의 컬렉션을 나타냅니다. 기준 주소가 있는 경우 기준 주소에 대한 상대 주소로 엔드포인트를 구성할 수 있습니다.  
   
  \<system.ServiceModel>  

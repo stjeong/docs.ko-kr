@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; 요소에 대 한 &lt;런타임&gt;'
+title: <assemblyIdentity>에 대한 <runtime> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - container tags, <assemblyIdentity> element
 - assemblyIdentity element
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-ms.openlocfilehash: b2a027cfc76255b81bc8c577be5c2d825303b3e5
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 6f05f1f395156e149e73c1081e486b5285c2b599
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083537"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55277500"
 ---
-# <a name="ltassemblyidentitygt-element-for-ltruntimegt"></a>&lt;assemblyIdentity&gt; 요소에 대 한 &lt;런타임&gt;
+# <a name="assemblyidentity-element-for-runtime"></a>\<assemblyIdentity > 요소에 대 한 \<런타임 >
 어셈블리에 대 한 식별 정보를 포함합니다.  
   
  \<configuration>  

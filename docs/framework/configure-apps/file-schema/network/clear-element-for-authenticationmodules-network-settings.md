@@ -1,5 +1,5 @@
 ---
-title: '&lt;지우기&gt; authenticationModules (네트워크 설정)에 대 한 요소'
+title: authenticationModules의 <clear> 요소(네트워크 설정)
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/clear
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - <clear> element, authenticationModules
 - authenticationModules, clear element
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
-ms.openlocfilehash: b2f5194cc6a4c7c0329edb2a1718a642781f79b9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d6760d05a8c2368cd20cae416b0b4b428b6588db
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54563420"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279073"
 ---
-# <a name="ltcleargt-element-for-authenticationmodules-network-settings"></a>&lt;지우기&gt; authenticationModules (네트워크 설정)에 대 한 요소
+# <a name="clear-element-for-authenticationmodules-network-settings"></a>\<지우기 > authenticationModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 인증 모듈을 모두 지웁니다.  
   
  \<configuration>  

@@ -1,17 +1,17 @@
 ---
-title: '&lt;하위 형식&gt; 요소(.NET 네이티브)'
+title: <Subtypes> 요소 (.NET 네이티브)
 ms.date: 03/30/2017
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a5503e89006411887de9b0def929ac1155df5aa4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 712282153b79edc480ec387aa746e375ddd30d27
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537259"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55273135"
 ---
-# <a name="ltsubtypesgt-element-net-native"></a>&lt;하위 형식&gt; 요소(.NET 네이티브)
+# <a name="subtypes-element-net-native"></a>\<하위 형식 > 요소 (.NET 네이티브)
 포함 형식에서 상속된 모든 클래스에 런타임 정책을 적용합니다.  
   
 ## <a name="syntax"></a>구문  

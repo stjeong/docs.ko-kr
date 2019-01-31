@@ -1,5 +1,5 @@
 ---
-title: 형식 &#39; &lt;typename&gt; &#39; 정의 되어 있지 않습니다
+title: "'<typename>' 형식이 정의되지 않았습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30002
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 8e303a9ac6529fbbc818c94497a16463897fb0c5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 80a3d31a8a46ce616be2dd2ab27faf0af04876f2
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54496129"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275078"
 ---
-# <a name="type-39lttypenamegt39-is-not-defined"></a>형식 &#39; &lt;typename&gt; &#39; 정의 되어 있지 않습니다
+# <a name="type-typename-is-not-defined"></a>형식 '\<typename >'가 정의 되지 않은
 문에 정의 되지 않은 형식에 대 한 참조를 만들었습니다. 선언문의 형식 같은 정의 `Enum`, `Structure`를 `Class`, 또는 `Interface`합니다.  
   
  **오류 ID:** BC30002  

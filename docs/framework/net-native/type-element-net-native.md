@@ -1,17 +1,17 @@
 ---
-title: '&lt;유형&gt; 요소(.NET 네이티브)'
+title: <Type> 요소 (.NET 네이티브)
 ms.date: 03/30/2017
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 766b839afe0ca14e49bcf595241169b601999d7e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 85c5ae85a07567305d6e7e2a57f4b5459bd647d4
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706791"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55276307"
 ---
-# <a name="lttypegt-element-net-native"></a>&lt;유형&gt; 요소(.NET 네이티브)
+# <a name="type-element-net-native"></a>\<형식 > 요소 (.NET 네이티브)
 클래스 또는 구조체와 같은 특정 형식에 런타임 정책을 적용합니다.  
   
 ## <a name="syntax"></a>구문  

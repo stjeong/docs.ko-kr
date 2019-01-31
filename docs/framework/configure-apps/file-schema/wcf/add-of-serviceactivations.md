@@ -1,15 +1,15 @@
 ---
-title: '&lt;serviceActivations&gt;의 &lt;add&gt;'
+title: <add>의 <serviceActivations>
 ms.date: 03/30/2017
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.openlocfilehash: d0e1f45cc8ff5b544eff5ff5dae33d5989aaf405
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e87a79137641d2697452a4862c5449da166ecfda
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54587637"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55262678"
 ---
-# <a name="ltaddgt-of-ltserviceactivationsgt"></a>&lt;serviceActivations&gt;의 &lt;add&gt;
+# <a name="add-of-serviceactivations"></a>\<추가 >의 \<serviceActivations >
 Windows Communication Foundation (WCF) 서비스 형식에 매핑되는 가상 서비스 활성화 설정을 정의할 수 있는 구성 요소입니다. .svc 파일 없이도 WAS/IIS에서 호스트되는 서비스를 활성화할 수 있습니다.  
   
  \<system.ServiceModel>  

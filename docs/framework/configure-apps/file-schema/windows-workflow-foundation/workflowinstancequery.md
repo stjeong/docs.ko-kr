@@ -1,16 +1,16 @@
 ---
-title: '&lt;workflowInstanceQuery&gt;'
+title: <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 9096e812-626a-409a-9eda-c31a60b84c55
-ms.openlocfilehash: bef9ddcee2e373f4588d6aed06b7c51e4c6ed4b6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7541ddcf4df8135d82b1f7f5ae2c02f031090e17
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662051"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275071"
 ---
-# <a name="ltworkflowinstancequerygt"></a>&lt;workflowInstanceQuery&gt;
+# <a name="workflowinstancequery"></a>\<workflowInstanceQuery>
 시작된 이벤트나 완료된 이벤트와 같이 워크플로 인스턴스 수명 주기의 변경 내용을 추적하는 쿼리를 나타냅니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

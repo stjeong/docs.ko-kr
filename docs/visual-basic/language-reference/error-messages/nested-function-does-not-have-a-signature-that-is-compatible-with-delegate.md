@@ -1,5 +1,5 @@
 ---
-title: 중첩 된 함수에서 대리자와 호환 되는 서명 되지 않은 &#39; &lt;delegatename&gt;&#39;
+title: 중첩된 함수에 '<delegatename>' 대리자와 호환되는 시그니처가 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc36532
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC36532
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
-ms.openlocfilehash: abfda4ee6064ec9ea54b8a3c383d10f8263a1458
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ea6f230715520cb35809d57db76b300da326ec9a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54506409"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55283467"
 ---
-# <a name="nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-39ltdelegatenamegt39"></a>중첩 된 함수에서 대리자와 호환 되는 서명 되지 않은 &#39; &lt;delegatename&gt;&#39;
+# <a name="nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>중첩 된 함수에서 대리자와 호환 되는 서명 되지 않은 '\<delegatename >'
 람다 식에 호환 되지 않는 서명이 대리자에 할당 되었습니다. 예를 들어, 다음 코드를 대리자 `Del` 은 두 개의 정수 매개 변수입니다.  
   
 ```vb  

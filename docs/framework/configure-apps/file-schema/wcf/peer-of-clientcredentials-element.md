@@ -1,15 +1,15 @@
 ---
-title: '&lt;clientCredentials&gt; 요소의 &lt;peer&gt;'
+title: <peer> <clientCredentials> 요소
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: f933e4c6719437d530e0cf90e3aa1da3a8143060
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8970100b1ad3019ff4a639d835d1db1430968008
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54616214"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275147"
 ---
-# <a name="ltpeergt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;peer&gt;
+# <a name="peer-of-clientcredentials-element"></a>\<피어 >의 \<clientCredentials > 요소
 피어 투 피어 클라이언트를 인증할 때 사용하는 자격 증명을 지정합니다.  
   
  \<system.ServiceModel>  
