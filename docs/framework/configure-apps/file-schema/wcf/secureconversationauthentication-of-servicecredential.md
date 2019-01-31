@@ -1,52 +1,52 @@
 ---
-title: '&lt;serviceCredential&gt;의 &lt;secureConversationAuthentication&gt;'
+title: <secureConversationAuthentication>의 <serviceCredential>
 ms.date: 03/30/2017
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd
-ms.openlocfilehash: 11ce6dcd2f075606cf808992edb99328daec3fba
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 13e9312e4c4eade003fec77909a743009aa9bca7
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54696416"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55278527"
 ---
-# <a name="ltsecureconversationauthenticationgt-of-ltservicecredentialgt"></a><span data-ttu-id="f3ec6-102">&lt;serviceCredential&gt;의 &lt;secureConversationAuthentication&gt;</span><span class="sxs-lookup"><span data-stu-id="f3ec6-102">&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;</span></span>
-<span data-ttu-id="f3ec6-103">보안 대화 서비스 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-103">Specifies the settings for a secure conversation service.</span></span>  
+# <a name="secureconversationauthentication-of-servicecredential"></a><span data-ttu-id="74a97-102">\<secureConversationAuthentication >의 \<serviceCredential ></span><span class="sxs-lookup"><span data-stu-id="74a97-102">\<secureConversationAuthentication> of \<serviceCredential></span></span>
+<span data-ttu-id="74a97-103">보안 대화 서비스 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="74a97-103">Specifies the settings for a secure conversation service.</span></span>  
   
- <span data-ttu-id="f3ec6-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="f3ec6-104">\<system.ServiceModel></span></span>  
-<span data-ttu-id="f3ec6-105">\<behaviors></span><span class="sxs-lookup"><span data-stu-id="f3ec6-105">\<behaviors></span></span>  
-<span data-ttu-id="f3ec6-106">\<serviceBehaviors></span><span class="sxs-lookup"><span data-stu-id="f3ec6-106">\<serviceBehaviors></span></span>  
-<span data-ttu-id="f3ec6-107">\<behavior></span><span class="sxs-lookup"><span data-stu-id="f3ec6-107">\<behavior></span></span>  
-<span data-ttu-id="f3ec6-108">\<serviceCredentials></span><span class="sxs-lookup"><span data-stu-id="f3ec6-108">\<serviceCredentials></span></span>  
-<span data-ttu-id="f3ec6-109">\<secureConversationAuthentication></span><span class="sxs-lookup"><span data-stu-id="f3ec6-109">\<secureConversationAuthentication></span></span>  
+ <span data-ttu-id="74a97-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="74a97-104">\<system.ServiceModel></span></span>  
+<span data-ttu-id="74a97-105">\<behaviors></span><span class="sxs-lookup"><span data-stu-id="74a97-105">\<behaviors></span></span>  
+<span data-ttu-id="74a97-106">\<serviceBehaviors></span><span class="sxs-lookup"><span data-stu-id="74a97-106">\<serviceBehaviors></span></span>  
+<span data-ttu-id="74a97-107">\<behavior></span><span class="sxs-lookup"><span data-stu-id="74a97-107">\<behavior></span></span>  
+<span data-ttu-id="74a97-108">\<serviceCredentials></span><span class="sxs-lookup"><span data-stu-id="74a97-108">\<serviceCredentials></span></span>  
+<span data-ttu-id="74a97-109">\<secureConversationAuthentication></span><span class="sxs-lookup"><span data-stu-id="74a97-109">\<secureConversationAuthentication></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f3ec6-110">구문</span><span class="sxs-lookup"><span data-stu-id="f3ec6-110">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="74a97-110">구문</span><span class="sxs-lookup"><span data-stu-id="74a97-110">Syntax</span></span>  
   
 ```xml  
 <secureConversationAuthentication securityStateEncoderType="String" />
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="f3ec6-111">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="f3ec6-111">Attributes and Elements</span></span>  
- <span data-ttu-id="f3ec6-112">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-112">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="74a97-111">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="74a97-111">Attributes and Elements</span></span>  
+ <span data-ttu-id="74a97-112">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="74a97-112">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="f3ec6-113">특성</span><span class="sxs-lookup"><span data-stu-id="f3ec6-113">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="74a97-113">특성</span><span class="sxs-lookup"><span data-stu-id="74a97-113">Attributes</span></span>  
   
-|<span data-ttu-id="f3ec6-114">특성</span><span class="sxs-lookup"><span data-stu-id="f3ec6-114">Attribute</span></span>|<span data-ttu-id="f3ec6-115">설명</span><span class="sxs-lookup"><span data-stu-id="f3ec6-115">Description</span></span>|  
+|<span data-ttu-id="74a97-114">특성</span><span class="sxs-lookup"><span data-stu-id="74a97-114">Attribute</span></span>|<span data-ttu-id="74a97-115">설명</span><span class="sxs-lookup"><span data-stu-id="74a97-115">Description</span></span>|  
 |---------------|-----------------|  
-|`securityStateEncoderType`|<span data-ttu-id="f3ec6-116">사용할 <xref:System.ServiceModel.Security.SecurityStateEncoder> 형식을 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-116">A string that specifies the type of <xref:System.ServiceModel.Security.SecurityStateEncoder> to be used.</span></span>|  
+|`securityStateEncoderType`|<span data-ttu-id="74a97-116">사용할 <xref:System.ServiceModel.Security.SecurityStateEncoder> 형식을 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="74a97-116">A string that specifies the type of <xref:System.ServiceModel.Security.SecurityStateEncoder> to be used.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="f3ec6-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="f3ec6-117">Child Elements</span></span>  
- <span data-ttu-id="f3ec6-118">없음</span><span class="sxs-lookup"><span data-stu-id="f3ec6-118">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="74a97-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="74a97-117">Child Elements</span></span>  
+ <span data-ttu-id="74a97-118">없음</span><span class="sxs-lookup"><span data-stu-id="74a97-118">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="f3ec6-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="f3ec6-119">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="74a97-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="74a97-119">Parent Elements</span></span>  
   
-|<span data-ttu-id="f3ec6-120">요소</span><span class="sxs-lookup"><span data-stu-id="f3ec6-120">Element</span></span>|<span data-ttu-id="f3ec6-121">설명</span><span class="sxs-lookup"><span data-stu-id="f3ec6-121">Description</span></span>|  
+|<span data-ttu-id="74a97-120">요소</span><span class="sxs-lookup"><span data-stu-id="74a97-120">Element</span></span>|<span data-ttu-id="74a97-121">설명</span><span class="sxs-lookup"><span data-stu-id="74a97-121">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="f3ec6-122">\<serviceCredentials></span><span class="sxs-lookup"><span data-stu-id="f3ec6-122">\<serviceCredentials></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|<span data-ttu-id="f3ec6-123">서비스를 인증하는 데 사용되는 자격 증명 및 클라이언트 자격 증명 유효성 검사 관련 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-123">Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.</span></span>|  
+|[<span data-ttu-id="74a97-122">\<serviceCredentials></span><span class="sxs-lookup"><span data-stu-id="74a97-122">\<serviceCredentials></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|<span data-ttu-id="74a97-123">서비스를 인증하는 데 사용되는 자격 증명 및 클라이언트 자격 증명 유효성 검사 관련 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="74a97-123">Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="f3ec6-124">설명</span><span class="sxs-lookup"><span data-stu-id="f3ec6-124">Remarks</span></span>  
- <span data-ttu-id="f3ec6-125">SCT(보안 컨텍스트 토큰) 쿠키 serialization을 위한 알려진 클레임 형식 목록과 쿠키 정보를 인코딩 및 보안할 인코더를 지정하려면 이 구성 요소를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-125">Use this configuration element to specify a list of known claim types for the Security Context Token (SCT) cookies serialization, as well as an encoder to encode and secure cookies information.</span></span> <span data-ttu-id="f3ec6-126">SCT에 대한 자세한 내용은 <xref:System.ServiceModel.Security.SecureConversationServiceCredential>을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f3ec6-126">For more information on SCT, see <xref:System.ServiceModel.Security.SecureConversationServiceCredential>.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="74a97-124">설명</span><span class="sxs-lookup"><span data-stu-id="74a97-124">Remarks</span></span>  
+ <span data-ttu-id="74a97-125">SCT(보안 컨텍스트 토큰) 쿠키 serialization을 위한 알려진 클레임 형식 목록과 쿠키 정보를 인코딩 및 보안할 인코더를 지정하려면 이 구성 요소를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="74a97-125">Use this configuration element to specify a list of known claim types for the Security Context Token (SCT) cookies serialization, as well as an encoder to encode and secure cookies information.</span></span> <span data-ttu-id="74a97-126">SCT에 대한 자세한 내용은 <xref:System.ServiceModel.Security.SecureConversationServiceCredential>을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="74a97-126">For more information on SCT, see <xref:System.ServiceModel.Security.SecureConversationServiceCredential>.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f3ec6-127">참고자료</span><span class="sxs-lookup"><span data-stu-id="f3ec6-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74a97-127">참고자료</span><span class="sxs-lookup"><span data-stu-id="74a97-127">See also</span></span>
 - <xref:System.ServiceModel.Configuration.SecureConversationServiceElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.SecureConversationAuthentication%2A>
 - <xref:System.ServiceModel.Description.ServiceCredentials.SecureConversationAuthentication%2A>
