@@ -1,5 +1,5 @@
 ---
-title: 형식 &#39; &lt;typename&gt; &#39; 에 생성자가 없습니다
+title: "'<typename>' 형식에 생성자가 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30251
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30251
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
-ms.openlocfilehash: 8a13451956b8afb1bf733c6faa218eadf4255495
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6a12bc35aeaa6e9e21835ce0a091ee89ea4c326d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54511106"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260370"
 ---
-# <a name="type-39lttypenamegt39-has-no-constructors"></a>형식 &#39; &lt;typename&gt; &#39; 에 생성자가 없습니다
+# <a name="type-typename-has-no-constructors"></a>형식 '\<typename >'에 생성자가 없습니다
 형식이 `Sub New()` 호출을 지원하지 않습니다. 컴파일러 또는 이진 파일이 손상되었기 때문일 수 있습니다.  
   
  **오류 ID:** BC30251  

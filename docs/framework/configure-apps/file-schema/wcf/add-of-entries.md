@@ -1,15 +1,15 @@
 ---
-title: '&lt;entries&gt;의 &lt;add&gt;'
+title: <add>의 <entries>
 ms.date: 03/30/2017
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
-ms.openlocfilehash: 082b19cd4515deb19ee7190dfeb8ae04ab834830
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7267b8719987ecd25bcca78a7897a0d4172a42ef
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54645368"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55264572"
 ---
-# <a name="ltaddgt-of-ltentriesgt"></a>&lt;entries&gt;의 &lt;add&gt;
+# <a name="add-of-entries"></a>\<추가 >의 \<항목 >
 이전에 정의된 클라이언트 엔드포인트에 필터를 매핑하는 라우팅 항목을 나타냅니다. 이 필터와 일치하는 메시지가 해당 대상으로 전송됩니다.  
   
  \<system.serviceModel>  

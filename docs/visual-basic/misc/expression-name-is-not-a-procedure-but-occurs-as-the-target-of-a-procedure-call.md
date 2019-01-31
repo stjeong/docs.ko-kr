@@ -1,17 +1,17 @@
 ---
-title: 식을 '&lt;이름을&gt;'은 (는) 프로시저가 있지만 프로시저 호출의 대상으로 발생 합니다.
+title: 식 '<name>'은 (는) 프로시저가 있지만 프로시저 호출의 대상으로 발생 합니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbrExpressionNotProcedure
 ms.assetid: 59169d44-a279-4aca-8f14-fba8d69d8959
-ms.openlocfilehash: ad3a09f33118f9e65d92bbb25195037a983ecf2f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e2c04ba460208d6dd652c9021121181df0e52fdb
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54512543"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55259945"
 ---
-# <a name="expression-ltnamegt-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call"></a>식을 '&lt;이름을&gt;'은 (는) 프로시저가 있지만 프로시저 호출의 대상으로 발생 합니다.
+# <a name="expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call"></a>식 '\<이름 >'은 (는) 프로시저가 있지만 프로시저 호출의 대상으로 발생 합니다.
 프로시저가 아닌 식에 대한 프로시저 호출을 만들었습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

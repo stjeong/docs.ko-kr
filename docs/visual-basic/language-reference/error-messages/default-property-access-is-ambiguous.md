@@ -1,5 +1,5 @@
 ---
-title: 기본 속성 액세스가 상속 된 인터페이스 멤버 사이 모호 &#39; &lt;defaultpropertyname&gt; &#39; 인터페이스 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;defaultpropertyname&gt; &#39; 인터페이스의 &#39; &lt;interfacename2&gt;&#39;
+title: 기본 속성 액세스가 '<defaultpropertyname>' 인터페이스의 상속된 인터페이스 멤버 '<interfacename1>'과(와) '<defaultpropertyname>' 인터페이스의 상속된 인터페이스 멤버 '<interfacename2>' 사이에서 모호합니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30686
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30686
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
-ms.openlocfilehash: 1fae63506a35eb046676214a2b6c52977f24645d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a7079ff3b56b94cb969a77707dbd79b1d7dd4bb1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54518646"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270591"
 ---
-# <a name="default-property-access-is-ambiguous-between-the-inherited-interface-members-39ltdefaultpropertynamegt39-of-interface-39ltinterfacename1gt39-and-39ltdefaultpropertynamegt39-of-interface-39ltinterfacename2gt39"></a>기본 속성 액세스가 상속 된 인터페이스 멤버 사이 모호 &#39; &lt;defaultpropertyname&gt; &#39; 인터페이스 &#39; &lt;interfacename1&gt; &#39; 및 &#39; &lt;defaultpropertyname&gt; &#39; 인터페이스의 &#39; &lt;interfacename2&gt;&#39;
+# <a name="default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>기본 속성 액세스가 상속 된 인터페이스 멤버 사이 모호\<defaultpropertyname >' 인터페이스의 '\<interfacename1 >' 및 '\<defaultpropertyname >' 인터페이스의 '\< interfacename2 >'
 인터페이스는 각각 같은 이름의 기본 속성을 선언 하는 두 인터페이스에서 상속 됩니다. 컴파일러는 한정자 없이이 기본 속성에 대 한 액세스를 확인할 수 없습니다. 다음은 이에 대한 예입니다.  
   
 ```  

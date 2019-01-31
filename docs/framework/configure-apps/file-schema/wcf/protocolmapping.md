@@ -1,15 +1,15 @@
 ---
-title: '&lt;protocolMapping&gt;'
+title: <protocolMapping>
 ms.date: 03/30/2017
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
-ms.openlocfilehash: 199a5d820a80565ccdfa2cb11fe749d63bd65087
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ec17457c8742fdf17208c6588e0ab70ece7c42a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54644262"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55268676"
 ---
-# <a name="ltprotocolmappinggt"></a>&lt;protocolMapping&gt;
+# <a name="protocolmapping"></a>\<protocolMapping>
 전송 프로토콜 체계 (예: http, net.tcp, net.pipe 등) 및 WCF 바인딩 간의 기본 프로토콜 매핑 집합을 정의 하기 위한 구성 섹션을 나타냅니다. 런타임에 기본 끝점을 만들 때 Windows Communication Foundation (WCF) 구성 된 매핑을 살펴봅니다 및 바인딩을 사용 하 여 특정 기본 주소를 결정 합니다.  
   
 [**\<system.serviceModel>**](system-servicemodel.md)  

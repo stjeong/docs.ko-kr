@@ -2,20 +2,20 @@
 title: 트랜잭션 프로토콜 버전 1.0
 ms.date: 03/30/2017
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6
-ms.openlocfilehash: d2a50e798af47dd4f80f149362f2afffbab007f6
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: c28c013bc791b5358a2282dc21446d5f2129aa2c
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066365"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258021"
 ---
 # <a name="transaction-protocols-version-10"></a>트랜잭션 프로토콜 버전 1.0
 Windows Communication Foundation (WCF) 버전 1은 Ws-atomic Transaction 및 Ws-coordination 프로토콜의 버전 1.0을 구현합니다. 버전 1.1에 대 한 자세한 내용은 참조 하세요. [트랜잭션 프로토콜](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)합니다.  
   
 |사양/문서|링크|  
 |-----------------------------|----------|  
-|WS-Coordination|http://msdn.microsoft.com/ws/2005/08/ws-coordination/|  
-|WS-AtomicTransaction|http://msdn.microsoft.com/ws/2005/08/ws-atomictransaction/|  
+|WS-Coordination|<http://specs.xmlsoap.org/ws/2004/10/wscoor/wscoor.pdf>|  
+|WS-AtomicTransaction|<http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf>|  
   
  이러한 프로토콜 사양에서의 상호 운용성은 응용 프로그램 간 및 트랜잭션 관리자 간 이렇게 두 가지 수준에서 필요합니다(다음 그림 참조) 사양은 두 가지 수준의 상호 운용성을 위한 메시지 형식 및 메시지 교환을 상세하게 설명합니다. 응용 프로그램 간의 교환을 위한 보안, 안정성 및 인코딩은 일반적인 응용 프로그램 교환을 위해 수행되는 것과 같은 방식으로 적용됩니다. 그러나 트랜잭션 관리자 간의 상호 운용성을 위해서는 특정한 바인딩에 대한 동의가 필요합니다. 이러한 부분은 일반적으로 사용자가 구성하지 않기 때문입니다.  
   

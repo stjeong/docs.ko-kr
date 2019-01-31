@@ -1,19 +1,19 @@
 ---
-title: '&lt;mexEndpoint&gt;'
+title: <mexEndpoint>
 ms.date: 03/30/2017
 ms.assetid: c9823060-0a5d-4f9d-99d4-4d113b758247
-ms.openlocfilehash: 4e2fb4946ee68b3cbd5bd6bfbafe6bb5e9c9106f
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 8fffcc05d5f53f719efce182083fbf103b1230ff
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149152"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271696"
 ---
-# <a name="ltmexendpointgt"></a>&lt;mexEndpoint&gt;
+# <a name="mexendpoint"></a>\<mexEndpoint>
 이 구성 요소는 고정 IMetadataExchange 계약을 사용하여 표준 엔드포인트를 정의합니다. 모든 메타데이터 교환 엔드포인트가 IMetadataExchange를 계약으로 지정하므로 고유의 엔드포인트를 정의하는 대신 이 표준 지점을 사용할 수 있습니다.  
   
  \<system.ServiceModel>  
-\<standardEndpoints >  
+\<standardEndpoints>  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,4 +43,4 @@ ms.locfileid: "54149152"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<standardEndpoints >](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|하나 이상의 속성(주소, 바인딩, 계약)이 고정된 미리 정의된 엔드포인트인 표준 엔드포인트의 컬렉션입니다.|
+|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|하나 이상의 속성(주소, 바인딩, 계약)이 고정된 미리 정의된 엔드포인트인 표준 엔드포인트의 컬렉션입니다.|

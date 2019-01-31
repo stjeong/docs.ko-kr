@@ -1,5 +1,5 @@
 ---
-title: 함수의 반환 형식이 &#39; &lt;procedurename&gt; &#39; CLS 규격이 아님
+title: "'<procedurename>' 함수의 반환 형식이 CLS 규격이 아닙니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc40027
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40027
 ms.assetid: 33c088c7-48e7-400c-920e-6d8967e1f3fc
-ms.openlocfilehash: b7704ee63031c38f708a2243e84b880c25fcf819
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 5e746981d10ba8e662aebf86f67f08856ba37199
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39243784"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260517"
 ---
-# <a name="return-type-of-function-39ltprocedurenamegt39-is-not-cls-compliant"></a>함수의 반환 형식이 &#39; &lt;procedurename&gt; &#39; CLS 규격이 아님
+# <a name="return-type-of-function-procedurename-is-not-cls-compliant"></a>함수의 반환 형식이 '\<procedurename >' CLS 규격이 아님
 A `Function` 절차로 표시 됩니다 `<CLSCompliant(True)>` 로 표시 된 형식을 반환 하지만 `<CLSCompliant(False)>`는 표시 되지 않았거나, 비규격 형식 이므로 적합 하지 않습니다.  
   
  프로시저가 [언어 독립성 및 언어 독립적 구성 요소](../../../standard/language-independence-and-language-independent-components.md)(CLS)와 호환되려면 CLS 규격 형식만 사용해야 합니다. 이는 매개 변수 형식, 반환 형식 및 모든 로컬 변수 형식에 적용됩니다.  
@@ -29,7 +29,7 @@ A `Function` 절차로 표시 됩니다 `<CLSCompliant(True)>` 로 표시 된 �
   
 -   [UShort 데이터 형식](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
   
- <xref:System.CLSCompliantAttribute> 를 프로그래밍 요소에 적용하는 경우 특성의 `isCompliant` 매개 변수를 `True` 또는 `False` 로 설정하여 준수 여부를 나타냅니다. 이 매개 변수에는 기본값이 없으며 값을 제공해야 합니다.  
+ <xref:System.CLSCompliantAttribute>를 프로그래밍 요소에 적용하는 경우 특성의 `isCompliant` 매개 변수를 `True` 또는 `False`로 설정하여 준수 여부를 나타냅니다. 이 매개 변수에는 기본값이 없으며 값을 제공해야 합니다.  
   
  요소에 <xref:System.CLSCompliantAttribute> 를 적용하지 않으면 비규격인 것으로 간주됩니다.  
   

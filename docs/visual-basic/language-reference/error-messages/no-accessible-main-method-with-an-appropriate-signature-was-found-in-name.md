@@ -1,5 +1,5 @@
 ---
-title: 액세스 가능한 &#39;Main&#39; 에서 적절 한 시그니처가 있는 메서드를 찾을 수 &#39; &lt;이름&gt;&#39;
+title: "'<name>'에 적절한 시그니처가 있는 액세스 가능한 'Main' 메서드가 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30737
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30737
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
-ms.openlocfilehash: 3398195ef9d503e47ab569ff85cb2a827c4270f1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b3aa66416f0cad6a6fb29a20aa0bca5e3486a18e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54501492"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275433"
 ---
-# <a name="no-accessible-39main39-method-with-an-appropriate-signature-was-found-in-39ltnamegt39"></a>액세스 가능한 &#39;Main&#39; 에서 적절 한 시그니처가 있는 메서드를 찾을 수 &#39; &lt;이름&gt;&#39;
+# <a name="no-accessible-main-method-with-an-appropriate-signature-was-found-in-name"></a>적절 한 시그니처가 있는 액세스 가능한 'Main' 메서드가 없습니다에서 찾을 수 '\<이름 >'
 명령줄 응용 프로그램에 있어야는 `Sub Main` 정의 합니다. `Main` 로 선언 되어야 합니다 `Public Shared` 또는 클래스에서 정의 된 경우 `Public` 모듈에 정의 된 경우.  
   
  **오류 ID:** BC30737  

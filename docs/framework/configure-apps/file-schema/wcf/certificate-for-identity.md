@@ -1,15 +1,15 @@
 ---
-title: '&lt;identity&gt;에 대한 &lt;certificate&gt;'
+title: <certificate> 에 대한 <identity>
 ms.date: 03/30/2017
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
-ms.openlocfilehash: 28a1b992a70986652030ad42d4d4a5738350ae1f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 804600e4eb1612cd8654fc58ec3df28596c1e84d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54676161"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265040"
 ---
-# <a name="ltcertificategt-for-ltidentitygt"></a>&lt;identity&gt;에 대한 &lt;certificate&gt;
+# <a name="certificate-for-identity"></a>\<인증서 >에 대 한 \<identity >
 클라이언트에 서버의 유효성을 검사하는 데 사용되는 X.509 인증서를 지정합니다.  
   
  요소 값을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  

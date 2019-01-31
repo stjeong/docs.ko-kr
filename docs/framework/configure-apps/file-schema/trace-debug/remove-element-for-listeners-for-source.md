@@ -1,5 +1,5 @@
 ---
-title: '&lt;제거할&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;'
+title: <remove>의 <listeners>에 대한 <source> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/remove
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - remove element for <listeners> for <source>
 - <remove> element for <listeners> for <source>
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
-ms.openlocfilehash: 9f3d8eefdf74f0960f3fe530f77a67c0706e4585
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 522319c64ddff6eb6872584937d540a8955b7c8f
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083485"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260335"
 ---
-# <a name="ltremovegt-element-for-ltlistenersgt-for-ltsourcegt"></a>&lt;제거할&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;
+# <a name="remove-element-for-listeners-for-source"></a>\<제거 > 요소에 대 한 \<수신기 >에 대 한 \<소스 >
 추적 소스의 `Listeners` 컬렉션에서 수신기를 제거합니다.  
   
  \<configuration>  

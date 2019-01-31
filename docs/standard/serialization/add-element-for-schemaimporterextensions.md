@@ -1,18 +1,18 @@
 ---
-title: '&lt;추가&gt; 요소에 대 한 &lt;schemaImporterExtensions&gt;'
+title: <add>에 대한 <schemaImporterExtensions> 요소
 ms.date: 03/30/2017
 helpviewer_keywords:
 - XML serialization, configuration
 - <add> element for <schemaImporterExtensions> element
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
-ms.openlocfilehash: 212ce43dc50735da71091111a0fd03eca0583315
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 89196b094d5631c9e243a51a718e53f9c06db20d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54577687"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270565"
 ---
-# <a name="ltaddgt-element-for-ltschemaimporterextensionsgt"></a>&lt;추가&gt; 요소에 대 한 &lt;schemaImporterExtensions&gt;
+# <a name="add-element-for-schemaimporterextensions"></a>\<추가 > 요소에 대 한 \<schemaImporterExtensions >
 <xref:System.Xml.Serialization.XmlSchemaImporter>에서 XSD 형식을 .NET Framework 형식으로 매핑하는 데 사용하는 형식을 추가합니다. 구성 파일에 대한 자세한 내용은 [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)를 참조하세요.  
   
  \<configuration>  

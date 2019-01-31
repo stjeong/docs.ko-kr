@@ -1,5 +1,5 @@
 ---
-title: 식의 형식은 &#39; &lt;typename&gt; &#39; 제한 된 형식 및에서 상속 된 멤버에 액세스를 사용할 수 있는 &#39;개체&#39; 또는 &#39;ValueType&#39;
+title: 식에 있는 '<typename>' 형식은 제한된 형식이므로 'Object' 또는 'ValueType'에서 상속된 멤버에 액세스하는 데 사용할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - bc31393
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31393
 ms.assetid: 2963cf3f-c527-4aa7-b67c-ee80b6d23186
-ms.openlocfilehash: d44b9a29f0848508d8cd814e857d9b01819ce7ab
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6d366ec750ea5a4505ae5ea618e27f47406ba959
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54535959"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55274031"
 ---
-# <a name="expression-has-the-type-39lttypenamegt39-which-is-a-restricted-type-and-cannot-be-used-to-access-members-inherited-from-39object39-or-39valuetype39"></a>식의 형식은 &#39; &lt;typename&gt; &#39; 제한 된 형식 및에서 상속 된 멤버에 액세스를 사용할 수 있는 &#39;개체&#39; 또는 &#39;ValueType&#39;
+# <a name="expression-has-the-type-typename-which-is-a-restricted-type-and-cannot-be-used-to-access-members-inherited-from-object-or-valuetype"></a>식의 형식은 '\<typename >'는 제한 된 형식 및 'Object' 또는 'ValueType'에서 상속 된 멤버 액세스에 사용할 수 없습니다.
 식 형식에 CLR (공용 언어 런타임)에서 넣을 수 없습니다. 계산 하지만 boxing 해야 하는 멤버에 액세스 합니다.  
   
  *Boxing* 은 형식을 경우에 따라 `Object` 또는 <xref:System.ValueType>으로 변환하는 데 필요한 처리를 참조합니다. 공용 언어 런타임에서 특정 구조 종류를 예를 들어 상자 수 없습니다 <xref:System.ArgIterator>하십시오 <xref:System.RuntimeArgumentHandle>, 및 <xref:System.TypedReference>합니다.  

@@ -1,23 +1,23 @@
 ---
-title: '&lt;audienceUris&gt;'
+title: <audienceUris>
 ms.date: 03/30/2017
 ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3
 author: BrucePerlerMS
-ms.openlocfilehash: af138a4da49a48ed43e1bc8f2c2c81c56892feed
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 556c444d5e48e27036c4b49338f6e70de7ef5c5d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48034482"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55267276"
 ---
-# <a name="ltaudienceurisgt"></a>&lt;audienceUris&gt;
+# <a name="audienceuris"></a>\<audienceUris>
 신뢰 당사자 (RP)의 식별자를 허용 되는 Uri 집합을 지정 합니다. 허용 되는 대상 Uri 중 하나에 대해 범위가 지정 되지 않는 한 토큰을 허용 하지 않습니다.  
   
  \<system.identityModel>  
 \<identityConfiguration>  
 \<securityTokenHandlers>  
-\<securityTokenHandlerConfiguration >  
-\<audienceUris >  
+\<securityTokenHandlerConfiguration>  
+\<audienceUris>  
   
 ## <a name="syntax"></a>구문  
   
@@ -58,7 +58,7 @@ ms.locfileid: "48034482"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<securityTokenHandlerConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|구성 컬렉션의 보안 토큰 처리기를 제공합니다.|  
+|[\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|구성 컬렉션의 보안 토큰 처리기를 제공합니다.|  
   
 ## <a name="remarks"></a>설명  
  기본적으로 컬렉션은 비어 있습니다. 사용 하 여 `<add>`, `<clear>`, 및 `<remove>` 요소 컬렉션을 수정 하려고 합니다. <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> 및 <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> 하나를 구성 하는 대상 URI 컬렉션에서에서 값을 허용 대상 URI 제한을에서 사용 하 여 개체 <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> 개체입니다.  

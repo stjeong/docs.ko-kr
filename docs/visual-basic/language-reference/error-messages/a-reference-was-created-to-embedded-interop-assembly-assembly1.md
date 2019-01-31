@@ -1,5 +1,5 @@
 ---
-title: 포함 된 interop 어셈블리에 대 한 참조를 만든 &#39; &lt;assembly1&gt; &#39; 어셈블리에서 해당 어셈블리에 간접 참조 때문에 &#39; &lt;assembly2&gt;&#39;
+title: 포함된 interop 어셈블리 '<assembly1>'에 대한 참조가 생성되었습니다. 이는 이 어셈블리에 대한 어셈블리 '<assembly2>'의 간접 참조로 인한 것입니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc40059
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - VBC40059
 - BC40059
 ms.assetid: 520e39cb-8ab6-46f5-aa00-08afd51b4b7c
-ms.openlocfilehash: fe04742e0a3be5e1d19ab4017e55f2293988a671
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 058aa4891d05147756290affd60ea5fb260c33ef
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54560024"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55262954"
 ---
-# <a name="a-reference-was-created-to-embedded-interop-assembly-39ltassembly1gt39-because-of-an-indirect-reference-to-that-assembly-from-assembly-39ltassembly2gt39"></a>포함 된 interop 어셈블리에 대 한 참조를 만든 &#39; &lt;assembly1&gt; &#39; 어셈블리에서 해당 어셈블리에 간접 참조 때문에 &#39; &lt;assembly2&gt;&#39;
+# <a name="a-reference-was-created-to-embedded-interop-assembly-assembly1-because-of-an-indirect-reference-to-that-assembly-from-assembly-assembly2"></a>포함 된 interop 어셈블리에 대 한 참조를 만든 '\<assembly1 >' 어셈블리에서 해당 어셈블리에 간접 참조 때문에 '\<assembly2 >'
 포함된 interop 어셈블리 ‘\<assembly1>’에 대한 참조는 해당 어셈블리에 대한 ‘\<assembly2>’ 어셈블리의 간접 참조로 인해 만들어졌습니다. 두 어셈블리 중 하나에서 ‘Embed Interop Types’ 속성을 변경하는 것이 좋습니다.  
   
  `Embed Interop Types` 속성이 `True`로 설정된 어셈블리(assembly1)에 대한 참조를 추가했습니다. 이는 해당 어셈블리의 interop 형식 정보를 포함하도록 컴파일러에 지시합니다. 그러나 참조한 다른 어셈블리(assembly2)에서도 해당 어셈블리(assembly1)를 참조하고 `Embed Interop Types` 속성을 `False`로 설정했으므로 컴파일러에서 해당 어셈블리의 interop 형식 정보를 포함할 수 없습니다.  

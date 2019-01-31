@@ -1,15 +1,15 @@
 ---
-title: '&lt;announcementEndpoint&gt;'
+title: <announcementEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 034b7c69-a770-4502-8cef-38007bbcd025
-ms.openlocfilehash: 8e180d53260ccf3364ab3c8d7b076f78917526d0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8977a36d9eee48505a65fa52272a95665fea7972
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54729881"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55267094"
 ---
-# <a name="ltannouncementendpointgt"></a>&lt;announcementEndpoint&gt;
+# <a name="announcementendpoint"></a>\<announcementEndpoint>
 이 구성 요소는 고정 알림 계약이 있는 표준 엔드포인트를 정의합니다. 서비스에서는 선택적으로 서비스가 열리거나 닫힐 때 각각 온라인 및 오프라인 알림 메시지를 보내 가용성을 알릴 수 있습니다. Windows Communication Foundation (WCF) 서비스에서 알림 끝점을 지정 합니다 [ \<serviceDiscovery >](../../../../../docs/framework/configure-apps/file-schema/wcf/servicediscovery.md) AnnouncementClient 발표 하는 데 사용 하 여 요소입니다. WCF 서비스를 실제로 다른 서비스에서 알림을 수신 하려는 클라이언트는 역할을 하합니다 따라서 해당 클라이언트에 대 한 알림 끝점을 구성 해야 합니다 [ \<services >](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md) 섹션입니다.  
   
 \<system.ServiceModel>  

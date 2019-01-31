@@ -1,5 +1,5 @@
 ---
-title: '&lt;지우기&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;'
+title: <clear>의 <listeners>에 대한 <trace> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/clear
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - clear element for <listeners> for <trace>
 - <clear> element for <listeners> for <trace>
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-ms.openlocfilehash: c0bb2cabafbaba33f8dde7cbf3399387876e0158
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: b199f24a2c1e1c8154c0ec22bef6367e5ba0ec26
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083589"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55262618"
 ---
-# <a name="ltcleargt-element-for-ltlistenersgt-for-lttracegt"></a>&lt;지우기&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
+# <a name="clear-element-for-listeners-for-trace"></a>\<지우기 > 요소에 대 한 \<수신기 >에 대 한 \<추적 >
 추적의 `Listeners` 컬렉션을 지웁니다.  
   
  \<configuration>  

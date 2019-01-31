@@ -1,15 +1,15 @@
 ---
-title: '&lt;identity&gt;'
+title: <identity>
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: 03e73f64090e0851b06ee67fe70c157b6145966c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 336e8c4a4aae3565b8af7adaa73def453107ea93
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54677360"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55274159"
 ---
-# <a name="ltidentitygt"></a>&lt;identity&gt;
+# <a name="identity"></a>\<identity>
 ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID를 디자인 타임에 지정할 수 있습니다. 클라이언트와 서비스 간의 핸드셰이크 프로세스에서 Windows Communication Foundation (WCF) 인프라는 되도록 예상 되는 서비스가이 요소의 값과 일치의 id 및 인증 될 수 있습니다. 자세한 내용은 [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: '&#39;사용자 지정&#39; 한정자 명시적 대리자 형식 없이 선언 된 이벤트에 올바르지 않습니다.'
+title: 명시적 대리자 형식 없이 선언된 이벤트에는 'Custom' 한정자를 사용할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc31122
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31122
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
-ms.openlocfilehash: c909973ef1c00cb01179b0e5527dfecd6f41e577
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c1b57ccdaa9e04c837ecf7572bc164683a934b2d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54574783"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55273519"
 ---
-# <a name="39custom39-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>&#39;사용자 지정&#39; 한정자 명시적 대리자 형식 없이 선언 된 이벤트에 올바르지 않습니다.
+# <a name="custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>명시적 대리자 형식 없이 선언된 이벤트에는 'Custom' 한정자를 사용할 수 없습니다.
 사용자 지정이 아닌 경우와 달리를 `Custom Event` 선언에 필요는 `As` 절과 이벤트에 대 한 대리자 형식을 명시적으로 지정 하는 이벤트 이름입니다.  
   
  비-사용자 지정 이벤트 수 사용 하 여 정의 `As` 절 및 명시적 대리자 형식 또는 매개 변수를 사용 하 여 목록 바로 이벤트 이름 다음에 있습니다.  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;persistenceProvider&gt;'
+title: <persistenceProvider>
 ms.date: 03/30/2017
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
-ms.openlocfilehash: 8deca5b4bec4808ac9add201db0c936764fddcb4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 054991687a54ecbf95cc18f58717a4ed3e36f050
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54602223"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260803"
 ---
-# <a name="ltpersistenceprovidergt"></a>&lt;persistenceProvider&gt;
+# <a name="persistenceprovider"></a>\<persistenceProvider>
 사용할 지속성 공급자 구현 형식 및 지속성 작업에 사용할 제한 시간을 지정합니다.  
   
  \<system.ServiceModel>  

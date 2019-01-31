@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;workflowInstanceQueries&gt;
+title: <workflowInstanceQueries> WCF의
 ms.date: 03/30/2017
 ms.assetid: b0852f77-16e4-4d55-8eb7-a19feb0e8fc4
-ms.openlocfilehash: e3ad1139781c54cc1ca4e2d2b264f3f375b49108
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 544ca868485a409554ece9d9b000beb1a472d344
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145564"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255304"
 ---
-# <a name="ltworkflowinstancequeriesgt-of-wcf"></a>WCF의 &lt;workflowInstanceQueries&gt;
+# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries > WCF의
 
 시작된 이벤트나 완료된 이벤트와 같이 워크플로 인스턴스 수명 주기의 변경 내용을 추적하는 구성 요소의 컬렉션을 나타냅니다.  
   
@@ -17,7 +17,7 @@ ms.locfileid: "54145564"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<workflowInstanceQueries>  
@@ -90,7 +90,7 @@ ms.locfileid: "54145564"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>

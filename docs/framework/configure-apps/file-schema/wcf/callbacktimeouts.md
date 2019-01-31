@@ -1,15 +1,15 @@
 ---
-title: '&lt;callbackTimeouts&gt;'
+title: <callbackTimeouts>
 ms.date: 03/30/2017
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
-ms.openlocfilehash: 01932fe2b7b7e699311e2c65ec8adaf0aef82dc5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 269500324ad1beaa0b519fa17d251ee942276faa
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54557905"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55269070"
 ---
-# <a name="ltcallbacktimeoutsgt"></a>&lt;callbackTimeouts&gt;
+# <a name="callbacktimeouts"></a>\<callbackTimeouts>
 이중 콜백 계약 시나리오에서 트랜잭션이 서버에서 클라이언트로 이동할 때의 시간 제한 값을 지정합니다.  
   
  \<system.ServiceModel>  

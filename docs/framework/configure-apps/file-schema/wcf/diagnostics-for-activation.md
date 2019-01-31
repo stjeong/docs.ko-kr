@@ -1,15 +1,15 @@
 ---
-title: 활성화를 위한 &lt;diagnostics&gt;
+title: <diagnostics> 정품 인증
 ms.date: 03/30/2017
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
-ms.openlocfilehash: 5d8fcce28182dcac945655a52d829945a432a9b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ac235b9a3c125cd3fe63ccd899e2ff92d4d3f31b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54723916"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55278455"
 ---
-# <a name="ltdiagnosticsgt-for-activation"></a>활성화를 위한 &lt;diagnostics&gt;
+# <a name="diagnostics-for-activation"></a>\<진단 > 활성화
 Windows Communication Foundation (WCF) 수신기의 진단 기능을 구성합니다.  
   
  \<system.serviceModel.activation>  

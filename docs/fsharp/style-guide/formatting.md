@@ -2,12 +2,12 @@
 title: F#코드 서식 지정 지침
 description: 서식 지정에 대 한 지침을 알아보려면 F# 코드입니다.
 ms.date: 11/26/2018
-ms.openlocfilehash: d4b61646154c613093374ef3dcf7436de4b0d3ea
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: b80a66f582d9fb8a2ec940ab565823483e7e4eea
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415444"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254826"
 ---
 # <a name="f-code-formatting-guidelines"></a>F#코드 서식 지정 지침
 
@@ -275,6 +275,17 @@ match x, y with
 | x, 1 -> 0
 | x, y -> 1
 ```
+
+튜플 함수 반환 값인 경우 괄호를 생략 하려면 일반적으로 허용 됩니다.
+
+```fsharp
+// OK
+let update model msg =
+    match msg with
+    | 1 -> model + 1, []
+    | _ -> model, [ msg ]
+```
+요약 하자면, 괄호로 묶인 튜플 인스턴스화를 선호 하지만 패턴 일치 또는 반환 값에 대 한 튜플을 사용 하는 경우 괄호를 방지 하려면 세밀 하 게 간주 됩니다.
 
 ## <a name="formatting-discriminated-union-declarations"></a>구별 된 공용 구조체 선언 서식 지정
 

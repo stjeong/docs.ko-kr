@@ -1,16 +1,16 @@
 ---
-title: '&lt;customTrackingQueries&gt;'
+title: <customTrackingQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 4e9e732d-911d-45a3-a569-4b5e9cd1ffbe
-ms.openlocfilehash: 757bbe500ec3edccef465b7ff23b2c974e4a5011
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a4689e55962cd32d738682129aaa0612a4684384
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54598843"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55264642"
 ---
-# <a name="ltcustomtrackingqueriesgt"></a>&lt;customTrackingQueries&gt;
+# <a name="customtrackingqueries"></a>\<customTrackingQueries>
 코드 활동에서 정의하는 이벤트를 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 사용자 지정 추적 레코드를 구독하려면 쿼리가 필요합니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

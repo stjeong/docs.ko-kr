@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;tracking&gt;
+title: <tracking> WCF의
 ms.date: 03/30/2017
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
-ms.openlocfilehash: 52efc1b5284c2a64eae30ea18995e5ee761dc2e7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ddaf6f7871b4d10961b615f74d1ed49dd76d379a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582606"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55268251"
 ---
-# <a name="lttrackinggt-of-wcf"></a>WCF의 &lt;tracking&gt;
+# <a name="tracking-of-wcf"></a>\<추적 > WCF의
 워크플로 서비스에 대한 추적 설정을 정의하기 위한 구성 섹션을 나타냅니다.  
   
  워크플로 추적 및 해당 구성에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 하 고 [워크플로에 대 한 추적 구성](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md)합니다.  

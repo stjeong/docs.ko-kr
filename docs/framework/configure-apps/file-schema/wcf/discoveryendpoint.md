@@ -1,15 +1,15 @@
 ---
-title: '&lt;discoveryEndpoint&gt;'
+title: <discoveryEndpoint>
 ms.date: 03/30/2017
 ms.assetid: fae2f48b-a635-4e4b-859d-a1432ac37e1c
-ms.openlocfilehash: b3254a1c3d7fa581b4f7573d693261f5a224515d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d1a3371872f5587a682b8242c29b71808508ca3d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54524171"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55274785"
 ---
-# <a name="ltdiscoveryendpointgt"></a>&lt;discoveryEndpoint&gt;
+# <a name="discoveryendpoint"></a>\<discoveryEndpoint>
 
 이 구성 요소는 고정 검색 계약이 있는 표준 엔드포인트를 정의합니다. 서비스 구성에 추가되면 검색 메시지를 수신하는 위치를 지정합니다. 클라이언트 구성에 추가되면 검색 쿼리를 보내는 위치를 지정합니다.  
   

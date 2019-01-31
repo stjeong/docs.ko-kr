@@ -1,5 +1,5 @@
 ---
-title: '&#39;가져오기&#39; 속성의 접근자 &#39; &lt;propertyname&gt; &#39; 에 액세스할 수 없습니다'
+title: "'<propertyname>' 속성의 'Get' 접근자에 액세스할 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc31103
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31103
 ms.assetid: 3c346c32-7669-4b04-841d-7a9df9cb703e
-ms.openlocfilehash: 10b7168ac40ca7c7d696cd63cd823454f404bb94
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 72675f882676d3ded9ccc9ff245a1d757fa4393a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582216"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257787"
 ---
-# <a name="39get39-accessor-of-property-39ltpropertynamegt39-is-not-accessible"></a>&#39;가져오기&#39; 속성의 접근자 &#39; &lt;propertyname&gt; &#39; 에 액세스할 수 없습니다
+# <a name="get-accessor-of-property-propertyname-is-not-accessible"></a>'Get' 접근자 속성의 '\<propertyname >'에 액세스할 수 없습니다
 문에서 속성에 대 한 액세스 되지 않은 경우 속성의 값을 검색 하려고 `Get` 프로시저입니다.  
   
  경우는 [Get 문은](../../../visual-basic/language-reference/statements/get-statement.md) 수준 보다 더 제한적인 액세스를 사용 하 여 표시 됩니다 해당 [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)를 속성 값을 읽으려는 시도가 다음 경우에 실패할 수 있습니다.  

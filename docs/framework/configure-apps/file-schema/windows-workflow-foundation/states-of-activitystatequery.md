@@ -1,16 +1,16 @@
 ---
-title: '&lt;activityStateQuery&gt;의 &lt;states&gt;'
+title: <states>의 <activityStateQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: a7cc2018-2b79-44f1-825a-bb7ca08690a3
-ms.openlocfilehash: db50155af22cd8a50158b940a88599df1a66ce1a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 97664518f7c7c0078cef1c81035724a02c9857c0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54635860"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257735"
 ---
-# <a name="ltstatesgt-of-ltactivitystatequerygt"></a>&lt;activityStateQuery&gt;의 &lt;states&gt;
+# <a name="states-of-activitystatequery"></a>\<states> of \<activityStateQuery>
 추적 레코드를 내보내야 할 구독된 활동의 상태를 포함하는 구성 요소의 컬렉션입니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  

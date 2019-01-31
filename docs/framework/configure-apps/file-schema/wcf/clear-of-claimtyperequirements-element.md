@@ -1,15 +1,15 @@
 ---
-title: '&lt;claimTypeRequirements&gt; 요소의 &lt;clear&gt;'
+title: <clear> <claimTypeRequirements> 요소
 ms.date: 03/30/2017
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
-ms.openlocfilehash: c64e5450e01fdb011eb726f3bef1a85a5698d0d2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b20d5c1808bf41d1ecd6b3e3a61606ae45b0fbdd
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54568337"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270341"
 ---
-# <a name="ltcleargt-of-ltclaimtyperequirementsgt-element"></a>&lt;claimTypeRequirements&gt; 요소의 &lt;clear&gt;
+# <a name="clear-of-claimtyperequirements-element"></a>\<지우기 >의 \<claimTypeRequirements > 요소
 페더레이션 자격 증명에서 제거할 모든 클레임의 형식을 지정합니다. 이를 통해 컬렉션이 빈 상태로 시작됩니다.  
   
  \<system.ServiceModel>  

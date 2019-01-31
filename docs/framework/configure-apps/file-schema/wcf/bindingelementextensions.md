@@ -1,15 +1,15 @@
 ---
-title: '&lt;bindingElementExtensions&gt;'
+title: <bindingElementExtensions>
 ms.date: 03/30/2017
 ms.assetid: bb597fc0-c947-451c-afda-bf23d42f4f4d
-ms.openlocfilehash: 1b843f2986a0020b8ce079e58bf9865a0b3d402d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9a2a3af093949c1d724fdea13655bbb80fe71048
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569903"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270470"
 ---
-# <a name="ltbindingelementextensionsgt"></a>&lt;bindingElementExtensions&gt;
+# <a name="bindingelementextensions"></a>\<bindingElementExtensions>
 이 섹션은 시스템 또는 응용 프로그램 구성 파일의 사용자 지정 요소를 사용할 수 있도록 합니다. `add` 키워드를 사용하고 요소의 `type` 특성을 바인딩 요소 확장으로, `name` 특성을 사용자 지정 바인딩 요소로 설정하여 사용자 지정 바인딩 요소를 이 컬렉션에 추가할 수 있습니다.  
   
  바인딩 확장을 사용하면 사용자 지정 바인딩에 사용할 사용자 정의 바인딩 요소를 만들 수 있습니다. 프로그래밍에서 바인딩 확장은 추상 클래스 <xref:System.ServiceModel.Channels.BindingElement>을 구현하는 형식입니다. 구성 파일에서 `bindingElementExtensions` 섹션을 사용하여 확장 요소를 정의합니다.  

@@ -1,5 +1,5 @@
 ---
-title: '&gt;&gt; 연산자 (Visual Basic)'
+title: '>> 연산자 (Visual Basic)'
 ms.date: 07/20/2015
 f1_keywords:
 - vb.>>
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - operator >>
 - right shift operators [Visual Basic]
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
-ms.openlocfilehash: e1d2b6569e2bcb3c1516dbc8c78adca0855481e4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b40ed11747e057d620a9a45dd1361081f38acec8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54668498"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260504"
 ---
-# <a name="gtgt-operator-visual-basic"></a>&gt;&gt; 연산자 (Visual Basic)
+# <a name="-operator-visual-basic"></a>>> 연산자(Visual Basic)
 비트 패턴에 산술 오른쪽 시프트를 수행합니다.  
   
 ## <a name="syntax"></a>구문  

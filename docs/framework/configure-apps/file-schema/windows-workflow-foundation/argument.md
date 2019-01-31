@@ -1,16 +1,16 @@
 ---
-title: '&lt;argument&gt;'
+title: <argument>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: a7144d53-8023-4e90-971f-895e016fd58a
-ms.openlocfilehash: 3744781f844d4a1728ba1e9846b2b8c56c0ad8fd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e386ad261422904d3f33385bb80bdb8c1ac029b9
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554606"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55267952"
 ---
-# <a name="ltargumentgt"></a>&lt;argument&gt;
+# <a name="argument"></a>\<argument>
 활동 상태 쿼리와 연결된 인수를 나타내는 구성 요소입니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  

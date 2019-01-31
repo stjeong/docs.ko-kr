@@ -1,15 +1,15 @@
 ---
-title: '&lt;namespaceTable&gt;의 &lt;add&gt;'
+title: <add>의 <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: 1d3b61fa6653b3910e65b95fa96fd0657e72bf7d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0e463ffa87e67bc5f100f9acf38ace6450b0ce40
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54632911"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55268706"
 ---
-# <a name="ltaddgt-of-ltnamespacetablegt"></a>&lt;namespaceTable&gt;의 &lt;add&gt;
+# <a name="add-of-namespacetable"></a>\<추가 >의 \<namespaceTable >
 매핑을 앞에 붙인 다음 XPath 필터에서 라우팅에 사용할 수 있는 네임스페이스를 포함하는 구성 요소를 나타냅니다.  
   
  \<system.serviceModel>  

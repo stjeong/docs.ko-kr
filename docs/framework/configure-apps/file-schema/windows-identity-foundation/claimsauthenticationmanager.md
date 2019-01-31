@@ -1,21 +1,21 @@
 ---
-title: '&lt;claimsAuthenticationManager&gt;'
+title: <claimsAuthenticationManager>
 ms.date: 03/30/2017
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
 author: BrucePerlerMS
-ms.openlocfilehash: b0cee2fedb5f90ca2a1f7e379e199cfee66ee745
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: ecf26263bf47e8b4609e7adc208f0a59a2fa795b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190972"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255187"
 ---
-# <a name="ltclaimsauthenticationmanagergt"></a>&lt;claimsAuthenticationManager&gt;
+# <a name="claimsauthenticationmanager"></a>\<claimsAuthenticationManager>
 들어오는 클레임에 대 한 클레임 인증 관리자를 등록합니다.  
   
  \<system.identityModel>  
 \<identityConfiguration>  
-\<claimsAuthenticationManager >  
+\<claimsAuthenticationManager>  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,7 +36,7 @@ ms.locfileid: "50190972"
   
 |특성|설명|  
 |---------------|-----------------|  
-|type|파생 되는 사용자 지정 형식 지정을 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스입니다. 지정 하는 방법에 대 한 자세한 내용은 `type` 특성 [사용자 지정 형식 참조]를 참조 하세요.|  
+|형식|파생 되는 사용자 지정 형식 지정을 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스입니다. 지정 하는 방법에 대 한 자세한 내용은 `type` 특성 [사용자 지정 형식 참조]를 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없는 경우 없습니다 `type` 특성을 또는 경우에는 `type` 특성 참조를 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스를 `<claimsAuthenticationManager>` 요소는 자식 요소를 사용 하지 않는; 클래스에서 파생 되는 반면 <xref:System.Security.Claims.ClaimsAuthenticationManager> 자식 구성 요소를 정의할 수 있습니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "50190972"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<identityConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|서비스 수준 id 설정을 지정합니다.|  
+|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|서비스 수준 id 설정을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  기본 동작을 통해 제공 된 <xref:System.Security.Claims.ClaimsAuthenticationManager> 들어오는 클레임을 에코 하는 클래스입니다. 없으면 `type` 특성을 지정 경우는 `type` 특성을 지정 합니다 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스는 `<claimsAuthenticationManager>` 요소는 자식 요소를 사용 하지 않습니다. 지정할 수 있습니다 합니다 `type` 에서 파생 된 특성 형식을 등록 하는 <xref:System.Security.Claims.ClaimsAuthenticationManager> 사용자 지정 동작을 구현 하는 클래스입니다. 파생된 클래스의 자식 요소를 통해 구성을 지원할 수는 `<claimsAuthenticationManager>` 재정의 하 여 요소를 <xref:System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration%2A> 이러한 요소를 처리 하는 방법입니다. 자식 요소에 대해 정의 된 스키마 클래스의 디자이너에 게 달려 있습니다.  

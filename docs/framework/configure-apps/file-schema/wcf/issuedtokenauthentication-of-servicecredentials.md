@@ -1,15 +1,15 @@
 ---
-title: '&lt;serviceCredentials&gt;의 &lt;issuedTokenAuthentication&gt;'
+title: <issuedTokenAuthentication>의 <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
-ms.openlocfilehash: 4a9087e319c278ea396b5611b2f7f923bd00b6d0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c195791250831897b8bc9d09782d17609272e146
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54509339"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260288"
 ---
-# <a name="ltissuedtokenauthenticationgt-of-ltservicecredentialsgt"></a>&lt;serviceCredentials&gt;의 &lt;issuedTokenAuthentication&gt;
+# <a name="issuedtokenauthentication-of-servicecredentials"></a>\<issuedTokenAuthentication> of \<serviceCredentials>
 서비스 자격 증명으로 발급된 사용자 지정 토큰을 지정합니다.  
   
  \<system.ServiceModel>  

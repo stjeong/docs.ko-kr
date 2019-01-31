@@ -1,5 +1,5 @@
 ---
-title: '&lt;supportedRuntime&gt; Element'
+title: <supportedRuntime> 요소
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - supportedRuntime element
 - <supportedRuntime> element
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-ms.openlocfilehash: 3fdc3bae488fe47732fe91cbb2ac23aae3e33b81
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 93e69290062e1b82dddbb68f7a139763695a42fb
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55084395"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271774"
 ---
-# <a name="ltsupportedruntimegt-element"></a>&lt;supportedRuntime&gt; Element
+# <a name="supportedruntime-element"></a>\<supportedRuntime > 요소
 
 응용 프로그램이 지원하는 공용 언어 런타임 버전을 지정합니다. 이 요소는 .NET Framework 1.1 이상 버전으로 작성된 모든 응용 프로그램에서 사용되어야 합니다.  
   

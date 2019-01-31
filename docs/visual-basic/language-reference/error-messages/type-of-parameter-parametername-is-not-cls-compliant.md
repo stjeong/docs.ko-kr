@@ -1,5 +1,5 @@
 ---
-title: 매개 변수의 형식입니다 &#39; &lt;parametername&gt; &#39; CLS 규격이 아님
+title: "'<parametername>' 매개 변수의 형식이 CLS 규격이 아닙니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc40028
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40028
 ms.assetid: dfa1f6f9-bb88-44ad-b85f-149144363d41
-ms.openlocfilehash: 13a4e35cd27ed5aa135cec77c4415f223cba70f2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: e0852536a86dd415334f95a47ceb800ed2c591ad
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43403038"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265924"
 ---
-# <a name="type-of-parameter-39ltparameternamegt39-is-not-cls-compliant"></a>매개 변수의 형식입니다 &#39; &lt;parametername&gt; &#39; CLS 규격이 아님
+# <a name="type-of-parameter-parametername-is-not-cls-compliant"></a>형식의 매개 변수 '\<parametername >' CLS 규격이 아님
 으로 표시 되는 프로시저 `<CLSCompliant(True)>` 로 표시 된 형식과 매개 변수를 선언 하지만 `<CLSCompliant(False)>`는 표시 되지 않았거나, 비규격 형식 이므로 적합 하지 않습니다.  
   
  프로시저가 [언어 독립성 및 언어 독립적 구성 요소](../../../standard/language-independence-and-language-independent-components.md)(CLS)와 호환되려면 CLS 규격 형식만 사용해야 합니다. 이는 매개 변수 형식, 반환 형식 및 모든 로컬 변수 형식에 적용됩니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "43403038"
   
 -   [UShort 데이터 형식](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
   
- <xref:System.CLSCompliantAttribute> 를 프로그래밍 요소에 적용하는 경우 특성의 `isCompliant` 매개 변수를 `True` 또는 `False` 로 설정하여 준수 여부를 나타냅니다. 이 매개 변수에는 기본값이 없으며 값을 제공해야 합니다.  
+ <xref:System.CLSCompliantAttribute>를 프로그래밍 요소에 적용하는 경우 특성의 `isCompliant` 매개 변수를 `True` 또는 `False`로 설정하여 준수 여부를 나타냅니다. 이 매개 변수에는 기본값이 없으며 값을 제공해야 합니다.  
   
  요소에 <xref:System.CLSCompliantAttribute> 를 적용하지 않으면 비규격인 것으로 간주됩니다.  
   

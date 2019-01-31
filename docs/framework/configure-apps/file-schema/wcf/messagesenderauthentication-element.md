@@ -1,15 +1,15 @@
 ---
-title: '&lt;messageSenderAuthentication&gt; 요소'
+title: <messageSenderAuthentication> 요소
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: 9b5155e579973555db1fefb6b22bd6c1ff38ea70
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ac10dbdb7267eb4f1a83ccad7cc5605fa588aa6b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579903"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271241"
 ---
-# <a name="ltmessagesenderauthenticationgt-element"></a>&lt;messageSenderAuthentication&gt; 요소
+# <a name="messagesenderauthentication-element"></a>\<messageSenderAuthentication > 요소
 피어 투 피어 메시지 발신자에 대한 인증 옵션을 지정합니다.  
   
  피어 투 피어 프로그래밍에 대 한 자세한 내용은 참조 하세요. [피어-투-피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)합니다.  

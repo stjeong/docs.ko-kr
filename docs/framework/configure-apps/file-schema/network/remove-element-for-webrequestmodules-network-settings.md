@@ -1,5 +1,5 @@
 ---
-title: '&lt;제거&gt; webRequestModules (네트워크 설정)에 대 한 요소'
+title: webRequestModules의 <remove> 요소(네트워크 설정)
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/remove
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - <remove> element, webRequestModules
 - <webRequestModules>, remove element
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
-ms.openlocfilehash: 380438bbc6e0c93b26d2afb77ff6b04308c61caf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: af30fe15eab899f7a083e0feb1350fb67b1c32cd
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54547068"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55267263"
 ---
-# <a name="ltremovegt-element-for-webrequestmodules-network-settings"></a>&lt;제거&gt; webRequestModules (네트워크 설정)에 대 한 요소
+# <a name="remove-element-for-webrequestmodules-network-settings"></a>\<제거 > webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.  
   
  \<configuration>  

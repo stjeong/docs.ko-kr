@@ -1,5 +1,5 @@
 ---
-title: '방법: 테이블을 조작&#39;열 속성을 통해 s 열'
+title: '방법: Columns 속성을 통해 표의 열 조작'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - tables [WPF], manipulating columns
 - Columns property [WPF]
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
-ms.openlocfilehash: f560e85888b5617f545082d47d124163d492ec00
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e3327b59cb8c387cb554206d1b17c2cd7002ef80
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54655814"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258099"
 ---
-# <a name="how-to-manipulate-a-table39s-columns-through-the-columns-property"></a>방법: 테이블을 조작&#39;열 속성을 통해 s 열
+# <a name="how-to-manipulate-a-tables-columns-through-the-columns-property"></a>방법: Columns 속성을 통해 표의 열 조작
 이 예제에서는 테이블의 열을 통해 수행할 수 있는 보다 일반적인 작업 중 일부는 <xref:System.Windows.Documents.Table.Columns%2A> 속성입니다.  
   
 ## <a name="example"></a>예제  

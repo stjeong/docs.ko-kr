@@ -1,5 +1,5 @@
 ---
-title: 변수 &#39; &lt;variablename&gt; &#39; 에 값이 할당 되기 전에
+title: 값이 할당되기 전에 '<variablename>' 변수를 사용했습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc42104
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42104
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
-ms.openlocfilehash: f91343e850600c9e5f4b4b4eb2126798baf3d980
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 23201b89f44f6384ae9f75d941d264e8d59bef80
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647025"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55268836"
 ---
-# <a name="variable-39ltvariablenamegt39-is-used-before-it-has-been-assigned-a-value"></a>변수 &#39; &lt;variablename&gt; &#39; 에 값이 할당 되기 전에
+# <a name="variable-variablename-is-used-before-it-has-been-assigned-a-value"></a>변수 '\<variablename >'에 값이 할당 되기 전에
 변수 '\<variablename >'에 값이 할당 되기 전에 사용 됩니다. 런타임에 null 참조 예외가 발생할 수 있습니다.  
   
  응용 프로그램에 값이 할당 되기 전에 변수를 읽는 해당 코드를 통해 하나 이상의 경로가 있습니다.  

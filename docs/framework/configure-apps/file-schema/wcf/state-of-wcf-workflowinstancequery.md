@@ -1,28 +1,28 @@
 ---
-title: WCF의 &lt;state&gt;, &lt;workflowInstanceQuery&gt;
+title: <state> WCF의 <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.openlocfilehash: 168a6980e955f602ee60bff26461f06cb16c836a
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1615c83ffe0735d9e55e822f2651da41d02b1610
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145928"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270856"
 ---
-# <a name="ltstategt-of-wcf-ltworkflowinstancequerygt"></a>WCF의 &lt;state&gt;, &lt;workflowInstanceQuery&gt;
+# <a name="state-of-wcf-workflowinstancequery"></a>\<상태 > WCF의 \<workflowInstanceQuery >
 추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션을 나타냅니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
 \<workflowInstanceQueries>  
-\<workflowInstanceQuery >  
-\<상태 >  
-\<상태 >  
+\<workflowInstanceQuery>  
+\<states>  
+\<state>  
   
 ## <a name="syntax"></a>구문  
   
@@ -62,7 +62,7 @@ ms.locfileid: "54145928"
 
 |요소|설명|  
 |-------------|-----------------|  
-|[\<상태 >](states-of-wcf-workflowinstancequery.md)|추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션입니다.|  
+|[\<states>](states-of-wcf-workflowinstancequery.md)|추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션입니다.|  
   
 ## <a name="remarks"></a>설명  
 
@@ -100,7 +100,7 @@ ms.locfileid: "54145928"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>

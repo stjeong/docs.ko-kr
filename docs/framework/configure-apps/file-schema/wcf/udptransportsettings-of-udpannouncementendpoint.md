@@ -1,15 +1,15 @@
 ---
-title: '&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;'
+title: <udpTransportSettings>의 <udpAnnouncementEndpoint>
 ms.date: 03/30/2017
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
-ms.openlocfilehash: 5b1cb23e589847dc54d16ecda1747c9e78e45e11
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 349cf7bde8a0fbe76a1a4b22d3eddec93191a20b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54613781"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55262156"
 ---
-# <a name="ltudptransportsettingsgt-of-ltudpannouncementendpointgt"></a>&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;
+# <a name="udptransportsettings-of-udpannouncementendpoint"></a>\<udpTransportSettings> of \<udpAnnouncementEndpoint>
 이 구성 요소에 대 한 UDP 전송 설정을 노출 [ \<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)합니다.  
   
 \<system.ServiceModel>  

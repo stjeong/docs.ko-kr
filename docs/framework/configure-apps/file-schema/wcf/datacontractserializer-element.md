@@ -1,5 +1,5 @@
 ---
-title: '&lt;DataContractSerializer&gt;'
+title: <dataContractSerializer>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - dataContractSerializer element
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - DataContractSerializer
 - KnownTypes
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.openlocfilehash: d8e0f2ac6e417609ec17d345d1cb20f2a4255dba
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1b4fd959d5e522150751d2e9b8be8c5b2252bf27
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54657582"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254953"
 ---
-# <a name="ltdatacontractserializergt"></a>&lt;DataContractSerializer&gt;
+# <a name="datacontractserializer"></a>\<dataContractSerializer>
 <xref:System.Runtime.Serialization.DataContractSerializer>에 대한 구성 데이터를 포함합니다. 이 요소는 서로 다른 두 가지 계층 구조에서 발생합니다. 하나는 다음 스키마 계층 구조 부분에 나열되고 다른 하나는 설명 부분에 나열됩니다.  
   
  \<system.ServiceModel>  

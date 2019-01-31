@@ -1,17 +1,17 @@
 ---
-title: '&lt;응용 프로그램&gt; 요소(.NET 네이티브)'
+title: <Application> 요소 (.NET 네이티브)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 557b8a91c969a4c7e7b7a10c2117659a75ef9008
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 366878fbfbfbe3e3951095c9ad82c1260638a0cb
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537294"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270812"
 ---
-# <a name="ltapplicationgt-element-net-native"></a>&lt;응용 프로그램&gt; 요소(.NET 네이티브)
+# <a name="application-element-net-native"></a>\<응용 프로그램 > 요소 (.NET 네이티브)
 런타임에 메타데이터를 리플렉션에 사용할 수 있는 응용 프로그램 수준 형식 및 형식 멤버의 컨테이너로 사용되며, 앱의 모든 프로그램 요소에 대해 런타임 리플렉션 정책을 적용합니다.  
   
  \<Directives> 요소  

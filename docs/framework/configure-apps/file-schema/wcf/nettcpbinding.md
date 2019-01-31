@@ -1,17 +1,17 @@
 ---
-title: '&lt;netTcpBinding&gt;'
+title: <netTcpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - netTcpBinding Element
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
-ms.openlocfilehash: 0dc07bfb7b26e433fd3ff2b004253d8d2d90bf62
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cbe2ae5923e4cd46abadc7103655dea410a97b60
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54573437"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258047"
 ---
-# <a name="ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;
+# <a name="nettcpbinding"></a>\<netTcpBinding>
 
 시스템 간 통신에 적합한 안전하고, 신뢰할 수 있으며, 최적화된 바인딩을 지정합니다. 기본적으로 메시지 보안 및 인증을 위한 Windows 보안, 메시지 배달을 위한 TCP 및 이진 메시지 인코딩을 지원하는 런타임 통신 스택을 생성합니다.
 

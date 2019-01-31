@@ -1,15 +1,15 @@
 ---
-title: '&lt;webMessageEncoding&gt;'
+title: <webMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
-ms.openlocfilehash: 90102c25c1c5b83af8f629d18b790af9297fa88c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e263062d47708983e7771a8db63ba20d2193ece3
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640253"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55260036"
 ---
-# <a name="ltwebmessageencodinggt"></a>&lt;webMessageEncoding&gt;
+# <a name="webmessageencoding"></a>\<webMessageEncoding>
 WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍스트 XML, JSON(JavaScript Object Notation) 메시지 인코딩 및 "원시" 이진 콘텐츠를 읽고 쓸 수 있게 합니다.  
   
  \<system.serviceModel>  

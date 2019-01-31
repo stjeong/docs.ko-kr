@@ -1,15 +1,15 @@
 ---
-title: '&lt;scopedCertificates&gt; 요소의 &lt;add&gt;'
+title: <add> <scopedCertificates> 요소
 ms.date: 03/30/2017
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
-ms.openlocfilehash: 2406c93307ed9beb5738567a473406026b09b0a1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 34dc51c27a5e16b1a8411112fb9afdfe617ed582
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54508745"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55262320"
 ---
-# <a name="ltaddgt-of-ltscopedcertificatesgt-element"></a>&lt;scopedCertificates&gt; 요소의 &lt;add&gt;
+# <a name="add-of-scopedcertificates-element"></a>\<추가 >의 \<scopedCertificates > 요소
 범위가 지정된 인증서 컬렉션에 X.509 인증서를 추가합니다.  
   
  \<system.ServiceModel>  

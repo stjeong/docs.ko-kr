@@ -1,5 +1,5 @@
 ---
-title: 런타임에 바인딩 오버 로드 확인에 적용할 수 없습니다 &#39; &lt;procedurename&gt; &#39; 액세스 인스턴스가 인터페이스 형식 이므로
+title: 액세스 인스턴스가 인터페이스 형식이므로 런타임에 바인딩 오버로드 확인을 '<procedurename>'에 적용할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30933
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: db0ce88f63be8d58cc1c1abf91eda6a0e56456c6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7215be3f454f4a799124620fb5db520282988035
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54651519"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55272641"
 ---
-# <a name="latebound-overload-resolution-cannot-be-applied-to-39ltprocedurenamegt39-because-the-accessing-instance-is-an-interface-type"></a>런타임에 바인딩 오버 로드 확인에 적용할 수 없습니다 &#39; &lt;procedurename&gt; &#39; 액세스 인스턴스가 인터페이스 형식 이므로
+# <a name="latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>런타임에 바인딩 오버 로드 확인에 적용할 수 없습니다 '\<procedurename >' 액세스 인스턴스가 인터페이스 형식 이므로
 컴파일러에서 오버 로드 된 속성 또는 프로시저에 대 한 참조를 확인 하려고 시도 하지만 인수 형식 이므로 참조 실패 `Object` 참조 하는 개체 인터페이스의 데이터 형식이 고 합니다. `Object` 인수를 사용 하면 런타임에 바인딩된으로 참조를 해결 하려면 컴파일러.  
   
  이러한 상황에서는 컴파일러 대신 기본 인터페이스를 통해 구현 클래스를 통해 오버 로드를 확인합니다. 클래스 이름 바꾸기 오버 로드 된 버전 중 하나, 컴파일러가 이름과 다르기 때문에 오버 로드 되도록 해당 버전을 고려 하지 않습니다. 이 컴파일러에서 참조를 해결 하려면 올바른 선택 되었을 때 이름이 바뀐된 버전을 무시 합니다.  

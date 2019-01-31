@@ -1,15 +1,15 @@
 ---
-title: '&lt;httpListener&gt; 요소 (네트워크 설정)'
+title: <httpListener> 요소(네트워크 설정)
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-ms.openlocfilehash: 896b6633ef4a741b9a7460d8ce3d879253d542da
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ff5e4ad2788ab3df621beb52b1703647df068a7f
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54577700"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257995"
 ---
-# <a name="lthttplistenergt-element-network-settings"></a>&lt;httpListener&gt; 요소 (네트워크 설정)
+# <a name="httplistener-element-network-settings"></a>\<httpListener > 요소 (네트워크 설정)
 매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.  
   
  \<configuration>  

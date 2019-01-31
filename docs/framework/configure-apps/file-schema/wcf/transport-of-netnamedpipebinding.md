@@ -1,15 +1,15 @@
 ---
-title: '&lt;netNamedPipeBinding&gt;의 &lt;transport&gt;'
+title: <transport>의 <netNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d
-ms.openlocfilehash: 7177dda08e1ce5b4f8adb072dce6155df714979d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9bcaae68051be2976b97989657efe53cf7a2718a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54556088"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55263457"
 ---
-# <a name="lttransportgt-of-ltnetnamedpipebindinggt"></a>&lt;netNamedPipeBinding&gt;의 &lt;transport&gt;
+# <a name="transport-of-netnamedpipebinding"></a>\<전송 >의 \<netNamedPipeBinding >
 명명된 파이프에 대한 전송 보안 설정을 정의합니다.  
   
  \<system.ServiceModel>  
