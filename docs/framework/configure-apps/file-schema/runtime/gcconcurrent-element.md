@@ -1,5 +1,5 @@
 ---
-title: '&lt;gcConcurrent&gt; Element'
+title: <gcConcurrent> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent
@@ -11,60 +11,60 @@ helpviewer_keywords:
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4c83576c5c46d9a32f990d23fa20b116be36e4c0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ae20e33f610acf77f2039b94803a19d371b771c0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611998"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265989"
 ---
-# <a name="ltgcconcurrentgt-element"></a><span data-ttu-id="8640e-102">&lt;gcConcurrent&gt; Element</span><span class="sxs-lookup"><span data-stu-id="8640e-102">&lt;gcConcurrent&gt; Element</span></span>
-<span data-ttu-id="8640e-103">공용 언어 런타임이 별도 스레드에서 가비지 컬렉션을 실행하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-103">Specifies whether the common language runtime runs garbage collection on a separate thread.</span></span>  
+# <a name="gcconcurrent-element"></a><span data-ttu-id="a97d2-102">\<gcConcurrent> Element</span><span class="sxs-lookup"><span data-stu-id="a97d2-102">\<gcConcurrent> Element</span></span>
+<span data-ttu-id="a97d2-103">공용 언어 런타임이 별도 스레드에서 가비지 컬렉션을 실행하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-103">Specifies whether the common language runtime runs garbage collection on a separate thread.</span></span>  
   
- <span data-ttu-id="8640e-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="8640e-104">\<configuration></span></span>  
-<span data-ttu-id="8640e-105">\<runtime></span><span class="sxs-lookup"><span data-stu-id="8640e-105">\<runtime></span></span>  
-<span data-ttu-id="8640e-106">\<gcConcurrent></span><span class="sxs-lookup"><span data-stu-id="8640e-106">\<gcConcurrent></span></span>  
+ <span data-ttu-id="a97d2-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="a97d2-104">\<configuration></span></span>  
+<span data-ttu-id="a97d2-105">\<runtime></span><span class="sxs-lookup"><span data-stu-id="a97d2-105">\<runtime></span></span>  
+<span data-ttu-id="a97d2-106">\<gcConcurrent></span><span class="sxs-lookup"><span data-stu-id="a97d2-106">\<gcConcurrent></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8640e-107">구문</span><span class="sxs-lookup"><span data-stu-id="8640e-107">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a97d2-107">구문</span><span class="sxs-lookup"><span data-stu-id="a97d2-107">Syntax</span></span>  
   
 ```xml  
 <gcConcurrent    
    enabled="true|false"/>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="8640e-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="8640e-108">Attributes and Elements</span></span>  
- <span data-ttu-id="8640e-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="a97d2-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="a97d2-108">Attributes and Elements</span></span>  
+ <span data-ttu-id="a97d2-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="8640e-110">특성</span><span class="sxs-lookup"><span data-stu-id="8640e-110">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="a97d2-110">특성</span><span class="sxs-lookup"><span data-stu-id="a97d2-110">Attributes</span></span>  
   
-|<span data-ttu-id="8640e-111">특성</span><span class="sxs-lookup"><span data-stu-id="8640e-111">Attribute</span></span>|<span data-ttu-id="8640e-112">설명</span><span class="sxs-lookup"><span data-stu-id="8640e-112">Description</span></span>|  
+|<span data-ttu-id="a97d2-111">특성</span><span class="sxs-lookup"><span data-stu-id="a97d2-111">Attribute</span></span>|<span data-ttu-id="a97d2-112">설명</span><span class="sxs-lookup"><span data-stu-id="a97d2-112">Description</span></span>|  
 |---------------|-----------------|  
-|`enabled`|<span data-ttu-id="8640e-113">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-113">Required attribute.</span></span><br /><br /> <span data-ttu-id="8640e-114">런타임이 동시에 가비지 수집을 실행하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-114">Specifies whether the runtime runs garbage collection concurrently.</span></span>|  
+|`enabled`|<span data-ttu-id="a97d2-113">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-113">Required attribute.</span></span><br /><br /> <span data-ttu-id="a97d2-114">런타임이 동시에 가비지 수집을 실행하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-114">Specifies whether the runtime runs garbage collection concurrently.</span></span>|  
   
-## <a name="enabled-attribute"></a><span data-ttu-id="8640e-115">enabled 특성</span><span class="sxs-lookup"><span data-stu-id="8640e-115">enabled Attribute</span></span>  
+## <a name="enabled-attribute"></a><span data-ttu-id="a97d2-115">enabled 특성</span><span class="sxs-lookup"><span data-stu-id="a97d2-115">enabled Attribute</span></span>  
   
-|<span data-ttu-id="8640e-116">값</span><span class="sxs-lookup"><span data-stu-id="8640e-116">Value</span></span>|<span data-ttu-id="8640e-117">설명</span><span class="sxs-lookup"><span data-stu-id="8640e-117">Description</span></span>|  
+|<span data-ttu-id="a97d2-116">값</span><span class="sxs-lookup"><span data-stu-id="a97d2-116">Value</span></span>|<span data-ttu-id="a97d2-117">설명</span><span class="sxs-lookup"><span data-stu-id="a97d2-117">Description</span></span>|  
 |-----------|-----------------|  
-|`false`|<span data-ttu-id="8640e-118">동시에 가비지 컬렉션을 실행하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-118">Does not run garbage collection concurrently.</span></span>|  
-|`true`|<span data-ttu-id="8640e-119">동시에 가비지 컬렉션을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-119">Runs garbage collection concurrently.</span></span> <span data-ttu-id="8640e-120">이 값이 기본값입니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-120">This is the default.</span></span>|  
+|`false`|<span data-ttu-id="a97d2-118">동시에 가비지 컬렉션을 실행하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-118">Does not run garbage collection concurrently.</span></span>|  
+|`true`|<span data-ttu-id="a97d2-119">동시에 가비지 컬렉션을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-119">Runs garbage collection concurrently.</span></span> <span data-ttu-id="a97d2-120">이 값이 기본값입니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-120">This is the default.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="8640e-121">자식 요소</span><span class="sxs-lookup"><span data-stu-id="8640e-121">Child Elements</span></span>  
- <span data-ttu-id="8640e-122">없음</span><span class="sxs-lookup"><span data-stu-id="8640e-122">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="a97d2-121">자식 요소</span><span class="sxs-lookup"><span data-stu-id="a97d2-121">Child Elements</span></span>  
+ <span data-ttu-id="a97d2-122">없음</span><span class="sxs-lookup"><span data-stu-id="a97d2-122">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="8640e-123">부모 요소</span><span class="sxs-lookup"><span data-stu-id="8640e-123">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="a97d2-123">부모 요소</span><span class="sxs-lookup"><span data-stu-id="a97d2-123">Parent Elements</span></span>  
   
-|<span data-ttu-id="8640e-124">요소</span><span class="sxs-lookup"><span data-stu-id="8640e-124">Element</span></span>|<span data-ttu-id="8640e-125">설명</span><span class="sxs-lookup"><span data-stu-id="8640e-125">Description</span></span>|  
+|<span data-ttu-id="a97d2-124">요소</span><span class="sxs-lookup"><span data-stu-id="a97d2-124">Element</span></span>|<span data-ttu-id="a97d2-125">설명</span><span class="sxs-lookup"><span data-stu-id="a97d2-125">Description</span></span>|  
 |-------------|-----------------|  
-|`configuration`|<span data-ttu-id="8640e-126">공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-126">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
-|`runtime`|<span data-ttu-id="8640e-127">어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-127">Contains information about assembly binding and garbage collection.</span></span>|  
+|`configuration`|<span data-ttu-id="a97d2-126">공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-126">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
+|`runtime`|<span data-ttu-id="a97d2-127">어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-127">Contains information about assembly binding and garbage collection.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="8640e-128">설명</span><span class="sxs-lookup"><span data-stu-id="8640e-128">Remarks</span></span>  
- <span data-ttu-id="8640e-129">.NET Framework 4 이전에는 워크스테이션 가비지 컬렉션이 별도 스레드에서 백그라운드로 가비지 컬렉션을 수행한 동시 가비지 컬렉션을 지원했습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-129">Prior to the .NET Framework 4, workstation garbage collection supported concurrent garbage collection, which performed garbage collection in the background on a separate thread.</span></span> <span data-ttu-id="8640e-130">.NET Framework 4에서는 동시 가비지 수집이 역시 별도 스레드에서 백그라운드로 가비지 수집을 수행하는 백그라운드 GC로 대체되었습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-130">In the .NET Framework 4, concurrent garbage collection was replaced by background GC, which also performs garbage collection in the background on a separate thread.</span></span> <span data-ttu-id="8640e-131">.NET Framework 4.5부터 백그라운드 수집을 서버 가비지 수집에서 사용할 수 있게 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-131">Starting with the .NET Framework 4.5, background collection became available in server garbage collection.</span></span> <span data-ttu-id="8640e-132">`<gcConcurrent>` 요소는 런타임이 사용 가능한 경우 동시 또는 백그라운드 가비지 수집을 수행하는지 여부 또는 포그라운드에서 가비지 수집을 수행하는지 여부를 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-132">The `<gcConcurrent>` element controls whether the runtime performs either concurrent or background garbage collection, if it is available, or whether it performs garbage collection in the foreground.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a97d2-128">설명</span><span class="sxs-lookup"><span data-stu-id="a97d2-128">Remarks</span></span>  
+ <span data-ttu-id="a97d2-129">.NET Framework 4 이전에는 워크스테이션 가비지 컬렉션이 별도 스레드에서 백그라운드로 가비지 컬렉션을 수행한 동시 가비지 컬렉션을 지원했습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-129">Prior to the .NET Framework 4, workstation garbage collection supported concurrent garbage collection, which performed garbage collection in the background on a separate thread.</span></span> <span data-ttu-id="a97d2-130">.NET Framework 4에서는 동시 가비지 수집이 역시 별도 스레드에서 백그라운드로 가비지 수집을 수행하는 백그라운드 GC로 대체되었습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-130">In the .NET Framework 4, concurrent garbage collection was replaced by background GC, which also performs garbage collection in the background on a separate thread.</span></span> <span data-ttu-id="a97d2-131">.NET Framework 4.5부터 백그라운드 수집을 서버 가비지 수집에서 사용할 수 있게 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-131">Starting with the .NET Framework 4.5, background collection became available in server garbage collection.</span></span> <span data-ttu-id="a97d2-132">`<gcConcurrent>` 요소는 런타임이 사용 가능한 경우 동시 또는 백그라운드 가비지 수집을 수행하는지 여부 또는 포그라운드에서 가비지 수집을 수행하는지 여부를 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-132">The `<gcConcurrent>` element controls whether the runtime performs either concurrent or background garbage collection, if it is available, or whether it performs garbage collection in the foreground.</span></span>  
   
 > [!WARNING]
->  <span data-ttu-id="8640e-133">.NET Framework 4부터 동시 가비지 컬렉션이 백그라운드 가비지 컬렉션으로 대체되었습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-133">Starting with the .NET Framework 4, concurrent garbage collection is replaced by background garbage collection.</span></span> <span data-ttu-id="8640e-134">용어 *동시* 하 고 *백그라운드* .NET Framework 설명서에서 같은 의미로 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-134">The terms *concurrent* and *background* are used interchangeably in the .NET Framework documentation.</span></span> <span data-ttu-id="8640e-135">백그라운드 가비지 컬렉션을 사용하지 않으려면, 이 문서에 설명된 대로 `<gcConcurrent>` 요소를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-135">To disable background garbage collection, use the `<gcConcurrent>` element, as discussed in this article.</span></span>  
+>  <span data-ttu-id="a97d2-133">.NET Framework 4부터 동시 가비지 컬렉션이 백그라운드 가비지 컬렉션으로 대체되었습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-133">Starting with the .NET Framework 4, concurrent garbage collection is replaced by background garbage collection.</span></span> <span data-ttu-id="a97d2-134">용어 *동시* 하 고 *백그라운드* .NET Framework 설명서에서 같은 의미로 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-134">The terms *concurrent* and *background* are used interchangeably in the .NET Framework documentation.</span></span> <span data-ttu-id="a97d2-135">백그라운드 가비지 컬렉션을 사용하지 않으려면, 이 문서에 설명된 대로 `<gcConcurrent>` 요소를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-135">To disable background garbage collection, use the `<gcConcurrent>` element, as discussed in this article.</span></span>  
   
- <span data-ttu-id="8640e-136">기본적으로 런타임은 대기 시간에 최적화된 동시 또는 백그라운드 가비지 수집을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-136">By default, the runtime uses concurrent or background garbage collection, which is optimized for latency.</span></span> <span data-ttu-id="8640e-137">사용자 상호 작용이 많이 필요한 응용 프로그램인 경우에는 가비지 수집을 수행할 때 응용 프로그램의 일시 중지를 최소화하도록 동시 가비지 수집 기능을 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-137">If your application involves heavy user interaction, leave concurrent garbage collection enabled to minimize the application's pause time to perform garbage collection.</span></span> <span data-ttu-id="8640e-138">`enabled` 요소의 `<gcConcurrent>` 특성을 `false`에 설정할 경우 런타임은 효율성이 최적화된 비동시성 가비지 수집을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-138">If you set the `enabled` attribute of the `<gcConcurrent>` element to `false`, the runtime uses non-concurrent garbage collection, which is optimized for throughput.</span></span> <span data-ttu-id="8640e-139">다음 구성 파일에서는 백그라운드 가비지 수집을 사용하지 않도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-139">The following configuration file disables background garbage collection.</span></span>  
+ <span data-ttu-id="a97d2-136">기본적으로 런타임은 대기 시간에 최적화된 동시 또는 백그라운드 가비지 수집을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-136">By default, the runtime uses concurrent or background garbage collection, which is optimized for latency.</span></span> <span data-ttu-id="a97d2-137">사용자 상호 작용이 많이 필요한 응용 프로그램인 경우에는 가비지 수집을 수행할 때 응용 프로그램의 일시 중지를 최소화하도록 동시 가비지 수집 기능을 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-137">If your application involves heavy user interaction, leave concurrent garbage collection enabled to minimize the application's pause time to perform garbage collection.</span></span> <span data-ttu-id="a97d2-138">`enabled` 요소의 `<gcConcurrent>` 특성을 `false`에 설정할 경우 런타임은 효율성이 최적화된 비동시성 가비지 수집을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-138">If you set the `enabled` attribute of the `<gcConcurrent>` element to `false`, the runtime uses non-concurrent garbage collection, which is optimized for throughput.</span></span> <span data-ttu-id="a97d2-139">다음 구성 파일에서는 백그라운드 가비지 수집을 사용하지 않도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-139">The following configuration file disables background garbage collection.</span></span>  
   
 ```xml  
 <configuration>  
@@ -74,12 +74,12 @@ ms.locfileid: "54611998"
 </configuration>  
 ```  
   
- <span data-ttu-id="8640e-140">컴퓨터 구성 파일에 `<gcConcurrentSetting>` 설정이 있는 경우 모든 .NET Framework 응용 프로그램에 대한 기본값을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-140">If there is a `<gcConcurrentSetting>` setting in the machine configuration file, it defines the default value for all .NET Framework applications.</span></span> <span data-ttu-id="8640e-141">컴퓨터 구성 파일 설정은 응용 프로그램 구성 파일 설정을 재정의합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-141">The machine configuration file setting overrides the application configuration file setting.</span></span>  
+ <span data-ttu-id="a97d2-140">컴퓨터 구성 파일에 `<gcConcurrentSetting>` 설정이 있는 경우 모든 .NET Framework 응용 프로그램에 대한 기본값을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-140">If there is a `<gcConcurrentSetting>` setting in the machine configuration file, it defines the default value for all .NET Framework applications.</span></span> <span data-ttu-id="a97d2-141">컴퓨터 구성 파일 설정은 응용 프로그램 구성 파일 설정을 재정의합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-141">The machine configuration file setting overrides the application configuration file setting.</span></span>  
   
- <span data-ttu-id="8640e-142">자세한 방법은 동시 및 백그라운드 가비지 수집에서 "동시 가비지 컬렉션" 섹션을 참조 합니다 [가비지 컬렉션 기본 사항](../../../../../docs/standard/garbage-collection/fundamentals.md) 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-142">For more information on concurrent and background garbage collection, see the "Concurrent garbage collection" section in the [Fundamentals of Garbage Collection](../../../../../docs/standard/garbage-collection/fundamentals.md) topic.</span></span>  
+ <span data-ttu-id="a97d2-142">자세한 방법은 동시 및 백그라운드 가비지 수집에서 "동시 가비지 컬렉션" 섹션을 참조 합니다 [가비지 컬렉션 기본 사항](../../../../../docs/standard/garbage-collection/fundamentals.md) 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-142">For more information on concurrent and background garbage collection, see the "Concurrent garbage collection" section in the [Fundamentals of Garbage Collection](../../../../../docs/standard/garbage-collection/fundamentals.md) topic.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="8640e-143">예제</span><span class="sxs-lookup"><span data-stu-id="8640e-143">Example</span></span>  
- <span data-ttu-id="8640e-144">다음 예제에서는 동시 가비지 컬렉션을 사용하도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8640e-144">The following example enables concurrent garbage collection.</span></span>  
+## <a name="example"></a><span data-ttu-id="a97d2-143">예제</span><span class="sxs-lookup"><span data-stu-id="a97d2-143">Example</span></span>  
+ <span data-ttu-id="a97d2-144">다음 예제에서는 동시 가비지 컬렉션을 사용하도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a97d2-144">The following example enables concurrent garbage collection.</span></span>  
   
 ```xml  
 <configuration>  
@@ -89,7 +89,7 @@ ms.locfileid: "54611998"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8640e-145">참고자료</span><span class="sxs-lookup"><span data-stu-id="8640e-145">See also</span></span>
-- [<span data-ttu-id="8640e-146">런타임 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="8640e-146">Runtime Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [<span data-ttu-id="8640e-147">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="8640e-147">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [<span data-ttu-id="8640e-148">가비지 수집 기본 사항</span><span class="sxs-lookup"><span data-stu-id="8640e-148">Fundamentals of Garbage Collection</span></span>](../../../../../docs/standard/garbage-collection/fundamentals.md)
+## <a name="see-also"></a><span data-ttu-id="a97d2-145">참고자료</span><span class="sxs-lookup"><span data-stu-id="a97d2-145">See also</span></span>
+- [<span data-ttu-id="a97d2-146">런타임 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="a97d2-146">Runtime Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [<span data-ttu-id="a97d2-147">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="a97d2-147">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [<span data-ttu-id="a97d2-148">가비지 수집 기본 사항</span><span class="sxs-lookup"><span data-stu-id="a97d2-148">Fundamentals of Garbage Collection</span></span>](../../../../../docs/standard/garbage-collection/fundamentals.md)
