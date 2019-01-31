@@ -1,107 +1,59 @@
 ---
 title: =&gt; 연산자 - C# 참조
 ms.custom: seodec18
-ms.date: 10/02/2017
+ms.date: 01/22/2019
 f1_keywords:
 - =>_CSharpKeyword
 helpviewer_keywords:
 - lambda operator [C#]
 - => operator [C#]
 - lambda expressions [C#], => operator
-ms.openlocfilehash: 8641757d9252c88cf30595cec06d27b964e4d95c
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: fa2e149f5b19e80e3171d08519be3ae249d2a112
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540808"
 ---
-# <a name="gt-operator-c-reference"></a><span data-ttu-id="ed901-102">=&gt; 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="ed901-102">=&gt; Operator (C# Reference)</span></span>
+# <a name="gt-operator-c-reference"></a><span data-ttu-id="6929e-102">=&gt; 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="6929e-102">=&gt; operator (C# Reference)</span></span>
 
-<span data-ttu-id="ed901-103">`=>` 연산자는 C#에서 두 가지 방법으로 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-103">The `=>` operator can be used in two ways in C#:</span></span>
+<span data-ttu-id="6929e-103">`=>` 토큰은 람다 연산자와 식 본문 정의의 멤버 이름과 멤버 구현의 구분자라는 두 가지 형식으로 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-103">The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition.</span></span>
 
-- <span data-ttu-id="ed901-104">[람다 식](../../lambda-expressions.md)에서 [람다 연산자](#lambda-operator)로, 람다 본문에서 입력 변수를 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-104">As the [lambda operator](#lambda-operator) in a [lambda expression](../../lambda-expressions.md), it separates the input variables from the lambda body.</span></span>
- 
-- <span data-ttu-id="ed901-105">[식 본문 정의](#expression-body-definition)에서는 멤버 구현에서 멤버 이름을 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-105">In an [expression body definition](#expression-body-definition), it separates a member name from the member implementation.</span></span> 
+## <a name="lambda-operator"></a><span data-ttu-id="6929e-104">람다 연산자</span><span class="sxs-lookup"><span data-stu-id="6929e-104">Lambda operator</span></span>
 
-## <a name="lambda-operator"></a><span data-ttu-id="ed901-106">람다 연산자</span><span class="sxs-lookup"><span data-stu-id="ed901-106">Lambda operator</span></span>
+<span data-ttu-id="6929e-105">[람다 식](../../programming-guide/statements-expressions-operators/lambda-expressions.md)에서 람다 연산자 `=>`은 왼쪽의 입력 변수를 오른쪽의 람다 본문과 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-105">In [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md), the lambda operator `=>` separates the input variables on the left side from the lambda body on the right side.</span></span>
 
-<span data-ttu-id="ed901-107">`=>` 토큰을 람다 연산자라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-107">The `=>` token is called the lambda operator.</span></span> <span data-ttu-id="ed901-108">이 연산자는 *람다 식*에서 왼쪽의 입력 변수를 오른쪽의 람다 본문과 구분하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-108">It is used in *lambda expressions* to separate the input variables on the left side from the lambda body on the right side.</span></span> <span data-ttu-id="ed901-109">람다 식은 무명 메서드와 유사한 인라인 식이지만 보다 유연하며, 메서드 구문으로 표현되는 LINQ 쿼리에서 광범위하게 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-109">Lambda expressions are inline expressions similar to anonymous methods but more flexible; they are used extensively in LINQ queries that are expressed in method syntax.</span></span> <span data-ttu-id="ed901-110">자세한 내용은 [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ed901-110">For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).</span></span>  
-  
- <span data-ttu-id="ed901-111">다음 예제에서는 문자열 배열에서 가장 짧은 문자열 길이를 찾아 표시하는 두 가지 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-111">The following example shows two ways to find and display the length of the shortest string in an array of strings.</span></span> <span data-ttu-id="ed901-112">예제의 첫 번째 부분에서는 람다 식(`w => w.Length`)을 `words` 배열의 각 요소에 적용한 다음 <xref:System.Linq.Enumerable.Min%2A> 메서드를 사용하여 가장 짧은 길이를 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-112">The first part of the example applies a lambda expression (`w => w.Length`) to each element of the `words` array and then uses the <xref:System.Linq.Enumerable.Min%2A> method to find the smallest length.</span></span> <span data-ttu-id="ed901-113">비교를 위해 예제의 두 번째 부분에서는 쿼리 구문을 사용하여 동일한 작업을 수행하는 더 긴 솔루션을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-113">For comparison, the second part of the example shows a longer solution that uses query syntax to do the same thing.</span></span>  
-  
-```csharp  
-string[] words = { "cherry", "apple", "blueberry" };  
-  
-// Use method syntax to apply a lambda expression to each element  
-// of the words array.   
-int shortestWordLength = words.Min(w => w.Length);  
-Console.WriteLine(shortestWordLength);  
-  
-// Compare the following code that uses query syntax.  
-// Get the lengths of each word in the words array.  
-var query = from w in words  
-            select w.Length;  
-// Apply the Min method to execute the query and get the shortest length.  
-int shortestWordLength2 = query.Min();  
-Console.WriteLine(shortestWordLength2);  
-  
-// Output:   
-// 5  
-// 5  
-```  
-  
-### <a name="remarks"></a><span data-ttu-id="ed901-114">주의</span><span class="sxs-lookup"><span data-stu-id="ed901-114">Remarks</span></span>  
- <span data-ttu-id="ed901-115">`=>` 연산자는 할당 연산자(`=`)와 우선 순위가 같으며 오른쪽 결합성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-115">The `=>` operator has the same precedence as the assignment operator (`=`) and is right-associative.</span></span>  
-  
- <span data-ttu-id="ed901-116">입력 변수의 형식을 명시적으로 지정하거나 컴파일러에서 유추하도록 할 수 있습니다. 두 경우 모두 변수는 컴파일 시간에 강력한 형식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-116">You can specify the type of the input variable explicitly or let the compiler infer it; in either case, the variable is strongly typed at compile time.</span></span> <span data-ttu-id="ed901-117">다음 예제와 같이 형식을 지정할 때 형식 이름과 변수 이름을 괄호로 묶어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-117">When you specify a type, you must enclose the type name and the variable name in parentheses, as the following example shows.</span></span>  
-  
-```csharp  
-int shortestWordLength = words.Min((string w) => w.Length);  
-```  
-  
-### <a name="example"></a><span data-ttu-id="ed901-118">예제</span><span class="sxs-lookup"><span data-stu-id="ed901-118">Example</span></span>  
- <span data-ttu-id="ed901-119">다음 예제에서는 두 개의 인수를 사용하는 표준 쿼리 연산자 <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType>의 오버로드에 대한 람다 식을 작성하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-119">The following example shows how to write a lambda expression for the overload of the standard query operator <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> that takes two arguments.</span></span> <span data-ttu-id="ed901-120">람다 식에는 둘 이상의 매개 변수가 사용되므로 매개 변수를 괄호로 묶어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-120">Because the lambda expression has more than one parameter, the parameters must be enclosed in parentheses.</span></span> <span data-ttu-id="ed901-121">두 번째 매개 변수 `index`는 컬렉션에서 현재 요소의 인덱스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-121">The second parameter, `index`, represents the index of the current element in the collection.</span></span> <span data-ttu-id="ed901-122">`Where` 식은 길이가 배열의 해당 인덱스 위치보다 작은 모든 문자열을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-122">The `Where` expression returns all the strings whose lengths are less than their index positions in the array.</span></span>  
-  
-```csharp  
-static void Main(string[] args)  
-{  
-    string[] digits = { "zero", "one", "two", "three", "four", "five",   
-            "six", "seven", "eight", "nine" };  
-  
-    Console.WriteLine("Example that uses a lambda expression:");  
-    var shortDigits = digits.Where((digit, index) => digit.Length < index);  
-    foreach (var sD in shortDigits)  
-    {  
-        Console.WriteLine(sD);  
-    }  
-  
-    // Output:  
-    // Example that uses a lambda expression:  
-    // five  
-    // six  
-    // seven  
-    // eight  
-    // nine  
-}  
-```  
-## <a name="expression-body-definition"></a><span data-ttu-id="ed901-123">식 본문 정의</span><span class="sxs-lookup"><span data-stu-id="ed901-123">Expression body definition</span></span>
+<span data-ttu-id="6929e-106">다음 예제에서는 메서드 구문이 포함된 [LINQ](../../programming-guide/concepts/linq/index.md) 기능을 사용하여 람다 식의 사용법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-106">The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:</span></span>
 
-<span data-ttu-id="ed901-124">식 본문 정의는 간결하고 읽을 수 있는 형식으로 멤버 구현을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-124">An expression body definition provides a member's implementation in a highly condensed, readable form.</span></span> <span data-ttu-id="ed901-125">다음과 같은 일반적인 구문을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-125">It has the following general syntax:</span></span>
+[!code-csharp-interactive[infer types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#InferredTypes)]
+
+<span data-ttu-id="6929e-107">람다 식의 입력 변수는 컴파일 시 강력한 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-107">Input variables of lambda expressions are strongly typed at compile time.</span></span> <span data-ttu-id="6929e-108">위의 예제와 같이 컴파일러가 입력 변수의 형식을 추론하는 경우, 형식 선언을 생략할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-108">When the compiler can infer the types of input variables, like in the preceding example, you may omit type declarations.</span></span> <span data-ttu-id="6929e-109">입력 변수의 형식을 지정해야 하는 경우 다음 예제와 같이 각 변수에 대해 입력 변수를 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-109">If you need to specify the type of input variables, you must do that for each variable, as the following example shows:</span></span>
+
+[!code-csharp-interactive[specify types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#ExplicitTypes)]
+
+<span data-ttu-id="6929e-110">다음 예제에서는 입력 변수 없이 람다 식을 정의하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-110">The following example shows how to define a lambda expression without input variables:</span></span>
+
+[!code-csharp-interactive[without input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#WithoutInput)]
+
+<span data-ttu-id="6929e-111">자세한 내용은 [람다 식](../../programming-guide/statements-expressions-operators/lambda-expressions.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="6929e-111">For more information, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).</span></span>
+
+## <a name="expression-body-definition"></a><span data-ttu-id="6929e-112">식 본문 정의</span><span class="sxs-lookup"><span data-stu-id="6929e-112">Expression body definition</span></span>
+
+<span data-ttu-id="6929e-113">식 본문 정의의 일반 구문은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-113">An expression body definition has the following general syntax:</span></span>
 
 ```csharp
 member => expression;
 ```
-<span data-ttu-id="ed901-126">여기서 *expression*은 유효한 식입니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-126">where *expression* is a valid expression.</span></span> <span data-ttu-id="ed901-127">*식*은 멤버의 반환 형식이 `void`이거나 멤버가 생성자 또는 종료자인 경우에만 *statement 식*일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-127">Note that *expression* can be a *statement expression* only if the member's return type is `void`, or if the member is a constructor or a finalizer.</span></span>
 
-<span data-ttu-id="ed901-128">메서드 및 속성 가져오기 문에 대한 식 본문 정의는 C# 6부터 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-128">Expression body definitions for methods and property get statements are supported starting with C# 6.</span></span> <span data-ttu-id="ed901-129">생성자, 종료자, 속성 설정 문 및 인덱서에 대한 식 본문 정의는 C# 7부터 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-129">Expression body definitions for constructors, finalizers, property set statements, and indexers are supported starting with C# 7.</span></span>
+<span data-ttu-id="6929e-114">여기서 *expression*은 유효한 식입니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-114">where *expression* is a valid expression.</span></span> <span data-ttu-id="6929e-115">*식*은 멤버의 반환 형식이 `void`이거나 멤버가 생성자, 종료자, 또는 속성 `set` 접근자인 경우에만 *명령문 식*일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-115">Note that *expression* can be a *statement expression* only if the member's return type is `void`, or if the member is a constructor, a finalizer, or a property `set` accessor.</span></span>
 
-<span data-ttu-id="ed901-130">`Person.ToString` 메서드에 대한 식 본문 정의는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-130">The following is an expression body definition for a `Person.ToString` method:</span></span>
+<span data-ttu-id="6929e-116">다음 예제에서는 `Person.ToString` 메서드에 대한 식 본문 정의를 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-116">The following example shows an expression body definition for a `Person.ToString` method:</span></span>
 
 ```csharp
 public override string ToString() => $"{fname} {lname}".Trim();
 ```
 
-<span data-ttu-id="ed901-131">다음과 같은 메서드 정의의 약식 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="ed901-131">It is a shorthand version of the following method definition:</span></span>
+<span data-ttu-id="6929e-117">다음과 같은 메서드 정의의 약식 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-117">It's a shorthand version of the following method definition:</span></span>
 
 ```csharp
 public override string ToString()
@@ -109,11 +61,23 @@ public override string ToString()
    return $"{fname} {lname}".Trim();
 }
 ```
-<span data-ttu-id="ed901-132">식 본문 정의에 대한 자세한 내용은 [식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ed901-132">For more detailed information on expression body definitions, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ed901-133">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ed901-133">See Also</span></span>
+<span data-ttu-id="6929e-118">메서드 및 읽기 전용 속성에 대한 식 본문 정의는 C# 6부터 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-118">Expression body definitions for methods and read-only properties are supported starting with C# 6.</span></span> <span data-ttu-id="6929e-119">생성자, 종료자, 속성 접근자 및 인덱서에 대한 식 본문 정의는 C# 7.0부터 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-119">Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.</span></span>
 
-- [<span data-ttu-id="ed901-134">C# 참조</span><span class="sxs-lookup"><span data-stu-id="ed901-134">C# Reference</span></span>](../../../csharp/language-reference/index.md)   
-- [<span data-ttu-id="ed901-135">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="ed901-135">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)   
-- [<span data-ttu-id="ed901-136">람다 식</span><span class="sxs-lookup"><span data-stu-id="ed901-136">Lambda Expressions</span></span>](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
-- <span data-ttu-id="ed901-137">[식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)</span><span class="sxs-lookup"><span data-stu-id="ed901-137">[Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).</span></span>
+<span data-ttu-id="6929e-120">자세한 내용은 [식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="6929e-120">For more information, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).</span></span>
+
+## <a name="operator-overloadability"></a><span data-ttu-id="6929e-121">연산자 오버로드 가능성</span><span class="sxs-lookup"><span data-stu-id="6929e-121">Operator overloadability</span></span>
+
+<span data-ttu-id="6929e-122">`=>` 연산자를 오버로드할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="6929e-122">The `=>` operator cannot be overloaded.</span></span>
+
+## <a name="c-language-specification"></a><span data-ttu-id="6929e-123">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="6929e-123">C# language specification</span></span>
+
+<span data-ttu-id="6929e-124">자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [익명 함수 식](~/_csharplang/spec/expressions.md#anonymous-function-expressions) 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="6929e-124">For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](../language-specification/index.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="6929e-125">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6929e-125">See also</span></span>
+
+- [<span data-ttu-id="6929e-126">C# 참조</span><span class="sxs-lookup"><span data-stu-id="6929e-126">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="6929e-127">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="6929e-127">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="6929e-128">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="6929e-128">C# Operators</span></span>](index.md)
+- [<span data-ttu-id="6929e-129">람다 식</span><span class="sxs-lookup"><span data-stu-id="6929e-129">Lambda expressions</span></span>](../../programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [<span data-ttu-id="6929e-130">식 본문 멤버</span><span class="sxs-lookup"><span data-stu-id="6929e-130">Expression-bodied members</span></span>](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)

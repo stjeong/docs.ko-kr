@@ -1,6 +1,6 @@
 ---
 title: '방법: 파일에 텍스트 쓰기'
-ms.date: 03/30/2017
+ms.date: 01/04/2019
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -13,86 +13,62 @@ helpviewer_keywords:
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 9c637d9842c05f47bfcaa0431dd2f9f1ee29cc09
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 93d87dc98284fad6b8159f681f7d99ce460d60d6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50181240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524197"
 ---
-# <a name="how-to-write-text-to-a-file"></a><span data-ttu-id="17ee9-102">방법: 파일에 텍스트 쓰기</span><span class="sxs-lookup"><span data-stu-id="17ee9-102">How to: Write Text to a File</span></span>
-<span data-ttu-id="17ee9-103">이 항목에서는 .NET Framework 응용 프로그램 또는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 위해 파일에 텍스트를 쓸 수 있는 여러 가지 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-103">This topic shows different ways you can write text to a file for .NET Framework applications or [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.</span></span> <span data-ttu-id="17ee9-104">파일에 텍스트를 쓸 때는 일반적으로 다음 클래스 및 메서드가 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-104">The following classes and methods are typically used to write text to a file:</span></span>  
-  
--   <span data-ttu-id="17ee9-105"><xref:System.IO.StreamWriter> - 동기적(<xref:System.IO.StreamWriter.Write%2A> 또는 <xref:System.IO.TextWriter.WriteLine%2A>) 또는 비동기적(<xref:System.IO.StreamWriter.WriteAsync%2A> 및 <xref:System.IO.StreamWriter.WriteLineAsync%2A>)으로 파일에 쓰는 메서드가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-105"><xref:System.IO.StreamWriter> - it contains methods to write to a file synchronously (<xref:System.IO.StreamWriter.Write%2A> or <xref:System.IO.TextWriter.WriteLine%2A>) or asynchronously (<xref:System.IO.StreamWriter.WriteAsync%2A> and <xref:System.IO.StreamWriter.WriteLineAsync%2A>).</span></span>  
-  
--   <span data-ttu-id="17ee9-106"><xref:System.IO.File> - .NET Framework 응용 프로그램과 함께 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-106"><xref:System.IO.File> – to be used with .NET Framework applications.</span></span> <span data-ttu-id="17ee9-107"><xref:System.IO.File.WriteAllLines%2A> 및 <xref:System.IO.File.WriteAllText%2A>등 파일에 텍스트를 쓰거나 파일에 텍스트를 추가(<xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> 또는 <xref:System.IO.File.AppendText%2A>)하는 정적 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-107">It provides static methods to write text to a file such as <xref:System.IO.File.WriteAllLines%2A> and <xref:System.IO.File.WriteAllText%2A>, or to append text to a file (<xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> or <xref:System.IO.File.AppendText%2A>).</span></span>  
-  
--   <span data-ttu-id="17ee9-108"><xref:Windows.Storage.FileIO> - [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱과 함께 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-108"><xref:Windows.Storage.FileIO> - to be used with [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.</span></span> <span data-ttu-id="17ee9-109">파일에 텍스트를 쓰는 비동기 메서드(<xref:Windows.Storage.FileIO.WriteLinesAsync%2A> 또는 <xref:Windows.Storage.FileIO.WriteTextAsync%2A>)를 포함하거나 파일에 텍스트를 추가하는 비동기 메서드(<xref:Windows.Storage.FileIO.AppendLinesAsync%2A> 또는 <xref:Windows.Storage.FileIO.AppendTextAsync%2A>)를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-109">It contains asynchronous methods to write text to a file (<xref:Windows.Storage.FileIO.WriteLinesAsync%2A> or <xref:Windows.Storage.FileIO.WriteTextAsync%2A>) or to append text to a file (<xref:Windows.Storage.FileIO.AppendLinesAsync%2A> or <xref:Windows.Storage.FileIO.AppendTextAsync%2A>).</span></span>  
+# <a name="how-to-write-text-to-a-file"></a><span data-ttu-id="76de7-102">방법: 파일에 텍스트 쓰기</span><span class="sxs-lookup"><span data-stu-id="76de7-102">How to: Write text to a file</span></span>
+<span data-ttu-id="76de7-103">이 항목에서는 .NET 앱의 파일에 텍스트를 작성하는 다양한 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-103">This topic shows different ways to write text to a file for a .NET app.</span></span> 
 
-- <span data-ttu-id="17ee9-110"><xref:System.IO.Path> - 파일이나 디렉터리 경로 정보가 포함된 문자열에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-110"><xref:System.IO.Path> - to be used on strings that contain file or directory path information.</span></span> <span data-ttu-id="17ee9-111">파일이나 디렉터리 경로를 빌드하려면 문자열의 연결을 허용하는 <xref:System.IO.Path.Combine%2A> 메서드를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-111">It contains the <xref:System.IO.Path.Combine%2A> method, which allows concatenation of strings to build a file or directory path.</span></span>
+<span data-ttu-id="76de7-104">파일에 텍스트를 쓸 때는 일반적으로 다음 클래스 및 메서드가 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-104">The following classes and methods are typically used to write text to a file:</span></span>  
+  
+-   <span data-ttu-id="76de7-105"><xref:System.IO.StreamWriter>에는 동기식(<xref:System.IO.StreamWriter.Write%2A> 및 <xref:System.IO.TextWriter.WriteLine%2A>) 또는 비동기식(<xref:System.IO.StreamWriter.WriteAsync%2A> 및 <xref:System.IO.StreamWriter.WriteLineAsync%2A>)으로 파일에 쓰는 메서드가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-105"><xref:System.IO.StreamWriter> contains methods to write to a file synchronously (<xref:System.IO.StreamWriter.Write%2A> and <xref:System.IO.TextWriter.WriteLine%2A>) or asynchronously (<xref:System.IO.StreamWriter.WriteAsync%2A> and <xref:System.IO.StreamWriter.WriteLineAsync%2A>).</span></span>  
+  
+-   <span data-ttu-id="76de7-106"><xref:System.IO.File>은 <xref:System.IO.File.WriteAllLines%2A> 및 <xref:System.IO.File.WriteAllText%2A>와 같은 파일에 텍스트를 쓰거나 <xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> 및 <xref:System.IO.File.AppendText%2A>와 같은 파일에 텍스트를 추가하는 정적 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-106"><xref:System.IO.File> provides static methods to write text to a file, such as <xref:System.IO.File.WriteAllLines%2A> and <xref:System.IO.File.WriteAllText%2A>, or to append text to a file, such as <xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A>, and <xref:System.IO.File.AppendText%2A>.</span></span>  
+  
+- <span data-ttu-id="76de7-107"><xref:System.IO.Path>는 파일 또는 디렉터리 경로 정보가 포함된 문자열에 대한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-107"><xref:System.IO.Path> is for strings that have file or directory path information.</span></span> <span data-ttu-id="76de7-108">파일이나 디렉터리 경로를 빌드하기 위해 문자열의 연결을 허용하는 <xref:System.IO.Path.Combine%2A> 메서드 및 .NET Core 2.1 이상에서는 <xref:System.IO.Path.Join%2A> 및 <xref:System.IO.Path.TryJoin%2A> 메서드가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-108">It contains the <xref:System.IO.Path.Combine%2A> method and, in .NET Core 2.1 and later, the <xref:System.IO.Path.Join%2A> and <xref:System.IO.Path.TryJoin%2A> methods, which allow concatenation of strings to build a file or directory path.</span></span>
 
+> [!NOTE]
+> <span data-ttu-id="76de7-109">다음 예제에서는 필요한 최소 코드 양만 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-109">The following examples show only the minimum amount of code needed.</span></span> <span data-ttu-id="76de7-110">실제 앱은 일반적으로 더 강력한 오류 검사 및 예외 처리 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-110">A real-world app usually provides more robust error checking and exception handling.</span></span>  
+  
+## <a name="example-synchronously-write-text-with-streamwriter"></a><span data-ttu-id="76de7-111">예제: StreamWriter를 사용하여 텍스트를 동기식으로 쓰기</span><span class="sxs-lookup"><span data-stu-id="76de7-111">Example: Synchronously write text with StreamWriter</span></span>
 
- <span data-ttu-id="17ee9-112">수행 중인 작업에 집중할 수 있도록 간단한 샘플이 포함되었습니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-112">The samples have been kept simple in order to focus on the task being performed.</span></span> <span data-ttu-id="17ee9-113">이러한 이유로 샘플은 최소한의 오류 검사 및 예외 처리(있는 경우)를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-113">For this reason, the samples perform minimal error checking and exception handling, if any.</span></span> <span data-ttu-id="17ee9-114">실제 응용 프로그램은 일반적으로 더 강력한 오류 검사 및 예외 처리 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-114">A real-world application generally provides more robust error checking and exception handling.</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="17ee9-115">예</span><span class="sxs-lookup"><span data-stu-id="17ee9-115">Example</span></span>  
- <span data-ttu-id="17ee9-116">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 새 파일에 동기적으로 한 번에 한 줄씩 텍스트를 쓰는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-116">The following example shows how to synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time.</span></span> <span data-ttu-id="17ee9-117">새 텍스트 파일은 사용자의 내 문서 폴더에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-117">The new text file is saved to the user's My Documents folder.</span></span> <span data-ttu-id="17ee9-118"><xref:System.IO.StreamWriter> 개체는 `using` 문에서 선언되고 인스턴스화되므로 스트림을 자동으로 플러시하고 닫는 <xref:System.IO.StreamWriter.Dispose%2A> 메서드가 호출됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-118">Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked which automatically flushes and closes the stream.</span></span>  
-  
- [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writeline)] 
- [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeline)]  
-  
-## <a name="example"></a><span data-ttu-id="17ee9-119">예</span><span class="sxs-lookup"><span data-stu-id="17ee9-119">Example</span></span>  
- <span data-ttu-id="17ee9-120">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 기존 파일에 텍스트를 추가하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-120">The following example shows how to append text to an existing file using the <xref:System.IO.StreamWriter> class.</span></span> <span data-ttu-id="17ee9-121">이전 예제와 동일한 텍스트 파일을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-121">It uses the same text file from the previous example.</span></span>  
-  
- [!code-csharp[Conceptual.BasicIO.TextFiles#AppendText](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#appendtext)] 
- [!code-vb[Conceptual.BasicIO.TextFiles#AppendText](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#appendtext)]     
-  
-## <a name="example"></a><span data-ttu-id="17ee9-122">예</span><span class="sxs-lookup"><span data-stu-id="17ee9-122">Example</span></span>  
- <span data-ttu-id="17ee9-123">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 새 파일에 비동기적으로 텍스트를 쓰는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-123">The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class.</span></span> <span data-ttu-id="17ee9-124"><xref:System.IO.StreamWriter.WriteAsync%2A> 메서드를 호출하려면 `async` 메서드 내에서 이 메서드를 호출해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-124">In order to invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call needs to be within an `async` method.</span></span> <span data-ttu-id="17ee9-125">새 텍스트 파일은 사용자의 내 문서 폴더에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-125">The new text file is saved to the user's My Documents folder.</span></span>  
-  
- [!code-csharp[Conceptual.BasicIO.TextFiles#WriteAsync](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writeasync)] 
- [!code-vb[Conceptual.BasicIO.TextFiles#WriteAsync](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeasync)]  
-  
-## <a name="example"></a><span data-ttu-id="17ee9-126">예</span><span class="sxs-lookup"><span data-stu-id="17ee9-126">Example</span></span>  
- <span data-ttu-id="17ee9-127">다음 예제에서는 <xref:System.IO.File> 클래스를 사용하여 새 파일에 텍스트를 쓰고 동일한 파일에 새 텍스트 줄을 추가하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-127">The following example shows how to write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class.</span></span> <span data-ttu-id="17ee9-128"><xref:System.IO.File.WriteAllText%2A> 및 <xref:System.IO.File.AppendAllLines%2A> 메서드는 자동으로 파일을 열고 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-128">The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically.</span></span> <span data-ttu-id="17ee9-129"><xref:System.IO.File.WriteAllText%2A> 메서드에 제공한 경로가 이미 있는 경우 파일을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-129">If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file will be overwritten.</span></span>  
-  
- [!code-csharp[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writefile)] 
- [!code-vb[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writefile)]  
-  
-## <a name="example"></a><span data-ttu-id="17ee9-130">예</span><span class="sxs-lookup"><span data-stu-id="17ee9-130">Example</span></span>  
- <span data-ttu-id="17ee9-131">다음 예제에서는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 사용자 입력을 텍스트 파일에 비동기적으로 쓰는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-131">The following example shows how to asynchronously write user input to a text file in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.</span></span> <span data-ttu-id="17ee9-132">보안상의 이유로 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 파일을 열려면 일반적으로 <xref:Windows.Storage.Pickers.FileOpenPicker> 컨트롤을 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-132">Because of security considerations, opening a file from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app typically requires the use of a <xref:Windows.Storage.Pickers.FileOpenPicker> control.</span></span> <span data-ttu-id="17ee9-133">이 예제에서 `FileOpenPicker` 는 텍스트 파일을 표시하도록 필터링되었습니다.</span><span class="sxs-lookup"><span data-stu-id="17ee9-133">In this example, the `FileOpenPicker` is filtered to show text files.</span></span>  
-  
-```xaml  
-<Page  
-    x:Class="OpenFileWindowsStore.MainPage"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-    xmlns:local="using:OpenFileWindowsStore"  
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-    mc:Ignorable="d">  
-  
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
-        <Button Content="save text to a file" HorizontalAlignment="Left" Margin="103,417,0,0" VerticalAlignment="Top"   
-                Width="329" Height="86" FontSize="35" Click="Button_Click"/>  
-        <TextBox Name="UserInputTextBox"  FontSize="18" HorizontalAlignment="Left" Margin="106,146,0,0"   
-                 TextWrapping="Wrap" Text="Write some text here, and select a file to write it to." VerticalAlignment="Top"   
-                 Height="201" Width="558" AcceptsReturn="True"/>  
-        <TextBlock Name="StatusTextBox" HorizontalAlignment="Left" Margin="106,570,0,147" TextWrapping="Wrap" Text="Status:"   
-                   VerticalAlignment="Center" Height="51" Width="1074" FontSize="18" />  
-    </Grid>  
-</Page>  
-```  
-  
- [!code-csharp[OpenFileWindowsStore#Code](../../../samples/snippets/csharp/VS_Snippets_CLR/openfilewindowsstore/cs/mainpage.xaml.cs#code)]
- [!code-vb[OpenFileWindowsStore#Code](../../../samples/snippets/visualbasic/VS_Snippets_CLR/openfilewindowsstore/vb/mainpage.xaml.vb#code)]  
-  
-## <a name="see-also"></a><span data-ttu-id="17ee9-134">참고 항목</span><span class="sxs-lookup"><span data-stu-id="17ee9-134">See also</span></span>
+<span data-ttu-id="76de7-112">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 한 번에 한 줄씩 새 파일에 텍스트를 동기식으로 쓰는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-112">The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously write text to a new file one line at a time.</span></span> <span data-ttu-id="76de7-113"><xref:System.IO.StreamWriter> 개체는 `using` 문에서 선언되고 인스턴스화되므로 스트림을 자동으로 플러시하고 닫는 <xref:System.IO.StreamWriter.Dispose%2A> 메서드가 호출됩니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-113">Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.</span></span>  
 
-- <xref:System.IO.StreamWriter>  
-- <xref:System.IO.Path>  
-- <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>  
-- [<span data-ttu-id="17ee9-135">방법: 디렉터리 및 파일 열거</span><span class="sxs-lookup"><span data-stu-id="17ee9-135">How to: Enumerate Directories and Files</span></span>](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [<span data-ttu-id="17ee9-136">방법: 새로 만든 데이터 파일 읽기 및 쓰기</span><span class="sxs-lookup"><span data-stu-id="17ee9-136">How to: Read and Write to a Newly Created Data File</span></span>](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [<span data-ttu-id="17ee9-137">방법: 로그 파일 열기 및 추가</span><span class="sxs-lookup"><span data-stu-id="17ee9-137">How to: Open and Append to a Log File</span></span>](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [<span data-ttu-id="17ee9-138">방법: 파일의 텍스트 읽기</span><span class="sxs-lookup"><span data-stu-id="17ee9-138">How to: Read Text from a File</span></span>](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [<span data-ttu-id="17ee9-139">파일 및 스트림 I/O</span><span class="sxs-lookup"><span data-stu-id="17ee9-139">File and Stream I/O</span></span>](../../../docs/standard/io/index.md)
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)] 
+[!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/write.vb)]  
+
+## <a name="example-synchronously-append-text-with-streamwriter"></a><span data-ttu-id="76de7-114">예제: StreamWriter를 사용하여 텍스트를 동기식으로 추가</span><span class="sxs-lookup"><span data-stu-id="76de7-114">Example: Synchronously append text with StreamWriter</span></span>
+
+<span data-ttu-id="76de7-115">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 첫 번째 예제에서 만든 텍스트 파일에 텍스트를 동기식으로 추가하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-115">The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example.</span></span>   
+
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/append.cs)] 
+[!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/append.vb)]  
+
+## <a name="example-asynchronously-write-text-with-streamwriter"></a><span data-ttu-id="76de7-116">예제: StreamWriter를 사용하여 텍스트를 비동기식으로 쓰기</span><span class="sxs-lookup"><span data-stu-id="76de7-116">Example: Asynchronously write text with StreamWriter</span></span>
+
+<span data-ttu-id="76de7-117">다음 예제에서는 <xref:System.IO.StreamWriter> 클래스를 사용하여 새 파일에 비동기적으로 텍스트를 쓰는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-117">The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class.</span></span> <span data-ttu-id="76de7-118"><xref:System.IO.StreamWriter.WriteAsync%2A> 메서드를 호출하려면 메서드 호출이 `async` 메서드 내에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-118">To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call must be within an `async` method.</span></span> <span data-ttu-id="76de7-119">C# 예제에는 C# 7.1 이상이 필요하며, 이 경우 프로그램 진입점에서 `async` 한정자에 대한 지원이 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-119">The C# example requires C# 7.1 or later, which adds support for the `async` modifier on the program entry point.</span></span> 
+
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/async.cs)] 
+[!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/async.vb)]  
+
+## <a name="example-write-and-append-text-with-the-file-class"></a><span data-ttu-id="76de7-120">예제: 파일 클래스로 텍스트 쓰기 및 추가</span><span class="sxs-lookup"><span data-stu-id="76de7-120">Example: Write and append text with the File class</span></span>
+
+<span data-ttu-id="76de7-121">다음 예제에서는 <xref:System.IO.File> 클래스를 사용하여 새 파일에 텍스트를 쓰고 동일한 파일에 새 텍스트 줄을 추가하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-121">The following example shows how to write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class.</span></span> <span data-ttu-id="76de7-122"><xref:System.IO.File.WriteAllText%2A> 및 <xref:System.IO.File.AppendAllLines%2A> 메서드는 자동으로 파일을 열고 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-122">The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically.</span></span> <span data-ttu-id="76de7-123"><xref:System.IO.File.WriteAllText%2A> 메서드에 제공한 경로가 이미 있는 경우 파일을 덮어씁니다.</span><span class="sxs-lookup"><span data-stu-id="76de7-123">If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file is overwritten.</span></span>  
+
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/file.cs)] 
+[!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/file.vb)]  
+
+## <a name="see-also"></a><span data-ttu-id="76de7-124">참고 항목</span><span class="sxs-lookup"><span data-stu-id="76de7-124">See also</span></span>
+
+- <xref:System.IO.StreamWriter>
+- <xref:System.IO.Path>
+- <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>
+- [<span data-ttu-id="76de7-125">방법: 디렉터리 및 파일 열거</span><span class="sxs-lookup"><span data-stu-id="76de7-125">How to: Enumerate directories and files</span></span>](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
+- [<span data-ttu-id="76de7-126">방법: 새로 만든 데이터 파일 읽기 및 쓰기</span><span class="sxs-lookup"><span data-stu-id="76de7-126">How to: Read and write to a newly-created data file</span></span>](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
+- [<span data-ttu-id="76de7-127">방법: 로그 파일 열기 및 추가</span><span class="sxs-lookup"><span data-stu-id="76de7-127">How to: Open and append to a log file</span></span>](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
+- [<span data-ttu-id="76de7-128">방법: 파일에서 텍스트 읽기</span><span class="sxs-lookup"><span data-stu-id="76de7-128">How to: Read text from a file</span></span>](../../../docs/standard/io/how-to-read-text-from-a-file.md)
+- [<span data-ttu-id="76de7-129">파일 및 스트림 I/O</span><span class="sxs-lookup"><span data-stu-id="76de7-129">File and stream I/O</span></span>](../../../docs/standard/io/index.md)

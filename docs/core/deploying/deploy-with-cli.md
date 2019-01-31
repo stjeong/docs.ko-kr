@@ -1,207 +1,168 @@
 ---
-title: CLI(명령줄 인터페이스) 도구를 사용하여 .NET Core 앱 배포
-description: CLI(명령줄 인터페이스) 도구를 사용하여 .NET Core 앱을 배포하는 방법 알아보기
-author: rpetrusha
-ms.author: ronpet
-ms.date: 09/05/2018
+title: CLI를 사용하여 .NET Core 앱 게시
+description: .NET Core SDK CLI(명령줄 인터페이스) 도구를 사용하여 .NET Core 앱을 게시하는 방법을 알아봅니다.
+author: thraka
+ms.author: adegeo
+ms.date: 01/16/2019
 dev_langs:
 - csharp
 - vb
 ms.custom: seodec18
-ms.openlocfilehash: 05460174e9b8472a2862c829cd58b72aec26b549
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: dfb99681ba363f23d742ac83940f1ce3e5e78bb1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54504004"
 ---
-# <a name="deploy-net-core-apps-with-command-line-interface-cli-tools"></a><span data-ttu-id="ca795-103">CLI(명령줄 인터페이스) 도구를 사용하여 .NET Core 앱 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-103">Deploy .NET Core apps with command-line interface (CLI) tools</span></span>
+# <a name="publish-net-core-apps-with-the-cli"></a><span data-ttu-id="fa833-103">CLI를 사용하여 .NET Core 앱 게시</span><span class="sxs-lookup"><span data-stu-id="fa833-103">Publish .NET Core apps with the CLI</span></span>
 
-<span data-ttu-id="ca795-104">.NET Core 응용 프로그램은 응용 프로그램 이진을 포함하지만 대상 시스템에 .NET Core가 있는지 여부에 따라 달라지는 *프레임워크 종속 배포* 또는 응용 프로그램과 .NET Core 이진을 모두 포함하는 *자체 포함 배포*로 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-104">You can deploy a .NET Core application either as a *framework-dependent deployment*, which includes your application binaries but depends on the presence of .NET Core on the target system, or as a *self-contained deployment*, which includes both your application and the .NET Core binaries.</span></span> <span data-ttu-id="ca795-105">개요는 [.NET Core 응용 프로그램 배포](index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ca795-105">For an overview, see [.NET Core Application Deployment](index.md).</span></span>
+<span data-ttu-id="fa833-104">이 문서에서는 명령줄에서 .NET Core 애플리케이션을 게시하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-104">This article demonstrates how you can publish your .NET Core application from the command line.</span></span> <span data-ttu-id="fa833-105">.NET Core는 애플리케이션을 게시하는 세 가지 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-105">.NET Core provides three ways to publish your applications.</span></span> <span data-ttu-id="fa833-106">프레임워크 종속 배포는 로컬에 설치된 .NET Core 런타임을 사용하는 플랫폼 간 .dll 파일을 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-106">Framework-dependent deployment produces a cross-platform .dll file that uses the locally installed .NET Core runtime.</span></span> <span data-ttu-id="fa833-107">프레임워크 종속 실행 파일은 로컬에 설치된 .NET Core 런타임을 사용하는 플랫폼별 실행 파일을 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-107">Framework-dependent executable produces a platform-specific executable that uses the locally installed .NET Core runtime.</span></span> <span data-ttu-id="fa833-108">자체 포함 실행 파일은 플랫폼별 실행 파일을 생성하고 .NET Core 런타임의 로컬 복사본을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-108">Self-contained executable produces a platform-specific executable and includes a local copy of the .NET Core runtime.</span></span>
 
-<span data-ttu-id="ca795-106">다음 섹션에서는 [.NET Core 명령줄 인터페이스 도구](../tools/index.md)를 사용하여 다음과 같은 종류의 배포를 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-106">The following sections show how to use [.NET Core command-line interface tools](../tools/index.md) to create the following kinds of deployments:</span></span>
+<span data-ttu-id="fa833-109">이러한 개시 모드에 대한 개요는 [.NET Core 애플리케이션 배포](index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-109">For an overview of these publishing modes, see [.NET Core Application Deployment](index.md).</span></span> 
 
-- <span data-ttu-id="ca795-107">프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-107">Framework-dependent deployment</span></span>
-- <span data-ttu-id="ca795-108">타사 종속성이 있는 프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-108">Framework-dependent deployment with third-party dependencies</span></span>
-- <span data-ttu-id="ca795-109">자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-109">Self-contained deployment</span></span>
-- <span data-ttu-id="ca795-110">타사 종속성이 있는 자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-110">Self-contained deployment with third-party dependencies</span></span>
+<span data-ttu-id="fa833-110">CLI 사용에 대한 빠른 도움말을 찾나요?</span><span class="sxs-lookup"><span data-stu-id="fa833-110">Looking for some quick help on using the CLI?</span></span> <span data-ttu-id="fa833-111">다음 표는 앱을 게시하는 방법의 몇 가지 예를 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-111">The following table shows some examples of how to publish your app.</span></span> <span data-ttu-id="fa833-112">`-f <TFM>` 매개 변수를 사용하거나 프로젝트 파일을 편집하여 대상 프레임워크를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-112">You can specify the target framework with the `-f <TFM>` parameter or by editing the project file.</span></span> <span data-ttu-id="fa833-113">자세한 내용은 [기본 사항 게시](#publishing-basics)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-113">For more information, see [Publishing basics](#publishing-basics).</span></span>
 
-<span data-ttu-id="ca795-111">명령줄에서 작업하는 경우 선택한 프로그램 편집기를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-111">When working from the command line, you can use a program editor of your choice.</span></span> <span data-ttu-id="ca795-112">프로그램 편집기가 [Visual Studio Code](https://code.visualstudio.com)인 경우 **보기** > **통합 터미널**을 선택하여 Visual Studio Code 환경 내에서 명령 콘솔을 열 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-112">If your program editor is [Visual Studio Code](https://code.visualstudio.com), you can open a command console inside your Visual Studio Code environment by selecting **View** > **Integrated Terminal**.</span></span>
+| <span data-ttu-id="fa833-114">게시 모드</span><span class="sxs-lookup"><span data-stu-id="fa833-114">Publish Mode</span></span> | <span data-ttu-id="fa833-115">SDK 버전</span><span class="sxs-lookup"><span data-stu-id="fa833-115">SDK Version</span></span> | <span data-ttu-id="fa833-116">명령</span><span class="sxs-lookup"><span data-stu-id="fa833-116">Command</span></span> |
+| ------------ | ----------- | ------- |
+| <span data-ttu-id="fa833-117">프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="fa833-117">Framework-dependent deployment</span></span> | <span data-ttu-id="fa833-118">2.x</span><span class="sxs-lookup"><span data-stu-id="fa833-118">2.x</span></span> | `dotnet publish -c Release` |
+| <span data-ttu-id="fa833-119">프레임워크 종속 실행 파일</span><span class="sxs-lookup"><span data-stu-id="fa833-119">Framework-dependent executable</span></span> | <span data-ttu-id="fa833-120">2.2</span><span class="sxs-lookup"><span data-stu-id="fa833-120">2.2</span></span> | `dotnet publish -c Release -r <RID> --self-contained false` |
+|                                | <span data-ttu-id="fa833-121">3.0</span><span class="sxs-lookup"><span data-stu-id="fa833-121">3.0</span></span> | `dotnet publish -c Release -r <RID> --self-contained false` |
+|                                | <span data-ttu-id="fa833-122">3.0\*</span><span class="sxs-lookup"><span data-stu-id="fa833-122">3.0\*</span></span> | `dotnet publish -c Release` |
+| <span data-ttu-id="fa833-123">자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="fa833-123">Self-contained deployment</span></span>      | <span data-ttu-id="fa833-124">2.1</span><span class="sxs-lookup"><span data-stu-id="fa833-124">2.1</span></span> | `dotnet publish -c Release -r <RID> --self-contained true` |
+|                                | <span data-ttu-id="fa833-125">2.2</span><span class="sxs-lookup"><span data-stu-id="fa833-125">2.2</span></span> | `dotnet publish -c Release -r <RID> --self-contained true` |
+|                                | <span data-ttu-id="fa833-126">3.0</span><span class="sxs-lookup"><span data-stu-id="fa833-126">3.0</span></span> | `dotnet publish -c Release -r <RID> --self-contained true` |
 
-## <a name="framework-dependent-deployment"></a><span data-ttu-id="ca795-113">프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-113">Framework-dependent deployment</span></span>
+>[!IMPORTANT]
+><span data-ttu-id="fa833-127">\*SDK 버전 3.0을 사용할 경우 프레임워크 종속 실행 파일은 기본 `dotnet publish` 명령을 실행할 때 기본 모드입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-127">\*When using SDK version 3.0, framework-dependent executable this is the default publishing mode when running the basic `dotnet publish` command.</span></span> <span data-ttu-id="fa833-128">이는 **.NET Core 2.1** 또는 **.NET Core 3.0**을 대상으로 하는 프로젝트에만 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-128">This only applies to projects that target **.NET Core 2.1** or **.NET Core 3.0**.</span></span>
 
-<span data-ttu-id="ca795-114">타사 종속성이 없는 프레임워크 종속 배포에는 앱의 빌드, 테스트 및 게시만 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-114">Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app.</span></span> <span data-ttu-id="ca795-115">C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-115">A simple example written in C# illustrates the process.</span></span>
+## <a name="publishing-basics"></a><span data-ttu-id="fa833-129">게시 기본 사항</span><span class="sxs-lookup"><span data-stu-id="fa833-129">Publishing basics</span></span>
 
-1. <span data-ttu-id="ca795-116">프로젝트 디렉터리를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-116">Create a project directory.</span></span>
+<span data-ttu-id="fa833-130">프로젝트 파일의 `<TargetFramework>` 설정은 앱을 게시할 때 기본 대상 프레임워크를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-130">The `<TargetFramework>` setting of the project file specifies the default target framework when you publish your app.</span></span> <span data-ttu-id="fa833-131">대상 프레임워크를 유효한 [TFM(대상 프레임워크 모니커)](../../standard/frameworks.md)으로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-131">You can change the target framework to any valid [Target Framework Moniker (TFM)](../../standard/frameworks.md).</span></span> <span data-ttu-id="fa833-132">예를 들어 프로젝트에서 `<TargetFramework>netcoreapp2.2</TargetFramework>`를 사용하는 경우 .NET Core 2.2를 대상으로 하는 이진 파일이 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-132">For example, if your project uses `<TargetFramework>netcoreapp2.2</TargetFramework>`, a binary that targets .NET Core 2.2 is created.</span></span> <span data-ttu-id="fa833-133">이 설정에 지정된 TFM은 [`dotnet publish`][dotnet-publish] 명령에 사용되는 기본 대상입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-133">The TFM specified in this setting is the default target used by the [`dotnet publish`][dotnet-publish] command.</span></span>
 
-   <span data-ttu-id="ca795-117">프로젝트에 대한 디렉터리를 만들고 현재 디렉터리로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-117">Create a directory for your project and make it your current directory.</span></span>
+<span data-ttu-id="fa833-134">둘 이상의 프레임워크를 대상으로 하려는 경우 `<TargetFrameworks>` 설정을 세미콜론으로 구분된 둘 이상의 TFM 값으로 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-134">If you want to target more than one framework, you can set the `<TargetFrameworks>` setting to more than one TFM value separated by a semicolon.</span></span> <span data-ttu-id="fa833-135">`dotnet publish -f <TFM>` 명령을 사용하여 프레임워크 중 하나를 게시할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-135">You can publish one of the frameworks with the `dotnet publish -f <TFM>` command.</span></span> <span data-ttu-id="fa833-136">예를 들어 `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`가 있고 `dotnet publish -f netcoreapp2.1`을 실행하는 경우 .NET Core 2.1을 대상으로 하는 이진 파일이 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-136">For example, if you have `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>` and run `dotnet publish -f netcoreapp2.1`, a binary that targets .NET Core 2.1 is created.</span></span>
 
-1. <span data-ttu-id="ca795-118">프로젝트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-118">Create the project.</span></span>
+<span data-ttu-id="fa833-137">달리 설정하지 않는 한 [`dotnet publish`][dotnet-publish] 명령의 출력 디렉터리는 `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-137">Unless otherwise set, the output directory of the [`dotnet publish`][dotnet-publish] command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`.</span></span> <span data-ttu-id="fa833-138">`-c` 매개 변수를 사용하여 변경하지 않는 한 기본 **BUILD-CONFIGURATION** 모드는 **디버그**입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-138">The default **BUILD-CONFIGURATION** mode is **Debug** unless changed with the `-c` parameter.</span></span> <span data-ttu-id="fa833-139">예를 들어 `dotnet publish -c Release -f netcoreapp2.1`은 `myfolder/bin/Release/netcoreapp2.1/publish/`에 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-139">For example, `dotnet publish -c Release -f netcoreapp2.1` publishes to `myfolder/bin/Release/netcoreapp2.1/publish/`.</span></span> 
 
-   <span data-ttu-id="ca795-119">명령줄에서 [dotnet new console](../tools/dotnet-new.md)을 입력하여 새 C# 콘솔 프로젝트를 만들거나 [dotnet new console -lang vb](../tools/dotnet-new.md)를 입력하여 해당 디렉터리에 새 Visual Basic 콘솔 프로젝트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-119">From the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project or [dotnet new console -lang vb](../tools/dotnet-new.md) to create a new Visual Basic console project in that directory.</span></span>
+<span data-ttu-id="fa833-140">.NET Core SDK 3.0을 사용하는 경우 .NET Core 버전 2.1, 2.2 또는 3.0을 대상으로 하는 앱의 기본 게시 모드는 프레임워크 종속 실행 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-140">If you use .NET Core SDK 3.0, the default publish mode for apps that target .NET Core versions 2.1, 2.2, or 3.0 is framework-dependent executable.</span></span>
 
-1. <span data-ttu-id="ca795-120">응용 프로그램의 소스 코드를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-120">Add the application's source code.</span></span>
+<span data-ttu-id="fa833-141">.NET Core SDK 2.1을 사용하는 경우 .NET Core 버전 2.1, 2.2를 대상으로 하는 앱의 기본 게시 모드는 프레임워크 종속 배포입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-141">If you use .NET Core SDK 2.1, the default publish mode for apps that target .NET Core versions 2.1, 2.2 is framework-dependent deployment.</span></span>
 
-   <span data-ttu-id="ca795-121">편집기에서 *Program.cs* 또는 *Program.vb* 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-121">Open the *Program.cs* or *Program.vb* file in your editor and replace the auto-generated code with the following code.</span></span> <span data-ttu-id="ca795-122">텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-122">It prompts the user to enter text and displays the individual words entered by the user.</span></span> <span data-ttu-id="ca795-123">정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-123">It uses the regular expression `\w+` to separate the words in the input text.</span></span>
+### <a name="native-dependencies"></a><span data-ttu-id="fa833-142">네이티브 종속성</span><span class="sxs-lookup"><span data-stu-id="fa833-142">Native dependencies</span></span>
 
-   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
-   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
+<span data-ttu-id="fa833-143">앱에 네이티브 종속성이 있는 경우 다른 운영 체제에서 실행되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-143">If your app has native dependencies, it may not run on a different operating system.</span></span> <span data-ttu-id="fa833-144">예를 들어 앱이 네이티브 Win32 API를 사용하는 경우 macOS 또는 Linux에서 실행되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-144">For example, if your app uses the native Win32 API, it won't run on macOS or Linux.</span></span> <span data-ttu-id="fa833-145">플랫폼별 코드를 제공하고 각 플랫폼에 대해 실행 파일을 컴파일해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-145">You would need to provide platform-specific code and compile an executable for each platform.</span></span> 
 
-1. <span data-ttu-id="ca795-124">프로젝트의 종속성 및 도구를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-124">Update the project's dependencies and tools.</span></span>
+<span data-ttu-id="fa833-146">또한 참조한 라이브러리에 네이티브 종속성이 있는 경우 모든 플랫폼에서 앱이 실행되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-146">Consider also, if a library you referenced has a native dependency, your app may not run on every platform.</span></span> <span data-ttu-id="fa833-147">그러나 참조하는 NuGet 패키지에 플랫폼별 버전이 포함되어 있어 사용자의 필수 네이티브 종속성을 처리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-147">However, it's possible a NuGet package you're referencing has included platform-specific versions to handle the required native dependencies for you.</span></span>
 
-   <span data-ttu-id="ca795-125">[dotnet restore](../tools/dotnet-restore.md)([참고 참조](#dotnet-restore-note)) 명령을 실행하여 프로젝트에 지정된 종속성을 복원합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-125">Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.</span></span>
+<span data-ttu-id="fa833-148">네이티브 종속성이 있는 앱을 배포할 때 `dotnet publish -r <RID>` 스위치를 사용하여 게시할 대상 플랫폼을 지정해야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-148">When distributing an app with native dependencies, you may need to use the `dotnet publish -r <RID>` switch to specify the target platform you want to publish for.</span></span> <span data-ttu-id="fa833-149">런타임 식별자 목록은 [런타임 식별자(RID) 카탈로그](../rid-catalog.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-149">For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).</span></span>
 
-1. <span data-ttu-id="ca795-126">앱의 디버그 빌드를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-126">Create a Debug build of your app.</span></span>
+<span data-ttu-id="fa833-150">플랫폼별 이진 파일에 대한 자세한 내용은 [프레임워크 종속 실행 파일](#framework-dependent-executable) 및 [자체 포함 배포](#self-contained-deployment) 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-150">More information about platform-specific binaries is covered in the [Framework-dependent executable](#framework-dependent-executable) and [Self-contained deployment](#self-contained-deployment) sections.</span></span>
 
-   <span data-ttu-id="ca795-127">[dotnet build](../tools/dotnet-build.md) 명령을 사용하여 응용 프로그램을 빌드하거나 [dotnet run](../tools/dotnet-run.md) 명령을 사용하여 응용 프로그램을 빌드하고 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-127">Use the [dotnet build](../tools/dotnet-build.md) command to build your application or the [dotnet run](../tools/dotnet-run.md) command to build and run it.</span></span>
+## <a name="sample-app"></a><span data-ttu-id="fa833-151">샘플 앱</span><span class="sxs-lookup"><span data-stu-id="fa833-151">Sample app</span></span>
 
-1. <span data-ttu-id="ca795-128">앱을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-128">Deploy your app.</span></span>
+<span data-ttu-id="fa833-152">다음 앱 중 하나를 사용하여 게시 명령을 탐색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-152">You can use either the following app to explore the publishing commands.</span></span> <span data-ttu-id="fa833-153">이 앱은 터미널에서 다음 명령을 실행하여 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-153">The app is created by running the following commands in your terminal:</span></span>
 
-   <span data-ttu-id="ca795-129">프로그램을 디버그하고 테스트한 후 다음 명령을 사용하여 배포를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-129">After you've debugged and tested the program, create the deployment by using the following command:</span></span>
-
-      ```console
-      dotnet publish -f netcoreapp2.1 -c Release
-      ```
-   <span data-ttu-id="ca795-130">그러면 앱의 디버그가 아닌 릴리스 버전이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-130">This creates a Release (rather than a Debug) version of your app.</span></span> <span data-ttu-id="ca795-131">결과 파일은 프로젝트 *bin* 디렉터리의 하위 디렉터리에 있는 *publish*라는 디렉터리에 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-131">The resulting files are placed in a directory named *publish*      that's in a subdirectory of your project's *bin* directory.</span></span>
-
-   <span data-ttu-id="ca795-132">게시 프로세스에서는 응용 프로그램의 파일과 함께 앱에 대한 디버깅 정보를 포함하는 프로그램 데이터베이스(.pdb) 파일을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-132">Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</span></span> <span data-ttu-id="ca795-133">이 파일은 주로 예외 디버그에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-133">The file is useful primarily for debugging exceptions.</span></span> <span data-ttu-id="ca795-134">응용 프로그램 파일과 함께 배포하지 않도록 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-134">You can choose not to distribute it with your application's files.</span></span> <span data-ttu-id="ca795-135">하지만 앱의 릴리스 빌드를 디버그하려는 경우 파일을 저장해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-135">You should, however, save it in the event that you want to debug the Release build of your app.</span></span>
-
-   <span data-ttu-id="ca795-136">응용 프로그램 파일의 전체 집합을 원하는 방식으로 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-136">You can deploy the complete set of application files in any way you like.</span></span> <span data-ttu-id="ca795-137">예를 들어 Zip 파일로 패키지하거나, 간단한 `copy` 명령을 사용하거나, 선택한 설치 패키지와 함께 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-137">For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice.</span></span>
-
-1. <span data-ttu-id="ca795-138">앱 실행</span><span class="sxs-lookup"><span data-stu-id="ca795-138">Run your app</span></span>
-
-   <span data-ttu-id="ca795-139">설치되고 나면 사용자가 `dotnet` 명령을 사용하고 `dotnet fdd.dll` 등의 응용 프로그램 파일 이름을 제공하여 응용 프로그램을 실행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-139">Once installed, users can execute your application by using the `dotnet` command and providing the application filename, such as `dotnet fdd.dll`.</span></span>
-
-   <span data-ttu-id="ca795-140">설치 관리자는 응용 프로그램 이진 외에도 공유 프레임워크 설치 관리자를 번들로 제공하거나 응용 프로그램 설치의 일부로 필수 조건을 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-140">In addition to the application binaries, your installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.</span></span>  <span data-ttu-id="ca795-141">공유 프레임워크 설치에는 관리자/루트 액세스 권한이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-141">Installation of the shared framework requires Administrator/root access.</span></span>
-
-## <a name="framework-dependent-deployment-with-third-party-dependencies"></a><span data-ttu-id="ca795-142">타사 종속성이 있는 프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-142">Framework-dependent deployment with third-party dependencies</span></span>
-
-<span data-ttu-id="ca795-143">하나 이상의 타사 종속성이 있는 프레임워크 종속 배포를 배포하려면 프로젝트에서 해당 종속성을 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-143">Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project.</span></span> <span data-ttu-id="ca795-144">다음 두 가지 추가 단계를 수행해야 `dotnet restore`([참고 참조](#dotnet-restore-note)) 명령을 실행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-144">Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:</span></span>
-
-1. <span data-ttu-id="ca795-145">필요한 타사 라이브러리에 대한 참조를 *csproj* 파일의 `<ItemGroup>` 섹션에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-145">Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file.</span></span> <span data-ttu-id="ca795-146">다음 `<ItemGroup>` 섹션에는 [Json.NET](https://www.newtonsoft.com/json)에 대한 종속성이 타사 라이브러리로 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-146">The following `<ItemGroup>` section contains a dependency on [Json.NET](https://www.newtonsoft.com/json) as a third-party library:</span></span>
-
-      ```xml
-      <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
-      </ItemGroup>
-      ```
-
-1. <span data-ttu-id="ca795-147">타사 종속성을 포함하는 NuGet 패키지를 아직 다운로드하지 않은 경우 다운로드합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-147">If you haven't already, download the NuGet package containing the third-party dependency.</span></span> <span data-ttu-id="ca795-148">패키지를 다운로드하려면 종속성을 추가한 후 `dotnet restore`([참고 참조](#dotnet-restore-note)) 명령을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-148">To download the package, execute the `dotnet restore` ([see note](#dotnet-restore-note)) command after adding the dependency.</span></span> <span data-ttu-id="ca795-149">종속성은 게시 시간에 로컬 NuGet 캐시에서 확인되므로 시스템에서 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-149">Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</span></span>
-
-<span data-ttu-id="ca795-150">타사 종속성이 있는 프레임워크 종속 배포는 타사 종속성만큼만 이식 가능합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-150">Note that a framework-dependent deployment with third-party dependencies is only as portable as its third-party dependencies.</span></span> <span data-ttu-id="ca795-151">예를 들어 타사 라이브러리에서 macOS를 지원하는 경우 Windows 시스템에 앱을 이식할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-151">For example, if a third-party library only supports macOS, the app isn't portable to Windows systems.</span></span> <span data-ttu-id="ca795-152">이러한 현상은 타사 종속성 자체가 네이티브 코드에 종속된 경우에 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-152">This happens if the third-party dependency itself depends on native code.</span></span> <span data-ttu-id="ca795-153">관련된 좋은 예로 [libuv](https://github.com/libuv/libuv)에 대한 기본 종속성이 필요한 [Kestrel 서버](/aspnet/core/fundamentals/servers/kestrel)가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-153">A good example of this is [Kestrel server](/aspnet/core/fundamentals/servers/kestrel), which requires a native dependency on [libuv](https://github.com/libuv/libuv).</span></span> <span data-ttu-id="ca795-154">이런 종류의 타사 종속성이 있는 응용 프로그램에 대해 FDD를 만들면 게시된 출력에는 기본 종속성에서 지원하고 NuGet 패키지에 있는 각 [RID(런타임 식별자)](../rid-catalog.md)에 대한 폴더가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-154">When an FDD is created for an application with this kind of third-party dependency, the published output contains a folder for each [Runtime Identifier (RID)](../rid-catalog.md) that the native dependency supports (and that exists in its NuGet package).</span></span>
-
-## <a name="simpleSelf"></a> <span data-ttu-id="ca795-155">타사 종속성이 없는 자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-155">Self-contained deployment without third-party dependencies</span></span>
-
-<span data-ttu-id="ca795-156">타사 종속성이 없는 자체 포함 배포에는 프로젝트 만들기, *csproj* 파일 수정, 앱 빌드, 테스트 및 게시가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-156">Deploying a self-contained deployment without third-party dependencies involves creating the project, modifying the *csproj* file, building, testing, and publishing the app.</span></span> <span data-ttu-id="ca795-157">C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-157">A simple example written in C# illustrates the process.</span></span> <span data-ttu-id="ca795-158">이 예제는 명령줄에서 [dotnet 유틸리티](../tools/dotnet.md)를 사용하여 자체 포함 배포를 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-158">The example shows how to create a self-contained deployment using the [dotnet utility](../tools/dotnet.md) from the command line.</span></span>
-
-1. <span data-ttu-id="ca795-159">프로젝트에 대한 디렉터리를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-159">Create a directory for the project.</span></span>
-
-   <span data-ttu-id="ca795-160">프로젝트에 대한 디렉터리를 만들고 현재 디렉터리로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-160">Create a directory for your project, and make it your current directory.</span></span>
-
-1. <span data-ttu-id="ca795-161">프로젝트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-161">Create the project.</span></span>
-
-   <span data-ttu-id="ca795-162">명령줄에서 [dotnet new console](../tools/dotnet-new.md)을 입력하여 해당 디렉터리에 새 C# 콘솔 프로젝트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-162">From the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project in that directory.</span></span>
-
-1. <span data-ttu-id="ca795-163">응용 프로그램의 소스 코드를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-163">Add the application's source code.</span></span>
-
-   <span data-ttu-id="ca795-164">편집기에서 *Program.cs* 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-164">Open the *Program.cs* file in your editor and replace the auto-generated code with the following code.</span></span> <span data-ttu-id="ca795-165">텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-165">It prompts the user to enter text and displays the individual words entered by the user.</span></span> <span data-ttu-id="ca795-166">정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-166">It uses the regular expression `\w+` to separate the words in the input text.</span></span>
-
-   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
-   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
-1. <span data-ttu-id="ca795-167">앱의 대상 플랫폼을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-167">Define the platforms that your app will target.</span></span>
-
-   <span data-ttu-id="ca795-168">*csproj* 파일의 `<PropertyGroup>` 섹션에서 앱의 대상 플랫폼을 정의하는 `<RuntimeIdentifiers>` 태그를 만들고 각 대상 플랫폼의 RID(런타임 식별자)를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-168">Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target.</span></span> <span data-ttu-id="ca795-169">RID를 구분하려면 세미콜론도 추가해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-169">Note that you also need to add a semicolon to separate the RIDs.</span></span> <span data-ttu-id="ca795-170">런타임 식별자 목록은 [런타임 식별자 카탈로그](../rid-catalog.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ca795-170">See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.</span></span>
-
-   <span data-ttu-id="ca795-171">예를 들어 다음 `<PropertyGroup>` 섹션은 앱이 64비트 Windows 10 운영 체제 및 64비트 OS X 버전 10.11 운영 체제에서 실행됨을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-171">For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.</span></span>
-
-     ```xml
-     <PropertyGroup>
-         <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-     </PropertyGroup>
-     ```
-
-   <span data-ttu-id="ca795-172">`<RuntimeIdentifiers>` 요소는 *csproj* 파일에 있는 모든 `<PropertyGroup>`에 표시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-172">Note that the `<RuntimeIdentifiers>` element can appear in any `<PropertyGroup>` in your *csproj* file.</span></span> <span data-ttu-id="ca795-173">전체 샘플 *csproj* 파일은 이 섹션의 뒷부분에 나옵니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-173">A complete sample *csproj* file appears later in this section.</span></span>
-
-1. <span data-ttu-id="ca795-174">프로젝트의 종속성 및 도구를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-174">Update the project's dependencies and tools.</span></span>
-
-   <span data-ttu-id="ca795-175">[dotnet restore](../tools/dotnet-restore.md)([참고 참조](#dotnet-restore-note)) 명령을 실행하여 프로젝트에 지정된 종속성을 복원합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-175">Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.</span></span>
-
-1. <span data-ttu-id="ca795-176">세계화 고정 모드를 사용할 것인지 여부를 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-176">Determine whether you want to use globalization invariant mode.</span></span>
-
-   <span data-ttu-id="ca795-177">특히 앱이 Linux를 대상으로 하는 경우 [세계화 고정 모드](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)를 활용하여 배포의 총 크기를 줄일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-177">Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).</span></span> <span data-ttu-id="ca795-178">세계화 고정 모드는 전역적으로 인식되지 않는 서식 지정 규칙, 대/소문자 규칙 및 문자열 비교와 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture)의 정렬 순서를 사용할 수 있는 응용 프로그램에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-178">Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).</span></span>
-
-   <span data-ttu-id="ca795-179">고정 모드를 사용하려면 **솔루션 탐색기**에서 프로젝트(솔루션 아님)를 마우스 오른쪽 단추로 클릭하고 **SCD.csproj 편집** 또는 **SCD.vbproj 편집**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-179">To enable invariant mode, right-click on your project (not the solution) in **Solution Explorer**, and select **Edit SCD.csproj** or **Edit SCD.vbproj**.</span></span> <span data-ttu-id="ca795-180">그런 다음, 강조 표시된 다음 줄을 파일에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-180">Then add the following highlighted lines to the file:</span></span>
-
- [!code-xml[globalization-invariant-mode](~/samples/snippets/core/deploying/xml/invariant.csproj)]
-
-1. <span data-ttu-id="ca795-181">앱의 디버그 빌드를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-181">Create a Debug build of your app.</span></span>
-
-   <span data-ttu-id="ca795-182">명령줄에서 [dotnet build](../tools/dotnet-build.md) 명령을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-182">From the command line, use the [dotnet build](../tools/dotnet-build.md) command.</span></span>
-
-1. <span data-ttu-id="ca795-183">프로그램을 디버그하고 테스트한 후에는 각 대상 플랫폼에 대해 앱과 함께 배포할 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-183">After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.</span></span>
-
-   <span data-ttu-id="ca795-184">다음과 같이 두 대상 플랫폼에 대해 `dotnet publish` 명령을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-184">Use the `dotnet publish` command for both target platforms as follows:</span></span>
-
-      ```console
-      dotnet publish -c Release -r win10-x64
-      dotnet publish -c Release -r osx.10.11-x64
-      ```
-
-   <span data-ttu-id="ca795-185">그러면 각 대상 플랫폼에 대해 앱의 디버그가 아닌 릴리스 버전이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-185">This creates a Release (rather than a Debug) version of your app for each target platform.</span></span> <span data-ttu-id="ca795-186">결과 파일은 프로젝트 *.\bin\Release\netcoreapp2.1\<runtime_identifier>* 하위 디렉터리의 하위 디렉터리에 있는 *publish*라는 하위 디렉터리에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-186">The resulting files are placed in a subdirectory named *publish* that's in a subdirectory of your project's *.\bin\Release\netcoreapp2.1\<runtime_identifier>* subdirectory.</span></span> <span data-ttu-id="ca795-187">각 하위 디렉터리에는 앱을 시작하는 데 필요한 전체 파일 집합(앱 파일 및 모든 .NET Core 파일)이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-187">Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</span></span>
-
-<span data-ttu-id="ca795-188">게시 프로세스에서는 응용 프로그램의 파일과 함께 앱에 대한 디버깅 정보를 포함하는 프로그램 데이터베이스(.pdb) 파일을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-188">Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</span></span> <span data-ttu-id="ca795-189">이 파일은 주로 예외 디버그에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-189">The file is useful primarily for debugging exceptions.</span></span> <span data-ttu-id="ca795-190">응용 프로그램 파일과 함께 패키지하지 않도록 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-190">You can choose not to package it with your application's files.</span></span> <span data-ttu-id="ca795-191">하지만 앱의 릴리스 빌드를 디버그하려는 경우 파일을 저장해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-191">You should, however, save it in the event that you want to debug the Release build of your app.</span></span>
-
-<span data-ttu-id="ca795-192">게시된 파일을 원하는 방식으로 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-192">Deploy the published files in any way you like.</span></span> <span data-ttu-id="ca795-193">예를 들어 Zip 파일로 패키지하거나, 간단한 `copy` 명령을 사용하거나, 선택한 설치 패키지와 함께 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-193">For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice.</span></span>
-
-<span data-ttu-id="ca795-194">다음은 이 프로젝트에 대한 전체 *csproj* 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-194">The following is the complete *csproj* file for this project.</span></span>
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-  </PropertyGroup>
-</Project>
+```dotnetcli
+mkdir apptest1
+cd apptest1
+dotnet new console
+dotnet add package Figgle
 ```
 
-## <a name="self-contained-deployment-with-third-party-dependencies"></a><span data-ttu-id="ca795-195">타사 종속성이 있는 자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-195">Self-contained deployment with third-party dependencies</span></span>
+<span data-ttu-id="fa833-154">콘솔 템플릿에 의해 생성된 `Program.cs` 또는 `Program.vb` 파일을 다음과 같이 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-154">The `Program.cs` or `Program.vb` file that is generated by the console template needs to be changed to the following:</span></span>
 
-<span data-ttu-id="ca795-196">하나 이상의 타사 종속성이 있는 자체 포함 배포에는 종속성 추가가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-196">Deploying a self-contained deployment with one or more third-party dependencies involves adding the dependencies.</span></span> <span data-ttu-id="ca795-197">다음 두 가지 추가 단계를 수행해야 `dotnet restore`([참고 참조](#dotnet-restore-note)) 명령을 실행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-197">Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:</span></span>
+```csharp
+using System;
 
-1. <span data-ttu-id="ca795-198">모든 타사 라이브러리에 대한 참조를 *csproj* 파일의 `<ItemGroup>` 섹션에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-198">Add references to any third-party libraries to the `<ItemGroup>` section of your *csproj* file.</span></span> <span data-ttu-id="ca795-199">다음 `<ItemGroup>` 섹션에서는 Json.NET을 타사 라이브러리로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-199">The following `<ItemGroup>` section uses Json.NET as a third-party library.</span></span>
+namespace apptest1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Figgle.FiggleFonts.Standard.Render("Hello, World!"));
+        }
+    }
+}
+```
+```vb
+Imports System
 
-    ```xml
-      <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
-      </ItemGroup>
-    ```
-
-1. <span data-ttu-id="ca795-200">타사 종속성을 포함하는 NuGet 패키지를 시스템에 아직 다운로드하지 않은 경우 다운로드합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-200">If you haven't already, download the NuGet package containing the third-party dependency to your system.</span></span> <span data-ttu-id="ca795-201">앱에서 종속성을 사용할 수 있도록 하려면 종속성을 추가한 후 `dotnet restore`([참고 참조](#dotnet-restore-note)) 명령을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-201">To make the dependency available to your app, execute the `dotnet restore` ([see note](#dotnet-restore-note)) command after adding the dependency.</span></span> <span data-ttu-id="ca795-202">종속성은 게시 시간에 로컬 NuGet 캐시에서 확인되므로 시스템에서 사용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-202">Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</span></span>
-
-<span data-ttu-id="ca795-203">다음은 이 프로젝트에 대한 전체 *csproj* 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-203">The following is the complete *csproj* file for this project:</span></span>
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
-  </ItemGroup>
-</Project>
+Module Program
+    Sub Main(args As String())
+        Console.WriteLine(Figgle.FiggleFonts.Standard.Render("Hello, World!"))
+    End Sub
+End Module
 ```
 
-<span data-ttu-id="ca795-204">응용 프로그램을 배포하면 앱에서 사용된 타사 종속성도 응용 프로그램 파일에 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-204">When you deploy your application, any third-party dependencies used in your app are also contained with your application files.</span></span> <span data-ttu-id="ca795-205">타사 라이브러리는 앱이 실행되는 시스템에 없어도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-205">Third-party libraries aren't required on the system on which the app is running.</span></span>
+<span data-ttu-id="fa833-155">앱([`dotnet run`][dotnet-run])을 실행하면 다음 출력이 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-155">When you run the app ([`dotnet run`][dotnet-run]), the following output is displayed:</span></span>
 
-<span data-ttu-id="ca795-206">타사 라이브러리가 있는 자체 포함 배포는 해당 라이브러리에서 지원하는 플랫폼에만 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-206">Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library.</span></span> <span data-ttu-id="ca795-207">이 배포는 기본 종속성과 함께 타사 종속성이 있는 프레임워크 종속 배포와 유사하며, 기본 종속성이 앱을 배포할 플랫폼과 호환되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca795-207">This is similar to having third-party dependencies with native dependencies in a framework-dependent deployment, where the native dependencies must be compatible with the platform to which the app is deployed.</span></span>
+```terminal
+  _   _      _ _         __        __         _     _ _
+ | | | | ___| | | ___    \ \      / /__  _ __| | __| | |
+ | |_| |/ _ \ | |/ _ \    \ \ /\ / / _ \| '__| |/ _` | |
+ |  _  |  __/ | | (_) |    \ V  V / (_) | |  | | (_| |_|
+ |_| |_|\___|_|_|\___( )    \_/\_/ \___/|_|  |_|\__,_(_)
+                     |/
+```
 
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+## <a name="framework-dependent-deployment"></a><span data-ttu-id="fa833-156">프레임워크 종속 배포</span><span class="sxs-lookup"><span data-stu-id="fa833-156">Framework-dependent deployment</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ca795-208">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ca795-208">See also</span></span>
+<span data-ttu-id="fa833-157">.NET Core SDK 2.x CLI의 경우 FDD(프레임워크 종속 배포)가 기본 `dotnet publish` 명령의 기본 모드입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-157">For the .NET Core SDK 2.x CLI, framework-dependent deployment (FDD) is the default mode for the basic `dotnet publish` command.</span></span>
 
-* [<span data-ttu-id="ca795-209">.NET Core 응용 프로그램 배포</span><span class="sxs-lookup"><span data-stu-id="ca795-209">.NET Core Application Deployment</span></span>](index.md)
-* [<span data-ttu-id="ca795-210">.NET Core RID(런타임 식별자) 카탈로그</span><span class="sxs-lookup"><span data-stu-id="ca795-210">.NET Core Runtime IDentifier (RID) catalog</span></span>](../rid-catalog.md)
+<span data-ttu-id="fa833-158">앱을 FDD로 게시하면 `<PROJECT-NAME>.dll` 파일이 `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/` 폴더에 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-158">When you publish your app as an FDD, a `<PROJECT-NAME>.dll` file is created in the `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/` folder.</span></span> <span data-ttu-id="fa833-159">앱을 실행하려면 출력 폴더로 이동하여 `dotnet <PROJECT-NAME>.dll` 명령을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-159">To run your app, navigate to the output folder and use the `dotnet <PROJECT-NAME>.dll` command.</span></span>
+
+<span data-ttu-id="fa833-160">앱이 특정 버전의 .NET Core를 대상으로 구성됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-160">Your app is configured to target a specific version of .NET Core.</span></span> <span data-ttu-id="fa833-161">대상으로 하는 .NET Core 런타임은 앱을 실행하려는 머신에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-161">That targeted .NET Core runtime is required to be on the machine where you want to run your app.</span></span> <span data-ttu-id="fa833-162">예를 들어 앱이 .NET Core 2.2를 대상으로 하는 경우, 앱이 실행 되는 모든 머신에 .NET Core 2.2 런타임이 설치되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-162">For example, if your app targets .NET Core 2.2, any machine that your app runs on must have the .NET Core 2.2 runtime installed.</span></span> <span data-ttu-id="fa833-163">[기본 사항 게시](#publishing-basics) 섹션에서 설명된 대로 프로젝트 파일을 편집하여 기본 대상 프레임워크를 변경하거나 둘 이상의 프레임워크를 대상으로 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-163">As stated in the [Publishing basics](#publishing-basics) section, you can edit your project file to change the default target framework or to target more than one framework.</span></span>
+
+<span data-ttu-id="fa833-164">FDD를 게시하면 앱을 실행하는 시스템에서 사용할 수 있는 최신 .NET Core 보안 패치로 자동으로 롤포워드하는 앱이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-164">Publishing an FDD creates an app that automatically rolls-forward to the latest .NET Core security patch available on the system that runs the app.</span></span> <span data-ttu-id="fa833-165">컴파일 시 버전 바인딩에 대한 자세한 내용은 [사용할 .NET Core 버전 선택](../versions/selection.md#framework-dependent-apps-roll-forward)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-165">For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md#framework-dependent-apps-roll-forward).</span></span>
+
+## <a name="framework-dependent-executable"></a><span data-ttu-id="fa833-166">프레임워크 종속 실행 파일</span><span class="sxs-lookup"><span data-stu-id="fa833-166">Framework-dependent executable</span></span>
+
+<span data-ttu-id="fa833-167">.NET Core SDK 3.x CLI의 경우 FDE(프레임워크 종속 실행 파일)가 기본 `dotnet publish` 명령의 기본 모드입니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-167">For the .NET Core SDK 3.x CLI, framework-dependent executable (FDE) the default mode for the basic `dotnet publish` command.</span></span> <span data-ttu-id="fa833-168">현재 운영 체제를 대상으로 하는 한 다른 매개 변수를 지정할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-168">You don't need to specify any other parameters as long as you want to target the current operating system.</span></span>
+
+<span data-ttu-id="fa833-169">이 모드에서는 플랫폼별 실행 파일 호스트가 만들어져 플랫폼 간 앱을 호스트합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-169">In this mode, a platform-specific executable host is created to host your cross-platform app.</span></span> <span data-ttu-id="fa833-170">이 모드는 FDD에 `dotnet` 명령 형식의 호스트가 필요함으로 FDD와 유사합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-170">This mode is similar to FDD as FDD requires a host in the form of the `dotnet` command.</span></span> <span data-ttu-id="fa833-171">호스트 실행 파일 이름은 플랫폼마다 다르며 `<PROJECT-FILE>.exe`와 유사한 이름이 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-171">The host executable filename varies per platform, and is named something similar to `<PROJECT-FILE>.exe`.</span></span> <span data-ttu-id="fa833-172">`dotnet <PROJECT-FILE>.dll`을 호출하는 대신 이 실행 파일을 직접 실행하여 앱을 실행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-172">You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll` which is still an acceptable way to run the app.</span></span>
+
+<span data-ttu-id="fa833-173">앱이 특정 버전의 .NET Core를 대상으로 구성됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-173">Your app is configured to target a specific version of .NET Core.</span></span> <span data-ttu-id="fa833-174">대상으로 하는 .NET Core 런타임은 앱을 실행하려는 머신에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-174">That targeted .NET Core runtime is required to be on the machine where you want to run your app.</span></span> <span data-ttu-id="fa833-175">예를 들어 앱이 .NET Core 2.2를 대상으로 하는 경우, 앱이 실행 되는 모든 머신에 .NET Core 2.2 런타임이 설치되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-175">For example, if your app targets .NET Core 2.2, any machine that your app runs on must have the .NET Core 2.2 runtime installed.</span></span> <span data-ttu-id="fa833-176">[기본 사항 게시](#publishing-basics) 섹션에서 설명된 대로 프로젝트 파일을 편집하여 기본 대상 프레임워크를 변경하거나 둘 이상의 프레임워크를 대상으로 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-176">As stated in the [Publishing basics](#publishing-basics) section, you can edit your project file to change the default target framework or to target more than one framework.</span></span>
+
+<span data-ttu-id="fa833-177">FDE를 게시하면 앱을 실행하는 시스템에서 사용할 수 있는 최신 .NET Core 보안 패치로 자동으로 롤포워드하는 앱이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-177">Publishing an FDE creates an app that automatically rolls-forward to the latest .NET Core security patch available on the system that runs the app.</span></span> <span data-ttu-id="fa833-178">컴파일 시 버전 바인딩에 대한 자세한 내용은 [사용할 .NET Core 버전 선택](../versions/selection.md#framework-dependent-apps-roll-forward)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-178">For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md#framework-dependent-apps-roll-forward).</span></span>
+
+<span data-ttu-id="fa833-179">현재 플랫폼을 대상으로 할 때는 .NET Core 3.x를 제외하고 `dotnet publish` 명령과 함께 다음 스위치를 사용하여 FDE를 게시해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-179">You must (except for .NET Core 3.x when you target the current platform) use the following switches with the `dotnet publish` command to publish an FDE:</span></span>
+
+- `-r <RID>`  
+  <span data-ttu-id="fa833-180">이 스위치는 식별자(RID)를 사용하여 대상 플랫폼을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-180">This switch uses an identifier (RID) to specify the target platform.</span></span> <span data-ttu-id="fa833-181">런타임 식별자 목록은 [런타임 식별자(RID) 카탈로그](../rid-catalog.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-181">For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).</span></span>
+
+- `--self-contained false`  
+  <span data-ttu-id="fa833-182">이 스위치는 .NET Core SDK에 실행 파일을 FDE로 생성하도록 지시합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-182">This switch tells the .NET Core SDK to create an executable as an FDE.</span></span>
+
+<span data-ttu-id="fa833-183">`-r` 스위치를 사용할 때마다 출력 폴더 경로가 `./bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`로 변경됩니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-183">Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`</span></span>
+
+<span data-ttu-id="fa833-184">[예제 앱](#sample-app)을 사용하는 경우 `dotnet publish -f netcoreapp2.2 -r win10-x64 --self-contained false`를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-184">If you use the [example app](#sample-app), run `dotnet publish -f netcoreapp2.2 -r win10-x64 --self-contained false`.</span></span> <span data-ttu-id="fa833-185">이 명령은 `./bin/Debug/netcoreapp2.2/win10-x64/publish/apptest1.exe` 실행 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-185">This command creates the following executable: `./bin/Debug/netcoreapp2.2/win10-x64/publish/apptest1.exe`</span></span>
+
+> [!Note]
+> <span data-ttu-id="fa833-186">**세계화 고정 모드**를 사용하여 배포의 전체 크기를 줄일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-186">You can reduce the total size of your deployment by enabling **globalization invariant mode**.</span></span> <span data-ttu-id="fa833-187">이 모드는 전역적으로 인식되지 않는 서식 지정 규칙, 대/소문자 규칙 및 문자열 비교와 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture)의 정렬 순서를 사용할 수 있는 애플리케이션에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-187">This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).</span></span> <span data-ttu-id="fa833-188">**세계화 고정 모드**와 이 모드를 사용하는 방법에 대한 자세한 내용은 [.NET Core 세계화 고정 모드](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-188">For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)</span></span>
+
+## <a name="self-contained-deployment"></a><span data-ttu-id="fa833-189">자체 포함 배포</span><span class="sxs-lookup"><span data-stu-id="fa833-189">Self-contained deployment</span></span>
+
+<span data-ttu-id="fa833-190">SCD(자체 포함 배포)를 게시하면 .NET Core SDK는 플랫폼별 실행 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-190">When you publish a self-contained deployment (SCD), the .NET Core SDK creates a platform-specific executable.</span></span> <span data-ttu-id="fa833-191">SCD 게시에는 앱을 실행하는 데 필요한 모든 .NET Core 파일이 포함되어 있지만 [.NET Core의 네이티브 종속성](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)은 포함되어 있지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-191">Publishing an SCD includes all  required .NET Core files to run your app but it doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).</span></span> <span data-ttu-id="fa833-192">이러한 종속성은 앱을 실행하기 전에 시스템에 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-192">These dependencies must be present on the system before the app runs.</span></span> 
+
+<span data-ttu-id="fa833-193">SCD를 게시하면 사용 가능한 최신 .NET Core 보안 패치로 롤포워드되지 않는 앱이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-193">Publishing an SCD creates an app that doesn't roll-forward to the latest available .NET Core security patch.</span></span> <span data-ttu-id="fa833-194">컴파일 시 버전 바인딩에 대한 자세한 내용은 [사용할 .NET Core 버전 선택](../versions/selection.md#self-contained-deployments-include-the-selected-runtime)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-194">For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).</span></span>
+
+<span data-ttu-id="fa833-195">SCD를 게시하려면 `dotnet publish` 명령과 함께 다음 스위치를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-195">You must use the following switches with the `dotnet publish` command to publish an SCD:</span></span>
+
+- `-r <RID>`  
+  <span data-ttu-id="fa833-196">이 스위치는 식별자(RID)를 사용하여 대상 플랫폼을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-196">This switch uses an identifier (RID) to specify the target platform.</span></span> <span data-ttu-id="fa833-197">런타임 식별자 목록은 [런타임 식별자(RID) 카탈로그](../rid-catalog.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-197">For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).</span></span>
+
+- `--self-contained true`  
+  <span data-ttu-id="fa833-198">이 스위치는 .NET Core SDK에 실행 파일을 SCD로 생성하도록 지시합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-198">This switch tells the .NET Core SDK to create an executable as an SCD.</span></span>
+
+> [!Note]
+> <span data-ttu-id="fa833-199">**세계화 고정 모드**를 사용하여 배포의 전체 크기를 줄일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-199">You can reduce the total size of your deployment by enabling **globalization invariant mode**.</span></span> <span data-ttu-id="fa833-200">이 모드는 전역적으로 인식되지 않는 서식 지정 규칙, 대/소문자 규칙 및 문자열 비교와 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture)의 정렬 순서를 사용할 수 있는 애플리케이션에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="fa833-200">This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).</span></span> <span data-ttu-id="fa833-201">**세계화 고정 모드**와 이 모드를 사용하는 방법에 대한 자세한 내용은 [.NET Core 세계화 고정 모드](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fa833-201">For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)</span></span>
+
+
+## <a name="see-also"></a><span data-ttu-id="fa833-202">참고 항목</span><span class="sxs-lookup"><span data-stu-id="fa833-202">See also</span></span>
+
+- [<span data-ttu-id="fa833-203">.NET Core 애플리케이션 배포 개요</span><span class="sxs-lookup"><span data-stu-id="fa833-203">.NET Core Application Deployment Overview</span></span>](index.md)
+- [<span data-ttu-id="fa833-204">.NET Core RID(런타임 식별자) 카탈로그</span><span class="sxs-lookup"><span data-stu-id="fa833-204">.NET Core Runtime IDentifier (RID) catalog</span></span>](../rid-catalog.md)
+
+[dotnet-publish]: ../tools/dotnet-publish.md
+[dotnet-run]: ../tools/dotnet-run.md

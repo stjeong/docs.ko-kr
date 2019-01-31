@@ -2,18 +2,18 @@
 title: '방법: 개체 그래프 프로젝션(C#)'
 ms.date: 07/20/2015
 ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
-ms.openlocfilehash: cacbd05b7b03bfd56ce5a55dc088d3227788a3cb
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3b0b4ab7d30d24902bde8c5010a3df6b63f3ac3f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54545175"
 ---
-# <a name="how-to-project-an-object-graph-c"></a><span data-ttu-id="8fe6f-102">방법: 개체 그래프 프로젝션(C#)</span><span class="sxs-lookup"><span data-stu-id="8fe6f-102">How to: Project an Object Graph (C#)</span></span>
-<span data-ttu-id="8fe6f-103">이 항목에서는 XML에서 개체 그래프를 프로젝션하거나 채우는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-103">This topic illustrates how to project, or populate, an object graph from XML.</span></span>  
+# <a name="how-to-project-an-object-graph-c"></a><span data-ttu-id="2778d-102">방법: 개체 그래프 프로젝션(C#)</span><span class="sxs-lookup"><span data-stu-id="2778d-102">How to: Project an Object Graph (C#)</span></span>
+<span data-ttu-id="2778d-103">이 항목에서는 XML에서 개체 그래프를 프로젝션하거나 채우는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-103">This topic illustrates how to project, or populate, an object graph from XML.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="8fe6f-104">예제</span><span class="sxs-lookup"><span data-stu-id="8fe6f-104">Example</span></span>  
- <span data-ttu-id="8fe6f-105">다음 코드에서는 [샘플 XML 파일: 일반적인 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML 문서의 `Address`, `PurchaseOrder` 및 `PurchaseOrderItem` 클래스를 사용하여 개체 그래프를 채웁니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-105">The following code populates an object graph with the `Address`, `PurchaseOrder`, and `PurchaseOrderItem` classes from the [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML document.</span></span>  
+## <a name="example"></a><span data-ttu-id="2778d-104">예제</span><span class="sxs-lookup"><span data-stu-id="2778d-104">Example</span></span>  
+ <span data-ttu-id="2778d-105">다음 코드에서는 `Address`, `PurchaseOrder` 및 `PurchaseOrderItem` 클래스를 사용하여 [샘플 XML 파일: 일반적인 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML 문서에서 개체 그래프를 채웁니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-105">The following code populates an object graph with the `Address`, `PurchaseOrder`, and `PurchaseOrderItem` classes from the [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML document.</span></span>  
   
 ```csharp  
 class Address  
@@ -214,9 +214,9 @@ class Program {
 }  
 ```  
   
- <span data-ttu-id="8fe6f-106">이 예제에서는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리의 결과가 <xref:System.Collections.Generic.IEnumerable%601>의 `PurchaseOrderItem`로 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-106">In this example, the result of the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`.</span></span> <span data-ttu-id="8fe6f-107">`PurchaseOrder` 클래스의 항목은 <xref:System.Collections.Generic.IEnumerable%601>의 `PurchaseOrderItem` 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-107">The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`.</span></span> <span data-ttu-id="8fe6f-108">이 코드에서는 <xref:System.Linq.Enumerable.ToList%2A> 확장 메서드를 사용하여 쿼리 결과에서 <xref:System.Collections.Generic.List%601> 컬렉션을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-108">The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.</span></span>  
+ <span data-ttu-id="2778d-106">이 예제에서는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리의 결과가 <xref:System.Collections.Generic.IEnumerable%601>의 `PurchaseOrderItem`로 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-106">In this example, the result of the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`.</span></span> <span data-ttu-id="2778d-107">`PurchaseOrder` 클래스의 항목은 <xref:System.Collections.Generic.IEnumerable%601>의 `PurchaseOrderItem` 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-107">The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`.</span></span> <span data-ttu-id="2778d-108">이 코드에서는 <xref:System.Linq.Enumerable.ToList%2A> 확장 메서드를 사용하여 쿼리 결과에서 <xref:System.Collections.Generic.List%601> 컬렉션을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-108">The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.</span></span>  
   
- <span data-ttu-id="8fe6f-109">예제의 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8fe6f-109">The example produces the following output:</span></span>  
+ <span data-ttu-id="2778d-109">예제의 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="2778d-109">The example produces the following output:</span></span>  
   
 ```  
 PurchaseOrderNumber: 99503  
@@ -255,8 +255,8 @@ USPrice: 39.98
 ShipDate: 5/21/1999  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8fe6f-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8fe6f-110">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2778d-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="2778d-110">See also</span></span>
 
-- <xref:System.Linq.Enumerable.Select%2A>  
-- <xref:System.Linq.Enumerable.ToList%2A>  
-- [<span data-ttu-id="8fe6f-111">프로젝션 및 변환(LINQ to XML)(C#)</span><span class="sxs-lookup"><span data-stu-id="8fe6f-111">Projections and Transformations (LINQ to XML) (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- <xref:System.Linq.Enumerable.Select%2A>
+- <xref:System.Linq.Enumerable.ToList%2A>
+- [<span data-ttu-id="2778d-111">프로젝션 및 변환(LINQ to XML)(C#)</span><span class="sxs-lookup"><span data-stu-id="2778d-111">Projections and Transformations (LINQ to XML) (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
