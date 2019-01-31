@@ -3,10 +3,10 @@ title: 컴파일러 옵션
 description: 사용 하 여 F# 의 컴파일을 제어 하는 컴파일러 명령줄 옵션에 F# 앱 및 라이브러리입니다.
 ms.date: 12/10/2018
 ms.openlocfilehash: d8e4331bcacd7082d7560ddc6fcadb4ce2b61cf8
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
+ms.lasthandoff: 01/31/2019
 ms.locfileid: "53614495"
 ---
 # <a name="compiler-options"></a>컴파일러 옵션
@@ -25,7 +25,7 @@ ms.locfileid: "53614495"
 |`--baseaddress:address`|DLL을 로드할 기본 설정 기준 주소를 지정합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;baseaddress &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/2fdbz5xd.aspx)합니다.|
 |`--codepage:id`|필수 페이지가 시스템에 대 한 현재 기본 코드 페이지 없으면 컴파일 중에 사용 하는 코드 페이지를 지정 합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;코드 페이지 &#40;C&#35; 컴파일러 옵션&#41;](../../csharp/language-reference/compiler-options/codepage-compiler-option.md)합니다.|
 |`--consolecolors`|오류 및 경고 사용 콘솔에 색으로 구분 된 텍스트를 지정 합니다.|
-|'--crossoptimize[+|-]`|크로스 모듈 최적화를 사용할지 설정 합니다.|
+|`--crossoptimize[+|-]`|크로스 모듈 최적화를 사용할지 설정 합니다.|
 |<code>--delaysign[+&#124;-]</code>|서명을 연기 강력한 이름 키의 공개 부분만 사용 하 여 어셈블리입니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;delaysign &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/ta1sxwy8.aspx)합니다.|
 |<code>--checked[+&#124;-]</code>|오버플로 검사 생성을 사용할지 설정 합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;확인 &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/h25wtyxf.aspx)합니다.|
 |<code>--debug[+&#124;-]</code><br /><br /><code>-g[+&#124;-]</code><br /><br /><code>--debug:[full&#124;pdbonly]</code><br /><br /><code>-g: [full&#124;pdbonly]</code>|또는 디버그 정보 생성을 사용 하지 않도록 설정 하거나 생성할 디버그 정보의 형식을 지정 합니다. 기본값은 전체 실행 프로그램에 연결할 수 있습니다. 선택할 **pdbonly** pdb (프로그램 데이터베이스) 파일에 저장 하는 제한 된 디버깅 정보를 얻을 수 있습니다.<br /><br />에 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 다음 항목을 참조하세요.<br /><br />[&#47;디버그 &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/8cw0bt21.aspx)합니다.|

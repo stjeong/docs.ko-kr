@@ -1,5 +1,5 @@
 ---
-title: 참조 어셈블리에 필요한 &#39; &lt;assemblyidentity&gt; &#39; 형식이 포함 된 &#39; &lt;typename&gt;&#39;, 하지만 간의 모호성으로 인해 적합 한 참조를 찾을 수 없습니다 프로젝트 &#39; &lt;projectname1&gt; &#39; 및 &#39; &lt;projectname2&gt;&#39;
+title: "'<assemblyidentity>' 형식을 포함하는 '<typename>' 어셈블리에 대한 참조가 필요하지만 '<projectname1>' 프로젝트와 '<projectname2>' 프로젝트 사이의 모호성 때문에 적합한 참조를 찾을 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30969
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: 1a0c2a2fd235026729901153a0c0c300f914a78f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2c74ed916e43bee6857df819c19ab03bef80b3c4
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54553011"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55285196"
 ---
-# <a name="reference-required-to-assembly-39ltassemblyidentitygt39-containing-type-39lttypenamegt39-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-39ltprojectname1gt39-and-39ltprojectname2gt39"></a>참조 어셈블리에 필요한 &#39; &lt;assemblyidentity&gt; &#39; 형식이 포함 된 &#39; &lt;typename&gt;&#39;, 하지만 간의 모호성으로 인해 적합 한 참조를 찾을 수 없습니다 프로젝트 &#39; &lt;projectname1&gt; &#39; 및 &#39; &lt;projectname2&gt;&#39;
+# <a name="reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>참조 어셈블리에 필요한 '\<assemblyidentity >' 형식이 포함 된 '\<typename >', 프로젝트 사이의 모호성으로 인해 적합 한 참조를 찾을 수 없습니다 있지만\<projectname1 >' 및 '\< projectname2 >'
 식은 프로젝트 외부에 정의된 클래스, 구조체, 인터페이스, 열거형 또는 대리자와 같은 형식을 사용합니다. 그러나 해당 형식을 정의하는 둘 이상의 어셈블리에 대한 프로젝트 참조가 있습니다.  
   
  인용된 프로젝트는 이름이 동일한 어셈블리를 생성합니다. 따라서 컴파일러에서 사용자가 액세스하려는 형식에 사용할 어셈블리를 확인할 수 없습니다.  

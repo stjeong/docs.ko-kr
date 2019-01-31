@@ -1,17 +1,17 @@
 ---
-title: 인수 '&lt;argumentname&gt;'-32768에서 65535 사이 여야 합니다
+title: 인수 '<argumentname>'-32768에서 65535 사이 여야 합니다
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_RangeTwoBytes1
 ms.assetid: d1ab6767-8334-4d7c-bb99-c837a793ed69
-ms.openlocfilehash: 2845d2175b793d718b185350b05bd1c496f73ded
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c9b671ed7d0d27b785743a90e4b0a40548f47657
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54568090"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55282284"
 ---
-# <a name="argument-ltargumentnamegt-must-be-in-the-range-of--32768-to-65535"></a>인수 '&lt;argumentname&gt;'-32768에서 65535 사이 여야 합니다
+# <a name="argument-argumentname-must-be-in-the-range-of--32768-to-65535"></a>인수 '\<argumentname >'의-32768에서 65535 사이 여야 합니다
 인수 값이 -32,768에서 65,535 사이의 허용 범위를 벗어났습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

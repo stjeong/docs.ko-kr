@@ -1,15 +1,15 @@
 ---
-title: '&lt;sslStreamSecurity&gt;'
+title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: fe633aa1ed2b165a83f415748b70b6a66bbb0130
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f66569f36dc61a063b79a088dcbc405126a074d8
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540921"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284598"
 ---
-# <a name="ltsslstreamsecuritygt"></a>&lt;sslStreamSecurity&gt;
+# <a name="sslstreamsecurity"></a>\<sslStreamSecurity>
 SSL 스트림을 사용한 채널 보안을 지원하는 사용자 지정 바인딩 요소를 나타냅니다.  
   
  \<system.serviceModel>  

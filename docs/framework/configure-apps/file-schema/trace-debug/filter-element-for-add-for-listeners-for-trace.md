@@ -1,5 +1,5 @@
 ---
-title: '&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;'
+title: <filter>의 <add>에 대한 <listeners>의 <trace> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add/filter
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - filter element for <add> for <listeners> for <trace>
 - <filter> element for <add> for <listeners> for <trace>
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
-ms.openlocfilehash: b53c3e4cc2362a1f1dc0312d59aff403ca924b5e
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: f364590a419c3f31af49ea2c3dd6fa5901bf0272
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55084187"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55283181"
 ---
-# <a name="ltfiltergt-element-for-ltaddgt-for-ltlistenersgt-for-lttracegt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
+# <a name="filter-element-for-add-for-listeners-for-trace"></a>\<필터 > 요소에 대 한 \<추가 >에 대 한 \<수신기 >에 대 한 \<추적 >
 수신기에 필터를 추가 합니다 `Listeners` 추적에 대 한 컬렉션입니다.  
   
  \<configuration>  

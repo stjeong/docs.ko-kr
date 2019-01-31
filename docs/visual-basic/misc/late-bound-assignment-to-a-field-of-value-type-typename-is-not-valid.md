@@ -1,17 +1,17 @@
 ---
-title: 값 형식의 필드에 런타임에 바인딩된 할당이 '&lt;typename&gt;'올바르지 때'&lt;이름&gt;'는 런타임에 바인딩된 식의 결과
+title: 값 형식의 필드에 런타임에 바인딩된 할당이 '<typename>'올바르지 때'<name>'는 런타임에 바인딩된 식의 결과
 ms.date: 07/20/2015
 f1_keywords:
 - vbrRValueBaseForValueType
 ms.assetid: 050f05b4-7e56-4372-aae5-70b7d73b99e4
-ms.openlocfilehash: c1d980fb5d6d77223eec18628fa16cab756273b6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 99e3a24c69d7cf81da26516290b91b42539cd9cc
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642323"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284416"
 ---
-# <a name="late-bound-assignment-to-a-field-of-value-type-lttypenamegt-is-not-valid-when-ltnamegt-is-the-result-of-a-late-bound-expression"></a>값 형식의 필드에 런타임에 바인딩된 할당이 '&lt;typename&gt;'올바르지 때'&lt;이름&gt;'는 런타임에 바인딩된 식의 결과
+# <a name="late-bound-assignment-to-a-field-of-value-type-typename-is-not-valid-when-name-is-the-result-of-a-late-bound-expression"></a>값 형식의 필드에 런타임에 바인딩된 할당이 '\<typename >' 올바르지 때 '\<이름 >'는 런타임에 바인딩된 식의 결과
 시도한 런타임에 바인딩된 할당이 잘못되었습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

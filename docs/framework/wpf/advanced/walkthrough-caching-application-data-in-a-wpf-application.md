@@ -9,15 +9,15 @@ helpviewer_keywords:
 - caching [.NET Framework]
 - caching [WPF]
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
-ms.openlocfilehash: c9602599be0dd9fc262a7809348ef2642d6b4ebe
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e7083c4b15e2693c0c76e6ca7c9a00e4c4dab56c
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54513726"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55480064"
 ---
 # <a name="walkthrough-caching-application-data-in-a-wpf-application"></a>연습: WPF 응용 프로그램에서 응용 프로그램 데이터 캐싱
-캐싱을 사용하면 빠른 액세스를 위해 데이터를 메모리에 저장할 수 있습니다. 데이터에 다시 액세스할 때 응용 프로그램 원본에서 검색 하는 대신 캐시에서 데이터를 가져올 수 있습니다. 이 경우 성능과 확장성이 향상됩니다. 또한 캐싱을 사용하면 데이터 소스를 일시적으로 사용할 수 없는 경우에도 데이터를 사용할 수 있습니다.
+캐싱을 사용하면 빠른 액세스를 위해 데이터를 메모리에 저장할 수 있습니다. 데이터에 다시 액세스할 때 애플리케이션은 원래 소스에서 검색하는 대신 캐시에서 데이터를 가져올 수 있습니다. 이 경우 성능과 확장성이 향상됩니다. 또한 캐싱을 사용하면 데이터 소스를 일시적으로 사용할 수 없는 경우에도 데이터를 사용할 수 있습니다.
 
  합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 에서 캐싱을 사용할 수 있도록 하는 클래스를 제공 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 응용 프로그램입니다. 이러한 클래스에는 <xref:System.Runtime.Caching> 네임 스페이스입니다.
 
@@ -218,7 +218,7 @@ ms.locfileid: "54513726"
     policy.AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(10.0);
     ```
 
-     기본값은 없습니다 제거 또는 만료 정보를 제공 하는 경우 <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration>, 절대 시간에만 기반 만료 되지 않도록 캐시 항목을 의미 합니다. 대신, 메모리가 부족 한 경우에 캐시 항목 만료 됩니다. 모범 사례로 항상 명시적으로 절대 또는 상대 (siding) 만료를 제공 해야 합니다.
+     기본값은 없습니다 제거 또는 만료 정보를 제공 하는 경우 <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration>, 절대 시간에만 기반 만료 되지 않도록 캐시 항목을 의미 합니다. 대신, 메모리가 부족 한 경우에 캐시 항목 만료 됩니다. 모범 사례로 항상 명시적으로 절대 또는 상대 (sliding) 만료를 제공 해야 합니다.
 
 7.  내부는 `if/then` 차단 하 고 다음 이전 단계에서 추가한 코드를 모니터링 하 고 컬렉션에 텍스트 파일의 경로 추가 하려면 원하는 파일 경로의 컬렉션을 만드는 다음 코드를 추가 합니다.
 
@@ -254,7 +254,7 @@ ms.locfileid: "54513726"
     ```
 
     ```csharp
-    fileContents = File.ReadAllText("c:\\cache\\cacheText.txt") + + "\n" + DateTime.Now;
+    fileContents = File.ReadAllText("c:\\cache\\cacheText.txt") + "\n" + DateTime.Now;
     ```
 
      날짜 및 시간 타임 스탬프는 캐시 항목이 만료 시기를 확인할 수 있도록에 추가 됩니다.
@@ -296,7 +296,7 @@ ms.locfileid: "54513726"
 
      텍스트 파일에서 캐시 된 콘텐츠를 메시지 상자에 표시 됩니다. 파일의 타임 스탬프를 확인 합니다.
 
-3.  메시지 상자를 닫은 다음 클릭 **캐시 가져오기** 다시**입니다.**
+3.  메시지 상자를 닫은 다음 클릭 **캐시 가져오기** 다시 합니다.
 
      타임 스탬프가 변경 되지 않습니다. 이 캐시 된 콘텐츠가 표시 된 것을 나타냅니다.
 
@@ -306,7 +306,7 @@ ms.locfileid: "54513726"
 
 5.  텍스트 편집기에서 만든 텍스트 파일을 엽니다. 변경 내용을 아직 수행 하지 마십시오.
 
-6.  메시지 상자를 닫은 다음 클릭 **캐시 가져오기** 다시**입니다.**
+6.  메시지 상자를 닫은 다음 클릭 **캐시 가져오기** 다시 합니다.
 
      타임 스탬프를 다시 확인 합니다.
 

@@ -3,10 +3,10 @@ title: 키워드 참조
 description: 모든 정보에 대 한 링크를 찾습니다는 F# 언어 키워드입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 5a94a30ca0f73538cc22e76fa75bd76741b70d99
-ms.sourcegitcommit: 5dcfeb59179e81071f54840d4902cbe00b184294
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 01/31/2019
 ms.locfileid: "54857907"
 ---
 # <a name="keyword-reference"></a>키워드 참조
@@ -64,7 +64,7 @@ ms.locfileid: "54857907"
 |`null`|[Null 값](values/null-values.md)<br /><br />[제약 조건](generics/constraints.md)|개체의 없음을 나타냅니다.<br /><br />제네릭 매개 변수 제약 조건에도 사용 합니다.|
 |`of`|[구별된 공용 구조체](discriminated-unions.md)<br /><br />[대리자](delegates.md)<br /><br />[예외 형식](exception-handling/exception-types.md)|대리자 및 예외 선언 및 범주 값의 형식을 지정 하기 위해 구별 된 공용 구조체에 사용 합니다.|
 |`open`|[선언 가져오기: `open` 키워드](import-declarations-the-open-keyword.md)|네임 스페이스 또는 모듈의 콘텐츠를 한정자 없이 사용할 수 있도록 하는 데 사용 합니다.|
-|`or`|[기호 및 연산자 참조](symbol-and-operator-reference/index.md)<br /><br />[제약 조건](generics/constraints.md)|부울 조건을 사용 하 여 부울 값으로 사용할 `or` 연산자입니다. 같음 '||`.<br /><br />또한 멤버 제약 조건을 사용합니다.|
+|`or`|[기호 및 연산자 참조](symbol-and-operator-reference/index.md)<br /><br />[제약 조건](generics/constraints.md)|부울 조건을 사용 하 여 부울 값으로 사용할 `or` 연산자입니다. `||`와 같습니다.<br /><br />또한 멤버 제약 조건을 사용합니다.|
 |`override`|[멤버](members/index.md)|추상 또는 가상 메서드는 기본 버전과에서 다른 버전을 구현 하는 데 사용 합니다.|
 |`private`|[Access Control](access-control.md)|코드에 동일한 형식이 나 모듈 멤버에 대 한 액세스를 제한합니다.|
 |`public`|[Access Control](access-control.md)|형식 외부에서 멤버에 액세스할 수 있습니다.|
