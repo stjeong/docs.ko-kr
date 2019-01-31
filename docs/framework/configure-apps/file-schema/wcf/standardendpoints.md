@@ -1,15 +1,15 @@
 ---
-title: '&lt;standardEndpoints&gt;'
+title: <standardEndpoints>
 ms.date: 03/30/2017
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1
-ms.openlocfilehash: f3851ed4d6a166cf698a5acf18f92e29bb7545cc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7677d7f4c0ef7927fd50885bb887dccaa62a27b4
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54666698"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55286792"
 ---
-# <a name="ltstandardendpointsgt"></a>&lt;standardEndpoints&gt;
+# <a name="standardendpoints"></a>\<standardEndpoints>
 이 구성 섹션에서는 다시 사용할 수 있는 미리 구성된 엔드포인트인 표준 엔드포인트의 컬렉션을 정의할 수 있습니다. 표준 엔드포인트에는 고정 값으로 설정된 하나 이상의 주소, 바인딩 및 계약 특성이 있습니다. 예를 들어 검색 엔드포인트에서는 계약이 고정됩니다. 표준 엔드포인트를 사용자 지정 바인딩 정의와 유사한 새 속성과 함께 사용하여 서비스 엔드포인트를 확장할 수도 있습니다.  
   
  \<system.ServiceModel>  

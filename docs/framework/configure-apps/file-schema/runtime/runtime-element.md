@@ -1,5 +1,5 @@
 ---
-title: '&lt;런타임&gt; 요소'
+title: <runtime> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#runtime
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - runtime element
 - container tags, <runtime> element
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-ms.openlocfilehash: e97af56530d3d805dd7945e8514bb8f7209da86d
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 05a94116d3b3cc662036b2ed15e255d4f8eda2c4
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55084473"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55285950"
 ---
-# <a name="ltruntimegt-element"></a>&lt;런타임&gt; 요소
+# <a name="runtime-element"></a>\<런타임 > 요소
 응용 프로그램을 구성 하려면 공용 언어 런타임에서 사용 되는 정보를 제공 합니다.  
   
  \<configuration>  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;ws2007HttpBinding&gt;의 &lt;security&gt;'
+title: <security>의 <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-ms.openlocfilehash: 6a07fb258a0a7c01293eddaf1eab4f82c4f632cb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8d7df6f50c389e7b7a7766a18ee722159a6b1835
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54493757"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275095"
 ---
-# <a name="ltsecuritygt-of-ltws2007httpbindinggt"></a>&lt;ws2007HttpBinding&gt;의 &lt;security&gt;
+# <a name="security-of-ws2007httpbinding"></a>\<보안 >의 \<ws2007HttpBinding >
 사용 하는 보안 설정을 나타냅니다 합니다 [ \<ws2007HttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) 요소입니다.  
   
  \<system.serviceModel>  

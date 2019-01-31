@@ -1,15 +1,15 @@
 ---
-title: '&gt;(보다 큼)(Entity SQL)'
+title: '> (보다 큼) (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 4cea865c-677c-4b06-99a1-010f2ae2394a
-ms.openlocfilehash: 1449af09022a9e11be1f3627023318270adf0121
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c4a0f60f6dcaf503dca0b16ed80bc05884922b34
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54736931"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55277396"
 ---
-# <a name="gt-greater-than-entity-sql"></a>&gt;(보다 큼)(Entity SQL)
+# <a name="-greater-than-entity-sql"></a>> (보다 큼)(Entity SQL)
 두 식을 비교하여 왼쪽 식의 값이 오른쪽 식의 값보다 큰지 여부를 결정합니다.  
   
 ## <a name="syntax"></a>구문  

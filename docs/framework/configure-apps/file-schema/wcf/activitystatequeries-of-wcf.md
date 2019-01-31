@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;activityStateQueries&gt;
+title: <activityStateQueries> WCF의
 ms.date: 10/08/2018
 ms.assetid: 9e45db49-ed85-4fdf-bd65-0d5477e31823
-ms.openlocfilehash: 6b21ad3f5487a924309b8bee6b9ac972f23bdc66
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c9c78b6929b4550204a22fe2e2786891b516a818
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701939"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265326"
 ---
-# <a name="ltactivitystatequeriesgt-of-wcf"></a>WCF의 &lt;activityStateQueries&gt;
+# <a name="activitystatequeries-of-wcf"></a>\<activityStateQueries > WCF의
 
 워크플로 인스턴스를 구성하는 활동의 수명 주기 변경 내용을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 예를 들어 다음 워크플로 인스턴스 내에 "전자 메일 보내기" 활동이 완료 될 때마다 추적 하는 것이 좋습니다. 추적 참가자가 활동 상태 레코드 개체를 구독하려면 이 쿼리가 필요합니다. 구독하기 위해 사용 가능한 상태는 ActivityStates에서 지정됩니다.
 

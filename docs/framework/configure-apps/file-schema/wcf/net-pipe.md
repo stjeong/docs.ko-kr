@@ -1,15 +1,15 @@
 ---
-title: '&lt;net. pipe&gt;'
+title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: 7997894bfad8d5bf874a7f52d2cade7526375b13
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ddd25d3d25f4c4be1a9e26d444fa799a55c9cccc
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54715298"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55283285"
 ---
-# <a name="ltnetpipegt"></a>&lt;net. pipe&gt;
+# <a name="netpipe"></a>\<net.pipe>
 명명된 파이프 연결의 수명을 관리하고 명명된 파이프을 통해 수신되는 활성화 요청을 처리하는 Named Pipe Activation Service의 구성 설정을 지정합니다.  
   
  \<system.serviceModel.activation>  

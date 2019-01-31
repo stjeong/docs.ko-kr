@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;activityScheduledQueries&gt;
+title: <activityScheduledQueries> WCF의
 ms.date: 03/30/2017
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
-ms.openlocfilehash: 5430058049e8a09c1e2a289e1f997338c23b9d94
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1c9c292080016d7a2d0014ed07be371c0e247621
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492158"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55285781"
 ---
-# <a name="ltactivityscheduledqueriesgt-of-wcf"></a>WCF의 &lt;activityScheduledQueries&gt;
+# <a name="activityscheduledqueries-of-wcf"></a>\<activityScheduledQueries > WCF의
 부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 활동 예약 레코드를 구독하려면 쿼리가 필요합니다.  
   
 추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

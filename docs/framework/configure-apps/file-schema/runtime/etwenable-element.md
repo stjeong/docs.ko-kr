@@ -1,5 +1,5 @@
 ---
-title: '&lt;etwEnable&gt; Element'
+title: <etwEnable> 요소
 ms.date: 03/30/2017
 helpviewer_keywords:
 - etwEnable element
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 788eee71c718c003110ad8242505f2d7868e836c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dd6d6d9e192fdf43ba9436cda54920bdeba9ab64
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54506929"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279177"
 ---
-# <a name="ltetwenablegt-element"></a>&lt;etwEnable&gt; Element
+# <a name="etwenable-element"></a>\<etwEnable > 요소
 공용 언어 런타임 이벤트에 대해 ETW(Windows용 이벤트 추적)를 사용하도록 설정할지를 지정합니다.  
   
  \<구성 > 요소  

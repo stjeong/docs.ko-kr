@@ -1,15 +1,15 @@
 ---
-title: '&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;'
+title: <serviceCertificate> <clientCredentials> 요소
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 2f1d95238a16bfd286a64973c6e5cfb95fe02dc4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7134e8b3d253575bf26f26490372aa94549c73b7
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54744880"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279684"
 ---
-# <a name="ltservicecertificategt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;
+# <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate >의 \<clientCredentials > 요소
 클라이언트에 대해 서비스를 인증할 때 사용할 인증서를 지정합니다.  
   
  \<system.ServiceModel>  

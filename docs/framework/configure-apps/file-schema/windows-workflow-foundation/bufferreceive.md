@@ -1,16 +1,16 @@
 ---
-title: '&lt;bufferReceive&gt;'
+title: <bufferReceive>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: b23c3a54-10d4-4f13-ab6d-98b26b76f22a
-ms.openlocfilehash: 507d58f852544c0eadcefaf997b2345d5e123cfa
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ed37d73440dac22288ae1da526d81b2d0b990a1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54607516"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55286626"
 ---
-# <a name="ltbufferreceivegt"></a>&lt;bufferReceive&gt;
+# <a name="bufferreceive"></a>\<bufferReceive>
 서비스에서 버퍼링되는 수신 처리를 사용할 수 있도록 하는 서비스 동작입니다. 이를 통해 워크플로 서비스가 순서가 맞지 않는 메시지를 처리할 수 있습니다.  
   
 \<system.ServiceModel>  

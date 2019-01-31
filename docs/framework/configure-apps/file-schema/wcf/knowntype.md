@@ -1,15 +1,15 @@
 ---
-title: '&lt;knownType&gt;'
+title: <knownType>
 ms.date: 03/30/2017
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
-ms.openlocfilehash: cb36a0d1d1ceb13a6db902904783ee15b14e673b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1224a410d030669e340bd328c9158c85cdfeaeee
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54541068"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55266457"
 ---
-# <a name="ltknowntypegt"></a>&lt;knownType&gt;
+# <a name="knowntype"></a>\<knownType>
 deserialization을 수행하는 동안 <xref:System.Runtime.Serialization.DataContractSerializer>에서 사용하는 형식을 지정합니다. 요소는 "선언된 형식"의 필드 또는 속성에서 반환하는 "알려진 형식"을 지정합니다. 자세한 내용은 [데이터 계약 알려진 형식을](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)합니다.  
   
  \<system.runtime.serialization>  

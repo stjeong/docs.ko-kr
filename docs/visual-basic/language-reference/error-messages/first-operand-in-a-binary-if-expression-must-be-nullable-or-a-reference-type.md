@@ -1,5 +1,5 @@
 ---
-title: 이진 파일의 첫 번째 피연산자 &#39;경우&#39; 형식에 대 한 참조 또는 식이 null을 허용 해야 합니다.
+title: "'If' 이항 식의 첫 번째 피연산자는 nullable이거나 참조 형식이어야 합니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc33107
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC33107
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
-ms.openlocfilehash: 85094ba6d6a44bf2e6cc4fba7946598c286a08a2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cb47670e8417e903b2886887394b972d1ac138b0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54668276"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284637"
 ---
-# <a name="first-operand-in-a-binary-39if39-expression-must-be-nullable-or-a-reference-type"></a>이진 파일의 첫 번째 피연산자 &#39;경우&#39; 형식에 대 한 참조 또는 식이 null을 허용 해야 합니다.
+# <a name="first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a>'If' 이항 식의 첫 번째 피연산자는 nullable이거나 참조 형식이어야 합니다.
 `If` 식 2 또는 3 개의 인수를 사용할 수 있습니다. 두 개의 인수를 보낼 때 첫 번째 인수는 참조 형식 또는 nullable 형식 이어야 합니다. 첫 번째 인수 이외의 값으로 계산 하는 경우 `Nothing`, 해당 값이 반환 됩니다. 첫 번째 인수를 평가 하는 경우 `Nothing`, 두 번째 인수가 평가 되 고 반환 합니다.  
   
  예를 들어, 다음 코드에는 두 개의 `If` 식, 세 개의 인수를 사용 하 여 하나 및 두 개의 인수를 사용 하 여 하나입니다. 식을 계산 하 고 동일한 값을 반환 합니다.  

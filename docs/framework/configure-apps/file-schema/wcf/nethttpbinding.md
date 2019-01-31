@@ -1,15 +1,15 @@
 ---
-title: '&lt;netHttpBinding&gt;'
+title: <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: b0d81ca0-87c5-4090-8baa-e390fd3656d2
-ms.openlocfilehash: 97df2a9863bb4c1f31b24f0dbe370efaef0991a7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7e124b2fc8f6aed3ff3667133662b1c545a082ae
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54715285"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55288732"
 ---
-# <a name="ltnethttpbindinggt"></a>&lt;netHttpBinding&gt;
+# <a name="nethttpbinding"></a>\<netHttpBinding>
 Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTP를 통해 전달할 수 있는 끝점을 노출 하는 데 사용할 수 있는 바인딩을 나타냅니다. 이중 계약과 함께 사용하는 경우 WebSocket이 사용되고, 그렇지 않으면 HTTP가 사용됩니다.  
   
  \<system.ServiceModel>  

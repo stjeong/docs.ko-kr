@@ -1,17 +1,17 @@
 ---
-title: "액세스 가능한 오버 로드 된 '&lt;methodname&gt;' 축소 변환 없이이 인수로 호출할 수 있습니다: &lt;목록&gt;"
+title: 액세스 가능한 오버 로드 된 '<methodname>' 축소 변환 없이이 인수로 호출할 수 있습니다. <list>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrAmbiguousCall2
 ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
-ms.openlocfilehash: 2a34365c9f978f88e1e2b8c4cd4e673e6a49389b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 392c8937f7b12a4628b57be37388c350df8fa9c3
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54495827"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290006"
 ---
-# <a name="no-accessible-overloaded-ltmethodnamegt-can-be-called-with-these-arguments-without-a-narrowing-conversion-ltlistgt"></a>액세스 가능한 오버 로드 된 '&lt;methodname&gt;' 축소 변환 없이이 인수로 호출할 수 있습니다: &lt;목록&gt;
+# <a name="no-accessible-overloaded-methodname-can-be-called-with-these-arguments-without-a-narrowing-conversion-list"></a>액세스 가능한 오버 로드 된 '\<methodname >' 축소 변환 없이이 인수로 호출할 수 있습니다: \<목록 >
 오버로드된 메서드를 호출했지만 축소 변환 없이 제공된 인수 목록과 메서드를 일치시킬 수 없습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

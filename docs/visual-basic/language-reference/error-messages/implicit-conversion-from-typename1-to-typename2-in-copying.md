@@ -1,5 +1,5 @@
 ---
-title: 암시적으로 변환 &#39; &lt;typename1&gt; &#39; 를 &#39; &lt;typename2&gt; &#39; 의 값을 복사에 &#39;ByRef&#39; 매개 &#39; &lt; parametername&gt; &#39; 인수에 다시 합니다.
+title: ByRef' 매개 변수 '<typename1>'의 값을 해당 인수에 다시 복사하는 동안 발생하는 '<typename2>'에서 '<parametername>'(으)로의 암시적 변환입니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc41999
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC41999
 ms.assetid: ae48c738-dff8-4c0f-8931-bbb70b2c8b03
-ms.openlocfilehash: 9f05a5fbcbef828b4ffa920d8cade475cedb64d5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f875206b15ee048311e43624e197e78413de522e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537239"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279619"
 ---
-# <a name="implicit-conversion-from-39lttypename1gt39-to-39lttypename2gt39-in-copying-the-value-of-39byref39-parameter-39ltparameternamegt39-back-to-the-matching-argument"></a>암시적으로 변환 &#39; &lt;typename1&gt; &#39; 를 &#39; &lt;typename2&gt; &#39; 의 값을 복사에 &#39;ByRef&#39; 매개 &#39; &lt; parametername&gt; &#39; 인수에 다시 합니다.
+# <a name="implicit-conversion-from-typename1-to-typename2-in-copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument"></a>암시적으로 변환 '\<typename1 >'를 '\<typename2 >'에 'ByRef' 매개 변수의 값을 복사 '\<parametername >' 인수에 다시 합니다.
 프로시저를 사용 하 여 호출 되는 [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) 해당 매개 변수 보다 다양 한 형식의 인수입니다.  
   
  인수를 전달 하는 경우 `ByRef`, Visual Basic 참조를 전달 하는 대신 프로시저의 지역 변수에 인수 값을 복사 합니다. 이 경우 프로시저가 반환 되 면 Visual Basic에서 지역 변수 값을 호출 코드에서 인수에 다시 복사 해야 합니다.  

@@ -1,16 +1,16 @@
 ---
-title: '&lt;sqlWorkflowInstanceStore&gt;'
+title: <sqlWorkflowInstanceStore>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
-ms.openlocfilehash: f0393cd4192ca7e775b4d311d6dd5de462155c43
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 350ffc2eff94492b43acefd95c71e02f6525d55e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54520947"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55285378"
 ---
-# <a name="ltsqlworkflowinstancestoregt"></a>&lt;sqlWorkflowInstanceStore&gt;
+# <a name="sqlworkflowinstancestore"></a>\<sqlWorkflowInstanceStore>
 워크플로 서비스 인스턴스의 상태 정보를 SQL Server 2005 또는 SQL Server 2008 데이터베이스에 유지하도록 지원하는 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 기능을 구성하는 서비스 동작입니다. 이 기능에 대 한 자세한 내용은 참조 하세요. [SQL 워크플로 인스턴스 저장소](../../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md)합니다.  
   
 \<system.ServiceModel>  

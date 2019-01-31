@@ -1,15 +1,15 @@
 ---
-title: '&lt;netHttpsBinding&gt;'
+title: <netHttpsBinding>
 ms.date: 03/30/2017
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
-ms.openlocfilehash: ef3e77e610230ea29d1ba410d38bfa2dade601b9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 82d1d68a8d6c4954b47509db2adaf88f88ae625d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554259"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275784"
 ---
-# <a name="ltnethttpsbindinggt"></a>&lt;netHttpsBinding&gt;
+# <a name="nethttpsbinding"></a>\<netHttpsBinding>
 Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통해 전달할 수 있는 끝점을 노출 하는 데 사용할 수 있는 바인딩을 나타냅니다. 이중 계약과 함께 사용하는 경우 WebSocket이 사용되고, 그렇지 않으면 HTTPS가 사용됩니다.  
   
  루트 요소  

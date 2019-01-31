@@ -1,5 +1,5 @@
 ---
-title: 형식의 &#39; &lt;variablename&gt; &#39; 루프 범위와 단계 변수가 같은 형식으로 확대 되지 않으므로 유추할 수 없습니다.
+title: 루프 범위와 단계 변수는 같은 형식으로 변환할 수 없으므로 '<variablename>' 형식을 확대 변환할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - bc30982
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30982
 ms.assetid: 741e85d9-a747-42ad-a1e1-a3f1928aaff5
-ms.openlocfilehash: 1ae14426181778a78254db8a5cd968d60bbdc8f1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1f1df0c7391c027994caabadc4b857bec55f5938
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54631265"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55287497"
 ---
-# <a name="type-of-39ltvariablenamegt39-cannot-be-inferred-because-the-loop-bounds-and-the-step-variable-do-not-widen-to-the-same-type"></a>형식의 &#39; &lt;variablename&gt; &#39; 루프 범위와 단계 변수가 같은 형식으로 확대 되지 않으므로 유추할 수 없습니다.
+# <a name="type-of-variablename-cannot-be-inferred-because-the-loop-bounds-and-the-step-variable-do-not-widen-to-the-same-type"></a>유형의 '\<variablename >' 루프 범위와 단계 변수가 같은 형식으로 확대 되지 않으므로 유추할 수 없습니다.
 사용자가 작성 한 `For...Next` 루프는 다음 조건으로 인해 컴파일러가 루프 제어 변수의 데이터 형식을 유추할 수 없습니다.  
   
 -   `As` 절을 사용하여 루프 제어 변수의 데이터 형식을 지정하지 않았습니다.  

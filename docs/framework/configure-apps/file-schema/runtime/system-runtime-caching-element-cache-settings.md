@@ -1,5 +1,5 @@
 ---
-title: '&lt;system.runtime.caching&gt; 요소 (캐시 설정)'
+title: <system.runtime.caching> 요소(캐시 설정)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <system.runtime.caching> element
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4e5dba0269a5a368e40965b40e502c0627c76930
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a68af0727e6f2fc92f9c6875ec6566dc969bd65d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54590671"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275797"
 ---
-# <a name="ltsystemruntimecachinggt-element-cache-settings"></a>&lt;system.runtime.caching&gt; 요소 (캐시 설정)
+# <a name="systemruntimecaching-element-cache-settings"></a>\<system.runtime.caching > 요소 (캐시 설정)
 구성 파일의 <xref:System.Runtime.Caching.ObjectCache> 항목을 통해 기본 메모리 내 `memoryCache` 구현을 위한 구성을 제공합니다.  
   
  \<configuration>  

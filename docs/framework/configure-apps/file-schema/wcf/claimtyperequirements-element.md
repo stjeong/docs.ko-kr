@@ -1,15 +1,15 @@
 ---
-title: '&lt;claimTypeRequirements&gt; 요소'
+title: <claimTypeRequirements> 요소
 ms.date: 03/30/2017
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b
-ms.openlocfilehash: 32eafa3ce235b2087012bd5810a685ad5276e09d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 95cc1adf7ab37475e8d3eeb01750531a7f8ab249
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54632892"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279632"
 ---
-# <a name="ltclaimtyperequirementsgt-element"></a>&lt;claimTypeRequirements&gt; 요소
+# <a name="claimtyperequirements-element"></a>\<claimTypeRequirements > 요소
 필요한 클레임 형식의 컬렉션을 지정합니다.  
   
  페더레이션 시나리오에서 서비스는 들어오는 자격 증명에 대한 요구 사항을 기술합니다. 예를 들어, 들어오는 자격 증명은 특정 집합의 클레임 형식이어야 합니다. 이 컬렉션의 각 자식 요소는 페더레이션 자격 증명에 표시되어야 하는 필수 클레임 및 선택적 클레임의 형식을 지정합니다.  

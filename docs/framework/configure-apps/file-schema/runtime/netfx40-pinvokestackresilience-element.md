@@ -1,5 +1,5 @@
 ---
-title: '&lt;NetFx40_PInvokeStackResilience&gt; 요소'
+title: < NetFx40_PInvokeStackResilience > 요소
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <NetFx40_PInvokeStackResilience> element
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3742ab7c69b6c4870d00428ea7da9fee2a719925
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8bc0d7c9222c31900cad9a8be05c79f7f8a04719
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54684855"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55289343"
 ---
-# <a name="ltnetfx40pinvokestackresiliencegt-element"></a>&lt;NetFx40_PInvokeStackResilience&gt; 요소
+# <a name="netfx40pinvokestackresilience-element"></a>\<NetFx40_PInvokeStackResilience > 요소
 런타임이 잘못된 플랫폼 호출 선언을 실행 시간에 자동으로 수정할지를 지정합니다. 자동 수정을 수행하는 경우 관리 코드와 비관리 코드 간 전환 속도가 느려집니다.  
   
  \<configuration>  

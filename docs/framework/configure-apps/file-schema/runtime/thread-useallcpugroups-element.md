@@ -1,17 +1,17 @@
 ---
-title: '&lt;Thread_UseAllCpuGroups&gt; 요소'
+title: < Thread_UseAllCpuGroups > 요소
 ms.date: 03/30/2017
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 80f67502c61df13b17cfb3b75564d710e5fad2f9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 95411f5adde07c0d00124b2793b495c7ed8f49ef
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579943"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55288940"
 ---
-# <a name="ltthreaduseallcpugroupsgt-element"></a>&lt;Thread_UseAllCpuGroups&gt; 요소
+# <a name="threaduseallcpugroups-element"></a>\<Thread_UseAllCpuGroups > 요소
 런타임이 모든 CPU 그룹에 관리되는 스레드를 배포할지를 지정합니다.  
   
  \<configuration>  

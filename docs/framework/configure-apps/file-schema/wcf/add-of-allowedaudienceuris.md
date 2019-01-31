@@ -1,15 +1,15 @@
 ---
-title: '&lt;allowedAudienceUris&gt;의 &lt;add&gt;'
+title: <add>의 <allowedAudienceUris>
 ms.date: 03/30/2017
 ms.assetid: 4e7b7637-e0ea-4a91-988f-6b6ef28d9fc3
-ms.openlocfilehash: 2e3939f670bcb2424cfb1dfaa2b5e036bbf2888b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5538db902525b03513a69fcc1a5c06d0877b8e0e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569009"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55281153"
 ---
-# <a name="ltaddgt-of-ltallowedaudienceurisgt"></a>&lt;allowedAudienceUris&gt;의 &lt;add&gt;
+# <a name="add-of-allowedaudienceuris"></a>\<add> of \<allowedAudienceUris>
 <xref:System.IdentityModel.Tokens.SamlSecurityToken> 인스턴스에서 유효한 대상으로 지정할 수 있는 <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> 보안 토큰의 대상 URI를 추가합니다.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: 기본 속성 &#39; &lt;propertyname1&gt; &#39; 기본 속성과 충돌 &#39; &lt;propertyname2&gt; &#39; 에서 &#39; &lt;classname&gt; &#39;로 선언 해야 하므로 &#39;그림자&#39;
+title: 기본 속성 '<propertyname1>'은(는) '<propertyname2>'의 기본 속성 '<classname>'과(와) 충돌하므로 'Shadows'로 선언해야 합니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc40007
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40007
 ms.assetid: 692ccf76-5715-4f11-a972-84cf9de30bc1
-ms.openlocfilehash: 3099467fa3c5a162c13c9235fb8d55375953ba3a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bc75b01532ffb112622d7f9bc837490c627883b3
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521428"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270395"
 ---
-# <a name="default-property-39ltpropertyname1gt39-conflicts-with-default-property-39ltpropertyname2gt39-in-39ltclassnamegt39-and-so-should-be-declared-39shadows39"></a>기본 속성 &#39; &lt;propertyname1&gt; &#39; 기본 속성과 충돌 &#39; &lt;propertyname2&gt; &#39; 에서 &#39; &lt;classname&gt; &#39;로 선언 해야 하므로 &#39;그림자&#39;
+# <a name="default-property-propertyname1-conflicts-with-default-property-propertyname2-in-classname-and-so-should-be-declared-shadows"></a>기본 속성 '\<propertyname1 >' 기본 속성과 충돌 '\<propertyname2 >'에서 '\<classname >' h'로 선언 해야 하므로
 기본 클래스에 정의 된 속성과 동일한 이름을 가진 속성이 선언 됩니다. 이 이런 경우이 클래스의 속성이 기본 클래스 속성을 숨겨야 합니다.  
   
  이 메시지는 경고입니다. 기본적으로`Shadows` 로 간주됩니다. 경고를 숨기거나 오류로 처리하는 방법에 대한 자세한 내용은 [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)을 참조하세요.  

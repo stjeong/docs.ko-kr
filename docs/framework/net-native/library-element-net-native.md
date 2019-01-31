@@ -1,17 +1,17 @@
 ---
-title: '&lt;라이브러리&gt; 요소(.NET 네이티브)'
+title: <Library> 요소 (.NET 네이티브)
 ms.date: 03/30/2017
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e6615ab30fdc0d0ab65f135e1df4e206f5548dc7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7f2de27152200ed07e5f82b5dc08613451c7aa25
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54743788"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284910"
 ---
-# <a name="ltlibrarygt-element-net-native"></a>&lt;라이브러리&gt; 요소(.NET 네이티브)
+# <a name="library-element-net-native"></a>\<라이브러리 > 요소 (.NET 네이티브)
 런타임에 해당 메타데이터를 리플렉션에 사용할 수 있는 형식 및 형식 멤버가 포함된 어셈블리를 정의합니다.  
   
  \<Directives> 요소  

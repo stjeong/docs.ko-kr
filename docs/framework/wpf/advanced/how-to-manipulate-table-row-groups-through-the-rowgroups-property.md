@@ -1,5 +1,5 @@
 ---
-title: '방법: 테이블을 조작&#39;RowGroups 속성을 통한 s 행 그룹'
+title: '방법: RowGroups 속성을 통한 표의 행 그룹 조작'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - documents [WPF], manipulating row groups through RowGroups property
 - properties [WPF], RowGroups [WPF], manipulating row groups
 ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
-ms.openlocfilehash: 233ae0e76d175f4ce20a573aa2aa29d39106562e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6c1e3318afeb8147e96dc3abc5417f2c29509d13
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54700465"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55274900"
 ---
-# <a name="how-to-manipulate-a-table39s-row-groups-through-the-rowgroups-property"></a>방법: 테이블을 조작&#39;RowGroups 속성을 통한 s 행 그룹
+# <a name="how-to-manipulate-a-tables-row-groups-through-the-rowgroups-property"></a>방법: RowGroups 속성을 통한 표의 행 그룹 조작
 이 예제에서는 테이블의 행 그룹을 통해 수행할 수 있는 보다 일반적인 작업 중 일부는 <xref:System.Windows.Documents.Table.RowGroups%2A> 속성입니다.  
   
 ## <a name="example"></a>예제  

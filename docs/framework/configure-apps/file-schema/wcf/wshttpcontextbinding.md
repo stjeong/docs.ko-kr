@@ -1,15 +1,15 @@
 ---
-title: '&lt;wsHttpContextBinding&gt;'
+title: <wsHttpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
-ms.openlocfilehash: 8445829e0253d66723c3bcaf7416885cde6d9271
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 54387faf8bd56ce09bec7214465303fd3a211b13
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54559011"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55288966"
 ---
-# <a name="ltwshttpcontextbindinggt"></a>&lt;wsHttpContextBinding&gt;
+# <a name="wshttpcontextbinding"></a>\<wsHttpContextBinding>
 보호 수준을 서명해야 하는 <xref:System.ServiceModel.WSHttpBinding>의 컨텍스트를 제공합니다.  
   
 \<system.serviceModel>  

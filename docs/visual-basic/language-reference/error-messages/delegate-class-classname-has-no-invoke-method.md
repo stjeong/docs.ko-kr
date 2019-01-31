@@ -1,5 +1,5 @@
 ---
-title: 대리자 클래스 &#39; &lt;classname&gt; &#39; Invoke 메서드가 있으므로이 형식의 식은 메서드 호출의 대상일 수 없습니다
+title: "'<classname>' 대리자 클래스에는 Invoke 메서드가 없으므로 이러한 형식의 식은 프로시저 호출의 대상일 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30220
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30220
 ms.assetid: 6be0d61c-f2f9-4f9b-ab90-8871a0d7206d
-ms.openlocfilehash: d5421ea05968a221bbbf8f52a575550d1bca3cb2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8339d038f845b8568f31f3068a98ccccf580aeae
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54653160"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55286652"
 ---
-# <a name="delegate-class-39ltclassnamegt39-has-no-invoke-method-so-an-expression-of-this-type-cannot-be-the-target-of-a-method-call"></a>대리자 클래스 &#39; &lt;classname&gt; &#39; Invoke 메서드가 있으므로이 형식의 식은 메서드 호출의 대상일 수 없습니다
+# <a name="delegate-class-classname-has-no-invoke-method-so-an-expression-of-this-type-cannot-be-the-target-of-a-method-call"></a>대리자 클래스\<응용 프로그램 이름 >'에 Invoke 메서드가 하므로이 형식의 식은 메서드 호출의 대상일 수 없습니다
 에 대 한 호출 `Invoke` 때문에 실패 했습니다 대리자를 통해 `Invoke` 대리자 클래스에서 구현 되지 않았습니다.  
   
  **오류 ID:** BC30220  

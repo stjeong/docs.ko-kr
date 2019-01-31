@@ -1,5 +1,5 @@
 ---
-title: 특성 &#39; &lt;attributename&gt; &#39; 여러 번 적용할 수 없습니다
+title: "'<attributename>' 특성을 여러 번 사용할 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc30663
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30663
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
-ms.openlocfilehash: 6609ce299799bc3c4b78d48478e99e4d4101dd72
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 62e84d174e4e218472eda9b7c08ed677e0140438
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54565165"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55278709"
 ---
-# <a name="attribute-39ltattributenamegt39-cannot-be-applied-multiple-times"></a>특성 &#39; &lt;attributename&gt; &#39; 여러 번 적용할 수 없습니다
+# <a name="attribute-attributename-cannot-be-applied-multiple-times"></a>특성 '\<attributename >' 여러 번 적용할 수 없습니다
 특성 한 번만 적용할 수 있습니다. `AttributeUsage` 특성 특성을 두 번 이상 적용할 수 있는지 여부를 결정 합니다.  
   
  **오류 ID:** BC30663  

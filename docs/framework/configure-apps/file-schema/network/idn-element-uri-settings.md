@@ -1,15 +1,15 @@
 ---
-title: '&lt;idn&gt; 요소 (Uri 설정)'
+title: <idn> 요소(Uri 설정)
 ms.date: 03/30/2017
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
-ms.openlocfilehash: 21950beeefb23e81066623534774148e1f5d92ae
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6abbc70e16a6c9ff8e4a7b52df7a7c3d74c7498a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54580743"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55288914"
 ---
-# <a name="ltidngt-element-uri-settings"></a>&lt;idn&gt; 요소 (Uri 설정)
+# <a name="idn-element-uri-settings"></a>\<idn > 요소 (Uri 설정)
 다국어 도메인 이름 (IDN) 구문 분석 된 도메인 이름에 적용 됩니다 지정 합니다.  
   
 ## <a name="schema-hierarchy"></a>스키마 계층 구조  

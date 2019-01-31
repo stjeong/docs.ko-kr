@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;customTrackingQuery&gt;
+title: <customTrackingQuery> WCF의
 ms.date: 03/30/2017
 ms.assetid: 164446ae-8440-4b67-b217-6786cfae1e01
-ms.openlocfilehash: 234703e677f838dcdccdf857ba38b8729d25a488
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 0a5e7c034ce1ef12a8d7d5b1753e2e441e48e293
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146383"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55279489"
 ---
-# <a name="ltcustomtrackingquerygt-of-wcf"></a>WCF의 &lt;customTrackingQuery&gt;
+# <a name="customtrackingquery-of-wcf"></a>\<customTrackingQuery> of WCF
 
 코드 활동에서 정의 하는 이벤트를 추적 하는 데 사용 되는 쿼리를 나타냅니다. 추적 참가자가 사용자 지정 추적 레코드를 구독하려면 쿼리가 필요합니다.
 
@@ -17,11 +17,11 @@ ms.locfileid: "54146383"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<customTrackingQueries >  
-\<customTrackingQuery >  
+\<customTrackingQueries>  
+\<customTrackingQuery>  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,7 +61,7 @@ ms.locfileid: "54146383"
 |-------------|-----------------|  
 |[\<customTrackingQueries>](customtrackingqueries-of-wcf.md)|코드 활동에서 정의하는 이벤트를 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다.|
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>

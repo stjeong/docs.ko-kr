@@ -1,16 +1,16 @@
 ---
-title: '&lt;sendMessageChannelCache&gt;'
+title: <sendMessageChannelCache>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 241e428e-5030-4b13-8a0a-69f05288d3d9
-ms.openlocfilehash: dce81dec9067c25fc85b62cc4aa5860499347ab2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1c8e381aa81655e8e3246e783ee7da45623d83ca
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54657352"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55289252"
 ---
-# <a name="ltsendmessagechannelcachegt"></a>&lt;sendMessageChannelCache&gt;
+# <a name="sendmessagechannelcache"></a>\<sendMessageChannelCache>
 캐시 공유 수준, 채널 팩터리 캐시 설정 및 Send 메시징 활동을 사용 하 여 서비스 끝점에 메시지를 보내는 워크플로 위한 채널 캐시의 설정을 사용자 지정할 수 있는 서비스 동작입니다.  
   
 \<system.ServiceModel>  

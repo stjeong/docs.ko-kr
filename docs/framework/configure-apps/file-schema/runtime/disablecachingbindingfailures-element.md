@@ -1,5 +1,5 @@
 ---
-title: '&lt;disableCachingBindingFailures&gt; Element'
+title: <disableCachingBindingFailures> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 20cc7e37b2ea66cae9f28367f97b69ed43f1a13e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c99eb6b77a969a1c5003743b0407821e2537b683
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543869"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55289720"
 ---
-# <a name="ltdisablecachingbindingfailuresgt-element"></a>&lt;disableCachingBindingFailures&gt; Element
+# <a name="disablecachingbindingfailures-element"></a>\<disableCachingBindingFailures> Element
 검색 하 여 어셈블리를 찾을 수 없습니다 때문에 발생 하는 바인딩 실패 캐싱을 비활성화할지 여부를 지정 합니다.  
   
  \<구성 > 요소  

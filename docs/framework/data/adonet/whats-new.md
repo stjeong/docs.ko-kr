@@ -1,15 +1,15 @@
 ---
-title: 새로운&#39;ADO.NET의 새로운
+title: ADO.NET의 새로운 기능
 ms.date: 03/30/2017
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
-ms.openlocfilehash: cfb1546ccddc6a4f6f3668210832db3d7a88f632
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: efba4d3f0822aa6654eb55bd0aff059dbf84d02e
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54501597"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55283701"
 ---
-# <a name="what39s-new-in-adonet"></a>새로운&#39;ADO.NET의 새로운
+# <a name="whats-new-in-adonet"></a>ADO.NET의 새로운 기능
 다음은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에서 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]의 새로운 기능입니다.  
   
 ## <a name="sqlclient-data-provider"></a>SqlClient Data Provider  

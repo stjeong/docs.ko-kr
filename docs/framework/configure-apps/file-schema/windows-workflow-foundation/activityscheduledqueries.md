@@ -1,16 +1,16 @@
 ---
-title: '&lt;activityScheduledQueries&gt;'
+title: <activityScheduledQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: ca6e82f1-54f2-48d6-899c-9873065b5547
-ms.openlocfilehash: 2285dfae84f078483c03d85801051e29b79e74c3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e6891144d613623b199e7279aa091d4d7cbe4445
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54561844"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284559"
 ---
-# <a name="ltactivityscheduledqueriesgt"></a>&lt;activityScheduledQueries&gt;
+# <a name="activityscheduledqueries"></a>\<activityScheduledQueries>
 부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 활동 예약 레코드를 구독하려면 쿼리가 필요합니다.  
   
  추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

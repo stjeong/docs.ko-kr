@@ -1,15 +1,15 @@
 ---
-title: '&lt;serviceCredentials&gt;의 &lt;clientCertificate&gt;'
+title: <clientCertificate>의 <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-ms.openlocfilehash: e1334e42149de29c4fc7534863f02ede93c638ad
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: aceb30b6354bac5c327a5f4367344e5c9608b689
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54536830"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55286899"
 ---
-# <a name="ltclientcertificategt-of-ltservicecredentialsgt"></a>&lt;serviceCredentials&gt;의 &lt;clientCertificate&gt;
+# <a name="clientcertificate-of-servicecredentials"></a>\<clientCertificate >의 \<serviceCredentials >
 이중 통신 패턴에서 서비스의 클라이언트에 대한 메시지를 서명 및 암호화하는 데 사용하는 X.509 인증서를 정의합니다.  
   
  \<system.ServiceModel>  

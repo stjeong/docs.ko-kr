@@ -1,15 +1,15 @@
 ---
-title: '&lt;claimTypeRequirements&gt;의 &lt;add&gt;'
+title: <add>의 <claimTypeRequirements>
 ms.date: 03/30/2017
 ms.assetid: c68e83c9-39e8-4264-b1ce-b6a9eb5b98aa
-ms.openlocfilehash: 7c3516736f9aa4bbfcf24c2cd58c73438e5314b7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6a8c96fb2cb2050cac7b8853b84caecc883449d7
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54633273"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55268784"
 ---
-# <a name="ltaddgt-of-ltclaimtyperequirementsgt"></a>&lt;claimTypeRequirements&gt;의 &lt;add&gt;
+# <a name="add-of-claimtyperequirements"></a>\<추가 >의 \<claimTypeRequirements >
 페더레이션 자격 증명에 표시되어야 하는 필수 클레임 및 선택적 클레임의 형식을 지정합니다. 예를 들어, 서비스는 특정 집합의 클레임 형식이어야 하는 들어오는 자격 증명에 대한 요구 사항을 기술합니다.  
   
  \<system.serviceModel>  

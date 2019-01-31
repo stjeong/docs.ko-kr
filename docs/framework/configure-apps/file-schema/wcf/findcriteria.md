@@ -1,15 +1,15 @@
 ---
-title: '&lt;findCriteria&gt;'
+title: <findCriteria>
 ms.date: 03/30/2017
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
-ms.openlocfilehash: b90e6cab923075dbf750dc0d26a0eb1196cfde32
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e82312cb17fbd3f76f781ea37f761e946319a0a0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54741249"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284866"
 ---
-# <a name="ltfindcriteriagt"></a>&lt;findCriteria&gt;
+# <a name="findcriteria"></a>\<findCriteria>
 클라이언트 응용 프로그램에서 검색 서비스를 찾기 위해 사용하는 조건 집합을 제공하는 구성 요소입니다. 조건 (찾으려는 서비스 지정) 하는 검색 조건으로 그룹화 할 수 있습니다 및 찾기 종료 조건 (검색 지속 기간).  
   
  \<system.ServiceModel>  

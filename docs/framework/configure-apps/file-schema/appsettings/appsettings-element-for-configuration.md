@@ -1,5 +1,5 @@
 ---
-title: '&lt;appSettings&gt; 요소에 대 한 &lt;구성&gt;'
+title: <appSettings>의 <configuration> 요소
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings
@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 0ba57f51d3b1e78239677317933507ff009db035
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: dcdf8d0f11ae65353da08bba1f8d2fe5ab415c6b
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190933"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55289590"
 ---
 # <a name="appsettings-element-for-configuration"></a>\<appSettings > 요소에 대 한 \<구성 >
 
 사용자 지정 응용 프로그램 설정을 포함합니다. .NET Framework에서 제공 하는 미리 정의 된 구성 섹션입니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;**\<appSettings >**
+&nbsp;&nbsp;**\<appSettings>**
 
 ## <a name="syntax"></a>구문
 
@@ -41,7 +41,7 @@ ms.locfileid: "50190933"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<구성 >** 요소](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다. |
+| [**\<구성 >** 요소](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다. |
 
 ## <a name="child-elements"></a>자식 요소
 
@@ -61,7 +61,7 @@ ms.locfileid: "50190933"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 사용자 지정 응용 프로그램 설정을 정의하는 외부 응용 프로그램 설정 파일(*custom.config*)을 보여 줍니다.
+다음 예제에서는 사용자 지정 애플리케이션 설정을 정의하는 외부 애플리케이션 설정 파일(*custom.config*)을 보여 줍니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -70,7 +70,7 @@ ms.locfileid: "50190933"
 </appSettings>
 ```
 
-다음 예제에서는 외부 설정 파일의 설정을 사용하고 자체의 응용 프로그램 설정을 지정하는 응용 프로그램 구성 파일을 보여 줍니다.
+다음 예제에서는 외부 설정 파일의 설정을 사용하고 자체의 애플리케이션 설정을 지정하는 애플리케이션 구성 파일을 보여 줍니다.
 
 ```xml
 <configuration>
