@@ -1,5 +1,5 @@
 ---
-title: '리소스 파일을 포함할 수 없습니다 &#39; &lt;filename&gt;&#39;: &lt;오류 메시지&gt;'
+title: "'<filename>' 리소스 파일을 포함할 수 없습니다. <error message>"
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30143
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30143
 ms.assetid: 319e95b5-5176-4fe1-bc04-90075594b397
-ms.openlocfilehash: 9e693cf4f1c7c23784a7e5be1a9b6ecbe0ced9b9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 532c2a789fa366cc38056ebec6d1bd09eaa4c327
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737311"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55276018"
 ---
-# <a name="unable-to-embed-resource-file-39ltfilenamegt39-lterror-messagegt"></a>리소스 파일을 포함할 수 없습니다 &#39; &lt;filename&gt;&#39;: &lt;오류 메시지&gt;
+# <a name="unable-to-embed-resource-file-filename-error-message"></a>리소스 파일을 포함할 수 없습니다. '\<파일 이름 >': \<오류 메시지 >
 Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 생성 하려면 어셈블리 링커 (Al.exe, Alink 라고도)를 호출 합니다. 링커가 네이티브 COM+ 리소스 파일을 어셈블리에 직접 포함하는 동안 오류를 보고했습니다.  
   
  **오류 ID:** BC30143  

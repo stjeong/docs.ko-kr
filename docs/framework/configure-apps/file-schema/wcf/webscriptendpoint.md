@@ -1,15 +1,15 @@
 ---
-title: '&lt;webScriptEndpoint&gt;'
+title: <webScriptEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 85cb5ecf-351b-45f3-aa29-aa2e4b64bcdd
-ms.openlocfilehash: acafb5b6a5c4911dcf21a55cfb9e93883067e5ad
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3d95624c82388ed6219fc567dd2d3c17bedad7a1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54566387"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255291"
 ---
-# <a name="ltwebscriptendpointgt"></a>&lt;webScriptEndpoint&gt;
+# <a name="webscriptendpoint"></a>\<webScriptEndpoint>
 이 구성 요소에는 고정 된 표준 끝점을 정의 [ \<webHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) 자동으로 바인딩을 추가 합니다 [ \<enableWebScript >](../../../../../docs/framework/configure-apps/file-schema/wcf/enablewebscript.md) 동작 합니다. ASP.NET AJAX 응용 프로그램에서 호출되는 서비스를 기록할 때 이 엔드포인트를 사용합니다.  
   
 \<system.ServiceModel>  

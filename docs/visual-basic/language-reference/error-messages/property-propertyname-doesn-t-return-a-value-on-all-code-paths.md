@@ -1,5 +1,5 @@
 ---
-title: 속성 &#39; &lt;propertyname&gt; &#39; 대상이&#39;모든 코드 경로 에서만 값을 반환 하는 t
+title: "'<propertyname>' 속성이 일부 코드 경로에 대해서만 값을 반환합니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc42107
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42107
 ms.assetid: 06800966-9c3b-4844-9f13-83ac95607d32
-ms.openlocfilehash: b8059ebc9b6c1de685f2f04c3ee362ab8cf6d05e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1788d06aa5236d4cfc33999df86ad72c420b41df
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611256"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55269005"
 ---
-# <a name="property-39ltpropertynamegt39-doesn39t-return-a-value-on-all-code-paths"></a>속성 &#39; &lt;propertyname&gt; &#39; 대상이&#39;모든 코드 경로 에서만 값을 반환 하는 t
+# <a name="property-propertyname-doesnt-return-a-value-on-all-code-paths"></a>속성 '\<propertyname >' 일부 코드 경로의 값을 반환 하지 않습니다
 속성 '\<propertyname >' 일부 코드 경로의 값을 반환 하지 않습니다. 이 결과를 사용하면 런타임에 null 참조 예외가 발생할 수 있습니다.  
   
  속성 `Get` 프로시저 값을 반환 하지 않는 해당 코드를 통해 하나 이상의 경로가 있습니다.  

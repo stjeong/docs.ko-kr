@@ -1,5 +1,5 @@
 ---
-title: '&lt;requiredRuntime&gt; 요소'
+title: <requiredRuntime> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#requiredRuntime
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - <requiredRuntime> element
 - container tags, <requiredRuntime> element
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-ms.openlocfilehash: 66de3e30ce862cd317e80ea267bf22ce728aca82
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 5e528a8b81fa3d9abc4f345d18f01e33f483a4a9
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222131"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254732"
 ---
-# <a name="ltrequiredruntimegt-element"></a>&lt;requiredRuntime&gt; 요소
+# <a name="requiredruntime-element"></a>\<requiredRuntime > 요소
 
 애플리케이션에서 1.0 버전의 공용 언어 런타임만 지원하도록 지정합니다. 이 요소는 사용 되지 않으며 더 이상 사용 되지 않음을 합니다. 합니다 [ `supportedRuntime` ](supportedruntime-element.md) 요소를 대신 사용 해야 합니다.
 
-\<구성 > \<시작 > \<requiredRuntime >
+\<configuration> \<startup> \<requiredRuntime>
 
 ## <a name="syntax"></a>구문
 
@@ -86,4 +86,4 @@ safemode="true|false"/>
 
 - [시작 설정 스키마](index.md)
 - [구성 파일 스키마](../index.md)
-- [방법: .NET Framework 4 또는 이상 버전을 지원 하도록 앱 구성](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+- [방법: .NET Framework 4 이상 버전을 지원하도록 앱 구성](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)

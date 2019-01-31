@@ -5,14 +5,14 @@ helpviewer_keywords:
 - Windows Presentation Foundation [WPF], what's new
 - WPF [WPF], what's new
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
-ms.openlocfilehash: ac389d947417851309c388dd195b1400a20041ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6dc833ce3dc88b61ed6966c7b5ca2756f5012308
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54544343"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265352"
 ---
-# <a name="what39s-new-in-wpf-version-45"></a>WPF 버전 4.5의 새로운 기능
+# <a name="whats-new-in-wpf-version-45"></a>WPF 버전 4.5의 새로운 기능
 <a name="introduction"></a> 이 항목에서는의 새로운 기능과 향상 된 기능에 대 한 정보가 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 4.5 버전입니다.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  

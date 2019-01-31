@@ -1,5 +1,5 @@
 ---
-title: '&#39;설정&#39; 속성의 접근자 &#39; &lt;propertyname&gt; &#39; 에 액세스할 수 없습니다'
+title: "'<propertyname>' 속성의 'Set' 접근자에 액세스할 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc31102
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31102
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
-ms.openlocfilehash: a543506b06742f3ee9101edbac962e761ddd531d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1539eb1652d93402c349c65f77a3edc65b3beb57
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54606571"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55277565"
 ---
-# <a name="39set39-accessor-of-property-39ltpropertynamegt39-is-not-accessible"></a>&#39;설정&#39; 속성의 접근자 &#39; &lt;propertyname&gt; &#39; 에 액세스할 수 없습니다
+# <a name="set-accessor-of-property-propertyname-is-not-accessible"></a>'Set' 접근자 속성의 '\<propertyname >'에 액세스할 수 없습니다
 문에서 속성에 대 한 액세스 되지 않은 경우 속성의 값을 저장 하려고 `Set` 프로시저입니다.  
   
  경우는 [Set 문을](../../../visual-basic/language-reference/statements/set-statement.md) 수준 보다 더 제한적인 액세스를 사용 하 여 표시 됩니다 해당 [Property 문](../../../visual-basic/language-reference/statements/property-statement.md), 다음과 같은 경우 속성 값을 설정 하려는 시도가 실패할 수 있습니다.  

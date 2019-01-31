@@ -1,5 +1,5 @@
 ---
-title: '&#39;&lt;typename&gt; &#39; 대리자 형식이'
+title: "'<typename>'은(는) 대리자 형식입니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc32008
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC32008
 ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
-ms.openlocfilehash: 6676328d0c1ea459f5934b5f9e2cb66580adad40
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4278ea0fc6a8dc2c6a90b720d2da70b1c26f2a17
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737204"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55283454"
 ---
-# <a name="39lttypenamegt39-is-a-delegate-type"></a>&#39;&lt;typename&gt; &#39; 대리자 형식이
+# <a name="typename-is-a-delegate-type"></a>'\<typename >' 대리자 형식이
 '\<typename >' 대리자 형식이 있습니다. 인수 목록으로 단일 AddressOf 식만 허용 하는 대리자 생성 합니다. 종종 AddressOf 식은 대리자 구문 대신 사용할 수 있습니다.  
   
  `New` 대리자 클래스의 인스턴스를 만들고 절 대리자 생성자에는 잘못 된 인수 목록을 제공 합니다.  

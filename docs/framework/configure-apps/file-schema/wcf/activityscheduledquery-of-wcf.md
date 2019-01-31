@@ -1,15 +1,15 @@
 ---
-title: WCF의 &lt;activityScheduledQuery&gt;
+title: <activityScheduledQuery> WCF의
 ms.date: 03/30/2017
 ms.assetid: 25f6eee1-3d98-4c39-b517-c0813f03f106
-ms.openlocfilehash: fd7830bc178de0693f0632cea3b390d792408ec1
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 5087d56092296f8c68b719ec0945993adeb3de0a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147880"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55272905"
 ---
-# <a name="ltactivityscheduledquerygt-of-wcf"></a>WCF의 &lt;activityScheduledQuery&gt;
+# <a name="activityscheduledquery-of-wcf"></a>\<activityScheduledQuery > WCF의
 
 부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 활동 예약 레코드를 구독하려면 쿼리가 필요합니다.  
   
@@ -17,11 +17,11 @@ ms.locfileid: "54147880"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<activityScheduledQueries >  
-\<activityScheduledQuery >  
+\<activityScheduledQueries>  
+\<activityScheduledQuery>  
   
 ## <a name="syntax"></a>구문  
   

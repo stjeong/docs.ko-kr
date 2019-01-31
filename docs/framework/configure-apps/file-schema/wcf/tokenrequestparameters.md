@@ -1,15 +1,15 @@
 ---
-title: '&lt;tokenRequestParameters&gt;'
+title: <tokenRequestParameters>
 ms.date: 03/30/2017
 ms.assetid: 1fc2b90c-a61f-4337-ac4c-f341e596a781
-ms.openlocfilehash: fcc8d4123d7dfd8e2252a48e14129a5d84d34758
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 69ed16a1ca7ea616867a441c466b7281c76969ef
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54517931"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55270903"
 ---
-# <a name="lttokenrequestparametersgt"></a>&lt;tokenRequestParameters&gt;
+# <a name="tokenrequestparameters"></a>\<tokenRequestParameters>
 이 구성 요소에는 토큰 요청 시 메시지 본문에 포함시켜 보안 토큰 서비스로 전송할 추가 XML 요소를 지정하는 데 사용할 수 있는 자식 요소가 포함되어 있습니다.  
   
 ## <a name="see-also"></a>참고자료

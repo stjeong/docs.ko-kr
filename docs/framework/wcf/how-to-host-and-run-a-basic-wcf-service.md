@@ -1,5 +1,5 @@
 ---
-title: '방법: 호스트 및 기본 Windows Communication Foundation 서비스를 실행 합니다.'
+title: 호스트 및 기본 Windows Communication Foundation 서비스를 실행 하는 방법
 ms.date: 09/14/2018
 dev_langs:
 - csharp
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - WCF services [WCF]
 - WCF services [WCF], running
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-ms.openlocfilehash: 710ccd69d7b0f8cd8cd3e04729fd952308a3fb4a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3a029ef23ba3e9a0dd62e410739fa8734acc202a
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129378"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55277773"
 ---
-# <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>방법: 호스트 및 기본 Windows Communication Foundation 서비스를 실행 합니다.
+# <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>호스트 및 기본 Windows Communication Foundation 서비스를 실행 하는 방법
 
-WCF(Windows Communication Foundation) 응용 프로그램을 만드는 데 필요한 6가지 작업 중 세 번째 작업입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md) 항목을 참조하세요.
+WCF(Windows Communication Foundation) 애플리케이션을 만드는 데 필요한 6가지 작업 중 세 번째 작업입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](getting-started-tutorial.md) 항목을 참조하세요.
 
-이 항목에서는 콘솔 응용 프로그램에서 WCF(Windows Communication Foundation) 서비스를 호스팅하는 방법에 대해 설명합니다. 이 절차는 다음 단계로 구성됩니다.
+이 항목에서는 콘솔 애플리케이션에서 WCF(Windows Communication Foundation) 서비스를 호스팅하는 방법에 대해 설명합니다. 이 절차는 다음 단계로 구성됩니다.
 
 - 서비스를 호스팅할 콘솔 응용 프로그램 프로젝트를 만듭니다.
 
@@ -142,14 +142,14 @@ End Module
 
 **2 단계** –의 인스턴스를 만듭니다는 <xref:System.ServiceModel.ServiceHost> 서비스를 호스트 하는 클래스입니다. 생성자는 서비스 계약을 구현하는 클래스 형식과 서비스의 기본 주소, 두 가지 매개 변수를 사용합니다.
 
-**3 단계** – 만듭니다는 <xref:System.ServiceModel.Description.ServiceEndpoint> 인스턴스. 서비스 엔드포인트는 주소, 바인딩 및 서비스 계약으로 구성되어 있습니다. 따라서 <xref:System.ServiceModel.Description.ServiceEndpoint> 생성자는 서비스 계약 인터페이스 형식, 바인딩 및 주소를 사용합니다. 서비스 계약은 사용자가 정의한 `ICalculator`이며 서비스 형식에 구현합니다. 이 예제에 사용된 바인딩은 WS-* 사양을 따르는 엔드포인트에 연결하는 데 사용되는 기본 바인딩인 <xref:System.ServiceModel.WSHttpBinding>입니다. WCF 바인딩에 대한 자세한 내용은 [WCF 바인딩 개요](../../../docs/framework/wcf/bindings-overview.md)를 참조하세요. 엔드포인트를 식별하기 위해 주소가 기본 주소에 추가됩니다. 끝점에 대 한 정규화 된 주소 이므로이 코드에서 지정 된 주소는 "CalculatorService" `"http://localhost:8000/GettingStarted/CalculatorService"`합니다.
+**3 단계** – 만듭니다는 <xref:System.ServiceModel.Description.ServiceEndpoint> 인스턴스. 서비스 엔드포인트는 주소, 바인딩 및 서비스 계약으로 구성되어 있습니다. 따라서 <xref:System.ServiceModel.Description.ServiceEndpoint> 생성자는 서비스 계약 인터페이스 형식, 바인딩 및 주소를 사용합니다. 서비스 계약은 사용자가 정의한 `ICalculator`이며 서비스 형식에 구현합니다. 이 예제에 사용된 바인딩은 WS-* 사양을 따르는 엔드포인트에 연결하는 데 사용되는 기본 바인딩인 <xref:System.ServiceModel.WSHttpBinding>입니다. WCF 바인딩에 대한 자세한 내용은 [WCF 바인딩 개요](bindings-overview.md)를 참조하세요. 엔드포인트를 식별하기 위해 주소가 기본 주소에 추가됩니다. 끝점에 대 한 정규화 된 주소 이므로이 코드에서 지정 된 주소는 "CalculatorService" `"http://localhost:8000/GettingStarted/CalculatorService"`합니다.
 
     > [!IMPORTANT]
-    > Adding a service endpoint is optional when using .NET Framework 4 or later. In these versions, if no endpoints are added in code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
+    > Adding a service endpoint is optional when using .NET Framework 4 or later. In these versions, if no endpoints are added in code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).
 
-**4 단계** – 메타 데이터 교환을 사용 하도록 설정 합니다. 클라이언트는 메타데이터 교환을 사용하여 서비스 작업을 호출하는 데 사용되는 프록시를 생성합니다. 메타데이터 교환을 활성화하려면 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 인스턴스를 만들고 해당 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정한 다음, 동작을 <xref:System.ServiceModel.ServiceHost> 인스턴스의 <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` 컬렉션에 추가합니다.
+**4 단계** – 메타 데이터 교환을 사용 하도록 설정 합니다. 클라이언트는 메타데이터 교환을 사용하여 서비스 작업을 호출하는 데 사용되는 프록시를 생성합니다. 메타데이터 교환을 활성화하려면 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 인스턴스를 만들고 해당 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정한 다음 동작을 <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> 인스턴스의 <xref:System.ServiceModel.ServiceHost> 컬렉션에 추가합니다.
 
-**5 단계** Open –는 <xref:System.ServiceModel.ServiceHost> 들어오는 메시지를 수신 대기 합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. 안전 하 게에서 throw 된 예외를 catch 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.ServiceHost>를 참조 하세요 [사용 하 여 닫기 및 중단 WCF 클라이언트 리소스를 해제 하려면](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
+**5 단계** Open –는 <xref:System.ServiceModel.ServiceHost> 들어오는 메시지를 수신 대기 합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. 안전 하 게에서 throw 된 예외를 catch 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.ServiceHost>를 참조 하세요 [사용 하 여 닫기 및 중단 WCF 클라이언트 리소스를 해제 하려면](samples/use-close-abort-release-wcf-client-resources.md)
 
 > [!IMPORTANT]
 > 코드에서 변경한 내용을 반영 하도록 GettingStartedLib에서 App.config를 편집 합니다.
@@ -396,18 +396,18 @@ End Module
 ```
 
 > [!NOTE]
-> 이러한 서비스에는 수신 대기를 위해 시스템에 HTTP 주소를 등록할 권한이 있어야 합니다. 관리자 계정에는 이 권한이 있지만, 관리자 이외의 계정에는 HTTP 네임스페이스에 대한 권한을 부여해야 합니다. 네임스페이스 예약을 구성하는 방법에 대한 자세한 내용은 [HTTP 및 HTTPS 구성](../../../docs/framework/wcf/feature-details/configuring-http-and-https.md)을 참조하세요. Visual Studio에서 실행하는 경우 service.exe는 관리자 권한으로 실행해야 합니다.
+> 이러한 서비스에는 수신 대기를 위해 시스템에 HTTP 주소를 등록할 권한이 있어야 합니다. 관리자 계정에는 이 권한이 있지만, 관리자 이외의 계정에는 HTTP 네임스페이스에 대한 권한을 부여해야 합니다. 네임스페이스 예약을 구성하는 방법에 대한 자세한 내용은 [HTTP 및 HTTPS 구성](feature-details/configuring-http-and-https.md)을 참조하세요. Visual Studio에서 실행하는 경우 service.exe는 관리자 권한으로 실행해야 합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
 서비스가 실행되고 있습니다. 다음 태스크에서는 WCF 클라이언트를 만듭니다.
 
 > [!div class="nextstepaction"]
-> [어떻게: WCF 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+> [방법: WCF 클라이언트 만들기](how-to-create-a-wcf-client.md)
 
-문제 해결 정보는 [초보자를 위한 자습서 문제 해결](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md)을 참조하세요.
+문제 해결 정보는 [초보자를 위한 자습서 문제 해결](troubleshooting-the-getting-started-tutorial.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-- [시작](../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [자체 호스팅](../../../docs/framework/wcf/samples/self-host.md)
+- [시작](samples/getting-started-sample.md)
+- [자체 호스팅](samples/self-host.md)

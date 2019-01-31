@@ -1,5 +1,5 @@
 ---
-title: '&#39;&lt;typename&gt; &#39; 에서 상속할 수 없습니다 &lt;형식&gt; &#39; &lt;basetypename&gt; &#39; 자료의 액세스를 확장 하므로 &lt;형식&gt; 어셈블리 외부에서'
+title: "'<typename>'은(는) 기본 <type>의 액세스를 해당 어셈블리 범위 밖으로 확장하므로 <basetypename> '<type>'에서 상속할 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30910
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30910
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4
-ms.openlocfilehash: 108025132bdd0fa86df5ed142aaa39c7b7e18062
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 226c85f887ecc706a5cb554c2163742f10896141
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54556485"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55269824"
 ---
-# <a name="39lttypenamegt39-cannot-inherit-from-lttypegt-39ltbasetypenamegt39-because-it-expands-the-access-of-the-base-lttypegt-outside-the-assembly"></a>&#39;&lt;typename&gt; &#39; 에서 상속할 수 없습니다 &lt;형식&gt; &#39; &lt;basetypename&gt; &#39; 자료의 액세스를 확장 하므로 &lt;형식&gt; 어셈블리 외부에서
+# <a name="typename-cannot-inherit-from-type-basetypename-because-it-expands-the-access-of-the-base-type-outside-the-assembly"></a>'\<typename >'에서 상속할 수 없습니다 \<유형 > '\<basetypename >' 기본에 대 한 액세스를 확장 하므로 \<유형 > 어셈블리 외부에서
 기본 클래스에서 상속 하는 클래스 또는 인터페이스 또는 인터페이스의 하지만 덜 제한적인 액세스 수준이 있습니다.  
   
  예를 들어,를 `Public` 인터페이스에서 상속 되는 `Friend` 인터페이스 또는 `Protected` 클래스에서 상속을 `Private` 클래스. 이 기본 클래스 또는 인터페이스 의도 한 수준 이상의 액세스를 제공 합니다.  

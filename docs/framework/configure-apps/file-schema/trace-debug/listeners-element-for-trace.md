@@ -1,5 +1,5 @@
 ---
-title: '&lt;수신기&gt; 요소에 대 한 &lt;추적&gt;'
+title: <listeners>에 대한 <trace> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - <listeners> element
 - listeners element
 ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
-ms.openlocfilehash: d98c286a49aa6439b6b82b5982a2ea4690c98b43
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: cc6ba06127703fbda5d9edf8211b4b206127cbda
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083823"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271683"
 ---
-# <a name="ltlistenersgt-element-for-lttracegt"></a>&lt;수신기&gt; 요소에 대 한 &lt;추적&gt;
+# <a name="listeners-element-for-trace"></a>\<수신기 > 요소에 대 한 \<추적 >
 저장소를 수집 하는 수신기를 지정 하 고 메시지를 라우팅합니다. 수신기는 추적 출력을 적절 한 대상입니다.  
   
  \<구성 > 요소  

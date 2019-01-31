@@ -1,15 +1,15 @@
 ---
-title: '&lt;ws2007FederationHttpBinding&gt;의 &lt;security&gt; 요소'
+title: <security> 요소 <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-ms.openlocfilehash: 32dcf2995780c4a92109232bbdf8d92b3365fdd7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d533a930bfa57f523d7800205c230583559cb141
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54629584"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55272892"
 ---
-# <a name="ltsecuritygt-element-of-ltws2007federationhttpbindinggt"></a>&lt;ws2007FederationHttpBinding&gt;의 &lt;security&gt; 요소
+# <a name="security-element-of-ws2007federationhttpbinding"></a>\<보안 > 요소의 \<ws2007FederationHttpBinding >
 보안 설정을 정의 합니다 [ \<ws2007FederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) 요소입니다.  
   
  \<system.ServiceModel>  

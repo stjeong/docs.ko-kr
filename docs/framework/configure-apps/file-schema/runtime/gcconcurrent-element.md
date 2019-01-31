@@ -1,5 +1,5 @@
 ---
-title: '&lt;gcConcurrent&gt; Element'
+title: <gcConcurrent> 요소
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4c83576c5c46d9a32f990d23fa20b116be36e4c0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ae20e33f610acf77f2039b94803a19d371b771c0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611998"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55265989"
 ---
-# <a name="ltgcconcurrentgt-element"></a>&lt;gcConcurrent&gt; Element
+# <a name="gcconcurrent-element"></a>\<gcConcurrent> Element
 공용 언어 런타임이 별도 스레드에서 가비지 컬렉션을 실행하는지 여부를 지정합니다.  
   
  \<configuration>  

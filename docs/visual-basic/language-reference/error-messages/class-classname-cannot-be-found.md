@@ -1,5 +1,5 @@
 ---
-title: 클래스 &#39; &lt;classname&gt; &#39; 찾을 수 없습니다
+title: "'<classname>' 클래스를 찾을 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - bc31098
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31098
 ms.assetid: 72528d02-77b7-4b4c-8b9e-d12f666f92ef
-ms.openlocfilehash: 5f08fdb67611fe5fcee8b13f08162a62f6db59b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cdc610bf70480981442d6de08975dc1cafddd8d0
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54744988"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55271605"
 ---
-# <a name="class-39ltclassnamegt39-cannot-be-found"></a>클래스 &#39; &lt;classname&gt; &#39; 찾을 수 없습니다
+# <a name="class-classname-cannot-be-found"></a>클래스의\<응용 프로그램 이름 >' 찾을 수 없습니다
 클래스의\<응용 프로그램 이름 >' 찾을 수 없습니다. 대개 'Microsoft.VisualBasic.dll'이 일치하지 않으면 이러한 상황이 발생합니다.  
   
  정의된 멤버를 찾을 수 없습니다.  

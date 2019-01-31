@@ -1,5 +1,5 @@
 ---
-title: 비-CLS 규격 &lt;membername&gt; CLS 규격 인터페이스에 허용 되지 않습니다
+title: CLS 규격 인터페이스에는 CLS 규격이 아닌 <membername>을(를) 사용할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - bc40033
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC40033
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
-ms.openlocfilehash: c837065d2d448fc2523cfbd18efac962445f8bf0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: aeacc49faad6198a9341a1ec7d010f1cd173912d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54627697"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55288979"
 ---
-# <a name="non-cls-compliant-ltmembernamegt-is-not-allowed-in-a-cls-compliant-interface"></a>비-CLS 규격 &lt;membername&gt; CLS 규격 인터페이스에 허용 되지 않습니다
+# <a name="non-cls-compliant-membername-is-not-allowed-in-a-cls-compliant-interface"></a>비-CLS 규격 \<membername > CLS 규격 인터페이스에 허용 되지 않습니다
 속성, 프로시저 또는 인터페이스의 이벤트로 표시 됩니다 `<CLSCompliant(True)>` 인터페이스 자체으로 표시 되 면 `<CLSCompliant(False)>` 되거나 표시 되지 않습니다.  
   
  호환 되어야 하는 인터페이스에 대 한 합니다 [Language Independence and Language-independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS)와 모든 해당 멤버 규정을 준수 해야 합니다.  
