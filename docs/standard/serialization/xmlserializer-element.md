@@ -1,56 +1,56 @@
 ---
-title: '&lt;xmlSerializer&gt; 요소'
+title: <xmlSerializer> 요소
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <xmlSerializer> element
 - XML serialization, configuration
 - xmlSerializer element
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
-ms.openlocfilehash: 4b511dc229c9e8321b91fbb0f9395627680e5d12
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2919e8d4c1af858973ff3d2b58b4d3bc4f925527
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54591957"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258255"
 ---
-# <a name="ltxmlserializergt-element"></a><span data-ttu-id="eeaab-102">&lt;xmlSerializer&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-102">&lt;xmlSerializer&gt; Element</span></span>
-<span data-ttu-id="eeaab-103"><xref:System.Xml.Serialization.XmlSerializer>의 진행에 대한 추가 검사가 수행되었는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-103">Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.</span></span>  
+# <a name="xmlserializer-element"></a><span data-ttu-id="a4388-102">\<xmlSerializer > 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-102">\<xmlSerializer> Element</span></span>
+<span data-ttu-id="a4388-103"><xref:System.Xml.Serialization.XmlSerializer>의 진행에 대한 추가 검사가 수행되었는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-103">Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.</span></span>  
   
- <span data-ttu-id="eeaab-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="eeaab-104">\<configuration></span></span>  
-<span data-ttu-id="eeaab-105">\<system.xml.serialization></span><span class="sxs-lookup"><span data-stu-id="eeaab-105">\<system.xml.serialization></span></span>  
+ <span data-ttu-id="a4388-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="a4388-104">\<configuration></span></span>  
+<span data-ttu-id="a4388-105">\<system.xml.serialization></span><span class="sxs-lookup"><span data-stu-id="a4388-105">\<system.xml.serialization></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="eeaab-106">구문</span><span class="sxs-lookup"><span data-stu-id="eeaab-106">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a4388-106">구문</span><span class="sxs-lookup"><span data-stu-id="a4388-106">Syntax</span></span>  
   
 ```xml  
 <xmlSerializer checkDeserializerAdvance = "true"|"false" />  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="eeaab-107">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-107">Attributes and Elements</span></span>  
- <span data-ttu-id="eeaab-108">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="a4388-107">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-107">Attributes and Elements</span></span>  
+ <span data-ttu-id="a4388-108">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="eeaab-109">특성</span><span class="sxs-lookup"><span data-stu-id="eeaab-109">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="a4388-109">특성</span><span class="sxs-lookup"><span data-stu-id="a4388-109">Attributes</span></span>  
   
-|<span data-ttu-id="eeaab-110">특성</span><span class="sxs-lookup"><span data-stu-id="eeaab-110">Attribute</span></span>|<span data-ttu-id="eeaab-111">설명</span><span class="sxs-lookup"><span data-stu-id="eeaab-111">Description</span></span>|  
+|<span data-ttu-id="a4388-110">특성</span><span class="sxs-lookup"><span data-stu-id="a4388-110">Attribute</span></span>|<span data-ttu-id="a4388-111">설명</span><span class="sxs-lookup"><span data-stu-id="a4388-111">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="eeaab-112">**checkDeserializeAdvances**</span><span class="sxs-lookup"><span data-stu-id="eeaab-112">**checkDeserializeAdvances**</span></span>|<span data-ttu-id="eeaab-113"><xref:System.Xml.Serialization.XmlSerializer>의 진행률이 검사되었는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-113">Specifies whether the progress of the <xref:System.Xml.Serialization.XmlSerializer> is checked.</span></span> <span data-ttu-id="eeaab-114">특성을 "true" 또는 "false"로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-114">Set the attribute to "true" or "false".</span></span> <span data-ttu-id="eeaab-115">기본값은 "true"입니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-115">The default is "true".</span></span>|  
-|<span data-ttu-id="eeaab-116">**useLegacySerializationGeneration**</span><span class="sxs-lookup"><span data-stu-id="eeaab-116">**useLegacySerializationGeneration**</span></span>|<span data-ttu-id="eeaab-117"><xref:System.Xml.Serialization.XmlSerializer>가 C# 코드를 파일에 쓴 다음 어셈블리로 컴파일하여 어셈블리를 생성하는 레거시 serialization 생성을 사용하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-117">Specifies whether the <xref:System.Xml.Serialization.XmlSerializer> uses legacy serialization generation which generates assemblies by writing C# code to a file and then compiling it to an assembly.</span></span> <span data-ttu-id="eeaab-118">기본값은 **false**입니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-118">The default is **false**.</span></span>|  
+|<span data-ttu-id="a4388-112">**checkDeserializeAdvances**</span><span class="sxs-lookup"><span data-stu-id="a4388-112">**checkDeserializeAdvances**</span></span>|<span data-ttu-id="a4388-113"><xref:System.Xml.Serialization.XmlSerializer>의 진행률이 검사되었는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-113">Specifies whether the progress of the <xref:System.Xml.Serialization.XmlSerializer> is checked.</span></span> <span data-ttu-id="a4388-114">특성을 "true" 또는 "false"로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-114">Set the attribute to "true" or "false".</span></span> <span data-ttu-id="a4388-115">기본값은 "true"입니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-115">The default is "true".</span></span>|  
+|<span data-ttu-id="a4388-116">**useLegacySerializationGeneration**</span><span class="sxs-lookup"><span data-stu-id="a4388-116">**useLegacySerializationGeneration**</span></span>|<span data-ttu-id="a4388-117"><xref:System.Xml.Serialization.XmlSerializer>가 C# 코드를 파일에 쓴 다음 어셈블리로 컴파일하여 어셈블리를 생성하는 레거시 serialization 생성을 사용하는지 여부를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-117">Specifies whether the <xref:System.Xml.Serialization.XmlSerializer> uses legacy serialization generation which generates assemblies by writing C# code to a file and then compiling it to an assembly.</span></span> <span data-ttu-id="a4388-118">기본값은 **false**입니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-118">The default is **false**.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="eeaab-119">자식 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-119">Child Elements</span></span>  
- <span data-ttu-id="eeaab-120">없음</span><span class="sxs-lookup"><span data-stu-id="eeaab-120">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="a4388-119">자식 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-119">Child Elements</span></span>  
+ <span data-ttu-id="a4388-120">없음</span><span class="sxs-lookup"><span data-stu-id="a4388-120">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="eeaab-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-121">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="a4388-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-121">Parent Elements</span></span>  
   
-|<span data-ttu-id="eeaab-122">요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-122">Element</span></span>|<span data-ttu-id="eeaab-123">설명</span><span class="sxs-lookup"><span data-stu-id="eeaab-123">Description</span></span>|  
+|<span data-ttu-id="a4388-122">요소</span><span class="sxs-lookup"><span data-stu-id="a4388-122">Element</span></span>|<span data-ttu-id="a4388-123">설명</span><span class="sxs-lookup"><span data-stu-id="a4388-123">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="eeaab-124">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-124">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)|<span data-ttu-id="eeaab-125"><xref:System.Xml.Serialization.XmlSerializer> 및 <xref:System.Xml.Serialization.XmlSchemaImporter> 클래스에 대한 구성 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-125">Contains configuration settings for the <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Xml.Serialization.XmlSchemaImporter> classes.</span></span>|  
+|[<span data-ttu-id="a4388-124">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-124">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)|<span data-ttu-id="a4388-125"><xref:System.Xml.Serialization.XmlSerializer> 및 <xref:System.Xml.Serialization.XmlSchemaImporter> 클래스에 대한 구성 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-125">Contains configuration settings for the <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Xml.Serialization.XmlSchemaImporter> classes.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="eeaab-126">설명</span><span class="sxs-lookup"><span data-stu-id="eeaab-126">Remarks</span></span>  
- <span data-ttu-id="eeaab-127">기본적으로 <xref:System.Xml.Serialization.XmlSerializer>는 신뢰할 수 없는 데이터를 deserialize할 때 잠재적 서비스 거부 공격에 대한 추가 보안 계층을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-127">By default, the <xref:System.Xml.Serialization.XmlSerializer> provides an additional layer of security against potential denial of service attacks when deserializing untrusted data.</span></span> <span data-ttu-id="eeaab-128">deserialization 도중 무한 루프의 탐지를 시도하여 이러한 보안을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-128">It does so by attempting to detect infinite loops during deserialization.</span></span> <span data-ttu-id="eeaab-129">이러한 조건이 발견 되 면 다음 메시지와 함께 예외가 throw 됩니다. "내부 오류: 기본 스트림에 대 한를 역직렬화 하지 못했습니다."</span><span class="sxs-lookup"><span data-stu-id="eeaab-129">If such a condition is detected, an exception is thrown with the following message: "Internal error: deserialization failed to advance over underlying stream."</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a4388-126">설명</span><span class="sxs-lookup"><span data-stu-id="a4388-126">Remarks</span></span>  
+ <span data-ttu-id="a4388-127">기본적으로 <xref:System.Xml.Serialization.XmlSerializer>는 신뢰할 수 없는 데이터를 deserialize할 때 잠재적 서비스 거부 공격에 대한 추가 보안 계층을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-127">By default, the <xref:System.Xml.Serialization.XmlSerializer> provides an additional layer of security against potential denial of service attacks when deserializing untrusted data.</span></span> <span data-ttu-id="a4388-128">deserialization 도중 무한 루프의 탐지를 시도하여 이러한 보안을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-128">It does so by attempting to detect infinite loops during deserialization.</span></span> <span data-ttu-id="a4388-129">이러한 조건이 발견 되 면 다음 메시지와 함께 예외가 throw 됩니다. "내부 오류: 기본 스트림에 대 한를 역직렬화 하지 못했습니다."</span><span class="sxs-lookup"><span data-stu-id="a4388-129">If such a condition is detected, an exception is thrown with the following message: "Internal error: deserialization failed to advance over underlying stream."</span></span>  
   
- <span data-ttu-id="eeaab-130">이 메시지가 반드시 서비스 거부 공격이 진행 중임을 의미하는 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-130">Receiving this message does not necessarily indicate that a denial of service attack is in progress.</span></span> <span data-ttu-id="eeaab-131">드문 경우지만 무한 루프 검색 메커니즘이 가양성(false positive)을 생성하여 적법한 들어오는 메시지에 대해 예외가 throw될 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-131">In some rare circumstances, the infinite loop detection mechanism produces a false positive and the exception is thrown for a legitimate incoming message.</span></span> <span data-ttu-id="eeaab-132">특정 애플리케이션에서 적법한 메시지가 이러한 추가 보호 계층에 의해 거부된 경우 **checkDeserializeAdvances** 특성을 “false”로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-132">If you find that in your particular application legitimate messages are being rejected by this extra layer of protection, set **checkDeserializeAdvances** attribute to "false".</span></span>  
+ <span data-ttu-id="a4388-130">이 메시지가 반드시 서비스 거부 공격이 진행 중임을 의미하는 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-130">Receiving this message does not necessarily indicate that a denial of service attack is in progress.</span></span> <span data-ttu-id="a4388-131">드문 경우지만 무한 루프 검색 메커니즘이 가양성(false positive)을 생성하여 적법한 들어오는 메시지에 대해 예외가 throw될 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-131">In some rare circumstances, the infinite loop detection mechanism produces a false positive and the exception is thrown for a legitimate incoming message.</span></span> <span data-ttu-id="a4388-132">특정 애플리케이션에서 적법한 메시지가 이러한 추가 보호 계층에 의해 거부된 경우 **checkDeserializeAdvances** 특성을 “false”로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-132">If you find that in your particular application legitimate messages are being rejected by this extra layer of protection, set **checkDeserializeAdvances** attribute to "false".</span></span>  
   
-## <a name="example"></a><span data-ttu-id="eeaab-133">예제</span><span class="sxs-lookup"><span data-stu-id="eeaab-133">Example</span></span>  
- <span data-ttu-id="eeaab-134">다음 코드 예제에서는 **checkDeserializeAdvances** 특성을 “false”로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="eeaab-134">The following code example sets the **checkDeserializeAdvances** attribute to "false".</span></span>  
+## <a name="example"></a><span data-ttu-id="a4388-133">예제</span><span class="sxs-lookup"><span data-stu-id="a4388-133">Example</span></span>  
+ <span data-ttu-id="a4388-134">다음 코드 예제에서는 **checkDeserializeAdvances** 특성을 “false”로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a4388-134">The following code example sets the **checkDeserializeAdvances** attribute to "false".</span></span>  
   
 ```xml  
 <configuration>  
@@ -60,8 +60,8 @@ ms.locfileid: "54591957"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="eeaab-135">참고자료</span><span class="sxs-lookup"><span data-stu-id="eeaab-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a4388-135">참고자료</span><span class="sxs-lookup"><span data-stu-id="a4388-135">See also</span></span>
 
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [<span data-ttu-id="eeaab-136">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="eeaab-136">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)
-- [<span data-ttu-id="eeaab-137">XML 및 SOAP serialization</span><span class="sxs-lookup"><span data-stu-id="eeaab-137">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [<span data-ttu-id="a4388-136">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="a4388-136">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)
+- [<span data-ttu-id="a4388-137">XML 및 SOAP serialization</span><span class="sxs-lookup"><span data-stu-id="a4388-137">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)
