@@ -1,23 +1,23 @@
 ---
-title: '&lt;transportConfigurationType&gt;의 &lt;add&gt;'
+title: <add>의 <transportConfigurationType>
 ms.date: 03/30/2017
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-ms.openlocfilehash: 2a72fe8cfa78c7e6edfec9f9f6ff8f1f55eceb15
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 84ad745e7789fc2de8dcc23f3607b63702af05a1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54656819"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55263456"
 ---
-# <a name="ltaddgt-of-lttransportconfigurationtypegt"></a><span data-ttu-id="4b7d6-102">&lt;transportConfigurationType&gt;의 &lt;add&gt;</span><span class="sxs-lookup"><span data-stu-id="4b7d6-102">&lt;add&gt; of &lt;transportConfigurationType&gt;</span></span>
-<span data-ttu-id="4b7d6-103">이 요소는 특정 전송 형식을 식별하는 키/값 쌍입니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-103">This element is a key/value pair, which identifies the type of a particular transport.</span></span>  
+# <a name="add-of-transportconfigurationtype"></a><span data-ttu-id="4e3ec-102">\<추가 >의 \<transportConfigurationType ></span><span class="sxs-lookup"><span data-stu-id="4e3ec-102">\<add> of \<transportConfigurationType></span></span>
+<span data-ttu-id="4e3ec-103">이 요소는 특정 전송 형식을 식별하는 키/값 쌍입니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-103">This element is a key/value pair, which identifies the type of a particular transport.</span></span>  
   
- <span data-ttu-id="4b7d6-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="4b7d6-104">\<system.ServiceModel></span></span>  
-<span data-ttu-id="4b7d6-105">\<ServiceHostingEnvironment></span><span class="sxs-lookup"><span data-stu-id="4b7d6-105">\<ServiceHostingEnvironment></span></span>  
-<span data-ttu-id="4b7d6-106">\<transportConfigurationTypes></span><span class="sxs-lookup"><span data-stu-id="4b7d6-106">\<transportConfigurationTypes></span></span>  
-<span data-ttu-id="4b7d6-107">\<add></span><span class="sxs-lookup"><span data-stu-id="4b7d6-107">\<add></span></span>  
+ <span data-ttu-id="4e3ec-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="4e3ec-104">\<system.ServiceModel></span></span>  
+<span data-ttu-id="4e3ec-105">\<ServiceHostingEnvironment></span><span class="sxs-lookup"><span data-stu-id="4e3ec-105">\<ServiceHostingEnvironment></span></span>  
+<span data-ttu-id="4e3ec-106">\<transportConfigurationTypes></span><span class="sxs-lookup"><span data-stu-id="4e3ec-106">\<transportConfigurationTypes></span></span>  
+<span data-ttu-id="4e3ec-107">\<add></span><span class="sxs-lookup"><span data-stu-id="4e3ec-107">\<add></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4b7d6-108">구문</span><span class="sxs-lookup"><span data-stu-id="4b7d6-108">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="4e3ec-108">구문</span><span class="sxs-lookup"><span data-stu-id="4e3ec-108">Syntax</span></span>  
   
 ```xml  
 <serviceHostingEnvironment>
@@ -28,26 +28,26 @@ ms.locfileid: "54656819"
 </serviceHostingEnvironment>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="4b7d6-109">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="4b7d6-109">Attributes and Elements</span></span>  
- <span data-ttu-id="4b7d6-110">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-110">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="4e3ec-109">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="4e3ec-109">Attributes and Elements</span></span>  
+ <span data-ttu-id="4e3ec-110">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-110">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="4b7d6-111">특성</span><span class="sxs-lookup"><span data-stu-id="4b7d6-111">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="4e3ec-111">특성</span><span class="sxs-lookup"><span data-stu-id="4e3ec-111">Attributes</span></span>  
   
-|<span data-ttu-id="4b7d6-112">특성</span><span class="sxs-lookup"><span data-stu-id="4b7d6-112">Attribute</span></span>|<span data-ttu-id="4b7d6-113">설명</span><span class="sxs-lookup"><span data-stu-id="4b7d6-113">Description</span></span>|  
+|<span data-ttu-id="4e3ec-112">특성</span><span class="sxs-lookup"><span data-stu-id="4e3ec-112">Attribute</span></span>|<span data-ttu-id="4e3ec-113">설명</span><span class="sxs-lookup"><span data-stu-id="4e3ec-113">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="4b7d6-114">name</span><span class="sxs-lookup"><span data-stu-id="4b7d6-114">name</span></span>|<span data-ttu-id="4b7d6-115">필수 문자열 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-115">Required String attribute.</span></span><br /><br /> <span data-ttu-id="4b7d6-116">전송 형식을 고유하게 식별하는 사용자 정의 키를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-116">Contains a user-defined key that uniquely identifies the transport type.</span></span>|  
-|<span data-ttu-id="4b7d6-117">transportConfigurationType</span><span class="sxs-lookup"><span data-stu-id="4b7d6-117">transportConfigurationType</span></span>|<span data-ttu-id="4b7d6-118">특정 전송을 구현하는 형식을 포함하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-118">A string that contains the type that implements the specific transport.</span></span>|  
+|<span data-ttu-id="4e3ec-114">name</span><span class="sxs-lookup"><span data-stu-id="4e3ec-114">name</span></span>|<span data-ttu-id="4e3ec-115">필수 문자열 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-115">Required String attribute.</span></span><br /><br /> <span data-ttu-id="4e3ec-116">전송 형식을 고유하게 식별하는 사용자 정의 키를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-116">Contains a user-defined key that uniquely identifies the transport type.</span></span>|  
+|<span data-ttu-id="4e3ec-117">transportConfigurationType</span><span class="sxs-lookup"><span data-stu-id="4e3ec-117">transportConfigurationType</span></span>|<span data-ttu-id="4e3ec-118">특정 전송을 구현하는 형식을 포함하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-118">A string that contains the type that implements the specific transport.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="4b7d6-119">자식 요소</span><span class="sxs-lookup"><span data-stu-id="4b7d6-119">Child Elements</span></span>  
- <span data-ttu-id="4b7d6-120">없음</span><span class="sxs-lookup"><span data-stu-id="4b7d6-120">None</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="4e3ec-119">자식 요소</span><span class="sxs-lookup"><span data-stu-id="4e3ec-119">Child Elements</span></span>  
+ <span data-ttu-id="4e3ec-120">없음</span><span class="sxs-lookup"><span data-stu-id="4e3ec-120">None</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="4b7d6-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="4b7d6-121">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="4e3ec-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="4e3ec-121">Parent Elements</span></span>  
   
-|<span data-ttu-id="4b7d6-122">요소</span><span class="sxs-lookup"><span data-stu-id="4b7d6-122">Element</span></span>|<span data-ttu-id="4b7d6-123">설명</span><span class="sxs-lookup"><span data-stu-id="4b7d6-123">Description</span></span>|  
+|<span data-ttu-id="4e3ec-122">요소</span><span class="sxs-lookup"><span data-stu-id="4e3ec-122">Element</span></span>|<span data-ttu-id="4e3ec-123">설명</span><span class="sxs-lookup"><span data-stu-id="4e3ec-123">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="4b7d6-124">\<transportConfigurationTypes></span><span class="sxs-lookup"><span data-stu-id="4b7d6-124">\<transportConfigurationTypes></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md)|<span data-ttu-id="4b7d6-125">특정 전송을 구현하는 형식의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="4b7d6-125">A collection of types that implement the specific transport.</span></span>|  
+|[<span data-ttu-id="4e3ec-124">\<transportConfigurationTypes></span><span class="sxs-lookup"><span data-stu-id="4e3ec-124">\<transportConfigurationTypes></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md)|<span data-ttu-id="4e3ec-125">특정 전송을 구현하는 형식의 컬렉션입니다.</span><span class="sxs-lookup"><span data-stu-id="4e3ec-125">A collection of types that implement the specific transport.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="4b7d6-126">예제</span><span class="sxs-lookup"><span data-stu-id="4b7d6-126">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="4e3ec-126">예제</span><span class="sxs-lookup"><span data-stu-id="4e3ec-126">Example</span></span>  
   
 ```xml  
 <serviceHostingEnvironment>
@@ -58,8 +58,8 @@ ms.locfileid: "54656819"
 </serviceHostingEnvironment>
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="4b7d6-127">참고자료</span><span class="sxs-lookup"><span data-stu-id="4b7d6-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4e3ec-127">참고자료</span><span class="sxs-lookup"><span data-stu-id="4e3ec-127">See also</span></span>
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [<span data-ttu-id="4b7d6-128">호스팅</span><span class="sxs-lookup"><span data-stu-id="4b7d6-128">Hosting</span></span>](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [<span data-ttu-id="4e3ec-128">호스팅</span><span class="sxs-lookup"><span data-stu-id="4e3ec-128">Hosting</span></span>](../../../../../docs/framework/wcf/feature-details/hosting.md)
