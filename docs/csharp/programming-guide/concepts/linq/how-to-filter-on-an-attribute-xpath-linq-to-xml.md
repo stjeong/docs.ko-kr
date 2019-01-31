@@ -2,12 +2,12 @@
 title: '방법: 특성 필터링(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 208d6256-1bd7-4237-b2c9-909f26dfd0e2
-ms.openlocfilehash: 9d99387be6683dcc46d36b5fdefbcd09f998eab1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3b9f3d18bbfe773d782239d67e8f43bdf4ac52d6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603796"
 ---
 # <a name="how-to-filter-on-an-attribute-xpath-linq-to-xml-c"></a>방법: 특성 필터링(XPath 및 LINQ to XML)(C#)
 이 항목에서는 지정된 이름을 가진 하위 요소와 지정된 값을 가진 특성이 포함된 하위 요소를 가져오는 방법을 보여 줍니다.  
@@ -16,10 +16,10 @@ ms.locfileid: "43516239"
   
  `.//Address[@Type='Shipping']`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 이름이 `Address`인 하위 요소와 값이 "Shipping"인 `Type` 특성이 포함된 하위 요소를 모두 찾습니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 여러 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로을 사용합니다. [샘플 XML 파일: 여러 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  

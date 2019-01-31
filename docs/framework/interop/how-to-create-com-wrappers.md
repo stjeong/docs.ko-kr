@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 14bf011c3711a267b8cf5a1fc0497a347468387d
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 58b7ca910f8f8c751f03b25459bc83efb8086923
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540977"
 ---
 # <a name="how-to-create-com-wrappers"></a>방법: COM 래퍼 만들기
 
@@ -20,15 +20,15 @@ Visual Studio 2005 기능이나 .NET Framework 도구인 Tlbimp.exe 및 Regasm.e
 
 -   관리 코드에서 COM 개체를 실행하기 위한 형식 라이브러리의 [런타임 호출 가능 래퍼](../../../docs/framework/interop/runtime-callable-wrapper.md).
 
--   네이티브 응용 프로그램에서 관리 개체를 실행하기 위한 필수 레지스트리 설정이 포함된 [COM 호출 가능 래퍼](../../../docs/framework/interop/com-callable-wrapper.md).
+-   네이티브 애플리케이션에서 관리 개체를 실행하기 위한 필수 레지스트리 설정이 포함된 [COM 호출 가능 래퍼](../../../docs/framework/interop/com-callable-wrapper.md).
 
 Visual Studio 2005에서 프로젝트에 COM 래퍼를 참조로 추가할 수 있습니다.
 
-## <a name="wrap-com-objects-in-a-managed-application"></a>관리되는 응용 프로그램에서 COM 개체 래핑
+## <a name="wrap-com-objects-in-a-managed-application"></a>관리되는 애플리케이션에서 COM 개체 래핑
 
 ### <a name="to-create-a-runtime-callable-wrapper-using-visual-studio"></a>Visual Studio를 사용하여 런타임 호출 가능 래퍼를 만들려면
 
-1.  관리되는 응용 프로그램에 대한 프로젝트를 엽니다.
+1.  관리되는 애플리케이션에 대한 프로젝트를 엽니다.
 
 2.  **프로젝트** 메뉴에서 **모든 파일 표시**를 클릭합니다.
 
@@ -49,7 +49,7 @@ Visual Studio 2005에서 프로젝트에 COM 래퍼를 참조로 추가할 수 �
   
  이 도구는 원본 형식 라이브러리에 정의된 형식의 런타임 메타데이터를 포함하는 어셈블리를 만듭니다.  
   
-## <a name="wrap-managed-objects-in-a-native-application"></a>네이티브 응용 프로그램에서 관리되는 개체 래핑  
+## <a name="wrap-managed-objects-in-a-native-application"></a>네이티브 애플리케이션에서 관리되는 개체 래핑  
   
 ### <a name="to-create-a-com-callable-wrapper-using-visual-studio"></a>Visual Studio를 사용하여 COM 호출 가능 래퍼를 만들려면  
   
@@ -63,7 +63,7 @@ Visual Studio 2005에서 프로젝트에 COM 래퍼를 참조로 추가할 수 �
   
 4.  **COM interop 등록** 확인란을 선택합니다.  
   
- 프로젝트를 빌드하면 COM interop에 대한 어셈블리가 자동으로 등록됩니다. Visual Studio 2005에서 네이티브 응용 프로그램을 빌드할 경우 **프로젝트** 메뉴에서 **참조 추가**를 클릭하여 어셈블리를 사용할 수 있습니다.  
+ 프로젝트를 빌드하면 COM interop에 대한 어셈블리가 자동으로 등록됩니다. Visual Studio 2005에서 네이티브 애플리케이션을 빌드할 경우 **프로젝트** 메뉴에서 **참조 추가**를 클릭하여 어셈블리를 사용할 수 있습니다.  
   
 ### <a name="to-create-a-com-callable-wrapper-using-net-framework-tools"></a>.NET Framework 도구를 사용하여 COM 호출 가능 래퍼를 만들려면  
   
@@ -73,7 +73,7 @@ Visual Studio 2005에서 프로젝트에 COM 래퍼를 참조로 추가할 수 �
   
 디렉터리에 있는 어셈블리에서 Regasm.exe를 실행하고 나서 [Gacutil.exe(전역 어셈블리 캐시 도구)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)를 실행하여 어셈블리를 전역 어셈블리 캐시로 이동합니다. 어셈블리가 다른 곳에 있는지 항상 전역 어셈블리 캐시가 검사되므로 어셈블리를 이동해도 위치 레지스트리 항목이 무효화되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-- [런타임 호출 가능 래퍼](../../../docs/framework/interop/runtime-callable-wrapper.md)  
+- [런타임 호출 가능 래퍼](../../../docs/framework/interop/runtime-callable-wrapper.md)
 - [COM 호출 가능 래퍼](../../../docs/framework/interop/com-callable-wrapper.md)

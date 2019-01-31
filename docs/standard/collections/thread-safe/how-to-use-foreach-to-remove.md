@@ -1,5 +1,5 @@
 ---
-title: '방법: ForEach를 사용하여 BlockingCollection 항목 제거'
+title: '방법: ForEach를 사용하여 BlockingCollection의 항목 제거'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 2096103c-22f7-420d-b631-f102bc33a6dd
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 44b71ed726af585259b015c608e49d8c81e4e22a
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: abd2c98ac51a59e68f2bb49761555753a280c73d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509950"
 ---
-# <a name="how-to-use-foreach-to-remove-items-in-a-blockingcollection"></a>방법: ForEach를 사용하여 BlockingCollection 항목 제거
+# <a name="how-to-use-foreach-to-remove-items-in-a-blockingcollection"></a>방법: ForEach를 사용하여 BlockingCollection의 항목 제거
 <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> 및 <xref:System.Collections.Concurrent.BlockingCollection%601.TryTake%2A> 메서드를 사용하여 <xref:System.Collections.Concurrent.BlockingCollection%601>에서 항목을 가져오는 것 외에도, 추가가 완료되고 컬렉션이 빈 상태가 될 때까지 Visual Basic에서 [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md)([For Each](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md))를 사용하여 항목을 제거할 수 있습니다. 일반적인 `foreach`(`For Each`) 루프와 달리 이 열거자는 항목을 제거하여 소스 컬렉션을 수정하기 때문에 이 방식을 *열거형 변경* 또는 *열거형 소비*라고 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `foreach`(`For Each`) 루프를 사용하여 <xref:System.Collections.Concurrent.BlockingCollection%601>의 항목을 모두 제거하는 방법을 보여 줍니다.  
   
  [!code-csharp[CDS_BlockingCollection#03](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds_blockingcollection/cs/example03.cs#03)]
@@ -34,5 +34,5 @@ ms.locfileid: "49120963"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [병렬 프로그래밍](../../../../docs/standard/parallel-programming/index.md)

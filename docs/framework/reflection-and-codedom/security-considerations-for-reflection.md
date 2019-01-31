@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9dc7bec2023e3ee0db9987e053dd54647ab2e94f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7e3a4a2208f669dc4fc0589f08b32aeb2c5e4423
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509316"
 ---
 # <a name="security-considerations-for-reflection"></a>리플렉션의 보안 고려 사항
 리플렉션은 형식 및 멤버에 대한 정보를 가져오고 멤버에 액세스하는 기능(즉, 메서드 및 생성자 호출, 속성 값 가져오기 및 설정, 이벤트 처리기 추가 및 제거 등)을 제공합니다. 리플렉션을 사용하여 형식 및 멤버에 대한 정보를 가져오는 기능은 제한되지 않습니다. 모든 코드에서 리플렉션을 사용하여 다음 작업을 수행할 수 있습니다.  
@@ -40,11 +40,11 @@ ms.locfileid: "33398706"
   
     -   호출 코드를 포함하는 다른 클래스 인스턴스의 private 멤버  
   
- 예를 들어 샌드박스 응용 프로그램 도메인에서 실행되는 코드는 응용 프로그램 도메인이 추가 권한을 부여하지 않는 한 이 목록에 설명된 액세스로 제한됩니다.  
+ 예를 들어 샌드박스 애플리케이션 도메인에서 실행되는 코드는 애플리케이션 도메인이 추가 권한을 부여하지 않는 한 이 목록에 설명된 액세스로 제한됩니다.  
   
- [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]부터 일반적으로 액세스할 수 없는 멤버에 액세스하려고 하면 대상 개체 및 <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.ReflectionPermission>의 권한 부여 집합에 대한 요구가 생성됩니다. 완전 신뢰 수준으로 실행되는 코드(예: 명령줄에서 시작된 응용 프로그램의 코드)는 항상 이러한 권한을 충족시킬 수 있습니다. 이 경우 이 문서의 뒷부분에 설명된 것처럼 보안에 중요한 멤버에 액세스할 때의 제한 사항이 적용됩니다.  
+ [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]부터 일반적으로 액세스할 수 없는 멤버에 액세스하려고 하면 대상 개체 및 <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.ReflectionPermission>의 권한 부여 집합에 대한 요구가 생성됩니다. 완전 신뢰 수준으로 실행되는 코드(예: 명령줄에서 시작된 애플리케이션의 코드)는 항상 이러한 권한을 충족시킬 수 있습니다. 이 경우 이 문서의 뒷부분에 설명된 것처럼 보안에 중요한 멤버에 액세스할 때의 제한 사항이 적용됩니다.  
   
- 필요한 경우 이 문서의 뒷부분에 있는 [일반적으로 액세스할 수 없는 멤버 액세스](#accessingNormallyInaccessible) 섹션에 설명된 대로 샌드박스 응용 프로그램 도메인에서 <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> 플래그로 <xref:System.Security.Permissions.ReflectionPermission>을 부여할 수 있습니다.  
+ 필요한 경우 이 문서의 뒷부분에 있는 [일반적으로 액세스할 수 없는 멤버 액세스](#accessingNormallyInaccessible) 섹션에 설명된 대로 샌드박스 애플리케이션 도메인에서 <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> 플래그로 <xref:System.Security.Permissions.ReflectionPermission>을 부여할 수 있습니다.  
   
 <a name="accessingSecurityCritical"></a>   
 ## <a name="accessing-security-critical-members"></a>보안에 중요한 멤버 액세스  
@@ -56,12 +56,12 @@ ms.locfileid: "33398706"
   
  이러한 규칙은 보안에 중요한 멤버를 컴파일된 코드에서 직접 액세스하는지 또는 리플렉션을 사용하여 액세스하는지에 관계없이 동일합니다.  
   
- 명령줄에서 실행 되는 응용 프로그램 코드는 완전 신뢰로 실행됩니다. 투명으로 표시되지 않은 한 리플렉션을 사용하여 보안에 중요한 멤버에 액세스할 수 있습니다. 동일한 코드가 부분 신뢰로 실행되는 경우(예: 샌드박스 응용 프로그램 도메인에서) 어셈블리의 신뢰 수준에 따라 보안에 중요한 코드를 액세스할 수 있는지 여부가 결정됩니다. 어셈블리에 강력한 이름이 있고 전역 어셈블리 캐시에 설치된 경우 신뢰할 수 있는 어셈블리이며 보안에 중요한 멤버를 호출할 수 있습니다. 신뢰할 수 없는 경우 투명으로 표시되지 않았어도 투명하게 되며 보안에 중요한 멤버를 액세스할 수 없습니다.  
+ 명령줄에서 실행 되는 애플리케이션 코드는 완전 신뢰로 실행됩니다. 투명으로 표시되지 않은 한 리플렉션을 사용하여 보안에 중요한 멤버에 액세스할 수 있습니다. 동일한 코드가 부분 신뢰(예: 샌드박스 애플리케이션 도메인에서)로 실행될 때 어셈블리의 신뢰 수준은 보안 중요 코드에 액세스할 수 있는지 여부를 결정합니다. 어셈블리에 강력한 이름이 있고 글로벌 어셈블리 캐시에 설치된 경우, 신뢰할 수 있는 어셈블리이며 보안에 중요한 멤버를 호출할 수 있습니다. 신뢰할 수 없는 경우 투명으로 표시되지 않았어도 투명하게 되며 보안에 중요한 멤버를 액세스할 수 없습니다.  
   
  [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]의 보안 모델에 대한 자세한 내용은 [보안 변경 내용](../../../docs/framework/security/security-changes.md)을 참조하세요.  
   
 ## <a name="reflection-and-transparency"></a>리플렉션 및 투명도  
- [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]부터 공용 언어 런타임에서 어셈블리의 신뢰 수준 및 응용 프로그램 도메인의 신뢰 수준을 포함하여 여러 요소의 형식 또는 멤버에 대한 투명도 수준을 결정합니다. 리플렉션은 형식의 투명도 수준을 검색할 수 있게 해주는 <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A> 및 <xref:System.Type.IsSecurityTransparent%2A> 속성을 제공합니다. 다음 표에서는 이러한 속성의 유효한 조합을 보여 줍니다.  
+ [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]부터 공용 언어 런타임에서 어셈블리의 신뢰 수준 및 애플리케이션 도메인의 신뢰 수준을 포함하여 여러 요소의 형식 또는 멤버에 대한 투명도 수준을 결정합니다. 리플렉션은 형식의 투명도 수준을 검색할 수 있게 해주는 <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A> 및 <xref:System.Type.IsSecurityTransparent%2A> 속성을 제공합니다. 다음 표에서는 이러한 속성의 유효한 조합을 보여 줍니다.  
   
 |보안 수준|IsSecurityCritical|IsSecuritySafeCritical|IsSecurityTransparent|  
 |--------------------|------------------------|----------------------------|---------------------------|  
@@ -69,7 +69,7 @@ ms.locfileid: "33398706"
 |안전에 중요|`true`|`true`|`false`|  
 |투명|`false`|`false`|`true`|  
   
- 이러한 속성을 사용하는 것이 어셈블리 및 해당 형식의 보안 주석을 검사하고 현재 신뢰 수준을 확인한 다음 런타임 규칙을 복제하는 것보다 훨씬 더 간단합니다. 예를 들어 동일한 형식이 명령줄에서 실행되는 경우 보안에 중요하고, 샌드박스 응용 프로그램 도메인에서 실행되는 경우 보안에 투명할 수 있습니다.  
+ 이러한 속성을 사용하는 것이 어셈블리 및 해당 형식의 보안 주석을 검사하고 현재 신뢰 수준을 확인한 다음 런타임 규칙을 복제하는 것보다 훨씬 더 간단합니다. 예를 들어 동일한 형식이 명령줄에서 실행되는 경우 보안에 중요하고, 샌드박스 애플리케이션 도메인에서 실행되는 경우 보안에 투명할 수 있습니다.  
   
  <xref:System.Reflection.MethodBase>, <xref:System.Reflection.FieldInfo>, <xref:System.Reflection.Emit.TypeBuilder>, <xref:System.Reflection.Emit.MethodBuilder> 및 <xref:System.Reflection.Emit.DynamicMethod> 클래스에도 비슷한 속성이 있습니다. 기타 리플렉션 및 리플렉션 내보내기 추상화의 경우 연결된 메서드에 보안 특성이 적용됩니다. 예를 들어 속성의 경우 속성 접근자에 적용됩니다.  
   
@@ -82,9 +82,9 @@ ms.locfileid: "33398706"
     > [!NOTE]
     >  기본적으로 보안 정책은 인터넷에서 시작된 코드에 대해 이 권한을 거부합니다. 인터넷에서 시작된 코드에는 이 권한을 부여하면 안 됩니다.  
   
--   호출된 멤버를 포함하는 어셈블리의 권한 부여 집합이 호출 코드를 포함하는 어셈블리의 권한 부여 집합과 같거나 하위 집합인 경우 코드에서 public이 아닌 멤버를 호출할 수 있게 하려면 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그를 통해 코드에 <xref:System.Security.Permissions.ReflectionPermission>을 부여해야 합니다.  
+-   호출된 멤버를 포함하는 어셈블리의 권한 부여 집합이 호출 코드를 포함하는 어셈블리의 권한 부여 집합과 같거나 하위 집합인 경우 코드가 public이 아닌 멤버를 호출할 수 있도록 허용하려면 다음을 수행합니다. 코드는 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.ReflectionPermission>에 부여되어야 합니다.  
   
- 예를 들어 응용 프로그램 도메인 인터넷 권한 및 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그를 통한 <xref:System.Security.Permissions.ReflectionPermission>을 부여한 다음 두 어셈블리 A와 B를 사용하여 인터넷 응용 프로그램을 실행한다고 가정합니다.  
+ 예를 들어 애플리케이션 도메인 인터넷 권한 및 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그를 통한 <xref:System.Security.Permissions.ReflectionPermission>을 부여한 다음 두 어셈블리 A와 B를 사용하여 인터넷 애플리케이션을 실행한다고 가정합니다.  
   
 -   어셈블리 B의 권한 부여 집합은 A에 부여되지 않은 권한을 포함하지 않으므로 어셈블리 A가 리플렉션을 사용하여 어셈블리 B의 private 멤버에 액세스할 수 있습니다.  
   
@@ -104,13 +104,13 @@ ms.locfileid: "33398706"
   
 -   [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]부터 리플렉션을 사용하여 public이 아닌 형식과 멤버에 대한 정보를 가져오는 데 필요한 권한은 없습니다. 이전 버전에서는 <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.ReflectionPermission>이 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Permissions.ReflectionPermissionFlag>  
- <xref:System.Security.Permissions.ReflectionPermission>  
- <xref:System.Security.Permissions.SecurityPermission>  
- [보안 변경 내용](../../../docs/framework/security/security-changes.md)  
- [코드 액세스 보안](../../../docs/framework/misc/code-access-security.md)  
- [리플렉션 내보내기의 보안 문제점](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
- [형식 정보 보기](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [특성 적용](../../../docs/standard/attributes/applying-attributes.md)  
- [사용자 지정 특성 액세스](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Security.Permissions.ReflectionPermissionFlag>
+- <xref:System.Security.Permissions.ReflectionPermission>
+- <xref:System.Security.Permissions.SecurityPermission>
+- [보안 변경 내용](../../../docs/framework/security/security-changes.md)
+- [코드 액세스 보안](../../../docs/framework/misc/code-access-security.md)
+- [리플렉션 내보내기의 보안 문제점](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
+- [형식 정보 보기](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [특성 적용](../../../docs/standard/attributes/applying-attributes.md)
+- [사용자 지정 특성 액세스](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)

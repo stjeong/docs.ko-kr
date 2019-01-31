@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data [Visual Basic], Clipboard
 - reading data, from Clipboard
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
-ms.openlocfilehash: 7964a39bb84ac6af6b6c196c053f51c30301985c
-ms.sourcegitcommit: 8c6c62ba1eefa492701e264e41890ee20fae77a3
+ms.openlocfilehash: c8f15ac33ae92a13159c2a95435ba3d2391ace8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42792329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54739208"
 ---
 # <a name="storing-data-to-and-reading-from-the-clipboard-visual-basic"></a>데이터를 클립보드에 저장하고 클립보드에서 읽기(Visual Basic)
 클립보드를 사용하여 텍스트 및 이미지와 같은 데이터를 저장할 수 있습니다. 클립보드는 모든 활성 프로세스에서 공유되기 때문에 프로세스 간에 데이터를 전송하는 데 사용할 수 있습니다. `My.Computer.Clipboard` 개체를 사용하면 클립보드에 쉽게 액세스하고 읽고 쓸 수 있습니다.  
@@ -24,15 +24,15 @@ ms.locfileid: "42792329"
   
  [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_1.vb)]  
   
- 이 코드 예제는 IntelliSense 코드 조각으로 사용할 수도 있습니다. 코드 조각 선택에서 **Windows Forms 응용 프로그램 > 클립보드**에 있습니다. 자세한 내용은 [코드 조각](/visualstudio/ide/code-snippets)을 참조하세요.  
+ 이 코드 예제는 IntelliSense 코드 조각으로 사용할 수도 있습니다. 코드 조각 선택에서 **Windows Forms 애플리케이션 &gt; 클립보드**에 있습니다. 자세한 내용은 [코드 조각](/visualstudio/ide/code-snippets)을 참조하세요.  
   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage%2A> 메서드를 사용하여 클립보드에서 이미지를 검색합니다. 이 예제에서는 이미지를 검색하고 `PictureBox1`에 할당하기 전에 클립보드에 이미지가 있는지 확인합니다.  
   
  [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_2.vb)]  
   
- 이 코드 예제는 IntelliSense 코드 조각으로 사용할 수도 있습니다. 코드 조각 선택에서 **Windows Forms 응용 프로그램 > 클립보드**에 있습니다. 자세한 내용은 [코드 조각](/visualstudio/ide/code-snippets)을 참조하세요.  
+ 이 코드 예제는 IntelliSense 코드 조각으로 사용할 수도 있습니다. 코드 조각 선택에서 **Windows Forms 애플리케이션 &gt; 클립보드**에 있습니다. 자세한 내용은 [코드 조각](/visualstudio/ide/code-snippets)을 참조하세요.  
   
- 클립보드에 배치된 항목은 응용 프로그램이 종료된 후에도 유지됩니다.  
+ 클립보드에 배치된 항목은 애플리케이션이 종료된 후에도 유지됩니다.  
   
 ## <a name="determining-the-type-of-file-stored-in-the-clipboard"></a>클립보드에 저장된 파일 형식 확인  
  클립보드의 데이터는 텍스트, 오디오 파일 또는 이미지와 같은 다양한 형태일 수 있습니다. 클립보드에 있는 파일의 종류를 확인하려는 경우 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio%2A>, <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList%2A>, <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage%2A>, <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText%2A> 등의 메서드를 사용할 수 있습니다. 사용자 지정 형식을 확인하려는 경우에는 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData%2A> 메서드를 사용할 수 있습니다.  
@@ -68,9 +68,9 @@ ms.locfileid: "42792329"
 > [!IMPORTANT]
 >  다른 사용자가 클립보드에 액세스할 수 있기 때문에 클립보드를 사용하여 암호 또는 기밀 데이터와 같은 중요한 정보를 저장하지 마세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>  
- [방법: XML 파일에서 개체 데이터 읽기](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)  
- [방법: XML 파일에 개체 데이터 쓰기](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
+## <a name="see-also"></a>참고 항목
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>
+- [방법: XML 파일에서 개체 데이터 읽기](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
+- [방법: XML 파일에 개체 데이터 쓰기](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 57db77b64ddcbe282fed035b52bb122901383ca4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 40db78b8b09b90ab5e11dcc61dc042af1981e827
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701406"
 ---
 # <a name="security-issues-in-reflection-emit"></a>리플렉션 내보내기의 보안 문제점
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 MSIL(Microsoft Intermediate Language)을 내보내는 세 가지 방법을 제공하며, 각각 고유한 보안 문제가 있습니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "33398874"
 > [!NOTE]
 >  개념적으로, 메서드의 생성하는 동안 요구가 수행됩니다. 즉, 각 MSIL 명령을 내보낼 때 요구를 수행할 수 있습니다. 현재 구현에서는 <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A>를 호출하지 않고 메서드가 호출된 경우 <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A?displayProperty=nameWithType> 메서드를 호출하거나 JIT(Just-In-Time) 컴파일러를 호출할 때 모든 요구가 수행됩니다.  
   
- 응용 프로그램 도메인에서 허용하는 경우 익명으로 호스트된 동적 메서드가 JIT 가시성 검사를 건너뛸 수 있지만 다음과 같은 제한 사항이 적용됩니다. 익명으로 호스트된 동적 메서드에서 액세스하는 public이 아닌 형식과 멤버는 권한 부여 집합이 내보내는 호출 스택의 권한 부여 집합과 같거나 하위 집합인 어셈블리에 있어야 합니다. JIT 가시성 검사를 건너뛸 수 있는 이 제한된 기능은 응용 프로그램 도메인에서 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그로 <xref:System.Security.Permissions.ReflectionPermission> 권한을 부여하는 경우에 사용할 수 있습니다.  
+ 애플리케이션 도메인에서 허용하는 경우, 익명으로 호스트되는 동적 메서드는 다음 제한 사항에 따라 JIT 가시성 검사를 건너뛸 수 있습니다. 익명으로 호스트되는 동적 메서드로 액세스되는 비공개 형식과 멤버는 내보내기 호출 스택의 해당 권한 부여 집합과 같거나 하위 집합인 어셈블리에 있어야 합니다. JIT 가시성 검사를 건너뛸 수 있는 이 제한된 기능은 애플리케이션 도메인에서 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 플래그로 <xref:System.Security.Permissions.ReflectionPermission> 권한을 부여하는 경우에 사용할 수 있습니다.  
   
 -   메서드가 public 형식 및 멤버만 사용하는 경우에는 생성 중 권한이 필요하지 않습니다.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "33398874"
     > [!NOTE]
     >  대상 권한 부여 집합 및 <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> 요구가 실패할 경우 생성자는 이전 버전과의 호환성을 위해 <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.SecurityPermission>을 요구합니다.  
   
- 이 목록의 항목은 내보내는 어셈블리의 권한 부여 집합 측면에서 설명하지만 요구는 응용 프로그램 도메인 경계를 포함하여 전체 호출 스택에 대해 수행됩니다.  
+ 이 목록의 항목은 내보내는 어셈블리의 권한 부여 집합 측면에서 설명하지만 요구는 애플리케이션 도메인 경계를 포함하여 전체 호출 스택에 대해 수행됩니다.  
   
  자세한 내용은 <xref:System.Reflection.Emit.DynamicMethod> 클래스를 참조하세요.  
   
@@ -153,6 +153,6 @@ ms.locfileid: "33398874"
 ### <a name="obtaining-information-on-types-and-members"></a>형식 및 멤버에 대한 정보 가져오기  
  [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]부터 public이 아닌 형식과 멤버에 대한 정보를 가져오는 데 필요한 권한은 없습니다. 리플렉션을 사용하여 동적 메서드를 내보내는 데 필요한 정보를 가져옵니다. 예를 들어 <xref:System.Reflection.MethodInfo> 개체를 사용하여 메서드 호출을 내보냅니다. 이전 버전의 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> 플래그가 있는 <xref:System.Security.Permissions.ReflectionPermission>이 필요합니다. 자세한 내용은 [리플렉션의 보안 고려 사항](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [리플렉션의 보안 고려 사항](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)  
- [동적 메서드 및 어셈블리 내보내기](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)
+## <a name="see-also"></a>참고 항목
+- [리플렉션의 보안 고려 사항](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)
+- [동적 메서드 및 어셈블리 내보내기](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)

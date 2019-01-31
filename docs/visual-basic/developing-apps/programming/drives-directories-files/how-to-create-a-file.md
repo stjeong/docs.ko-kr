@@ -5,17 +5,17 @@ helpviewer_keywords:
 - text files [Visual Basic], creating
 - files [Visual Basic], creating
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
-ms.openlocfilehash: 6167ea0850308eec4b558a47dd881476325a8ea1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e9eedb6dafdd181b254610331899b5df7ac0823f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54661375"
 ---
 # <a name="how-to-create-a-file-in-visual-basic"></a>방법: Visual Basic에서 파일 만들기
 이 예제에서는 <xref:System.IO.File> 클래스의 <xref:System.IO.File.Create%2A> 메서드를 사용하여 지정된 경로에 빈 텍스트 파일을 만듭니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-vb[VbFileIOMisc#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-file_1.vb)]  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
@@ -45,8 +45,8 @@ ms.locfileid: "33584848"
   
  사용자에게 파일을 만들 수 있는 권한이 없으면 <xref:System.UnauthorizedAccessException>이 throw됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO>  
- <xref:System.IO.File.Create%2A>  
- [부분적으로 신뢰할 수 있는 코드에서 라이브러리 사용](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)  
- [코드 액세스 보안 기본 사항](../../../../framework/misc/code-access-security-basics.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.IO>
+- <xref:System.IO.File.Create%2A>
+- [부분적으로 신뢰할 수 있는 코드에서 라이브러리 사용](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)
+- [코드 액세스 보안 기본 사항](../../../../framework/misc/code-access-security-basics.md)

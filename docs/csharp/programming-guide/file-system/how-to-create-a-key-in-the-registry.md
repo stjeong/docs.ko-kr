@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registry keys, creating [C#]
 - keys, creating in registry
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-ms.openlocfilehash: a3a6af8eb493ce17ac73769decd1f60b903ae165
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: af796affa669d0f21e9d503f5263ad26b537fb91
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49337612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54553772"
 ---
 # <a name="how-to-create-a-key-in-the-registry-visual-c"></a>방법: 레지스트리에 키 만들기(Visual C#)
 이 예제에서는 현재 사용자의 레지스트리, "Names" 키 아래에 "Name" 및 "Isabella" 값 쌍을 추가합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp  
 Microsoft.Win32.RegistryKey key;  
@@ -27,7 +27,7 @@ key.Close();
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
   
--   코드를 복사하고 콘솔 응용 프로그램의 `Main` 메서드에 붙여넣습니다.  
+-   코드를 복사하고 콘솔 애플리케이션의 `Main` 메서드에 붙여넣습니다.  
   
 -   `Names` 매개 변수를 레지스트리의 HKEY_CURRENT_USER 노드 바로 아래에 있는 키 이름으로 바꿉니다.  
   
@@ -57,7 +57,7 @@ key.Close();
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)
 - [C#을 사용하여 레지스트리에서 읽기, 쓰기 및 삭제](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

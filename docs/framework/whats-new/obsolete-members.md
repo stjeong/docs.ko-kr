@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8a0679dafda7935034d3a3ab0f4c43656ab5668b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f63d5213ac8544b41d79ccb78d96b232c7c66936
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54635977"
 ---
 # <a name="obsolete-members-in-the-net-framework"></a>.NET Framework에서 사용되지 않는 멤버
 이 문서의 표에는 .NET Framework 4.5 이상 버전에서 사용되지 않은 형식 멤버가 어셈블리별로 구성되어 있습니다. 각 어셈블리에서 사용되지 않는 멤버 목록과 권장되는 대체 항목을 확인하려면 다음 링크를 사용합니다. 사용되지 않는 형식의 멤버는 이 항목에 나열되지 않습니다. 사용되지 않는 형식 목록은 [사용되지 않는 형식](../../../docs/framework/whats-new/obsolete-types.md)을 참조하세요.  
@@ -87,7 +87,7 @@ ms.locfileid: "53151410"
   
 <a name="SystemMembers"></a>   
 ## <a name="obsolete-members-in-system-assemblies"></a>시스템 어셈블리에서 사용되지 않는 멤버  
- 다음 표에서는 시스템 어셈블리에서 사용되지 않는 멤버를 보여 줍니다. 이러한 어셈블리는 .NET Framework를 대상으로 하는 일반\-용도의 응용 프로그램 개발에 사용됩니다.  
+ 다음 표에서는 시스템 어셈블리에서 사용되지 않는 멤버를 보여 줍니다. 이러한 어셈블리는 .NET Framework를 대상으로 하는 일반\-용도의 애플리케이션 개발에 사용됩니다.  
   
 <a name="mscorlib"></a>   
 ### <a name="assembly-mscorlibdll"></a>어셈블리: mscorlib.dll  
@@ -177,12 +177,12 @@ ms.locfileid: "53151410"
 |<xref:System.Reflection.AssemblyFlagsAttribute?displayProperty=nameWithType>|<xref:System.Reflection.AssemblyFlagsAttribute.%23ctor%28System.UInt32%29>|이 생성자는 사용되지 않습니다. 대신 <xref:System.Reflection.AssemblyFlagsAttribute.%23ctor%28System.Reflection.AssemblyNameFlags%29?displayProperty=nameWithType>를 사용하십시오.|  
 |<xref:System.Reflection.AssemblyFlagsAttribute?displayProperty=nameWithType>|<xref:System.Reflection.AssemblyFlagsAttribute.Flags%2A>|이 속성은 사용되지 않습니다. 대신 <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A?displayProperty=nameWithType>를 사용하십시오.|  
 |<xref:System.Reflection.Emit.ConstructorBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.ConstructorBuilder.ReturnType%2A>|이 속성은 사용되지 않습니다.|  
-|<xref:System.Reflection.Emit.FieldBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.FieldBuilder.SetMarshal%2A>|대체 API 사용 가능: <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 대신 내보냅니다.|  
+|<xref:System.Reflection.Emit.FieldBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.FieldBuilder.SetMarshal%2A>|대체 API를 사용할 수 있습니다. 대신 <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 내보냅니다.|  
 |<xref:System.Reflection.Emit.FlowControl?displayProperty=nameWithType>|<xref:System.Reflection.Emit.FlowControl.Phi>|이 API는 사용되지 않습니다.|  
-|<xref:System.Reflection.Emit.MethodBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.MethodBuilder.SetMarshal%2A>|대체 API 사용 가능: <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 대신 내보냅니다.|  
+|<xref:System.Reflection.Emit.MethodBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.MethodBuilder.SetMarshal%2A>|대체 API를 사용할 수 있습니다. 대신 <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 내보냅니다.|  
 |<xref:System.Reflection.Emit.OpCodeType?displayProperty=nameWithType>|<xref:System.Reflection.Emit.OpCodeType.Annotation>|이 API는 사용되지 않습니다.|  
 |<xref:System.Reflection.Emit.OperandType?displayProperty=nameWithType>|<xref:System.Reflection.Emit.OperandType.InlinePhi>|이 API는 사용되지 않습니다.|  
-|<xref:System.Reflection.Emit.ParameterBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.ParameterBuilder.SetMarshal%2A>|대체 API 사용 가능: <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 대신 내보냅니다.|  
+|<xref:System.Reflection.Emit.ParameterBuilder?displayProperty=nameWithType>|<xref:System.Reflection.Emit.ParameterBuilder.SetMarshal%2A>|대체 API를 사용할 수 있습니다. 대신 <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> 사용자 지정 특성을 내보냅니다.|  
 |<xref:System.Resources.ResourceManager?displayProperty=nameWithType>|<xref:System.Resources.ResourceManager.ResourceSets>|대신 <xref:System.Resources.ResourceManager.InternalGetResourceSet%28System.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType>를 호출하세요.|  
 |<xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.GetManagedThunkForUnmanagedMethodPtr%2A>|<xref:System.Runtime.InteropServices.Marshal.GetManagedThunkForUnmanagedMethodPtr%2A> 메서드는 사용되지 않으며 이후 릴리스에서 제거됩니다.|  
 |<xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType>|<xref:System.Runtime.InteropServices.Marshal.GetThreadFromFiberCookie%2A>|<xref:System.Runtime.InteropServices.Marshal.GetThreadFromFiberCookie%2A> 메서드는 사용되지 않습니다. 이 작업을 수행하려면 호스팅 API를 사용하세요.|  
@@ -217,7 +217,7 @@ ms.locfileid: "53151410"
 |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.SavePolicy%2A>|이 메서드는 사용되지 않으며 .NET Framework의 이후 릴리스에서 제거됩니다.|  
 |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.SavePolicyLevel%2A>|이 메서드는 사용되지 않으며 .NET Framework의 이후 릴리스에서 제거됩니다.|  
 |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.SecurityEnabled%2A>|이제 보안을 끌 수 없으므로 <xref:System.Security.SecurityManager.SecurityEnabled%2A> 속성은 더 이상 영향을 주지 않습니다.|  
-|<xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=nameWithType>|<xref:System.Security.Cryptography.PasswordDeriveBytes.GetBytes%2A>|<xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType>는 암호에서 키 자료를 파생시키기 위한 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=nameWithType>를 대체하며 새 응용 프로그램에서 사용하는 것이 좋습니다.|  
+|<xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=nameWithType>|<xref:System.Security.Cryptography.PasswordDeriveBytes.GetBytes%2A>|<xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType>는 암호에서 키 자료를 파생시키기 위한 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=nameWithType>를 대체하며 새 애플리케이션에서 사용하는 것이 좋습니다.|  
 |<xref:System.Security.Cryptography.X509Certificates.X509Certificate?displayProperty=nameWithType>|<xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetIssuerName%2A>|이 메서드는 사용되지 않습니다. 대신 <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Issuer%2A?displayProperty=nameWithType> 속성을 사용하세요.|  
 |<xref:System.Security.Cryptography.X509Certificates.X509Certificate?displayProperty=nameWithType>|<xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetName%2A>|이 메서드는 사용되지 않습니다. 대신 <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Subject%2A?displayProperty=nameWithType> 속성을 사용하세요.|  
 |<xref:System.Security.Permissions.FileIOPermissionAttribute?displayProperty=nameWithType>|<xref:System.Security.Permissions.FileIOPermissionAttribute.All%2A>|대신 <xref:System.Security.Permissions.FileIOPermissionAttribute.ViewAndModify%2A?displayProperty=nameWithType> 속성을 사용하세요.|  
@@ -405,7 +405,7 @@ ms.locfileid: "53151410"
 |----------|------------|-------------|  
 |<xref:System.Data.OracleClient.OracleParameter?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameter.Precision%2A>|<xref:System.Data.OracleClient.OracleParameter.Precision%2A>는 사용되지 않습니다. 10진수의 전체 자릿수를 명시적으로 설정하려면 <xref:System.Math?displayProperty=nameWithType> 클래스를 사용하세요.|  
 |<xref:System.Data.OracleClient.OracleParameter?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameter.Scale%2A>|<xref:System.Data.OracleClient.OracleParameter.Scale%2A>는 사용되지 않습니다. 10진수의 소수 자릿수를 명시적으로 설정하려면 <xref:System.Math?displayProperty=nameWithType> 클래스를 사용하세요.|  
-|<xref:System.Data.OracleClient.OracleParameterCollection?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29>는 사용되지 않습니다. <xref:System.Data.OracleClient.OracleParameterCollection.AddWithValue%2A?displayProperty=nameWithType>을 사용하십시오.|  
+|<xref:System.Data.OracleClient.OracleParameterCollection?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29>는 사용되지 않습니다. <xref:System.Data.OracleClient.OracleParameterCollection.AddWithValue%2A?displayProperty=nameWithType>을 사용하세요.|  
   
 <a name="design"></a>   
 ### <a name="assembly-systemdesigndll"></a>어셈블리: System.Design.dll  
@@ -416,7 +416,7 @@ ms.locfileid: "53151410"
 |<xref:System.ComponentModel.Design.ComponentDesigner?displayProperty=nameWithType>|<xref:System.ComponentModel.Design.ComponentDesigner.OnSetComponentDefaults%2A>|이 메서드는 사용되지 않습니다. 대신 <xref:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent%2A?displayProperty=nameWithType>를 사용하세요.|  
 |<xref:System.ComponentModel.Design.DesignSurface?displayProperty=nameWithType>|<xref:System.ComponentModel.Design.DesignSurface.CreateComponent%2A>|<xref:System.ComponentModel.Design.DesignSurface.CreateComponent%2A> 메서드는 <xref:System.ComponentModel.Design.DesignSurface.CreateInstance%28System.Type%29>로 대체되었습니다.|  
 |<xref:System.ComponentModel.Design.Serialization.CodeDomSerializer?displayProperty=nameWithType>|<xref:System.ComponentModel.Design.Serialization.CodeDomSerializer.SerializeToReferenceExpression%2A>|이 메서드는 사용되지 않습니다. 대신 <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToExpression%2A> 또는 <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A>를 사용하십시오.|  
-|<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.DesignTimeElementView%2A>|이 속성을 사용하면 컴파일러 오류가 생성됩니다.<br /><br /> 오류: 이 속성은 더 이상 참조할 수 없으며 컴파일된 기존 응용 프로그램을 지원하기 위해 포함되었습니다. 디자인\-타임 요소 뷰 아키텍처는 더 이상 사용되지 않습니다.|  
+|<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.DesignTimeElementView%2A>|이 속성을 사용하면 컴파일러 오류가 생성됩니다.<br /><br /> 오류: 이 속성은 더 이상 참조할 수 없으며 컴파일된 기존 애플리케이션을 지원하기 위해 포함되었습니다. 디자인\-타임 요소 뷰 아키텍처는 더 이상 사용되지 않습니다.|  
 |<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete%2A>|대신 [`ControlDesigner.SetViewFlags(ViewFlags.DesignTimeHtmlRequiresLoadComplete, true)`](xref:System.Web.UI.Design.ControlDesigner.SetViewFlags%2A)를 사용하는 것이 좋습니다.|  
 |<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.GetPersistInnerHtml%2A>|<xref:System.Web.UI.Design.ControlDesigner.GetPersistenceContent%2A?displayProperty=nameWithType>를 대신 사용하는 것이 좋습니다.|  
 |<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.IsDirty%2A>|대신 [`ControlDesigner.Tag.SetDirty`](xref:System.Web.UI.Design.IControlDesignerTag.SetDirty%2A) 및 [`ControlDesigner.Tag.IsDirty`](xref:System.Web.UI.Design.IControlDesignerTag.IsDirty%2A)를 사용하는 것이 좋습니다.|  
@@ -426,7 +426,7 @@ ms.locfileid: "53151410"
 |<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.RaiseResizeEvent%2A>|크기 조정은 <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A?displayProperty=nameWithType> 메서드에서 처리되므로 이 메서드는 사용하지 않는 것이 좋습니다.|  
 |<xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.ControlDesigner.ReadOnly%2A>|대신 <xref:System.Web.UI.Design.ContainerControlDesigner?displayProperty=nameWithType>에서 상속하고 <xref:System.Web.UI.Design.EditableDesignerRegion?displayProperty=nameWithType>을 사용하는 것이 좋습니다. 영역을 사용하여 디자이너의 콘텐츠를 보다 효율적으로 제어할 수 있습니다.|  
 |<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.Behavior%2A>|<xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType>를 대신 사용하는 것이 좋습니다.|  
-|<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement%2A>|이 속성을 사용하면 컴파일러 오류가 생성됩니다.<br /><br /> 오류: 이 속성은 더 이상 참조할 수 없으며 컴파일된 기존 응용 프로그램을 지원하기 위해 포함되었습니다. 디자인\-타임 요소가 태그에서 해당 요소에 대한 액세스를 제공하지 않을 수도 있습니다. 클라이언트 스크립트 및 컨트롤을 처리하기 위한 대체 메서드가 <xref:System.Web.UI.Design.WebFormsRootDesigner?displayProperty=nameWithType>에 있습니다.|  
+|<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement%2A>|이 속성을 사용하면 컴파일러 오류가 생성됩니다.<br /><br /> 오류: 이 속성은 더 이상 참조할 수 없으며 컴파일된 기존 애플리케이션을 지원하기 위해 포함되었습니다. 디자인\-타임 요소가 태그에서 해당 요소에 대한 액세스를 제공하지 않을 수도 있습니다. 클라이언트 스크립트 및 컨트롤을 처리하기 위한 대체 메서드가 <xref:System.Web.UI.Design.WebFormsRootDesigner?displayProperty=nameWithType>에 있습니다.|  
 |<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached%2A>|<xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType>를 대신 사용하는 것이 좋습니다.|  
 |<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorDetaching%2A>|<xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType>를 대신 사용하는 것이 좋습니다.|  
 |<xref:System.Web.UI.Design.HtmlControlDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged%2A>|권장되는 대안은 [HtmlControlDesigner.DataBindings.Changed](xref:System.Web.UI.DataBindingCollection.Changed) 이벤트를 처리하는 것입니다. <xref:System.Web.UI.Design.HtmlControlDesigner.DataBindings%2A?displayProperty=nameWithType> 속성에서 반환된 <xref:System.Web.UI.DataBindingCollection> 컬렉션을 통해 컨트롤과 연결된 데이터 바인딩을 보다 효율적으로 제어할 수 있습니다.|  
@@ -520,7 +520,7 @@ ms.locfileid: "53151410"
 |<xref:System.Diagnostics.EventLogPermissionAccess?displayProperty=nameWithType>|<xref:System.Diagnostics.EventLogPermissionAccess.Instrument>|이 멤버는 사용되지 않습니다. 대신 <xref:System.Diagnostics.EventLogPermissionAccess.Write?displayProperty=nameWithType>를 사용하십시오.|  
 |<xref:System.Diagnostics.InstanceDataCollection?displayProperty=nameWithType>|<xref:System.Diagnostics.InstanceDataCollection.%23ctor%2A>|이 생성자는 사용되지 않습니다. 이 컬렉션의 인스턴스를 가져오려면 대신 <xref:System.Diagnostics.InstanceDataCollectionCollection.Item%2A?displayProperty=nameWithType>를 사용하세요.|  
 |<xref:System.Diagnostics.InstanceDataCollectionCollection?displayProperty=nameWithType>|<xref:System.Diagnostics.InstanceDataCollectionCollection.%23ctor%2A>|이 생성자는 사용되지 않습니다. 이 컬렉션의 인스턴스를 가져오려면 대신 <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A?displayProperty=nameWithType>를 사용하세요.|  
-|<xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>|<xref:System.Diagnostics.PerformanceCounter.DefaultFileMappingSize>|이 필드는 사용이 중단되었으며 사용되지 않습니다. <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> 파일 매핑의 크기를 설정하려면 machine.config 또는 응용 프로그램 구성 파일을 사용하세요.|  
+|<xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType>|<xref:System.Diagnostics.PerformanceCounter.DefaultFileMappingSize>|이 필드는 사용이 중단되었으며 사용되지 않습니다. <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> 파일 매핑의 크기를 설정하려면 machine.config 또는 애플리케이션 구성 파일을 사용하세요.|  
 |<xref:System.Diagnostics.PerformanceCounterCategory?displayProperty=nameWithType>|<xref:System.Diagnostics.PerformanceCounterCategory.Create%28System.String%2CSystem.String%2CSystem.Diagnostics.CounterCreationDataCollection%29>|이 메서드는 사용되지 않습니다. 대신 <xref:System.Diagnostics.PerformanceCounterCategory.Create%28System.String%2CSystem.String%2CSystem.Diagnostics.PerformanceCounterCategoryType%2CSystem.Diagnostics.CounterCreationDataCollection%29>를 사용하십시오.|  
 |<xref:System.Diagnostics.PerformanceCounterCategory?displayProperty=nameWithType>|<xref:System.Diagnostics.PerformanceCounterCategory.Create%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29>|이 메서드는 사용되지 않습니다. 대신 <xref:System.Diagnostics.PerformanceCounterCategory.Create%28System.String%2CSystem.String%2CSystem.Diagnostics.PerformanceCounterCategoryType%2CSystem.String%2CSystem.String%29>를 사용하십시오.|  
 |<xref:System.Diagnostics.PerformanceCounterManager?displayProperty=nameWithType>|<xref:System.Diagnostics.PerformanceCounterManager.System%23Diagnostics%23ICollectData%23CloseData%2A>|이 클래스는 사용되지 않습니다. 대신 <xref:System.Diagnostics.PerformanceCounter> 클래스를 통해 성능 카운터를 사용하십시오.|  
@@ -732,7 +732,7 @@ ms.locfileid: "53151410"
   
 <a name="IEHost"></a>   
 ### <a name="assembly-iehostdll-and-ieexecexe"></a>어셈블리: IEHost.dll 및 IEExec.exe  
- IEHost.dll 및 IEExec.exe 어셈블리는 .NET Framework에서 제거되었습니다. 해당 형식 및 멤버는 모두 사용되지 않으며 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 지원되지 않습니다. 이러한 어셈블리는 Windows Forms 컨트롤을 호스팅하여 Internet Explorer에서 실행 파일을 실행하기 위해 사용되었습니다. 이 기술의 대안으로 ClickOnce, XBAP(XAML 브라우저 응용 프로그램) 및 Microsoft Silverlight가 있습니다.  
+ IEHost.dll 및 IEExec.exe 어셈블리는 .NET Framework에서 제거되었습니다. 해당 형식 및 멤버는 모두 사용되지 않으며 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 지원되지 않습니다. 이러한 어셈블리는 Windows Forms 컨트롤을 호스팅하여 Internet Explorer에서 실행 파일을 실행하기 위해 사용되었습니다. 이 기술의 대안으로 ClickOnce, XBAP(XAML 브라우저 애플리케이션) 및 Microsoft Silverlight가 있습니다.  
   
 <a name="isymwrapper"></a>   
 ### <a name="assembly-isymwrapperdll"></a>어셈블리: ISymWrapper.dll  
@@ -798,6 +798,6 @@ ms.locfileid: "53151410"
 |<xref:Microsoft.VisualBasic.CompilerServices.Operators?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator%2A>|이 멤버를 사용하면 컴파일러 오류가 생성됩니다.<br /><br /> 이 메서드를 사용하지 마세요.|  
 |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|`DynData` 레지스트리 키는 이 버전의 .NET Framework에서 지원되지 않는 Win9x에서만 작동합니다. 대신 `PerformanceData` 레지스트리 키를 사용하세요. 이 속성은 Framework의 이후 버전에서 제거됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [클래스 라이브러리의 사용되지 않는 기능](../../../docs/framework/whats-new/whats-obsolete.md)  
- [사용되지 않는 형식](../../../docs/framework/whats-new/obsolete-types.md)
+## <a name="see-also"></a>참고 항목
+- [클래스 라이브러리의 사용되지 않는 기능](../../../docs/framework/whats-new/whats-obsolete.md)
+- [사용되지 않는 형식](../../../docs/framework/whats-new/obsolete-types.md)

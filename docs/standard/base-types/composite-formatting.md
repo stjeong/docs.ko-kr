@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 60ccf478e974e24b437aa75bc9452033bd19a00f
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f68c1f2f888f340488c3cbec4c2384f6dce58077
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54517684"
 ---
 # <a name="composite-formatting"></a>복합 형식 지정
 
@@ -67,7 +67,7 @@ ms.locfileid: "53126863"
  [!code-csharp[Formatting.Composite#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#7)]
  [!code-vb[Formatting.Composite#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#7)]  
   
- 동일한 매개 변수 지정자를 지정하여 여러 서식 항목이 개체 목록의 동일한 요소를 참조하도록 할 수 있습니다. 예를 들어 다음 예제와 같이 복합 형식 문자열을 “0x{0:X} {0:E} {0:N}”처럼 지정하여 동일한 숫자 값을 16진수, 지수 및 숫자 형식으로 지정할 수 있습니다.  
+ 동일한 매개 변수 지정자를 지정하여 여러 서식 항목이 개체 목록의 동일한 요소를 참조하도록 할 수 있습니다. 예를 들어, 복합 서식 문자열을 다음과 같이 지정하여 동일한 숫자 값을 16진수, 지수 및 숫자 서식으로 지정할 수 있습니다. 다음 예제와 같이 "0x{0:X} {0:E} {0:N}"가 표시됩니다.  
   
  [!code-csharp[Formatting.Composite#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#10)]
  [!code-vb[Formatting.Composite#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#10)]  
@@ -85,7 +85,7 @@ ms.locfileid: "53126863"
 ### <a name="format-string-component"></a>Format String 구성 요소  
  선택적 *formatString* 구성 요소는 서식을 지정할 개체 형식에 적절한 형식 문자열입니다. 해당 개체가 숫자 값이면 표준 또는 사용자 지정 숫자 형식 문자열을, <xref:System.DateTime> 개체이면 표준 또는 사용자 지정 날짜 및 시간 형식 문자열을, 열거형 값이면 [열거형 서식 문자열](../../../docs/standard/base-types/enumeration-format-strings.md)을 지정합니다. *formatString*을 지정하지 않으면 숫자, 날짜 및 시간, 또는 열거형 형식에 대해 일반("G") 형식 지정자가 사용됩니다. *formatString*을 지정하는 경우 콜론이 필요합니다.  
   
- 다음 표에는 미리 정의된 서식 문자열 집합을 지원하는 .NET Framework 클래스 라이브러리의 형식 또는 형식 범주와 지원되는 서식 문자열을 나열하는 항목에 대한 링크가 나와 있습니다. 문자열 서식 지정은 응용 프로그램 정의 형식에서 지원하는 형식 문자열 집합을 정의하는, 모든 기존 형식을 위한 새 형식 문자열을 정의하는 확장 가능한 메커니즘입니다. 자세한 내용은 <xref:System.IFormattable> 및 <xref:System.ICustomFormatter> 인터페이스 항목을 참조하세요.  
+ 다음 표에는 미리 정의된 서식 문자열 집합을 지원하는 .NET Framework 클래스 라이브러리의 형식 또는 형식 범주와 지원되는 서식 문자열을 나열하는 항목에 대한 링크가 나와 있습니다. 문자열 서식 지정은 애플리케이션 정의 형식에서 지원하는 형식 문자열 집합을 정의하는, 모든 기존 형식을 위한 새 형식 문자열을 정의하는 확장 가능한 메커니즘입니다. 자세한 내용은 <xref:System.IFormattable> 및 <xref:System.ICustomFormatter> 인터페이스 항목을 참조하세요.  
   
 |형식 또는 형식 범주|참조|  
 |---------------------------|---------|  
@@ -161,15 +161,15 @@ ms.locfileid: "53126863"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Console.WriteLine%2A>  
-- <xref:System.String.Format%2A?displayProperty=nameWithType>  
-- [문자열 보간(C#)](../../csharp/language-reference/tokens/interpolated.md)  
-- [문자열 보간(Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
-- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
-- [표준 숫자 형식 문자열](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
-- [사용자 지정 숫자 형식 문자열](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
-- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
-- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
-- [표준 TimeSpan 서식 문자열](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
-- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- <xref:System.Console.WriteLine%2A>
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- [문자열 보간(C#)](../../csharp/language-reference/tokens/interpolated.md)
+- [문자열 보간(Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)
+- [표준 숫자 형식 문자열](../../../docs/standard/base-types/standard-numeric-format-strings.md)
+- [사용자 지정 숫자 형식 문자열](../../../docs/standard/base-types/custom-numeric-format-strings.md)
+- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [표준 TimeSpan 서식 문자열](../../../docs/standard/base-types/standard-timespan-format-strings.md)
+- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)
 - [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

@@ -2,17 +2,17 @@
 title: 데이터 형식 변환(C#)
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-ms.openlocfilehash: 54ef612ad4e92058d9af4d96b7b3cde9732b2f9c
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: ea1f204ab59ecdd3e3e7e65d12c1be37e9b09f01
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47089726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736888"
 ---
 # <a name="converting-data-types-c"></a>데이터 형식 변환(C#)
 변환 메서드는 입력 개체의 형식을 변경합니다.  
   
- LINQ 쿼리의 변환 작업은 다양한 응용 프로그램에서 유용합니다. 다음은 몇 가지 예제입니다.  
+ LINQ 쿼리의 변환 작업은 다양한 애플리케이션에서 유용합니다. 다음은 몇 가지 예제입니다.  
   
 -   <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> 메서드는 표준 쿼리 연산자의 형식 사용자 지정 구현을 숨기는 데 사용될 수 있습니다.  
   
@@ -76,8 +76,8 @@ static void Cast()
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Linq>  
-- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
-- [from 절](../../../../csharp/language-reference/keywords/from-clause.md)  
-- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- <xref:System.Linq>
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [from 절](../../../../csharp/language-reference/keywords/from-clause.md)
+- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)
 - [방법: LINQ를 사용하여 ArrayList 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)

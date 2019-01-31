@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 55b16d135449cad8ed489a8a3e21db326be0fae0
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 045423f0393ff363b94f4c0e4fe0324c061120d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54628190"
 ---
 # <a name="how-to-round-trip-date-and-time-values"></a>방법: 날짜 및 시간 값 라운드트립
-많은 응용 프로그램에서 날짜 및 시간 값은 단일 시점을 명확하게 식별하는 데 사용됩니다. 이 항목에서는 복원된 값이 저장된 값과 같은 시간을 식별할 수 있도록 <xref:System.DateTime> 값, <xref:System.DateTimeOffset> 값 그리고 표준 시간대 정보가 있는 날짜 및 시간 값을 저장하고 복원하는 방법을 보여줍니다.  
+많은 애플리케이션에서 날짜 및 시간 값은 단일 시점을 명확하게 식별하는 데 사용됩니다. 이 항목에서는 복원된 값이 저장된 값과 같은 시간을 식별할 수 있도록 <xref:System.DateTime> 값, <xref:System.DateTimeOffset> 값 그리고 표준 시간대 정보가 있는 날짜 및 시간 값을 저장하고 복원하는 방법을 보여줍니다.  
   
 ### <a name="to-round-trip-a-datetime-value"></a>DateTime 값을 라운드트립하려면  
   
 1.  “o” 형식 지정자와 함께 <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> 메서드를 호출하여 <xref:System.DateTime> 값을 해당 문자열 표현으로 변환합니다.  
   
-2.  <xref:System.DateTime> 값의 문자열 표현을 파일에 저장하거나 프로세스, 응용 프로그램 도메인 또는 컴퓨터 경계를 넘어 전달합니다.  
+2.  <xref:System.DateTime> 값의 문자열 표현을 파일에 저장하거나 프로세스, 애플리케이션 도메인 또는 컴퓨터 경계를 넘어 전달합니다.  
   
 3.  <xref:System.DateTime> 값을 나타내는 문자열을 검색합니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "45668420"
   
 1.  “o” 형식 지정자와 함께 <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> 메서드를 호출하여 <xref:System.DateTimeOffset> 값을 해당 문자열 표현으로 변환합니다.  
   
-2.  <xref:System.DateTimeOffset> 값의 문자열 표현을 파일에 저장하거나 프로세스, 응용 프로그램 도메인 또는 컴퓨터 경계를 넘어 전달합니다.  
+2.  <xref:System.DateTimeOffset> 값의 문자열 표현을 파일에 저장하거나 프로세스, 애플리케이션 도메인 또는 컴퓨터 경계를 넘어 전달합니다.  
   
 3.  <xref:System.DateTimeOffset> 값을 나타내는 문자열을 검색합니다.  
   
@@ -101,6 +101,6 @@ ms.locfileid: "45668420"
   
 ## <a name="see-also"></a>참고 항목
 
-- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
-- [DateTime, DateTimeOffset, TimeSpan 및 TimeZoneInfo 중 선택](../../../docs/standard/datetime/choosing-between-datetime.md)  
+- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)
+- [DateTime, DateTimeOffset, TimeSpan 및 TimeZoneInfo 중 선택](../../../docs/standard/datetime/choosing-between-datetime.md)
 - [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)

@@ -2,12 +2,12 @@
 title: XML 구문 분석(C#)
 ms.date: 07/20/2015
 ms.assetid: 7ea83f83-a779-423a-9875-4ea4e51f97fc
-ms.openlocfilehash: a2dc3043c8cbf8138a164ab06d8394e4c859fa50
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f19e5a316621262bfe0f3fb56a13275336cf763f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54617046"
 ---
 # <a name="parsing-xml-c"></a>XML 구문 분석(C#)
 이 단원의 항목에서는 XML 문서의 구문을 분석하는 방법에 대해 설명합니다.  

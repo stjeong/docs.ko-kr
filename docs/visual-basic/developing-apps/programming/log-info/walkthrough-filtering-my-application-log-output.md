@@ -6,22 +6,22 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: 8a299ba0bfb2d6f49b449e2f1e567a06d09da49e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e17f332365aeeb26601763f9459dccc8d6a078af
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572515"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>연습: My.Application.Log 출력 필터링(Visual Basic)
-이 연습에서는 `My.Application.Log` 개체에 대한 기본 로그 필터링을 변경하여 `Log` 개체에서 수신기로 전달되는 정보 및 수신기가 작성하는 정보를 제어하는 방법을 보여 줍니다. 구성 정보가 응용 프로그램의 구성 파일에 저장되므로 응용 프로그램을 빌드한 후에도 로깅 동작을 변경할 수 있습니다.  
+이 연습에서는 `My.Application.Log` 개체에 대한 기본 로그 필터링을 변경하여 `Log` 개체에서 수신기로 전달되는 정보 및 수신기가 작성하는 정보를 제어하는 방법을 보여 줍니다. 구성 정보가 애플리케이션의 구성 파일에 저장되므로 애플리케이션을 빌드한 후에도 로깅 동작을 변경할 수 있습니다.  
   
 ## <a name="getting-started"></a>시작  
- `My.Application.Log`에서 작성하는 각 메시지에는 연결된 심각도 수준이 있으며, 필터링 메커니즘은 로그 출력을 제어하는 데 이를 사용합니다. 이 샘플 응용 프로그램은 `My.Application.Log` 메서드를 사용하여 서로 다른 심각도 수준으로 여러 로그 메시지를 작성합니다.  
+ `My.Application.Log`에서 작성하는 각 메시지에는 연결된 심각도 수준이 있으며, 필터링 메커니즘은 로그 출력을 제어하는 데 이를 사용합니다. 이 샘플 애플리케이션은 `My.Application.Log` 메서드를 사용하여 서로 다른 심각도 수준으로 여러 로그 메시지를 작성합니다.  
   
-#### <a name="to-build-the-sample-application"></a>샘플 응용 프로그램을 빌드하려면  
+#### <a name="to-build-the-sample-application"></a>샘플 애플리케이션을 빌드하려면  
   
-1.  새 Visual Basic Windows 응용 프로그램 프로젝트를 엽니다.  
+1.  새 Visual Basic Windows 애플리케이션 프로젝트를 엽니다.  
   
 2.  Button1이라는 단추를 Form1에 추가합니다.  
   
@@ -29,27 +29,27 @@ ms.locfileid: "43500019"
   
      [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
   
-4.  디버거에서 응용 프로그램을 실행합니다.  
+4.  디버거에서 애플리케이션을 실행합니다.  
   
 5.  **Button1**을 누릅니다.  
   
-     응용 프로그램이 다음 정보를 응용 프로그램의 디버그 출력 및 로그 파일에 기록합니다.  
+     애플리케이션이 다음 정보를 애플리케이션의 디버그 출력 및 로그 파일에 기록합니다.  
   
      `DefaultSource Information: 0 : In Button1_Click`  
   
      `DefaultSource Error: 2 : Error in the application.`  
   
-6.  응용 프로그램을 닫습니다.  
+6.  애플리케이션을 닫습니다.  
   
-     응용 프로그램의 디버그 출력 창을 보는 방법에 대한 자세한 내용은 [출력 창](/visualstudio/ide/reference/output-window)을 참조하세요. 응용 프로그램 로그 파일의 위치에 대한 자세한 내용은 [연습: My.Application.Log가 정보를 기록하는 위치 확인](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)을 참조하세요.  
+     애플리케이션의 디버그 출력 창을 보는 방법에 대한 자세한 내용은 [출력 창](/visualstudio/ide/reference/output-window)을 참조하세요. 애플리케이션의 로그 파일 위치에 대한 정보는 [연습: My.Application.Log가 정보를 기록하는 위치 확인](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)을 참조하세요.  
   
     > [!NOTE]
-    >  기본적으로 응용 프로그램을 닫으면 응용 프로그램이 로그 파일 출력을 플러시합니다.  
+    >  기본적으로 애플리케이션을 닫으면 애플리케이션이 로그 파일 출력을 플러시합니다.  
   
      위의 예제에서 <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> 메서드에 대한 두 번째 호출 및 <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> 메서드에 대한 호출은 로그 출력을 생성하지만, `WriteEntry` 메서드에 대한 첫 번째 및 마지막 호출은 로그 출력을 생성하지 않습니다. `WriteEntry` 및 `WriteException`의 심각도 수준은 "정보" 및 "오류"이므로, 둘 다 `My.Application.Log` 개체의 기본 로그 필터링에서 허용됩니다. 그러나 "시작" 및 "중지" 심각도 수준의 이벤트는 로그 출력 생성이 금지됩니다.  
   
 ## <a name="filtering-for-all-myapplicationlog-listeners"></a>모든 My.Application.Log 수신기에 대한 필터링  
- `My.Application.Log` 개체는 `DefaultSwitch`라고 명명된 <xref:System.Diagnostics.SourceSwitch>를 사용하여 `WriteEntry` 및 `WriteException` 메서드에서 로그 수신기로 전달할 메시지를 제어합니다. 해당 값을 <xref:System.Diagnostics.SourceLevels> 열거형 값 중 하나로 설정하여 응용 프로그램의 구성 파일에서 `DefaultSwitch`를 구성할 수 있습니다. 기본적으로 값은 "정보"입니다.  
+ `My.Application.Log` 개체는 `DefaultSwitch`라고 명명된 <xref:System.Diagnostics.SourceSwitch>를 사용하여 `WriteEntry` 및 `WriteException` 메서드에서 로그 수신기로 전달할 메시지를 제어합니다. 해당 값을 <xref:System.Diagnostics.SourceLevels> 열거형 값 중 하나로 설정하여 애플리케이션의 구성 파일에서 `DefaultSwitch`를 구성할 수 있습니다. 기본적으로 값은 "정보"입니다.  
   
  다음 표는 특정 `DefaultSwitch` 설정이 지정된 경우 로그가 메시지를 수신기에 기록하는 데 필요한 심각도 수준을 보여 줍니다.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "43500019"
   
     1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
-    2.  **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**을 선택합니다.  
+    2.  **새 항목 추가** 대화 상자에서 **애플리케이션 구성 파일**을 선택합니다.  
   
     3.  **추가**를 클릭합니다.  
   
@@ -120,17 +120,17 @@ ms.locfileid: "43500019"
     </configuration>  
     ```  
   
-6.  디버거에서 응용 프로그램을 실행합니다.  
+6.  디버거에서 애플리케이션을 실행합니다.  
   
 7.  **Button1**을 누릅니다.  
   
-     응용 프로그램이 다음 정보를 응용 프로그램의 디버그 출력 및 로그 파일에 기록합니다.  
+     애플리케이션이 다음 정보를 애플리케이션의 디버그 출력 및 로그 파일에 기록합니다.  
   
      `DefaultSource Start: 4 : Entering Button1_Click`  
   
      `DefaultSource Stop: 5 : Leaving Button1_Click`  
   
-8.  응용 프로그램을 닫습니다.  
+8.  애플리케이션을 닫습니다.  
   
 9. `value` 특성의 값을 다시 "정보"로 변경합니다.  
   
@@ -138,7 +138,7 @@ ms.locfileid: "43500019"
     >  `DefaultSwitch` 스위치 설정은 `My.Application.Log`만 제어합니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.Diagnostics.Trace?displayProperty=nameWithType> 및 <xref:System.Diagnostics.Debug?displayProperty=nameWithType> 클래스의 동작은 변경되지 않습니다.  
   
 ## <a name="individual-filtering-for-myapplicationlog-listeners"></a>My.Application.Log 수신기에 대한 개별 필터링  
- 이전 예제에서는 모든 `My.Application.Log` 출력에 대한 필터링을 변경하는 방법을 보여 줍니다. 이 예제에서는 개별 로그 수신기를 필터링하는 방법을 보여 줍니다. 기본적으로 응용 프로그램에는 각각 응용 프로그램의 디버그 출력 및 로그 파일에 기록하는 두 개의 수신기가 있습니다.  
+ 이전 예제에서는 모든 `My.Application.Log` 출력에 대한 필터링을 변경하는 방법을 보여 줍니다. 이 예제에서는 개별 로그 수신기를 필터링하는 방법을 보여 줍니다. 기본적으로 애플리케이션에는 각각 애플리케이션의 디버그 출력 및 로그 파일에 기록하는 두 개의 수신기가 있습니다.  
   
  구성 파일은 각 로그 수신기에 `My.Application.Log`용 스위치와 비슷한 필터를 허용하여 로그 수신기의 동작을 제어합니다. 로그 수신기는 로그의 `DefaultSwitch` 및 로그 수신기의 필터에서 메시지의 심각도를 허용하는 경우에만 메시지를 출력합니다.  
   
@@ -154,7 +154,7 @@ ms.locfileid: "43500019"
   
     1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
-    2.  **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**을 선택합니다.  
+    2.  **새 항목 추가** 대화 상자에서 **애플리케이션 구성 파일**을 선택합니다.  
   
     3.  **추가**를 클릭합니다.  
   
@@ -229,28 +229,28 @@ ms.locfileid: "43500019"
     </configuration>  
     ```  
   
-8.  디버거에서 응용 프로그램을 실행합니다.  
+8.  디버거에서 애플리케이션을 실행합니다.  
   
 9. **Button1**을 누릅니다.  
   
-     응용 프로그램이 다음 정보를 응용 프로그램의 로그 파일에 기록합니다.  
+     애플리케이션이 다음 정보를 애플리케이션의 로그 파일에 기록합니다.  
   
      `Default Information: 0 : In Button1_Click`  
   
      `Default Error: 2 : Error in the application.`  
   
-     응용 프로그램은 좀 더 제한적인 필터링 때문에 응용 프로그램의 디버그 출력에 정보를 더 적게 기록합니다.  
+     애플리케이션은 좀 더 제한적인 필터링 때문에 애플리케이션의 디버그 출력에 정보를 더 적게 기록합니다.  
   
      `Default Error   2   Error`  
   
-10. 응용 프로그램을 닫습니다.  
+10. 애플리케이션을 닫습니다.  
   
- 배포 후 로그 설정을 변경하는 방법에 대한 자세한 내용은 [응용 프로그램 로그 작업](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)을 참조하세요.  
+ 배포 후 로그 설정을 변경하는 방법에 대한 자세한 내용은 [애플리케이션 로그 작업](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [연습: My.Application.Log가 정보를 기록하는 위치 확인](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)  
- [연습: My.Application.Log가 정보를 기록하는 위치 변경](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)  
- [연습: 사용자 지정 로그 수신기 만들기](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)  
- [방법: 로그 메시지 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)  
- [추적 스위치](../../../../framework/debug-trace-profile/trace-switches.md)  
- [응용 프로그램의 정보 기록](../../../../visual-basic/developing-apps/programming/log-info/index.md)
+## <a name="see-also"></a>참고 항목
+- [연습: My.Application.Log가 정보를 기록하는 위치 확인](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
+- [연습: My.Application.Log가 정보를 기록하는 위치 변경](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+- [연습: 사용자 지정 로그 수신기 만들기](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)
+- [방법: 로그 메시지 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
+- [추적 스위치](../../../../framework/debug-trace-profile/trace-switches.md)
+- [애플리케이션의 정보 기록](../../../../visual-basic/developing-apps/programming/log-info/index.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: e42a65f7-1e61-411f-b09a-aca1bbce24c6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f11928388dba9b0e9b442578bfb7b6f751c2e172
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b5c80ba473b0080a1368c82949c765820239ef25
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33387434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715740"
 ---
 # <a name="exposing-net-framework-components-to-com"></a>.NET Framework 구성 요소를 COM에 노출
 .NET 형식을 작성하고 비관리 코드에서 해당 형식을 사용하는 것은 개발자들에게 독특한 활동입니다. 이 섹션에서는 COM 클라이언트와 통합되는 관리 코드를 작성하기 위한 몇 가지 팁을 설명합니다.  
@@ -46,10 +46,10 @@ ms.locfileid: "33387434"
   
      COM 개발자는 관리되는 형식에서 메서드를 호출하는 동일한 방법으로 .NET 개체에서 메서드를 호출할 수 있습니다. 예를 들어 COM **CoCreateInstance** API는 .NET 개체를 활성화합니다.  
   
-4.  [COM 액세스를 위해 응용 프로그램을 배포합니다](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100)).  
+4.  [COM 액세스를 위해 애플리케이션을 배포합니다](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100)).  
   
-     강력한 이름의 어셈블리는 전역 어셈블리 캐시에 설치할 수 있고 게시자의 시그니처가 필요합니다. 강력한 이름이 아닌 어셈블리는 클라이언트의 응용 프로그램 디렉터리에 설치해야 합니다.  
+     강력한 이름의 어셈블리는 전역 어셈블리 캐시에 설치할 수 있고 게시자의 시그니처가 필요합니다. 강력한 이름이 아닌 어셈블리는 클라이언트의 애플리케이션 디렉터리에 설치해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [비관리 코드와의 상호 운용](../../../docs/framework/interop/index.md)  
- [COM Interop 샘플: COM 클라이언트 및 .NET 서버](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)
+## <a name="see-also"></a>참고 항목
+- [비관리 코드와의 상호 운용](../../../docs/framework/interop/index.md)
+- [COM Interop 샘플: COM 클라이언트 및 .NET 서버](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)

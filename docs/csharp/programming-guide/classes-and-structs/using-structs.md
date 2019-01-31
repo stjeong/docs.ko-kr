@@ -5,15 +5,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - structs [C#], using
 ms.assetid: cea4a459-9eb9-442b-8d08-490e0797ba38
-ms.openlocfilehash: b1e1405941cf9076e88aee5689ed933724727bb2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 16a8c1c9534e121c24289fbbfff14485b0338f63
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743948"
 ---
 # <a name="using-structs-c-programming-guide"></a>구조체 사용(C# 프로그래밍 가이드)
-`struct` 형식은 `Point`, `Rectangle`, `Color`등의 간단한 개체를 나타내는 데 적합합니다. 점을 [자동으로 구현된 속성](../../../csharp/language-reference/keywords/class.md) 이 있는 [클래스](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)로 표현할 수도 있지만 일부 시나리오에서는 [구조체](../../../csharp/language-reference/keywords/struct.md) 를 사용하는 것이 더 효율적일 수 있습니다. 예를 들어 1000개의 `Point` 개체가 있는 배열을 선언하는 경우에는 각 개체를 참조하기 위해 추가 메모리를 할당하게 되며, 이러한 경우 구조체가 보다 효율적입니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 에 <xref:System.Drawing.Point>라는 개체가 포함되어 있으므로 이 예제의 구조체 이름은 "CoOrds"로 지정되었습니다.  
+`struct` 형식은 `Point`, `Rectangle`, `Color`등의 간단한 개체를 나타내는 데 적합합니다. 점을 [자동으로 구현된 속성](../../../csharp/language-reference/keywords/class.md) 이 있는 [클래스](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)로 표현할 수도 있지만 일부 시나리오에서는 [구조체](../../../csharp/language-reference/keywords/struct.md) 를 사용하는 것이 더 효율적일 수 있습니다. 예를 들어 1000개의 `Point` 개체가 있는 배열을 선언하는 경우에는 각 개체를 참조하기 위해 추가 메모리를 할당하게 되며, 이러한 경우 구조체가 보다 효율적입니다. [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]에 <xref:System.Drawing.Point>라는 개체가 포함되어 있으므로 이 예제의 구조체 이름은 "Coords"로 지정되었습니다.  
   
  [!code-csharp[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
   
@@ -44,7 +44,7 @@ ms.locfileid: "53237105"
 ## <a name="example-2"></a>예제 2  
   
 ### <a name="description"></a>설명  
- 이 예제에서는 구조체의 특징에 대해 설명합니다. 여기서는 `new` 연산자를 사용하지 않고 CoOrds 개체를 만듭니다. `struct` 를 `class`로 바꾸면 프로그램이 컴파일되지 않습니다.  
+ 이 예제에서는 구조체의 특징에 대해 설명합니다. 여기서는 `new` 연산자를 사용하지 않고 Coords 개체를 만듭니다. `struct` 를 `class`로 바꾸면 프로그램이 컴파일되지 않습니다.  
   
 ### <a name="code"></a>코드  
  [!code-csharp[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
@@ -53,6 +53,6 @@ ms.locfileid: "53237105"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
 - [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)

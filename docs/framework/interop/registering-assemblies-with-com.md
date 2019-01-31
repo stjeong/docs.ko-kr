@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b92f36488dec113dcffffac3e6cdc0c26a690b5b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d3ba8cb41244157b1fca0f7e9d345625cc579d0a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33389163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494043"
 ---
 # <a name="registering-assemblies-with-com"></a>COM에 어셈블리 등록
 [어셈블리 등록 도구(Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md)라는 명령줄 도구를 실행하여 COM과 사용할 어셈블리를 등록하거나 등록 취소할 수 있습니다. COM 클라이언트에서 .NET Framework 클래스를 투명하게 사용할 수 있도록 Regasm.exe에서는 클래스에 대한 정보를 시스템 레지스트리에 추가합니다. <xref:System.Runtime.InteropServices.RegistrationServices> 클래스는 이와 동등한 기능을 제공합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33389163"
   
 -   전역 어셈블리 캐시(강력한 이름의 어셈블리여야 함).  
   
--   응용 프로그램 디렉터리. 응용 프로그램 경로에서 로드된 어셈블리는 해당 응용 프로그램에서만 액세스할 수 있습니다.  
+-   애플리케이션 디렉터리. 애플리케이션 경로에서 로드된 어셈블리는 해당 애플리케이션에서만 액세스할 수 있습니다.  
   
 -   **/codebase** 옵션을 사용하여 지정된 Regasm.exe의 파일 경로.  
   
@@ -43,8 +43,8 @@ ms.locfileid: "33389163"
   
  `InprocServer32` 하위 키의 경우, 기존 COM 형식 라이브러리의 위치에 Mscoree.dll의 참조가 표시되어 공용 언어 런타임을 통해 관리 개체가 생성되었음을 나타냅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.NET Framework 구성 요소를 COM에 노출](exposing-dotnet-components-to-com.md)  
- [방법: COM에서 .NET 형식 참조](how-to-reference-net-types-from-com.md)  
- [.NET 개체 호출](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  
- [COM 액세스를 위해 응용 프로그램 배포](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))
+## <a name="see-also"></a>참고 항목
+- [.NET Framework 구성 요소를 COM에 노출](exposing-dotnet-components-to-com.md)
+- [방법: COM에서 .NET 형식 참조](how-to-reference-net-types-from-com.md)
+- [.NET 개체 호출](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))
+- [COM 액세스를 위해 애플리케이션 배포](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))

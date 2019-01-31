@@ -5,12 +5,12 @@ helpviewer_keywords:
 - pattern matching
 - folders, finding
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
-ms.openlocfilehash: b3c80fccea06a48c78f37dc7d1c8dcc88e143de4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 32b0f5c1052d45e9c068d291f8e6efaf6dfbf906
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33586440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54677695"
 ---
 # <a name="how-to-find-subdirectories-with-a-specific-pattern-in-visual-basic"></a>방법: Visual Basic에서 특정 패턴의 하위 디렉터리 찾기
 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> 메서드는 디렉터리에 있는 하위 디렉터리의 경로 이름을 나타내는 읽기 전용 문자열 컬렉션을 반환합니다. `wildCards` 매개 변수를 사용하여 특정 패턴을 지정할 수 있습니다. 하위 디렉터리의 내용을 검색에 포함하려면 `searchType` 매개 변수를 `SearchOption.SearchAllSubDirectories`로 설정합니다.  
@@ -44,6 +44,6 @@ ms.locfileid: "33586440"
   
 -   사용자에게 필요한 권한이 없는 경우(<xref:System.UnauthorizedAccessException>)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>  
- [방법: 특정 패턴의 파일 찾기](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)
+## <a name="see-also"></a>참고 항목
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
+- [방법: 특정 패턴의 파일 찾기](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)

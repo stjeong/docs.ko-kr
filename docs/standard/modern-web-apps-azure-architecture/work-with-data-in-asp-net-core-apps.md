@@ -4,12 +4,12 @@ description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케�
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
-ms.openlocfilehash: efadf3a0d216197b05d6cd4cfe94ee3eb24bb18e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a30d6708b87687ee4d5cdb13452662e264a1b54c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54532684"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>ASP.NET Core 앱에서 데이터 작업
 
@@ -127,9 +127,9 @@ var brandsWithItems = await _context.CatalogBrands
 
 관련 데이터를 로드하는 또 다른 옵션은 _명시적 로드_를 사용하는 것입니다. 명시적 로드를 사용하면 이미 검색된 엔터티에 추가 데이터를 로드할 수 있습니다. 이 방법은 데이터베이스에 대한 별도의 요청이 개입되므로 요청당 데이터베이스 왕복 횟수를 최소화해야 하는 웹 애플리케이션에는 사용하지 않는 것이 좋습니다.
 
-_지연 로드_는 응용 프로그램에서 참조하는 관련 데이터를 자동으로 로드하는 기능입니다. EF Core는 버전 2.1에서 지연 로드에 대한 지원이 추가되었습니다. 지연 로드는 기본적으로 사용하지 않도록 설정되어 있으며 `Microsoft.EntityFrameworkCore.Proxies`를 설치해야 합니다. 명시적 로드와 마찬가지로 지연 로드는 각 웹 요청 내에서 수행되는 추가 데이터베이스 쿼리에서 사용되기 때문에 일반적으로 웹 애플리케이션에 대해 사용하지 않도록 설정되어 있습니다. 아쉽게도 지연 로드에서 발생하는 오버헤드는 대기 시간이 적고 테스트에 사용되는 데이터 집합이 작은 경우 개발 시기에 종종 간과됩니다. 단, 더 많은 사용자, 더 많은 데이터 및 더 긴 대기 시간의 프로덕션에서는 추가 데이터베이스 요청으로 인해 웹 애플리케이션의 성능이 저하되어 지연 로드를 과도하게 사용하게 됩니다.
+_지연 로드_는 애플리케이션에서 참조하는 관련 데이터를 자동으로 로드하는 기능입니다. EF Core는 버전 2.1에서 지연 로드에 대한 지원이 추가되었습니다. 지연 로드는 기본적으로 사용하지 않도록 설정되어 있으며 `Microsoft.EntityFrameworkCore.Proxies`를 설치해야 합니다. 명시적 로드와 마찬가지로 지연 로드는 각 웹 요청 내에서 수행되는 추가 데이터베이스 쿼리에서 사용되기 때문에 일반적으로 웹 애플리케이션에 대해 사용하지 않도록 설정되어 있습니다. 아쉽게도 지연 로드에서 발생하는 오버헤드는 대기 시간이 적고 테스트에 사용되는 데이터 집합이 작은 경우 개발 시기에 종종 간과됩니다. 단, 더 많은 사용자, 더 많은 데이터 및 더 긴 대기 시간의 프로덕션에서는 추가 데이터베이스 요청으로 인해 웹 애플리케이션의 성능이 저하되어 지연 로드를 과도하게 사용하게 됩니다.
 
-[웹 응용 프로그램에서 지연 로드 엔터티 방지](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
+[웹 애플리케이션에서 지연 로드 엔터티 방지](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
 
 ### <a name="resilient-connections"></a>복원력 있는 연결
 
@@ -165,9 +165,9 @@ public class Startup
 
 EF 코어 연결에서 다시 시도가 설정되면, EF 코어를 사용하여 수행하는 각 작업은 자체적으로 다시 시도할 수 있는 작업이 됩니다. 일시적인 오류가 발생할 경우 SaveChanges에 대한 각 쿼리와 각 호출이 하나의 단위로 다시 시도됩니다.
 
-그러나 코드가 BeginTransaction을 사용하여 트랜잭션을 시작한 경우, 하나의 단위로 처리해야 하는 자신만의 작업 그룹을 정의하게 됩니다. 오류가 발생하면 트랜잭션 내부의 모든 항목이 롤백됩니다. EF 실행 전략(다시 시도 정책)을 사용할 때 해당 트랜잭션을 실행하려고 시도하고 여러 DbContexts의 여러 SaveChanges를 포함하면 다음과 같은 예외가 표시됩니다.
+그러나 코드가 BeginTransaction을 사용하여 트랜잭션을 시작한 경우, 하나의 단위로 처리해야 하는 자신만의 작업 그룹을 정의하게 됩니다. 오류가 발생하면 트랜잭션 내부의 모든 항목이 롤백되어야 합니다. EF 실행 전략(다시 시도 정책)을 사용할 때 해당 트랜잭션을 실행하려고 시도하고 여러 DbContexts의 여러 SaveChanges를 포함하면 다음과 같은 예외가 표시됩니다.
 
-System.InvalidOperationException: 구성된 실행 전략 'SqlServerRetryingExecutionStrategy’는 사용자가 시작한 트랜잭션을 지원하지 않습니다. 'DbContext.Database.CreateExecutionStrategy()'에서 반환된 실행 전략을 사용하여 트랜잭션을 다시 시도가 가능한 단위로 트랜잭션의 모든 작업을 실행합니다.
+System.InvalidOperationException: 구성된 실행 전략 ‘SqlServerRetryingExecutionStrategy’는 사용자가 시작한 트랜잭션을 지원하지 않습니다. 'DbContext.Database.CreateExecutionStrategy()'에서 반환된 실행 전략을 사용하여 트랜잭션을 다시 시도가 가능한 단위로 트랜잭션의 모든 작업을 실행합니다.
 
 해결책은 실행해야 하는 모든 것을 나타내는 대리자를 사용하여 EF 실행 전략을 수동으로 호출하는 것입니다. 일시적인 오류가 발생하면, 실행 전략에서 대리자를 다시 호출합니다. 다음 코드는 이 방식을 구현하는 방법을 보여줍니다.
 
@@ -202,7 +202,7 @@ await strategy.ExecuteAsync(async () =>
 >   <https://docs.microsoft.com/ef/>
 > - **EF Core: 관련 데이터**  
 >   <https://docs.microsoft.com/ef/core/querying/related-data>
-> - **ASPNET 응용 프로그램에서 엔터티 지연 로드 방지**  
+> - **ASPNET 애플리케이션에서 엔터티 지연 로드 방지**  
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## <a name="ef-core-or-micro-orm"></a>EF Core 또는 마이크로 ORM
@@ -267,7 +267,7 @@ EF Core는 대부분의 애플리케이션에서, 그리고 애플리케이션�
 
 NoSQL 데이터베이스에서는 개체의 여러 버전을 저장할 수 있으며, 무언가 고정된 스키마 관계형 데이터베이스는 일반적으로 지원하지 않습니다. 그러나 이 경우 애플리케이션 코드에서 개체의 이전 버전이 존재하여 복잡성이 추가되는지 고려해야 합니다.
 
-NoSQL 데이터베이스는 일반적으로 [ACID](https://en.wikipedia.org/wiki/ACID)를 적용하지 않습니다. 즉, 관계형 데이터베이스보다 성능과 확장성이 더 좋습니다. 정규화된 테이블 구조의 스토리지에 적합하지 않은 매우 큰 데이터 세트 및 개체에 적합합니다. 각 데이터베이스를 적합하게 사용한다면 단일 애플리케이션으로 관계형 데이터베이스와 NoSQL 데이터베이스의 장점을 모두 취하지 못할 이유가 없습니다.
+NoSQL 데이터베이스는 일반적으로 [ACID](https://en.wikipedia.org/wiki/ACID)를 적용하지 않습니다. 즉, 관계형 데이터베이스보다 성능과 확장성이 더 좋습니다. 정규화된 테이블 구조의 스토리지에 적합하지 않은 매우 거대한 데이터 세트 및 개체에 적합합니다. 각 데이터베이스를 적합하게 사용한다면 단일 애플리케이션으로 관계형 데이터베이스와 NoSQL 데이터베이스의 장점을 모두 취하지 못할 이유가 없습니다.
 
 ## <a name="azure-documentdb"></a>Azure DocumentDB
 
@@ -286,7 +286,7 @@ DocumentDB 쿼리 언어는 JSON 문서를 쿼리하는 데 사용되는 단순�
 
 ## <a name="other-persistence-options"></a>다른 지속성 옵션
 
-관계형 및 NoSQL 저장소 옵션 외에도, ASP.NET Core 애플리케이션은 Azure Storage를 사용하여 다양한 데이터 형식 및 파일을 클라우드 기반의 확장 가능한 방식으로 저장할 수 있습니다. Azure Storage는 대규모로 확장할 수 있으므로 처음에는 적은 양의 데이터를 저장하는 것으로 시작하고, 이후에 애플리케이션에 필요하면 수백 테라바이트를 저장하도록 강화할 수 있습니다. Azure Storage는 다음과 같은 네 가지 데이터를 지원합니다.
+관계형 및 NoSQL 스토리지 옵션 외에도, ASP.NET Core 애플리케이션은 Azure Storage를 사용하여 다양한 데이터 형식 및 파일을 클라우드 기반의 확장 가능한 방식으로 저장할 수 있습니다. Azure Storage는 대규모로 확장할 수 있으므로 처음에는 적은 양의 데이터를 저장하는 것으로 시작하고, 이후에 애플리케이션에 필요하면 수백 테라바이트를 저장하도록 강화할 수 있습니다. Azure Storage는 다음과 같은 네 가지 데이터를 지원합니다.
 
 - 구조화되지 않은 텍스트 또는 이진 스토리지를 위한 Blob Storage로 개체 스토리지라고도 합니다.
 

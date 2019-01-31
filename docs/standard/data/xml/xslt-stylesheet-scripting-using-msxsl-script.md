@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 68c98b3b4effbe7cea1a3c4443d2222e6bbcd43c
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 5c57f8964172d351ddae048ea36e63a13cf2578d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46584255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563433"
 ---
 # <a name="xslt-stylesheet-scripting-using-ltmsxslscriptgt"></a>&lt;msxsl:script&gt;를 사용한 XSLT 스타일시트 스크립트
 <xref:System.Xml.Xsl.XslTransform> 클래스는 `script` 요소를 사용하여 포함 스크립트를 지원합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "46584255"
   
  여기서 `msxsl`은 네임스페이스 `urn:schemas-microsoft-com:xslt`에 바인딩되는 접두사입니다.  
   
- `language` 특성은 필수 항목은 아니지만, 지정할 경우 값은 C#, VB, JScript, JavaScript, VisualBasic 또는 Csharp 중 하나여야 합니다. 지정하지 않을 경우 언어 기본값은 JScript입니다. `language-name`은 대/소문자를 구분하지 않으므로 'JavaScript'와 'javascript'는 같습니다.  
+ `language` 특성은 필수 항목은 아니지만, 지정할 경우 C#, VB, JScript, JavaScript, VisualBasic 또는 CSharp 중 하나여야 합니다. 지정하지 않을 경우 언어 기본값은 JScript입니다. `language-name`은 대/소문자를 구분하지 않으므로 'JavaScript'와 'javascript'는 같습니다.  
   
  `implements-prefix` 특성은 필수 항목입니다. 이 특성은 네임스페이스를 선언하고 스크립트 블록에 연결하는 데 사용됩니다. 이 특성 값은 네임스페이스를 나타내는 접두사입니다. 이 네임스페이스는 스타일시트에서 정의할 수 있습니다.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "46584255"
 |결과 트리 조각|System.Xml.XPath.XPathNavigator|XSLT|  
 |노드 집합|System.Xml.XPath.XPathNodeIterator|XPath|  
   
- 스크립트 함수에서 Int16, UInt16, Int32, UInt32, Int64, UInt64, Single 또는 Decimal과 같은 숫자 형식을 사용한다면 W3C XPath 형식의 숫자에 매핑되는 Double이 됩니다. 기타 모든 형식은 `ToString` 메서드 호출을 통해 문자열 형식이 됩니다.  
+ 스크립트 함수가 다음 숫자 유형 중 하나를 사용하는 경우: Int16, UInt16, Int32, UInt32, Int64, UInt64, Single 또는 Decimal의 경우 W3C XPath 형식 숫자에 매핑되는 Double이 되어야 합니다. 기타 모든 형식은 `ToString` 메서드 호출을 통해 문자열 형식이 됩니다.  
   
  스크립트 함수에서 위에 설명되어 있지 않은 형식을 사용하거나 스타일시트를 <xref:System.Xml.Xsl.XslTransform> 개체에 로드할 때 함수가 컴파일되지 않으면 예외가 throw됩니다.  
   
@@ -89,9 +89,10 @@ ms.locfileid: "46584255"
  지정된 언어의 연산자, 식별자 또는 구분자가 XML로 잘못 해석될 위험이 있으므로 스크립트 내용을 CDATA 섹션에 배치하는 것이 좋습니다. 다음 예제에서는 스크립트에서 논리곱 연산자를 사용하는 방법을 보여 줍니다.  
   
 ```xml  
-<msxsl:script implements-prefix='yourprefix' language='CSharp>  
+<msxsl:script implements-prefix='yourprefix' language='CSharp'>  
     public string book(string abc, string xyz)  
-    {  if ((abc== abc)&&(abc== xyz)) return bar+xyz;  
+    {  
+        if ((abc == bar) && (abc == xyz)) return bar + xyz;  
         else return null;  
     }  
 </msxsl:script>  
@@ -99,7 +100,7 @@ ms.locfileid: "46584255"
   
  이 경우 앰퍼샌드가 이스케이프되지 않기 때문에 예외가 throw됩니다. 문서는 XML로 로드되고 `msxsl:script` 요소 태그 사이의 텍스트에는 특별한 작업이 수행되지 않습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 포함 스크립트를 사용하여 주어진 반지름으로 원의 원주를 계산합니다.  
   
 ```vb  
@@ -146,8 +147,8 @@ public class Sample
    private const String filename = "number.xml";  
    private const String stylesheet = "calc.xsl";  
   
-   public static void Main() {  
-  
+   public static void Main()  
+   {  
     //Create the XslTransform and load the style sheet.  
     XslTransform xslt = new XslTransform();  
     xslt.Load(stylesheet);  
@@ -162,7 +163,7 @@ public class Sample
     //Transform the file.  
     xslt.Transform(doc, null, writer, null);  
     writer.Close();  
-  }   
+  }  
 }  
 ```  
   
@@ -190,7 +191,8 @@ public class Sample
   
   <msxsl:script language="C#" implements-prefix="user">  
      <![CDATA[  
-     public double circumference(double radius){  
+     public double circumference(double radius)  
+     {  
        double pi = 3.14;  
        double circ = pi*radius*2;  
        return circ;  

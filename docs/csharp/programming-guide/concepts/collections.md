@@ -2,19 +2,19 @@
 title: 컬렉션(C#)
 ms.date: 07/20/2015
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-ms.openlocfilehash: 24b2155c07b6b66820d373d6310ff6b1c6ab224f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 1f73081cacbc08fdaaca3cbc57dfe731eddab7ee
+ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45679176"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55084122"
 ---
 # <a name="collections-c"></a>컬렉션(C#)
-대부분의 응용 프로그램의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
+대부분의 애플리케이션의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
   
  배열은 고정된 개수의 강력한 형식 개체를 만들고 작업하는 데 가장 유용합니다. 배열에 대한 자세한 내용은 [배열](../../../csharp/programming-guide/arrays/index.md)을 참조하세요.  
   
- 컬렉션은 개체 그룹에 대해 작업하는 보다 유연한 방법을 제공합니다. 배열과 달리, 응용 프로그램의 요구가 변경됨에 따라 작업하는 개체 그룹이 동적으로 확장되거나 축소될 수 있습니다. 일부 컬렉션의 경우 키를 사용하여 개체를 신속하게 검색할 수 있도록 컬렉션에 추가하는 모든 개체에 키를 할당할 수 있습니다.  
+ 컬렉션은 개체 그룹에 대해 작업하는 보다 유연한 방법을 제공합니다. 배열과 달리, 애플리케이션의 요구가 변경됨에 따라 작업하는 개체 그룹이 동적으로 확장되거나 축소될 수 있습니다. 일부 컬렉션의 경우 키를 사용하여 개체를 신속하게 검색할 수 있도록 컬렉션에 추가하는 모든 개체에 키를 할당할 수 있습니다.  
   
  컬렉션은 클래스이므로 해당 컬렉션에 요소를 추가하려면 먼저 클래스 인스턴스를 선언해야 합니다.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "45679176"
 ## <a name="using-a-simple-collection"></a>간단한 컬렉션 사용  
  이 섹션의 예제에서는 강력한 형식의 개체 목록을 사용할 수 있게 해주는 제네릭 <xref:System.Collections.Generic.List%601> 클래스를 사용합니다.  
   
- 다음 예제에서는 문자열 목록을 만들고 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 문을 사용하여 문자열을 반복합니다.  
+ 다음 예제에서는 문자열 목록을 만든 다음, [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 문을 사용하여 문자열을 반복합니다.  
   
 ```csharp  
 // Create a list of strings.  
@@ -577,13 +577,13 @@ private static IEnumerable<int> EvenSequence(
   
 ## <a name="see-also"></a>참고 항목
 
-- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)  
-- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
-- [LINQ to Objects(C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
-- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
-- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
-- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
-- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
-- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
-- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)  
+- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)
+- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [LINQ to Objects(C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)
+- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)
+- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)
+- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)
+- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WebRequest class, sending data to a host
 - Sending data to a host, using WebRequest class
 ms.assetid: 66686878-38ac-4aa6-bf42-ffb568ffc459
-ms.openlocfilehash: 1f10c5e0c6c266b7b31d658ec561bd8d6d85697b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: dac372ce4f9da99b91b6f8d140d69ce9f1238f30
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54562900"
 ---
 # <a name="how-to-send-data-using-the-webrequest-class"></a>방법: WebRequest 클래스를 사용하여 데이터 보내기
 다음 프로시저에서는 서버에 데이터를 보내는 데 사용되는 단계를 설명합니다. 이 프로시저는 일반적으로 웹 페이지에 데이터를 게시하는 데 사용됩니다.  
@@ -124,7 +124,7 @@ ms.locfileid: "53129469"
     ```  
   
     > [!NOTE]
-    >  <xref:System.Net.WebResponse> 개체가 필요 없게 되면 <xref:System.Net.WebResponse.Close%2A> 메서드를 호출하여 개체를 닫아야 합니다. 또는 응답 개체에서 응답 스트림을 이미 가져온 경우 <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> 메서드를 호출하여 스트림을 닫을 수 있습니다. 응답이나 스트림을 닫지 않으면 응용 프로그램이 서버에 대한 연결을 모두 사용하여 추가 요청을 처리하지 못하게 될 수 있습니다.  
+    >  <xref:System.Net.WebResponse> 개체가 필요 없게 되면 <xref:System.Net.WebResponse.Close%2A> 메서드를 호출하여 개체를 닫아야 합니다. 또는 응답 개체에서 응답 스트림을 이미 가져온 경우 <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> 메서드를 호출하여 스트림을 닫을 수 있습니다. 응답이나 스트림을 닫지 않으면 애플리케이션이 서버에 대한 연결을 모두 사용하여 추가 요청을 처리하지 못하게 될 수 있습니다.  
   
 10. **WebResponse**의 속성에 액세스하거나 **WebResponse**를 프로토콜별 인스턴스로 캐스팅하여 프로토콜별 속성을 읽을 수 있습니다. 예를 들어 <xref:System.Net.HttpWebResponse>의 HTTP 관련 속성에 액세스하려면 **WebResponse**를 **HttpWebResponse** 참조로 캐스팅해야 합니다.  
   
@@ -255,9 +255,9 @@ Namespace Examples.System.Net
 End Namespace  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [인터넷 요청 만들기](../../../docs/framework/network-programming/creating-internet-requests.md)  
- [네트워크에서 스트림 사용](../../../docs/framework/network-programming/using-streams-on-the-network.md)  
- [프록시를 통해 인터넷 액세스](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
- [데이터 요청](../../../docs/framework/network-programming/requesting-data.md)  
- [방법: WebRequest 클래스를 사용하여 데이터 요청](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
+## <a name="see-also"></a>참고 항목
+- [인터넷 요청 만들기](../../../docs/framework/network-programming/creating-internet-requests.md)
+- [네트워크에서 스트림 사용](../../../docs/framework/network-programming/using-streams-on-the-network.md)
+- [프록시를 통해 인터넷 액세스](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+- [데이터 요청](../../../docs/framework/network-programming/requesting-data.md)
+- [방법: WebRequest 클래스를 사용하여 데이터 요청](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)

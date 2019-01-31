@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6447593ba81e4512afaf2b5798fcec00b755e63c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 9b210ea2126058d38c2586c5bdd0d94af2abab30
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50184787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529819"
 ---
 # <a name="assembly-names"></a>어셈블리 이름
-어셈블리 이름은 메타데이터에 저장되고 어셈블리 범위 및 응용 프로그램에 의한 사용에 상당한 영향을 미칩니다. 강력한 이름의 어셈블리에는 어셈블리의 이름, 문화권, 공개 키 및 버전 번호가 포함된 정규화된 이름이 있습니다. 이 이름을 보통 표시 이름이라고 하고 로드된 어셈블리의 경우 <xref:System.Reflection.Assembly.FullName%2A> 속성을 사용하여 가져올 수 있습니다.  
+어셈블리 이름은 메타데이터에 저장되고 어셈블리 범위 및 애플리케이션에 의한 사용에 상당한 영향을 미칩니다. 강력한 이름의 어셈블리에는 어셈블리의 이름, 문화권, 공개 키 및 버전 번호가 포함된 정규화된 이름이 있습니다. 이 이름을 보통 표시 이름이라고 하고 로드된 어셈블리의 경우 <xref:System.Reflection.Assembly.FullName%2A> 속성을 사용하여 가져올 수 있습니다.  
   
  런타임은 이 정보를 사용하여 어셈블리를 찾고 같은 이름을 가진 다른 어셈블리와 구별합니다. 예를 들어 `myTypes`라는 강력한 이름의 어셈블리에는 다음과 같은 정규화된 이름이 있을 수 있습니다.  
   
@@ -47,20 +47,20 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
 > [!NOTE]
 >  런타임은 어셈블리에 바인딩할 때 어셈블리 이름의 대/소문자를 구분하지 않고 처리하지만 어셈블리에서 사용된 대/소문자를 보존합니다. [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]의 여러 도구는 어셈블리 이름의 대/소문자를 구분하고 처리합니다. 최상의 결과를 위해서 대/소문자를 구분한 것처럼 어셈블리 이름을 관리하세요.  
   
-## <a name="naming-application-components"></a>응용 프로그램 구성 요소 이름 지정  
+## <a name="naming-application-components"></a>애플리케이션 구성 요소 이름 지정  
  런타임은 어셈블리 ID를 확인할 때 파일 이름을 고려하지 않습니다. 어셈블리 이름, 버전, 문화권 및 강력한 이름으로 구성된 어셈블리 ID는 런타임에 대해 분명해야 합니다.  
   
- 예를 들어 myAssembly.dll 어셈블리를 참조하는 myAssembly.exe 어셈블리가 있는 경우 myAssembly.exe를 실행하면 바인딩이 올바르게 수행됩니다. 하지만 또 다른 응용 프로그램이 <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType> 메서드를 사용하여 myAssembly.exe를 실행하면 런타임은 myAssembly.exe가 "myAssembly"에 대한 바인딩을 요청할 때 "myAssembly"가 이미 로드되었다고 판단합니다. 이 경우 myAssembly.dll은 로드되지 않습니다. myAssembly.exe에 요청된 형식이 포함되어 있지 않으므로 <xref:System.TypeLoadException>이 발생합니다.  
+ 예를 들어 myAssembly.dll 어셈블리를 참조하는 myAssembly.exe 어셈블리가 있는 경우 myAssembly.exe를 실행하면 바인딩이 올바르게 수행됩니다. 하지만 또 다른 애플리케이션이 <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType> 메서드를 사용하여 myAssembly.exe를 실행하면 런타임은 myAssembly.exe가 "myAssembly"에 대한 바인딩을 요청할 때 "myAssembly"가 이미 로드되었다고 판단합니다. 이 경우 myAssembly.dll은 로드되지 않습니다. myAssembly.exe에 요청된 형식이 포함되어 있지 않으므로 <xref:System.TypeLoadException>이 발생합니다.  
   
- 이 문제를 방지하려면 응용 프로그램을 구성하는 어셈블리의 이름을 서로 다르게 지정하거나 같은 이름을 가진 어셈블리를 서로 다른 디렉터리에 포함하세요.  
+ 이 문제를 방지하려면 애플리케이션을 구성하는 어셈블리의 이름을 서로 다르게 지정하거나 같은 이름을 가진 어셈블리를 서로 다른 디렉터리에 포함하세요.  
   
 > [!NOTE]
->  강력한 이름의 어셈블리를 전역 어셈블리 캐시에 포함할 경우 어셈블리의 파일 이름은 어셈블리 이름(.exe 또는 .dll 등의 파일 이름 확장명 제외)과 일치해야 합니다. 예를 들어 어셈블리의 파일 이름이 myAssembly.dll이면 어셈블리 이름은 myAssembly여야 합니다. 루트 응용 프로그램 디렉터리에만 배포된 전용 어셈블리의 이름은 파일 이름과 다를 수 있습니다.  
+>  강력한 이름의 어셈블리를 전역 어셈블리 캐시에 포함할 경우 어셈블리의 파일 이름은 어셈블리 이름(.exe 또는 .dll 등의 파일 이름 확장명 제외)과 일치해야 합니다. 예를 들어 어셈블리의 파일 이름이 myAssembly.dll이면 어셈블리 이름은 myAssembly여야 합니다. 루트 애플리케이션 디렉터리에만 배포된 전용 어셈블리의 이름은 파일 이름과 다를 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
-- [방법: 어셈블리의 정규화된 이름 식별](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)  
-- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)  
-- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)  
-- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)  
-- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
+## <a name="see-also"></a>참고 항목
+- [방법: 어셈블리의 정규화된 이름 식별](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)
+- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)
+- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)

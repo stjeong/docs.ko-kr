@@ -3,14 +3,14 @@ title: .NET 용어
 description: .NET 설명서에서 사용되는 선택한 용어의 의미를 알아봅니다.
 author: tdykstra
 ms.author: tdykstra
-ms.date: 07/08/2017
+ms.date: 01/22/2019
 ms.technology: dotnet-standard
-ms.openlocfilehash: 4ffcf56ba171192048a736b58ddcfa591fd3af58
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: b9654bf7f6cbc1019d00db986ba883cbab0abbb5
+ms.sourcegitcommit: 5dcfeb59179e81071f54840d4902cbe00b184294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840273"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54857975"
 ---
 # <a name="net-glossary"></a>.NET 용어
 
@@ -20,7 +20,9 @@ ms.locfileid: "48840273"
 
 Ahead-Of-Time 컴파일러입니다.
 
-[JIT](#jit)와 비슷한 이 컴파일러도 [IL](#il)을 기계어 코드로 변환합니다. JIT 컴파일과 달리 AOT 컴파일은 응용 프로그램이 실행되기 전에 수행되며 일반적으로 다른 컴퓨터에서 수행됩니다. AOT 도구 체인은 런타임에 컴파일되지 않으므로 컴파일 시간을 최소화할 필요가 없습니다. 즉, 더 많은 시간을 최적화하는 데 사용할 수 있습니다. AOT의 컨텍스트는 전체 응용 프로그램이므로 AOT 컴파일러는 모듈 간 연결 및 전체 프로그램 분석도 수행합니다. 즉, 모든 참조가 수행되고 단일 실행 파일이 생성된다는 의미입니다.
+[JIT](#jit)와 비슷한 이 컴파일러도 [IL](#il)을 기계어 코드로 변환합니다. JIT 컴파일과 달리 AOT 컴파일은 애플리케이션이 실행되기 전에 수행되며 일반적으로 다른 컴퓨터에서 수행됩니다. AOT 도구 체인은 런타임에 컴파일되지 않으므로 컴파일 시간을 최소화할 필요가 없습니다. 즉, 더 많은 시간을 최적화하는 데 사용할 수 있습니다. AOT의 컨텍스트는 전체 애플리케이션이므로 AOT 컴파일러는 모듈 간 연결 및 전체 프로그램 분석도 수행합니다. 즉, 모든 참조가 수행되고 단일 실행 파일이 생성된다는 의미입니다.
+
+[CoreRT](#corert) 및 [.NET 네이티브](#net-native)를 참조하세요.
 
 ## <a name="aspnet"></a>ASP.NET 
 
@@ -38,7 +40,7 @@ Ahead-Of-Time 컴파일러입니다.
 
 ## <a name="assembly"></a>어셈블리
 
-응용 프로그램이나 다른 어셈블리에서 호출할 수 있는 API 컬렉션을 포함할 수 있는 *.dll*/*.exe* 파일입니다.
+애플리케이션이나 다른 어셈블리에서 호출할 수 있는 API 컬렉션을 포함할 수 있는 *.dll*/*.exe* 파일입니다.
 
 어셈블리에는 인터페이스, 클래스, 구조체, 열거형 및 대리자와 같은 형식이 포함될 수 있습니다. 프로젝트의 *bin* 폴더에 있는 어셈블리를 *바이너리*라고도 합니다. [라이브러리](#library)를 참조하세요.
 
@@ -58,7 +60,7 @@ Ahead-Of-Time 컴파일러입니다.
 
 .NET Core BCL(기본 클래스 라이브러리)
 
-System.\* (및 제한된 범위의 Microsoft.\*) 네임스페이스를 구성하는 라이브러리 집합입니다. BCL은 ASP.NET Core 같은 상위 수준 응용 프로그램 프레임워크의 기반이 되는 하위 수준의 범용 프레임워크입니다. .NET Core BCL의 소스 코드는 [CoreFX 리포지토리](https://github.com/dotnet/corefx)에 포함되어 있습니다. 그러나 대부분의 .NET Core API는 .NET Framework에서 사용할 수도 있으므로 CoreFX를 .NET Framework BCL의 포크로 생각할 수 있습니다.
+System.\* (및 제한된 범위의 Microsoft.\*) 네임스페이스를 구성하는 라이브러리 집합입니다. BCL은 ASP.NET Core 같은 상위 수준 애플리케이션 프레임워크의 기반이 되는 하위 수준의 범용 프레임워크입니다. .NET Core BCL의 소스 코드는 [CoreFX 리포지토리](https://github.com/dotnet/corefx)에 포함되어 있습니다. 그러나 대부분의 .NET Core API는 .NET Framework에서 사용할 수도 있으므로 CoreFX를 .NET Framework BCL의 포크로 생각할 수 있습니다.
 
 ## <a name="corert"></a>CoreRT
 
@@ -70,11 +72,11 @@ CLR/CoreCLR과 달리 CoreRT는 가상 머신이 아닙니다. 즉, [JIT](#jit)�
 
 ## <a name="cross-platform"></a>플랫폼 간
 
-각 운영 체제에 맞게 다시 작성할 필요 없이 Linux, Windows 및 iOS와 같은 다양한 운영 체제에서 사용할 수 있는 응용 프로그램을 개발하고 실행하는 기능입니다. 이를 통해 다양한 플랫폼에서 응용 프로그램 간에 코드를 다시 사용하고 일관성을 유지할 수 있습니다.
+각 운영 체제에 맞게 다시 작성할 필요 없이 Linux, Windows 및 iOS와 같은 다양한 운영 체제에서 사용할 수 있는 애플리케이션을 개발하고 실행하는 기능입니다. 이를 통해 다양한 플랫폼에서 애플리케이션 간에 코드를 다시 사용하고 일관성을 유지할 수 있습니다.
 
 ## <a name="ecosystem"></a>에코시스템
 
-특정 기술에 대한 응용 프로그램을 빌드하고 실행하는 데 사용되는 모든 런타임 소프트웨어, 개발 도구 및 커뮤니티 리소스입니다.
+특정 기술에 대한 애플리케이션을 빌드하고 실행하는 데 사용되는 모든 런타임 소프트웨어, 개발 도구 및 커뮤니티 리소스입니다.
 
 “.NET 에코시스템”이라는 용어는 타사 앱 및 라이브러리를 포함한다는 점에서 “.NET 스택”과 같은 유사한 용어와 다릅니다. 다음은 문장에서의 예제입니다.
 
@@ -82,7 +84,7 @@ CLR/CoreCLR과 달리 CoreRT는 가상 머신이 아닙니다. 즉, [JIT](#jit)�
 
 ## <a name="framework"></a>프레임워크
 
-일반적으로 특정 기술을 기반으로 하는 응용 프로그램의 개발 및 배포를 용이하게 하는 포괄적인 API 컬렉션입니다. 이 일반적인 의미에서 ASP.NET Core 및 Windows Forms는 응용 프로그램 프레임워크의 예입니다. [라이브러리](#library)를 참조하세요.
+일반적으로 특정 기술을 기반으로 하는 애플리케이션의 개발 및 배포를 용이하게 하는 포괄적인 API 컬렉션입니다. 이 일반적인 의미에서 ASP.NET Core 및 Windows Forms는 애플리케이션 프레임워크의 예입니다. [라이브러리](#library)를 참조하세요.
 
 “프레임 워크”라는 단어는 다음과 같은 용어에서 좀 더 구체적인 기술적 의미가 있습니다.
 * [.NET Framework](#net-framework)
@@ -109,15 +111,15 @@ C#과 같은 상위 수준 .NET 언어가 IL(중간 언어)이라는 하드웨�
 
 Just-In-Time 컴파일러입니다.
 
-[AOT](#aot)와 유사한 이 컴파일러는 [IL](#il)을 프로세서에서 이해하는 기계어 코드로 변환합니다. AOT와 달리 JIT 컴파일은 요청 시 수행되며 코드가 실행되어야 하는 것과 동일한 컴퓨터에서 수행됩니다. JIT 컴파일은 응용 프로그램이 실행되는 동안 수행되므로 컴파일 시간이 실행 시간의 일부입니다. 따라서 JIT 컴파일러는 결과 코드가 생성할 수 있는 시간 단축과 코드 최적화에 소요된 시간의 균형을 맞춰야 합니다. 그러나 JIT는 실제 하드웨어를 인식하므로 개발자가 다른 구현을 제공할 필요가 없도록 합니다.
+[AOT](#aot)와 유사한 이 컴파일러는 [IL](#il)을 프로세서에서 이해하는 기계어 코드로 변환합니다. AOT와 달리 JIT 컴파일은 요청 시 수행되며 코드가 실행되어야 하는 것과 동일한 컴퓨터에서 수행됩니다. JIT 컴파일은 애플리케이션이 실행되는 동안 수행되므로 컴파일 시간이 실행 시간의 일부입니다. 따라서 JIT 컴파일러는 결과 코드가 생성할 수 있는 시간 단축과 코드 최적화에 소요된 시간의 균형을 맞춰야 합니다. 그러나 JIT는 실제 하드웨어를 인식하므로 개발자가 다른 구현을 제공할 필요가 없도록 합니다.
 
 ## <a name="implementation-of-net"></a>.NET의 구현
 
 .NET의 구현에는 다음이 포함됩니다.
 
-- 하나 이상의 런타임. 예를 들어 CLR, CoreCLR, CoreRT가 있습니다.
+- 하나 이상의 런타임. 예를 들면 다음과 같습니다. CLR, CoreCLR, CoreRT.
 - .NET Standard의 버전을 구현하고 추가 API를 포함할 수 있는 클래스 라이브러리. 예를 들어 .NET Framework 기본 클래스 라이브러리, .NET Core 기본 클래스 라이브러리가 있습니다.
-- 필요에 따라 하나 이상의 응용 프로그램 프레임워크. 예를 들어 ASP.NET, Windows Forms 및 WPF가 .NET Framework에 포함됩니다.
+- 필요에 따라 하나 이상의 애플리케이션 프레임워크. 예를 들면 다음과 같습니다. ASP.NET, Windows Forms 및 WPF가 .NET Framework에 포함됩니다.
 - 필요에 따라 개발 도구. 일부 개발 도구는 여러 구현에서 공유됩니다.
 
 .NET 구현의 예:
@@ -140,11 +142,11 @@ Just-In-Time 컴파일러입니다.
 
 ## <a name="mono"></a>Mono
 
-Mono는 작은 런타임이 필요할 때 주로 사용되는 오픈 소스 [플랫폼 간](#cross-platform) .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 응용 프로그램의 성능을 향상하는 런타임으로, 주로 작은 사용 공간이 필요한 앱에 초점을 맞춥니다.
+Mono는 작은 런타임이 필요할 때 주로 사용되는 오픈 소스 [플랫폼 간](#cross-platform) .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 애플리케이션의 성능을 향상하는 런타임으로, 주로 작은 사용 공간이 필요한 앱에 초점을 맞춥니다.
 
 Mono는 현재 게시된 .NET Standard 버전을 모두 지원합니다.
 
-지금까지 Mono는 .NET Framework의 더 큰 API를 구현하고 Unix에서 가장 인기 있는 기능 중 일부를 에뮬레이트했습니다. 경우에 따라 Unix에서 해당 기능을 사용하는 .NET 응용 프로그램을 실행하는 데도 사용됩니다.
+지금까지 Mono는 .NET Framework의 더 큰 API를 구현하고 Unix에서 가장 인기 있는 기능 중 일부를 에뮬레이트했습니다. 경우에 따라 Unix에서 해당 기능을 사용하는 .NET 애플리케이션을 실행하는 데도 사용됩니다.
 
 일반적으로 Mono는 Just-In-Time 컴파일러에서 사용되지만 iOS 같은 플랫폼에 사용되는 전체 정적 컴파일러(Ahead-Of-Time 컴파일) 기능도 제공합니다.
 
@@ -164,19 +166,19 @@ Mono에 대한 자세한 내용은 [Mono 설명서](https://www.mono-project.com
 
 ## <a name="net-core-cli"></a>.NET Core CLI
 
-.NET Core 응용 프로그램을 개발하기 위한 플랫폼 간 도구 체인입니다.
+.NET Core 애플리케이션을 개발하기 위한 플랫폼 간 도구 체인입니다.
 
 [.NET Core CLI(명령줄 인터페이스) 도구](../core/tools/index.md)를 참조하세요.
 
 ## <a name="net-core-sdk"></a>.NET Core SDK
 
-개발자가 .NET Core 응용 프로그램과 라이브러리를 만드는 데 사용할 수 있는 라이브러리 및 도구 집합입니다. 앱을 빌드하기 위한 [.NET Core CLI](#net-core-cli), 앱을 빌드하고 실행하기 위한 .NET Core 라이브러리 및 런타임, CLI 명령을 실행하고 응용 프로그램을 실행하는 dotnet 실행 파일(*dotnet.exe*)을 포함합니다.
+개발자가 .NET Core 애플리케이션과 라이브러리를 만드는 데 사용할 수 있는 라이브러리 및 도구 집합입니다. 앱을 빌드하기 위한 [.NET Core CLI](#net-core-cli), 앱을 빌드하고 실행하기 위한 .NET Core 라이브러리 및 런타임, CLI 명령을 실행하고 애플리케이션을 실행하는 dotnet 실행 파일(*dotnet.exe*)을 포함합니다.
 
 [.NET Core SDK 개요](../core/sdk.md)를 참조하세요.
 
 ## <a name="net-framework"></a>.NET Framework
 
-Windows에서만 실행되는 .NET의 구현입니다. CLR(공용 언어 런타임), 기본 클래스 라이브러리 및 ASP.NET, Windows Forms, WPF 등의 응용 프로그램 프레임워크 라이브러리를 포함합니다.
+Windows에서만 실행되는 .NET의 구현입니다. CLR(공용 언어 런타임), 기본 클래스 라이브러리 및 ASP.NET, Windows Forms, WPF 등의 애플리케이션 프레임워크 라이브러리를 포함합니다.
 
 [.NET Framework 가이드](../framework/index.md)를 참조하세요.
 
@@ -186,7 +188,7 @@ JIT(Just-In-Time)와 반대로 네이티브 코드 AOT(Ahead-Of-Time)를 생성�
 
 컴파일은 C++ 컴파일러 및 링커가 작동하는 방식과 유사하게 개발자의 컴퓨터에서 수행되며, 사용되지 않는 코드를 제거하고 더 많은 시간을 최적화에 사용합니다. 라이브러리에서 코드를 추출하여 실행 파일에 병합합니다. 결과는 전체 앱을 나타내는 단일 모듈입니다.
 
-UWP는 .NET 네이티브에서 지원하는 첫 번째 응용 프로그램 프레임워크였습니다. 이제 Windows, macOS 및 Linux용 네이티브 콘솔 앱 작성을 지원합니다.
+UWP는 .NET 네이티브에서 지원하는 첫 번째 애플리케이션 프레임워크였습니다. 이제 Windows, macOS 및 Linux용 네이티브 콘솔 앱 작성을 지원합니다.
 
 [.NET 네이티브 및 CoreRT 소개](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md)를 참조하세요.
 
@@ -242,7 +244,7 @@ OS는 런타임 환경의 일부이지만 .NET 런타임의 일부는 아닙니�
 
 ## <a name="stack"></a>스택
 
-응용 프로그램을 빌드하고 실행하는 데 함께 사용되는 프로그래밍 기술 집합입니다.
+애플리케이션을 빌드하고 실행하는 데 함께 사용되는 프로그래밍 기술 집합입니다.
 
 “.NET 스택”은 .NET Standard 및 모든 .NET 구현을 나타냅니다. “.NET 스택”이라는 구가 .NET 구현 하나를 나타낼 수 있습니다. 
 
@@ -252,7 +254,7 @@ OS는 런타임 환경의 일부이지만 .NET 런타임의 일부는 아닙니�
 
 앱 또는 라이브러리는 모든.NET 구현에서 표준화된 API 집합에 대한 사양인 .NET Standard의 버전(예: .NET Standard 2.0)을 대상으로 할 수 있습니다. 또한 앱 또는 라이브러리는 특정 .NET 구현의 버전을 대상으로 할 수 있으며, 이 경우 구현 관련 API에 액세스할 수 있습니다. 예를 들어 Xamarin.iOS를 대상으로 하는 앱은 Xamarin 제공 iOS API 래퍼에 액세스할 수 있습니다.
 
-일부 대상 프레임워크(예: .NET Framework)에서 사용 가능한 API는 .NET 구현에서 시스템에 설치하는 어셈블리에 의해 정의되고 응용 프로그램 프레임워크 API(예: ASP.NET, WinForms)를 포함할 수 있습니다. 패키지 기반 대상 프레임워크(예: .NET Standard 및 .NET Core)에서 프레임워크 API는 앱이나 라이브러리에 설치된 패키지에 의해 정의됩니다. 이 경우 대상 프레임워크는 함께 모여 프레임워크를 구성하는 모든 패키지를 참조하는 메타패키지를 암시적으로 지정합니다.
+일부 대상 프레임워크(예: .NET Framework)에서 사용 가능한 API는 .NET 구현에서 시스템에 설치하는 어셈블리에 의해 정의되고 애플리케이션 프레임워크 API(예: ASP.NET, WinForms)를 포함할 수 있습니다. 패키지 기반 대상 프레임워크(예: .NET Standard 및 .NET Core)에서 프레임워크 API는 앱이나 라이브러리에 설치된 패키지에 의해 정의됩니다. 이 경우 대상 프레임워크는 함께 모여 프레임워크를 구성하는 모든 패키지를 참조하는 메타패키지를 암시적으로 지정합니다.
 
 [대상 프레임워크](frameworks.md)를 참조하세요.
 
@@ -268,12 +270,12 @@ OS는 런타임 환경의 일부이지만 .NET 런타임의 일부는 아닙니�
 
 유니버설 Windows 플랫폼입니다.
 
-IoT(사물 인터넷)에 대한 최신 터치 가능 Windows 응용 프로그램 및 소프트웨어를 작성하는 데 사용되는 .NET의 구현입니다. PC, 태블릿, 패블릿, 휴대폰, Xbox 등 대상으로 지정할 수 있는 다양한 종류의 디바이스를 통합하도록 설계되었습니다. UWP는 중앙 집중식 앱 스토어, 실행 환경(AppContainer), Win32 대신 사용할 Windows API 집합(WinRT) 등 많은 서비스를 제공합니다. 앱은 C++, C#, VB.NET 및 JavaScript로 작성할 수 있습니다. C# 및 VB.NET을 사용할 경우 .NET API는 .NET Core에서 제공됩니다.
+IoT(사물 인터넷)에 대한 최신 터치 가능 Windows 애플리케이션 및 소프트웨어를 작성하는 데 사용되는 .NET의 구현입니다. PC, 태블릿, 패블릿, 휴대폰, Xbox 등 대상으로 지정할 수 있는 다양한 종류의 디바이스를 통합하도록 설계되었습니다. UWP는 중앙 집중식 앱 스토어, 실행 환경(AppContainer), Win32 대신 사용할 Windows API 집합(WinRT) 등 많은 서비스를 제공합니다. 앱은 C++, C#, VB.NET 및 JavaScript로 작성할 수 있습니다. C# 및 VB.NET을 사용할 경우 .NET API는 .NET Core에서 제공됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [.NET 가이드](index.md)  
-- [.NET Framework 가이드](../framework/index.md)  
-- [.NET Core](../core/index.md)  
-- [ASP.NET 개요](/aspnet/index#pivot=aspnet)  
-- [ASP.NET Core 개요](/aspnet/index#pivot=core)  
+- [.NET 가이드](index.md)
+- [.NET Framework 가이드](../framework/index.md)
+- [.NET Core](../core/index.md)
+- [ASP.NET 개요](/aspnet/index#pivot=aspnet)
+- [ASP.NET Core 개요](/aspnet/index#pivot=core)

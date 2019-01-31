@@ -2,17 +2,17 @@
 title: '방법: 특성 컬렉션 검색(LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: a49ee7a3-b2c2-4d49-9b5c-b7c6c41f4f13
-ms.openlocfilehash: e872d0fefa5ea3c25208bf5deab42b59b5b7d5b0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d535f56507812855f08b31417124b4408dfea017
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54599818"
 ---
 # <a name="how-to-retrieve-a-collection-of-attributes-linq-to-xml-c"></a>방법: 특성 컬렉션 검색(LINQ to XML)(C#)
 이 항목에서는 <xref:System.Xml.Linq.XElement.Attributes%2A> 메서드에 대해 소개합니다. 이 메서드는 요소의 특성을 검색합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 요소의 특성 컬렉션을 반복하는 방법을 보여 줍니다.  
   
 ```csharp  

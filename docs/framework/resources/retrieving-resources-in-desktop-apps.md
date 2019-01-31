@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1be7120b9bff5c51141a1eac80051c4b464433aa
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 0c58fe8aeeb9acdb886cb224046c68af0577eae7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43801556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539755"
 ---
 # <a name="retrieving-resources-in-desktop-apps"></a>데스크톱 응용 프로그램의 리소스 검색
 .NET Framework 데스크톱 앱의 지역화된 리소스로 작업할 경우에는 기본 또는 중립 문화권의 리소스를 주 어셈블리와 패키지하여 앱이 지원하는 각 언어 또는 문화권에 대해 별도의 위성 어셈블리를 만드는 것이 가장 바람직합니다. 그런 다음 <xref:System.Resources.ResourceManager> 클래스를 다음 섹션에 설명한 대로 사용하여 명명된 리소스에 액세스할 수 있습니다. 주 어셈블리와 위성 어셈블리에 리소스를 포함하지 않으려는 경우 이 문서의 뒷부분에 나오는 [.resources 파일에서 리소스 검색](#from_file) 섹션에서 설명한 것처럼, 이진 .resources 파일에 직접 액세스할 수도 있습니다.  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱의 리소스 검색에 대한 자세한 내용은 Windows 개발자 센터의 [Windows 스토어 앱에서 리소스 만들기 및 검색](https://go.microsoft.com/fwlink/p/?LinkID=241674) 을 참조하세요.  
@@ -81,7 +81,7 @@ al -embed:strings.ru-RU.resources -culture:ru-RU -out:ru-RU\GetString.resources.
   
  현재 UI 문화권이 스페인어(스페인)인 경우 예제에서는 영어 리소스를 표시합니다. 스페인어 리소스를 사용할 수 없거나 영어가 예제의 기본 문화권이기 때문입니다.  
   
-### <a name="retrieving-object-data-two-examples"></a>개체 데이터 검색: 두 예제  
+### <a name="retrieving-object-data-two-examples"></a>개체 데이터 검색: 두 가지 예제  
  개체 데이터를 검색하려면 <xref:System.Resources.ResourceManager.GetObject%2A> 및 <xref:System.Resources.ResourceManager.GetStream%2A> 메서드를 사용할 수 있습니다. 여기에는 기본 데이터 형식, 직렬화 가능 개체, 이진 형식으로 저장된 개체(예: 이미지)가 포함됩니다.  
   
  다음 예제에서는 <xref:System.Resources.ResourceManager.GetStream%28System.String%29> 메서드를 사용하여 앱의 열기 시작 창에 사용되는 비트맵을 검색합니다. CreateResources.cs(C#) 또는 CreateResources.vb(Visual Basic)라는 이름의 파일에 있는 다음 소스 코드는 serialize된 이미지를 포함하는 .resx 파일을 생성합니다. 이 경우 이미지는 SplashScreen.jpg라는 파일에서 로드됩니다. 이 파일 이름을 수정하여 자신의 고유한 이미지로 대체할 수 있습니다.  
@@ -140,7 +140,7 @@ GetObject.exe
   
  게시자 정책 어셈블리는 위성 어셈블리 버전 관리에 대한 지원을 제공합니다. 주 어셈블리를 업데이트하지 않은 채 위성 어셈블리를 업데이트 및 재배포할 수 있습니다. 위성 어셈블리를 업데이트한 후, 버전 번호를 높이고 게시자 정책 어셈블리와 함께 제공합니다. 게시자 정책 어셈블리에서 새 위성 어셈블리가 이전 버전과 호환됨을 지정합니다. 리소스 관리자는 <xref:System.Resources.SatelliteContractVersionAttribute> 특성을 사용하여 위성 어셈블리의 버전을 확인하지만, 어셈블리 로더는 게시자 정책에서 지정한 위성 어셈블리 버전에 바인딩됩니다. 게시자 정책 어셈블리에 대한 자세한 내용은 [게시자 정책 파일 만들기](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)를 참조하세요.  
   
- 전체 어셈블리 버전 관리 지원을 사용하려면 강력한 이름의 어셈블리는 [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md) 에 배포하고, 강력한 이름을 가지고 있지 않은 어셈블리는 응용 프로그램 디렉터리에 배포하는 것이 좋습니다. 응용 프로그램 디렉터리에 강력한 이름의 어셈블리를 배포하려는 경우 어셈블리를 업데이트할 때 위성 어셈블리의 버전 번호를 높일 수 없습니다. 대신, 기존 코드를 업데이트된 코드로 바꾸고 동일한 버전 번호를 유지 관리하는 내부 업데이트를 수행해야 합니다. 예를 들어, 위성 어셈블리의 버전 1.0.0.0을 완전히 지정된 어셈블리 이름 "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a"로 업데이트하려는 경우, 완전히 지정된 동일한 어셈블리 이름 "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a"로 컴파일된 업데이트된 myApp.resources.dll로 이를 덮어씁니다. 위성 어셈블리 파일에서 내부 업데이트를 사용하면 앱이 위성 어셈블리의 버전을 정확히 확인하기가 어려워집니다.  
+ 전체 어셈블리 버전 관리 지원을 사용하려면 강력한 이름의 어셈블리는 [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md) 에 배포하고, 강력한 이름을 가지고 있지 않은 어셈블리는 애플리케이션 디렉터리에 배포하는 것이 좋습니다. 애플리케이션 디렉터리에 강력한 이름의 어셈블리를 배포하려는 경우 어셈블리를 업데이트할 때 위성 어셈블리의 버전 번호를 높일 수 없습니다. 대신, 기존 코드를 업데이트된 코드로 바꾸고 동일한 버전 번호를 유지 관리하는 내부 업데이트를 수행해야 합니다. 예를 들어, 위성 어셈블리의 버전 1.0.0.0을 완전히 지정된 어셈블리 이름 "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a"로 업데이트하려는 경우, 완전히 지정된 동일한 어셈블리 이름 "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a"로 컴파일된 업데이트된 myApp.resources.dll로 이를 덮어씁니다. 위성 어셈블리 파일에서 내부 업데이트를 사용하면 앱이 위성 어셈블리의 버전을 정확히 확인하기가 어려워집니다.  
   
  어셈블리 버전 관리에 대한 자세한 내용은 [어셈블리 버전 관리](../../../docs/framework/app-domains/assembly-versioning.md) 및 [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)을 참조하세요.  
   
@@ -149,9 +149,9 @@ GetObject.exe
  위성 어셈블리에서 리소스를 배포하지 않더라도 <xref:System.Resources.ResourceManager> 개체를 사용하여 .resources 파일에서 직접 리소스에 액세스할 수 있습니다. 이렇게 하려면 .resources 파일을 올바르게 배포해야 합니다. 그런 다음 <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A?displayProperty=nameWithType> 메서드를 사용하여 <xref:System.Resources.ResourceManager> 개체를 인스턴스화하고 독립형 .resources 파일을 포함하는 디렉터리를 지정합니다.  
   
 ### <a name="deploying-resources-files"></a>.resources 파일 배포  
- 응용 프로그램 어셈블리 및 위성 어셈블리에 .resources 파일을 포함하는 경우, 각 위성 어셈블리는 같은 파일 이름을 갖지만 위성 어셈블리의 문화권을 반영하는 하위 디렉터리에 배치됩니다. 반면, .resources 파일에서 직접 리소스에 액세스할 경우에는 일반적으로 응용 프로그램 디렉터리의 하위 디렉터리인 단일 디렉터리에 모든 .resources 파일을 배치할 수 있습니다. 앱의 기본 .resources 파일의 이름은 문화권에 대한 암시 없이 루트 이름으로만 구성됩니다(예: strings.resources). 지역화된 각 문화권에 대한 리소스는 이름이 루트 이름과 문화권(예: strings.ja.resources 또는 strings.de-DE.resources)으로 구성된 파일에 저장됩니다. 다음 그림은 리소스 파일을 디렉터리 구조에서 어디에 배치해야 하는지를 보여 줍니다.  
+ 애플리케이션 어셈블리 및 위성 어셈블리에 .resources 파일을 포함하는 경우, 각 위성 어셈블리는 같은 파일 이름을 갖지만 위성 어셈블리의 문화권을 반영하는 하위 디렉터리에 배치됩니다. 반면, .resources 파일에서 직접 리소스에 액세스할 경우에는 일반적으로 애플리케이션 디렉터리의 하위 디렉터리인 단일 디렉터리에 모든 .resources 파일을 배치할 수 있습니다. 앱의 기본 .resources 파일의 이름은 문화권에 대한 암시 없이 루트 이름으로만 구성됩니다(예: strings.resources). 지역화된 각 문화권에 대한 리소스는 이름이 루트 이름과 문화권(예: strings.ja.resources 또는 strings.de-DE.resources)으로 구성된 파일에 저장됩니다. 다음 그림은 리소스 파일을 디렉터리 구조에서 어디에 배치해야 하는지를 보여 줍니다.  
   
- ![응용 프로그램의 주 디렉터리](../../../docs/framework/resources/media/resappdir.gif "resappdir")  
+ ![애플리케이션의 주 디렉터리](../../../docs/framework/resources/media/resappdir.gif "resappdir")  
 디렉터리 구조 및 .resources 파일에 대한 명명 규칙  
   
 ### <a name="using-the-resource-manager"></a>리소스 관리자 사용  
@@ -200,9 +200,9 @@ Resgen Strings.ru-RU.txt Resources\Strings.ru-RU.resources
 csc Example.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Resources.ResourceManager>  
- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)  
- [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Windows 스토어 앱에서 리소스 만들기 및 검색](https://go.microsoft.com/fwlink/p/?LinkID=241674)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Resources.ResourceManager>
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
+- [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Windows 스토어 앱에서 리소스 만들기 및 검색](https://go.microsoft.com/fwlink/p/?LinkID=241674)

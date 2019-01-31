@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: c875ad12-a161-43e6-ad1c-3d6927c536a7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b2d46264113cb4c961f6c4b971b5986bdd9eb6a7
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 792488e53ffb7f870e21fdd1ad3ef94bf0303b1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44180974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720238"
 ---
 # <a name="how-to-implement-dynamic-partitions"></a>방법: 동적 파티션 구현
 다음 예제는 동적 파티셔닝을 구현하고 특정 오버로드 <xref:System.Threading.Tasks.Parallel.ForEach%2A> 및 PLINQ에서 사용할 수 있는 사용자 지정 <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=nameWithType>를 구현하는 방법을 보여줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  파티션이 열거자에 대해 <xref:System.Collections.IEnumerator.MoveNext%2A>를 호출할 때마다 열거자는 하나의 목록 요소가 있는 파티션을 제공합니다. PLINQ 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A>의 경우 파티션은 <xref:System.Threading.Tasks.Task> 인스턴스입니다. 요청이 여러 스레드에서 동시에 발생하므로 현재 인덱스에 대한 액세스가 동기화됩니다.  
   
  [!code-csharp[TPL_Partitioners#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_partitioners/cs/partitioners.cs#04)]
@@ -30,5 +30,5 @@ ms.locfileid: "44180974"
   
 ## <a name="see-also"></a>참고 항목
 
-- [PLINQ 및 TPL에 대한 사용자 지정 파티셔너](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)  
+- [PLINQ 및 TPL에 대한 사용자 지정 파티셔너](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)
 - [방법: 정적 분할을 위한 파티셔너 구현](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)

@@ -1,18 +1,18 @@
 ---
-title: '방법: Visual Basic에서 파일 경로의 구문 분석'
+title: '방법: Visual Basic에서 파일 경로 구문 분석'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file names [Visual Basic], parsing [Visual Basic]
 - parsing, file paths [Visual Basic]
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
-ms.openlocfilehash: 7479f368558a8a8a07c1e6ed588bdfef21a0b1de
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2b31dedbdd33ddfb3c15863a45b93148fd722faa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33585946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54707754"
 ---
-# <a name="how-to-parse-file-paths-in-visual-basic"></a>방법: Visual Basic에서 파일 경로의 구문 분석
+# <a name="how-to-parse-file-paths-in-visual-basic"></a>방법: Visual Basic에서 파일 경로 구문 분석
 <xref:Microsoft.VisualBasic.FileIO.FileSystem> 개체는 파일 경로를 구문 분석할 때 유용한 메서드 여러 개를 제공합니다.  
   
 -   <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A> 메서드는 두 개의 경로를 가져와서 적절한 형식으로 조합된 경로를 반환합니다.  
@@ -35,9 +35,9 @@ ms.locfileid: "33585946"
   
      [!code-vb[VbVbcnMyFileSystem#55](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A>  
- <xref:System.IO.FileInfo>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A>  
- [방법: 디렉터리의 파일 컬렉션 가져오기](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+## <a name="see-also"></a>참고 항목
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A>
+- <xref:System.IO.FileInfo>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A>
+- [방법: 디렉터리에 있는 파일의 컬렉션 가져오기](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

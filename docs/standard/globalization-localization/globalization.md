@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2f3bf29b9b4d216483ea0c81cc787c80fc8b9e6f
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 84e44f0112a5d1b5fd38daf488d865f6e228f82b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713943"
 ---
 # <a name="globalization"></a>전역화
 전역화는 다양한 문화권의 사용자를 위해 현지화된 인터페이스와 국가별 데이터를 지원하는 지역화 대비 응용 프로그램을 디자인하고 개발하는 작업을 수반합니다. 디자인 단계를 시작하기 전에 앱에서 지원할 문화권을 결정해야 합니다. 앱이 기본적으로 단일 문화권이나 국가를 대상으로 하더라도, 다른 문화권이나 국가의 사용자에게 쉽게 확장될 수 있도록 디자인하고 작성할 수 있습니다.  
@@ -99,7 +99,7 @@ ms.locfileid: "49453361"
 > [!TIP]
 >  문자열의 개별 문자 보다는 텍스트 요소에 <xref:System.Globalization.StringInfo> 클래스를 사용할 수 있습니다.  
   
- 문자열 검색 및 비교 시 일반적인 실수는 문자열을 각각 <xref:System.Char> 개체로 표시되는 문자의 컬렉션으로 다루는 것입니다. 실제, 단일 문자는 하나, 둘, 또는 그 이상의 <xref:System.Char> 개체로 형성될 수 있습니다. 이러한 문자는 알파벳이 유니코드 기본 라틴 문자의 범위(U+0021 ~ U+007E)에 속하지 않는 문자로 구성된 문화권의 문자열에서 가장 빈번하게 나타납니다. 다음 예제는 문자열에서 LATIN CAPITAL LETTER A WITH GRAVE 문자(U+00C0)의 인덱스를 찾으려고 합니다. 하지만 이 문자는 단일 코드 단위(U+00C0) 또는 복합 문자(2개의 코드 단위: U+0021 및 U+007E)처럼 두 가지 다른 방법으로 나타낼 수 있습니다. 이런 경우, 문자는 2개의 <xref:System.Char> 개체 즉, U+0021 및 U+007E를 통해 문자열 인스턴스로 표현됩니다. 예제 코드는 문자열 인스턴스 내에서 이 문자의 위치를 찾기 위해 <xref:System.String.IndexOf%28System.Char%29?displayProperty=nameWithType> 및 <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> 오버로드를 호출하지만 이것은 다른 결과를 반환합니다. 첫 번째 메서드 호출에는 <xref:System.Char> 인수가 있고, 이것이 서수 비교를 수행하기 때문에 일치하는 값을 찾을 수 없습니다. 두 번째 호출에는 <xref:System.String> 인수가 있고, 이것은 문화권구분 비교를 수행하기 때문에 일치하는 값을 찾습니다.  
+ 문자열 검색 및 비교 시 일반적인 실수는 문자열을 각각 <xref:System.Char> 개체로 표시되는 문자의 컬렉션으로 다루는 것입니다. 실제, 단일 문자는 하나, 둘, 또는 그 이상의 <xref:System.Char> 개체로 형성될 수 있습니다. 이러한 문자는 알파벳이 유니코드 기본 라틴 문자의 범위(U+0021 ~ U+007E)에 속하지 않는 문자로 구성된 문화권의 문자열에서 가장 빈번하게 나타납니다. 다음 예제는 문자열에서 LATIN CAPITAL LETTER A WITH GRAVE 문자(U+00C0)의 인덱스를 찾으려고 합니다. 하지만 이 문자는 단일 코드 단위(U+00C0) 또는 복합 문자(두 코드 단위: U+0021 및 U+007E)처럼 두 가지 다른 방법으로 나타낼 수 있습니다. 이런 경우, 문자는 2개의 <xref:System.Char> 개체 즉, U+0021 및 U+007E를 통해 문자열 인스턴스로 표현됩니다. 예제 코드는 문자열 인스턴스 내에서 이 문자의 위치를 찾기 위해 <xref:System.String.IndexOf%28System.Char%29?displayProperty=nameWithType> 및 <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> 오버로드를 호출하지만 이것은 다른 결과를 반환합니다. 첫 번째 메서드 호출에는 <xref:System.Char> 인수가 있고, 이것이 서수 비교를 수행하기 때문에 일치하는 값을 찾을 수 없습니다. 두 번째 호출에는 <xref:System.String> 인수가 있고, 이것은 문화권구분 비교를 수행하기 때문에 일치하는 값을 찾습니다.  
   
  [!code-csharp[Conceptual.Globalization#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/search1.cs#18)]
  [!code-vb[Conceptual.Globalization#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/search1.vb#18)]  
@@ -204,7 +204,7 @@ ms.locfileid: "49453361"
   
 <a name="DatesAndTimes_TimeZones"></a>   
 ### <a name="serialization-and-time-zone-awareness"></a>Serialization 및 표준 시간대 인식  
- 날짜 및 시간 값은 일반 시간(“매장은 2013년 1월 2일 오전 9:00에 개장합니다.”)에서 특정한 순간(“생년월일: 2013년 1월 2일 오전 6:32:00”)에 이르기까지 다수의 해석이 있을 수 있습니다. 시간 값이 특정한 순간을 나타내는 경우 serialize된 값으로부터 복원하며, 사용자의 지리적 위치 또는 표준 시간대와 상관없이 동일한 순간을 나타내도록 해야 합니다.  
+ 날짜 및 시간 값은 일반 시간("매장은 2013년 1월 2일 오전 9:00에 개장합니다.")에서 특정한 순간("생년월일: 2013년 1월 2일 오전 6:32:00")에 이르기까지 다수의 해석이 있을 수 있습니다. 시간 값이 특정한 순간을 나타내는 경우 serialize된 값으로부터 복원하며, 사용자의 지리적 위치 또는 표준 시간대와 상관없이 동일한 순간을 나타내도록 해야 합니다.  
   
  다음 예제에서는 이 문제를 보여 줍니다. 단일 지역 날짜 및 시간 값을 세 가지 [표준 서식](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)(“G”는 일반 날짜 자세한 시간, “s”는 정렬 가능한 날짜/시간, “o”는 날짜/시간 값 라운드트립)은 물론 이진 형식의 문자열로 저장합니다.  
   
@@ -371,5 +371,5 @@ ms.locfileid: "49453361"
   
 ## <a name="see-also"></a>참고 항목
 
-- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)
 - [문자열 사용에 대한 모범 사례](../../../docs/standard/base-types/best-practices-strings.md)

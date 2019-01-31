@@ -2,12 +2,12 @@
 title: '방법: 자식 요소의 하위 항목 찾기(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
-ms.openlocfilehash: 2fbb5111cdabac5ecbdc1db43e2ce2f41ebb7303
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ac5be4acc7d90dcbae3596f6fd253025ae4577b7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54708458"
 ---
 # <a name="how-to-find-descendants-of-a-child-element-xpath-linq-to-xml-c"></a>방법: 자식 요소의 하위 항목 찾기(XPath 및 LINQ to XML)(C#)
 이 항목에서는 특정 이름을 가진 자식 요소의 하위 요소를 가져오는 방법을 보여 줍니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "43523206"
   
  `./Paragraph//Text/text()`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 워드 프로세서 문서의 XML 표현에서 텍스트를 추출하는 경우의 문제를 시뮬레이션합니다. 먼저 모든 `Paragraph` 요소를 선택한 다음 각 `Text` 요소의 모든 `Paragraph` 하위 요소를 선택합니다. `Text` 요소의 하위 `Comment` 요소는 선택하지 않습니다.  
   
 ```csharp  

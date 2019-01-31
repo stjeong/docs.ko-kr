@@ -2,17 +2,17 @@
 title: '방법: XmlSerializer를 사용하여 serialize(C#)'
 ms.date: 07/20/2015
 ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
-ms.openlocfilehash: 32a23792947639c2c0eb1dc14b640c3786bdfd4c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 9d722735f9a83f0d65fbc10b6c868525e8393a7d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45990403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54567765"
 ---
 # <a name="how-to-serialize-using-xmlserializer-c"></a>방법: XmlSerializer를 사용하여 serialize(C#)
 이 항목에서는 <xref:System.Xml.Serialization.XmlSerializer>를 사용하여 serialize하고 deserialize하는 예제를 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 <xref:System.Xml.Linq.XElement> 개체가 포함된 많은 개체를 만든 다음 메모리 스트림으로 개체를 serialize하고 메모리 스트림에서 개체를 deserialize합니다.  
   
 ```csharp  

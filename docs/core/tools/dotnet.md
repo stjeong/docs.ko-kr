@@ -2,12 +2,12 @@
 title: dotnet 명령
 description: dotnet 명령(.NET Core CLI 도구에 대한 일반 드라이버) 및 사용법에 대해 알아봅니다.
 ms.date: 06/04/2018
-ms.openlocfilehash: 081f295cc71c3cd46de465efb12f131e7b2d36d9
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 53eb96ee6fe809b2e6e42eec4e7e9b5f7c5edf2a
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066443"
 ---
 # <a name="dotnet-command"></a>dotnet 명령
 
@@ -78,9 +78,14 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 설치된 .NET Core SDK를 표시합니다.
 
-`--roll-forward-on-no-candidate-fx`
+`--roll-forward-on-no-candidate-fx <N>`
 
- `0`으로 설정된 경우 부 버전 롤포워드를 사용하지 않도록 설정합니다. 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
+필요한 공유 프레임워크를 사용할 수 없을 때 동작을 정의합니다. `N`는 다음이 될 수 있습니다.
+ * `0` - 부 버전 롤포워드도 사용하지 않도록 설정합니다.
+ * `1` - 부 버전에서는 롤포워드하지만 주 버전에서는 롤포워드하지 않습니다. 이것은 기본적인 동작입니다.
+ * `2` - 부 버전과 주 버전에서 롤포워드합니다.
+
+ 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
 
 `-v|--verbosity <LEVEL>`
 

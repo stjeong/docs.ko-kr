@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: ca87fefb-7144-4b4e-8832-5a939adbb4b2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c3ee5cc03f684acf103c96ecd14387f119bf0bdc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d67b2fac0c1d55bfa5594e90998d9613de4ad271
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33387928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54659789"
 ---
 # <a name="mitigation-png-frames-in-icon-objects"></a>완화: 아이콘 개체의 PNG 프레임
 .NET Framework 4.6부터는 <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> 메서드가 PNG 프레임이 있는 아이콘을 <xref:System.Drawing.Bitmap> 개체로 성공적으로 변환합니다.  
@@ -34,5 +34,5 @@ ms.locfileid: "33387928"
       value="Switch.System.Drawing.DontSupportPngFramesInIcons=true;<previous key>=<previous value>" />  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+## <a name="see-also"></a>참고 항목
+- [대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)

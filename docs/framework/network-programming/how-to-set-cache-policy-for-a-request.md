@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - request cache policies
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
-ms.openlocfilehash: f2e3e7ccc16dc24cf79574f8607245b66ea53cb1
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 11f36065c02c5ec513e66bff2541536e9290b5c2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563563"
 ---
 # <a name="how-to-set-cache-policy-for-a-request"></a>방법: 요청에 캐시 정책 설정
 다음 예제에서는 요청에 대한 캐시 정책을 설정하는 방법을 보여 줍니다. 예제 입력은 `http://www.contoso.com/` 등의 URI입니다.  
@@ -105,9 +105,9 @@ Namespace Examples.System.Net.Cache
 End Namespace  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [네트워크 응용 프로그램에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- [캐시 정책](../../../docs/framework/network-programming/cache-policy.md)  
- [위치 기반 캐시 정책](../../../docs/framework/network-programming/location-based-cache-policies.md)  
- [시간 기반 캐시 정책](../../../docs/framework/network-programming/time-based-cache-policies.md)  
- [\<requestCaching> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+## <a name="see-also"></a>참고 항목
+- [네트워크 애플리케이션에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
+- [캐시 정책](../../../docs/framework/network-programming/cache-policy.md)
+- [위치 기반 캐시 정책](../../../docs/framework/network-programming/location-based-cache-policies.md)
+- [시간 기반 캐시 정책](../../../docs/framework/network-programming/time-based-cache-policies.md)
+- [\<requestCaching> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)

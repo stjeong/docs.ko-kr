@@ -17,19 +17,19 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
-ms.openlocfilehash: 3cb38cd9d7b27ab28b602e4e4c813d58d904abd3
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: cab25e5a87345c69484f386584688a2efc8459d5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579539"
 ---
 # <a name="implementing-the-event-based-asynchronous-pattern"></a>이벤트 기반 비동기 패턴 구현
 상당한 지연을 일으킬 수 있는 몇 가지 작업을 사용하여 클래스를 작성하는 경우 [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)를 구현하여 비동기 기능을 부여하는 것을 고려할 수 있습니다.  
   
- 이벤트 기반 비동기 패턴은 비동기 기능을 포함하는 클래스를 패키지하는 표준화된 방법을 제공합니다. <xref:System.ComponentModel.AsyncOperationManager>와 같은 도우미 클래스를 구현한 경우 클래스는 [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], 콘솔 응용 프로그램 및 Windows Forms 응용 프로그램을 비롯한 모든 응용 프로그램 모델에서 올바르게 작동합니다.  
+ 이벤트 기반 비동기 패턴은 비동기 기능을 포함하는 클래스를 패키지하는 표준화된 방법을 제공합니다. <xref:System.ComponentModel.AsyncOperationManager>와 같은 도우미 클래스를 구현한 경우 클래스는 [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], 콘솔 애플리케이션 및 Windows Forms 애플리케이션을 비롯한 모든 애플리케이션 모델에서 올바르게 작동합니다.  
   
- 이벤트 기반 비동기 패턴을 구현하는 예제를 보려면 [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)을 참조하세요.  
+ 이벤트 기반 비동기 패턴을 구현하는 예제는 [방법: 이벤트 기반 비동기 패턴을 지 원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)을 참조하세요.  
   
  간단한 비동기 작업의 경우 <xref:System.ComponentModel.BackgroundWorker> 구성 요소가 적합하다는 것을 알 수 있습니다. <xref:System.ComponentModel.BackgroundWorker>에 대한 자세한 내용은 [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)을 참조하세요.  
   
@@ -248,11 +248,11 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.ComponentModel.ProgressChangedEventArgs>  
-- <xref:System.ComponentModel.AsyncCompletedEventArgs>  
-- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)  
-- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
-- [방법: 배경 작업을 사용하는 양식 구현](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
-- [이벤트 기반 비동기 패턴 구현 시기 결정](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
-- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
-- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- <xref:System.ComponentModel.ProgressChangedEventArgs>
+- <xref:System.ComponentModel.AsyncCompletedEventArgs>
+- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
+- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [방법: 백그라운드 작업을 사용하는 양식 구현](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [이벤트 기반 비동기 패턴 구현 시기 결정](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
+- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

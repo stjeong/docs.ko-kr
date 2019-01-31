@@ -2,12 +2,12 @@
 title: '방법: 문자열 컬렉션 결합 및 비교(LINQ)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 25926e5b-fde2-4dc1-86a0-16ead7aa13d2
-ms.openlocfilehash: c95736f184f3298fb7142b8f8c7b29c65b3f7227
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 9788973df42b91aa2da690c5bf1b0f6b4d41b127
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54514779"
 ---
 # <a name="how-to-combine-and-compare-string-collections-linq-c"></a>방법: 문자열 컬렉션 결합 및 비교(LINQ)(C#)
 이 예제에서는 텍스트 줄이 포함된 파일을 병합하고 결과를 정렬하는 방법을 보여 줍니다. 특히, 두 개의 텍스트 줄 집합에 대한 단순 연결, 합집합 및 교집합을 수행하는 방법을 보여 줍니다.  
@@ -173,5 +173,5 @@ class MergeStrings
   
 ## <a name="see-also"></a>참고 항목
 
-- [LINQ 및 문자열(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)  
+- [LINQ 및 문자열(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
 - [LINQ 및 파일 디렉터리(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 79350178300dde2896f6b22c68d6062bbb57f700
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 84da3e1e896397b4e5dacec9d7dd0eeeed96d1c9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690841"
 ---
 # <a name="task-cancellation"></a>작업 취소
-<xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 클래스는 .NET Framework에서 취소 토큰을 사용하는 방법으로 취소 기능을 지원합니다. 자세한 내용은 [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)를 참조하세요. 작업 클래스에서 취소하려면 취소할 수 있는 작업을 나타내는 사용자 대리자와 취소를 요청한 코드 간의 협조가 필요합니다.  성공적으로 취소하려면 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> 메서드를 호출하는 요청 코드와 적절한 시간에 작업을 종료하는 사용자 대리자가 필요합니다. 다음 방법 중 하나를 사용하여 작업을 종료할 수 있습니다.  
+<xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 클래스는 .NET Framework에서 취소 토큰을 사용하는 방법으로 취소 기능을 지원합니다. 자세한 내용은 [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)를 참조하세요. 작업 클래스에서 취소하려면 취소할 수 있는 작업을 나타내는 사용자 대리자와 취소를 요청한 코드 간의 협조가 필요합니다.  성공적으로 취소하려면 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> 메서드를 호출하는 요청 코드와 적절한 시간에 이루어지는 작업을 종료하는 사용자 대리자가 필요합니다. 다음 방법 중 하나를 사용하여 작업을 종료할 수 있습니다.  
   
 -   단순히 대리자에서 반환합니다. 대부분의 경우에는 이 방법으로 충분하지만 이 방법으로 취소된 작업 인스턴스는 <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType> 상태가 아니라 <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> 상태로 전환됩니다.  
   
@@ -42,5 +42,5 @@ ms.locfileid: "43865633"
   
 ## <a name="see-also"></a>참고 항목
 
-- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)  
+- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)
 - [방법: 작업 및 해당 자식 취소](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)

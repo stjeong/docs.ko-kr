@@ -2,25 +2,25 @@
 title: '방법: 명령줄을 사용하여 어셈블리 만들기 및 사용(C#)'
 ms.date: 07/20/2015
 ms.assetid: 408ddce3-89e3-4e12-8353-34a49beeb72b
-ms.openlocfilehash: 0cb964991cdbcdb3fa528ac96a0e883a37439099
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3b582f3959ed4c703123fab99e98bedda0a0a3a8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623844"
 ---
 # <a name="how-to-create-and-use-assemblies-using-the-command-line-c"></a>방법: 명령줄을 사용하여 어셈블리 만들기 및 사용(C#)
 어셈블리 또는 DLL(동적 연결 라이브러리)은 런타임 시 프로그램에 연결됩니다. DLL 빌드 및 사용을 보여 주려면 다음 시나리오를 고려합니다.  
   
 -   `MathLibrary.DLL`: 런타임 시 호출할 메서드가 포함된 라이브러리 파일입니다. 이 예제의 DLL에는 두 개의 메서드 `Add` 및 `Multiply`가 포함되어 있습니다.  
   
--   `Add`: `Add` 메서드가 포함된 소스 파일입니다. 해당 매개 변수의 합계를 반환합니다. `Add` 메서드가 포함된 `AddClass` 클래스는 `UtilityMethods` 네임스페이스의 멤버입니다.  
+-   `Add`: `Add` 메서드가 포함된 원본 파일입니다. 해당 매개 변수의 합계를 반환합니다. `Add` 메서드가 포함된 `AddClass` 클래스는 `UtilityMethods` 네임스페이스의 멤버입니다.  
   
 -   `Mult`: `Multiply` 메서드가 포함된 소스 코드입니다. 매개 변수의 곱을 반환합니다. `Multiply` 메서드가 포함된 `MultiplyClass` 클래스는 `UtilityMethods` 네임스페이스의 멤버이기도 합니다.  
   
 -   `TestCode`: `Main` 메서드가 포함된 파일입니다. DLL 파일의 메서드를 사용하여 런타임 인수의 합계와 곱을 계산합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp  
 // File: Add.cs   
@@ -124,6 +124,6 @@ csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
-- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
+- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
 - [DLL 함수가 포함된 클래스 만들기](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)

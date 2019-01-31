@@ -5,12 +5,12 @@ author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
 ms.technology: dotnet-standard
-ms.openlocfilehash: b98095cd6afd408331ab8c8f6bb15e7741d3073a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b35db12c8da1f333b481d2bd2e7633026ae30c30
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50189695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54570725"
 ---
 # <a name="net-architectural-components"></a>.NET 아키텍처 구성 요소
 
@@ -28,9 +28,9 @@ ms.locfileid: "50189695"
 
 .NET의 각 구현에는 다음과 같은 구성 요소가 포함됩니다.
 
-- 하나 이상의 런타임. 예를 들어 .NET Framework용 CLR, CoreCLR 및 .NET Core용 CoreRT가 있습니다.
+- 하나 이상의 런타임. 예를 들면 다음과 같습니다. .NET Framework용 CLR, CoreCLR 및 .NET Core용 CoreRT.
 - .NET Standard를 구현하고 추가 API를 구현할 수 있는 클래스 라이브러리. 예를 들어 .NET Framework 기본 클래스 라이브러리, .NET Core 기본 클래스 라이브러리가 있습니다.
-- 필요에 따라 하나 이상의 응용 프로그램 프레임워크. 예를 들어 [ASP.NET](https://www.asp.net/), [Windows Forms](../framework/winforms/windows-forms-overview.md) 및 [WPF(Windows Presentation Foundation)](../framework/wpf/index.md)가 .NET Framework에 포함됩니다.
+- 필요에 따라 하나 이상의 애플리케이션 프레임워크. 예를 들면 다음과 같습니다. [ASP.NET](https://www.asp.net/), [Windows Forms](../framework/winforms/windows-forms-overview.md) 및 [WPF(Windows Presentation Foundation)](../framework/wpf/index.md)가 .NET Framework에 포함됩니다.
 - 필요에 따라 개발 도구. 일부 개발 도구는 여러 구현에서 공유됩니다.
 
 Microsoft에서 적극적으로 개발하고 유지 관리하는 네 가지 기본 .NET 구현은 .NET Core, .NET Framework, Mono 및 UWP입니다.
@@ -43,17 +43,17 @@ Microsoft에서 적극적으로 개발하고 유지 관리하는 네 가지 기�
 
 ### <a name="net-framework"></a>.NET Framework
 
-.NET Framework는 2002년부터 있었던 원래 .NET 구현입니다. 기존 .NET 개발자가 항상 사용해 온 것과 동일한 .NET Framework입니다. 버전 4.5 이상은 .NET Standard를 구현하므로 .NET Standard를 대상으로 하는 코드는 .NET Framework의 해당 버전에서 실행할 수 있습니다. Windows Forms 및 WPF를 사용하는 Windows 데스크톱 개발용 API와 같이 Windows 관련 추가 API가 포함되어 있습니다. .NET Framework는 Windows 데스크톱 응용 프로그램을 구축을 위해 최적화되어 있습니다.
+.NET Framework는 2002년부터 있었던 원래 .NET 구현입니다. 기존 .NET 개발자가 항상 사용해 온 것과 동일한 .NET Framework입니다. 버전 4.5 이상은 .NET Standard를 구현하므로 .NET Standard를 대상으로 하는 코드는 .NET Framework의 해당 버전에서 실행할 수 있습니다. Windows Forms 및 WPF를 사용하는 Windows 데스크톱 개발용 API와 같이 Windows 관련 추가 API가 포함되어 있습니다. .NET Framework는 Windows 데스크톱 애플리케이션을 구축을 위해 최적화되어 있습니다.
 
 .NET Framework에 대한 자세한 내용은 [.NET Framework 가이드](../framework/index.md)를 참조하세요.
 
 ### <a name="mono"></a>Mono
 
-Mono는 작은 런타임이 필요할 때 주로 사용되는 .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 응용 프로그램의 성능을 향상하는 런타임으로, 주로 작은 사용 공간에 초점을 맞춥니다. 또한 Mono는 Unity 엔진을 사용하여 빌드된 게임을 제공합니다.
+Mono는 작은 런타임이 필요할 때 주로 사용되는 .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 애플리케이션의 성능을 향상하는 런타임으로, 주로 작은 사용 공간에 초점을 맞춥니다. 또한 Mono는 Unity 엔진을 사용하여 빌드된 게임을 제공합니다.
 
 Mono는 현재 게시된 .NET Standard 버전을 모두 지원합니다.
 
-지금까지 Mono는 .NET Framework의 더 큰 API를 구현하고 Unix에서 가장 인기 있는 기능 중 일부를 에뮬레이트했습니다. 경우에 따라 Unix에서 해당 기능을 사용하는 .NET 응용 프로그램을 실행하는 데도 사용됩니다.
+지금까지 Mono는 .NET Framework의 더 큰 API를 구현하고 Unix에서 가장 인기 있는 기능 중 일부를 에뮬레이트했습니다. 경우에 따라 Unix에서 해당 기능을 사용하는 .NET 애플리케이션을 실행하는 데도 사용됩니다.
 
 일반적으로 Mono는 Just-In-Time 컴파일러에서 사용되지만 iOS 같은 플랫폼에 사용되는 전체 정적 컴파일러(Ahead-Of-Time 컴파일) 기능도 제공합니다.
 
@@ -61,7 +61,7 @@ Mono에 대한 자세한 내용은 [Mono 설명서](https://www.mono-project.com
 
 ### <a name="universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)
 
-UWP는 IoT(사물 인터넷)에 대한 최신 터치 가능 Windows 응용 프로그램 및 소프트웨어를 작성하는 데 사용되는 .NET의 구현입니다. PC, 태블릿, 패블릿, 휴대폰, Xbox 등 대상으로 지정할 수 있는 다양한 종류의 디바이스를 통합하도록 설계되었습니다. UWP는 중앙 집중식 앱 스토어, 실행 환경(AppContainer), Win32 대신 사용할 Windows API 집합(WinRT) 등 많은 서비스를 제공합니다. 앱은 C++, C#, VB.NET 및 JavaScript로 작성할 수 있습니다. C# 및 VB.NET을 사용할 경우 .NET API는 .NET Core에서 제공됩니다.
+UWP는 IoT(사물 인터넷)에 대한 최신 터치 가능 Windows 애플리케이션 및 소프트웨어를 작성하는 데 사용되는 .NET의 구현입니다. PC, 태블릿, 패블릿, 휴대폰, Xbox 등 대상으로 지정할 수 있는 다양한 종류의 디바이스를 통합하도록 설계되었습니다. UWP는 중앙 집중식 앱 스토어, 실행 환경(AppContainer), Win32 대신 사용할 Windows API 집합(WinRT) 등 많은 서비스를 제공합니다. 앱은 C++, C#, VB.NET 및 JavaScript로 작성할 수 있습니다. C# 및 VB.NET을 사용할 경우 .NET API는 .NET Core에서 제공됩니다.
 
 UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](/windows/uwp/get-started/universal-application-platform-guide)를 참조하세요.
 
@@ -86,10 +86,10 @@ UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](/windo
 
 ## <a name="see-also"></a>참고 항목
 
-- [서버 앱에 대해 .NET Core와 .NET Framework 중에 선택](choosing-core-framework-server.md)   
-- [.NET Standard](net-standard.md)  
-- [.NET Core 가이드](../core/index.md)  
-- [.NET Framework 가이드](../framework/index.md)  
-- [C# 가이드](../csharp/index.md)  
-- [F# 가이드](../fsharp/index.md)  
-- [VB.NET 가이드](../visual-basic/index.md)  
+- [서버 앱에 대해 .NET Core와 .NET Framework 중에 선택](choosing-core-framework-server.md)
+- [.NET Standard](net-standard.md)
+- [.NET Core 가이드](../core/index.md)
+- [.NET Framework 가이드](../framework/index.md)
+- [C# 가이드](../csharp/index.md)
+- [F# 가이드](../fsharp/index.md)
+- [VB.NET 가이드](../visual-basic/index.md)

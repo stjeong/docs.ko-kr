@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: d98d0f0fee0692bb447779e7f62750931a9773ba
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: fa0e81f6eb54ad01b3f2f84a37499302ff9abd06
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066270"
 ---
 # <a name="design-a-microservice-domain-model"></a>마이크로 서비스 도메인 모델 디자인
 
@@ -29,7 +29,7 @@ ms.locfileid: "53143619"
 
 *도메인 엔터티는 데이터 특성을 구현하는 것 외에도 동작을 구현해야 합니다.*
 
-DDD에서 도메인 엔터티는 엔터티 데이터(메모리에 액세스된 개체)와 관련된 도메인 논리나 행동을 구현해야 합니다. 예를 들어, 주문 엔터티 클래스의 일부로서 주문 항목, 데이터 유효성 검사, 총계를 추가하는 것 같은 작업 메서드로서 구현된 비즈니스 작업 및 논리가 포함돼야 합니다. 해당 엔터티의 메서드는 응용 프로그램 계층에 엔터티 규칙을 분산하는 대신 엔터티의 규칙 및 고정화에 신경을 써야 합니다.
+DDD에서 도메인 엔터티는 엔터티 데이터(메모리에 액세스된 개체)와 관련된 도메인 논리나 행동을 구현해야 합니다. 예를 들어, 주문 엔터티 클래스의 일부로서 주문 항목, 데이터 유효성 검사, 총계를 추가하는 것 같은 작업 메서드로서 구현된 비즈니스 작업 및 논리가 포함돼야 합니다. 해당 엔터티의 메서드는 애플리케이션 계층에 엔터티 규칙을 분산하는 대신 엔터티의 규칙 및 고정화에 신경을 써야 합니다.
 
 그림 7-8은 데이터 특성뿐만 아니라 관련 도메인 논리를 통해 작업 또는 메서드까지 구현하는 도메인 엔터티를 보여줍니다.
 
@@ -72,7 +72,7 @@ Eric Evans의 지적처럼 "많은 개체는 개념적 ID를 갖고 있지 않�
 
 엔터티는 ID를 요구하지만 가치 개체 패턴처럼 시스템의 많은 개체는 이를 요구하지 않습니다. 가치 개체는 도메인 양상을 설명하는 개념적 ID가 없는 개체입니다. 이 개체는 일시적으로 사용자를 배려하는 디자인 요소를 나타내기 위해 인스턴스화합니다. 중요한 것은 이 개체가 *누구*가 아닌 *무엇*이냐는 것입니다. 예제는 숫자와 문자열을 포함하지만 특성 그룹 같이 고수준의 개념일 수도 있습니다.
 
-마이크로 서비스의 엔터티인 어떤 것이 또 다른 마이크로 서비스의 엔터티가 될 수는 없습니다. 두 번째 경우에 바운딩된 컨텍스트가 다른 의미를 가질 수 있기 때문입니다. 예를 들어, 전자 상거래 응용 프로그램의 주소는 개인 또는 회사에 대해 고객 프로필의 특성 그룹을 나타낼 수 있기에 ID를 전혀 가질 수 없습니다. 이 경우, 해당 주소는 가치 개체로 분류돼야 합니다. 그러나 전원 유틸리티 회사의 응용 프로그램에서 고객 주소는 비즈니스 도메인에 대해 중요할 수 있습니다. 따라서 해당 주소는 청구 시스템이 직접 해당 주소에 연결될 수 있도록 반드시 ID를 가져야 합니다. 이 경우, 주소는 도메인 엔터티로 분류돼야 합니다.
+마이크로 서비스의 엔터티인 어떤 것이 또 다른 마이크로 서비스의 엔터티가 될 수는 없습니다. 두 번째 경우에 바운딩된 컨텍스트가 다른 의미를 가질 수 있기 때문입니다. 예를 들어, 전자 상거래 애플리케이션의 주소는 개인 또는 회사에 대해 고객 프로필의 특성 그룹을 나타낼 수 있기에 ID를 전혀 가질 수 없습니다. 이 경우, 해당 주소는 가치 개체로 분류돼야 합니다. 그러나 전원 유틸리티 회사의 애플리케이션에서 고객 주소는 비즈니스 도메인에 대해 중요할 수 있습니다. 따라서 해당 주소는 청구 시스템이 직접 해당 주소에 연결될 수 있도록 반드시 ID를 가져야 합니다. 이 경우, 주소는 도메인 엔터티로 분류돼야 합니다.
 
 성과 이름이 있는 사람은 이런 이름이 다른 사람을 지칭하는 경우처럼 비록 성과 이름이 또 다른 가치 집합과 일치한다 해도 사람은 ID를 갖기 때문에 대개 엔터티입니다.
 
@@ -82,16 +82,17 @@ EF Core 2.0에는 값 개체를 더 쉽게 처리할 수 있는 [소유한 엔�
 
 #### <a name="additional-resources"></a>추가 자료
 
-- **Martin Fowler. 가치 개체 패턴**
+- **Martin Fowler. 값 개체 패턴** \
   [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
-- **값 개체**
+- **값 개체** \
   [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
 
-- **테스트 기반 개발에서 값 개체**
+- **테스트 기반 개발의 값 개체** \
   [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
 
-- **Eric Evans. 도메인 기반 디자인: 소프트웨어 핵심에서 복잡성 처리.** (도서; 값 개체의 토론 포함) [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. 도메인 기반 디자인: 소프트웨어 핵심에서 복잡성을 처리합니다.** (도서; 값 개체의 토론 포함) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### <a name="the-aggregate-pattern"></a>집계 모듈
 
@@ -113,7 +114,7 @@ EF Core 2.0에는 값 개체를 더 쉽게 처리할 수 있는 [소유한 엔�
 
 **그림 7-9**. 다중 또는 단일 엔터티 집계의 예
 
-구매자 집계는 eShopOnContainers 참조 응용 프로그램의 주문 마이크로 서비스에서 그러는 것처럼 해당 도메인에 따라 추가적인 자식 엔터티를 가질 수 있음에 유의하십시오. 그림 7-9는 구매자가 집계 루트만 포함된 집계의 예로서 단일 엔터티를 갖고 있음을 보여줍니다.
+구매자 집계는 eShopOnContainers 참조 애플리케이션의 주문 마이크로 서비스에서 그러는 것처럼 해당 도메인에 따라 추가적인 자식 엔터티를 가질 수 있음에 유의하십시오. 그림 7-9는 구매자가 집계 루트만 포함된 집계의 예로서 단일 엔터티를 갖고 있음을 보여줍니다.
 
 집계 분리를 유지하고 집계 간에 명확한 경계를 유지하기 위해서는 eShopOnContainers에서 [마이크로 서비스 도메인 모델 주문하기](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs)에서 구현된 것처럼 외래 키(FK) 필드만 갖고 집계 간 직접 탐색을 허용하지 않는 것이 DDD 도메인 모델의 좋은 관행입니다. 주문 엔터티는 다음 코드에서 보여지는 것처럼 EF Core 탐색 속성이 아닌 구매자를 위한 FK 필드만 갖습니다.
 
@@ -134,14 +135,14 @@ public class Order : Entity, IAggregateRoot
 
 #### <a name="additional-resources"></a>추가 자료
 
-- **Vaughn Vernon. 효과적인 집계 디자인 - 1부: 단일 집계 모델링** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
+- **Vaughn Vernon. 효율적인 집계 디자인 - 1부: 단일 집계 모델링**(<http://dddcommunity.org/>에서) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf>
 
-- **Vaughn Vernon. 효과적인 집계 디자인 - 2부: 집계 연동하기** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
+- **Vaughn Vernon. 효율적인 집계 디자인 - 2부: 집계가 함께 작동하도록 만들기**(<http://dddcommunity.org/>에서) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf>
 
-- **Vaughn Vernon. 효과적인 집계 디자인 - 3부: 검색을 통해 인사이트 얻기** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
+- **Vaughn Vernon. 효율적인 집계 디자인 - 3부: 검색을 통해 Insight 얻기**(<http://dddcommunity.org/>에서) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
 
 - **Sergey Grybniak. DDD 전술적 디자인 패턴** \
   [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)

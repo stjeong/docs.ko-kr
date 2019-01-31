@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: db0d609e4a930a839dae014b597d42aa4499c5ec
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: ab96d5bdefee0cd85d98174f8f7410e940cb12b4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49452562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498374"
 ---
 # <a name="xslt-extension-objects"></a>XSLT 확장명 개체
 확장명 개체를 사용하여 스타일시트의 기능을 확장할 수 있습니다. 확장 개체는 <xref:System.Xml.Xsl.XsltArgumentList> 클래스를 사용하여 유지 관리합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "49452562"
  <xref:System.Xml.Xsl.XsltArgumentList> 메서드를 사용하여 <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> 개체에 XSLT 확장 개체를 추가합니다. 이 때 정규화된 이름과 네임스페이스 URI가 확장 개체와 연결됩니다.  
   
 > [!NOTE]
->  <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> 메서드를 호출하려면 FullTrust 권한 집합이 필요합니다. 자세한 내용은 [코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md) 및 [NIB: 명명된 권한 집합](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)을 참조하세요.  
+>  <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> 메서드를 호출하려면 FullTrust 권한 집합이 필요합니다. 자세한 내용은 [코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md) 및 [NIB: 명명된 권한 집합](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).  
   
  확장명 개체에서 반환된 데이터 형식은 네 가지 기본 XPath 데이터 형식인 `number`, `string`, `Boolean` 및 `node set` 중 하나입니다.  
   
@@ -40,5 +40,5 @@ ms.locfileid: "49452562"
   
 ## <a name="see-also"></a>참고 항목
 
-- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [XSLT 보안 고려 사항](../../../../docs/standard/data/xml/xslt-security-considerations.md)

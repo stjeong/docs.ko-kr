@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ba049f9a-ce87-4cc4-b319-3f75c8ddac8a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d84bc5ac2256139626311ff7c848170c28ffbd5b
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 049976c1e63d04c495a38b39531313adc1d12c5c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620086"
 ---
 # <a name="selecting-a-collection-class"></a>Collection 클래스 선택
 컬렉션 클래스를 신중하게 선택해야 합니다. 잘못된 형식을 사용하면 컬렉션 사용이 제한될 수 있습니다. 일반적으로, .NET Framework 버전 1.1을 대상으로 하지 않는 한 <xref:System.Collections> 네임스페이스의 형식을 사용하지 마세요. 형식 안전성이 더 크고 기타 향상된 기능이 있는 제네릭 버전과 동시 버전의 컬렉션을 사용하는 것이 좋습니다.  
@@ -48,11 +48,11 @@ ms.locfileid: "48836513"
   
 -   각 요소에 값 한 개, 키 한 개와 값 한 개의 조합 또는 키 한 개와 여러 값의 조합이 포함되나요?  
   
-    -   값 한 개: <xref:System.Collections.IList> 인터페이스 또는 <xref:System.Collections.Generic.IList%601> 제네릭 인터페이스를 기준으로 컬렉션을 사용합니다.  
+    -   하나의 값: <xref:System.Collections.IList> 인터페이스 또는 <xref:System.Collections.Generic.IList%601> 제네릭 인터페이스를 기준으로 컬렉션을 사용합니다.  
   
-    -   키 한 개와 값 한 개: <xref:System.Collections.IDictionary> 인터페이스 또는 <xref:System.Collections.Generic.IDictionary%602> 제네릭 인터페이스를 기준으로 컬렉션을 사용합니다.  
+    -   하나의 키와 하나의 값: <xref:System.Collections.IDictionary> 인터페이스 또는 <xref:System.Collections.Generic.IDictionary%602> 제네릭 인터페이스를 기준으로 컬렉션을 사용합니다.  
   
-    -   포함된 키가 있는 값 한 개: <xref:System.Collections.ObjectModel.KeyedCollection%602> 제네릭 클래스를 사용합니다.  
+    -   포함 키가 있는 하나의 값: <xref:System.Collections.ObjectModel.KeyedCollection%602> 제네릭 클래스를 사용합니다.  
   
     -   키 한 개와 여러 값: <xref:System.Collections.Specialized.NameValueCollection> 클래스를 사용합니다.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "48836513"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections>  
-- <xref:System.Collections.Specialized>  
-- <xref:System.Collections.Generic>  
+- <xref:System.Collections>
+- <xref:System.Collections.Specialized>
+- <xref:System.Collections.Generic>
 - [스레드로부터 안전한 컬렉션](../../../docs/standard/collections/thread-safe/index.md)

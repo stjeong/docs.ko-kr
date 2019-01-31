@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
-ms.openlocfilehash: 6d0be3ccfc0a0b4b032283b7ed34908f79774bb6
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 927a87b250863c4d59e630264ee11286c30deb3a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50049544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608001"
 ---
 # <a name="how-to-assign-user-information-to-group-connections"></a>방법: 그룹 연결에 사용자 정보 할당
 
   
- 다음 예제에서는 이 코드 섹션이 호출되기 전에 응용 프로그램이 *UserName*, *SecurelyStoredPassword* 및 *Domain* 변수를 설정하고 *UserName*이 고유하다고 가정하여 사용자 정보를 그룹 연결에 할당하는 방법을 보여 줍니다.  
+ 다음 예제에서는 이 코드 섹션이 호출되기 전에 애플리케이션이 *UserName*, *SecurelyStoredPassword* 및 *Domain* 변수를 설정하고 *UserName*이 고유하다고 가정하여 사용자 정보를 그룹 연결에 할당하는 방법을 보여 줍니다.  
   
 ### <a name="to-assign-user-information-to-a-group-connection"></a>그룹 연결에 사용자 정보를 할당하려면  
   
@@ -69,7 +69,7 @@ ms.locfileid: "50049544"
     MyWebResponse.Close()  
     ```  
   
- 예  
+ 예제  
   
 ```csharp  
 // Create a connection group name.  
@@ -108,6 +108,6 @@ Dim myWebResponse As WebResponse = myWebRequest.GetResponse()
 MyWebResponse.Close()  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [연결 관리](../../../docs/framework/network-programming/managing-connections.md)  
- [연결 그룹화](../../../docs/framework/network-programming/connection-grouping.md)
+## <a name="see-also"></a>참고 항목
+- [연결 관리](../../../docs/framework/network-programming/managing-connections.md)
+- [연결 그룹화](../../../docs/framework/network-programming/connection-grouping.md)

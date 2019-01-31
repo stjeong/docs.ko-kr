@@ -19,12 +19,12 @@ ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
 author: rpetrusha
 ms.author: ronpet
 ms.custom: seodec18
-ms.openlocfilehash: d5d07dd290a857a0c6dbfcd9074d8d16ff47e6cd
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f0e42c0032dc6f9dac0895a29db9de79547c0a49
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54675369"
 ---
 # <a name="anchors-in-regular-expressions"></a>정규식의 앵커
 <a name="top"></a> 앵커 또는 원자성 너비가 0인 어설션은 문자열에서 일치 항목이 나타나야 하는 위치를 지정합니다. 검색 식에서 앵커를 사용하면 정규식 엔진은 문자열을 통과하거나 문자를 사용하지 않고, 지정된 위치에서만 일치 항목을 검색합니다. 예를 들어 `^` 기호는 줄이나 문자열의 시작 부분에서 일치 항목 찾기를 시작하도록 지정합니다. 따라서 정규식 `^http:` 은 줄의 시작 부분에 나타날 때만 "http:"을 찾습니다. 다음 표에서는 .NET의 정규식에서 지원하는 앵커를 보여 줍니다.  
@@ -53,12 +53,12 @@ ms.locfileid: "53155040"
  [!code-csharp[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring1.cs#1)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring1.vb#1)]  
   
- 정규식 패턴 `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+`는 다음 테이블과 같이 정의됩니다.  
+ 정규식 패턴 `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+` 는 다음 테이블과 같이 정의됩니다.  
   
 |무늬|설명|  
 |-------------|-----------------|  
 |`^`|입력 문자열의 시작 부분(또는 메서드가 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션과 함께 호출될 경우 줄의 시작 부분)에서 일치 항목 찾기를 시작합니다.|  
-|`((\w+(\s?)){2,}`|단어 문자 하나 이상과 0 또는 공백 하나 순으로 정확히 두 번 나타내는 일치 항목을 찾습니다. 이 그룹은 첫 번째 캡처링 그룹입니다. 이 식은 두 번째 및 세 번째 캡처링 그룹도 정의합니다. 두 번째 캡처 도구는 캡처된 단어로 구성되고 세 번째는 캡처된 공백으로 구성됩니다.|  
+|`((\w+(\s?)){2,}`|단어 문자 하나 이상과 0 또는 공백 하나 순으로 정확히 두 번 나타내는 일치 항목을 찾습니다. 이 그룹은 첫 번째 캡처링 그룹입니다. 이 식은 두 번째 및 세 번째 캡처링 그룹도 정의합니다. 두 번째는 캡처된 단어로 구성되고 세 번째는 캡처된 공백으로 구성됩니다.|  
 |`,\s`|쉼표, 공백 문자 순의 일치 항목을 찾습니다.|  
 |`(\w+\s\w+)`|단어 문자 하나 이상, 공백, 단어 문자 하나 이상 순의 일치 항목을 찾습니다. 이 그룹은 네 번째 캡처링 그룹입니다.|  
 |`,`|쉼표 하나를 찾습니다.|  
@@ -73,9 +73,9 @@ ms.locfileid: "53155040"
 ## <a name="end-of-string-or-line-"></a>문자열 또는 줄의 끝: $  
  `$` 앵커는 선행 패턴이 입력 문자열의 끝이나 입력 문자열 끝에 있는 `\n` 앞에 나타나도록 지정합니다.  
   
- `$`를 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션과 함께 사용하면 일치 항목이 줄의 끝 부분에 나타날 수도 있습니다. `$` 는 `\n` 과 일치하지만 `\r\n` (캐리지 리턴 및 줄 바꿈 문자 조합 또는 CR/LF)과는 일치하지 않습니다. CR/LF 문자 조합을 찾으려면 정규식 패턴에 `\r?$` 를 포함합니다.  
+ `$` 를 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션과 함께 사용하면 일치 항목이 줄의 끝 부분에 나타날 수도 있습니다. `$` 는 `\n` 과 일치하지만 `\r\n` (캐리지 리턴 및 줄 바꿈 문자 조합 또는 CR/LF)과는 일치하지 않습니다. CR/LF 문자 조합을 찾으려면 정규식 패턴에 `\r?$` 를 포함합니다.  
   
- 다음 예제에서는 `$` 앵커를 [문자열 또는 줄의 시작](#Start) 섹션의 예제에서 사용된 정규식 패턴에 추가합니다. 텍스트 5줄을 포함하는 원래 입력 문자열에서 사용될 경우 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> 메서드는 일치 항목을 찾을 수 없습니다. 이는 첫 번째 줄의 끝 부분이 `$` 패턴과 일치하지 않기 때문입니다. 원래 입력 문자열을 문자열 배열로 분할하면 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> 메서드는 5줄의 각 줄을 찾는 데 성공합니다. `options` 매개 변수를 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>으로 설정하여 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 메서드를 호출하면 정규식 패턴에서 캐리지 리턴 요소(\u+000D)를 고려하지 않으므로 일치 항목이 발견되지 않습니다. 그러나 `$` 를 `\r?$`로 바꿔서 정규식 패턴을 수정할 경우 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 매개 변수를 `options` 으로 설정하여 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 메서드를 다시 호출하면 일치 항목 5개가 발견됩니다.  
+ 다음 예제에서는 `$` 앵커를 [문자열 또는 줄의 시작](#Start) 섹션의 예제에서 사용된 정규식 패턴에 추가합니다. 텍스트 5줄을 포함하는 원래 입력 문자열에서 사용될 경우 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> 메서드는 일치 항목을 찾을 수 없습니다. 이는 첫 번째 줄의 끝 부분이 `$` 패턴과 일치하지 않기 때문입니다. 원래 입력 문자열을 문자열 배열로 분할하면 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> 메서드는 5줄의 각 줄을 찾는 데 성공합니다. <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 매개 변수를 `options` 으로 설정하여 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>메서드를 호출하면 정규식 패턴에서 캐리지 리턴 요소(\u+000D)를 고려하지 않으므로 일치 항목이 발견되지 않습니다. 그러나 `$` 를 `\r?$`로 바꿔서 정규식 패턴을 수정할 경우 <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 매개 변수를 `options` 으로 설정하여 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 메서드를 다시 호출하면 일치 항목 5개가 발견됩니다.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/endofstring1.cs#2)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring1.vb#2)]  
@@ -95,7 +95,7 @@ ms.locfileid: "53155040"
   
 <a name="EndOrNOnly"></a>   
 ## <a name="end-of-string-or-before-ending-newline-z"></a>문자열의 끝 또는 줄 바꿈 종료 전: \Z  
- `\Z` 앵커는 일치 항목 찾기가 입력 문자열의 끝이나 입력 문자열의 끝에 있는 `\n` 앞에서 수행되도록 지정합니다. `\Z`는 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션을 무시한다는 점을 제외하고 `$` 앵커와 동일합니다. 따라서 여러 줄 문자열에서는 마지막 줄의 끝이나 `\n` 앞의 마지막 줄만 찾을 수 있습니다.  
+ `\Z` 앵커는 일치 항목 찾기가 입력 문자열의 끝이나 입력 문자열의 끝에 있는 `\n` 앞에서 수행되도록 지정합니다. `$` 는 `\Z` 옵션을 무시한다는 점을 제외하고 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 앵커와 동일합니다. 따라서 여러 줄 문자열에서는 마지막 줄의 끝이나 `\n`앞의 마지막 줄만 찾을 수 있습니다.  
   
  `\Z` 는 `\n` 과 일치하지만 `\r\n` (CR/LF 문자 조합)과는 일치하지 않습니다. CR/LF를 찾으려면 정규식 패턴에 `\r?\Z` 를 포함합니다.  
   
@@ -108,7 +108,7 @@ ms.locfileid: "53155040"
   
 <a name="EndOnly"></a>   
 ## <a name="end-of-string-only-z"></a>문자열의 끝만: \z  
- `\z` 앵커는 일치 항목 찾기가 입력 문자열의 끝 부분에서 수행되도록 지정합니다. `$` 언어 요소와 같이 `\z`는 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션을 무시합니다. `\Z` 언어 요소와 달리 `\z`는 문자열 끝에서 `\n` 문자를 찾지 않습니다. 따라서 입력 문자열의 마지막 줄만 찾을 수 있습니다.  
+ `\z` 앵커는 일치 항목 찾기가 입력 문자열의 끝 부분에서 수행되도록 지정합니다. `$` 언어 요소와 같이 `\z` 는 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 옵션을 무시합니다. `\Z` 언어 요소와 달리 `\z` 는 문자열 끝에서 `\n` 문자를 찾지 않습니다. 따라서 입력 문자열의 마지막 줄만 찾을 수 있습니다.  
   
  다음 예제에서는 일부 전문 야구팀이 있던 기간(년)에 대한 정보를 추출하는 이전 섹션의 예제와 동일한 정규식에서 `\z` 앵커를 사용합니다. 예제에서는 정규식 패턴 `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\z`를 사용하여 문자열 배열에서 요소 5개를 각각 찾으려고 합니다. 문자열 중 두 개는 캐리지 리턴 및 줄 바꿈 문자로 끝나고, 하나는 줄 바꿈 문자로 끝나고, 두 개는 캐리지 리턴과 줄 바꿈 문자가 둘 다 없이 끝납니다. 출력과 같이 캐리지 리턴이나 줄 바꿈 문자가 없는 문자열만 패턴과 일치합니다.  
   
@@ -178,5 +178,5 @@ ms.locfileid: "53155040"
   
 ## <a name="see-also"></a>참고 항목
 
-- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [정규식 옵션](../../../docs/standard/base-types/regular-expression-options.md)

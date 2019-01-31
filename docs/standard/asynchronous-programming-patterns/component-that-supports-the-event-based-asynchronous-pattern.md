@@ -18,19 +18,19 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
-ms.openlocfilehash: 3fd01e19bc8aad8af709aee2fdaa020d8192d530
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 8213d3d980edc9c37b5f50545edbcd8959616963
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003817"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745469"
 ---
 # <a name="how-to-implement-a-component-that-supports-the-event-based-asynchronous-pattern"></a>방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현
 상당한 지연을 일으킬 수 있는 몇 가지 작업을 사용하여 클래스를 작성하는 경우 [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)를 구현하여 비동기 기능을 부여하는 것을 고려할 수 있습니다.  
   
- 이 연습에서는 이벤트 기반 비동기 패턴을 구현하는 구성 요소를 만드는 방법을 보여줍니다. [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], 콘솔 응용 프로그램 및 Windows Forms 응용 프로그램을 포함한 모든 응용 프로그램 모델에서 구성 요소가 올바르게 작동하도록 하는 <xref:System.ComponentModel?displayProperty=nameWithType> 네임스페이스의 도우미 클래스를 사용하는 것이 좋습니다. 이 구성 요소도 <xref:System.Windows.Forms.PropertyGrid> 컨트롤과 고유한 사용자 지정 디자이너를 사용하여 디자인할 수 있습니다.  
+ 이 연습에서는 이벤트 기반 비동기 패턴을 구현하는 구성 요소를 만드는 방법을 보여줍니다. [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], 콘솔 애플리케이션 및 Windows Forms 애플리케이션을 포함한 모든 애플리케이션 모델에서 구성 요소가 올바르게 작동하도록 하는 <xref:System.ComponentModel?displayProperty=nameWithType> 네임스페이스의 도우미 클래스를 사용하는 것이 좋습니다. 이 구성 요소도 <xref:System.Windows.Forms.PropertyGrid> 컨트롤과 고유한 사용자 지정 디자이너를 사용하여 디자인할 수 있습니다.  
   
- 완료하면 소수를 비동기적으로 계산하는 응용 프로그램이 생깁니다. 응용 프로그램에는 기본 UI(사용자 인터페이스) 스레드 및 각 소수는 계산을 위한 스레드가 있습니다. 큰 숫자가 소수인지 테스트하는 데는 상당한 시간이 걸릴 수도 있지만 이 지연으로 기본 UI 스레드가 중단되지 않으며 계산 중에도 폼이 빠르게 응답하게 됩니다. 원하는 계산 수만큼 동시에 또는 선택적으로 취소 보류 계산을 실행할 수 있습니다.  
+ 완료하면 소수를 비동기적으로 계산하는 애플리케이션이 생깁니다. 애플리케이션에는 기본 UI(사용자 인터페이스) 스레드 및 각 소수는 계산을 위한 스레드가 있습니다. 큰 숫자가 소수인지 테스트하는 데는 상당한 시간이 걸릴 수도 있지만 이 지연으로 기본 UI 스레드가 중단되지 않으며 계산 중에도 폼이 빠르게 응답하게 됩니다. 원하는 계산 수만큼 동시에 또는 선택적으로 취소 보류 계산을 실행할 수 있습니다.  
   
  이 연습에서 설명하는 작업은 다음과 같습니다.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "46003817"
   
 -   시작 및 취소 메서드 구현  
   
- 이 항목의 코드를 단일 목록으로 복사하려면 [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md)(방법: 이벤트 기반 비동기 패턴의 클라이언트 구현)을 참조하세요.  
+ 이 항목의 코드를 단일 목록으로 복사하려면 [방법: 이벤트 기반 비동기 패턴의 클라이언트 구현](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md)을 참조하세요.  
   
 ## <a name="creating-the-component"></a>구성 요소 만들기  
  첫 번째 단계는 이벤트 기반 비동기 패턴을 구현하는 구성 요소를 만드는 것입니다.  
@@ -142,13 +142,13 @@ ms.locfileid: "46003817"
 ## <a name="implementing-the-completion-method"></a>완료 메서드 구현  
  완료 대리자는 비동기 작업이 성공적인 완료, 오류 또는 취소로 종료될 경우 기본적인 자유 스레드 비동기 동작이 호출되는 메서드입니다. 이 호출은 임의 스레드에서 발생합니다.  
   
- 이 메서드는 클라이언트의 작업 ID가 고유한 클라이언트 토큰의 내부 컬렉션에서 제거되는 위치입니다. 또한 이 메서드는 해당 <xref:System.ComponentModel.AsyncOperation>에서 <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 메서드를 호출하여 특정 비동기 작업의 수명을 종료합니다. 이 호출은 응용 프로그램 모델에 적절한 스레드에서 완료 이벤트를 발생시킵니다. <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 메서드를 호출한 후에는 <xref:System.ComponentModel.AsyncOperation>의 이 인스턴스를 더 이상 사용할 수 없고 이후에 이를 사용하려고 시도하면 예외가 throw됩니다.  
+ 이 메서드는 클라이언트의 작업 ID가 고유한 클라이언트 토큰의 내부 컬렉션에서 제거되는 위치입니다. 또한 이 메서드는 해당 <xref:System.ComponentModel.AsyncOperation>에서 <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 메서드를 호출하여 특정 비동기 작업의 수명을 종료합니다. 이 호출은 애플리케이션 모델에 적절한 스레드에서 완료 이벤트를 발생시킵니다. <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 메서드를 호출한 후에는 <xref:System.ComponentModel.AsyncOperation>의 이 인스턴스를 더 이상 사용할 수 없고 이후에 이를 사용하려고 시도하면 예외가 throw됩니다.  
   
  `CompletionMethod` 시그니처는 비동기 작업의 결과를 설명하는 데 필요한 모든 상태를 포함해야 합니다. 이 시그니처는 이 특정 비동기 작업으로 테스트된 숫자의 상태, 숫자가 소수인지 여부 및 소수가 아닌 경우 첫 번째 제수의 값을 포함합니다. 또한 발생한 예외를 설명하는 상태 및 이 특정 작업에 해당하는 <xref:System.ComponentModel.AsyncOperation>을 포함합니다.  
   
 #### <a name="to-complete-an-asynchronous-operation"></a>비동기 작업을 완료하려면:  
   
--   완료 메서드를 구현합니다. 이 메서드는 클라이언트의 `CalculatePrimeCompletedEventHandler`를 통해 클라이언트로 반환되는 `CalculatePrimeCompletedEventArgs`를 채우는 데 사용할 6개의 매개 변수를 사용합니다. 이 메서드는 내부 컬렉션에서 클라이언트의 작업 ID 토큰을 제거하고 <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 호출을 통해 비동기 작업 수명을 종료합니다. <xref:System.ComponentModel.AsyncOperation>은 응용 프로그램 모델에 적합한 스레드 또는 컨텍스트에 대한 호출을 마샬링합니다.  
+-   완료 메서드를 구현합니다. 이 메서드는 클라이언트의 `CalculatePrimeCompletedEventHandler`를 통해 클라이언트로 반환되는 `CalculatePrimeCompletedEventArgs`를 채우는 데 사용할 6개의 매개 변수를 사용합니다. 이 메서드는 내부 컬렉션에서 클라이언트의 작업 ID 토큰을 제거하고 <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> 호출을 통해 비동기 작업 수명을 종료합니다. <xref:System.ComponentModel.AsyncOperation>은 애플리케이션 모델에 적합한 스레드 또는 컨텍스트에 대한 호출을 마샬링합니다.  
   
      [!code-csharp[System.ComponentModel.AsyncOperationManager#26](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#26)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#26](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#26)]  
@@ -190,7 +190,7 @@ ms.locfileid: "46003817"
      [!code-csharp[System.ComponentModel.AsyncOperationManager#27](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#27)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#27](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#27)]  
   
-3.  `BuildPrimeNumberList`를 구현해야 합니다. 이 메서드는 두 개의 매개 변수인 테스트할 숫자 및 <xref:System.ComponentModel.AsyncOperation>을 사용합니다. <xref:System.ComponentModel.AsyncOperation>을 사용하여 진행률 및 증분 결과를 보고합니다. 이 메서드를 사용하면 클라이언트의 이벤트 처리기가 응용 프로그램 모델에 대한 적절한 스레드 또는 컨텍스트에서 호출됩니다. `BuildPrimeNumberList`는 소수를 찾을 경우 `ProgressChanged` 이벤트에 대한 클라이언트 이벤트 처리기에 이 소수를 증분 결과로 보고합니다. 이 작업에는 `LatestPrimeNumber`라는 하나의 추가된 속성을 포함하는 `CalculatePrimeProgressChangedEventArgs`라는 <xref:System.ComponentModel.ProgressChangedEventArgs>에서 파생된 클래스가 필요합니다.  
+3.  `BuildPrimeNumberList`를 구현해야 합니다. 이 메서드는 두 개의 매개 변수인 테스트할 숫자 및 <xref:System.ComponentModel.AsyncOperation>을 사용합니다. <xref:System.ComponentModel.AsyncOperation>을 사용하여 진행률 및 증분 결과를 보고합니다. 이 메서드를 사용하면 클라이언트의 이벤트 처리기가 애플리케이션 모델에 대한 적절한 스레드 또는 컨텍스트에서 호출됩니다. `BuildPrimeNumberList`는 소수를 찾을 경우 `ProgressChanged` 이벤트에 대한 클라이언트 이벤트 처리기에 이 소수를 증분 결과로 보고합니다. 이 작업에는 `LatestPrimeNumber`라는 하나의 추가된 속성을 포함하는 `CalculatePrimeProgressChangedEventArgs`라는 <xref:System.ComponentModel.ProgressChangedEventArgs>에서 파생된 클래스가 필요합니다.  
   
      또한 `BuildPrimeNumberList` 메서드는 `TaskCanceled` 메서드를 정기적으로 호출하고 메서드가 `true`를 반환하는 경우 종료됩니다.  
   
@@ -253,6 +253,6 @@ ms.locfileid: "46003817"
   
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
-- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
-- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

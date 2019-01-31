@@ -2,17 +2,17 @@
 title: '방법: DataContractSerializer를 사용하여 serialize(C#)'
 ms.date: 07/20/2015
 ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
-ms.openlocfilehash: 2c0324b1eeeab9f6cf9223e2a3e201771b188749
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 75f805c2a954957519f2ebb9425ae7e2e2a967b8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54721843"
 ---
 # <a name="how-to-serialize-using-datacontractserializer-c"></a>방법: DataContractSerializer를 사용하여 serialize(C#)
 이 항목에서는 <xref:System.Runtime.Serialization.DataContractSerializer>를 사용하여 serialize하고 deserialize하는 예제를 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 <xref:System.Xml.Linq.XElement> 개체가 포함된 많은 개체를 만든 다음 텍스트 파일로 개체를 serialize하고 텍스트 파일에서 개체를 deserialize합니다.  
   
 ```csharp  

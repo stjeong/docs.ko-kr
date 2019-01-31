@@ -2,12 +2,12 @@
 title: 고급 쿼리 기술(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: 028d978e-215b-4d50-ba70-adce0659386d
-ms.openlocfilehash: d33677be318275eb9c9cc427129caec6edddb2d9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2552610c88dd095228b960fdea37d46357106fb9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44141193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54742356"
 ---
 # <a name="advanced-query-techniques-linq-to-xml-c"></a>고급 쿼리 기술(LINQ to XML)(C#)
 이 단원에서는 고급 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리 기법의 예제를 제공합니다.  

@@ -2,17 +2,17 @@
 title: '방법: 특정 요소 이름으로 하위 항목 찾기(C#)'
 ms.date: 07/20/2015
 ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
-ms.openlocfilehash: 6c5e035b4ee0168a0c41a34754314e18d089b1ef
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 11f13dfc61e837a923cb9709301d89ff6d2149dc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530391"
 ---
 # <a name="how-to-find-descendants-with-a-specific-element-name-c"></a>방법: 특정 요소 이름으로 하위 항목 찾기(C#)
 특정 이름을 가진 모든 하위 요소를 찾으려는 경우가 있습니다. 모든 하위 요소를 반복하는 코드를 작성할 수 있지만 <xref:System.Xml.Linq.XContainer.Descendants%2A> 축을 사용하는 것이 더 쉽습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 요소 이름에 따라 하위 요소를 찾는 방법을 보여 줍니다.  
   
 ```csharp  
@@ -51,7 +51,7 @@ Console.WriteLine(str);
 Some text that is broken up into multiple segments.  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 네임스페이스에 있는 XML에 대한 동일한 쿼리를 보여 줍니다. 자세한 내용은 [XML 네임스페이스 작업(C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)을 참조하세요.  
   
 ```csharp  
@@ -93,5 +93,5 @@ Some text that is broken up into multiple segments.
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>
 - [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

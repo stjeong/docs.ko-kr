@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8ecfa9f5-b500-473d-bcf0-5652ffb1e53d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6426e8bd138d06d3655562de6384e46a12c09279
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 8b7534843c1f724dc4544b9a5a7062e79e973a34
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54738055"
 ---
 # <a name="how-to-implement-an-observer"></a>방법: 관찰자 구현
 관찰자 디자인 패턴은 알림에 등록하는 관찰자와 데이터를 모니터링하고 하나 이상의 관찰자에게 알림을 보내는 공급자 간에 구분이 필요합니다. 이 항목에서는 관찰자를 만드는 방법을 설명합니다. 관련 항목인 [방법: 공급자 구현](../../../docs/standard/events/how-to-implement-a-provider.md)에서는 공급자를 만드는 방법을 설명합니다.  
@@ -38,20 +38,20 @@ ms.locfileid: "48583989"
      [!code-csharp[Conceptual.ObserverDesign.HowTo#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/observer.cs#10)]
      [!code-vb[Conceptual.ObserverDesign.HowTo#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/observer.vb#10)]  
   
-4.  <xref:System.IObserver%601> 인터페이스로 정의된 세 가지 메서드 즉, <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType>, <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType> 및 <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>의 구현을 지정합니다. 공급자 및 응용 프로그램의 필요에 따라 <xref:System.IObserver%601.OnError%2A> 및 <xref:System.IObserver%601.OnCompleted%2A> 메서드가 스텁 구현일 수 있습니다. <xref:System.IObserver%601.OnError%2A> 메서드는 전달된 <xref:System.Exception> 개체를 예외로 처리해서는 안 되며, <xref:System.IObserver%601.OnCompleted%2A> 메서드는 공급자의 <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> 구현을 자유롭게 호출할 수 있어야 합니다. 다음 예제에서는 `TemperatureReporter` 클래스의 <xref:System.IObserver%601> 구현을 보여줍니다.  
+4.  <xref:System.IObserver%601> 인터페이스로 정의된 세 가지 메서드 즉, <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType>, <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType> 및 <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>의 구현을 지정합니다. 공급자 및 애플리케이션의 필요에 따라 <xref:System.IObserver%601.OnError%2A> 및 <xref:System.IObserver%601.OnCompleted%2A> 메서드가 스텁 구현일 수 있습니다. <xref:System.IObserver%601.OnError%2A> 메서드는 전달된 <xref:System.Exception> 개체를 예외로 처리해서는 안 되며, <xref:System.IObserver%601.OnCompleted%2A> 메서드는 공급자의 <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> 구현을 자유롭게 호출할 수 있어야 합니다. 다음 예제에서는 `TemperatureReporter` 클래스의 <xref:System.IObserver%601> 구현을 보여줍니다.  
   
      [!code-csharp[Conceptual.ObserverDesign.HowTo#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/observer.cs#11)]
      [!code-vb[Conceptual.ObserverDesign.HowTo#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/observer.vb#11)]  
   
-## <a name="example"></a>예  
- 다음 예제에는 온도 모니터링 응용 프로그램에 대한 <xref:System.IObserver%601> 구현을 제공하는 `TemperatureReporter` 클래스의 전체 소스 코드가 포함되어 있습니다.  
+## <a name="example"></a>예제  
+ 다음 예제에는 온도 모니터링 애플리케이션에 대한 <xref:System.IObserver%601> 구현을 제공하는 `TemperatureReporter` 클래스의 전체 소스 코드가 포함되어 있습니다.  
   
  [!code-csharp[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/observer.cs#12)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/observer.vb#12)]  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IObserver%601>  
-- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)  
-- [방법: 공급자 구현](../../../docs/standard/events/how-to-implement-a-provider.md)  
+- <xref:System.IObserver%601>
+- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)
+- [방법: 공급자 구현](../../../docs/standard/events/how-to-implement-a-provider.md)
 - [관찰자 디자인 패턴 유용한 정보](../../../docs/standard/events/observer-design-pattern-best-practices.md)

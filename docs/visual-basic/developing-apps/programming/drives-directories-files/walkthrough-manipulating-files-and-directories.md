@@ -15,15 +15,15 @@ helpviewer_keywords:
 - writing to files [Visual Basic], walkthroughs
 - I/O [Visual Basic], reading text from files
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
-ms.openlocfilehash: ab1c119d2c5cd9bfa0ff725774144bc65817cad4
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: f199cc8c58dbcbb0fce17dbf3c7b8e198daf0305
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709731"
 ---
 # <a name="walkthrough-manipulating-files-and-directories-in-visual-basic"></a>연습: Visual Basic에서 파일과 디렉터리 조작
-이 연습에서는 Visual Basic에서 파일 I/O의 기본 개념을 소개합니다. 디렉터리에 텍스트 파일을 나열하고 검사하는 작은 응용 프로그램을 만드는 방법을 설명합니다. 선택한 각 텍스트 파일에 대해 응용 프로그램은 파일 특성 및 내용의 첫 줄을 제공합니다. 로그 파일에 정보를 기록하는 옵션이 있습니다.  
+이 연습에서는 Visual Basic에서 파일 I/O의 기본 개념을 소개합니다. 디렉터리에 텍스트 파일을 나열하고 검사하는 작은 애플리케이션을 만드는 방법을 설명합니다. 선택한 각 텍스트 파일에 대해 애플리케이션은 파일 특성 및 내용의 첫 줄을 제공합니다. 로그 파일에 정보를 기록하는 옵션이 있습니다.  
   
  이 연습에서는 Visual Basic에서 사용 가능한 `My.Computer.FileSystem Object`의 멤버를 사용합니다. 자세한 내용은 <xref:Microsoft.VisualBasic.FileIO.FileSystem>를 참조하세요. 연습의 끝 부분에서 <xref:System.IO> 네임스페이스의 클래스를 사용하는 동등한 예제가 제공됩니다.  
   
@@ -35,7 +35,7 @@ ms.locfileid: "39332911"
   
      **새 프로젝트** 대화 상자가 나타납니다.  
   
-2.  **설치된 템플릿** 창에서 **Visual Basic**을 확장한 다음 **Windows**를 클릭합니다. **템플릿** 창 가운데에서 **Windows Forms 응용 프로그램**을 클릭합니다.  
+2.  **설치된 템플릿** 창에서 **Visual Basic**을 확장한 다음 **Windows**를 클릭합니다. **템플릿** 창 가운데에서 **Windows Forms 애플리케이션**을 클릭합니다.  
   
 3.  **이름** 상자에 `FileExplorer`를 입력하여 프로젝트 이름을 설정한 다음 **확인**을 클릭합니다.  
   
@@ -71,11 +71,11 @@ ms.locfileid: "39332911"
   
      `GetFiles` 메서드에 의해 반환되는 문자열은 **ListBox**에 추가됩니다.  
   
-4.  응용 프로그램을 실행합니다. **찾아보기** 단추를 클릭합니다. **폴더 찾아보기** 대화 상자에서 .txt 파일이 있는 폴더로 이동하여 폴더를 선택하고 **확인**을 클릭합니다.  
+4.  애플리케이션을 실행합니다. **찾아보기** 단추를 클릭합니다. **폴더 찾아보기** 대화 상자에서 .txt 파일이 있는 폴더로 이동하여 폴더를 선택하고 **확인**을 클릭합니다.  
   
      `ListBox`에는 선택한 폴더에 있는 .txt 파일의 목록이 포함되어 있습니다.  
   
-5.  응용 프로그램 실행을 중지합니다.  
+5.  애플리케이션 실행을 중지합니다.  
   
 ### <a name="to-obtain-attributes-of-a-file-and-content-from-a-text-file"></a>파일의 특성을 및 텍스트 파일의 내용을 가져오려면  
   
@@ -97,11 +97,11 @@ ms.locfileid: "39332911"
   
      <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A> 메서드는 파일 내용을 <xref:System.IO.StreamReader>로 읽어들입니다. 내용의 첫 번째 줄을 `StreamReader`에서 가져와 `StringBuilder`에 추가합니다.  
   
-4.  응용 프로그램을 실행합니다. **찾아보기**를 클릭하고 .txt 파일이 포함된 폴더로 이동합니다. **확인**을 클릭합니다.  
+4.  애플리케이션을 실행합니다. **찾아보기**를 클릭하고 .txt 파일이 포함된 폴더로 이동합니다. **확인**을 클릭합니다.  
   
      `ListBox`에서 파일을 선택하고 **검사**를 클릭합니다. `MessageBox`에 파일 정보가 표시됩니다.  
   
-5.  응용 프로그램 실행을 중지합니다.  
+5.  애플리케이션 실행을 중지합니다.  
   
 ### <a name="to-add-a-log-entry"></a>로그 항목을 추가하려면  
   
@@ -113,9 +113,9 @@ ms.locfileid: "39332911"
   
      `append` 인수가 `True`로 설정된 <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> 메서드를 사용하여 로그 항목을 만듭니다.  
   
-2.  응용 프로그램을 실행합니다. 텍스트 파일로 이동하고, `ListBox`에서 선택하고, **결과 저장** 확인란을 선택한 다음 **검사**를 클릭합니다. 로그 항목이 `log.txt` 파일에 기록되었는지 확인합니다.  
+2.  애플리케이션을 실행합니다. 텍스트 파일로 이동하고, `ListBox`에서 선택하고, **결과 저장** 확인란을 선택한 다음 **검사**를 클릭합니다. 로그 항목이 `log.txt` 파일에 기록되었는지 확인합니다.  
   
-3.  응용 프로그램 실행을 중지합니다.  
+3.  애플리케이션 실행을 중지합니다.  
   
 ### <a name="to-use-the-current-directory"></a>현재 디렉터리를 사용하려면  
   
@@ -127,9 +127,9 @@ ms.locfileid: "39332911"
   
      이 코드는 폴더 브라우저의 기본 디렉터리를 현재 디렉터리로 설정합니다.  
   
-3.  응용 프로그램을 실행합니다. **찾아보기**를 처음 클릭하면 **폴더 찾아보기** 대화 상자가 현재 디렉터리로 열립니다.  
+3.  애플리케이션을 실행합니다. **찾아보기**를 처음 클릭하면 **폴더 찾아보기** 대화 상자가 현재 디렉터리로 열립니다.  
   
-4.  응용 프로그램 실행을 중지합니다.  
+4.  애플리케이션 실행을 중지합니다.  
   
 ### <a name="to-selectively-enable-controls"></a>선택적으로 컨트롤을 사용하도록 설정하려면  
   
@@ -147,7 +147,7 @@ ms.locfileid: "39332911"
   
 5.  `Form1_Load` 이벤트 처리기의 끝에서 `SetEnabled`에 호출을 추가합니다.  
   
-6.  응용 프로그램을 실행합니다. `ListBox`에서 항목을 선택하지 않으면 **결과 저장** 확인란 및 **검사** 단추가 활성화되지 않습니다.  
+6.  애플리케이션을 실행합니다. `ListBox`에서 항목을 선택하지 않으면 **결과 저장** 확인란 및 **검사** 단추가 활성화되지 않습니다.  
   
 ## <a name="full-example-using-mycomputerfilesystem"></a>My.Computer.FileSystem을 사용하는 전체 예제  
  다음은 전체 예제입니다.  
@@ -159,8 +159,8 @@ ms.locfileid: "39332911"
   
  [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>  
- [연습: .NET Framework 메서드를 사용하여 파일 조작](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.IO>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>
+- [연습: .NET Framework 메서드를 사용하여 파일 조작](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)

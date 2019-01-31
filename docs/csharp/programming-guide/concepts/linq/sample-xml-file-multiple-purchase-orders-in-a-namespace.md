@@ -2,12 +2,12 @@
 title: '샘플 XML 파일: 네임스페이스에서 여러 구매 주문2'
 ms.date: 07/20/2015
 ms.assetid: 595024f2-374a-4615-acb5-64fa1600f377
-ms.openlocfilehash: 2c4812aa1c15223c7d2a65fa21f6c505e21e0bae
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2d5985fbfae543a6123d523a2caf4ec9ffc99a13
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600156"
 ---
 # <a name="sample-xml-file-multiple-purchase-orders-in-a-namespace"></a>샘플 XML 파일: 네임스페이스에서 여러 구매 주문
 다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다. 이 파일에는 몇 가지 구매 주문이 포함되어 있습니다. XML은 네임스페이스에 있습니다.  

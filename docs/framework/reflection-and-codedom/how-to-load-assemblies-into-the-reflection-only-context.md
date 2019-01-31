@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9818b660-52f5-423d-a9af-e75163aa7068
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7aa7f8a158a851baf76455da685059f02c69cb6c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7eeef33745ebc8209fc7f69a9337af4093c1e8a1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54567050"
 ---
 # <a name="how-to-load-assemblies-into-the-reflection-only-context"></a>방법: 리플렉션 전용 컨텍스트에 어셈블리 로드
 리플렉션 전용 로드 컨텍스트를 사용하면 다른 플랫폼이나 다른 버전의 .NET Framework에 대해 컴파일된 어셈블리를 검사할 수 있습니다. 이 컨텍스트에 로드된 코드는 검사할 수만 있고 실행할 수 없습니다. 즉, 생성자를 실행할 수 없기 때문에 개체를 만들 수 없습니다. 코드를 실행할 수 없기 때문에 종속성이 자동으로 로드되지 않습니다. 종속성을 검사하려면 직접 로드해야 합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33398728"
     > [!NOTE]
     >  어셈블리에 또는 해당 내용에 적용되는 특성은 어셈블리에서 정의되거나, 리플렉션 전용 컨텍스트에 로드된 다른 어셈블리에서 정의될 수 있습니다. 특성이 정의되어 있는 위치를 미리 확인할 수는 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 리플렉션 전용 컨텍스트에 로드된 어셈블리에 적용된 특성을 검사하는 방법을 보여 줍니다.  
   
  이 코드 예제는 생성자 두 개와 속성 하나를 사용하여 사용자 지정 특성을 정의합니다. 어셈블리, 어셈블리에 선언된 형식, 형식의 메서드, 메서드의 매개 변수에 특성이 적용됩니다. 실행할 경우 어셈블리는 리플렉션 전용 컨텍스트에 자동으로 로드되고 어셈블리와 어셈블리에 포함된 형식 및 멤버에 적용된 사용자 지정 특성에 대한 정보를 표시합니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "33398728"
  [!code-csharp[CustomAttributeData#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CustomAttributeData/CS/source.cs#1)]
  [!code-vb[CustomAttributeData#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CustomAttributeData/VB/source.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>  
- <xref:System.Reflection.Assembly.ReflectionOnly%2A>  
- <xref:System.Reflection.CustomAttributeData>
+## <a name="see-also"></a>참고 항목
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
+- <xref:System.Reflection.Assembly.ReflectionOnly%2A>
+- <xref:System.Reflection.CustomAttributeData>

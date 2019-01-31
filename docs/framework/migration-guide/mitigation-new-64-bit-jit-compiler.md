@@ -1,5 +1,5 @@
 ---
-title: '마이그레이션: 새로운 64비트 JIT 컴파일러'
+title: '완화: 새로운 64비트 JIT 컴파일러'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - JIT compiler, 64-bit
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4edce9558cdbdd5937aa12866077210a91ee8494
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9d3eb82cf9bac1e40947fb78882d18c5f09b0092
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33391942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690087"
 ---
-# <a name="mitigation-new-64-bit-jit-compiler"></a>마이그레이션: 새로운 64비트 JIT 컴파일러
+# <a name="mitigation-new-64-bit-jit-compiler"></a>완화: 새로운 64비트 JIT 컴파일러
 .NET Framework 4.6부터는 런타임에 Just-In-Time 컴파일을 위한 새로운 64비트 JIT 컴파일러가 포함됩니다. 이 변경 내용은 32비트 JIT 컴파일러를 사용하는 컴파일에는 영향을 주지 않습니다.  
   
 ## <a name="unexpected-behavior-or-exceptions"></a>예기치 않은 동작이나 예외  
@@ -52,7 +52,7 @@ ms.locfileid: "33391942"
 ## <a name="mitigation-of-other-issues"></a>기타 문제 완화  
  이전 64비트 JIT 컴파일러 및 새로운 64비트 JIT 컴파일러를 사용하여 컴파일한 코드 또는 둘 다 새로운 64비트 JIT 컴파일러를 사용하여 컴파일한 앱의 디버그 버전 및 릴리스 버전 간 동작에서 다른 차이가 발생하는 경우 다음을 수행하여 이전 64비트 JIT 컴파일러로 앱을 컴파일할 수 있습니다.  
   
--   응용 프로그램별로 [\<useLegacyJit>](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) 요소를 응용 프로그램의 구성 파일에 추가할 수 있습니다. 다음은 새로운 64비트 JIT 컴파일러를 사용하는 컴파일을 사용하지 않도록 설정하고, 대신 레거시 64비트 JIT 컴파일러를 사용합니다.  
+-   애플리케이션별로 [\<useLegacyJit&gt;](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) 요소를 애플리케이션의 구성 파일에 추가할 수 있습니다. 다음은 새로운 64비트 JIT 컴파일러를 사용하는 컴파일을 사용하지 않도록 설정하고, 대신 레거시 64비트 JIT 컴파일러를 사용합니다.  
   
     ```xml  
     <?xml version ="1.0"?>  
@@ -69,6 +69,6 @@ ms.locfileid: "33391942"
   
  [Microsoft Connect](https://connect.microsoft.com/VisualStudio)에 버그를 보고하여 문제를 알릴 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 변경 내용](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)  
- [\<useLegacyJit> 요소](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)
+## <a name="see-also"></a>참고 항목
+- [런타임 변경 내용](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+- [\<useLegacyJit> 요소](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)

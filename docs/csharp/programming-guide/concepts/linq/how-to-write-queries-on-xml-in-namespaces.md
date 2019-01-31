@@ -2,12 +2,12 @@
 title: '방법: 네임스페이스에서 XML로 쿼리 작성(C#)'
 ms.date: 07/20/2015
 ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
-ms.openlocfilehash: 29c4b01bfce75ce71d5214fef0cc55cd82c4e776
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e6b966e90d1f7fc86efaa422ecd8afb030d97163
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54722101"
 ---
 # <a name="how-to-write-queries-on-xml-in-namespaces-c"></a>방법: 네임스페이스에서 XML로 쿼리 작성(C#)
 네임스페이스에 있는 XML에 대한 쿼리를 작성하려면 올바른 네임스페이스를 가진 <xref:System.Xml.Linq.XName> 개체를 사용해야 합니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "43525645"
   
  이 항목의 첫 번째 예제 집합에서는 기본 네임스페이스에 XML 트리를 만드는 방법을 보여 줍니다. 두 번째 예제 집합에서는 접두사가 포함된 네임스페이스에 XML 트리를 만드는 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 기본 네임스페이스에 있는 XML 트리를 만든 다음 요소의 컬렉션을 검색합니다.  
   
 ```csharp  
@@ -45,7 +45,7 @@ foreach (XElement el in c1)
 3  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  C#의 경우 쿼리를 작성하는 대상이 접두사가 포함된 네임스페이스를 사용하는 XML 트리인지 기본 네임스페이스를 사용하는 XML 트리인지에 관계없이 동일한 방식으로 쿼리를 작성합니다.  
   
  다음 예제에서는 접두사가 포함된 네임스페이스에 있는 XML 트리를 만든 다음 요소의 컬렉션을 검색합니다.  

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3947e333-5af6-4601-b2f1-24d4d6129cf3
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cfb6111b080b7c8c359458e3fd1dc99cb0ff3c36
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 19a671cac609e79088956ecb4324ebb0a25fb941
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43877322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54547401"
 ---
 # <a name="how-to-delete-stores-in-isolated-storage"></a>방법: 격리된 스토리지에서 저장소 삭제
-<xref:System.IO.IsolatedStorage.IsolatedStorageFile> 클래스는 격리된 저장소 파일을 삭제하기 위해 다음과 같은 두 가지 메서드를 제공합니다.  
+<xref:System.IO.IsolatedStorage.IsolatedStorageFile> 클래스는 격리된 스토리지 파일을 삭제하기 위해 다음과 같은 두 가지 메서드를 제공합니다.  
   
 -   인스턴스 메서드 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove> 는 인수를 사용하지 않으며 메서드를 호출하는 저장소를 삭제합니다. 사용 권한이 없어도 이 작업을 수행할 수 있습니다. 저장소에 액세스할 수 있는 코드는 저장소 내의 데이터를 일부 또는 모두 삭제할 수 있습니다.  
   
@@ -40,5 +40,5 @@ ms.locfileid: "43877322"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
-- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- [격리된 스토리지](../../../docs/standard/io/isolated-storage.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 단일 파일 어셈블리 만들기'
+title: '방법: 단일 파일 어셈블리 빌드'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fff84266dd99b84cc99c1996a3063dc962fa2e94
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: b5c0b5dc2e001121ab54447bae4a5eed3290a580
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597842"
 ---
-# <a name="how-to-build-a-single-file-assembly"></a>방법: 단일 파일 어셈블리 만들기
+# <a name="how-to-build-a-single-file-assembly"></a>방법: 단일 파일 어셈블리 빌드
 
 가장 단순한 형식의 어셈블리인 단일 파일 어셈블리에는 형식 정보 및 구현과 [어셈블리 매니페스트](../../../docs/framework/app-domains/assembly-manifest.md)가 포함되어 있습니다. 명령줄 컴파일러 또는 Visual Studio를 사용하여 단일 파일 어셈블리를 만들 수 있습니다. 기본적으로 컴파일러는 확장명이 .exe인 어셈블리 파일을 만듭니다.
 

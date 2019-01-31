@@ -2,12 +2,12 @@
 title: 개체 지향 프로그래밍(C#)
 ms.date: 07/20/2015
 ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
-ms.openlocfilehash: 8e211fec25ceb2e8e42620ff3f421e6943d8b5e5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8f7a810b3f3ec74723ca5e715b7428e1b60928f4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702485"
 ---
 # <a name="object-oriented-programming-c"></a>개체 지향 프로그래밍(C#)
 C#은 캡슐화, 상속, 다형성 등 개체 지향 프로그래밍에 대한 모든 지원을 제공합니다.  
@@ -185,7 +185,7 @@ public class SampleClass
  [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md).  
   
 ####  <a name="Finalizers"></a> 종료자  
- 종료자는 클래스의 인스턴스를 소멸하는 데 사용됩니다. .NET Framework에서는 응용 프로그램의 관리되는 개체에 대해 가비지 수집기가 자동으로 메모리를 할당하고 해제하지만 응용 프로그램이 만드는 관리되지 않는 리소스를 정리하려면 여전히 종료자가 필요할 수 있습니다. 각 클래스에는 종료자가 하나씩만 있을 수 있습니다.  
+ 종료자는 클래스의 인스턴스를 소멸하는 데 사용됩니다. .NET Framework에서는 애플리케이션의 관리되는 개체에 대해 가비지 수집기가 자동으로 메모리를 할당하고 해제하지만 애플리케이션이 만드는 관리되지 않는 리소스를 정리하려면 여전히 종료자가 필요할 수 있습니다. 각 클래스에는 종료자가 하나씩만 있을 수 있습니다.  
   
  .NET Framework의 종료자 및 가비지 수집에 대한 자세한 내용은 [가비지 수집](../../../standard/garbage-collection/index.md)을 참조하세요.  
   
@@ -296,7 +296,7 @@ var sampleObject =
     new { FirstProperty = "A", SecondProperty = "B" };  
 ```  
   
- 자세한 내용은 [무명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)을 참조하세요.  
+ 자세한 내용은 다음을 참조하세요. [익명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)을 참조하세요.  
   
 ##  <a name="Inheritance"></a> 상속  
  상속을 사용하면 다른 클래스에 정의된 동작을 다시 사용, 확장 및 수정하는 새 클래스를 만들 수 있습니다. 멤버가 상속되는 클래스를 *기본 클래스*라고 하고 해당 멤버를 상속하는 클래스를 *파생 클래스*라고 합니다. 그러나 C#의 모든 클래스는 .NET 클래스 계층 구조를 지원하고 모든 클래스에 하위 수준 서비스를 제공하는 <xref:System.Object> 클래스에서 암시적으로 상속됩니다.  

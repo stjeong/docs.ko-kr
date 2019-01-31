@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6453e9983086dcb5b97ec134db9d74160d7a47cf
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: b346da9174d77fbc6a861a8b12f2cc5035b6c291
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54517619"
 ---
 # <a name="data-structures-for-parallel-programming"></a>병렬 프로그래밍을 위한 데이터 구조
-.NET Framework 버전 4에서는 동시 컬렉션 클래스, 간단한 동기화 기본 요소 및 초기화 지연 관련 형식을 포함하여 병렬 프로그래밍에서 유용한 여러 가지 새로운 형식을 소개합니다. 이러한 형식을 작업 병렬 라이브러리 및 PLINQ를 포함한 다중 스레드 응용 프로그램 코드와 함께 사용할 수 있습니다.  
+.NET Framework 버전 4에서는 동시 컬렉션 클래스, 간단한 동기화 기본 요소 및 초기화 지연 관련 형식을 포함하여 병렬 프로그래밍에서 유용한 여러 가지 새로운 형식을 소개합니다. 이러한 형식을 작업 병렬 라이브러리 및 PLINQ를 포함한 다중 스레드 애플리케이션 코드와 함께 사용할 수 있습니다.  
   
 ## <a name="concurrent-collection-classes"></a>동시 컬렉션 클래스  
  <xref:System.Collections.Concurrent?displayProperty=nameWithType> 네임스페이스의 컬렉션 클래스는 가능한 경우 항상 잠금을 방지하고 잠금이 필요한 경우 세분화된 잠금을 사용하는 스레드로부터 안전한 추가 및 제거 작업을 제공합니다. .NET Framework 버전 1.0 및 2.0에 도입된 컬렉션과 달리 동시 컬렉션 클래스에는 항목에 액세스할 때 잠금을 획득하기 위한 사용자 코드가 필요하지 않습니다. 동시 컬렉션 클래스는 여러 스레드가 컬렉션에서 항목을 추가하고 제거하는 시나리오에서 <xref:System.Collections.ArrayList?displayProperty=nameWithType> 및 <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>(사용자가 구현한 잠금 사용)와 같은 형식보다 성능을 크게 개선할 수 있습니다.  
@@ -70,6 +70,6 @@ ms.locfileid: "48836475"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- <xref:System.Threading?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- <xref:System.Threading?displayProperty=nameWithType>
 - [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)

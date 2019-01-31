@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 34ad5b9cc0014db05bc6e7483e389488e145beb3
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: eecf16625c20ad5ff89791e221a4a40b2777956b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543791"
 ---
 # <a name="how-to-implement-a-provider"></a>방법: 공급자 구현
 관찰자 디자인 패턴은 데이터를 모니터링하고 알림을 보내는 공급자와 해당 공급자로부터 알림(콜백)을 받는 하나 이상의 관찰자 간에 구분이 필요합니다. 이 항목에서는 공급자를 만드는 방법을 설명합니다. 관련 항목인 [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)에서는 관찰자를 만드는 방법을 설명합니다.  
   
 ### <a name="to-create-a-provider"></a>공급자를 만들려면  
   
-1.  공급자가 관찰자에게 보내야 하는 데이터를 정의합니다. 공급자와 이 공급자가 관찰자로 보내는 데이터가 단일 형식일 수 있지만, 일반적으로 서로 다른 형식으로 표시됩니다. 예를 들어 온도 모니터링 응용 프로그램에서 `Temperature` 구조체는 공급자(다음 단계에 정의된 `TemperatureMonitor` 클래스로 표시됨)가 모니터링하고 관찰자가 구독하는 데이터를 정의합니다.  
+1.  공급자가 관찰자에게 보내야 하는 데이터를 정의합니다. 공급자와 이 공급자가 관찰자로 보내는 데이터가 단일 형식일 수 있지만, 일반적으로 서로 다른 형식으로 표시됩니다. 예를 들어 온도 모니터링 애플리케이션에서 `Temperature` 구조체는 공급자(다음 단계에 정의된 `TemperatureMonitor` 클래스로 표시됨)가 모니터링하고 관찰자가 구독하는 데이터를 정의합니다.  
   
      [!code-csharp[Conceptual.ObserverDesign.HowTo#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/data.cs#1)]
      [!code-vb[Conceptual.ObserverDesign.HowTo#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/data.vb#1)]  
@@ -54,15 +54,15 @@ ms.locfileid: "44087328"
      [!code-csharp[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#6)]
      [!code-vb[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#6)]  
   
-## <a name="example"></a>예  
- 다음 예제에는 온도 모니터링 응용 프로그램에 대한 <xref:System.IObservable%601> 구현을 정의하기 위한 전체 소스 코드가 포함되어 있습니다. 여기에는 관찰자로 전송된 데이터인 `Temperature` 구조체 및 <xref:System.IObservable%601> 구현인 `TemperatureMonitor` 클래스가 포함됩니다.  
+## <a name="example"></a>예제  
+ 다음 예제에는 온도 모니터링 애플리케이션에 대한 <xref:System.IObservable%601> 구현을 정의하기 위한 전체 소스 코드가 포함되어 있습니다. 여기에는 관찰자로 전송된 데이터인 `Temperature` 구조체 및 <xref:System.IObservable%601> 구현인 `TemperatureMonitor` 클래스가 포함됩니다.  
   
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IObservable%601>  
-- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)  
-- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)  
+- <xref:System.IObservable%601>
+- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)
+- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)
 - [관찰자 디자인 패턴 유용한 정보](../../../docs/standard/events/observer-design-pattern-best-practices.md)

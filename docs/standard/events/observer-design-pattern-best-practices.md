@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 03b77074323346e1a26fa07dc1ec873152da356b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 839772fac51ab006d03875920360824a73b033e2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45664685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600000"
 ---
 # <a name="observer-design-pattern-best-practices"></a>관찰자 디자인 패턴 유용한 정보
 .NET Framework에서는 관찰자 디자인 패턴이 인터페이스 집합으로 구현됩니다. <xref:System.IObservable%601?displayProperty=nameWithType> 인터페이스는 데이터 공급자를 나타냅니다. 이 데이터 공급자는 관찰자가 알림 구독을 취소할 수 있도록 하는 <xref:System.IDisposable> 구현도 제공합니다. <xref:System.IObserver%601?displayProperty=nameWithType> 인터페이스는 관찰자를 나타냅니다. 이 항목에는 이러한 인터페이스를 사용하여 관찰자 디자인 패턴을 구현할 때 개발자가 따라야 하는 모범 사례에 대해 설명합니다.  
@@ -55,6 +55,6 @@ ms.locfileid: "45664685"
   
 ## <a name="see-also"></a>참고 항목
 
-- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)  
-- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)  
+- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)
+- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)
 - [방법: 공급자 구현](../../../docs/standard/events/how-to-implement-a-provider.md)

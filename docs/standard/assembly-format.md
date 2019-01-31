@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
-ms.openlocfilehash: 219e2872ab58980ef7b4bce8e901341d8893a1a2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f713c06fa6749c70bc3f87e8cda81114f153a095
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55065897"
 ---
 # <a name="net-assembly-file-format"></a>.NET 어셈블리 파일 형식
 
@@ -27,7 +27,7 @@ ms.locfileid: "33567252"
 
 ## <a name="format"></a>서식
 
-.NET 이진 형식은 Windows [PE 파일](https://en.wikipedia.org/wiki/Portable_Executable) 형식을 기반으로 합니다. 실제로 .NET 클래스 라이브러리는 규칙에 부합되는 Windows PE이며, 처음에는 Windows DLL(동적 연결 라이브러리) 또는 EXE(응용 프로그램 실행 파일)처럼 보입니다. 이는 Windows에서 매우 유용한 특성으로, 네이티브 실행 이진 파일로 가장하고 동일한 처리 중 일부(예: OS 로드, PE 도구)를 얻을 수 있습니다.
+.NET 이진 형식은 Windows [PE 파일](https://en.wikipedia.org/wiki/Portable_Executable) 형식을 기반으로 합니다. 실제로 .NET 클래스 라이브러리는 규칙에 부합되는 Windows PE이며, 처음에는 Windows DLL(동적 연결 라이브러리) 또는 EXE(애플리케이션 실행 파일)처럼 보입니다. 이는 Windows에서 매우 유용한 특성으로, 네이티브 실행 이진 파일로 가장하고 동일한 처리 중 일부(예: OS 로드, PE 도구)를 얻을 수 있습니다.
 
 ![어셈블리 헤더](./media/assembly-format/assembly-headers.png)
 

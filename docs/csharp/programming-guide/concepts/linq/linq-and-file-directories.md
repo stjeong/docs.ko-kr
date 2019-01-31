@@ -2,12 +2,12 @@
 title: LINQ 및 파일 디렉터리(C#)
 ms.date: 07/20/2015
 ms.assetid: b66c55e4-0f72-44e5-b086-519f9962335c
-ms.openlocfilehash: 4bdd21cf4d8558f140b265f195368082964c34c4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b2153d755b63e1ec14c11b5e94116f7d6b9490f7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47396798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54652373"
 ---
 # <a name="linq-and-file-directories-c"></a>LINQ 및 파일 디렉터리(C#)
 많은 파일 시스템 작업은 기본적으로 쿼리이므로 LINQ 접근 방식에 적합합니다.  

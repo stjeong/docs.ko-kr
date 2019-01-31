@@ -9,12 +9,12 @@ helpviewer_keywords:
 - streams
 - streams, definition
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
-ms.openlocfilehash: 5ce95d84782f02df1a4f9f362629bab776a8060c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e60aae158d822a3cfba93f6d714d83bcd7aa0e08
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600767"
 ---
 # <a name="basics-of-net-framework-file-io-and-the-file-system-visual-basic"></a>.NET Framework 파일 I/O 및 파일 시스템의 기본 사항(Visual Basic)
 <xref:System.IO> 네임스페이스의 클래스는 드라이브, 파일 및 디렉터리 작업에 사용됩니다.  
@@ -55,10 +55,10 @@ ms.locfileid: "53155027"
   
  다음 표에서는 스트림을 사용하여 일반적으로 수행되는 작업을 보여 줍니다.  
   
-|후|참조|
+|대상|참조|
 |---|---|   
 |데이터 파일 읽기 및 쓰기|[방법: 새로 만든 데이터 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|파일에서 텍스트 읽기|[방법: 파일의 텍스트 읽기](../../../../standard/io/how-to-read-text-from-a-file.md)|  
+|파일에서 텍스트 읽기|[방법: 파일에서 텍스트 읽기](../../../../standard/io/how-to-read-text-from-a-file.md)|  
 |파일에 텍스트 쓰기|[방법: 파일에 텍스트 쓰기](../../../../standard/io/how-to-write-text-to-a-file.md)|  
 |문자열에서 문자 읽기|[방법: 문자열에서 문자 읽기](../../../../standard/io/how-to-read-characters-from-a-string.md)|  
 |문자열에 문자 쓰기|[방법: 문자열에 문자 쓰기](../../../../standard/io/how-to-write-characters-to-a-string.md)|  
@@ -87,19 +87,19 @@ ms.locfileid: "53155027"
   
 |대상|참조|
 |---|---|  
-|격리된 저장소 만들기|[방법: 격리된 저장소의 저장소 가져오기](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
-|격리된 저장소 열거|[방법: 격리된 저장소의 저장소 열거](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
-|격리된 저장소 삭제|[방법: 격리된 저장소에서 저장소 삭제](../../../../standard/io/how-to-delete-stores-in-isolated-storage.md)|  
-|격리된 스토리지에서 파일 또는 디렉터리 만들기|[방법: 격리된 저장소에 파일 및 디렉터리 만들기](../../../../standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
-|격리된 스토리지에서 파일 찾기|[방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기](../../../../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
-|격리된 스토리지에서 파일 읽기 또는 쓰기|[방법: 격리된 저장소의 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
-|격리된 스토리지에서 파일 또는 디렉터리 삭제|[방법: 격리된 저장소의 파일 및 디렉터리 삭제](../../../../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
+|격리된 저장소 만들기|[방법: 격리된 스토리지의 저장소 가져오기](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
+|격리된 저장소 열거|[방법: 격리된 스토리지의 저장소 열거](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
+|격리된 저장소 삭제|[방법: 격리된 스토리지에서 저장소 삭제](../../../../standard/io/how-to-delete-stores-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 또는 디렉터리 만들기|[방법: 격리된 스토리지의 파일 및 디렉터리 만들기](../../../../standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 찾기|[방법: 격리된 스토리지의 기존 파일 및 디렉터리 찾기](../../../../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 읽기 또는 쓰기|[방법: 격리된 스토리지의 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 또는 디렉터리 삭제|[방법: 격리된 스토리지의 파일 및 디렉터리 삭제](../../../../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
   
 ## <a name="file-events"></a>파일 이벤트  
  <xref:System.IO.FileSystemWatcher> 구성 요소를 사용하면 네트워크 액세스 권한이 있는 컴퓨터나 시스템의 파일 및 디렉터리에서 변경 내용을 관찰할 수 있습니다. 예를 들어 파일이 수정되는 경우 변경이 발생했다는 경고를 사용자에게 보낼 수 있습니다. 변경이 일어나는 경우 하나 이상의 이벤트가 발생하고, 버퍼에 저장되고, 처리를 위해 <xref:System.IO.FileSystemWatcher> 구성 요소로 전달됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [스트림 작성](../../../../standard/io/composing-streams.md)  
- [파일 및 스트림 I/O](../../../../standard/io/index.md)  
- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
- [.NET Framework 파일 I/O 및 파일 시스템에 사용되는 클래스(Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)
+## <a name="see-also"></a>참고 항목
+- [스트림 작성](../../../../standard/io/composing-streams.md)
+- [파일 및 스트림 I/O](../../../../standard/io/index.md)
+- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)
+- [.NET Framework 파일 I/O 및 파일 시스템에 사용되는 클래스(Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)

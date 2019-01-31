@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compiler options [C#], listed by category
 - Visual C#, compiler options listed by category
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.openlocfilehash: 891e5eac249f4bd22b6eadde7509de2d07cd1576
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7403b42a48413d28808b49542727c2f07d0ad026
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43527189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54546990"
 ---
 # <a name="c-compiler-options-listed-by-category"></a>C# 컴파일러 옵션 범주별 목록
 
@@ -95,7 +95,7 @@ ms.locfileid: "43527189"
 |[-codepage](codepage-compiler-option.md)|컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다.|
 |[-help](help-compiler-option.md)|stdout에 컴파일러 옵션을 나열합니다.|
 |[-highentropyva](highentropyva-compiler-option.md)|실행 파일이 ASLR(주소 공간 레이아웃 불규칙화)을 지원하도록 지정합니다.|
-|[-langversion](langversion-compiler-option.md)|언어 버전(기본값, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 또는 최신)을 지정합니다. |
+|[-langversion](langversion-compiler-option.md)|언어 버전 지정: 기본값, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 또는 최신 |
 |[-main](main-compiler-option.md)|**Main** 메서드의 위치를 지정합니다.|
 |[-noconfig](noconfig-compiler-option.md)|csc.rsp를 사용하여 컴파일하지 않도록 컴파일러에 지시합니다.|
 |[-nologo](nologo-compiler-option.md)|컴파일러 배너 정보를 표시하지 않습니다.|
@@ -104,7 +104,7 @@ ms.locfileid: "43527189"
 |[/unsafe](unsafe-compiler-option.md)|[unsafe](../../../csharp/language-reference/keywords/unsafe.md) 키워드를 사용하는 코드를 컴파일할 수 있도록 설정합니다.|
 |[-utf8output](utf8output-compiler-option.md)|UTF-8 인코딩을 사용하여 컴파일러 출력을 표시합니다.|
 |-parallel[+&#124;-]|동시 빌드(+)를 사용할지 여부를 지정합니다.|
-|-checksumalgorithm:\<alg>|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원되는 값은 SHA1(기본값) 또는 SHA256입니다.|
+|-checksumalgorithm:\<alg>|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원되는 값은 다음과 같습니다. SHA1(기본값) 또는 SHA256.|
 
 ## <a name="obsolete-options"></a>사용되지 않는 옵션
 
@@ -114,6 +114,6 @@ ms.locfileid: "43527189"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](index.md)  
-- [사전순 C# 컴파일러 옵션 목록](listed-alphabetically.md)  
+- [C# 컴파일러 옵션](index.md)
+- [사전순 C# 컴파일러 옵션 목록](listed-alphabetically.md)
 - [방법: Visual Studio 명령줄에 필요한 환경 변수 설정](how-to-set-environment-variables-for-the-visual-studio-command-line.md)

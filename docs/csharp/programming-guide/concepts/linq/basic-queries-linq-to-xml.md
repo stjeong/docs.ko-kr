@@ -2,17 +2,17 @@
 title: 기본 쿼리(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
-ms.openlocfilehash: 77ff053e3cf8589cbc44caf66a4e5b532bc54b26
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a77ea062889e05c598df27fb143ba34466714e12
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583339"
 ---
 # <a name="basic-queries-linq-to-xml-c"></a>기본 쿼리(LINQ to XML)(C#)
 이 단원에서는 기본 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리의 예제를 제공합니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
   
 |항목|설명|  
 |-----------|-----------------|  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cc957b345c1e66059551508f73e37e0f6d69f6cd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 267102198731054bd2ce050299627eecbd37a4a1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54692213"
 ---
 # <a name="viewing-type-information"></a>형식 정보 보기
 <xref:System.Type?displayProperty=nameWithType> 클래스는 리플렉션의 핵심입니다. 공용 언어 런타임은 리플렉션이 요청할 때 로드된 형식의 **Type**을 만듭니다. **Type** 개체의 메서드, 필드, 속성 및 중첩 클래스를 사용하여 해당 형식에 대한 모든 것을 찾을 수 있습니다.  
@@ -74,19 +74,19 @@ ms.locfileid: "33399745"
  [!code-csharp[Conceptual.Types.ViewInfo#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.viewinfo/cs/source4.cs#4)]
  [!code-vb[Conceptual.Types.ViewInfo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source4.vb#4)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.BindingFlags>  
- <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>  
- <xref:System.Type.GetType%2A?displayProperty=nameWithType>  
- <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>  
- <xref:System.Type.GetFields%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.MemberInfo>  
- <xref:System.Reflection.ConstructorInfo>  
- <xref:System.Reflection.MethodInfo>  
- <xref:System.Reflection.FieldInfo>  
- <xref:System.Reflection.EventInfo>  
- <xref:System.Reflection.ParameterInfo>  
- [리플렉션 및 제네릭 형식](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Reflection.BindingFlags>
+- <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetFields%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.ConstructorInfo>
+- <xref:System.Reflection.MethodInfo>
+- <xref:System.Reflection.FieldInfo>
+- <xref:System.Reflection.EventInfo>
+- <xref:System.Reflection.ParameterInfo>
+- [리플렉션 및 제네릭 형식](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)

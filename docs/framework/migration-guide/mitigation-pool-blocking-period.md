@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 92d2de20-79be-4df1-b182-144143a8866a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e402ba9cb5de8e85ce6912e2e5b760ef340c2cf4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1021cf66c7091e699efac72fc9e614f30910398b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33389956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645108"
 ---
 # <a name="mitigation-pool-blocking-period"></a>완화: 풀 차단 기간
 Azure SQL 데이터베이스 연결에 대한 연결 풀 차단 기간이 제거되었습니다.  
@@ -33,5 +33,5 @@ Azure SQL 데이터베이스 연결에 대한 연결 풀 차단 기간이 제거
   
  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod%2A> 속성을 `PoolBlockingPeriod.AlwaysBlock`으로 설정하여 이전 동작을 복원할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 변경 내용](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md)
+## <a name="see-also"></a>참고 항목
+- [런타임 변경 내용](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md)

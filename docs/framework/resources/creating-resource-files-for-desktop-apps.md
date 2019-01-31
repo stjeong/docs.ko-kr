@@ -12,25 +12,25 @@ helpviewer_keywords:
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b8d5c151c728002ede0e29be77fa6e23aa2c1b3d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8219888b7944a19b100f73aab3713c09fd93f45b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399823"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569942"
 ---
 # <a name="creating-resource-files-for-desktop-apps"></a>데스크톱 응용 프로그램용 리소스 파일 만들기
-문자열, 이미지 또는 개체 데이터와 같은 리소스를 리소스 파일에 포함하여 응용 프로그램에서 쉽게 사용할 수 있게 설정할 수 있습니다. .NET Framework에서는 리소스 파일을 만드는 다섯 가지 방법을 제공합니다.  
+문자열, 이미지 또는 개체 데이터와 같은 리소스를 리소스 파일에 포함하여 애플리케이션에서 쉽게 사용할 수 있게 설정할 수 있습니다. .NET Framework에서는 리소스 파일을 만드는 다섯 가지 방법을 제공합니다.  
   
--   문자열 리소스가 포함된 텍스트 파일을 만듭니다. [리소스 파일 생성기(Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 텍스트 파일을 이진 리소스(.resources) 파일로 변환할 수 있습니다. 그다음에 언어 컴파일러를 사용하여 이진 리소스 파일을 응용 프로그램 실행 파일 또는 응용 프로그램 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [텍스트 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#TextFiles) 섹션을 참조하세요.  
+-   문자열 리소스가 포함된 텍스트 파일을 만듭니다. [리소스 파일 생성기(Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 텍스트 파일을 이진 리소스(.resources) 파일로 변환할 수 있습니다. 그다음에 언어 컴파일러를 사용하여 이진 리소스 파일을 애플리케이션 실행 파일 또는 애플리케이션 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [텍스트 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#TextFiles) 섹션을 참조하세요.  
   
--   문자열, 이미지 또는 개체 데이터가 포함된 XML 리소스(.resx) 파일을 만듭니다. [리소스 파일 생성기(Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 .resx 파일을 이진 리소스(.resources) 파일로 변환할 수 있습니다. 그다음에 언어 컴파일러를 사용하여 이진 리소스 파일을 응용 프로그램 실행 파일 또는 응용 프로그램 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [.resx 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResxFiles) 섹션을 참조하세요.  
+-   문자열, 이미지 또는 개체 데이터가 포함된 XML 리소스(.resx) 파일을 만듭니다. [리소스 파일 생성기(Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 .resx 파일을 이진 리소스(.resources) 파일로 변환할 수 있습니다. 그다음에 언어 컴파일러를 사용하여 이진 리소스 파일을 애플리케이션 실행 파일 또는 애플리케이션 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [.resx 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResxFiles) 섹션을 참조하세요.  
   
 -   <xref:System.Resources> 네임스페이스의 형식을 사용하여 프로그래밍 방식으로 XML 리소스(.resx) 파일을 만듭니다. .resx 파일을 만들고, 해당 리소스를 열거하고, 특정 리소스를 이름으로 검색할 수 있습니다. 자세한 내용은 [프로그래밍 방식으로 .resx 파일 작업](../../../docs/framework/resources/working-with-resx-files-programmatically.md) 항목을 참조하세요.  
   
--   프로그래밍 방식으로 이진 리소스(.resources) 파일을 만듭니다. 그다음에 언어 컴파일러를 사용하여 파일을 응용 프로그램 실행 파일 또는 응용 프로그램 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [.resources 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResourcesFiles) 섹션을 참조하세요.  
+-   프로그래밍 방식으로 이진 리소스(.resources) 파일을 만듭니다. 그다음에 언어 컴파일러를 사용하여 파일을 애플리케이션 실행 파일 또는 애플리케이션 라이브러리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다. 자세한 내용은 [.resources 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResourcesFiles) 섹션을 참조하세요.  
   
--   Visual Studio를 사용하여 리소스 파일을 만들고 프로젝트에 포함합니다. Visual Studio에서는 리소스를 추가, 삭제 및 수정할 수 있는 리소스 편집기를 제공합니다. 컴파일 시간에 리소스 파일은 자동으로 이진 .resources 파일로 변환되고 응용 프로그램 어셈블리 또는 위성 어셈블리에 포함됩니다. 자세한 내용은 [Visual Studio의 리소스 파일](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#VSResFiles) 섹션을 참조하세요.  
+-   Visual Studio를 사용하여 리소스 파일을 만들고 프로젝트에 포함합니다. Visual Studio에서는 리소스를 추가, 삭제 및 수정할 수 있는 리소스 편집기를 제공합니다. 컴파일 시간에 리소스 파일은 자동으로 이진 .resources 파일로 변환되고 애플리케이션 어셈블리 또는 위성 어셈블리에 포함됩니다. 자세한 내용은 [Visual Studio의 리소스 파일](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#VSResFiles) 섹션을 참조하세요.  
   
 <a name="TextFiles"></a>   
 ## <a name="resources-in-text-files"></a>텍스트 파일의 리소스  
@@ -98,7 +98,7 @@ CancelButton=Cancel
   
  텍스트 형식의 리소스 파일을 .NET Framework 어셈블리에 포함하려면 [리소스 파일 생성기(Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 파일을 이진 리소스(.resources) 파일로 변환해야 합니다. 그 다음에 언어 컴파일러를 사용하여 .resources 파일을 .NET Framework 어셈블리에 포함하거나, [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 포함할 수 있습니다.  
   
- 다음 예제에서는 간단한 "Hello World" 콘솔 응용 프로그램에 GreetingResources.txt라는 텍스트 형식의 리소스 파일을 사용합니다. 텍스트 파일은 사용자에게 이름을 입력하도록 메시지를 표시하고 인사말을 표시하는 두 개의 문자열인 `prompt` 및 `greeting`을 정의합니다.  
+ 다음 예제에서는 간단한 "Hello World" 콘솔 애플리케이션에 GreetingResources.txt라는 텍스트 형식의 리소스 파일을 사용합니다. 텍스트 파일은 사용자에게 이름을 입력하도록 메시지를 표시하고 인사말을 표시하는 두 개의 문자열인 `prompt` 및 `greeting`을 정의합니다.  
   
 ```  
 # GreetingResources.txt   
@@ -114,7 +114,7 @@ greeting=Hello, {0}!
   
  **resgen GreetingResources.txt**  
   
- 다음 예제에서는 .resources 파일을 사용하여 사용자에게 메시지를 표시하는 콘솔 응용 프로그램에 대한 소스 코드를 보여 줍니다.  
+ 다음 예제에서는 .resources 파일을 사용하여 사용자에게 메시지를 표시하는 콘솔 애플리케이션에 대한 소스 코드를 보여 줍니다.  
   
  [!code-csharp[Conceptual.Resources.TextFiles#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.textfiles/cs/greeting.cs#1)]
  [!code-vb[Conceptual.Resources.TextFiles#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.textfiles/vb/greeting.vb#1)]  
@@ -183,7 +183,7 @@ csc greeting.cs -resource:GreetingResources.resources
 > [!NOTE]
 >  암호, 보안이 중요한 정보 또는 개인 데이터를 저장할 때는 리소스 파일을 사용하지 마세요.  
   
- 다음 예제에서는 문자열 6개, 아이콘 한 개 및 응용 프로그램 정의 개체 2개(`Automobile` 개체 2개)를 저장하는 CarResources.resources라는 .resources 파일을 프로그래밍 방식으로 만듭니다. 이 예제에서 정의되고 인스턴스화된 `Automobile` 클래스는 <xref:System.SerializableAttribute> 특성으로 태그가 지정되어 이진 serialization 포맷터를 통해 유지될 수 있습니다.  
+ 다음 예제에서는 문자열 6개, 아이콘 한 개 및 애플리케이션 정의 개체 2개(`Automobile` 개체 2개)를 저장하는 CarResources.resources라는 .resources 파일을 프로그래밍 방식으로 만듭니다. 이 예제에서 정의되고 인스턴스화된 `Automobile` 클래스는 <xref:System.SerializableAttribute> 특성으로 태그가 지정되어 이진 serialization 포맷터를 통해 유지될 수 있습니다.  
   
  [!code-csharp[Conceptual.Resources.Resources#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
  [!code-vb[Conceptual.Resources.Resources#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]  
@@ -194,11 +194,11 @@ csc greeting.cs -resource:GreetingResources.resources
 ## <a name="resource-files-in-visual-studio"></a>Visual Studio의 리소스 파일  
  Visual Studio 프로젝트에 리소스 파일을 추가하면 Visual Studio에서는 프로젝트 디렉터리에 .resx 파일을 만듭니다. Visual Studio에서는 문자열, 이미지 및 이진 개체를 추가할 수 있는 리소스 편집기를 제공합니다. 편집기는 정적 데이터만 처리하도록 디자인되어 있으므로 프로그래밍 개체를 저장하는 데는 사용할 수 없습니다. 프로그래밍 방식으로 개체 데이터를 .resx 파일 또는 .resources 파일에 써야 합니다. 자세한 내용은 [프로그래밍 방식으로 .resx 파일 작업](../../../docs/framework/resources/working-with-resx-files-programmatically.md) 항목과 [.resources 파일의 리소스](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResourcesFiles) 섹션을 참조하세요.  
   
- 지역화된 리소스를 추가할 경우 기본 리소스 파일과 같은 루트 파일 이름을 리소스에 지정해야 하고 파일 이름에서 문화권도 지정해야 합니다. 예를 들어 Resources.resx 리소스 파일을 추가할 경우 Resources.en-US.resx 및 Resources.fr-FR.resx 리소스 파일을 만들어 각각 영어(미국) 및 프랑스어(프랑스) 문화권에 대한 지역화된 리소스를 저장할 수도 있습니다. 응용 프로그램의 기본 문화권도 지정해야 합니다. 이 문화권의 리소스는 특정 문화권에 대한 지역화된 리소스를 찾을 수 없는 경우 사용됩니다. 기본 문화권을 지정하려면 Visual Studio의 솔루션 탐색기에서 응용 프로그램을 가리키고, **어셈블리 정보**를 클릭하고, **중립 언어** 목록에서 적절한 언어/문화권을 선택합니다.  
+ 지역화된 리소스를 추가할 경우 기본 리소스 파일과 같은 루트 파일 이름을 리소스에 지정해야 하고 파일 이름에서 문화권도 지정해야 합니다. 예를 들어 Resources.resx 리소스 파일을 추가할 경우 Resources.en-US.resx 및 Resources.fr-FR.resx 리소스 파일을 만들어 각각 영어(미국) 및 프랑스어(프랑스) 문화권에 대한 지역화된 리소스를 저장할 수도 있습니다. 애플리케이션의 기본 문화권도 지정해야 합니다. 이 문화권의 리소스는 특정 문화권에 대한 지역화된 리소스를 찾을 수 없는 경우 사용됩니다. 기본 문화권을 지정하려면 Visual Studio의 솔루션 탐색기에서 애플리케이션을 가리키고, **어셈블리 정보**를 클릭하고, **중립 언어** 목록에서 적절한 언어/문화권을 선택합니다.  
   
- 컴파일 시간에 Visual Studio에서는 먼저 프로젝트의 .resx 파일을 이진 리소스(.resources) 파일로 변환하고 프로젝트 obj 디렉터리의 하위 디렉터리에 저장합니다. Visual Studio에서는 지역화된 리소스가 포함되지 않은 모든 리소스 파일을 프로젝트에서 생성된 주 어셈블리에 포함합니다. 리소스 파일에 지역화된 리소스가 포함된 경우 Visual Studio에서는 각 지역화된 문화권에 대한 개별 위성 어셈블리에 리소스 파일을 포함합니다. 그다음에 각 위성 어셈블리를 이름이 지역화된 문화권과 일치하는 디렉터리에 저장합니다. 예를 들어 지역화된 영어(미국) 리소스는 en-US 하위 디렉터리의 위성 어셈블리에 저장됩니다.  
+ 컴파일 시간에 Visual Studio에서는 먼저 프로젝트의 .resx 파일을 이진 리소스(.resources) 파일로 변환하고 프로젝트 obj 디렉터리의 하위 디렉터리에 저장합니다. Visual Studio에서는 지역화된 리소스가 포함되지 않은 모든 리소스 파일을 프로젝트에서 생성된 주 어셈블리에 포함합니다. 리소스 파일에 지역화된 리소스가 포함된 경우 Visual Studio에서는 각 지역화된 문화권에 대한 개별 위성 어셈블리에 리소스 파일을 포함합니다. 그런 다음, 각 위성 어셈블리를 이름이 지역화된 문화권과 일치하는 디렉터리에 저장합니다. 예를 들어 지역화된 영어(미국) 리소스는 en-US 하위 디렉터리의 위성 어셈블리에 저장됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Resources>  
- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)  
- [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Resources>
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
+- [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

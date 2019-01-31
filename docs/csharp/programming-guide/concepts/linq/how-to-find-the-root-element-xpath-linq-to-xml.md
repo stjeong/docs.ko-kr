@@ -2,12 +2,12 @@
 title: '방법: 루트 요소 찾기(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 4fd824e0-4d39-429b-b092-f6a5c046ee6c
-ms.openlocfilehash: a0197a34f2e9d1b42a71d3c8cb1a4281ba495c4f
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: a74556e4b05bc3ae02998eeb6dd3190a3bade36a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54697168"
 ---
 # <a name="how-to-find-the-root-element-xpath-linq-to-xml-c"></a>방법: 루트 요소 찾기(XPath 및 LINQ to XML)(C#)
 이 항목에서는 XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 루트 요소를 가져오는 방법을 보여 줍니다.  
@@ -16,10 +16,10 @@ ms.locfileid: "47195629"
   
  `/PurchaseOrders`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 루트 요소를 찾습니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 여러 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로을 사용합니다. [샘플 XML 파일: 여러 구매 주문(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  

@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 81d09188ade29b0cac8985da218494f5373980cf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8086a512d117767127260bcf779fc11555cd67dd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54632831"
 ---
 # <a name="how-to-create-an-xml-documentation-file-using-codedom"></a>방법: CodeDOM을 사용하여 XML 문서 파일 만들기
 CodeDOM을 사용하여 XML 문서를 생성하는 코드를 만들 수 있습니다. 이 프로세스에서는 XML 문서 주석이 포함된 CodeDOM 그래프를 생성하고, 코드를 생성하고, XML 문서 출력을 만드는 컴파일러 옵션을 사용하여 생성된 코드를 컴파일해야 합니다.  
   
 ### <a name="to-create-a-codedom-graph-that-contains-xml-documentation-comments"></a>XML 문서 주석을 포함하는 CodeDOM 그래프를 만들려면  
   
-1.  응용 프로그램 예제에 대한 CodeDOM 그래프를 포함하는 <xref:System.CodeDom.CodeCompileUnit>을 만듭니다.  
+1.  애플리케이션 예제에 대한 CodeDOM 그래프를 포함하는 <xref:System.CodeDom.CodeCompileUnit>을 만듭니다.  
   
 2.  `docComment` 매개 변수를 `true`로 설정해서 <xref:System.CodeDom.CodeCommentStatement.%23ctor%2A> 생성자를 사용하여 XML 문서 주석 요소 및 텍스트를 만듭니다.  
   
@@ -44,7 +44,7 @@ CodeDOM을 사용하여 XML 문서를 생성하는 코드를 만들 수 있습�
      [!code-csharp[CodeDomHelloWorldSample#6](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#6)]
      [!code-vb[CodeDomHelloWorldSample#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#6)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 문서 주석이 포함된 CodeDOM 그래프를 만들고, 그래프에서 코드 파일을 생성한 다음 파일을 컴파일하고 연결된 XML 문서 파일을 만듭니다.  
   
  [!code-csharp[CodeDomHelloWorldSample#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#1)]
@@ -79,7 +79,7 @@ CodeDOM을 사용하여 XML 문서를 생성하는 코드를 만들 수 있습�
   
 -   이 코드 예제를 성공적으로 실행하려면 `FullTrust` 권한이 설정되어 있어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [코드를 XML로 문서화](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
- [XML 문서 주석](~/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
- [XML 문서](/cpp/ide/xml-documentation-visual-cpp)
+## <a name="see-also"></a>참고 항목
+- [코드를 XML로 문서화](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [XML 문서 주석](~/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [XML 문서](/cpp/ide/xml-documentation-visual-cpp)

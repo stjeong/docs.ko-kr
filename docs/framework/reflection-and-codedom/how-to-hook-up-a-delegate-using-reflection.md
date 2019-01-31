@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d16c80dacbe71bb9052df1caa65fbd31e433957e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fe90542d1ba106dd52e8995afab298b4b9f69899
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54644393"
 ---
 # <a name="how-to-hook-up-a-delegate-using-reflection"></a>방법: 리플렉션을 사용하여 대리자 후크
 리플렉션을 사용하여 어셈블리를 로드하고 실행하는 경우 C# `+=` 연산자 또는 Visual Basic [AddHandler 문](~/docs/visual-basic/language-reference/statements/addhandler-statement.md)과 같은 언어 기능을 사용하여 이벤트를 연결할 수 없습니다. 다음 절차에서는 리플렉션을 통해 필요한 모든 형식을 가져와 기존 메서드를 이벤트에 연결하는 방법 및 리플렉션 내보내기를 사용하여 동적 메서드를 만들고 이벤트에 연결하는 방법을 보여 줍니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "33397938"
      [!code-csharp[HookUpDelegate#12](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#12)]
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 리플렉션을 사용하여 기존 메서드를 이벤트에 연결하는 방법 및 <xref:System.Reflection.Emit.DynamicMethod> 클래스를 사용하여 런타임에 메서드를 내보내고 이벤트에 연결하는 방법을 보여 줍니다.  
   
  [!code-cpp[HookUpDelegate#1](../../../samples/snippets/cpp/VS_Snippets_CLR/HookUpDelegate/cpp/source.cpp#1)]
@@ -109,14 +109,14 @@ ms.locfileid: "33397938"
   
 -   코드에는 컴파일하는 데 필요한 C# `using` 문(Visual Basic에서는 `Imports`)이 포함되어 있습니다.  
   
--   명령줄에서 컴파일하는 데 필요한 추가 어셈블리 참조는 없습니다. 이 예제는 콘솔 응용 프로그램이므로 Visual Studio에서는 System.Windows.Forms.dll에 대한 참조를 추가해야 합니다.  
+-   명령줄에서 컴파일하는 데 필요한 추가 어셈블리 참조는 없습니다. 이 예제는 콘솔 애플리케이션이므로 Visual Studio에서는 System.Windows.Forms.dll에 대한 참조를 추가해야 합니다.  
   
--   csc.exe, vbc.exe 또는 cl.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 콘솔 응용 프로그램 프로젝트 템플릿에 배치합니다.  
+-   csc.exe, vbc.exe 또는 cl.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 콘솔 애플리케이션 프로젝트 템플릿에 배치합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Emit.DynamicMethod>  
- <xref:System.Activator.CreateInstance%2A>  
- <xref:System.Delegate.CreateDelegate%2A>  
- [방법: 동적 메서드 정의 및 실행](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)  
- [리플렉션](../../../docs/framework/reflection-and-codedom/reflection.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Emit.DynamicMethod>
+- <xref:System.Activator.CreateInstance%2A>
+- <xref:System.Delegate.CreateDelegate%2A>
+- [방법: 동적 메서드 정의 및 실행](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)
+- [리플렉션](../../../docs/framework/reflection-and-codedom/reflection.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fdc12091a377a118dc533e5f299fa4833af64baf
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 919d4606e4ba72f07ba382244f8508975beffec9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44081871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54741250"
 ---
 # <a name="pipe-operations-in-the-net-framework"></a>.NET Framework의 파이프 작업
 파이프는 프로세스 간 통신을 위한 수단을 제공합니다. 파이프에는 다음과 같이 두 가지 유형이 있습니다.  
@@ -38,6 +38,6 @@ ms.locfileid: "44081871"
   
 ## <a name="see-also"></a>참고 항목
 
-- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)  
-- [방법: 로컬 프로세스 간 통신에 익명 파이프 사용](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)  
+- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)
+- [방법: 로컬 프로세스 간 통신에 익명 파이프 사용](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)
 - [방법: 네트워크 프로세스 간 통신에 명명된 파이프 사용](../../../docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md)

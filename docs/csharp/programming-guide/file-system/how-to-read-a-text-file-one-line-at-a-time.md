@@ -6,17 +6,17 @@ helpviewer_keywords:
 - reading text files, line by line
 - text files [C#]
 ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
-ms.openlocfilehash: 6ba479e341b71bebe60d9744f239b752d3d81167
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 831f306a19d926b70170c1a6ebc4ab670f1b9851
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43738770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718652"
 ---
 # <a name="how-to-read-a-text-file-one-line-at-a-time-visual-c"></a>방법: 텍스트 파일을 한 번에 한 줄씩 읽기(Visual C#)
 이 예제에서는 `StreamReader` 클래스의 `ReadLine` 메서드를 사용하여 텍스트 파일 내용을 한 번에 한 줄씩 문자열로 읽어옵니다. 각 텍스트 줄은 `line` 문자열에 저장되고 화면에 표시됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp
 int counter = 0;  
@@ -38,7 +38,7 @@ System.Console.ReadLine();
 ```  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
- 코드를 복사하고 콘솔 응용 프로그램의 `Main` 메서드에 붙여넣습니다.  
+ 코드를 복사하고 콘솔 애플리케이션의 `Main` 메서드에 붙여넣습니다.  
   
  `"c:\test.txt"`를 실제 파일 이름으로 바꿉니다.  
   
@@ -52,6 +52,6 @@ System.Console.ReadLine();
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)

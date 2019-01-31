@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bea5dfd7c53b5b5f53ddab5d4d07ec6a603b14e8
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 69107cd7f1f84fa402479bb8a76c4b9b8a825d69
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718262"
 ---
 # <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>스레드 로컬 스토리지: 스레드 상대 정적 필드 및 데이터 슬롯
-관리되는 TLS(스레드 로컬 저장소)를 사용하여 스레드 및 애플리케이션 도메인에 고유한 데이터를 저장할 수 있습니다. .NET Framework는 관리되는 TLS를 사용하는 두 가지 방법인 스레드 관련 정적 필드 및 데이터 슬롯을 제공합니다.  
+관리되는 TLS(스레드 로컬 스토리지)를 사용하여 스레드 및 애플리케이션 도메인에 고유한 데이터를 저장할 수 있습니다. .NET Framework는 관리되는 TLS를 사용하는 두 가지 방법인 스레드 관련 정적 필드 및 데이터 슬롯을 제공합니다.  
   
 -   컴파일 시간에 정확한 요구 사항을 예상할 수 있는 경우에는 스레드 관련 정적 필드(Visual Basic의 스레드 관련 `Shared` 필드)를 사용합니다. 스레드 관련 정적 필드는 최고의 성능을 제공합니다. 또한 컴파일 시간 형식 검사의 이점을 제공합니다.  
   
@@ -59,8 +59,8 @@ ms.locfileid: "44042233"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.ContextStaticAttribute>  
-- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
-- <xref:System.ThreadStaticAttribute>  
-- <xref:System.Runtime.Remoting.Messaging.CallContext>  
+- <xref:System.ContextStaticAttribute>
+- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
+- <xref:System.ThreadStaticAttribute>
+- <xref:System.Runtime.Remoting.Messaging.CallContext>
 - [스레딩](../../../docs/standard/threading/index.md)

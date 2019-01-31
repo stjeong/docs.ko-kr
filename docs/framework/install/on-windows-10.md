@@ -5,20 +5,20 @@ author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: 6db1a3f5fd2011a13a28551a38b319995039ab38
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3897b3acd06d4dbe8b61f4c12686a365bd17662a
+ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55066314"
 ---
 # <a name="install-the-net-framework-on-windows-10-and-windows-server-2016"></a>Windows 10 및 Windows Server 2016에 .NET Framework 설치
 
-Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 필요합니다. 이 문서의 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 사용 가능한 최신 버전입니다.
+Windows에서 많은 애플리케이션을 실행하는 데 .NET Framework가 필요합니다. 이 문서의 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)는 사용 가능한 최신 버전입니다.
 
-응용 프로그램을 실행한 후 컴퓨터에 다음과 같은 대화 상자가 표시되어 이 페이지를 방문했을 수 있습니다.
+애플리케이션을 실행한 후 컴퓨터에 다음과 같은 대화 상자가 표시되어 이 페이지를 방문했을 수 있습니다.
 
-![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
+![이 애플리케이션을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
 ## <a name="net-framework-472"></a>.NET Framework 4.7.2
 
@@ -29,11 +29,11 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 * [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)
 
 > [!div class="button"]
-> [.NET Framework 4.7.2 다운로드](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
+> [.NET Framework 4.7.2 다운로드](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)
 
-[.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 .NET Framework 4.0~4.7.1용으로 빌드된 응용 프로그램을 실행하는 데 사용될 수 있습니다.
+[.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)는 .NET Framework 4.0~4.7.1용으로 빌드된 애플리케이션을 실행하는 데 사용될 수 있습니다.
 
-다음에 [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)를 설치할 수 있습니다.
+다음에 [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)를 설치할 수 있습니다.
 
 * Windows 10 가을 작성자 업데이트(버전 1709)
 * Windows 10 Creators Update(버전 1703)
@@ -68,7 +68,7 @@ Windows 10 1507 또는 1511을 사용 중인 경우 .NET Framework 4.7.2를 설�
 
 - 이후 버전이 이미 설치되어 있으면 컴퓨터에 이전 버전의 .NET Framework를 설치할 수 없습니다.
 
-- .NET Framework 4.x 버전은 .NET Framework 4.0~해당 버전용으로 빌드된 응용 프로그램을 실행하는 데 사용할 수 있습니다. 예를 들어 .NET Framework 4.7은 .NET Framework 4.0~4.7용으로 빌드된 응용 프로그램을 실행하는 데 사용할 수 있습니다. 최신 버전(.NET Framework 4.7.2)은 4.0으로 시작되는 모든 .NET Framework 버전으로 빌드된 응용 프로그램을 실행하는 데 사용할 수 있습니다.
+- .NET Framework 4.x 버전은 .NET Framework 4.0~해당 버전용으로 빌드된 애플리케이션을 실행하는 데 사용할 수 있습니다. 예를 들어 .NET Framework 4.7은 .NET Framework 4.0~4.7용으로 빌드된 애플리케이션을 실행하는 데 사용할 수 있습니다. 최신 버전(.NET Framework 4.7.2)은 4.0으로 시작되는 모든 .NET Framework 버전으로 빌드된 애플리케이션을 실행하는 데 사용할 수 있습니다.
 
 다운로드할 수 있는 모든 .NET Framework 버전 목록은 [.NET 다운로드](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral) 페이지를 참조하세요.
 
@@ -78,6 +78,6 @@ Windows 10 1507 또는 1511을 사용 중인 경우 .NET Framework 4.7.2를 설�
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 다운로드](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)   
-[차단된 .NET Framework 설치 및 제거 문제 해결](troubleshoot-blocked-installations-and-uninstallations.md)   
-[개발자용 .NET Framework 설치](guide-for-developers.md)
+- [.NET 다운로드](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)
+- [차단된 .NET Framework 설치 및 제거 문제 해결](troubleshoot-blocked-installations-and-uninstallations.md)
+- [개발자용 .NET Framework 설치](guide-for-developers.md)

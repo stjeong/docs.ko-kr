@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6a879cce8eb429e2daeaa5db963b3d95d1e944da
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 63e1c55aa3aad1923ac34070784e8b4de7251a7c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47171376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592759"
 ---
 # <a name="task-based-asynchronous-programming"></a>작업 기반 비동기 프로그래밍
 TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하며 비동기 작업을 나타냅니다. 몇 가지 점에서 작업은 스레드 또는 <xref:System.Threading.ThreadPool> 작업 항목과 비슷하지만 추상화 수준은 더 높습니다. *작업 병렬 처리*는 동시에 실행되는 하나 이상의 독립적인 작업을 의미합니다. 작업을 사용할 때의 주된 이점 두 가지는 다음과 같습니다.  
@@ -167,7 +167,7 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
   
 -   작업에서 throw될 수 있는 예외를 처리해야 하는 경우  
   
--   응용 프로그램은 모든 작업이 실행을 완료하기 전에 종료할 수 있습니다. 예를 들어, 콘솔 응용 프로그램은 `Main`(응용 프로그램 진입점)의 모든 동기 코드가 실행되는 즉시 종료됩니다.  
+-   애플리케이션은 모든 작업이 실행을 완료하기 전에 종료할 수 있습니다. 예를 들어, 콘솔 애플리케이션은 `Main`(애플리케이션 진입점)의 모든 동기 코드가 실행되는 즉시 종료됩니다.  
   
  다음 예제에서는 예외 처리가 포함되지 않은 기본적인 패턴을 보여 줍니다.  
   
@@ -246,7 +246,7 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
  TPL에는 병렬 시나리오와 순차 시나리오 모두에 유용한 새로운 공용 형식이 몇 가지 포함되어 있습니다. 여기에는 스레드로부터 안전하며 속도 및 확장성이 우수한 <xref:System.Collections.Concurrent?displayProperty=nameWithType> 네임스페이스의 몇 가지 컬렉션 클래스뿐 아니라 특정 종류의 작업 부하에 대해 이전보다 높은 효율성을 제공하는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 및 <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> 등의 새로운 몇 가지 동기화 형식도 포함됩니다. .NET Framework 4에 새로 추가된 <xref:System.Threading.Barrier?displayProperty=nameWithType> 및 <xref:System.Threading.SpinLock?displayProperty=nameWithType> 등의 다른 형식은 이전 릴리스에서는 사용할 수 없었던 기능을 제공합니다. 자세한 내용은 [병렬 프로그래밍의 데이터 구조](../../../docs/standard/parallel-programming/data-structures-for-parallel-programming.md)를 참조하세요.  
   
 ## <a name="custom-task-types"></a>사용자 지정 작업 형식  
- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 또는 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>에서 상속하지 않는 것이 좋습니다. 대신 <xref:System.Threading.Tasks.Task.AsyncState%2A> 속성을 사용하여 추가 데이터 또는 상태를 <xref:System.Threading.Tasks.Task> 또는 <xref:System.Threading.Tasks.Task%601> 개체에 연결하는 것이 좋습니다. 확장 메서드를 사용하여 <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601> 클래스의 기능을 확장할 수도 있습니다. 확장 메서드에 대한 자세한 내용은 [확장 메서드](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md) 및 [확장 메서드](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md)를 참조하세요.  
+ <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 또는 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>에서 상속하지 않는 것이 좋습니다. 대신 <xref:System.Threading.Tasks.Task.AsyncState%2A> 속성을 사용하여 추가 데이터 또는 상태를 <xref:System.Threading.Tasks.Task> 또는 <xref:System.Threading.Tasks.Task%601> 개체에 연결하는 것이 좋습니다. 확장명 메서드를 사용하여 <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601> 클래스의 기능을 확장할 수도 있습니다. 확장 메서드에 대한 자세한 내용은 [확장 메서드](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md) 및 [확장 메서드](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md)를 참조하세요.  
   
  <xref:System.Threading.Tasks.Task> 또는 <xref:System.Threading.Tasks.Task%601>에서 상속해야 하는 경우에는 <xref:System.Threading.Tasks.Task.Run%2A>, <xref:System.Threading.Tasks.Task.Run%2A> 또는 <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType> 또는 <xref:System.Threading.Tasks.TaskCompletionSource%601?displayProperty=nameWithType> 클래스를 사용하여 사용자 지정 작업 형식의 인스턴스를 만들 수 없습니다. 이러한 메커니즘은 <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601> 개체만 만들기 때문입니다. 또한 <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.TaskFactory> 및 <xref:System.Threading.Tasks.TaskFactory%601>에서 제공하는 작업 연속 메커니즘을 사용하여 사용자 지정 작업의 인스턴스를 만들 수 없습니다. 이 메커니즘에서도 mechanisms also create only <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601> 개체만 만들기 때문입니다.  
   
@@ -258,7 +258,7 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
 |[연결된 자식 작업 및 분리된 자식 작업](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)|연결된 자식 작업과 분리된 자식 작업의 차이점을 설명합니다.|  
 |[작업 취소](../../../docs/standard/parallel-programming/task-cancellation.md)|<xref:System.Threading.Tasks.Task> 개체에 기본 제공되는 취소 지원에 대해 설명합니다.|  
 |[예외 처리](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md)|동시 스레드에 대한 예외를 처리하는 방법을 설명합니다.|  
-|[방법: parallel_invoke를 사용하여 병렬 작업 실행](../../../docs/standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|<xref:System.Threading.Tasks.Parallel.Invoke%2A>를 사용하는 방법을 설명합니다.|  
+|[방법: Parallel.Invoke를 사용하여 병렬 작업 실행](../../../docs/standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|<xref:System.Threading.Tasks.Parallel.Invoke%2A>를 사용하는 방법을 설명합니다.|  
 |[방법: 작업에서 값 반환](../../../docs/standard/parallel-programming/how-to-return-a-value-from-a-task.md)|작업을 통해 값을 반환하는 방법을 설명합니다.|  
 |[방법: 작업 및 해당 자식 취소](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)|작업을 취소하는 방법을 설명합니다.|  
 |[방법: 미리 계산된 작업 만들기](../../../docs/standard/parallel-programming/how-to-create-pre-computed-tasks.md)|<xref:System.Threading.Tasks.Task.FromResult%2A?displayProperty=nameWithType> 메서드를 사용하여 캐시에 저장된 비동기 다운로드 작업 결과를 검색하는 방법을 설명합니다.|  
@@ -269,5 +269,5 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
   
 ## <a name="see-also"></a>참고 항목
 
-- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)
 - [NET Framework를 사용한 병렬 프로그래밍 샘플](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

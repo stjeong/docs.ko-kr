@@ -2,19 +2,19 @@
 title: '방법: Office Open XML 문서에서 단락 검색(C#)'
 ms.date: 07/20/2015
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
-ms.openlocfilehash: e4234c3b35ca20fc06946947f9bacb10d656bc16
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 192f04e9862b9cb901494f0a09744d3f9f289399
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54688274"
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-c"></a>방법: Office Open XML 문서에서 단락 검색(C#)
 이 항목에서는 Office Open XML 문서를 열고 문서에 있는 모든 단락의 컬렉션을 검색하는 예제를 제공합니다.  
   
  Office Open XML에 대한 자세한 내용은 [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) 및 [www.ericwhite.com](http://ericwhite.com/)을 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 Office Open XML 패키지를 열고 Open XML 패키지에서의 관계를 사용하여 문서와 스타일 부분을 찾습니다. 그런 다음 문서를 쿼리하여 단락 <xref:System.Xml.Linq.XElement> 노드, 각 단락의 스타일 이름 및 각 단락의 텍스트가 포함된 익명 형식의 컬렉션을 프로젝션합니다.  
   
  이 예제에서는 예제에서도 제공되는 `StringConcatenate`라는 확장 메서드를 사용합니다.  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9795fa411d3b81f9092ddab183c6978ee701ef67
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8254d3de7dc282edb8ebe8bf0dd71ce1c943322d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689210"
 ---
 # <a name="dynamically-loading-and-using-types"></a>동적으로 형식 로드 및 사용
 리플렉션은 [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)] 및 JScript와 같은 언어 컴파일러에서 암시적 런타임에 바인딩을 구현하는 데 사용되는 인프라를 제공합니다. 바인딩은 고유하게 지정된 형식에 해당하는 선언(즉, 구현)을 찾는 프로세스입니다. 이 프로세스가 컴파일 시간이 아닌 런타임에 수행되는 경우 이를 런타임에 바인딩이라고 합니다. [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)]에서는 코드에서 암시적 런타임에 바인딩을 사용할 수 있고, Visual Basic 컴파일러는 리플렉션을 사용하여 개체 형식을 가져오는 도우미 메서드를 호출합니다. 인수가 도우미 메서드에 전달되면 런타임에 적절한 메서드가 호출됩니다. 이러한 인수는 메서드를 호출하는 인스턴스(개체), 호출된 메서드의 이름(문자열) 및 호출된 메서드에 전달된 인수(개체 배열)입니다.  
@@ -71,7 +71,7 @@ End Module
   
  사용 가능한 멤버 집합은 형식 또는 기본 형식에 정의된 멤버입니다. <xref:System.Reflection.BindingFlags>가 지정되면 접근성이 있는 멤버가 집합에 반환됩니다. **BindingFlags.NonPublic**이 지정되지 않으면 바인더가 접근성 규칙을 적용해야 합니다. **Public** 또는 **NonPublic** 바인딩 플래그를 지정할 경우에는 **Instance** 또는 **Static** 바인딩 플래그도 지정해야 합니다. 그렇지 않으면 멤버가 반환되지 않습니다.  
   
- 지정된 이름의 멤버가 하나만 있는 경우에는 콜백이 필요하지 않고 바인딩이 해당 메서드에서 수행됩니다. 코드 예제의 사례 1이 이 내용을 보여 줍니다. 하나의 **PrintBob** 메서드만 사용할 수 있으므로 콜백이 필요하지 않습니다.  
+ 지정된 이름의 멤버가 하나만 있는 경우에는 콜백이 필요하지 않고 바인딩이 해당 메서드에서 수행됩니다. 코드 예제의 사례 1은 이러한 점을 보여줍니다. 하나의 **PrintBob** 메서드만 사용할 수 있으므로 콜백이 필요하지 않습니다.  
   
  사용 가능한 집합에 두 개 이상의 멤버가 있으면 이러한 메서드가 모두 적절한 메서드를 선택하고 반환하는 **BindToMethod**에 전달됩니다. 코드 예제의 사례 2에는 **PrintValue**라는 두 개의 메서드가 있습니다. **BindToMethod**를 호출하여 적절한 메서드를 선택합니다.  
   
@@ -99,8 +99,8 @@ End Module
   
  <xref:System.Type> 클래스에는 **Binder** 형식의 매개 변수를 사용하여 특정 멤버에 대한 참조를 확인하는 **Get** 메서드가 포함됩니다. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> 및 <xref:System.Type.GetProperty%2A?displayProperty=nameWithType>는 해당 멤버에 대한 시그니처 정보를 제공하여 현재 형식의 특정 멤버를 검색합니다. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> 및 <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType>는 해당하는 메서드의 지정된 시그니처 정보를 선택하기 위해 콜백됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
- [형식 정보 보기](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [.NET Framework의 형식 변환](../../../docs/standard/base-types/type-conversion.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- [형식 정보 보기](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [.NET Framework의 형식 변환](../../../docs/standard/base-types/type-conversion.md)

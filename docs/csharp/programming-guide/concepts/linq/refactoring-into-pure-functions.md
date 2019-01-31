@@ -2,12 +2,12 @@
 title: 순수 함수로 리팩터링(C#)
 ms.date: 07/20/2015
 ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
-ms.openlocfilehash: fcb396984d58b5601d278a860b272211e785dcfb
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 3e856c1e32d4b0dc16291e1b913e9a5cc19717c2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44185560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54497133"
 ---
 # <a name="refactoring-into-pure-functions-c"></a>순수 함수로 리팩터링(C#)
 
@@ -114,5 +114,5 @@ class Program
   
 ## <a name="see-also"></a>참고 항목
 
-- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
+- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
 - [함수형 프로그래밍과 명령형 프로그래밍 비교(C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)

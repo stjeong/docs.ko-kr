@@ -2,12 +2,12 @@
 title: '샘플 XML 파일: 네임스페이스에서 테스트 구성1'
 ms.date: 07/20/2015
 ms.assetid: e75ad1bc-5636-4623-9a34-a286a8c485d6
-ms.openlocfilehash: 01470a66ac42eb9fd68fdcde0d0a4bf9150e3d5f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 975e0bdfe22758b968dde4e97cf5b302579a7ca7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589245"
 ---
 # <a name="sample-xml-file-test-configuration-in-a-namespace"></a>샘플 XML 파일: 네임스페이스에서 테스트 구성
 다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다. 이것은 테스트 구성 파일입니다. XML은 네임스페이스에 있습니다.  

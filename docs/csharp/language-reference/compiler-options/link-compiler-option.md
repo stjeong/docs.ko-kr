@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C#]
 - link compiler option [C#]
 ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
-ms.openlocfilehash: 00cfda489feb468c7e3c140ab63369b408b09152
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 08b09a762a62e758c1c396b80b46648725b835b5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500566"
 ---
 # <a name="-link-c-compiler-options"></a>-link(C# 컴파일러 옵션)
 컴파일러에서 지정된 어셈블리의 COM 형식 정보를 현재 컴파일하고 있는 프로젝트에 사용할 수 있도록 합니다.  
@@ -31,12 +31,12 @@ ms.locfileid: "45698265"
   
 ## <a name="arguments"></a>인수  
  `fileList`  
- 필수. 쉼표로 구분된 어셈블리 파일 이름 목록입니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다.  
+ 필수 요소. 쉼표로 구분된 어셈블리 파일 이름 목록입니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다.  
   
-## <a name="remarks"></a>설명  
- `-link` 옵션을 사용하면 포함된 형식 정보가 있는 응용 프로그램을 배포할 수 있습니다. 그러면 응용 프로그램은 런타임 어셈블리에 대한 참조를 요구하지 않고 포함된 형식 정보를 구현하는 형식을 런타임 어셈블리에서 사용할 수 있습니다. 다양한 버전의 런타임 어셈블리가 게시된 경우 포함된 형식 정보를 포함하는 응용 프로그램은 다시 컴파일하지 않아도 다양한 버전에서 사용할 수 있습니다. 예제를 보려면 [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)을 참조하세요.  
+## <a name="remarks"></a>주의  
+ `-link` 옵션을 사용하면 포함된 형식 정보가 있는 애플리케이션을 배포할 수 있습니다. 그러면 애플리케이션은 런타임 어셈블리에 대한 참조를 요구하지 않고 포함된 형식 정보를 구현하는 형식을 런타임 어셈블리에서 사용할 수 있습니다. 다양한 버전의 런타임 어셈블리가 게시된 경우 포함된 형식 정보를 포함하는 애플리케이션은 다시 컴파일하지 않아도 다양한 버전에서 사용할 수 있습니다. 예제를 보려면 [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)을 참조하세요.  
   
- `-link` 옵션을 사용하면 COM interop를 사용하여 작업할 때 특히 유용합니다. 응용 프로그램에 대상 컴퓨터의 PIA(주 interop 어셈블리)가 더 이상 필요하지 않도록 COM 형식을 포함할 수 있습니다. `-link` 옵션은 참조된 interop 어셈블리의 COM 형식 정보를 컴파일된 결과 코드에 포함하도록 컴파일러에 지시합니다. COM 형식은 CLSID(GUID) 값으로 식별됩니다. 따라서 동일한 CLSID 값을 갖는 동일한 COM 형식이 설치된 대상 컴퓨터에서 응용 프로그램을 실행할 수 있습니다. Microsoft Office를 자동화하는 응용 프로그램이 좋은 예입니다. Office와 같은 응용 프로그램은 일반적으로 여러 버전에서 동일한 CLSID 값을 유지하지 때문에 .NET Framework 4 이상이 대상 컴퓨터에 설치되어 있고 응용 프로그램이 참조된 COM 형식에 포함된 메서드, 속성 또는 이벤트를 사용하는 한 응용 프로그램에서 참조된 COM 형식을 사용할 수 있습니다.  
+ `-link` 옵션을 사용하면 COM interop를 사용하여 작업할 때 특히 유용합니다. 애플리케이션에 대상 컴퓨터의 PIA(주 interop 어셈블리)가 더 이상 필요하지 않도록 COM 형식을 포함할 수 있습니다. `-link` 옵션은 참조된 interop 어셈블리의 COM 형식 정보를 컴파일된 결과 코드에 포함하도록 컴파일러에 지시합니다. COM 형식은 CLSID(GUID) 값으로 식별됩니다. 따라서 동일한 CLSID 값을 갖는 동일한 COM 형식이 설치된 대상 컴퓨터에서 애플리케이션을 실행할 수 있습니다. Microsoft Office를 자동화하는 애플리케이션이 좋은 예입니다. Office와 같은 애플리케이션은 일반적으로 여러 버전에서 동일한 CLSID 값을 유지하지 때문에 .NET Framework 4 이상이 대상 컴퓨터에 설치되어 있고 애플리케이션이 참조된 COM 형식에 포함된 메서드, 속성 또는 이벤트를 사용하는 한 애플리케이션에서 참조된 COM 형식을 사용할 수 있습니다.  
   
  `-link` 옵션은 인터페이스, 구조체 및 대리자만 포함합니다. COM 클래스는 포함할 수 없습니다.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "45698265"
  `-link`의 약식은 `-l`입니다.  
   
 ## <a name="generics-and-embedded-types"></a>제네릭 및 포함된 형식  
- 다음 섹션에서는 interop 형식을 포함하는 응용 프로그램에서 제네릭 형식을 사용할 경우의 제한 사항에 대해 설명합니다.  
+ 다음 섹션에서는 interop 형식을 포함하는 애플리케이션에서 제네릭 형식을 사용할 경우의 제한 사항에 대해 설명합니다.  
   
 ### <a name="generic-interfaces"></a>제네릭 인터페이스  
  interop 어셈블리에서 포함되는 제네릭 인터페이스는 사용할 수 없습니다. 다음 예제에서 이를 확인할 수 있습니다.  
@@ -74,7 +74,7 @@ ms.locfileid: "45698265"
   
  [!code-csharp[VbLinkCompilerCS#5](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_5.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드는 소스 파일 `OfficeApp.cs`와 `COMData1.dll` 및 `COMData2.dll`의 참조 어셈블리를 컴파일하여 `OfficeApp.exe`를 생성합니다.  
   
 ```csharp  
@@ -83,9 +83,9 @@ csc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.cs
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
-- [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
-- [-reference(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)  
-- [-noconfig(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)  
-- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
+- [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
+- [-reference(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)
+- [-noconfig(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)
+- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
 - [상호 운용성 개요](../../../csharp/programming-guide/interop/interoperability-overview.md)

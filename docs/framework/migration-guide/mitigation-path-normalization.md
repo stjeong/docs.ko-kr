@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: aa31641cc325f15b9afe677038deb33c57e77fd1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: addbeeab6f5b3544a7ed1b86b7da0f7d09be7ffb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701107"
 ---
 # <a name="mitigation-path-normalization"></a>완화: 경로 정규화
 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]을 대상으로 하는 앱부터, .NET Framework의 경로 정규화가 변경되었습니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "43508815"
 </runtime>  
 ```  
   
- [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 또는 이전 버전을 대상으로 하지만 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 이상이 실행되는 앱은 응용 프로그램 .configuration 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음을 추가하여 경로 정규화에 대한 변경을 적용할 수 있습니다.  
+ [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 또는 이전 버전을 대상으로 하지만 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 이상이 실행되는 앱은 애플리케이션 .configuration 파일의 [\<runtime&gt;](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음을 추가하여 경로 정규화에 대한 변경을 적용할 수 있습니다.  
   
 ```xml  
 <runtime>  
@@ -60,5 +60,5 @@ ms.locfileid: "43508815"
 </runtime>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md)
+## <a name="see-also"></a>참고 항목
+- [대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md)

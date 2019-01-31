@@ -9,12 +9,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: 0feff32f3a2264b8e6cbd4746fdeaaaad728b8e5
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 91d972f468f80c509a90ea293937b117d54a2e7d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54737522"
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>람다 식(C# 프로그래밍 가이드)
 
@@ -89,7 +89,8 @@ namespace ConsoleApplication1
 
  위의 예제에서 식 람다의 본문은 메서드 호출로 구성될 수 있습니다. 하지만 SQL Server와 같은 .NET Framework 외부에서 평가되는 식 트리를 만드는 경우에는 람다 식에 메서드 호출을 사용하지 않아야 합니다. 이러한 메서드는 .NET 공용 언어 런타임의 컨텍스트 안에서만 의미가 있습니다.  
   
-## <a name="statement-lambdas"></a>문 람다  
+## <a name="statement-lambdas"></a>문 람다
+
  문 람다는 다음과 같이 중괄호 안에 문을 지정한다는 점을 제외하면 식 람다와 비슷합니다.  
   
 (input-parameters) => { statement; }
@@ -102,7 +103,8 @@ namespace ConsoleApplication1
 
  무명 메서드와 마찬가지로 문 람다는 식 트리를 만드는 데 사용할 수 없습니다.  
   
-## <a name="async-lambdas"></a>비동기 람다  
+## <a name="async-lambdas"></a>비동기 람다
+
  [async](../../../csharp/language-reference/keywords/async.md) 및 [await](../../../csharp/language-reference/keywords/await.md) 키워드를 사용하여 비동기 처리를 통합하는 람다 식과 문을 쉽게 만들 수 있습니다. 예를 들어 다음 Windows Forms 예제에는 비동기 메서드 `ExampleMethodAsync`를 호출하고 기다리는 이벤트 처리기가 포함되어 있습니다.  
   
 ```csharp
@@ -154,7 +156,8 @@ public partial class Form1 : Form
 
  비동기 메서드를 만들고 사용하는 방법에 대한 자세한 내용은 [Async 및 Await를 사용한 비동기 프로그래밍](../../../csharp/programming-guide/concepts/async/index.md)을 참조하세요.  
   
-## <a name="lambdas-with-the-standard-query-operators"></a>표준 쿼리 연산자와 람다 식  
+## <a name="lambdas-with-the-standard-query-operators"></a>표준 쿼리 연산자와 람다 식
+
  대부분의 표준 쿼리 연산자에는 형식이 제네릭 대리자의 <xref:System.Func%602> 패밀리 중 하나인 입력 매개 변수를 사용합니다. 이러한 대리자는 형식 매개 변수를 사용하여 입력 매개 변수의 수와 형식 및 대리자의 반환 형식을 정의합니다. `Func` 대리자는 소스 데이터 집합에 있는 각 요소에 적용할 사용자 정의 식을 캡슐화하는 데 매우 유용합니다. 다음 대리자 형식을 예로 들 수 있습니다.  
   
 ```csharp  
@@ -191,7 +194,8 @@ var firstNumbersLessThan6 = numbers.TakeWhile(n => n < 6);
 var firstSmallNumbers = numbers.TakeWhile((n, index) => n >= index);  
 ```  
   
-## <a name="type-inference-in-lambdas"></a>람다 식에서의 형식 유추  
+## <a name="type-inference-in-lambdas"></a>람다의 형식 유추
+
  컴파일러에서는 람다 식 본문, 매개 변수의 대리자 형식 및 C# 언어 사양에 설명되어 있는 기타 요소를 기준으로 형식을 유추할 수 있기 때문에 대부분의 경우에는 람다 식을 작성할 때 입력 매개 변수의 형식을 지정하지 않아도 됩니다. 대부분의 표준 쿼리 연산자에서 첫 번째 입력 형식은 소스 시퀀스 요소의 형식입니다. 따라서 `IEnumerable<Customer>`를 쿼리할 경우 입력 변수가 `Customer` 개체로 유추됩니다. 이는 이 개체의 메서드와 속성에 액세스할 수 있음을 의미합니다.  
   
 ```csharp  
@@ -208,7 +212,8 @@ customers.Where(c => c.City == "London");
   
  공용 형식 시스템에는 "람다 식"이라는 개념이 기본적으로 포함되어 있지 않기 때문에 람다 식 자체에는 형식이 없습니다. 그러나 람다 식의 "형식"을 비공식적으로 언급해야 할 경우도 있는데 이 경우 형식은 대리자 형식 또는 람다 식이 변환되는 <xref:System.Linq.Expressions.Expression> 형식을 의미합니다.  
   
-## <a name="variable-scope-in-lambda-expressions"></a>람다 식의 변수 범위  
+## <a name="variable-scope-in-lambda-expressions"></a>람다 식의 변수 범위
+
  람다 식은 람다 함수를 정의하는 메서드 범위 내에 있거나 람다 식을 포함하는 형식 범위 내에 있는 *외부 변수*([무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) 참조)를 참조할 수 있습니다. 이러한 방식으로 캡처되는 변수는 변수가 범위를 벗어나 가비지 수집되는 경우에도 람다 식에 사용할 수 있도록 저장됩니다. 외부 변수는 명확하게 할당해야만 람다 식에 사용할 수 있습니다. 다음 예제에서는 이러한 규칙을 보여 줍니다.  
   
 ```csharp  
@@ -269,18 +274,20 @@ class Test
   
 -   점프문의 대상이 블록 외부에 있는 경우 람다 식에 람다 함수 내에 있는 `goto` 문, `break` 문 또는 `continue` 문을 포함할 수 없습니다. 대상이 블록 내에 있는 경우 람다 함수 블록 외부에 점프문을 사용해도 오류가 발생합니다.  
   
-## <a name="c-language-specification"></a>C# 언어 사양  
+## <a name="c-language-specification"></a>C# 언어 사양
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="featured-book-chapter"></a>중요 설명서 장  
+## <a name="featured-book-chapter"></a>중요 설명서 장
+
  [C# 3.0 Cookbook, Third Edition: C# 3.0 프로그래머를 위한 250개가 넘는 솔루션](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)의 [대리자, 이벤트 및 Lambda 식](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29)  
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [LINQ(Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)  
-- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
-- [is](../../../csharp/language-reference/keywords/is.md)  
-- [식 트리](../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-- [Visual Studio 2008 C# 샘플(LINQ 샘플 쿼리 파일 및 XQuery 프로그램 참조)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [LINQ(Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [is](../../../csharp/language-reference/keywords/is.md)
+- [식 트리](../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Visual Studio 2008 C# 샘플(LINQ 샘플 쿼리 파일 및 XQuery 프로그램 참조)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [재귀 람다 식](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)

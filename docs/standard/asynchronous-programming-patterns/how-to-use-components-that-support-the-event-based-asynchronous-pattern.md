@@ -18,17 +18,17 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-ms.openlocfilehash: e11bf8af6f56cbdcdcc920cafe145edcf744efed
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: f7e7139aeebea4441f851f7ed28484ba293e9c3a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543252"
 ---
 # <a name="how-to-use-components-that-support-the-event-based-asynchronous-pattern"></a>방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 사용
 많은 구성 요소가 비동기적으로 작업을 수행하는 옵션을 제공합니다. 예를 들어 <xref:System.Media.SoundPlayer> 및 <xref:System.Windows.Forms.PictureBox> 구성 요소를 사용하면 기본 스레드가 중단 없이 계속 실행되는 동안 사운드 및 이미지를 “배경”으로 로드할 수 있습니다.  
   
- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)를 지원하는 클래스에 비동기 메서드를 사용하는 작업은 다른 이벤트의 경우와 같이 구성 요소의 _MethodName_**Completed** 이벤트에 이벤트 처리기를 연결하는 것처럼 간단할 수 있습니다. _MethodName_**Async** 메서드를 호출하면 응용 프로그램은 _MethodName_**Completed** 이벤트가 발생할 때까지 중단 없이 계속 실행됩니다. 이벤트 처리기에서 <xref:System.ComponentModel.AsyncCompletedEventArgs> 매개 변수를 검사하여 비동기 작업이 성공적으로 완료되었는지 또는 취소되었는지 확인할 수 있습니다.  
+ [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)를 지원하는 클래스에 비동기 메서드를 사용하는 작업은 다른 이벤트의 경우와 같이 구성 요소의 _MethodName_**Completed** 이벤트에 이벤트 처리기를 연결하는 것처럼 간단할 수 있습니다. _MethodName_**Async** 메서드를 호출하면 애플리케이션은 _MethodName_**Completed** 이벤트가 발생할 때까지 중단 없이 계속 실행됩니다. 이벤트 처리기에서 <xref:System.ComponentModel.AsyncCompletedEventArgs> 매개 변수를 검사하여 비동기 작업이 성공적으로 완료되었는지 또는 취소되었는지 확인할 수 있습니다.  
   
  이벤트 처리기 사용에 대한 자세한 내용은 [이벤트 처리기 개요](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)를 참조하세요.  
   
@@ -62,5 +62,5 @@ ms.locfileid: "46003401"
   
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
-- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
+- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)

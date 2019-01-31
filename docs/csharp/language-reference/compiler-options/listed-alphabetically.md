@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C# compiler, options listed alphabetically
 - Visual C#, compiler options listed alphabetically
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
-ms.openlocfilehash: 22574df77250479250f1ce1369c4bfb59c456d26
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f2e9ed6ee23367e6ef3cd035ef5a485105da8a27
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653751"
 ---
 # <a name="c-compiler-options-listed-alphabetically"></a>C# 컴파일러 옵션 사전순 목록
 
@@ -29,7 +29,7 @@ ms.locfileid: "43525687"
 |[-baseaddress](baseaddress-compiler-option.md)|빌드할 라이브러리의 기준 주소를 지정합니다.|
 |[-bugreport](bugreport-compiler-option.md)|'버그 보고서' 파일을 만듭니다. -errorreport:prompt 또는 -errorreport:send와 함께 사용하면 이 파일이 충돌 정보와 함께 전송됩니다.|
 |[/checked](checked-compiler-option.md)|컴파일러에서 오버플로 검사를 생성하도록 합니다.|
-|-checksumalgorithm:\<alg>|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원되는 값은 SHA1(기본값) 또는 SHA256입니다.|
+|-checksumalgorithm:\<alg>|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원되는 값은 다음과 같습니다. SHA1(기본값) 또는 SHA256.|
 |[-codepage](codepage-compiler-option.md)|소스 파일을 열 때 사용할 코드 페이지를 지정합니다.|
 |[-debug](debug-compiler-option.md)|디버깅 정보를 내보냅니다.|
 |[-define](define-compiler-option.md)|조건부 컴파일 기호를 정의합니다.|
@@ -44,7 +44,7 @@ ms.locfileid: "43525687"
 |-incremental|증분 컴파일을 사용하도록 설정합니다(사용되지 않음).|
 |[-keycontainer](keycontainer-compiler-option.md)|강력한 이름의 키 컨테이너를 지정합니다.|
 |[-keyfile](keyfile-compiler-option.md)|강력한 이름의 키 파일을 지정합니다.|
-|[-langversion:\<string>](langversion-compiler-option.md)|언어 버전(기본값, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 또는 최신)을 지정합니다. |
+|[-langversion:\<string>](langversion-compiler-option.md)|언어 버전 지정: 기본값, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 또는 최신 |
 |[/lib](lib-compiler-option.md)|참조를 검색할 추가 디렉터리를 지정합니다.|
 |[-link](link-compiler-option.md)|지정된 어셈블리의 COM 형식 정보를 프로젝트에 사용할 수 있도록 합니다.|
 |[-linkresource](linkresource-compiler-option.md)|지정한 리소스를 이 어셈블리에 링크합니다.|
@@ -55,7 +55,7 @@ ms.locfileid: "43525687"
 |[-nologo](nologo-compiler-option.md)|컴파일러 저작권 메시지를 표시하지 않습니다.|
 |[-nostdlib](nostdlib-compiler-option.md)|컴파일러에서 표준 라이브러리(mscorlib.dll)를 참조하지 않도록 합니다.|
 |[-nowarn](nowarn-compiler-option.md)|특정 경고 메시지를 사용하지 않도록 설정합니다.|
-|[-nowin32manifest](nowin32manifest-compiler-option.md)|응용 프로그램 매니페스트를 실행 파일에 포함하지 않도록 컴파일러에 지시합니다.|
+|[-nowin32manifest](nowin32manifest-compiler-option.md)|애플리케이션 매니페스트를 실행 파일에 포함하지 않도록 컴파일러에 지시합니다.|
 |[-optimize](optimize-compiler-option.md)|최적화를 사용하거나 사용하지 않도록 설정합니다.|
 |[-out](out-compiler-option.md)|출력 파일 이름을 지정합니다(기본값: 주 클래스가 있는 파일의 기본 이름 또는 첫째 파일).|
 |-parallel[+&#124;-]|동시 빌드(+)를 사용할지 여부를 지정합니다.|
@@ -82,7 +82,7 @@ ms.locfileid: "43525687"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 컴파일러 옵션](index.md)  
-- [범주별 C# 컴파일러 옵션 목록](listed-by-category.md)  
-- [방법: Visual Studio 명령줄에 필요한 환경 변수 설정](how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
+- [C# 컴파일러 옵션](index.md)
+- [범주별 C# 컴파일러 옵션 목록](listed-by-category.md)
+- [방법: Visual Studio 명령줄에 필요한 환경 변수 설정](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [\<compiler> 요소](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

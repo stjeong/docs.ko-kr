@@ -2,12 +2,12 @@
 title: XML 트리 만들기(C#)
 ms.date: 07/20/2015
 ms.assetid: bccc3e0a-c08c-468e-9d30-e075670fdace
-ms.openlocfilehash: 1245c0f087bb63f12d9f17389bf752330ccc7670
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 64aed2a02f2f31036458ae878a3cbd21d9526d9b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54515851"
 ---
 # <a name="creating-xml-trees-c"></a>XML 트리 만들기(C#)
 가장 일반적인 XML 작업 중 하나는 XML 트리를 생성하는 것입니다. 이 단원에서는 XML 트리를 만드는 몇 가지 방법에 대해 설명합니다.  

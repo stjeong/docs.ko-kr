@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bec27165d1bfd6a501ba8b96a1eb133276fe7269
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 22c44340edf5e7a625524500838ab32d516ad97b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50197953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614606"
 ---
 # <a name="how-to-get-progress-from-the-net-framework-45-installer"></a>방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기
 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]는 재배포 가능 런타임입니다. .NET Framework의 이 버전용 응용 프로그램을 개발하는 경우 응용 프로그램 설치 시 필수 구성 요소로 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 포함(연결)시킬 수 있습니다. 사용자 지정 설치 환경이나 통합 설치 환경을 제공하려면 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치 프로그램을 자동으로 시작하고 앱의 설치 진행률을 표시하는 동안 진행 상태를 추적하는 것이 좋습니다. 자동 추적을 사용하도록 설정하기 위해 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치 프로그램(감시할 수 있음)은 메모리 매핑된 I/O(MMIO) 세그먼트를 사용하여 설치 프로그램과 함께 통신할 프로토콜(감시자 또는 chainer)을 정의합니다. 이 프로토콜은 chainer가 진행률 정보를 가져오고, 자세한 결과를 확인하고. 메시지에 응답하고, [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 취소하는 방법을 정의합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "50197953"
   
          이러한 이름을 설치 프로그램에 고유한 이름으로 바꾸세요.  
   
-    2.  MMIO 섹션을 읽습니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 다운로드 및 설치 작업은 동시에 진행됩니다. 따라서 .NET Framework에서 하나의 구성 요소를 설치하면서 다른 구성 요소를 다운로드할 수 있습니다. 따라서 진행률이 0에서 255까지 증가하는 두 개의 숫자(`m_downloadSoFar` 및 `m_installSoFar`)로 MMIO 섹션에 다시 전송(기록)됩니다. 255가 기록되고 .NET Framework가 종료되면 설치가 완료된 것입니다.  
+    2.  MMIO 섹션을 읽습니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 다운로드 및 설치 작업이 동시에 수행됩니다. 다른 부분을 다운로드하는 동안 .NET Framework의 한 부분이 설치 중일 수 있습니다. 따라서 진행률이 0에서 255까지 증가하는 두 개의 숫자(`m_downloadSoFar` 및 `m_installSoFar`)로 MMIO 섹션에 다시 전송(기록)됩니다. 255가 기록되고 .NET Framework가 종료되면 설치가 완료된 것입니다.  
   
 -   **종료 코드**. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 재배포 가능 프로그램을 호출하는 명령의 다음 종료 코드는 설치에 성공했는지 아니면 실패했는지를 나타냅니다.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "50197953"
   
  MSDN 샘플 갤러리에서 [.NET Framework 4.5 chainer 샘플](https://go.microsoft.com/fwlink/?LinkId=231345)에 대한 전체 Visual Studio 솔루션을 다운로드할 수 있습니다.  
   
- 다음 섹션에서는 이 샘플의 중요한 파일인 MMIOChainer.h, ChainingdotNet4.cpp 및 IProgressObserver.h에 대해 설명합니다.  
+ 다음 섹션에서는 이 샘플의 중요한 파일을 설명합니다. MMIOChainer.h, ChainingdotNet4.cpp 및 IProgressObserver.h.  
   
 #### <a name="mmiochainerh"></a>MMIOChainer.h  
   
@@ -230,7 +230,7 @@ ms.locfileid: "50197953"
     }  
     ```  
   
--   `Send` 메서드는 메시지를 가로채서 처리합니다.  이 버전의 .NET Framework에서 지원되는 메시지는 응용 프로그램 닫기 메시지뿐입니다.  
+-   `Send` 메서드는 메시지를 가로채서 처리합니다.  이 버전의 .NET Framework에서 지원되는 메시지는 애플리케이션 닫기 메시지뿐입니다.  
   
     ```cpp  
             // SendMessage  
@@ -307,8 +307,8 @@ ms.locfileid: "50197953"
     > [!IMPORTANT]
     >  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 재배포 가능 패키지는 일반적으로 많은 진행률 메시지와 완료를 나타내는 단일 메시지(chainer 쪽)를 씁니다. 또한 비동기적으로 읽으면서 `Abort` 레코드를 찾습니다. `Abort` 레코드를 받으면 설치를 취소하고, 설치가 중단되고 설치 작업이 롤백된 후 E_ABORT를 해당 데이터로 사용하여 완성된 레코드를 씁니다.  
   
- 일반적인 서버는 임의의 MMIO 파일 이름을 만들고, 파일을 만든 다음(이전 코드 예제와 같이 `Server::CreateSection`에서) `CreateProcess` 메서드를 사용하고 `-pipe someFileSectionName` 옵션으로 파이프 이름을 전달하여 재배포 가능 패키지를 시작합니다. 서버는 응용 프로그램 UI 관련 코드를 사용하여 `OnProgress`, `Send` 및 `Finished` 메서드를 구현해야 합니다.  
+ 일반적인 서버는 임의의 MMIO 파일 이름을 만들고, 파일을 만든 다음(이전 코드 예제와 같이 `Server::CreateSection`에서) `CreateProcess` 메서드를 사용하고 `-pipe someFileSectionName` 옵션으로 파이프 이름을 전달하여 재배포 가능 패키지를 시작합니다. 서버는 애플리케이션 UI 관련 코드를 사용하여 `OnProgress`, `Send` 및 `Finished` 메서드를 구현해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
-- [개발자를 위한 배포 가이드](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
+## <a name="see-also"></a>참고 항목
+- [개발자를 위한 배포 가이드](../../../docs/framework/deployment/deployment-guide-for-developers.md)
 - [배포](../../../docs/framework/deployment/index.md)

@@ -2,17 +2,17 @@
 title: '방법: CSV 파일에서 XML 생성(C#)'
 ms.date: 07/20/2015
 ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
-ms.openlocfilehash: 9200cfc443ae87fcbeaf87c7674f15d8a241f5dc
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 769cc6c2ca8f4c05c46a0054eaccccfe3911a74c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45609190"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54605788"
 ---
 # <a name="how-to-generate-xml-from-csv-files-c"></a>방법: CSV 파일에서 XML 생성(C#)
 이 예제에서는 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 및 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 CSV(쉼표로 구분된 값) 파일에서 XML 파일을 생성하는 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 문자열 배열에 대해 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 수행합니다.  
   
  쿼리에서 `let` 절을 사용하여 각 문자열을 필드 배열로 분할합니다.  

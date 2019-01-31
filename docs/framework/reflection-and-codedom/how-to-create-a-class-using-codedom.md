@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cf244e796dad0f3817a3c5acd1fcda8eaf189e2c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 78c50b3813ebb0bb65955e411eb84e4cd9e0a001
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54581947"
 ---
 # <a name="how-to-create-a-class-using-codedom"></a>방법: CodeDOM을 사용하여 클래스 만들기
 다음 절차에서는 필드 2개, 속성 3개, 메서드, 생성자 및 진입점을 포함하는 클래스를 생성하는 CodeDOM 그래프를 만들고 컴파일하는 방법을 설명합니다.  
   
-1.  CodeDOM 코드를 사용하여 클래스에 대한 소스 코드를 생성하는 콘솔 응용 프로그램을 만듭니다.  
+1.  CodeDOM 코드를 사용하여 클래스에 대한 소스 코드를 생성하는 콘솔 애플리케이션을 만듭니다.  
   
      이 예제에서 생성하는 클래스의 이름은 `Sample`이고, 생성된 코드는 SampleCode 파일의 `CodeDOMCreatedClass` 클래스입니다.  
   
@@ -33,20 +33,20 @@ ms.locfileid: "33395390"
   
 3.  생성하는 클래스에서 언어별 코드 공급자를 만들고 해당 <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> 메서드를 호출하여 그래프에서 코드를 생성합니다.  
   
-4.  응용 프로그램을 컴파일 및 실행하여 코드를 생성합니다.  
+4.  애플리케이션을 컴파일 및 실행하여 코드를 생성합니다.  
   
      이 예제에서 생성된 코드는 SampleCode 파일에 있습니다. 해당 코드를 컴파일 및 실행하여 샘플 출력을 확인합니다.  
   
-### <a name="to-create-the-application-that-will-execute-the-codedom-code"></a>CodeDOM 코드를 실행할 응용 프로그램을 만들려면  
+### <a name="to-create-the-application-that-will-execute-the-codedom-code"></a>CodeDOM 코드를 실행할 애플리케이션을 만들려면  
   
--   CodeDOM 코드를 포함하는 콘솔 응용 프로그램 클래스를 만듭니다. 클래스에서 어셈블리(<xref:System.CodeDom.CodeCompileUnit>) 및 클래스(<xref:System.CodeDom.CodeTypeDeclaration>)를 참조하는 데 사용할 전역 필드를 정의하고 생성된 소스 파일의 이름을 지정한 다음 `Main` 메서드를 선언합니다.  
+-   CodeDOM 코드를 포함하는 콘솔 애플리케이션 클래스를 만듭니다. 클래스에서 어셈블리(<xref:System.CodeDom.CodeCompileUnit>) 및 클래스(<xref:System.CodeDom.CodeTypeDeclaration>)를 참조하는 데 사용할 전역 필드를 정의하고 생성된 소스 파일의 이름을 지정한 다음 `Main` 메서드를 선언합니다.  
   
      [!code-csharp[CodeDOM Class Sample Main#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample Main/CS/program.cs#1)]
      [!code-vb[CodeDOM Class Sample Main#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDOM Class Sample Main/VB/program.vb#1)]  
   
 ### <a name="to-initialize-the-codedom-graph"></a>CodeDOM 그래프를 초기화하려면  
   
--   콘솔 응용 프로그램 클래스에 대한 생성자에서 어셈블리와 클래스를 초기화하고 적절한 선언을 CodeDOM 그래프에 추가합니다.  
+-   콘솔 애플리케이션 클래스에 대한 생성자에서 어셈블리와 클래스를 초기화하고 적절한 선언을 CodeDOM 그래프에 추가합니다.  
   
      [!code-csharp[CodeDOM Class Sample#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample/CS/program.cs#2)]
      [!code-vb[CodeDOM Class Sample#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDOM Class Sample/VB/program.vb#2)]  
@@ -94,7 +94,7 @@ ms.locfileid: "33395390"
   
 2.  생성하는 클래스를 컴파일 및 실행합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 앞의 단계에서 생성한 코드를 보여 줍니다.  
   
  [!code-csharp[CodeDOM Class Sample#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample/CS/program.cs#1)]
@@ -118,6 +118,6 @@ The object:
   
 -   이 코드 예제를 성공적으로 실행하려면 `FullTrust` 권한이 설정되어 있어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [CodeDOM 사용](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)  
- [CodeDOM 그래프에서 소스 코드 생성 및 컴파일](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)
+## <a name="see-also"></a>참고 항목
+- [CodeDOM 사용](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)
+- [CodeDOM 그래프에서 소스 코드 생성 및 컴파일](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)

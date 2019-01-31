@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83f3abb2c77461b74e388dcb421fac6c19a43655
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 0793f3688f1f6ca66d92c5a22e158aa85e5470ae
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47205069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631674"
 ---
 # <a name="custom-numeric-format-strings"></a>사용자 지정 숫자 형식 문자열
 
@@ -33,23 +33,23 @@ ms.locfileid: "47205069"
  사용자 지정 숫자 서식 문자열은 모든 숫자 형식의 `ToString` 메서드를 오버로드하여 사용할 수 있습니다. 예를 들어 <xref:System.Int32.ToString%28System.String%29> 형식의 <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> 및 <xref:System.Int32> 메서드에 숫자 서식 문자열을 제공할 수 있습니다. <xref:System.Console> 및 <xref:System.IO.StreamWriter> 클래스의 일부 `Write` 및 `WriteLine` 메서드, <xref:System.String.Format%2A?displayProperty=nameWithType> 메서드, <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> 메서드에 사용되는 .NET [복합 서식 지정 기능](../../../docs/standard/base-types/composite-formatting.md)을 통해서도 사용자 지정 숫자 형식 문자열을 사용할 수 있습니다. [문자열 보간](../../csharp/language-reference/tokens/interpolated.md) 기능은 사용자 지정 숫자 형식 문자열도 지원합니다.  
   
 > [!TIP]
->  서식 문자열을 숫자 또는 날짜 및 시간 값에 적용할 수 있도록 지원하고 결과 문자열을 표시하는 응용 프로그램인 [서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)를 다운로드할 수 있습니다.  
+>  서식 문자열을 숫자 또는 날짜 및 시간 값에 적용할 수 있도록 지원하고 결과 문자열을 표시하는 애플리케이션인 [서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)를 다운로드할 수 있습니다.  
   
 <a name="table"></a> 다음 표에서는 사용자 지정 숫자 서식 지정자 및 각 서식 지정자로 생성되는 샘플 출력을 보여 줍니다. 사용자 지정 숫자 서식 문자열을 사용하는 방법에 대한 자세한 내용은 [참고](#NotesCustomFormatting) 단원을 참조하고, 이러한 사용 방법을 자세히 보여 주는 예제를 보려면 [예제](#example) 단원을 참조하세요.  
   
 |형식 지정자|name|설명|예제|  
 |----------------------|----------|-----------------|--------------|  
-|"0"|0 자리 표시자|해당 숫자가 있을 경우 0을 해당 숫자로 바꾸고, 그렇지 않으면 결과 문자열에 0을 표시합니다.<br /><br /> 추가 정보: ["0" 사용자 지정 지정자](#Specifier0)|1234.5678 ("00000") -> 01235<br /><br /> 0.45678 ("0.00", en-US) -> 0.46<br /><br /> 0.45678 ("0.00", fr-FR) -> 0,46|  
-|"#"|10진수 자리 표시자|해당 숫자가 있을 경우 "#" 기호를 해당 숫자로 바꾸고, 그렇지 않으면 결과 문자열에 숫자를 표시하지 않습니다.<br /><br /> 입력 문자열의 해당 숫자가 의미 없는 0인 경우 결과 문자열에 숫자를 표시하지 않습니다. 예를 들어 0003 ("####") -> 3입니다.<br /><br /> 추가 정보: ["#" 사용자 지정 지정자](#SpecifierD)|1234.5678 ("#####") -> 1235<br /><br /> 0.45678 ("#.##", en-US) -> .46<br /><br /> 0.45678 ("#.##", fr-FR) -> ,46|  
+|"0"|0 자리 표시자|해당 숫자가 있을 경우 0을 해당 숫자로 바꾸고, 그렇지 않으면 결과 문자열에 0을 표시합니다.<br /><br /> 추가 정보: ["0" 사용자 지정 지정자](#Specifier0).|1234.5678 ("00000") -> 01235<br /><br /> 0.45678 ("0.00", en-US) -> 0.46<br /><br /> 0.45678 ("0.00", fr-FR) -> 0,46|  
+|"#"|10진수 자리 표시자|해당 숫자가 있을 경우 "#" 기호를 해당 숫자로 바꾸고, 그렇지 않으면 결과 문자열에 숫자를 표시하지 않습니다.<br /><br /> 입력 문자열의 해당 숫자가 의미 없는 0인 경우 결과 문자열에 숫자를 표시하지 않습니다. 예를 들어 0003 ("####") -> 3입니다.<br /><br /> 추가 정보: ["#" 사용자 지정 지정자](#SpecifierD).|1234.5678 ("#####") -> 1235<br /><br /> 0.45678 ("#.##", en-US) -> .46<br /><br /> 0.45678 ("#.##", fr-FR) -> ,46|  
 |"."|소수점|결과 문자열에서 소수 구분 기호의 위치를 결정합니다.<br /><br /> 추가 정보: ["." 사용자 지정 지정자](#SpecifierPt)|0.45678 ("0.00", en-US) -> 0.46<br /><br /> 0.45678 ("0.00", fr-FR) -> 0,46|  
-|","|그룹 구분 기호 및 숫자 배율|그룹 구분 기호 지정자와 숫자 배율 지정자로 모두 사용됩니다. 그룹 구분 기호로 사용될 경우 각 그룹 사이에 지역화된 그룹 구분 기호 문자를 삽입합니다. 숫자 배율 지정자로 사용될 경우 숫자를 쉼표 단위로 끊어서 1000으로 나눕니다.<br /><br /> 추가 정보: ["," 사용자 지정 지정자](#SpecifierTh)|그룹 구분 기호 지정자:<br /><br /> 2147483647 ("##,#", en-US) -> 2,147,483,647<br /><br /> 2147483647 ("##,#", es-ES) -> 2.147.483.647<br /><br /> 배율 지정자:<br /><br /> 2147483647 ("#,#,,", en-US) -> 2,147<br /><br /> 2147483647 ("#,#,,", es-ES) -> 2.147|  
-|"%"|백분율 자리 표시자|숫자에 100을 곱하고 결과 문자열에 지역화된 백분율 기호를 삽입합니다.<br /><br /> 추가 정보: ["%" 사용자 지정 지정자](#SpecifierPct)|0.3697 ("%#0.00", en-US) -> %36.97<br /><br /> 0.3697 ("%#0.00", el-GR) -> %36,97<br /><br /> 0.3697 ("##.0 %", en-US) -> 37.0 %<br /><br /> 0.3697 ("##.0 %", el-GR) -> 37,0 %|  
-|"‰"|천분율 자리 표시자|숫자에 1000을 곱하고 결과 문자열에 지역화된 천분율 기호를 삽입합니다.<br /><br /> 추가 정보: ["‰" 사용자 지정 지정자](#SpecifierPerMille)|0.03697 ("#0.00‰", en-US) -> 36.97‰<br /><br /> 0.03697 ("#0.00‰", ru-RU) -> 36,97‰|  
-|"E0"<br /><br /> "E+0"<br /><br /> "E-0"<br /><br /> "E0"<br /><br /> "E+0"<br /><br /> "E-0"|지수 표기법|적어도 하나의 0이 뒤에 오면 지수 표기법을 사용하여 결과의 서식을 지정합니다. "E" 또는 "e" 문자는 결과 문자열에 표시되는 지수 기호의 대/소문자를 나타냅니다. "E" 또는 "e" 문자 뒤에 오는 0의 수에 따라 지수의 최소 자릿수가 결정됩니다. 더하기 기호(+)는 기호 문자가 항상 지수 앞에 온다는 것을 나타냅니다. 빼기 기호(-)는 기호 문자가 음의 지수 앞에만 온다는 것을 나타냅니다.<br /><br /> 추가 정보: ["E" 및 "e" 사용자 지정 지정자](#SpecifierExponent)|987654 ("#0.0e0") -> 98.8e4<br /><br /> 1503.92311 ("0.0##e+00") -> 1.504e+03<br /><br /> 1.8901385E-16 ("0.0e+00") -> 1.9e-16|  
-|"\\"|이스케이프 문자|뒤에 오는 문자가 사용자 지정 형식 지정자가 아닌 리터럴로 해석되도록 합니다.<br /><br /> 추가 정보: [“\\” 이스케이프 문자](#SpecifierEscape)|987654 ("\\###00\\#") -> #987654#|  
-|'*string*'<br /><br /> "*string*"|리터럴 문자열 구분 기호|괄호로 묶인 문자가 변경되지 않은 상태로 결과 문자열에 복사되어야 함을 나타냅니다.<br/><br/>추가 정보: [리터럴 문자](#character-literals)|68 (“# ‘degrees’”) -> 68 degrees<br /><br /> 68 ("#' degrees'") -> 68 degrees|  
-|;|섹션 구분 기호|양수, 음수 및 0에 따라 별도의 서식 문자열을 사용하여 섹션을 정의합니다.<br /><br /> 추가 정보: [";" 섹션 구분 기호](#SectionSeparator)|12.345 ("#0.0#;(#0.0#);-\0-") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#);-\0-") -> -0-<br /><br /> -12.345 ("#0.0#;(#0.0#);-\0-") -> (12.35)<br /><br /> 12.345 ("#0.0#;(#0.0#)") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#)") -> 0.0<br /><br /> -12.345 ("#0.0#;(#0.0#)") -> (12.35)|  
-|기타|다른 모든 문자|문자가 변경되지 않은 상태로 결과 문자열에 복사됩니다.<br/><br/>추가 정보: [리터럴 문자](#character-literals)|68 ("# °") -> 68 °|  
+|","|그룹 구분 기호 및 숫자 배율|그룹 구분 기호 지정자와 숫자 배율 지정자로 모두 사용됩니다. 그룹 구분 기호로 사용될 경우 각 그룹 사이에 지역화된 그룹 구분 기호 문자를 삽입합니다. 숫자 배율 지정자로 사용될 경우 숫자를 쉼표 단위로 끊어서 1000으로 나눕니다.<br /><br /> 추가 정보: ["," 사용자 지정 지정자](#SpecifierTh).|그룹 구분 기호 지정자:<br /><br /> 2147483647 ("##,#", en-US) -> 2,147,483,647<br /><br /> 2147483647 ("##,#", es-ES) -> 2.147.483.647<br /><br /> 배율 지정자:<br /><br /> 2147483647 ("#,#,,", en-US) -> 2,147<br /><br /> 2147483647 ("#,#,,", es-ES) -> 2.147|  
+|"%"|백분율 자리 표시자|숫자에 100을 곱하고 결과 문자열에 지역화된 백분율 기호를 삽입합니다.<br /><br /> 추가 정보: ["%" 사용자 지정 지정자](#SpecifierPct).|0.3697 ("%#0.00", en-US) -> %36.97<br /><br /> 0.3697 ("%#0.00", el-GR) -> %36,97<br /><br /> 0.3697 ("##.0 %", en-US) -> 37.0 %<br /><br /> 0.3697 ("##.0 %", el-GR) -> 37,0 %|  
+|"‰"|천분율 자리 표시자|숫자에 1000을 곱하고 결과 문자열에 지역화된 천분율 기호를 삽입합니다.<br /><br /> 추가 정보: ["‰" 사용자 지정 지정자](#SpecifierPerMille).|0.03697 ("#0.00‰", en-US) -> 36.97‰<br /><br /> 0.03697 ("#0.00‰", ru-RU) -> 36,97‰|  
+|"E0"<br /><br /> "E+0"<br /><br /> "E-0"<br /><br /> "E0"<br /><br /> "E+0"<br /><br /> "E-0"|지수 표기법|적어도 하나의 0이 뒤에 오면 지수 표기법을 사용하여 결과의 서식을 지정합니다. "E" 또는 "e" 문자는 결과 문자열에 표시되는 지수 기호의 대/소문자를 나타냅니다. "E" 또는 "e" 문자 뒤에 오는 0의 수에 따라 지수의 최소 자릿수가 결정됩니다. 더하기 기호(+)는 기호 문자가 항상 지수 앞에 온다는 것을 나타냅니다. 빼기 기호(-)는 기호 문자가 음의 지수 앞에만 온다는 것을 나타냅니다.<br /><br /> 추가 정보: ["E" 및 "e" 사용자 지정 지정자](#SpecifierExponent).|987654 ("#0.0e0") -> 98.8e4<br /><br /> 1503.92311 ("0.0##e+00") -> 1.504e+03<br /><br /> 1.8901385E-16 ("0.0e+00") -> 1.9e-16|  
+|"\\"|이스케이프 문자|뒤에 오는 문자가 사용자 지정 형식 지정자가 아닌 리터럴로 해석되도록 합니다.<br /><br /> 추가 정보: ["\\"이스케이프 문자](#SpecifierEscape).|987654 ("\\###00\\#") -> #987654#|  
+|'*string*'<br /><br /> "*string*"|리터럴 문자열 구분 기호|괄호로 묶인 문자가 변경되지 않은 상태로 결과 문자열에 복사되어야 함을 나타냅니다.<br/><br/>추가 정보: [문자 리터럴](#character-literals).|68 (“# ‘degrees’”) -> 68 degrees<br /><br /> 68 ("#' degrees'") -> 68 degrees|  
+|;|섹션 구분 기호|양수, 음수 및 0에 따라 별도의 서식 문자열을 사용하여 섹션을 정의합니다.<br /><br /> 추가 정보: [";" 섹션 구분 기호](#SectionSeparator).|12.345 ("#0.0#;(#0.0#);-\0-") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#);-\0-") -> -0-<br /><br /> -12.345 ("#0.0#;(#0.0#);-\0-") -> (12.35)<br /><br /> 12.345 ("#0.0#;(#0.0#)") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#)") -> 0.0<br /><br /> -12.345 ("#0.0#;(#0.0#)") -> (12.35)|  
+|기타|다른 모든 문자|문자가 변경되지 않은 상태로 결과 문자열에 복사됩니다.<br/><br/>추가 정보: [문자 리터럴](#character-literals).|68 ("# °") -> 68 °|  
   
  다음 단원에서는 각 사용자 지정 숫자 서식 지정자에 대해 자세히 설명합니다.  
 
@@ -109,7 +109,7 @@ ms.locfileid: "47205069"
 ## <a name="the--custom-specifier"></a>"," 사용자 지정 지정자  
  "," 문자는 그룹 구분 기호 지정자와 숫자 배율 지정자로 사용됩니다.  
   
--   그룹 구분 기호 지정자: 두 개의 10진수 자리 표시자(0 또는 #) 사이에 정수 계열 자릿수의 서식을 지정하는 하나 이상의 쉼표 문자가 지정된 경우 정수 계열 출력 부분의 각 숫자 그룹 사이에 그룹 구분 문자가 삽입됩니다.  
+-   그룹 구분 기호: 두 개의 10진수 자리 표시자(0 또는 #) 사이에 정수 계열 자릿수의 서식을 지정하는 하나 이상의 쉼표 문자가 지정된 경우 정수 계열 출력 부분의 각 숫자 그룹 사이에 그룹 구분 문자가 삽입됩니다.  
   
      현재 <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A> 개체의 <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> 및 <xref:System.Globalization.NumberFormatInfo> 속성은 숫자 그룹 구분 기호로 사용되는 문자와 각 숫자 그룹의 크기를 결정합니다. 예를 들어, 문자열 "#,#"과 고정 문화권을 사용하여 숫자 1000의 서식을 지정할 경우 "1,000"이 출력됩니다.  
   
@@ -255,7 +255,7 @@ ms.locfileid: "47205069"
  [표로 이동](#table)  
   
 <a name="example"></a>   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 두 개의 사용자 지정 숫자 서식 문자열을 보여 줍니다. 두 경우 모두에서 숫자 자리 표시자(`#`)는 숫자 데이터를 표시하며, 다른 모든 문자는 결과 문자열에 복사됩니다.  
   
  [!code-cpp[Formatting.Numeric.Custom#10](../../../samples/snippets/cpp/VS_Snippets_CLR/formatting.numeric.custom/cpp/example1.cpp#10)]
@@ -266,8 +266,8 @@ ms.locfileid: "47205069"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType>  
-- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
-- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
-- [방법: 숫자 앞에 0으로 채우기](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
+- <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType>
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)
+- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
+- [방법: 숫자 앞에 0으로 채우기](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
 - [샘플: .NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

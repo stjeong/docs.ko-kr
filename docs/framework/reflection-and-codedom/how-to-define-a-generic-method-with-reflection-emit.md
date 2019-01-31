@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 49531945b073a909ba49b2b0865b96f9658fba50
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9c0b6ee6fc789b2586d76b5ec8f10815e543e1d3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596861"
 ---
 # <a name="how-to-define-a-generic-method-with-reflection-emit"></a>방법: 리플렉션 내보내기를 사용하여 제네릭 메서드 정의
 첫 번째 절차에서는 두 개의 형식 매개 변수가 있는 간단한 제네릭 메서드를 만드는 방법 및 형식 매개 변수에 클래스 제약 조건, 인터페이스 제약 조건 및 특수 제약 조건을 적용하는 방법을 보여 줍니다.  
@@ -117,7 +117,7 @@ ms.locfileid: "33396807"
   
 6.  루프에 대한 코드를 내보냅니다. 첫 번째 단계는 `loopAgain` 레이블로 <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>을 호출하여 루프 맨 위를 표시하는 것입니다. 이제 레이블을 사용하는 분기 문이 코드의 이 지점으로 분기됩니다. 다음 단계는 `ICollection(Of TInput)`으로 캐스팅된 `TOutput` 개체를 스택에 푸시하는 것입니다. 즉시 필요하지는 않지만 `Add` 메서드를 호출하려면 제자리에 있어야 합니다. 그다음 입력 배열이 스택에 푸시되고 현재 인덱스를 포함하는 `index` 변수가 배열에 푸시됩니다. <xref:System.Reflection.Emit.OpCodes.Ldelem> opcode는 스택에서 인덱스 및 배열을 팝하고 인덱싱된 배열 요소를 스택에 푸시합니다. 이제 스택이 <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType> 메서드를 호출할 준비가 되었습니다. 컬렉션과 새 요소가 스택에서 팝되고 컬렉션에 요소가 추가됩니다.  
   
-     루프의 나머지 코드는 인덱스를 증가하고 테스트하여 루프가 완료되었는지 여부를 확인합니다. 인덱스 및 32비트 정수 1이 스택에 푸시되고 더해져서 스택에 합계가 남고 `index`에 저장됩니다. <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>이 호출되어 이 지점을 루프에 대한 진입점으로 설정합니다. 인덱스가 다시 로드됩니다. 입력 배열이 스택에 푸시되고 해당 길이를 가져오기 위해 <xref:System.Reflection.Emit.OpCodes.Ldlen>이 내보내집니다. 이제 인덱스 및 길이가 스택에 있으며 비교를 위해 <xref:System.Reflection.Emit.OpCodes.Clt>가 내보내집니다. 인덱스가 길이보다 작으면 <xref:System.Reflection.Emit.OpCodes.Brtrue_S>가 루프의 시작 부분으로 다시 분기됩니다.  
+     루프의 나머지 코드는 인덱스 및 테스트를 증가시켜 루프가 완료되었는지 여부를 확인합니다. 인덱스와 32비트 정수 1이 스택에 푸시되고 추가되어 스택에 합계가 남습니다. 합계는 `index`에 저장됩니다. <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>이 호출되어 이 지점을 루프에 대한 진입점으로 설정합니다. 인덱스가 다시 로드됩니다. 입력 배열이 스택에 푸시되고 해당 길이를 가져오기 위해 <xref:System.Reflection.Emit.OpCodes.Ldlen>이 내보내집니다. 이제 인덱스 및 길이가 스택에 있으며 비교를 위해 <xref:System.Reflection.Emit.OpCodes.Clt>가 내보내집니다. 인덱스가 길이보다 작으면 <xref:System.Reflection.Emit.OpCodes.Brtrue_S>가 루프의 시작 부분으로 다시 분기됩니다.  
   
      [!code-csharp[GenericMethodHowTo#13](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#13)]
      [!code-vb[GenericMethodHowTo#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#13)]  
@@ -147,7 +147,7 @@ ms.locfileid: "33396807"
   
 4.  저장된 어셈블리를 참조하는 프로그램에서 내보낸 메서드를 호출할 수도 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 제네릭 메서드 `Factory`를 사용하여 제네릭이 아닌 형식 `DemoType`을 만듭니다. 이 메서드에는 두 개의 제네릭 형식 매개 변수가 있습니다. `TInput`은 입력 형식을 지정하고 `TOutput`은 출력 형식을 지정합니다. `TOutput` 형식 매개 변수는 `ICollection<TInput>`(Visual Basic에서는 `ICollection(Of TInput)`)을 매개 변수가 없는 생성자를 갖는 참조 형식으로 구현하도록 제한됩니다.  
   
  메서드에는 `TInput` 배열인 하나의 공식 매개 변수가 있습니다. 메서드는 입력 배열의 모든 요소를 포함하는 `TOutput` 인스턴스를 반환합니다. `TOutput`은 <xref:System.Collections.Generic.ICollection%601> 제네릭 인터페이스를 구현하는 제네릭 컬렉션 형식일 수 있습니다.  
@@ -168,8 +168,8 @@ ms.locfileid: "33396807"
   
 -   추가 어셈블리 참조는 필요하지 않습니다.  
   
--   csc.exe, vbc.exe 또는 cl.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 콘솔 응용 프로그램 프로젝트 템플릿에 배치합니다.  
+-   csc.exe, vbc.exe 또는 cl.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 콘솔 애플리케이션 프로젝트 템플릿에 배치합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.Emit.MethodBuilder>  
- [방법: 리플렉션 내보내기를 사용하여 제네릭 형식 정의](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)
+## <a name="see-also"></a>참고 항목
+- <xref:System.Reflection.Emit.MethodBuilder>
+- [방법: 리플렉션 내보내기를 사용하여 제네릭 형식 정의](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)

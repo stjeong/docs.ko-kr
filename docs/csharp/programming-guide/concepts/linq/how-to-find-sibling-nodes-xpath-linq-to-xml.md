@@ -2,12 +2,12 @@
 title: '방법: 형제 노드 찾기(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
-ms.openlocfilehash: e10b23c311e4e7debf228c01c898f3582e2ac8d4
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: b71bf1123461e4b0c0db5024eac3330bcf666ecc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646765"
 ---
 # <a name="how-to-find-sibling-nodes-xpath-linq-to-xml-c"></a>방법: 형제 노드 찾기(XPath 및 LINQ to XML)(C#)
 특정 이름을 가진 노드의 형제를 모두 찾으려고 할 수 있습니다. 컨텍스트 노드도 해당 이름을 가진 경우 생성되는 컬렉션에 컨텍스트 노드가 포함될 수 있습니다.  
@@ -16,10 +16,10 @@ ms.locfileid: "43865360"
   
  `../Book`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 먼저 `Book` 요소를 찾은 다음 `Book`이라는 모든 형제 요소를 찾습니다. 생성되는 컬렉션에는 컨텍스트 노드가 포함됩니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: Books(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md)를 사용합니다.  
+ 이 예제에서는 XML 문서로을 사용합니다. [샘플 XML 파일: Books(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  

@@ -2,12 +2,12 @@
 title: '방법: 여러 소스로 개체 컬렉션 채우기(LINQ)(C#)'
 ms.date: 06/12/2018
 ms.assetid: 8ad7d480-b46c-4ccc-8c57-76f2d04ccc6d
-ms.openlocfilehash: 377b4a21c78be2b53d2bcd0e88d39d06609c462b
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: a40ff5ddcf606b0de8a1f41d96523526dc849462
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44216095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54571339"
 ---
 # <a name="how-to-populate-object-collections-from-multiple-sources-linq-c"></a>방법: 여러 소스로 개체 컬렉션 채우기(LINQ)(C#)
 
@@ -20,7 +20,7 @@ ms.locfileid: "44216095"
 
 [방법: 서로 다른 파일의 콘텐츠 조인(LINQ)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)에 설명된 대로 names.csv 및 scores.csv 파일을 해당 프로젝트 폴더에 복사합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 명명된 형식 `Student`를 사용하여 스프레드시트 데이터를 시뮬레이트하는 두 개의 메모리 내 문자열 컬렉션의 병합된 데이터를 .csv 형식으로 저장하는 방법을 보여 줍니다. 첫 번째 문자열 컬렉션은 학생 이름과 ID를 나타내고, 두 번째 컬렉션은 학생 ID(첫 번째 열)와 4개의 시험 점수를 나타냅니다. ID는 외래 키로 사용됩니다.
 
@@ -149,6 +149,6 @@ foreach (var student in queryNamesScores2)
 
 ## <a name="see-also"></a>참고 항목
 
-- [LINQ 및 문자열(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)  
-- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [익명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ 및 문자열(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [익명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

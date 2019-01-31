@@ -2,12 +2,12 @@
 title: '방법: 요소의 단순 값 검색(C#)'
 ms.date: 07/20/2015
 ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
-ms.openlocfilehash: 2555b2f17120e4dce670a9fef9fc6a126a47e935
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 593fe1c22664f1e4e8322cb8816e58f4721c5bf8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50180653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672838"
 ---
 # <a name="how-to-retrieve-the-shallow-value-of-an-element-c"></a>방법: 요소의 단순 값 검색(C#)
 이 항목에서는 요소의 부분 값을 가져오는 방법을 보여 줍니다. 단일 문자열로 연결된 모든 하위 요소의 값을 포함하는 상세 값과 달리 부분 값은 특정 요소의 값입니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "50180653"
   
  다음 예제에서는 요소의 부분 값을 검색하는 확장 메서드를 선언합니다. 그런 다음 쿼리에 해당 확장명 메서드를 사용하여 계산된 값을 포함하는 모든 요소를 나열합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  아래에 있는 Report.xml 텍스트 파일은 이 예제의 소스입니다.  
   
 ```xml  

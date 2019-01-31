@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 40b98e01d6c34fb01a1f508f2ea52309f2f7938b
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 4b1a72a2b2443b419ea4f4b036664fb5f8932096
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45989523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554246"
 ---
 # <a name="how-to-handle-exceptions-in-a-plinq-query"></a>방법: PLINQ 쿼리의 예외 처리
 이 항목의 첫 번째 예제에서는 실행될 때 PLINQ 쿼리에서 throw될 수 있는 <xref:System.AggregateException?displayProperty=nameWithType>을 처리하는 방법을 보여줍니다. 두 번째 예제에서는 대리자 내에서 예외가 throw될 위치에 가능한 한 가깝게 try-catch 블록을 넣는 방법을 보여줍니다. 이 방법으로 예외가 발생한 즉시 예외를 catch하고 쿼리 실행을 계속할 수 있습니다. 예외가 가입된 스레드로 다시 버블 업될 수 있는 경우 예외가 발생한 후에도 쿼리에서 일부 항목을 계속 처리할 수 있습니다.  
@@ -27,15 +27,15 @@ ms.locfileid: "45989523"
 >   
 >  이 예제는 사용법을 보여 주기 위한 것이며, 동일한 순차 LINQ to Objects 쿼리보다 빠르게 실행되지 않을 수도 있습니다. 속도 향상에 대한 자세한 내용은 [PLINQ의 속도 향상 이해](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제는 throw된 <xref:System.AggregateException?displayProperty=nameWithType>을 catch하는 쿼리를 실행하는 코드 주위에 try-catch 블록을 넣는 방법을 보여줍니다.  
   
  [!code-csharp[PLINQ#41](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#41)]
  [!code-vb[PLINQ#41](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinqsnippets1.vb#41)]  
   
- 이 예제에서는 예외가 throw된 후 쿼리를 계속할 수 없습니다. 응용 프로그램 코드가 예외를 catch할 때까지 PLINQ가 모든 스레드에서 쿼리를 이미 중지했습니다.  
+ 이 예제에서는 예외가 throw된 후 쿼리를 계속할 수 없습니다. 애플리케이션 코드가 예외를 catch할 때까지 PLINQ가 모든 스레드에서 쿼리를 이미 중지했습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제는 예외를 catch하고 쿼리 실행을 계속할 수 있도록 대리자에 try-catch 블록을 넣는 방법을 보여줍니다.  
   
  [!code-csharp[PLINQ#42](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#42)]
@@ -50,5 +50,5 @@ ms.locfileid: "45989523"
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Linq.ParallelEnumerable>  
+- <xref:System.Linq.ParallelEnumerable>
 - [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

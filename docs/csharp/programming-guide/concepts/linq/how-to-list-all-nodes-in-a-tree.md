@@ -2,19 +2,19 @@
 title: '방법: 트리의 모든 노드 나열(C#)'
 ms.date: 07/20/2015
 ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
-ms.openlocfilehash: e014de90935830df3ea5454dcd4d5a840f4d04ad
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 90c92e8390f75e7b7e2c63d809d8a0aca34e2fd0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744481"
 ---
 # <a name="how-to-list-all-nodes-in-a-tree-c"></a>방법: 트리의 모든 노드 나열(C#)
 경우에 따라 트리의 모든 노드를 나열하는 것이 유용합니다. 이것은 메서드나 속성이 트리에 미치는 영향을 정확히 확인할 때 유용할 수 있습니다. 텍스트 형식으로 모든 노드를 나열하는 한 가지 방법은 트리의 노드를 정확하고 특정하게 식별하는 XPath 식을 생성하는 것입니다.  
   
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 XPath 식을 실행하는 것은 특히 유용하지 않습니다. XPath 식은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리보다 성능이 낮으며 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리가 훨씬 더 강력합니다. 그러나 XML 트리의 노드를 식별하는 방법으로 XPath는 효과적으로 작동합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 XML 트리의 노드에 대한 특정 XPath 식을 생성하는 `GetXPath`라는 함수를 보여 줍니다. 이 함수는 노드가 네임스페이스에 있는 경우에도 적절한 XPath 식을 생성합니다. XPath 식은 네임스페이스 접두사를 사용하여 생성됩니다.  
   
  그런 다음 이 예제에서는 몇 가지 형식의 노드 예가 포함된 작은 XML 트리를 만든 후 하위 노드를 반복하고 각 노드에 대한 XPath 식을 출력합니다.  

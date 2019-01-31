@@ -5,20 +5,20 @@ helpviewer_keywords:
 - My.Application.Log object, walkthroughs
 - event logs, changing output location
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
-ms.openlocfilehash: ab46f192f2e9549d0568737236742a366ce7b3a0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b0d9e40f3f41eac5b16037a89a3cac45cbfc8c57
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574447"
 ---
 # <a name="walkthrough-changing-where-myapplicationlog-writes-information-visual-basic"></a>연습: My.Application.Log가 정보를 기록하는 위치 변경(Visual Basic)
-`My.Application.Log` 및 `My.Log` 개체를 사용하여 응용 프로그램에서 발생하는 이벤트에 대한 정보를 기록할 수 있습니다. 이 연습에서는 기본 설정을 재정의하고 `Log` 개체가 다른 로그 수신기에 쓰도록 만드는 방법을 보여 줍니다.  
+`My.Application.Log` 및 `My.Log` 개체를 사용하여 애플리케이션에서 발생하는 이벤트에 대한 정보를 기록할 수 있습니다. 이 연습에서는 기본 설정을 재정의하고 `Log` 개체가 다른 로그 수신기에 쓰도록 만드는 방법을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  `Log` 개체는 여러 로그 수신기에 정보를 쓸 수 있습니다. 구성을 변경하기 전에 로그 수신기의 현재 구성을 확인해야 합니다. 자세한 내용은 [연습: My.Application.Log가 정보를 기록하는 위치 확인](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)을 참조하세요.  
   
- [방법: 텍스트 파일에 이벤트 정보 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md) 또는 [방법: 응용 프로그램 이벤트 로그에 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)도 검토할 수 있습니다.  
+ [방법: 텍스트 파일에 이벤트 정보 작성](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md) 또는 [방법: 애플리케이션 이벤트 로그에 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)를 검토할 수도 있습니다.  
   
 ### <a name="to-add-listeners"></a>수신기를 추가하려면  
   
@@ -30,7 +30,7 @@ ms.locfileid: "33592212"
   
     1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
-    2.  **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**을 선택합니다.  
+    2.  **새 항목 추가** 대화 상자에서 **애플리케이션 구성 파일**을 선택합니다.  
   
     3.  **추가**를 클릭합니다.  
   
@@ -163,9 +163,9 @@ ms.locfileid: "33592212"
   
      다른 형식의 로그 수신기가 정보를 쓰는 위치에 대한 자세한 내용은 해당 형식의 설명서를 참조하세요.  
   
-3.  응용 프로그램에서는 로그 수신기 개체를 만들 때 `initializeData` 특성을 생성자 매개 변수로 전달합니다. `initializeData` 특성의 의미는 추적 수신기에 따라 달라집니다.  
+3.  애플리케이션에서는 로그 수신기 개체를 만들 때 `initializeData` 특성을 생성자 매개 변수로 전달합니다. `initializeData` 특성의 의미는 추적 수신기에 따라 달라집니다.  
   
-4.  로그 수신기를 만든 후 응용 프로그램에서는 수신기의 속성을 설정합니다. 이들 속성은 `<add>` 요소의 다른 특성에 의해 정의됩니다. 특정 수신기의 속성에 대한 자세한 내용은 해당 수신기 형식의 설명서를 참조하세요.  
+4.  로그 수신기를 만든 후 애플리케이션에서는 수신기의 속성을 설정합니다. 이들 속성은 `<add>` 요소의 다른 특성에 의해 정의됩니다. 특정 수신기의 속성에 대한 자세한 내용은 해당 수신기 형식의 설명서를 참조하세요.  
   
 ### <a name="to-reference-a-strongly-named-type"></a>강력한 이름의 형식을 참조하려면  
   
@@ -181,10 +181,10 @@ ms.locfileid: "33592212"
   
      `Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>  
- <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>  
- [방법: 텍스트 파일에 이벤트 정보 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)  
- [방법: 응용 프로그램 이벤트 로그에 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)
+## <a name="see-also"></a>참고 항목
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>
+- <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>
+- [방법: 텍스트 파일에 이벤트 정보 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)
+- [방법: 애플리케이션 이벤트 로그에 쓰기](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)
