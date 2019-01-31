@@ -1,25 +1,25 @@
 ---
-title: '&lt;connectionPoolSettings&gt;'
+title: <connectionPoolSettings>
 ms.date: 03/30/2017
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
-ms.openlocfilehash: 1e3001f60ae0f18fee88678cae1e9e55d90822c9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 76b8a0feaf51b39c9c988d853db7e3bf96244905
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54526767"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55284585"
 ---
-# <a name="ltconnectionpoolsettingsgt"></a><span data-ttu-id="930de-102">&lt;connectionPoolSettings&gt;</span><span class="sxs-lookup"><span data-stu-id="930de-102">&lt;connectionPoolSettings&gt;</span></span>
-<span data-ttu-id="930de-103">명명된 파이프 바인딩의 추가 연결 풀 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-103">Specifies additional connection pool settings for a Named Pipe binding.</span></span>  
+# <a name="connectionpoolsettings"></a><span data-ttu-id="2ddc2-101">\<connectionPoolSettings></span><span class="sxs-lookup"><span data-stu-id="2ddc2-101">\<connectionPoolSettings></span></span>
+<span data-ttu-id="2ddc2-102">명명된 파이프 바인딩의 추가 연결 풀 설정을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-102">Specifies additional connection pool settings for a Named Pipe binding.</span></span>  
   
- <span data-ttu-id="930de-104">\<system.serviceModel></span><span class="sxs-lookup"><span data-stu-id="930de-104">\<system.serviceModel></span></span>  
-<span data-ttu-id="930de-105">\<bindings></span><span class="sxs-lookup"><span data-stu-id="930de-105">\<bindings></span></span>  
-<span data-ttu-id="930de-106">\<customBinding></span><span class="sxs-lookup"><span data-stu-id="930de-106">\<customBinding></span></span>  
-<span data-ttu-id="930de-107">\<binding></span><span class="sxs-lookup"><span data-stu-id="930de-107">\<binding></span></span>  
-<span data-ttu-id="930de-108">\<namePipeTransport></span><span class="sxs-lookup"><span data-stu-id="930de-108">\<namePipeTransport></span></span>  
-<span data-ttu-id="930de-109">\<connectionPoolSettings></span><span class="sxs-lookup"><span data-stu-id="930de-109">\<connectionPoolSettings></span></span>  
+ <span data-ttu-id="2ddc2-103">\<system.serviceModel></span><span class="sxs-lookup"><span data-stu-id="2ddc2-103">\<system.serviceModel></span></span>  
+<span data-ttu-id="2ddc2-104">\<bindings></span><span class="sxs-lookup"><span data-stu-id="2ddc2-104">\<bindings></span></span>  
+<span data-ttu-id="2ddc2-105">\<customBinding></span><span class="sxs-lookup"><span data-stu-id="2ddc2-105">\<customBinding></span></span>  
+<span data-ttu-id="2ddc2-106">\<binding></span><span class="sxs-lookup"><span data-stu-id="2ddc2-106">\<binding></span></span>  
+<span data-ttu-id="2ddc2-107">\<namePipeTransport></span><span class="sxs-lookup"><span data-stu-id="2ddc2-107">\<namePipeTransport></span></span>  
+<span data-ttu-id="2ddc2-108">\<connectionPoolSettings></span><span class="sxs-lookup"><span data-stu-id="2ddc2-108">\<connectionPoolSettings></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="930de-110">구문</span><span class="sxs-lookup"><span data-stu-id="930de-110">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2ddc2-109">구문</span><span class="sxs-lookup"><span data-stu-id="2ddc2-109">Syntax</span></span>  
   
 ```xml  
 <connectionPoolSettings groupName="String"
@@ -27,35 +27,35 @@ ms.locfileid: "54526767"
                         maxOutboundConnectionsPerEndpopint="Integer" />
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="930de-111">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="930de-111">Attributes and Elements</span></span>  
- <span data-ttu-id="930de-112">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-112">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="2ddc2-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="2ddc2-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="2ddc2-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="930de-113">특성</span><span class="sxs-lookup"><span data-stu-id="930de-113">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="2ddc2-112">특성</span><span class="sxs-lookup"><span data-stu-id="2ddc2-112">Attributes</span></span>  
   
-|<span data-ttu-id="930de-114">특성</span><span class="sxs-lookup"><span data-stu-id="930de-114">Attribute</span></span>|<span data-ttu-id="930de-115">설명</span><span class="sxs-lookup"><span data-stu-id="930de-115">Description</span></span>|  
+|<span data-ttu-id="2ddc2-113">특성</span><span class="sxs-lookup"><span data-stu-id="2ddc2-113">Attribute</span></span>|<span data-ttu-id="2ddc2-114">설명</span><span class="sxs-lookup"><span data-stu-id="2ddc2-114">Description</span></span>|  
 |---------------|-----------------|  
-|`groupName`|<span data-ttu-id="930de-116">나가는 채널에 사용되는 연결 풀의 이름을 정의하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-116">A string that defines the name of the connection pool used for outgoing channels.</span></span> <span data-ttu-id="930de-117">스트리밍 모드에서는 연결이 공유되지 않습니다. 즉 연결 풀링이 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="930de-117">In streamed mode, connections are not shared, meaning that connection pooling is disabled.</span></span> <span data-ttu-id="930de-118">기본값은 "default" 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-118">The default is a "default" string.</span></span> <span data-ttu-id="930de-119">이 값을 수정하여 특정 클라이언트의 연결을 별도의 그룹으로 격리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="930de-119">You can modify this value to isolate the connections for a particular client into separate groups.</span></span>|  
-|`idleTimeout`|<span data-ttu-id="930de-120">연결이 끊어지기 전에 유휴 상태를 유지할 수 있는 최대 시간을 지정하는 <xref:System.TimeSpan>(양수)입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-120">A positive <xref:System.TimeSpan> that specifies the maximum time the connection can be idle before being disconnected.</span></span> <span data-ttu-id="930de-121">기본값은 00:02:00입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-121">The default is 00:02:00.</span></span>|  
-|`maxOutboundConnectionsPerEndpoint`|<span data-ttu-id="930de-122">서비스에서 시작된 원격 끝점과의 최대 연결 수를 지정하는 양의 정수 값입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-122">A positive integer that specifies the maximum number of connections to a remote endpoint initiated by the service.</span></span> <span data-ttu-id="930de-123">이 제한을 초과하는 연결은 채널 수가 제한 아래로 내려갈 때까지 큐에 대기됩니다.</span><span class="sxs-lookup"><span data-stu-id="930de-123">Connections in excess of the limit are queued until a space below the limit becomes available.</span></span> <span data-ttu-id="930de-124">`idleTimeout`은 예외가 throw되기 전에 연결이 큐에 대기할 수 있는 시간을 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-124">The `idleTimeout` limits the duration in which connections remain queued before an exception is thrown.</span></span> <span data-ttu-id="930de-125">기본값은 10입니다.</span><span class="sxs-lookup"><span data-stu-id="930de-125">The default is 10.</span></span><br /><br /> <span data-ttu-id="930de-126">이 특성은 클라이언트에서 특정 서비스 끝점으로의 동시 활성 연결 수를 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-126">This attribute limits the number of simultaneous active connections from the client to a particular service endpoint.</span></span> <span data-ttu-id="930de-127">활성 클라이언트 연결 수가 이 값을 초과할 경우 해당 서비스가 클라이언트에 응답하지 않는 것처럼 보일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="930de-127">If this value is exceeded by having more active client connections, the service may appear unresponsive to the client.</span></span> <span data-ttu-id="930de-128">이러한 경우 이 값을 특정 엔드포인트에 대해 예상되는 동시 클라이언트 최대 연결 수보다 크게 조정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-128">In this case, this value should be adjusted to exceed the maximum number of expected simultaneous client connections to a specific endpoint.</span></span>|  
+|`groupName`|<span data-ttu-id="2ddc2-115">나가는 채널에 사용되는 연결 풀의 이름을 정의하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-115">A string that defines the name of the connection pool used for outgoing channels.</span></span> <span data-ttu-id="2ddc2-116">스트리밍 모드에서는 연결이 공유되지 않습니다. 즉 연결 풀링이 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-116">In streamed mode, connections are not shared, meaning that connection pooling is disabled.</span></span> <span data-ttu-id="2ddc2-117">기본값은 "default" 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-117">The default is a "default" string.</span></span> <span data-ttu-id="2ddc2-118">이 값을 수정하여 특정 클라이언트의 연결을 별도의 그룹으로 격리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-118">You can modify this value to isolate the connections for a particular client into separate groups.</span></span>|  
+|`idleTimeout`|<span data-ttu-id="2ddc2-119">연결이 끊어지기 전에 유휴 상태를 유지할 수 있는 최대 시간을 지정하는 <xref:System.TimeSpan>(양수)입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-119">A positive <xref:System.TimeSpan> that specifies the maximum time the connection can be idle before being disconnected.</span></span> <span data-ttu-id="2ddc2-120">기본값은 00:02:00입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-120">The default is 00:02:00.</span></span>|  
+|`maxOutboundConnectionsPerEndpoint`|<span data-ttu-id="2ddc2-121">서비스에서 시작된 원격 끝점과의 최대 연결 수를 지정하는 양의 정수 값입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-121">A positive integer that specifies the maximum number of connections to a remote endpoint initiated by the service.</span></span> <span data-ttu-id="2ddc2-122">이 제한을 초과하는 연결은 채널 수가 제한 아래로 내려갈 때까지 큐에 대기됩니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-122">Connections in excess of the limit are queued until a space below the limit becomes available.</span></span> <span data-ttu-id="2ddc2-123">`idleTimeout`은 예외가 throw되기 전에 연결이 큐에 대기할 수 있는 시간을 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-123">The `idleTimeout` limits the duration in which connections remain queued before an exception is thrown.</span></span> <span data-ttu-id="2ddc2-124">기본값은 10입니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-124">The default is 10.</span></span><br /><br /> <span data-ttu-id="2ddc2-125">이 특성은 클라이언트에서 특정 서비스 끝점으로의 동시 활성 연결 수를 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-125">This attribute limits the number of simultaneous active connections from the client to a particular service endpoint.</span></span> <span data-ttu-id="2ddc2-126">활성 클라이언트 연결 수가 이 값을 초과할 경우 해당 서비스가 클라이언트에 응답하지 않는 것처럼 보일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-126">If this value is exceeded by having more active client connections, the service may appear unresponsive to the client.</span></span> <span data-ttu-id="2ddc2-127">이러한 경우 이 값을 특정 엔드포인트에 대해 예상되는 동시 클라이언트 최대 연결 수보다 크게 조정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-127">In this case, this value should be adjusted to exceed the maximum number of expected simultaneous client connections to a specific endpoint.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="930de-129">자식 요소</span><span class="sxs-lookup"><span data-stu-id="930de-129">Child Elements</span></span>  
- <span data-ttu-id="930de-130">없음</span><span class="sxs-lookup"><span data-stu-id="930de-130">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="2ddc2-128">자식 요소</span><span class="sxs-lookup"><span data-stu-id="2ddc2-128">Child Elements</span></span>  
+ <span data-ttu-id="2ddc2-129">없음</span><span class="sxs-lookup"><span data-stu-id="2ddc2-129">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="930de-131">부모 요소</span><span class="sxs-lookup"><span data-stu-id="930de-131">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="2ddc2-130">부모 요소</span><span class="sxs-lookup"><span data-stu-id="2ddc2-130">Parent Elements</span></span>  
   
-|<span data-ttu-id="930de-132">요소</span><span class="sxs-lookup"><span data-stu-id="930de-132">Element</span></span>|<span data-ttu-id="930de-133">설명</span><span class="sxs-lookup"><span data-stu-id="930de-133">Description</span></span>|  
+|<span data-ttu-id="2ddc2-131">요소</span><span class="sxs-lookup"><span data-stu-id="2ddc2-131">Element</span></span>|<span data-ttu-id="2ddc2-132">설명</span><span class="sxs-lookup"><span data-stu-id="2ddc2-132">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="930de-134">\<namedPipeTransport></span><span class="sxs-lookup"><span data-stu-id="930de-134">\<namedPipeTransport></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/namedpipetransport.md)|<span data-ttu-id="930de-135">채널이 명명된 파이프를 사용하여 메시지를 전송하게 하는 전송을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="930de-135">Defines a transport that causes a channel to transfer messages using named pipes.</span></span>|  
+|[<span data-ttu-id="2ddc2-133">\<namedPipeTransport></span><span class="sxs-lookup"><span data-stu-id="2ddc2-133">\<namedPipeTransport></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/namedpipetransport.md)|<span data-ttu-id="2ddc2-134">채널이 명명된 파이프를 사용하여 메시지를 전송하게 하는 전송을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="2ddc2-134">Defines a transport that causes a channel to transfer messages using named pipes.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="930de-136">참고자료</span><span class="sxs-lookup"><span data-stu-id="930de-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ddc2-135">참고자료</span><span class="sxs-lookup"><span data-stu-id="2ddc2-135">See also</span></span>
 - <xref:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings%2A>
 - <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [<span data-ttu-id="930de-137">전송</span><span class="sxs-lookup"><span data-stu-id="930de-137">Transports</span></span>](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [<span data-ttu-id="930de-138">전송 선택</span><span class="sxs-lookup"><span data-stu-id="930de-138">Choosing a Transport</span></span>](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [<span data-ttu-id="930de-139">바인딩</span><span class="sxs-lookup"><span data-stu-id="930de-139">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)
-- [<span data-ttu-id="930de-140">바인딩 확장</span><span class="sxs-lookup"><span data-stu-id="930de-140">Extending Bindings</span></span>](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [<span data-ttu-id="930de-141">사용자 지정 바인딩</span><span class="sxs-lookup"><span data-stu-id="930de-141">Custom Bindings</span></span>](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [<span data-ttu-id="930de-142">\<customBinding></span><span class="sxs-lookup"><span data-stu-id="930de-142">\<customBinding></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [<span data-ttu-id="2ddc2-136">전송</span><span class="sxs-lookup"><span data-stu-id="2ddc2-136">Transports</span></span>](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [<span data-ttu-id="2ddc2-137">전송 선택</span><span class="sxs-lookup"><span data-stu-id="2ddc2-137">Choosing a Transport</span></span>](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [<span data-ttu-id="2ddc2-138">바인딩</span><span class="sxs-lookup"><span data-stu-id="2ddc2-138">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)
+- [<span data-ttu-id="2ddc2-139">바인딩 확장</span><span class="sxs-lookup"><span data-stu-id="2ddc2-139">Extending Bindings</span></span>](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [<span data-ttu-id="2ddc2-140">사용자 지정 바인딩</span><span class="sxs-lookup"><span data-stu-id="2ddc2-140">Custom Bindings</span></span>](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [<span data-ttu-id="2ddc2-141">\<customBinding></span><span class="sxs-lookup"><span data-stu-id="2ddc2-141">\<customBinding></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
