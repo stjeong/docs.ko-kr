@@ -1,17 +1,17 @@
 ---
-title: '&lt;wsDualHttpBinding&gt;'
+title: <wsDualHttpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - wsDualHttpBinding Element
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
-ms.openlocfilehash: 3f4befab1945d985d517bc3385868b5f4ac18dc9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 724a141dfe9408c70f0290d177d53d7fbbbfaa57
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532385"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255450"
 ---
-# <a name="ltwsdualhttpbindinggt"></a>&lt;wsDualHttpBinding&gt;
+# <a name="wsdualhttpbinding"></a>\<wsDualHttpBinding>
 이중 서비스 계약 또는 SOAP 중간 매개자를 통한 통신에 사용할 수 있도록 보안이 유지되고 신뢰할 수 있으며 상호 운용할 수 있는 바인딩을 정의합니다.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: 이벤트 &#39; &lt;행사 이름 1&gt; &#39; 이벤트를 구현할 수 없습니다. &#39; &lt;eventname2&gt; &#39; 인터페이스 &#39; &lt;인터페이스&gt; &#39; 때문에 해당 대리자 형식 &#39; &lt;delegate1&gt; &#39; 및 &#39; &lt;delegate2&gt; &#39; 일치 하지 않습니다
+title: 대리자 형식 '<eventname1>'과(와) '<eventname2>'이(가) 일치하지 않으므로 '<interface>' 이벤트에서 '<delegate1>' 인터페이스에 대해 '<delegate2>' 이벤트를 구현할 수 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - vbc31423
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC31423
 ms.assetid: 2e754b66-5836-48ff-9697-b9c0d7085f18
-ms.openlocfilehash: 024e260f12d3497d64f26e59521f016ad439ebb6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3ec3e7bb2f28bf8c4dd38bc71e11193456860021
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54638214"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55272853"
 ---
-# <a name="event-39lteventname1gt39-cannot-implement-event-39lteventname2gt39-on-interface-39ltinterfacegt39-because-their-delegate-types-39ltdelegate1gt39-and-39ltdelegate2gt39-do-not-match"></a>이벤트 &#39; &lt;행사 이름 1&gt; &#39; 이벤트를 구현할 수 없습니다. &#39; &lt;eventname2&gt; &#39; 인터페이스 &#39; &lt;인터페이스&gt; &#39; 때문에 해당 대리자 형식 &#39; &lt;delegate1&gt; &#39; 및 &#39; &lt;delegate2&gt; &#39; 일치 하지 않습니다
+# <a name="event-eventname1-cannot-implement-event-eventname2-on-interface-interface-because-their-delegate-types-delegate1-and-delegate2-do-not-match"></a>이벤트 '\<행사 이름 1 >' 이벤트를 구현할 수 없습니다. '\<eventname2 >' 인터페이스의 '\<인터페이스 >' 때문에 해당 대리자 형식\<delegate1 >' 및 '\<delegate2 >' 일치 하지 않습니다
 이벤트의 대리자 형식과 인터페이스에서 이벤트의 대리자 형식과 일치 하지 않으므로 Visual Basic에서 이벤트를 구현할 수 없습니다. 이 오류는 인터페이스에서 여러 이벤트를 정의한 다음 동일한 이벤트로 함께 구현하려고 하는 경우에 발생할 수 있습니다. 구현된 모든 이벤트가 `As` 구문을 사용하여 선언되고 동일한 대리자 형식을 지정하는 경우에만 이벤트에서 둘 이상의 이벤트를 구현할 수 있습니다.  
   
  **오류 ID:** BC31423  

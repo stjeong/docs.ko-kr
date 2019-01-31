@@ -1,19 +1,19 @@
 ---
-title: 어셈블리를 지정&#39;위치
+title: 어셈블리 위치 지정
 ms.date: 03/30/2017
 helpviewer_keywords:
 - configuration [.NET Framework], applications
 - application configuration [.NET Framework]
 - assemblies [.NET Framework], specifying location
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-ms.openlocfilehash: 4b5d732eb669119e346c61dce29b579911798edf
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: b76537a347cdf30c65bfd6e56f274108e796a315
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083576"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258992"
 ---
-# <a name="specifying-an-assembly39s-location"></a>어셈블리를 지정&#39;위치
+# <a name="specifying-an-assemblys-location"></a>어셈블리 위치 지정
 두 가지 방법으로 어셈블리의 위치를 지정할 수 있습니다.  
   
 -   사용 하는 [ \<codeBase >](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) 요소입니다.  

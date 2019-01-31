@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0b191a01995b7c36d733b225672a3d79f488a276
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cedabbfff10b89f9755b14b963fd1d1a143cb0f0
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54531423"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204888"
 ---
 # <a name="regular-expression-language---quick-reference"></a>정규식 언어 - 빠른 참조
 <a name="top"></a> 정규식은 정규식 엔진이 입력 텍스트에서 찾으려고 하는 패턴입니다. 패턴은 하나 이상의 문자 리터럴, 연산자 또는 구문으로 구성됩니다.  간략하게 살펴보려면 [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)을 참조하세요.  
@@ -58,10 +58,10 @@ ms.locfileid: "54531423"
 |`\f`|용지 공급 문자인 \u000C를 찾습니다.|`[\f]{2,}`|"\f\f\f"의 "\f\f\f"|  
 |`\n`|줄 바꿈 문자인 \u000A를 찾습니다.|`\r\n(\w+)`|"\r\nThese are\ntwo lines."의 "\r\nThese"|  
 |`\e`|이스케이프 문자인 \u001B를 찾습니다.|`\e`|"\x001B"의 "\x001B"|  
-|`\` *nnn*|8진수 표현을 사용하여 문자를 지정합니다.*nnn* 은 두 자리 또는 세 자리로 구성됩니다.|`\w\040\w`|"a bc d"의<br /><br /> "a b", "c d"|  
-|`\x` *nn*|16진수 표현을 사용하여 문자를 지정합니다.*nn* 은 정확히 두 자리로 구성됩니다.|`\w\x20\w`|"a bc d"의<br /><br /> "a b", "c d"|  
+|`\` *nnn*|8진수 표현을 사용하여 문자를 지정합니다.*nnn* 은 두 자리 또는 세 자리로 구성됩니다.|`\w\040\w`|"a bc d"의 "a b", "c d"|  
+|`\x` *nn*|16진수 표현을 사용하여 문자를 지정합니다.*nn* 은 정확히 두 자리로 구성됩니다.|`\w\x20\w`|"a bc d"의 "a b", "c d"|  
 |`\c` *X*<br /><br /> `\c` *x*|*X* 또는 *x*로 지정한 ASCII 제어 문자를 찾습니다. 여기서 *X* 또는 *x* 는 제어 문자를 나타내는 문자입니다.|`\cC`|"\x0003"(Ctrl-C)의 "\x0003"|  
-|`\u` *nnnn*|16진수 표현(정확히 네 자리로 구성되는 *nnnn*)을 사용하여 유니코드 문자를 찾습니다.|`\w\u0020\w`|"a bc d"의<br /><br /> "a b", "c d"|  
+|`\u` *nnnn*|16진수 표현(정확히 네 자리로 구성되는 *nnnn*)을 사용하여 유니코드 문자를 찾습니다.|`\w\u0020\w`|"a bc d"의 "a b", "c d"|  
 |`\`|이 표나 이 항목의 다른 표에 있는 이스케이프된 문자로 인식되지 않는 문자가 뒤에 나올 경우 이 문자를 찾습니다. 예를 들어, `\*` 는 `\x2A`와 같고 `\.` 는 `\x2E`와 같습니다. 이를 통해 정규식 엔진이 언어 요소(예: \* 또는 ?)와 `\*` 또는 `\?`로 표현되는 문자 리터럴을 구분할 수 있습니다.|`\d+[\+-x\*]\d+`|“(2+2) \* 3\*9”의 “2+2” 및 “3\*9”|  
   
  [맨 위로 이동](#top)  
@@ -92,11 +92,11 @@ ms.locfileid: "54531423"
   
 |어설션|설명|무늬|요청 내용|  
 |---------------|-----------------|-------------|-------------|  
-|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-"의<br /><br /> "901"|  
-|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-333"의<br /><br /> "-901-333"|  
-|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-"의<br /><br /> "901"|  
-|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-333"의<br /><br /> "-901-333"|  
-|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-333"의<br /><br /> "-901-333"|  
+|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-333-"의 "901"|  
+|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-901-333"의 "-333"|  
+|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-333-"의 "901"|  
+|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-901-333"의 "-333"|  
+|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-901-333"의 "-333"|  
 |`\G`|일치 항목이 이전 일치 항목 찾기가 끝난 지점에 있어야 합니다.|`\G\(\d\)`|"(1)(3)(5)[7](9\)"의 "(1)", "(3)", "(5)"|  
 |`\b`|일치 항목이 `\w`(영숫자) 문자와 `\W`(영숫자가 아닌 문자) 문자 사이의 경계에 있어야 합니다.|`\b\w+\s\w+\b`|"them theme them them"의 "them theme", "them them"|  
 |`\B`|일치 항목이 `\b` 경계에 있어야 합니다.|`\Bend\w*\b`|"end sends endure lender"의 "ends", "ender"|  
@@ -218,7 +218,7 @@ ms.locfileid: "54531423"
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.Text.RegularExpressions?displayProperty=nameWithType>
-- <xref:System.Text.RegularExpressions.Regex>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
 - [정규식](regular-expressions.md)
 - [정규식 클래스](the-regular-expression-object-model.md)
 - [정규식 예제](regular-expression-examples.md)
