@@ -3,19 +3,19 @@ title: .NET 마이크로 서비스. 컨테이너화된 .NET 애플리케이션�
 description: 컨테이너화된 .NET 애플리케이션에 대한 .NET 마이크로 서비스 아키텍처 | 마이크로 서비스는 독립적으로 배포 가능한 모듈 형식 서비스입니다. (Linux 및 Windows용) Docker 컨테이너는서비스 및 해당 종속성을 단일 단위로 묶어서 배포 및 테스트를 간소화합니다. 그러면 격리된 환경에서 실행됩니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 08/31/2018
-ms.openlocfilehash: 52435c31e77e7139b982829ae4ab33a5e0f9f045
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.date: 01/07/2019
+ms.openlocfilehash: 6b75485d34b90b4807e82f629bbb05979add8eea
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030440"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479947"
 ---
 # <a name="net-microservices-architecture-for-containerized-net-applications"></a>.NET 마이크로 서비스: 컨테이너화된 .NET 애플리케이션을 위한 아키텍처
 
 ![책 표지](./media/cover-small.png)
 
-**EDITION v2.1.03** - ASP.NET Core 2.1로 업데이트되었습니다.
+**EDITION v2.2.00** - ASP.NET Core 2.2로 업데이트되었습니다.
 
 이 가이드는 마이크로 서비스 기반 애플리케이션을 개발하고 컨테이너를 사용하여 해당 애플리케이션을 관리하는 방법을 소개합니다. 또한 .NET Core 및 Docker 컨테이너를 사용하여 아키텍처를 설계 및 구현하는 방법에 대해 설명합니다. 
 
@@ -49,7 +49,7 @@ Windows 및 Linux 에코시스템에서 가장 중요한 공급업체가 지원�
 
 ## <a name="version"></a>버전
 
-이 가이드는 **.NET Core 2.1** 버전 및 .NET Core 2.1과 동시에 제공되는 동일한 기술 “웨이브”(즉, Azure 기술 및 타사의 추가 기술)에 관련된 여러 추가 업데이트를 다루도록 수정되었습니다. 이런 이유로 책 버전도 버전 **2.1**로 업데이트되었습니다. 
+이 가이드는 **.NET Core 2.2** 버전 및 .NET Core 2.2와 동시에 제공되는 동일한 기술 “웨이브”(즉, Azure 기술 및 타사의 추가 기술)에 관련된 여러 추가 업데이트를 다루도록 수정되었습니다. 이런 이유로 책 버전도 버전 **2.2**로 업데이트되었습니다. 
 
 ## <a name="what-this-guide-does-not-cover"></a>이 가이드에서 다루지 않는 내용
 
@@ -124,6 +124,8 @@ eShopOnContainers 애플리케이션은 Docker 컨테이너를 사용하여 배�
 >
 > **Scott Hunter**, 파트너 PM 책임자, Microsoft .NET 팀
 >
+> **Nish Anil**, 선임 프로그램 관리자, .NET 팀, Microsoft
+>
 > **Dylan Reisenberger**, 설계자 겸 개발자 리더, Polly
 >
 > **Steve Smith**, 소프트웨어 기술자 겸 교육 담당자, ASPSmith Ltd.
@@ -147,7 +149,6 @@ eShopOnContainers 애플리케이션은 Docker 컨테이너를 사용하여 배�
 > **Charles Lowell**, 소프트웨어 엔지니어, Microsoft VS CAT 팀
 >
 > **Miguel Veloso**, 선임 컨설턴트, Turing Challenge
-
 
 ## <a name="copyright"></a>Copyright
 
