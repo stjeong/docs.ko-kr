@@ -81,12 +81,12 @@ helpviewer_keywords:
 - rounding numbers [Visual Basic], banker's rounding
 - type conversion [Visual Basic], Visual Basic vs. .NET Framework
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
-ms.openlocfilehash: ea20569b207100886ddd4b40c8d4c86c55d5ddf1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: be5e1b5fff1feb8ef4cc2ff7fcbca193aafcd781
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54743545"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55674882"
 ---
 # <a name="type-conversion-functions-visual-basic"></a>형식 변환 함수(Visual Basic)
 이러한 함수는 변환 코드가 식을 계산 하는 코드의 일부인 즉 인라인으로 컴파일됩니다. 때때로 성능을 향상 시키는 변환을 수행 하는 프로시저에 대 한 호출이 있습니다. 각 함수는 식에서 특정 데이터 형식으로 강제 변환합니다.  
@@ -128,7 +128,7 @@ CUShort(expression)
 |`CDbl`|[Double 데이터 형식](../../../visual-basic/language-reference/data-types/double-data-type.md)|-1.79769313486231570 + 308에서-4.94065645841246544E-324 음수 값이 있습니다. 4.94065645841246544E-324 1.79769313486231570 e + 308 양수 값에 대 한 합니다.|  
 |`CDec`|[Decimal 데이터 형식](../../../visual-basic/language-reference/data-types/decimal-data-type.md)|+ /-79228162514264337593543950335-즉, 소수 자릿수가 없는 숫자입니다. 소수 자릿수가 28 숫자 범위는 + /-7.9228162514264337593543950335 사이입니다. 가장 작은 가능한 0이 아닌 숫자는 0.0000000000000000000000000001 (+ 1E-28).|  
 |`CInt`|[Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType> (-2147483648)부터 <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2147483647); 소수 부분이 반올림 됩니다.<sup> 1</sup> <br/><br/>Visual Basic 15.8부터 Visual Basic을 사용 하 여 정수 변환 부동 소수점의 성능을 최적화 합니다 `CInt` 함수를 참조 하세요 합니다 [주의](#remarks) 자세한 내용은 섹션입니다. 참조를 [CInt 예제](#cint-example) 섹션 예입니다. |  
-|`CLng`|[Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)|<xref:System.Int64.MaxValue?displayProperty=nameWithType> (-9223372036854775808)부터 <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9223372036854775807); 소수 부분이 반올림 됩니다.<sup> 1</sup><br/><br/>Visual Basic 15.8부터 Visual Basic을 사용 하 여 64 비트 정수로 변환 하는 부동 소수점의 성능을 최적화 합니다 `CLng` 함수를 참조 하세요 합니다 [주의](#remarks) 자세한 내용은 섹션입니다. 참조를 [CInt 예제](#cint-example) 섹션 예입니다.|  
+|`CLng`|[Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType> (-9223372036854775808)부터 <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9223372036854775807); 소수 부분이 반올림 됩니다.<sup> 1</sup><br/><br/>Visual Basic 15.8부터 Visual Basic을 사용 하 여 64 비트 정수로 변환 하는 부동 소수점의 성능을 최적화 합니다 `CLng` 함수를 참조 하세요 합니다 [주의](#remarks) 자세한 내용은 섹션입니다. 참조를 [CInt 예제](#cint-example) 섹션 예입니다.|  
 |`CObj`|[Object 데이터 형식](../../../visual-basic/language-reference/data-types/object-data-type.md)|모든 유효한 식입니다.|  
 |`CSByte`|[SByte 데이터 형식](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType> (-128)를 통해 <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); 소수 부분이 반올림 됩니다.<sup> 1</sup><br/><br/>Visual Basic 15.8부터 Visual Basic을 사용 하 여 부호 있는 바이트 변환 부동 소수점의 성능을 최적화 합니다 `CSByte` 함수를 참조 하세요 합니다 [주의](#remarks) 자세한 내용은 섹션입니다. 참조를 [CInt 예제](#cint-example) 섹션 예입니다.|  
 |`CShort`|[Short 데이터 형식](../../../visual-basic/language-reference/data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType> (-32768)부터 <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32767); 소수 부분이 반올림 됩니다.<sup> 1</sup><br/><br/>Visual Basic 15.8부터 Visual Basic을 사용 하 여 16 비트 정수로 변환 하는 부동 소수점의 성능을 최적화 합니다 `CShort` 함수를 참조 하세요 합니다 [주의](#remarks) 자세한 내용은 섹션입니다. 참조를 [CInt 예제](#cint-example) 섹션 예입니다.|  

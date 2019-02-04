@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ebb32a74f5413f9c927a84ababf2d60d20e0b024
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 7568129f30267b212737ec8aa688cf882e19bbff
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55269694"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675311"
 ---
 # <a name="loadfromremotesources-element"></a>\<loadFromRemoteSources > 요소
 지정 여부를 원격 원본에서 로드 된 어셈블리의.NET Framework 4 이상 완전 신뢰를 부여 해야 합니다.
   
 > [!NOTE]
->  이 항목에서는 Visual Studio 프로젝트 오류 목록 또는 빌드 오류가 오류 메시지로 인해 연결 된, 참조 [방법: 웹에서 어셈블리를 사용 하 여 Visual Studio에서](https://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070)합니다.  
+>  이 문서에서는 Visual Studio 프로젝트 오류 목록 또는 빌드 오류가 오류 메시지로 인해 연결 된, 참조 [방법: 웹에서 어셈블리를 사용 하 여 Visual Studio에서](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100))합니다.  
   
  \<configuration>  
 \<runtime>  

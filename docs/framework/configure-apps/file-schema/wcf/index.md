@@ -2,12 +2,12 @@
 title: WCF 구성 스키마
 ms.date: 03/30/2017
 ms.assetid: c282aeb5-91f0-4522-8e2f-704c1ef3651f
-ms.openlocfilehash: 11123d30138e8e1e763af0a01245e774dfba14f6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ae9e660ee5c4163487e953077df8782955f90ef5
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508904"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675363"
 ---
 # <a name="wcf-configuration-schema"></a>WCF 구성 스키마
 Windows Communication Foundation (WCF) 구성 요소를 사용 하 여 WCF 서비스 및 클라이언트 응용 프로그램을 구성할 수 있습니다. [구성 편집기 도구(SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)를 사용하여 클라이언트 및 서비스에 대한 구성 파일을 만들고 수정할 수 있습니다. 구성 파일은 XML 형식이므로 텍스트 편집기를 사용하여 구성 파일을 수동으로 편집하려면 XML에 익숙해야 합니다. 그렇지 않으면 찾을 수 없는 XML 요소 태그나 특성과 같은 문제가 발생할 수 있습니다. XML 요소 태그 및 속성이 대소문자를 구분하기 때문입니다.  
@@ -36,5 +36,5 @@ Windows Communication Foundation (WCF) 구성 요소를 사용 하 여 WCF 서�
  <xref:System.Runtime.Serialization.DataContractSerializer>와 같은 serializer를 사용하는 경우 옵션 설정의 최상위 요소입니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
+ [Windows Communication Foundation 응용 프로그램 구성](../../../wcf/configuring-services.md)  
  WCF 서비스 및 클라이언트를 구성 하는 방법을 설명 합니다.

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4289f013123796badcaedac2f89e1560397a0aa4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b6c0ead0715221354970ddee90e89bae7c583266
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54659006"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675428"
 ---
 # <a name="runtime-settings-schema"></a>런타임 설정 스키마
 런타임 설정은 공용 언어 런타임에서 .NET Framework를 대상으로 하는 애플리케이션을 구성하는 데 사용됩니다.  
@@ -133,5 +133,5 @@ ms.locfileid: "54659006"
   
 ## <a name="see-also"></a>참고자료
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)
+- [동시 가비지 수집을 사용 하지 않도록 설정](gcconcurrent-element.md#to-disable-background-garbage-collection)
 - [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

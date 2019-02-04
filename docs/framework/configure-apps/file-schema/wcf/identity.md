@@ -2,12 +2,12 @@
 title: <identity>
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: 336e8c4a4aae3565b8af7adaa73def453107ea93
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 5b5248f4cb8bdcd15b553fa14351013e78d422d9
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55274159"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675402"
 ---
 # <a name="identity"></a>\<identity>
 ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID를 디자인 타임에 지정할 수 있습니다. 클라이언트와 서비스 간의 핸드셰이크 프로세스에서 Windows Communication Foundation (WCF) 인프라는 되도록 예상 되는 서비스가이 요소의 값과 일치의 id 및 인증 될 수 있습니다. 자세한 내용은 [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
@@ -55,7 +55,8 @@ ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID
 |요소|설명|  
 |-------------|-----------------|  
 |[\<custom>](../../../../../docs/framework/configure-apps/file-schema/wcf/custom.md)|netPeerTcpBinding에 대한 사용자 지정 피어 확인자를 지정합니다.|  
-|[\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)|다양한 형식의 엔드포인트를 구성합니다.|  
+|[\<endpoint>](endpoint-element.md)|서비스 끝점을 구성합니다.|  
+|[\<끝점 >의 \<클라이언트 >](endpoint-of-client.md)|채널 끝점을 구성합니다.|  
 |[\<issuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuer.md)|페더레이션 서비스에 대한 STS(보안 토큰 서비스)를 지정합니다.|  
 |[\<issuerMetadata>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuermetadata.md)|페더레이션 서비스의 STS(보안 토큰 서비스)에 대한 메타데이터 엔드포인트를 지정합니다.|  
 |[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|사용자 지정 바인딩에서 발급된 토큰에 대한 매개 변수를 정의합니다.|  

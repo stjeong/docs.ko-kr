@@ -10,12 +10,12 @@ helpviewer_keywords:
 - compiler configuration attributes
 - compiler element
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
-ms.openlocfilehash: 704d9388a742b333efc3e888233bbf19b8e462c1
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 34753d538ff37ac4ae621f653d47ac92ac6749a0
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55286769"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55674466"
 ---
 # <a name="compiler-element"></a>\<컴파일러 > 요소
 
@@ -104,4 +104,4 @@ ms.locfileid: "55286769"
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [\<컴파일러 > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
 - [정규화된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
-- [컴파일 (ASP.NET 설정 스키마)에 대 한 컴파일러에 대 한 compiler 요소](https://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e(v=vs.100))
+- [컴파일 (ASP.NET 설정 스키마)에 대 한 컴파일러에 대 한 compiler 요소](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

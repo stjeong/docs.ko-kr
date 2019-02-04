@@ -8,12 +8,12 @@ helpviewer_keywords:
 - configuration element
 - container tags, <configuration> element
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-ms.openlocfilehash: 980eb93a66de51250ac190cd44cfd32769ef5b8e
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 9a7b25c74763c020c0e19c3f6099db9001acf773
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55284702"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675051"
 ---
 # <a name="configuration-element"></a>\<구성 > 요소
 
@@ -44,13 +44,13 @@ ms.locfileid: "55284702"
 | [**\<assemblyBinding>**](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md) | 구성 수준에서 어셈블리 바인딩 정책을 지정합니다.|
 | [**\<시작 >** 설정 스키마](~/docs/framework/configure-apps/file-schema/startup/index.md) | 시작 설정 스키마의 모든 요소입니다. |
 | [**\<런타임 >** 설정 스키마](~/docs/framework/configure-apps/file-schema/runtime/index.md) | 런타임 설정 스키마의 모든 요소입니다. |
-| [**\<system.runtime.remoting>** Settings Schema](https://msdn.microsoft.com/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e) | 원격 설정 스키마의 모든 요소입니다. |
+| [**\<system.runtime.remoting>** Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100)) | 원격 설정 스키마의 모든 요소입니다. |
 | [**\<system.Net>** Settings Schema](~/docs/framework/configure-apps/file-schema/network/index.md) | 네트워크 설정 스키마의 모든 요소입니다. |
 | [**\<cryptographySettings >** 설정 스키마](~/docs/framework/configure-apps/file-schema/cryptography/index.md) | 암호화 설정 스키마의 모든 요소입니다. |
 | [**\<구성 >** 섹션 스키마](~/docs/framework/configure-apps/file-schema/configuration-sections-schema.md) | 구성 섹션 설정 스키마의 모든 요소입니다. |
 | [추적 및 디버그 설정 스키마](~/docs/framework/configure-apps/file-schema/trace-debug/index.md) | 추적 및 디버그 설정 스키마의 모든 요소입니다. |
-| [ASP.NET 구성 설정 스키마](https://msdn.microsoft.com/library/b5ysx397(v=vs.100).aspx) | ASP.NET 웹 사이트 및 응용 프로그램을 구성 하기 위한 요소를 포함 하는 ASP.NET 구성 스키마의 모든 요소입니다. 레지스트리에 *Web.config* 파일입니다. |
-| [**\<webServices>** Settings Schema](https://msdn.microsoft.com/f84d6d55-1add-4eb7-ae46-33df5833ea2e) | 웹 서비스 설정 스키마의 모든 요소입니다. |
+| [ASP.NET 구성 설정 스키마](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)) | ASP.NET 웹 사이트 및 응용 프로그램을 구성 하기 위한 요소를 포함 하는 ASP.NET 구성 스키마의 모든 요소입니다. 레지스트리에 *Web.config* 파일입니다. |
+| [**\<webServices>** Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100)) | 웹 서비스 설정 스키마의 모든 요소입니다. |
 | [웹 설정 스키마](~/docs/framework/configure-apps/file-schema/web/index.md) | ASP.NET이 IIS와 같은 호스트 응용 프로그램과 함께 작동하는 방법을 구성하기 위한 요소를 비롯한 웹 설정 스키마의 모든 요소입니다. 레지스트리에 *aspnet.config* 파일입니다. |
 
 ## <a name="remarks"></a>설명

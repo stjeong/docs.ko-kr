@@ -2,12 +2,12 @@
 title: <certificate>의 <peer>
 ms.date: 03/30/2017
 ms.assetid: 48b69142-c957-4305-a042-c9d0c9a55c0e
-ms.openlocfilehash: 5c70355d35393132c283ba64714419d72792ceb5
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 57f011bd0d6311c71871773ea866ef4c52513b17
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55262168"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55674609"
 ---
 # <a name="certificate-of-peer"></a>\<인증서 >의 \<피어 >
 피어에서 사용하는 인증서를 지정합니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "55262168"
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
 - [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
-- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)
-- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)
+- [피어 채널 메시지 인증](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [피어 채널 사용자 지정 인증](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
 - [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
