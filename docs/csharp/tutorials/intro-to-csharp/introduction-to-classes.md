@@ -3,12 +3,12 @@ title: 클래스 및 개체 - C# 소개 자습서
 description: 첫 번째 C# 프로그램을 만들고 개체 지향 개념을 살펴봅니다.
 ms.date: 10/11/2017
 ms.custom: mvc
-ms.openlocfilehash: 6ce0c86a4b746b8ea2db82899a82734a68e46957
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: 6b4c135b7adf96de3a234cde02485a1e84fc9fd3
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066070"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204784"
 ---
 # <a name="explore-object-oriented-programming-with-classes-and-objects"></a>클래스 및 개체를 사용한 개체 지향 프로그래밍 살펴보기
 
@@ -156,14 +156,14 @@ using System.Collections.Generic;
 ```csharp
 account.MakeWithdrawal(500, DateTime.Now, "Rent payment");
 Console.WriteLine(account.Balance);
-account.MakeDeposit(100, DateTime.Now, "friend paid me back");
+account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
 Console.WriteLine(account.Balance);
 ```
 
 다음으로 음수 잔액을 사용하여 계정을 생성하여 오류 조건을 알아보는 테스트를 수행합니다.
 
 ```csharp
-// Test that the initial balances must be positive:
+// Test that the initial balances must be positive.
 try
 {
     var invalidAccount = new BankAccount("invalid", -55);
@@ -178,7 +178,7 @@ catch (ArgumentOutOfRangeException e)
 [`try` 및 `catch` 문](../../language-reference/keywords/try-catch.md)을 사용하여 예외를 throw할 수 있는 코드 블록을 표시하고 예상한 오류를 catch합니다. 동일한 기술을 사용하여 음수 잔액에 대한 예외를 throw하는 코드를 테스트할 수 있습니다.
 
 ```csharp
-// Test for a negative balance
+// Test for a negative balance:
 try
 {
     account.MakeWithdrawal(750, DateTime.Now, "Attempt to overdraw");

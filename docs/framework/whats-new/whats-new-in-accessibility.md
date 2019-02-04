@@ -9,12 +9,12 @@ helpviewer_keywords:
 - what's new [.NET Framework]
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e9b9d1c8a059a85f2b5137e568ec6ad562ca0eb9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 092b1cfc9350ea398eb18199f19a8eee7ea9f218
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54680306"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675441"
 ---
 # <a name="whats-new-in-accessibility-in-the-net-framework"></a>.NET Framework에서 내게 필요한 옵션의 새로운 기능
 
@@ -292,7 +292,7 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 .NET Framework 4.7.1에서 WPF 내게 필요한 옵션 개선 사항에 대한 자세한 내용은 [WPF의 내게 필요한 옵션 개선 사항](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf)을 참조하세요.
 
 <a name="winforms471"></a>
-## <a name="windows-forms-accessibility-improvements"></a>Windows Forms 내게 필요한 옵션 개선 사항
+### <a name="windows-forms-accessibility-improvements"></a>Windows Forms 내게 필요한 옵션 개선 사항
 
 .NET Framework 4.7.1에서 WinForms(Windows Forms)는 다음 영역에서 내게 필요한 옵션 변경 내용을 포함합니다.
 
@@ -358,7 +358,7 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 - 향상된 내레이터 동작
  
 <a name="aspnet471"></a>
-## <a name="aspnet-web-controls"></a>ASP.NET 웹 컨트롤
+### <a name="aspnet-web-controls"></a>ASP.NET 웹 컨트롤
 
 .NET Framework 4.7.1 및 Visual Studio 2017 15.3부터 ASP.NET은 ASP.NET 웹 컨트롤이 Visual Studio의 내게 필요한 옵션 기술과 연동하는 방식을 개선합니다. 변경 내용은 다음과 같습니다.
 
@@ -369,14 +369,14 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 - DataPager 컨트롤의 **호출기 필드 편집** 마법사의 **필드** 대화 상자, **ObjectContext 구성** 대화 상자 또는 **데이터 원본 구성** 마법사의 **데이터 선택 구성** 대화 상자와 같은 컨트롤의 키보드 탐색 환경을 개선하도록 변경됨.
 
 <a name="tools471"></a>
-## <a name="net-sdk-tools"></a>.NET SDK Tools
+### <a name="net-sdk-tools"></a>.NET SDK Tools
 
 [Configuration Editor 도구(SvcConfigEditor.exe)](../wcf/configuration-editor-tool-svcconfigeditor-exe.md) 및 [Service Trace Viewer 도구(SvcTraceViewer.exe)](../wcf/service-trace-viewer-tool-svctraceviewer-exe.md)는 다양한 액세스 가능성 문제를 수정하여 향상되었습니다. 이들 중 대부분은 정의되지 않은 이름이나 특정 UI 자동화 패턴이 올바르게 구현되지 않은 것과 같은 사소한 문제였습니다. 많은 사용자가 이러한 잘못된 값을 인식하지 못하지만, 화면 판독기와 같은 보조 기술을 사용하는 고객은 이러한 SDK 도구를 보다 쉽게 사용할 수 있습니다. 
 
 이러한 개선 사항은 키보드 포커스 순서 등의 일부 이전 동작을 변경합니다.
 
 <a name="wf471"></a>
-## <a name="windows-workflow-foundation-wf-workflow-designer"></a>Windows WF(Workflow Foundation) 워크플로 디자이너
+### <a name="windows-workflow-foundation-wf-workflow-designer"></a>Windows WF(Workflow Foundation) 워크플로 디자이너
 
 워크플로 디자이너에서 내게 필요한 옵션 변경 내용은 다음과 같습니다.
 

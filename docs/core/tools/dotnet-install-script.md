@@ -2,12 +2,12 @@
 title: dotnet 설치 스크립트
 description: .NET Core CLI 도구 및 공유 런타임을 설치하는 dotnet-install 스크립트에 대해 알아봅니다.
 ms.date: 01/16/2019
-ms.openlocfilehash: f796ac494c0be5458b3ea192e809a4d875bcc6dc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6404a8332a7196f0e6fdfe649c2c180970390775
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54608795"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204797"
 ---
 # <a name="dotnet-install-scripts-reference"></a>dotnet-install 스크립트 참조
 
@@ -36,7 +36,7 @@ macOS/Linux:
 
 이러한 스크립트의 주요 유용성은 자동화 시나리오 및 비관리자 설치입니다. 두 개의 스크립트가 있습니다. 하나는 Windows에서 작동하는 PowerShell 스크립트이고, 다른 하나는 Linux/macOS에서 작동하는 bash 스크립트입니다. 두 스크립트의 동작은 동일합니다. 또한 bash 스크립트는 PowerShell 스위치를 읽으므로 Linux/macOS 시스템에서 스크립트와 함께 PowerShell 스위치를 사용할 수 있습니다.
 
-설치 스크립트는 CLI 빌드 저장 위치에서 ZIP/tarball 파일을 다운로드하여 기본 위치나 `-InstallDir|--install-dir`로 지정한 위치에 설치를 계속 진행합니다. 기본적으로 설치 스크립트는 SDK를 다운로드하고 설치합니다. 공유 런타임만 가져오려는 경우 `--shared-runtime` 인수를 지정합니다.
+설치 스크립트는 CLI 빌드 저장 위치에서 ZIP/tarball 파일을 다운로드하여 기본 위치나 `-InstallDir|--install-dir`로 지정한 위치에 설치를 계속 진행합니다. 기본적으로 설치 스크립트는 SDK를 다운로드하고 설치합니다. 공유 런타임만 가져오려는 경우 `--runtime` 인수를 지정합니다.
 
 기본적으로 스크립트는 현재 세션에 대한 $PATH에 설치 위치를 추가합니다. `--no-path` 인수를 지정하여 이 기본 동작을 재정의합니다.
 
@@ -168,13 +168,13 @@ macOS/Linux:
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -SharedRuntime -Version 1.1.0
+  ./dotnet-install.ps1 -Runtime dotnet -Version 1.1.0
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --shared-runtime --version 1.1.0
+  ./dotnet-install.sh --runtime dotnet --version 1.1.0
   ```
 
 * 스크립트를 얻어 회사 프록시 뒤에 2.1.2 버전을 설치합니다(Windows에만 해당).

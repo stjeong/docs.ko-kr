@@ -1,7 +1,13 @@
 ---
-title: 'async 및 await를 사용한 비동기 프로그래밍(C#)'
+title: async 및 await를 사용한 비동기 프로그래밍(C#)
 ms.date: 05/22/2017
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
+ms.openlocfilehash: 15ce60c965159b475526106da8e864804fe9e0c1
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675234"
 ---
 # <a name="asynchronous-programming-with-async-and-await-c"></a>async 및 await를 사용한 비동기 프로그래밍(C#)
 비동기 프로그래밍을 사용하여 성능 병목 현상을 방지하고 애플리케이션의 전체적인 응답성을 향상할 수 있습니다. 그러나 비동기 애플리케이션을 쓰는 일반적인 기술이 복잡하여 해당 애플리케이션을 쓰고, 디버깅하고, 유지 관리하기 어려울 수 있습니다.  
@@ -238,7 +244,7 @@ Windows 런타임 프로그래밍의 비동기 API에는 작업과 유사한 다
 |[비동기 프로그램의 제어 흐름(C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)|비동기 프로그램에서 연속적 await 표현을 통한 컨트롤의 흐름을 자세히 추적합니다.|[비동기 샘플: 비동기 프로그램의 제어 흐름](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|  
 |[Async 애플리케이션 미세 조정(C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)|비동기 솔루션에 다음과 같은 기능을 추가하는 방법을 보여줍니다.<br /><br /> -   [비동기 작업 또는 작업 목록 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)<br />-   [일정 기간 이후 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md)<br />-   [비동기 작업 하나가 완료되면 남은 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)<br />-   [비동기 작업을 여러 개 시작하고 완료될 때마다 처리(C#)](../../../../csharp/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)|[비동기 샘플: 애플리케이션 미세 조정](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|  
 |[비동기 앱에서 재진입 처리(C#)](../../../../csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)|비동기 작업이 실행되는 동안 현재 비동기 작업을 다시 시작하는 경우 처리 방법을 보여줍니다.||  
-|[WhenAny: .NET Framework와 Windows 런타임 간 브리징](https://msdn.microsoft.com/library/jj635140(v=vs.120).aspx)|[!INCLUDE[wrt](~/includes/wrt-md.md)] 메서드에 <xref:System.Threading.Tasks.Task.WhenAny%2A>를 사용할 수 있도록 .NET Framework의 작업 형식과 [!INCLUDE[wrt](~/includes/wrt-md.md)]의 IAsyncOperations 사이의 연결 방법을 보여 줍니다.|[비동기 샘플: .NET 및 Windows 런타임 간 연결(AsTask 및 WhenAny)](https://code.msdn.microsoft.com/Async-Sample-Bridging-d6a2f739)|  
+|[WhenAny: .NET Framework와 Windows 런타임 간 브리징](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|[!INCLUDE[wrt](~/includes/wrt-md.md)] 메서드에 <xref:System.Threading.Tasks.Task.WhenAny%2A>를 사용할 수 있도록 .NET Framework의 작업 형식과 [!INCLUDE[wrt](~/includes/wrt-md.md)]의 IAsyncOperations 사이의 연결 방법을 보여 줍니다.|[비동기 샘플: .NET 및 Windows 런타임 간 연결(AsTask 및 WhenAny)](https://code.msdn.microsoft.com/Async-Sample-Bridging-d6a2f739)|  
 |비동기 취소: .NET Framework와 Windows 런타임 간 브리징|[!INCLUDE[wrt](~/includes/wrt-md.md)] 메서드에 <xref:System.Threading.CancellationTokenSource>를 사용할 수 있도록 .NET Framework의 작업 형식과 [!INCLUDE[wrt](~/includes/wrt-md.md)]의 IAsyncOperations 사이의 연결 방법을 보여 줍니다.|[비동기 샘플: .NET 및 Windows 런타임 간 연결(AsTask & 취소)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|  
 |[파일 액세스에 Async 사용(C#)](../../../../csharp/programming-guide/concepts/async/using-async-for-file-access.md)|async 및 await를 사용하여 파일에 액세스하는 이점을 나열하고 보여줍니다.||  
 |[TAP(작업 기반 비동기 패턴)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)|.NET Framework의 새로운 비동기 패턴에 대해 설명합니다. 패턴은 <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601> 형식을 기반으로 합니다.||  

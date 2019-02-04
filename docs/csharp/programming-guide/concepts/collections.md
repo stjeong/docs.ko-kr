@@ -2,12 +2,12 @@
 title: 컬렉션(C#)
 ms.date: 07/20/2015
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-ms.openlocfilehash: 1f73081cacbc08fdaaca3cbc57dfe731eddab7ee
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: ddbbc60c497b324bdeb2614149569d5de5f4c114
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55084122"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675415"
 ---
 # <a name="collections-c"></a>컬렉션(C#)
 대부분의 애플리케이션의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
@@ -583,7 +583,6 @@ private static IEnumerable<int> EvenSequence(
 - [LINQ to Objects(C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
 - [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
 - [컬렉션 및 데이터 구조](../../../standard/collections/index.md)
-- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)
 - [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)
 - [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)
 - [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)

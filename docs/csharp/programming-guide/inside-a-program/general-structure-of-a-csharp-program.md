@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, program structure
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
-ms.openlocfilehash: 3a615bd1db3742787a5fb41ea5b309dd72746e43
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 53908a21e573b7ac7d8347ebfe7f11202612fae1
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492479"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675103"
 ---
 # <a name="general-structure-of-a-c-program-c-programming-guide"></a>C# 프로그램의 일반적인 구조(C# 프로그래밍 가이드)
 C# 프로그램은 하나 이상의 파일로 구성됩니다. 각 파일에는 0개 이상의 네임스페이스가 포함될 수 있습니다. 네임스페이스에는 다른 네임스페이스 외에 클래스, 구조체, 인터페이스, 열거형 및 대리자 같은 형식이 포함될 수 있습니다. 다음은 이러한 모든 요소를 포함하는 C# 프로그램의 기본 구조입니다.  
@@ -39,4 +39,3 @@ C# 프로그램은 하나 이상의 파일로 구성됩니다. 각 파일에는 
 - [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [C# 프로그램 내부](../../../csharp/programming-guide/inside-a-program/index.md)
 - [C# 참조](../../../csharp/language-reference/index.md)
-- [C# 샘플 애플리케이션](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)

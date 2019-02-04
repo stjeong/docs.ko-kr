@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - readonly keyword [C#]
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
-ms.openlocfilehash: dfbeb5ff94f39e8d8df03feea9ff55db748d2182
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.openlocfilehash: c7f3b1b1525277bf948070c9121d151f9f520127
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058583"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204667"
 ---
 # <a name="readonly-c-reference"></a>readonly(C# 참조)
 
@@ -46,10 +46,10 @@ public readonly int y = 5;
 
 > [!NOTE]
 > `readonly` 키워드와 [const](const.md) 키워드와 다릅니다. `const` 필드는 필드 선언에서만 초기화될 수 있습니다. 필드 선언과 임의 생성자에서 `readonly` 필드를 여러 번 할당할 수 있습니다. 따라서 `readonly` 필드는 사용된 생성자에 따라 다른 값을 가질 수 있습니다. 또한 `const` 필드는 컴파일 시간 상수인 반면, `readonly` 필드는 다음 예제와 같이 런타임 상수에 사용될 수 있습니다.
-
-```csharp
-public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
-```
+>
+> ```csharp
+> public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
+> ```
 
 [!code-csharp[Initialize readonly Field example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#InitReadonlyField)]
 

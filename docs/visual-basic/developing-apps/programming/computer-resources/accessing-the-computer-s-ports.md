@@ -5,18 +5,18 @@ helpviewer_keywords:
 - serial ports
 - My.Computer.Ports object [Visual Basic], tasks
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
-ms.openlocfilehash: 1136bed5d329c5283b4e7b95a5085f3e0db46286
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: e3ca5193db9dbcb4674680884a6372e6383c0852
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39198525"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55289031"
 ---
-# <a name="accessing-the-computer39s-ports-visual-basic"></a>컴퓨터 포트에 액세스(Visual Basic)
+# <a name="accessing-the-computers-ports-visual-basic"></a>컴퓨터 포트에 액세스(Visual Basic)
 `My.Computer.Ports` 개체는 컴퓨터의 직렬 포트에 액세스하기 위한 속성 및 메서드를 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [방법: 사용할 수 있는 직렬 포트 표시](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)  
+ [방법: 사용 가능한 직렬 포트 표시](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)  
  사용할 수 있는 직렬 포트를 표시하는 방법을 보여 줍니다.  
   
  [방법: 직렬 포트에 연결된 모뎀 전화 접속](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)  

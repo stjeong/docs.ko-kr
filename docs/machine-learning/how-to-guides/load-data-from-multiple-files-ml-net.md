@@ -1,14 +1,14 @@
 ---
 title: 기계 학습 처리를 위해 여러 파일의 데이터 로드 - ML.NET
 description: ML.NET를 사용하여 기계 학습 모델을 빌드하고, 학습하고, 점수를 매기는 데 사용할 여러 파일의 데이터를 로드하는 방법 알아보기
-ms.date: 11/07/2018
+ms.date: 01/29/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: c9b34bd6bcbac62e9f9c33226f5d0feb41168392
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: fe6758e46d923dc07908e1334056ea8394c1085e
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150734"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479986"
 ---
 # <a name="load-data-from-multiple-files-for-machine-learning-processing---mlnet"></a>기계 학습 처리를 위해 여러 파일의 데이터 로드 - ML.NET
 
@@ -23,19 +23,19 @@ ms.locfileid: "53150734"
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
-{
-    Column = new[] {
-        // A boolean column depicting the 'label'.
-        new TextLoader.Column("IsOver50k", DataKind.BL, 0),
+var reader = mlContext.Data.CreateTextReader(
+    columns: new TextLoader.Column[]
+    {
+        // A boolean column depicting the 'target label'.
+        new TextLoader.Column("IsOver50k",DataKind.BL,0),
         // Three text columns.
-        new TextLoader.Column("Workclass", DataKind.TX, 1),
-        new TextLoader.Column("Education", DataKind.TX, 2),
-        new TextLoader.Column("MaritalStatus", DataKind.TX, 3)
+        new TextLoader.Column("WorkClass",DataKind.TX,1),
+        new TextLoader.Column("Education",DataKind.TX,2),
+        new TextLoader.Column("MaritalStatus",DataKind.TX,3)
     },
-    // First line of the file is a header, not a data row.
-    HasHeader = true
-});
+    hasHeader: true
+);
 
+// Now read the files (remember though, readers are lazy, so the actual reading will happen when the data is accessed).
 var data = reader.Read(exampleFile1, exampleFile2);
 ```

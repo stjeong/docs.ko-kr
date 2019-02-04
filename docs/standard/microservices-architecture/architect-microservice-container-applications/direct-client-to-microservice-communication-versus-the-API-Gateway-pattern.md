@@ -3,13 +3,13 @@ title: API 게이트웨이 패턴과 클라이언트-마이크로 서비스 간 
 description: API 게이트웨이 패턴과 클라이언트-마이크로 서비스 간 직접 통신의 차이점 및 사용법을 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/20/2018
-ms.openlocfilehash: eebbfa6579de4cd24f58371ed1c7ab9a5f2e1c00
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.date: 01/07/2019
+ms.openlocfilehash: 35bebd9429dabbe0e3ddc3549a504719321e47e1
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030544"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675454"
 ---
 # <a name="the-api-gateway-pattern-versus-the-direct-client-to-microservice-communication"></a>API 게이트웨이 패턴과 클라이언트-마이크로 서비스 간 직접 통신
 
@@ -25,7 +25,7 @@ ms.locfileid: "54030544"
 
 이 방식에서는 각 마이크로 서비스에 공용 엔드포인트가 있으며 경우에 따라 각 마이크로 서비스에 대해 다른 TCP 포트가 있을 수 있습니다. 특정 서비스에 대한 URL의 예는 Azure에서 다음 URL을 참조하세요.
 
-<http://eshoponcontainers.westus.cloudapp.azure.com:88/>
+`http://eshoponcontainers.westus.cloudapp.azure.com:88/`
 
 클러스터에 기반한 프로덕션 환경에서는 해당 URL이 클러스터에서 사용되는 부하 분산 장치에 매핑하고, 이어서 요청을 마이크로 서비스에 분산하게 됩니다. 프로덕션 환경에서는 마이크로 서비스와 인터넷 사이에 [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)와 같은 ADC(애플리케이션 배달 컨트롤러)를 사용할 수 있습니다. 이는 부하 분산을 수행할 뿐 아니라 SSL 종료를 제공하여 서비스를 보호하는 투명한 계층으로 작동합니다. 이는 CPU 집중적 SSL 종료 및 Azure Application Gateway로의 라우팅 듀티를 오프로딩하여 호스트의 로드를 증가시킵니다. 어떤 경우든 부하 분산 장치 및 ADC는 논리적 애플리케이션 아키텍처 관점에서 투명합니다.
 
@@ -134,7 +134,7 @@ API 게이트웨이는 여러 기능을 제공할 수 있습니다. 제품에 �
 
 **그림 4-14**. API 게이트웨이에 Azure API Management 사용
 
-이 경우 Azure API Management와 같은 제품을 사용할 때, 단일 API 게이트웨이가 있을 수도 있다는 사실은 그리 위험하지 않습니다. 이러한 API 게이트웨이 유형은 “더 가볍기” 때문에, 즉 모놀리식 구성 요소로 진화할 수도 있는 사용자 지정 C# 코드를 구현하지 않기 때문입니다. 이러한 제품은 수신 통신의 역방향 프록시와 같이 작동합니다. 여기서는 내부 마이크로 서비스에서 API를 필터링하고 이 단일 계층에 게시된 API에 권한을 부여할 수도 있습니다.
+이 경우 Azure API Management와 같은 제품을 사용할 때, 단일 API 게이트웨이가 있을 수도 있다는 사실은 그리 위험하지 않습니다. 이러한 API 게이트웨이 유형은 “더 가볍기” 때문에, 즉 모놀리식 구성 요소로 진화할 수도 있는 사용자 지정 C# 코드를 구현하지 않기 때문입니다. 
 
 API 게이트웨이 제품은 일반적으로 통신 진입을 위한 역방향 프록시와 더 비슷하게 작동합니다. 또한 여기서는 내부 마이크로 서비스에서 API를 필터링하고, 이 단일 계층에 게시된 API에 권한을 적용할 수 있습니다.
 
