@@ -1,17 +1,23 @@
 ---
-title: '형식 - C# 프로그래밍 가이드'
+title: 형식 - C# 프로그래밍 가이드
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'value types [C#]'
-  - 'reference types [C#]'
-  - 'types [C#]'
-  - 'C# language, data types'
-  - 'common type system [C#]'
-  - 'data types [C#]'
-  - 'C# language, types'
-  - 'strong typing [C#]'
+- value types [C#]
+- reference types [C#]
+- types [C#]
+- C# language, data types
+- common type system [C#]
+- data types [C#]
+- C# language, types
+- strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
+ms.openlocfilehash: 5d24e28b6a685cf4934c06c72ffbc8aa29748faa
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55739318"
 ---
 # <a name="types-c-programming-guide"></a>형식(C# 프로그래밍 가이드)
 ## <a name="types-variables-and-values"></a>형식, 변수 및 값  
@@ -82,8 +88,8 @@ CTS의 값 형식과 참조 형식
  기본 제공 숫자 형식은 구조체이며, 액세스할 수 있는 속성과 메서드가 있습니다.  
   
 ```csharp  
-// Static method on type Byte.  
-byte b = Byte.MaxValue;  
+// Static method on type byte.  
+byte b = byte.MaxValue;
 ```  
   
  하지만 단순 비집계 형식처럼 값을 선언하고 변수에 할당합니다.  
