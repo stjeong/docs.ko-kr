@@ -1,13 +1,19 @@
 ---
-title: 'C# 6.0 초안 언어 사양'
+title: C# 6.0 초안 언어 사양
 ms.date: 05/22/2018
 ms.topic: language-reference
 helpviewer_keywords:
-  - 'C# language, specification'
-  - 'what''s new [C#], language specification'
-  - 'Visual C#, C# language specification'
-  - 'language specification [C#]'
+- C# language, specification
+- what's new [C#], language specification
+- Visual C#, C# language specification
+- language specification [C#]
 ms.assetid: e5d5a5cc-636b-4bff-b9c8-a8edc6207c22
+ms.openlocfilehash: e20a468e71329609d459070382c05e04135e73f1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539586"
 ---
 # <a name="c-60-draft-language-specification"></a>C# 6.0 초안 언어 사양
 

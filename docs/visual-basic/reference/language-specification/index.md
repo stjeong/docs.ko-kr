@@ -2,10 +2,16 @@
 title: Visual Basic 언어 사양
 ms.date: 08/02/2017
 helpviewer_keywords:
-  - 'resources [Visual Basic], specifications'
-  - 'Visual Basic code, specifications'
-  - 'specifications, Visual Basic'
+- resources [Visual Basic], specifications
+- Visual Basic code, specifications
+- specifications, Visual Basic
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
+ms.openlocfilehash: 3810dd4d956c5cd8ef74cfd4da695f660e539820
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54744689"
 ---
 # <a name="visual-basic-language-specification"></a>Visual Basic 언어 사양
 Visual Basic 언어 사양 Visual Basic 문법 및 구문에 대 한 모든 질문에 대 한 답변에 대 한 믿을 만한 원본 됩니다. Visual Basic 참조 설명서에서 다루지 않은 여러 항목을 포함 하 여 언어에 대 한 자세한 정보가 있습니다.  
