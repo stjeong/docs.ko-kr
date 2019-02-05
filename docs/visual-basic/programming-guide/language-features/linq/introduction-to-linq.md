@@ -12,12 +12,12 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 0642a67a6550109ffe1068e6c6ce4605b14c25af
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f5222d51ff2f60dd31ec52a8d5d6d52f37e02443
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54524055"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55739204"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Visual Basic의 LINQ 소개
 언어 통합 쿼리 (LINQ)는 Visual basic 쿼리 기능을 추가 하 고 모든 종류의 데이터를 사용 하 여 작업할 때 간단 하 고 강력한 기능을 제공 합니다. 쿼리 처리 될 때 데이터베이스에 보내거나 검색 하는 데이터의 각 형식에 대 한 다른 쿼리 구문을 사용 하 여 작업을 하는 대신 LINQ에서는 Visual Basic 언어의 일부로 쿼리를 소개 합니다. LINQ는 데이터의 형식에 관계없이 통합된 구문을 사용합니다.  
@@ -240,7 +240,7 @@ LINQ에서 제공하는 열거 가능 형식과 쿼리 가능 형식의 멤버�
   
  [방법: 쿼리 결과의 최소값 또는 최대값 찾기](how-to-find-the-minimum-or-maximum-value-in-a-query-result.md)  
   
- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](https://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)  
+ [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)  
   
 ## <a name="featured-book-chapters"></a>중요 설명서 장  
  [17 장: LINQ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652502(v=orm.10)) 에서 [Visual Basic 2008 프로그래밍](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652504(v=orm.10))  

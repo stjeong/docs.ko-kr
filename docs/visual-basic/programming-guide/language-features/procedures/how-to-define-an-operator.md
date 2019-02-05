@@ -13,12 +13,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-ms.openlocfilehash: fb150298562c1ec91f73f3c8075f4f8a4fc20b27
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ced9e2ab71ccb00c9ce3495e38d895a7104fdde
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54679528"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738658"
 ---
 # <a name="how-to-define-an-operator-visual-basic"></a>방법: 연산자 (Visual Basic)를 정의 합니다.
 클래스 또는 구조체를 정의한 경우에 표준 연산자의 동작을 정의할 수 있습니다 (같은 `*`, `<>`, 또는 `And`) 클래스 또는 구조체 형식의 하나 또는 두 피연산자 모두가 하는 경우.  
@@ -36,7 +36,6 @@ ms.locfileid: "54679528"
   
  [!code-vb[VbVbcnProcedures#26](./codesnippet/VisualBasic/how-to-define-an-operator_2.vb)]  
   
- 자세한 내용과 예제는 [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx)(Visual Basic 2005의 연산자 오버로드)를 참조하세요.  
   
 ## <a name="see-also"></a>참고자료
 - [연산자 프로시저](./operator-procedures.md)

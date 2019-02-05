@@ -14,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: dbe73ed5574261f1aab6134a15a5aeb5fbb8596c
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: e31bc2f9a0b20ce168004fa3ea2210d39a23761e
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065858"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738619"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>방법: 부호 없는 형식 (Visual Basic)를 사용 하는 Windows 함수를 호출 합니다.
 클래스, 모듈 또는 부호 없는 정수 형식의 멤버가 있는 구조를 사용 중인 경우에 Visual Basic을 사용 하 여 이러한 멤버를 액세스할 수 있습니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "55065858"
     >  Windows 응용 프로그램 프로그래밍 인터페이스 (API)와 같은 관리 되지 않는 코드를 호출 하는 잠재적인 보안 위험에 코드를 제공 합니다.  
   
     > [!IMPORTANT]
-    >  Windows API를 호출 하려면 부분 신뢰 상황에서 해당 실행에 영향을 줄 수 있는 비관리 코드 권한이 있어야 합니다. 자세한 내용은 <xref:System.Security.Permissions.SecurityPermission> 하 고 [코드 액세스 권한](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675)합니다.  
+    >  Windows API를 호출 하려면 부분 신뢰 상황에서 해당 실행에 영향을 줄 수 있는 비관리 코드 권한이 있어야 합니다. 자세한 내용은 <xref:System.Security.Permissions.SecurityPermission> 하 고 [코드 액세스 권한](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100))합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)

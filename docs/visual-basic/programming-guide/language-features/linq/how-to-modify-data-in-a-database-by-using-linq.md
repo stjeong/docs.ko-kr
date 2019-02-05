@@ -12,12 +12,12 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], data changes in database
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
-ms.openlocfilehash: bcc56e1f7a36c705aec6750b76a4ad5d99fe7101
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 88597e5cfa1db46e147b829c8ffc634697cecc7e
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54658418"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55739490"
 ---
 # <a name="how-to-modify-data-in-a-database-by-using-linq-visual-basic"></a>방법: LINQ (Visual Basic)를 사용 하 여 데이터베이스의 데이터를 수정 합니다.
 언어 통합 쿼리 (LINQ) 쿼리를 통해 쉽게 데이터베이스 정보에 액세스 하 고 데이터베이스에서 값을 수정 합니다.  
@@ -165,4 +165,4 @@ ms.locfileid: "54658418"
 - [쿼리](../../../../visual-basic/language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
-- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](https://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)
+- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)

@@ -2,12 +2,12 @@
 title: (Visual Basic) WordprocessingML 문서의 모양
 ms.date: 07/20/2015
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
-ms.openlocfilehash: ddd48823ded78fe5547e53ee5e9b1ffa8c696b7e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 635f8a2f97f1d8568230e17f9998fa87d6a7c02c
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54549667"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738853"
 ---
 # <a name="shape-of-wordprocessingml-documents-visual-basic"></a>(Visual Basic) WordprocessingML 문서의 모양
 이 항목에서는 WordprocessingML 문서의 XML 모양에 대해 소개합니다.  
@@ -90,7 +90,7 @@ End Module
 ## <a name="external-resources"></a>외부 리소스  
  [Office(2007) Open XML 파일 형식 소개](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
- [WordprocessingML의 개요](https://msdn.microsoft.com/library/aa212812(office.11).aspx)  
+ [WordprocessingML의 개요](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812(v=office.11))  
   
  [Office 2003: XML 참조 스키마 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=98095)  
   

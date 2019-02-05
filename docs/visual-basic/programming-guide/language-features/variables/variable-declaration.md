@@ -17,12 +17,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 1a43cabfd3ab22ad9035ecb30435b21b75040308
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a23d16d4ef4e90041e320c52381fa34b8b33d2d4
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54718795"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738749"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Visual Basic의 변수 선언
 이름 및 특성을 지정 하려면 변수를 선언 하면 됩니다. 변수에 대 한 선언문이 합니다 [Dim 문](../../../../visual-basic/language-reference/statements/dim-statement.md)합니다. 해당 위치 및 내용을 변수의 특성을 결정 합니다.  
@@ -61,7 +61,7 @@ Dim l, m As Long, x, y As Single
 ' In the preceding statement, l and m are Long, x and y are Single.  
 ```  
   
- 데이터 형식에 대 한 자세한 내용은 참조 하세요. [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)합니다. 개체에 대 한 자세한 내용은 참조 하세요. [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md) 하 고 [구성 요소를 사용 하 여 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)합니다.  
+ 데이터 형식에 대 한 자세한 내용은 참조 하세요. [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)합니다. 개체에 대 한 자세한 내용은 참조 하세요. [개체 및 클래스](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md) 하 고 [구성 요소를 사용 하 여 프로그래밍](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120))합니다.  
   
 ## <a name="local-type-inference"></a>지역 형식 유추  
  *형식 유추* 없이 선언 된 지역 변수의 데이터 형식을 결정 하는 데 사용 되는 `As` 절. 컴파일러는 초기화 식의 형식에서 변수의 형식을 유추합니다. 이 옵션을 사용 하면 형식을 명시적으로 지정 하지 않고 변수를 선언할 수 있습니다. 다음 예제에서는 둘 다 `num1` 및 `num2` 정수로 강력 하 게 형식화 됩니다.  

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring HTTP [WCF]
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-ms.openlocfilehash: 5c87b0f411c187e1497c8ec55771b80bb94c3629
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 25ca96104ef8a63a7c6988f6dfba309e9aa44a9b
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54635679"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738931"
 ---
 # <a name="configuring-http-and-https"></a>HTTP 및 HTTPS 구성
 WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있습니다. HTTP/HTTPS 설정은 IIS(인터넷 정보 서비스)나 명령줄 도구를 사용하여 구성합니다. WCF 서비스가 IIS 아래에서 호스팅되거나 IIS에서 inetmgr.exe 도구를 사용하여 HTTP 또는 HTTPS 설정을 구성할 수 있는 경우입니다. WCF 서비스가 자체 호스팅되는 경우 HTTP 또는 HTTPS 설정은 명령줄 도구를 사용하여 구성됩니다.  
@@ -33,7 +33,7 @@ WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있�
  다음은 `set urlacl` 옵션이 있는 Httpcfg 명령 구문을 보여 줍니다.  
   
 ```console  
-httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL  
+httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /a ACL  
 ```  
   
  `/u` 매개 변수는 `set urlacl`을 사용하는 경우 필요합니다. 이 매개 변수는 만들고 있는 예약에 대한 레코드 키 역할을 수행하는 정규화된 URL이 포함된 문자열을 사용합니다.  
