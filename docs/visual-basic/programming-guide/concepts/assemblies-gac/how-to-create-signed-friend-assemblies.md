@@ -2,12 +2,12 @@
 title: '방법: 서명 된 Friend 어셈블리 (Visual Basic) 만들기'
 ms.date: 03/14/2018
 ms.assetid: f2afd83d-b044-484b-a56d-56d0a8a40647
-ms.openlocfilehash: 02acda34783afceaeb83d0d0752e5247747b5337
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 699c3de3c246be0bafdcc66ca7fd82384dc66d92
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54667298"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758874"
 ---
 # <a name="how-to-create-signed-friend-assemblies-visual-basic"></a>방법: 서명 된 Friend 어셈블리 (Visual Basic) 만들기
 이 예제에서는 강력한 이름을 가진 어셈블리와 함께 friend 어셈블리를 사용하는 방법을 보여 줍니다. 두 어셈블리에 모두 강력한 이름을 지정해야 합니다. 이 예제의 두 어셈블리는 모두 동일한 키를 사용하지만 두 어셈블리에 서로 다른 키를 사용할 수 있습니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "54667298"
   
 1.  명령 프롬프트를 엽니다.  
   
-2.  강력한 이름 도구와 함께 다음 명령 시퀀스를 사용하여 키 파일을 생성하고 해당 공개 키를 표시합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)]을 참조 하세요[Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md)).  
+2.  강력한 이름 도구와 함께 다음 명령 시퀀스를 사용하여 키 파일을 생성하고 해당 공개 키를 표시합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
     1.  이 예제에 대한 강력한 이름 키를 생성하고 FriendAssemblies.snk 파일에 저장합니다.  
   
@@ -90,6 +90,6 @@ ms.locfileid: "54667298"
 - [Friend 어셈블리 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)
 - [방법: 서명 되지 않은 Friend 어셈블리 (Visual Basic) 만들기](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [-keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)
-- [Sn.exe (강력한 이름 도구)] [Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md))
+- [Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md))
 - [강력한 이름의 어셈블리 만들기 및 사용](../../../../framework/app-domains/create-and-use-strong-named-assemblies.md)
 - [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md)

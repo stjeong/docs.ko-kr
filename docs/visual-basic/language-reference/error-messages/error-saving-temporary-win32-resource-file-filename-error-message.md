@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30137
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
-ms.openlocfilehash: 3af4ff0ace8afcb2f576ec4fde022672def0b90b
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: af41297fb3e512db579204d54d77133e85fd5758
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55265092"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758250"
 ---
 # <a name="error-saving-temporary-win32-resource-file-filename-error-message"></a>임시 Win32 리소스 파일을 저장할 수 없습니다. '\<파일 이름 >': \<오류 메시지 >
 Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 생성 하려면 어셈블리 링커 (Al.exe, Alink 라고도)를 호출 합니다. 링커가 메모리 내 리소스를 쓰는 데 사용할 파일 이름을 가져오는 동안 오류를 보고했습니다.  
@@ -27,5 +27,5 @@ Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 �
   
 ## <a name="see-also"></a>참고자료
 
- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)합니다.  
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [의견 보내기](/visualstudio/ide/talk-to-us)

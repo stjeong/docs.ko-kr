@@ -6,12 +6,12 @@ helpviewer_keywords:
 - keycontainer compiler option [Visual Basic]
 - /keycontainer compiler option [Visual Basic]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-ms.openlocfilehash: 1666c7743f1116f86bc4457af53711cb6f1a6b7b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d9ceb7b4351d2278835014235bc1f3b5f15b65c0
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579825"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758289"
 ---
 # <a name="-keycontainer"></a>-keycontainer
 어셈블리에 강력한 이름을 지정하는 키 쌍의 키 컨테이너 이름을 지정합니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "54579825"
 |`container`|필수 요소. 키가 포함 된 컨테이너 파일입니다. 파일 이름을 따옴표로 묶습니다 ("") 이름에 공백이 있습니다.|  
   
 ## <a name="remarks"></a>설명  
- 컴파일러는 공개 키를 어셈블리 매니페스트에 삽입 하 고 개인 키를 사용 하 여 최종 어셈블리에 서명 하 여 공유할 수 있는 구성 요소를 만듭니다. 키 파일을 생성하려면 명령줄에 `sn -k file`을 입력합니다. `-i` 옵션 컨테이너에 키 쌍을 설치 합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)]을 참조 하세요[Sn.exe (강력한 이름 도구)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
+ 컴파일러는 공개 키를 어셈블리 매니페스트에 삽입 하 고 개인 키를 사용 하 여 최종 어셈블리에 서명 하 여 공유할 수 있는 구성 요소를 만듭니다. 키 파일을 생성하려면 명령줄에 `sn -k file`을 입력합니다. `-i` 옵션 컨테이너에 키 쌍을 설치 합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
  사용 하 여 컴파일하면 `-target:module`를 키 파일의 이름이 모듈에 저장 되 고 사용 하 여 어셈블리를 컴파일할 때 생성 되는 어셈블리에 통합 [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)합니다.  
   

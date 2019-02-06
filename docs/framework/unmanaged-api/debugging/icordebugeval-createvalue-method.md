@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0af820b590271e16cbfb443c193fd0afb4ed3358
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ad40087ca61f1b07c0e0e36e785d89b84132962a
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54604114"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759550"
 ---
 # <a name="icordebugevalcreatevalue-method"></a>ICorDebugEval::CreateValue 메서드
 초기 값이 0 또는 null을 사용 하 여 지정 된 형식의 값을 만듭니다.  
@@ -67,4 +67,5 @@ HRESULT CreateValue (
   
 ## <a name="see-also"></a>참고자료
 
-- [CreateValueForType 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md) ICorDebugValue
+- [CreateValueForType 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)
+- [ICorDebugEval 인터페이스](icordebugeval-interface.md)

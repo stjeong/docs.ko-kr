@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30136
 ms.assetid: 05a813e4-9d65-4ce8-be8f-7ca20bbba2af
-ms.openlocfilehash: 56de1554480fdb31f64859da2d94a81618f01c50
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 653169dfe0e590181d3ee225e77d71e9dbe11ccd
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55270468"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759069"
 ---
 # <a name="error-creating-win32-resources-error-message"></a>Win32 리소스를 만드는 동안 오류 발생: \<오류 메시지 >
 Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 생성 하려면 어셈블리 링커 (Al.exe, Alink 라고도)를 호출 합니다. 링커가 메모리 내 리소스를 만드는 동안 오류를 보고했습니다. 환경에 문제가 있거나 컴퓨터의 메모리가 부족할 수 있습니다.  
@@ -27,5 +27,5 @@ Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 �
   
 ## <a name="see-also"></a>참고자료
 
- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)합니다.  
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [의견 보내기](/visualstudio/ide/talk-to-us)

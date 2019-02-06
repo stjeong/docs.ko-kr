@@ -3,12 +3,12 @@ title: <add>
 ms.date: 03/30/2017
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: BrucePerlerMS
-ms.openlocfilehash: cb88d2a37740cf439f4fd2aa0f7fe4c098da1cf2
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 34643d10ef1ed2e87152e5013634e62859e0594e
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55269759"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759485"
 ---
 # <a name="add"></a>\<add>
 토큰 처리기 컬렉션에 지정 된 보안 토큰 처리기를 추가합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "55269759"
   
 |특성|설명|  
 |---------------|-----------------|  
-|형식|추가할 토큰 처리기의 CLR 형식 이름입니다. 지정 하는 방법에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오 [사용자 지정 형식 참조](https://msdn.microsoft.com/library/7286d2e3-c63d-49fd-abdc-ce2705f22c24)합니다.|  
+|형식|추가할 토큰 처리기의 CLR 형식 이름입니다. 지정 하는 방법에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오 [사용자 지정 형식 참조](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   

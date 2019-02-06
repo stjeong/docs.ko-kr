@@ -2,12 +2,12 @@
 title: <webMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
-ms.openlocfilehash: e263062d47708983e7771a8db63ba20d2193ece3
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: e13f23d6894083c8b507bdb73bea897c4845300f
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260036"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759647"
 ---
 # <a name="webmessageencoding"></a>\<webMessageEncoding>
 WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍스트 XML, JSON(JavaScript Object Notation) 메시지 인코딩 및 "원시" 이진 콘텐츠를 읽고 쓸 수 있게 합니다.  
@@ -41,7 +41,7 @@ WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍�
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|이 바인딩으로 구성된 엔드포인트에서 처리할 수 있는 SOAP 메시지의 복잡성에 대한 제약 조건을 정의합니다. 이 요소는 <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> 형식입니다.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|이 바인딩으로 구성된 엔드포인트에서 처리할 수 있는 SOAP 메시지의 복잡성에 대한 제약 조건을 정의합니다. 이 요소는 <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> 형식입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -60,7 +60,7 @@ WCF(Windows Communication Foundation) 바인딩에 사용될 경우 일반 텍�
   
  `maxReadPoolSize` 및 `maxWritePoolSize`를 사용하여 할당할 판독기 및 작성기의 최대 수를 각각 설정할 수도 있습니다. 기본적으로 64개의 판독기와 16개의 작성기가 할당됩니다.  
   
- 기본 복잡성 제약 조건을 사용 하 여 설정 됩니다는 [ \<readerQuotas >](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd) 서비스 거부 (dos) 으로부터 보호 하기 위해 요소를 하려는 메시지 복잡성을 사용 하 여 끝점 처리 두려고 공격 리소스입니다.  
+ 기본 복잡성 제약 조건을 사용 하 여 설정 됩니다는 [ \<readerQuotas >](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100)) 서비스 거부 (dos) 으로부터 보호 하기 위해 요소를 하려는 메시지 복잡성을 사용 하 여 끝점 처리 두려고 공격 리소스입니다.  
   
 ## <a name="example"></a>예제  
   

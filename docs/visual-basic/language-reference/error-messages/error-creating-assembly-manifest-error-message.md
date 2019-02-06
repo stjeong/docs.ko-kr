@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30140
 ms.assetid: 1beb5aa0-7b79-4c85-946b-5c2d0a41d1d2
-ms.openlocfilehash: f9c8d9fe4b8bea45e4b655415b044937f248deab
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 86c1fabe1116e5b5d7e81022777f861f6d57e3e6
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55266483"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758367"
 ---
 # <a name="error-creating-assembly-manifest-error-message"></a>어셈블리 매니페스트를 만드는 동안 오류 발생: \<오류 메시지 >
 Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 생성 하려면 어셈블리 링커 (Al.exe, Alink 라고도)를 호출 합니다. 링커가 어셈블리 만들기의 내보내기 전 단계에서 오류를 보고했습니다.  
@@ -30,5 +30,5 @@ Visual Basic 컴파일러는 매니페스트를 사용 하 여 어셈블리를 �
 ## <a name="see-also"></a>참고자료
 - [방법: 강력한 이름으로 어셈블리 서명](../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)
 - [프로젝트 디자이너, 서명 페이지](/visualstudio/ide/reference/signing-page-project-designer)
- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)합니다.  
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [의견 보내기](/visualstudio/ide/talk-to-us)

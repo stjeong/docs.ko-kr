@@ -12,12 +12,12 @@ api_location:
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8935a8c282bbe812ad76ac6d4228c38ab12626a4
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: d5dd2829a9a00f869af3d7f370f99361979b8106
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44193590"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758796"
 ---
 # <a name="windowsruntimestreamextensionsasrandomaccessstreamsystemiostream-method"></a>WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) 메서드
 
@@ -25,8 +25,8 @@ ms.locfileid: "44193590"
 
 지정된 스트림을 임의 액세스 스트림으로 변환합니다.
 
-**: Namespace** <xref:System.IO?displayProperty=nameWithType> 
- **어셈블리:** System.Runtime.WindowsRuntime (system.runtime.windowsruntime.dll에서)
+**네임스페이스:** <xref:System.IO?displayProperty=nameWithType>
+**어셈블리:** System.Runtime.WindowsRuntime (in System.Runtime.WindowsRuntime.dll)
 
 ## <a name="syntax"></a>구문
 
@@ -72,9 +72,8 @@ Public Shared Function AsRandomAccessStream ( _
 
 **Windows 스토어 앱 용.NET**
 
-지원: Windows 8.1
+지원 버전: Windows 8.1
 
 ## <a name="see-also"></a>참고자료
 
--[System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions(v=vs.110).aspx)
--[방법:.NET Framework 스트림과 Windows 런타임 스트림 간 변환](../io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)
+- [방법: .NET Framework 스트림과 Windows 런타임 스트림 간 변환](../io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)

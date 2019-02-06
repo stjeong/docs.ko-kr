@@ -2,12 +2,12 @@
 title: <resolver>
 ms.date: 03/30/2017
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
-ms.openlocfilehash: 57fa67c9536d35775694c56c9053cffa4dea29ea
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: f3d4b049afe55fb9fb80cbad56c49e8ec13e60db
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55257461"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758744"
 ---
 # <a name="resolver"></a>\<resolver>
 피어 메시 ID를 확인하는 데 사용되는 피어 확인자를 메시에 참여하는 몇 개의 노드를 나타내는 피어 노드 주소 집합에 지정합니다.  
@@ -58,4 +58,4 @@ ms.locfileid: "55257461"
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>
 - <xref:System.ServiceModel.Configuration.PeerResolverElement>
 - [피어 확인자](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
-- [PeerChannel 응용 프로그램에 사용자 지정 확인자 추가](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)
+- [PeerChannel 응용 프로그램에 사용자 지정 확인자 추가](https://docs.microsoft.com/previous-versions/ms730105(v=vs.90))

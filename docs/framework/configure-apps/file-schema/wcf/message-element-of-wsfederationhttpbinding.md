@@ -2,12 +2,12 @@
 title: <message> 요소 <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
-ms.openlocfilehash: 3e3b48476f2928bc1daecfb1c2f9989bbb2e5f33
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: d5e5ba1785dd5c6c3aaeccd5bdd7ac4443f85661
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55274172"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759121"
 ---
 # <a name="message-element-of-wsfederationhttpbinding"></a>\<메시지 > 요소의 \<wsFederationHttpBinding >
 에 대 한 메시지 수준 보안 설정을 정의 합니다 [ \<wsFederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)합니다.  
@@ -131,7 +131,7 @@ ms.locfileid: "55274172"
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>
- `System.ServiceModel.Configuration.FederatedMessageSecurityElement`
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>
 - [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [바인딩](../../../../../docs/framework/wcf/bindings.md)
 - [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
