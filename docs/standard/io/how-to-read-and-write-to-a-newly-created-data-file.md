@@ -1,6 +1,6 @@
 ---
 title: '방법: 새로 만든 데이터 파일 읽기 및 쓰기'
-ms.date: 03/30/2017
+ms.date: 01/21/2019
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -15,35 +15,36 @@ helpviewer_keywords:
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4f51042564158cfd7924164ce2b1a0fcc9d2658d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 065907ae0d4a38ff2ef68de6025251e28220ee96
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54562832"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55674622"
 ---
-# <a name="how-to-read-and-write-to-a-newly-created-data-file"></a><span data-ttu-id="18cd3-102">방법: 새로 만든 데이터 파일 읽기 및 쓰기</span><span class="sxs-lookup"><span data-stu-id="18cd3-102">How to: Read and Write to a Newly Created Data File</span></span>
-<span data-ttu-id="18cd3-103"><xref:System.IO.BinaryWriter>와 <xref:System.IO.BinaryReader?displayProperty=nameWithType> 클래스는 문자열이 아닌 데이터를 쓰고 읽는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-103">The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data rather than character strings.</span></span> <span data-ttu-id="18cd3-104">다음 예제에서는 `Test.data`라는 새로 만든 빈 파일 스트림에서 데이터를 읽거나 이 스트림에 데이터를 쓰는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-104">The following example demonstrates how to write data to, and read data from, a new, empty file stream called `Test.data`.</span></span> <span data-ttu-id="18cd3-105">현재 디렉터리에 데이터 파일을 만든 후 관련된 <xref:System.IO.BinaryWriter> 및 <xref:System.IO.BinaryReader> 개체를 만들고 <xref:System.IO.BinaryWriter> 개체를 사용하여 0부터 10까지의 정수를 `Test.data`에 씁니다. 이렇게 하면 파일 포인터가 파일 끝에 옵니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-105">After creating the data file in the current directory, the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects are created, and the <xref:System.IO.BinaryWriter> object is used to write the integers 0 through 10 to `Test.data`, which leaves the file pointer at the end of the file.</span></span> <span data-ttu-id="18cd3-106">파일 포인터를 다시 원점으로 설정하고 나면, <xref:System.IO.BinaryReader> 개체는 지정된 내용을 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-106">After setting the file pointer back to the origin, the <xref:System.IO.BinaryReader> object reads out the specified content.</span></span>  
+# <a name="how-to-read-and-write-to-a-newly-created-data-file"></a><span data-ttu-id="d300a-102">방법: 새로 만든 데이터 파일 읽기 및 쓰기</span><span class="sxs-lookup"><span data-stu-id="d300a-102">How to: Read and write to a newly created data file</span></span>
+<span data-ttu-id="d300a-103"><xref:System.IO.BinaryWriter?displayProperty=nameWithType>와 <xref:System.IO.BinaryReader?displayProperty=nameWithType> 클래스는 문자열이 아닌 데이터를 쓰고 읽는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-103">The <xref:System.IO.BinaryWriter?displayProperty=nameWithType> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data other than character strings.</span></span> <span data-ttu-id="d300a-104">다음 예제에서는 빈 파일 스트림을 만들어서 여기에 데이터를 쓰고 데이터를 읽는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-104">The following example shows how to create an empty file stream, write data to it, and read data from it.</span></span> 
+
+<span data-ttu-id="d300a-105">이 예제는 현재 디렉터리에 *Test.data*라는 데이터 파일을 만들고, 연결된 <xref:System.IO.BinaryWriter> 및 <xref:System.IO.BinaryReader> 개체를 만들고, <xref:System.IO.BinaryWriter> 개체를 사용하여 *Test.data*에 0부터 10까지 정수를 씁니다. 이렇게 하면 파일 포인터가 파일 끝에 옵니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-105">The example creates a data file called *Test.data* in the current directory, creates the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects, and uses the <xref:System.IO.BinaryWriter> object to write the integers 0 through 10 to *Test.data*, which leaves the file pointer at the end of the file.</span></span> <span data-ttu-id="d300a-106"><xref:System.IO.BinaryReader> 개체는 파일 포인터를 다시 원점으로 설정하고, 지정된 내용을 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-106">The <xref:System.IO.BinaryReader> object then sets the file pointer back to the origin and reads out the specified content.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="18cd3-107">예제</span><span class="sxs-lookup"><span data-stu-id="18cd3-107">Example</span></span>  
- [!code-cpp[System.IO.BinaryReaderWriter#7](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source6.cpp#7)]
+> [!NOTE]
+> <span data-ttu-id="d300a-107">현재 디렉터리에 *Test.data*가 이미 있는 경우, <xref:System.IO.IOException> 예외가 throw됩니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-107">If *Test.data* already exists in the current directory, an <xref:System.IO.IOException> exception is thrown.</span></span> <span data-ttu-id="d300a-108">예외를 throw하지 않고 항상 새 파일을 만들려면 <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType>보다는 <xref:System.IO.FileMode.Create?displayProperty=nameWithType> 파일 모드 옵션을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="d300a-108">Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> rather than <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType> to always create a new file without throwing an exception.</span></span>  
+  
+## <a name="example"></a><span data-ttu-id="d300a-109">예</span><span class="sxs-lookup"><span data-stu-id="d300a-109">Example</span></span>  
  [!code-csharp[System.IO.BinaryReaderWriter#7](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source6.cs#7)]
  [!code-vb[System.IO.BinaryReaderWriter#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source6.vb#7)]  
   
-## <a name="robust-programming"></a><span data-ttu-id="18cd3-108">강력한 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="18cd3-108">Robust Programming</span></span>  
- <span data-ttu-id="18cd3-109">현재 디렉터리에 `Test.data`가 이미 있는 경우, <xref:System.IO.IOException> 예외가 throw됩니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-109">If `Test.data` already exists in the current directory, an <xref:System.IO.IOException> exception is thrown.</span></span> <span data-ttu-id="18cd3-110">파일 스트림을 초기화하여 예외를 throw하지 않고 항상 새 파일을 만들려면 <xref:System.IO.FileMode.Create?displayProperty=nameWithType> 파일 모드 옵션을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="18cd3-110">Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> when you initialize the file stream to always create a new file without throwing an  exception.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="18cd3-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="18cd3-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d300a-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d300a-110">See also</span></span>
 
-- <xref:System.IO.BinaryReader>
-- <xref:System.IO.BinaryWriter>
-- <xref:System.IO.FileStream>
-- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>
-- <xref:System.IO.SeekOrigin>
-- [<span data-ttu-id="18cd3-112">방법: 디렉터리 및 파일 열거</span><span class="sxs-lookup"><span data-stu-id="18cd3-112">How to: Enumerate Directories and Files</span></span>](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
-- [<span data-ttu-id="18cd3-113">방법: 로그 파일 열기 및 추가</span><span class="sxs-lookup"><span data-stu-id="18cd3-113">How to: Open and Append to a Log File</span></span>](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [<span data-ttu-id="18cd3-114">방법: 파일에서 텍스트 읽기</span><span class="sxs-lookup"><span data-stu-id="18cd3-114">How to: Read Text from a File</span></span>](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [<span data-ttu-id="18cd3-115">방법: 파일에 텍스트 쓰기</span><span class="sxs-lookup"><span data-stu-id="18cd3-115">How to: Write Text to a File</span></span>](../../../docs/standard/io/how-to-write-text-to-a-file.md)
-- [<span data-ttu-id="18cd3-116">방법: 문자열에서 문자 읽기</span><span class="sxs-lookup"><span data-stu-id="18cd3-116">How to: Read Characters from a String</span></span>](../../../docs/standard/io/how-to-read-characters-from-a-string.md)
-- [<span data-ttu-id="18cd3-117">방법: 문자열에 문자 쓰기</span><span class="sxs-lookup"><span data-stu-id="18cd3-117">How to: Write Characters to a String</span></span>](../../../docs/standard/io/how-to-write-characters-to-a-string.md)
-- [<span data-ttu-id="18cd3-118">파일 및 스트림 I/O</span><span class="sxs-lookup"><span data-stu-id="18cd3-118">File and Stream I/O</span></span>](../../../docs/standard/io/index.md)
+- <xref:System.IO.BinaryReader>  
+- <xref:System.IO.BinaryWriter>  
+- <xref:System.IO.FileStream>  
+- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
+- <xref:System.IO.SeekOrigin>  
+- [<span data-ttu-id="d300a-111">방법: 디렉터리 및 파일 열거</span><span class="sxs-lookup"><span data-stu-id="d300a-111">How to: Enumerate directories and files</span></span>](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+- [<span data-ttu-id="d300a-112">방법: 로그 파일 열기 및 추가</span><span class="sxs-lookup"><span data-stu-id="d300a-112">How to: Open and append to a log file</span></span>](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [<span data-ttu-id="d300a-113">방법: 파일에서 텍스트 읽기</span><span class="sxs-lookup"><span data-stu-id="d300a-113">How to: Read text from a file</span></span>](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [<span data-ttu-id="d300a-114">방법: 파일에 텍스트 쓰기</span><span class="sxs-lookup"><span data-stu-id="d300a-114">How to: Write text to a file</span></span>](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [<span data-ttu-id="d300a-115">방법: 문자열에서 문자 읽기</span><span class="sxs-lookup"><span data-stu-id="d300a-115">How to: Read characters from a string</span></span>](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
+- [<span data-ttu-id="d300a-116">방법: 문자열에 문자 쓰기</span><span class="sxs-lookup"><span data-stu-id="d300a-116">How to: Write characters to a string</span></span>](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
+- [<span data-ttu-id="d300a-117">파일 및 스트림 I/O</span><span class="sxs-lookup"><span data-stu-id="d300a-117">File and stream I/O</span></span>](../../../docs/standard/io/index.md)
