@@ -2,12 +2,12 @@
 title: async 및 await를 사용한 비동기 프로그래밍(C#)
 ms.date: 05/22/2017
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.openlocfilehash: 15ce60c965159b475526106da8e864804fe9e0c1
-ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.openlocfilehash: 011ddf8e9769471f37f073b4440a909afc5e404f
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55675234"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759511"
 ---
 # <a name="asynchronous-programming-with-async-and-await-c"></a>async 및 await를 사용한 비동기 프로그래밍(C#)
 비동기 프로그래밍을 사용하여 성능 병목 현상을 방지하고 애플리케이션의 전체적인 응답성을 향상할 수 있습니다. 그러나 비동기 애플리케이션을 쓰는 일반적인 기술이 복잡하여 해당 애플리케이션을 쓰고, 디버깅하고, 유지 관리하기 어려울 수 있습니다.  
@@ -50,32 +50,33 @@ ms.locfileid: "55675234"
 async Task<int> AccessTheWebAsync()  
 {   
     // You need to add a reference to System.Net.Http to declare client.  
-    HttpClient client = new HttpClient();  
+    using (HttpClient client = new HttpClient())  
+    {  
+        // GetStringAsync returns a Task<string>. That means that when you await the  
+        // task you'll get a string (urlContents).  
+        Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
   
-    // GetStringAsync returns a Task<string>. That means that when you await the  
-    // task you'll get a string (urlContents).  
-    Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
+        // You can do work here that doesn't rely on the string from GetStringAsync.  
+        DoIndependentWork();  
   
-    // You can do work here that doesn't rely on the string from GetStringAsync.  
-    DoIndependentWork();  
+        // The await operator suspends AccessTheWebAsync.  
+        //  - AccessTheWebAsync can't continue until getStringTask is complete.  
+        //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
+        //  - Control resumes here when getStringTask is complete.   
+        //  - The await operator then retrieves the string result from getStringTask.  
+        string urlContents = await getStringTask;  
   
-    // The await operator suspends AccessTheWebAsync.  
-    //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-    //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-    //  - Control resumes here when getStringTask is complete.   
-    //  - The await operator then retrieves the string result from getStringTask.  
-    string urlContents = await getStringTask;  
-  
-    // The return statement specifies an integer result.  
-    // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-    return urlContents.Length;  
+        // The return statement specifies an integer result.  
+        // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
+        return urlContents.Length;  
+    }  
 }  
 ```  
   
  `AccessTheWebAsync`에 `GetStringAsync` 호출과 해당 완료 대기 사이에 수행할 수 있는 작업이 없는 경우 다음 단일 문을 호출하고 대기하여 코드를 단순화할 수 있습니다.  
   
 ```csharp  
-string urlContents = await client.GetStringAsync();  
+string urlContents = await client.GetStringAsync("https://docs.microsoft.com");  
 ```  
  
 이전 예제가 비동기 메서드인 이유는 다음과 같은 특성 때문입니다.  
@@ -179,32 +180,32 @@ C# 7.0부터는 형식에 `GetAwaiter` 메서드가 포함된 경우 다른 반�
   
 ```csharp  
 // Signature specifies Task<TResult>  
-async Task<int> TaskOfTResult_MethodAsync()  
+async Task<int> GetTaskOfTResultAsync()  
 {  
-    int hours;  
-    // . . .  
+    int hours = 0;  
+    await Task.Delay(0);  
     // Return statement specifies an integer result.  
     return hours;  
 }  
   
-// Calls to TaskOfTResult_MethodAsync  
-Task<int> returnedTaskTResult = TaskOfTResult_MethodAsync();  
+// Calls to GetTaskOfTResultAsync  
+Task<int> returnedTaskTResult = GetTaskOfTResultAsync();  
 int intResult = await returnedTaskTResult;  
 // or, in a single statement  
-int intResult = await TaskOfTResult_MethodAsync();  
+int intResult = await GetTaskOfTResultAsync();  
   
 // Signature specifies Task  
-async Task Task_MethodAsync()  
+async Task GetTaskAsync()  
 {  
-    // . . .  
+    await Task.Delay(0);  
     // The method has no return statement.    
 }  
   
-// Calls to Task_MethodAsync  
-Task returnedTask = Task_MethodAsync();  
+// Calls to GetTaskAsync  
+Task returnedTask = GetTaskAsync();  
 await returnedTask;  
 // or, in a single statement  
-await Task_MethodAsync();  
+await GetTaskAsync();  
 ```  
   
 반환된 각 작업은 진행 중인 작업을 나타냅니다. 작업은 비동기 프로세스 상태에 대한 정보를 캡슐화하며, 결과적으로 프로세스의 최종 결과 또는 성공하지 못한 경우 프로세스가 발생시키는 예외에 대한 정보를 캡슐화합니다.  
@@ -298,25 +299,26 @@ namespace AsyncFirstExample
         async Task<int> AccessTheWebAsync()  
         {   
             // You need to add a reference to System.Net.Http to declare client.  
-            HttpClient client = new HttpClient();  
+            using (HttpClient client = new HttpClient())  
+            {  
+                    // GetStringAsync returns a Task<string>. That means that when you await the  
+                    // task you'll get a string (urlContents).  
+                    Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
   
-            // GetStringAsync returns a Task<string>. That means that when you await the  
-            // task you'll get a string (urlContents).  
-            Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
+                    // You can do work here that doesn't rely on the string from GetStringAsync.  
+                    DoIndependentWork();  
   
-            // You can do work here that doesn't rely on the string from GetStringAsync.  
-            DoIndependentWork();  
+                    // The await operator suspends AccessTheWebAsync.  
+                    //  - AccessTheWebAsync can't continue until getStringTask is complete.  
+                    //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
+                    //  - Control resumes here when getStringTask is complete.   
+                    //  - The await operator then retrieves the string result from getStringTask.  
+                    string urlContents = await getStringTask;  
   
-            // The await operator suspends AccessTheWebAsync.  
-            //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-            //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-            //  - Control resumes here when getStringTask is complete.   
-            //  - The await operator then retrieves the string result from getStringTask.  
-            string urlContents = await getStringTask;  
-  
-            // The return statement specifies an integer result.  
-            // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-            return urlContents.Length;  
+                    // The return statement specifies an integer result.  
+                    // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
+                    return urlContents.Length;  
+            }  
         }  
   
         void DoIndependentWork()  
@@ -330,7 +332,7 @@ namespace AsyncFirstExample
   
 // Working . . . . . . .  
   
-// Length of the downloaded string: 41564.  
+// Length of the downloaded string: 25035.  
 ```  
   
 ## <a name="see-also"></a>참고 항목
