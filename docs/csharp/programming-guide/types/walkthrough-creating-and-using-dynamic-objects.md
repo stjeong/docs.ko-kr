@@ -9,16 +9,16 @@ helpviewer_keywords:
 - dynamic objects
 - dynamic objects [C#]
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-ms.openlocfilehash: ff46fcc14a8a8e3d6c6d31dcb8c922640d6478c8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7031fe21e53b38f686d229b350b8dfef7dd93bdc
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54691756"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204823"
 ---
 # <a name="walkthrough-creating-and-using-dynamic-objects-c-and-visual-basic"></a>연습: 동적 개체 만들기 및 사용(C# 및 Visual Basic)
 
-동적 개체는 컴파일 시간이 아닌 런타임에 속성 및 메서드 같은 멤버를 노출합니다. 이를 통해 형식 또는 정적 형식과 일치하지 않는 구조와 작동할 개체를 만들 수 있습니다. 예를 들어 동적 개체를 사용하여 DOM(문서 개체 모델)을 참조할 수 있습니다. DOM에는 유효한 HTML 마크업 요소 및 특성의 조합을 포함할 수 있습니다. 각 HTML 문서는 고유하므로, 특정 HTML 문서에 대한 멤버는 런타임에 의해 결정됩니다. HTML 요소의 특성을 참조하는 일반적인 방법은 요소의 `GetProperty` 메서드에 특성의 이름을 전달하는 것입니다. HTML 요소 `<div id="Div1">`의 `id` 특성을 참조하려면 먼저 `<div>` 요소에 대한 참조를 가져온 다음 `divElement.GetProperty("id")`를 사용합니다. 동적 개체를 사용하는 경우 `id` 특성을 `divElement.id`로서 참조할 수 있습니다.  
+동적 개체는 컴파일 시간이 아닌 런타임에 속성 및 메서드와 같은 멤버를 노출합니다. 이를 통해 형식 또는 정적 형식과 일치하지 않는 구조와 작동할 개체를 만들 수 있습니다. 예를 들어 동적 개체를 사용하여 DOM(문서 개체 모델)을 참조할 수 있습니다. DOM에는 유효한 HTML 마크업 요소 및 특성의 조합을 포함할 수 있습니다. 각 HTML 문서는 고유하므로, 특정 HTML 문서에 대한 멤버는 런타임에 의해 결정됩니다. HTML 요소의 특성을 참조하는 일반적인 방법은 요소의 `GetProperty` 메서드에 특성의 이름을 전달하는 것입니다. HTML 요소 `<div id="Div1">`의 `id` 특성을 참조하려면 먼저 `<div>` 요소에 대한 참조를 가져온 다음 `divElement.GetProperty("id")`를 사용합니다. 동적 개체를 사용하는 경우 `id` 특성을 `divElement.id`로서 참조할 수 있습니다.  
   
  동적 개체를 사용하면 IronPython 및 IronRuby와 같은 동적 언어에 편리하게 액세스할 수 있습니다. 동적 개체를 사용하면 런타임에 해석되는 동적 스크립트를 참조할 수 있습니다.  
   

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 37ab502277cb413a116aa1301d1127f700097a45
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 24df4140e515483adb94fa542a7063bd2ae2120b
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53146578"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479787"
 ---
 # <a name="overview-of-synchronization-primitives"></a>동기화 기본 형식 개요
 
@@ -34,7 +34,7 @@ ms.locfileid: "53146578"
 - <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> - <xref:System.Threading.EventWaitHandle>에서 파생되고 신호 알림을 받으면 단일 대기 스레드를 해제한 후 자동으로 신호 알림 해제 상태로 다시 설정됩니다.
 - <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> - <xref:System.Threading.EventWaitHandle>에서 파생되고 신호 알림을 받을 경우 <xref:System.Threading.EventWaitHandle.Reset%2A> 메서드가 호출될 때까지 신호 알림 상태를 유지합니다.
 
-.NET Framework에서 <xref:System.Threading.WaitHandle>은 <xref:System.MarshalByRefObject?displayProperty=nameWithType>에서 파생되므로 대기 핸들을 사용하여 응용 프로그램 도메인 경계에 걸쳐 스레드 활동을 동기화할 수 있습니다.
+.NET Framework에서 <xref:System.Threading.WaitHandle>은 <xref:System.MarshalByRefObject?displayProperty=nameWithType>에서 파생되므로 대기 핸들을 사용하여 애플리케이션 도메인 경계에 걸쳐 스레드 활동을 동기화할 수 있습니다.
 
 .NET Framework 및 .NET Core에서 이러한 형식 중 일부는 운영 체제 전체에 표시되고 프로세스 간 동기화에 사용할 수 있는 명명된 시스템 동기화 핸들을 나타낼 수 있습니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "53146578"
 
 자세한 내용은 <xref:System.Threading.WaitHandle> API 참조를 참조하세요.
 
-간단한 동기화 형식은 기본 운영 체제 핸들을 사용하지 않고 일반적으로 향상된 성능을 제공합니다. 그러나 프로세스 간 동기화에는 사용할 수 없습니다. 한 응용 프로그램 내에서 이러한 형식의 스레드 동기화를 사용합니다.
+간단한 동기화 형식은 기본 운영 체제 핸들을 사용하지 않고 일반적으로 향상된 성능을 제공합니다. 그러나 프로세스 간 동기화에는 사용할 수 없습니다. 한 애플리케이션 내에서 이러한 형식의 스레드 동기화를 사용합니다.
 
 이러한 형식 중 일부는 <xref:System.Threading.WaitHandle>에서 파생된 형식의 대체 항목입니다. 예를 들어 <xref:System.Threading.SemaphoreSlim>은 <xref:System.Threading.Semaphore>의 간단한 대체 항목입니다.
 
@@ -112,7 +112,7 @@ Windows에서는 프로세스 간 동기화에 <xref:System.Threading.Semaphore>
 
 Windows에서는 프로세스 간 동기화에 <xref:System.Threading.EventWaitHandle>를 사용할 수 있습니다. 이 작업을 수행하려면 이름을 지정하는 <xref:System.Threading.EventWaitHandle>EventWaitHandle 생성자[ 중 하나 또는 ](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) 메서드를 사용하여 명명된 시스템 동기화 이벤트를 나타내는 <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> 인스턴스를 만듭니다.
 
-자세한 내용은 [EventWaitHandle](eventwaithandle.md), [AutoResetEvent](autoresetevent.md) 및 [ManualResetEvent 및 ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md) 문서를 참조하세요. API 참조에 대해서는 <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent> 및 <xref:System.Threading.ManualResetEventSlim>을 참조하세요.
+자세한 내용은 [EventWaitHandle](eventwaithandle.md) 문서를 참조하세요. API 참조에 대해서는 <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent> 및 <xref:System.Threading.ManualResetEventSlim>을 참조하세요.
 
 ### <a name="countdownevent-class"></a>CountdownEvent 클래스
 

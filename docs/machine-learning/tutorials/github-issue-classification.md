@@ -4,12 +4,12 @@ description: 다중 클래스 분류 시나리오에서 ML.NET을 사용하여 G
 ms.date: 01/24/2019
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 6f01357906fd4398f68dadfb35dbce816f4302c0
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: a951e884a7494b0dcc808fc3dafbfadebc5577dc
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066209"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55254992"
 ---
 # <a name="tutorial-use-mlnet-in-a-multiclass-classification-scenario-to-classify-github-issues"></a>자습서: 다중 클래스 분류 시나리오에서 ML.NET을 사용하여 GitHub 문제를 분류합니다.
 
@@ -106,6 +106,8 @@ ms.locfileid: "55066209"
 
 * 이진: A 또는 B.
 * 다중 클래스: 단일 모델을 사용하여 예측할 수 있는 여러 범주.
+
+이러한 유형의 문제에는 다중 클래스 분류 작업을 사용합니다. 문제 범주 예측이 단지 2개(이진)가 아닌 여러 범주(다중 클래스) 중 하나일 수 있기 때문입니다.
 
 ## <a name="create-a-console-application"></a>콘솔 애플리케이션 만들기
 

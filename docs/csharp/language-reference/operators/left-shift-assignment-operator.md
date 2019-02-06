@@ -1,5 +1,5 @@
 ---
-title: '&lt;&lt;= 연산자 - C# 참조'
+title: <<= 연산자 - C# 참조
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - <<= operator (left-shift assignment) [C#]
 - left shift assignment operator (<<=) [C#]
 ms.assetid: 3bc99c78-1edb-4827-86fc-bce6c3048871
-ms.openlocfilehash: 4513c4b78dea3e8102c72a43249b4a44ffa2421d
-ms.sourcegitcommit: 5c36aaa8299a2437c155700c810585aff19edbec
+ms.openlocfilehash: 0a005efa19be24f9adbf9031f562a30f9c1b0e34
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54333254"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55258736"
 ---
-# <a name="ltlt-operator-c-reference"></a>&lt;&lt;= 연산자(C# 참조)
+# <a name="-operator-c-reference"></a>\<\<= 연산자(C# 참조)
 
 왼쪽 시프트 대입 연산자입니다.
 
@@ -37,7 +37,7 @@ x = x << y
 
 `<<=` 연산자를 직접 오버로드할 수는 없지만 사용자 정의 형식은 [<< 연산자](left-shift-operator.md)를 오버로드할 수 있습니다([operator](../keywords/operator.md) 참조).
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 [!code-csharp[csRefOperators#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#12)]
 

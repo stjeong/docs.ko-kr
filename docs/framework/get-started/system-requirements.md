@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 765dac0a6cf8a3403880bead1716b8477662052c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d2655cf5d5fb211149bdbe09179707ec53c737d3
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54529530"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204563"
 ---
 # <a name="net-framework-system-requirements"></a>.NET Framework 시스템 요구 사항
 
@@ -78,12 +78,14 @@ ms.locfileid: "54529530"
 
 - 최상의 호환성 및 보안을 위해 모든 플랫폼에 대해 [Windows 업데이트 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=168461)에서 제공하는 최신 Windows 서비스 팩으로 업그레이드하고 중요 업데이트를 설치하는 것이 좋습니다.
 
-- 64비트 운영 체제에서는 .NET Framework가 WOW64(64비트 컴퓨터의 32비트 프로세싱) 및 64비트 프로세싱을 둘 다 지원합니다.
+- 64비트 운영 체제에서는 .NET Framework가 WOW64(64비트 머신의 32비트 프로세싱) 및 64비트 프로세싱을 둘 다 지원합니다.
 
 ## <a name="supported-server-operating-systems"></a>지원되는 서버 운영 체제
 
 | 운영 체제 | 지원되는 버전 | OS가 사전 설치됨 | 별도로 설치 가능 |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows Server 2019 | 64비트 | .NET Framework 4.7.2 | -- |
+| Windows Server, 버전 1809 | 64비트 | .NET Framework 4.7.2 | -- |
 | Windows Server, 버전 1803 | 64비트 | .NET Framework 4.7.2 | -- |
 | Windows Server, 버전 1709 | 64비트 | .NET Framework 4.7.1 | .NET Framework 4.7.2 | 
 | Windows Server 2016 | 64비트 | [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] | .NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |

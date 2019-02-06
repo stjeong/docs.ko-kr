@@ -1,5 +1,5 @@
 ---
-title: '&lt;permission&gt; - C# 프로그래밍 가이드'
+title: <permission> - C# 프로그래밍 가이드
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - <permission> C# XML tag
 - permission C# XML tag
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
-ms.openlocfilehash: 5d78261807ab06bd5f89b5438648c5eb0dc56ad9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4725e82c6b085e220f63346a8c6838ecc288efa1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54739461"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55263656"
 ---
-# <a name="ltpermissiongt-c-programming-guide"></a>&lt;permission&gt;(C# 프로그래밍 가이드)
+# <a name="permission-c-programming-guide"></a>\<permission>(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
   
 ```xml  
@@ -37,7 +37,7 @@ ms.locfileid: "54739461"
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  [!code-csharp[csProgGuideDocComments#8](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/permission_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

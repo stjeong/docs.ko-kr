@@ -1,15 +1,15 @@
 ---
 title: .NET 컨테이너에서 대상으로 지정할 OS
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | .NET 컨테이너에서 대상으로 지정할 OS
+description: 컨테이너화된 .NET 애플리케이션을 위한 .NET 마이크로 서비스 아키텍처 | .NET 컨테이너에서 대상으로 지정할 OS
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/11/2018
-ms.openlocfilehash: f6a5cf8d5e32e527977b7c142f5686310e88a068
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 01/07/2019
+ms.openlocfilehash: bef268a180584c47486a16960ca13fd63201fbe2
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147202"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479869"
 ---
 # <a name="what-os-to-target-with-net-containers"></a>.NET 컨테이너에서 대상으로 지정할 OS
 
@@ -21,7 +21,7 @@ Linux의 경우 공식 .NET Docker 이미지(예: Debian)에서 여러 배포판
 
 그림 3-1에서는 사용하는 .NET 프레임워크에 따라 가능한 OS 버전을 확인할 수 있습니다. 
 
-![레거시 .NET Framework 응용 프로그램을 배포할 때는 레거시 앱 및 IIS와 호환되고 더 큰 이미지를 가지는 Windows Server Core를 대상으로 해야 합니다. .NET Core 응용 프로그램을 배포할 때는 클라우드에 최적화되고 Kestrel을 사용하며 더 규모가 작으면서 더 빠르게 시작하는 Windows Nano Server를 대상으로 할 수 있습니다. 또한 Debian, Alpine 등을 지원하는 Linux를 대상으로 할 수도 있습니다. Kestrel을 사용하고 더 규모가 작고 더 빠르게 시작됩니다.](./media/image1.png)
+![레거시 .NET Framework 애플리케이션을 배포할 때는 레거시 앱 및 IIS와 호환되고 더 큰 이미지를 가지는 Windows Server Core를 대상으로 해야 합니다. .NET Core 애플리케이션을 배포할 때는 클라우드에 최적화되고 Kestrel을 사용하며 더 규모가 작으면서 더 빠르게 시작하는 Windows Nano Server를 대상으로 할 수 있습니다. 또한 Debian, Alpine 등을 지원하는 Linux를 대상으로 할 수도 있습니다. Kestrel을 사용하고 더 규모가 작고 더 빠르게 시작됩니다.](./media/image1.png)
 
 **그림 3-1.** .NET framework의 버전에 따라 대상으로 하는 운영 체제
 
@@ -38,21 +38,21 @@ Dockerfile 파일에 이미지 이름을 추가할 때는 다음 예제에서처
 </thead>
 <tbody>
 <tr>
-<td>microsoft/dotnet:2.1-runtime</td>
-<td>.NET Core 2.1 다중 아키텍처: Docker 호스트에 따라 Linux 및 Windows Nano Server를 지원합니다.</td>
+<td>microsoft/dotnet:2.2-runtime</td>
+<td>.NET Core 2.2 다중 아키텍처: Docker 호스트에 따라 Linux 및 Windows Nano Server를 지원합니다.</td>
 </tr>
 <tr class="odd">
-<td>microsoft/dotnet:2.1-aspnetcore-runtime</td>
-<td><p>ASP.NET Core 2.1 다중 아키텍처: Docker 호스트에 따라 Linux 및 Windows Nano Server를 지원합니다.</p>
+<td>microsoft/dotnet:2.2-aspnetcore-runtime</td>
+<td><p>ASP.NET Core 2.2 다중 아키텍처: Docker 호스트에 따라 Linux 및 Windows Nano Server를 지원합니다.</p>
 <p>aspnetcore 이미지에는 ASP.NET Core에 대한 몇 가지 최적화가 있습니다.</p></td>
 </tr>
 <tr class="even">
-<td>microsoft/dotnet:2.1-aspnetcore-runtime-alpine</td>
-<td>Linux Alpine distro만의 .NET Core 2.1 런타임</td>
+<td>microsoft/dotnet:2.2-aspnetcore-runtime-alpine</td>
+<td>Linux Alpine distro의 .NET Core 2.2 런타임 전용</td>
 </tr>
 <tr class="odd">
-<td>microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1803</td>
-<td>Windows Nano Server(Windows Server 버전 1803)만의 .NET Core 2.1 런타임</td>
+<td>microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1803</td>
+<td>Windows Nano Server(Windows Server 버전 1803)의 .NET Core 2.2 런타임 전용</td>
 </tr>
 </tbody>
 </table>

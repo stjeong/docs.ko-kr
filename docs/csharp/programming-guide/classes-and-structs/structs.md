@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, structs
 - structs [C#]
 ms.assetid: b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89
-ms.openlocfilehash: 3f19d0485939e1923c479c1c9fdeb06572a11e14
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 609169d4624802f679f9661b7aa0596403cc48e7
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53240387"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55261622"
 ---
 # <a name="structs-c-programming-guide"></a>구조체(C# 프로그래밍 가이드)
 
@@ -28,8 +28,8 @@ ms.locfileid: "53240387"
 - 클래스와 달리 구조체는 `new` 연산자를 사용하지 않고 인스턴스화할 수 있습니다.  
 - 구조체는 매개 변수가 있는 생성자를 선언할 수 있습니다. 
 - 구조체는 다른 구조체 또는 클래스에서 상속될 수 없으며, 클래스의 기본 클래스가 될 수도 없습니다. 모든 구조체는 <xref:System.Object>에서 상속하는 <xref:System.ValueType>에서 직접 상속합니다.  
-- 구조체는 인터페이스를 구현할 수 있습니다.  
-- 구조체는 nullable 형식으로 사용할 수 있으며 null 값을 할당할 수 있습니다.  
+- 구조체는 인터페이스를 구현할 수 있습니다. 
+- 변수가 널 nullable 형식으로 선언되지 않으면 구조체는 `null`일 수 없으며 구조체 변수에 `null`을 지정할 수 없습니다.
   
 ## <a name="related-sections"></a>관련 단원  
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 648a4d9e2f9be2cd8a5912ebfe272331a70ee76e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a417e964c2f44c291892f9ddec6e32438fbff9a1
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54707884"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55758433"
 ---
 # <a name="handling-and-throwing-exceptions-in-net"></a>.NET의 예외 처리 및 Throw
 
@@ -48,7 +48,7 @@ ms.locfileid: "54707884"
 
 다음 표에서는 몇 가지 일반적인 예외 및 예외가 발생할 수 있는 경우의 예를 보여 줍니다.
 
-| 예외 형식 | 설명 | 예제 |
+| 예외 형식 | 설명 | 예 |
 | -------------- | ----------- | ------- |
 | <xref:System.Exception> | 모든 예외의 기본 클래스. | 없음(이 예외의 파생된 클래스 사용). |
 | <xref:System.IndexOutOfRangeException> | 배열이 올바르지 않게 인덱싱된 경우에만 런타임에서 발생됩니다. | 유효 범위를 벗어난 배열 인덱싱: <br /> `arr[arr.Length+1]` |
@@ -69,4 +69,4 @@ ms.locfileid: "54707884"
 - [방법: Finally 블록 사용](how-to-use-finally-blocks.md)
 - [COM Interop 예외 처리](handling-com-interop-exceptions.md)
 - [예외에 대한 모범 사례](best-practices-for-exceptions.md)
-- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)(모든 개발자가 런타임 예외에 대해 알아야 할 사항)
+- [모든 개발자가 런타임 예외에 대해 알아야 할 사항](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)

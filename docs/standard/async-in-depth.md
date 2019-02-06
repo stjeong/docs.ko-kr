@@ -6,18 +6,18 @@ ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.openlocfilehash: 7aa2bcdad9584ecf05dfee35e0887ed70737795d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 24b2792d1e48eb213c047cb589c52016e11c631d
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492835"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55285027"
 ---
 # <a name="async-in-depth"></a>비동기에 대한 자세한 설명
 
 .NET 태스크 기반 비동기 모델을 사용하면 I/O 및 CPU 바인딩된 비동기 코드를 간단하게 작성할 수 있습니다. 모델은 C# 및 Visual Basic에서 `Task` 및 `Task<T>` 형식과 `async` 및 `await` 키워드로 표시됩니다. (언어 관련 리소스는 [참고 항목](#see-also) 섹션에 있습니다.) 이 문서에서는 .NET 비동기를 사용하는 방법을 설명하고 백그라운드에서 사용되는 비동기 프레임워크에 대한 통찰을 제공합니다.
 
-## <a name="task-and-tasklttgt"></a>Task 및 Task&lt;T&gt;
+## <a name="task-and-taskt"></a>Task 및 Task\<T>
 
 태스크는 [동시성 약속 모델](https://en.wikipedia.org/wiki/Futures_and_promises)을 구현하는 데 사용되는 구문입니다.  간단히 말해서, 나중에 작업이 완료될 것이라는 "약속"을 제공하여 클린 API로 약속을 조정할 수 있게 합니다.
 
@@ -114,7 +114,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 
 또한 UI 스레드에 작업을 디스패치하는 경우(예: UI 업데이트) `async` 메서드를 사용하면 간단하며 추가 작업(예: 스레드로부터 안전한 대리자 호출)이 필요하지 않습니다.
 
-## <a name="deeper-dive-into-task-and-tasklttgt-for-a-cpu-bound-operation"></a>CPU 바인딩된 작업에 대한 Task 및 Task&lt;T&gt; 심층 분석
+## <a name="deeper-dive-into-task-and-taskt-for-a-cpu-bound-operation"></a>CPU 바인딩된 작업에 대한 Task 및 Task\<T> 심층 분석
 
 CPU 바인딩된 `async` 코드는 I/O 바인딩된 `async` 코드와 약간 다릅니다.  CPU에서 작업이 수행되기 때문에 스레드를 계산 전용으로 지정할 방법이 없습니다.  `async` 및 `await`를 사용하면 깔끔하게 백그라운드 스레드를 조작하고 비동기 메서드 호출자를 응답 가능한 상태로 유지할 수 있습니다.  이 경우 공유 데이터는 보호되지 않습니다.  공유 데이터를 사용하는 경우 적절한 동기화 전략을 적용해야 합니다.
 

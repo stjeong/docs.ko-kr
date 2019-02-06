@@ -2,17 +2,17 @@
 title: '방법: 리플렉션을 사용하여 어셈블리의 메타데이터 쿼리(LINQ)(C#)'
 ms.date: 07/20/2015
 ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
-ms.openlocfilehash: c4e10001e4c4b84265147c43aa9a5557e68e2d54
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 849244f1345966dbe198686f4f9024fc321b6ded
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54696063"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55263500"
 ---
-# <a name="how-to-query-an-assembly39s-metadata-with-reflection-linq-c"></a>방법: 리플렉션을 사용하여 어셈블리의 메타데이터 쿼리(LINQ)(C#)
+# <a name="how-to-query-an-assemblys-metadata-with-reflection-linq-c"></a>방법: 리플렉션을 사용하여 어셈블리의 메타데이터 쿼리(LINQ)(C#)
 다음 예제에서는 리플렉션과 함께 LINQ를 사용하여 지정된 검색 조건과 일치하는 메서드에 대한 특정 메타데이터를 검색하는 방법을 보여 줍니다. 이 경우 쿼리는 배열과 같은 열거 가능한 형식을 반환하는 모든 메서드의 이름을 어셈블리에서 검색합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```csharp  
 using System.Reflection;  

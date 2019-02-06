@@ -1,5 +1,5 @@
 ---
-title: =&gt; 연산자 - C# 참조
+title: => 연산자 - C# 참조
 ms.custom: seodec18
 ms.date: 01/22/2019
 f1_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - lambda operator [C#]
 - => operator [C#]
 - lambda expressions [C#], => operator
-ms.openlocfilehash: fa2e149f5b19e80e3171d08519be3ae249d2a112
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0cded9d23d67e6afc8b01d6711e42759b4b51fab
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540808"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55275862"
 ---
-# <a name="gt-operator-c-reference"></a>=&gt; 연산자(C# 참조)
+# <a name="-operator-c-reference"></a>=> 연산자(C# 참조)
 
 `=>` 토큰은 람다 연산자와 식 본문 정의의 멤버 이름과 멤버 구현의 구분자라는 두 가지 형식으로 지원됩니다.
 

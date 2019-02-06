@@ -1,5 +1,5 @@
 ---
-title: -&gt; 연산자 - C# 참조
+title: -> 연산자 - C# 참조
 ms.custom: seodec18
 ms.date: 11/26/2018
 f1_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - member access operator (->) [C#]
 - -> operator [C#]
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
-ms.openlocfilehash: bb1ccd026f403e68565c5c7681943d8017578d01
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: be74f02a85aa05cdab32768ed38222fc4d9289b1
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53234892"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55255369"
 ---
-# <a name="-gt-operator-c-reference"></a>-&gt; 연산자(C# 참조)
+# <a name="--operator-c-reference"></a>-> 연산자(C# 참조)
 
 포인터 멤버 액세스 연산자 `->`는 포인터 간접 참조 및 멤버 액세스를 결합합니다.
 

@@ -4,12 +4,12 @@ description: .NET 라이브러리 빌드를 시작합니다.
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: 05466de1469fc765570b8250301e8404cd5df173
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e26c6632252257ab8cb5598f1b201559b760dc6b
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145727"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204649"
 ---
 # <a name="get-started"></a>시작
 
@@ -29,9 +29,9 @@ NuGet.org에 공개적으로 게시된 모든 패키지에 대한 권장 메타�
 
 NuGet을 사용하면 .NET 라이브러리를 빌드할 때 기존 패키지를 쉽게 이용할 수 있습니다. NuGet 종속성의 일반적인 마찰 소스와 이를 방지하는 방법을 알아봅니다.
 
-### <a name="sourcelinksourcelinkmd"></a>[SourceLink](./sourcelink.md)
+### <a name="source-linksourcelinkmd"></a>[소스 링크](./sourcelink.md)
 
-SourceLink는 .NET 라이브러리의 사용자가 디버그하는 동안 해당 소스 코드를 한 단계씩 실행할 수 있게 해주는 훌륭한 도구입니다. 이 문서는 SourceLink란 무엇이고 왜 사용해야 하는지에 대한 개요입니다.
+소스 링크는 .NET 라이브러리의 사용자가 디버그하는 동안 해당 소스 코드를 한 단계씩 실행할 수 있게 해주는 훌륭한 도구입니다. 이 문서는 소스 링크란 무엇이고 왜 사용해야 하는지에 대한 개요입니다.
 
 ### <a name="publishingpublish-nuget-packagemd"></a>[게시](./publish-nuget-package.md)
 

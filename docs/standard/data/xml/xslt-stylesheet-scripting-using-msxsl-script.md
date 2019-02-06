@@ -1,5 +1,5 @@
 ---
-title: '&lt;msxsl:script&gt;를 사용한 XSLT 스타일시트 스크립트'
+title: <msxsl:script>를 사용한 XSLT 스타일시트 스크립트
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,14 +8,14 @@ dev_langs:
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5c57f8964172d351ddae048ea36e63a13cf2578d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f3abaa8115d2e52a98f0b42588860dece6361df5
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54563433"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55267302"
 ---
-# <a name="xslt-stylesheet-scripting-using-ltmsxslscriptgt"></a>&lt;msxsl:script&gt;를 사용한 XSLT 스타일시트 스크립트
+# <a name="xslt-stylesheet-scripting-using-msxslscript"></a>\<msxsl:script>를 사용한 XSLT 스타일시트 스크립팅
 <xref:System.Xml.Xsl.XslTransform> 클래스는 `script` 요소를 사용하여 포함 스크립트를 지원합니다.  
   
 > [!NOTE]
@@ -100,7 +100,7 @@ ms.locfileid: "54563433"
   
  이 경우 앰퍼샌드가 이스케이프되지 않기 때문에 예외가 throw됩니다. 문서는 XML로 로드되고 `msxsl:script` 요소 태그 사이의 텍스트에는 특별한 작업이 수행되지 않습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 포함 스크립트를 사용하여 주어진 반지름으로 원의 원주를 계산합니다.  
   
 ```vb  

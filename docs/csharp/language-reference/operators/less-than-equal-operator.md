@@ -1,5 +1,5 @@
 ---
-title: '&lt;= 연산자 - C# 참조'
+title: <= 연산자 - C# 참조
 ms.custom: seodec18
 ms.date: 12/18/2018
 f1_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - less than or equal to operator (<=) [C#]
 - <= operator [C#]
 ms.assetid: bb0caec9-d253-4105-b8bc-5252233251e4
-ms.openlocfilehash: 30f42de68667756a8233fef4241bfd74ed4eff2a
-ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
+ms.openlocfilehash: cb11a746d36cc22ab2341e28a7efba3c0b3510eb
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656091"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55257007"
 ---
-# <a name="lt-operator-c-reference"></a>&lt;= 연산자(C# 참조)
+# <a name="-operator-c-reference"></a>\<= 연산자(C# 참조)
 
 "작거나 같음" 관계 연산자 `<=`은 첫 번째 피연산자가 두 번째 피연산자 보다 작거나 같으면 `true`를 반환하고, 그렇지 않으면 `false`를 반환합니다. 모든 숫자 및 열거형 형식은 `<=` 연산자를 지원합니다. 동일한 [열거형](../keywords/enum.md) 형식의 피연산자의 경우 기본 정수 형식의 해당 값이 비교됩니다.
 

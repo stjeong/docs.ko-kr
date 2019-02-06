@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f32b32a8eeeaae00084bd0a69a94beeb837036a1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0a327cdeb69c5143b1720ff67ea493b7a088f399
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582179"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204875"
 ---
 # <a name="net-framework-versions-and-dependencies"></a>.NET Framework 버전 및 종속성
 .NET Framework의 각 버전에는 CLR(공용 언어 런타임), 기본 클래스 라이브러리 및 기타 관리되는 라이브러리가 포함되어 있습니다. 이 항목에서는 버전별 .NET Framework의 주요 기능에 대해 설명하고 기본 CLR 버전 및 관련 개발 환경에 대한 정보를 제공하며 Windows 운영 체제별로 설치된 버전을 확인합니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "54582179"
   
 |.NET Framework 버전|CLR 버전|포함된 운영 체제<br /> Visual Studio<br/>버전|✓ 다음에서 포함된 버전:<br />+ 다음에서 설치 가능한 버전:<br />Windows|✓ 다음에서 포함된 버전:<br />+ 다음에서 설치 가능한 버전:<br />Windows Server|설치된 .NET 버전 확인 방법|  
 |----------------------------|-----------------|--------------|---------------------------------------|----------------------------------------------------|-----------------------------------------------------------|-----------------------------------------| 
-|4.7.2<br/><br/>[새로운 기능](../whats-new/index.md#whats-new-in-the-net-framework-472)<br/><br/>[내게 필요한 옵션의 새로운 기능](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-the-net-framework-472)|4| | ✓ 10 2018년 10월 업데이트(버전 1809) <br/><br/> ✓ 10 2018년 4월 업데이트(버전 1803) <br/><br/> + 10 Fall Creators Update(버전 1709) <br/> <br/> + 10 Creators Update(버전 1703) <br/> + 10 1주년 업데이트(버전 1607) <br/> + 8.1 <br/> +7 | ✓ Windows Server, 버전 1803 <br/> + Windows Server, 버전 1709 <br/> + 2016 <br/> + 2012 R2 <br/> + 2012 <br/> + 2008 R2 SP1 |`Release` DWORD 사용:<br/><br/> - 461814(Windows 10 2018년 10월 업데이트) <br/> - 461808(Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803) <br/> - 461814(다른 모든 OS 버전) <br/><br/> ([지침](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) 참조)|
+|4.7.2<br/><br/>[새로운 기능](../whats-new/index.md#whats-new-in-the-net-framework-472)<br/><br/>[내게 필요한 옵션의 새로운 기능](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-the-net-framework-472)|4| | ✓ 10 2018년 10월 업데이트(버전 1809) <br/><br/> ✓ 10 2018년 4월 업데이트(버전 1803) <br/><br/> + 10 Fall Creators Update(버전 1709) <br/> <br/> + 10 Creators Update(버전 1703) <br/> + 10 1주년 업데이트(버전 1607) <br/> + 8.1 <br/> +7 | ✓ Windows Server 2019<br/> ✓ Windows Server, 버전 1809 <br/> ✓ Windows Server, 버전 1803 <br/> + Windows Server, 버전 1709 <br/> + 2016 <br/> + 2012 R2 <br/> + 2012 <br/> + 2008 R2 SP1 |`Release` DWORD 사용:<br/><br/> - 461814(Windows 10 2018년 10월 업데이트) <br/> - 461808(Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803) <br/> - 461814(다른 모든 OS 버전) <br/><br/> ([지침](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) 참조)|
 |4.7.1<br/><br/>[새로운 기능](../whats-new/index.md#whats-new-in-the-net-framework-471)<br/><br/>[내게 필요한 옵션의 새로운 기능](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-the-net-framework-471)|4| | ✓ 10 Fall Creators Update(버전 1709) <br/> <br/> + 10 Creators Update(버전 1703) <br/> + 10 1주년 업데이트(버전 1607) <br/> + 8.1 <br/> +7| + Windows Server, 버전 1803 <br/> ✓ Windows Server, 버전 1709 <br/> + 2016 <br/> + 2012 R2 <br/> + 2012 <br/> + 2008 R2 SP1 |`Release` DWORD 사용:<br/><br/> - 461308(Windows 10 Creators Update 및 Windows Server, 버전 1709) <br/> - 461310(다른 모든 OS 버전) <br/><br/> ([지침](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) 참조)| 
 |4.7<br/><br/>[새로운 기능](../whats-new/index.md#whats-new-in-the-net-framework-47)|4| | ✓ 10 크리에이터 업데이트(버전 1703) <br/> <br/> + 10 1주년 업데이트(버전 1607) <br/> + 8.1 <br/> +7| + 2016 <br/> + 2012 R2 <br/> + 2012 <br/> + 2008 R2 SP1 |`Release` DWORD 사용:<br/><br/> - 460798(Windows 10 크리에이터 업데이트) <br/> - 460805(다른 모든 OS 버전) <br/><br/> ([지침](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) 참조) |  
 |4.6.2<br/><br/>[새로운 기능](../whats-new/index.md#whats-new-in-the-net-framework-462)|4||✓ 10 1주년 업데이트(버전 1607) <br /><br /> + 10 11월 업데이트(버전 1511) <br/> + 10 <br/> + 8.1<br />+ 7|✓ 2016<br /><br /> + 2012 R2<br />+ 2012<br />+ 2008 R2 SP1|`Release` DWORD 사용:<br /><br /> - 394802(Windows 10 1주년 업데이트 및 Windows Server 2016) <br />- 394806(다른 모든 OS 버전)<br /><br /> ([지침](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) 참조)|  

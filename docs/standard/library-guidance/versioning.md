@@ -4,12 +4,12 @@ description: .NET 라이브러리의 버전을 관리하는 모범 사례 권장
 author: jamesnk
 ms.author: mairaw
 ms.date: 12/10/2018
-ms.openlocfilehash: e47b8a5ccad7c57d125e16f6e1d37fb91de31161
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: e6f811039f74649564cbfb42ef67e0a406e4cd70
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169601"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204745"
 ---
 # <a name="versioning"></a>버전 관리
 
@@ -87,7 +87,7 @@ Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 �
 
 ### <a name="assembly-informational-version"></a>어셈블리 정보 버전
 
-어셈블리 정보 버전은 추가 버전 정보를 기록하는 데 사용되며 런타임 동작에는 영향을 미치지 않습니다. 이 버전 설정은 선택 사항입니다. SourceLink를 사용하는 경우 이 버전은 NuGet 패키지 버전과 소스 제어 버전을 사용하여 빌드에서 설정됩니다. 예를 들어 `1.0.0-beta1+204ff0a`는 어셈블리 빌드에 사용된 소스 코드의 커밋 해시를 포함합니다. 자세한 내용은 [SourceLink](./sourcelink.md)를 참조하세요.
+어셈블리 정보 버전은 추가 버전 정보를 기록하는 데 사용되며 런타임 동작에는 영향을 미치지 않습니다. 이 버전 설정은 선택 사항입니다. 소스 링크를 사용하는 경우 이 버전은 NuGet 패키지 버전과 소스 제어 버전을 사용하여 빌드에서 설정됩니다. 예를 들어 `1.0.0-beta1+204ff0a`는 어셈블리 빌드에 사용된 소스 코드의 커밋 해시를 포함합니다. 자세한 내용은 [소스 링크](./sourcelink.md)를 참조하세요.
 
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>

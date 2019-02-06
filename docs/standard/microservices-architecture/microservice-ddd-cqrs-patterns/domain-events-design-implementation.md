@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: fc71e661a5fd2de2a69da36df0fc60616b149802
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 84ab1a67aca30aa1967ef2fb11f930bf14ec45e3
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127851"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675480"
 ---
 # <a name="domain-events-design-and-implementation"></a>도메인 이벤트: 디자인 및 구현
 
@@ -31,7 +31,7 @@ ms.locfileid: "53127851"
 
 데이터베이스 트랜잭션과 마찬가지로 도메인 이벤트와 관련된 모든 작업이 성공적으로 완료되거나 수행되지 않아야 합니다.
 
-도메인 이벤트는 메시징 스타일 이벤트와 유사하지만 한 가지 중요한 차이점이 있습니다. 실제 메시지, 메시지 큐, 메시지 broker 또는 AMPQ를 사용하는 서비스 버스에서, 메시지는 항상 비동기적으로 전송되고 프로세스와 컴퓨터에서 통신됩니다. 이것은 다수의 바인딩된 컨텍스트, 마이크로 서비스 또는 다른 애플리케이션을 통합하는 데 유용합니다. 하지만 도메인 이벤트의 경우 현재 실행 중인 도메인 작업에서 이벤트를 발생시키려고 하지만 파생 작업은 동일한 도메인 내에서 발생하기를 바랍니다.
+도메인 이벤트는 메시징 스타일 이벤트와 유사하지만 한 가지 중요한 차이점이 있습니다. 실제 메시지, 메시지 큐, 메시지 broker 또는 AMQP를 사용하는 서비스 버스에서, 메시지는 항상 비동기식으로 전송되고 프로세스와 머신에서 통신됩니다. 이것은 다수의 바인딩된 컨텍스트, 마이크로 서비스 또는 다른 애플리케이션을 통합하는 데 유용합니다. 하지만 도메인 이벤트의 경우 현재 실행 중인 도메인 작업에서 이벤트를 발생시키려고 하지만 파생 작업은 동일한 도메인 내에서 발생하기를 바랍니다.
 
 도메인 이벤트와 그 파생 작업(이벤트 처리기가 관리하는 이후에 트리거되는 동작)은 거의 즉시, 일반적으로 프로세스 내에서 그리고 동일한 도메인 내에서 발생해야 합니다. 따라서 도메인 이벤트는 동기 또는 비동기일 수 있습니다. 단, 통합 이벤트는 항상 비동기여야 합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "53127851"
 
 도메인 이벤트 처리는 애플리케이션 관련 문제입니다. 도메인 모델 계층은 도메인 논리(도메인 전문가가 이해하는 논리)에만 집중해야 하며 리포지토리를 이용한 파생 작업 지속 동작 및 처리기와 같은 애플리케이션 인프라는 신경 쓸 필요가 없습니다. 따라서 애플리케이션 계층 수준은 도메인 이벤트가 발생할 때 동작을 트리거하는 도메인 이벤트 처리기가 있어야 하는 곳입니다.
 
-도메인 이벤트는 다수의 애플리케이션 동작을 트리거하는 데에도 사용할 수 있으며 이보다 중요한 점은 향후 분리된 방식으로 이 숫자를 늘리는 것이 가능해야 한다는 점입니다. 예를 들어 주문이 시작되면 도메인 이벤트를 게시하여 해당 정보를 다른 집합체에 전파하거나 알림과 같은 애플리케이션 동작을 발생시킬 수 있습니다.
+도메인 이벤트는 다수의 애플리케이션 동작을 트리거하는 데에도 사용할 수 있으며 이보다 중요한 점은 향우 분리된 방식으로 이 숫자를 늘리는 것이 가능해야 한다는 점입니다. 예를 들어 주문이 시작되면 도메인 이벤트를 게시하여 해당 정보를 다른 집합체에 전파하거나 알림과 같은 애플리케이션 동작을 발생시킬 수 있습니다.
 
 여기서 요점은 도메인 이벤트가 발생할 때 실행되는 동작의 수가 변화할 수 있다는 점입니다. 궁극적으로 도메인과 애플리케이션의 작업 및 규칙 수는 증가합니다. 어떤 일이 일어날 때 발생하는 파생 작업의 복잡성과 수는 증가하지만, 코드가 "접착제"(즉, `new`를 사용하여 특정 개체를 만드는 것)와 결합된 경우 새 작업을 추가해야 할 때마다 작업 및 테스트 코드도 변경해야 합니다.
 
@@ -132,7 +132,7 @@ public class OrderStartedDomainEvent : INotification
 
 다음 질문은 관련 이벤트 처리기에 도달하도록 도메인 이벤트를 발생시키는 방법입니다. 여러 가지 방법을 사용할 수 있습니다.
 
-Udi Dahan은 이벤트를 관리하고 발생시키기 위해 정적 클래스를 사용하도록 원래 제안했습니다(예: [Domain Events – Take 2](http://udidahan.com/2008/08/25/domain-events-take-2/)(도메인 이벤트 – 테이크 2)와 같은 몇 가지 관련 게시물). 여기에는 `DomainEvents.Raise(Event myEvent)`와 같은 구문을 사용하여, 도메인 이벤트가 호출될 때 즉시 발생시키는 DomainEvents라는 정적 클래스가 포함될 수 있습니다. Jimmy Bogard는 유사한 방식을 권장하는 블로그 게시물([Strengthening your domain: Domain Events](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)(도메인: 강화: 도메인 이벤트))을 썼습니다.
+Udi Dahan은 이벤트를 관리하고 발생시키기 위해 정적 클래스를 사용하도록 원래 제안했습니다(예: [Domain Events – Take 2](http://udidahan.com/2008/08/25/domain-events-take-2/)(도메인 이벤트 – 테이크 2)와 같은 몇 가지 관련 게시물). 여기에는 `DomainEvents.Raise(Event myEvent)`와 같은 구문을 사용하여, 도메인 이벤트가 호출될 때 즉시 발생시키는 DomainEvents라는 정적 클래스가 포함될 수 있습니다. Jimmy Bogard는 유사한 방식을 권장하는 블로그 게시물인 [Strengthening your domain: Domain Events](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)(도메인: 강화: 도메인 이벤트)를 썼습니다.
 
 하지만 도메인 이벤트 클래스가 정적인 경우 처리기에 즉시 디스패치됩니다. 이로 인해 테스트와 디버깅이 더 어려워지며, 이것은 파생 작업 논리가 있는 이벤트 처리기가 이벤트가 발생한 직후에 실행되기 때문입니다. 테스트 및 디버깅을 수행하는 경우에는 현재 집계 클래스 및 여기서 벌어지는 일에만 집중하는 것이 좋습니다. 다른 집합체나 애플리케이션 논리와 관련된 파생 작업에 대한 다른 이벤트 처리기로 갑자기 리디렉션되는 것은 좋지 않습니다. 이런 이유 때문에 다른 방식이 진화하였으며 이 내용은 다음 섹션에 설명되어 있습니다.
 
@@ -218,7 +218,7 @@ public class OrderingContext : DbContext, IUnitOfWork
 
 > 집합체에 걸쳐있는 규칙은 항상 최신 상태가 유지될 것으로 예상되지 않습니다. 이벤트 처리, 일괄 처리 또는 기타 업데이트 메커니즘을 통해 다른 종속성이 특정 시간 내에 확인될 수 있습니다. (128페이지)
 
-Vaughn Vernon은 [Effective Aggregate Design. Part II: Making Aggregates Work Together](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)(효과적인 집계 설계: 집합체가 함께 작동하도록 만들기)에서 다음과 같이 언급하고 있습니다.
+Vaughn Vernon은 [Effective Aggregate Design. Part II: Making Aggregates Work Together](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)(효과적인 집계 설계 2부: 집합체가 함께 작동하도록 만들기)에서 다음과 같이 언급하고 있습니다.
 
 > 따라서 하나의 집계 인스턴스에서 명령을 실행하는 경우 하나 이상의 집합체에서 추가적인 비즈니스 규칙을 실행해야 하며, 최종 일관성을 사용하여 \[...\] DDD 모델에서 최종 일관성을 지원하는 실용적인 방법이 있습니다. 집계 메서드는 하나 이상의 비동기 구독자에게 제 시간에 배달되는 도메인 이벤트를 게시합니다.
 
@@ -355,10 +355,10 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
 - **Jimmy Bogard. 더 나은 도메인 이벤트 패턴** \
   [*https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/*](https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/)
 
-- **Vaughn Vernon. 효과적인 집계 디자인 2부: 집계 연동하기** \
+- **Vaughn Vernon. Effective Aggregate Design Part II: Making Aggregates Work Together** \(효과적인 집계 설계 2부: 집합체가 함께 작동하도록 만들기)에서 다음과 같이 언급하고 있습니다.
   [*https://dddcommunity.org/wp-content/uploads/files/pdf\_articles/Vernon\_2011\_2.pdf*](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)
 
-- **Jimmy Bogard. 도메인 강화: 도메인 이벤트** \
+- **Jimmy Bogard. Strengthening your domain: Domain Events** \(도메인 강화: 도메인 이벤트)
   [*https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/*](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)
 
 - **Tony Truong. 도메인 이벤트 패턴 예제** \

@@ -8,23 +8,23 @@ helpviewer_keywords:
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9a355c2e996ddb00dad804dfeb22987923d91aa6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 745cd1e17e2c06a513c6fdafe8f6b5f464b95d5f
+ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144522"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479661"
 ---
 # <a name="threading-objects-and-features"></a>스레딩 개체 및 기능
 
-<xref:System.Threading.Thread?displayProperty=nameWithType> 클래스와 함께 .NET 다중 스레드 응용 프로그램을 개발하는 데 도움이 되는 여러 클래스를 제공합니다. 다음 문서에서는 해당 클래스의 개요를 제공합니다.
+<xref:System.Threading.Thread?displayProperty=nameWithType> 클래스와 함께 .NET 다중 스레드 애플리케이션을 개발하는 데 도움이 되는 여러 클래스를 제공합니다. 다음 문서에서는 해당 클래스의 개요를 제공합니다.
 
 |제목|설명|  
 |-----------|-----------------|  
 |[관리되는 스레드 풀](the-managed-thread-pool.md)|.NET에서 관리하는 작업자 스레드 풀을 제공하는 <xref:System.Threading.ThreadPool?displayProperty=nameWithType> 클래스를 설명합니다.|  
 |[타이머](timers.md)|다중 스레드 환경에서 사용할 수 있는 .NET 타이머에 대해 설명합니다.|
 |[동기화 기본 형식 개요](overview-of-synchronization-primitives.md)|공유 리소스에 대한 액세스를 동기화하거나 스레드 상호 작용을 제어하는 데 사용할 수 있는 형식을 설명합니다.|
-|[EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|신호 전송 및 신호 대기를 통해 스레드 작업을 동기화하는 데 사용되는 관리되는 이벤트 대기 핸들을 설명합니다.|
+|[EventWaitHandle, CountdownEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|신호 전송 및 신호 대기를 통해 스레드 작업을 동기화하는 데 사용되는 관리되는 이벤트 대기 핸들을 설명합니다.|
 |[뮤텍스](mutexes.md)|공유 리소스에 대한 배타적 액세스 권한을 부여하는 <xref:System.Threading.Mutex?displayProperty=nameWithType>에 대해 설명합니다.|
 |[세마포 및 SemaphoreSlim](semaphore-and-semaphoreslim.md)|공유 리소스 또는 리소스 풀에 동시에 액세스할 수 있는 스레드 수를 제한하는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스를 설명합니다.|
 |[장벽](barrier.md)|단계별 작업에서 스레드를 조정하기 위해 장벽 패턴을 구현하는 <xref:System.Threading.Barrier?displayProperty=nameWithType> 클래스를 설명합니다.|

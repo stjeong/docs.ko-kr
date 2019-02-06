@@ -3,12 +3,12 @@ title: nullable 참조 형식을 사용하여 디자인
 description: 이 고급 자습서에서는 nullable 참조 형식을 소개합니다. 참조 값이 null일 수 있는 경우에 대한 디자인 의도를 표현하고 컴파일러가 null일 수 없는 경우를 적용하게 하는 방법을 알아봅니다.
 ms.date: 12/03/2018
 ms.custom: mvc
-ms.openlocfilehash: 7e4cb423658287e5260770a680f189c227b9cd01
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: eec0c54c041db98595202ab982494df6ae3f743c
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53156691"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204771"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>자습서: nullable 참조 형식 및 nullable이 아닌 참조 형식을 사용하여 디자인 의도를 보다 명확하게 표현
 
@@ -88,7 +88,7 @@ C#으로 프로그래밍한 경우 null 값을 허용하는 참조 형식에 익
 
 ## <a name="build-the-survey-with-nullable-and-non-nullable-types"></a>nullable 형식과 nullable이 아닌 형식을 사용하여 설문 조사 작성
 
-작성하는 첫 번째 코드에서 설문 조사를 만듭니다. 설문 조사 질문과 설문 조사 실행을 모델링하는 클래스를 작성합니다. 설문 조사에는 응답 형식(예/아니요 응답, 숫자 응답, 텍스트 응답)으로 구분되는 세 가지 질문 유형이 있습니다. `public` `SurveyQuestion` 클래스를 만듭니다. `using` 문 바로 뒤에 `#nullable enable` pragma를 포함합니다.
+작성하는 첫 번째 코드에서 설문 조사를 만듭니다. 설문 조사 질문과 설문 조사 실행을 모델링하는 클래스를 작성합니다. 설문 조사에는 다음 응답 형식으로 구분되는 세 가지 질문 유형이 있습니다. 예/아니요 응답, 숫자 응답, 텍스트 응답. `public` `SurveyQuestion` 클래스를 만듭니다. `using` 문 바로 뒤에 `#nullable enable` pragma를 포함합니다.
 
 ```csharp
 #nullable enable
@@ -146,7 +146,7 @@ namespace NullableIntroduction
 }
 ```
 
-이전과 마찬가지로, 목록 개체를 null이 아닌 값으로 초기화해야 합니다. 초기화하지 않으면 컴파일러에서 경고를 실행합니다. `AddQuestion`의 두 번째 오버로드에는 null 확인이 없습니다. 해당 변수를 nullable이 아닌 것으로 선언하여 필요하지 않기 때문입니다. 해당 값은 `null`일 수 있습니다.
+이전과 마찬가지로, 목록 개체를 null이 아닌 값으로 초기화해야 합니다. 초기화하지 않으면 컴파일러에서 경고를 실행합니다. `AddQuestion`의 두 번째 오버로드에는 null 확인이 없습니다. 왜냐하면 해당 변수를 nullable이 아닌 것으로 선언했기 때문입니다. 해당 값은 `null`일 수 있습니다.
 
 편집기에서 `Program.cs`로 전환하고 `Main`의 내용을 다음 코드 줄로 바꿉니다.
 
@@ -190,7 +190,7 @@ namespace NullableIntroduction
 1. 설문 조사에 참여하도록 요청합니다. 개인이 동의하지 않을 경우 missing(또는 null) 응답을 반환합니다.
 1. 각 질문을 하고 응답을 기록합니다. 각 응답도 missing(또는 null)일 수 있습니다.
 
-`SurveyRespondent` 클래스에 다음 코드를 추가합니다.
+`SurveyResponse` 클래스에 다음 코드를 추가합니다.
 
 [!code-csharp[AnswerSurvey](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
@@ -228,7 +228,7 @@ namespace NullableIntroduction
 
 ## <a name="get-the-code"></a>코드 가져오기
 
-[samples](https://github.com/dotnet/samples) 리포지토리의 [csharp/IntroToNullables](https://github.com/dotnet/samples/tree/master/csharp/NullableIntroduction) 폴더에서 완료된 자습서의 코드를 가져올 수 있습니다.
+[csharp/NullableIntroduction](https://github.com/dotnet/samples/tree/master/csharp/NullableIntroduction) 폴더의 [samples](https://github.com/dotnet/samples) 리포지토리에서 완료된 자습서의 코드를 가져올 수 있습니다.
 
 nullable 참조 형식과 nullable이 아닌 참조 형식 간에 형식 선언을 변경하여 실험합니다. 실수로 `null`을 역참조하지 않도록 어떻게 다양한 경고를 생성하는지 확인합니다.
 

@@ -5,14 +5,14 @@ author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: 3897b3acd06d4dbe8b61f4c12686a365bd17662a
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: db5c6a45db299d716b2fdd115086e0dbc5952a59
+ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066314"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204303"
 ---
-# <a name="install-the-net-framework-on-windows-10-and-windows-server-2016"></a>Windows 10 및 Windows Server 2016에 .NET Framework 설치
+# <a name="install-the-net-framework-on-windows-10-and-windows-server-2016-and-later"></a>Windows 10 및 Windows Server 2016 이상에 .NET Framework 설치
 
 Windows에서 많은 애플리케이션을 실행하는 데 .NET Framework가 필요합니다. 이 문서의 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)는 사용 가능한 최신 버전입니다.
 
@@ -27,6 +27,12 @@ Windows에서 많은 애플리케이션을 실행하는 데 .NET Framework가 �
 * [Windows 10 2018년 10월 업데이트](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
 
 * [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)
+
+* Windows Server 2019
+
+* Windows Server, 버전 1809
+
+* Windows Server, 버전 1803
 
 > [!div class="button"]
 > [.NET Framework 4.7.2 다운로드](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)

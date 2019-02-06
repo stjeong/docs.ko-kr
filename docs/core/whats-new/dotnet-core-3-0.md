@@ -6,27 +6,154 @@ dev_langs:
 - vb
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2018
-ms.openlocfilehash: 26fb7cb25b9bf7f00f87059fbe1848763f7f175d
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.date: 12/31/2018
+ms.openlocfilehash: baaa2676865c475e331ec889e7b10ae326b552fa
+ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415548"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55675090"
 ---
-# <a name="whats-new-in-net-core-30-preview-1"></a>.NET Core 3.0(Preview 1)의 새로운 기능
+# <a name="whats-new-in-net-core-30-preview-2"></a>.NET Core 3.0(Preview 2)의 새로운 기능
 
-이 문서에서는 .NET Core 3.0(Preview 1)의 새로운 기능에 대해 설명합니다. 가장 중요한 개선 사항 중 하나는 Windows 데스크톱 애플리케이션에 대한 지원(Windows만 해당)입니다. Windows 데스크톱이라는 .NET Core 3.0 구성 요소를 활용하여 Windows Forms WPF(Windows Presentation Foundation) 애플리케이션을 포팅할 수 있습니다. 분명히 말하지만, Windows 데스크톱 구성 요소는 Windows에서만 지원됩니다. 자세한 내용은 아래의 [Windows 데스크톱](#windows-desktop) 섹션을 참조하세요.
+이 문서에서는 .NET Core 3.0(Preview 2)의 새로운 기능을 설명합니다. 가장 중요한 개선 사항 중 하나는 Windows 데스크톱 애플리케이션에 대한 지원(Windows만 해당)입니다. Windows 데스크톱이라는 .NET Core 3.0 SDK 구성 요소를 활용하여 Windows Forms 및 WPF(Windows Presentation Foundation) 애플리케이션을 포팅할 수 있습니다. 분명히 말하지만, Windows 데스크톱 구성 요소는 Windows에서만 지원되고 포함됩니다. 자세한 내용은 아래의 [Windows 데스크톱](#windows-desktop) 섹션을 참조하세요.
 
 .NET Core 3.0에서는 C# 8.0에 대한 지원이 추가되었습니다.
 
-Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3 Preview 1을 다운로드하여 시작](https://aka.ms/netcore3download)하세요. [.NET Core 3 Preview 1 릴리스 정보](https://aka.ms/netcore3releasenotes)에서 자세한 릴리스 정보를 확인할 수 있습니다.
+Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3 Preview 2를 다운로드하여 시작](https://aka.ms/netcore3download)하세요. 릴리스에 대한 전체 세부 정보는 [.NET Core 3 Preview 2 릴리스 정보](https://aka.ms/netcore3releasenotes)를 참조하세요.
 
-자세한 내용은 [.NET Core 3.0 Preview 1 알림](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)을 참조하세요.
+Preview 1에서 릴리스된 내용을 보려면 [.NET Core 3.0 Preview 1 공지 사항](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)을 참조하세요.
 
-## <a name="net-standard-21"></a>.NET Standard 2.1
+Preview 2에서 릴리스된 내용을 보려면 [.NET Core 3.0 Preview 1 공지 사항]()을 참조하세요.
 
-.NET Core 3.0에서는 .NET Standard 2.1을 구현합니다.
+## <a name="c-8"></a>C# 8
+
+.NET Core 3.0은 C# 8을 지원하고 .NET Core 3.0 Preview 2에서는 다음과 같은 새로운 기능을 지원합니다. C# 8.0 기능에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요.
+
+- [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/)(C# 8.0으로 더 많은 패턴 작업 수행)
+- [Take C# 8.0 for a spin](https://blogs.msdn.microsoft.com/dotnet/2018/12/05/take-c-8-0-for-a-spin/)(C# 8.0으로 작업 시도)
+- [Building C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/)(C# 8.0 빌드)
+
+
+### <a name="ranges-and-indices"></a>범위 및 인덱스
+
+새 `Index` 형식을 인덱싱에 사용할 수 있습니다. 시작부터 계산되는 `int`의 인덱스를 만들거나, 접두사 `^` 연산자(C#)를 사용하여 끝부터 계산되는 인덱스를 만들 수 있습니다.
+
+```csharp
+Index i1 = 3;  // number 3 from beginning
+Index i2 = ^4; // number 4 from end
+int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
+```
+
+시작 인덱스와 끝 인덱스의 두 `Index` 값으로 구성되고 `x..y` 범위 식(C#)으로 작성할 수 있는 `Range` 유형도 있습니다. 조각을 생성하기 위해 `Range`를 사용하여 인덱싱할 수 있습니다.
+
+```csharp
+var slice = a[i1..i2]; // { 3, 4, 5 }
+```
+
+### <a name="async-streams"></a>비동기 스트림
+
+`IAsyncEnumerable<T>` 형식은 `IEnumerable<T>`의 새로운 비동기 버전입니다. 이 언어를 사용하면 `IAsyncEnumerable<T>`을 통해 `await foreach`를 수행하여 요소를 사용하고 `yield return`을 사용하여 요소를 생성할 수 있습니다.
+
+다음 예제에서는 비동기 스트림의 생성 및 사용을 둘 다 보여 줍니다. `foreach` 문은 비동기이며, `yield return`을 사용하여 호출자에 대한 비동기 스트림을 생성합니다. 이 패턴(`yield return` 사용)은 비동기 스트림 생성을 위한 권장 모델입니다.
+
+```csharp
+async IAsyncEnumerable<int> GetBigResultsAsync()
+{
+    await foreach (var result in GetResultsAsync())
+    {
+        if (result > 20) yield return result; 
+    }
+}
+```
+
+`await foreach`를 수행할 수 있을 뿐 아니라, 비동기 반복기(예: `await` 및 `yield`가 둘 다 가능한 `IAsyncEnumerable/IAsyncEnumerator`를 반환하는 반복기)를 만들 수도 있습니다. 삭제해야 하는 개체의 경우 `Stream` 및 `Timer`와 같은 다양한 BCL 유형이 구현하는 `IAsyncDisposable`을 사용할 수 있습니다.
+
+>[!NOTE]
+>Visual Studio 2019 미리 보기 2 또는 [Visual Studio Code의 C# 확장](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5)의 최신 미리 보기를 사용하여 개발하려는 경우, 비동기식 스트림을 사용하려면 .NET Core 3.0 Preview 2가 필요합니다. 명령줄에서 .NET Core 3.0 Preview 2를 사용하는 경우에는, 모든 것이 예상대로 작동합니다.
+
+### <a name="using-declarations"></a>Using 선언
+
+*using* 선언은 개체가 제대로 처리되도록 하는 새로운 방법입니다. *using*을 선언하면 개체가 범위 내에 있는 동안 개체가 활성 상태로 유지됩니다. 개체가 범위를 벗어나면 자동으로 삭제됩니다. 이렇게 하면 중첩된 *using* 문이 줄어들고 코드가 보다 명확해집니다.
+
+```csharp
+static void Main(string[] args)
+{
+    using var options = Parse(args);
+    if (options["verbose"]) { WriteLine("Logging..."); }
+
+} // options disposed here
+```
+
+### <a name="switch-expressions"></a>Switch 식
+
+*switch* 식은 *switch* 문을 수행하는 명확한 방법이지만 식이기 때문에 값이 반환됩니다. *switch* 식은 패턴 매칭과 완전히 통합되어 있으며, 무시 패턴(`_`)을 사용하여 `default` 값을 나타냅니다.
+
+*switch* 식에 대한 구문은 다음 예제에서 볼 수 있습니다.
+
+```csharp
+static string Display(object o) => o switch
+{
+    Point { X: 0, Y: 0 }         => "origin",
+    Point { X: var x, Y: var y } => $"({x}, {y})",
+    _                            => "unknown"
+};
+```
+
+이 예제에는 두 가지 패턴이 있습니다. `o`은(는) 먼저 `Point` 형식 패턴과 매칭한 다음, {중괄호} 내부의 속성 패턴과 매칭합니다. `_`은 *switch* 문에 대한 `default`와 동일한 `discard pattern`을 설명합니다.
+
+패턴을 사용하면 테스트를 구현하는 프로시저 코드 대신 의도를 캡처하는 선언적 코드를 작성할 수 있습니다. 지루한 프로시저 코드를 구현할 책임이 컴파일러에 있고, 항상 제대로 수행하도록 보장됩니다.
+
+*switch* 문이 *switch* 식보다 더 나은 선택이 되는 경우가 있고, 패턴이 두 구문 스타일 모두에 사용되는 경우가 있습니다.
+
+자세한 내용은 [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/)(C# 8.0으로 더 많은 패턴 작업 수행)을 참조하세요.
+
+## <a name="ieee-floating-point-improvements"></a>IEEE 부동 소수점 개선 사항
+
+부동 소수점 API는 [IEEE 754-2008 개정판](https://en.wikipedia.org/wiki/IEEE_754-2008_revision)을 준수하도록 업데이트되고 있습니다. 이러한 변경의 목표는 "필요한" 모든 작업을 노출하고 이 작업이 IEEE 사양을 준수하는지 확인하는 것입니다.
+
+구문 분석 및 서식 지정 개선 사항:
+
+* 모든 길이의 입력을 올바르게 구문 분석하고 반올림합니다.
+* 음수 0을 올바르게 구문 분석하고 형식을 지정합니다.
+* 대/소문자를 구분하지 않는 검사를 수행하여 Infinity와 NaN을 올바르게 구문 분석하고, 적용 가능한 경우 선행 `+` 옵션을 허용합니다.
+
+새로운 Math API에 포함된 사항:
+
+* `BitIncrement/BitDecrement`\
+`nextUp` 및 `nextDown` IEEE 연산에 해당합니다. 입력보다 크거나 작은 값을 각각 비교하는 최소 부동 소수점 숫자를 반환합니다. 예를 들어 `Math.BitIncrement(0.0)`는 `double.Epsilon`을 반환합니다.
+
+* `MaxMagnitude/MinMagnitude`\
+`maxNumMag` 및 `minNumMag` IEEE 연산에 해당하며 두 입력의 규모 중 더 크거나 작은 값을 반환합니다. 예를 들어 `Math.MaxMagnitude(2.0, -3.0)`는 `-3.0`을 반환합니다.
+
+* `ILogB`\
+`logB` IEEE 연산에 해당하며 정수값을 반환하고, 입력 매개 변수의 정수 기분-2 로그를 반환합니다. `floor(log2(x))`와 사실상 동일하지만 반올림 오류를 최소화하면서 수행됩니다.
+
+* `ScaleB`\
+정수 값을 취하는 `scaleB` IEEE 연산에 해당하며 사실상 `x * pow(2, n)`을 반환하지만 반올림 오류를 최소화하면서 수행됩니다.
+
+* `Log2`\
+`log2` IEEE 연산에 해당하며, 기본-2 로그를 반환합니다. 반올림 오류를 최소화합니다.
+
+* `FusedMultiplyAdd`\
+`fma` IEEE 연산에 해당하며, 단일 곱셈 누산기(fused multiply add) 계산을 수행합니다. 다시 말해, `(x * y) + z`를 단일 연산으로 수행하기 때문에 반올림 오류가 최소화됩니다. 예를 들어 `FusedMultiplyAdd(1e308, 2.0, -1e308)`는 `1e308`을 반환합니다. 일반 `(1e308 * 2.0) - 1e308`은 `double.PositiveInfinity`를 반환합니다.
+
+* `CopySign`\
+`copySign` IEEE 연산에 해당하며, `x`의 값을 반환하지만 `y`의 부호를 반환합니다.
+
+## <a name="net-platform-dependent-intrinsics"></a>.NET 플랫폼 종속 내장 함수
+
+**SIMD** 또는 **비트 조작 명령어** 세트와 같은 특정 perf-oriented CPU 명령어에 대한 액세스를 허용하는 API가 추가되었습니다. 이러한 명령어를 사용하면 특정 시나리오(효율적인 데이터 병렬 처리)에서 성능을 크게 향상시킬 수 있습니다. .NET 라이브러리는 프로그램에서 사용할 API를 노출하는 것 외에도 이러한 명령어를 사용하여 성능을 향상시키기 시작했습니다.
+
+다음 CoreCLR PR은 구현 또는 사용을 통해 몇 가지 내장 함수를 보여줍니다.
+
+* [Implement simple SSE2 hardware intrinsics](https://github.com/dotnet/coreclr/pull/15585)(간단한 SSE2 하드웨어 내장 함수 구현)
+* [Implement the SSE hardware intrinsics](https://github.com/dotnet/coreclr/pull/15538)(SSE 하드웨어 내장 함수 구현)
+* [Arm64 Base HW Intrinsics](https://github.com/dotnet/coreclr/pull/16822)(Arm64 Base HW 내장 함수)
+* [Use TZCNT and LZCNT for Locate{First|Last}Found{Byte|Char}](https://github.com/dotnet/coreclr/pull/21073)(Locate{First|Last}Found{Byte|Char}에 TZCNT 및 LZCNT 사용)
+
+자세한 내용은 [.NET 플랫폼 종속 내장 함수](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md)를 참조하세요. 여기에는 하드웨어 인프라를 정의하고, Microsoft, 칩 공급 업체나 기타 회사 또는 개인이 .NET 코드에 노출되어야 하는 하드웨어/칩 API를 정의할 수 있는 방법이 정의되어 있습니다.
 
 ## <a name="default-executables"></a>기본 실행 파일
 
@@ -46,11 +173,44 @@ Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3 Preview 1을 다운로�
 
 ## <a name="local-dotnet-tools"></a>로컬 dotnet 도구
 
-.NET Core 2.1은 전역 도구를 지원한 한편, .NET Core 3.0은 이제 로컬 도구를 지원합니다. 로컬 도구는 전역 도구와 유사하지만 디스크의 특정 위치와 연결됩니다. 이를 통해 프로젝트별 및 리포지토리별 도구를 사용할 수 있습니다. 로컬로 설치된 도구는 전역으로 사용할 수 없습니다.
+>[!WARNING]
+>.NET Core Local Tools가 .NET Core 3.0 Preview 1과 .NET Core 3.0 Preview 2 사이에 변경되었습니다.  `dotnet tool restore` 또는 `dotnet tool install`와 같은 명령을 실행하여 Preview 1의 로컬 도구를 사용한 적이 있으면, 로컬 도구 캐시 폴더를 삭제해야 Preview 2에서 로컬 도구가 제대로 작동할 수 있습니다. 이 폴더의 위치는 다음과 같습니다.
+>
+>mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
+>
+>Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
+>
+>이 폴더를 삭제하지 않으면 오류가 발생합니다.
 
-로컬 도구는 현재 디렉터리에 있는 매니페스트 파일 이름 `dotnet-tools.json`을 사용합니다. 이 매니페스트 파일은 사용 가능한 도구를 정의합니다. 리포지토리 루트에 이 매니페스트 파일을 만들면 코드를 복제하는 누구든지 성공적인 코드 작업에 필요한 도구를 복원하고 사용할 수 있습니다.
+.NET Core 2.1은 전역 도구를 지원한 한편, .NET Core 3.0은 이제 로컬 도구를 지원합니다. 로컬 도구는 전역 도구와 유사하지만 디스크의 특정 위치와 연결됩니다. 이를 통해 프로젝트별 및 리포지토리별 도구를 사용할 수 있습니다. 로컬로 설치된 도구는 전역으로 사용할 수 없습니다. 도구는 NuGet 패키지로 배포됩니다.
 
-로컬 도구 매니페스트 파일을 사용할 수 있는 경우 다음 명령을 사용하여 해당 도구를 자동으로 다운로드하고 로컬에 설치합니다.
+로컬 도구는 현재 디렉터리에 있는 매니페스트 파일 이름 `dotnet-tools.json`을 사용합니다. 이 매니페스트 파일은 해당 폴더 및 그 아래에서 사용할 수 있는 도구를 정의합니다. 리포지토리 루트에 이 매니페스트 파일을 만들면 코드를 복제하는 누구든지 성공적인 코드 작업에 필요한 도구를 복원하고 사용할 수 있습니다.
+
+`dotnet-tools.json` 매니페스트 파일을 만들려면, 다음을 사용합니다.
+
+```console
+dotnet new tool-manifest
+```
+
+다음을 사용하여 로컬 매니페스트에 새 도구를 추가합니다.
+
+```console
+dotnet tool install <packageId>
+```
+
+다음을 사용하여 로컬 매니페스트의 도구를 나열할 수도 있습니다.
+
+```console
+dotnet tool list
+```
+
+어떤 도구가 전역적으로 설치되어 있는지 보려면 다음을 사용합니다.
+
+```console
+dotnet tool list -g
+```
+
+로컬 도구 매니페스트 파일을 사용할 수 있지만 매니페스트에 정의된 도구가 설치되어 있지 않으면 다음 명령을 사용하여 해당 도구를 자동으로 다운로드하고 설치합니다.
 
 ```console
 dotnet tool restore
@@ -62,31 +222,15 @@ dotnet tool restore
 dotnet tool run <tool-command-name>
 ```
 
-로컬 도구가 호출되면 dotnet은 디렉터리 구조 위로 매니페스트를 검색합니다. 도구 매니페스트 파일이 있으면 해당 파일에서 요청된 도구를 검색합니다. 도구가 발견되면 도구를 찾는 데 필요한 정보를 NuGet 전역 패키지 위치에 포함합니다. 
+로컬 도구가 실행되면 dotnet은 현재 디렉터리 구조 위로 매니페스트를 검색합니다. 도구 매니페스트 파일이 있으면 해당 파일에서 요청된 도구를 검색합니다. 도구가 매니페스트에서 발견되었지만 캐시에 없는 경우 사용자에게 오류가 표시되고 `dotnet tool restore`를 실행해야 합니다.
 
-도구가 매니페스트에서 발견되었지만 캐시에 없는 경우 사용자에게 오류가 표시됩니다. 사용자에게 `dotnet tool restore`를 실행하도록 요청하기 위해 미리 보기 1 이후에 메시지가 개선될 예정입니다.
-
-디렉터리에 로컬 도구를 추가하려면 먼저 도구 매니페스트 파일을 만들어야 합니다. dotnet 새 템플릿과 같은 도구 매니페스트 파일 생성 메커니즘이 미리 보기 1 이후에 제공될 예정입니다. 미리 보기 1에서는 다음 내용을 포함하는 `dotnet-tools.json` 파일을 만들어야 합니다.
-
-```json
-{
-  "version": 1,
-  "isRoot": true,
-  "tools": {}
-}
-```
-
-매니페스트가 생성되고 나면 다음을 사용하여 매니페스트에 로컬 도구를 추가할 수 있습니다.
+로컬 도구 매니페스트 파일에서 도구를 제거하려면 다음 명령을 실행합니다.
 
 ```console
-dotnet tool install <toolPackageId>
+dotnet tool uninstall <packageId>
 ```
 
-다른 버전을 지정하지 않을 경우 이 명령에 따라 최신 버전의 도구가 설치됩니다.  최신 버전이 자동으로 선택된 경우에도 올바른 버전의 도구를 복원 또는 실행할 수 있도록 도구 버전이 도구 매니페스트 파일에 기록됩니다.
-
-도구 매니페스트 파일은 리포지토리 작업에 필요한 버전 업데이트 등을 위한 수동 편집을 허용하도록 설계되었습니다.
-
-예제 `dotnet-tools.json` 파일은 다음과 같습니다.
+도구 매니페스트 파일은 리포지토리 작업에 필요한 버전 업데이트 등을 위한 수동 편집을 허용하도록 설계되었습니다. 예제 `dotnet-tools.json` 파일은 다음과 같습니다.
 
 ```json
 {
@@ -109,15 +253,7 @@ dotnet tool install <toolPackageId>
 }
 ```
 
-도구 매니페스트 파일에서 도구를 제거하려면 다음 명령을 실행합니다.
-
-```console
-dotnet tool uninstall <toolPackageId>
-```
-
 전역 도구와 로컬 도구 둘 다, 호환되는 버전의 런타임이 필요합니다. 현재 NuGet.org의 많은 도구는 .NET Core 런타임 2.1을 대상으로 합니다. 이러한 도구를 전역 또는 로컬로 설치하려면 여전히 [NET Core 2.1 런타임](https://dotnet.microsoft.com/download/dotnet-core/2.1)을 설치해야 합니다.
-
-자세한 내용은 [Local Tools Early Preview Documentation](https://github.com/dotnet/cli/issues/10288)(로컬 도구 초기 미리 보기 문서)을 참조하세요.
 
 ## <a name="windows-desktop"></a>Windows 바탕 화면
 
@@ -132,7 +268,9 @@ dotnet new wpf
 dotnet new winforms
 ```
 
-Visual Studio 2019 Preview 1에서 .NET Core 3.0 WPF 및 Windows Forms 프로젝트를 열고 시작 및 디버그할 수도 있습니다. 현재 Visual Studio 2017 15.9에서 이러한 프로젝트를 열 수 있지만 지원되는 시나리오는 아니며, [미리 보기를 사용](https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/)하도록 설정해야 합니다.
+Visual Studio 2019 미리 보기 2에는 .NET Core 3.0 Windows Forms 및 WPF용 **새 프로젝트** 템플릿이 추가됩니다. 디자이너는 아직 지원되지 않습니다. Visual Studio 2019에서 이러한 프로젝트를 열고 시작하고 디버그할 수 있습니다.
+
+Visual Studio 2017 15.9에서는 [.NET Core 미리 보기를 활성화](https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/)하는 기능이 추가되었지만 해당 기능을 켜야 하며, 이 시나리오는 지원되지 않습니다.
 
 새 프로젝트는 몇 가지 내용만 추가되고, 기존 .NET Core 프로젝트와 동일합니다. 기본 .NET Core 콘솔 프로젝트와 기본 Windows Forms 및 WPF 프로젝트의 비교는 다음과 같습니다.
 
@@ -166,9 +304,26 @@ WPF가 아닌 Windows Forms를 선택하려면 `UseWPF` 대신 `UseWindowsForms`
 
 [dotnet/winforms](https://github.com/dotnet/winforms/issues),  [dotnet/wpf](https://github.com/dotnet/wpf/issues) 및 [dotnet/core](https://github.com/dotnet/core/issues) 리포지토리에서 피드백을 공유하세요.
 
+## <a name="msix-deployment-for-windows-desktop"></a>Windows 데스크톱용 MSIX 배포
+
+[MSIX](https://docs.microsoft.com/windows/msix/)는 새로운 Windows 앱 패키지 형식입니다. Windows 10에 .NET Core 3.0 데스크톱 애플리케이션을 배포하는 데 사용할 수 있습니다.
+
+Visual Studio 2019 미리 보기 2에 제공되는 [Windows 애플리케이션 패키징 프로젝트](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 사용하면 [자체 포함](../deploying/#self-contained-deployments-scd) .NET Core 애플리케이션을 사용하여 MSIX 패키지를 만들 수 있습니다.
+
+>참고: NET Core 프로젝트 파일은 `<RuntimeIdentifiers>` 속성에 지원되는 런타임을 지정해야 합니다.
+```xml
+<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+```
+
 ## <a name="fast-built-in-json-support"></a>빠른 기본 제공 JSON 지원
 
-`System.Text.Json.Utf8JsonReader`는 `ReadOnlySpan<byte>`에서 읽어온 UTF-8 인코드된 JSON 텍스트를 위한 고성능, 저할당, 전달 전용 판독기입니다. `Utf8JsonReader`는 사용자 지정 구문 분석기 및 역직렬 변환기를 빌드하는 데 활용할 수 있는 하위 수준의 기초 형식입니다. 새 `Utf8JsonReader`를 사용하여 JSON 페이로드를 읽을 경우 [Json.NET](https://www.newtonsoft.com/json)의 판독기를 사용하는 것에 비해 2배 더 빠릅니다. JSON 토큰을 (UTF-16) 문자열로 실현해야 할 때까지 할당하지 않습니다.
+.NET 에코시스템은 [**Json.NET**](https://www.newtonsoft.com/json) 및 여전히 유용한 기타 인기 있는 JSON 라이브러리를 사용해 왔습니다. **Json.NET**은 내부적으로 UTF-16인 .NET 문자열을 기본 데이터 형식으로 사용합니다.
+
+새로 기본 제공되는 JSON 지원은 성능이 높고, 할당이 낮으며 `Span<byte>`를 기반으로 합니다. .NET Core 3.0 `System.Text.Json` 네임스페이스에 세 가지 주요 JSON 관련 형식이 추가되었습니다.
+
+### <a name="utf8jsonreader"></a>Utf8JsonReader
+
+`System.Text.Json.Utf8JsonReader`는 `ReadOnlySpan<byte>`에서 읽어온 UTF-8 인코드된 JSON 텍스트를 위한 고성능, 저할당, 전달 전용 판독기입니다. `Utf8JsonReader`는 사용자 지정 구문 분석기 및 역직렬 변환기를 빌드하는 데 활용할 수 있는 하위 수준의 기초 형식입니다. 새 `Utf8JsonReader`를 사용하여 JSON 페이로드를 읽을 경우 **Json.NET**의 판독기를 사용하는 것에 비해 2배 더 빠릅니다. JSON 토큰을 (UTF-16) 문자열로 실현해야 할 때까지 할당하지 않습니다.
 
 이 새로운 API에는 다음 구성 요소가 포함됩니다.
 
@@ -223,53 +378,111 @@ public static void Utf8JsonReaderLoop(ReadOnlySpan<byte> dataUtf8)
 }
 ```
 
-.NET 에코시스템은 [Json.NET](https://www.newtonsoft.com/json) 및 여전히 유용한 기타 인기 있는 JSON 라이브러리를 사용해 왔습니다. Json.NET는 내부적으로 UTF-16인 .NET 문자열을 기본 데이터 형식으로 사용합니다. 
+### <a name="utf8jsonwriter"></a>Utf8JsonWriter
 
-.NET Core 2.1 및 3.0에서는 `Span<T>` 및 UTF-8 문자열 사용을 기준으로 훨씬 적은 메모리가 필요하며 Kestrel, ASP.NET Core 웹 서버와 같은 처리량이 높은 애플리케이션 요구의 처리가 개선된 JSON API(예: `Utf8JsonReader`)를 작성할 수 있는 새로운 API가 추가되었습니다.
+`System.Text.Json.Utf8JsonWriter`는 `String`, `Int32` 및 `DateTime`과 같은 일반적인 .NET 형식에서 UTF-8 인코딩 JSON 텍스트를 쓰는 캐시를 사용하지 않고 앞으로만 이동 가능한 고성능의 방법을 제공합니다. reader와 마찬가지로 writer는 사용자 지정 serializer를 빌드하는 데 활용될 수 있는 기초적인 하위 수준 유형입니다. 새로운 `Utf8JsonWriter`를 사용하여 JSON 페이로드를 작성하면 **Json.NET**의 writer를 사용하는 것보다 30-80% 빠르며 할당하지 않습니다.
 
-## <a name="ranges-and-indices"></a>범위 및 인덱스
-
-새 `Index` 형식을 인덱싱에 사용할 수 있습니다. 시작부터 계산되는 `int`의 인덱스를 만들거나, 접두사 `^` 연산자(C#)를 사용하여 끝부터 계산되는 인덱스를 만들 수 있습니다.
+다음은 시작점으로 사용할 수 있는 `Utf8JsonWriter`의 샘플 사용법입니다.
 
 ```csharp
-Index i1 = 3;  // number 3 from beginning
-Index i2 = ^4; // number 4 from end
-int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
-```
-
-시작 인덱스와 끝 인덱스의 두 `Index` 값으로 구성되고 `x..y` 범위 식(C#)으로 작성할 수 있는 `Range` 유형도 있습니다. 조각을 생성하기 위해 `Range`를 사용하여 인덱싱할 수 있습니다.
-
-```csharp
-var slice = a[i1..i2]; // { 3, 4, 5 }
-```
-
-> [!NOTE]
-> [C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/)에서만 `Range` 및 `Index` 구문을 지원합니다.
-
-## <a name="async-streams"></a>비동기 스트림
-
-`IAsyncEnumerable<T>` 형식은 `IEnumerable<T>`의 새로운 비동기 버전입니다. 이 언어에서는 `await foreach`을 통해 해당 요소를 사용하고, `yield return`을 통해 요소를 생성할 수 있습니다.
-
-다음 예제에서는 비동기 스트림의 생성 및 사용을 둘 다 보여 줍니다. `foreach` 문은 비동기이며, `yield return`을 사용하여 호출자에 대한 비동기 스트림을 생성합니다. 이 패턴(`yield return` 사용)은 비동기 스트림 생성을 위한 권장 모델입니다.
-
-```csharp
-async IAsyncEnumerable<int> GetBigResultsAsync()
+static int WriteJson(IBufferWriter<byte> output, long[] extraData)
 {
-    await foreach (var result in GetResultsAsync())
+    var json = new Utf8JsonWriter(output, state: default);
+
+    json.WriteStartObject();
+
+    json.WriteNumber("age", 15, escape: false);
+    json.WriteString("date", DateTime.Now);
+    json.WriteString("first", "John");
+    json.WriteString("last", "Smith");
+
+    json.WriteStartArray("phoneNumbers", escape: false);
+    json.WriteStringValue("425-000-1212", escape: false);
+    json.WriteStringValue("425-000-1213");
+    json.WriteEndArray();
+
+    json.WriteStartObject("address");
+    json.WriteString("street", "1 Microsoft Way");
+    json.WriteString("city", "Redmond");
+    json.WriteNumber("zip", 98052);
+    json.WriteEndObject();
+
+    json.WriteStartArray("ExtraArray");
+    for (var i = 0; i < extraData.Length; i++)
     {
-        if (result > 20) yield return result; 
+        json.WriteNumberValue(extraData[i]);
     }
+    json.WriteEndArray();
+
+    json.WriteEndObject();
+
+    json.Flush(isFinalBlock: true);
+
+    return (int)json.BytesWritten;
 }
 ```
 
-> [!WARNING]
-> .NET Core 3.0 Preview 1에는 현재 `await foreach` 관련 버그가 있습니다. 대신, `GetEnumerator` 및 `MoveNext`를 사용하여 요소를 처리합니다. 자세한 내용은 [roslyn/#31268](https://github.com/dotnet/roslyn/issues/31268)을 참조하세요.
+`Utf8JsonWriter`는 JSON 데이터를 동기식으로 작성하는 출력 위치로 `IBufferWriter<byte>`를 수락하고, 호출자는 구체적인 구현을 제공해야 합니다. 플랫폼에 이 인터페이스의 구현이 현재 포함되어 있지 않습니다. `IBufferWriter<byte>`에 대한 예제를 보려면 [https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35](https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35)를 참조하십시오.
 
-`await foreach`를 수행할 수 있을 뿐 아니라, 비동기 반복기(예: `await` 및 `yield`가 둘 다 가능한 `IAsyncEnumerable/IAsyncEnumerator`를 반환하는 반복기)를 만들 수도 있습니다. 삭제해야 하는 개체의 경우 `Stream` 및 `Timer`와 같은 다양한 BCL 유형이 구현하는 `IAsyncDisposable`을 사용할 수 있습니다.
+### <a name="jsondocument"></a>JsonDocument
 
-> [!NOTE]
-> [C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/)에서만 `await foreach` 구문을 지원합니다.
+`System.Text.Json.JsonDocument`는 `Utf8JsonReader`를 기반으로 빌드됩니다. `JsonDocument`는 JSON 데이터를 구문 분석하고 임의 액세스 및 열거를 지원하기 위해 쿼리할 수 있는 읽기 전용 DOM(문서 개체 모델)을 작성하는 기능을 제공합니다. 데이터를 구성하는 JSON 요소는 `JsonDocument`에 의해 `RootElement`라는 속성으로 노출되는 `JsonElement` 형식을 통해 액세스할 수 있습니다. `JsonElement`는 JSON 텍스트를 일반적인 .NET 형식으로 변환하는 API와 함께 개체 열거자와 JSON 배열을 포함합니다. `JsonDocument`를 사용하여 일반적인 JSON 페이로드를 구분 분석하고 모든 멤버에 액세스하면 **Json.NET**보다 2-3배 빠르고, 합리적인 크기(예 : 1MB 미만)의 데이터가 거의 할당되지 않습니다.
+
+다음은 시작점으로 사용할 수 있는 `JsonDocument` 및 `JsonElement`의 샘플 사용법입니다.
+
+```csharp
+static double ParseJson()
+{
+    const string json = " [ { \"name\": \"John\" }, [ \"425-000-1212\", 15 ], { \"grades\": [ 90, 80, 100, 75 ] } ]";
+
+    double average = -1;
+
+    using (JsonDocument doc = JsonDocument.Parse(json))
+    {
+        JsonElement root = doc.RootElement;
+        JsonElement info = root[1];
+
+        string phoneNumber = info[0].GetString();
+        int age = info[1].GetInt32();
+
+        JsonElement grades = root[2].GetProperty("grades");
+
+        double sum = 0;
+        foreach (JsonElement grade in grades.EnumerateArray())
+        {
+            sum += grade.GetInt32();
+        }
+
+        int numberOfCourses = grades.GetArrayLength();
+        average = sum / numberOfCourses;
+    }
+
+    return average;
+}
+```
+
+## <a name="assembly-unloadability"></a>어셈블리 언로드 기능(unloadability)
+
+어셈블리 언로드 기능(unloadability)은 `AssemblyLoadContext`의 새로운 기능입니다. 이 새로운 기능은 API 측면에서 보면 대부분 투명하며 몇 가지 새로운 API만으로 노출됩니다. 이 기능을 사용하면 인스턴스화된 유형, 정적 필드 및 어셈블리 자체에 대한 모든 메모리를 해제하여 로더 컨텍스트를 언로드할 수 있습니다. 애플리케이션은 이 메커니즘을 통해 메모리 누수가 발생하지 않고 영구적으로 어셈블리를 로드 및 언로드할 수 있습니다.
+
+이 기능은 다음과 유사한 시나리오에 사용할 수 있습니다.
+
+* 동적 플러그인 로드 및 언로드가 필요한 플러그인 시나리오. 
+* 동적인 코드 컴파일, 실행 및 플러시. 웹 사이트, 스크립팅 엔진 등에 유용합니다.
+* 많은 경우 [MetadataLoadContext](#type-metadataloadcontext)(Preview 1에 릴리스됨)를 선택하는 것이 더 유용하더라도 내성을 위해 어셈블리를(예: ReflectionOnlyLoad) 로드합니다.
+
+자세한 내용은 [언로드 기능(unloadability) 사용](https://github.com/dotnet/coreclr/pull/22221)을 참조하세요.
+
+어셈블리를 언로드하려면 로더 컨텍스트 외부의 관리형 개체에 대한 모든 참조를 이해하고 관리해야 하는 상당한 주의가 필요합니다. 로더 컨텍스트가 언로드되도록 요청되면, 외부 참조가 참조되지 않아야 하기 때문에 로더 컨텍스트가 자체로만 일관성을 유지해야 합니다.
+
+어셈블리 언로드 기능(unloadability)은 AppDomains(Application Domains)에 의해 .NET Framework에 제공되며 .NET Core에서는 지원되지 않습니다. AppDomains에는 새로운 모델에 비해 장점과 한계가 있었습니다. 이 새로운 로더 모델은 AppDomains에 비해 더 유연하고 성능이 높다고 간주됩니다.
+
+## <a name="windows-native-interop"></a>Windows 네이티브 Interop
+
+Windows는 플랫 C API, COM 및 WinRT의 형태로 다양한 네이티브 API를 제공합니다. .NET Core 1.0부터는 **P/Invoke**가 지원되었습니다. 이제 .NET Core 3.0에 **CoCreate COM API** 및 **Activate WinRT API** 기능에 대한 지원이 추가되었습니다.
+
+[Excel 데모 소스 코드](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo)를 통해 COM 사용 사례를 볼 수 있습니다.
+
 
 ## <a name="type-sequencereader"></a>유형: SequenceReader
 
@@ -522,7 +735,7 @@ PFX/PKCS#12 파일은 각각 `System.Security.Cryptography.Pkcs.Pkcs12Info` 및 
 
 ## <a name="arm64-linux-support"></a>ARM64 Linux 지원
 
-이 릴리스에서는 Linux에 대한 ARM64 지원이 추가되었습니다. 컨텍스트를 위해 .NET Core 2.1에서 Linux에 대한 ARM32 지원이 추가되었고, .NET Core 2.2에서 Windows에 대한 ARM32 지원이 추가되었습니다. ARM64는 현재 IoT 시나리오에서 주로 사용됩니다.
+Linux용 ARM64에 대한 지원이 추가되었습니다. ARM64는 현재 IoT 시나리오에서 주로 사용됩니다.
 
 Alpine, Debian 및 Ubuntu [Docker 이미지를 ARM64용 .NET Core에 사용할 수 있습니다](https://hub.docker.com/r/microsoft/dotnet/).
 
@@ -530,3 +743,59 @@ Alpine, Debian 및 Ubuntu [Docker 이미지를 ARM64용 .NET Core에 사용할 �
 
 >[!NOTE]
 > **ARM64** Windows 지원은 아직 사용할 수 없습니다.
+
+## <a name="install-net-core-30-previews-on-linux-with-snap"></a>Snap으로 Linux에 .NET Core 3.0 미리 보기 설치
+
+Snap은 [Snap을 지원하는 Linux 배포판](https://docs.snapcraft.io/installing-snapd/6735)에서 .NET Core 미리 보기를 설치하고 사용해 보기 좋은 방법입니다.
+
+시스템에서 Snap을 구성한 후, 다음 명령을 실행하여 [.NET Core SDK 3.0 미리 보기 SDK](https://snapcraft.io/dotnet-sdk)를 설치합니다.
+
+```console
+sudo snap install dotnet-sdk --beta --classic
+```
+ 
+Snap 패키지를 사용하여 .NET Core를 설치하면 기본 .NET Core 명령이 `dotnet`이 아니라 `dotnet-sdk.dotnet`입니다. 네임스페이스 지정 명령의 이점은 전역적으로 설치된 .NET Core 버전이 있을 경우 충돌하지 않는다는 점입니다. 이 명령은 다음을 사용하여 `dotnet`에 별칭으로 사용될 수 있습니다.
+
+```console
+sudo snap alias dotnet-sdk.dotnet dotnet
+```
+
+일부 배포판은 SSL 인증서에 액세스하려면 추가 단계가 필요합니다. 자세한 내용은 [Linux 설정](https://github.com/dotnet/core/blob/master/Documentation/linux-setup.md)을 참조하세요.
+
+## <a name="gpio-support-for-raspberry-pi"></a>Raspberry Pi에 대한 GPIO 지원
+
+GPIO 프로그래밍에 사용할 수 있는 두 개의 새 패키지가 NuGet에 릴리스되었습니다.
+
+* [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/0.1.0-prerelease.19078.2)
+* [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/0.1.0-prerelease.19078.2)
+
+GPIO 패키지에는 GPIO, SPI, I2C 및 PWM 디바이스용 API가 포함됩니다. IoT 바인딩 패키지에는 다양한 칩과 센서에 대한 [디바이스 바인딩](https://github.com/dotnet/iot/blob/master/src/devices/README.md)이 포함되며 [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices)에서 동일한 것을 사용할 수 있습니다.
+
+.NET Core 3.0 Preview 1의 일부로 발표된 업데이트된 직렬 포트 API는 이 패키지의 일부는 아니지만 .NET Core 플랫폼의 일부로 사용할 수 있습니다.
+
+
+## <a name="platform-support"></a>플랫폼 지원
+
+.NET Core 3은 다음 운영 체제에서 지원됩니다.
+
+* Windows 클라이언트: 7, 8.1, 10(1607+)
+* Windows Server 20012 R2 SP1+
+* macOS: 10.12+
+* RHEL: 6+
+* Fedora: 26+
+* Ubuntu: 16.04+
+* Debian: 9+
+* SLES: 12+
+* openSUSE: 42.3+
+* Alpine: 3.8+
+
+칩이 지원되는 운영 체제:
+
+* Windows, macOS 및 Linux의 x64
+* Windows의 x86
+* Windows 및 Linux의 ARM32
+* Linux의 ARM64
+
+Linux의 경우 ARM32는 Debian 9 이상 및 Ubuntu 16.04 이상에서 지원됩니다. ARM64의 경우, Alpine 3.8이 추가된 ARM32와 동일합니다. 이것은 X64에 지원되는 것과 동일한 버전의 배포판입니다.
+
+.NET Core 3.0의 Docker 이미지는 [Docker 허브의 microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)에 있습니다. Microsoft는 현재 [MCR(Microsoft 컨테이너 레지스트리)](https://cloudblogs.microsoft.com/opensource/2019/01/17/improved-discovery-experience-microsoft-containers-docker-hub/)을 채택하고 있으며 최종 .NET Core 3.0 이미지는 MCR에만 게시될 예정입니다.
