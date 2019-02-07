@@ -3,10 +3,10 @@ title: F#구성 요소 디자인 지침
 description: 쓰기에 대 한 지침을 알아보려면 F# 다른 호출자가 사용 하기 위한 구성 요소입니다.
 ms.date: 05/14/2018
 ms.openlocfilehash: c61e4cd9098388b356c71c325d66c760fa866cf0
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
+ms.lasthandoff: 02/07/2019
 ms.locfileid: "55066027"
 ---
 # <a name="f-component-design-guidelines"></a>F#구성 요소 디자인 지침
@@ -74,7 +74,7 @@ type Point =
 |-----------|------|------|----------|-------|
 | 구체적인 형식 | PascalCase | 명사 adjective / | 목록, Double, 복잡 한 | 구체적인 형식은 구조체, 클래스, 열거형, 대리자, 레코드 및 공용 구조체입니다. 형식 이름은 일반적으로 OCaml에서 소문자 있지만 F# 는 형식에 대 한.NET 명명 체계를 채택 했습니다.
 | DLL           | PascalCase |                 | Fabrikam.Core.dll |  |
-| 공용 구조체 태그     | PascalCase | 명사 | 일부 추가, 성공 | 공용 Api에서 접두사를 사용 하지 마세요. 필요에 따라 내부와 같은 경우에 접두사를 사용 하 여 `팀 입력 TAlpha = | TBeta | 생성 합니다` |
+| 공용 구조체 태그     | PascalCase | 명사 | 일부 추가, 성공 | 공용 Api에서 접두사를 사용 하지 마세요. 필요에 따라 내부와 같은 경우에 접두사를 사용 하 여 `type Teams = TAlpha | TBeta | TDelta.` |
 | 이벤트(event)          | PascalCase | 동사 | ValueChanged / ValueChanging |  |
 | 예외     | PascalCase |      | WebException | 이름을 "Exception" 끝나야 합니다. |
 | 필드          | PascalCase | 명사 | CurrentName  | |
