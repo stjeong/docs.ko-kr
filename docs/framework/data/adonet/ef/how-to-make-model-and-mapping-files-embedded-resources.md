@@ -2,44 +2,44 @@
 title: '방법: 모델 및 매핑 파일을 포함 리소스로 만들기'
 ms.date: 03/30/2017
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3
-ms.openlocfilehash: 0fd7e4fe751fd05a8b48f3dee79d374f669917fc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7827ecce0fe7f5c21291d3ba2edd925c6a8e5960
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54660348"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826527"
 ---
-# <a name="how-to-make-model-and-mapping-files-embedded-resources"></a><span data-ttu-id="32514-102">방법: 모델 및 매핑 파일을 포함 리소스로 만들기</span><span class="sxs-lookup"><span data-stu-id="32514-102">How to: Make Model and Mapping Files Embedded Resources</span></span>
-<span data-ttu-id="32514-103">[!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 모델 및 매핑 파일을 응용 프로그램의 포함 리소스로 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32514-103">The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you to deploy model and mapping files as embedded resources of an application.</span></span> <span data-ttu-id="32514-104">포함된 모델 및 매핑 파일이 있는 어셈블리는 엔터티 연결과 동일한 응용 프로그램 도메인에 로드해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-104">The assembly with the embedded model and mapping files must be loaded in the same application domain as the entity connection.</span></span> <span data-ttu-id="32514-105">자세한 내용은 [연결 문자열](../../../../../docs/framework/data/adonet/ef/connection-strings.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="32514-105">For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).</span></span> <span data-ttu-id="32514-106">기본적으로 [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] 도구는 모델과 매핑 파일을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-106">By default, the [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] tools embed the model and mapping files.</span></span> <span data-ttu-id="32514-107">모델 및 매핑 파일을 수동으로 정의하는 경우 이 절차를 사용하여 파일을 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램과 함께 포함 리소스로 배포해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-107">When you manually define the model and mapping files, use this procedure to ensure that the files are deployed as embedded resources together with an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.</span></span>  
+# <a name="how-to-make-model-and-mapping-files-embedded-resources"></a><span data-ttu-id="c34e6-102">방법: 모델 및 매핑 파일을 포함 리소스로 만들기</span><span class="sxs-lookup"><span data-stu-id="c34e6-102">How to: Make Model and Mapping Files Embedded Resources</span></span>
+<span data-ttu-id="c34e6-103">[!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 모델 및 매핑 파일을 응용 프로그램의 포함 리소스로 배포할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-103">The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you to deploy model and mapping files as embedded resources of an application.</span></span> <span data-ttu-id="c34e6-104">포함된 모델 및 매핑 파일이 있는 어셈블리는 엔터티 연결과 동일한 응용 프로그램 도메인에 로드해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-104">The assembly with the embedded model and mapping files must be loaded in the same application domain as the entity connection.</span></span> <span data-ttu-id="c34e6-105">자세한 내용은 [연결 문자열](../../../../../docs/framework/data/adonet/ef/connection-strings.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c34e6-105">For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).</span></span> <span data-ttu-id="c34e6-106">기본적으로 [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] 도구는 모델과 매핑 파일을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-106">By default, the [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] tools embed the model and mapping files.</span></span> <span data-ttu-id="c34e6-107">모델 및 매핑 파일을 수동으로 정의하는 경우 이 절차를 사용하여 파일을 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램과 함께 포함 리소스로 배포해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-107">When you manually define the model and mapping files, use this procedure to ensure that the files are deployed as embedded resources together with an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="32514-108">포함 리소스를 유지하려면 모델 및 매핑 파일이 수정될 때마다 이 절차를 반복해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-108">To maintain embedded resources, you must repeat this procedure whenever the model and mapping files are modified.</span></span>  
+>  <span data-ttu-id="c34e6-108">포함 리소스를 유지하려면 모델 및 매핑 파일이 수정될 때마다 이 절차를 반복해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-108">To maintain embedded resources, you must repeat this procedure whenever the model and mapping files are modified.</span></span>  
   
-### <a name="to-embed-model-and-mapping-files"></a><span data-ttu-id="32514-109">모델 및 매핑 파일을 포함하려면</span><span class="sxs-lookup"><span data-stu-id="32514-109">To embed model and mapping files</span></span>  
+### <a name="to-embed-model-and-mapping-files"></a><span data-ttu-id="c34e6-109">모델 및 매핑 파일을 포함하려면</span><span class="sxs-lookup"><span data-stu-id="c34e6-109">To embed model and mapping files</span></span>  
   
-1.  <span data-ttu-id="32514-110">**솔루션 탐색기**, 개념 (.csdl) 파일을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-110">In **Solution Explorer**, select the conceptual (.csdl) file.</span></span>  
+1.  <span data-ttu-id="c34e6-110">**솔루션 탐색기**, 개념 (.csdl) 파일을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-110">In **Solution Explorer**, select the conceptual (.csdl) file.</span></span>  
   
-2.  <span data-ttu-id="32514-111">에 **속성** 창에서 **빌드 작업** 에 **포함 된 리소스**합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-111">In the **Properties** pane, set **Build Action** to **Embedded Resource**.</span></span>  
+2.  <span data-ttu-id="c34e6-111">에 **속성** 창에서 **빌드 작업** 에 **포함 된 리소스**합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-111">In the **Properties** pane, set **Build Action** to **Embedded Resource**.</span></span>  
   
-3.  <span data-ttu-id="32514-112">저장소 파일(.ssdl) 및 매핑 파일(.msl)에 대해 1단계와 2단계를 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-112">Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.</span></span>  
+3.  <span data-ttu-id="c34e6-112">저장소 파일(.ssdl) 및 매핑 파일(.msl)에 대해 1단계와 2단계를 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-112">Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.</span></span>  
   
-4.  <span data-ttu-id="32514-113">**솔루션 탐색기**, App.config 파일을 두 번 클릭 한 다음 수정 합니다 `Metadata` 의 매개 변수는 `connectionString` 다음 형식 중 하나에 따라 특성:</span><span class="sxs-lookup"><span data-stu-id="32514-113">In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:</span></span>  
+4.  <span data-ttu-id="c34e6-113">**솔루션 탐색기**, App.config 파일을 두 번 클릭 한 다음 수정 합니다 `Metadata` 의 매개 변수는 `connectionString` 다음 형식 중 하나에 따라 특성:</span><span class="sxs-lookup"><span data-stu-id="c34e6-113">In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:</span></span>  
   
-    -   <span data-ttu-id="32514-114">`Metadata=` `res://<assemblyFullName>/<resourceName>;`</span><span class="sxs-lookup"><span data-stu-id="32514-114">`Metadata=` `res://<assemblyFullName>/<resourceName>;`</span></span>  
+    -   <span data-ttu-id="c34e6-114">`Metadata=` `res://<assemblyFullName>/<resourceName>;`</span><span class="sxs-lookup"><span data-stu-id="c34e6-114">`Metadata=` `res://<assemblyFullName>/<resourceName>;`</span></span>  
   
-    -   <span data-ttu-id="32514-115">`Metadata=` `res://*/<resourceName>;`</span><span class="sxs-lookup"><span data-stu-id="32514-115">`Metadata=` `res://*/<resourceName>;`</span></span>  
+    -   <span data-ttu-id="c34e6-115">`Metadata=` `res://*/<resourceName>;`</span><span class="sxs-lookup"><span data-stu-id="c34e6-115">`Metadata=` `res://*/<resourceName>;`</span></span>  
   
     -   `Metadata=res://*;`  
   
-     <span data-ttu-id="32514-116">자세한 내용은 [연결 문자열](../../../../../docs/framework/data/adonet/ef/connection-strings.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="32514-116">For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).</span></span>  
+     <span data-ttu-id="c34e6-116">자세한 내용은 [연결 문자열](../../../../../docs/framework/data/adonet/ef/connection-strings.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c34e6-116">For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="32514-117">예제</span><span class="sxs-lookup"><span data-stu-id="32514-117">Example</span></span>  
- <span data-ttu-id="32514-118">다음 연결 문자열에 포함 된 모델 및 매핑 파일에 대 한 참조를 [AdventureWorks Sales 모델](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832)합니다.</span><span class="sxs-lookup"><span data-stu-id="32514-118">The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832).</span></span> <span data-ttu-id="32514-119">이 연결 문자열은 프로젝트의 App.config 파일에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="32514-119">This connection string is stored in the project's App.config file.</span></span>  
+## <a name="example"></a><span data-ttu-id="c34e6-117">예제</span><span class="sxs-lookup"><span data-stu-id="c34e6-117">Example</span></span>  
+ <span data-ttu-id="c34e6-118">다음 연결 문자열에 포함 된 모델 및 매핑 파일에 대 한 참조를 [AdventureWorks Sales 모델](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)합니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-118">The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).</span></span> <span data-ttu-id="c34e6-119">이 연결 문자열은 프로젝트의 App.config 파일에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="c34e6-119">This connection string is stored in the project's App.config file.</span></span>  
   
   
   
-## <a name="see-also"></a><span data-ttu-id="32514-120">참고자료</span><span class="sxs-lookup"><span data-stu-id="32514-120">See also</span></span>
-- [<span data-ttu-id="32514-121">모델링 및 매핑</span><span class="sxs-lookup"><span data-stu-id="32514-121">Modeling and Mapping</span></span>](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
-- [<span data-ttu-id="32514-122">방법: 연결 문자열 정의</span><span class="sxs-lookup"><span data-stu-id="32514-122">How to: Define the Connection String</span></span>](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)
-- [<span data-ttu-id="32514-123">방법: EntityConnection 연결 문자열 작성</span><span class="sxs-lookup"><span data-stu-id="32514-123">How to: Build an EntityConnection Connection String</span></span>](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)
-- [<span data-ttu-id="32514-124">ADO.NET 엔터티 데이터 모델 도구</span><span class="sxs-lookup"><span data-stu-id="32514-124">ADO.NET Entity Data Model  Tools</span></span>](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+## <a name="see-also"></a><span data-ttu-id="c34e6-120">참고자료</span><span class="sxs-lookup"><span data-stu-id="c34e6-120">See also</span></span>
+- [<span data-ttu-id="c34e6-121">모델링 및 매핑</span><span class="sxs-lookup"><span data-stu-id="c34e6-121">Modeling and Mapping</span></span>](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
+- [<span data-ttu-id="c34e6-122">방법: 연결 문자열 정의</span><span class="sxs-lookup"><span data-stu-id="c34e6-122">How to: Define the Connection String</span></span>](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)
+- [<span data-ttu-id="c34e6-123">방법: EntityConnection 연결 문자열 작성</span><span class="sxs-lookup"><span data-stu-id="c34e6-123">How to: Build an EntityConnection Connection String</span></span>](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)
+- <span data-ttu-id="c34e6-124">[ADO.NET 엔터티 데이터 모델 도구](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="c34e6-124">[ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span></span>
