@@ -1,6 +1,6 @@
 ---
 title: IXCLRDataMethodInstance 인터페이스
-ms.date: 01/16/2019
+ms.date: 02/01/2019
 api.name:
 - IXCLRDataMethodInstance Interface
 api.location:
@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 0eef69cea9f59911b5076f56579b0192be357431
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7185802a3857fcd73c63d097090a2a7809f65279
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54659113"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825929"
 ---
 # <a name="ixclrdatamethodinstance-interface"></a>IXCLRDataMethodInstance 인터페이스
 
@@ -33,6 +33,8 @@ ms.locfileid: "54659113"
 | 메서드                                                                                                                  | 설명                                 |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | [GetILAddressMap](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-getiladdressmap-method.md) | IL을 주소 매핑 정보를 가져옵니다. |
+| [GetRepresentativeEntryAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-getrepresentativeentryaddress-method.md) | 모든 가능한 진입점 메서드에 대 한 네이티브 컴파일에 대 한 가장 대표적인 진입점 주소를 가져옵니다... |
+
 
 ## <a name="remarks"></a>설명
 

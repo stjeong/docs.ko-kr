@@ -9,12 +9,12 @@ helpviewer_keywords:
 - locating assemblies
 - assemblies [.NET Framework], location
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
-ms.openlocfilehash: 0d238ceb4f96905031cb4a30f50727050381277e
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 5c4041f42b0a9d1d1e4bc8438e662911534daa42
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55084499"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826683"
 ---
 # <a name="how-to-locate-assemblies-by-using-devpath"></a>방법: DEVPATH를 사용 하 여 어셈블리를 찾습니다
 개발자가 작성 하는 공유 어셈블리를 여러 응용 프로그램을 사용 하 여 올바르게 작동 하는지 확인 수 있습니다. 지속적으로 어셈블리를 전역 어셈블리 캐시에서 개발 주기 동안에 배치 하는 대신 개발자는 어셈블리에 대 한 빌드 출력 디렉터리를 가리키는 DEVPATH 환경 변수를 만들면 됩니다.  
@@ -44,4 +44,5 @@ ms.locfileid: "55084499"
 >  개발 타임에만이 설정을 사용 합니다. 런타임에서 DEVPATH에 있는 강력한 이름의 어셈블리의 버전을 확인 하지 않습니다. 단순히 찾은 첫 번째 어셈블리를 사용 합니다.  
   
 ## <a name="see-also"></a>참고자료
-- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+
+- [구성 파일을 사용 하 여 앱 구성](index.md)

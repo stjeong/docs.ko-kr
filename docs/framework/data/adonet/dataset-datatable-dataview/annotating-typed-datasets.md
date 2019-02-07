@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
-ms.openlocfilehash: 737f98dd11d6172bb79aaa925ac153c64728e9ff
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 115960c076e8bf1692bcd4bd158407e719608740
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54629610"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825734"
 ---
 # <a name="annotating-typed-datasets"></a>형식화된 데이터 집합에 주석 지정
 주석을 사용하면 원본으로 사용하는 스키마를 수정하지 않고 형식화된 <xref:System.Data.DataSet>의 요소 이름을 수정할 수 있습니다. 기본 스키마의 요소 이름 수정 형식화 된 없었다는 **데이터 집합** 수행 하지는 데이터 원본에 없는 뿐만 아니라 데이터 원본에 없는 개체에 대 한 참조를 손실 하는 개체를 가리킵니다.  
@@ -74,7 +74,7 @@ ms.locfileid: "54629610"
 |**부모** 접근자|TableNameRow|typedParent|  
 |**데이터 집합** 이벤트|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|  
   
- 사용 하 여 형식화 **데이터 집합** 주석을 다음을 포함 해야 합니다 **xmlns** XML 스키마 정의 언어 (XSD) 스키마에서 참조 합니다. (데이터베이스 테이블에서 xsd를 만들려면, 참조 <xref:System.Data.DataSet.WriteXmlSchema%2A> 나 [Visual Studio에서 데이터 집합 작업](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ 사용 하 여 형식화 **데이터 집합** 주석을 다음을 포함 해야 합니다 **xmlns** XML 스키마 정의 언어 (XSD) 스키마에서 참조 합니다. 데이터베이스 테이블에서 xsd를 만들려면 참조 <xref:System.Data.DataSet.WriteXmlSchema%2A> 나 [Visual Studio에서 데이터 집합 작업](/visualstudio/data-tools/dataset-tools-in-visual-studio)합니다.  
   
 ```  
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  

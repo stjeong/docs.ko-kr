@@ -2,12 +2,12 @@
 title: EDM 생성기(EdmGen.exe)
 ms.date: 03/30/2017
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-ms.openlocfilehash: cd43b6ca31eea2cc4265c7f2e1a045f0f12a256c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6c3d3ce58770999d7b4a02194cdcac2b3d0dd07a
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54722120"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827762"
 ---
 # <a name="edm-generator-edmgenexe"></a>EDM 생성기(EdmGen.exe)
 EdmGen.exe는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 모델 및 매핑 파일 작업에 사용되는 명령줄 도구입니다. EdmGen.exe 도구를 사용하여 다음을 수행할 수 있습니다.  
@@ -18,7 +18,7 @@ EdmGen.exe는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 모
   
 -   개념적 모델(.csdl) 파일에서 생성된 개체 클래스가 포함되는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: EdmGen.exe를 사용 하 여 개체 계층 코드를 생성할](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)합니다.  
   
--   기존 모델에 대해 미리 생성된 뷰가 들어 있는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: 쿼리 성능을 개선 하는 뷰를 미리 생성](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)합니다.  
+-   기존 모델에 대해 미리 생성된 뷰가 들어 있는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: 쿼리 성능을 개선 하는 뷰를 미리 생성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))합니다.  
   
  EdmGen.exe 도구는 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 디렉터리에 설치됩니다. 대체로 이 도구는 C:\windows\Microsoft.NET\Framework\v4.0에 있으며 64비트 시스템의 경우 C:\windows\Microsoft.NET\Framework64\v4.0에 있습니다. Visual Studio 명령 프롬프트에서 EdmGen.exe 도구에 액세스할 수도 있습니다 (클릭 **시작**, 가리킨 **모든 프로그램**를 가리키고 **Microsoft Visual Studio 2010**, 가리킵니다 **Visual Studio Tools**를 클릭 하 고 **Visual Studio 2010 명령 프롬프트**).  
   
@@ -72,6 +72,6 @@ EdmGen /mode:choice [options]
  [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 유효성을 검사 하려면](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)  
   
 ## <a name="see-also"></a>참고자료
-- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+- [ADO.NET 엔터티 데이터 모델 도구](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
 - [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)
 - [CSDL, SSDL 및 MSL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

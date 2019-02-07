@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-ms.openlocfilehash: 5d3bc2b4e5fbb8cc36cf4688bd4fa5e4c0851dcf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: aa91646a46807f26053b3d0df28c412bcc5a2f21
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54597634"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825903"
 ---
 # <a name="adonet-code-examples"></a>ADO.NET 코드 예제
 이 항목에 나열된 코드에서는 다음과 같은 ADO.NET 기술을 사용하여 데이터베이스에서 데이터를 검색하는 방법을 보여 줍니다.
@@ -137,7 +137,7 @@ End Class
 ```
 
 ### <a name="typed-objectquery"></a>형식화된 ObjectQuery
-이 예제 코드에서는 <xref:System.Data.Objects.ObjectQuery%601>을 사용하여 데이터를 Categories 개체로 반환합니다. 자세한 내용은 [개체 쿼리](https://msdn.microsoft.com/0768033c-876f-471d-85d5-264884349276)합니다.
+이 예제 코드에서는 <xref:System.Data.Objects.ObjectQuery%601>을 사용하여 데이터를 Categories 개체로 반환합니다. 자세한 내용은 [개체 쿼리](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100))합니다.
 
 ```csharp
 using System;
@@ -346,7 +346,7 @@ End Class
 ## <a name="see-also"></a>참고자료
 - [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)
 - [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [데이터 응용 프로그램 만들기](https://msdn.microsoft.com/library/ab334d5f-4f49-4346-bce0-3325d6130b3e)
-- [엔터티 데이터 모델 (Entity Framework 작업) 쿼리](https://msdn.microsoft.com/187f1caa-e4d3-4e31-bd99-5d5c2b329c77)
-- [방법: 익명 형식 개체를 반환 하는 쿼리 실행](https://msdn.microsoft.com/3b264025-e911-4d73-90ce-992d2b9d189d)
+- [데이터 응용 프로그램 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h0y4a0f6(v=vs.120))
+- [엔터티 데이터 모델 (Entity Framework 작업) 쿼리](https://docs.microsoft.com/previous-versions/bb738455(v=vs.90))
+- [방법: 익명 형식 개체를 반환 하는 쿼리 실행](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738512(v=vs.100))
 - [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,6 +1,6 @@
 ---
 title: ISOSDacInterface 인터페이스
-ms.date: 01/16/2019
+ms.date: 02/01/2019
 api.name:
 - ISOSDacInterface Interface
 api.location:
@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 5e037cf6fb88fff4886733ff4152dca0a827e0a3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ccaf479fc4fb90007b4999e95ee03bdd0529321e
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54491030"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827931"
 ---
 # <a name="isosdacinterface-interface"></a>ISOSDacInterface 인터페이스
 
@@ -32,7 +32,9 @@ ms.locfileid: "54491030"
 
 | 메서드                                                                                                               | 설명                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [GetMethodDescData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescdata-method.md) | 에 대 한 데이터를 가져옵니다는 주어진 [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md)합니다. |
+| [GetMethodDescData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescdata-method.md) | 지정된 된 MethodDesc 포인터에 대 한 데이터를 가져옵니다. |
+| [GetMethodDescPtrFromIP](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescptrfromip-method.md) | 특정된 네이티브 명령 주소를 포함 하는 메서드를 해당 MethodDesc의 포인터를 검색 합니다. |
+| [GetModuleData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmoduledata-method.md)| 주어진된 주소에 로드 된 모듈에 해당 데이터를 인출 합니다. |
 
 ## <a name="remarks"></a>설명
 

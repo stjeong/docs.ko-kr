@@ -2,12 +2,12 @@
 title: Entity Framework용 EntityClient 공급자
 ms.date: 03/30/2017
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
-ms.openlocfilehash: 33ad1e89260296f09426e335450d9d8ba3461d7d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b094f6d0fbd7c1dc8d56fc43a05fc4d22a80e981
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54541198"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826449"
 ---
 # <a name="entityclient-provider-for-the-entity-framework"></a>Entity Framework용 EntityClient 공급자
 EntityClient 공급자는 Entity Framework 응용 프로그램에서 개념적 모델에 설명된 데이터에 액세스하는 데 사용하는 데이터 공급자입니다. 개념적 모델에 대 한 자세한 내용은 [모델링 및 매핑](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)합니다. EntityClient는 다른 .NET Framework 데이터 공급자를 사용하여 데이터 소스에 액세스합니다. 예를 들어, EntityClient는 SQL Server 데이터베이스에 액세스할 때 .NET Framework Data Provider for SQL Server(SqlClient)를 사용합니다. SqlClient 공급자에 대 한 자세한 내용은 [Entity Framework 용 SqlClient](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)합니다. EntityClient 공급자는 <xref:System.Data.EntityClient> 네임스페이스에 구현되어 있습니다.  
@@ -40,7 +40,7 @@ EntityClient 공급자는 Entity Framework 응용 프로그램에서 개념적 �
 ## <a name="managing-transactions"></a>트랜잭션 관리  
  Entity Framework에서는 자동 및 명시적으로 트랜잭션을 사용할 수 있습니다. 자동 트랜잭션에서는 <xref:System.Transactions> 네임스페이스가 사용되고, 명시적 트랜잭션에서는 <xref:System.Data.EntityClient.EntityTransaction> 클래스가 사용됩니다.  
   
- 개념적 모델을 통해 노출 되는 데이터를 업데이트 하려면 참조 [방법: Entity Framework에서 트랜잭션 관리](https://msdn.microsoft.com/library/4a55eb7f-f826-4a48-9df1-aebe2352ebef)합니다.  
+ 개념적 모델을 통해 노출 되는 데이터를 업데이트 하려면 참조 [방법: Entity Framework에서 트랜잭션 관리](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100))합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: EntityConnection 연결 문자열 작성](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
@@ -64,6 +64,6 @@ EntityClient 공급자는 Entity Framework 응용 프로그램에서 개념적 �
  [방법: 와 관계 탐색을 연산자 이동](../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## <a name="see-also"></a>참고자료
-- [연결 및 트랜잭션 관리](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)
+- [연결 및 트랜잭션 관리](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
 - [언어 참조](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: e56f837c4d3362ec6e71030e4fb475df42b9fba4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 47cea4810b764005e87d00966c15cf138f5913a7
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54639958"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825955"
 ---
 # <a name="isosdacinterfacegetmethoddescdata-method"></a>ISOSDacInterface::GetMethodDescData 메서드
 
-에 대 한 데이터를 가져옵니다는 주어진 [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md)합니다.
+지정된 된 MethodDesc 포인터에 대 한 데이터를 가져옵니다.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "54639958"
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,
-    void                       *data,
+    DacpMethodDescData *data,
     ULONG                      cRevertedRejitVersions,
-    void                      *rgRevertedRejitData,
+    DacpReJitData      *rgRevertedRejitData,
     void                      *pcNeededRevertedRejitData
 );
 ```
@@ -47,17 +47,17 @@ HRESULT GetMethodDescData(
 
 `ip` [in] 메서드의 IP 주소입니다.
 
-`data` [out] 내부 Api에서 반환 되는 MethodDesc와 연결 된 데이터입니다. 구조에는 168 바이트 이상 필요합니다.
+`data` [out] 내부 Api에서 반환 되는 MethodDesc와 연결 된 데이터입니다.
 
 `cRevertedRejitVersions` [out] 되돌린된 rejit 버전 수입니다.
 
-`rgRevertedRejitData` [out] 내부 Api에서 반환 된 되돌린된 rejit 버전과 연결 된 데이터입니다. 구조에는 24 바이트 이상 필요합니다.
+`rgRevertedRejitData` [out] 내부 Api에서 반환 된 되돌린된 rejit 버전과 연결 된 데이터입니다.
 
 `pcNeededRevertedRejitData` [out] 되돌린된 ReJit 버전과 연결 된 데이터를 저장 하는 데 필요한 바이트 수입니다.
 
 ## <a name="remarks"></a>설명
 
-제공 된 메서드는의 일부는 `ISOSDacInterface` 인터페이스 및 가상 메서드 테이블의 20 슬롯에 해당 합니다. 또한는 `CLRDATA_ADDRESS` 은 64 비트 부호 없는 정수입니다.
+제공 된 메서드는의 일부는 `ISOSDacInterface` 인터페이스 및 가상 메서드 테이블의 20 슬롯에 해당 합니다. 사용할 수 있으려면 [ `CLRDATA_ADDRESS` ](../common-data-types-unmanaged-api-reference.md) 64 비트 부호 없는 정수로 정의 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

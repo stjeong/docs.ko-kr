@@ -2,12 +2,12 @@
 title: LINQ to DataSet 쿼리 디버깅
 ms.date: 03/30/2017
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
-ms.openlocfilehash: 6c7b8c6cec39adfd5b7456d94cfae5622649e5a3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 636d42566275f042f82f939e160c7fec5f180e96
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54680509"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825513"
 ---
 # <a name="debugging-linq-to-dataset-queries"></a>LINQ to DataSet 쿼리 디버깅
 
@@ -16,7 +16,7 @@ Visual Studio의 디버깅을 지원 하며 [!INCLUDE[linq_dataset](../../../../
 ## <a name="viewing-results"></a>결과 보기  
  DataTips, 조사식 창 및 간략한 조사식 대화 상자를 사용하여 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문의 결과를 볼 수 있습니다. 소스 창을 사용할 때 소스 창의 쿼리 위에 포인터를 올려 놓으면 DataTips가 나타납니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 변수를 복사하여 조사식 창이나 간략한 조사식 대화 상자에 붙여 넣을 수 있습니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서 쿼리는 작성되거나 선언될 때 계산되는 것이 아니라 쿼리가 실행될 때에만 계산됩니다. 이 이라고 *지연 된 실행*합니다. 따라서 쿼리가 계산되기 전까지는 쿼리 변수에 값이 없습니다. 자세한 내용은 [LINQ to DataSet에서에서 쿼리](../../../../docs/framework/data/adonet/queries-in-linq-to-dataset.md)합니다.  
   
- 쿼리 결과를 표시하려면 디버거에서 쿼리를 계산해야 합니다. 디버거에서 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 쿼리 결과를 보면 이러한 암시적 계산이 수행되며, 여기에는 몇 가지 고려해야 할 사항이 있습니다. 쿼리를 계산할 때마다 일정 시간이 소요됩니다. 결과 노드를 확장할 때 일정 시간이 소요됩니다. 일부 쿼리의 경우 계산을 반복하면 성능이 상당히 저하될 수 있습니다. 쿼리를 계산할 때 데이터의 값이나 프로그램의 상태가 변경되는 의도하지 않은 결과가 나타날 수 있습니다. 모든 쿼리에서 예기치 않은 결과가 나타나는 것은 아닙니다. 부작용 없이 쿼리를 안전 하 게 계산할 수 있는지를 확인 하려면 쿼리를 구현 하는 코드를 이해 해야 합니다. 자세한 내용은 [부작용 및 식](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)합니다.  
+ 쿼리 결과를 표시하려면 디버거에서 쿼리를 계산해야 합니다. 디버거에서 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 쿼리 결과를 보면 이러한 암시적 계산이 수행되며, 여기에는 몇 가지 고려해야 할 사항이 있습니다. 쿼리를 계산할 때마다 일정 시간이 소요됩니다. 결과 노드를 확장할 때 일정 시간이 소요됩니다. 일부 쿼리의 경우 계산을 반복하면 성능이 상당히 저하될 수 있습니다. 쿼리를 계산할 때 데이터의 값이나 프로그램의 상태가 변경되는 의도하지 않은 결과가 나타날 수 있습니다. 모든 쿼리에서 예기치 않은 결과가 나타나는 것은 아닙니다. 부작용 없이 쿼리를 안전 하 게 계산할 수 있는지를 확인 하려면 쿼리를 구현 하는 코드를 이해 해야 합니다. 자세한 내용은 [부작용 및 식](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/a7a250bs(v=vs.120))합니다.  
   
 ## <a name="edit-and-continue"></a>편집하며 계속하기  
  편집하며 계속하기에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 쿼리를 변경할 수 없습니다. 디버깅 세션 중에 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문을 추가, 제거 또는 변경하면 이러한 변경이 편집하며 계속하기에서 지원되지 않는다는 대화 상자가 표시됩니다. 이때 변경 내용을 취소할 수도 있고, 디버깅 세션을 중지하고 편집된 코드로 새 세션을 다시 시작할 수도 있습니다.  

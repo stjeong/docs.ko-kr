@@ -1,7 +1,7 @@
 ---
 title: SqlStreamChars.Write (Char, Int32, Int32) 메서드 (System.Data.SqlTypes)
-author: douglaslMS
-ms.author: douglasl
+author: stevestein
+ms.author: sstein
 ms.date: 12/20/2018
 ms.technology:
 - dotnet-data
@@ -13,14 +13,14 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: dd9bb691f6d07f4875d684eef76d6329667003af
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: e2b0d2c4e68ffa0c0b9e745a15dbb8c79659008c
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221910"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826033"
 ---
-# <a name="sqlstreamcharswritechar-int32-int32-method"></a>(Char, Int32, Int32) SqlStreamChars.Write 메서드
+# <a name="sqlstreamcharswritechar-int32-int32-method"></a>SqlStreamChars.Write(Char[], Int32, Int32) Method
 
 파생된 클래스에서 재정의 문자의 시퀀스를 현재 스트림에 쓰고 쓴 문자 수 만큼이 스트림 내의 현재 위치를 이동 합니다. 이 메서드를 포함 하는 어셈블리에는 SQLAccess.dll friend 관계를 갖습니다. SQL Server에서 사용할 것입니다. 다른 데이터베이스에 대 한 해당 데이터베이스에서 제공 하는 호스팅 메커니즘을 사용 합니다.
 

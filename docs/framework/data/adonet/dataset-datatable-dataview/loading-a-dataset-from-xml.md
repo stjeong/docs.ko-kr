@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 49c083b7-a5ed-41cf-aabc-5aaba96f00e6
-ms.openlocfilehash: 7fb00046eb9ab92ed2514cd7615c41ea40124de9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8dea23bac122f1f135b4695995d79191d5cd5f04
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54594917"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827606"
 ---
 # <a name="loading-a-dataset-from-xml"></a>XML에서 데이터 집합 로드
 ADO.NET <xref:System.Data.DataSet>의 내용은 XML 스트림이나 문서로부터 만들 수 있습니다. 또한, .NET Framework를 사용하면 XML로부터 로드할 정보와 <xref:System.Data.DataSet>의 스키마나 관계형 구조를 만드는 방법을 매우 융통성 있게 선택할 수 있습니다.  
   
- 에 맞게를 <xref:System.Data.DataSet> XML에서 데이터를 사용 합니다 **ReadXml** 메서드의 <xref:System.Data.DataSet> 개체입니다. **ReadXml** 스트림, 파일에서 읽는 메서드 또는 **XmlReader**, XML 및 선택적인 원본 인수로 및 **XmlReadMode** 인수. (에 대 한 자세한 내용은 합니다 **XmlReader**를 참조 하세요 [NIB: XmlTextReader 사용 하 여 XML 데이터를 읽는](https://msdn.microsoft.com/library/762c069b-b50c-41b8-936e-39eacfb0d540).) 합니다 **ReadXml** 메서드는 XML 스트림 또는 문서 및 로드의 콘텐츠를 읽습니다는 <xref:System.Data.DataSet> 데이터를 사용 하 여 합니다. 관계형 스키마 생성 합니다 <xref:System.Data.DataSet> 에 따라 합니다 **XmlReadMode** 지정 하 고 관계형 스키마를 이미 있는지 여부입니다.  
+ 에 맞게를 <xref:System.Data.DataSet> XML에서 데이터를 사용 합니다 **ReadXml** 메서드의 <xref:System.Data.DataSet> 개체입니다. **ReadXml** 스트림, 파일에서 읽는 메서드 또는 **XmlReader**, XML 및 선택적인 원본 인수로 및 **XmlReadMode** 인수. 에 대 한 자세한 내용은 합니다 **XmlReader**를 참조 하세요 [XmlTextReader 사용 하 여 XML 데이터 읽기](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tfz3cz6w(v=vs.100)). 합니다 **ReadXml** 메서드는 XML 스트림 또는 문서 및 로드의 콘텐츠를 읽습니다는 <xref:System.Data.DataSet> 데이터를 사용 하 여 합니다. 관계형 스키마 생성 합니다 <xref:System.Data.DataSet> 에 따라 합니다 **XmlReadMode** 지정 하 고 관계형 스키마를 이미 있는지 여부입니다.  
   
  다음 표에서 옵션을 설명 합니다 **XmlReadMode** 인수입니다.  
   
