@@ -1189,7 +1189,7 @@
 ## [자습서](machine-learning/tutorials/index.md)
 ### [감정 분석(이진 분류)](machine-learning/tutorials/sentiment-analysis.md)
 ### [문제 분류(다중 클래스 분류)](machine-learning/tutorials/github-issue-classification.md)
-### [택시 요금 예측기(회귀)](machine-learning/tutorials/taxi-fare.md)
+### [가격 예측(회귀)](machine-learning/tutorials/taxi-fare.md)
 ### [아이리스 꽃(클러스터링)](machine-learning/tutorials/iris-clustering.md)
 ## [방법 가이드](machine-learning/how-to-guides/index.md)
 ### 데이터 준비
@@ -1200,7 +1200,7 @@
 #### [텍스트 파일에서 데이터 로드](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
 #### [노멀라이저를 사용하여 데이터 전처리](machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md)
 ### 학습, 평가 및 모델 설명
-#### [텍스트 파일에 없는 데이터를 사용하여 모델 학습](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
+#### [실시간 데이터 원본을 이용한 모델 학습](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
 #### [교차 유효성 검사를 사용하여 모델 학습](machine-learning/how-to-guides/train-cross-validation-ml-net.md)
 #### [중간 파이프라인 데이터 값 검사](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [회귀 모델 학습](machine-learning/how-to-guides/train-regression-model-ml-net.md)
