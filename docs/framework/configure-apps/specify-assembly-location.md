@@ -6,12 +6,12 @@ helpviewer_keywords:
 - application configuration [.NET Framework]
 - assemblies [.NET Framework], specifying location
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-ms.openlocfilehash: b76537a347cdf30c65bfd6e56f274108e796a315
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 328fe08872a2b57d0bdf87ea9be9224795ca9ad9
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55258992"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55825409"
 ---
 # <a name="specifying-an-assemblys-location"></a>어셈블리 위치 지정
 두 가지 방법으로 어셈블리의 위치를 지정할 수 있습니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "55258992"
   
 -   사용 하 여 [ \<검색 >](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) 요소입니다.  
   
- 사용할 수도 있습니다는 [.NET Framework 구성 도구 (Mscorcfg.msc)](https://msdn.microsoft.com/library/a7106c52-68da-490e-b129-971b2c743764) 어셈블리 위치를 지정 하거나 어셈블리를 조사 하려면 공용 언어 런타임에 대 한 위치를 지정 합니다.  
+ 사용할 수도 있습니다는 [.NET Framework 구성 도구 (Mscorcfg.msc)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) 어셈블리 위치를 지정 하거나 어셈블리를 조사 하려면 공용 언어 런타임에 대 한 위치를 지정 합니다.  
   
 ## <a name="using-the-codebase-element"></a>사용 하 여 \<코드 베이스 > 요소  
  사용할 수는  **\<codeBase >** 어셈블리 버전을 리디렉션하는 컴퓨터 구성 또는 게시자 정책 파일에만 요소. 런타임에서 어셈블리 버전을 사용 하 여 결정을 하는 경우 버전을 결정 하는 파일에서 코드 베이스 설정을 적용 합니다. 없는 코드 베이스를 지정 하는 경우 런타임에서 일반적인 방법으로 어셈블리를 검색 합니다. 자세한 내용은 참조 하세요 [런타임 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)합니다.  
@@ -69,4 +69,4 @@ ms.locfileid: "55258992"
 - [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [구성 파일을 사용 하 여 앱 구성](index.md)
