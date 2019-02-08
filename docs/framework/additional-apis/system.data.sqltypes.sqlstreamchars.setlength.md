@@ -1,7 +1,7 @@
 ---
 title: SqlStreamChars.SetLength(Int64) 메서드 (System.Data.SqlTypes)
-author: douglaslMS
-ms.author: douglasl
+author: stevestein
+ms.author: sstein
 ms.date: 12/20/2018
 ms.technology:
 - dotnet-data
@@ -13,14 +13,14 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: c7199cbd08e62b1f0391437a0c1864cb9036fe1f
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 750b46c2050228f630eaa6be31922869bff15e0a
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222703"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827346"
 ---
-# <a name="sqlstreamcharssetlengthint64-method"></a>SqlStreamChars.SetLength(Int64) 메서드
+# <a name="sqlstreamcharssetlengthint64-method"></a>SqlStreamChars.SetLength(Int64) Method
 
 파생된 클래스에서 재정의 되 면 스트림을 사용 하는 리소스를 해제 합니다. 이 메서드를 포함 하는 어셈블리에는 SQLAccess.dll friend 관계를 갖습니다. SQL Server에서 사용할 것입니다. 다른 데이터베이스에 대 한 해당 데이터베이스에서 제공 하는 호스팅 메커니즘을 사용 합니다.
 

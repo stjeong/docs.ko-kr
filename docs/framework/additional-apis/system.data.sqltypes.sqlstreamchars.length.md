@@ -1,7 +1,7 @@
 ---
 title: SqlStreamChars.Length 속성 (System.Data.SqlTypes)
-author: douglaslMS
-ms.author: douglasl
+author: stevestein
+ms.author: sstein
 ms.date: 12/19/2018
 ms.technology:
 - dotnet-data
@@ -14,14 +14,14 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: ac6e6af9c9411ebc25039e0992133fae2b35ee23
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 3b4e5828a90de7d2f874010b79a9ddbcb8e12341
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221183"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827698"
 ---
-# <a name="sqlstreamcharslength-property"></a>SqlStreamChars.Length 속성
+# <a name="sqlstreamcharslength-property"></a>SqlStreamChars.Length Property
 
 파생된 클래스에서 재정의 되 면 현재 스트림의 길이 가져옵니다. 이 속성을 포함 하는 어셈블리에는 SQLAccess.dll friend 관계를 갖습니다. SQL Server에서 사용할 것입니다. 다른 데이터베이스에 대 한 해당 데이터베이스에서 제공 하는 호스팅 메커니즘을 사용 합니다.
 
