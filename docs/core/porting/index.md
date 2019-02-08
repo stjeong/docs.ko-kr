@@ -2,14 +2,14 @@
 title: .NET Framework에서 .NET Core로 코드 포팅
 description: 이식 프로세스를 이해하고 .NET Framework 프로젝트를 .NET Core로 이식할 때 유용한 도구에 관해 알아보세요.
 author: cartermp
-ms.date: 12/04/2018
+ms.date: 12/07/2018
 ms.custom: seodec18
-ms.openlocfilehash: e29750340cf272c2e05287482bcbeca703d8720a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 870320c8467237e87a2675ec5cfb57647026d8ec
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55266574"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903573"
 ---
 # <a name="port-your-code-from-net-framework-to-net-core"></a>.NET Framework에서 .NET Core로 코드 포팅
 
@@ -37,8 +37,6 @@ ms.locfileid: "55266574"
 
 5. 이식에 대한 계획을 실행합니다.
 
-## <a name="tools-to-help"></a>유용한 도구
-
 다음 목록은 포팅 프로세스 중에 사용하면 도움이 되는 도구를 보여 줍니다.
 
 * .NET 이식성 분석기 - [명령줄 도구](https://github.com/Microsoft/dotnet-apiport/releases) 또는 [Visual Studio 확장](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)으로, 문제에 대한 어셈블리 단위 분석 결과를 사용하여 .NET Framework와 .NET Core 간에 코드를 포팅할 수 있는 정도에 대한 보고서를 생성할 수 있는 도구 체인입니다. 자세한 내용은 [.NET 이식성 분석기](../../standard/analyzers/portability-analyzer.md)를 참조하세요.
@@ -51,4 +49,4 @@ ms.locfileid: "55266574"
 > CsprojToVs2017은 타사 도구입니다. 모든 프로젝트에서 작동한다는 보장은 없으며, 사용하는 동작이 미묘하게 변경될 수도 있습니다. CsprojToVs2017은 자동화할 수 있는 기본 사항을 자동화하는 _시작점_으로 사용해야 합니다. 프로젝트 파일 형식을 마이그레이션하는 보장된 솔루션은 아닙니다.
 
 >[!div class="step-by-step"]
->[다음](third-party-deps.md)
+>[다음](net-framework-tech-unavailable.md)
