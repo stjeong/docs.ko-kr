@@ -2,12 +2,12 @@
 title: 부동 소수점 숫자
 ms.date: 03/30/2017
 ms.assetid: 73c218c6-1c44-4402-a167-4f6262629a91
-ms.openlocfilehash: 8f5985576e966f1a853c9ee8d7bfef4b9bf6fc40
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a30252d7d25b3c3e09dd5e59f364d94aa40dd272
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54589375"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903967"
 ---
 # <a name="floating-point-numbers"></a>부동 소수점 숫자
 이 항목에서는 개발자가 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에서 부동 소수점 숫자로 작업할 때 자주 발생하는 몇 가지 문제에 대해 설명합니다. 이러한 문제는 컴퓨터가 부동 소수점 숫자를 저장하는 방식 때문에 발생하며 <xref:System.Data.SqlClient> 또는 <xref:System.Data.OracleClient>와 같은 특정 공급자에 한정된 문제가 아닙니다.  
@@ -19,5 +19,5 @@ ms.locfileid: "54589375"
  같은 값인지 비교할 때 발생하는 문제를 해결하려면 최하위 유효 자릿수의 변화를 무시할 수 있는 방식으로 응용 프로그램의 코드를 작성하는 것이 좋습니다. 예를 들어 두 숫자가 같은지 확인하기 위해 비교를 사용하는 대신 한 숫자에서 다른 숫자를 뺀 다음 그 차이가 허용 가능한 반올림 오차 내에 있는 경우 두 수가 같은 것으로 처리할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
-- [부동 소수점 숫자의 정밀도가 떨어지는 이유](https://msdn.microsoft.com/library/1acb1add-ac06-4134-a2fd-aff13d8c4c15)
-- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [부동 소수점 숫자의 정밀도가 떨어지는 이유](/cpp/build/reference/why-floating-point-numbers-may-lose-precision)
+- [ADO.NET 개요](ado-net-overview.md)

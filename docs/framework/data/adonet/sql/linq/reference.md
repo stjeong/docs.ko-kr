@@ -2,12 +2,12 @@
 title: 참조
 ms.date: 03/30/2017
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-ms.openlocfilehash: 3edfbe7d650fead507946610de8e76d27e94136f
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: b474530cd9c45ef16d004bb2445c349fdd418394
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583067"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904708"
 ---
 # <a name="reference"></a>참조
 이 단원에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 개발자를 위한 참조 정보를 제공합니다.  
@@ -40,8 +40,9 @@ ms.locfileid: "48583067"
  [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 항목에 대한 포털을 제공합니다.  
   
- [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] 항목에 대한 포털을 제공합니다.  
+ [언어 통합 쿼리 (LINQ)C#](../../../../../csharp/programming-guide/concepts/linq/index.md)  
+ [언어 통합 쿼리 (LINQ)-Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ 포털에 대 한 제공 [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] 항목입니다.  
   
  [LinqDataSource 기술 개요](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
  <xref:System.Web.UI.WebControls.LinqDataSource> 컨트롤에서 [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] 데이터 소스 컨트롤 아키텍처를 통해 [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)]를 웹 개발자에게 노출시키는 방법에 대해 설명합니다.

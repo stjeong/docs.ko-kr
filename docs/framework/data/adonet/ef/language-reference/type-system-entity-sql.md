@@ -2,12 +2,12 @@
 title: 형식 시스템(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-ms.openlocfilehash: 1831028f9e659dab90ca3c8689d7ff2d5c0ee36a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a2748407703b90c60d3082b0e6c0b6aa2d3fb365
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554337"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904685"
 ---
 # <a name="type-system-entity-sql"></a>형식 시스템(Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 형식의 수를 지원합니다.  
@@ -18,7 +18,7 @@ ms.locfileid: "54554337"
   
 -   익명 형식 - 스키마에서 명시적으로 정의되지 않음. <xref:System.Data.Metadata.Edm.CollectionType>, <xref:System.Data.Metadata.Edm.RowType> 및 <xref:System.Data.Metadata.Edm.RefType>  
   
- 이 단원에서는 스키마에서 명시적으로 정의되지 않았지만 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 지원되는 익명 형식에 대해 설명합니다. 기본 형식과 명목 형식에 대 한 내용은 참조 하세요 [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)합니다.  
+ 이 섹션에는 명시적으로 스키마에 정의 되지 않은 하지만 Entity SQL에서 지원 되는 익명 형식을 설명 합니다. 기본 형식과 명목 형식에 대 한 내용은 참조 하세요 [개념적 모델 형식 (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl)합니다.  
   
 ## <a name="rows"></a>행  
  행의 구조는 행이 구성된 형식화된 멤버 및 명명된 멤버의 시퀀스에 따라 달라집니다. 행 형식은 ID를 갖지 않으며 상속받을 수 없습니다. 멤버가 각각 동일한 경우 같은 행 형식의 인스턴스는 서로 동일합니다. 행은 구조가 동일한 것을 제외한 어떠한 동작도 갖지 않으며 공용 언어 런타임에 해당하는 항목이 없습니다. 쿼리를 실행하면 행 또는 행 컬렉션이 포함된 구조가 생성될 수 있습니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리와 호스트 언어 간의 API 바인딩은 결과를 생성하는 쿼리에서 행이 구현되는 방법을 정의합니다. 행 인스턴스를 생성 하는 방법에 대 한 자세한 내용은 [형식 생성](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)합니다.  

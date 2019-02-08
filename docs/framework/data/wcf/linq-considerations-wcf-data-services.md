@@ -9,12 +9,12 @@ helpviewer_keywords:
 - querying the data service [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: cc4ec9e9-348f-42a6-a78e-1cd40e370656
-ms.openlocfilehash: b73f1063c83d61e02a01cb31932d93c468996598
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8d7ec8914fe83bb34e946fd5596f161e526038b1
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54741498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904615"
 ---
 # <a name="linq-considerations-wcf-data-services"></a>LINQ 고려 사항(WCF Data Services)
 이 항목에서는 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트를 사용할 때 LINQ 쿼리가 작성되고 실행되는 방식과 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]을 구현하는 데이터 서비스를 LINQ로 쿼리할 경우의 제한 사항에 대한 정보를 제공합니다. 작성 및에 대 한 쿼리를 실행 하는 방법에 대 한 자세한 내용은 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-기반 데이터 서비스 참조 [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "54741498"
 http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight gt 30  
 ```  
   
- LINQ에 대 한 자세한 내용은 참조 하세요. [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)합니다.  
+ LINQ에 대 한 자세한 내용은 참조 하세요. [LINQ (Language-Integrated Query)- C# ](../../../csharp/programming-guide/concepts/linq/index.md) 하거나 [LINQ (Language-Integrated Query)-Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)합니다.  
   
  LINQ를 통해 위의 예제와 같은 언어별 선언적 쿼리 구문과 표준 쿼리 연산자로 알려진 쿼리 메서드 집합을 모두 사용하여 쿼리를 작성할 수 있습니다. 위의 예와 동등한 쿼리는 다음 예와 같이 메서드 기반 구문만을 사용하여 작성할 수 있습니다.  
   

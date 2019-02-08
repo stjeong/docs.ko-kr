@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 079926c5-e6b5-4fb9-b4cf-9c63886dd626
-ms.openlocfilehash: c12fdd70b7174d6e6fbae10d5132c9e3e2a7eb87
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3e4b30c5d4d1cd5703ff6ec15a1c3fe32e41f42a
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54733378"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903731"
 ---
 # <a name="query-expression-syntax-examples-projection"></a>쿼리 식 구문 예제: 프로젝션
-이 항목의 예제에 사용 하는 방법을 보여 줍니다는 `Select` 메서드 및 `From … From …` 쿼리 키워드는 [AdventureWorks Sales 모델](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) 쿼리 식 구문을 사용 합니다. `From … From …`은 `SelectMany` 메서드에 해당하는 쿼리 기반 키워드입니다. 이 예제에서 사용하는 AdventureWorks Sales 모델에서는 AdventureWorks 샘플 데이터베이스의 Contact, Address, Product, SalesOrderHeader 및 SalesOrderDetail 테이블을 사용합니다.  
+이 항목의 예제에 사용 하는 방법을 보여 줍니다는 `Select` 메서드 및 `From … From …` 쿼리 키워드는 [AdventureWorks Sales 모델](https://archive.codeplex.com/?p=msftdbprodsamples) 쿼리 식 구문을 사용 합니다. `From … From …`은 `SelectMany` 메서드에 해당하는 쿼리 기반 키워드입니다. 이 예제에서 사용하는 AdventureWorks Sales 모델에서는 AdventureWorks 샘플 데이터베이스의 Contact, Address, Product, SalesOrderHeader 및 SalesOrderDetail 테이블을 사용합니다.  
   
  이 항목의 예제에서는 다음을 사용 `using` / `Imports` 문:  
   

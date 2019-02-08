@@ -2,12 +2,12 @@
 title: 마이그레이션 고려 사항(Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
-ms.openlocfilehash: 13f9b97435665138f78db6a481d27172d3253679
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: d783bc79585740710e663d26ecd4110f64882b44
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55827905"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903902"
 ---
 # <a name="migration-considerations-entity-framework"></a>마이그레이션 고려 사항(Entity Framework)
 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework를 사용하면 기존 응용 프로그램보다 몇 가지 이점이 있습니다. 가장 중요한 이점 중 하나는 개념적 모델을 사용하여 응용 프로그램에서 사용되는 데이터 구조를 데이터 소스의 스키마와 구분할 수 있다는 것입니다. 이렇게 하면 응용 프로그램을 적절하게 변경하지 않아도 나중에 저장소 모델이나 데이터 소스 자체를 쉽게 변경할 수 있습니다. 사용 하는 이점에 대 한 자세한 내용은 합니다 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 참조 하세요 [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md) 및 [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)합니다.  
@@ -58,42 +58,49 @@ ms.locfileid: "55827905"
 ## <a name="considerations-for-applications-that-use-adonet-providers"></a>ADO.NET 공급자를 사용하는 응용 프로그램에 대한 고려 사항  
  [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] SqlClient와 같은 공급자를 사용 하면 테이블 형식 데이터를 반환 하는 데이터 원본을 쿼리할 수 있습니다. 데이터를 로드할 수도 있습니다는 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] 데이터 집합입니다. 다음 목록에서는 기존 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] 공급자를 사용하는 응용 프로그램을 업그레이드할 때 고려할 사항에 대해 설명합니다.  
   
- 데이터 판독기를 사용하여 표 형식 데이터 표시  
- 실행 하는 것이 좋습니다는 [!INCLUDE[esql](../../../../../includes/esql-md.md)] EntityClient 공급자를 사용 하 여 쿼리하고 반환 된 열거 <xref:System.Data.EntityClient.EntityDataReader> 개체입니다. 응용 프로그램이 데이터 판독기를 사용하여 표 형식 데이터를 표시하며 데이터를 개체로 구체화, 변경 내용 추적 및 업데이트를 위해 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 제공하는 기능이 필요하지 않은 경우에만 이 작업을 수행합니다. 데이터 소스를 업데이트하는 기존 데이터 액세스 코드를 계속 사용할 수 있지만 <xref:System.Data.EntityClient.EntityConnection.StoreConnection%2A>의 <xref:System.Data.EntityClient.EntityConnection> 속성에서 액세스된 기존 연결을 사용할 수도 있습니다. 자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.  
+- 데이터 판독기를 사용하여 표 형식 데이터 표시  
+
+  실행 하는 것이 좋습니다는 [!INCLUDE[esql](../../../../../includes/esql-md.md)] EntityClient 공급자를 사용 하 여 쿼리하고 반환 된 열거 <xref:System.Data.EntityClient.EntityDataReader> 개체입니다. 응용 프로그램이 데이터 판독기를 사용하여 표 형식 데이터를 표시하며 데이터를 개체로 구체화, 변경 내용 추적 및 업데이트를 위해 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 제공하는 기능이 필요하지 않은 경우에만 이 작업을 수행합니다. 데이터 소스를 업데이트하는 기존 데이터 액세스 코드를 계속 사용할 수 있지만 <xref:System.Data.EntityClient.EntityConnection.StoreConnection%2A>의 <xref:System.Data.EntityClient.EntityConnection> 속성에서 액세스된 기존 연결을 사용할 수도 있습니다. 자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.  
   
- DataSets 사용  
- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 다양 한 메모리 내 지 속성을 포함 하 여 데이터 집합에서 제공 하는 동일한 기능 변경 내용 추적, 데이터 바인딩 및 XML 데이터로 개체를 직렬화 하는 작업을 제공 합니다. 자세한 내용은 [개체를 사용 하 여 작업](../../../../../docs/framework/data/adonet/ef/working-with-objects.md)합니다.  
+- DataSets 사용  
+
+  [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 다양 한 메모리 내 지 속성을 포함 하 여 데이터 집합에서 제공 하는 동일한 기능 변경 내용 추적, 데이터 바인딩 및 XML 데이터로 개체를 직렬화 하는 작업을 제공 합니다. 자세한 내용은 [개체를 사용 하 여 작업](../../../../../docs/framework/data/adonet/ef/working-with-objects.md)합니다.  
   
- 경우는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 기능을 제공 하지 않는 응용 프로그램에 필요한 데이터 집합, 있습니다 수 활용할 LINQ 쿼리의 이점을 사용 하 여 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]입니다. 자세한 내용은 [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
+  경우는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 기능을 제공 하지 않는 응용 프로그램에 필요한 데이터 집합, 있습니다 수 활용할 LINQ 쿼리의 이점을 사용 하 여 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]입니다. 자세한 내용은 [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
   
 ## <a name="considerations-for-applications-that-bind-data-to-controls"></a>데이터를 컨트롤에 바인딩하는 응용 프로그램에 대한 고려 사항  
  합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 데이터 집합 또는와 같은 데이터 원본에서 데이터를 캡슐화 할 수 있습니다 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 데이터 소스 컨트롤과 및 다음 이러한 데이터 컨트롤에 사용자 인터페이스 요소를 바인딩합니다. 다음 목록에서는 컨트롤을 Entity Framework 데이터에 바인딩할 때 고려할 사항에 대해 설명합니다.  
   
- 컨트롤에 데이터 바인딩  
- 개념적 모델을 쿼리하면는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 엔터티 형식의 인스턴스인 개체로 데이터를 반환 합니다. 이러한 개체를 컨트롤에 직접 바인딩될 수 및이 바인딩은 업데이트를 지원 합니다. 이 즉, 데이터의 행과 같은 컨트롤에서 변경를 <xref:System.Windows.Forms.DataGridView>, 자동으로 데이터베이스에 저장 하는 경우는 <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> 메서드는 합니다.  
+- 컨트롤에 데이터 바인딩  
+
+  개념적 모델을 쿼리하면는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 엔터티 형식의 인스턴스인 개체로 데이터를 반환 합니다. 이러한 개체를 컨트롤에 직접 바인딩될 수 및이 바인딩은 업데이트를 지원 합니다. 이 즉, 데이터의 행과 같은 컨트롤에서 변경를 <xref:System.Windows.Forms.DataGridView>, 자동으로 데이터베이스에 저장 하는 경우는 <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> 메서드는 합니다.  
   
- 응용 프로그램에서 쿼리 결과를 열거하여 <xref:System.Windows.Forms.DataGridView> 또는 데이터 바인딩을 지원하는 다른 형식의 컨트롤에 데이터를 표시하는 경우 응용 프로그램을 수정하여 컨트롤을 <xref:System.Data.Objects.ObjectQuery%601>의 결과에 바인딩할 수 있습니다.  
+  응용 프로그램에서 쿼리 결과를 열거하여 <xref:System.Windows.Forms.DataGridView> 또는 데이터 바인딩을 지원하는 다른 형식의 컨트롤에 데이터를 표시하는 경우 응용 프로그램을 수정하여 컨트롤을 <xref:System.Data.Objects.ObjectQuery%601>의 결과에 바인딩할 수 있습니다.  
   
- 자세한 내용은 [컨트롤에 개체 바인딩](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100))합니다.  
+  자세한 내용은 [컨트롤에 개체 바인딩](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100))합니다.  
   
- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 데이터 소스 컨트롤  
- 합니다 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 의 데이터 바인딩 간소화 하도록 설계 된 데이터 소스 컨트롤 포함 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 웹 응용 프로그램입니다. 자세한 내용은 [EntityDataSource 웹 서버 컨트롤 개요](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100))합니다.  
+- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 데이터 소스 컨트롤  
+
+  합니다 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 의 데이터 바인딩 간소화 하도록 설계 된 데이터 소스 컨트롤 포함 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 웹 응용 프로그램입니다. 자세한 내용은 [EntityDataSource 웹 서버 컨트롤 개요](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100))합니다.  
   
 ## <a name="other-considerations"></a>기타 고려 사항  
  특정 종류의 응용 프로그램을 Entity Framework로 마이그레이션할 때 다음 사항을 고려해야 할 수도 있습니다.  
   
- 데이터 서비스를 노출하는 응용 프로그램  
- WCF(Windows Communication Foundation)를 기반으로 하는 웹 서비스와 응용 프로그램은 XML 요청/응답 메시징 형식을 사용하여 기본 데이터 소스의 데이터를 노출합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 이진, XML 또는 WCF 데이터 계약 serialization을 사용하여 엔터티 개체의 serialization을 지원합니다. 이진 및 WCF serialization은 모두 개체 그래프의 전체 serialization을 지원합니다. 자세한 내용은 [N 계층 애플리케이션 빌드](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100))합니다.  
+- 데이터 서비스를 노출하는 응용 프로그램  
+
+  WCF(Windows Communication Foundation)를 기반으로 하는 웹 서비스와 응용 프로그램은 XML 요청/응답 메시징 형식을 사용하여 기본 데이터 소스의 데이터를 노출합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 이진, XML 또는 WCF 데이터 계약 serialization을 사용하여 엔터티 개체의 serialization을 지원합니다. 이진 및 WCF serialization은 모두 개체 그래프의 전체 serialization을 지원합니다. 자세한 내용은 [N 계층 애플리케이션 빌드](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100))합니다.  
   
- XML 데이터를 사용하는 응용 프로그램  
- 개체 serialization을 사용하여 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 데이터 서비스를 만들 수 있습니다. 이러한 서비스는 AJAX 기반 인터넷 응용 프로그램과 같이 XML 데이터를 사용하는 응용 프로그램에 데이터를 제공합니다. 이런 경우 [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]를 사용하는 것이 좋습니다. 이러한 데이터 서비스 엔터티 데이터 모델에 기반한 표준 REST Representational State Transfer () HTTP 동작을 사용 하 여 엔터티 데이터에 대 한 동적 액세스를 제공와 같은 GET, PUT 및 게시 합니다. 자세한 내용은 [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md)를 참조하세요.  
+- XML 데이터를 사용하는 응용 프로그램  
+
+  개체 serialization을 사용하여 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 데이터 서비스를 만들 수 있습니다. 이러한 서비스는 AJAX 기반 인터넷 응용 프로그램과 같이 XML 데이터를 사용하는 응용 프로그램에 데이터를 제공합니다. 이런 경우 [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]를 사용하는 것이 좋습니다. 이러한 데이터 서비스 엔터티 데이터 모델에 기반한 표준 REST Representational State Transfer () HTTP 동작을 사용 하 여 엔터티 데이터에 대 한 동적 액세스를 제공와 같은 GET, PUT 및 게시 합니다. 자세한 내용은 [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md)를 참조하세요.  
   
- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 기본 XML 데이터 형식을 지원하지 않습니다. 즉, XML 열이 있는 테이블에 엔터티를 매핑할 때 XML 열에 해당하는 엔터티 속성은 문자열입니다. 개체의 연결을 끊고 XML로 serialize할 수 있습니다. 자세한 내용은 [개체 직렬화](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100))합니다.  
+  [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 기본 XML 데이터 형식을 지원하지 않습니다. 즉, XML 열이 있는 테이블에 엔터티를 매핑할 때 XML 열에 해당하는 엔터티 속성은 문자열입니다. 개체의 연결을 끊고 XML로 serialize할 수 있습니다. 자세한 내용은 [개체 직렬화](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100))합니다.  
   
- 응용 프로그램에 XML 데이터 쿼리 기능이 필요한 경우에도 LINQ to XML을 사용하여 LINQ 쿼리의 이점을 활용할 수 있습니다. 자세한 내용은 [LINQ to XML](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb387098(v=vs.110))합니다.  
+  응용 프로그램에 XML 데이터 쿼리 기능이 필요한 경우에도 LINQ to XML을 사용하여 LINQ 쿼리의 이점을 활용할 수 있습니다. 자세한 내용은 [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) 하거나 [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)합니다.  
   
- 상태를 유지하는 응용 프로그램  
- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 웹 응용 프로그램에서 웹 페이지 또는 사용자 세션의 상태를 유지 자주 해야 합니다. 개체는 <xref:System.Data.Objects.ObjectContext> 인스턴스 클라이언트 보기 상태나 또는 서버에서 세션 상태를 저장 하 고 나중에 검색 및 수 새 개체 컨텍스트에 다시 연결 합니다. 자세한 내용은 [연결 및 분리 개체](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100))합니다.  
+- 상태를 유지하는 응용 프로그램  
+
+  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 웹 응용 프로그램에서 웹 페이지 또는 사용자 세션의 상태를 유지 자주 해야 합니다. 개체는 <xref:System.Data.Objects.ObjectContext> 인스턴스 클라이언트 보기 상태나 또는 서버에서 세션 상태를 저장 하 고 나중에 검색 및 수 새 개체 컨텍스트에 다시 연결 합니다. 자세한 내용은 [연결 및 분리 개체](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100))합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [배포 고려 사항](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0b121b71-78f8-4ae2-9aa1-0b2e15778e57
-ms.openlocfilehash: a17d0b2382f105bb6299386e45a6746e05c39feb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e60df2b576980ecd1ff92af78cef36f025b71417
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54539066"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903786"
 ---
 # <a name="performance-counters-in-adonet"></a>성능 카운터(ADO.NET)
 ADO.NET 2.0에는 <xref:System.Data.SqlClient> 및 <xref:System.Data.OracleClient>를 모두 지원하는 성능 카운터에 대한 확장된 지원이 추가되었습니다. 이전 버전의 ADO.NET에서 사용 가능한 <xref:System.Data.SqlClient> 성능 카운터는 더 이상 사용되지 않는 대신 이 항목에 설명할 새 성능 카운터로 대체되었습니다. ADO.NET 성능 카운터를 사용하여 응용 프로그램 상태와 응용 프로그램에서 사용하는 연결 리소스를 모니터링할 수 있습니다. 성능 카운터는 Windows 성능 카운터를 사용하여 모니터링하거나 <xref:System.Diagnostics.PerformanceCounter> 네임스페이스의 <xref:System.Diagnostics> 클래스를 사용하여 프로그래밍 방식으로 액세스할 수 있습니다.  
@@ -202,27 +202,27 @@ Class Program
   
     Private Shared Function GetIntegratedSecurityConnectionString() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Data Source=.\SqlExpress;Integrated Security=True;" &   
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionString() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" &   
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionStringDifferent() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" & _  
           "User Id=LowPriv;Password=Data!05;")  
     End Function  
 End Class  
 ```  
-  
+
 ```csharp  
 using System;  
 using System.Data.SqlClient;  
@@ -372,32 +372,32 @@ class Program
     private static string GetIntegratedSecurityConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;Integrated Security=True;" +  
           "Initial Catalog=AdventureWorks";  
     }  
     private static string GetSqlConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" +  
-        //  "Initial Catalog=AdventureWorks";  
+          "Initial Catalog=AdventureWorks";  
     }  
   
     private static string GetSqlConnectionStringDifferent()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" +  
           "User Id=LowPriv;Password=Data!05;";  
     }  
 }  
 ```  
-  
+
 ## <a name="see-also"></a>참고자료
 - [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
 - [OLE DB, ODBC 및 Oracle 연결 풀링](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)
-- [ASP.NET에 대 한 성능 카운터](https://msdn.microsoft.com/library/1e122fcb-05c0-4f9f-bef1-f47023fa1ac6)
+- [ASP.NET에 대 한 성능 카운터](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
 - [런타임 프로파일링](../../../../docs/framework/debug-trace-profile/runtime-profiling.md)
-- [성능 임계값 모니터링 소개](https://msdn.microsoft.com/library/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35)
-- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [성능 임계값 모니터링 소개](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
+- [ADO.NET 개요](ado-net-overview.md)

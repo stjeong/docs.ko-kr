@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
-ms.openlocfilehash: 25d7f49644996d87ddb5d191dc313916c0ca6fbb
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 9ca3732de5e4cfa07fe08dec78edc9de23a1a036
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45748640"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904368"
 ---
 # <a name="working-with-data-definition-language"></a>데이터 정의 언어로 작업
 부터 합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 4는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] DDL (데이터 정의 언어)을 지원 합니다. 이렇게 하면 연결 문자열 및 저장소(SSDL) 모델의 메타데이터를 기반으로 데이터베이스 인스턴스를 만들거나 삭제할 수 있습니다.  
@@ -40,11 +40,11 @@ ms.locfileid: "45748640"
   
 2.  응용 프로그램에 기존 모델을 추가합니다.  
   
-    1.  이라는 빈 모델을 추가 `SchoolModel`합니다. 빈 모델을 만들려면 다음을 참조 합니다 [방법: 새.edmx 파일을 만들](https://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) 항목입니다.  
+    1.  이라는 빈 모델을 추가 `SchoolModel`합니다. 빈 모델을 만들려면 참조 된 [방법: 새.edmx 파일을 만들](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) 항목입니다.  
   
      SchoolModel.edmx 파일이 프로젝트에 추가됩니다.  
   
-    1.  개념적, 저장소, 복사 및 매핑에서 School 모델에 대 한 콘텐츠를 [School 모델](https://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) 항목입니다.  
+    1.  개념적, 저장소, 복사 및 매핑에서 School 모델에 대 한 콘텐츠를 [School 모델](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) 항목입니다.  
   
     2.  SchoolModel.edmx 파일을 열고 콘텐츠를 `edmx:Runtime` 태그 안에 붙여 넣습니다.  
   

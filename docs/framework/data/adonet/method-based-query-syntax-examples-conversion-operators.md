@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a084c16b-9b55-4690-aefd-f8e0810a92c3
-ms.openlocfilehash: 7fb9a6c7cfd891e6a4384f081992a6b185951931
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b3236c19ff1945a07c154a79769d3048bd079689
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54688235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904655"
 ---
 # <a name="method-based-query-syntax-examples-conversion-operators-linq-to-dataset"></a>메서드 기반 쿼리 구문 예제: 변환 연산자(LINQ to DataSet)
 이 항목의 예제에서는 <xref:System.Linq.Enumerable.ToArray%2A>, <xref:System.Linq.Enumerable.ToDictionary%2A> 및 <xref:System.Linq.Enumerable.ToList%2A> 메서드를 사용하여 쿼리 식을 즉시 실행하는 방법을 보여 줍니다.  
@@ -53,4 +53,5 @@ ms.locfileid: "54688235"
 ## <a name="see-also"></a>참고자료
 - [데이터를 데이터 세트에 로드](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)
 - [LINQ to DataSet 예제](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
-- [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)
+- [표준 쿼리 연산자 개요(C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [표준 쿼리 연산자 개요(Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

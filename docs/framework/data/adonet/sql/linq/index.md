@@ -2,12 +2,12 @@
 title: LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
-ms.openlocfilehash: 141505eed8e76bb5f9811b5d2bdc166885905cde
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6b3a951256d0804c214016de04457cc1869b595f
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50196832"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904294"
 ---
 # <a name="linq-to-sql"></a>LINQ to SQL
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 관계형 데이터를 개체로 관리하는 데 필요한 런타임 인프라를 제공하는 [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] 버전 3.5의 구성 요소입니다.  
@@ -35,8 +35,11 @@ ms.locfileid: "50196832"
  Visual Basic 및 C# 샘플에 대 한 링크를 제공합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] 기술에 대한 개요를 제공합니다.  
+ [언어 통합 쿼리 (LINQ)C#](../../../../../csharp/programming-guide/concepts/linq/index.md)\
+ LINQ 기술에 대 한 개요를 제공 합니다. C#입니다.
+ 
+ [언어 통합 쿼리 (LINQ)-Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ Visual Basic의 LINQ 기술의 개요를 제공합니다.
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  설명 [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] Visual Basic 사용자를 위한 기술입니다.  

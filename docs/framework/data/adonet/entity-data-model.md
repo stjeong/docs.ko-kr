@@ -2,12 +2,12 @@
 title: 엔터티 데이터 모델
 ms.date: 03/30/2017
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
-ms.openlocfilehash: c8b2f23a6ba5d6aea9f6d1458e8b7a6bf7bfc734
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f6f3d02a27ce9df152753b7aeec9ceb251bca532
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54688313"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904825"
 ---
 # <a name="entity-data-model"></a>엔터티 데이터 모델
 EDM(엔터티 데이터 모델)은 저장된 폼에 관계없이 데이터 구조를 설명하는 개념 집합입니다. EDM은 Peter Chen이 1976년에 설명한 엔터티-관계 모델에서 차용하지만 엔터티-관계 모델을 기반으로 하여 기존의 사용을 확장합니다.  
@@ -62,6 +62,6 @@ EDM(엔터티 데이터 모델)은 저장된 폼에 관계없이 데이터 구�
  [참조 무결성 제약 조건](../../../../docs/framework/data/adonet/referential-integrity-constraint.md)  
   
 ## <a name="see-also"></a>참고자료
-- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
-- [.edmx 파일 개요](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)
+- [ADO.NET 엔터티 데이터 모델 도구](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [.edmx 파일 개요](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [CSDL 사양](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)

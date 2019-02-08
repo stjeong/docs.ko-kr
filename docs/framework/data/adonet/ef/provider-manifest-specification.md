@@ -2,12 +2,12 @@
 title: 공급자 매니페스트 지정
 ms.date: 03/30/2017
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-ms.openlocfilehash: 592d435dd0da3a66fb3bbd278a53facb6cf08cb7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 409653fa415e62ff0591e09ad4771c5951689b24
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54734054"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904607"
 ---
 # <a name="provider-manifest-specification"></a>공급자 매니페스트 지정
 이 단원에서는 데이터 저장소 공급자가 데이터 저장소의 형식 및 함수를 지원하는 방법에 대해 설명합니다.  
@@ -91,7 +91,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ```  
   
 #### <a name="using-a-provider-manifest-token"></a>공급자 매니페스트 토큰 사용  
- 오프라인 시나리오의 경우 토큰이 SSDL 표현에서 선택됩니다. SSDL에서는 ProviderManifestToken을 지정할 수 있습니다 (참조 [스키마 요소 (SSDL)](https://msdn.microsoft.com/library/fec75ae4-7f16-4421-9265-9dac61509222) 자세한). 예를 들어, 연결을 열 수 없는 경우 SSDL에는 매니페스트에 대한 정보를 지정하는 공급자 매니페스트 토큰이 있습니다.  
+ 오프라인 시나리오의 경우 토큰이 SSDL 표현에서 선택됩니다. SSDL에서는 ProviderManifestToken을 지정할 수 있습니다 (참조 [스키마 요소 (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#schema-element-ssdl) 자세한). 예를 들어, 연결을 열 수 없는 경우 SSDL에는 매니페스트에 대한 정보를 지정하는 공급자 매니페스트 토큰이 있습니다.  
   
 ```  
 public DbProviderManifest GetProviderManifest(string manifestToken);  

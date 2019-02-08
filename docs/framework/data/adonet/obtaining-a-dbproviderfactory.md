@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a16e4a4d-6a5b-45db-8635-19570e4572ae
-ms.openlocfilehash: daaa93c4da16ac67b7f7018fdafdc2b2d9f0784a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1099d8ec8e9d516b2269232857c695f9ff04d99c
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54692784"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904590"
 ---
 # <a name="obtaining-a-dbproviderfactory"></a>DbProviderFactory 가져오기
 <xref:System.Data.Common.DbProviderFactory>를 가져오는 프로세스에서는 데이터 공급자에 대한 정보가 <xref:System.Data.Common.DbProviderFactories> 클래스에 전달됩니다. <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> 메서드는 이 정보를 기반으로 하여 강력한 형식의 공급자 팩터리를 만듭니다. 예를 들어 <xref:System.Data.SqlClient.SqlClientFactory>를 만들려면 공급자 이름을 "System.Data.SqlClient"로 지정하는 문자열을 `GetFactory`에 전달합니다. `GetFactory`의 다른 오버로드는 <xref:System.Data.DataRow>를 사용합니다. 공급자 팩터리를 만든 후에는 해당 메서드를 사용하여 다른 개체를 만들 수 있습니다. `SqlClientFactory`의 메서드로는 <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A> 및 <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>가 있습니다.  
@@ -98,5 +98,5 @@ ms.locfileid: "54692784"
 ## <a name="see-also"></a>참고자료
 - [DbProviderFactory](../../../../docs/framework/data/adonet/dbproviderfactories.md)
 - [연결 문자열](../../../../docs/framework/data/adonet/connection-strings.md)
-- [구성 클래스 사용](https://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)
-- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [구성 클래스 사용](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
+- [ADO.NET 개요](ado-net-overview.md)

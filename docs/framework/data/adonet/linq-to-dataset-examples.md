@@ -2,15 +2,15 @@
 title: LINQ to DataSet 예제
 ms.date: 03/30/2017
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
-ms.openlocfilehash: 8e6cce8ba79cad42ade6ac373631094f9e2d4e04
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ae43111a5b56e1edf3e1b4089902a8ca1d822d0d
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634534"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903805"
 ---
 # <a name="linq-to-dataset-examples"></a>LINQ to DataSet 예제
-이 섹션에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 표준 쿼리 연산자를 사용 하는 예제를 프로그래밍 합니다. <xref:System.Data.DataSet> 이러한 예제에 사용를 사용 하 여 채워집니다 합니다 `FillDataSet` 에 설명 된 메서드를 [로드 데이터에는 데이터 집합](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)합니다. 자세한 내용은 [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  
+이 섹션에서는 표준 쿼리 연산자를 사용 하는 데이터 집합 프로그래밍 예제를 LINQ를 제공 합니다. <xref:System.Data.DataSet> 이러한 예제에 사용를 사용 하 여 채워집니다 합니다 `FillDataSet` 에 설명 된 메서드를 [로드 데이터에는 데이터 집합](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)합니다. 자세한 내용은 [표준 쿼리 연산자 개요 (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) 하거나 [표준 쿼리 연산자 개요 (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [쿼리 식 예제](../../../../docs/framework/data/adonet/query-expression-examples-linq-to-dataset.md)  

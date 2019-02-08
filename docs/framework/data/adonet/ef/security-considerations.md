@@ -2,12 +2,12 @@
 title: 보안 고려 사항(Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
-ms.openlocfilehash: 41812dab1f92e20e3742661d13c9f0e4fb81b46e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 114da13e9939131f4799dc8a3565167f516eb697
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54612829"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904140"
 ---
 # <a name="security-considerations-entity-framework"></a>보안 고려 사항(Entity Framework)
 이 항목에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램의 개발, 배포 및 실행과 관련된 보안 고려 사항에 대해 설명합니다. 또한 보안 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램을 만들기 위한 권장 사항도 따라야 합니다. 자세한 내용은 [보안 개요](../../../../../docs/framework/data/adonet/security-overview.md)합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "54612829"
   
 -   보호되는 구성을 사용하여 구성 파일 섹션을 암호화합니다.  
   
-     ASP.NET에서는 구성 파일에서 중요한 정보를 암호화할 수 있도록 보호되는 구성이라는 기능을 제공합니다. 보호되는 구성은 원래 ASP.NET용으로 디자인된 것이지만 Windows 응용 프로그램의 구성 파일 섹션을 암호화하는 데도 사용할 수 있습니다. 새 보호 된 구성 기능에 대 한 자세한 설명을 참조 하세요 [구성을 구성 정보 암호화를 사용 하 여 보호](https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1)합니다.  
+     ASP.NET에서는 구성 파일에서 중요한 정보를 암호화할 수 있도록 보호되는 구성이라는 기능을 제공합니다. 보호되는 구성은 원래 ASP.NET용으로 디자인된 것이지만 Windows 응용 프로그램의 구성 파일 섹션을 암호화하는 데도 사용할 수 있습니다. 새 보호 된 구성 기능에 대 한 자세한 설명을 참조 하세요 [구성을 구성 정보 암호화를 사용 하 여 보호](https://docs.microsoft.com/previous-versions/aspnet/53tyfkaw(v=vs.100))합니다.  
   
 -   보안 구성 파일에 연결 문자열을 저장합니다.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "54612829"
   
      쿼리 조건자 및 매개 변수 이름에 사용되는 값에 악성 입력을 제공하여 [!INCLUDE[esql](../../../../../includes/esql-md.md)]에서 SQL 삽입 공격이 수행될 수 있습니다. SQL 삽입 공격의 위험을 방지하려면 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 명령 텍스트와 함께 사용자 입력을 결합하면 안 됩니다.  
   
-     [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리는 해당 리터럴이 허용되는 모든 곳에서 매개 변수를 허용합니다. 외부 에이전트에서 쿼리로 직접 리터럴을 삽입하는 대신 매개 변수가 있는 쿼리를 사용해야 합니다. 쿼리 작성기 메서드를 사용 하 여 안전 하 게 작성도 고려해 야 [Entity SQL](https://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0)합니다.  
+     [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리는 해당 리터럴이 허용되는 모든 곳에서 매개 변수를 허용합니다. 외부 에이전트에서 쿼리로 직접 리터럴을 삽입하는 대신 매개 변수가 있는 쿼리를 사용해야 합니다. 사용 하 여 고려해 야 [쿼리 작성기 메서드](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896238(v=vs.100)) 안전 하 게 Entity SQL을 생성 합니다.  
   
 -   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] 삽입 공격:  
   
@@ -132,7 +132,7 @@ ms.locfileid: "54612829"
  다음 보안 고려 사항은 엔터티 형식을 생성하고 사용할 때 적용됩니다.  
   
 #### <a name="do-not-share-an-objectcontext-across-application-domains"></a>응용 프로그램 도메인에서 ObjectContext를 공유하지 않습니다.  
- 둘 이상의 응용 프로그램 도메인과 <xref:System.Data.Objects.ObjectContext>를 공유하면 연결 문자열의 정보가 노출될 수 있습니다. 대신, serialized 개체 또는 개체 그래프를 다른 응용 프로그램 도메인으로 전송한 다음 해당 응용 프로그램 도메인의 <xref:System.Data.Objects.ObjectContext>에 개체를 연결해야 합니다. 자세한 내용은 [개체 직렬화](https://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99)합니다.  
+ 둘 이상의 응용 프로그램 도메인과 <xref:System.Data.Objects.ObjectContext>를 공유하면 연결 문자열의 정보가 노출될 수 있습니다. 대신, serialized 개체 또는 개체 그래프를 다른 응용 프로그램 도메인으로 전송한 다음 해당 응용 프로그램 도메인의 <xref:System.Data.Objects.ObjectContext>에 개체를 연결해야 합니다. 자세한 내용은 [개체 직렬화](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100))합니다.  
   
 #### <a name="prevent-type-safety-violations"></a>형식 안전성을 위반하지 않도록 합니다.  
  형식 안전성을 위반하면 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 개체의 데이터 무결성을 보장할 수 없습니다. 형식 안전성 위반은 신뢰할 수 없는 응용 프로그램이 완전 신뢰 코드 액세스 보안을 사용하여 실행될 수 있도록 하는 경우에 발생할 수 있습니다.  

@@ -2,12 +2,12 @@
 title: ADO.NET
 ms.date: 03/30/2017
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
-ms.openlocfilehash: 87b29db0cc093b195361ef34086f41038c181bef
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 86d4d4628313ff248618f37637b0a25e80820b06
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54507319"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903615"
 ---
 # <a name="adonet"></a>ADO.NET
 ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를 노출하는 클래스 집합입니다. ADO.NET은 분산된 데이터 공유 응용 프로그램을 만들기 위한 다양한 구성 요소를 제공합니다. 또한 관계형, XML 및 응용 프로그램 데이터에 대한 액세스를 제공하는 .NET Framework의 핵심 부분입니다. ADO.NET은 응용 프로그램, 도구, 언어 또는 인터넷 브라우저에서 사용되는 중간 계층 비즈니스 개체 및 프런트 엔드 데이터베이스 클라이언트 만들기를 포함하여 다양한 개발 요구 사항을 지원합니다.  
@@ -44,23 +44,20 @@ ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를
  .NET Framework Data Provider for Oracle과 관련된 기능 및 동작을 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- Visual Studio, .NET Framework 및 암호화의 보안 관련 항목에 대한 링크를 제공합니다.  
+ [언어 통합 쿼리 (LINQ)C#](../../../csharp/programming-guide/concepts/linq/index.md)  
+ LINQ 항목 링크를 제공 하 고 사용 하 여 샘플 C#입니다.  
   
- [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- LINQ 항목 및 샘플에 대한 링크를 제공합니다.  
+ [언어 통합 쿼리 (LINQ)-Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ LINQ 항목 및 Visual Basic을 사용한 샘플에 대 한 링크를 제공 합니다.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 사용하여 OData(Open Data Protocol)을 구현하는 데이터 서비스를 웹이나 인트라넷에 배포하는 방법에 대해 설명합니다.  
   
- [핵심 개발 기술](https://msdn.microsoft.com/library/csxbhtye.aspx)  
+ [.NET Framework 개발 가이드](../../development-guide.md)  
  .NET Framework의 표준 개발 작업에 대한 정보를 볼 수 있는 링크를 제공합니다.  
   
- [고급 개발 기술](https://msdn.microsoft.com/library/a493kdy6.aspx)  
- .NET Framework의 정교한 개발 작업 및 기법에 대한 정보 링크를 제공합니다.  
-  
- [샘플 및 빠른 시작](https://msdn.microsoft.com/library/ms184422.aspx)  
- .NET Framework와 관련된 모든 샘플 및 QuickStart 샘플에 대한 전체 목록을 제공합니다.  
+ [샘플 및 자습서](../../../samples-and-tutorials/index.md)  
+ .NET 샘플 및 자습서의 목록을 제공합니다.
   
 ## <a name="see-also"></a>참고자료
 - [Visual Studio에서 데이터 액세스](/visualstudio/data-tools/accessing-data-in-visual-studio)

@@ -4,16 +4,16 @@ description: 다양 한 아키텍처 및 웹 앱, 모바일 및 IoT를 비롯 �
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 5f22f8b9894a23e5920adb2af3fdf02bce2877d7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 60d225d9794d5c15b0cd8e42800ccad4d7872756
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150305"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904790"
 ---
 # <a name="serverless-architecture"></a>서버 리스 아키텍처
 
-서버 리스 아키텍처를 사용 하는 방법은 여러 가지가 있습니다. 이 장에서 서버 리스를 통합 하는 일반적인 아키텍처의 예제를 살펴봅니다. 또한 추가 문제가 발생할 수도 있고 서버 리스를 구현 하는 경우 추가로 고려해 야 할 문제에 대해서도 다룹니다. 마지막으로, 몇 가지 디자인 예제에는 다양 한 서버 리스 사용 사례를 보여 주는 제공 됩니다.
+사용 하는 방법은 여러 가지가 있습니다 [서버 리스](http://azure.com/serverless) 아키텍처입니다. 이 장에서 서버 리스를 통합 하는 일반적인 아키텍처의 예제를 살펴봅니다. 또한 추가 문제가 발생할 수도 있고 서버 리스를 구현 하는 경우 추가로 고려해 야 할 문제에 대해서도 다룹니다. 마지막으로, 몇 가지 디자인 예제에는 다양 한 서버 리스 사용 사례를 보여 주는 제공 됩니다.
 
 서버 리스 호스트는 서버 리스 인스턴스를 관리 하는 컨테이너 기반 기존 또는 PaaS 계층 종종 사용 합니다. Azure Functions는 기반으로 하는 예를 들어 [Azure App Service](https://docs.microsoft.com/azure/app-service/)합니다. App Service 인스턴스를 확장 하 고 Azure Functions 코드를 실행 하는 런타임 관리 됩니다. Windows 기반 함수에 대 한 PaaS 및 확장으로 호스트 실행 out.NET 런타임입니다. Linux 기반 함수에 대 한 호스트 컨테이너를 활용합니다.
 

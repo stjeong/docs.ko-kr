@@ -2,12 +2,12 @@
 title: 지원 및 미지원 LINQ 메서드 (LINQ to Entities)
 ms.date: 03/30/2017
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
-ms.openlocfilehash: a1a5f9f1789d8c0446a2816c2c07f61b6a373869
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e805eba7cc14b322b4d3dafe9036691b51ecec02
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54710380"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904282"
 ---
 # <a name="supported-and-unsupported-linq-methods-linq-to-entities"></a>지원 및 미지원 LINQ 메서드 (LINQ to Entities)
 이 단원에서는 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리에서 지원되거나 지원되지 않는 LINQ(Language-Integrated Query) 표준 쿼리 연산자에 대한 정보를 제공합니다. LINQ 표준 쿼리 연산자 중 상당수는 정수 인수를 허용하는 오버로드된 버전이 있습니다. 정수 인수는 연산 대상인 시퀀스에서 0부터 시작하는 인덱스, <xref:System.Collections.Generic.IEqualityComparer%601> 또는 <xref:System.Collections.Generic.IComparer%601>에 해당합니다. 별도로 명시하지 않는 한 오버로드된 버전의 이 LINQ 표준 쿼리 연산자는 지원되지 않으며, 이 버전을 사용할 경우 예외가 throw됩니다.  
@@ -145,7 +145,7 @@ ms.locfileid: "54710380"
 |<xref:System.Linq.Queryable.Sum%2A>|지원 안 함|`Function Sum(Of TSource) ( _ source As IQueryable(Of TSource), _ selector As Expression(Of Func(Of TSource, Nullable(Of Decimal))) _ ) As Nullable(Of Decimal)`|`Nullable<decimal> Sum<TSource>( this IQueryable<TSource> source, Expression<Func<TSource, Nullable<decimal>>> selector )`|  
   
 ## <a name="type-methods"></a>형식 메서드  
- CLR 표준 형식 변환과 테스트를 다루는 LINQ 표준 쿼리 연산자는 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에서 지원됩니다. 개념적 모델 형식에 매핑되는 CLR 형식만 LINQ to Entities에서 지원됩니다. 개념적 모델 형식의 목록을 참조 하세요 [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)합니다. 다음 표에서는 지원되거나 지원되지 않는 형식 메서드를 보여 줍니다.  
+ CLR 형식 변환과 테스트를 처리 하는 LINQ 표준 쿼리 연산자는 Entity Framework에서 지원 됩니다. 개념적 모델 형식에 매핑되는 CLR 형식만 LINQ to Entities에서 지원됩니다. 개념적 모델 형식의 목록을 참조 하세요 [개념적 모델 형식 (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl)합니다. 다음 표에서는 지원되거나 지원되지 않는 형식 메서드를 보여 줍니다.  
   
 |메서드|지원|Visual Basic 함수 시그니처|C# 메서드 시그니처|  
 |------------|-------------|-------------------------------------|--------------------------|  

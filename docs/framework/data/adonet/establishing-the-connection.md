@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3af512f3-87d9-4005-9e2f-abb1060ff43f
-ms.openlocfilehash: 6e3a88f7b34c64480d69df1a06a113e392d8fe53
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 97cae018f8cdf19da390b9586334f7c8b7f1c239
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54619385"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55903809"
 ---
 # <a name="establishing-the-connection"></a>연결 설정
 Microsoft SQL Server에 연결하려면 .NET Framework Data Provider for SQL Server의 <xref:System.Data.SqlClient.SqlConnection> 개체를 사용합니다. OLE DB 데이터 소스에 연결하려면 .NET Framework Data Provider for OLE DB의 <xref:System.Data.OleDb.OleDbConnection> 개체를 사용합니다. ODBC 데이터 소스에 연결하려면 .NET Framework Data Provider for ODBC의 <xref:System.Data.Odbc.OdbcConnection> 개체를 사용합니다. Oracle 데이터 소스에 연결하려면 .NET Framework Data Provider for Oracle의 <xref:System.Data.OracleClient.OracleConnection> 개체를 사용합니다. 안전 하 게 저장 하 고 연결 문자열 검색을 참조 하세요 [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)합니다.  
@@ -51,7 +51,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 ### <a name="integrated-security-and-aspnet"></a>통합 보안 및 ASP.NET  
  트러스트된 연결이라고도 하는 SQL Server 통합 보안은 연결 문자열에 사용자 ID와 암호를 노출하지 않아 안전하게 SQL Server에 연결할 수 있으므로 연결 인증에 권장되는 방식입니다. 통합 보안에서는 실행 중인 프로세스의 현재 보안 ID, 즉 토큰을 사용합니다. 데스크톱 응용 프로그램의 경우에는 일반적으로 현재 로그온한 사용자의 ID입니다.  
   
- ASP.NET 응용 프로그램의 보안 ID는 여러 가지 서로 다른 옵션 중 하나로 설정할 수 있습니다. ASP.NET 응용 프로그램에 SQL Server에 연결할 때 사용 하는 보안 id를 더 잘 이해 하려면 참조 [ASP.NET 가장](https://msdn.microsoft.com/library/a0cb3024-562f-4184-9d3c-095504787d3d)를 [ASP.NET 인증](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1), 및 [방법: Windows를 사용 하 여 액세스 SQL Server의 통합 보안](https://msdn.microsoft.com/library/683f9c9f-4375-4de6-8111-943c4423fde5)합니다.  
+ ASP.NET 응용 프로그램의 보안 ID는 여러 가지 서로 다른 옵션 중 하나로 설정할 수 있습니다. ASP.NET 응용 프로그램에 SQL Server에 연결할 때 사용 하는 보안 id를 더 잘 이해 하려면 참조 [ASP.NET 가장](https://docs.microsoft.com/previous-versions/aspnet/xh507fc5(v=vs.100))를 [ASP.NET 인증](https://docs.microsoft.com/previous-versions/aspnet/eeyk640h(v=vs.100)), 및 [방법: Windows를 사용 하 여 액세스 SQL Server의 통합 보안](https://docs.microsoft.com/previous-versions/aspnet/bsz5788z(v=vs.100))합니다.  
   
 ## <a name="connecting-to-an-ole-db-data-source"></a>OLE DB 데이터 소스 연결  
  (SQLOLEDB 통해 OLE DB Provider for SQL Server), OLE DB를 사용 하 여 노출 하는 데이터 원본에 연결을 제공 하는.NET Framework Data Provider for OLE DB를 사용 하 여 **OleDbConnection** 개체입니다.  
