@@ -2,14 +2,14 @@
 title: .NET Core로 코드를 포팅하기 위해 종속성 분석
 description: .NET Framework에서 .NET Core로 프로젝트를 포팅하기 위해 외부 종속성을 분석하는 방법을 알아봅니다.
 author: cartermp
-ms.date: 12/04/2018
+ms.date: 12/07/2018
 ms.custom: seodec18
-ms.openlocfilehash: 6451099bfc7f3afa5c9c1585862403a0a9fb2186
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 6c0f55150a4a1c4d0fb8b3125565c9ab8ade3117
+ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415223"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55904329"
 ---
 # <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>.NET Core로 코드를 포팅하기 위해 종속성 분석
 
@@ -93,13 +93,13 @@ NuGet 패키지를 분석한 후 대부분의 NuGet 패키지와 마찬가지로
 
 Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세한 내용은 [NuGet 패키지에 대한 경고 표시 안 함](/visualstudio/ide/how-to-suppress-compiler-warnings#suppress-warnings-for-nuget-packages)을 참조하세요.
 
-### <a name="port-your-packages-to-packagereference"></a>`PackageReference`로 패키지 포팅
+## <a name="port-your-packages-to-packagereference"></a>`PackageReference`로 패키지 포팅
 
 .NET Core는 [PackageReference](/nuget/consume-packages/package-references-in-project-files)를 사용하여 패키지 종속성을 지정합니다. [packages.config](/nuget/reference/packages-config)를 사용하여 패키지를 지정하는 경우 `PackageReference`로 변환해야 합니다.
 
 [packages.config에서 PackageReference로 마이그레이션](/nuget/reference/migrate-packages-config-to-package-reference)에서 자세히 알아볼 수 있습니다.
 
-### <a name="what-to-do-when-your-nuget-package-dependency-doesnt-run-on-net-core"></a>NuGet 패키지 종속성이 .NET Core에서 실행되지 않는 경우 수행할 작업
+## <a name="what-to-do-when-your-nuget-package-dependency-doesnt-run-on-net-core"></a>NuGet 패키지 종속성이 .NET Core에서 실행되지 않는 경우 수행할 작업
 
 종속된 NuGet 패키지가 .NET Core에서 실행되지 않을 경우 수행할 수 있는 몇 가지가 있습니다.
 
@@ -119,6 +119,5 @@ Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세�
 
 파일 시스템의 DLL처럼, NuGet 패키지가 아닌 종속성이 있을 수 있습니다. 해당 종속성의 이식 가능성을 확인하는 유일한 방법은 [.NET 이식성 분석기](https://github.com/Microsoft/dotnet-apiport)를 실행하는 것입니다. 도구는 .NET Framework를 대상으로 하는 어셈블리를 분석하고 .NET Core와 같은 다른 .NET 플랫폼으로 이식할 수 없는 API를 식별할 수 있습니다. 콘솔 애플리케이션 또는 [Visual Studio 확장](../../standard/analyzers/portability-analyzer.md)으로 도구를 실행할 수 있습니다.
 
-## <a name="next-steps"></a>다음 단계
-
-라이브러리를 이식하려는 경우 [라이브러리 이식](libraries.md)을 확인합니다.
+>[!div class="step-by-step"]
+>[다음](libraries.md)
