@@ -3,13 +3,13 @@ title: 아키텍처 원칙
 description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케이션 설계 | 아키텍처 원칙
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
-ms.openlocfilehash: fb854b89b9f8e425d594545b9ad61cbd334b7b2f
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.date: 01/30/2019
+ms.openlocfilehash: b7edfc8d0cb3460bb33fb4e54cc93dd18ce2f385
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151893"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55828100"
 ---
 # <a name="architectural-principles"></a>아키텍처 원칙
 
