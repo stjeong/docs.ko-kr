@@ -191,9 +191,11 @@
 ### [dotnet-svcutil.xmlserializer](core/additional-tools/dotnet-svcutil.xmlserializer-guide.md)
 ### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [.NET Framework에서 이식](core/porting/index.md)
-### [.NET Core용 프로젝트 구성](core/porting/project-structure.md)
+### [.NET Core에서 사용할 수 없는 .NET Framework 기술](core/porting/net-framework-tech-unavailable.md)
 ### [타사 종속성 분석](core/porting/third-party-deps.md)
 ### [라이브러리 이식](core/porting/libraries.md)
+### [.NET Core용 프로젝트 구성](core/porting/project-structure.md)
+### [.NET Core로 이식하는 작업에 도움이 되는 도구](core/porting/tools.md)
 ### [Windows 호환 기능 팩 사용](core/porting/windows-compat-pack.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
 ## [소스에서 .NET Core 빌드](core/build/index.md)
