@@ -8,12 +8,12 @@ metadata:
   ms.date: 12/11/2018
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: d782899c3b29851f020cd9fc07cde8f408bf2ac5
-  ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+  ms.openlocfilehash: c44d16e543f85852cee39106688fd3870dff7c4d
+  ms.sourcegitcommit: c3cf1ace8a1d403aeae76d8976d01995893d2536
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/23/2019
-  ms.locfileid: "54634261"
+  ms.lasthandoff: 02/07/2019
+  ms.locfileid: "55807046"
 items:
 - durationInMinutes: 1
   content: >
@@ -51,7 +51,7 @@ items:
     ```
 
 
-    `Caps` 메서드에도 동일한 작업을 시도해 보세요. 사소한 개선 사항이지만 잘 사용한다면 특히 데이터 전송 개체(DTO) 및 최소한의 동작을 지원하는 다른 형식을 위한 더 가독성이 높은 코드를 만들 수 있습니다.
+    `AllCaps` 메서드에도 동일한 작업을 시도해 보세요. 사소한 개선 사항이지만 잘 사용한다면 특히 데이터 전송 개체(DTO) 및 최소한의 동작을 지원하는 다른 형식을 위한 더 가독성이 높은 코드를 만들 수 있습니다.
 - title: 단일 클래스 가져오기
   durationInMinutes: 2
   content: "코드 전체에서 한 클래스의 정적 메서드를 반복적으로 사용하는 경우 매번 클래스 이름을 포함하면 코드의 의미가 불분명해집니다. `Person` 클래스는 현재 <xref:System.Console?displayProperty=nameWithType>만 사용된 경우에도 `System` 네임스페이스를 가져옵니다. `using` 문을 다음과 같이 수정하세요.\n\n[!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#UsingStatic)]  \n\n`static using` 문은 [`string`](xref:System.String) 클래스 또는 <xref:System.Math?displayProperty=nameWithType> 클래스처럼 여러 정적 메서드가 있는 단일 클래스를 광범위하게 사용하는 대규모 프로그램에서 더욱 유용합니다.\n"
