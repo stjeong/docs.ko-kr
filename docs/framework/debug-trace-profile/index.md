@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a04863e-2475-46f4-bc3f-3c11510c2a4b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ff2be73b2cea563066f70ea2fe6d53840f718e75
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 855a1329c9804e4b40d796c639bbe8768156dcc2
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855285"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092503"
 ---
 # <a name="debugging-tracing-and-profiling"></a>디버깅, 추적 및 프로파일링
 .NET Framework 응용 프로그램을 디버그하려면 디버거가 응용 프로그램에 연결하고 가능한 경우 응용 프로그램 및 해당 MSIL(Microsoft intermediate language)에 대한 기호 및 라인 맵을 둘 다 생성할 수 있도록 컴파일러 및 런타임 환경을 구성해야 합니다. 관리되는 응용 프로그램이 디버그된 후 성능을 향상시키기 위해 프로파일링할 수 있습니다. 프로파일링은 가장 자주 실행된 코드를 생성하는 소스 코드 줄과 실행하는 데 소요된 시간을 평가 및 설명합니다.  
@@ -47,8 +47,8 @@ ms.locfileid: "43855285"
  응용 프로그램의 성능을 추적하는 데 사용할 수 있는 카운터를 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [ASP.NET 및 AJAX 응용 프로그램 디버그](https://msdn.microsoft.com/library/9d531913-541b-47b8-864d-138021fca0c6)  
+ [Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱 디버그](/visualstudio/debugger/debugging-aspnet-and-ajax-applications)  
  개발 중이나 개발 후에 ASP.NET 응용 프로그램을 디버그하는 방법에 대한 지침과 필수 전제 조건을 제공합니다.  
   
  [개발 가이드](../../../docs/framework/development-guide.md)  
- 만들기, 구성, 디버깅, 보안, 응용 프로그램 배포, 동적 프로그래밍에 대한 정보, 상호 운용성, 확장성, 메모리 관리 및 스레딩을 포함하여 응용 프로그램 개발에 대한 모든 주요 기술 분야 및 작업에 대한 지침을 제공합니다.
+ 만들기, 구성, 디버깅, 보안, 애플리케이션 배포, 동적 프로그래밍에 대한 정보, 상호 운용성, 확장성, 메모리 관리 및 스레딩을 포함하여 애플리케이션 개발에 대한 모든 주요 기술 분야 및 작업에 대한 지침을 제공합니다.

@@ -1,13 +1,13 @@
 ---
 title: F#코드 서식 지정 지침
 description: 서식 지정에 대 한 지침을 알아보려면 F# 코드입니다.
-ms.date: 11/26/2018
-ms.openlocfilehash: b80a66f582d9fb8a2ec940ab565823483e7e4eea
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.date: 02/08/2019
+ms.openlocfilehash: 7cbd8e4dd1f58cd974a8a12fc8a8c9ee92c546b4
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55254826"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093621"
 ---
 # <a name="f-code-formatting-guidelines"></a>F#코드 서식 지정 지침
 
@@ -354,7 +354,7 @@ type PostalAddress =
     }
 ```
 
-열기 토큰을 새 줄의 닫는 토큰을 새 줄에 배치 하는 것은 레코드에서 인터페이스 구현 또는 멤버를 선언 하는 것 보다 좋습니다.
+열기 토큰을 새 줄의 닫는 토큰을 새 줄에 배치 하는 것은 레코드에서 인터페이스 구현 또는 멤버를 선언 하는 것이 좋습니다.
 
 ```fsharp
 // Declaring additional members on PostalAddress
@@ -389,7 +389,7 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-배치를 여는 새 줄에 토큰 콘텐츠 탭 하나를 통해 범위 하 고 새 줄에 닫는 토큰은 경우에 따라서:
+배치를 여는 새 줄에 토큰 콘텐츠 탭 하나를 통해 범위 및 새 줄에 닫는 토큰이 있다면 것이 좋습니다.
 
 * 다양 한 들여쓰기 범위를 사용 하 여 코드 내에서 레코드를 이동
 * 함수에 파이프 하
@@ -423,6 +423,42 @@ let foo a =
 ```
 
 목록 및 배열 요소에 대 한 동일한 규칙이 적용 됩니다.
+
+## <a name="formatting-copy-and-update-record-expressions"></a>형식 지정 식 복사 및 업데이트 레코드
+
+복사 및 업데이트 레코드 식이 a 레코드 여전히 유사한 지침이 적용 됩니다.
+
+간단한 식 한 줄에 넣을 수 있습니다.
+
+```fsharp
+let point2 = { point with X = 1; Y = 2 }
+```
+
+긴 식 새 줄을 사용 해야 합니다.
+
+```fsharp
+let rainbow2 =
+    { rainbow with
+        Boss = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"] }
+```
+
+및로 레코드 지침을 사용 하 여 하려는 중괄호에 대 한 별도 줄을 염두에 두고 있고 하나의 범위에서 식 사용 하 여 오른쪽 들여쓰기입니다. 괄호가 없을 경우 선택적으로 값을 래핑 같은 특별 한 경우도 있습니다 할 경우 한 줄에 중괄호를 유지 하는 참고:
+
+```fsharp    
+type S = { F1: int; F2: string }
+type State = { F:  S option }
+
+let state = { F = Some { F1 = 1; F2 = "Hello" } }
+let newState = 
+    {
+        state with
+            F = Some {
+                    F1 = 0
+                    F2 = ""
+                }
+    }
+```
 
 ## <a name="formatting-lists-and-arrays"></a>서식 지정 목록 및 배열
 
@@ -759,7 +795,7 @@ type MyRecord =
 
 ## <a name="formatting-literals"></a>형식 지정 리터럴
 
-[F#리터럴](../language-reference/literals.md) 를 사용 하 여는 `Literal` 특성 자체 줄에 특성을 배치 하며 camelCase 명명을 사용 해야 합니다.
+[F#리터럴](../language-reference/literals.md) 를 사용 하는 `Literal` 특성에서 특성 자체 줄에 배치 하 고 camelCase 명명을 사용 해야 합니다.
 
 ```fsharp
 [<Literal>]

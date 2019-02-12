@@ -6,12 +6,12 @@ helpviewer_keywords:
 - versioning [WCF Data Services]
 - WCF Data Services, versioning
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
-ms.openlocfilehash: aef4c98390d1fda4828bea8b6b2e482cb0071c32
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 818495cd2f7100f416280ce019321fed3f26aee8
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54558529"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092919"
 ---
 # <a name="data-service-versioning-wcf-data-services"></a>데이터 서비스 버전 관리(WCF Data Services)
 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 클라이언트 리소스 Uri를 사용 하 여 데이터 모델을 기반으로 하는 데이터를 액세스할 수 있도록 데이터 서비스를 만들 수 있습니다. 또한 OData 서비스 작업의 정의 지원합니다. 이러한 데이터 서비스는 비즈니스 요구 사항의 변경, 정보 기술의 요구 사항 또는 다른 문제 해결 등의 다양한 이유 때문에 최초로 배포된 후, 수명 동안 여러 차례에 걸쳐 변경되어야 할 수 있습니다. 기존 데이터 서비스를 변경한 경우 새 버전의 데이터 서비스를 정의할 것인지 그리고 기존 클라이언트 응용 프로그램에 미치는 영향을 최소화할 최선의 방법을 고려해야 합니다. 이 항목에서는 새 버전의 데이터 서비스를 만드는 방법 및 시기에 대한 지침을 제공합니다. WCF Data Services 클라이언트 및 OData 프로토콜의 다른 버전을 지 원하는 데이터 서비스 간의 교환을 처리 하는 방법을 설명 합니다.
@@ -39,10 +39,10 @@ ms.locfileid: "54558529"
 
  <sup>1</sup> 이 특정 오류 코드를 받으면 클라이언트 응용 프로그램을 사용 하는 얼마나 엄격 하 게 종속 될 수 있습니다.
 
- <sup>2</sup> 설정할 수 있습니다 합니다 <xref:System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties%2A> 속성을 `true` 클라이언트가 클라이언트에 정의 되어 있지 않은 데이터 서비스에서 보낸 새 속성을 무시 하도록 합니다. 그러나 삽입이 수행되면 클라이언트에 의해 POST 요청에 포함되지 않은 속성이 기본값으로 설정됩니다. 업데이트의 경우 클라이언트에 알려지지 않은 속성의 모든 기존 데이터는 기본값으로 덮어쓰여질 수 있습니다. 이 경우 업데이트를 기본값인 병합 요청으로 보내야 합니다. 자세한 내용은 [데이터 서비스 컨텍스트 관리](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md)합니다.
+ <sup>2</sup> 설정할 수 있습니다 합니다 <xref:System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties%2A> 속성을 `true` 클라이언트가 클라이언트에 정의 되어 있지 않은 데이터 서비스에서 보낸 새 속성을 무시 하도록 합니다. 그러나 삽입이 수행되면 클라이언트에 의해 POST 요청에 포함되지 않은 속성이 기본값으로 설정됩니다. 업데이트의 경우 클라이언트에 알려지지 않은 속성의 모든 기존 데이터는 기본값으로 덮어쓰여질 수 있습니다. 이 경우 업데이트를 기본값인 MERGE 요청으로 보내야 합니다. 자세한 내용은 [데이터 서비스 컨텍스트 관리](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md)합니다.
 
 ### <a name="how-to-version-a-data-service"></a>데이터 서비스 버전을 관리하는 방법
- 필요한 경우 업데이트된 서비스 계약 또는 데이터 모델로 서비스의 새 인스턴스를 만들어 새 데이터 서비스 버전을 정의할 수 있습니다. 그런 다음 이 새로운 서비스는 이전 버전과 차별화하는 새 URI 엔드포인트를 사용하여 노출됩니다. 예를 들면 다음과 같습니다.
+ 필요한 경우 업데이트된 서비스 계약 또는 데이터 모델로 서비스의 새 인스턴스를 만들어 새 데이터 서비스 버전을 정의할 수 있습니다. 그런 다음 이 새로운 서비스는 이전 버전과 차별화하는 새 URI 끝점을 사용하여 노출됩니다. 예를 들면 다음과 같습니다.
 
 -   이전 버전: `http://services.odata.org/Northwind/v1/Northwind.svc/`
 
@@ -69,7 +69,7 @@ ms.locfileid: "54558529"
 |버전 3|-다운로드 하 고 수에서 OData 버전 3을 지 원하는 시험판 버전을 설치 합니다 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkId=203885)합니다.|
 
 ### <a name="metadata-versions"></a>메타데이터 버전
- 기본적으로 WCF Data Services CSDL 버전 1.1을 사용 하 여 데이터 모델을 나타냅니다. 이는 리플렉션 공급자 또는 사용자 지정 데이터 서비스 공급자를 기반으로 하는 데이터 모델의 경우 항상 해당됩니다. 그러나 데이터 모델이 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]를 사용하여 정의된 경우 반환된 CSDL 버전은 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]에서 사용되는 버전과 동일합니다. CSDL의 버전의 네임 스페이스에 의해 결정 됩니다 합니다 [스키마 요소](https://msdn.microsoft.com/library/396074d8-f99c-4f50-a073-68bce848224f)합니다. 자세한 내용은 사양을 참조 하십시오 [ \[MC-CSDL\]: 개념 스키마 정의 파일 형식](https://go.microsoft.com/fwlink/?LinkId=159072)합니다.
+ 기본적으로 WCF Data Services CSDL 버전 1.1을 사용 하 여 데이터 모델을 나타냅니다. 이는 리플렉션 공급자 또는 사용자 지정 데이터 서비스 공급자를 기반으로 하는 데이터 모델의 경우 항상 해당됩니다. 그러나 데이터 모델이 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]를 사용하여 정의된 경우 반환된 CSDL 버전은 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]에서 사용되는 버전과 동일합니다. CSDL의 버전의 네임 스페이스에 의해 결정 됩니다 합니다 [스키마 요소 (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl)합니다.
 
  반환된 메타데이터의 `DataServices` 요소에는 응답 메시지의 `DataServiceVersion` 헤더와 값이 동일한 `DataServiceVersion` 특성도 포함되어 있습니다. 클라이언트 응용 프로그램 같은 합니다 **서비스 참조 추가** 대화 상자 데이터 서비스를 호스팅하는 WCF Data Services의 버전과 올바르게 작동 하는 클라이언트 데이터 서비스 클래스를 생성 하려면 Visual Studio에서이 정보를 사용 합니다. 자세한 내용은 참조 하세요. [OData: 버전 관리 프로토콜](https://go.microsoft.com/fwlink/?LinkId=186071)합니다.
 

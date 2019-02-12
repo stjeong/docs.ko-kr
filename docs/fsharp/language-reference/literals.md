@@ -1,13 +1,13 @@
 ---
 title: 리터럴
 description: 리터럴 형식에 알아봅니다는 F# 프로그래밍 언어입니다.
-ms.date: 05/16/2016
-ms.openlocfilehash: dfc02f0ff8ac3ad8600be5f3b6c9359f02bd25be
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.date: 02/08/2019
+ms.openlocfilehash: 28ce34dee3c3c3d4d0cfd4107e8cbc375a23032c
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612454"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092165"
 ---
 # <a name="literals"></a>리터럴
 
@@ -41,7 +41,7 @@ ms.locfileid: "53612454"
 |문자열|유니코드 문자열|없음|`"text\n"`<br /><br />또는<br /><br />`@"c:\filename"`<br /><br />또는<br /><br />`"""<book title="Paradise Lost">"""`<br /><br />또는<br /><br />`"string1" + "string2"`<br /><br />참고 항목 [문자열](Strings.md)합니다.|
 |byte|ASCII 문자|B|`'a'B`|
 |byte[]|ASCII 문자열|B|`"text"B`|
-|String 또는 byte]|축 자 문자열|@ 접두사|`@"\\server\share"` (유니코드)<br /><br />`@"\\server\share"B` (ASCII)|
+|String 또는 byte]|축 자 문자열|@ prefix|`@"\\server\share"` (유니코드)<br /><br />`@"\\server\share"B` (ASCII)|
 
 ## <a name="remarks"></a>설명
 
@@ -51,16 +51,16 @@ F# 3.1에서는 사용할 수는 `+` 문자열 리터럴을 결합 하 여 로�
 
 ```fsharp
 [<Literal>]
-let literal1 = "a" + "b"
+let Literal1 = "a" + "b"
 
 [<Literal>]
-let fileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let FileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let literal2 = 1 ||| 64
+let Literal2 = 1 ||| 64
 
 [<Literal>]
-let literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
+let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
 다른 비트 연산자의 사용이 허용 되지 않습니다.
@@ -76,8 +76,8 @@ let literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 부호 있는 32 비트 정수의 16 진수, 8 진수 또는 이진 사용 하 여 지정할 수도 있습니다는 `0x`, `0o` 또는 `0b` 각각 접두사입니다.
 
 ```fsharp
-let Numbers = (0x9F, 0o77, 0b1010)
-// Result: Numbers : int * int * int = (159, 63, 10)
+let numbers = (0x9F, 0o77, 0b1010)
+// Result: numbers : int * int * int = (159, 63, 10)
 ```
 
 ## <a name="underscores-in-numeric-literals"></a>숫자 리터럴의 밑줄
@@ -92,6 +92,6 @@ let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 let exampleSSN = 123_456_7890
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Core.LiteralAttribute 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)

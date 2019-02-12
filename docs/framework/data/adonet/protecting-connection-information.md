@@ -2,12 +2,12 @@
 title: 연결 정보 보호
 ms.date: 03/30/2017
 ms.assetid: 1471f580-bcd4-4046-bdaf-d2541ecda2f4
-ms.openlocfilehash: 4c96861afc47c67c8e8c1f3721b09672ca3f48ec
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4c8992abc30690be8e9ef9c208b0a0bd3ddf6116
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662220"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091957"
 ---
 # <a name="protecting-connection-information"></a>연결 정보 보호
 응용 프로그램 보안의 가장 중요한 목표 중 하나는 데이터 소스에 대한 액세스를 보호하는 것입니다. 연결 문자열을 안전하게 보호하지 않으면 이로 인해 보안상 취약한 부분이 생길 수 있습니다. 연결 정보를 일반 텍스트로 저장하거나 메모리에 유지하면 전체 시스템을 손상시킬 위험이 있습니다. 사용 하 여 소스 코드에 포함 된 연결 문자열을 읽을 수 있습니다 합니다 [Ildasm.exe (IL 디스어셈블러)](../../../../docs/framework/tools/ildasm-exe-il-disassembler.md) 컴파일된 어셈블리의 MSIL (Microsoft intermediate language)을 볼 수 있습니다.  
@@ -41,6 +41,6 @@ ms.locfileid: "54662220"
   
 ## <a name="see-also"></a>참고자료
 - [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [보호 된 구성을 사용 하 여 구성 정보 암호화](https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1)
-- [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)
+- [보호 된 구성을 사용 하 여 구성 정보 암호화](https://docs.microsoft.com/previous-versions/aspnet/53tyfkaw(v=vs.100))
+- [.NET의 보안](../../../standard/security/index.md)
 - [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

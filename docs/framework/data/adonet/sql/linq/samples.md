@@ -2,12 +2,12 @@
 title: 샘플
 ms.date: 03/30/2017
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
-ms.openlocfilehash: 55d53642b1d98c798b164ca99d2a59d7ba299d22
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 840aeaee70df02dc07033490db5bd081de5500cf
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54729030"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092009"
 ---
 # <a name="samples"></a>샘플
 이 항목에서는 포함 된 Visual Basic 및 C# 솔루션에 대 한 링크를 제공 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 샘플 코드입니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "54729030"
  [예제 쿼리 (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  SampleQueries 솔루션의 C # 버전  
- [LINQ C# 샘플 솔루션](https://msdn.microsoft.com/library/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  
+ [샘플 쿼리](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  
   
  다음 단계를 수행하여 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 코드와 응용 프로그램의 추가 예제를 찾습니다.  
   
@@ -29,4 +29,4 @@ ms.locfileid: "54729030"
   
 ## <a name="see-also"></a>참고자료
 - [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
-- [LINQ to SQL 연습](https://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)
+- [LINQ to SQL 연습](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))

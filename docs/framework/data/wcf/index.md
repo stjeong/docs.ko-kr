@@ -2,9 +2,15 @@
 title: WCF Data Services 4.5
 ms.date: 03/30/2017
 helpviewer_keywords:
-  - Astoria
-  - 'WCF Data Services, getting started'
+- Astoria
+- WCF Data Services, getting started
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
+ms.openlocfilehash: 6fd81a6bd4449cc0ef11b68320f366368d5edb7e
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092490"
 ---
 # <a name="wcf-data-services-45"></a>WCF Data Services 4.5
 
@@ -112,7 +118,7 @@ LINQ를 사용 하려고 하는 중...
 
  WCF Data Services에서 사용할 수 있는 기능에 대 한 개요를 제공합니다.
 
- [WCF Data Services의 새로운 기능](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)
+ [WCF Data Services 5.0의에서 새로운 기능](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 
  새 OData 기능에 대 한 지원과 WCF Data Services의 새로운 기능을 설명합니다.
 

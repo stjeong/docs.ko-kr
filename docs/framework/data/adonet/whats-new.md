@@ -2,12 +2,12 @@
 title: ADO.NET의 새로운 기능
 ms.date: 03/30/2017
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
-ms.openlocfilehash: efba4d3f0822aa6654eb55bd0aff059dbf84d02e
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 2acbd6a766d91e31db71ce193bcc4081e5f32c9d
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55283701"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092516"
 ---
 # <a name="whats-new-in-adonet"></a>ADO.NET의 새로운 기능
 다음은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에서 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]의 새로운 기능입니다.  
@@ -43,16 +43,18 @@ ms.locfileid: "55283701"
   
 -   `Type System Version=SQL Server 2012;`는 `Type System Version` 연결 속성에 전달되는 새로운 값입니다. `Type System Version=Latest;` 값은 더 이상 사용되지 않으며 `Type System Version=SQL Server 2008;`과 동일해졌습니다. 자세한 내용은 <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>을 참조하세요.  
   
--   SqlClient에서는 SQL Server 2008에 추가된 기능인 스파스 열에 대한 추가 지원을 제공합니다. 응용 프로그램이 이미 스파스 열을 사용하는 테이블의 데이터에 액세스하는 경우 성능이 향상됩니다. <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>의 IsColumnSet 열은 해당 열이 열 집합의 멤버인 스파스 열인지 여부를 나타냅니다. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> 열이 스파스 열인지 여부를 나타냅니다 (참조 [SQL Server 스키마 컬렉션](../../../../docs/framework/data/adonet/sql-server-schema-collections.md) 자세한). 스파스 열에 대 한 자세한 내용은 참조 하십시오 [스파스 열 사용](https://go.microsoft.com/fwlink/?LinkId=224244)합니다.  
+-   SqlClient에서는 SQL Server 2008에 추가된 기능인 스파스 열에 대한 추가 지원을 제공합니다. 응용 프로그램이 이미 스파스 열을 사용하는 테이블의 데이터에 액세스하는 경우 성능이 향상됩니다. 
+  <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>의 IsColumnSet 열은 해당 열이 열 집합의 멤버인 스파스 열인지 여부를 나타냅니다. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> 열이 스파스 열인지 여부를 나타냅니다 (참조 [SQL Server 스키마 컬렉션](../../../../docs/framework/data/adonet/sql-server-schema-collections.md) 자세한). 스파스 열에 대 한 자세한 내용은 참조 하십시오 [스파스 열 사용](https://go.microsoft.com/fwlink/?LinkId=224244)합니다.  
   
 -   공간 데이터 형식이 포함되어 있는 Microsoft.SqlServer.Types.dll 어셈블리가 버전 10.0에서 버전 11.0으로 업그레이드되었습니다. 이 어셈블리를 참조하는 응용 프로그램은 제대로 실행되지 않을 수 있습니다. 자세한 내용은 [데이터베이스 엔진 기능의 주요 변경 내용](https://go.microsoft.com/fwlink/?LinkId=224367)합니다.  
   
 ## <a name="adonet-entity-framework"></a>ADO.NET Entity Framework  
- [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에는 Entity Framework 5.0을 사용할 경우 새로운 시나리오를 사용할 수 있게 하는 API가 추가되었습니다. Entity Framework 5.0에 추가 된 기능과 향상 된 기능에 대 한 자세한 내용은 다음 항목을 참조 하세요. [새로운 기능](https://go.microsoft.com/fwlink/?LinkID=251106) 하 고 [Entity Framework 릴리스 및 버전 관리](https://go.microsoft.com/fwlink/?LinkId=234899)합니다.  
+ 
+  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에는 Entity Framework 5.0을 사용할 경우 새로운 시나리오를 사용할 수 있게 하는 API가 추가되었습니다. Entity Framework 5.0에 추가 된 기능과 향상 된 기능에 대 한 자세한 내용은 다음 항목을 참조 하세요. [새로운 기능](https://go.microsoft.com/fwlink/?LinkID=251106) 하 고 [Entity Framework 릴리스 및 버전 관리](https://go.microsoft.com/fwlink/?LinkId=234899)합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [ADO.NET](../../../../docs/framework/data/adonet/index.md)
 - [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)
 - [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
-- [WCF Data Services의 새로운 기능](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)
+- [WCF Data Services 5.0의에서 새로운 기능](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 - [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

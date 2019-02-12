@@ -2,12 +2,12 @@
 title: 보안 데이터 액세스
 ms.date: 03/30/2017
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-ms.openlocfilehash: 600ab092d1ae7c890a5d50f3beed52eb8b4110b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6fad9145cde499d7f0fc1b158810b75ff85c039b
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54494641"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56094037"
 ---
 # <a name="secure-data-access"></a>보안 데이터 액세스
 보안 ADO.NET 코드를 쓰려면 내부 데이터 저장소 또는 데이터베이스에서 사용할 수 있는 보안 메커니즘을 알아야 합니다. 또한, 응용 프로그램에 포함된 다른 기능이나 구성 요소의 보안 문제도 고려해야 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "54494641"
 |리소스|설명|  
 |--------------|-----------------|  
 |[연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)|보호되는 구성을 사용하여 연결 문자열을 암호화하는 것과 같이 연결 정보를 보호하는 기술과 최상의 보안 방법에 대해 설명합니다.|  
-|[데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
+|[데이터 액세스 전략에 대 한 권장 사항](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
 |[연결 문자열 작성기](../../../../docs/framework/data/adonet/connection-string-builders.md)|런타임에 사용자 입력을 기반으로 연결 문자열을 만드는 방법에 대해 설명합니다.|  
 |[SQL Server 보안 개요](../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)|SQL Server 보안 아키텍처에 대해 설명합니다.|  
   
@@ -35,7 +35,8 @@ ms.locfileid: "54494641"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[DataAdapter 매개 변수](../../../../docs/framework/data/adonet/dataadapter-parameters.md)|`DataAdapter`와 함께 매개 변수를 사용하는 방법에 대해 설명합니다.|  
+|[DataAdapter 매개 변수](../../../../docs/framework/data/adonet/dataadapter-parameters.md)|
+  `DataAdapter`와 함께 매개 변수를 사용하는 방법에 대해 설명합니다.|  
 |[저장 프로시저로 데이터 수정](../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)|매개 변수를 지정하고 반환 값을 가져오는 방법에 대해 설명합니다.|  
 |[SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)|SQL Server 저장 프로시저를 사용하여 데이터 액세스를 캡슐화하는 방법에 대해 설명합니다.|  
   
@@ -46,7 +47,7 @@ ms.locfileid: "54494641"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[스크립트 악용 개요](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|스크립팅 및 SQL 문 악용으로부터 보호하는 방법에 대해 설명합니다.|  
+|[스크립트 악용 개요](https://docs.microsoft.com/previous-versions/aspnet/w1sw53ds(v=vs.100))|스크립팅 및 SQL 문 악용으로부터 보호하는 방법에 대해 설명합니다.|  
   
 ## <a name="probing-attacks"></a>검색 공격  
  공격자는 흔히 예외에서 얻은 서버, 데이터베이스, 테이블 이름 등의 정보를 사용하여 시스템에 대한 공격을 준비합니다. 예외에는 응용 프로그램이나 데이터 소스에 대한 특정 정보가 포함될 수 있으므로 클라이언트에 꼭 필요한 정보만 노출함으로써 응용 프로그램 및 데이터 소스를 보다 안전하게 보호할 수 있습니다.  
@@ -75,7 +76,7 @@ ms.locfileid: "54494641"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[COM + 역할 기반 보안 및.NET Framework](https://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|COM+ 보안 서비스를 사용하여 관리 코드를 통합하는 방법에 대해 설명합니다.|  
+|[역할 기반 보안](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/s6y8k15h(v=vs.71))|COM+ 보안 서비스를 사용하여 관리 코드를 통합하는 방법에 대해 설명합니다.|  
   
 ## <a name="interoperating-with-unmanaged-code"></a>비관리 코드와의 상호 운용  
  .NET Framework는 비관리 코드와의 상호 작용을 위해 COM 구성 요소, COM+ 서비스, 외부 형식 라이브러리, 다양한 운영 체제 서비스 등을 제공합니다. 비관리 코드를 사용하려면 관리 코드에 대한 보안 경계 외부로 나가야 합니다. 코드와 코드를 호출하는 다른 코드 모두에 비관리 코드 권한(<xref:System.Security.Permissions.SecurityPermission> 플래그가 지정된 <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>)이 있어야 합니다. 비관리 코드로 인해 응용 프로그램에 의도하지 않았던 보안상 취약한 부분이 생길 수 있습니다. 따라서 꼭 필요한 경우가 아니면 비관리 코드와의 상호 운용 작업은 피하는 것이 좋습니다.  
@@ -90,7 +91,7 @@ ms.locfileid: "54494641"
 ## <a name="see-also"></a>참고자료
 - [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
-- [데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)
+- [데이터 액세스 전략에 대 한 권장 사항](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)
 - [연결 문자열 작성기](../../../../docs/framework/data/adonet/connection-string-builders.md)
 - [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

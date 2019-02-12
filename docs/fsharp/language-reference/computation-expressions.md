@@ -2,12 +2,12 @@
 title: 계산 식
 description: 계산을 작성 하기 위한 편리한 구문을 만드는 방법을 알아봅니다 F# 는 제어할 수 있습니다 수 사용 하 여 시퀀스 및 결합 된 바인딩과 흐름 구문이 구현 되었습니다.
 ms.date: 07/27/2018
-ms.openlocfilehash: 79159146e24dc50f851c29e3cf7fffe892c6d196
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 7524a42f8efb951be255ca6cc285740ef1fa12c3
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53610699"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093517"
 ---
 # <a name="computation-expressions"></a>계산 식
 
@@ -218,6 +218,7 @@ F# 핵심 라이브러리는 세 개의 기본 제공 계산 식을 정의 합�
 |`Yield`|`'T -> M<'T>`|에 대 한 호출 `yield` 계산 식에는 식입니다.|
 |`YieldFrom`|`M<'T> -> M<'T>`|에 대 한 호출 `yield!` 계산 식에는 식입니다.|
 |`Zero`|`unit -> M<'T>`|빈 호출 `else` 의 분기 `if...then` 계산 식에는 식입니다.|
+|`Quote`|`Quotations.Expr<'T> -> Quotations.Expr<'T>`|계산 식에 전달 되도록 나타냅니다는 `Run` 큰따옴표로 멤버입니다. 인용에 계산의 모든 인스턴스를 변환합니다.|
 
 대부분의 작성기 클래스에서 메서드를 사용 및 반환을 `M<'T>` 는 일반적으로 예를 들어 조합 하는 계산의 종류를 지정 하는 별도로 정의 된 형식, 구문 `Async<'T>` 비동기 워크플로와 및 `Seq<'T>` 시퀀스 워크플로에 합니다. 다음 하나의 구문에서 반환 되는 워크플로 개체를 전달할 수 있도록 이러한 메서드의 시그니처는 결합 하 고 서로 중첩 될 수 있도록 합니다. 계산 식 구문 분석할 때 컴파일러는 앞의 표에 메서드 및 계산 식의 코드를 사용 하 여 일련의 중첩 된 함수 호출에 식을 변환 합니다.
 
@@ -397,7 +398,7 @@ type Microsoft.FSharp.Linq.QueryBuilder with
         Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)
 - [비동기 워크플로](asynchronous-workflows.md)

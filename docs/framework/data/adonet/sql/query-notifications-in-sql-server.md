@@ -2,12 +2,12 @@
 title: SQL Server에서 쿼리 알림
 ms.date: 03/30/2017
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
-ms.openlocfilehash: 87335b5c9ad626e998fdb7bf0e71cae2542386f5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 166471658ccd1ef48db2ac1647f74ea696f3263d
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636692"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092295"
 ---
 # <a name="query-notifications-in-sql-server"></a>SQL Server에서 쿼리 알림
 쿼리 알림은 Service Broker 인프라를 기반으로 하며 데이터가 변경된 경우 응용 프로그램에 이를 알릴 수 있습니다. 이 기능은 웹 응용 프로그램 같이 데이터베이스의 정보 캐시를 제공하고 원본 데이터가 변경되면 알림을 받아야 하는 응용 프로그램에 매우 유용합니다.  
@@ -26,17 +26,17 @@ ms.locfileid: "54636692"
   
  을 개발 하는 응용 프로그램 데이터가 변경 되 면 신뢰할 수 있는 하위 보조 알림이 필요한 경우 섹션을 검토 **효율적인 쿼리 알림 전략을 계획** 고 **쿼리에 대 한 대안 알림을** 에 [알림에 대 한 계획](https://go.microsoft.com/fwlink/?LinkId=211984) SQL Server 온라인 설명서의 항목입니다. 쿼리 알림 및 SQL Server Service Broker에 대한 자세한 내용은 다음 SQL Server 온라인 설명서의 항목을 참조하세요.  
   
- **SQL Server 온라인 설명서**  
+ **SQL Server 설명서**  
   
--   [쿼리 알림 사용](https://msdn.microsoft.com/library/ms175110.aspx)  
+-   [쿼리 알림 사용](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
   
--   [알림에 대 한 쿼리 만들기](https://msdn.microsoft.com/library/ms181122.aspx)  
+-   [알림에 대 한 쿼리 만들기](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
--   [Service Broker](https://msdn.microsoft.com/library/bb522889.aspx)  
+-   [개발 (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522889(v=sql.105))  
   
--   [Service Broker 개발자 정보 센터](https://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker 개발자 정보 센터](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
   
--   [개발 (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
+-   [Developer's Guide (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [쿼리 알림 사용](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md)  
@@ -53,13 +53,15 @@ ms.locfileid: "54636692"
   
 ## <a name="reference"></a>참조  
  <xref:System.Data.Sql.SqlNotificationRequest>  
- <xref:System.Data.Sql.SqlNotificationRequest> 클래스와 해당 멤버 전체에 대해 설명합니다.  
+ 
+  <xref:System.Data.Sql.SqlNotificationRequest> 클래스와 해당 멤버 전체에 대해 설명합니다.  
   
  <xref:System.Data.SqlClient.SqlDependency>  
  <xref:System.Data.SqlClient.SqlDependency> 클래스와 해당 멤버 전체에 대해 설명합니다.  
   
  <xref:System.Web.Caching.SqlCacheDependency>  
- <xref:System.Web.Caching.SqlCacheDependency> 클래스와 해당 멤버 전체에 대해 설명합니다.  
+ 
+  <xref:System.Web.Caching.SqlCacheDependency> 클래스와 해당 멤버 전체에 대해 설명합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)

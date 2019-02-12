@@ -2,15 +2,15 @@
 title: SQL Server에서 행 수준 권한 부여
 ms.date: 03/30/2017
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c
-ms.openlocfilehash: 28e552e005cdfa0b4c69ff95927b938fa3898193
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 092520f04ba828c9589a16b4ffd6574d04170249
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54553774"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092997"
 ---
 # <a name="granting-row-level-permissions-in-sql-server"></a>SQL Server에서 행 수준 권한 부여
-일부 시나리오에서는 권한 부여, 취소 또는 거부를 통해 제공되는 것보다 세부적인 수준으로 데이터에 대한 액세스를 제어해야 합니다. 예를 들어 병원용 데이터베이스 애플리케이션에서는 개별 의사가 담당 환자에 관련된 정보에만 액세스하도록 제한해야 할 수 있습니다. 재무, 법률, 정부 및 군사용 애플리케이션을 비롯한 다양한 환경에도 이러한 요구 사항이 적용될 수 있습니다. 이러한 시나리오를 해결할 수 있도록 SQL Server 2016에서는 보안 정책에서 행 수준 액세스 논리를 간소화하고 중앙 집중화하는 [행 수준 보안](https://msdn.microsoft.com/library/dn765131.aspx) 기능을 제공합니다. 초기 버전 SQL Server에서는 뷰를 사용하여 행 수준 필터링을 시행하는 방식으로 비슷한 기능을 적용할 수 있습니다.  
+일부 시나리오에서는 권한 부여, 취소 또는 거부를 통해 제공되는 것보다 세부적인 수준으로 데이터에 대한 액세스를 제어해야 합니다. 예를 들어 병원용 데이터베이스 애플리케이션에서는 개별 의사가 담당 환자에 관련된 정보에만 액세스하도록 제한해야 할 수 있습니다. 재무, 법률, 정부 및 군사용 애플리케이션을 비롯한 다양한 환경에도 이러한 요구 사항이 적용될 수 있습니다. 이러한 시나리오를 해결할 수 있도록 SQL Server 2016에서는 보안 정책에서 행 수준 액세스 논리를 간소화하고 중앙 집중화하는 [행 수준 보안](/sql/relational-databases/security/row-level-security) 기능을 제공합니다. 초기 버전 SQL Server에서는 뷰를 사용하여 행 수준 필터링을 시행하는 방식으로 비슷한 기능을 적용할 수 있습니다.  
   
 ## <a name="implementing-row-level-filtering"></a>행 수준 필터링 구현  
  행 수준 필터링은 위의 병원 예제처럼 정보를 단일 테이블에 저장하는 애플리케이션에 사용됩니다. 행 수준 필터링을 구현하기 위해 각 행에는 사용자 이름, 레이블 또는 식별자와 같은 식별 매개 변수를 정의하는 열이 있습니다. 사용자가 액세스할 수 있는 행을 필터링하는 보안 정책 또는 테이블의 뷰를 만듭니다. 그리고 사용자가 실행할 수 있는 쿼리 형식을 제어하는 매개 변수화된 저장 프로시저를 만듭니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "54553774"
 -   데이터베이스 역할에 저장 프로시저에 대한 EXECUTE 권한을 부여합니다. 사용자는 제공된 저장 프로시저를 통해서만 데이터에 액세스할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
-- [행 수준 보안](https://msdn.microsoft.com/library/dn765131.aspx)
+- [행 수준 보안](/sql/relational-databases/security/row-level-security)
 - [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
 - [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)

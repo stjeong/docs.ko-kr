@@ -5,17 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
-ms.openlocfilehash: 7e24bf24785538863738fe2c006834a77f47e1ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9ea8960b74cd44734eb68a07c6959727bf1ac797
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54496090"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093972"
 ---
 # <a name="implementing-business-logic-linq-to-sql"></a>비즈니스 논리 구현(LINQ to SQL)
 이 항목에서 "비즈니스 논리"는 데이터베이스에서 데이터를 삽입, 업데이트 또는 삭제하기 전에 데이터에 적용하는 모든 사용자 지정 규칙 또는 유효성 검사 테스트를 의미합니다. 비즈니스 논리를 "비즈니스 규칙" 또는 "도메인 논리"라고도 합니다. N 계층 응용 프로그램의 경우 비즈니스 논리는 일반적으로 프레젠테이션 계층이나 데이터 액세스 계층과 독립적으로 수정될 수 있도록 논리 계층으로 디자인됩니다. 비즈니스 논리는 데이터베이스 데이터의 업데이트, 삽입 또는 삭제 전과 후에 데이터 액세스 계층에서 호출될 수 있습니다.  
   
- 비즈니스 논리는 필드의 형식이 테이블 열의 형식과 호환되는지 확인하는 스키마 유효성 검사처럼 간단한 논리부터 훨씬 더 복잡한 방식으로 상호 작용하는 개체의 집합으로 구성된 논리까지 매우 다양합니다. 규칙은 데이터베이스에 저장 프로시저로 구현되거나 메모리 내 개체로 구현될 수 있습니다. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]을 사용하면 비즈니스 논리가 어떻게 구현되었는지에 관계없이 부분 클래스와 부분 메서드(Partial Method)를 사용하여 비즈니스 논리와 데이터 액세스 코드를 분리할 수 있습니다.  
+ 비즈니스 논리는 필드의 형식이 테이블 열의 형식과 호환되는지 확인하는 스키마 유효성 검사처럼 간단한 논리부터 훨씬 더 복잡한 방식으로 상호 작용하는 개체의 집합으로 구성된 논리까지 매우 다양합니다. 규칙은 데이터베이스에 저장 프로시저로 구현되거나 메모리 내 개체로 구현될 수 있습니다. 
+  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]을 사용하면 비즈니스 논리가 어떻게 구현되었는지에 관계없이 부분 클래스와 부분 메서드(Partial Method)를 사용하여 비즈니스 논리와 데이터 액세스 코드를 분리할 수 있습니다.  
   
 ## <a name="how-linq-to-sql-invokes-your-business-logic"></a>LINQ to SQL로 비즈니스 논리를 호출하는 방법  
  디자인 타임에 엔터티 클래스를 직접 생성하거나 [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] 또는 SQLMetal을 사용하여 생성하면 해당 엔터티 클래스가 부분 클래스로 정의됩니다. 즉, 별도의 코드 파일에서 사용자 지정 비즈니스 논리가 포함된 엔터티 클래스의 다른 부분을 사용자가 정의할 수 있습니다. 컴파일할 때 이 두 부분은 하나의 클래스로 병합됩니다. 그러나 [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] 또는 SQLMetal을 사용하여 엔터티 클래스를 다시 생성해도 이전에 정의한 클래스 부분은 수정되지 않습니다.  
@@ -71,7 +72,8 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
   
  부분 클래스에 Insert, Update 및 Delete 메서드를 구현할 경우 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 런타임에서는 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 호출되면 기본 메서드 대신 사용자가 구현한 메서드를 호출합니다. 이렇게 하면 만들기, 읽기, 업데이트 및 삭제 작업의 기본 동작을 재정의할 수 있습니다. 자세한 내용은 [연습: 업데이트 및 삭제 동작 엔터티 클래스의 삽입을 사용자 지정](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)합니다.  
   
- `OnCreated` 메서드는 클래스 생성자에서 호출됩니다.  
+ 
+  `OnCreated` 메서드는 클래스 생성자에서 호출됩니다.  
   
 ```vb  
 Public Sub New(ByVal connection As String)  
@@ -181,10 +183,10 @@ partial class Customer
   
  [연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작 사용자 지정](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
- [연습: 엔터티 클래스에 유효성 검사 추가](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
+ [연습: 엔터티 클래스에 유효성 검사 추가](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
   
 ## <a name="see-also"></a>참고자료
-- [Partial 클래스 및 메서드](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
+- [Partial 클래스 및 메서드](../../../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
 - [부분 메서드](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)(Visual Studio의 LINQ to SQL 도구)
 - [SqlMetal.exe(코드 생성 도구)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

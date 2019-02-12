@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Atom Publishing Protocol [WCF Data Services]
 - WCF Data Services, customizing feeds
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
-ms.openlocfilehash: c54ea70049544e5205613ab76eb810798513fab2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cea3d57442d330b662335326c5b8ffd78d276ef2
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54680221"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093751"
 ---
 # <a name="feed-customization-wcf-data-services"></a>피드 사용자 지정(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하 여는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 데이터 피드로 노출 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 피드의 Atom 및 개체 JSON (JavaScript Notation) 형식을 지원합니다. Atom 피드를 사용 하는 경우 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 같은 엔터티 및 관계를 HTTP 메시지의 본문에 포함 될 수 있는 XML 형식으로 데이터를 serialize 하는 표준 방법을 제공 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 엔터티에 포함 된 데이터 및 Atom 요소 간의 기본 엔터티 속성 매핑을 정의 합니다. 자세한 내용은 참조 하세요. [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkID=185794)합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "54680221"
  자세한 내용은 [방법: Entity Framework 공급자를 사용한 피드 사용자 지정](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services.md)합니다.  
   
 > [!NOTE]
->  Entity Designer에서 데이터 모델 확장을 지원하지 않으므로 데이터 모델이 포함된 XML 파일을 수동으로 수정해야 합니다. 생성 되는.edmx 파일에 대 한 자세한 내용은 합니다 [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] 도구를 참조 하세요 [.edmx 파일 개요](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)합니다.  
+>  Entity Designer에서 데이터 모델 확장을 지원하지 않으므로 데이터 모델이 포함된 XML 파일을 수동으로 수정해야 합니다. 생성 되는.edmx 파일에 대 한 자세한 내용은 합니다 [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] 도구를 참조 하세요 [.edmx 파일 개요 (Entity Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))합니다.  
   
 ### <a name="custom-feed-attributes"></a>사용자 지정 피드 특성  
  다음 표에서는 데이터 모델을 정의하는 CSDL(개념 스키마 정의 언어)에 추가할 수 있는 피드를 사용자 지정하는 XML 특성을 보여 줍니다. 이러한 특성은 리플렉션 공급자와 함께 사용되는 <xref:System.Data.Services.Common.EntityPropertyMappingAttribute>의 속성과 같습니다.  

@@ -2,12 +2,12 @@
 title: SQL Server Express 보안
 ms.date: 03/30/2017
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e
-ms.openlocfilehash: c14548f2ff8e93c4dbbc61b946b9ed01cb62ab8a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a767f4c3f862b3b7442e1455bf086bdba7042062
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54664072"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091619"
 ---
 # <a name="sql-server-express-security"></a>SQL Server Express 보안
 Microsoft SQL Server Express Edition(SQL Server Express)은 Microsoft SQL Server를 기반으로 하며 대부분의 데이터베이스 엔진 기능을 지원합니다. 이 제품은 중요하지 않은 기능 및 네트워크 연결이 기본적으로 해제되어 있기 때문에 악의적인 사용자의 공격에 노출되는 영역이 적습니다.  
@@ -31,10 +31,9 @@ Microsoft SQL Server Express Edition(SQL Server Express)은 Microsoft SQL Server
   
 |||  
 |-|-|  
-|[SQL Server 온라인 설명서](https://msdn.microsoft.com/library/bb543165.aspx)|SQL Server Express의 설명서가 있습니다.|  
 |[SQL Server Express에 연결](https://msdn.microsoft.com/library/ms165679.aspx) SQL Server 온라인 설명서의|네트워크에서 SQL Server Express Edition을 사용하는 방법을 설명합니다.|  
-|[Microsoft SQL Server 2005 Express Edition Books Online](https://msdn.microsoft.com/library/ms165706.aspx)|SQL Server 2005 Express Edition의 전체 설명서가 있습니다.|  
-|[비관리자 용 사용자 인스턴스](https://msdn.microsoft.com/library/ms143684.aspx) SQL Server 온라인 설명서의|사용자 인스턴스를 만들고 배포하는 방법을 설명합니다.|  
+|[Microsoft SQL Server 2005 Express Edition Books Online](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms165706(v=sql.90))|SQL Server 2005 Express Edition의 전체 설명서가 있습니다.|  
+|[비관리자 용 사용자 인스턴스](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms143684(v=sql.100)) SQL Server 온라인 설명서의|사용자 인스턴스를 만들고 배포하는 방법을 설명합니다.|  
 |[SQL Server Express 사용자 인스턴스](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)|ADO.NET 응용 프로그램에서 사용할 수 있는 사용자 인스턴스 기능에 대해 설명합니다. 사용자 인스턴스를 사용하는 방법, <xref:System.Data.SqlClient.SqlConnection>을 통해 사용자 인스턴스에 연결하는 방법, 사용자 인스턴스 수명 및 사용자 인스턴스 시나리오에 대해 설명합니다.|  
   
 ## <a name="see-also"></a>참고자료

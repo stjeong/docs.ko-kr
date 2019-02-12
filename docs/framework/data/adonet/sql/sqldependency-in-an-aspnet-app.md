@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ff226ce3-f6b5-47a1-8d22-dc78b67e07f5
-ms.openlocfilehash: e80d01c01ed0b2558c86aefea0f554926f40e509
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 42eb0a417659776b2cd2fffa9d2fd62e58a4a176
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54573665"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091996"
 ---
 # <a name="sqldependency-in-an-aspnet-application"></a>ASP.NET 응용 프로그램에서 SqlDependency
 이 단원의 예제에서는 ASP.NET <xref:System.Data.SqlClient.SqlDependency> 개체를 활용하여 <xref:System.Web.Caching.SqlCacheDependency>를 간접적으로 사용하는 방법을 보여 줍니다. <xref:System.Web.Caching.SqlCacheDependency> 개체에서는 <xref:System.Data.SqlClient.SqlDependency>를 사용하여 알림을 수신하고 캐시를 올바르게 업데이트합니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "54573665"
      [!code-csharp[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#1)]
      [!code-vb[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#1)]  
   
-5.  `GetConnectionString` 및 `GetSQL`의 두 가지 도우미 메서드를 추가합니다. 정의된 연결 문자열은 통합 보안을 사용합니다. 사용 중인 계정에 필요한 데이터베이스 권한이 올바르며 있는지 확인 해야 샘플 데이터베이스 **AdventureWorks**, 알림을 사용 하도록 설정 했습니다. 자세한 내용은 [특별 한 고려 사항 때 사용 하 여 쿼리 알림을](https://msdn.microsoft.com/library/a83c8dc8-4fb9-4ffd-a2a5-c07cf4a203c7)합니다.  
+5.  `GetConnectionString` 및 `GetSQL`의 두 가지 도우미 메서드를 추가합니다. 정의된 연결 문자열은 통합 보안을 사용합니다. 사용 중인 계정에 필요한 데이터베이스 권한이 올바르며 있는지 확인 해야 샘플 데이터베이스 **AdventureWorks**, 알림을 사용 하도록 설정 했습니다.
   
      [!code-csharp[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#2)]
      [!code-vb[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#2)]  

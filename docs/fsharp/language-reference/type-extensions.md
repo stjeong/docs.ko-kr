@@ -1,13 +1,13 @@
 ---
-title: 형식 확장명
+title: 형식 확장
 description: 에 대해 알아봅니다 하는 방법 F# 형식 확장을 이용 하면 이전에 정의 된 개체 형식에 새 멤버를 추가 합니다.
-ms.date: 01/23/2019
-ms.openlocfilehash: d52bc38850219a142ff4f5d840e418ea4bd50cca
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.date: 02/08/2019
+ms.openlocfilehash: 69fb3b771b5334c5771f2ac75341b38c1dad5b90
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066157"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092477"
 ---
 # <a name="type-extensions"></a>형식 확장명
 
@@ -100,6 +100,8 @@ type IEnumerable<'T> with
 선택적 확장 리플렉션을 통해 검사 하는 경우 확장된 형식에 표시 되지 않습니다. 확장 모듈 이어야 하며 있을 때만 범위 확장을 포함 하는 모듈 열려 또는 그렇지 않은 경우 범위는 경우에 선택 사항입니다.
 
 선택적 확장 멤버는 정적 멤버는 개체 인스턴스를 암시적으로 매개 변수로 전달 되는 첫 번째 컴파일됩니다. 그러나 인스턴스 멤버 또는 선언 하는 방법에 따라 정적 멤버인 것 처럼 작동 합니다.
+
+선택적 확장 멤버도 표시 되지 않습니다 C# 또는 VB 소비자입니다. 다른만 사용할 수 있습니다 F# 코드입니다.
 
 ## <a name="generic-limitation-of-intrinsic-and-optional-type-extensions"></a>기본 및 선택적 형식 확장의 일반 제한 사항
 

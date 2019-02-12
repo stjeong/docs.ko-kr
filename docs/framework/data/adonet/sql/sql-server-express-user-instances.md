@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: d7ab6694ec467f957228bfde0a044c577bc2f923
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4546ce2a08fc2ac20717bbaa55d4688b43d34b47
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54664085"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093816"
 ---
 # <a name="sql-server-express-user-instances"></a>SQL Server Express 사용자 인스턴스
 Microsoft SQL Server Express Edition(SQL Server Express)은 .NET Framework Data Provider for SQL Server(`SqlClient`)를 사용하는 경우에만 사용 가능한 기능인 사용자 인스턴스를 지원합니다. 사용자 인스턴스는 부모 인스턴스에서 생성된 별도의 SQL Server Express 데이터베이스 엔진 인스턴스입니다. 로컬 컴퓨터에서 관리자가 아닌 사용자는 사용자 인스턴스를 사용하여 SQL Server Express 데이터베이스에 연결할 수 있습니다. 각 인스턴스는 사용자당 하나의 인스턴스를 기준으로 개인 사용자의 보안 컨텍스트 내에서 실행됩니다.  
@@ -41,7 +41,8 @@ sp_configure 'user instances enabled','0'
   
  아래 표시된 샘플 연결 문자열을 참조하세요.  
   
--   `Data Source` 키워드는 사용자 인스턴스를 생성하는 SQL Server Express의 부모 인스턴스를 참조합니다. 기본 인스턴스는 .\sqlexpress입니다.  
+-   
+  `Data Source` 키워드는 사용자 인스턴스를 생성하는 SQL Server Express의 부모 인스턴스를 참조합니다. 기본 인스턴스는 .\sqlexpress입니다.  
   
 -   `Integrated Security`이 `true`로 설정됩니다. 사용자 인스턴스에 연결하려면 Windows 인증이 필요합니다. SQL Server 로그인은 지원되지 않습니다.  
   
@@ -58,7 +59,9 @@ Initial Catalog=InstanceDB;
 ```  
   
 > [!NOTE]
->  사용할 수도 있습니다는 <xref:System.Data.SqlClient.SqlConnectionStringBuilder> <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> 및 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> 런타임 속성에 연결 문자열을 작성 합니다.  
+>  
+  <xref:System.Data.SqlClient.SqlConnectionStringBuilder>
+  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> 및 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> 속성을 사용하여 런타임에 연결 문자열을 빌드할 수도 있습니다.  
   
 ### <a name="using-the-124datadirectory124-substitution-string"></a>사용 하는 &#124;DataDirectory&#124; 대체 문자열  
  ADO.NET 2.0에서는 `AttachDbFileName`(파이프 기호 안에 포함됨) 대체 문자열이 도입되어 `|DataDirectory|`이 확장되었습니다. `DataDirectory`는 `AttachDbFileName`과 함께 사용되어 데이터 파일의 상대 경로를 나타내기 때문에 개발자가 전체 경로를 지정할 필요 없이 데이터 소스의 상대 경로를 기반으로 연결 문자열을 만들 수 있습니다.  
@@ -146,7 +149,7 @@ private static void OpenSqlConnection()
   
 -   공유 데이터가 필요하지 않은 단일 사용자 응용 프로그램.  
   
--   ClickOnce 배포. .NET Framework 2.0 이상 및 SQL Server Express가 이미 대상 컴퓨터에 설치되어 있는 경우, ClickOnce 동작의 결과로 다운로드된 설치 패키지를 관리자가 아닌 사용자가 설치하여 사용할 수 있습니다. SQL Server Express가 설치의 일부인 경우 관리자는 SQL Server Express를 설치해야 합니다. 자세한 내용은 [ClickOnce 배포에 대 한 Windows Forms 응용 프로그램](https://msdn.microsoft.com/library/34d8c770-48f2-460c-8d67-4ea5684511df)합니다.  
+-   ClickOnce 배포. .NET Framework 2.0 이상 및 SQL Server Express가 이미 대상 컴퓨터에 설치되어 있는 경우, ClickOnce 동작의 결과로 다운로드된 설치 패키지를 관리자가 아닌 사용자가 설치하여 사용할 수 있습니다. SQL Server Express가 설치의 일부인 경우 관리자는 SQL Server Express를 설치해야 합니다. 자세한 내용은 [Windows Forms에 대 한 ClickOnce 배포](../../../winforms/clickonce-deployment-for-windows-forms.md)합니다.
   
 -   Windows 인증을 사용하는 전용 ASP.NET 호스팅. 단일 SQL Server Express 인스턴스를 인트라넷에 호스트할 수 있습니다. 응용 프로그램에서는 가장이 아닌 ASPNET Windows 계정을 사용하여 연결합니다. 모든 응용 프로그램이 동일한 사용자 인스턴스를 공유하여 각 사용자에 대해 격리되지 않는 타사 또는 공유 호스팅 시나리오에서는 사용자 인스턴스를 사용하면 안 됩니다.  
   

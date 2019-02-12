@@ -1,13 +1,13 @@
 ---
 title: 개체 식
 description: 사용 하는 방법을 알아봅니다 F# 명명 된 형식을 새 만들려면 개체 식 추가 코드와 오버 헤드를 방지 하려는 경우 필요 합니다.
-ms.date: 05/16/2016
-ms.openlocfilehash: cb15983543fde2459c589b3de2554575d73db686
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.date: 02/08/2019
+ms.openlocfilehash: c00b2e329a97b86ec2c8c84c143d2aa199875442
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613923"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091671"
 ---
 # <a name="object-expressions"></a>개체 식
 
@@ -34,12 +34,49 @@ ms.locfileid: "53613923"
 
 다음 예제에서는 여러 다른 유형의 개체 식 보여 줍니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4301.fs)]
+```fsharp
+// This object expression specifies a System.Object but overrides the
+// ToString method.
+let obj1 = { new System.Object() with member x.ToString() = "F#" }
+printfn "%A" obj1
+
+// This object expression implements the IFormattable interface.
+let delimiter(delim1: string, delim2: string, value: string) =
+    { new System.IFormattable with
+        member x.ToString(format: string, provider: System.IFormatProvider) =
+            if format = "D" then
+                delim1 + value + delim2
+            else
+                value }
+
+let obj2 = delimiter("{","}", "Bananas!");
+
+printfn "%A" (System.String.Format("{0:D}", obj2))
+
+// This object expression implements multiple interfaces.
+type IFirst =
+  abstract F : unit -> unit
+  abstract G : unit -> unit
+
+type ISecond =
+  inherit IFirst
+  abstract H : unit -> unit
+  abstract J : unit -> unit
+
+// This object expression implements an interface chain.
+let implementer() =
+    { new ISecond with
+        member this.H() = ()
+        member this.J() = ()
+      interface IFirst with
+        member this.F() = ()
+        member this.G() = () }
+```
 
 ## <a name="using-object-expressions"></a>개체 식 사용
 
 추가 코드와 명명 된 형식을 새로 만드는 데 필요한는 오버 헤드를 방지 하려면 개체 식을 사용 합니다. 개체 식을 사용 하 여 프로그램에서 생성 하는 형식의 수를 최소화 하는 경우 코드 줄의 수를 줄일 수 있으며 형식의 불필요 한 확산을 방지할 수 있습니다. 다양 한 형식을 특정 상황을 처리할 수만 만드는 대신 기존 형식을 사용자 지정 하거나 특정 사례에 대 한 인터페이스의 적절 한 구현을 제공 하는 개체 식을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)

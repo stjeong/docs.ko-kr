@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a60c30fa-1e68-45fe-b984-f6abb9ede40e
-ms.openlocfilehash: a94c2e2ffc3ae3fa5406daeae97e31cfc3fdd1bd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0b962df58092dc0d410bff4559180a5d77580545
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54588576"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093933"
 ---
 # <a name="standard-query-operator-translation"></a>표준 쿼리 연산자 변환
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 표준 쿼리 연산자를 SQL 명령으로 변환합니다. 데이터베이스의 쿼리 프로세서는 SQL 변환에 대 한 실행 의미 체계를 결정합니다.  
   
- 표준 쿼리 연산자에 대해 정의 된 *시퀀스*합니다. 순서가 *정렬* 의존 하는 시퀀스의 각 요소에 대 한 참조 id 및. 자세한 내용은 [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  
+ 표준 쿼리 연산자에 대해 정의 된 *시퀀스*합니다. 순서가 *정렬* 의존 하는 시퀀스의 각 요소에 대 한 참조 id 및. 자세한 내용은 [표준 쿼리 연산자 개요 (C#)](../../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) 하거나 [표준 쿼리 연산자 개요 (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)합니다.  
   
  SQL 다루는 주로 *값 집합이 정렬 되지 않은*합니다. 순서 지정은 일반적으로 명시적으로 지정되는 후처리 작업으로 쿼리의 중간 결과가 아닌 최종 결과에 적용됩니다. ID는 값으로 정의됩니다. 따라서 SQL 쿼리 multiset를 다루는 것으로 이해 됩니다 (*모음이*) 대신 *설정*합니다.  
   
@@ -87,7 +87,8 @@ ORDER BY [t0].[CustomerID]
  데이터 정렬의 `null` 값은 SQL Server에서 정의됩니다. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 데이터 정렬을 변경하지 않습니다.  
   
 ### <a name="aggregates"></a>집합체  
- 표준 쿼리 연산자의 집계 메서드 <xref:System.Linq.Enumerable.Sum%2A>은 빈 시퀀스 또는 null만 들어 있는 시퀀스를 0으로 계산합니다. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 SQL의 의미 체계는 변경되지 않은 상태로 유지되고 <xref:System.Linq.Enumerable.Sum%2A>은 빈 시퀀스 또는 null만 들어 있는 시퀀스를 0이 아닌 `null`로 계산합니다.  
+ 표준 쿼리 연산자의 집계 메서드 <xref:System.Linq.Enumerable.Sum%2A>은 빈 시퀀스 또는 null만 들어 있는 시퀀스를 0으로 계산합니다. 
+  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 SQL의 의미 체계는 변경되지 않은 상태로 유지되고 <xref:System.Linq.Enumerable.Sum%2A>은 빈 시퀀스 또는 null만 들어 있는 시퀀스를 0이 아닌 `null`로 계산합니다.  
   
  중간 결과에 대한 SQL 제한은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]의 집계에 적용됩니다. 32비트 정수 수량의 <xref:System.Linq.Enumerable.Sum%2A>은 64비트 결과를 사용하여 계산되지 않습니다. 표준 쿼리 연산자 구현이 메모리 내의 해당 시퀀스에 대해 오버플로를 발생시키지 않는 경우에도 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]의 <xref:System.Linq.Enumerable.Sum%2A> 변환에 대해 오버플로가 발생할 수 있습니다.  
   
