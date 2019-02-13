@@ -1,15 +1,15 @@
 ---
 title: Docker 용어
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Docker를 사용 하 여 작업할 때 매일 사용에 몇 가지 기본 용어에 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
-ms.openlocfilehash: 1efb2fa567bd452f0a0a5ee5afb6f759511e4145
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 1514a2199efe52a411f61649fc21e906bba5b13c
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151315"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56218725"
 ---
 # <a name="docker-terminology"></a>Docker 용어
 
@@ -39,7 +39,7 @@ ms.locfileid: "53151315"
 
 -   **Docker EE (Enterprise Edition)** 는 엔터프라이즈급 버전의 Linux 및 Windows 개발에 대 한 Docker 도구입니다.
 
--   **Compose** 명령줄 도구 및 YAML 파일 형식을 정의 하 고 다중 컨테이너 응용 프로그램 실행에 대 한 메타 데이터를 사용 하 여 합니다. 환경에 따라 값을 재정의할 수 있는 하나 이상의 .yml 파일을 사용하여 여러 이미지를 기반으로 하는 단일 응용 프로그램을 정의합니다. 정의 만든 후 단일 명령을 사용 하 여 전체 다중 컨테이너 응용 프로그램을 배포할 수 있습니다 (docker-등록 구성)는 Docker 호스트에 이미지당 컨테이너를 만듭니다.
+-   **Compose** 명령줄 도구 및 YAML 파일 형식을 정의 하 고 다중 컨테이너 응용 프로그램 실행에 대 한 메타 데이터를 사용 하 여 합니다. 환경에 따라 값을 재정의할 수 있는 하나 이상의 .yml 파일을 사용하여 여러 이미지를 기반으로 하는 단일 애플리케이션을 정의합니다. 정의 만든 후 단일 명령을 사용 하 여 전체 다중 컨테이너 응용 프로그램을 배포할 수 있습니다 (docker-등록 구성)는 Docker 호스트에 이미지당 컨테이너를 만듭니다.
 
 -   **클러스터** 클러스터 내에서 여러 호스트에 걸쳐 분산 응용 프로그램 서비스의 여러 인스턴스로 확장할 수 있도록 단일 가상 Docker 호스트인 것 처럼 노출 하는 Docker 호스트의 컬렉션입니다. Docker Swarm, Mesosphere DC/OS, Kubernetes 및 Azure Service Fabric을 사용 하 여 Docker 클러스터를 만들 수 있습니다. (클러스터를 관리하는 데 Docker Swarm을 사용하는 경우 일반적으로 클러스터 대신 클러스터를 *swarm*으로 참조합니다.)
 

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 03c2620913aff2ef2934e7c07574c130923c7139
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f2f2bff0d86d3c3fed443628a5c437fe1ebdcc15
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540665"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219843"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다. 
@@ -37,7 +37,7 @@ ms.locfileid: "54540665"
  앱의 핵심 사용자 환경 또는 시나리오에 대한 성능 목표를 설정하고 성능을 측정하기 위한 테스트를 작성해야 합니다. 과학적인 방법을 적용하여 실패 테스트를 조사합니다. 즉, 프로필을 사용하여 사용자를 안내하고, 문제가 무엇일지 가설을 세우고, 실험이나 코드 변경으로 가설을 테스트합니다. 정기 테스트로 시간의 흐름에 따른 기준 성능 측정값을 설정하여 성능 저하를 일으키는 변경 내용을 구분할 수 있습니다. 엄격한 방식으로 성능 작업에 접근하면 불필요한 코드 업데이트로 시간을 낭비하는 일이 없습니다. 
   
 ### <a name="fact-3-good-tools-make-all-the-difference"></a>팩트 3: 좋은 도구가 모든 차이 만듭니다.  
- 좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다. Microsoft는 [Visual Studio 프로파일러](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone 분석 도구](https://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f) 및 [PerfView](https://www.microsoft.com/download/details.aspx?id=28567)와 같은 다양한 성능 도구를 제공합니다. 
+ 좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다. Microsoft와 같은 다양 한 성능 도구를 제공 합니다 [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling) 하 고 [PerfView](https://www.microsoft.com/download/details.aspx?id=28567)합니다. 
   
  PerfView는 디스크 I/O, GC 이벤트 및 메모리와 같은 깊이 있는 문제에 집중하는 데 도움을 주는 놀랄 만큼 강력한 도구로서 무료입니다. 성능 관련 ETW([Windows용 이벤트 추적](../../../docs/framework/wcf/samples/etw-tracing.md)) 이벤트를 캡처하여 앱, 프로세스, 스택 및 스레드 단위 정보를 쉽게 볼 수 있습니다. PerfView는 앱에서 할당하는 메모리의 양과 종류뿐만 아니라 함수 또는 호출 스택으로 인해 메모리가 할당되는 양이 어느 정도인지를 보여 줍니다. 자세한 내용은 도구에 포함된 다양한 도움말 항목, 데모 및 비디오(예: Channel 9의 [PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial))를 참조하세요. 
   
@@ -119,7 +119,8 @@ public class BoxingExample
   
  **예제 2에 대한 해결 방법**  
   
- <xref:System.Enum.GetHashCode>를 호출하기 전에 기본 표현으로 캐스팅하여 두 할당을 모두 쉽게 피할 수 있습니다.  
+ 
+  <xref:System.Enum.GetHashCode>를 호출하기 전에 기본 표현으로 캐스팅하여 두 할당을 모두 쉽게 피할 수 있습니다.  
   
 ```csharp  
 ((int)color).GetHashCode()  
@@ -130,7 +131,8 @@ public class BoxingExample
  첫 번째 성능 팩트를 염두에 두고(즉, 너무 이르게 최적화하지 말 것) 서둘러 이 방식으로 모든 코드를 다시 작성하려고는 하지 마세요. 이러한 boxing 비용에 주의하되 앱을 프로파일링하고 핫 스폿을 찾은 다음에만 코드를 변경하세요. 
   
 ### <a name="strings"></a>문자열  
- 문자열 조작은 할당이 발생하는 가장 큰 원인 중 몇 가지를 차지하며, PerfView에서 흔히 상위 5가지 할당을 차지하곤 합니다. 프로그램에서는 serialization, JSON 및 REST API에 문자열을 사용합니다. 열거형 형식을 사용할 수 없을 때 시스템과 상호 작용하기 위한 프로그램 상수로 문자열을 사용할 수 있습니다. 프로파일링에 문자열이 성능에 많은 영향을 미치고 있다고 표시되는 경우 <xref:System.String>, <xref:System.String.Format%2A>, <xref:System.String.Concat%2A>, <xref:System.String.Split%2A>, <xref:System.String.Join%2A> 등과 같은 <xref:System.String.Substring%2A> 메서드에 대한 호출을 찾습니다. <xref:System.Text.StringBuilder>를 사용하여 많은 조각에서 하나의 문자열을 만드는 비용을 방지하는 것도 유용하지만 <xref:System.Text.StringBuilder> 개체를 할당하는 것조차 관리해야 하는 병목 현상이 될 수 있습니다. 
+ 문자열 조작은 할당이 발생하는 가장 큰 원인 중 몇 가지를 차지하며, PerfView에서 흔히 상위 5가지 할당을 차지하곤 합니다. 프로그램에서는 serialization, JSON 및 REST API에 문자열을 사용합니다. 열거형 형식을 사용할 수 없을 때 시스템과 상호 작용하기 위한 프로그램 상수로 문자열을 사용할 수 있습니다. 프로파일링에 문자열이 성능에 많은 영향을 미치고 있다고 표시되는 경우 <xref:System.String>, <xref:System.String.Format%2A>, <xref:System.String.Concat%2A>, <xref:System.String.Split%2A>, <xref:System.String.Join%2A> 등과 같은 <xref:System.String.Substring%2A> 메서드에 대한 호출을 찾습니다. 
+  <xref:System.Text.StringBuilder>를 사용하여 많은 조각에서 하나의 문자열을 만드는 비용을 방지하는 것도 유용하지만 <xref:System.Text.StringBuilder> 개체를 할당하는 것조차 관리해야 하는 병목 현상이 될 수 있습니다. 
   
  **예제 3: 문자열 작업**  
   
@@ -195,7 +197,8 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 // etc... 
 ```  
   
- `WriteFormattedDocComment()`의 첫 번째 버전에서는 배열, 여러 부분 문자열 및 잘라낸 부분 문자열과 함께 빈 `params` 배열을 할당했습니다. "/ / /"에 대 한 확인란도 선택 합니다. 수정된 코드에서는 인덱싱만 사용하며 아무것도 할당하지 않습니다. 문자열 "/ / /"로 시작 하는 경우 공백을 아니며 다음 문자를 확인 하는 첫 번째 문자를 찾습니다. 새 코드를 사용 하 여 `IndexOfFirstNonWhiteSpaceChar` 대신 <xref:System.String.TrimStart%2A> 발생 하는 공백이 아닌 문자는 지정 된 시작 인덱스) (이후 첫 번째 인덱스를 반환할 합니다. 해결 방법이 완벽하지는 않지만 완벽한 솔루션을 위해 유사한 해결 방법을 적용하는 방법을 확인할 수 있습니다. 코드 전체에 이 접근 방식을 적용하여 `WriteFormattedDocComment()`에서 모든 할당을 제거할 수 있습니다. 
+ 
+  `WriteFormattedDocComment()`의 첫 번째 버전에서는 배열, 여러 부분 문자열 및 잘라낸 부분 문자열과 함께 빈 `params` 배열을 할당했습니다. "/ / /"에 대 한 확인란도 선택 합니다. 수정된 코드에서는 인덱싱만 사용하며 아무것도 할당하지 않습니다. 문자열 "/ / /"로 시작 하는 경우 공백을 아니며 다음 문자를 확인 하는 첫 번째 문자를 찾습니다. 새 코드를 사용 하 여 `IndexOfFirstNonWhiteSpaceChar` 대신 <xref:System.String.TrimStart%2A> 발생 하는 공백이 아닌 문자는 지정 된 시작 인덱스) (이후 첫 번째 인덱스를 반환할 합니다. 해결 방법이 완벽하지는 않지만 완벽한 솔루션을 위해 유사한 해결 방법을 적용하는 방법을 확인할 수 있습니다. 코드 전체에 이 접근 방식을 적용하여 `WriteFormattedDocComment()`에서 모든 할당을 제거할 수 있습니다. 
   
  **예제 4: StringBuilder**  
   
@@ -229,7 +232,8 @@ public class Example
   
  **예제 4에 대한 해결 방법**  
   
- `StringBuilder` 개체 할당을 해결하려면 개체를 캐시합니다. throw될 수 있는 단일 인스턴스를 캐시하는 것만으로도 성능을 현저히 향상시킬 수 있습니다. 다음은 함수의 새 구현이며, 여기에는 새로운 첫 번째 줄과 마지막 줄을 제외한 모든 코드가 생략되어 있습니다.  
+ 
+  `StringBuilder` 개체 할당을 해결하려면 개체를 캐시합니다. throw될 수 있는 단일 인스턴스를 캐시하는 것만으로도 성능을 현저히 향상시킬 수 있습니다. 다음은 함수의 새 구현이며, 여기에는 새로운 첫 번째 줄과 마지막 줄을 제외한 모든 코드가 생략되어 있습니다.  
   
 ```csharp  
 // Constructs a name like "MyType<T1, T2, T3>"  
@@ -434,7 +438,8 @@ class Compilation { /*...*/
 }  
 ```  
   
- 이 코드에서는 `cachedResult`의 형식이 `Task<SyntaxTree>`로 변경되고 `async`의 원래 코드를 유지하는 `GetSyntaxTreeAsync()` 도우미 함수가 채택되었습니다. 이제 `GetSyntaxTreeAsync()`는 `cachedResult`가 null이 아닌 경우 이를 반환하기 위해 [null 병합 연산자](../../csharp/language-reference/operators/null-coalescing-operator.md)를 사용합니다. `cachedResult`가 null인 경우 `GetSyntaxTreeAsync()`는 `GetSyntaxTreeUncachedAsync()`를 호출하고 결과를 캐시합니다. 일반적으로 코드가 그러는 것처럼 `GetSyntaxTreeAsync()`는 `GetSyntaxTreeUncachedAsync()`에 대한 호출을 기다리지 않습니다. await를 사용하지 않는다는 말은 `GetSyntaxTreeUncachedAsync()`에서 해당 <xref:System.Threading.Tasks.Task> 개체를 반환할 때 `GetSyntaxTreeAsync()`가 즉시 <xref:System.Threading.Tasks.Task>를 반환한다는 의미입니다. 이제 캐시된 결과가 <xref:System.Threading.Tasks.Task>이므로 캐시된 결과를 반환하기 위한 할당이 없습니다. 
+ 이 코드에서는 `cachedResult`의 형식이 `Task<SyntaxTree>`로 변경되고 `async`의 원래 코드를 유지하는 `GetSyntaxTreeAsync()` 도우미 함수가 채택되었습니다. 이제 `GetSyntaxTreeAsync()`는 `cachedResult`가 null이 아닌 경우 이를 반환하기 위해 [null 병합 연산자](../../csharp/language-reference/operators/null-coalescing-operator.md)를 사용합니다. 
+  `cachedResult`가 null인 경우 `GetSyntaxTreeAsync()`는 `GetSyntaxTreeUncachedAsync()`를 호출하고 결과를 캐시합니다. 일반적으로 코드가 그러는 것처럼 `GetSyntaxTreeAsync()`는 `GetSyntaxTreeUncachedAsync()`에 대한 호출을 기다리지 않습니다. await를 사용하지 않는다는 말은 `GetSyntaxTreeUncachedAsync()`에서 해당 <xref:System.Threading.Tasks.Task> 개체를 반환할 때 `GetSyntaxTreeAsync()`가 즉시 <xref:System.Threading.Tasks.Task>를 반환한다는 의미입니다. 이제 캐시된 결과가 <xref:System.Threading.Tasks.Task>이므로 캐시된 결과를 반환하기 위한 할당이 없습니다. 
   
 ### <a name="additional-considerations"></a>추가 고려 사항  
  다음은 규모가 큰 앱이나 많은 데이터를 처리하는 앱에서 발생할 수 있는 잠재적 문제에 대한 몇 가지 추가 사항입니다. 
@@ -466,9 +471,8 @@ class Compilation { /*...*/
 - [이 항목의 프레젠테이션 비디오](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
 - [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)
 - [성능](../../../docs/framework/performance/index.md)
-- [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)
+- [.NET 성능 팁](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v%3dmsdn.10))
 - [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)
-- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)
 - [채널 9 PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

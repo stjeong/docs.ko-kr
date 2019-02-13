@@ -1,15 +1,15 @@
 ---
 title: Docker 응용 프로그램에 대 한 외부 루프 DevOps 워크플로의 단계
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: "\"외부 루프\" DevOps 워크플로의 단계에 알아봅니다."
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/10/2018
-ms.openlocfilehash: 37dd5481da571be56f134a5e142b7ba46427d7d8
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: b75e9df1c31e8bcebcaa6d56336a6aa499d13e1d
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143651"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220941"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Docker 응용 프로그램에 대 한 외부 루프 DevOps 워크플로의 단계
 
@@ -21,7 +21,7 @@ ms.locfileid: "53143651"
 
 이제 이러한 각 단계를 자세히 살펴보겠습니다.
 
-## <a name="step-1-inner-loop-development-workflow"></a>1 단계: 내부 루프 개발 워크플로
+## <a name="step-1-inner-loop-development-workflow"></a>1단계: 내부 루프 개발 워크플로
 
 이 단계는 4 장에에서 자세히 설명 되어 있지만 정리 하자면, 여기 있는 외부 루프 시작 되는, 현재는 개발자는 CI 파이프라인 작업을 시작 하는 소스 제어 관리 시스템 (예: Git) 코드를 푸시합니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "53143651"
 
 Azure DevOps 서비스 및 Team Foundation Server Git 및 Team Foundation 버전 제어를 지원합니다. 선택 하 고 엔드-투-엔드 Microsoft 환경을 사용할 수 있습니다. 그러나을 관리할 수도 있습니다 (예: GitHub, 온-프레미스 Git 리포지토리 또는 Subversion) 외부 리포지토리에서 코드를 연결 하 여 DevOps CI 파이프라인에 대 한 시작 점으로 코드를 가져올 수 있습니다.
 
-## <a name="step-3-build-ci-integrate-and-test-with-azure-devops-services-and-docker"></a>3 단계: CI 빌드를 통합 하 고 Azure DevOps를 사용 하 여 테스트 서비스 및 Docker
+## <a name="step-3-build-ci-integrate-and-test-with-azure-devops-services-and-docker"></a>3단계: CI 빌드를 통합 하 고 Azure DevOps를 사용 하 여 테스트 서비스 및 Docker
 
 CI는 최신 소프트웨어 테스트 및 배달에 대 한 표준으로 부상 했습니다. Docker 솔루션 개발 및 운영 팀 간의 명확히 분리를 유지 관리합니다. Docker 이미지의 불변성 개발, CI를 통해 테스트 및 프로덕션 환경에서 실행에 어떤 간의 반복 가능한 배포를 확인 합니다. Docker 엔진 개발자 노트북에서 배포 및 테스트 인프라 전반에서 컨테이너 노트북 환경입니다.
 
@@ -157,7 +157,7 @@ Azure DevOps 서비스 Docker 확장을 사용 하 여 그림 5-5에 나와 있�
 
 **자세한 내용은** 자세한 Azure DevOps 서비스에 대 한 Docker 확장을 하는 방법에 대 한 이동 <https://aka.ms/vstsdockerextension>합니다. Azure Container Registry에 대 한 자세한 내용은 이동 <https://aka.ms/azurecontainerregistry>합니다.
 
-## <a name="step-4-cd-deploy"></a>4 단계: CD 배포
+## <a name="step-4-cd-deploy"></a>4단계: CD 배포
 
 Docker 이미지의 불변성 개발, CI를 통해 테스트 및 프로덕션 환경에서 실행에 무엇을 사용 하 여 반복 가능한 배포를 확인 합니다. Docker 레지스트리 (사설 또는 공용)에 게시 된 응용 프로그램 Docker 이미지를 만든 후 발생할 수 있는 여러 환경에 배포할 수 있습니다 (프로덕션, QA, 스테이징 등) Azure DevOps 서비스를 사용 하 여 CD 파이프라인에서 파이프라인 작업 또는 Azure DevOps 서비스 릴리스 관리 합니다.
 
@@ -223,11 +223,11 @@ Azure Container Service: <https://aka.ms/azurecontainerservice>
 
 Mesosphere DC/OS: <https://mesosphere.com/product/>
 
-## <a name="step-5-run-and-manage"></a>5 단계: 실행 및 관리
+## <a name="step-5-run-and-manage"></a>5단계: 실행 및 관리
 
 실행 하 고 응용 프로그램을 관리 하기 때문에 엔터프라이즈 프로덕션에서 수준에서 자체의 및 작업의 형식으로 인해 주요 주제 이며이 영역의 큰 범위와 해당 수준 (IT 작업)에서 작업 하는 사람들을에서는 사용 되는 전체 다음 설명에 장입니다.
 
-## <a name="step-6-monitor-and-diagnose"></a>6 단계: 모니터링 및 진단
+## <a name="step-6-monitor-and-diagnose"></a>6단계: 모니터링 및 진단
 
 이 항목에서는 또한 가려집니다 다음 장에서 IT 운영 프로덕션 시스템에서 수행 하는 작업의 일부로 그러나이 응용 프로그램은 지속적으로 개선 되도록이 단계에서 얻은 통찰력을 개발 팀에 다시 넣어야 강조 표시 해야 합니다. 해당 관점에서 일부 이기도 하므로 DevOps의 태스크 및 작업에서 일반적으로 수행 하지만 IT.
 
@@ -235,4 +235,4 @@ Mesosphere DC/OS: <https://mesosphere.com/product/>
 
 >[!div class="step-by-step"]
 >[이전](index.md)
->[다음](../run-manage-monitor-docker-environments/index.md)
+>[다음](create-ci-cd-pipelines-azure-devops-services-aspnetcore-kubernetes.md)

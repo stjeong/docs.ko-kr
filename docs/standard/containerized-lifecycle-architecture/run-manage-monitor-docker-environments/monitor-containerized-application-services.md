@@ -1,15 +1,15 @@
 ---
 title: 컨테이너 화 된 응용 프로그램 서비스를 모니터링 합니다.
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 애플리케이션 수명 주기
+description: 모니터링 컨테이너 아키텍처의 몇 가지 주요 측면에 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 5630bfcc3173def670e2fa780d28024799b7c2a1
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: e1be3c36f17fc5f85c9deacaa29031cee45226cc
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153926"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221188"
 ---
 # <a name="monitor-containerized-application-services"></a>컨테이너 화 된 응용 프로그램 서비스를 모니터링 합니다.
 

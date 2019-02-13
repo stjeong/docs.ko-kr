@@ -1,15 +1,15 @@
 ---
 title: DevOps 공동 작업을 위한 기초로 컨테이너
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: DevOps를 간소화 하는 컨테이너의 키 역할을 이해 합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: ccc8ef765cadfec31a2f714767d8e6eb76508093
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: d0339199092304dd6c91707d8cf4da213f110b58
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126629"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219292"
 ---
 # <a name="containers-as-the-foundation-for-devops-collaboration"></a>DevOps 공동 작업을 위한 기초로 컨테이너
 

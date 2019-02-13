@@ -1,15 +1,15 @@
 ---
 title: 프로덕션 Docker 환경 관리
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: 컨테이너 기반 프로덕션 환경을 관리 하는 것에 대 한 주요 내용을 알아야 가져옵니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: f968b5199f838e35f336dfa8c7d15aa9e5298951
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 54e2b999f744600d3b6853442bb9ccca004f4e76
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147297"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219492"
 ---
 # <a name="manage-production-docker-environments"></a>프로덕션 Docker 환경 관리
 

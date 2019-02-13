@@ -1,15 +1,15 @@
 ---
 title: Docker 앱에 대 한 내부 루프 개발 워크플로
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Docker 응용 프로그램의 개발에 대 한 "내부 루프" 워크플로를 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: f7acb60e6136c0250d18bdce23ac21fb6aa80b34
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 03eb4662e55551678105fa9ef25b42cc05c132a5
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148865"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219090"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Docker 앱에 대 한 내부 루프 개발 워크플로
 
@@ -41,7 +41,7 @@ Docker 이미지의 인스턴스를 컨테이너에 이러한 구성 요소를 �
 
 그림 4-15: Docker CLI를 사용 하 여 컨테이너 화 된 Docker 응용 프로그램 수명 주기에 대 한 개략적인 워크플로
 
-### <a name="step-1-start-coding-in-visual-studio-code-and-create-your-initial-appservice-baseline"></a>1 단계: Visual Studio Code에서 코딩을 시작 하 고 초기 앱/서비스 기준 만들기
+### <a name="step-1-start-coding-in-visual-studio-code-and-create-your-initial-appservice-baseline"></a>1단계: Visual Studio Code에서 코딩을 시작 하 고 초기 앱/서비스 기준 만들기
 
 응용 프로그램을 개발 하는 방법은 Docker 없이 이렇게 하는 방법은 매우 비슷합니다. 개발 중에만 배포 및 테스트 중인 응용 프로그램 또는 서비스 (예: Linux VM 또는 Windows) 로컬 환경에 배치 하는 Docker 컨테이너 내에서 실행 되는 점이 다릅니다.
 
@@ -132,7 +132,7 @@ Windows 컨테이너 널리 퍼져 있을 경우 단일 리포지토리는 Linux
 
 이 항목에 설명 된 대로 처음부터 사용자 고유의 Docker 기본 이미지를 만들 수 있습니다 [문서](https://docs.docker.com/engine/userguide/eng-image/baseimages/) Docker에서. Docker로 시작 하는 경우에 가장 적합 한 않을 하는 시나리오 이지만 고유한 기본 이미지의 특정 비트를 설정 하려는 경우 수행할 수 있습니다.
 
-### <a name="step-3-create-your-custom-docker-images-embedding-your-service-in-it"></a>3 단계: 에 서비스를 포함 하 여 사용자 지정 Docker 이미지 만들기
+### <a name="step-3-create-your-custom-docker-images-embedding-your-service-in-it"></a>3단계: 에 서비스를 포함 하 여 사용자 지정 Docker 이미지 만들기
 
 앱을 구성 하는 각 사용자 지정 서비스에 대 한 관련된 이미지를 만드는 해야 합니다. 단일 서비스 또는 웹 앱의 앱 옵션을 구성 된 경우에 단일 이미지를 방금 해야 합니다.
 
@@ -159,7 +159,7 @@ Windows 컨테이너 널리 퍼져 있을 경우 단일 리포지토리는 Linux
 
 그림 4-20: Docker 이미지를 사용 하 여 보기 기존 이미지
 
-### <a name="step-4-optional-define-your-services-in-docker-composeyml-when-building-a-composed-docker-app-with-multiple-services"></a>4 단계: (선택 사항) 여러 서비스를 사용 하 여 구성 된 Docker 앱을 빌드할 때 docker-compose.yml에서 서비스 정의
+### <a name="step-4-optional-define-your-services-in-docker-composeyml-when-building-a-composed-docker-app-with-multiple-services"></a>4단계: (선택 사항) 여러 서비스를 사용 하 여 구성 된 Docker 앱을 빌드할 때 docker-compose.yml에서 서비스 정의
 
 Docker compose.yml 파일을 사용 하 여 다음 단계 섹션에서 설명한 배포 명령을 사용 하 여 구성된 된 응용 프로그램으로 배포할 관련된 서비스 집합을 정의할 수 있습니다.
 
@@ -192,7 +192,7 @@ services:
 
 Redis 서비스에서 사용 하는 [최신 공개 redis 이미지](https://hub.docker.com/_/redis/) Docker Hub 레지스트리에서 끌어옵니다. [redis](https://redis.io/) 는 서버 쪽 응용 프로그램에 대 한 매우 인기 있는 캐시 시스템입니다.
 
-### <a name="step-5-build-and-run-your-docker-app"></a>5 단계: 빌드 및 Docker 앱 실행
+### <a name="step-5-build-and-run-your-docker-app"></a>5단계: 빌드 및 Docker 앱 실행
 
 앱에 단일 컨테이너만 경우 Docker 호스트 (VM 또는 물리적 서버)에 배포 하 여 실행 하기만 하면 됩니다. 그러나 경우 앱은 여러 서비스로 구성 된, 해야 *구성*도 합니다. 다양 한 옵션을 확인해 보겠습니다.
 
@@ -225,7 +225,7 @@ Docker를 실행 한 후-등록 구성, VM 표현에서 그림 4-22에서와 같
 
 에 대 한 [DC/OS](https://mesosphere.com/blog/2015/09/02/dcos-cli-command-line-tool-datacenter/) 하 고 [Kubernetes](https://kubernetes.io/docs/user-guide/deployments/#creating-a-deployment) 다양 한 배포 명령 및 스크립트를 사용 합니다.
 
-### <a name="step-6-test-your-docker-application-locally-in-your-local-cd-vm"></a>6 단계: (로컬 CD VM)에서 로컬로 Docker 응용 프로그램 테스트
+### <a name="step-6-test-your-docker-application-locally-in-your-local-cd-vm"></a>6단계: (로컬 CD VM)에서 로컬로 Docker 응용 프로그램 테스트
 
 이 단계는 고 앱이 수행 되는 내용에 따라 달라 집니다.
 

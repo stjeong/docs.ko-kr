@@ -1,15 +1,15 @@
 ---
 title: 컨테이너화된 앱을 위한 Microsoft 플랫폼 및 도구 소개
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 애플리케이션 수명 주기
+description: Docker 응용 프로그램 수명 주기를 지원 하기 위해 Microsoft의 제품을 알아야 가져옵니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
-ms.openlocfilehash: fe65e9036c1e0bdf2afe05426c01e75d48f93439
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 0e883041624f99d51b49994f02f3a42fc945a96d
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152342"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219583"
 ---
 # <a name="introduction-to-the-microsoft-platform-andtools-for-containerized-apps"></a>Microsoft 플랫폼 및 컨테이너 화 된 앱에 대 한 도구를 소개
 

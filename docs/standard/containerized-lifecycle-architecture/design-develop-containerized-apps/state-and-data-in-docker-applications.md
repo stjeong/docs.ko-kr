@@ -1,17 +1,17 @@
 ---
-title: Docker 응용 프로그램의 상태 및 데이터
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+title: Docker 애플리케이션의 상태 및 데이터
+description: 컨테이너 화 된 응용 프로그램의 상태를 저장 하는 사용 가능한 옵션에 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 7454b25cdb1bede87c6f0bd179fcabd489922263
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 9d924f0fffca73b57626910bc3c3ca95b4478300
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154179"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56218751"
 ---
-# <a name="state-and-data-in-docker-applications"></a>Docker 응용 프로그램의 상태 및 데이터
+# <a name="state-and-data-in-docker-applications"></a>Docker 애플리케이션의 상태 및 데이터
 
 컨테이너의 기본 형식은 불변성입니다. VM에 비해, 주로으로 컨테이너 사라지지 않도록 합니다. 소멸 프로세스, 오버 로드 된 CPU 또는 전체 또는 실패 한 디스크에서 다양 한 형태로 VM 실패할 수 있습니다. 아직 VM을 사용할 수 있는 것으로 예상 하 고 RAID 드라이브는 드라이브 오류 데이터를 유지 관리를 수행 하기 위해 일반화 합니다.
 

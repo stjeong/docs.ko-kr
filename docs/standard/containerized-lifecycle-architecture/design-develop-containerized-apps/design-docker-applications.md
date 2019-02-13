@@ -1,15 +1,15 @@
 ---
 title: Docker 응용 프로그램 디자인
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: 여기에서 찾을 하 여 마이크로 서비스 아키텍처에 대 한 참조 항목 이므로이 가이드에서 자세히 설명 하지 것입니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
-ms.openlocfilehash: d02cec0595024eb7bd7c0ac46df093359680da74
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: f31421cab7d2072441999231adfbe771a3f9a0f5
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155381"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220207"
 ---
 # <a name="design-docker-applications"></a>Docker 응용 프로그램 디자인
 

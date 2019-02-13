@@ -1,17 +1,17 @@
 ---
-title: Microsoft 도구를 사용하는 Docker 응용 프로그램 DevOps 워크플로
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기 및 Microsoft 도구를 사용하는 DevOps 워크플로
+title: Microsoft 도구를 사용하는 Docker 애플리케이션 DevOps 워크플로
+description: Microsoft 도구를 사용 하 여 Microsoft 플랫폼 및 도구 DevOps 워크플로 사용 하 여 컨테이너 화 된 Docker 응용 프로그램 수명 주기
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: a78b6cbae88dcc39d7452a67a2bc5239135dedf9
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: a2d88dda9f3560675fcb6826960c6e76fa7daf92
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128442"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219077"
 ---
-# <a name="docker-application-devops-workflow-with-microsoft-tools"></a>Microsoft 도구를 사용하는 Docker 응용 프로그램 DevOps 워크플로
+# <a name="docker-application-devops-workflow-with-microsoft-tools"></a>Microsoft 도구를 사용하는 Docker 애플리케이션 DevOps 워크플로
 
 Microsoft Visual Studio, Azure DevOps 서비스, Team Foundation Server 및 Application Insights는 포괄적인 에코 시스템 개발 및 팀 프로젝트를 관리 하 고 신속 하 게 빌드, 테스트 및 배포 하는 도구를 제공 하는 IT 운영에 대 한 제공 컨테이너 화 된 응용 프로그램입니다.
 
@@ -21,7 +21,7 @@ Microsoft 도구는 컨테이너 화 된 응용 프로그램의 특정 구현에
 
 개발자와 테스터는 Microsoft Azure의 템플릿을 사용하여 프로덕션 환경과 유사한 Docker 기반의 개발 및 배포 환경을 쉽고 빠르게 프로비전할 수 있습니다.
 
-컨테이너화된 응용 프로그램 개발의 복잡성은 비즈니스 복잡성 및 확장성 요구 사항에 따라 꾸준히 증가합니다. 마이크로 서비스 아키텍처 기반 응용 프로그램이 좋은 예입니다. 이러한 환경에서 성공 하려면 프로젝트가 전체 수명 주기를 자동화 해야-빌드 및 배포 작업 뿐만 아니라 것도 관리 해야 원격 분석 컬렉션과 버전입니다. Azure DevOps 서비스 및 Azure는 다음과 같은 기능을 제공합니다.
+컨테이너화된 애플리케이션 개발의 복잡성은 비즈니스 복잡성 및 확장성 요구 사항에 따라 꾸준히 증가합니다. 마이크로 서비스 아키텍처 기반 애플리케이션이 좋은 예입니다. 이러한 환경에서 성공 하려면 프로젝트가 전체 수명 주기를 자동화 해야-빌드 및 배포 작업 뿐만 아니라 것도 관리 해야 원격 분석 컬렉션과 버전입니다. Azure DevOps 서비스 및 Azure는 다음과 같은 기능을 제공합니다.
 
 -   Azure DevOps Services/Team Foundation Server 소스 코드 관리 (Git 또는 Team Foundation 버전 제어에 따라), Agile 계획 (Agile, 스크럼 및 CMMI 지원 됨), CI, 릴리스 관리 및 Agile 팀을 위한 다른 도구입니다.
 
@@ -34,5 +34,5 @@ Microsoft 도구는 컨테이너 화 된 응용 프로그램의 특정 구현에
 -   조직에서는 이미 사용법을 잘 알고 있는 도구와 Azure Resource Manager 템플릿을 사용하여 Azure 구성 요소(데이터, PaaS 등)에 대한 종속성과 함께 Azure Container Registry에 저장된 비공개 이미지에서 Docker 컨테이너를 쉽게 프로비전할 수 있습니다.
 
 >[!div class="step-by-step"]
->[이전](../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
+>[이전](../design-develop-containerized-apps/build-aspnet-core-applications-linux-containers-aks-kubernetes.md)
 >[다음](docker-application-outer-loop-devops-workflow.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: b998240b6ecf692b00e16c2ad311c804edc0d7e1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c2969551bef279e6b13d2b08ff7f0e4711a80794
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54518223"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219245"
 ---
 # <a name="net-performance-tips"></a>.NET 성능 팁
 *성능*이라는 용어는 일반적으로 프로그램의 실행 속도를 나타냅니다. 경우에 따라 소스 코드에서 특정 기본 규칙을 따라 실행 속도를 높일 수 있습니다. 일부 프로그램에서는 코드를 자세히 검사하고 프로파일러를 사용하여 최대한 빠르게 실행 중인지 확인하는 작업을 해야 합니다. 다른 프로그램에서는 코드가 작성된 대로 만족스럽게 실행되므로 이러한 최적화를 수행하지 않아도 됩니다. 이 문서에서는 성능이 떨어질 수 있는 몇 가지 일반적인 영역과 성능 향상 팁 및 추가 성능 항목에 대한 링크를 나열합니다. 성능 계획 및 측정에 대한 자세한 내용은 [성능](../../../docs/framework/performance/index.md)을 참조하세요.  
@@ -44,6 +44,5 @@ ms.locfileid: "54518223"
   
 ## <a name="see-also"></a>참고자료
 - [성능](../../../docs/framework/performance/index.md)
-- [프로그래밍 개념](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)
 - [Visual Basic 프로그래밍 가이드](../../visual-basic/programming-guide/index.md)
 - [C# 프로그래밍 가이드](../../csharp/programming-guide/index.md)

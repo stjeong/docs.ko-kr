@@ -1,15 +1,15 @@
 ---
 title: DockerFile에서 Windows PowerShell 명령을 사용 하 여 Windows 컨테이너 (Docker 표준 기반) 설정
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Windows 컨테이너에서 Docker를 사용 하는 경우 PowerShell을 사용 하는 방법 알아보기
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
-ms.openlocfilehash: 5e85beea0efbee6a2b6594e3a49d705505a36e1c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: df9e98e3f963b6492e1008455251b61a8cb6e771
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149395"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219973"
 ---
 # <a name="using-windows-powershell-commands-in-a-dockerfile-to-set-up-windows-containers-docker-standard-based"></a>DockerFile에서 Windows PowerShell 명령을 사용 하 여 Windows 컨테이너 (Docker 표준 기반) 설정
 
@@ -34,4 +34,4 @@ RUN powershell add-windowsfeature web-asp-net45
 
 >[!div class="step-by-step"]
 >[이전](visual-studio-tools-for-docker.md)
->[다음](../docker-devops-workflow/index.md)
+>[다음](build-aspnet-core-applications-linux-containers-aks-kubernetes.md)

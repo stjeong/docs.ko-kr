@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38894f57ec93fd44610b5c612326b399d477b723
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 35dcabcf65af1634533edfba1e300a8746bc97ec
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54531186"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221370"
 ---
 # <a name="net-native-reflection-api-reference"></a>.NET 네이티브 리플렉션 API 참조
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 세 가지 새 예외 형식이 포함 됩니다. [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)하십시오 [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), 및 [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) . 세 가지 예외 형식 모두에 대해 다음 사항을 확인하세요.  
@@ -25,7 +25,7 @@ ms.locfileid: "54531186"
 -   메서드의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
   
 > [!NOTE]
->  이 참조는 [!INCLUDE[net_native](../../../includes/net-native-md.md)]에 고유한 세 가지 예외 형식을 설명합니다. .NET Framework 핵심 리플렉션 API에 대한 참조 설명서는 [System.Reflection 네임스페이스](https://msdn.microsoft.com/library/gg145033.aspx)를 참조하세요. .NET Framework 핵심 interop API에 대한 참조 설명서는 <xref:System.Runtime.InteropServices>를 참조하세요.  
+>  이 참조는 [!INCLUDE[net_native](../../../includes/net-native-md.md)]에 고유한 세 가지 예외 형식을 설명합니다. .NET Framework 핵심 리플렉션 API에 대 한 참조 설명서를 참조 합니다 <xref:System.Reflection>, <xref:System.Reflection.Context> 및 <xref:System.Reflection.Emit> 네임 스페이스입니다. .NET Framework 핵심 interop API에 대한 참조 설명서는 <xref:System.Runtime.InteropServices>를 참조하세요.  
   
 ## <a name="systemreflection-namespace"></a>System.Reflection 네임스페이스  
  <xref:System.Reflection> 네임스페이스에는 .NET Framework의 리플렉션에 사용되는 핵심 형식이 포함되어 있습니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)]의 경우에는 두 가지 새 예외 형식도 포함됩니다.  

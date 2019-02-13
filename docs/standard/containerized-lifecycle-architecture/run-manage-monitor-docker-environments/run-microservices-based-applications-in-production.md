@@ -1,15 +1,15 @@
 ---
 title: 프로덕션 환경에서 구성 및 마이크로 서비스 기반 응용 프로그램을 실행 합니다.
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: 프로덕션 환경에서 컨테이너 기반 응용 프로그램을 실행 하는 주요 구성 요소에 알아봅니다
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 003bf794f5427e7b2f10d1e04fd27605b980cdfe
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: bd8b84f788ce013dfe25199dac34e3c59aa35284
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126304"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220967"
 ---
 # <a name="run-composed-and-microservices-based-applications-in-production-environments"></a>프로덕션 환경에서 구성 및 마이크로 서비스 기반 응용 프로그램을 실행 합니다.
 

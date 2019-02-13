@@ -1,15 +1,15 @@
 ---
 title: SOA 응용 프로그램
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: 컨테이너 SOA 응용 프로그램에 대 한 유용한 배포 옵션을 또한 수 있음을 염두에 두어야 합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 7f88daaf0787cf780e7ab9602f35ae4e6ab8308c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 4fd39e075c5730cf7fddb0138cdb5267a914c91f
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155316"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221266"
 ---
 # <a name="soa-applications"></a>SOA 응용 프로그램
 

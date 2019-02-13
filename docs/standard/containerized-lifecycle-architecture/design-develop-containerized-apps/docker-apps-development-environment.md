@@ -1,19 +1,19 @@
 ---
 title: Docker 앱을 위한 개발 환경
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Docker 개발 수명 주기를 지 원하는 가장 중요 한 개발 도구 옵션 익히기.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 471b52fd577e5560bd93e6da50f2032d63eb2e6f
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 1d22b45a8eee9198d337df9f0b8b4b78371fa31a
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152418"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219999"
 ---
 # <a name="development-environment-for-docker-apps"></a>Docker 앱을 위한 개발 환경
 
-## <a name="development-tools-choices-ide-or-editor"></a>개발 도구 선택 정보: IDE 또는 편집기
+## <a name="development-tools-choices-ide-or-editor"></a>개발 도구 선택: IDE 또는 편집기
 
 든 관계 없이 완전 하 고 강력한 IDE 또는 가볍고 민첩 한 편집기를 선호 하는 경우 Microsoft는 Docker 응용 프로그램 개발에 있어.
 
@@ -47,5 +47,5 @@ Docker 응용 프로그램 및 최신 언어를 사용 하 여 Microsoft 도구�
 기본적으로, Linux 또는 Windows에서 Docker를 지 원하는 모든 최신 언어를 사용할 수 있습니다.
 
 >[!div class="step-by-step"]
->[이전](orchestrate-high-scalability-availability.md)
+>[이전](deploy-azure-kubernetes-service.md)
 >[다음](docker-apps-inner-loop-workflow.md)

@@ -1,15 +1,15 @@
 ---
 title: Docker 컨테이너, 이미지 및 레지스트리
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: 레지스트리에 Docker 방식으로 응용 프로그램 배포의 전체 재생는 중요 한 역할에 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: af235280c985d20f9e6a2ee6096edbe6c3aad63a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 7a2e20e09561a5cc91aa29059fb8d19a14205bb5
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53142751"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221201"
 ---
 # <a name="docker-containers-images-and-registries"></a>Docker 컨테이너, 이미지 및 레지스트리
 
@@ -35,4 +35,4 @@ Docker를 사용 하는 경우 만든 앱 또는 서비스 및 패키지를 하 
 
 >[!div class="step-by-step"]
 >[이전](docker-terminology.md)
->[다음](Docker-application-lifecycle/index.md)
+>[다음](road-to-modern-applications-based-on-containers.md)

@@ -1,15 +1,15 @@
 ---
 title: Docker란?
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Docker에 대 한 이해를 좀 더 자세한 참여, 여기서는 간단한 비유 도움이 될 수 있습니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
-ms.openlocfilehash: 360a404e38651b78acc3a52d8102a4dae71f3e30
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: c8300c964dfce0cc8e39478cc10ed7589dbca2c9
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152724"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56218556"
 ---
 # <a name="what-is-docker"></a>Docker란?
 
@@ -23,7 +23,7 @@ Docker 이미지 컨테이너는 Linux 및 Windows에서 기본적으로 실행�
 
 개발자는 Windows, Linux 또는 macOS에서 개발 환경을 사용할 수 있습니다. 개발 컴퓨터의 개발자는 docker 이미지가 배포 된 앱 및 해당 종속성을 포함 하 여 Docker 호스트를 실행 합니다. Linux 또는 Mac에서 작업하는 개발자는 Linux 기반의 Docker 호스트를 사용하고 Linux 컨테이너용 이미지만 만들 수 있습니다. (Mac에서 작업 하는 개발자 코드를 편집 하거나 Docker 명령줄 인터페이스를 실행할 수 있습니다 \[CLI\] 컨테이너 macOS에서 하지만이 문서의 작성 시점 현재, macOS에서 직접 실행 되지 않습니다.) Windows에서 작업하는 개발자는 Linux 또는 Windows 컨테이너용 이미지를 만들 수 있습니다.
 
-개발 환경에서 컨테이너를 호스트하고 추가 개발자 도구를 제공하기 위해 Docker는 Windows 또는 macOS용 [Docker CE(Community Edition)](https://www.docker.com/community-edition)를 제공합니다. 이러한 제품은 컨테이너를 호스트하는 데 필요한 VM(Docker 호스트)을 설치합니다. Docker는 기업 개발용으로 설계되고 프로덕션 환경에서 대규모의 업무상 중요한 응용 프로그램을 빌드, 제공 및 실행하는 IT 팀에서 사용되는 [Docker EE(Enterprise Edition)](https://www.docker.com/enterprise-edition)도 제공합니다.
+개발 환경에서 컨테이너를 호스트하고 추가 개발자 도구를 제공하기 위해 Docker는 Windows 또는 macOS용 [Docker CE(Community Edition)](https://www.docker.com/community-edition)를 제공합니다. 이러한 제품은 컨테이너를 호스트하는 데 필요한 VM(Docker 호스트)을 설치합니다. Docker는 기업 개발용으로 설계되고 프로덕션 환경에서 대규모의 업무상 중요한 애플리케이션을 빌드, 제공 및 실행하는 IT 팀에서 사용되는 [Docker EE(Enterprise Edition)](https://www.docker.com/enterprise-edition)도 제공합니다.
 
 [Windows 컨테이너](/virtualization/windowscontainers/about/)를 실행하기 위해 다음 두 가지 유형의 런타임이 있습니다.
 
