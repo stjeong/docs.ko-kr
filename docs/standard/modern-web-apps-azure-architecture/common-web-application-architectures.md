@@ -3,13 +3,13 @@ title: 일반 웹 애플리케이션 아키텍처
 description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케이션 설계 | 일반 웹 애플리케이션 아키텍처 둘러보기
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
-ms.openlocfilehash: 3b0b109b0910eb5763ecab228115b7bc932d4a10
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 01/30/2019
+ms.openlocfilehash: 05d696f5cbceaedb35e3e4e97f8c4e89124d43dc
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129937"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826735"
 ---
 # <a name="common-web-application-architectures"></a>일반 웹 애플리케이션 아키텍처
 
@@ -53,7 +53,7 @@ ms.locfileid: "53129937"
 논리적 레이어링은 엔터프라이즈 소프트웨어 애플리케이션에서 코드 구성을 향상하는 일반적인 방법이며, 코드를 레이어로 구성할 수 있는 여러 가지 방법이 있습니다.
 
 > [!NOTE]
- > _레이어_는 응용 프로그램 내부의 논리적 분리를 나타냅니다. 애플리케이션 논리가 별도의 서버 또는 프로세스에 물리적으로 분산된 경우 이러한 별도의 실제 배포 대상을 _계층_이라고 부릅니다. N 레이어 애플리케이션을 단일 계층에 배포할 수 있으며, 이는 매우 일반적입니다.
+ > _레이어_는 애플리케이션 내부의 논리적 분리를 나타냅니다. 애플리케이션 논리가 별도의 서버 또는 프로세스에 물리적으로 분산된 경우 이러한 별도의 실제 배포 대상을 _계층_이라고 부릅니다. N 레이어 애플리케이션을 단일 계층에 배포할 수 있으며, 이는 매우 일반적입니다.
 
 ## <a name="traditional-n-layer-architecture-applications"></a>기존의 "N 레이어" 아키텍처 애플리케이션
 
@@ -87,7 +87,7 @@ ms.locfileid: "53129937"
 
 내부적으로 책임을 기반으로 이 프로젝트를 여러 프로젝트로 정리하면 애플리케이션의 유지 관리 용이성이 향상됩니다.
 
-이 단위를 수직 확장 또는 수평 확장하여 클라우드 기반 주문형 확장성의 장점을 누릴 수 있습니다. 수직 확장이란 앱을 호스팅하는 서버에 추가 CPU, 메모리, 디스크 공간 또는 기타 리소스를 추가하는 것을 의미합니다. 수평 확장이란 서버의 추가 인스턴스를 추가하는 것을 의미하여 서버는 물리적 서버일 수도 있고 가상 머신일 수도 있습니다. 앱이 여러 인스턴스에서 호스트되는 경우 부하 분산 장치를 사용하여 개별 앱 인스턴스에 요청을 할당합니다.
+이 단위를 수직 확장 또는 수평 확장하여 클라우드 기반 주문형 확장성의 장점을 누릴 수 있습니다. 수직 확장이란 앱을 호스팅하는 서버에 추가 CPU, 메모리, 디스크 공간 또는 기타 리소스를 추가하는 것을 의미합니다. 수평 확장이란 물리적 서버,가상 머신 또는 컨테이너인지와 상관 없이 서버의 추가 인스턴스를 추가하는 것을 의미합니다. 앱이 여러 인스턴스에서 호스트되는 경우 부하 분산 장치를 사용하여 개별 앱 인스턴스에 요청을 할당합니다.
 
 Azure에서 웹 애플리케이션을 확장하는 가장 간단한 방법은 애플리케이션의 App Service 계획에서 수동으로 확장하는 것입니다. 그림 5-6은 앱에 서비스를 제공하는 인스턴스 수를 구성하는 적절한 Azure 대시보드 화면을 보여줍니다.
 
@@ -200,7 +200,7 @@ ASP.NET Core MVC 애플리케이션의 사용자 인터페이스 레이어는 �
 
 ![](./media/image5-14.png)
 
-각 인스턴스의 전용 VM을 사용하여 Microsoft Azure에 모놀리식 애플리케이션을 배포할 수 있습니다. [Azure Virtual Machine Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/)를 사용하여 VM 크기를 쉽게 조정할 수 있습니다. [Azure App Services](https://azure.microsoft.com/services/app-service/)는 VM을 관리하지 않고 모놀리식 응용 프로그램을 실행하고 인스턴스 크기를 쉽게 조정할 수 있습니다. Azure App Services는 배포를 단순화할 뿐만 아니라 Docker 컨테이너의 단일 인스턴스를 실행할 수 있습니다. Docker를 사용하면 단일 VM을 Docker 호스트로 배포하고 여러 인스턴스를 실행할 수 있습니다. 그림 5-14처럼 Azure 분산 장치를 사용하여 크기 조정을 관리할 수 있습니다.
+각 인스턴스의 전용 VM을 사용하여 Microsoft Azure에 모놀리식 애플리케이션을 배포할 수 있습니다. [Azure Virtual Machine Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/)를 사용하여 VM 크기를 쉽게 조정할 수 있습니다. [Azure App Services](https://azure.microsoft.com/services/app-service/)는 VM을 관리하지 않고 모놀리식 애플리케이션을 실행하고 인스턴스 크기를 쉽게 조정할 수 있습니다. Azure App Services는 배포를 단순화할 뿐만 아니라 Docker 컨테이너의 단일 인스턴스를 실행할 수 있습니다. Docker를 사용하면 단일 VM을 Docker 호스트로 배포하고 여러 인스턴스를 실행할 수 있습니다. 그림 5-14처럼 Azure 분산 장치를 사용하여 크기 조정을 관리할 수 있습니다.
 
 기존의 배포 기술로 다양한 호스트에 대한 배포를 관리할 수 있습니다. Docker 호스트는 **docker run** 같은 명령을 사용하여 수동으로 관리하거나 CD(지속적인 업데이트) 파이프라인 같은 자동화를 통해 관리할 수 있습니다.
 
@@ -212,9 +212,9 @@ Docker 이미지로 업데이트를 배포하는 것이 훨씬 더 빠르고 네
 
 컨테이너는 기본적으로 변경할 수 없도록 설계되므로 손상된 VM에 대해 걱정할 필요가 없는 반면, 업데이트 스크립트는 디스크에 남아 있는 일부 특정 구성 또는 파일을 고려하는 것을 잊을 수 있습니다.
 
-_간단한 웹 응용 프로그램의 모놀리식 배포에 대해 Docker 컨테이너를 사용할 수 있습니다. 이를 통해 지속적인 통합 및 지속적인 배포 파이프라인이 개선되며 프로덕션에 배포할 수 있습니다. 더 이상 “내 머신에서는 되는데 프로덕션에서는 되지 않는” 문제가 발생하지 않습니다._
+간단한 웹 애플리케이션의 모놀리식 배포에 Docker 컨테이너를 사용할 수 있습니다. 이를 통해 지속적인 통합 및 지속적인 배포 파이프라인이 개선되며 프로덕션에 배포할 수 있습니다. 더 이상 “내 머신에서는 되는데 프로덕션에서는 되지 않는” 문제가 발생하지 않습니다.
 
-마이크로 서비스 기반 아키텍처에는 다양한 이점이 있지만 그에 따른 복잡성도 고려해야 합니다. 이점에 비해 비용이 더 많이 들어서, 단일 컨테이너 또는 소수의 컨테이너에서 실행되는 모놀리식 배포 애플리케이션을 사용하는 것이 더 나은 경우도 있습니다.
+마이크로 서비스 기반 아키텍처에는 다양한 이점이 있지만 그에 따른 복잡성도 고려해야 합니다. 혜택에 비해 비용이 더 많이 들어서, 단일 컨테이너 또는 소수의 컨테이너에서 실행되는 모놀리식 배포 애플리케이션을 사용하는 것이 더 나은 경우도 있습니다.
 
 모놀리식 애플리케이션은 잘 분리된 마이크로 서비스로 쉽게 분할되지 않을 수 있습니다. 마이크로 서비스는 복원력이 우수한 애플리케이션을 제공하기 위해 서로 독립적으로 작업을 수행해야 합니다. 애플리케이션의 독립된 기능 조각을 제공할 수 없는 경우 애플리케이션을 분리하면 복잡성만 더할 뿐입니다.
 
@@ -224,36 +224,26 @@ _간단한 웹 응용 프로그램의 모놀리식 배포에 대해 Docker 컨�
 
 애플리케이션을 다수의 불연속 프로세스로 분리하면 오버헤드도 발생합니다. 기능을 다른 프로세스로 분리하는 작업이 더 어려워지며 통신 프로토콜이 더 복잡해집니다. 서비스 간에 메서드 호출 대신 비동기적인 통신을 사용해야 합니다. 마이크로 서비스 아키텍처로 이동하면 이벤트 버스 처리, 메시지 복원력 및 다시 시도, 최종 일관성 등 eShopOnContainers 애플리케이션의 마이크로 서비스 버전에서 구현된 빌드 블록을 많이 추가해야 합니다.
 
-훨씬 더 간단한 [eShopOnWeb 참조 애플리케이션](https://github.com/dotnet-architecture/eShopOnWeb)은 단일 컨테이너 모놀리식 컨테이너 사용을 지원합니다. 애플리케이션에 기존 MVC를 사용하는 애플리케이션과 Razor Pages를 사용하는 애플리케이션, 이렇게 두 개의 웹 애플리케이션이 포함됩니다. 둘 다 `docker-compose build` 및 `docker-compose up` 명령을 사용하여 솔루션 루트에서 시작할 수 있습니다. 이 명령은 각 웹 프로젝트의 루트에서 찾은 `Dockerfile`을 사용하여 각 웹 인스턴스에 대한 별도 컨테이너를 구성하며 별도 포트에서 각 컨테이너를 실행합니다. GitHub에서 이 애플리케이션에 대한 소스를 다운로드하고 로컬에서 실행할 수 있습니다. 이 모놀리식 애플리케이션도 컨테이너 환경에서의 배포를 통해 이점을 얻습니다.
+훨씬 더 간단한 [eShopOnWeb 참조 애플리케이션](https://github.com/dotnet-architecture/eShopOnWeb)은 단일 컨테이너 모놀리식 컨테이너 사용을 지원합니다. 애플리케이션에는 기존 MVC 보기, 웹 API 및 Razor Pages를 포함하는 하나의 웹 애플리케이션이 포함됩니다. 이 애플리케이션은 `docker-compose build` 및 `docker-compose up` 명령을 사용하여 솔루션 루트에서 시작될 수 있습니다. 이 명령은 웹 프로젝트의 루트에서 찾은 `Dockerfile`을 사용하여 웹 인스턴스에 대한 컨테이너를 구성하며, 특정 포트에서 해당 컨테이너를 실행합니다. GitHub에서 이 애플리케이션에 대한 소스를 다운로드하고 로컬에서 실행할 수 있습니다. 이 모놀리식 애플리케이션도 컨테이너 환경에서의 배포를 통해 이점을 얻습니다.
 
 첫째, 컨테이너화된 배포는 애플리케이션의 모든 인스턴스가 동일한 환경에서 실행되는 것을 의미합니다. 여기에는 초기 테스트 및 개발이 이루어지는 개발자 환경이 포함됩니다. 개발 팀은 프로덕션 환경과 일치하는 컨테이너화된 환경에서 애플리케이션을 실행할 수 있습니다.
 
 둘째, 저렴한 비용으로 컨테이너화된 애플리케이션을 확장할 수 있습니다. 컨테이너 환경에서는 기존의 VM 환경보다 더 많은 리소스를 공유할 수 있습니다.
 
-마지막으로, 애플리케이션을 컨테이너화하면 비즈니스 논리와 저장소 서버 사이에서 강제 분할이 발생합니다. 애플리케이션이 확장되면 여러 컨테이너는 모두 단일 실제 저장소 매체를 사용하게 됩니다. 이 스토리지 미디엄은 일반적으로 SQL Server 데이터베이스를 실행하는 고가용성의 서버입니다.
+마지막으로, 애플리케이션을 컨테이너화하면 비즈니스 논리와 스토리지 서버 사이에서 강제 분할이 발생합니다. 애플리케이션이 확장되면 여러 컨테이너는 모두 단일 실제 스토리지 매체를 사용하게 됩니다. 이 스토리지 미디엄은 일반적으로 SQL Server 데이터베이스를 실행하는 고가용성의 서버입니다.
 
 ## <a name="docker-support"></a>Docker 지원
 
 `eShopOnWeb` 프로젝트는 .NET Core에서 실행됩니다. 따라서 Linux 기반 또는 Windows 기반 컨테이너에서 실행할 수 있습니다. Docker 배포에서는 SQL Server에 대해서 동일한 호스트 유형을 사용할 수 있습니다. 사람들은 Linux 기반 컨테이너를 선호하며 여기에서는 더 작은 공간을 사용할 수 있습니다.
 
-**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **Docker 지원**을 선택하면 Visual Studio 2017을 사용하여 기존 응용 프로그램에 Docker 지원을 추가할 수 있습니다. 이를 통해 필요한 파일을 추가하고 해당 파일을 사용하도록 프로젝트를 수정합니다. 현재 `eShopOnWeb` 샘플에는 이러한 파일이 이미 준비되어 있습니다.
+**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **Docker 지원**을 선택하면 Visual Studio 2017 이상을 사용하여 기존 애플리케이션에 Docker 지원을 추가할 수 있습니다. 이를 통해 필요한 파일을 추가하고 해당 파일을 사용하도록 프로젝트를 수정합니다. 현재 `eShopOnWeb` 샘플에는 이러한 파일이 이미 준비되어 있습니다.
 
-솔루션 수준의 `docker-compose.yml` 파일에는 빌드할 이미지 및 시작할 컨테이너에 대한 정보가 포함됩니다. 파일을 사용하면 `docker-compose` 명령을 사용하여 동시에 웹 애플리케이션의 두 버전을 시작할 수 있습니다. 별도 데이터베이스 컨테이너와 같은 종속성을 구성하는 데 이를 사용할 수 있습니다.
+솔루션 수준의 `docker-compose.yml` 파일에는 빌드할 이미지 및 시작할 컨테이너에 대한 정보가 포함됩니다. 이 파일을 통해 `docker-compose` 명령을 사용하여 동시에 여러 애플리케이션을 시작할 수 있습니다. 이 경우에는 웹 프로젝트를 시작하기만 합니다. 별도 데이터베이스 컨테이너와 같은 종속성을 구성하는 데 이를 사용할 수 있습니다.
 
 ```yml
 version: '3'
 
 services:
-  eshopwebrazor:
-    image: eshopwebrazor
-    build:
-      context: .
-      dockerfile: src/WebRazorPages/Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "5107:5107"
-
   eshopwebmvc:
     image: eshopwebmvc
     build:
@@ -270,28 +260,27 @@ networks:
       name: nat
 ```
 
-`docker-compose.yml` 파일은 `Web` 및 `WebRazorPages` 프로젝트에서 `Dockerfile`을 참조합니다. `Dockerfile`은 사용할 기본 컨테이너 및 응용 프로그램의 구성 방식을 지정하는 데 사용됩니다. `WebRazorPages`' `Dockerfile`:
+`docker-compose.yml` 파일은 `Web` 프로젝트에서 `Dockerfile`을 참조합니다. `Dockerfile`은 사용할 기본 컨테이너 및 애플리케이션의 구성 방식을 지정하는 데 사용됩니다. `Web`' `Dockerfile`:
 
 ```
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /app
-EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.1.300-preview1 AS build
-RUN npm install -g bower@1.8.4
-WORKDIR /src
+COPY *.sln .
 COPY . .
-WORKDIR /src/src/WebRazorPages
-RUN dotnet restore -nowarn:msb3202,nu1503
-RUN dotnet build --no-restore -c Release -o /app
+WORKDIR /app/src/Web
+RUN dotnet restore
 
-FROM build AS publish
-RUN dotnet publish --no-restore -c Release -o /app
+RUN dotnet publish -c Release -o out
 
-FROM base AS final
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Microsoft.eShopWeb.RazorPages.dll"]
+COPY --from=build /app/src/Web/out ./
+
+# Optional: Set this here if not setting it from docker-compose.yml
+# ENV ASPNETCORE_ENVIRONMENT Development
+
+ENTRYPOINT ["dotnet", "Web.dll"]
 ```
 
 ### <a name="troubleshooting-docker-problems"></a>Docker 문제 해결
@@ -300,10 +289,9 @@ ENTRYPOINT ["dotnet", "Microsoft.eShopWeb.RazorPages.dll"]
 
 실행 중인 Docker 컨테이너는 포트로 바인딩될 수 있지만, 그렇지 않다면 개발 환경에서 사용해 볼 수도 있습니다. 실행 중인 Docker 컨테이너와 동일한 포트를 사용하여 애플리케이션을 실행 또는 디버깅하려고 하면, 서버가 해당 포트에 바인딩할 수 없다는 내용의 오류가 표시됩니다. 다시 한번 컨테이너를 중지하여 문제를 해결해야 합니다.
 
-Visual Studio를 사용하여 애플리케이션에 Docker 지원을 추가하려는 경우 Docker가 실행되고 있는지 확인합니다. 마법사를 시작할 때 Docker가 실행되고 있지 않은 경우 마법사가 올바르게 실행되지 않습니다. 또한 마법사는 올바른 Docker 지원을 추가하기 위해 현재 선택한 컨테이너를 검사합니다. Windows 컨테이너에 대한 지원을 추가하려는 경우 구성된 Windows 컨테이너를 통해 Docker가 실행되는 동안 마법사를 실행해야 합니다. Linux 컨테이너에 대한 지원을 추가하려는 경우 구성된 Linux 컨테이너를 통해 Docker가 실행되는 동안 마법사를 실행해야 합니다.
+Visual Studio를 사용하여 애플리케이션에 Docker 지원을 추가하려는 경우 Docker Desktop이 실행되고 있는지 확인합니다. 마법사를 시작할 때 Docker Desktop이 실행되지 않은 경우 마법사가 올바르게 실행되지 않습니다. 또한 마법사는 올바른 Docker 지원을 추가하기 위해 현재 선택한 컨테이너를 검사합니다. Windows 컨테이너에 대한 지원을 추가하려는 경우 구성된 Windows 컨테이너에서 Docker Desktop이 실행되는 동안 마법사를 실행해야 합니다. Linux 컨테이너에 대한 지원을 추가하려는 경우 구성된 Linux 컨테이너를 통해 Docker가 실행되는 동안 마법사를 실행해야 합니다.
 
-> ### <a name="references--common-web-architectures"></a>참조 – 공통 웹 아키텍처
->
+### <a name="references--common-web-architectures"></a>참조 – 공통 웹 아키텍처
 > - **클린 아키텍처**  
 >   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
 > - **양파형 아키텍처**  

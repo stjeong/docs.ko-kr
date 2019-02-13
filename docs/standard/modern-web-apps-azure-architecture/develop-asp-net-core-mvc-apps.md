@@ -3,13 +3,13 @@ title: ASP.NET Core MVC 앱 개발
 description: ASP.NET Core 및 Azure를 사용하여 최신 웹 애플리케이션 설계 | ASP.NET Core MVC 앱 개발
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
-ms.openlocfilehash: aed0ba4621eab91dd47df9ef760fdf8c39ff1103
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.date: 01/30/2019
+ms.openlocfilehash: a56b7ba047499842a9b76612df17d22c64491301
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058505"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827880"
 ---
 # <a name="develop-aspnet-core-mvc-apps"></a>ASP.NET Core MVC 앱 개발
 
@@ -17,6 +17,24 @@ ms.locfileid: "54058505"
 > _- Andrew Hunt 및 David Thomas_
 
 ASP.NET Core는 최신 클라우드에 최적화된 웹 애플리케이션을 빌드하기 위한 플랫폼 간 오픈 소스 프레임워크입니다. ASP.NET Core 앱은 간단하고 모듈화되어 있으며, 종속성 주입에 대한 기본 제공 지원을 통해 더 큰 테스트와 유지 관리가 가능합니다. 뷰 기반 앱 외에도 최신 웹 API를 작성할 수 있도록 지원하는 MVC와 함께 ASP.NET Core는 엔터프라이즈 웹 애플리케이션을 빌드할 수 있는 강력한 프레임워크입니다.
+
+## <a name="mvc-and-razor-pages"></a>MVC 및 Razor Pages
+
+ASP.NET Core MVC는 웹 기반 API 및 앱을 빌드하기 위해 유용한 많은 기능을 제공합니다. MVC라는 용어는 사용자 요청에 응답할 책임을 여러 부분으로 분리하는 UI 패턴인 "Model-View-Controller"를 나타냅니다. 이 패턴을 수행하는 것 외에도 ASP.NET Core 앱의 기능을 Razor Pages로 구현할 수도 있습니다. Razor Pages는 ASP.NET Core MVC에 빌드되어 라우팅, 모델 바인딩 등에 대해 동일한 기능을 사용합니다. 그러나 컨트롤러, 보기 등에 대한 별도 폴더 및 파일을 포함하고 특성 기반 라우팅을 사용하는 대신 Razor Pages는 단일 폴더에 배치되고("/Pages"), 이 폴더의 상대 위치에 따라 라우팅하고, 컨트롤러 작업이 아닌 처리기를 사용하여 요청을 처리합니다.
+
+새 ASP.NET Core 앱을 만들려면 빌드하려는 앱의 종류에 유의하여 계획해야 합니다. Visual Studio에서는 여러 템플릿 중에서 선택할 수 있습니다. 세 가지 가장 일반적인 프로젝트 템플릿은 Web API, 웹 애플리케이션 및 웹 애플리케이션(Model-View-Controller)입니다. 프로젝트를 처음 만들 때 이 결정을 내리지만 결정을 번복할 수 있습니다. Web API 프로젝트에서는 표준 Model-View-Controller 컨트롤러를 사용합니다. 기본적으로 Views가 없습니다. 마찬가지로, 기본 웹 애플리케이션 템플릿도 Razor Pages를 사용하므로 Views 폴더가 없습니다. 나중에 이러한 프로젝트에 Views 폴더를 추가하여 보기 기반 동작을 지원할 수 있습니다. Web API 및 Model-View-Controller 프로젝트에는 기본적으로 Pages 폴더가 포함되지 않지만 나중에 추가하여 Razor Pages 기반 동작을 지원할 수 있습니다. 이러한 세 가지 템플릿이 세 가지 종류의 기본 사용자 상호 작용(데이터(웹 API), 페이지 기반 및 보기 기반)을 지원한다고 여길 수 있습니다. 그러나 원하는 경우 단일 프로젝트 내에서 이 중 일부 또는 전체를 혼합하고 일치시킬 수 있습니다.
+
+### <a name="why-razor-pages"></a>Razor Pages를 사용하는 이유는 무엇인가요?
+
+Razor Pages는 Visual Studio의 새로운 웹 애플리케이션에 대한 기본 옵션입니다. Razor Pages는 SPA가 아닌 양식과 같은 페이지 기반 애플리케이션 기능을 빌드하는 간단한 방법을 제공합니다. 컨트롤러 및 보기를 사용하면 여러 가지 다른 종속성 및 보기 모델과 함께 작동하고 여러 가지 다른 보기를 반환하는 매우 큰 컨트롤러가 애플리케이션에 일반적으로 포함됩니다. 그러면 복잡성이 엄청나게 증가하고 Single Responsibility Principle(단일 책임 원칙) 또는 Open/Closed Principles(개방/폐쇄 원칙)을 효율적으로 수행하지 못하는 결과가 발생할 가능성이 높습니다. Razor Pages는 Razor 태그를 사용하여 웹 애플리케이션에서 지정된 논리 "페이지"의 서버 쪽 논리를 캡슐화하여 이 문제를 해결합니다. 서버 쪽 논리가 없는 Razor Page는 간단히 Razor 파일로 이루어질 수 있습니다(예: "Index.cshtml"). 그러나 대부분의 특수 Razor Pages에는 연결된 페이지 모델 클래스가 포함됩니다. 해당 항목은 규칙에 따라 ".cs" 확장명인 Razor 파일과 동일하게 명명됩니다(예: "Index.cshtml.cs").
+
+Razor Page의 페이지 모델은 MVC 컨트롤러 및 보기 모델의 책임을 결합합니다. 컨트롤러 작업 메서드를 사용하여 요청을 처리하는 대신 "OnGet()"과 같은 페이지 모델 처리기를 실행하여 기본적으로 연결된 해당 페이지를 렌더링합니다. Razor Pages는 ASP.NET Core 앱에서 개별 페이지를 빌드하는 프로세스를 간소화하는 동시에 ASP.NET Core MVC의 모든 아키텍처 기능을 제공합니다. 새 페이지 기반 기능에서 기본적으로 선택하는 것이 좋습니다.
+
+### <a name="when-to-use-mvc"></a>MVC를 사용하는 경우
+
+웹 API를 빌드하는 경우 Razor Pages를 사용하는 것보다 MVC 패턴을 사용하는 것이 좋습니다. 프로젝트가 웹 API 엔드포인트를 노출하기만 하는 경우 Web API 프로젝트 템플릿에서 시작하는 것이 이상적이지만, 그렇지 않으면 ASP.NET Core 앱에 컨트롤러 및 연결된 API 엔드포인트를 추가하는 것이 쉽습니다. 또한 수월하게 ASP.NET MVC 5 이전에서 ASP.NET Core MVC로 기존 애플리케이션을 마이그레이션하려는 경우 보기 기반 MVC 방법을 사용해야 합니다. 초기 마이그레이션을 수행하면 Razor Pages를 새로운 기능에서 채택하는 것이 맞는지 아니면 도매 마이그레이션으로 채택하는 것이 맞는지 여부를 평가할 수 있습니다.
+
+Razor Pages를 사용하여 웹앱을 빌드하는지 아니면 MVC 보기를 사용하여 웹앱을 빌드하는지와 관계 없이 앱은 유사한 성능을 보여주고, 종속성 주입, 필터, 모델 바인딩 및 유효성 검사 등에 대한 지원도 포함합니다.
 
 ## <a name="mapping-requests-to-responses"></a>요청을 응답에 매핑
 
@@ -58,6 +76,18 @@ public class ProductsController : Controller
 }
 ```
 
+Razor Pages는 특성 라우팅을 사용하지 않습니다. Razor Pages의 추가 경로 템플릿 정보를 해당 `@page` 지시문의 일부분으로 지정할 수 있습니다.
+
+```csharp
+@page "{id:int}"
+```
+
+이전 예제에서 문제가 되는 페이지는 정수 `id` 매개 변수와 경로를 일치시킵니다. 예를 들어 `/Pages`라는 루트에 있는 *Products.cshtml* 페이지에는 이 경로가 포함됩니다.
+
+```csharp
+"/Products/123"
+```
+
 지정된 요청이 경로와 일치하지만 작업 메서드가 호출되기 전에 ASP.NET Core MVC는 요청에 대한 [모델 바인딩](/aspnet/core/mvc/models/model-binding) 및 [모델 유효성 검사](/aspnet/core/mvc/models/validation)를 수행합니다. 모델 바인딩은 들어오는 HTTP 데이터를 호출할 작업 메서드의 매개 변수로 지정된 .NET 형식으로 변환합니다. 예를 들어 작업 메서드에서 정수 ID 매개 변수가 필요한 경우 모델 바인딩은 요청의 일부로 제공된 값에서 이 매개 변수를 제공하려고 합니다. 이렇게 하기 위해 모델 바인딩은 게시된 양식의 값, 경로 자체의 값 및 쿼리 문자열 값을 찾습니다. ID 값을 찾은 것으로 가정하고 이 값이 정수로 변환되어 작업 메서드에 전달됩니다.
 
 모델을 바인딩한 후 작업 메서드를 호출하기 전에 모델 유효성 검사가 수행됩니다. 모델 유효성 검사에서는 모델 유형에 대한 선택적 특성을 사용하며, 제공된 모델 개체가 특정 데이터 요구 사항을 준수하는지 확인하는 데 도움이 될 수 있습니다. 특정 값은 필요에 따라 지정하거나 특정 길이 또는 숫자 범위로 제한할 수 있습니다. 유효성 검사 특성이 지정되었지만 모델이 요구 사항을 준수하지 않는 경우 ModelState.IsValid 속성이 false가 되며 실패한 유효성 검사 규칙 집합을 요청하는 클라이언트에 보낼 수 있습니다.
@@ -65,6 +95,8 @@ public class ProductsController : Controller
 모델 유효성 검사를 사용하는 경우 항상 상태 변경 명령을 수행하기 전에 모델이 유효한지 확인하여 유효하지 않은 데이터로 인해 앱이 손상되지 않도록 해야 합니다. [필터](/aspnet/core/mvc/controllers/filters)를 사용하면 모든 작업에서 이에 대한 코드를 추가할 필요가 없습니다. ASP.NET Core MVC 필터는 요청 그룹을 가로채는 방법을 제공하므로 일반적인 정책과 교차 편집 문제를 대상 기준으로 적용할 수 있습니다. 필터는 개별 작업, 전체 컨트롤러 또는 전체 애플리케이션에 적용할 수 있습니다.
 
 웹 API의 경우 ASP.NET Core MVC는 [_콘텐츠 협상_](/aspnet/core/mvc/models/formatting)을 지원하므로 응답의 형식을 지정하는 방법을 요청할 수 있습니다. 요청에 제공된 헤더에 따라 데이터를 반환하는 작업은 응답을 XML, JSON 또는 지원되는 다른 형식으로 지정합니다. 이 기능을 사용하면 데이터 형식 요구 사항이 서로 다른 여러 클라이언트에서 동일한 API를 사용할 수 있습니다.
+
+Web API 프로젝트는 `[ApiController]` 특성을 사용하는 것이 좋습니다. 해당 항목은 개별 컨트롤러, 기본 컨트롤러 클래스 또는 전체 어셈블리에 적용될 수 있습니다. 이 특성은 자동 모델 유효성 검사를 추가하며, 잘못된 모델을 사용하는 작업은 유효성 검사 오류의 세부 정보를 포함한 BadRequest를 반환하게 됩니다. 해당 특성을 사용하려면 규칙 기반 경로를 사용하기 보다는 모든 작업에 특성 경로가 포함되어야 하고 응답의 자세한 ProblemDetails를 오류에 반환해야 합니다.
 
 > ### <a name="references--mapping-requests-to-responses"></a>참고 자료 - 요청을 응답에 매핑
 >
@@ -76,6 +108,8 @@ public class ProductsController : Controller
  > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
 > - **필터**
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+> - **ApiController 특성**
+ > <https://docs.microsoft.com/aspnet/core/web-api/?view=aspnetcore-2.2>
 
 ## <a name="working-with-dependencies"></a>종속성 사용
 
@@ -132,13 +166,13 @@ Startup 클래스는 컨트롤러에서 미들웨어, 필터, 자체의 서비�
 
 지속성을 수행하는 방법 또는 사용자에게 알림을 보내는 방법과 같은 구현 세부 정보는 인프라 프로젝트에 보관됩니다. 이 프로젝트는 Entity Framework Core와 같은 구현별 패키지를 참조하지만 프로젝트 외부에서 이러한 구현에 대한 세부 정보를 노출하지 않아야 합니다. 인프라 서비스 및 리포지토리는 ApplicationCore 프로젝트에 정의된 인터페이스를 구현해야 하며, 해당 지속성 구현은 ApplicationCore에 정의된 엔터티를 검색하고 저장해야 합니다.
 
-ASP.NET Core UI 프로젝트는 모든 UI 수준의 문제를 담당하지만 비즈니스 논리 또는 인프라 세부 정보를 포함하지 않아야 합니다. 실제로 인프라 프로젝트에 대한 종속성이 없어야 하며, 이 경우 두 프로젝트 간의 종속성이 실수로 도입되지 않도록 하는 데 도움이 됩니다. 이는 StructureMap과 같은 타사 DI 컨테이너를 사용하여 수행할 수 있습니다. 이 컨테이너를 사용하면 각 프로젝트의 레지스트리 클래스에서 DI 규칙을 정의할 수 있습니다.
+ASP.NET Core UI 프로젝트는 모든 UI 수준의 문제를 담당하지만 비즈니스 논리 또는 인프라 세부 정보를 포함하지 않아야 합니다. 실제로 인프라 프로젝트에 대한 종속성이 없어야 하며, 이 경우 두 프로젝트 간의 종속성이 실수로 도입되지 않도록 하는 데 도움이 됩니다. 이는 Autofac과 같은 타사 DI 컨테이너를 사용하여 수행할 수 있습니다. 이 컨테이너를 사용하면 각 프로젝트의 모듈 클래스에서 DI 규칙을 정의할 수 있습니다.
 
 애플리케이션을 구현 세부 정보와 분리하는 또 다른 방법은 애플리케이션에서 개별 Docker 컨테이너에 배포된 마이크로 서비스를 호출하게 하는 것입니다. 이는 두 프로젝트 간에 DI를 활용하는 것보다 훨씬 더 많은 문제와 분리를 제공하지만 추가적인 복잡성이 있습니다.
 
 ### <a name="feature-organization"></a>기능 구성
 
-기본적으로 ASP.NET Core 애플리케이션은 Controllers 및 Views를 포함하고, ViewModels를 자주 포함하도록 자체의 폴더 구조를 구성합니다. 이러한 서버 쪽 구조를 지원하는 클라이언트 쪽 코드는 일반적으로 wwwroot 폴더에 별도로 저장됩니다. 그러나 작업 중이거나 지정된 기능이 이러한 폴더 간에 자주 이동해야 하므로 큰 애플리케이션에서 이 기능으로 인해 문제가 발생할 수 있습니다. 이 경우 각 폴더의 파일 및 하위 폴더의 수가 증가함에 따라 점점 더 어려워지고, 이로 인해 솔루션 탐색기를 통해 많은 양의 스크롤이 수행됩니다. 이 문제를 해결하는 한 가지 방법은 애플리케이션 코드를 파일 형식 대신 _기능_으로 구성하는 것입니다. 이 구성 스타일은 일반적으로 기능 폴더 또는 기능 분할 영역이라고 합니다(또는: [수직 분할 영역](https://deviq.com/vertical-slices/)을 참조하세요).
+기본적으로 ASP.NET Core 애플리케이션은 Controllers 및 Views를 포함하고, ViewModels를 자주 포함하도록 자체의 폴더 구조를 구성합니다. 이러한 서버 쪽 구조를 지원하는 클라이언트 쪽 코드는 일반적으로 wwwroot 폴더에 별도로 저장됩니다. 그러나 작업 중이거나 지정된 기능이 이러한 폴더 간에 자주 이동해야 하므로 큰 애플리케이션에서 이 기능으로 인해 문제가 발생할 수 있습니다. 이 경우 각 폴더의 파일 및 하위 폴더의 수가 증가함에 따라 점점 더 어려워지고, 이로 인해 솔루션 탐색기를 통해 많은 양의 스크롤이 수행됩니다. 이 문제를 해결하는 한 가지 방법은 애플리케이션 코드를 파일 형식 대신 _기능_으로 구성하는 것입니다. 이 구성 스타일은 일반적으로 기능 폴더 또는 [기능 조각](https://msdn.microsoft.com/en-us/magazine/mt763233.aspx)이라고 합니다(또는: [수직 분할 영역](https://deviq.com/vertical-slices/)을 참조하세요).
 
 ASP.NET Core MVC는 이러한 용도를 위해 Areas를 지원합니다. Areas를 사용하면 각 Area 폴더에 별도의 Controllers 및 Views 폴더 집합(관련된 모델도 포함)을 만들 수 있습니다. 그림 7-1에서는 Areas를 사용하는 폴더 구조의 예를 보여 줍니다.
 
@@ -220,7 +254,7 @@ services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 public class AccountController : Controller
 
 {
-    [AllowAnonymous]
+    [AllowAnonymous] // overrides the Authorize attribute
     public async Task<IActionResult> Login() {}
     public async Task<IActionResult> ForgotPassword() {}
 }
@@ -262,6 +296,8 @@ public class ValidateModelAttribute : ActionFilterAttribute
     }
 }
 ```
+
+[Ardalis.ValidateModel](https://www.nuget.org/packages/Ardalis.ValidateModel) 패키지를 포함하여 프로젝트에 `ValidateModelAttribute`를 NuGet 종속성으로 추가할 수 있습니다. API의 경우 별도 `ValidateModel` 필터를 필요로 하지 않고 `ApiController` 특성을 사용하여 이 동작을 적용할 수 있습니다.
 
 마찬가지로, 필터를 사용하여 레코드가 있는지 확인하고, 작업이 실행되기 전에 404를 반환하므로 작업에서 이러한 검사를 수행할 필요가 없습니다. 공통 규칙을 제거하고 UI에서 인프라 코드와 비즈니스 논리를 분리하는 솔루션을 구성한 후에는 MVC 작업 메서드가 매우 간소하게 됩니다.
 
@@ -384,6 +420,13 @@ public void ConfigureServices(IServiceCollection services)
 
 **그림 7-4** 웹 API에 대한 토큰 기반 인증
 
+사용자 고유의 인증 서비스를 만들거나, Azure AD 및 OAuth와 통합하거나, [IdentityServer](https://github.com/IdentityServer)와 같은 오픈 소스 도구를 사용하는 서비스를 구현할 수 있습니다.
+
+#### <a name="custom-security"></a>사용자 지정 보안
+
+암호화, 사용자 멤버 자격 또는 토큰 생성 시스템을 "고유하게" 구현하도록 롤링하는 방법에 특히 주의하세요. 여러 상용 및 오픈 소스 대안을 사용할 수 있습니다. 이를 사용하면 사용자 지정 구현보다 보안이 확식하게 향상됩니다.
+
+
 > ### <a name="references--security"></a>참고 자료 - 보안
 >
 > - **보안 개요 문서**  
@@ -396,12 +439,14 @@ public void ConfigureServices(IServiceCollection services)
 >   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
 > - **Azure App Service에서 API Apps에 대한 인증 및 권한 부여**  
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
+> - **ID 서버**  
+>   <https://github.com/IdentityServer>
 
 ## <a name="client-communication"></a>클라이언트 통신
 
 ASP.NET Core 앱은 페이지를 제공하고 웹 API를 통해 데이터에 대한 요청에 응답하는 것 외에도, 연결된 클라이언트와 직접 통신할 수 있습니다. 이 아웃바운드 통신에는 다양한 전송 기술이 사용될 수 있으며, WebSockets가 가장 일반적인 기술입니다. ASP.NET Core SignalR은 애플리케이션에 실시간 서버-클라이언트 통신 기능을 간단하게 추가할 수 있게 해 주는 라이브러리입니다. SignalR은 WebSockets를 포함한 다양한 전송 기술을 지원하며 개발자의 다양한 구현 세부 정보를 추상화합니다.
 
-ASP.NET Core SignalR은 ASP.NET Core 2.1과 함께 사용할 수 있습니다.
+ASP.NET Core SignalR은 ASP.NET Core 2.1부터 제공됩니다.
 
 WebSockets를 직접 사용하든 다른 기술을 사용하든 실시간 클라이언트 통신은 다양한 애플리케이션 시나리오에 유용합니다. 예를 들면 다음과 같습니다.
 

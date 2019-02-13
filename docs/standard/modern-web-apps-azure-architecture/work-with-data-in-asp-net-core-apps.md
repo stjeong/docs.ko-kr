@@ -3,13 +3,13 @@ title: ASP.NET Core 앱에서 데이터 작업
 description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케이션 설계 | ASP.NET Core 앱에서 데이터 작업
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
-ms.openlocfilehash: a30d6708b87687ee4d5cdb13452662e264a1b54c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.date: 01/30/2019
+ms.openlocfilehash: 914a10724c416f453d93f6efc16f9ad192798264
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532684"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55827177"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>ASP.NET Core 앱에서 데이터 작업
 
@@ -123,13 +123,82 @@ var brandsWithItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-여러 관계를 포함할 수 있으며, ThenInclude를 사용하여 하위 관계를 포함할 수도 있습니다. EF Core는 엔터티의 결과 집합을 검색하는 단일 쿼리를 실행합니다.
+여러 관계를 포함할 수 있으며, ThenInclude를 사용하여 하위 관계를 포함할 수도 있습니다. EF Core는 엔터티의 결과 집합을 검색하는 단일 쿼리를 실행합니다. 또는 다음과 같이 마침표('.')로 구분된 문자열을 `.Include()` 확장 메서드에 전달하여 탐색 속성을 포함할 수 있습니다.
+
+```csharp
+    .Include(“Items.Products”)
+```
+
+사양은 필터링 논리를 캡슐화할 뿐 아니라 채울 속성을 포함하여 반환될 데이터의 모양을 지정할 수 있습니다. eShopOnWeb 샘플에는 사양 내에서 즉시 로드 정보를 캡슐화하는 방법을 보여주는 몇 가지 사양이 포함됩니다. 여기에서 사양을 쿼리의 일부로 사용하는 방법을 확인할 수 있습니다.
+
+```csharp
+// Includes all expression-based includes
+query = specification.Includes.Aggregate(query,
+            (current, include) => current.Include(include));
+
+// Include any string-based include statements
+query = specification.IncludeStrings.Aggregate(query,
+            (current, include) => current.Include(include));
+```
 
 관련 데이터를 로드하는 또 다른 옵션은 _명시적 로드_를 사용하는 것입니다. 명시적 로드를 사용하면 이미 검색된 엔터티에 추가 데이터를 로드할 수 있습니다. 이 방법은 데이터베이스에 대한 별도의 요청이 개입되므로 요청당 데이터베이스 왕복 횟수를 최소화해야 하는 웹 애플리케이션에는 사용하지 않는 것이 좋습니다.
 
 _지연 로드_는 애플리케이션에서 참조하는 관련 데이터를 자동으로 로드하는 기능입니다. EF Core는 버전 2.1에서 지연 로드에 대한 지원이 추가되었습니다. 지연 로드는 기본적으로 사용하지 않도록 설정되어 있으며 `Microsoft.EntityFrameworkCore.Proxies`를 설치해야 합니다. 명시적 로드와 마찬가지로 지연 로드는 각 웹 요청 내에서 수행되는 추가 데이터베이스 쿼리에서 사용되기 때문에 일반적으로 웹 애플리케이션에 대해 사용하지 않도록 설정되어 있습니다. 아쉽게도 지연 로드에서 발생하는 오버헤드는 대기 시간이 적고 테스트에 사용되는 데이터 집합이 작은 경우 개발 시기에 종종 간과됩니다. 단, 더 많은 사용자, 더 많은 데이터 및 더 긴 대기 시간의 프로덕션에서는 추가 데이터베이스 요청으로 인해 웹 애플리케이션의 성능이 저하되어 지연 로드를 과도하게 사용하게 됩니다.
 
 [웹 애플리케이션에서 지연 로드 엔터티 방지](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
+
+### <a name="encapsulating-data"></a>데이터 캡슐화
+
+EF Core는 모델이 적절하게 상태를 캡슐화할 수 있도록 여러 기능을 지원합니다. 도메인 모델의 일반적인 문제는 컬렉션 탐색 속성을 공개적으로 액세스 가능한 목록 형식으로 노출한다는 점입니다. 따라서 협력자가 이 컬렉션 형식의 콘텐츠를 조작하여 컬렉션과 관련한 중요한 비즈니스 규칙을 무시할 수 있고 이에 따라 개체가 잘못된 상태가 될 수 있습니다. 이 문제에 대한 해결 방법은 이 예제와 같이 관련 컬렉션에 대해 읽기 전용 액세스만을 노출하고 명시적으로 클라이언트가 이를 조작할 수 있는 방법을 정의하는 메서드를 제공하는 것입니다.
+
+```csharp
+public class Basket : BaseEntity
+{
+    public string BuyerId { get; set; }
+    private readonly List<BasketItem> _items = new List<BasketItem>();
+    public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
+
+    public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
+    {
+        if (!Items.Any(i => i.CatalogItemId == catalogItemId))
+        {
+            _items.Add(new BasketItem()
+            {
+                CatalogItemId = catalogItemId,
+                Quantity = quantity,
+                UnitPrice = unitPrice
+            });
+            return;
+        }
+        var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+        existingItem.Quantity += quantity;
+    }
+}
+```
+
+이 엔터티 형식은 공용 `List` 또는 `ICollection` 속성을 노출하지 않지만 대신 기본 목록 형식을 래핑하는 `IReadOnlyCollection` 형식을 노출합니다. 이 패턴을 사용하면 다음과 같이 지원 필드를 사용하도록 Entity Framework Core를 지정할 수 있습니다.
+
+```csharp
+private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
+{
+    var navigation = builder.Metadata.FindNavigation(nameof(Basket.Items));
+
+    navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+}
+```
+
+도메인 모델을 향상시킬 수 있는 다른 방법은 ID가 없고 해당 속성으로만 구별되는 형식에서 값 개체를 사용하는 것입니다. 이러한 형식을 엔터티 속성으로 사용하면 논리가 속한 값 개체에 특정되도록 유지할 수 있고, 동일한 개념을 사용하는 여러 엔터티 간에 중복 논리를 방지할 수 있습니다. Entity Framework Core에서는 다음과 같이 형식을 소유된 엔터티로 구성하여 소유하는 엔터티와 동일한 테이블에서 값 개체를 유지할 수 있습니다.
+
+```csharp
+private void ConfigureOrder(EntityTypeBuilder<Order> builder)
+{
+    builder.OwnsOne(o => o.ShipToAddress);
+}
+```
+
+다음 예제에서 `ShipToAddress` 속성은 `Address` 형식입니다. `Address`는 `Street` 및 `City`와 같은 여러 속성을 포함한 값 개체입니다. EF Core는 `Order` 개체를 `Address` 속성당 하나의 열을 포함한 해당 테이블에 매핑하여 각 열 이름의 접두사를 속성의 이름으로 지정합니다. 이 예제에서 `Order` 테이블에는 `ShipToAddress_Street` 및 `ShipToAddress_City`와 같은 열이 포함됩니다.
+
+[EF Core 2.2는 소유된 엔터티의 컬렉션에 대한 지원 제공](https://docs.microsoft.com/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
 
 ### <a name="resilient-connections"></a>복원력 있는 연결
 

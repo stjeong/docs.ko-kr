@@ -7,12 +7,12 @@ dev_langs:
 author: thraka
 ms.author: adegeo
 ms.date: 12/31/2018
-ms.openlocfilehash: baaa2676865c475e331ec889e7b10ae326b552fa
-ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.openlocfilehash: 9a43f9407d530224b5ad4775ef3a8c0ef2a9fe27
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55675090"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55828412"
 ---
 # <a name="whats-new-in-net-core-30-preview-2"></a>.NET Core 3.0(Preview 2)의 새로운 기능
 
@@ -20,11 +20,12 @@ ms.locfileid: "55675090"
 
 .NET Core 3.0에서는 C# 8.0에 대한 지원이 추가되었습니다.
 
-Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3 Preview 2를 다운로드하여 시작](https://aka.ms/netcore3download)하세요. 릴리스에 대한 전체 세부 정보는 [.NET Core 3 Preview 2 릴리스 정보](https://aka.ms/netcore3releasenotes)를 참조하세요.
+Windows, Mac 및 Linux에서 지금 바로 [.NET Core 3.0 Preview 2를 다운로드하여 시작](https://aka.ms/netcore3download)하세요. 릴리스에 대한 전체 세부 정보는 [.NET Core 3.0 Preview 2 릴리스 정보](https://aka.ms/netcore3releasenotes)를 참조하세요.
 
-Preview 1에서 릴리스된 내용을 보려면 [.NET Core 3.0 Preview 1 공지 사항](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)을 참조하세요.
+각 버전에서 릴리스된 내용에 대한 자세한 내용은 다음 공지 사항을 참조하세요.
 
-Preview 2에서 릴리스된 내용을 보려면 [.NET Core 3.0 Preview 1 공지 사항]()을 참조하세요.
+- [.NET Core 3.0 Preview 1 공지 사항](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
+- [.NET Core 3.0 Preview 2 공지 사항](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)
 
 ## <a name="c-8"></a>C# 8
 
@@ -308,7 +309,7 @@ WPF가 아닌 Windows Forms를 선택하려면 `UseWPF` 대신 `UseWindowsForms`
 
 [MSIX](https://docs.microsoft.com/windows/msix/)는 새로운 Windows 앱 패키지 형식입니다. Windows 10에 .NET Core 3.0 데스크톱 애플리케이션을 배포하는 데 사용할 수 있습니다.
 
-Visual Studio 2019 미리 보기 2에 제공되는 [Windows 애플리케이션 패키징 프로젝트](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 사용하면 [자체 포함](../deploying/#self-contained-deployments-scd) .NET Core 애플리케이션을 사용하여 MSIX 패키지를 만들 수 있습니다.
+Visual Studio 2019 미리 보기 2에 제공되는 [Windows 애플리케이션 패키징 프로젝트](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 사용하면 [자체 포함](../deploying/index.md#self-contained-deployments-scd) .NET Core 애플리케이션을 사용하여 MSIX 패키지를 만들 수 있습니다.
 
 >참고: NET Core 프로젝트 파일은 `<RuntimeIdentifiers>` 속성에 지원되는 런타임을 지정해야 합니다.
 ```xml

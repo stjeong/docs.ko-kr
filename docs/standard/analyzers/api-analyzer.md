@@ -5,12 +5,12 @@ author: oliag
 ms.author: mairaw
 ms.date: 05/31/2018
 ms.technology: dotnet-standard
-ms.openlocfilehash: 4394bc77b499db1960d61bad5e828f77f1144c65
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: d27e5299ad9b1a3dcd89d5a947d91f06a54549e2
+ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34696886"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55759134"
 ---
 # <a name="net-api-analyzer"></a>.NET API 분석기
 
@@ -55,7 +55,7 @@ ID를 클릭하면 API가 사용되지 않는 이유에 대한 자세한 정보�
 
 ### <a name="suppressing-warnings-locally"></a>로컬로 경고 표시 안 함
 
-로컬로 경고를 표시하지 않으려면 경고를 표시하지 않을 멤버를 마우스 오른쪽 단추로 클릭한 다음, **빠른 작업 및 리팩터링** > **‘진단 ID’ 표시 안 함\<진단 ID>** > **소스**를 선택합니다. [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) 경고 전처리기 지시문이 정의된 범위의 소스 코드에 추가됩니다. ![“#pragma warning disable로 묶인 코드의 스크린샷”](media/api-analyzer/suppress-in-source.jpg)
+로컬로 경고를 표시하지 않으려면 경고를 표시하지 않을 멤버를 마우스 오른쪽 단추로 클릭한 다음, **빠른 작업 및 리팩터링** > **‘진단 ID’ 표시 안 함\<진단 ID>** > **소스**를 선택합니다. [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) 경고 전처리기 지시문이 정의된 범위의 소스 코드에 추가됩니다. !["#pragma warning disable로 묶인 코드의 스크린샷"](media/api-analyzer/suppress-in-source.jpg)
 
 ### <a name="suppressing-warnings-globally"></a>전역으로 경고 표시 안 함
 
@@ -112,5 +112,5 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 
 ## <a name="see-also"></a>참고 항목
 
-* [API 분석기 소개](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) 블로그 게시물.
-* YouTube의 [API 분석기](https://youtu.be/eeBEahYXGd0) 데모 동영상.
+- [API 분석기 소개](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) 블로그 게시물.
+- YouTube의 [API 분석기](https://youtu.be/eeBEahYXGd0) 데모 동영상.

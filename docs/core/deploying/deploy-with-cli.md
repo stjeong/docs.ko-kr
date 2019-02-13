@@ -8,12 +8,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: seodec18
-ms.openlocfilehash: dfb99681ba363f23d742ac83940f1ce3e5e78bb1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cac6215afb34b5b2864284763eea59b33feb35fe
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54504004"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826462"
 ---
 # <a name="publish-net-core-apps-with-the-cli"></a>CLI를 사용하여 .NET Core 앱 게시
 
@@ -38,11 +38,11 @@ CLI 사용에 대한 빠른 도움말을 찾나요? 다음 표는 앱을 게시�
 
 ## <a name="publishing-basics"></a>게시 기본 사항
 
-프로젝트 파일의 `<TargetFramework>` 설정은 앱을 게시할 때 기본 대상 프레임워크를 지정합니다. 대상 프레임워크를 유효한 [TFM(대상 프레임워크 모니커)](../../standard/frameworks.md)으로 변경할 수 있습니다. 예를 들어 프로젝트에서 `<TargetFramework>netcoreapp2.2</TargetFramework>`를 사용하는 경우 .NET Core 2.2를 대상으로 하는 이진 파일이 생성됩니다. 이 설정에 지정된 TFM은 [`dotnet publish`][dotnet-publish] 명령에 사용되는 기본 대상입니다.
+프로젝트 파일의 `<TargetFramework>` 설정은 앱을 게시할 때 기본 대상 프레임워크를 지정합니다. 대상 프레임워크를 유효한 [TFM(대상 프레임워크 모니커)](../../standard/frameworks.md)으로 변경할 수 있습니다. 예를 들어 프로젝트에서 `<TargetFramework>netcoreapp2.2</TargetFramework>`를 사용하는 경우 .NET Core 2.2를 대상으로 하는 이진 파일이 생성됩니다. 이 설정에 지정된 TFM은 [`dotnet publish`](../tools/dotnet-publish.md) 명령에서 사용되는 기본 대상입니다.
 
 둘 이상의 프레임워크를 대상으로 하려는 경우 `<TargetFrameworks>` 설정을 세미콜론으로 구분된 둘 이상의 TFM 값으로 설정할 수 있습니다. `dotnet publish -f <TFM>` 명령을 사용하여 프레임워크 중 하나를 게시할 수 있습니다. 예를 들어 `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`가 있고 `dotnet publish -f netcoreapp2.1`을 실행하는 경우 .NET Core 2.1을 대상으로 하는 이진 파일이 생성됩니다.
 
-달리 설정하지 않는 한 [`dotnet publish`][dotnet-publish] 명령의 출력 디렉터리는 `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`입니다. `-c` 매개 변수를 사용하여 변경하지 않는 한 기본 **BUILD-CONFIGURATION** 모드는 **디버그**입니다. 예를 들어 `dotnet publish -c Release -f netcoreapp2.1`은 `myfolder/bin/Release/netcoreapp2.1/publish/`에 게시합니다. 
+달리 설정하지 않으면 [`dotnet publish`](../tools/dotnet-publish.md) 명령의 출력 디렉터리는 `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`입니다. `-c` 매개 변수를 사용하여 변경하지 않는 한 기본 **BUILD-CONFIGURATION** 모드는 **디버그**입니다. 예를 들어 `dotnet publish -c Release -f netcoreapp2.1`은 `myfolder/bin/Release/netcoreapp2.1/publish/`에 게시합니다. 
 
 .NET Core SDK 3.0을 사용하는 경우 .NET Core 버전 2.1, 2.2 또는 3.0을 대상으로 하는 앱의 기본 게시 모드는 프레임워크 종속 실행 파일입니다.
 
@@ -95,7 +95,7 @@ Module Program
 End Module
 ```
 
-앱([`dotnet run`][dotnet-run])을 실행하면 다음 출력이 표시됩니다.
+앱([`dotnet run`](../tools/dotnet-run.md))을 실행하면 다음 출력이 표시됩니다.
 
 ```terminal
   _   _      _ _         __        __         _     _ _
@@ -163,6 +163,3 @@ SCD를 게시하려면 `dotnet publish` 명령과 함께 다음 스위치를 사
 
 - [.NET Core 애플리케이션 배포 개요](index.md)
 - [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)
-
-[dotnet-publish]: ../tools/dotnet-publish.md
-[dotnet-run]: ../tools/dotnet-run.md

@@ -5,12 +5,12 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 11/29/2017
 ms.custom: seodec18
-ms.openlocfilehash: af2ae5e1b0f9e6146975c6838cca8b22837bb012
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 556da93d6237836dc32fc3f6715909593907ba74
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168990"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55738736"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>dotnet 테스트 및 xUnit을 사용하여 .NET Core에서 C# 단위 테스트
 
@@ -66,7 +66,7 @@ dotnet sln add .\PrimeService\PrimeService.csproj
     /PrimeService.Tests
 ```
 
-*PrimeService.Tests* 디렉터리를 현재 디렉터리로 만들고 [`dotnet new xunit`](../tools/dotnet-new.md)를 사용하여 새 프로젝트를 만듭니다. 이 명령은 xUnit을 테스트 라이브러리로 사용하는 테스트 프로젝트를 만듭니다. 생성된 템플릿은 다음 코드와 유사한 *PrimeServiceTests.csproj* 파일에서 Test Runner를 구성합니다.
+*PrimeService.Tests* 디렉터리를 현재 디렉터리로 만들고 [`dotnet new xunit`](../tools/dotnet-new.md)를 사용하여 새 프로젝트를 만듭니다. 이 명령은 [xUnit](https://xunit.github.io/)을 테스트 라이브러리로 사용하는 테스트 프로젝트를 만듭니다. 생성된 템플릿은 다음 코드와 유사한 *PrimeServiceTests.csproj* 파일에서 Test Runner를 구성합니다.
 
 ```xml
 <ItemGroup>
@@ -172,4 +172,5 @@ if (candidate < 2)
 
 ### <a name="additional-resources"></a>추가 자료
 
+- [xUnit.net 공식 사이트](https://xunit.github.io)
 - [ASP.NET Core에서 컨트롤러 논리 테스트](/aspnet/core/mvc/controllers/testing)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic code, walkthroughs
 - walkthroughs [Visual Basic]
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
-ms.openlocfilehash: 5cf49f8b97b33e179234bda4eb9ed6ef01d07fca
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 928df9baa770185fd5d012e760ca96f3f878cf88
+ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086766"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55739464"
 ---
 # <a name="visual-basic-language-walkthroughs"></a>Visual Basic 언어 연습
 연습에서는 일반 시나리오에 대한 단계별 지침을 제공하므로 제품 또는 특정 기능 영역 파악을 효율적으로 시작할 수 있습니다.  
@@ -47,11 +47,8 @@ ms.locfileid: "44086766"
  [COM 개체를 사용한 상속 구현](../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
  Visual Basic 6.0을 사용하여 클래스가 포함된 COM 개체를 만든 다음, Visual Basic의 기본 클래스로 사용하는 방법을 보여 줍니다.  
   
- [다중 스레딩](https://msdn.microsoft.com/library/2cbf5116-8499-4af9-818c-6f7c1c2ad2c9)  
- 텍스트 파일에서 단어를 검색하는 다중 스레드 응용 프로그램을 만드는 방법을 보여 줍니다.  
-  
  [My.Application.Log가 정보를 기록하는 위치 확인](../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)  
- 기본 `My.Application.Log` 설정 및 응용 프로그램의 설정을 확인하는 방법을 설명합니다.  
+ 기본 `My.Application.Log` 설정 및 애플리케이션의 설정을 확인하는 방법을 설명합니다.  
   
  [My.Application.Log가 정보를 기록하는 위치 변경](../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)  
  이벤트 정보 로깅에 대한 기본 `My.Application.Log` 및 `My.Log` 설정을 재정의하여 `Log` 개체가 다른 로그 수신기에 기록하도록 하는 방법을 보여 줍니다.  
@@ -80,5 +77,5 @@ ms.locfileid: "44086766"
  [Visual Basic에서 개체 유지](../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  
  간단한 개체를 만들고 데이터를 파일에 유지하는 방법을 보여 줍니다.  
   
- [관례에서 생성 기능을 통한 테스트 우선 지원](https://msdn.microsoft.com/library/764c17a4-cd95-4c23-bf63-d92d9c5adfb2)  
+ [연습: 관례에서 생성 기능을 통한 테스트 우선 지원](/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature)  
  먼저 단위 테스트를 작성한 다음 테스트가 성공하도록 소스 코드를 작성하는 테스트 우선 개발의 수행 방법을 보여 줍니다.

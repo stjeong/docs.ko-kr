@@ -4,12 +4,12 @@ description: C#에서 특성이 작동하는 방식을 알아봅니다.
 author: mgroves
 ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
-ms.openlocfilehash: 38d22e707dd8c9877183feb8446407c20a21b416
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 254c408e854bdf6e923d64a4e8cca42b7a3b11cc
+ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029829"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55826826"
 ---
 # <a name="using-attributes-in-c"></a>C#에서 특성 사용 #
 
@@ -137,7 +137,7 @@ C#에서 특성은 `Attribute` 기본 클래스에서 상속되는 클래스입�
 * `[Obsolete]`. 이 특성은 위 예제에서 사용되었으며 `System` 네임스페이스에 있습니다. 기본 코드를 변경하는 방법에 대해 선언적 설명서를 제공하는 것이 유용합니다. 메시지는 문자열의 형태로 제공될 수 있으며 다른 부울 매개 변수가 컴파일러 경고를 컴파일러 오류로 에스컬레이션하는 데 사용될 수 있습니다.
 
 * `[Conditional]`. 이 특성은 `System.Diagnostics` 네임스페이스에 있습니다. 이 특성은 메서드(또는 특성 클래스)에 적용할 수 있습니다. 생성자에는 문자열을 전달해야 합니다.
-해당 문자열이 `#define` 지시문과 일치하는 경우 해당 메서드의 호출(메서드 자체는 아님)이 C# 컴파일러에 의해 제거됩니다. 일반적으로 이 특성은 디버깅(진단) 목적으로 사용됩니다.
+해당 문자열이 `#define` 지시문과 일치하지 않는 경우 해당 메서드에 대한 호출(메서드 자체는 아님)이 C# 컴파일러에 의해 제거됩니다. 일반적으로 이 특성은 디버깅(진단) 목적으로 사용됩니다.
 
 * `[CallerMemberName]`. 이 특성은 매개 변수에 사용될 수 있으며 `System.Runtime.CompilerServices` 네임스페이스에 있습니다. 다른 메서드를 호출하는 메서드의 이름을 삽입하는 데 사용되는 특성입니다. 일반적으로 다양한 UI 프레임워크에서 INotifyPropertyChanged를 구현하는 경우 '매직 문자열'을 제거하는 방법으로 사용됩니다. 예제:
 
