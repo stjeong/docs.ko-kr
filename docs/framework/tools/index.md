@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 208dc3048b52cc895a5142a7686829390d1d4503
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 11525c2a98ceee3115fe789dbb106347c0201ecd
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041488"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220111"
 ---
 # <a name="net-framework-tools"></a>.NET Framework 도구
 .NET Framework 도구를 사용하면 .NET Framework를 대상으로 하는 애플리케이션 및 구성 요소를 보다 쉽게 만들고 배포하고 관리할 수 있습니다.  
@@ -113,7 +113,7 @@ ms.locfileid: "44041488"
  [SqlMetal.exe(코드 생성 도구)](../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)  
  .NET Framework의 LINQ to SQL 구성 요소에 대한 코드와 매핑을 생성합니다.  
   
- [Storeadm.exe(격리된 저장소 도구)](../../../docs/framework/tools/storeadm-exe-isolated-storage-tool.md)  
+ [Storeadm.exe(격리된 스토리지 도구)](../../../docs/framework/tools/storeadm-exe-isolated-storage-tool.md)  
  사용자의 저장소를 나열하고 삭제할 수 있는 옵션을 제공함으로써 격리된 스토리지를 관리합니다.  
   
  [Tlbexp.exe(형식 라이브러리 내보내기)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)  
@@ -129,7 +129,7 @@ ms.locfileid: "44041488"
  Windows Forms에 사용되는 UI(사용자 인터페이스) 리소스(.resx 또는 .resources 파일)를 쉽게 지역화할 수 있도록 합니다. 문자열을 번역한 다음 지역화(번역)된 문자열에 적합하도록 컨트롤의 크기를 조정하거나 컨트롤을 이동하고 숨길 수 있습니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [도구](https://msdn.microsoft.com/library/f533241c-317c-445e-88ca-c80c8d078fca)  
+ [WPF 도구](https://docs.microsoft.com/previous-versions/ms742404(v=vs.110))  
  isXPS 규칙 도구(isXPS.exe) 및 성능 프로파일링 도구와 같은 도구가 포함되어 있습니다.  
   
  [Windows Communication Foundation 도구](../../../docs/framework/wcf/tools.md)  
