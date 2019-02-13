@@ -1,25 +1,25 @@
 ---
 title: Docker 프로덕션 환경 실행, 관리 및 모니터링
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 애플리케이션 수명 주기
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
-ms.openlocfilehash: 2f29119e102bbb62e96da6b3c00f9c53c0a270a2
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 11/23/2018
+ms.openlocfilehash: 9c24a87fd691723b8f91077288478d26e5123265
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130952"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219128"
 ---
-# <a name="run-manage-and-monitor-docker-production-environments"></a><span data-ttu-id="ec65f-103">Docker 프로덕션 환경 실행, 관리 및 모니터링</span><span class="sxs-lookup"><span data-stu-id="ec65f-103">Run, manage, and monitor Docker production environments</span></span>
+# <a name="run-manage-and-monitor-docker-production-environments"></a><span data-ttu-id="66c2b-103">Docker 프로덕션 환경 실행, 관리 및 모니터링</span><span class="sxs-lookup"><span data-stu-id="66c2b-103">Run, manage, and monitor Docker production environments</span></span>
 
-<span data-ttu-id="ec65f-104">비전: 엔터프라이즈 응용 프로그램 고가용성 및 높은 확장성을 사용 하 여 실행 해야 합니다. IT 운영 환경 및 응용 프로그램 자체 관리 및 모니터링 하는 일을 할 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ec65f-104">Vision: Enterprise applications need to run with high availability and high scalability; IT operations need to be able to manage and monitor the environments and the applications themselves.</span></span>
+<span data-ttu-id="66c2b-104">Vision: 엔터프라이즈 응용 프로그램 고가용성 및 높은 확장성을 사용 하 여 실행 해야 합니다. IT 운영 환경 및 응용 프로그램 자체 관리 및 모니터링 하는 일을 할 수 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66c2b-104">Vision: Enterprise applications need to run with high availability and high scalability; IT operations need to be able to manage and monitor the environments and the applications themselves.</span></span>
 
-<span data-ttu-id="ec65f-105">컨테이너화된 Docker 응용 프로그램 수명 주기의 이 마지막 단계에서는 확장 가능한 고가용성(HA) 프로덕션 환경에서 응용 프로그램을 실행, 관리 및 모니터링할 수 있는 방법을 중점적으로 살펴봅니다.</span><span class="sxs-lookup"><span data-stu-id="ec65f-105">This last pillar in the containerized Docker applications life cycle is centered on how you can run, manage, and monitor your applications in scalable, high availability (HA) production environments.</span></span>
+<span data-ttu-id="66c2b-105">컨테이너화된 Docker 애플리케이션 수명 주기의 이 마지막 단계에서는 확장 가능한 고가용성(HA) 프로덕션 환경에서 애플리케이션을 실행, 관리 및 모니터링할 수 있는 방법을 중점적으로 살펴봅니다.</span><span class="sxs-lookup"><span data-stu-id="66c2b-105">This last pillar in the containerized Docker applications life cycle is centered on how you can run, manage, and monitor your applications in scalable, high availability (HA) production environments.</span></span>
 
-<span data-ttu-id="ec65f-106">프로덕션 환경(인프라 아키텍처 및 플랫폼 기술)에서 컨테이너화된 응용 프로그램을 실행하는 방법은 이 전자책의 챕터 1에서 살펴본 선택된 아키텍처와 개발 플랫폼에 따라 완전히 달라지며, 매우 깊은 연관성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ec65f-106">How you run your containerized applications in production (infrastructure architecture and platform technologies) is also very much related and completely founded on the chosen architecture and development platforms that we looked at in the Chapter 1 of this e-book.</span></span> <span data-ttu-id="ec65f-107">이 챕터에서는 고확장성, HA를 지원하는 분산 응용 프로그램을 효과적으로 실행하는 데 사용할 수 있는 Microsoft 및 다른 공급업체의 특정 제품 및 기술을 살펴보고, 이러한 제품 및 기술을 관리하고 모니터링하는 방법을 IT 관점에서 살펴봅니다.</span><span class="sxs-lookup"><span data-stu-id="ec65f-107">This chapter examines specific products and technologies from Microsoft and other vendors that you can use to effectively run highly scalable, HA distributed applications plus how you can manage and monitor them from the IT perspective.</span></span>
+<span data-ttu-id="66c2b-106">프로덕션 환경(인프라 아키텍처 및 플랫폼 기술)에서 컨테이너화된 애플리케이션을 실행하는 방법은 이 전자책의 챕터 1에서 살펴본 선택된 아키텍처와 개발 플랫폼에 따라 완전히 달라지며, 매우 깊은 연관성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66c2b-106">How you run your containerized applications in production (infrastructure architecture and platform technologies) is also very much related and completely founded on the chosen architecture and development platforms that we looked at in the Chapter 1 of this e-book.</span></span> <span data-ttu-id="66c2b-107">이 챕터에서는 고확장성, HA를 지원하는 분산 애플리케이션을 효과적으로 실행하는 데 사용할 수 있는 Microsoft 및 다른 공급업체의 특정 제품 및 기술을 살펴보고, 이러한 제품 및 기술을 관리하고 모니터링하는 방법을 IT 관점에서 살펴봅니다.</span><span class="sxs-lookup"><span data-stu-id="66c2b-107">This chapter examines specific products and technologies from Microsoft and other vendors that you can use to effectively run highly scalable, HA distributed applications plus how you can manage and monitor them from the IT perspective.</span></span>
 
 >[!div class="step-by-step"]
-><span data-ttu-id="ec65f-108">[이전](../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
->[다음](run-microservices-based-applications-in-production.md)</span><span class="sxs-lookup"><span data-stu-id="ec65f-108">[Previous](../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
+><span data-ttu-id="66c2b-108">[이전](../docker-devops-workflow/create-ci-cd-pipelines-azure-devops-services-aspnetcore-kubernetes.md)
+>[다음](run-microservices-based-applications-in-production.md)</span><span class="sxs-lookup"><span data-stu-id="66c2b-108">[Previous](../docker-devops-workflow/create-ci-cd-pipelines-azure-devops-services-aspnetcore-kubernetes.md)
 [Next](run-microservices-based-applications-in-production.md)</span></span>

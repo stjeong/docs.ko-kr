@@ -1,6 +1,6 @@
 ---
 title: 디버깅 인터페이스
-ms.date: 03/30/2017
+ms.date: 02/07/2019
 helpviewer_keywords:
 - unmanaged interfaces [.NET Framework], debugging
 - debugging interfaces [.NET Framework]
@@ -8,446 +8,473 @@ helpviewer_keywords:
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8b6d00d17615769a5d03d58e0eda5af62ca58368
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: afa4e6cd4e99540030d3a9e151da4bbe711d973a
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415964"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219830"
 ---
-# <a name="debugging-interfaces"></a><span data-ttu-id="15bb5-102">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-102">Debugging Interfaces</span></span>
-<span data-ttu-id="15bb5-103">이 단원에서는 CLR(공용 언어 런타임)에서 실행되는 프로그램의 디버깅을 처리하는 관리되지 않는 인터페이스에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-103">This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).</span></span>  
+# <a name="debugging-interfaces"></a><span data-ttu-id="582e9-102">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="582e9-102">Debugging Interfaces</span></span>
+<span data-ttu-id="582e9-103">이 단원에서는 CLR(공용 언어 런타임)에서 실행되는 프로그램의 디버깅을 처리하는 관리되지 않는 인터페이스에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-103">This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="15bb5-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="15bb5-104">In This Section</span></span>  
- [<span data-ttu-id="15bb5-105">ICLRDataEnumMemoryRegions 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-105">ICLRDataEnumMemoryRegions Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-interface.md)  
- <span data-ttu-id="15bb5-106">호출자가 지정하는 메모리 영역을 열거하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-106">Provides a method to enumerate regions of memory that are specified by callers.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="582e9-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="582e9-104">In This Section</span></span>  
+ <span data-ttu-id="582e9-105">[ICLRDataEnumMemoryRegions 인터페이스](iclrdataenummemoryregions-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-105">[ICLRDataEnumMemoryRegions Interface](iclrdataenummemoryregions-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-106">호출자가 지정하는 메모리 영역을 열거하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-106">Provides a method to enumerate regions of memory that are specified by callers.</span></span>  
   
- [<span data-ttu-id="15bb5-107">ICLRDataEnumMemoryRegionsCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-107">ICLRDataEnumMemoryRegionsCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregionscallback-interface.md)  
- <span data-ttu-id="15bb5-108">지정된 메모리 영역을 열거하려고 시도한 결과를 디버거에 보고하는 콜백 메서드를 `EnumMemoryRegions`에 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-108">Provides a callback method for `EnumMemoryRegions` to report to the debugger, the result of an attempt to enumerate a specified region of memory.</span></span>  
+ <span data-ttu-id="582e9-107">[ICLRDataEnumMemoryRegionsCallback 인터페이스](iclrdataenummemoryregionscallback-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-107">[ICLRDataEnumMemoryRegionsCallback Interface](iclrdataenummemoryregionscallback-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-108">지정된 메모리 영역을 열거하려고 시도한 결과를 디버거에 보고하는 콜백 메서드를 `EnumMemoryRegions`에 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-108">Provides a callback method for `EnumMemoryRegions` to report to the debugger, the result of an attempt to enumerate a specified region of memory.</span></span>  
   
- [<span data-ttu-id="15bb5-109">ICLRDataTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-109">ICLRDataTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)  
- <span data-ttu-id="15bb5-110">대상 CLR 프로세스와 상호 작용하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-110">Provides methods for interaction with a target CLR process.</span></span>  
+ <span data-ttu-id="582e9-109">[ICLRDataTarget 인터페이스](iclrdatatarget-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-109">[ICLRDataTarget Interface](iclrdatatarget-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-110">대상 CLR 프로세스와 상호 작용하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-110">Provides methods for interaction with a target CLR process.</span></span>  
   
- [<span data-ttu-id="15bb5-111">ICLRDataTarget2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-111">ICLRDataTarget2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)  
- <span data-ttu-id="15bb5-112">데이터 액세스 서비스 계층에서 대상 프로세스의 가상 메모리 영역을 조작하는 데 사용하는 `ICLRDataTarget`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-112">A subclass of `ICLRDataTarget` that is used by the data access services layer to manipulate virtual memory regions in the target process.</span></span>  
+ <span data-ttu-id="582e9-111">[ICLRDataTarget2 인터페이스](iclrdatatarget2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-111">[ICLRDataTarget2 Interface](iclrdatatarget2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-112">데이터 액세스 서비스 계층에서 대상 프로세스의 가상 메모리 영역을 조작하는 데 사용하는 `ICLRDataTarget`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-112">A subclass of `ICLRDataTarget` that is used by the data access services layer to manipulate virtual memory regions in the target process.</span></span>  
   
- [<span data-ttu-id="15bb5-113">ICLRDataTarget3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-113">ICLRDataTarget3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-interface.md)  
- <span data-ttu-id="15bb5-114">서브 클래스 [ICLRDataTarget2](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md) 예외 정보에 대 한 액세스를 제공 하는 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-114">A subclass of [ICLRDataTarget2](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md) that provides access to exception information.</span></span>  
+ <span data-ttu-id="582e9-113">[ICLRDataTarget3 인터페이스](iclrdatatarget3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-113">[ICLRDataTarget3 Interface](iclrdatatarget3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-114">서브 클래스 [ICLRDataTarget2](iclrdatatarget2-interface.md) 예외 정보에 대 한 액세스를 제공 하는 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-114">A subclass of [ICLRDataTarget2](iclrdatatarget2-interface.md) that provides access to exception information.</span></span>  
   
- [<span data-ttu-id="15bb5-115">ICLRDebugging 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-115">ICLRDebugging Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md)  
- <span data-ttu-id="15bb5-116">디버깅을 위해 모듈을 로드 및 언로드하는 작업을 처리하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-116">Provides methods that handle loading and unloading modules for debugging.</span></span>  
+ <span data-ttu-id="582e9-115">[ICLRDebugging 인터페이스](iclrdebugging-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-115">[ICLRDebugging Interface](iclrdebugging-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-116">디버깅을 위해 모듈을 로드 및 언로드하는 작업을 처리하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-116">Provides methods that handle loading and unloading modules for debugging.</span></span>  
   
- [<span data-ttu-id="15bb5-117">ICLRDebuggingLibraryProvider 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-117">ICLRDebuggingLibraryProvider Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)  
- <span data-ttu-id="15bb5-118">포함 된 [ProvideLibrary 메서드](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-providelibrary-method.md) 메서드 라이브러리 공급자 콜백 인터페이스 공용 언어 런타임 버전별 디버깅 라이브러리 있고에 로드 된 요청 수를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-118">Includes the [ProvideLibrary Method](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-providelibrary-method.md) method, which gets a library provider callback interface that allows common language runtime version-specific debugging libraries to be located and loaded on demand.</span></span>  
+ <span data-ttu-id="582e9-117">[ICLRDebuggingLibraryProvider 인터페이스](iclrdebugginglibraryprovider-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-117">[ICLRDebuggingLibraryProvider Interface](iclrdebugginglibraryprovider-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-118">포함 된 [ProvideLibrary 메서드](iclrdebugginglibraryprovider-providelibrary-method.md) 메서드 라이브러리 공급자 콜백 인터페이스 공용 언어 런타임 버전별 디버깅 라이브러리 있고에 로드 된 요청 수를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-118">Includes the [ProvideLibrary Method](iclrdebugginglibraryprovider-providelibrary-method.md) method, which gets a library provider callback interface that allows common language runtime version-specific debugging libraries to be located and loaded on demand.</span></span>  
   
- [<span data-ttu-id="15bb5-119">ICLRMetadataLocator 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-119">ICLRMetadataLocator Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)  
- <span data-ttu-id="15bb5-120">데이터 액세스 서비스 계층에서 대상 프로세스의 어셈블리 메타데이터를 찾는 데 사용되는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-120">Interface used by the data access services layer to locate metadata of assemblies in a target process.</span></span>  
+ <span data-ttu-id="582e9-119">[ICLRMetadataLocator 인터페이스](iclrmetadatalocator-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-119">[ICLRMetadataLocator Interface](iclrmetadatalocator-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-120">데이터 액세스 서비스 계층에서 대상 프로세스의 어셈블리 메타데이터를 찾는 데 사용되는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-120">Interface used by the data access services layer to locate metadata of assemblies in a target process.</span></span>  
   
- [<span data-ttu-id="15bb5-121">ICorDebug 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-121">ICorDebug Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
- <span data-ttu-id="15bb5-122">개발자가 CLR 환경에서 응용 프로그램을 디버깅하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-122">Provides methods that allow developers to debug applications in the CLR environment.</span></span>  
+ <span data-ttu-id="582e9-121">[ICorDebug 인터페이스](icordebug-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-121">[ICorDebug Interface](icordebug-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-122">개발자가 CLR 환경에서 응용 프로그램을 디버깅하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-122">Provides methods that allow developers to debug applications in the CLR environment.</span></span>  
   
- [<span data-ttu-id="15bb5-123">ICorDebugAppDomain Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-123">ICorDebugAppDomain Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-interface.md)  
- <span data-ttu-id="15bb5-124">응용 프로그램 도메인 디버깅에 사용하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-124">Provides methods for debugging application domains.</span></span>  
+ <span data-ttu-id="582e9-123">[ICorDebugAppDomain Interface1](icordebugappdomain-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-123">[ICorDebugAppDomain Interface1](icordebugappdomain-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-124">응용 프로그램 도메인 디버깅에 사용하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-124">Provides methods for debugging application domains.</span></span>  
   
- [<span data-ttu-id="15bb5-125">ICorDebugAppDomain2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-125">ICorDebugAppDomain2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain2-interface.md)  
- <span data-ttu-id="15bb5-126">배열, 포인터, 함수 포인터 및 ByRef 형식에 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-126">Provides methods to work with arrays, pointers, function pointers, and ByRef types.</span></span> <span data-ttu-id="15bb5-127">이 인터페이스는 `ICorDebugAppDomain` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-127">This interface is an extension of the `ICorDebugAppDomain` interface.</span></span>  
+ <span data-ttu-id="582e9-125">[ICorDebugAppDomain2 Interface1](icordebugappdomain2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-125">[ICorDebugAppDomain2 Interface1](icordebugappdomain2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-126">배열, 포인터, 함수 포인터 및 ByRef 형식에 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-126">Provides methods to work with arrays, pointers, function pointers, and ByRef types.</span></span> <span data-ttu-id="582e9-127">이 인터페이스는 `ICorDebugAppDomain` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-127">This interface is an extension of the `ICorDebugAppDomain` interface.</span></span>  
   
- [<span data-ttu-id="15bb5-128">ICorDebugAppDomain3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-128">ICorDebugAppDomain3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain3-interface.md)  
- <span data-ttu-id="15bb5-129">응용 프로그램 도메인에서 [!INCLUDE[wrt](../../../../includes/wrt-md.md)] 형식으로 작동하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-129">Provides methods to work with the [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types in an application domain.</span></span> <span data-ttu-id="15bb5-130">이 인터페이스는 `ICorDebugAppDomain` 및 `ICorDebugAppDomain2` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-130">This interface is an extension of the `ICorDebugAppDomain` and `ICorDebugAppDomain2` interfaces.</span></span>  
+ <span data-ttu-id="582e9-128">[ICorDebugAppDomain3 인터페이스](icordebugappdomain3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-128">[ICorDebugAppDomain3 Interface](icordebugappdomain3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-129">응용 프로그램 도메인에서 [!INCLUDE[wrt](../../../../includes/wrt-md.md)] 형식으로 작동하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-129">Provides methods to work with the [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types in an application domain.</span></span> <span data-ttu-id="582e9-130">이 인터페이스는 `ICorDebugAppDomain` 및 `ICorDebugAppDomain2` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-130">This interface is an extension of the `ICorDebugAppDomain` and `ICorDebugAppDomain2` interfaces.</span></span>  
   
- [<span data-ttu-id="15bb5-131">ICorDebugAppDomain4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-131">ICorDebugAppDomain4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-interface.md)  
- <span data-ttu-id="15bb5-132">논리적으로 확장 합니다 [ICorDebugAppDomain](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-interface.md) 인터페이스를 COM 호출 가능 래퍼를에서 관리 되는 개체를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-132">Logically extends the [ICorDebugAppDomain](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-interface.md) interface to get a managed object from a COM callable wrapper.</span></span>  
+ <span data-ttu-id="582e9-131">[ICorDebugAppDomain4 인터페이스](icordebugappdomain4-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-131">[ICorDebugAppDomain4 Interface](icordebugappdomain4-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-132">논리적으로 확장 합니다 [ICorDebugAppDomain](icordebugappdomain-interface.md) 인터페이스를 COM 호출 가능 래퍼를에서 관리 되는 개체를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-132">Logically extends the [ICorDebugAppDomain](icordebugappdomain-interface.md) interface to get a managed object from a COM callable wrapper.</span></span>  
   
- [<span data-ttu-id="15bb5-133">ICorDebugAppDomainEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-133">ICorDebugAppDomainEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomainenum-interface.md)  
- <span data-ttu-id="15bb5-134">열거형의 다음 위치에서 시작하여 지정된 수만큼 `ICorDebugAppDomain` 값을 반환하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-134">Provides a method that returns a specified number of `ICorDebugAppDomain` values starting at the next location in the enumeration.</span></span>  
+ <span data-ttu-id="582e9-133">[ICorDebugAppDomainEnum Interface1](icordebugappdomainenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-133">[ICorDebugAppDomainEnum Interface1](icordebugappdomainenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-134">열거형의 다음 위치에서 시작하여 지정된 수만큼 `ICorDebugAppDomain` 값을 반환하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-134">Provides a method that returns a specified number of `ICorDebugAppDomain` values starting at the next location in the enumeration.</span></span>  
   
- [<span data-ttu-id="15bb5-135">ICorDebugArrayValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-135">ICorDebugArrayValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-interface.md)  
- <span data-ttu-id="15bb5-136">1차원 배열이나 다차원 배열을 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-136">A subclass of `ICorDebugHeapValue` that represents a single-dimensional or multi-dimensional array.</span></span>  
+ <span data-ttu-id="582e9-135">[ICorDebugArrayValue Interface1](icordebugarrayvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-135">[ICorDebugArrayValue Interface1](icordebugarrayvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-136">1차원 배열이나 다차원 배열을 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-136">A subclass of `ICorDebugHeapValue` that represents a single-dimensional or multi-dimensional array.</span></span>  
   
- [<span data-ttu-id="15bb5-137">ICorDebugAssembly Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-137">ICorDebugAssembly Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-interface.md)  
- <span data-ttu-id="15bb5-138">어셈블리를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-138">Represents an assembly.</span></span>  
+ <span data-ttu-id="582e9-137">[ICorDebugAssembly Interface1](icordebugassembly-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-137">[ICorDebugAssembly Interface1](icordebugassembly-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-138">어셈블리를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-138">Represents an assembly.</span></span>  
   
- [<span data-ttu-id="15bb5-139">ICorDebugAssembly2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-139">ICorDebugAssembly2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly2-interface.md)  
- <span data-ttu-id="15bb5-140">어셈블리를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-140">Represents an assembly.</span></span> <span data-ttu-id="15bb5-141">이 인터페이스는 `ICorDebugAssembly` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-141">This interface is an extension of the `ICorDebugAssembly` interface.</span></span>  
+ <span data-ttu-id="582e9-139">[ICorDebugAssembly2 Interface1](icordebugassembly2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-139">[ICorDebugAssembly2 Interface1](icordebugassembly2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-140">어셈블리를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-140">Represents an assembly.</span></span> <span data-ttu-id="582e9-141">이 인터페이스는 `ICorDebugAssembly` 인터페이스의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-141">This interface is an extension of the `ICorDebugAssembly` interface.</span></span>  
   
- [<span data-ttu-id="15bb5-142">ICorDebugAssembly3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-142">ICorDebugAssembly3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)  
- <span data-ttu-id="15bb5-143">논리적으로 확장 합니다 [ICorDebugAssembly](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-interface.md) 컨테이너 어셈블리 및 포함 된 어셈블리에 대 한 지원을 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-143">Logically extends the [ICorDebugAssembly](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-interface.md) interface to provide support for container assemblies and their contained assemblies.</span></span> <span data-ttu-id="15bb5-144">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-144">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-142">[ICorDebugAssembly3 인터페이스](icordebugassembly3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-142">[ICorDebugAssembly3 Interface](icordebugassembly3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-143">논리적으로 확장 합니다 [ICorDebugAssembly](icordebugassembly-interface.md) 컨테이너 어셈블리 및 포함 된 어셈블리에 대 한 지원을 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-143">Logically extends the [ICorDebugAssembly](icordebugassembly-interface.md) interface to provide support for container assemblies and their contained assemblies.</span></span> <span data-ttu-id="582e9-144">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-144">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-145">ICorDebugAssemblyEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-145">ICorDebugAssemblyEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugassemblyenum-interface.md)  
- <span data-ttu-id="15bb5-146">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugAssembly` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-146">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugAssembly` arrays.</span></span>  
+ <span data-ttu-id="582e9-145">[ICorDebugAssemblyEnum Interface1](icordebugassemblyenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-145">[ICorDebugAssemblyEnum Interface1](icordebugassemblyenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-146">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugAssembly\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-146">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugAssembly` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-147">ICorDebugBlockingObjectEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-147">ICorDebugBlockingObjectEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-interface.md)  
- <span data-ttu-id="15bb5-148">목록에 대 한 열거자를 제공 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-148">Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures.</span></span>  
+ <span data-ttu-id="582e9-147">[ICorDebugBlockingObjectEnum 인터페이스](icordebugblockingobjectenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-147">[ICorDebugBlockingObjectEnum Interface](icordebugblockingobjectenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-148">목록에 대 한 열거자를 제공 [CorDebugBlockingObject](cordebugblockingobject-structure.md) 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-148">Provides an enumerator for a list of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures.</span></span>  
   
- [<span data-ttu-id="15bb5-149">ICorDebugBoxValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-149">ICorDebugBoxValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugboxvalue-interface.md)  
- <span data-ttu-id="15bb5-150">boxed 값 클래스 개체를 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-150">A subclass of `ICorDebugHeapValue` that represents a boxed value class object.</span></span>  
+ <span data-ttu-id="582e9-149">[ICorDebugBoxValue Interface1](icordebugboxvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-149">[ICorDebugBoxValue Interface1](icordebugboxvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-150">boxed 값 클래스 개체를 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-150">A subclass of `ICorDebugHeapValue` that represents a boxed value class object.</span></span>  
   
- [<span data-ttu-id="15bb5-151">ICorDebugBreakpoint Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-151">ICorDebugBreakpoint Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugbreakpoint-interface.md)  
- <span data-ttu-id="15bb5-152">함수의 중단점 또는 값에 대한 조사식 위치를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-152">Represents a breakpoint in a function or a watch point on a value.</span></span>  
+ <span data-ttu-id="582e9-151">[ICorDebugBreakpoint Interface1](icordebugbreakpoint-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-151">[ICorDebugBreakpoint Interface1](icordebugbreakpoint-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-152">함수의 중단점 또는 값에 대한 조사식 위치를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-152">Represents a breakpoint in a function or a watch point on a value.</span></span>  
   
- [<span data-ttu-id="15bb5-153">ICorDebugBreakpointEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-153">ICorDebugBreakpointEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugbreakpointenum-interface.md)  
- <span data-ttu-id="15bb5-154">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugBreakpoint` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-154">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugBreakpoint` arrays.</span></span>  
+ <span data-ttu-id="582e9-153">[ICorDebugBreakpointEnum Interface1](icordebugbreakpointenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-153">[ICorDebugBreakpointEnum Interface1](icordebugbreakpointenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-154">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugBreakpoint\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-154">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugBreakpoint` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-155">ICorDebugChain Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-155">ICorDebugChain Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-interface.md)  
- <span data-ttu-id="15bb5-156">실제 또는 논리 호출 스택의 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-156">Represents a segment of a physical or logical call stack.</span></span>  
+ <span data-ttu-id="582e9-155">[ICorDebugChain Interface1](icordebugchain-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-155">[ICorDebugChain Interface1](icordebugchain-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-156">실제 또는 논리 호출 스택의 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-156">Represents a segment of a physical or logical call stack.</span></span>  
   
- [<span data-ttu-id="15bb5-157">ICorDebugChainEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-157">ICorDebugChainEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugchainenum-interface.md)  
- <span data-ttu-id="15bb5-158">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugChain` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-158">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugChain` arrays.</span></span>  
+ <span data-ttu-id="582e9-157">[ICorDebugChainEnum Interface1](icordebugchainenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-157">[ICorDebugChainEnum Interface1](icordebugchainenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-158">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugChain\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-158">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugChain` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-159">ICorDebugClass Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-159">ICorDebugClass Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md)  
- <span data-ttu-id="15bb5-160">기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-160">Represents a type, which can be either basic or complex (that is, user-defined).</span></span> <span data-ttu-id="15bb5-161">형식이 제네릭이면 `ICorDebugClass`는 인스턴스화되지 않은 제네릭 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-161">If the type is generic, `ICorDebugClass` represents the uninstantiated generic type.</span></span>  
+ <span data-ttu-id="582e9-159">[ICorDebugClass Interface1](icordebugclass-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-159">[ICorDebugClass Interface1](icordebugclass-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-160">기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-160">Represents a type, which can be either basic or complex (that is, user-defined).</span></span> <span data-ttu-id="582e9-161">형식이 제네릭이면 `ICorDebugClass`는 인스턴스화되지 않은 제네릭 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-161">If the type is generic, `ICorDebugClass` represents the uninstantiated generic type.</span></span>  
   
- [<span data-ttu-id="15bb5-162">ICorDebugClass2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-162">ICorDebugClass2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugclass2-interface.md)  
- <span data-ttu-id="15bb5-163">제네릭 클래스나 <xref:System.Type> 형식의 메서드 매개 변수를 사용하는 클래스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-163">Represents a generic class or a class with a method parameter of type <xref:System.Type>.</span></span> <span data-ttu-id="15bb5-164">이 인터페이스는 `ICorDebugClass`를 확장한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-164">This interface extends `ICorDebugClass`.</span></span>  
+ <span data-ttu-id="582e9-162">[ICorDebugClass2 Interface1](icordebugclass2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-162">[ICorDebugClass2 Interface1](icordebugclass2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-163">제네릭 클래스나 <xref:System.Type> 형식의 메서드 매개 변수를 사용하는 클래스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-163">Represents a generic class or a class with a method parameter of type <xref:System.Type>.</span></span> <span data-ttu-id="582e9-164">이 인터페이스는 `ICorDebugClass`를 확장한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-164">This interface extends `ICorDebugClass`.</span></span>  
   
- [<span data-ttu-id="15bb5-165">ICorDebugCode Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-165">ICorDebugCode Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)  
- <span data-ttu-id="15bb5-166">MSIL(Microsoft Intermediate Language) 코드나 네이티브 코드의 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-166">Represents a segment of either Microsoft intermediate language (MSIL) code or native code.</span></span>  
+ <span data-ttu-id="582e9-165">[ICorDebugCode Interface1](icordebugcode-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-165">[ICorDebugCode Interface1](icordebugcode-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-166">MSIL(Microsoft Intermediate Language) 코드나 네이티브 코드의 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-166">Represents a segment of either Microsoft intermediate language (MSIL) code or native code.</span></span>  
   
- [<span data-ttu-id="15bb5-167">ICorDebugCode2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-167">ICorDebugCode2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-interface.md)  
- <span data-ttu-id="15bb5-168">`ICorDebugCode`의 기능을 확장하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-168">Provides methods that extend the capabilities of `ICorDebugCode`.</span></span>  
+ <span data-ttu-id="582e9-167">[ICorDebugCode2 Interface1](icordebugcode2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-167">[ICorDebugCode2 Interface1](icordebugcode2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-168">
+  `ICorDebugCode\`의 기능을 확장하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-168">Provides methods that extend the capabilities of `ICorDebugCode`.</span></span>  
   
- [<span data-ttu-id="15bb5-169">ICorDebugCode3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-169">ICorDebugCode3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
- <span data-ttu-id="15bb5-170">확장 하는 메서드를 제공 [ICorDebugCode](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md) 하 고 [ICorDebugCode2](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-interface.md) 관리 되는 반환 값에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-170">Provides a method that extends [ICorDebugCode](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md) and [ICorDebugCode2](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-interface.md) to provide information about a managed return value.</span></span>  
+ <span data-ttu-id="582e9-169">[ICorDebugCode3 인터페이스](icordebugcode3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-169">[ICorDebugCode3 Interface](icordebugcode3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-170">확장 하는 메서드를 제공 [ICorDebugCode](icordebugcode-interface1.md) 하 고 [ICorDebugCode2](icordebugcode2-interface.md) 관리 되는 반환 값에 대 한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-170">Provides a method that extends [ICorDebugCode](icordebugcode-interface1.md) and [ICorDebugCode2](icordebugcode2-interface.md) to provide information about a managed return value.</span></span>  
   
- [<span data-ttu-id="15bb5-171">ICorDebugCode4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-171">ICorDebugCode4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)  
- <span data-ttu-id="15bb5-172">지역 변수 및 함수에 인수를 열거 하는 디버거를 사용 하도록 설정 하는 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-172">Provides a method that enables a debugger to enumerate the local variables and arguments in a function.</span></span>  
+ <span data-ttu-id="582e9-171">[ICorDebugCode4 인터페이스](icordebugcode4-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-171">[ICorDebugCode4 Interface](icordebugcode4-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-172">지역 변수 및 함수에 인수를 열거 하는 디버거를 사용 하도록 설정 하는 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-172">Provides a method that enables a debugger to enumerate the local variables and arguments in a function.</span></span>  
   
- [<span data-ttu-id="15bb5-173">ICorDebugCodeEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-173">ICorDebugCodeEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcodeenum-interface.md)  
- <span data-ttu-id="15bb5-174">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugCode` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-174">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugCode` arrays.</span></span>  
+ <span data-ttu-id="582e9-173">[ICorDebugCodeEnum Interface1](icordebugcodeenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-173">[ICorDebugCodeEnum Interface1](icordebugcodeenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-174">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugCode\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-174">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugCode` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-175">ICorDebugComObjectValue 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-175">ICorDebugComObjectValue Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcomobjectvalue-interface.md)  
- <span data-ttu-id="15bb5-176">캐시된 인터페이스 개체를 검색하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-176">Provides methods to retrieve cached interface objects.</span></span>  
+ <span data-ttu-id="582e9-175">[ICorDebugComObjectValue 인터페이스](icordebugcomobjectvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-175">[ICorDebugComObjectValue Interface](icordebugcomobjectvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-176">캐시된 인터페이스 개체를 검색하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-176">Provides methods to retrieve cached interface objects.</span></span>  
   
- [<span data-ttu-id="15bb5-177">ICorDebugContext Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-177">ICorDebugContext Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcontext-interface.md)  
- <span data-ttu-id="15bb5-178">컨텍스트 개체를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-178">Represents a context object.</span></span> <span data-ttu-id="15bb5-179">이 인터페이스는 아직 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-179">This interface has not been implemented yet.</span></span>  
+ <span data-ttu-id="582e9-177">[ICorDebugContext Interface1](icordebugcontext-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-177">[ICorDebugContext Interface1](icordebugcontext-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-178">컨텍스트 개체를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-178">Represents a context object.</span></span> <span data-ttu-id="582e9-179">이 인터페이스는 아직 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-179">This interface has not been implemented yet.</span></span>  
   
- [<span data-ttu-id="15bb5-180">ICorDebugController Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-180">ICorDebugController Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-interface.md)  
- <span data-ttu-id="15bb5-181"><xref:System.Diagnostics.Process>나 <xref:System.AppDomain> 같이 코드 실행 컨텍스트를 제어할 수 있는 범위를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-181">Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:System.AppDomain>, in which code execution context can be controlled.</span></span>  
+ <span data-ttu-id="582e9-180">[ICorDebugController Interface1](icordebugcontroller-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-180">[ICorDebugController Interface1](icordebugcontroller-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-181">
+  <xref:System.Diagnostics.Process>나 <xref:System.AppDomain> 같이 코드 실행 컨텍스트를 제어할 수 있는 범위를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-181">Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:System.AppDomain>, in which code execution context can be controlled.</span></span>  
   
- [<span data-ttu-id="15bb5-182">ICorDebugDataTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-182">ICorDebugDataTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)  
- <span data-ttu-id="15bb5-183">특정 대상 프로세스에 대한 액세스를 제공하는 콜백 인터페이스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-183">Provides a callback interface that provides access to a particular target process.</span></span>  
+ <span data-ttu-id="582e9-182">[ICorDebugDataTarget 인터페이스](icordebugdatatarget-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-182">[ICorDebugDataTarget Interface](icordebugdatatarget-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-183">특정 대상 프로세스에 대한 액세스를 제공하는 콜백 인터페이스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-183">Provides a callback interface that provides access to a particular target process.</span></span>  
   
- [<span data-ttu-id="15bb5-184">ICorDebugDataTarget2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-184">ICorDebugDataTarget2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)  
- <span data-ttu-id="15bb5-185">논리적으로 확장 합니다 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-185">Logically extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface.</span></span> <span data-ttu-id="15bb5-186">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-186">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-184">[ICorDebugDataTarget2 인터페이스](icordebugdatatarget2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-184">[ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-185">논리적으로 확장 합니다 [ICorDebugDataTarget](icordebugdatatarget-interface.md) 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-185">Logically extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface.</span></span> <span data-ttu-id="582e9-186">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-186">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-187">ICorDebugDataTarget3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-187">ICorDebugDataTarget3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)  
- <span data-ttu-id="15bb5-188">논리적으로 확장 합니다 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 로드 된 모듈에 대 한 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-188">Logically extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface to provide information about loaded modules.</span></span> <span data-ttu-id="15bb5-189">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-189">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-187">[ICorDebugDataTarget3 인터페이스](icordebugdatatarget3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-187">[ICorDebugDataTarget3 Interface](icordebugdatatarget3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-188">논리적으로 확장 합니다 [ICorDebugDataTarget](icordebugdatatarget-interface.md) 로드 된 모듈에 대 한 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-188">Logically extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface to provide information about loaded modules.</span></span> <span data-ttu-id="582e9-189">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-189">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-190">ICorDebugDebugEvent 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-190">ICorDebugDebugEvent Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)  
- <span data-ttu-id="15bb5-191">모든 `ICorDebug` 디버그 이벤트가 파생되는 기본 인터페이스를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-191">Defines the base interface from which all `ICorDebug` debug events derive.</span></span> <span data-ttu-id="15bb5-192">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-192">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-190">[ICorDebugDebugEvent 인터페이스](icordebugdebugevent-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-190">[ICorDebugDebugEvent Interface](icordebugdebugevent-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-191">모든 `ICorDebug` 디버그 이벤트가 파생되는 기본 인터페이스를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-191">Defines the base interface from which all `ICorDebug` debug events derive.</span></span> <span data-ttu-id="582e9-192">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-192">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-193">ICorDebugEditAndContinueErrorInfo 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-193">ICorDebugEditAndContinueErrorInfo Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugeditandcontinueerrorinfo-interface.md)  
- <span data-ttu-id="15bb5-194">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-194">Obsolete.</span></span> <span data-ttu-id="15bb5-195">이 인터페이스를 사용하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="15bb5-195">Do not use this interface.</span></span>  
+ <span data-ttu-id="582e9-193">[ICorDebugEditAndContinueErrorInfo 인터페이스](icordebugeditandcontinueerrorinfo-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-193">[ICorDebugEditAndContinueErrorInfo Interface](icordebugeditandcontinueerrorinfo-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-194">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-194">Obsolete.</span></span> <span data-ttu-id="582e9-195">이 인터페이스를 사용하지 마십시오.</span><span class="sxs-lookup"><span data-stu-id="582e9-195">Do not use this interface.</span></span>  
   
- [<span data-ttu-id="15bb5-196">ICorDebugEditAndContinueSnapshot Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-196">ICorDebugEditAndContinueSnapshot Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugeditandcontinuesnapshot-interface.md)  
- <span data-ttu-id="15bb5-197">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-197">Obsolete.</span></span> <span data-ttu-id="15bb5-198">이 인터페이스를 사용하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="15bb5-198">Do not use this interface.</span></span>  
+ <span data-ttu-id="582e9-196">[ICorDebugEditAndContinueSnapshot Interface1](icordebugeditandcontinuesnapshot-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-196">[ICorDebugEditAndContinueSnapshot Interface1](icordebugeditandcontinuesnapshot-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-197">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-197">Obsolete.</span></span> <span data-ttu-id="582e9-198">이 인터페이스를 사용하지 마십시오.</span><span class="sxs-lookup"><span data-stu-id="582e9-198">Do not use this interface.</span></span>  
   
- [<span data-ttu-id="15bb5-199">ICorDebugEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-199">ICorDebugEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)  
- <span data-ttu-id="15bb5-200">열거자를 디버깅할 수 있는 추상 기본 인터페이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-200">Serves as the abstract base interface for debugging enumerators.</span></span>  
+ <span data-ttu-id="582e9-199">[ICorDebugEnum Interface1](icordebugenum-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-199">[ICorDebugEnum Interface1](icordebugenum-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-200">열거자를 디버깅할 수 있는 추상 기본 인터페이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-200">Serves as the abstract base interface for debugging enumerators.</span></span>  
   
- [<span data-ttu-id="15bb5-201">ICorDebugErrorInfoEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-201">ICorDebugErrorInfoEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugerrorinfoenum-interface.md)  
- <span data-ttu-id="15bb5-202">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-202">Obsolete.</span></span> <span data-ttu-id="15bb5-203">이 인터페이스를 사용하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="15bb5-203">Do not use this interface.</span></span>  
+ <span data-ttu-id="582e9-201">[ICorDebugErrorInfoEnum Interface1](icordebugerrorinfoenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-201">[ICorDebugErrorInfoEnum Interface1](icordebugerrorinfoenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-202">사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-202">Obsolete.</span></span> <span data-ttu-id="582e9-203">이 인터페이스를 사용하지 마십시오.</span><span class="sxs-lookup"><span data-stu-id="582e9-203">Do not use this interface.</span></span>  
   
- [<span data-ttu-id="15bb5-204">ICorDebugEval Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-204">ICorDebugEval Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugeval-interface.md)  
- <span data-ttu-id="15bb5-205">디버깅 중인 코드의 컨텍스트 내에서 디버거가 코드를 실행할 수 있도록 하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-205">Provides methods to enable the debugger to execute code within the context of the code being debugged.</span></span>  
+ <span data-ttu-id="582e9-204">[ICorDebugEval Interface1](icordebugeval-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-204">[ICorDebugEval Interface1](icordebugeval-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-205">디버깅 중인 코드의 컨텍스트 내에서 디버거가 코드를 실행할 수 있도록 하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-205">Provides methods to enable the debugger to execute code within the context of the code being debugged.</span></span>  
   
- [<span data-ttu-id="15bb5-206">ICorDebugEval2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-206">ICorDebugEval2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-interface.md)  
- <span data-ttu-id="15bb5-207">제네릭 형식을 지원하도록 `ICorDebugEval`을 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-207">Extends `ICorDebugEval` to provide support for generic types.</span></span>  
+ <span data-ttu-id="582e9-206">[ICorDebugEval2 Interface1](icordebugeval2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-206">[ICorDebugEval2 Interface1](icordebugeval2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-207">제네릭 형식을 지원하도록 `ICorDebugEval`을 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-207">Extends `ICorDebugEval` to provide support for generic types.</span></span>  
   
- [<span data-ttu-id="15bb5-208">ICorDebugExceptionDebugEvent 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-208">ICorDebugExceptionDebugEvent Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)  
- <span data-ttu-id="15bb5-209">확장 된 [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) 예외 이벤트를 지 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-209">Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support exception events.</span></span> <span data-ttu-id="15bb5-210">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-210">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-208">[ICorDebugExceptionDebugEvent 인터페이스](icordebugexceptiondebugevent-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-208">[ICorDebugExceptionDebugEvent Interface](icordebugexceptiondebugevent-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-209">확장 된 [ICorDebugDebugEvent](icordebugdebugevent-interface.md) 예외 이벤트를 지 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-209">Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to support exception events.</span></span> <span data-ttu-id="582e9-210">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-210">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-211">ICorDebugExceptionObjectCallStackEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-211">ICorDebugExceptionObjectCallStackEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)  
- <span data-ttu-id="15bb5-212">예외 개체에 포함된 호출 스택 정보에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-212">Provides an enumerator for call stack information that is embedded in an exception object.</span></span>  
+ <span data-ttu-id="582e9-211">[ICorDebugExceptionObjectCallStackEnum 인터페이스](icordebugexceptionobjectcallstackenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-211">[ICorDebugExceptionObjectCallStackEnum Interface](icordebugexceptionobjectcallstackenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-212">예외 개체에 포함된 호출 스택 정보에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-212">Provides an enumerator for call stack information that is embedded in an exception object.</span></span>  
   
- [<span data-ttu-id="15bb5-213">ICorDebugExceptionObjectValue 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-213">ICorDebugExceptionObjectValue Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)  
- <span data-ttu-id="15bb5-214">확장 된 [ICorDebugObjectValue](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-interface.md) 관리 되는 예외 개체에서 스택 추적 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-214">Extends the [ICorDebugObjectValue](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-interface.md) interface to provide stack trace information from a managed exception object.</span></span>  
+ <span data-ttu-id="582e9-213">[ICorDebugExceptionObjectValue 인터페이스](icordebugexceptionobjectvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-213">[ICorDebugExceptionObjectValue Interface](icordebugexceptionobjectvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-214">확장 된 [ICorDebugObjectValue](icordebugobjectvalue-interface.md) 관리 되는 예외 개체에서 스택 추적 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-214">Extends the [ICorDebugObjectValue](icordebugobjectvalue-interface.md) interface to provide stack trace information from a managed exception object.</span></span>  
   
- [<span data-ttu-id="15bb5-215">ICorDebugFrame Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-215">ICorDebugFrame Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md)  
- <span data-ttu-id="15bb5-216">현재 스택의 프레임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-216">Represents a frame on the current stack.</span></span>  
+ <span data-ttu-id="582e9-215">[ICorDebugFrame Interface1](icordebugframe-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-215">[ICorDebugFrame Interface1](icordebugframe-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-216">현재 스택의 프레임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-216">Represents a frame on the current stack.</span></span>  
   
- [<span data-ttu-id="15bb5-217">ICorDebugFrameEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-217">ICorDebugFrameEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugframeenum-interface.md)  
- <span data-ttu-id="15bb5-218">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugFrame` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-218">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugFrame` arrays.</span></span>  
+ <span data-ttu-id="582e9-217">[ICorDebugFrameEnum Interface1](icordebugframeenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-217">[ICorDebugFrameEnum Interface1](icordebugframeenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-218">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugFrame\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-218">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugFrame` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-219">ICorDebugFunction Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-219">ICorDebugFunction Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction-interface1.md)  
- <span data-ttu-id="15bb5-220">관리되는 함수 또는 메서드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-220">Represents a managed function or method.</span></span>  
+ <span data-ttu-id="582e9-219">[ICorDebugFunction Interface1](icordebugfunction-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-219">[ICorDebugFunction Interface1](icordebugfunction-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-220">관리되는 함수 또는 메서드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-220">Represents a managed function or method.</span></span>  
   
- [<span data-ttu-id="15bb5-221">ICorDebugFunction2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-221">ICorDebugFunction2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction2-interface.md)  
- <span data-ttu-id="15bb5-222">`ICorDebugFunction`의 기능을 논리적으로 확장하여 "내 코드만" 단계별 실행 디버깅을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-222">Logically extends `ICorDebugFunction` to provide support for Just My Code step-through debugging.</span></span>  
+ <span data-ttu-id="582e9-221">[ICorDebugFunction2 Interface1](icordebugfunction2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-221">[ICorDebugFunction2 Interface1](icordebugfunction2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-222">
+  `ICorDebugFunction\`의 기능을 논리적으로 확장하여 "내 코드만" 단계별 실행 디버깅을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-222">Logically extends `ICorDebugFunction` to provide support for Just My Code step-through debugging.</span></span>  
   
- [<span data-ttu-id="15bb5-223">ICorDebugFunction3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-223">ICorDebugFunction3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)  
- <span data-ttu-id="15bb5-224">논리적으로 확장 합니다 [ICorDebugFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction-interface1.md) ReJIT 요청의 코드에 대 한 액세스를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-224">Logically extends the [ICorDebugFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction-interface1.md) interface to provide access to code from a ReJIT request.</span></span>  
+ <span data-ttu-id="582e9-223">[ICorDebugFunction3 인터페이스](icordebugfunction3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-223">[ICorDebugFunction3 Interface](icordebugfunction3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-224">논리적으로 확장 합니다 [ICorDebugFunction](icordebugfunction-interface1.md) ReJIT 요청의 코드에 대 한 액세스를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-224">Logically extends the [ICorDebugFunction](icordebugfunction-interface1.md) interface to provide access to code from a ReJIT request.</span></span>  
   
- [<span data-ttu-id="15bb5-225">ICorDebugFunctionBreakpoint Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-225">ICorDebugFunctionBreakpoint Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugfunctionbreakpoint-interface.md)  
- <span data-ttu-id="15bb5-226">함수에서 중단점을 지원하기 위해 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-226">Extends `ICorDebugBreakpoint` to support breakpoints within functions.</span></span>  
+ <span data-ttu-id="582e9-225">[ICorDebugFunctionBreakpoint Interface1](icordebugfunctionbreakpoint-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-225">[ICorDebugFunctionBreakpoint Interface1](icordebugfunctionbreakpoint-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-226">함수에서 중단점을 지원하기 위해 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-226">Extends `ICorDebugBreakpoint` to support breakpoints within functions.</span></span>  
   
- [<span data-ttu-id="15bb5-227">ICorDebugGCReferenceEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-227">ICorDebugGCReferenceEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
- <span data-ttu-id="15bb5-228">가비지 수집되는 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-228">Provides an enumerator for objects that will be garbage-collected.</span></span>  
+ <span data-ttu-id="582e9-227">[ICorDebugGCReferenceEnum 인터페이스](icordebuggcreferenceenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-227">[ICorDebugGCReferenceEnum Interface](icordebuggcreferenceenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-228">가비지 수집되는 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-228">Provides an enumerator for objects that will be garbage-collected.</span></span>  
   
- [<span data-ttu-id="15bb5-229">ICorDebugGenericValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-229">ICorDebugGenericValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-interface.md)  
- <span data-ttu-id="15bb5-230">모든 값에 적용되는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-230">A subclass of `ICorDebugValue` that applies to all values.</span></span> <span data-ttu-id="15bb5-231">이 인터페이스에서는 값의 Get 및 Set 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-231">This interface provides Get and Set methods for the value.</span></span>  
+ <span data-ttu-id="582e9-229">[ICorDebugGenericValue Interface1](icordebuggenericvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-229">[ICorDebugGenericValue Interface1](icordebuggenericvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-230">모든 값에 적용되는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-230">A subclass of `ICorDebugValue` that applies to all values.</span></span> <span data-ttu-id="582e9-231">이 인터페이스에서는 값의 Get 및 Set 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-231">This interface provides Get and Set methods for the value.</span></span>  
   
- [<span data-ttu-id="15bb5-232">ICorDebugGuidToTypeEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-232">ICorDebugGuidToTypeEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
- <span data-ttu-id="15bb5-233">GUID를 매핑하는 개체와 그에 해당하는 `ICorDebugType` 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-233">Provides an enumerator for an object that maps GUIDs and their corresponding `ICorDebugType` objects.</span></span>  
+ <span data-ttu-id="582e9-232">[ICorDebugGuidToTypeEnum 인터페이스](icordebugguidtotypeenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-232">[ICorDebugGuidToTypeEnum Interface](icordebugguidtotypeenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-233">GUID를 매핑하는 개체와 그에 해당하는 `ICorDebugType` 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-233">Provides an enumerator for an object that maps GUIDs and their corresponding `ICorDebugType` objects.</span></span>  
   
- [<span data-ttu-id="15bb5-234">ICorDebugHandleValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-234">ICorDebugHandleValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-interface.md)  
- <span data-ttu-id="15bb5-235">디버거에서 가비지 컬렉션을 위해 핸들을 만든 대상 참조 값을 나타내는 `ICorDebugReferenceValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-235">A subclass of `ICorDebugReferenceValue` that represents a reference value to which the debugger has created a handle for garbage collection.</span></span>  
+ <span data-ttu-id="582e9-234">[ICorDebugHandleValue Interface1](icordebughandlevalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-234">[ICorDebugHandleValue Interface1](icordebughandlevalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-235">디버거에서 가비지 수집을 위해 핸들을 만든 대상 참조 값을 나타내는 `ICorDebugReferenceValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-235">A subclass of `ICorDebugReferenceValue` that represents a reference value to which the debugger has created a handle for garbage collection.</span></span>  
   
- [<span data-ttu-id="15bb5-236">ICorDebugHeapEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-236">ICorDebugHeapEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
- <span data-ttu-id="15bb5-237">관리되는 힙의 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-237">Provides an enumerator for objects on the managed heap.</span></span>  
+ <span data-ttu-id="582e9-236">[ICorDebugHeapEnum 인터페이스](icordebugheapenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-236">[ICorDebugHeapEnum Interface](icordebugheapenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-237">관리되는 힙의 개체에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-237">Provides an enumerator for objects on the managed heap.</span></span>  
   
- [<span data-ttu-id="15bb5-238">ICorDebugHeapSegmentEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-238">ICorDebugHeapSegmentEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
- <span data-ttu-id="15bb5-239">관리되는 힙 메모리 영역에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-239">Provides an enumerator for the memory regions of the managed heap.</span></span>  
+ <span data-ttu-id="582e9-238">[ICorDebugHeapSegmentEnum 인터페이스](icordebugheapsegmentenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-238">[ICorDebugHeapSegmentEnum Interface](icordebugheapsegmentenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-239">관리되는 힙 메모리 영역에 대한 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-239">Provides an enumerator for the memory regions of the managed heap.</span></span>  
   
- [<span data-ttu-id="15bb5-240">ICorDebugHeapValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-240">ICorDebugHeapValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue-interface.md)  
- <span data-ttu-id="15bb5-241">CLR 가비지 수집기에서 수집한 개체를 나타내는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-241">A subclass of `ICorDebugValue` that represents an object that has been collected by the CLR garbage collector.</span></span>  
+ <span data-ttu-id="582e9-240">[ICorDebugHeapValue Interface1](icordebugheapvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-240">[ICorDebugHeapValue Interface1](icordebugheapvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-241">CLR 가비지 수집기에서 수집한 개체를 나타내는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-241">A subclass of `ICorDebugValue` that represents an object that has been collected by the CLR garbage collector.</span></span>  
   
- [<span data-ttu-id="15bb5-242">ICorDebugHeapValue2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-242">ICorDebugHeapValue2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue2-interface1.md)  
- <span data-ttu-id="15bb5-243">런타임 핸들에 대한 지원을 제공하는 `ICorDebugHeapValue`의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-243">An extension of `ICorDebugHeapValue` that provides support for runtime handles.</span></span>  
+ <span data-ttu-id="582e9-242">[ICorDebugHeapValue2 Interface1](icordebugheapvalue2-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-242">[ICorDebugHeapValue2 Interface1](icordebugheapvalue2-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-243">런타임 핸들에 대한 지원을 제공하는 `ICorDebugHeapValue`의 확장입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-243">An extension of `ICorDebugHeapValue` that provides support for runtime handles.</span></span>  
   
- [<span data-ttu-id="15bb5-244">ICorDebugHeapValue3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-244">ICorDebugHeapValue3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-interface.md)  
- <span data-ttu-id="15bb5-245">개체의 모니터 잠금 속성을 노출합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-245">Exposes the monitor lock properties of objects.</span></span>  
+ <span data-ttu-id="582e9-244">[ICorDebugHeapValue3 인터페이스](icordebugheapvalue3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-244">[ICorDebugHeapValue3 Interface](icordebugheapvalue3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-245">개체의 모니터 잠금 속성을 노출합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-245">Exposes the monitor lock properties of objects.</span></span>  
   
- [<span data-ttu-id="15bb5-246">ICorDebugILCode 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-246">ICorDebugILCode Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md)  
- <span data-ttu-id="15bb5-247">IL(중간 언어) 코드 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-247">Represents a segment of intermediate language (IL) code.</span></span>  
+ <span data-ttu-id="582e9-246">[ICorDebugILCode 인터페이스](icordebugilcode-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-246">[ICorDebugILCode Interface](icordebugilcode-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-247">IL(중간 언어) 코드 세그먼트를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-247">Represents a segment of intermediate language (IL) code.</span></span>  
   
- [<span data-ttu-id="15bb5-248">ICorDebugILCode2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-248">ICorDebugILCode2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)  
- <span data-ttu-id="15bb5-249">논리적으로 확장 합니다 [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) 인터페이스 함수의 로컬 변수 서명에 대 한 토큰을 반환 하 고 프로파일러의 계측 된 IL (중간 언어)을 매핑하는 방법을 제공 하기 위해 원래 메서드 IL 오프셋 오프셋 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-249">Logically extends the [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.</span></span>  
+ <span data-ttu-id="582e9-248">[ICorDebugILCode2 인터페이스](icordebugilcode2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-248">[ICorDebugILCode2 Interface](icordebugilcode2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-249">논리적으로 확장 합니다 [ICorDebugILCode](icordebugilcode-interface.md) 인터페이스 함수의 로컬 변수 서명에 대 한 토큰을 반환 하 고 프로파일러의 계측 된 IL (중간 언어)을 매핑하는 방법을 제공 하기 위해 원래 메서드 IL 오프셋 오프셋 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-249">Logically extends the [ICorDebugILCode](icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.</span></span>  
   
- [<span data-ttu-id="15bb5-250">ICorDebugILFrame Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-250">ICorDebugILFrame Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-interface.md)  
- <span data-ttu-id="15bb5-251">MSIL 코드의 스택 프레임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-251">Represents a stack frame of MSIL code.</span></span>  
+ <span data-ttu-id="582e9-250">[ICorDebugILFrame Interface1](icordebugilframe-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-250">[ICorDebugILFrame Interface1](icordebugilframe-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-251">MSIL 코드의 스택 프레임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-251">Represents a stack frame of MSIL code.</span></span>  
   
- [<span data-ttu-id="15bb5-252">ICorDebugILFrame2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-252">ICorDebugILFrame2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe2-interface.md)  
- <span data-ttu-id="15bb5-253">`ICorDebugILFrame`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-253">A logical extension of `ICorDebugILFrame`.</span></span>  
+ <span data-ttu-id="582e9-252">[ICorDebugILFrame2 Interface1](icordebugilframe2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-252">[ICorDebugILFrame2 Interface1](icordebugilframe2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-253">
+  `ICorDebugILFrame\`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-253">A logical extension of `ICorDebugILFrame`.</span></span>  
   
- [<span data-ttu-id="15bb5-254">ICorDebugILFrame3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-254">ICorDebugILFrame3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)  
- <span data-ttu-id="15bb5-255">함수의 반환 값을 캡슐화하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-255">Provides a method that encapsulates the return value of a function.</span></span>  
+ <span data-ttu-id="582e9-254">[ICorDebugILFrame3 인터페이스](icordebugilframe3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-254">[ICorDebugILFrame3 Interface](icordebugilframe3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-255">함수의 반환 값을 캡슐화하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-255">Provides a method that encapsulates the return value of a function.</span></span>  
   
- [<span data-ttu-id="15bb5-256">ICorDebugILFrame4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-256">ICorDebugILFrame4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
- <span data-ttu-id="15bb5-257">IL(중간 언어) 코드의 스택 프레임에서 로컬 변수 및 코드에 액세스하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-257">Provides methods that allow you to access the local variables and code in a stack frame of intermediate language (IL) code.</span></span> <span data-ttu-id="15bb5-258">디버거가 프로파일러 ReJIT 계측에 추가된 변수와 코드에 액세스할 수 있는지는 매개 변수를 통해 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-258">A parameter specifies whether the debugger has access to variables and code added in profiler ReJIT instrumentation.</span></span>  
+ <span data-ttu-id="582e9-256">[ICorDebugILFrame4 인터페이스](icordebugilframe4-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-256">[ICorDebugILFrame4 Interface](icordebugilframe4-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-257">IL(중간 언어) 코드의 스택 프레임에서 로컬 변수 및 코드에 액세스하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-257">Provides methods that allow you to access the local variables and code in a stack frame of intermediate language (IL) code.</span></span> <span data-ttu-id="582e9-258">디버거가 프로파일러 ReJIT 계측에 추가된 변수와 코드에 액세스할 수 있는지는 매개 변수를 통해 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-258">A parameter specifies whether the debugger has access to variables and code added in profiler ReJIT instrumentation.</span></span>  
   
- [<span data-ttu-id="15bb5-259">ICorDebugInstanceFieldSymbol 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-259">ICorDebugInstanceFieldSymbol Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-interface.md)  
- <span data-ttu-id="15bb5-260">인스턴스 필드에 대한 디버그 기호 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-260">Represents the debug symbol information for an instance field.</span></span> <span data-ttu-id="15bb5-261">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-261">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-259">[ICorDebugInstanceFieldSymbol 인터페이스](icordebuginstancefieldsymbol-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-259">[ICorDebugInstanceFieldSymbol Interface](icordebuginstancefieldsymbol-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-260">인스턴스 필드에 대한 디버그 기호 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-260">Represents the debug symbol information for an instance field.</span></span> <span data-ttu-id="582e9-261">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-261">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-262">ICorDebugInternalFrame Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-262">ICorDebugInternalFrame Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe-interface.md)  
- <span data-ttu-id="15bb5-263">디버거의 프레임 형식을 식별합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-263">Identifies frame types for the debugger.</span></span>  
+ <span data-ttu-id="582e9-262">[ICorDebugInternalFrame Interface1](icordebuginternalframe-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-262">[ICorDebugInternalFrame Interface1](icordebuginternalframe-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-263">디버거의 프레임 형식을 식별합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-263">Identifies frame types for the debugger.</span></span>  
   
- [<span data-ttu-id="15bb5-264">ICorDebugInternalFrame2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-264">ICorDebugInternalFrame2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)  
- <span data-ttu-id="15bb5-265">스택 주소에 상대적인 위치를 포함 하 여 내부 프레임에 대 한 정보를 제공 [ICorDebugFrame](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-265">Provides information about internal frames, including stack address and position in relation to [ICorDebugFrame](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md) objects.</span></span>  
+ <span data-ttu-id="582e9-264">[ICorDebugInternalFrame2 인터페이스](icordebuginternalframe2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-264">[ICorDebugInternalFrame2 Interface](icordebuginternalframe2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-265">스택 주소에 상대적인 위치를 포함 하 여 내부 프레임에 대 한 정보를 제공 [ICorDebugFrame](icordebugframe-interface.md) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-265">Provides information about internal frames, including stack address and position in relation to [ICorDebugFrame](icordebugframe-interface.md) objects.</span></span>  
   
- [<span data-ttu-id="15bb5-266">ICorDebugLoadedModule 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-266">ICorDebugLoadedModule Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)  
- <span data-ttu-id="15bb5-267">로드된 모듈에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-267">Provides information about a loaded module.</span></span> <span data-ttu-id="15bb5-268">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-268">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-266">[ICorDebugLoadedModule 인터페이스](icordebugloadedmodule-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-266">[ICorDebugLoadedModule Interface](icordebugloadedmodule-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-267">로드된 모듈에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-267">Provides information about a loaded module.</span></span> <span data-ttu-id="582e9-268">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-268">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-269">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-269">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)  
- <span data-ttu-id="15bb5-270">디버거 콜백을 처리하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-270">Provides methods to process debugger callbacks.</span></span>  
+ <span data-ttu-id="582e9-269">[ICorDebugManagedCallback 인터페이스](icordebugmanagedcallback-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-269">[ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-270">디버거 콜백을 처리하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-270">Provides methods to process debugger callbacks.</span></span>  
   
- [<span data-ttu-id="15bb5-271">ICorDebugManagedCallback2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-271">ICorDebugManagedCallback2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)  
- <span data-ttu-id="15bb5-272">디버거 예외 처리 및 MDA(관리 디버깅 도우미)를 지원하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-272">Provides methods to support debugger exception handling and managed debugging assistants (MDAs).</span></span> <span data-ttu-id="15bb5-273">`ICorDebugManagedCallback2`은 `ICorDebugManagedCallback`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-273">`ICorDebugManagedCallback2` is a logical extension of `ICorDebugManagedCallback`.</span></span>  
+ <span data-ttu-id="582e9-271">[ICorDebugManagedCallback2 인터페이스](icordebugmanagedcallback2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-271">[ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-272">디버거 예외 처리 및 MDA(관리 디버깅 도우미)를 지원하기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-272">Provides methods to support debugger exception handling and managed debugging assistants (MDAs).</span></span> <span data-ttu-id="582e9-273">`ICorDebugManagedCallback2`은 `ICorDebugManagedCallback`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-273">`ICorDebugManagedCallback2` is a logical extension of `ICorDebugManagedCallback`.</span></span>  
   
- [<span data-ttu-id="15bb5-274">ICorDebugManagedCallback3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-274">ICorDebugManagedCallback3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-interface.md)  
- <span data-ttu-id="15bb5-275">활성화된 사용자 지정 디버거 알림이 발생했음을 나타내는 콜백 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-275">Provides a callback method that indicates that an enabled custom debugger notification has been raised.</span></span>  
+ <span data-ttu-id="582e9-274">[ICorDebugManagedCallback3 인터페이스](icordebugmanagedcallback3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-274">[ICorDebugManagedCallback3 Interface](icordebugmanagedcallback3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-275">활성화된 사용자 지정 디버거 알림이 발생했음을 나타내는 콜백 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-275">Provides a callback method that indicates that an enabled custom debugger notification has been raised.</span></span>  
   
- [<span data-ttu-id="15bb5-276">ICorDebugMDA 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-276">ICorDebugMDA Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md)  
- <span data-ttu-id="15bb5-277">MDA(관리 디버깅 도우미) 메시지를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-277">Represents a managed debugging assistant (MDA) message.</span></span>  
+ <span data-ttu-id="582e9-276">[ICorDebugMDA 인터페이스](icordebugmda-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-276">[ICorDebugMDA Interface](icordebugmda-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-277">MDA(관리 디버깅 도우미) 메시지를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-277">Represents a managed debugging assistant (MDA) message.</span></span>  
   
- [<span data-ttu-id="15bb5-278">ICorDebugMemoryBuffer 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-278">ICorDebugMemoryBuffer Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)  
- <span data-ttu-id="15bb5-279">메모리 내 버퍼를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-279">Represents an in-memory buffer.</span></span> <span data-ttu-id="15bb5-280">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-280">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-278">[ICorDebugMemoryBuffer 인터페이스](icordebugmemorybuffer-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-278">[ICorDebugMemoryBuffer Interface](icordebugmemorybuffer-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-279">메모리 내 버퍼를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-279">Represents an in-memory buffer.</span></span> <span data-ttu-id="582e9-280">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-280">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-281">ICorDebugMergedAssemblyRecord 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-281">ICorDebugMergedAssemblyRecord Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)  
- <span data-ttu-id="15bb5-282">병합된 어셈블리에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-282">Provides information about a merged assembly.</span></span> <span data-ttu-id="15bb5-283">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-283">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-281">[ICorDebugMergedAssemblyRecord 인터페이스](icordebugmergedassemblyrecord-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-281">[ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-282">병합된 어셈블리에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-282">Provides information about a merged assembly.</span></span> <span data-ttu-id="582e9-283">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-283">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-284">ICorDebugMetaDataLocator 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-284">ICorDebugMetaDataLocator Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmetadatalocator-interface.md)  
- <span data-ttu-id="15bb5-285">디버거에 메타데이터 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-285">Provides metadata information to the debugger.</span></span>  
+ <span data-ttu-id="582e9-284">[ICorDebugMetaDataLocator 인터페이스](icordebugmetadatalocator-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-284">[ICorDebugMetaDataLocator Interface](icordebugmetadatalocator-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-285">디버거에 메타데이터 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-285">Provides metadata information to the debugger.</span></span>  
   
- [<span data-ttu-id="15bb5-286">ICorDebugModule Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-286">ICorDebugModule Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule-interface.md)  
- <span data-ttu-id="15bb5-287">실행 파일이나 DLL(동적 연결 라이브러리)인 CLR 모듈을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-287">Represents a CLR module, which is either an executable or a dynamic-link library (DLL).</span></span>  
+ <span data-ttu-id="582e9-286">[ICorDebugModule Interface1](icordebugmodule-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-286">[ICorDebugModule Interface1](icordebugmodule-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-287">실행 파일이나 DLL(동적 연결 라이브러리)인 CLR 모듈을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-287">Represents a CLR module, which is either an executable or a dynamic-link library (DLL).</span></span>  
   
- [<span data-ttu-id="15bb5-288">ICorDebugModule2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-288">ICorDebugModule2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-interface.md)  
- <span data-ttu-id="15bb5-289">`ICorDebugModule`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-289">Serves as a logical extension to `ICorDebugModule`.</span></span>  
+ <span data-ttu-id="582e9-288">[ICorDebugModule2 Interface1](icordebugmodule2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-288">[ICorDebugModule2 Interface1](icordebugmodule2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-289">
+  `ICorDebugModule\`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-289">Serves as a logical extension to `ICorDebugModule`.</span></span>  
   
- [<span data-ttu-id="15bb5-290">ICorDebugModule3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-290">ICorDebugModule3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule3-interface.md)  
- <span data-ttu-id="15bb5-291">동적 모듈에 대한 기호 판독기를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-291">Creates a symbol reader for a dynamic module.</span></span>  
+ <span data-ttu-id="582e9-290">[ICorDebugModule3 인터페이스](icordebugmodule3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-290">[ICorDebugModule3 Interface](icordebugmodule3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-291">동적 모듈에 대한 기호 판독기를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-291">Creates a symbol reader for a dynamic module.</span></span>  
   
- [<span data-ttu-id="15bb5-292">ICorDebugModuleBreakpoint Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-292">ICorDebugModuleBreakpoint Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodulebreakpoint-interface.md)  
- <span data-ttu-id="15bb5-293">특정 모듈에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-293">Extends `ICorDebugBreakpoint` to provide access to specific modules.</span></span>  
+ <span data-ttu-id="582e9-292">[ICorDebugModuleBreakpoint Interface1](icordebugmodulebreakpoint-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-292">[ICorDebugModuleBreakpoint Interface1](icordebugmodulebreakpoint-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-293">특정 모듈에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-293">Extends `ICorDebugBreakpoint` to provide access to specific modules.</span></span>  
   
- [<span data-ttu-id="15bb5-294">ICorDebugModuleDebugEvent 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-294">ICorDebugModuleDebugEvent Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-interface.md)  
- <span data-ttu-id="15bb5-295">확장 된 [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) 모듈 수준 이벤트를 지 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-295">Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support module-level events.</span></span> <span data-ttu-id="15bb5-296">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-296">**Available on .NET Native only.**</span></span>  
+ <span data-ttu-id="582e9-294">[ICorDebugModuleDebugEvent 인터페이스](icordebugmoduledebugevent-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-294">[ICorDebugModuleDebugEvent Interface](icordebugmoduledebugevent-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-295">확장 된 [ICorDebugDebugEvent](icordebugdebugevent-interface.md) 모듈 수준 이벤트를 지 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-295">Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to support module-level events.</span></span> <span data-ttu-id="582e9-296">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-296">**Available on .NET Native only.**</span></span>  
   
- [<span data-ttu-id="15bb5-297">ICorDebugModuleEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-297">ICorDebugModuleEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduleenum-interface.md)  
- <span data-ttu-id="15bb5-298">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugModule` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-298">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugModule` arrays.</span></span>  
+ <span data-ttu-id="582e9-297">[ICorDebugModuleEnum Interface1](icordebugmoduleenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-297">[ICorDebugModuleEnum Interface1](icordebugmoduleenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-298">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugModule\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-298">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugModule` arrays.</span></span>  
   
- [<span data-ttu-id="15bb5-299">ICorDebugMutableDataTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-299">ICorDebugMutableDataTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)  
- <span data-ttu-id="15bb5-300">확장 된 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 인터페이스를 변경할 수 있는 데이터 대상을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-300">Extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface to support mutable data targets.</span></span>  
+ <span data-ttu-id="582e9-299">[ICorDebugMutableDataTarget 인터페이스](icordebugmutabledatatarget-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-299">[ICorDebugMutableDataTarget Interface](icordebugmutabledatatarget-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-300">확장 된 [ICorDebugDataTarget](icordebugdatatarget-interface.md) 인터페이스를 변경할 수 있는 데이터 대상을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-300">Extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface to support mutable data targets.</span></span>  
   
- [<span data-ttu-id="15bb5-301">ICorDebugNativeFrame Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-301">ICorDebugNativeFrame Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-interface.md)  
- <span data-ttu-id="15bb5-302">네이티브 프레임에 사용되는 특수화된 `ICorDebugFrame` 구현입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-302">A specialized implementation of `ICorDebugFrame` used for native frames.</span></span>  
+ <span data-ttu-id="582e9-301">[ICorDebugNativeFrame Interface1](icordebugnativeframe-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-301">[ICorDebugNativeFrame Interface1](icordebugnativeframe-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-302">네이티브 프레임에 사용되는 특수화된 `ICorDebugFrame` 구현입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-302">A specialized implementation of `ICorDebugFrame` used for native frames.</span></span>  
   
- [<span data-ttu-id="15bb5-303">ICorDebugNativeFrame2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-303">ICorDebugNativeFrame2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)  
- <span data-ttu-id="15bb5-304">자식 및 부모 프레임 관계를 테스트하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-304">Provides methods that test for child and parent frame relationships.</span></span>  
+ <span data-ttu-id="582e9-303">[ICorDebugNativeFrame2 인터페이스](icordebugnativeframe2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-303">[ICorDebugNativeFrame2 Interface](icordebugnativeframe2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-304">자식 및 부모 프레임 관계를 테스트하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-304">Provides methods that test for child and parent frame relationships.</span></span>  
   
- [<span data-ttu-id="15bb5-305">ICorDebugObjectEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-305">ICorDebugObjectEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectenum-interface.md)  
- <span data-ttu-id="15bb5-306">`ICorDebugEnum` 메서드를 구현하고 RVA(Relative Virtual Address)로 개체의 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-306">Implements `ICorDebugEnum` methods, and enumerates arrays of objects by their relative virtual addresses (RVAs).</span></span>  
+ <span data-ttu-id="582e9-305">[ICorDebugObjectEnum Interface1](icordebugobjectenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-305">[ICorDebugObjectEnum Interface1](icordebugobjectenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-306">
+  `ICorDebugEnum\` 메서드를 구현하고 RVA(Relative Virtual Address)로 개체의 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-306">Implements `ICorDebugEnum` methods, and enumerates arrays of objects by their relative virtual addresses (RVAs).</span></span>  
   
- [<span data-ttu-id="15bb5-307">ICorDebugObjectValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-307">ICorDebugObjectValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-interface.md)  
- <span data-ttu-id="15bb5-308">개체가 들어 있는 값을 나타내는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-308">A subclass of `ICorDebugValue` that represents a value that contains an object.</span></span>  
+ <span data-ttu-id="582e9-307">[ICorDebugObjectValue Interface1](icordebugobjectvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-307">[ICorDebugObjectValue Interface1](icordebugobjectvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-308">개체가 들어 있는 값을 나타내는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-308">A subclass of `ICorDebugValue` that represents a value that contains an object.</span></span>  
   
- [<span data-ttu-id="15bb5-309">ICorDebugObjectValue2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-309">ICorDebugObjectValue2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue2-interface.md)  
- <span data-ttu-id="15bb5-310">상속 및 재정의 기능을 지원하도록 `ICorDebugObjectValue`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-310">Extends `ICorDebugObjectValue` to support inheritance and overrides.</span></span>  
+ <span data-ttu-id="582e9-309">[ICorDebugObjectValue2 Interface1](icordebugobjectvalue2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-309">[ICorDebugObjectValue2 Interface1](icordebugobjectvalue2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-310">상속 및 재정의 기능을 지원하도록 `ICorDebugObjectValue`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-310">Extends `ICorDebugObjectValue` to support inheritance and overrides.</span></span>  
   
- [<span data-ttu-id="15bb5-311">ICorDebugProcess Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-311">ICorDebugProcess Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md)  
- <span data-ttu-id="15bb5-312">관리 코드를 실행하는 프로세스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-312">Represents a process that is executing managed code.</span></span>  
+ <span data-ttu-id="582e9-311">[ICorDebugProcess Interface1](icordebugprocess-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-311">[ICorDebugProcess Interface1](icordebugprocess-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-312">관리 코드를 실행하는 프로세스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-312">Represents a process that is executing managed code.</span></span>  
   
- [<span data-ttu-id="15bb5-313">ICorDebugProcess2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-313">ICorDebugProcess2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-interface1.md)  
- <span data-ttu-id="15bb5-314">`ICorDebugProcess`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-314">A logical extension of `ICorDebugProcess`.</span></span>  
+ <span data-ttu-id="582e9-313">[ICorDebugProcess2 Interface1](icordebugprocess2-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-313">[ICorDebugProcess2 Interface1](icordebugprocess2-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-314">
+  `ICorDebugProcess\`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-314">A logical extension of `ICorDebugProcess`.</span></span>  
   
- [<span data-ttu-id="15bb5-315">ICorDebugProcess3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-315">ICorDebugProcess3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-interface.md)  
- <span data-ttu-id="15bb5-316">사용자 지정 디버거 알림을 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-316">Controls custom debugger notifications.</span></span>  
-  
- [<span data-ttu-id="15bb5-317">ICorDebugProcess5 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-317">ICorDebugProcess5 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
- <span data-ttu-id="15bb5-318">확장 된 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 관리 되는 개체의 가비지 수집에 대 한 정보를 제공 하 고 디버거가 응용 프로그램에서 이미지를 로드 하는지 여부를 확인 하려면 관리 되는 힙에 대 한 액세스를 지 원하는 인터페이스의 로컬 네이티브 이미지 캐시 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-318">Extends the [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) interface to support access to the managed heap, to provide information about garbage collection of managed objects, and to determine whether a debugger loads images from the application's local native image cache.</span></span>  
-  
- [<span data-ttu-id="15bb5-319">ICorDebugProcess6 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-319">ICorDebugProcess6 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- <span data-ttu-id="15bb5-320">논리적으로 확장 합니다 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 인터페이스 네이티브 예외 디버그 이벤트, 가상 모듈 분할에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-320">Logically extends the [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) interface to enable features such as decoding managed debug events that are encoded in native exception debug events and virtual module splitting.</span></span> <span data-ttu-id="15bb5-321">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-321">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-322">ICorDebugProcess7 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-322">ICorDebugProcess7 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)  
- <span data-ttu-id="15bb5-323">대상 프로세스에서 디버거가 메모리 내 메타데이터 업데이트를 처리하도록 구성하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-323">Provides a method that configures the debugger to handle in-memory metadata updates in the target process.</span></span>  
-  
- [<span data-ttu-id="15bb5-324">ICorDebugProcess8 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-324">ICorDebugProcess8 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-interface.md)  
- <span data-ttu-id="15bb5-325">논리적으로 확장 합니다 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 인터페이스를 사용 하도록 설정 하거나 특정 유형의 사용 하지 않도록 [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) 예외 콜백을 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-325">Logically extends the [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) interface to enable or disable certain types of [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) exception callbacks.</span></span>  
-  
- [<span data-ttu-id="15bb5-326">ICorDebugProcessEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-326">ICorDebugProcessEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocessenum-interface.md)  
- <span data-ttu-id="15bb5-327">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugProcess` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-327">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugProcess` arrays.</span></span>  
-  
- [<span data-ttu-id="15bb5-328">ICorDebugReferenceValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-328">ICorDebugReferenceValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-interface.md)  
- <span data-ttu-id="15bb5-329">참조 형식을 지원하는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-329">A subclass of `ICorDebugValue` that supports reference types.</span></span>  
-  
- [<span data-ttu-id="15bb5-330">ICorDebugRegisterSet 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-330">ICorDebugRegisterSet Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)  
- <span data-ttu-id="15bb5-331">코드가 실행되고 있는 컴퓨터에서 사용할 수 있는 레지스터 집합을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-331">Represents the set of registers available on the machine that is currently executing code.</span></span>  
-  
- [<span data-ttu-id="15bb5-332">ICorDebugRegisterSet2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-332">ICorDebugRegisterSet2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)  
- <span data-ttu-id="15bb5-333">64개 이상의 레지스터가 있는 하드웨어 플랫폼의 `ICorDebugRegisterSet` 기능을 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-333">Extends the capabilities of `ICorDebugRegisterSet` for hardware platforms that have more than 64 registers.</span></span>  
-  
- [<span data-ttu-id="15bb5-334">ICorDebugRemote 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-334">ICorDebugRemote Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)  
- <span data-ttu-id="15bb5-335">시작할 수 있거나 원격 대상 프로세스에 관리되는 디버거를 연결할 수 있는 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-335">Provides the ability to launch or attach a managed debugger to a remote target process.</span></span>  
-  
- [<span data-ttu-id="15bb5-336">ICorDebugRemoteTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-336">ICorDebugRemoteTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  
- <span data-ttu-id="15bb5-337">CLR 환경에서 Silverlight 기반 응용 프로그램을 디버깅하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-337">Provides methods that enable you to debug Silverlight-based applications in the CLR environment.</span></span>  
-  
- [<span data-ttu-id="15bb5-338">ICorDebugRuntimeUnwindableFrame 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-338">ICorDebugRuntimeUnwindableFrame Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugruntimeunwindableframe-interface.md)  
- <span data-ttu-id="15bb5-339">프레임을 해제하는 데 CLR(공용 언어 런타임)을 필요로 하는 관리되지 않는 메서드에 대한 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-339">Provides support for unmanaged methods that require the common language runtime (CLR) to unwind a frame.</span></span>  
-  
- [<span data-ttu-id="15bb5-340">ICorDebugStackWalk 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-340">ICorDebugStackWalk Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)  
- <span data-ttu-id="15bb5-341">스레드 스택에서 관리되는 메서드나 프레임을 가져오기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-341">Provides methods for getting the managed methods, or frames, on a thread’s stack.</span></span>  
-  
- [<span data-ttu-id="15bb5-342">ICorDebugStaticFieldSymbol 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-342">ICorDebugStaticFieldSymbol Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-interface.md)  
- <span data-ttu-id="15bb5-343">정적 필드에 대한 디버그 기호 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-343">Represents the debug symbol information for a static field.</span></span> <span data-ttu-id="15bb5-344">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-344">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-345">ICorDebugStepper Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-345">ICorDebugStepper Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-interface.md)  
- <span data-ttu-id="15bb5-346">디버거에서 수행하는 코드 실행 단계를 나타내며, 명령의 실행/완료를 구분하는 식별자로 사용되고, 단계를 취소하는 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-346">Represents a step in code execution that is performed by a debugger, serves as an identifier between the issuance and completion of a command, and provides a way to cancel a step.</span></span>  
-  
- [<span data-ttu-id="15bb5-347">ICorDebugStepper2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-347">ICorDebugStepper2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper2-interface1.md)  
- <span data-ttu-id="15bb5-348">JMC(내 코드만) 디버깅을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-348">Provides support for Just My Code (JMC) debugging.</span></span>  
-  
- [<span data-ttu-id="15bb5-349">ICorDebugStepperEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-349">ICorDebugStepperEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstepperenum-interface.md)  
- <span data-ttu-id="15bb5-350">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugStepper` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-350">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugStepper` arrays.</span></span>  
-  
- [<span data-ttu-id="15bb5-351">ICorDebugStringValue Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-351">ICorDebugStringValue Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugstringvalue-interface.md)  
- <span data-ttu-id="15bb5-352">문자열 값에 적용되는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-352">A subclass of `ICorDebugHeapValue` that applies to string values.</span></span>  
-  
- [<span data-ttu-id="15bb5-353">ICorDebugSymbolProvider 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-353">ICorDebugSymbolProvider Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)  
- <span data-ttu-id="15bb5-354">디버그 기호 정보를 검색하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-354">Provides methods that can be used to retrieve debug symbol information.</span></span> <span data-ttu-id="15bb5-355">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-355">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-356">ICorDebugSymbolProvider2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-356">ICorDebugSymbolProvider2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)  
- <span data-ttu-id="15bb5-357">논리적으로 확장 합니다 [ICorDebugSymbolProvider](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md) 추가 디버그 기호 정보를 검색 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-357">Logically extends the [ICorDebugSymbolProvider](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md) interface to retrieve additional debug symbol information.</span></span> <span data-ttu-id="15bb5-358">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-358">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-359">ICorDebugThread Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-359">ICorDebugThread Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread-interface.md)  
- <span data-ttu-id="15bb5-360">프로세스의 스레드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-360">Represents a thread in a process.</span></span> <span data-ttu-id="15bb5-361">`ICorDebugThread` 인스턴스의 수명은 이 인스턴스가 나타내는 스레드의 수명과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-361">The lifetime of an `ICorDebugThread` instance is the same as the lifetime of the thread it represents.</span></span>  
-  
- [<span data-ttu-id="15bb5-362">ICorDebugThread2 Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-362">ICorDebugThread2 Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-interface.md)  
- <span data-ttu-id="15bb5-363">`ICorDebugThread`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-363">Serves as a logical extension to `ICorDebugThread`.</span></span>  
-  
- [<span data-ttu-id="15bb5-364">ICorDebugThread3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-364">ICorDebugThread3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread3-interface.md)  
- <span data-ttu-id="15bb5-365">진입점을 제공 합니다 [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) 및 해당 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-365">Provides the entry point to the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) and corresponding interfaces.</span></span>  
-  
- [<span data-ttu-id="15bb5-366">ICorDebugThread4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-366">ICorDebugThread4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  
- <span data-ttu-id="15bb5-367">스레드 차단 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-367">Provides thread blocking information.</span></span>  
-  
- [<span data-ttu-id="15bb5-368">ICorDebugThreadEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-368">ICorDebugThreadEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthreadenum-interface1.md)  
- <span data-ttu-id="15bb5-369">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugThread` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-369">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugThread` arrays.</span></span>  
-  
- [<span data-ttu-id="15bb5-370">ICorDebugType Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-370">ICorDebugType Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md)  
- <span data-ttu-id="15bb5-371">기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-371">Represents a type, which can be either basic or complex (that is, user-defined).</span></span> <span data-ttu-id="15bb5-372">형식이 제네릭이면 `ICorDebugType`는 인스턴스화된 제네릭 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-372">If the type is generic, `ICorDebugType` represents the instantiated generic type.</span></span>  
-  
- [<span data-ttu-id="15bb5-373">ICorDebugType2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-373">ICorDebugType2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)  
- <span data-ttu-id="15bb5-374">확장 된 [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) 기본 형식 또는 복합 (사용자 정의 됨) 형식의 형식 식별자를 검색 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-374">Extends the [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) interface to retrieve the type identifier  of a base type or complex (user-defined) type.</span></span>  
-  
- [<span data-ttu-id="15bb5-375">ICorDebugTypeEnum Interface1</span><span class="sxs-lookup"><span data-stu-id="15bb5-375">ICorDebugTypeEnum Interface1</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugtypeenum-interface.md)  
- <span data-ttu-id="15bb5-376">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugType` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-376">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugType` arrays.</span></span>  
-  
- [<span data-ttu-id="15bb5-377">ICorDebugUnmanagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-377">ICorDebugUnmanagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-interface.md)  
- <span data-ttu-id="15bb5-378">CLR에 직접적으로 관련되지 않은 네이티브 이벤트에 대한 알림을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-378">Provides notification of native events that are not directly related to the CLR.</span></span>  
-  
- <span data-ttu-id="15bb5-379">"ICorDebugValue"</span><span class="sxs-lookup"><span data-stu-id="15bb5-379">"ICorDebugValue"</span></span>  
- <span data-ttu-id="15bb5-380">디버깅 중인 프로세스의 읽기 또는 쓰기 값을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-380">Represents a read or write value in the process being debugged.</span></span>  
-  
- <span data-ttu-id="15bb5-381">"ICorDebugValue2"</span><span class="sxs-lookup"><span data-stu-id="15bb5-381">"ICorDebugValue2"</span></span>  
- <span data-ttu-id="15bb5-382">`ICorDebugValue`을 지원하기 위해 `ICorDebugType`에서 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-382">Extends `ICorDebugValue` to provide support for `ICorDebugType`.</span></span>  
-  
- [<span data-ttu-id="15bb5-383">ICorDebugValue3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-383">ICorDebugValue3 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)  
- <span data-ttu-id="15bb5-384">2GB 보다 큰 배열 지원 하기 위해 "ICorDebugValue" 및 "ICorDebugValue2" 인터페이스를 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-384">Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support for arrays that are larger than 2 GB.</span></span>  
-  
- <span data-ttu-id="15bb5-385">"ICorDebugValueBreakpoint"</span><span class="sxs-lookup"><span data-stu-id="15bb5-385">"ICorDebugValueBreakpoint"</span></span>  
- <span data-ttu-id="15bb5-386">특정 값에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-386">Extends `ICorDebugBreakpoint` to provide access to specific values.</span></span>  
-  
- <span data-ttu-id="15bb5-387">"ICorDebugValueEnum"</span><span class="sxs-lookup"><span data-stu-id="15bb5-387">"ICorDebugValueEnum"</span></span>  
- <span data-ttu-id="15bb5-388">`ICorDebugEnum` 메서드를 구현하고 `ICorDebugValue` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-388">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugValue` arrays.</span></span>  
-  
- [<span data-ttu-id="15bb5-389">ICorDebugVariableHome 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-389">ICorDebugVariableHome Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)  
- <span data-ttu-id="15bb5-390">지역 변수 또는 함수의 인수를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-390">Represents a local variable or argument of a function.</span></span>  
-  
- [<span data-ttu-id="15bb5-391">ICorDebugVariableHomeEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-391">ICorDebugVariableHomeEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
- <span data-ttu-id="15bb5-392">지역 변수 및 함수에 인수 하는 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-392">Provides an enumerator to the local variables and arguments in a function.</span></span>  
-  
- [<span data-ttu-id="15bb5-393">ICorDebugVariableSymbol 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-393">ICorDebugVariableSymbol Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)  
- <span data-ttu-id="15bb5-394">변수에 대한 디버그 기호 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-394">Retrieves the debug symbol information for a variable.</span></span> <span data-ttu-id="15bb5-395">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-395">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-396">ICorDebugVirtualUnwinder 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-396">ICorDebugVirtualUnwinder Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugvirtualunwinder-interface.md)  
- <span data-ttu-id="15bb5-397">스택 해제에 도움이 되는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-397">Provides methods to help in stack unwinding.</span></span> <span data-ttu-id="15bb5-398">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="15bb5-398">**Available on .NET Native only.**</span></span>  
-  
- [<span data-ttu-id="15bb5-399">ICorPublish 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-399">ICorPublish Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)  
- <span data-ttu-id="15bb5-400">게시 프로세스에 대한 일반적인 인터페이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-400">Serves as the general interface for the publishing processes.</span></span>  
-  
- [<span data-ttu-id="15bb5-401">ICorPublishAppDomain 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-401">ICorPublishAppDomain Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)  
- <span data-ttu-id="15bb5-402">응용 프로그램 도메인을 나타내고 응용 프로그램 도메인에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-402">Represents and provides information about an application domain.</span></span>  
-  
- [<span data-ttu-id="15bb5-403">ICorPublishAppDomainEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-403">ICorPublishAppDomainEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)  
- <span data-ttu-id="15bb5-404">프로세스 내에 현재 있는 `ICorPublishAppDomain` 개체의 컬렉션을 이동하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-404">Provides methods that traverse a collection of `ICorPublishAppDomain` objects that currently exist within a process.</span></span>  
-  
- [<span data-ttu-id="15bb5-405">ICorPublishEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-405">ICorPublishEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)  
- <span data-ttu-id="15bb5-406">열거자를 게시하기 위한 추상 기본 열거형으로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-406">Serves as the abstract base for publishing enumerators.</span></span>  
-  
- [<span data-ttu-id="15bb5-407">ICorPublishProcess 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-407">ICorPublishProcess Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)  
- <span data-ttu-id="15bb5-408">프로세스에 대한 정보에 액세스하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-408">Provides methods that access information about a process.</span></span>  
-  
- [<span data-ttu-id="15bb5-409">ICorPublishProcessEnum 인터페이스</span><span class="sxs-lookup"><span data-stu-id="15bb5-409">ICorPublishProcessEnum Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)  
- <span data-ttu-id="15bb5-410">`ICorPublishProcess` 개체의 컬렉션을 이동하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-410">Provides methods that traverse a collection of `ICorPublishProcess` objects.</span></span>  
+ <span data-ttu-id="582e9-315">[ICorDebugProcess3 인터페이스](icordebugprocess3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-315">[ICorDebugProcess3 Interface](icordebugprocess3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-316">사용자 지정 디버거 알림을 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-316">Controls custom debugger notifications.</span></span>
 
- <span data-ttu-id="15bb5-411">[ISOSDacInterface 인터페이스](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md) 에서 데이터에 액세스할 도우미 메서드를 제공 `SOS`합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-411">[ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md) Provides helper methods to access data from `SOS`.</span></span>
+ <span data-ttu-id="582e9-317">[ICorDebugProcess4 인터페이스](icordebugprocess4-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-317">[ICorDebugProcess4 Interface](icordebugprocess4-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-318">프로세스 실행 제어가 부족에 대 한 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-318">Provides support for out of process execution control.</span></span>
+  
+ <span data-ttu-id="582e9-319">[ICorDebugProcess5 인터페이스](icordebugprocess5-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-319">[ICorDebugProcess5 Interface](icordebugprocess5-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-320">확장 된 [ICorDebugProcess](icordebugprocess-interface.md) 관리 되는 개체의 가비지 수집에 대 한 정보를 제공 하 고 디버거가 응용 프로그램에서 이미지를 로드 하는지 여부를 확인 하려면 관리 되는 힙에 대 한 액세스를 지 원하는 인터페이스의 로컬 네이티브 이미지 캐시 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-320">Extends the [ICorDebugProcess](icordebugprocess-interface.md) interface to support access to the managed heap, to provide information about garbage collection of managed objects, and to determine whether a debugger loads images from the application's local native image cache.</span></span>  
+  
+ <span data-ttu-id="582e9-321">[ICorDebugProcess6 인터페이스](icordebugprocess6-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-321">[ICorDebugProcess6 Interface](icordebugprocess6-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-322">논리적으로 확장 합니다 [ICorDebugProcess](icordebugprocess-interface.md) 인터페이스 네이티브 예외 디버그 이벤트, 가상 모듈 분할에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-322">Logically extends the [ICorDebugProcess](icordebugprocess-interface.md) interface to enable features such as decoding managed debug events that are encoded in native exception debug events and virtual module splitting.</span></span> <span data-ttu-id="582e9-323">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-323">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-324">[ICorDebugProcess7 인터페이스](icordebugprocess7-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-324">[ICorDebugProcess7 Interface](icordebugprocess7-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-325">대상 프로세스에서 디버거가 메모리 내 메타데이터 업데이트를 처리하도록 구성하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-325">Provides a method that configures the debugger to handle in-memory metadata updates in the target process.</span></span>  
+  
+ <span data-ttu-id="582e9-326">[ICorDebugProcess8 인터페이스](icordebugprocess8-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-326">[ICorDebugProcess8 Interface](icordebugprocess8-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-327">논리적으로 확장 합니다 [ICorDebugProcess](icordebugprocess-interface.md) 인터페이스를 사용 하도록 설정 하거나 특정 유형의 사용 하지 않도록 [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) 예외 콜백을 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-327">Logically extends the [ICorDebugProcess](icordebugprocess-interface.md) interface to enable or disable certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.</span></span>  
+  
+ <span data-ttu-id="582e9-328">[ICorDebugProcessEnum Interface1](icordebugprocessenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-328">[ICorDebugProcessEnum Interface1](icordebugprocessenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-329">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugProcess\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-329">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugProcess` arrays.</span></span>  
+  
+ <span data-ttu-id="582e9-330">[ICorDebugReferenceValue Interface1](icordebugreferencevalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-330">[ICorDebugReferenceValue Interface1](icordebugreferencevalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-331">참조 형식을 지원하는 `ICorDebugValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-331">A subclass of `ICorDebugValue` that supports reference types.</span></span>  
+  
+ <span data-ttu-id="582e9-332">[ICorDebugRegisterSet 인터페이스](icordebugregisterset-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-332">[ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-333">코드가 실행되고 있는 컴퓨터에서 사용할 수 있는 레지스터 집합을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-333">Represents the set of registers available on the machine that is currently executing code.</span></span>  
+  
+ <span data-ttu-id="582e9-334">[ICorDebugRegisterSet2 인터페이스](icordebugregisterset2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-334">[ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-335">64개 이상의 레지스터가 있는 하드웨어 플랫폼의 `ICorDebugRegisterSet` 기능을 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-335">Extends the capabilities of `ICorDebugRegisterSet` for hardware platforms that have more than 64 registers.</span></span>  
+  
+ <span data-ttu-id="582e9-336">[ICorDebugRemote 인터페이스](icordebugremote-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-336">[ICorDebugRemote Interface](icordebugremote-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-337">시작할 수 있거나 원격 대상 프로세스에 관리되는 디버거를 연결할 수 있는 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-337">Provides the ability to launch or attach a managed debugger to a remote target process.</span></span>  
+  
+ <span data-ttu-id="582e9-338">[ICorDebugRemoteTarget 인터페이스](icordebugremotetarget-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-338">[ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-339">CLR 환경에서 Silverlight 기반 응용 프로그램을 디버깅하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-339">Provides methods that enable you to debug Silverlight-based applications in the CLR environment.</span></span>  
+  
+ <span data-ttu-id="582e9-340">[ICorDebugRuntimeUnwindableFrame 인터페이스](icordebugruntimeunwindableframe-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-340">[ICorDebugRuntimeUnwindableFrame Interface](icordebugruntimeunwindableframe-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-341">프레임을 해제하는 데 CLR(공용 언어 런타임)을 필요로 하는 관리되지 않는 메서드에 대한 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-341">Provides support for unmanaged methods that require the common language runtime (CLR) to unwind a frame.</span></span>  
+  
+ <span data-ttu-id="582e9-342">[ICorDebugStackWalk 인터페이스](icordebugstackwalk-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-342">[ICorDebugStackWalk Interface](icordebugstackwalk-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-343">스레드 스택에서 관리되는 메서드나 프레임을 가져오기 위한 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-343">Provides methods for getting the managed methods, or frames, on a thread’s stack.</span></span>  
+  
+ <span data-ttu-id="582e9-344">[ICorDebugStaticFieldSymbol 인터페이스](icordebugstaticfieldsymbol-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-344">[ICorDebugStaticFieldSymbol Interface](icordebugstaticfieldsymbol-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-345">정적 필드에 대한 디버그 기호 정보를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-345">Represents the debug symbol information for a static field.</span></span> <span data-ttu-id="582e9-346">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-346">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-347">[ICorDebugStepper Interface1](icordebugstepper-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-347">[ICorDebugStepper Interface1](icordebugstepper-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-348">디버거에서 수행하는 코드 실행 단계를 나타내며, 명령의 실행/완료를 구분하는 식별자로 사용되고, 단계를 취소하는 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-348">Represents a step in code execution that is performed by a debugger, serves as an identifier between the issuance and completion of a command, and provides a way to cancel a step.</span></span>  
+  
+ <span data-ttu-id="582e9-349">[ICorDebugStepper2 Interface1](icordebugstepper2-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-349">[ICorDebugStepper2 Interface1](icordebugstepper2-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-350">JMC(내 코드만) 디버깅을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-350">Provides support for Just My Code (JMC) debugging.</span></span>  
+  
+ <span data-ttu-id="582e9-351">[ICorDebugStepperEnum Interface1](icordebugstepperenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-351">[ICorDebugStepperEnum Interface1](icordebugstepperenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-352">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugStepper\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-352">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugStepper` arrays.</span></span>  
+  
+ <span data-ttu-id="582e9-353">[ICorDebugStringValue Interface1](icordebugstringvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-353">[ICorDebugStringValue Interface1](icordebugstringvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-354">문자열 값에 적용되는 `ICorDebugHeapValue`의 서브클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-354">A subclass of `ICorDebugHeapValue` that applies to string values.</span></span>  
+  
+ <span data-ttu-id="582e9-355">[ICorDebugSymbolProvider 인터페이스](icordebugsymbolprovider-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-355">[ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-356">디버그 기호 정보를 검색하는 데 사용할 수 있는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-356">Provides methods that can be used to retrieve debug symbol information.</span></span> <span data-ttu-id="582e9-357">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-357">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-358">[ICorDebugSymbolProvider2 인터페이스](icordebugsymbolprovider2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-358">[ICorDebugSymbolProvider2 Interface](icordebugsymbolprovider2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-359">논리적으로 확장 합니다 [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) 추가 디버그 기호 정보를 검색 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-359">Logically extends the [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) interface to retrieve additional debug symbol information.</span></span> <span data-ttu-id="582e9-360">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-360">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-361">[ICorDebugThread Interface1](icordebugthread-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-361">[ICorDebugThread Interface1](icordebugthread-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-362">프로세스의 스레드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-362">Represents a thread in a process.</span></span> <span data-ttu-id="582e9-363">
+  `ICorDebugThread\` 인스턴스의 수명은 이 인스턴스가 나타내는 스레드의 수명과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-363">The lifetime of an `ICorDebugThread` instance is the same as the lifetime of the thread it represents.</span></span>  
+  
+ <span data-ttu-id="582e9-364">[ICorDebugThread2 Interface1](icordebugthread2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-364">[ICorDebugThread2 Interface1](icordebugthread2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-365">
+  `ICorDebugThread\`에서 논리적으로 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-365">Serves as a logical extension to `ICorDebugThread`.</span></span>  
+  
+ <span data-ttu-id="582e9-366">[ICorDebugThread3 인터페이스](icordebugthread3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-366">[ICorDebugThread3 Interface](icordebugthread3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-367">진입점을 제공 합니다 [ICorDebugStackWalk](icordebugstackwalk-interface.md) 및 해당 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-367">Provides the entry point to the [ICorDebugStackWalk](icordebugstackwalk-interface.md) and corresponding interfaces.</span></span>  
+  
+ <span data-ttu-id="582e9-368">[ICorDebugThread4 인터페이스](icordebugthread4-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-368">[ICorDebugThread4 Interface](icordebugthread4-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-369">스레드 차단 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-369">Provides thread blocking information.</span></span>  
+  
+ <span data-ttu-id="582e9-370">[ICorDebugThreadEnum Interface1](icordebugthreadenum-interface1.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-370">[ICorDebugThreadEnum Interface1](icordebugthreadenum-interface1.md)\\</span></span>
+ <span data-ttu-id="582e9-371">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugThread\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-371">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugThread` arrays.</span></span>  
+  
+ <span data-ttu-id="582e9-372">[ICorDebugType Interface1](icordebugtype-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-372">[ICorDebugType Interface1](icordebugtype-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-373">기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-373">Represents a type, which can be either basic or complex (that is, user-defined).</span></span> <span data-ttu-id="582e9-374">형식이 제네릭이면 `ICorDebugType`는 인스턴스화된 제네릭 형식을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-374">If the type is generic, `ICorDebugType` represents the instantiated generic type.</span></span>  
+  
+ <span data-ttu-id="582e9-375">[ICorDebugType2 인터페이스](icordebugtype2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-375">[ICorDebugType2 Interface](icordebugtype2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-376">확장 된 [ICorDebugType](icordebugtype-interface.md) 기본 형식 또는 복합 (사용자 정의 됨) 형식의 형식 식별자를 검색 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-376">Extends the [ICorDebugType](icordebugtype-interface.md) interface to retrieve the type identifier  of a base type or complex (user-defined) type.</span></span>  
+  
+ <span data-ttu-id="582e9-377">[ICorDebugTypeEnum Interface1](icordebugtypeenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-377">[ICorDebugTypeEnum Interface1](icordebugtypeenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-378">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugType\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-378">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugType` arrays.</span></span>  
+  
+ <span data-ttu-id="582e9-379">[ICorDebugUnmanagedCallback 인터페이스](icordebugunmanagedcallback-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-379">[ICorDebugUnmanagedCallback Interface](icordebugunmanagedcallback-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-380">CLR에 직접적으로 관련되지 않은 네이티브 이벤트에 대한 알림을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-380">Provides notification of native events that are not directly related to the CLR.</span></span>  
+  
+ <span data-ttu-id="582e9-381">[ICorDebugValue](icordebugvalue-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-381">[ICorDebugValue](icordebugvalue-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-382">디버깅 중인 프로세스의 읽기 또는 쓰기 값을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-382">Represents a read or write value in the process being debugged.</span></span>  
+  
+ <span data-ttu-id="582e9-383">[ICorDebugValue2](icordebugvalue2-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-383">[ICorDebugValue2](icordebugvalue2-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-384">
+  `ICorDebugValue\`을 지원하기 위해 `ICorDebugType\`에서 확장된 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-384">Extends `ICorDebugValue` to provide support for `ICorDebugType`.</span></span>  
+  
+ <span data-ttu-id="582e9-385">[ICorDebugValue3 인터페이스](icordebugvalue3-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-385">[ICorDebugValue3 Interface](icordebugvalue3-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-386">2GB 보다 큰 배열 지원 하기 위해 "ICorDebugValue" 및 "ICorDebugValue2" 인터페이스를 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-386">Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support for arrays that are larger than 2 GB.</span></span>  
+  
+ <span data-ttu-id="582e9-387">[ICorDebugValueBreakpoint](icordebugvaluebreakpoint-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-387">[ICorDebugValueBreakpoint](icordebugvaluebreakpoint-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-388">특정 값에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-388">Extends `ICorDebugBreakpoint` to provide access to specific values.</span></span>  
+  
+ <span data-ttu-id="582e9-389">[ICorDebugValueEnum](icordebugvalueenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-389">[ICorDebugValueEnum](icordebugvalueenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-390">
+  `ICorDebugEnum\` 메서드를 구현하고 `ICorDebugValue\` 배열을 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-390">Implements `ICorDebugEnum` methods, and enumerates `ICorDebugValue` arrays.</span></span>  
+  
+ <span data-ttu-id="582e9-391">[ICorDebugVariableHome 인터페이스](icordebugvariablehome-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-391">[ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-392">지역 변수 또는 함수의 인수를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-392">Represents a local variable or argument of a function.</span></span>  
+  
+ <span data-ttu-id="582e9-393">[ICorDebugVariableHomeEnum 인터페이스](icordebugvariablehomeenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-393">[ICorDebugVariableHomeEnum Interface](icordebugvariablehomeenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-394">지역 변수 및 함수에 인수 하는 열거자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-394">Provides an enumerator to the local variables and arguments in a function.</span></span>  
+  
+ <span data-ttu-id="582e9-395">[ICorDebugVariableSymbol 인터페이스](icordebugvariablesymbol-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-395">[ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-396">변수에 대한 디버그 기호 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-396">Retrieves the debug symbol information for a variable.</span></span> <span data-ttu-id="582e9-397">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-397">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-398">[ICorDebugVirtualUnwinder 인터페이스](icordebugvirtualunwinder-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-398">[ICorDebugVirtualUnwinder Interface](icordebugvirtualunwinder-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-399">스택 해제에 도움이 되는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-399">Provides methods to help in stack unwinding.</span></span> <span data-ttu-id="582e9-400">**.NET 네이티브 에서만 사용할 수 있습니다.**</span><span class="sxs-lookup"><span data-stu-id="582e9-400">**Available on .NET Native only.**</span></span>  
+  
+ <span data-ttu-id="582e9-401">[ICorPublish 인터페이스](icorpublish-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-401">[ICorPublish Interface](icorpublish-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-402">게시 프로세스에 대한 일반적인 인터페이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-402">Serves as the general interface for the publishing processes.</span></span>  
+  
+ <span data-ttu-id="582e9-403">[ICorPublishAppDomain 인터페이스](icorpublishappdomain-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-403">[ICorPublishAppDomain Interface](icorpublishappdomain-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-404">응용 프로그램 도메인을 나타내고 응용 프로그램 도메인에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-404">Represents and provides information about an application domain.</span></span>  
+  
+ <span data-ttu-id="582e9-405">[ICorPublishAppDomainEnum 인터페이스](icorpublishappdomainenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-405">[ICorPublishAppDomainEnum Interface](icorpublishappdomainenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-406">프로세스 내에 현재 있는 `ICorPublishAppDomain` 개체의 컬렉션을 이동하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-406">Provides methods that traverse a collection of `ICorPublishAppDomain` objects that currently exist within a process.</span></span>  
+  
+ <span data-ttu-id="582e9-407">[ICorPublishEnum 인터페이스](icorpublishenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-407">[ICorPublishEnum Interface](icorpublishenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-408">열거자를 게시하기 위한 추상 기본 열거형으로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-408">Serves as the abstract base for publishing enumerators.</span></span>  
+  
+ <span data-ttu-id="582e9-409">[ICorPublishProcess 인터페이스](icorpublishprocess-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-409">[ICorPublishProcess Interface](icorpublishprocess-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-410">프로세스에 대한 정보에 액세스하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-410">Provides methods that access information about a process.</span></span>  
+  
+ <span data-ttu-id="582e9-411">[ICorPublishProcessEnum 인터페이스](icorpublishprocessenum-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-411">[ICorPublishProcessEnum Interface](icorpublishprocessenum-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-412">
+  `ICorPublishProcess\` 개체의 컬렉션을 이동하는 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-412">Provides methods that traverse a collection of `ICorPublishProcess` objects.</span></span>  
 
- <span data-ttu-id="15bb5-412">[IXCLRDataMethodDefinition 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md) 메서드 정의 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-412">[IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md) Provides methods for querying information about a method definition.</span></span>
+ <span data-ttu-id="582e9-413">[ISOSDacInterface 인터페이스](isosdacinterface-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-413">[ISOSDacInterface Interface](isosdacinterface-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-414">데이터에 액세스할 도우미 메서드를 제공 `SOS`합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-414">Provides helper methods to access data from `SOS`.</span></span>
+
+ <span data-ttu-id="582e9-415">[IXCLRDataMethodDefinition 인터페이스](ixclrdatamethoddefinition-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-415">[IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-416">메서드 정의 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-416">Provides methods for querying information about a method definition.</span></span>
  
- <span data-ttu-id="15bb5-413">[IXCLRDataMethodInstance 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md) 메서드 인스턴스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-413">[IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md) Provides methods for querying information about a method instance.</span></span>
+ <span data-ttu-id="582e9-417">[IXCLRDataMethodInstance 인터페이스](ixclrdatamethodinstance-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-417">[IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-418">메서드 인스턴스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-418">Provides methods for querying information about a method instance.</span></span>
  
- <span data-ttu-id="15bb5-414">[IXCLRDataModule 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md) 로드 된 모듈에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-414">[IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md) Provides methods for querying information about a loaded module.</span></span>
+ <span data-ttu-id="582e9-419">[IXCLRDataModule 인터페이스](ixclrdatamodule-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-419">[IXCLRDataModule Interface](ixclrdatamodule-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-420">로드 된 모듈에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-420">Provides methods for querying information about a loaded module.</span></span>
  
- <span data-ttu-id="15bb5-415">[IXCLRDataProcess 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md) 프로세스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="15bb5-415">[IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md) Provides methods for querying information about a process.</span></span>
+ <span data-ttu-id="582e9-421">[IXCLRDataProcess 인터페이스](ixclrdataprocess-interface.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-421">[IXCLRDataProcess Interface](ixclrdataprocess-interface.md)\\</span></span>
+ <span data-ttu-id="582e9-422">프로세스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="582e9-422">Provides methods for querying information about a process.</span></span>
   
-## <a name="related-sections"></a><span data-ttu-id="15bb5-416">관련 단원</span><span class="sxs-lookup"><span data-stu-id="15bb5-416">Related Sections</span></span>  
- [<span data-ttu-id="15bb5-417">디버깅 Coclass</span><span class="sxs-lookup"><span data-stu-id="15bb5-417">Debugging Coclasses</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  
-  
- [<span data-ttu-id="15bb5-418">디버깅 전역 정적 함수</span><span class="sxs-lookup"><span data-stu-id="15bb5-418">Debugging Global Static Functions</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)  
-  
- [<span data-ttu-id="15bb5-419">디버깅 열거형</span><span class="sxs-lookup"><span data-stu-id="15bb5-419">Debugging Enumerations</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
-  
- [<span data-ttu-id="15bb5-420">디버깅 구조체</span><span class="sxs-lookup"><span data-stu-id="15bb5-420">Debugging Structures</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+## <a name="related-sections"></a><span data-ttu-id="582e9-423">관련 단원</span><span class="sxs-lookup"><span data-stu-id="582e9-423">Related Sections</span></span>  
+ <span data-ttu-id="582e9-424">[디버깅 Coclass](debugging-coclasses.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-424">[Debugging Coclasses](debugging-coclasses.md)\\</span></span>
+ <span data-ttu-id="582e9-425">[디버깅 전역 정적 함수](debugging-global-static-functions.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-425">[Debugging Global Static Functions](debugging-global-static-functions.md)\\</span></span>
+ <span data-ttu-id="582e9-426">[디버깅 열거형](debugging-enumerations.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-426">[Debugging Enumerations](debugging-enumerations.md)\\</span></span>
+ <span data-ttu-id="582e9-427">[디버깅 구조체](debugging-structures.md)\\</span><span class="sxs-lookup"><span data-stu-id="582e9-427">[Debugging Structures](debugging-structures.md)\\</span></span>
