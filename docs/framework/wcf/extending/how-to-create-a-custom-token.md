@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WSSecurityTokenSerializer class
 - SecurityToken class
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
-ms.openlocfilehash: 20c462f811be86d52ec6f06700326f0e949a76d1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3367a75fc0532e3eaa312400221c662bb35146bf
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54637913"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261169"
 ---
 # <a name="how-to-create-a-custom-token"></a>방법: 사용자 지정 토큰 만들기
 이 항목에서는 <xref:System.IdentityModel.Tokens.SecurityToken> 클래스를 사용하여 사용자 지정 보안 토큰을 만들고 사용자 지정 보안 토큰 공급자 및 인증자를 사용하여 통합하는 방법에 대해 설명합니다. 전체 코드 예제에 대 한 참조를 [사용자 지정 토큰](../../../../docs/framework/wcf/samples/custom-token.md) 샘플입니다.  
@@ -29,8 +29,6 @@ ms.locfileid: "54637913"
  사용자 지정 자격 증명과 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
  보안 토큰을 나타내는 클래스에 대한 자세한 내용은 <xref:System.IdentityModel.Tokens> 네임스페이스를 참조하십시오.  
-  
- 자격 증명, 보안 토큰 관리자 그리고 공급자 및 인증자 클래스에 대 한 자세한 내용은 참조 하세요. [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)합니다.  
   
 ## <a name="procedures"></a>절차  
  클라이언트 응용 프로그램에 보안 인프라에 대한 신용 카드 정보를 지정할 수 있는 방법이 제공되어야 합니다. 이 정보는 사용자 지정 클라이언트 자격 증명 클래스를 통해 응용 프로그램에서 사용할 수 있습니다. 첫 번째 단계에서는 사용자 지정 클라이언트 자격 증명에 대한 신용 카드 정보를 나타내는 클래스를 만듭니다.  
@@ -48,13 +46,17 @@ ms.locfileid: "54637913"
   
 #### <a name="to-create-a-custom-security-token-class"></a>사용자 지정 보안 토큰 클래스를 만들려면  
   
-1.  <xref:System.IdentityModel.Tokens.SecurityToken> 클래스에서 파생된 새 클래스를 정의합니다. 이 예제에서는 `CreditCardToken` 클래스를 만듭니다.  
+1.  
+  <xref:System.IdentityModel.Tokens.SecurityToken> 클래스에서 파생된 새 클래스를 정의합니다. 이 예제에서는 `CreditCardToken` 클래스를 만듭니다.  
   
-2.  <xref:System.IdentityModel.Tokens.SecurityToken.Id%2A> 속성을 재정의합니다. 이 속성은 SOAP 메시지 내의 다른 요소에서 보안 토큰 XML 표현을 가리키는 데 사용되는 보안 토큰의 로컬 식별자를 가져올 때 사용합니다. 이 예제에서는 토큰 식별자를 생성자 매개 변수로 전달하거나 보안 토큰 인스턴스를 만들 때마다 새 토큰 식별자를 임의로 생성합니다.  
+2.  
+  <xref:System.IdentityModel.Tokens.SecurityToken.Id%2A> 속성을 재정의합니다. 이 속성은 SOAP 메시지 내의 다른 요소에서 보안 토큰 XML 표현을 가리키는 데 사용되는 보안 토큰의 로컬 식별자를 가져올 때 사용합니다. 이 예제에서는 토큰 식별자를 생성자 매개 변수로 전달하거나 보안 토큰 인스턴스를 만들 때마다 새 토큰 식별자를 임의로 생성합니다.  
   
-3.  <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> 속성을 구현합니다. 이 속성은 보안 토큰 인스턴스가 나타내는 보안 키 컬렉션을 반환합니다. 이러한 키 SOAP 메시지 부분을 암호화 하거나 서명 하려면 WCF에서 사용할 수 있습니다. 이 예제에서 신용 카드 보안 토큰은 보안 키를 포함할 수 없기 때문에 속성 구현 시 항상 빈 컬렉션을 반환합니다.  
+3.  
+  <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> 속성을 구현합니다. 이 속성은 보안 토큰 인스턴스가 나타내는 보안 키 컬렉션을 반환합니다. 이러한 키 SOAP 메시지 부분을 암호화 하거나 서명 하려면 WCF에서 사용할 수 있습니다. 이 예제에서 신용 카드 보안 토큰은 보안 키를 포함할 수 없기 때문에 속성 구현 시 항상 빈 컬렉션을 반환합니다.  
   
-4.  <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> 및 <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> 속성을 재정의합니다. WCF에서 이러한 속성을 사용 하는 보안 토큰 인스턴스의 유효성을 확인 합니다. 이 예제에서는 신용 카드 보안 토큰에 만료 날짜만 있으므로, `ValidFrom` 속성은 인스턴스를 만든 날짜와 시간을 나타내는 <xref:System.DateTime>을 반환합니다.  
+4.  
+  <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> 및 <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> 속성을 재정의합니다. WCF에서 이러한 속성을 사용 하는 보안 토큰 인스턴스의 유효성을 확인 합니다. 이 예제에서는 신용 카드 보안 토큰에 만료 날짜만 있으므로, `ValidFrom` 속성은 인스턴스를 만든 날짜와 시간을 나타내는 <xref:System.DateTime>을 반환합니다.  
   
      [!code-csharp[c_CustomToken#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#1)]
      [!code-vb[c_CustomToken#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#1)]  
@@ -63,17 +65,22 @@ ms.locfileid: "54637913"
   
 #### <a name="to-create-a-custom-security-token-parameters-class"></a>사용자 지정 보안 토큰 매개 변수 클래스를 만들려면  
   
-1.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> 클래스에서 파생된 새 클래스를 정의합니다.  
+1.  
+  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> 클래스에서 파생된 새 클래스를 정의합니다.  
   
 2.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> 메서드를 구현합니다. 클래스에 정의된 모든 내부 필드(있는 경우)를 복사합니다. 이 예제에서는 추가 필드를 정의하지 않습니다.  
   
-3.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientAuthentication%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 사용하여 서비스에 클라이언트를 인증할 수 있는 경우 `true`를 반환합니다. 이 예제에서는 신용 카드 보안 토큰을 사용하여 서비스에 클라이언트를 인증할 수 있습니다.  
+3.  
+  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientAuthentication%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 사용하여 서비스에 클라이언트를 인증할 수 있는 경우 `true`를 반환합니다. 이 예제에서는 신용 카드 보안 토큰을 사용하여 서비스에 클라이언트를 인증할 수 있습니다.  
   
-4.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsServerAuthentication%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 사용하여 클라이언트에 서비스를 인증할 수 있는 경우 `true`를 반환합니다. 이 예제에서는 신용 카드 보안 토큰을 사용하여 클라이언트에 서비스를 인증할 수 없습니다.  
+4.  
+  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsServerAuthentication%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 사용하여 클라이언트에 서비스를 인증할 수 있는 경우 `true`를 반환합니다. 이 예제에서는 신용 카드 보안 토큰을 사용하여 클라이언트에 서비스를 인증할 수 없습니다.  
   
-5.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 Windows 계정에 매핑할 수 있는 경우 `true`를 반환합니다. 그럴 경우 인증 결과는 <xref:System.Security.Principal.WindowsIdentity> 클래스 인스턴스에 의해 표시됩니다. 이 예제에서는 토큰을 Windows 계정에 매핑할 수 없습니다.  
+5.  
+  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity%2A> 읽기 전용 속성을 구현합니다. 이 속성은 이 클래스에 표시된 보안 토큰 형식을 Windows 계정에 매핑할 수 있는 경우 `true`를 반환합니다. 그럴 경우 인증 결과는 <xref:System.Security.Principal.WindowsIdentity> 클래스 인스턴스에 의해 표시됩니다. 이 예제에서는 토큰을 Windows 계정에 매핑할 수 없습니다.  
   
-6.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> 메서드를 구현합니다. 이 메서드는이 보안 토큰 매개 변수 클래스를 나타내는 보안 토큰 인스턴스에 대 한 참조가 필요 하면 WCF 보안 프레임 워크에서 호출 됩니다. 실제 보안 토큰 인스턴스 및 요청 중인 참조 형식을 지정하는 <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>이 모두 이 메서드에 인수로 전달됩니다. 이 예제에서 신용 카드 보안 토큰은 내부 참조만 지원합니다. <xref:System.IdentityModel.Tokens.SecurityToken> 클래스에는 내부 참조를 만드는 기능이 있으므로 구현 시에 추가 코드가 필요하지 않습니다.  
+6.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> 메서드를 구현합니다. 이 메서드는이 보안 토큰 매개 변수 클래스를 나타내는 보안 토큰 인스턴스에 대 한 참조가 필요 하면 WCF 보안 프레임 워크에서 호출 됩니다. 실제 보안 토큰 인스턴스 및 요청 중인 참조 형식을 지정하는 <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>이 모두 이 메서드에 인수로 전달됩니다. 이 예제에서 신용 카드 보안 토큰은 내부 참조만 지원합니다. 
+  <xref:System.IdentityModel.Tokens.SecurityToken> 클래스에는 내부 참조를 만드는 기능이 있으므로 구현 시에 추가 코드가 필요하지 않습니다.  
   
 7.  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InitializeSecurityTokenRequirement%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> 메서드를 구현합니다. 이 메서드는 인스턴스의 보안 토큰 매개 변수 클래스 인스턴스를 변환 하는 WCF는 <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> 클래스입니다. 결과는 보안 토큰 공급자가 해당 보안 토큰 인스턴스를 만드는 데 사용됩니다.  
   
@@ -87,9 +94,11 @@ ms.locfileid: "54637913"
   
 #### <a name="to-create-a-custom-security-token-serializer"></a>사용자 지정 보안 토큰 serializer를 만들려면  
   
-1.  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer> 클래스에서 파생된 새 클래스를 정의합니다.  
+1.  
+  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer> 클래스에서 파생된 새 클래스를 정의합니다.  
   
-2.  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29>를 사용하여 XML 스트림을 읽도록 <xref:System.Xml.XmlReader> 메서드를 재정의합니다. 이 메서드는 serializer 구현에서 지정된 현재 요소를 기반으로 보안 토큰을 deserialize할 수 있는 경우 `true`를 반환합니다. 이 예제에서 이 메서드는 XML 판독기의 현재 XML 요소의 요소 이름과 네임스페이스가 올바른지 확인합니다. 올바르지 않은 경우 이 메서드의 기본 클래스 구현을 호출하여 XML 요소를 처리합니다.  
+2.  
+  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29>를 사용하여 XML 스트림을 읽도록 <xref:System.Xml.XmlReader> 메서드를 재정의합니다. 이 메서드는 serializer 구현에서 지정된 현재 요소를 기반으로 보안 토큰을 deserialize할 수 있는 경우 `true`를 반환합니다. 이 예제에서 이 메서드는 XML 판독기의 현재 XML 요소의 요소 이름과 네임스페이스가 올바른지 확인합니다. 올바르지 않은 경우 이 메서드의 기본 클래스 구현을 호출하여 XML 요소를 처리합니다.  
   
 3.  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> 메서드를 재정의합니다. 이 메서드는 보안 토큰의 XML 내용을 읽고 적절한 메모리 내 표현을 생성합니다. 전달된 XML 판독기에 표시된 XML 요소를 인식할 수 없으면 기본 클래스 구현을 호출하여 시스템 제공 토큰 형식을 처리합니다.  
   
@@ -143,7 +152,8 @@ ms.locfileid: "54637913"
   
 #### <a name="to-integrate-the-custom-security-token-with-the-binding"></a>사용자 지정 보안 토큰을 바인딩과 통합하려면  
   
-1.  <xref:System.ServiceModel.Channels.SecurityBindingElement> 클래스에 노출되는 토큰 매개 변수 컬렉션 중 하나에서 사용자 지정 보안 토큰 매개 변수 클래스를 지정해야 합니다. 다음 예제에서는 `SignedEncrypted`가 반환하는 컬렉션을 사용합니다. 이 코드는 내용을 자동으로 서명한 후 암호화하여 클라이언트에서 서비스로 보낸 모든 메시지에 신용 카드 사용자 지정 토큰을 추가합니다.  
+1.  
+  <xref:System.ServiceModel.Channels.SecurityBindingElement> 클래스에 노출되는 토큰 매개 변수 컬렉션 중 하나에서 사용자 지정 보안 토큰 매개 변수 클래스를 지정해야 합니다. 다음 예제에서는 `SignedEncrypted`가 반환하는 컬렉션을 사용합니다. 이 코드는 내용을 자동으로 서명한 후 암호화하여 클라이언트에서 서비스로 보낸 모든 메시지에 신용 카드 사용자 지정 토큰을 추가합니다.  
   
      [!code-csharp[c_CustomToken#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#13)]
      [!code-vb[c_CustomToken#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#13)]  
@@ -165,4 +175,3 @@ ms.locfileid: "54637913"
 - [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
 - [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
 - [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
-- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - virtual mode
 - DataGridView control [Windows Forms], large data sets
 ms.assetid: 98236267-f08e-4918-bcf9-77acf050a3ca
-ms.openlocfilehash: d9583c9fd7a5e20e631395ad2423a45b911f8ca3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7ece3dd8c5f0e56c335c85d72030f1b9aa56e33b
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54727653"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260983"
 ---
 # <a name="how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 가상 모드 구현
 다음 코드 예제에서는 <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> 속성이 `true`로 설정된 <xref:System.Windows.Forms.DataGridView> 컨트롤을 사용하여 큰 데이터 집합을 관리하는 방법을 보여 줍니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "54727653"
   
 -   System 및 System.Windows.Forms 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Forms.DataGridView>

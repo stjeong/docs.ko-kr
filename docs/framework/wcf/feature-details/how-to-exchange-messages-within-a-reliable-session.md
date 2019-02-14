@@ -2,18 +2,19 @@
 title: '방법: 신뢰할 수 있는 세션 내에서 메시지 교환'
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 0b03845f9638a3646c72b1210de12dd94cf4cc9f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 145224655d1ec76c9deb5afc3c1a8ec9a1975f4f
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54720056"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260688"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>방법: 신뢰할 수 있는 세션 내에서 메시지 교환
 
 이 항목에서는 기본적이지는 않지만 신뢰할 수 있는 세션을 지원하는 시스템 제공 바인딩 중 하나를 사용하여 이러한 세션을 사용하도록 설정하는 데 필요한 단계에 대해 간략하게 설명합니다. 명령적 코드를 사용 하 여 신뢰할 수 있는 세션을 사용 하도록 설정 하거나 구성 파일에서 선언적으로 합니다. 이 절차는 신뢰할 수 있는 세션을 사용 하도록 설정 하는 메시지를 전송 된 동일한 순서로 도착 하는 규정 클라이언트와 서비스 구성 파일을 사용 합니다.
 
-이 절차의 핵심은 끝점 구성 요소를 포함 하는 `bindingConfiguration` 이라는 바인딩 구성을 참조 하는 특성 `Binding1`합니다. 합니다 [  **\<바인딩 >** ](../../../../docs/framework/misc/binding.md) 설정 하 여 신뢰할 수 있는 세션을 사용 하도록 설정 하려면이 이름을 참조 하는 구성 요소를 `enabled` 특성을 [  **\<reliableSession >** ](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) 요소를 `true`입니다. `ordered` 특성을 `true`로 설정하여 신뢰할 수 있는 세션에 대해 순서가 지정된 배달 보증을 지정합니다.
+이 절차의 핵심은 끝점 구성 요소를 포함 하는 `bindingConfiguration` 이라는 바인딩 구성을 참조 하는 특성 `Binding1`합니다. 합니다 [  **\<바인딩 >** ](../../../../docs/framework/misc/binding.md) 설정 하 여 신뢰할 수 있는 세션을 사용 하도록 설정 하려면이 이름을 참조 하는 구성 요소를 `enabled` 특성을 [  **\<reliableSession >** ](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731302(v=vs.100)) 요소를 `true`입니다. 
+  `ordered` 특성을 `true`로 설정하여 신뢰할 수 있는 세션에 대해 순서가 지정된 배달 보증을 지정합니다.
 
 이 예제의 소스 복사에 대해서 [WS 신뢰할 수 있는 세션](../../../../docs/framework/wcf/samples/ws-reliable-session.md)합니다.
 

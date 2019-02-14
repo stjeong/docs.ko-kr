@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 245d9dc6147f4140e823b79c3816b9bc567ad712
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1a5e18c0cf65ee8f336b74a2d8e44fcf5af0cfef
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54732689"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261780"
 ---
 # <a name="publickeyblob-structure"></a>PublicKeyBlob 구조체
 공개/개인 키 쌍의 공개 키를 이진 형식으로 나타냅니다.  
@@ -61,4 +61,3 @@ typedef struct {
 ## <a name="see-also"></a>참고자료
 - [StrongNameGetPublicKey 함수](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)
 - [StrongNameSignatureGeneration 함수](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)
-- [강력한 이름 지정 구조체](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)

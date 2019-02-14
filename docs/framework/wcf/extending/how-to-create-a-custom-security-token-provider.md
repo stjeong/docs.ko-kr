@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], providing credentials
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
-ms.openlocfilehash: db492967dc6df882221f0547b609b3c7f700b118
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1a81f6eac5648406f50d9600b030828551b21c56
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54627709"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261350"
 ---
 # <a name="how-to-create-a-custom-security-token-provider"></a>방법: 사용자 지정 보안 토큰 공급자 만들기
 이 항목에서는 사용자 지정 보안 토큰 공급자를 사용하여 새 토큰 형식을 만드는 방법과 공급자를 사용자 지정 보안 토큰 관리자와 통합하는 방법에 대해 설명합니다.  
@@ -23,8 +23,6 @@ ms.locfileid: "54627709"
  보안 토큰 공급자는 클라이언트 또는 서비스 자격 증명의 정보를 기반으로 보안 토큰 표현을 만듭니다. Windows Communication Foundation (WCF) 보안에서 사용자 지정 보안 토큰 공급자를 사용 하려면 사용자 지정 자격 증명과 보안 토큰 관리자 구현을 만들어야 합니다.  
   
  사용자 지정 자격 증명과 보안 토큰 관리자에 대 한 자세한 내용은 참조는 [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
-  
- 보안 토큰 관리자, 공급자 및 인증자 클래스에 자격 증명에 대 한 자세한 내용은 참조는 [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)합니다.  
   
 ### <a name="to-create-a-custom-security-token-provider"></a>사용자 지정 보안 토큰 공급자를 만들려면  
   
@@ -61,4 +59,3 @@ ms.locfileid: "54627709"
 - <xref:System.IdentityModel.Tokens.X509SecurityToken>
 - [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
 - [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
-- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

@@ -2,12 +2,12 @@
 title: Windows 스토어 클라이언트 응용 프로그램을 사용하여 WCF 서비스에 액세스
 ms.date: 03/30/2017
 ms.assetid: e2002ef4-5dee-4a54-9d87-03b33d35fc52
-ms.openlocfilehash: 95a717f139983be8291c2d156d8dd1626a43372a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 484fad33614ca2b9507ed88aadfc1a41bb216c28
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54613664"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261117"
 ---
 # <a name="accessing-wcf-services-with-a-windows-store-client-app"></a>Windows 스토어 클라이언트 응용 프로그램을 사용하여 WCF 서비스에 액세스
 Windows 8에서는 Windows 스토어 애플리케이션이라는 새로운 형식의 애플리케이션을 제공합니다. 이러한 애플리케이션은 터치 스크린 인터페이스를 바탕으로 설계되었습니다. .NET Framework 4.5에서는 Windows 스토어 애플리케이션을 사용하여 WCF 서비스를 호출할 수 있습니다.  
@@ -55,7 +55,7 @@ Windows 8에서는 Windows 스토어 애플리케이션이라는 새로운 형�
  텍스트 인코딩과 이진 인코딩 모두가 지원됩니다. 모든 WCF 전송 모드가 지원됩니다. 자세한 내용은 [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md)를 참조하세요.  
   
 ### <a name="add-service-reference"></a>서비스 참조 추가  
- Windows 스토어 애플리케이션에서 WCF 서비스를 호출하려면 Visual Studio 2012의 서비스 참조 추가 기능을 사용하세요. Windows 스토어 애플리케이션 내에서 서비스 참조 추가 기능이 완료될 때 몇 가지 변경 내용을 확인할 수 있습니다. 먼저, 구성 파일이 생성되지 않습니다. Windows 스토어 애플리케이션은 구성 파일을 사용하지 않으므로 코드로 구성되어야 합니다. 이 구성 코드는 서비스 참조 추가를 통해 생성된 References.cs 파일에 있습니다. 이 파일을 보려면 솔루션 탐색기에서 "모든 파일 표시"를 선택 해야 합니다. 해당 파일은 프로젝트 내의 서비스 참조 노드 및 Reference.svcmap 노드 아래에 있습니다. Windows 스토어 애플리케이션 내의 WCF 서비스에 대해 생성된 모든 작업은 태스크 기반 비동기 패턴을 사용하여 비동기화됩니다. 자세한 내용은 [작업 기반 비동기 패턴](https://msdn.microsoft.com/magazine/ff959203.aspx)을 참조하세요.  
+ Windows 스토어 애플리케이션에서 WCF 서비스를 호출하려면 Visual Studio 2012의 서비스 참조 추가 기능을 사용하세요. Windows 스토어 애플리케이션 내에서 서비스 참조 추가 기능이 완료될 때 몇 가지 변경 내용을 확인할 수 있습니다. 먼저, 구성 파일이 생성되지 않습니다. Windows 스토어 애플리케이션은 구성 파일을 사용하지 않으므로 코드로 구성되어야 합니다. 이 구성 코드는 서비스 참조 추가를 통해 생성된 References.cs 파일에 있습니다. 이 파일을 보려면 솔루션 탐색기에서 "모든 파일 표시"를 선택 해야 합니다. 해당 파일은 프로젝트 내의 서비스 참조 노드 및 Reference.svcmap 노드 아래에 있습니다. Windows 스토어 애플리케이션 내의 WCF 서비스에 대해 생성된 모든 작업은 태스크 기반 비동기 패턴을 사용하여 비동기화됩니다. 자세한 내용은 [비동기 작업-태스크를 사용한 비동기 프로그래밍 간소화](https://msdn.microsoft.com/magazine/ff959203.aspx)합니다.  
   
  이제 구성이 코드로 생성되므로 서비스 참조가 업데이트될 때마다 Reference.cs 파일의 모든 변경 내용을 덮어쓰게 됩니다. 이러한 문제를 해결하기 위해 구성 코드는 부분 메서드(Partial Method) 내에서 생성됩니다. 부분 메서드는 클라이언트 프록시 클래스에서 구현할 수 있습니다. 부분 메서드는 다음과 같이 선언됩니다.  
   

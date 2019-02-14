@@ -14,21 +14,23 @@ helpviewer_keywords:
 - WebBrowser control [Windows Forms], communication between DHTML and client application
 - DHTML [Windows Forms], embedding in Windows Forms
 ms.assetid: 55353a32-b09e-4479-a521-ff3a5ff9a708
-ms.openlocfilehash: 3acc4fd200b547fc754c4151aedc8d70fd1fa0bd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9cc6cb747ea5ff80770f18c2e884e72883c9a82f
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54502158"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261039"
 ---
 # <a name="how-to-implement-two-way-communication-between-dhtml-code-and-client-application-code"></a>방법: DHTML 코드와 클라이언트 응용 프로그램 코드 간의 양방향 통신 구현
-<xref:System.Windows.Forms.WebBrowser> 컨트롤을 사용하여 Windows Forms 클라이언트 응용 프로그램에 기존 DHTML(동적 HTML) 웹 응용 프로그램 코드를 추가할 수 있습니다. DHTML 기반 컨트롤을 만드는 데 상당한 개발 시간을 투자했으며 기존 코드를 다시 작성할 필요 없이 Windows Forms의 풍부한 사용자 인터페이스 기능을 활용하려는 경우에 유용합니다.  
+
+  <xref:System.Windows.Forms.WebBrowser> 컨트롤을 사용하여 Windows Forms 클라이언트 응용 프로그램에 기존 DHTML(동적 HTML) 웹 응용 프로그램 코드를 추가할 수 있습니다. DHTML 기반 컨트롤을 만드는 데 상당한 개발 시간을 투자했으며 기존 코드를 다시 작성할 필요 없이 Windows Forms의 풍부한 사용자 인터페이스 기능을 활용하려는 경우에 유용합니다.  
   
  <xref:System.Windows.Forms.WebBrowser> 컨트롤을 사용하면 <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> 및 <xref:System.Windows.Forms.WebBrowser.Document%2A> 속성을 통해 클라이언트 응용 프로그램 코드와 웹 페이지 스크립팅 코드 간의 양방향 통신을 구현할 수 있습니다. 또한 웹 컨트롤이 응용 프로그램 폼의 다른 컨트롤과 매끄럽게 혼합되어 해당 DHTML 구현을 숨기도록 <xref:System.Windows.Forms.WebBrowser> 컨트롤을 구성할 수 있습니다. 컨트롤을 매끄럽게 혼합하려면 배경색 및 시각적 스타일이 폼의 나머지 부분과 일치하도록 표시되는 페이지 형식을 지정하고 <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A>, <xref:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled%2A> 및 <xref:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled%2A> 속성을 통해 표준 브라우저 기능을 사용하지 않도록 설정합니다.  
   
 ### <a name="to-embed-dhtml-in-your-windows-forms-application"></a>Windows Forms 응용 프로그램에 DHTML을 포함하려면  
   
-1.  <xref:System.Windows.Forms.WebBrowser> 컨트롤의 <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A> 속성을 `false`로 설정하여 <xref:System.Windows.Forms.WebBrowser> 컨트롤이 놓여진 파일을 열지 않도록 합니다.  
+1.  
+  <xref:System.Windows.Forms.WebBrowser> 컨트롤의 <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A> 속성을 `false`로 설정하여 <xref:System.Windows.Forms.WebBrowser> 컨트롤이 놓여진 파일을 열지 않도록 합니다.  
   
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#1)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#1)]  
@@ -105,7 +107,7 @@ ms.locfileid: "54502158"
   
 -   System 및 System.Windows.Forms 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Forms.WebBrowser>

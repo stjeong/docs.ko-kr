@@ -2,12 +2,12 @@
 title: 오류 처리
 ms.date: 03/30/2017
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
-ms.openlocfilehash: 396ad7ba6f690cedf783adcf180c92a88427a959
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ddc3921fbb6b453db43ed3939134650395ade670
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54695558"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261155"
 ---
 # <a name="error-handling"></a>오류 처리
 ## <a name="error-handling-in-windows-communication-foundation"></a>Windows Communication Foundation의 오류 처리  
@@ -22,7 +22,7 @@ ms.locfileid: "54695558"
   
  응용 프로그램 블록은 일반적으로 사용되는 모범 사례를 통합하여 응용 프로그램 전반의 오류 처리를 위한 공통된 접근 방식을 제공하는 데 목적이 있습니다. 반면 직접 개발한 사용자 지정 오류 처리기 및 오류 계약이 유용한 경우도 있습니다. 예를 들어, 사용자 지정 오류 처리기는 자동으로 FaultExceptions에 대 한 모든 예외를 승격 하 고 응용 프로그램에 로깅 기능을 추가할 수 있는 좋은 기회를 제공 합니다.  
   
- 자세한 내용은 참조 하십시오 [Microsoft Enterprise Library](https://msdn.microsoft.com/library/ff632023.aspx)합니다.  
+ 자세한 내용은 참조 하십시오 [Microsoft Enterprise Library](https://docs.microsoft.com/previous-versions/msp-n-p/ff632023(v=pandp.10))합니다.  
   
 ### <a name="dealing-with-expected-exceptions"></a>예상한 예외 처리  
  모든 작업 또는 관련 확장성 지점에서 예상 되는 예외를 catch 하려면 이러한에서 복구할 수 있습니다 및 FaultException에서 적절 한 사용자 지정 오류를 반환 하는지 여부를 결정은 적절 한 조치 과정\<T >  

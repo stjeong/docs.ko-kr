@@ -8,12 +8,12 @@ helpviewer_keywords:
 - cryptographic provider [WCF], changing
 - cryptographic provider [WCF]
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
-ms.openlocfilehash: ce2ce082f41700b1b86786abfa2dfe4a673fd6e0
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 4e11dd90d1cc57f3f2f559c22e1548b8fbcedaea
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55265950"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261914"
 ---
 # <a name="how-to-change-the-cryptographic-provider-for-an-x509-certificates-private-key"></a>방법: X.509 인증서의 개인 키에 대 한 암호화 공급자 변경
 이 항목에서는 X.509 인증서의 개인 키를 제공 하는 데 암호화 공급자를 변경 하는 방법 및 Windows Communication Foundation (WCF) 보안 프레임 워크에 공급자를 통합 하는 방법을 보여 줍니다. 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
@@ -87,4 +87,3 @@ ms.locfileid: "55265950"
 - [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
 - [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
 - [방법: 사용자 지정 토큰 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
-- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
