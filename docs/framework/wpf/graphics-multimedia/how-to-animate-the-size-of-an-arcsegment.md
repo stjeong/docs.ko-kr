@@ -9,12 +9,12 @@ helpviewer_keywords:
 - animation [WPF], ArcSegment size
 - ArcSegment [WPF], animating size
 ms.assetid: f93a1065-b00a-4d7e-9d4b-37023f98186a
-ms.openlocfilehash: 845db7fdeacaae77e25dd73ea0099b779975c186
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d1ca86970b71f1d1449d3ef3fdfb2e96b5ce6175
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54514522"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303337"
 ---
 # <a name="how-to-animate-the-size-of-an-arcsegment"></a>방법: ArcSegment 크기에 애니메이션 효과 주기
 애니메이션을 적용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.ArcSegment.Size%2A> 의 속성을 <xref:System.Windows.Media.ArcSegment>입니다.  
@@ -32,6 +32,5 @@ ms.locfileid: "54514522"
 - <xref:System.Windows.Media.ArcSegment>
 - [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
 - [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
-- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)
-- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
-- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [기 하 도형 방법 도움말 항목](geometries-how-to-topics.md)
+- [애니메이션 및 타이밍 방법 항목](animation-and-timing-how-to-topics.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - TableLayoutPanel control [Windows Forms], walkthroughs
 - Windows Forms controls, arranging
 ms.assetid: d474885e-12cc-4ab7-b997-2a23a643049b
-ms.openlocfilehash: d058fd43649b8096ce2a65d8537cf4b663f58594
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f337164043014ed14d42e219f26ee2ec8be06662
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54585421"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56305846"
 ---
 # <a name="walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel"></a>연습: TableLayoutPanel을 사용 하 여 Windows Forms에서 컨트롤 정렬
 일부 애플리케이션에는 폼 크기가 조정되거나 내용의 크기가 변경될 때 적절하게 정렬되는 레이아웃을 가진 폼이 필요합니다. 동적 레이아웃이 필요하며 코드에서 명시적으로 <xref:System.Windows.Forms.Control.Layout> 이벤트를 처리하지 않으려는 경우 레이아웃 패널을 사용하는 것이 좋습니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "54585421"
   
  합니다 <xref:System.Windows.Forms.TableLayoutPanel> HTML과 비슷한 기능을 제공 하는 눈금으로 내용을 정렬 \<테이블 > 요소입니다. <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 사용 하면 각 개별 컨트롤의 위치를 정확 하 게 지정 하지 않고도 모눈 레이아웃에서 컨트롤을 배치할 수 있습니다. 해당 셀은 행과 열로 정렬되며 크기가 서로 다를 수 있습니다. 행 및 열에서 셀을 병합할 수 있습니다. 셀 폼을 포함 하 고 컨테이너와 다른 대부분의 측면에서 동작 하는 모든 항목을 포함할 수 있습니다.  
   
- <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤에서는 가변 크기 조정 기능을 런타임에 폼 크기를 조정할 때 레이아웃 원활 하 게 변경할 수 있도록 합니다. 이렇게 하면는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤 데이터 입력 폼과 지역화 된 응용 프로그램 등의 용도로 적합 합니다. 자세한 내용은 [연습: 데이터 항목에 대 한 크기 조정 가능한 Windows Form 만들기](https://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab) 고 [연습: 지역화 가능한 Windows Form 만들기](https://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c)합니다.  
+ <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤에서는 가변 크기 조정 기능을 런타임에 폼 크기를 조정할 때 레이아웃 원활 하 게 변경할 수 있도록 합니다. 이렇게 하면는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤 데이터 입력 폼과 지역화 된 응용 프로그램 등의 용도로 적합 합니다. 자세한 내용은 [연습: 데이터 항목에 대 한 크기 조정 가능한 Windows Form 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100)) 고 [연습: 지역화 가능한 Windows Form 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))합니다.  
   
  사용 되지 해야 일반적으로 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤의 전체 레이아웃에 대 한 컨테이너입니다. 사용 하 여 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤 레이아웃의 부분에 비례하여 크기 조정 기능을 제공 합니다.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "54585421"
   
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면  
   
-1.  "TableLayoutPanelExample" 라는 Windows 응용 프로그램 프로젝트를 만듭니다. 자세한 내용은 [방법: Windows 응용 프로그램 프로젝트를 만들](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) 합니다.  
+1.  "TableLayoutPanelExample" 라는 Windows 응용 프로그램 프로젝트를 만듭니다. 자세한 내용은 [방법: Windows Forms 응용 프로그램 프로젝트 만들기](/visualstudio/ide/step-1-create-a-windows-forms-application-project) 합니다.  
   
 2.  폼을 선택 합니다 **Windows** **Forms 디자이너**합니다.  
   
@@ -184,8 +184,8 @@ ms.locfileid: "54585421"
 - [연습: FlowLayoutPanel을 사용 하 여 Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [연습: 맞춤선을 사용 하 여 Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Microsoft Windows 사용자 환경, 사용자 인터페이스 개발자 및 디자이너를 위한 공식 지침. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](https://www.microsoft.com/mspress/southpacific/books/book11588.htm)
-- [연습: 데이터 항목에 대 한 크기 조정 가능한 Windows Form 만들기](https://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab)
-- [연습: 지역화 가능한 Windows Form 만들기](https://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c)
+- [연습: 데이터 항목에 대 한 크기 조정 가능한 Windows Form 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100))
+- [연습: 지역화 가능한 Windows Form 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))
 - [TableLayoutPanel 컨트롤에 대한 모범 사례](../../../../docs/framework/winforms/controls/best-practices-for-the-tablelayoutpanel-control.md)
 - [AutoSize 속성 개요](../../../../docs/framework/winforms/controls/autosize-property-overview.md)
 - [방법: Windows Forms에 컨트롤 도킹](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md)

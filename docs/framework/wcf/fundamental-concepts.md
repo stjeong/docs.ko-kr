@@ -7,12 +7,12 @@ helpviewer_keywords:
 - fundamentals [WCF]
 - Windows Communication Foundation [WCF], concepts
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
-ms.openlocfilehash: 66aa257c0d7f0e66e69d83ddeba48c33ea7a5ff5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b28f9c0575d1031c2f542ffa0de4ac5b848d3da1
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54664024"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56305547"
 ---
 # <a name="fundamental-windows-communication-foundation-concepts"></a>기본적인 Windows Communication Foundation 개념
 이 문서에서는 Windows Communication Foundation (WCF) 아키텍처의 상위 수준 보기를 제공 합니다. 또한 핵심 개념 및 이러한 개념이 서로 어떻게 연결되는지에 대해 설명합니다. WCF 서비스 및 클라이언트의 가장 간단한 버전을 만드는 방법에 대 한 자습서를 참조 하세요 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md)합니다. WCF 프로그래밍에 알아보려면 [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)합니다.  
@@ -135,7 +135,7 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
   
  서비스에 의해 노출된 메타데이터에는 서비스의 데이터 계약을 정의한 XML 스키마 문서와 서비스의 메서드를 설명하는 WSDL 문서가 포함되어 있습니다.  
   
- 사용할 경우 서비스와 엔드포인트를 검사하여 WCF에 의해 서비스 메타데이터가 자동으로 생성됩니다. 서비스에서 메타데이터를 게시하려면 명시적으로 메타데이터 동작을 사용해야 합니다.  
+ 사용할 경우 서비스와 끝점을 검사하여 WCF에 의해 서비스 메타데이터가 자동으로 생성됩니다. 서비스에서 메타데이터를 게시하려면 명시적으로 메타데이터 동작을 사용해야 합니다.  
   
  보안  
  Wcf에서는 기밀성 (도청을 방지 하기 위해 메시지 암호화), 무결성 (메시지 변조를 감지 하기 위한 방법), (서버 및 클라이언트의 유효성을 검사 하기 위한 방법), 인증 및 권한 부여 (컨트롤에 대 한 액세스 포함 리소스)입니다. 이러한 기능은 HTTP를 통한 TLS(HTTPS라고도 함)와 같이 기존 보안 메커니즘을 활용하거나 다양한 WS-* 보안 사양 중 하나 이상을 구현하여 제공합니다.  
@@ -155,4 +155,3 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
 ## <a name="see-also"></a>참고자료
 - [Windows Communication Foundation 정의](../../../docs/framework/wcf/whats-wcf.md)
 - [Windows Communication Foundation 아키텍처](../../../docs/framework/wcf/architecture.md)
-- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

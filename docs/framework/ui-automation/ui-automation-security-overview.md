@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 1d853695-973c-48ae-b382-4132ae702805
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: b35014993f10c3a60c16f784e7dd11b9a20f4f4c
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: d86293e2d8fedab1d9ed8a5dc0ad59bd1f386d93
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582137"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303870"
 ---
 # <a name="ui-automation-security-overview"></a>UI 자동화 보안 개요
 > [!NOTE]
@@ -22,9 +22,9 @@ ms.locfileid: "48582137"
   
 <a name="User_Account_Control"></a>   
 ## <a name="user-account-control"></a>사용자 계정 컨트롤  
- 보안은 [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] 의 중요 사항이며, 혁신적 기능 중에는 사용자가 더 높은 권한이 필요한 응용 프로그램과 서비스를 실행할 수 없도록 차단되지 않고 표준(비관리자) 사용자로 실행할 수 있는 기능이 있습니다.  
+ 보안은 [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] 의 중요 사항이며, 혁신적 기능 중에는 사용자가 더 높은 권한이 필요한 애플리케이션과 서비스를 실행할 수 없도록 차단되지 않고 표준(비관리자) 사용자로 실행할 수 있는 기능이 있습니다.  
   
- [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)]에서는 대부분의 응용 프로그램에 표준 또는 관리 토큰이 제공됩니다. 응용 프로그램을 관리 응용 프로그램으로 식별할 수 없는 경우 기본적으로 표준 응용 프로그램으로 시작됩니다. 관리 응용 프로그램으로 식별된 응용 프로그램을 시작하기 전에 [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] 에서 높은 권한으로 응용 프로그램을 실행할 것인지 묻는 메시지를 사용자에게 표시합니다. 관리자 자격 증명이 필요한 응용 프로그램 또는 시스템 구성 요소가 실행 권한을 요청할 때까지 관리자가 표준 사용자로 실행되므로 사용자가 로컬 관리자 그룹의 멤버인 경우에도 동의 확인 프롬프트가 기본적으로 표시됩니다.  
+ [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)]에서는 대부분의 응용 프로그램에 표준 또는 관리 토큰이 제공됩니다. 애플리케이션을 관리 애플리케이션으로 식별할 수 없는 경우 기본적으로 표준 애플리케이션으로 시작됩니다. 관리 애플리케이션으로 식별된 애플리케이션을 시작하기 전에 [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] 에서 높은 권한으로 애플리케이션을 실행할 것인지 묻는 메시지를 사용자에게 표시합니다. 관리자 자격 증명이 필요한 애플리케이션 또는 시스템 구성 요소가 실행 권한을 요청할 때까지 관리자가 표준 사용자로 실행되므로 사용자가 로컬 관리자 그룹의 멤버인 경우에도 동의 확인 프롬프트가 기본적으로 표시됩니다.  
   
 <a name="Tasks_Requiring_Higher_Privileges"></a>   
 ## <a name="tasks-requiring-higher-privileges"></a>더 높은 권한이 필요한 작업  
@@ -32,11 +32,11 @@ ms.locfileid: "48582137"
   
  UI 자동화 클라이언트는 더 높은 권한 수준에서 실행 중일 수도 있는 다른 프로세스와 통신해야 합니다. 클라이언트가 일반적으로 다른 프로세스에 표시되지 않는 시스템 대화 상자에 액세스해야 할 수도 있습니다. 따라서 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클라이언트는 시스템에서 신뢰되어야 하며 특수 권한으로 실행되어야 합니다.  
   
- 더 높은 권한 수준에서 실행 중인 응용 프로그램과 통신할 수 있도록 신뢰되려면 응용 프로그램에 서명해야 합니다.  
+ 더 높은 권한 수준에서 실행 중인 애플리케이션과 통신할 수 있도록 신뢰되려면 애플리케이션에 서명해야 합니다.  
   
 <a name="Manifest_Files"></a>   
 ## <a name="manifest-files"></a>매니페스트 파일  
- 보호된 시스템 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에 액세스할 수 있으려면 매니페스트 파일에 특수 특성이 포함된 매니페스트 파일로 응용 프로그램을 빌드해야 합니다. 이 `uiAccess` 특성은 다음과 같이 `requestedExecutionLevel` 태그에 포함됩니다.  
+ 보호된 시스템 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에 액세스할 수 있으려면 매니페스트 파일에 특수 특성이 포함된 매니페스트 파일로 애플리케이션을 빌드해야 합니다. 이 `uiAccess` 특성은 다음과 같이 `requestedExecutionLevel` 태그에 포함됩니다.  
   
  `<trustInfo xmlns="urn:0073chemas-microsoft-com:asm.v3">`  
   
@@ -60,4 +60,4 @@ ms.locfileid: "48582137"
   
  `UIAccess` 는 기본적으로 "false"입니다. 즉, 특성을 생략하거나 어셈블리에 대한 매니페스트가 없을 경우 응용 프로그램이 보호된 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에 액세스할 수 없습니다.  
   
- 에 대 한 자세한 [!INCLUDE[TLA#tla_longhorn2](../../../includes/tlasharptla-longhorn2-md.md)] 보안, 응용 프로그램 서명 및 어셈블리 매니페스트를 만드는 방법에 "개발자 모범 사례 및 지침에 대 한 응용 프로그램에는" 최소 권한 환경에서 참조 [MSDN](https://msdn.microsoft.com/library/default.asp?url=/library/dnlong/html/AccProtVista.asp)합니다.
+ 에 대 한 자세한 [!INCLUDE[TLA#tla_longhorn2](../../../includes/tlasharptla-longhorn2-md.md)] 보안, 응용 프로그램 서명 및 어셈블리 매니페스트를 만드는 방법에 참조 [Developer Best Practices and Guidelines for Applications는 최소 권한 환경에서](https://docs.microsoft.com/previous-versions/dotnet/articles/aa480150(v=msdn.10))합니다.

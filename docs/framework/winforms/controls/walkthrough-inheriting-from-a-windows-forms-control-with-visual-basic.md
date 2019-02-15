@@ -10,12 +10,12 @@ helpviewer_keywords:
 - inheritance [Windows Forms], walkthroughs
 - custom controls [Windows Forms], inheritance
 ms.assetid: fb58d7c8-b702-4478-ad31-b00cae118882
-ms.openlocfilehash: 157c323a2536f1034b7a8ceace630a9e15168552
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ffbc24ca8c969630279162619ee5ec9e9aad3ec
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54728137"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303614"
 ---
 # <a name="walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic"></a>연습: Visual Basic을 사용한 Windows Forms 컨트롤에서 상속
 Visual Basic을 사용 하 여을 통해 강력한 사용자 지정 컨트롤을 만들 수 있습니다 *상속*합니다. 상속을 통해 표준 Windows Forms 컨트롤의 모든 고유 기능을 유지하면서 사용자 지정 기능을 통합하는 컨트롤을 만들 수 있습니다. 이 연습에서는 `ValueButton`이라는 간단한 상속된 컨트롤을 만듭니다. 이 단추는 표준 Windows Forms에서 기능을 상속 <xref:System.Windows.Forms.Button> 컨트롤을 호출 하는 사용자 지정 속성을 노출 합니다 `ButtonValue`합니다.  
@@ -151,4 +151,3 @@ Visual Basic을 사용 하 여을 통해 강력한 사용자 지정 컨트롤을
 - [방법: 컨트롤에 표시 된 도구 상자 항목 선택 대화 상자](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 - [.NET Framework에서 사용자 지정 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
 - [상속 기본 사항(Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
-- [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)

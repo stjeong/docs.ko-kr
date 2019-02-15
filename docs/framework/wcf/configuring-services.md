@@ -1,17 +1,18 @@
 ---
-title: 서비스 구성
+title: WCF 서비스 구성
 ms.date: 03/30/2017
 helpviewer_keywords:
 - configuration [WCF]
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
-ms.openlocfilehash: 1246ce5056c17641e10bb96f79b60090d6f43b89
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2435d5c4592de60e07b60f1bf749f2421c798535
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54525055"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303613"
 ---
-# <a name="configuring-services"></a>서비스 구성
+# <a name="configuring-wcf-services"></a>WCF 서비스 구성
+
 서비스 계약을 디자인하고 구현했으면 서비스를 구성할 준비가 되었습니다. 여기서 서비스를 찾을 수 있는 주소, 메시지를 보내고 받는 데 사용하는 전송 및 메시지 인코딩, 서비스에 필요한 보안 형식 지정 등 서비스가 클라이언트에 노출되는 방법을 정의하고 사용자 지정할 수 있습니다.  
   
  여기서 사용되는 구성은 코드에서 명령적으로 또는 구성 파일을 사용하여 엔드포인트 주소, 사용된 전송 및 보안 체계 지정 같은 서비스의 다양한 측면을 정의하고 사용자 지정할 수 있는 모든 방식이 포함됩니다. 실제로 구성 작성은 주요 WCF 응용 프로그램 프로그래밍의 일부입니다.  

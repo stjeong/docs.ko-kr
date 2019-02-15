@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 0445b9049fddb56a4a8df88679e4dfe5ffc39e35
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b4ab95470a1b377d1768cf30b32f170b544d225e
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611724"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56305794"
 ---
 # <a name="ui-automation-events-for-clients"></a>클라이언트용 UI 자동화 이벤트
 > [!NOTE]
@@ -38,7 +38,8 @@ ms.locfileid: "54611724"
 |<xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler%2A>|포커스 변경|<xref:System.Windows.Automation.AutomationFocusChangedEventArgs>|<xref:System.Windows.Automation.AutomationFocusChangedEventHandler>|  
 |<xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>|속성 변경|<xref:System.Windows.Automation.AutomationPropertyChangedEventArgs>|<xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>|  
 |<xref:System.Windows.Automation.Automation.AddStructureChangedEventHandler%2A>|구조 변경|<xref:System.Windows.Automation.StructureChangedEventArgs>|<xref:System.Windows.Automation.StructureChangedEventHandler>|  
-|<xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>|<xref:System.Windows.Automation.AutomationEvent>로 식별된 기타 모든 이벤트|<xref:System.Windows.Automation.AutomationEventArgs> 또는 <xref:System.Windows.Automation.WindowClosedEventArgs>|<xref:System.Windows.Automation.AutomationEventHandler>|  
+|<xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>|
+  <xref:System.Windows.Automation.AutomationEvent>로 식별된 기타 모든 이벤트|<xref:System.Windows.Automation.AutomationEventArgs> 또는 <xref:System.Windows.Automation.WindowClosedEventArgs>|<xref:System.Windows.Automation.AutomationEventHandler>|  
   
  메서드를 호출하기 전에, 이벤트를 처리하는 대리자 메서드를 만들어야 합니다. 원하는 경우, 단일 메서드에서 여러 종류의 이벤트를 처리하고 이 메서드를 여러 번 호출하여 테이블에 있는 메서드 중 하나에 전달할 수 있습니다. 예를 들어, 다양한 이벤트를 <xref:System.Windows.Automation.AutomationEventArgs.EventId%2A>에 따라 다르게 처리하도록 단일 <xref:System.Windows.Automation.AutomationEventHandler>를 설정할 수 있습니다.  
   
@@ -52,9 +53,12 @@ ms.locfileid: "54611724"
   
 |메서드|설명|  
 |------------|-----------------|  
-|<xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>|<xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
-|<xref:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler%2A>|<xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
-|<xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler%2A>|<xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
+|<xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>|
+  <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
+|<xref:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler%2A>|
+  <xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
+|<xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler%2A>|
+  <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>를 사용하여 등록된 이벤트 처리기의 등록을 취소합니다.|  
 |<xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>|등록된 모든 이벤트 처리기를 등록 취소합니다.|  
   
  예제 코드를 참조 하세요 [UI Automation 이벤트를 구독할](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)합니다.  
@@ -63,4 +67,4 @@ ms.locfileid: "54611724"
 - [UI 자동화 이벤트 구독](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
 - [UI 자동화 이벤트 개요](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
 - [UI 자동화 속성 개요](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)
-- [TrackFocus 샘플](https://msdn.microsoft.com/library/4a91c0af-6bb5-4d38-a743-cf136f268fc9)
+- [TrackFocus 샘플](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FocusTracker)

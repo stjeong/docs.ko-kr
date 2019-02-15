@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 82415524e60a1c9cf44cdccd9a1b2660f4b517a3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dea56b69632759193c5ccb23b9d789de6ee45e10
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54607737"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303883"
 ---
 # <a name="ui-automation-control-patterns-for-clients"></a>클라이언트용 UI 자동화 컨트롤 패턴
 > [!NOTE]
@@ -52,6 +52,6 @@ ms.locfileid: "54607737"
 - [UI 자동화를 사용하여 컨트롤 호출](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)
 - [UI 자동화를 사용하여 확인란의 전환 상태 가져오기](../../../docs/framework/ui-automation/get-the-toggle-state-of-a-check-box-using-ui-automation.md)
 - [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
-- [TextPattern Insert 텍스트 샘플](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16)
-- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
-- [InvokePattern 및 ExpandCollapsePattern 메뉴 항목 샘플](https://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)
+- [TextPattern Insert 텍스트 샘플](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
+- [TextPattern 검색 및 선택 샘플](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FindText)
+- [InvokePattern, ExpandCollapsePattern, 및 TogglePattern 샘플](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)

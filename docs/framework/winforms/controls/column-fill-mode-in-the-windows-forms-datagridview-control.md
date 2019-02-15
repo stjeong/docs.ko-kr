@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], column fill mode
 - data grids [Windows Forms], column fill mode
 ms.assetid: b4ef7411-ebf4-4e26-bb33-aecec90de80c
-ms.openlocfilehash: 79ef0310e5f134c09c9bbf0c0403ea6aa7cd7059
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 823d3c06648ed37003176eab9df538d95f1ced69
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595151"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304312"
 ---
 # <a name="column-fill-mode-in-the-windows-forms-datagridview-control"></a>Windows Forms DataGridView 컨트롤의 열 채우기 모드
 열 채우기 모드에는 <xref:System.Windows.Forms.DataGridView> 컨트롤이 사용 가능한 표시 영역의 너비를 채우도록 열 크기를 자동으로 조정합니다. 각 열의 너비를 해당 <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> 속성 값과 같거나 더 크게 유지해야 하는 경우 컨트롤이 가로 스크롤 막대를 표시하지 않습니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "54595151"
   
 -   System, System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조  
   
--   Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
+-   Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Forms.DataGridView>

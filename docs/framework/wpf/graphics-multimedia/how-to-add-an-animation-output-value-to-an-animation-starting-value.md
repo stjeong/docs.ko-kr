@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - animation [WPF]
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
-ms.openlocfilehash: 820e03064d331e852a224e1f989685d7a77983db
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3f1110880b7a8d4bcef40bcb66bcade6597a15dc
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603029"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303363"
 ---
 # <a name="how-to-add-an-animation-output-value-to-an-animation-starting-value"></a>방법: 애니메이션 시작 값에 애니메이션 출력 값 추가
 이 예제에서는 애니메이션 시작 값에 애니메이션 출력 값을 추가 하는 방법을 보여 줍니다.  
@@ -25,5 +25,4 @@ ms.locfileid: "54603029"
 - [주기가 반복되는 동안 애니메이션 값 누적](../../../../docs/framework/wpf/graphics-multimedia/how-to-accumulate-animation-values-during-repeat-cycles.md)
 - [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
 - [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
-- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [애니메이션 및 타이밍 방법 항목](animation-and-timing-how-to-topics.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows Forms, anchoring and docking WPF content
 - interoperability [WPF]
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-ms.openlocfilehash: 66fb814bbf0a40ccaa9339eb24dcc49332861deb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 543546de4f9b93deb5fa70c98608246e9c06e4f7
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647669"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304559"
 ---
 # <a name="walkthrough-arranging-wpf-content-on-windows-forms-at-design-time"></a>연습: 디자인 타임에 Windows Forms에서 WPF 콘텐츠 정렬
 이 연습에서는 기준 위치 지정 및 맞춤선과 같은 Windows Forms 레이아웃 기능을 사용하여 WPF(Windows Presentation Foundation) 컨트롤을 정렬하는 방법을 보여 줍니다.
@@ -56,11 +56,12 @@ ms.locfileid: "54647669"
   
 1.  프로젝트에 새 WPF <xref:System.Windows.Controls.UserControl>을 추가합니다. 컨트롤 형식의 기본 이름인 `UserControl1.xaml`을 사용합니다. 자세한 내용은 [연습: 디자인 타임에 Windows Forms에서 새 WPF 콘텐츠 만들기](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)합니다.  
   
-2.  디자인 뷰에서 `UserControl1`이 선택되었는지 확인합니다. 자세한 내용은 [방법: 선택 하 고 디자인 화면에서 요소를 이동](https://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474)합니다.  
+2.  디자인 뷰에서 `UserControl1`이 선택되었는지 확인합니다. 자세한 내용은 [방법: 선택 하 고 디자인 화면에서 요소를 이동](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100))합니다.  
   
 3.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.FrameworkElement.Width%2A> 및 <xref:System.Windows.FrameworkElement.Height%2A> 속성을 `200`입니다.  
   
-4.  <xref:System.Windows.Controls.Control.Background%2A> 속성 값을 `Blue`로 설정합니다.  
+4.  
+  <xref:System.Windows.Controls.Control.Background%2A> 속성 값을 `Blue`로 설정합니다.  
   
 5.  프로젝트를 빌드합니다.  
   
@@ -75,15 +76,17 @@ ms.locfileid: "54647669"
   
 3.  에 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤의 스마트 태그 패널에서 선택 **마지막 행 제거**합니다.  
   
-4.  <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 더 큰 너비와 높이로 조정합니다.  
+4.  
+  <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 더 큰 너비와 높이로 조정합니다.  
   
 5.  에 **도구 상자**, 두 번 클릭 `UserControl1` 의 인스턴스를 만들 `UserControl1` 의 첫 번째 셀에는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤입니다.  
   
-     `UserControl1` 인스턴스가 `elementHost1`이라는 새 <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤에서 호스트됩니다.  
+     
+  `UserControl1` 인스턴스가 `elementHost1`이라는 새 <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤에서 호스트됩니다.  
   
 6.  에 **도구 상자**를 두 번 클릭 `UserControl1` 의 두 번째 셀에 다른 인스턴스를 만들 수는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤입니다.  
   
-7.  에 **문서 개요** 창에서 `tableLayoutPanel1`합니다. 자세한 내용은 [문서 개요 창](https://msdn.microsoft.com/library/9054f2bc-f6f8-4242-9fe0-be71089b12f8)합니다.  
+7.  에 **문서 개요** 창에서 `tableLayoutPanel1`합니다. 자세한 내용은 [문서 개요 창](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/46xf4h0w(v=vs.100)#using-the-document-outline-window-for-silverlight-and-wpf)합니다.  
   
 8.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.Forms.Control.Padding%2A> 속성을 `10, 10, 10, 10`입니다.  
   
@@ -96,7 +99,8 @@ ms.locfileid: "54647669"
   
 1.  **도구 상자**의 인스턴스를 끕니다 `UserControl1` 폼 아래 공간에 배치 하는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤입니다.  
   
-     `UserControl1` 인스턴스가 `elementHost3`이라는 새 <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤에서 호스트됩니다.  
+     
+  `UserControl1` 인스턴스가 `elementHost3`이라는 새 <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤에서 호스트됩니다.  
   
 2.  맞춤선을 사용하여 `elementHost3`의 왼쪽 가장자리를 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤의 왼쪽 가장자리에 맞춥니다.  
   
@@ -121,7 +125,8 @@ ms.locfileid: "54647669"
   
 2.  에 **속성** 창에서 합니다 <xref:System.Windows.Forms.Control.Anchor%2A> 속성을 **위쪽, 아래쪽, 왼쪽, 오른쪽**합니다.  
   
-3.  <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 더 큰 크기로 조정합니다.  
+3.  
+  <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 더 큰 크기로 조정합니다.  
   
      `elementHost1` 컨트롤의 크기가 조정되어 셀을 채웁니다.  
   
@@ -129,7 +134,8 @@ ms.locfileid: "54647669"
   
 5.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.Forms.Control.Dock%2A> 속성을 <xref:System.Windows.Forms.DockStyle.Fill>입니다.  
   
-     `elementHost2` 컨트롤의 크기가 조정되어 셀을 채웁니다.  
+     
+  `elementHost2` 컨트롤의 크기가 조정되어 셀을 채웁니다.  
   
 6.  <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 선택합니다.  
   
@@ -143,7 +149,8 @@ ms.locfileid: "54647669"
   
 10. 폼의 크기를 조정합니다.  
   
-     <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤 3개의 크기가 모두 적절하게 조정됩니다.  
+     
+  <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤 3개의 크기가 모두 적절하게 조정됩니다.  
   
      자세한 내용은 [방법: TableLayoutPanel 컨트롤의 자식 컨트롤 고정 및 도킹](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)합니다.  
   

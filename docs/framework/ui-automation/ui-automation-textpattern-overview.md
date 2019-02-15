@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 41787927-df1f-4f4a-aba3-641662854fc4
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: c905dfbb0fffcf37c8b196e883003ea70e509b2d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ea03c037312ffdb66146dc0461e157c230aafcd2
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54534318"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304052"
 ---
 # <a name="ui-automation-textpattern-overview"></a>UI 자동화 TextPattern 개요
 > [!NOTE]
@@ -24,7 +24,7 @@ ms.locfileid: "54534318"
  컨트롤의 텍스트 콘텐츠 노출은 텍스트 컨테이너의 내용을 텍스트 스트림으로 나타내는 <xref:System.Windows.Automation.TextPattern> 컨트롤 패턴을 사용하여 수행됩니다. 다시, <xref:System.Windows.Automation.TextPattern> 을 사용하려면 형식 및 스타일 특성을 노출하는 <xref:System.Windows.Automation.Text.TextPatternRange> 클래스를 지원해야 합니다. <xref:System.Windows.Automation.Text.TextPatternRange>는 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 및 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트 컬렉션을 사용하여 텍스트 컨테이너의 연속 텍스트 범위나 여러 비연속 텍스트 범위를 나타내 <xref:System.Windows.Automation.TextPattern>을 지원합니다. <xref:System.Windows.Automation.Text.TextPatternRange> 는 선택, 비교, 검색 및 탐색 등의 기능을 지원합니다.  
   
 > [!NOTE]
->  <xref:System.Windows.Automation.TextPattern> 클래스는 텍스트를 삽입하거나 수정할 수 있는 방법을 제공하지 않습니다. 그러나 컨트롤에 따라 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] <xref:System.Windows.Automation.ValuePattern> 또는 직접 키보드 입력을 통해 이 작업을 수행할 수 있습니다. 예제는 [TextPattern Insert Text Sample](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16) 을 참조하세요.  
+> <xref:System.Windows.Automation.TextPattern> 클래스는 텍스트를 삽입하거나 수정할 수 있는 방법을 제공하지 않습니다. 그러나 컨트롤에 따라 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] <xref:System.Windows.Automation.ValuePattern> 또는 직접 키보드 입력을 통해 이 작업을 수행할 수 있습니다. 예제는 [TextPattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText) 을 참조하세요.  
   
  이 개요에 설명된 기능은 보조 기술 공급업체 및 최종 사용자에게 중요합니다. 보조 기술은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 를 사용하여 사용자에 대한 전체 텍스트 형식 정보를 수집하고 <xref:System.Windows.Automation.Text.TextUnit> (문자, 단어, 줄 또는 단락)별로 텍스트의 프로그래밍 방식 탐색 및 선택 기능을 제공합니다.  
   
@@ -136,4 +136,4 @@ ms.locfileid: "54534318"
 - [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
 - [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
-- [텍스트 서비스 프레임워크 비교](https://msdn.microsoft.com/library/default.asp?url=/library/tsf/tsf/text_services_framework.asp)
+- [텍스트 서비스 프레임워크 비교](/windows/desktop/api/_tsf/)

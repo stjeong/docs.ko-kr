@@ -6,12 +6,12 @@ helpviewer_keywords:
 - tables [Windows Forms], adding to DataGrid control
 - DataGrid control [Windows Forms], adding tables and columns
 ms.assetid: 4a6d1b34-b696-476b-bf8a-57c6230aa9e1
-ms.openlocfilehash: c130dac068ee4866f44fd12398202e21d91fcf48
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 079b4121c3f9e5c55e003b089f85cd08a5bae5d2
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54536223"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304416"
 ---
 # <a name="how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control-using-the-designer"></a>방법: 디자이너를 사용 하 여 Windows Forms DataGrid 컨트롤에 테이블과 열 추가
 
@@ -20,7 +20,7 @@ ms.locfileid: "54536223"
   
  Windows Forms에서 데이터를 표시할 수 있습니다 <xref:System.Windows.Forms.DataGrid> 컨트롤에 테이블과 열을 만들어 <xref:System.Windows.Forms.DataGridTableStyle> 개체에 추가 하는 <xref:System.Windows.Forms.GridTableStylesCollection> 개체를 통해 액세스할 수 있는 합니다 <xref:System.Windows.Forms.DataGrid> 컨트롤의 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 속성입니다. 에 지정 된 모든 데이터 테이블의 내용을 표시 하는 각 테이블 스타일을 <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> 의 속성을 <xref:System.Windows.Forms.DataGridTableStyle>입니다. 기본적으로 테이블 스타일을 열 스타일을 지정 하지 않으면 해당 데이터 테이블 안의 모든 열 표시 됩니다. 추가 하 여 표시할 테이블에서 열을 제한할 수 있습니다 <xref:System.Windows.Forms.DataGridColumnStyle> 개체를 합니다 <xref:System.Windows.Forms.GridColumnStylesCollection>를 통해 액세스를 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 의 각 속성 <xref:System.Windows.Forms.DataGridTableStyle>합니다.  
   
- 다음 절차를 **Windows 응용 프로그램** 포함 된 폼을 사용 하 여 프로젝트를 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다. 이러한 프로젝트를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: Windows 응용 프로그램 프로젝트를 만듭니다](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) 고 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다. Visual Studio 2005에서는 기본적으로는 <xref:System.Windows.Forms.DataGrid> 컨트롤이 합니다 **도구 상자**합니다. 추가 하는 방법에 대 한 내용은 [방법: 도구 상자 항목 추가](https://msdn.microsoft.com/library/458e119e-17fe-450b-b889-e31c128bd7e0)합니다.  
+ 다음 절차를 **Windows 응용 프로그램** 포함 된 폼을 사용 하 여 프로젝트를 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다. 이러한 프로젝트를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: Windows Forms 응용 프로그램 프로젝트를 만듭니다](/visualstudio/ide/step-1-create-a-windows-forms-application-project) 고 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다. Visual Studio 2005에서는 기본적으로는 <xref:System.Windows.Forms.DataGrid> 컨트롤이 합니다 **도구 상자**합니다. 추가 하는 방법에 대 한 내용은 [방법: 도구 상자 항목 추가](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100))합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  

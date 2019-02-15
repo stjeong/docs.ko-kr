@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 41dc37751e2dcf26eea887e84423179512c53614
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f0182de9b998b7eb88a3bd003543bee876398633
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54653517"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304650"
 ---
 # <a name="icorruntimehost-interface"></a>ICorRuntimeHost 인터페이스
 시작 하 고 만들고 기본 도메인에 액세스 하 고 프로세스에서 실행 되는 모든 도메인을 열거 하는 데 응용 프로그램 도메인을 구성 하는 CLR (공용 언어 런타임)을 명시적으로 중지할 호스트를 사용할 수 있는 메서드를 제공 합니다.  
@@ -65,6 +65,6 @@ ms.locfileid: "54653517"
 - <xref:System.AppDomain>
 - [호스팅](../../../../docs/framework/unmanaged-api/hosting/index.md)
 - [ICLRRuntimeHost 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
-- [런타임 호스트](https://msdn.microsoft.com/library/99d9246a-b994-4fe5-985c-8588d1d59998)
+- [런타임 호스트](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
 - [호스팅 인터페이스](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [CorRuntimeHost Coclass](../../../../docs/framework/unmanaged-api/hosting/corruntimehost-coclass.md)

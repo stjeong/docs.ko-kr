@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 52077103277cdc4d32dfe3e44fcccffeec20295e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8e6b0412afc972871c056a565620acee801bbdaf
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706867"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304585"
 ---
 # <a name="textpattern-and-embedded-objects-overview"></a>TextPattern 및 포함 개체 개요
 > [!NOTE]
@@ -158,4 +158,4 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 - [UI 자동화를 사용하여 포함 개체에 액세스](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
 - [UI 자동화를 사용하여 표의 콘텐츠 노출](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)
 - [UI 자동화를 사용하여 텍스트 이동](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)
-- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+- [TextPattern 검색 및 선택 샘플](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FindText)
