@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 955efad34f816cd0445c4ebdf120d8b614f0d351
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bd84d84706a0d61f26b576b7300fae87fbe602e8
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508524"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56303398"
 ---
 # <a name="unmanaged-api-reference"></a>관리되지 않는 API 참조
 이 섹션에는 런타임 호스트, 컴파일러, 디스어셈블러, 난독 처리기, 디버거, 프로파일러 등의 관리 코드 관련 응용 프로그램에서 사용할 수 있는 관리되지 않는 API에 대한 정보가 포함되어 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "43508524"
  [상수](../../../docs/framework/unmanaged-api/constants-unmanaged-api-reference.md)  
  CorSym.idl에 정의된 상수에 대해 설명합니다.  
   
- [사용자 지정 인터페이스 특성](https://msdn.microsoft.com/library/940952f9-46ad-4a1a-920f-118dc0bdcd9f)  
+ [사용자 지정 인터페이스 특성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))  
  COM(구성 요소 개체 모델) 사용자 지정 인터페이스 특성에 대해 설명합니다.  
   
  [디버깅](../../../docs/framework/unmanaged-api/debugging/index.md)  
@@ -64,5 +64,3 @@ ms.locfileid: "43508524"
   
 ## <a name="related-sections"></a>관련 단원  
  [개발 가이드](../../../docs/framework/development-guide.md)  
-  
- [.NET Framework에 대한 고급 정보](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)

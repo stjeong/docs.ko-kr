@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 17ca2eb93fb2b75f043d33d376a5650092030cac
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 412b61e026b019f7516332c247b203ac85304146
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43797419"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56305781"
 ---
 # <a name="hosting-unmanaged-api-reference"></a>호스팅(관리되지 않는 API 참조)
 호스팅 API는 관리되지 않는 호스트가 CLR(공용 언어 런타임)을 응용 프로그램에 통합할 수 있게 해줍니다.  
@@ -35,5 +35,5 @@ ms.locfileid: "43797419"
  호스팅 API가 사용하는 관리되지 않는 구조체를 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [런타임 호스트](https://msdn.microsoft.com/library/99d9246a-b994-4fe5-985c-8588d1d59998)  
+ [런타임 호스트](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))  
  .NET Framework에 포함된 런타임 호스트를 설명합니다.

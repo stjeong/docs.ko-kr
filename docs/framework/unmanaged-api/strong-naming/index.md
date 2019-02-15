@@ -2,12 +2,18 @@
 title: 강력한 이름 지정(관리되지 않는 API 참조)
 ms.date: 03/30/2017
 helpviewer_keywords:
-  - 'strong naming [.NET Framework], using the unmanaged API'
-  - 'native API reference [.NET Framework], strong naming'
-  - 'unmanaged API reference [.NET Framework], strong naming'
+- strong naming [.NET Framework], using the unmanaged API
+- native API reference [.NET Framework], strong naming
+- unmanaged API reference [.NET Framework], strong naming
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
 author: rpetrusha
 ms.author: ronpet
+ms.openlocfilehash: 230a5e3e3231ad6675d214d370f74eb37405c89c
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56305647"
 ---
 # <a name="strong-naming-unmanaged-api-reference"></a>강력한 이름 지정(관리되지 않는 API 참조)
 강력한 이름 API를 통해 클라이언트는 어셈블리에 대한 강력한 이름 서명을 관리할 수 있습니다.  
@@ -15,8 +21,6 @@ ms.author: ronpet
  강력한 이름을 사용하여 어셈블리에 서명하면 어셈블리 매니페스트를 포함하는 파일에 공개 키 암호화가 추가됩니다. 강력한 이름 서명은 참조가 해결될 때 이름의 고유성을 확인하고, 이름 스푸핑을 방지하며, 호출자에게 고유한 ID를 제공합니다. 그러나 강력한 이름과 관련된 신뢰 수준이 없습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [강력한 이름 지정 글로벌 정적 함수](https://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)  
- 강력한 이름 API가 사용하는 관리되지 않는 글로벌 정적 함수를 설명합니다.  
   
 > [!NOTE]
 >  이러한 모든 함수는 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]부터는 사용되지 않습니다. 권장된 대안은 [ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md) 인터페이스를 참조하세요.  
@@ -98,9 +102,6 @@ ms.author: ronpet
   
  [StrongNameTokenFromPublicKey 함수](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfrompublickey-function.md)  
  공개 키를 나타내는 토큰을 가져옵니다. [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]부터는 사용되지 않습니다.  
-  
- [강력한 이름 지정 구조체](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)  
- 강력한 이름 API가 어셈블리에 대해 강력한 이름 서명을 관리하는 데 사용하는 관리되지 않는 구조체를 설명합니다.  
   
  [PublicKeyBlob 구조체](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
  공개/개인 키 쌍의 공개 키를 이진 형식으로 나타냅니다.  
