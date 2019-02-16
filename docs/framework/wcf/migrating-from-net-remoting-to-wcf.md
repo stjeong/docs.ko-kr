@@ -2,17 +2,17 @@
 title: .NET Remoting에서 WCF로 마이그레이션
 ms.date: 03/30/2017
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
-ms.openlocfilehash: 1ebab76d63ae3328b158f1c03a61d2e2b3cbd8f9
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 38ec11b529c7b0444d47971938fb711fe40bee3d
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415977"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333068"
 ---
 # <a name="migrating-from-net-remoting-to-wcf"></a>.NET Remoting에서 WCF로 마이그레이션
 이 문서에서는 WCF(Windows Communication Foundation)를 사용하기 위해 .NET Remoting을 사용하는 응용 프로그램을 마이그레이션하는 방법을 설명합니다. 이러한 제품 간의 비슷한 개념을 비교한 다음 WCF의 몇 가지 일반적인 Remoting 시나리오를 수행하는 방법을 설명합니다.  
   
- .NET Remoting은 이전 버전과의 호환성을 위해서만 지원되는 레거시 제품입니다. 클라이언트와 서버 간에 개별 신뢰 수준을 유지할 수 없으므로 복합 신뢰 환경에서는 안전하지 않습니다. 예를 들어 .NET Remoting 엔드포인트를 인터넷 또는 신뢰할 수 없는 클라이언트에 노출하지 않아야 합니다. 기존 Remoting 응용 프로그램을 더욱 안전한 최신 기술로 마이그레이션하는 것이 좋습니다. 응용 프로그램의 디자인에서 HTTP만 사용하고 RESTful인 경우 ASP.NET Web API를 사용하는 것이 좋습니다. 자세한 내용은 ASP.NET Web API를 참조하세요. 응용 프로그램이 SOAP을 기반으로 하거나 TCP와 같이 Http가 아닌 프로토콜을 필요로 하는 경우 WCF를 사용하는 것이 좋습니다.  
+ .NET Remoting은 이전 버전과의 호환성을 위해서만 지원되는 레거시 제품입니다. 클라이언트와 서버 간에 개별 신뢰 수준을 유지할 수 없으므로 복합 신뢰 환경에서는 안전하지 않습니다. 예를 들어 .NET Remoting 끝점을 인터넷 또는 신뢰할 수 없는 클라이언트에 노출하지 않아야 합니다. 기존 Remoting 응용 프로그램을 더욱 안전한 최신 기술로 마이그레이션하는 것이 좋습니다. 응용 프로그램의 디자인에서 HTTP만 사용하고 RESTful인 경우 ASP.NET Web API를 사용하는 것이 좋습니다. 자세한 내용은 ASP.NET Web API를 참조하세요. 응용 프로그램이 SOAP을 기반으로 하거나 TCP와 같이 Http가 아닌 프로토콜을 필요로 하는 경우 WCF를 사용하는 것이 좋습니다.  
 
 ## <a name="comparing-net-remoting-to-wcf"></a>.NET Remoting과 WCF 비교  
  이 섹션에서는 .NET Remoting의 기본 빌딩 블록을 해당 WCF의 빌딩 블록과 비교합니다. 나중에 이러한 빌딩 블록을 사용하여 WCF에서 몇 가지 일반적인 클라이언트-서버 시나리오를 만듭니다. 다음 차트에는 .NET Remoting과 WCF의 주요 공통점과 차이점이 요약되어 있습니다.  
@@ -151,7 +151,7 @@ Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received
   
 1.  서로 다른 직렬 변환기 및 규칙을 사용하여 직렬화할 사항을 표시합니다.  
   
-2.  .NET Remoting에서는 “참조 방식" 직렬화를 지원하여 한 계층에 있는 메서드나 속성 액세스에서 보안 경계 건너편 다른 계층에 있는 코드를 실행할 수 있게 합니다.  이 기능을 사용하면 보안 취약성이 노출되며, 따라서 신뢰할 수 없는 클라이언트에 Remoting 엔드포인트를 절대 노출해서는 안 되는 주요 이유 중 하나입니다.  
+2.  .NET Remoting에서는 “참조 방식" 직렬화를 지원하여 한 계층에 있는 메서드나 속성 액세스에서 보안 경계 건너편 다른 계층에 있는 코드를 실행할 수 있게 합니다.  이 기능을 사용하면 보안 취약성이 노출되며, 따라서 신뢰할 수 없는 클라이언트에 Remoting 끝점을 절대 노출해서는 안 되는 주요 이유 중 하나입니다.  
   
 3.  Remoting에서 사용하는 직렬화는 옵트아웃(직렬화하지 않을 사항을 명시적으로 제외)이고 WCF 직렬화는 옵트인(직렬화할 멤버를 명시적으로 표시)입니다.  
   
@@ -185,7 +185,7 @@ public class RemotingCustomerReference : MarshalByRefObject
 }  
 ```  
   
- Remoting의 참조 방식 개체의 의미를 이해하는 것이 매우 중요합니다. 두 계층(클라이언트 또는 서버) 중 하나에서 다른 계층에 참조 방식 개체를 전송하는 경우, 개체를 소유하는 계층에서 모든 메서드 호출이 다시 실행됩니다. 예를 들어 서버에서 반환한 참조 방식 개체에서 메서드를 호출하는 클라이언트가 서버에서 코드를 실행합니다. 마찬가지로, 클라이언트에서 제공한 참조 방식 개체에서 메서드를 호출하는 서버는 다시 클라이언트에서 코드를 실행합니다. 따라서 .NET Remoting은 완전히 신뢰할 수 있는 환경에서만 사용하는 것이 좋습니다. 신뢰할 수 없는 클라이언트에 공용 .NET Remoting 엔드포인트를 노출하면 Remoting 서버가 공격에 취약하게 됩니다.  
+ Remoting의 참조 방식 개체의 의미를 이해하는 것이 매우 중요합니다. 두 계층(클라이언트 또는 서버) 중 하나에서 다른 계층에 참조 방식 개체를 전송하는 경우, 개체를 소유하는 계층에서 모든 메서드 호출이 다시 실행됩니다. 예를 들어 서버에서 반환한 참조 방식 개체에서 메서드를 호출하는 클라이언트가 서버에서 코드를 실행합니다. 마찬가지로, 클라이언트에서 제공한 참조 방식 개체에서 메서드를 호출하는 서버는 다시 클라이언트에서 코드를 실행합니다. 따라서 .NET Remoting은 완전히 신뢰할 수 있는 환경에서만 사용하는 것이 좋습니다. 신뢰할 수 없는 클라이언트에 공용 .NET Remoting 끝점을 노출하면 Remoting 서버가 공격에 취약하게 됩니다.  
   
 #### <a name="serialization-in-wcf"></a>WCF의 직렬화  
  WCF에서는 값 방식 직렬화만 지원합니다. 클라이언트와 서버 간에 교환할 형식을 정의하는 가장 일반적인 방법은 다음 예제와 같습니다.  
@@ -207,11 +207,7 @@ public class WCFCustomer
   
  [DataContract] 특성에서는 클라이언트와 서버 간에 직렬화 및 역직렬화할 수 있는 형식으로 이 형식을 식별합니다. [DataMember] 특성을 통해서는 직렬화할 개별 속성 또는 필드를 식별합니다.  
   
- WCF는 계층 전체에 개체를 전송할 때 값만 직렬화하고 다른 계층에 새로운 개체 인스턴스를 만듭니다. 개체 값과의 상호 작용은 로컬에서만 발생합니다. .NET Remoting 참조 방식 개체와는 달리 다른 계층과 통신하지 않습니다. 자세한 내용은 다음 항목을 참조하세요.  
-  
--   [Serialization 및 Deserialization](./feature-details/serialization-and-deserialization.md)  
-  
--   [Windows Communication Foundation 직렬화](https://msdn.microsoft.com/magazine/cc163569.aspx)  
+ WCF는 계층 전체에 개체를 전송할 때 값만 직렬화하고 다른 계층에 새로운 개체 인스턴스를 만듭니다. 개체 값과의 상호 작용은 로컬에서만 발생합니다. .NET Remoting 참조 방식 개체와는 달리 다른 계층과 통신하지 않습니다. 자세한 내용은 [Serialization 및 Deserialization](./feature-details/serialization-and-deserialization.md)합니다.  
   
 ### <a name="exception-handling-capabilities"></a>예외 처리 기능  
   
@@ -275,7 +271,7 @@ catch (FaultException<CustomerServiceFault> fault)
 ### <a name="security-considerations"></a>보안 고려 사항  
   
 #### <a name="security-in-net-remoting"></a>.NET Remoting의 보안  
- 일부.NET Remoting 채널에서는 채널 계층의 인증 및 암호화(IPC 및 TCP)와 같은 보안 기능을 지원합니다. HTTP 채널은 IIS(인터넷 정보 서비스)를 사용하여 인증과 암호화를 모두 수행합니다. 이와 같은 지원이 있어도, 보안되지 않은 통신 프로토콜에 대해 .NET Remoting을 고려하고 완전히 신뢰할 수 있는 환경에서만 사용해야 합니다. 공용 Remoting 엔드포인트를 인터넷이나 신뢰할 수 없는 클라이언트에 노출하지 마세요.  
+ 일부.NET Remoting 채널에서는 채널 계층의 인증 및 암호화(IPC 및 TCP)와 같은 보안 기능을 지원합니다. HTTP 채널은 IIS(인터넷 정보 서비스)를 사용하여 인증과 암호화를 모두 수행합니다. 이와 같은 지원이 있어도, 보안되지 않은 통신 프로토콜에 대해 .NET Remoting을 고려하고 완전히 신뢰할 수 있는 환경에서만 사용해야 합니다. 공용 Remoting 끝점을 인터넷이나 신뢰할 수 없는 클라이언트에 노출하지 마세요.  
   
 #### <a name="security-in-wcf"></a>WCF에서 보안  
  WCF는.NET Remoting에서 발견된 유형의 취약성을 해결하기 위해 보안을 염두에 두고 설계되었습니다. WCF에서는 전송 및 메시지 수준 모두에서 보안을 제공하고, 인증, 권한 부여, 암호화 등에 대한 다양한 옵션을 제공합니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -470,7 +466,7 @@ public class RemotingServer : MarshalByRefObject
    ```  
   
     > [!TIP]
-    >  세션 개체는 [ServiceContract]로 표시되어 일반 WCF 서비스 인터페이스가 됩니다. SessionMode 속성을 설정하면 세션 서비스가 됩니다. WCF에서 세션은 두 엔드포인트 간에 전송된 여러 메시지를 서로 관련시키는 방법입니다. 즉, 클라이언트가 이 서비스에 대한 연결을 확보하고 나면 클라이언트와 서버 간에 세션이 설정됩니다. 클라이언트는 이 단일 세션 내에서 수행되는 모든 상호 작용을 수행하는 데 하나의 고유한 서버 측 개체 인스턴스를 사용합니다.  
+    >  세션 개체는 [ServiceContract]로 표시되어 일반 WCF 서비스 인터페이스가 됩니다. SessionMode 속성을 설정하면 세션 서비스가 됩니다. WCF에서 세션을 사용하면 두 끝점 간에 전송된 여러 메시지를 상관할 수 있습니다. 즉, 클라이언트가 이 서비스에 대한 연결을 확보하고 나면 클라이언트와 서버 간에 세션이 설정됩니다. 클라이언트는 이 단일 세션 내에서 수행되는 모든 상호 작용을 수행하는 데 하나의 고유한 서버 측 개체 인스턴스를 사용합니다.  
   
 2.  다음으로 이 서비스 인터페이스의 구현을 제공해야 합니다. [ServiceBehavior]로 표시하고 InstanceContextMode를 설정하여 WCF에 각 세션에서 이 형식의 고유한 인스턴스를 사용하려 함을 표시합니다.  
   
@@ -493,7 +489,7 @@ public class RemotingServer : MarshalByRefObject
        }  
    ```  
   
-3.  이제 이 세션 개체의 인스턴스를 가져올 방법이 필요합니다. 여기서는 EndpointAddress10 개체를 반환하는 또 다른 WCF 서비스 인터페이스를 만들어 가져옵니다. 이 인터페이스는 클라이언트에서 세션 개체를 만드는 데 사용할 수 있는 직렬화 가능한 형식의 엔드포인트입니다.  
+3.  이제 이 세션 개체의 인스턴스를 가져올 방법이 필요합니다. 여기서는 EndpointAddress10 개체를 반환하는 또 다른 WCF 서비스 인터페이스를 만들어 가져옵니다. 이 인터페이스는 클라이언트에서 세션 개체를 만드는 데 사용할 수 있는 직렬화 가능한 형식의 끝점입니다.  
   
    ```csharp
    [ServiceContract]  
@@ -530,7 +526,7 @@ public class RemotingServer : MarshalByRefObject
   
     1.  선언 된 \<클라이언트 > 세션 개체에 대 한 끝점을 설명 하는 섹션입니다. 이 경우 서버는 클라이언트 역할도 수행하므로 이와 같은 선언이 필요합니다.  
   
-    2.  팩터리와 세션 개체의 엔드포인트를 선언합니다. 클라이언트에서 서비스 엔드포인트와 통신하여 EndpointAddress10을 획득하고 세션 채널을 만들 수 있어야 하므로 필요합니다.  
+    2.  팩터리와 세션 개체의 끝점을 선언합니다. 클라이언트에서 서비스 끝점과 통신하여 EndpointAddress10을 획득하고 세션 채널을 만들 수 있어야 하므로 필요합니다.  
   
     ```xml  
     <configuration>  
@@ -572,7 +568,7 @@ public class RemotingServer : MarshalByRefObject
    sessionHost.Open();  
    ```  
   
-5.  프로젝트의 app.config 파일에서 이와 같이 동일한 엔드포인트를 선언하여 클라이언트를 구성합니다.  
+5.  프로젝트의 app.config 파일에서 이와 같이 동일한 끝점을 선언하여 클라이언트를 구성합니다.  
   
     ```xml  
     <configuration>  

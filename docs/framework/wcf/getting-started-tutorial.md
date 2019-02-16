@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], getting started
 - getting started [WCF]
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
-ms.openlocfilehash: b0abe7a6b127a254c2f5c72dc66fc128d35374fb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2bd0b7e0d927e53f70515cfa124034a4cacc5ce7
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54491365"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56332249"
 ---
 # <a name="getting-started-tutorial"></a>초보자를 위한 자습서
 이 단원의 항목에서는 프로그래밍 환경을 Windows Communication Foundation (WCF)에 대해 간략하게 위해 제공 됩니다. 이 항목 아래쪽에 나열된 순서대로 진행하세요. 이 자습서를 통해 WCF 서비스 및 클라이언트 응용 프로그램을 만드는 데 필요한 단계를 대략적으로 이해할을 제공 합니다. 서비스는 하나 이상의 엔드포인트를 노출하며 각 엔드포인트는 하나 이상의 서비스 작업을 노출합니다. 합니다 *끝점* 서비스의 서비스를 찾을 수 있는, 서비스 및 기능을 정의 하는 계약을 사용 하 여 통신 해야 하는 방법을 설명 하는 정보를 포함 하는 바인딩 주소를 지정 합니다. 클라이언트가 서비스에서 제공 합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "54491365"
 
 이 섹션의에서 항목에서는 개발 환경으로 Visual Studio를 사용 한다고 가정 합니다. 다른 개발 환경을 사용 하는 경우 Visual Studio 관련 지침을 무시 합니다.
 
-하드 디스크를 다운로드할 수 있습니다 및 실행의 항목을 참조 하는 샘플 응용 프로그램에 대 한 [Windows Communication Foundation 샘플](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)합니다. 이 항목의 경우 특히 참조를 [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.
+하드 디스크를 다운로드할 수 있습니다 및 실행의 항목을 참조 하는 샘플 응용 프로그램에 대 한 [Windows Communication Foundation (WCF) 샘플](./samples/index.md)합니다. 이 항목의 경우 특히 참조를 [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.
 
 자세한 내용은 서비스 및 클라이언트 만들기에 대 한 참조 [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "54491365"
 
 ## <a name="related-sections"></a>관련 단원
 
-- [Windows Communication Foundation 샘플](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+- [Windows Communication Foundation (WCF) 샘플](./samples/index.md)
 - [기본 프로그래밍 수명 주기](../../../docs/framework/wcf/basic-programming-lifecycle.md)
 
 ## <a name="see-also"></a>참고자료

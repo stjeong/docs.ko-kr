@@ -2,12 +2,12 @@
 title: 권한 부여 정책
 ms.date: 03/30/2017
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
-ms.openlocfilehash: 16549b90692d8061abe729521075e0f248446513
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 87deedb2bd28cd86619eb48d0ff9c3e566174d31
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873481"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56332678"
 ---
 # <a name="authorization-policy"></a>권한 부여 정책
 
@@ -458,9 +458,9 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 1. Service.exe를 실행 *service\bin*합니다.
 
-1. Client.exe를 실행 *\client\bin*합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.
+1. Client.exe를 실행 *\client\bin*합니다. 클라이언트 콘솔 애플리케이션에 클라이언트 동작이 표시됩니다.
 
-  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.
+  클라이언트와 서비스가 통신할 수 없는 경우 참조 [WCF 샘플에 대 한 문제 해결 팁](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))합니다.
 
 ### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면
 
@@ -500,11 +500,11 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 14. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다.
 
-   클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.
+   클라이언트와 서비스가 통신할 수 없는 경우 참조 [WCF 샘플에 대 한 문제 해결 팁](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))합니다.
 
 ### <a name="clean-up-after-the-sample"></a>샘플 실행 후 정리
 
 샘플 실행 후 정리를 실행할 *Cleanup.bat* 샘플 실행을 마쳤으면 샘플 폴더에 있습니다. 그러면 인증서 저장소에서 서버 및 클라이언트 인증서가 제거됩니다.
 
 > [!NOTE]
-> 다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하 여 CurrentUser-에 설치 된 서비스 인증서를 지워야 하는 WCF 샘플을 실행 한 경우 TrustedPeople 저장 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).
+> 다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하 여 CurrentUser-에 설치 된 서비스 인증서를 지워야 하는 WCF 샘플을 실행 한 경우 TrustedPeople 저장 합니다. 이 작업을 수행 하려면 다음 명령을 사용 합니다. `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 예를 들어: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`합니다.

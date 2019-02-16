@@ -1,17 +1,17 @@
 ---
-title: '방법: 기본 Windows Communication Foundation 클라이언트 구성'
+title: '방법: 기본 Windows Communication Foundation 클라이언트를 구성 합니다.'
 ms.date: 09/14/2018
 helpviewer_keywords:
 - WCF clients [WCF], configuring
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
-ms.openlocfilehash: 3f267edf87711de8a5969e3e0b577648008c5a75
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 18acec48b2af78877f99335da38ccb0ae8942824
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562192"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56332323"
 ---
-# <a name="how-to-configure-a-basic-windows-communication-foundation-client"></a>방법: 기본 Windows Communication Foundation 클라이언트 구성
+# <a name="how-to-configure-a-basic-windows-communication-foundation-client"></a>방법: 기본 Windows Communication Foundation 클라이언트를 구성 합니다.
 
 기본 Windows Communication Foundation (WCF) 응용 프로그램을 만드는 데 필요한 6 가지 작업 중 다섯 번째입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md) 항목을 참조하세요.
 
@@ -19,7 +19,7 @@ ms.locfileid: "46562192"
 
 ## <a name="configure-a-windows-communication-foundation-client"></a>Windows Communication Foundation 클라이언트 구성
 
-GettingStartedClient 프로젝트에서 생성된 구성 파일(App.config)을 엽니다. 다음 예제에서는 생성된 구성 파일을 보여 줍니다. 아래는 [ \<system.serviceModel >](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) 섹션에서 찾을 합니다 [ \<끝점 >](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) 요소입니다.
+GettingStartedClient 프로젝트에서 생성된 구성 파일(App.config)을 엽니다. 다음 예제에서는 생성된 구성 파일을 보여 줍니다. 아래는 [ \<system.serviceModel >](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) 섹션에서 찾을 합니다 [ \<끝점 >](../configure-apps/file-schema/wcf/endpoint-element.md) 요소입니다.
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -51,7 +51,8 @@ GettingStartedClient 프로젝트에서 생성된 구성 파일(App.config)을 �
 
 이 예제에서는 다음 주소에 위치한 서비스에 액세스 하는 클라이언트 끝점 구성: `http://localhost:8000/ServiceModelSamples/Service/CalculatorService`합니다.
 
-엔드포인트 요소는 WCF 클라이언트와 서비스 사이의 통신에 `ServiceReference1.ICalculator` 서비스 계약을 사용하도록 지정합니다. WCF 채널은 시스템에서 제공한 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 구성합니다. 사용 하 여 생성 된이 계약은 **서비스 참조 추가** Visual Studio에서. 실질적으로 GettingStartedLib 프로젝트에 정의된 계약의 사본입니다. <xref:System.ServiceModel.WSHttpBinding> 바인딩은 HTTP를 전송, 상호 운용 가능한 보안 및 기타 구성 세부 사항으로 지정합니다.
+엔드포인트 요소는 WCF 클라이언트와 서비스 사이의 통신에 `ServiceReference1.ICalculator` 서비스 계약을 사용하도록 지정합니다. WCF 채널은 시스템에서 제공한 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 구성합니다. 사용 하 여 생성 된이 계약은 **서비스 참조 추가** Visual Studio에서. 실질적으로 GettingStartedLib 프로젝트에 정의된 계약의 사본입니다. 
+  <xref:System.ServiceModel.WSHttpBinding> 바인딩은 HTTP를 전송, 상호 운용 가능한 보안 및 기타 구성 세부 사항으로 지정합니다.
 
 이 구성을 사용 하 여 생성된 된 클라이언트를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 클라이언트를 사용 하 여](../../../docs/framework/wcf/how-to-use-a-wcf-client.md)입니다.
 

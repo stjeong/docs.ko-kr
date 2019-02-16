@@ -2,12 +2,12 @@
 title: 인터넷 정보 서비스 호스팅을 위한 최선의 방법
 ms.date: 03/30/2017
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
-ms.openlocfilehash: 931ba4162ed34ab391bd0ba2de2cb5a0e16ede6a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a4312a9affc1103f613f3f8ffd9a14696f9d4bcc
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521870"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333419"
 ---
 # <a name="internet-information-services-hosting-best-practices"></a>인터넷 정보 서비스 호스팅을 위한 최선의 방법
 이 항목에서는 Windows Communication Foundation (WCF) 서비스를 호스트 하기 위한 몇 가지 모범 사례를 간략하게 설명 합니다.  
@@ -47,7 +47,8 @@ ms.locfileid: "54521870"
  그러면 user2는 c:\tempForUser1에 있는 /application2에 대한 코드 생성 폴더를 변경할 수 없습니다.  
   
 ## <a name="enabling-asynchronous-processing"></a>비동기 처리 사용  
- 기본적으로 IIS 6.0 및 이전 호스팅된 WCF 서비스에 전송 된 메시지를 동기 방식으로 처리 됩니다. ASP.NET은 자체 스레드 (ASP.NET 작업자 스레드)에서 WCF에 호출 하 고 WCF 다른 스레드를 사용 하 여 요청을 처리 하는 데 키를 누릅니다. WCF는 처리를 완료할 때까지 ASP.NET 작업자 스레드를 보관합니다. 따라서 요청이 동기 방식으로 처리됩니다. -WCF 유지 하지 않으면 ASP.NET 스레드를 처리 하는 동안 요청을 처리 하는 데 필요한 스레드 수가 줄어들기 때문에 확장성이 뛰어난를 사용 하면 요청을 비동기적으로 처리 합니다. 비동기 동작을 사용 하도록 서버를 열고 들어오는 요청을 스로틀할 방법이 없으므로 IIS 6.0을 실행 하는 컴퓨터에 권장 되지 않습니다 *서비스 거부* (DOS) 공격입니다. IIS 7.0부터는 동시 요청 스로틀(`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]"MaxConcurrentRequestsPerCpu`)이 도입되었습니다. 이 새 스로틀을 사용하면 비동기 처리를 사용해도 안전합니다.  IIS 7.0에서는 기본적으로 비동기 처리기 및 모듈이 등록되어 있습니다. 이러한 비동기 처리기 및 모듈이 해제되어 있는 경우 응용 프로그램의 Web.config 파일에서 비동기 처리 요청을 사용하도록 수동으로 설정할 수 있습니다. 사용하는 설정은 `aspNetCompatibilityEnabled` 설정에 따라 달라집니다. `aspNetCompatibilityEnabled`를 `false`로 설정한 경우에는 다음 구성 코드 조각에 나와 있는 것처럼 `System.ServiceModel.Activation.ServiceHttpModule`을 구성하십시오.  
+ 기본적으로 IIS 6.0 및 이전 호스팅된 WCF 서비스에 전송 된 메시지를 동기 방식으로 처리 됩니다. ASP.NET은 자체 스레드 (ASP.NET 작업자 스레드)에서 WCF에 호출 하 고 WCF 다른 스레드를 사용 하 여 요청을 처리 하는 데 키를 누릅니다. WCF는 처리를 완료할 때까지 ASP.NET 작업자 스레드를 보관합니다. 따라서 요청이 동기 방식으로 처리됩니다. -WCF 유지 하지 않으면 ASP.NET 스레드를 처리 하는 동안 요청을 처리 하는 데 필요한 스레드 수가 줄어들기 때문에 확장성이 뛰어난를 사용 하면 요청을 비동기적으로 처리 합니다. 비동기 동작을 사용 하도록 서버를 열고 들어오는 요청을 스로틀할 방법이 없으므로 IIS 6.0을 실행 하는 컴퓨터에 권장 되지 않습니다 *서비스 거부* (DOS) 공격입니다. IIS 7.0부터는 동시 요청 스로틀(`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]"MaxConcurrentRequestsPerCpu`)이 도입되었습니다. 이 새 스로틀을 사용하면 비동기 처리를 사용해도 안전합니다.  IIS 7.0에서는 기본적으로 비동기 처리기 및 모듈이 등록되어 있습니다. 이러한 비동기 처리기 및 모듈이 해제되어 있는 경우 응용 프로그램의 Web.config 파일에서 비동기 처리 요청을 사용하도록 수동으로 설정할 수 있습니다. 사용하는 설정은 `aspNetCompatibilityEnabled` 설정에 따라 달라집니다. 
+  `aspNetCompatibilityEnabled`를 `false`로 설정한 경우에는 다음 구성 코드 조각에 나와 있는 것처럼 `System.ServiceModel.Activation.ServiceHttpModule`을 구성하십시오.  
   
 ```xml  
 <system.serviceModel>  
@@ -63,7 +64,8 @@ ms.locfileid: "54521870"
     </system.webServer>  
 ```  
   
- `aspNetCompatibilityEnabled`를 `true`로 설정한 경우에는 다음 구성 코드 조각에 나와 있는 것처럼 `System.ServiceModel.Activation.ServiceHttpHandlerFactory`를 구성하십시오.  
+ 
+  `aspNetCompatibilityEnabled`를 `true`로 설정한 경우에는 다음 구성 코드 조각에 나와 있는 것처럼 `System.ServiceModel.Activation.ServiceHttpHandlerFactory`를 구성하십시오.  
   
 ```xml  
 <system.serviceModel>  
@@ -82,5 +84,6 @@ ms.locfileid: "54521870"
 ```  
   
 ## <a name="see-also"></a>참고자료
-- [서비스 호스팅 샘플](https://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)
+
+- [서비스 호스팅 샘플](../samples/hosting.md)
 - [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

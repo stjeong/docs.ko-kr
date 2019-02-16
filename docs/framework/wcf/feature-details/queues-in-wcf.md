@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF]
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
-ms.openlocfilehash: 13bc401647612c982eb13a3b607e41c6afa61716
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e28c91a8cc1798a4d0cd690f72e503b687af0108
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54742749"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56332613"
 ---
 # <a name="queues-in-windows-communication-foundation"></a>Windows Communication Foundation의 큐
 이 섹션의에서 항목에서는 큐에 대 한 Windows Communication Foundation (WCF) 지원을 설명합니다. WCF에서 활용 하 여 Microsoft Message Queuing (이전에 MSMQ 라고 함)를 전송으로 큐에 대 한 지원을 제공 하 고 다음 시나리오를 사용:  
@@ -63,6 +63,3 @@ ms.locfileid: "54742749"
   
  [대기 중인 통신을 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/best-practices-for-queued-communication.md)  
  WCF를 사용 하 여에 대 한 모범 사례 대기 통신에 설명 합니다.  
-  
-## <a name="see-also"></a>참고자료
-- [메시지 큐](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)
