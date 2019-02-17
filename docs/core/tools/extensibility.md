@@ -4,12 +4,12 @@ description: CLI(명령줄 인터페이스) 도구를 확장할 수 있는 방�
 author: blackdwarf
 ms.date: 04/12/2017
 ms.custom: seodec18
-ms.openlocfilehash: 3aedd1d507fde1cd7402ef97fa00d0c7f13005e3
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: e93c9c85383d7c541b8ef55a74045307810cbb05
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170238"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093010"
 ---
 # <a name="net-core-cli-tools-extensibility-model"></a>.NET Core CLI 도구 확장성 모델
 
@@ -79,7 +79,7 @@ CLI 도구는 세 가지 주요 방법으로 확장할 수 있습니다.
 보다 풍부한 예제 및 다양한 조합은 [.NET Core CLI 리포지토리](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestProjects)에서 확인할 수 있습니다.
 동일한 리포지토리에서 [사용된 도구의 구현](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestPackages)도 확인할 수 있습니다.
 
-### <a name="custom-targets"></a>사용자 지정 대상
+## <a name="custom-targets"></a>사용자 지정 대상
 NuGet에는 [사용자 지정 MSBuild 대상 및 props 파일을 패키지](/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)하는 기능이 있습니다. .NET Core CLI 도구가 MSBuild를 사용하도록 이동하면서 이제 동일한 확장성 메커니즘이 .NET Core 프로젝트에 적용됩니다. 빌드 프로세스를 확장하거나 빌드 프로세스에서 생성된 파일과 같은 아티팩트에 액세스하거나 빌드 호출 시 구성을 검사하려는 경우 이 유형의 확장성을 사용하게 됩니다.
 
 다음 예제에서는 `csproj` 구문을 사용하여 대상의 프로젝트 파일을 볼 수 있습니다. 이렇게 하면 [`dotnet pack`](dotnet-pack.md) 명령에 대상 파일 및 어셈블리를 패키지 내의 *빌드* 폴더에 배치하여 패키지할 항목이 지정됩니다. `Label` 속성이 `dotnet pack instructions`로 설정된 `<ItemGroup>` 요소 및 그 아래에 정의된 Target을 확인합니다.
@@ -137,7 +137,7 @@ NuGet에는 [사용자 지정 MSBuild 대상 및 props 파일을 패키지](/nug
 
 그러나 사용자에게 더 나은 사용자 환경을 제공하려는 경우 프로젝트별 도구 및 사용자 지정 대상을 결합할 수 있습니다. 이 시나리오에서 프로젝트별 도구는 기본적으로 매개 변수가 필요한 항목은 허용하고, 대상을 실행할 필수 [`dotnet msbuild`](dotnet-msbuild.md) 호출로 변환합니다. 이러한 종류의 시너지 효과는 [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) 프로젝트의 [MVP Summit 2016 Hackathon 샘플](https://github.com/dotnet/MVPSummitHackathon2016) 리포지토리에서 확인할 수 있습니다.
 
-### <a name="path-based-extensibility"></a>PATH 기반 확장성
+## <a name="path-based-extensibility"></a>PATH 기반 확장성
 일반적으로 PATH 기반 확장성은 개념적으로 둘 이상의 프로젝트를 포함하는 도구가 필요한 개발 컴퓨터에 사용됩니다. 이 확장 메커니즘의 주요 단점은 도구가 있는 컴퓨터에 연결된다는 점입니다. 따라서 다른 컴퓨터에서 필요한 경우에는 배포해야 합니다.
 
 CLI 도구 집합 확장성의 이 패턴은 매우 간단합니다. [.NET Core CLI 개요](index.md)에서 설명한 대로 `dotnet` 드라이버는 `dotnet-<command>` 규칙에 따라 명명된 모든 명령을 실행할 수 있습니다. 기본 해결 논리에서는 여러 위치를 먼저 검색하고 마지막으로 시스템 PATH를 검색합니다. 요청한 명령이 시스템 PATH에 있고 호출할 수 있는 이진인 경우 `dotnet` 드라이버에서 호출합니다.
