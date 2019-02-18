@@ -1,14 +1,14 @@
 ---
 title: 기계 학습 처리를 위해 텍스트 파일에서 데이터 로드 - ML.NET
 description: ML.NET를 통해 기계 학습 모델을 빌드하고, 학습시키고, 점수 매기는 데 사용할 데이터를 텍스트 파일에서 로드하는 방법 알아보기
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: 6a8f74cc5324050ca94e60592f083c35afc68377
-ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
+ms.openlocfilehash: 70c7ccdeaa27b78a412c2bc82f524d4bf42a740a
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479674"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091710"
 ---
 # <a name="load-data-from-a-text-file-for-machine-learning-processing---mlnet"></a>기계 학습 처리를 위해 텍스트 파일에서 데이터 로드 - ML.NET
 
@@ -34,7 +34,7 @@ Label   Workclass   education   marital-status
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // A boolean column depicting the 'target label'.

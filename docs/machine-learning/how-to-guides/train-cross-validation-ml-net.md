@@ -1,14 +1,14 @@
 ---
 title: 교차 유효성 검사를 사용하여 기계 학습 모델 학습 - ML.NET
 description: 모델의 예측에 대한 정확도 수준을 강화하기 위해 ML.NET에서 교차 유효성 검사를 사용하여 기계 학습 모델을 학습하는 방법 알아보기
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: 9ed139aacb41e8f8529f30747486ab1b13183df0
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: 8d74b69340895bcfe3cdc3d3a6121d7331a0a5e2
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55739334"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092282"
 ---
 # <a name="train-a-machine-learning-model-using-cross-validation---mlnet"></a>교차 유효성 검사를 사용하여 기계 학습 모델 학습 - ML.NET
 
@@ -25,7 +25,7 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // The four features of the Iris dataset will be grouped together as one Features column.

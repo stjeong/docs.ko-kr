@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 453ace4af7ce07c8d81b6d7ece71140e04bfa9bc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d51fcbdeeaa1fe30bbdeff5eb85a1c15fa9b4847
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54531514"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221084"
 ---
 # <a name="packaging-an-assembly-for-com"></a>COM에서 사용할 어셈블리의 패키징
 COM 개발자는 애플리케이션에 통합하려는 관리 형식에 대한 다음 정보를 활용할 수 있습니다.  
@@ -60,7 +60,7 @@ COM 개발자는 애플리케이션에 통합하려는 관리 형식에 대한 �
   
      선택하는 메커니즘에 관계없이 사용자가 제공하는 어셈블리에 정의된 공용 형식만 생성된 형식 라이브러리에 포함됩니다.  
   
-     형식 라이브러리를 개별 파일로 패키지하거나 .NET 기반 애플리케이션에서 Win32 리소스 파일로 포함할 수 있습니다. Microsoft Visual Basic 6.0에서는 이 작업을 자동으로 수행합니다. 그러나 [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)]를 사용하는 경우 형식 라이브러리를 직접 포함시켜야 합니다. 자세한 내용은 [방법: .NET 기반 애플리케이션에 Win32 리소스로 형식 라이브러리 포함](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100))을 참조하세요.  
+     형식 라이브러리를 개별 파일로 패키지하거나 .NET 기반 애플리케이션에서 Win32 리소스 파일로 포함할 수 있습니다. Microsoft Visual Basic 6.0에서는 이 작업을 자동으로 수행합니다. 그러나 [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)]를 사용하는 경우 형식 라이브러리를 직접 포함시켜야 합니다. 자세한 내용은 [방법: .NET 기반 애플리케이션에 Win32 리소스로 형식 라이브러리 포함](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))을 참조하세요.  
   
 <a name="cpconpackagingassemblyforcomanchor1"></a>   
 ## <a name="type-library-exporter"></a>형식 라이브러리 내보내기  
@@ -89,4 +89,4 @@ COM 개발자는 애플리케이션에 통합하려는 관리 형식에 대한 �
 - [어셈블리 보안 고려 사항](../app-domains/assembly-security-considerations.md)
 - [Tlbexp.exe(형식 라이브러리 내보내기)](../tools/tlbexp-exe-type-library-exporter.md)
 - [COM에 어셈블리 등록](registering-assemblies-with-com.md)
-- [방법: 애플리케이션에 Win32 리소스로 형식 라이브러리 포함](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100))
+- [방법: 애플리케이션에 Win32 리소스로 형식 라이브러리 포함](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))

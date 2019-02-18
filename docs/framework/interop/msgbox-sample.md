@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bef8ce86a3dba5449e50c890b09acdee1375317c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3393adf5beed02a5a4bda2e07bd26e29e47fae2f
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54719549"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56219310"
 ---
 # <a name="msgbox-sample"></a>MsgBox 샘플
 이 샘플에서는 In 매개 변수로 값 형식 문자열 형식을 전달하는 방법과 <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>, <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> 및 <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> 필드 사용 시기를 보여 줍니다.  
@@ -46,7 +46,6 @@ ms.locfileid: "54719549"
   
 ## <a name="see-also"></a>참고 항목
 - [문자열 마샬링](marshaling-strings.md)
-- [플랫폼 호출 데이터 형식](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))
 - [문자열에 대한 기본 마샬링](default-marshaling-for-strings.md)
 - [관리 코드에서 프로토타입 만들기](creating-prototypes-in-managed-code.md)
 - [문자 집합 지정](specifying-a-character-set.md)

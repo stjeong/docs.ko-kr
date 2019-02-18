@@ -6,12 +6,12 @@ ms.author: johalex
 ms.date: 01/11/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: ab888a2cd9469d5ce0131ba2b17f7c134cf2855c
-ms.sourcegitcommit: 81bd16c7435a8c9183d2a7e878a2a5eff7d04584
+ms.openlocfilehash: 60506a6a8640a4f37e9f181bc88ae4f757502cb9
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54249075"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093608"
 ---
 # <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET을 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
 
@@ -129,7 +129,7 @@ ms.locfileid: "54249075"
 
 열 이름 및 인덱스는 `IrisData` 클래스에서 정의된 스키마와 일치합니다. <xref:Microsoft.ML.Data.DataKind.R4?displayProperty=nameWithType> 값은 `float` 형식을 지정합니다.
 
-인스턴스화된 <xref:Microsoft.ML.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.ML.Data.IDataView> 인스턴스를 만듭니다.
+인스턴스화된 <xref:Microsoft.ML.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.Data.DataView.IDataView> 인스턴스를 만듭니다.
 
 [!code-csharp[Create IDataView](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 

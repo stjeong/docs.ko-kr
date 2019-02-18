@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 41bf58e4b7e9e284606e244cf3cfdf298f7a7ae8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bb1fed9455add5a6fa48443bc7b862112b74a871
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54667260"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220642"
 ---
 # <a name="winmdexpexe-windows-runtime-metadata-export-tool"></a>Winmdexp.exe(Windows 런타임 메타데이터 내보내기 도구)
 [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool(Winmdexp.exe)은 .NET Framework 모듈을 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 메타데이터가 포함되는 파일로 변환합니다. .NET Framework 어셈블리 및 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 메타데이터 파일이 같은 물리적 형식을 사용하지만 메타데이터 테이블의 내용에 차이가 있습니다. 즉, .NET Framework 어셈블리는 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소로 자동으로 사용할 수 있습니다. .NET Framework 모듈을 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소로 전환하는 프로세스를 *내보내기*라고 합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]에서 결과 Windows 메타데이터(.winmd) 파일은 메타데이터와 구현이 모두 포함됩니다.  
@@ -54,4 +54,4 @@ winmdexp [options] winmdmodule
 - [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 - [C# 및 Visual Basic으로 Windows 런타임 구성 요소 만들기](https://go.microsoft.com/fwlink/p/?LinkID=238313)
 - [Winmdexp.exe 오류 메시지](../../../docs/framework/tools/winmdexp-exe-error-messages.md)
-- [빌드, 배포 및 구성 도구(.NET Framework)](https://msdn.microsoft.com/library/b8c921be-6012-4181-b8d4-ab15813fc9a7)
+- [빌드, 배포 및 구성 도구(.NET Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd233108(v=vs.100))

@@ -1,14 +1,14 @@
 ---
 title: ML.NET을 사용하여 값을 예측하도록 회귀 모델 학습시키기
 description: ML.NET을 사용하여 값을 예측하도록 기계 학습 회귀 모델을 학습시키는 방법 알아보기
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: febf12565b9ae5509efec9f350f413df99ba1c05
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: faee51550250f08443d4d9349fa2f1c92bf411dc
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55739451"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092906"
 ---
 # <a name="train-a-regression-model-to-predict-a-value-using-mlnet"></a>ML.NET을 사용하여 값을 예측하도록 회귀 모델 학습시키기
 
@@ -35,7 +35,7 @@ var mlContext = new MLContext();
 // Step one: read the data as an IDataView.
 
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
         columns: new TextLoader.Column[]
         {
             // We read the first 11 values as a single float vector.

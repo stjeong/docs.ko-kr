@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6732eef46f87d9e2e3aeada138ea28853d3f0479
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5b9cb36c3ab7096e048905e56136f0de62a65bdc
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54663163"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221097"
 ---
 # <a name="winresexe-windows-resource-localization-editor"></a>Winres.exe(Windows 리소스 지역화 편집기)
 
@@ -53,7 +53,7 @@ Windows Forms 프로젝트의 폼에 있는 UI 요소의 상태는 일반적으�
 
 - 문화권 리소스 파일을 다른 문화권의 리소스 파일로 저장할 수 있습니다. 예를 들어, 영어(미국) 리소스 파일을 폴란드어 리소스 파일로 저장할 수 있습니다. 새 파일을 저장한 다음에는 새 문화권과 호환되도록 편집하는 것이 일반적입니다.
 
-또한 [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.110\))(지역화를 위한 리소스의 계층적 구성) 또는 [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.120\))(지역화를 위한 리소스의 계층적 구성)을 참조하세요.
+또한 [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110))(지역화를 위한 리소스의 계층적 구성) 또는 [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120))(지역화를 위한 리소스의 계층적 구성)을 참조하세요.
 
 Winres.exe로는 .resx 파일을 상응하는 .resources 파일로 변환할 수 없습니다. 이를 위해서는 Resgen.exe 도구를 대신 사용합니다. Resgen.exe에 대한 자세한 내용은 [Resgen.exe(리소스 파일 생성기)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 참조하세요.
 
