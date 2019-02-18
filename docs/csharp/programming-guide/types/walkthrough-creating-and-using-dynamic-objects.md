@@ -9,12 +9,12 @@ helpviewer_keywords:
 - dynamic objects
 - dynamic objects [C#]
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-ms.openlocfilehash: 7031fe21e53b38f686d229b350b8dfef7dd93bdc
-ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
+ms.openlocfilehash: f02e2de2ce8e2d4d6c8032e826764fd0383b3b3d
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204823"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092646"
 ---
 # <a name="walkthrough-creating-and-using-dynamic-objects-c-and-visual-basic"></a>연습: 동적 개체 만들기 및 사용(C# 및 Visual Basic)
 
@@ -33,7 +33,8 @@ ms.locfileid: "55204823"
 -   `IronPython` 라이브러리를 사용하는 프로젝트를 만듭니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
-이 연습을 완료하려면 .NET용 [IronPython](http://ironpython.net/)이 필요합니다. [다운로드 페이지](http://ironpython.net/download/)로 이동하여 최신 버전을 다운로드하세요.
+
+이 연습을 완료하려면 .NET용 [IronPython](https://ironpython.net/)이 필요합니다. [다운로드 페이지](https://ironpython.net/download/)로 이동하여 최신 버전을 다운로드하세요.
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

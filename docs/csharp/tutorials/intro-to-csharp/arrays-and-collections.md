@@ -3,12 +3,12 @@ title: 컬렉션 작업 - C# 소개 자습서
 description: 이 자습서에서는 목록 컬렉션을 살펴보면서 C#에 대해 학습합니다.
 ms.date: 10/13/2017
 ms.custom: mvc
-ms.openlocfilehash: eaf921be2bd50b6e346f57f42e17f151ff336821
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 9a910ccd6265011fc0e5540b461ba089dbd3e7ba
+ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205284"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56261273"
 ---
 # <a name="learn-to-manage-data-collections-using-the-generic-list-type"></a>일반 목록 형식을 사용하여 데이터 컬렉션을 관리하는 방법 알아보기
 
@@ -19,9 +19,6 @@ ms.locfileid: "50205284"
 ## <a name="a-basic-list-example"></a>기본 목록 예제
 
 **list-tutorial**이라는 디렉터리를 만듭니다. 현재 디렉터리로 지정하고 `dotnet new console`을 실행합니다.
-
-> [!NOTE]
-> [Get started with .NET in 10 minutes](https://www.microsoft.com/net)(10분 안에 .NET 시작)를 방금 완료한 경우에는 방금 만든 myApp 응용 프로그램을 계속 사용할 수 있습니다.
 
 편집기에서 **Program.cs**를 열고 기존 코드를 다음으로 바꿉니다.
 
@@ -89,7 +86,7 @@ Console.WriteLine($"The list has {names.Count} people in it");
 
 ## <a name="search-and-sort-lists"></a>목록 검색 및 정렬
 
-샘플에서는 상대적으로 작은 목록을 사용하지만 응용 프로그램에서는 수천에 달하는 많은 요소가 포함된 목록을 작성할 수 있습니다. 이러한 큰 컬렉션에서 요소를 찾으려면 여러 항목의 목록을 검색해야 합니다. <xref:System.Collections.Generic.List%601.IndexOf%2A> 메서드는 항목을 검색하고 항목의 인덱스를 반환합니다. `Main` 메서드의 맨 아래에 이 코드를 추가합니다.
+샘플에서는 상대적으로 작은 목록을 사용하지만 애플리케이션에서는 수천에 달하는 많은 요소가 포함된 목록을 작성할 수 있습니다. 이러한 큰 컬렉션에서 요소를 찾으려면 여러 항목의 목록을 검색해야 합니다. <xref:System.Collections.Generic.List%601.IndexOf%2A> 메서드는 항목을 검색하고 항목의 인덱스를 반환합니다. `Main` 메서드의 맨 아래에 이 코드를 추가합니다.
 
 ```csharp
 var index = names.IndexOf("Felipe");

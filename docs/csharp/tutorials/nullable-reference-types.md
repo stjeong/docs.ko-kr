@@ -3,12 +3,12 @@ title: nullable 참조 형식을 사용하여 디자인
 description: 이 고급 자습서에서는 nullable 참조 형식을 소개합니다. 참조 값이 null일 수 있는 경우에 대한 디자인 의도를 표현하고 컴파일러가 null일 수 없는 경우를 적용하게 하는 방법을 알아봅니다.
 ms.date: 12/03/2018
 ms.custom: mvc
-ms.openlocfilehash: eec0c54c041db98595202ab982494df6ae3f743c
-ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
+ms.openlocfilehash: 535efcdc303c17a55f6a4054ea3f5e5ed87e5f28
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204771"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092204"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>자습서: nullable 참조 형식 및 nullable이 아닌 참조 형식을 사용하여 디자인 의도를 보다 명확하게 표현
 
@@ -55,7 +55,7 @@ C# 8 프로젝트에서도 **nullable 참조 형식** 기능을 옵트인해야 
 .csproj 파일에 다음 요소를 추가하여 전체 프로젝트에 대해 **nullable 참조 형식**을 켤 수도 있습니다. 예를 들어 C# 8.0을 사용하도록 설정한 `LangVersion` 요소 바로 다음에 추가합니다.
 
 ```xml
-<NullableReferenceTypes>true</NullableReferenceTypes>
+<NullableContextOptions>enable</NullableContextOptions>
 ```
 
 ### <a name="design-the-types-for-the-application"></a>애플리케이션의 형식 디자인
