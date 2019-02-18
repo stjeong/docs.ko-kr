@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: d4c3801e81efc7af1afbf15d882a9d13ad552524
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8de1d1b1f2bfe385a815eb6147b79a1dc2be0206
+ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54717560"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56304897"
 ---
 # <a name="ui-automation-and-screen-scaling"></a>UI 자동화 및 화면 크기 조정
 > [!NOTE]
@@ -65,7 +65,7 @@ ms.locfileid: "54717560"
      [!code-csharp[Highlighter#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp/NativeMethods.cs#101)]
      [!code-vb[Highlighter#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic/NativeMethods.vb#101)]  
   
-     이 함수를 사용하면 전체 프로세스 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되므로 프로세스에 속하는 모든 창이 실제 크기로 유지됩니다. 예를 들어 [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)에서, 강조 표시 사각형을 구성하는 4개의 창은 논리적 좌표가 아닌 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서 가져온 물리적 좌표에 있습니다. 샘플에서 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되지 않으면 강조 표시가 데스크톱의 논리적 좌표에 그려지며, 그에 따라 96 이외의 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] 환경에서 배치가 잘못될 수 있습니다.  
+     이 함수는 전체 프로세스를 dpi 인식 프로세스에 속하는 모든 창이 확장 되지 않음을 의미 합니다. 에 [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter), 예를 들어 강조 표시 사각형을 구성 하는 4 개의 windows은 UI 자동화를 논리적 좌표가 아닌에서 가져온 물리적 좌표입니다. 샘플 dpi를 인식 하지 경우, 96 dpi 아닌 환경에서 배치가 잘못 될 수 있는 바탕 화면에서 강조 표시를 논리적 좌표에 그려질 합니다.  
   
 2.  커서 좌표를 가져오려면 [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 함수 `GetPhysicalCursorPos`를 호출합니다. 다음 예제에서는 이 함수를 선언하고 사용하는 방법을 보여 줍니다.  
   
@@ -78,4 +78,4 @@ ms.locfileid: "54717560"
  사용하는 애플리케이션에서 비 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]인식 애플리케이션과 직접 크로스 프로세스 통신을 수행하는 경우 [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 함수 `PhysicalToLogicalPoint` 및 `LogicalToPhysicalPoint`를 사용하여 논리적 좌표와 물리적 좌표 간을 변환했을 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
-- [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)
+- [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter)
