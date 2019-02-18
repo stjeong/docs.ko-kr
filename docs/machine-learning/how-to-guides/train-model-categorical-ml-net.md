@@ -1,33 +1,33 @@
 ---
 title: 범주 데이터에 모델 학습용 기능 엔지니어링 적용 - ML.NET
 description: ML.NET를 사용하여 범주 데이터에 기계 학습 모델 학습용 기능 엔지니어링을 적용하는 방법을 알아봅니다.
-ms.date: 11/07/2018
+ms.date: 02/06/2018
 ms.custom: mvc,how-to
-ms.openlocfilehash: 10441ed4bfad4cccc51ebbf589ef313d1fe53f6e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: c24840ee89917d270bcbacbcf36905b4ee82a4aa
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53156611"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092087"
 ---
-# <a name="apply-feature-engineering-for-model-training-on-categorical-data---mlnet"></a><span data-ttu-id="a114d-103">범주 데이터에 모델 학습용 기능 엔지니어링 적용 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="a114d-103">Apply feature engineering for model training on categorical data - ML.NET</span></span>
+# <a name="apply-feature-engineering-for-model-training-on-categorical-data---mlnet"></a><span data-ttu-id="15178-103">범주 데이터에 모델 학습용 기능 엔지니어링 적용 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="15178-103">Apply feature engineering for model training on categorical data - ML.NET</span></span>
 
-<span data-ttu-id="a114d-104">모든 ML.NET `learners`가 `float vector`로 기능을 사용하므로 비부동 데이터를 `float` 데이터 형식으로 변환해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-104">You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.</span></span>
+<span data-ttu-id="15178-104">모든 ML.NET `learners`가 `float vector`로 기능을 사용하므로 비부동 데이터를 `float` 데이터 형식으로 변환해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="15178-104">You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.</span></span>
 
-<span data-ttu-id="a114d-105">데이터 세트에 `categorical` 데이터(예: ‘enum’)가 포함된 경우 ML.NET에서 기능으로 변환하는 여러 가지 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-105">If the dataset contains `categorical` data (for example, 'enum'), ML.NET offers several ways of converting it to features:</span></span>
+<span data-ttu-id="15178-105">데이터 세트에 `categorical` 데이터(예: ‘enum’)가 포함된 경우 ML.NET에서 기능으로 변환하는 여러 가지 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="15178-105">If the dataset contains `categorical` data (for example, 'enum'), ML.NET offers several ways of converting it to features:</span></span>
 
-- <span data-ttu-id="a114d-106">원 핫 인코딩(one-hot encoding)</span><span class="sxs-lookup"><span data-stu-id="a114d-106">One-hot encoding</span></span>
-- <span data-ttu-id="a114d-107">해시 기반 원 핫 인코딩(one-hot encoding)</span><span class="sxs-lookup"><span data-stu-id="a114d-107">Hash-based one-hot encoding</span></span>
-- <span data-ttu-id="a114d-108">이진 인코딩(범주 인덱스를 비트 시퀀스로 변환하고 비트를 기능으로 사용)</span><span class="sxs-lookup"><span data-stu-id="a114d-108">Binary encoding (convert category index into a bit sequence and use bits as features)</span></span>
+- <span data-ttu-id="15178-106">원 핫 인코딩(one-hot encoding)</span><span class="sxs-lookup"><span data-stu-id="15178-106">One-hot encoding</span></span>
+- <span data-ttu-id="15178-107">해시 기반 원 핫 인코딩(one-hot encoding)</span><span class="sxs-lookup"><span data-stu-id="15178-107">Hash-based one-hot encoding</span></span>
+- <span data-ttu-id="15178-108">이진 인코딩(범주 인덱스를 비트 시퀀스로 변환하고 비트를 기능으로 사용)</span><span class="sxs-lookup"><span data-stu-id="15178-108">Binary encoding (convert category index into a bit sequence and use bits as features)</span></span>
 
-<span data-ttu-id="a114d-109">일부 범주의 카디널리티가 매우 높은 경우(예: 자주 발생하는 세트가 작은, 각기 다른 많은 값) `one-hot encoding`은 낭비일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-109">A `one-hot encoding` can be wasteful if some categories are very high-cardinality (lots of different values, with a small set commonly occurring.</span></span> <span data-ttu-id="a114d-110">이 경우 개수 기반 기능 선택을 통해 인코드할 슬롯 수를 줄입니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-110">In that case, reduce the number of slots to encode with count-based feature selection.</span></span>
+<span data-ttu-id="15178-109">일부 범주의 카디널리티가 매우 높은 경우(예: 자주 발생하는 세트가 작은, 각기 다른 많은 값) `one-hot encoding`은 낭비일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="15178-109">A `one-hot encoding` can be wasteful if some categories are very high-cardinality (lots of different values, with a small set commonly occurring.</span></span> <span data-ttu-id="15178-110">이 경우 개수 기반 기능 선택을 통해 인코드할 슬롯 수를 줄입니다.</span><span class="sxs-lookup"><span data-stu-id="15178-110">In that case, reduce the number of slots to encode with count-based feature selection.</span></span>
 
-<span data-ttu-id="a114d-111">ML.NET 학습 파이프라인에 범주 기능화를 직접 포함하여 범주 변환을 보장합니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-111">Include categorical featurization directly in the ML.NET learning pipeline to ensure that the categorical transformation:</span></span>
+<span data-ttu-id="15178-111">ML.NET 학습 파이프라인에 범주 기능화를 직접 포함하여 범주 변환을 보장합니다.</span><span class="sxs-lookup"><span data-stu-id="15178-111">Include categorical featurization directly in the ML.NET learning pipeline to ensure that the categorical transformation:</span></span>
 
-- <span data-ttu-id="a114d-112">테스트 데이터가 아닌 학습 데이터에 대해서만 ‘학습’됩니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-112">is only 'trained' on the training data, and not on your test data,</span></span>
-- <span data-ttu-id="a114d-113">예측 시 추가 전처리 없이도 새 수신 데이터에 올바르게 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-113">is correctly applied to new incoming data, without extra pre-processing at prediction time.</span></span>
+- <span data-ttu-id="15178-112">테스트 데이터가 아닌 학습 데이터에 대해서만 ‘학습’됩니다.</span><span class="sxs-lookup"><span data-stu-id="15178-112">is only 'trained' on the training data, and not on your test data,</span></span>
+- <span data-ttu-id="15178-113">예측 시 추가 전처리 없이도 새 수신 데이터에 올바르게 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="15178-113">is correctly applied to new incoming data, without extra pre-processing at prediction time.</span></span>
 
-<span data-ttu-id="a114d-114">다음 예제에서는 [성인 인구 조사 데이터 세트](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt)에 대한 범주 처리를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a114d-114">The following example illustrates categorical handling for the [adult census dataset](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt):</span></span>
+<span data-ttu-id="15178-114">다음 예제에서는 [성인 인구 조사 데이터 세트](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt)에 대한 범주 처리를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="15178-114">The following example illustrates categorical handling for the [adult census dataset](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt):</span></span>
 
 ```console
 Label   Workclass   education   marital-status  occupation  relationship    ethnicity   sex native-country-region   age fnlwgt  education-num   capital-gain    capital-loss    hours-per-week
@@ -43,9 +43,8 @@ Label   Workclass   education   marital-status  occupation  relationship    ethn
 var mlContext = new MLContext();
 
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
-{
-    Column = new[] {
+var reader = mlContext.Data.CreateTextLoader(new[] 
+    {
         new TextLoader.Column("Label", DataKind.BL, 0),
         // We will load all the categorical features into one vector column of size 8.
         new TextLoader.Column("CategoricalFeatures", DataKind.TX, 1, 8),
@@ -54,8 +53,8 @@ var reader = mlContext.Data.TextReader(new TextLoader.Arguments
         // Let's also separately load the 'Workclass' column.
         new TextLoader.Column("Workclass", DataKind.TX, 1),
     },
-    HasHeader = true
-});
+    hasHeader: true
+);
 
 // Read the data.
 var data = reader.Read(dataPath);
@@ -64,17 +63,17 @@ var data = reader.Read(dataPath);
 var catColumns = data.GetColumn<string[]>(mlContext, "CategoricalFeatures").Take(10).ToArray();
 
 // Build several alternative featurization pipelines.
-var dynamicPipeline =
+var pipeline =
     // Convert each categorical feature into one-hot encoding independently.
     mlContext.Transforms.Categorical.OneHotEncoding("CategoricalFeatures", "CategoricalOneHot")
-    // Convert all categorical features into indices, and build a 'word bag' of these.
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding("CategoricalFeatures", "CategoricalBag", CategoricalTransform.OutputKind.Bag))
-    // One-hot encode the workclass column, then drop all the categories that have fewer than 10 instances in the train set.
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding("Workclass", "WorkclassOneHot"))
-    .Append(new CountFeatureSelector(mlContext, "WorkclassOneHot", "WorkclassOneHotTrimmed", count: 10));
+        // Convert all categorical features into indices, and build a 'word bag' of these.
+        .Append(mlContext.Transforms.Categorical.OneHotEncoding("CategoricalFeatures", "CategoricalBag",OneHotEncodingTransformer.OutputKind.Bag))
+        // One-hot encode the workclass column, then drop all the categories that have fewer than 10 instances in the train set.
+        .Append(mlContext.Transforms.Categorical.OneHotEncoding("Workclass", "WorkclassOneHot"))
+        .Append(mlContext.Transforms.FeatureSelection.SelectFeaturesBasedOnCount("WorkclassOneHot", "WorkclassOneHotTrimmed", count: 10));
 
 // Let's train our pipeline, and then apply it to the same data.
-var transformedData = dynamicPipeline.Fit(data).Transform(data);
+var transformedData = pipeline.Fit(data).Transform(data);
 
 // Inspect some columns of the resulting dataset.
 var categoricalBags = transformedData.GetColumn<float[]>(mlContext, "CategoricalBag").Take(10).ToArray();
@@ -83,9 +82,12 @@ var workclasses = transformedData.GetColumn<float[]>(mlContext, "WorkclassOneHot
 // Of course, if we want to train the model, we will need to compose a single float vector of all the features.
 // Here's how we could do this:
 
-var fullLearningPipeline = dynamicPipeline
+var fullLearningPipeline = pipeline
     // Concatenate two of the 3 categorical pipelines, and the numeric features.
     .Append(mlContext.Transforms.Concatenate("Features", "NumericalFeatures", "CategoricalBag", "WorkclassOneHotTrimmed"))
+    // Cache data in memory so that the following trainer will be able to access training examples without
+    // reading them from disk multiple times.
+    .AppendCacheCheckpoint(mlContext)
     // Now we're ready to train. We chose our FastTree trainer for this classification task.
     .Append(mlContext.BinaryClassification.Trainers.FastTree(numTrees: 50));
 

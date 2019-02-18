@@ -1,24 +1,24 @@
 ---
 title: PredictionEngine을 사용하여 한 번에 하나씩 예측 수행 - ML.NET
 description: ML.NET PredictionEngine을 사용하여 한 번에 하나씩 예측을 수행하는 방법 알아보기
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: 0b3f60038fe7f49ffbff3c63fd2862ba67adb506
-ms.sourcegitcommit: 5c36aaa8299a2437c155700c810585aff19edbec
+ms.openlocfilehash: 328067816be37c9490ae71974e3f6da4ae079f25
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54333644"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092035"
 ---
-# <a name="use-the-predictionengine-to-make-one-prediction-at-a-time---mlnet"></a><span data-ttu-id="9c35e-103">PredictionEngine을 사용하여 한 번에 하나씩 예측 수행 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="9c35e-103">Use the PredictionEngine to make one prediction at a time - ML.NET</span></span> 
+# <a name="use-the-predictionengine-to-make-one-prediction-at-a-time---mlnet"></a><span data-ttu-id="19778-103">PredictionEngine을 사용하여 한 번에 하나씩 예측 수행 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="19778-103">Use the PredictionEngine to make one prediction at a time - ML.NET</span></span> 
 
-<span data-ttu-id="9c35e-104">모든 ML.NET 모델은 변환기이므로 `model.Transform`을 사용해서 `DataView`에 모델을 적용하여 예측을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-104">Since any ML.NET model is a transformer, you use `model.Transform` to apply the model to the `DataView` to make predictions.</span></span> 
+<span data-ttu-id="19778-104">모든 ML.NET 모델은 변환기이므로 `model.Transform`을 사용해서 `DataView`에 모델을 적용하여 예측을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="19778-104">Since any ML.NET model is a transformer, you use `model.Transform` to apply the model to the `DataView` to make predictions.</span></span> 
 
-<span data-ttu-id="9c35e-105">그러나 예측할 ‘데이터 세트’가 없고 한 번에 하나씩 예제를 받는 경우가 보다 일반적입니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-105">A more typical case, though, is when there is no 'dataset' that you want to predict on, but instead you receive one example at a time.</span></span> <span data-ttu-id="9c35e-106">예를 들어 ASP.NET 웹 사이트의 일부로 모델을 실행하며, 들어오는 HTTP 요청에 대해 예측을 수행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-106">For instance, you run the model as part of your ASP.NET website, and need to make a prediction for an incoming HTTP request.</span></span>
+<span data-ttu-id="19778-105">그러나 예측할 ‘데이터 세트’가 없고 한 번에 하나씩 예제를 받는 경우가 보다 일반적입니다.</span><span class="sxs-lookup"><span data-stu-id="19778-105">A more typical case, though, is when there is no 'dataset' that you want to predict on, but instead you receive one example at a time.</span></span> <span data-ttu-id="19778-106">예를 들어 ASP.NET 웹 사이트의 일부로 모델을 실행하며, 들어오는 HTTP 요청에 대해 예측을 수행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="19778-106">For instance, you run the model as part of your ASP.NET website, and need to make a prediction for an incoming HTTP request.</span></span>
 
-<span data-ttu-id="9c35e-107">`PredictionEngine`은 예측 파이프라인을 통해 한 번에 하나씩 예제를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-107">The `PredictionEngine` runs one example at a time through the prediction pipeline.</span></span>
+<span data-ttu-id="19778-107">`PredictionEngine`은 예측 파이프라인을 통해 한 번에 하나씩 예제를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="19778-107">The `PredictionEngine` runs one example at a time through the prediction pipeline.</span></span>
 
-<span data-ttu-id="9c35e-108">다음은 미리 빌드된 아이리스 예측 데이터 세트 모델을 사용하는 전체 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-108">Here is the full example using a prebuilt Iris prediction dataset model:</span></span>
+<span data-ttu-id="19778-108">다음은 미리 빌드된 아이리스 예측 데이터 세트 모델을 사용하는 전체 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="19778-108">Here is the full example using a prebuilt Iris prediction dataset model:</span></span>
 
 ```csharp
 // Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
@@ -27,19 +27,20 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(new TextLoader.Arguments
-{
-    Column = new[] {
-        new TextLoader.Column("SepalLength", DataKind.R4, 0),
-        new TextLoader.Column("SepalWidth", DataKind.R4, 1),
-        new TextLoader.Column("PetalLength", DataKind.R4, 2),
-        new TextLoader.Column("PetalWidth", DataKind.R4, 3),
+var reader = mlContext.Data.CreateTextLoader(
+    columns: new TextLoader.Column[]
+    {
+        // The four features of the Iris dataset will be grouped together as one Features column.
+        new TextLoader.Column("SepalLength",DataKind.R4,0),
+        new TextLoader.Column("SepalWidth",DataKind.R4,1),
+        new TextLoader.Column("PetalLength",DataKind.R4,2),
+        new TextLoader.Column("PetalWidth",DataKind.R4,3),
         // Label: kind of iris.
-        new TextLoader.Column("Label", DataKind.TX, 4),
+        new TextLoader.Column("Label",DataKind.TX,4)
     },
-    // Default separator is tab, but the dataset has comma.
-    Separator = ","
-});
+    separatorChar: ',',
+    hasHeader: true
+);
 
 // Retrieve the training data.
 var trainData = reader.Read(irisDataPath);
@@ -53,13 +54,13 @@ var pipeline =
     // Use the multi-class SDCA model to predict the label using features.
     .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent())
     // Apply the inverse conversion from 'PredictedLabel' column back to string value.
-    .Append(mlContext.Transforms.Conversion.MapKeyToValue(("PredictedLabel", "Data")));
+    .Append(mlContext.Transforms.Conversion.MapKeyToValue(("Data", "PredictedLabel")));
 
 // Train the model.
 var model = pipeline.Fit(trainData);
 ```
 
-<span data-ttu-id="9c35e-109">[스키마 이해](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md)를 예측에 사용하려면 다음과 같은 클래스 쌍을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-109">To use [schema comprehension](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md) for prediction, define a pair of classes like the following:</span></span>
+<span data-ttu-id="19778-109">[스키마 이해](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md)를 예측에 사용하려면 다음과 같은 클래스 쌍을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="19778-109">To use [schema comprehension](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md) for prediction, define a pair of classes like the following:</span></span>
 
 ```csharp
 private class IrisInput
@@ -80,7 +81,7 @@ private class IrisPrediction
 }
 ```
 
-<span data-ttu-id="9c35e-110">이제 예측 코드는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="9c35e-110">The prediction code now looks as follows:</span></span>
+<span data-ttu-id="19778-110">이제 예측 코드는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="19778-110">The prediction code now looks as follows:</span></span>
 
 ```csharp
 // Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
