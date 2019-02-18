@@ -125,9 +125,9 @@ End Function
   
 -   Windows Forms 애플리케이션  
   
--   A <xref:System.Windows.Forms.PaintEventArgs>에서의 매개 변수인 <xref:System.Windows.Forms.PaintEventHandler>합니다.  
+-   A <xref:System.Windows.Forms.PaintEventArgs>에서의 매개 변수인 <xref:System.Windows.Forms.PaintEventHandler>합니다.   
   
--   **c:\\**에 있는 `TestPhoto.jpg` 이미지 파일  
+-   **c:\\** 에 있는 `TestPhoto.jpg` 이미지 파일  
   
 ## <a name="see-also"></a>참고자료
 - [방법: 인코더에서 지원 되는 매개 변수 확인](../../../../docs/framework/winforms/advanced/how-to-determine-the-parameters-supported-by-an-encoder.md)
