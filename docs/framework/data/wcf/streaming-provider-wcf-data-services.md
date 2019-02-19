@@ -24,8 +24,7 @@ ms.locfileid: "56093842"
   
 -   미디어 링크 항목 - 관련 미디어 리소스 스트림에 대한 참조가 있는 엔터티입니다.  
   
- 
-  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에서 스트리밍 데이터 공급자를 이진 리소스 스트림을 정의합니다. 스트리밍 공급자 구현으로 특정 엔터티와 연결 된 미디어 리소스 스트림을 사용 하 여 데이터 서비스를 제공는 <xref:System.IO.Stream> 개체입니다. 이 구현을 사용하면 데이터 서비스가 HTTP를 통해 미디어 리소스를 받아들이고 지정된 MIME 형식의 이진 데이터 스트림으로 반환합니다.  
+ [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에서 스트리밍 데이터 공급자를 이진 리소스 스트림을 정의합니다. 스트리밍 공급자 구현으로 특정 엔터티와 연결 된 미디어 리소스 스트림을 사용 하 여 데이터 서비스를 제공는 <xref:System.IO.Stream> 개체입니다. 이 구현을 사용하면 데이터 서비스가 HTTP를 통해 미디어 리소스를 받아들이고 지정된 MIME 형식의 이진 데이터 스트림으로 반환합니다.  
   
  이진 데이터의 스트리밍을 지원하도록 데이터 서비스를 구성하려면 다음 단계를 수행해야 합니다.  
   
@@ -81,8 +80,7 @@ ms.locfileid: "56093842"
  데이터 서비스를 만드는 방법에 대 한 일반 정보를 참조 하세요. [데이터 서비스 구성](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)합니다.  
   
 ## <a name="enabling-large-binary-streams-in-the-hosting-environment"></a>호스팅 환경에서 큰 이진 스트림 사용  
- 
-  [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 웹 응용 프로그램에서 데이터 서비스를 만들 때 WCF(Windows Communication Foundation)가 HTTP 프로토콜 구현을 제공하는 데 사용됩니다. 기본적으로 WCF는 HTTP 메시지의 크기를 65K바이트로 제한합니다. 데이터 서비스에서 보내고 받는 큰 이진 데이터를 스트리밍할 수 있으려면 큰 이진 파일을 사용할 수 있고 전송에 스트림을 사용하도록 웹 응용 프로그램도 구성해야 합니다. 이렇게 하려면 응용 프로그램의 Web.config 파일에 있는 `<configuration />` 요소에 다음을 추가합니다.  
+ [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 웹 응용 프로그램에서 데이터 서비스를 만들 때 WCF(Windows Communication Foundation)가 HTTP 프로토콜 구현을 제공하는 데 사용됩니다. 기본적으로 WCF는 HTTP 메시지의 크기를 65K바이트로 제한합니다. 데이터 서비스에서 보내고 받는 큰 이진 데이터를 스트리밍할 수 있으려면 큰 이진 파일을 사용할 수 있고 전송에 스트림을 사용하도록 웹 응용 프로그램도 구성해야 합니다. 이렇게 하려면 응용 프로그램의 Web.config 파일에 있는 `<configuration />` 요소에 다음을 추가합니다.  
   
   
   
@@ -96,8 +94,7 @@ ms.locfileid: "56093842"
   
   
 ## <a name="using-data-streams-in-a-client-application"></a>클라이언트 응용 프로그램에서 데이터 스트림 사용  
- 
-  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리를 사용하면 클라이언트에서 이진 스트림으로 노출된 이러한 리소스를 검색하고 업데이트할 수 있습니다. 자세한 내용은 [이진 데이터 작업](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)합니다.  
+ [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리를 사용하면 클라이언트에서 이진 스트림으로 노출된 이러한 리소스를 검색하고 업데이트할 수 있습니다. 자세한 내용은 [이진 데이터 작업](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)합니다.  
   
 ## <a name="considerations-for-working-with-a-streaming-provider"></a>스트리밍 공급자로 작업하기 위한 고려 사항  
  스트리밍 공급자를 구현하는 경우와 데이터 서비스에서 미디어 리소스에 액세스하는 경우 고려할 사항은 다음과 같습니다.  
