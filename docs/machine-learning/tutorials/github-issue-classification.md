@@ -1,15 +1,15 @@
 ---
 title: GitHub 문제 다중 클래스 분류 시나리오에서 ML.NET 사용
 description: 다중 클래스 분류 시나리오에서 ML.NET을 사용하여 GitHub 문제를 분류하여 지정된 영역에 할당하는 방법을 알아봅니다.
-ms.date: 02/01/2019
+ms.date: 02/14/2019
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 79c0ae1ba38b410c0709659a4e5ee1ac2308b983
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: 80f4e322ee94e9c3a41bd1c3945383f89f4347d0
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55739425"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333523"
 ---
 # <a name="tutorial-use-mlnet-in-a-multiclass-classification-scenario-to-classify-github-issues"></a>자습서: 다중 클래스 분류 시나리오에서 ML.NET을 사용하여 GitHub 문제 분류
 
@@ -20,11 +20,11 @@ ms.locfileid: "55739425"
 > * 문제 이해
 > * 적절한 기계 학습 알고리즘 선택
 > * 데이터 준비
-> * 기능 추출 및 데이터 변환
+> * 데이터 변환
 > * 모델 학습
-> * 다른 데이터 세트를 사용하여 모델 평가
-> * 학습된 모델을 사용하여 테스트 데이터 결과의 단일 인스턴스 예측
-> * 로드된 모델을 사용하여 테스트 데이터의 단일 인스턴스 예측
+> * 모델 평가
+> * 학습된 모델을 통해 예측
+> * 로드된 모델을 통해 배포 및 예측
 
 > [!NOTE]
 > 이 항목은 현재 미리 보기로 제공되는 ML.NET을 참조하며, 자료는 변경될 수 있습니다. 자세한 내용은 [ML.NET 소개](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)를 참조하세요.
@@ -55,8 +55,8 @@ ms.locfileid: "55739425"
 3. **빌드 및 학습** 
    * **모델 학습**
    * **모델 평가**
-4. **실행**
-   * **모델 사용**
+4. **모델 배포**
+   * **예측 모델 사용**
 
 ### <a name="understand-the-problem"></a>문제 이해
 
@@ -146,7 +146,7 @@ ms.locfileid: "55739425"
 * `_testDataPath`에는 모델을 평가하는 데 사용되는 데이터 세트의 경로가 포함됩니다.
 * `_modelPath`에는 학습된 모델이 저장되는 경로가 포함됩니다.
 * `_mlContext`는 처리 컨텍스트를 제공하는 <xref:Microsoft.ML.MLContext>입니다.
-* `_trainingDataView`는 학습 데이터 세트를 처리하는 데 사용되는 <xref:Microsoft.ML.Data.IDataView>입니다.
+* `_trainingDataView`는 학습 데이터 세트를 처리하는 데 사용되는 <xref:Microsoft.Data.DataView.IDataView>입니다.
 * `_predEngine`은 단일 예측에 사용되는 <xref:Microsoft.ML.PredictionEngine%602>입니다.
 * `_reader`는 데이터 세트를 로드하고 변환하는 데 사용되는 <xref:Microsoft.ML.Data.TextLoader>입니다.
 
@@ -187,7 +187,7 @@ ML.NET를 사용하여 모델을 빌드하는 경우 먼저 <xref:Microsoft.ML.M
 
 ## <a name="load-the-data"></a>데이터 로드
 
-그런 다음, `_trainingDataView` <xref:Microsoft.ML.Data.IDataView> 글로벌 변수 초기화하고 `_trainDataPath` 매개 변수를 사용하여 데이터를 로드합니다.
+그런 다음, `_trainingDataView` <xref:Microsoft.Data.DataView.IDataView> 글로벌 변수 초기화하고 `_trainDataPath` 매개 변수를 사용하여 데이터를 로드합니다.
 
  [`Transforms`](../basic-concepts-model-training-in-mldotnet.md#transformer)의 입력 및 출력으로 사용되는 `DataView`는 `LINQ`에서 `IEnumerable`과 비슷한 기본적인 데이터 파이프라인 형식입니다.
 
@@ -195,7 +195,7 @@ ML.NET에서 데이터는 `SQL view`와 유사합니다. 지연 계산되고, �
 
 이전에 만든 `GitHubIssue` 데이터 모델 유형이 데이터 세트 스키마와 일치하므로 초기화, 매핑 및 데이터 세트 로드를 한 줄의 코드로 결합할 수 있습니다.
 
-줄의 첫 번재 부분(`CreateTextReader<GitHubIssue>(hasHeader: true)`)에서는 `GitHubIssue` 데이터 모델 형식의 데이터 세트 스키마를 추론하고 데이터 세트 헤더를 사용하여 <xref:Microsoft.ML.Data.TextLoader>를 만듭니다.
+줄의 첫 번재 부분(`CreateTextLoader<GitHubIssue>(hasHeader: true)`)에서는 `GitHubIssue` 데이터 모델 형식의 데이터 세트 스키마를 추론하고 데이터 세트 헤더를 사용하여 <xref:Microsoft.ML.Data.TextLoader>를 만듭니다.
 
 이전에 `GitHubIssue` 클래스를 만들 때 데이터 스키마를 정의했습니다. 스키마의 경우:
 
@@ -245,6 +245,9 @@ ML.NET의 변환 파이프라인은 학습 또는 테스트 전에 데이터에 
 
 [!code-csharp[FeaturizeText](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#FeaturizeText)]
 
+>[!WARNING]
+> ML.NET 버전 0.10은 변환 매개 변수의 순서를 변경했습니다. 이렇게 하면 빌드할 때까지 오류가 발생하지 않습니다. 이전 코드 조각에 설명된 것처럼 변환에 매개 변수 이름을 사용합니다.
+
 데이터 준비의 마지막 단계에서는 `Concatenate` 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 기본적으로, 학습 알고리즘은 **Features** 열의 기능만 처리합니다. 다음 코드를 사용하여 이 변환을 파이프라인에 추가합니다.
 
 [!code-csharp[Concatenate](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Concatenate)]
@@ -288,13 +291,7 @@ BuildAndTrainModel 메서드에는 학습 데이터 세트(`trainingDataView`)�
 
 ### <a name="choose-a-learning-algorithm"></a>학습 알고리즘 선택
 
-학습 알고리즘을 추가하려면 <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> 개체를 사용합니다.  `SdcaMultiClassTrainer`는 `pipeline`에 추가되고 기록 데이터에서 학습할 기능화된 `Title`, `Description`(`Features`) 및 `Label` 입력 매개 변수를 수락합니다.
-
-`BuildAndTrainModel` 메서드에 다음 코드를 추가합니다.
-
-[!code-csharp[SdcaMultiClassTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SdcaMultiClassTrainer)]
-
-이제 학습 알고리즘을 만들었으므로 `pipeline`에 추가합니다. 또한 레이블을 원래 읽기 가능한 상태로 반환하려면 값에 매핑해야 합니다. 다음 코드를 사용하여 해당 작업 모두를 수행합니다.
+학습 알고리즘을 추가하려면 <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> 개체를 반환하는 `mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent` 래퍼 메서드를 호출합니다.  `SdcaMultiClassTrainer`는 `pipeline`에 추가되고 기록 데이터에서 학습할 기능화된 `Title`, `Description`(`Features`) 및 `Label` 입력 매개 변수를 수락합니다. 또한 레이블을 원래 읽기 가능한 상태로 반환하려면 값에 매핑해야 합니다. 다음 코드를 사용하여 해당 작업 모두를 수행합니다.
 
 [!code-csharp[AddTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddTrainer)]
 
@@ -310,6 +307,8 @@ BuildAndTrainModel 메서드에는 학습 데이터 세트(`trainingDataView`)�
 
 [!code-csharp[CreatePredictionEngine1](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine1)]
 
+### <a name="predict-with-the-trained-model"></a>학습된 모델을 통해 예측
+
 `GitHubIssue`의 인스턴스를 만들어 GitHub 문제를 추가하여 `Predict` 메서드에서 학습된 모델의 예측을 테스트합니다.
 
 [!code-csharp[CreateTestIssue1](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreateTestIssue1)]
@@ -318,7 +317,7 @@ BuildAndTrainModel 메서드에는 학습 데이터 세트(`trainingDataView`)�
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Predict)]
 
-### <a name="using-the-model-prediction"></a>모델 사용: prediction
+### <a name="using-the-model-prediction-results"></a>모델 사용: 예측 결과
 
 결과를 공유하고 이에 따라 작업을 수행하기 위해 `GitHubIssue` 및 해당 `Area` 레이블 예측을 표시합니다.  다음 <xref:System.Console.WriteLine?displayProperty=nameWithType> 코드를 사용하여 결과 표시를 만듭니다.
 
@@ -356,7 +355,7 @@ public static void Evaluate()
 
 [!code-csharp[LoadTestDataset](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#LoadTestDataset)]
 
-`MulticlassClassificationContext.Evaluate`는 지정된 데이터 세트를 사용하여 모델의 품질 메트릭을 계산하는 <xref:Microsoft.ML.MulticlassClassificationContext.Evaluate%2A> 메서드의 래퍼입니다. 다중 클래스 분류 평가자가 계산한 전체 메트릭을 포함하는 <xref:Microsoft.ML.Data.MultiClassClassifierMetrics> 개체를 반환합니다.
+`MulticlassClassificationContext.Evaluate`는 지정된 데이터 세트를 사용하여 모델의 품질 메트릭을 계산하는 <xref:Microsoft.ML.MulticlassClassificationCatalog.Evaluate%2A> 메서드의 래퍼입니다. 다중 클래스 분류 평가자가 계산한 전체 메트릭을 포함하는 <xref:Microsoft.ML.Data.MultiClassClassifierMetrics> 개체를 반환합니다.
 모델의 품질을 확인하기 위해 메트릭을 표시하려면 먼저 해당 메트릭을 가져와야 합니다.
 기계 학습 `_trainedModel` 글로벌 변수(변환기)의 `Transform` 메서드를 사용하여 기능을 입력하고 예측을 반환합니다. `Evaluate` 메서드에 아래 코드를 다음 줄로 추가합니다.
 
@@ -409,7 +408,7 @@ private static void SaveModelAsFile(MLContext mlContext, ITransformer model)
 Console.WriteLine("The model is saved to {0}", _modelPath);
 ```
 
-## <a name="predict-the-test-data-outcome-with-the-saved-model"></a>저장된 모델을 사용하여 테스트 데이터 결과 예측
+## <a name="deploy-and-predict-with-a-loaded-model"></a>로드된 모델을 통해 배포 및 예측
 
 다음 코드를 사용하여 `Evaluate` 메서드 호출 바로 아래에 `Main` 메서드의 새 메서드 호출을 추가합니다.
 
@@ -478,11 +477,11 @@ The model is saved to C:\Users\johalex\dotnet-samples\samples\machine-learning\t
 > * 문제 이해
 > * 적절한 기계 학습 알고리즘 선택
 > * 데이터 준비
-> * 기능 추출 및 데이터 변환
+> * 데이터 변환
 > * 모델 학습
-> * 다른 데이터 세트를 사용하여 모델 평가
-> * 학습된 모델을 사용하여 테스트 데이터 결과의 단일 인스턴스 예측
-> * 로드된 모델을 사용하여 테스트 데이터의 단일 인스턴스 예측
+> * 모델 평가
+> * 학습된 모델을 통해 예측
+> * 로드된 모델을 통해 배포 및 예측
 
 다음 자습서로 이동하여 자세히 알아보기
 > [!div class="nextstepaction"]

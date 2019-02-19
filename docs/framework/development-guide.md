@@ -6,36 +6,36 @@ helpviewer_keywords:
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a21f4cd8657a9d2c26ac481e7f2b00e6a2f502c9
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 894895331c2444a8e52a09e3de9d5a47daa87e5d
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123763"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092958"
 ---
 # <a name="net-framework-development-guide"></a>.NET Framework 개발 가이드
 이 섹션에서는 .NET Framework 앱을 생성, 구성, 디버그, 배포하고 보안을 적용하는 방법을 설명합니다. 이 섹션에서는 또한 동적 프로그래밍, 상호 운용성, 확장성, 메모리 관리 및 스레딩과 같은 기술 영역에 대한 정보를 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [응용 프로그램 주요 사항](../../docs/standard/application-essentials.md)  
+ [애플리케이션 주요 사항](../../docs/standard/application-essentials.md)  
  앱 도메인 및 어셈블리 프로그래밍, 특성, 컬렉션, 파일 및 데이터 스트림, 제네릭의 사용, 기본 형식의 구문 분석 및 지정, 이벤트와 예외의 처리 등 기본적인 앱 개발 작업에 대한 정보를 제공합니다.  
   
  [데이터 및 모델링](../../docs/framework/data/index.md)  
  ADO.NET, LINQ(Language Integrated Query), WCF Data Services 및 XML을 사용하여 데이터에 액세스하는 방법에 대한 정보를 제공합니다.  
   
- [클라이언트 응용 프로그램](../../docs/framework/develop-client-apps.md)  
+ [클라이언트 애플리케이션](../../docs/framework/develop-client-apps.md)  
  WPF(Windows Presentation Foundation) 또는 Windows Forms를 사용하여 Windows 기반 앱을 만드는 방법을 설명합니다.  
   
- [ASP.NET을 사용하여 개발한 웹 응용 프로그램](../../docs/framework/develop-web-apps-with-aspnet.md)  
+ [ASP.NET을 사용하여 개발한 웹 애플리케이션](../../docs/framework/develop-web-apps-with-aspnet.md)  
  ASP.NET을 사용하여 최소한의 코딩으로 엔터프라이즈급 웹 응용 프로그램을 빌드하는 방법에 대한 링크를 제공합니다.  
   
- [WCF를 사용하여 개발한 서비스 기반 응용 프로그램](../../docs/framework/wcf/index.md)  
+ [WCF를 사용하여 개발한 서비스 기반 애플리케이션](../../docs/framework/wcf/index.md)  
  WCF(Windows Communication Foundation)를 사용하여 안전하고 신뢰할 수 있는 서비스 지향 앱을 빌드하는 방법을 설명합니다.  
   
  [Windows Workflow Foundation으로 워크플로 만들기](windows-workflow-foundation/index.md)     
  Windows WF(Workflow Foundation) 사용을 위한 프로그래밍 모델, 샘플 및 도구에 대한 정보를 제공합니다.  
 
- [Windows 서비스 응용 프로그램](../../docs/framework/windows-services/index.md)  
+ [Windows 서비스 애플리케이션](../../docs/framework/windows-services/index.md)  
  Visual Studio 및 .NET Framework를 사용하여 서비스로서 설치되는 앱을 만들고 서비스 동작을 시작, 중지 및 다른 방식으로 제어하는 방법에 대해 설명합니다.  
   
  [.NET의 병렬 처리, 동시성 및 비동기 프로그래밍](../../docs/standard/parallel-processing-and-concurrency.md)  
@@ -79,5 +79,5 @@ ms.locfileid: "49123763"
  [도구](../../docs/framework/tools/index.md)  
  .NET Framework 기술을 사용하여 앱을 개발, 구성 및 배포하는 데 도움이 되는 도구에 대해 설명합니다.  
   
- [.NET Framework 샘플](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
- .NET Framework 기술을 보여주는 샘플 앱에 대한 MSDN 코드 샘플 갤러리의 링크를 제공합니다.
+ [.NET 샘플 및 자습서](../samples-and-tutorials/index.md)  
+ .NET을 학습할 수 있는 샘플 및 자습서에 대한 링크를 제공합니다.

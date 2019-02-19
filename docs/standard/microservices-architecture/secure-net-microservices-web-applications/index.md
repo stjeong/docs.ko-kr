@@ -1,41 +1,41 @@
 ---
-title: Securing .NET Microservices and Web Applications
-description: Security in .NET Microservices and Web Applications - Get to know the authentication options in ASP.NET Core web applications.
+title: .NET 마이크로 서비스 및 웹 애플리케이션 보안
+description: .NET 마이크로 서비스 및 웹 애플리케이션 보안 - ASP.NET Core 웹 애플리케이션의 인증 옵션을 살펴봅니다.
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
-ms.openlocfilehash: 9a60f326035a6d04aa39a14c98fc1c711ffe494a
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: e53e6a50c1fdfaff6839a0a1e328047562a47824
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362303"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333503"
 ---
-# <a name="make-secure-net-microservices-and-web-applications"></a>Make secure .NET Microservices and Web Applications
+# <a name="make-secure-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 애플리케이션 보안
 
-There are so many aspects about security in microservices and web applications that the topic could easy take several books like this one so, in this section, we'll focus on authentication, authorization, and application secrets.
+항목에서는 이와 같은 여러 설명서를 쉽게 사용할 수 있는 마이크로 서비스 및 웹 애플리케이션의 보안에 대한 많은 측면이 있으므로 이 섹션에서는 인증, 권한 및 애플리케이션 비밀에 집중하도록 하겠습니다.
 
-## <a name="implement-authentication-in-net-microservices-and-web-applications"></a>Implement authentication in .NET microservices and web applications
+## <a name="implement-authentication-in-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 애플리케이션의 인증 구현
 
-It's often necessary for resources and APIs published by a service to be limited to certain trusted users or clients. The first step to making these sorts of API-level trust decisions is authentication. Authentication is the process of reliably verify a user’s identity.
+서비스에서 게시된 리소스 및 API는 종종 특정 신뢰할 수 있는 사용자 또는 클라이언트로 제한되어야 합니다. 이러한 API 수준 신뢰 결정을 만드는 첫 번째 단계는 인증입니다. 인증은 사용자의 ID를 안정적으로 확인하는 프로세스입니다.
 
-In microservice scenarios, authentication is typically handled centrally. If you're using an API Gateway, the gateway is a good place to authenticate, as shown in Figure 9-1. If you use this approach, make sure that the individual microservices cannot be reached directly (without the API Gateway) unless additional security is in place to authenticate messages whether they come from the gateway or not.
+마이크로 서비스 시나리오에서 일반적으로 인증은 중앙에서 처리됩니다. API 게이트웨이를 사용하는 경우 그림 9-1에 표시된 것처럼 게이트웨이는 인증에 적합한 위치입니다. 이 방법을 사용하는 경우 메시지를 인증하는 데 추가 보안을 사용하지 않는 한 (API 게이트웨이 없이) 개별 마이크로 서비스에 직접 연결할 수 없습니다. 인증하는 메시지의 출처는 반드시 게이트웨이가 아니어도 무방합니다.
 
-![When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices.](./media/image1.png)
+![API 게이트웨이는 인증을 중앙 집중 방식으로 관리하는 경우 마이크로 서비스에 요청을 전달할 때 사용자 정보를 추가합니다.](./media/image1.png)
 
-**Figure 9-1**. Centralized authentication with an API Gateway
+**그림 9-1**. API 게이트웨이를 통한 중앙 집중식 인증
 
-If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between applications, if needed, in ASP.NET Core with [data protection services](/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications).) This pattern is illustrated in Figure 9-2.
+서비스에 직접 액세스할 수 있는 경우 Azure Active Directory 또는 STS(보안 토큰 서비스)로 작동하는 전용 인증 마이크로 서비스와 같은 인증 서비스를 사용하여 사용자를 인증할 수 있습니다. 신뢰 결정은 보안 토큰 또는 쿠키를 통해 서비스 간에 공유됩니다. (필요한 경우 [데이터 보호 서비스](/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)를 통해 ASP.NET에서 이러한 토큰을 애플리케이션 간에 공유할 수 있습니다.) 그림 9-2에서는 이 패턴을 보여줍니다.
 
-![When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
+![마이크로 서비스에 직접 액세스하는 경우 인증 및 권한 부여를 포함하는 트러스트는 마이크로 서비스 간에 공유되고, 전용 마이크로 서비스에서 발급한 보안 토큰에서 처리됩니다.](./media/image2.png)
 
-**Figure 9-2**. Authentication by identity microservice; trust is shared using an authorization token
+**그림9-2** ID 마이크로 서비스에 의한 인증. 인증 토큰을 사용하여 신뢰가 공유됨
 
-### <a name="authenticate-with-aspnet-core-identity"></a>Authenticate with ASP.NET Core Identity
+### <a name="authenticate-with-aspnet-core-identity"></a>ASP.NET Core ID를 사용한 인증
 
-The primary mechanism in ASP.NET Core for identifying an application’s users is the [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) membership system. ASP.NET Core Identity stores user information (including sign-in information, roles, and claims) in a data store configured by the developer. Typically, the ASP.NET Core Identity data store is an Entity Framework store provided in the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` package. However, custom stores or other third-party packages can be used to store identity information in Azure Table Storage, CosmosDB, or other locations.
+애플리케이션의 사용자를 식별하기 위한 ASP.NET Core의 기본 메커니즘은 [ASP.NET Core ID](/aspnet/core/security/authentication/identity) 멤버 자격 시스템입니다. ASP.NET ID는 사용자 정보(로그인 정보, 역할 및 클레임 포함)를 개발자가 구성한 데이터 저장소에 저장합니다. 일반적으로 ASP.NET Core ID 데이터 저장소는 `Microsoft.AspNetCore.Identity.EntityFrameworkCore` 패키지에서 제공된 Entity Framework 저장소입니다. 그러나 사용자 지정 저장소 또는 타사 패키지를 사용하여 Azure Table Storage, CosmosDB 또는 다른 위치에 ID 정보를 저장할 수 있습니다.
 
-The following code is taken from the ASP.NET Core Web Application project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
+다음은 선택된 개별 사용자 계정 인증을 사용하여 ASP.NET Core 웹 애플리케이션 프로젝트 템플릿에서 가져온 코드입니다. Startup.ConfigureServices 메서드에서 EntityFramework.Core를 사용하여 ASP.NET Core ID를 구성하는 방법을 보여 줍니다.
 
 ```csharp
 services.AddDbContext<ApplicationDbContext>(options =>
@@ -45,38 +45,38 @@ services.AddDbContext<ApplicationDbContext>(options =>
         .AddDefaultTokenProviders();
 ```
 
-Once ASP.NET Core Identity is configured, you enable it by calling app.UseIdentity in the service’s `Startup.Configure` method.
+ASP.NET Core ID가 구성되면 서비스의 `Startup.Configure` 메서드에서 app.UseIdentity를 호출하여 사용할 수 있습니다.
 
-Using ASP.NET Core Identity enables several scenarios:
+ASP.NET Core ID를 통해 다음과 같은 몇 가지 시나리오를 사용할 수 있습니다.
 
-- Create new user information using the UserManager type (userManager.CreateAsync).
+- UserManager 형식(userManager.CreateAsync)을 사용하여 새 사용자 정보를 만듭니다.
 
-- Authenticate users using the SignInManager type. You can use `signInManager.SignInAsync` to sign in directly, or `signInManager.PasswordSignInAsync` to confirm the user’s password is correct and then sign them in.
+- SignInManager 형식을 사용하여 사용자를 인증합니다. 직접 로그인하려면 `signInManager.SignInAsync`를 사용하거나, 사용자의 암호가 올바른지 확인한 다음, 로그인하려면 `signInManager.PasswordSignInAsync`를 사용할 수 있습니다.
 
-- Identify a user based on information stored in a cookie (which is read by ASP.NET Core Identity middleware) so that subsequent requests from a browser will include a signed-in user’s identity and claims.
+- 브라우저의 후속 요청에 로그인한 사용자의 ID와 클레임이 포함되도록 (ASP.NET Core ID 미들웨어에서 읽는) 쿠키에 저장된 정보를 기반으로 사용자를 식별합니다.
 
-ASP.NET Core Identity also supports [two-factor authentication](/aspnet/core/security/authentication/2fa).
+ASP.NET Core ID도 [2단계 인증](/aspnet/core/security/authentication/2fa)을 지원합니다.
 
-For authentication scenarios that make use of a local user data store and that persist identity between requests using cookies (as is typical for MVC web applications), ASP.NET Core Identity is a recommended solution.
+ASP.NET Core ID는 로컬 사용자 데이터 저장소를 사용하며 (MVC 웹 애플리케이션에서는 전형적인 방식인) 쿠키를 사용하여 요청 사이의 ID를 유지하는 인증 시나리오를 위해 권장되는 솔루션입니다.
 
-### <a name="authenticate-with-external-providers"></a>Authenticate with external providers
+### <a name="authenticate-with-external-providers"></a>외부 공급자를 사용한 인증
 
-ASP.NET Core also supports using [external authentication providers](/aspnet/core/security/authentication/social/) to let users sign in via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) flows. This means that users can sign in using existing authentication processes from providers like Microsoft, Google, Facebook, or Twitter and associate those identities with an ASP.NET Core identity in your application.
+ASP.NET Core는 [외부 인증 공급자](/aspnet/core/security/authentication/social/)를 사용하여 사용자가 [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) 흐름을 통해 로그인할 수 있도록 지원합니다. 즉, 사용자가 Microsoft, Google, Facebook 또는 Twitter와 같은 공급 기업의 기존 인증 프로세스를 사용하여 로그인하고 애플리케이션에서 ASP.NET Core ID와 해당 ID를 연결할 수 있습니다.
 
-To use external authentication, you include the appropriate authentication middleware in your application’s HTTP request processing pipeline. This middleware is responsible for handling requests to return URI routes from the authentication provider, capturing identity information, and making it available via the SignInManager.GetExternalLoginInfo method.
+외부 인증을 사용하려면 애플리케이션의 HTTP 요청 처리 파이프라인에서 적절한 인증 미들웨어를 포함합니다. 이 미들웨어는 인증 공급자의 URI 경로 반환 요청 처리, ID 정보 캡처, SignInManager.GetExternalLoginInfo 메서드를 통해 사용 가능하도록 설정하는 작업을 담당합니다.
 
-Popular external authentication providers and their associated NuGet packages are shown in the following table:
+인기 있는 외부 인증 공급 기업 및 해당 공급 기업과 연결된 NuGet 패키지는 다음 표에 표시됩니다.
 
-| **Provider**  | **Package**                                          |
+| **공급 기업**  | **패키지**                                          |
 | ------------- | ---------------------------------------------------- |
 | **Microsoft** | **Microsoft.AspNetCore.Authentication.MicrosoftAccount** |
 | **Google**    | **Microsoft.AspNetCore.Authentication.Google**           |
 | **Facebook**  | **Microsoft.AspNetCore.Authentication.Facebook**         |
 | **Twitter**   | **Microsoft.AspNetCore.Authentication.Twitter**          |
 
-In all cases, the middleware is registered with a call to a registration method similar to `app.Use{ExternalProvider}Authentication` in `Startup.Configure`. These registration methods take an options object that contains an application ID and secret information (a password, for instance), as needed by the provider. External authentication providers require the application to be registered (as explained in [ASP.NET Core documentation](/aspnet/core/security/authentication/social/)) so that they can inform the user what application is requesting access to their identity.
+모든 경우에 미들웨어는 `Startup.Configure`의 `app.Use{ExternalProvider}Authentication`과 유사한 등록 메서드에 대한 호출에 등록됩니다. 이러한 등록 메서드에서는 공급자의 필요에 따라 애플리케이션 ID 및 비밀 정보(예: 암호)가 포함된 옵션 개체를 사용합니다. 외부 인증 공급자는 사용자 ID에 액세스하는 데 필요한 애플리케이션을 사용자에게 안내하기 위해 ([ASP.NET Core 설명서](/aspnet/core/security/authentication/social/)에서 설명한 것처럼) 등록할 애플리케이션을 요청합니다.
 
-Once the middleware is registered in `Startup.Configure`, you can prompt users to sign in from any controller action. To do this, you create an `AuthenticationProperties` object that includes the authentication provider’s name and a redirect URL. You then return a Challenge response that passes the `AuthenticationProperties` object. The following code shows an example of this.
+미들웨어가 `Startup.Configure`에 등록되면 모든 컨트롤러 작업에서 사용자에게 로그인을 요청할 수 있습니다. 이 작업을 수행하려면 인증 공급 기업의 이름 및 리디렉션 URL을 포함하는 `AuthenticationProperties` 개체를 만듭니다. 그런 다음, `AuthenticationProperties` 개체를 전달하는 챌린지 응답을 반환합니다. 다음 코드에서는 예제를 보여 줍니다.
 
 ```csharp
 var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider,
@@ -84,7 +84,7 @@ var properties = _signInManager.ConfigureExternalAuthenticationProperties(provid
 return Challenge(properties, provider);
 ```
 
-The redirectUrl parameter includes the URL that the external provider should redirect to once the user has authenticated. The URL should represent an action that will sign the user in based on external identity information, as in the following simplified example:
+redirectUrl 매개 변수는 사용자가 인증되면 외부 공급자가 리디렉션해야 하는 URL을 포함합니다. URL은 다음 단순화된 예제와 같이 외부 ID 정보를 기반으로 사용자가 로그인하는 작업을 나타내야 합니다.
 
 ```csharp
 // Sign in the user with this external login provider if the user
@@ -119,25 +119,25 @@ else
 }
 ```
 
-If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 9-3.
+Visual Studio에서 ASP.NET Core 웹 애플리케이션 프로젝트를 만들 때 **개별 사용자 계정** 인증 옵션을 선택한 경우 그림 9-3에 표시된 것처럼 외부 공급 기업을 통해 로그인하는 데 필요한 모든 코드는 이미 프로젝트에 있습니다.
 
-![Dialog for the New ASP.NET Core Web Application, highlighting the button to change authentication.](./media/image3.png)
+![인증을 변경하는 단추를 강조 표시하는 새 ASP.NET Core 웹 애플리케이션의 대화 상자입니다.](./media/image3.png)
 
-**Figure 9-3**. Selecting an option for using external authentication when creating a web application project
+**그림 9-3** 웹 애플리케이션 프로젝트를 만들 경우 외부 인증 사용 옵션 선택
 
-In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
+이전에 나열된 외부 인증 공급자뿐만 아니라 더욱 많은 외부 인증 공급자 사용에 대한 미들웨어를 제공하는 타사 패키지도 사용할 수 있습니다. 자세한 목록은 GitHub에서 [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) 리포지토리를 확인하세요.
 
-You can also create your own external authentication middleware to solve some special need.
+또한, 몇 가지 특별한 요구를 해결하려면 사용자 고유의 외부 인증 미들웨어를 만들 수 있습니다.
 
-### <a name="authenticate-with-bearer-tokens"></a>Authenticate with bearer tokens
+### <a name="authenticate-with-bearer-tokens"></a>전달자 토큰을 사용한 인증
 
-Authenticating with ASP.NET Core Identity (or Identity plus external authentication providers) works well for many web application scenarios in which storing user information in a cookie is appropriate. In other scenarios, though, cookies are not a natural means of persisting and transmitting data.
+ASP.NET Core ID(또는 ID 및 외부 인증 공급자)를 사용한 인증은 사용자 정보를 쿠키에 저장하는 것이 적합한 다수의 웹 애플리케이션 시나리오에 대해 효과적으로 작동합니다. 그러나 다른 시나리오의 경우 쿠키는 데이터를 유지하고 전송하는 자연스러운 방법이 아닙니다.
 
-For example, in an ASP.NET Core Web API that exposes RESTful endpoints that might be accessed by Single Page Applications (SPAs), by native clients, or even by other Web APIs, you typically want to use bearer token authentication instead. These types of applications do not work with cookies, but can easily retrieve a bearer token and include it in the authorization header of subsequent requests. To enable token authentication, ASP.NET Core supports several options for using [OAuth 2.0](https://oauth.net/2/) and [OpenID Connect](https://openid.net/connect/).
+예를 들어 SPA(단일 페이지 애플리케이션), 네이티브 클라이언트 또는 다른 웹 API에서 액세스할 수 있는 RESTful 엔드포인트를 노출하는 ASP.NET Core 웹 API에서는 쿠키 대신 일반적으로 전달자 토큰 인증을 사용하는 것이 좋습니다. 이러한 유형의 애플리케이션은 쿠키와는 작동하지 않지만 간편하게 전달자 토큰을 검색하여 후속 요청의 인증 헤더에 포함합니다. 토큰 인증을 사용하기 위해 ASP.NET Core는 [OAuth 2.0](https://oauth.net/2/) 및 [OpenID Connect](https://openid.net/connect/) 사용에 대한 몇 가지 옵션을 지원합니다.
 
-### <a name="authenticate-with-an-openid-connect-or-oauth-20-identity-provider"></a>Authenticate with an OpenID Connect or OAuth 2.0 Identity provider
+### <a name="authenticate-with-an-openid-connect-or-oauth-20-identity-provider"></a>OpenID Connect 또는 OAuth 2.0 ID 공급 기업을 사용한 인증
 
-If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the **Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in `Startup.cs`:
+사용자 정보가 Azure Active Directory 또는 OpenID Connect 또는 OAuth 2.0을 지원하는 다른 ID 솔루션에 저장되는 경우 **Microsoft.AspNetCore.Authentication.OpenIdConnect** 패키지를 사용하여 OpenID Connect 워크플로를 통해 인증할 수 있습니다. 예를 들어 eShopOnContainers의 Identity.Api 마이크로 서비스에 대해 인증하려면 ASP.NET Core 웹 애플리케이션에서는 `Startup.cs`의 다음 간단한 예제에 표시된 것처럼 해당 패키지의 미들웨어를 사용할 수 있습니다.
 
 ```csharp
 // Startup.cs
@@ -185,35 +185,35 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Note that when you use this workflow, the ASP.NET Core Identity middleware is not needed, because all user information storage and authentication is handled by the Identity service.
+이 워크플로를 사용하면 모든 사용자 정보 스토리지 및 인증이 ID 서비스에서 처리되므로 ASP.NET Core ID 미들웨어가 필요하지 않습니다.
 
-### <a name="issue-security-tokens-from-an-aspnet-core-service"></a>Issue security tokens from an ASP.NET Core service
+### <a name="issue-security-tokens-from-an-aspnet-core-service"></a>ASP.NET Core 서비스에서 보안 토큰 발급
 
-If you prefer to issue security tokens for local ASP.NET Core Identity users rather than using an external identity provider, you can take advantage of some good third-party libraries.
+로컬 ASP.NET Core ID 사용자를 위해 외부 ID 공급자를 사용하는 대신 보안 토큰 발급을 선호하는 경우 일부 훌륭한 타사 라이브러리를 적절하게 활용할 수 있습니다.
 
-[IdentityServer4](https://github.com/IdentityServer/IdentityServer4) and [OpenIddict](https://github.com/openiddict/openiddict-core) are OpenID Connect providers that integrate easily with ASP.NET Core Identity to let you issue security tokens from an ASP.NET Core service. The [IdentityServer4 documentation](https://identityserver4.readthedocs.io/en/release/) has in-depth instructions for using the library. However, the basic steps to using IdentityServer4 to issue tokens are as follows.
+[IdentityServer4](https://github.com/IdentityServer/IdentityServer4) 및 [OpenIddict](https://github.com/openiddict/openiddict-core)는 ASP.NET Core ID와 쉽게 통합하여 ASP.NET Core 서비스에서 보안 토큰을 발급할 수 있도록 허용하는 OpenID Connect 공급자입니다. [IdentityServer4 설명서](https://identityserver4.readthedocs.io/en/latest/)에는 라이브러리 사용에 대한 자세한 지침이 있습니다. 그러나 IdentityServer4를 사용하여 토큰을 발급하는 기본 단계는 다음과 같습니다.
 
-1. You call app.UseIdentityServer in the Startup.Configure method to add IdentityServer4 to the application’s HTTP request processing pipeline. This lets the library serve requests to OpenID Connect and OAuth2 endpoints like /connect/token.
+1. Startup.Configure 메서드에서 app.UseIdentityServer를 호출하여 IdentityServer4를 애플리케이션의 HTTP 요청 처리 파이프라인에 추가합니다. 이렇게 하면 라이브러리 서버에서 /connect/token과 같은 OpenID Connect 및 OAuth2 엔드포인트에 요청할 수 있습니다.
 
-2. You configure IdentityServer4 in Startup.ConfigureServices by making a call to services.AddIdentityServer.
+2. services.AddIdentityServer를 호출하여 Startup.ConfigureServices에서 IdentityServer4를 구성합니다.
 
-3. You configure identity server by setting the following data:
+3. 다음 데이터를 설정하여 ID 서버를 구성합니다.
 
-   - The [credentials](https://identityserver4.readthedocs.io/en/release/topics/crypto.html) to use for signing.
+   - 서명에 사용할 [자격 증명](https://identityserver4.readthedocs.io/en/latest/topics/crypto.html)
 
-   - The [Identity and API resources](https://identityserver4.readthedocs.io/en/release/topics/resources.html) that users might request access to:
+   - 액세스를 위해 사용자가 요청할 수 있는 [ID 및 API 리소스](https://identityserver4.readthedocs.io/en/latest/topics/resources.html)
 
-      - API resources represent protected data or functionality that a user can access with an access token. An example of an API resource would be a web API (or set of APIs) that requires authorization.
+      - API 리소스는 사용자가 액세스 토큰을 사용하여 액세스할 수 있는 보호된 데이터 또는 기능을 나타냅니다. 웹 API 리소스의 예로는 권한 부여가 필요한 웹 API(또는 API 집합)가 있습니다.
 
-      - Identity resources represent information (claims) that are given to a client to identify a user. The claims might include the user name, email address, and so on.
+      - ID 리소스는 사용자를 식별하기 위해 클라이언트에게 제공되는 정보(클레임)를 나타냅니다. 클레임에는 사용자 이름, 전자 메일 주소 등이 포함될 수 있습니다.
 
-   - The [clients](https://identityserver4.readthedocs.io/en/release/topics/clients.html) that will be connecting in order to request tokens.
+   - 토큰을 요청하기 위해 [클라이언트](https://identityserver4.readthedocs.io/en/latest/topics/clients.html)가 연결됩니다.
 
-   - The storage mechanism for user information, such as [ASP.NET Core Identity](https://identityserver4.readthedocs.io/en/release/quickstarts/6_aspnet_identity.html) or an alternative.
+   - [ASP.NET Core ID](https://identityserver4.readthedocs.io/en/latest/quickstarts/0_overview.html) 또는 대체 요소와 같은 사용자 정보에 대한 스토리지 메커니즘.
 
-When you specify clients and resources for IdentityServer4 to use, you can pass an <xref:System.Collections.Generic.IEnumerable%601> collection of the appropriate type to methods that take in-memory client or resource stores. Or for more complex scenarios, you can provide client or resource provider types via Dependency Injection.
+IdentityServer4가 사용할 클라이언트와 리소스를 지정할 때 적절한 형식의 <xref:System.Collections.Generic.IEnumerable%601> 컬렉션을 메모리 내 클라이언트 또는 리소스 저장소를 사용하는 메서드로 전달할 수 있습니다. 또는 더 복잡한 시나리오의 경우 종속성 주입을 통해 클라이언트 또는 리소스 공급자 형식을 제공할 수 있습니다.
 
-A sample configuration for IdentityServer4 to use in-memory resources and clients provided by a custom IClientStore type might look like the following example:
+사용자 지정 IClientStore 형식에서 제공한 메모리 내 리소스 및 클라이언트를 사용하는 IdentityServer4를 위한 샘플 구성은 다음 예제처럼 표시될 수 있습니다.
 
 ```csharp
 // Add IdentityServer services
@@ -224,11 +224,11 @@ services.AddIdentityServer()
     .AddAspNetIdentity<ApplicationUser>();
 ```
 
-### <a name="consume-security-tokens"></a>Consume security tokens
+### <a name="consume-security-tokens"></a>보안 토큰 사용
 
-Authenticating against an OpenID Connect endpoint or issuing your own security tokens covers some scenarios. But what about a service that simply needs to limit access to those users who have valid security tokens that were provided by a different service?
+OpenID Connect 엔드포인트에 대해 인증하거나 고유 보안 토큰을 발행하는 방법은 일부 시나리오에서 사용할 수 있습니다. 그러나 다른 서비스에서 제공받은 유효한 보안 토큰이 있는 사용자의 액세스를 제한해야 하는 서비스에는 어떤 방법을 사용해야 할까요?
 
-For that scenario, authentication middleware that handles JWT tokens is available in the **Microsoft.AspNetCore.Authentication.JwtBearer** package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simplified example of how to use middleware to consume such tokens might look like this code fragment, taken from the Ordering.Api microservice of eShopOnContainers.
+해당 시나리오의 경우 JWT 토큰을 처리하는 인증 미들웨어를 **Microsoft.AspNetCore.Authentication.JwtBearer** 패키지에서 사용할 수 있습니다. JWT는 “[JSON Web Token](https://tools.ietf.org/html/rfc7519)”을 의미하며 보안 클레임 통신을 위한 일반적인 보안 토큰 형식(RFC 7519에 의해 정의됨)입니다. 미들웨어를 통해 이러한 토큰을 사용하는 방법의 간단한 예제는 eShopOnContainers의 Ordering.Api 마이크로 서비스에서 가져온 이 코드 조각처럼 보일 수 있습니다.
 
 ```csharp
 // Startup.cs
@@ -264,44 +264,44 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-The parameters in this usage are:
+이 사용에 대한 매개 변수는 다음과 같습니다.
 
-- `Audience` represents the receiver of the incoming token or the resource that the token grants access to. If the value specified in this parameter does not match the parameter in the token, the token will be rejected.
+- `Audience`는 들어오는 토큰의 수신기 또는 토큰에서 액세스 권한을 부여하는 리소스를 나타냅니다. 이 매개 변수에서 지정한 값이 토큰의 매개 변수와 일치하지 않는 경우 토큰이 거부됩니다.
 
-- `Authority` is the address of the token-issuing authentication server. The JWT bearer authentication middleware uses this URI to get the public key that can be used to validate the token's signature. The middleware also confirms that the `iss` parameter in the token matches this URI.
+- `Authority`는 토큰 발행 인증 서버의 주소입니다. JWT 전달자 인증 미들웨어는 이 URI를 사용하여 토큰 시그니처의 유효성을 검사하는 데 사용되는 공개 키를 가져옵니다. 또한 미들웨어는 토큰의 `iss` 매개 변수가 이 URI와 일치하는지 확인합니다.
 
-Another parameter, `RequireHttpsMetadata`, is useful for testing purposes; you set this parameter to false so you can test in environments where you don't have certificates. In real-world deployments, JWT bearer tokens should always be passed only over HTTPS.
+다른 매개 변수 `RequireHttpsMetadata`는 테스트 목적으로 사용하는 것이 적합합니다. 이 매개 변수를 false로 설정하여 인증서가 없는 환경에서 테스트할 수 있습니다. 실제 배포에서 JWT 전달자 토큰은 항상 HTTPS를 통해서만 전달되어야 합니다.
 
-With this middleware in place, JWT tokens are automatically extracted from authorization headers. They are then deserialized, validated (using the values in the `Audience` and `Authority` parameters), and stored as user information to be referenced later by MVC actions or authorization filters.
+미들웨어가 준비되면 JWT 토큰은 인증 헤더에서 자동으로 추출됩니다. 그런 다음, 토큰은 deserialize되고 (`Audience` 및 `Authority` 매개 변수를 사용하여) 유효성 검사가 진행되며 나중에 MVC 작업 또는 인증 필터에서 참조하는 사용자 정보로 저장됩니다.
 
-The JWT bearer authentication middleware can also support more advanced scenarios, such as using a local certificate to validate a token if the authority is not available. For this scenario, you can specify a `TokenValidationParameters` object in the `JwtBearerOptions` object.
+JWT 전달자 인증 미들웨어는 인증 기관을 사용할 수 없는 경우 로컬 인증서를 사용하여 토큰의 유효성을 검사하는 상황과 같은 고급 시나리오도 지원할 수 있습니다. 이 시나리오의 경우 `JwtBearerOptions` 개체에서 `TokenValidationParameters` 개체를 지정할 수 있습니다.
 
-## <a name="additional-resources"></a>Additional resources
+## <a name="additional-resources"></a>추가 자료
 
-- **Sharing cookies between applications** \
+- **애플리케이션 간 쿠키 공유하기** \
   [*https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing\#sharing-authentication-cookies-between-applications*](/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)
 
-- **Introduction to Identity** \
+- **ID 소개** \
   [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](/aspnet/core/security/authentication/identity)
 
-- **Rick Anderson. Two-factor authentication with SMS** \
+- **Rick Anderson. SMS를 사용한 2단계 인증** \
   [*https://docs.microsoft.com/aspnet/core/security/authentication/2fa*](/aspnet/core/security/authentication/2fa)
 
-- **Enabling authentication using Facebook, Google and other external providers** \
+- **Facebook, Google 및 기타 외부 공급 기업을 통해 인증 사용** \
   [*https://docs.microsoft.com/aspnet/core/security/authentication/social/*](/aspnet/core/security/authentication/social/)
 
-- **Michell Anicas. An Introduction to OAuth 2** \
+- **Michell Anicas. OAuth 2 소개** \
   [*https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2*](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 
-- **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers. \
+- **AspNet.Security.OAuth.Providers**(ASP.NET OAuth 공급자를 위한 GitHub 리포지토리) \
   [*https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src*](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src)
 
-- **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app** \
+- **Danny Strockis. ASP.NET Core 웹앱에 Azure AD 통합** \
   [*https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/*](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)
 
-- **IdentityServer4. Official documentation** \
-  [*https://identityserver4.readthedocs.io/en/release/*](https://identityserver4.readthedocs.io/en/release/)
+- **IdentityServer4. 공식 설명서** \
+  *<https://identityserver4.readthedocs.io/en/latest/>*
 
 >[!div class="step-by-step"]
->[Previous](../implement-resilient-applications/monitor-app-health.md)
->[Next](authorization-net-microservices-web-applications.md)
+>[이전](../implement-resilient-applications/monitor-app-health.md)
+>[다음](authorization-net-microservices-web-applications.md)

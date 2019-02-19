@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 140af66c9ea08d16aa442824ff7333eeeadf5173
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8b66265a58dcbb6f795e1d207e0bb6f75252161e
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54530699"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093543"
 ---
 # <a name="how-to-configure-net-framework-based-com-components-for-registration-free-activation"></a>방법: 등록이 필요 없는 활성화를 위한 .NET Framework 기반 COM 구성 요소 구성
 .NET Framework 기반 구성 요소에 대한 등록 없는 활성화는 COM 구성 요소보다 약간 더 복잡합니다. 설치 프로그램에 다음 두 개의 매니페스트가 필요합니다.  
@@ -107,9 +107,9 @@ ms.locfileid: "54530699"
   
     |특성|설명|필수|  
     |---------------|-----------------|--------------|  
-    |`clsid`|활성화할 클래스를 지정하는 식별자입니다.|예|  
+    |`clsid`|활성화할 클래스를 지정하는 식별자입니다.|적용|  
     |`description`|구성 요소에 대해 사용자에게 알려주는 문자열입니다. 기본값은 빈 문자열입니다.|아니요|  
-    |`name`|관리되는 클래스를 나타내는 문자열입니다.|예|  
+    |`name`|관리되는 클래스를 나타내는 문자열입니다.|적용|  
     |`progid`|런타임에 바인딩된 활성화에 사용할 식별자입니다.|아니요|  
     |`threadingModel`|COM 스레딩 모델. "Both"가 기본값입니다.|아니요|  
     |`runtimeVersion`|사용할 CLR(공용 언어 런타임) 버전을 지정합니다. 이 특성을 지정하지 않고 CLR이 아직 로드되지 않은 경우 CLR 버전 4 이전의 최신 설치된 CLR과 함께 구성 요소가 로드됩니다. v1.0.3705, v1.1.4322 또는 v2.0.50727을 지정하면 버전이 CLR 버전 4 이전의 최신 설치된 CLR 버전(일반적으로 v2.0.50727)으로 자동으로 롤포워드합니다. 다른 버전의 CLR이 이미 로드되었으며 지정된 버전을 In-Process Side-by-Side로 로드할 수 있는 경우 지정된 버전이 로드되고, 그러지 않으면 로드된 CLR이 사용됩니다. 이 경우 로드에 실패할 수 있습니다.|아니요|  
@@ -174,6 +174,6 @@ ms.locfileid: "54530699"
   
 ## <a name="see-also"></a>참고 항목
 - [등록이 필요 없는 COM interop](registration-free-com-interop.md)
-- [등록이 필요 없는 COM Interop에 대한 요구 사항](https://msdn.microsoft.com/library/0c43bc57-eecf-4e6c-8114-490141cce4da(v=vs.100))
-- [등록이 필요 없는 활성화를 위한 COM 구성 요소 구성](https://msdn.microsoft.com/library/bfe9b02f-d964-4784-960e-a1f94692fbfe(v=vs.100))
-- [.NET 기반 구성 요소의 등록이 필요 없는 활성화: 연습](https://msdn.microsoft.com/library/ms973915.aspx)
+- [등록이 필요 없는 COM Interop에 대한 요구 사항](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
+- [등록이 필요 없는 활성화를 위한 COM 구성 요소 구성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
+- [.NET 기반 구성 요소의 등록이 필요 없는 활성화: 연습](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973915(v=msdn.10))

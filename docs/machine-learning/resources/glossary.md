@@ -3,12 +3,12 @@ title: 기계 학습 용어집 - ML.NET
 description: ML.NET에서 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
 ms.custom: seodec18
 ms.date: 12/20/2018
-ms.openlocfilehash: d21b551389778a9f301fcfea0b5302d32ebba18f
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 3dfa17e9264bf913465adb63ce0a90a9d196e617
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415379"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092438"
 ---
 # <a name="machine-learning-glossary-of-important-terms"></a>중요한 용어가 포함된 기계 학습 용어집
 
@@ -110,7 +110,7 @@ ms.locfileid: "54415379"
 
 원하는 모델이 아직 확인되지 않은 데이터에 대한 레이블을 예측하는 기계 학습의 서브클래스입니다. 예로는 분류, 회귀 및 구조화된 예측이 있습니다. 자세한 내용은 Wikipedia에서 [Supervised learning](https://en.wikipedia.org/wiki/Supervised_learning)(감독된 학습) 문서를 참조하세요.
 
-## <a name="training"></a>학습
+## <a name="training"></a>교육
 
 지정된 학습 데이터 집합에 대한 [모델](#model)을 식별하는 프로세스입니다. 선형 모델의 경우 가중치를 찾는 방법입니다. 트리의 경우 분할 지점을 식별하는 작업이 포함됩니다.
 

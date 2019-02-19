@@ -3,15 +3,15 @@ title: ML.NET와 함께 회귀 학습자를 사용하여 가격 예측
 description: ML.NET와 함께 회귀 학습자를 사용하여 가격을 예측합니다.
 author: aditidugar
 ms.author: johalex
-ms.date: 01/15/2019
+ms.date: 02/08/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: e838d5b3b42ffec6648c67b4669a438dbd9e2c34
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: 10e0fa2cedff3e31575ad2b9c8bc2d9ecc81f3e8
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55828399"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56092542"
 ---
 # <a name="tutorial-predict-prices-using-a-regression-learner-with-mlnet"></a>자습서: ML.NET와 함께 회귀 학습자를 사용하여 가격 예측
 
@@ -122,9 +122,9 @@ ML.NET을 사용하여 모델을 작성하는 경우 먼저 ML 컨텍스트를 �
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Create the ML Context")]
 
-다음으로, 데이터 로드를 설정하려면 `_textLoader` 전역 변수를 다시 사용하기 위해 초기화합니다.  현재 `TextReader`를 사용하고 있습니다. `TextReader`를 사용하여 `TextLoader`를 만드는 경우 필요한 컨텍스트 및 사용자 지정을 가능하게 하는 <xref:Microsoft.ML.Data.TextLoader.Arguments> 클래스를 전달합니다. 모든 열 이름과 열 형식을 포함하는 <xref:Microsoft.ML.Data.TextLoader.Column> 개체 배열을 `TextReader`에 전달하여 데이터 스키마를 지정합니다. 이전에 `TaxiTrip` 클래스를 만들 때 데이터 스키마를 정의했습니다.
+다음으로, 데이터 로드를 설정하려면 `_textLoader` 전역 변수를 다시 사용하기 위해 초기화합니다. `TextLoader`를 만드는 경우 필요한 컨텍스트 및 사용자 지정을 가능하게 하는 <xref:Microsoft.ML.Data.TextLoader.Arguments> 클래스를 전달합니다. 모든 열 이름과 열 형식을 포함하는 <xref:Microsoft.ML.Data.TextLoader.Column> 개체 배열을 `TextLoader`에 전달하여 데이터 스키마를 지정합니다. 이전에 `TaxiTrip` 클래스를 만들 때 데이터 스키마를 정의했습니다.
 
-`TextReader` 클래스는 완전히 초기화된 <xref:Microsoft.ML.Data.TextLoader>를 반환합니다.  
+`TextLoader` 클래스는 완전히 초기화된 <xref:Microsoft.ML.Data.TextLoader>를 반환합니다.  
 
 필요한 데이터 세트에 다시 사용하기 위해 `_textLoader` 글로벌 변수를 초기화하려면 `mlContext` 초기화 뒤에 다음 코드를 추가합니다.
 
@@ -155,7 +155,7 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 
 ## <a name="load-and-transform-data"></a>데이터 로드 및 변환
 
-`dataPath` 매개 변수에 `_textLoader` 전역 변수를 사용하여 데이터를 로드합니다. <xref:Microsoft.ML.Data.IDataView>가 반환됩니다. Transforms의 입력 및 출력으로 사용되는 `DataView`는 `LINQ`의 `IEnumerable`과 비슷한 기본적인 데이터 파이프라인 형식입니다.
+`dataPath` 매개 변수에 `_textLoader` 전역 변수를 사용하여 데이터를 로드합니다. <xref:Microsoft.Data.DataView.IDataView>가 반환됩니다. Transforms의 입력 및 출력으로 사용되는 `IDataView`는 `LINQ`의 `IEnumerable`과 비슷한 기본적인 데이터 파이프라인 형식입니다.
 
 ML.NET에서 데이터는 SQL 뷰와 유사합니다. 지연 계산되고, 스키마화되며, 형식이 다릅니다. 개체가 파이프라인의 첫 번째 부분이며 데이터를 로드합니다. 이 자습서에서 개체는 요금을 예측하는 데 유용한 택시 주행 정보를 포함하는 데이터 세트를 로드합니다. 이 데이터 세트는 모델을 만들고 학습시키는 데 사용됩니다.
 

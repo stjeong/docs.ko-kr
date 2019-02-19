@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8c75d0631b05e4db53308efde8fe4c70a0778ebe
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7dd67ea312f3677b9010dfea7f14fa366259bcd6
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540570"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56220980"
 ---
 # <a name="dynamic-language-runtime-overview"></a>동적 언어 런타임 개요
 
@@ -80,7 +80,7 @@ DLR을 사용하여 개발된 언어의 예는 다음과 같습니다.
 
  DLR은 동적 언어 지원을 개선하기 위해 서비스 집합을 CLR에 추가합니다. 이러한 서비스에는 다음 항목이 포함됩니다.
 
--   식 트리. DLR은 식 트리를 사용하여 언어 의미 체계를 나타냅니다. 이 목적으로 DLR은 제어 흐름, 할당 및 기타 언어 모델링 노드를 포함하도록 LINQ 식 트리를 확장했습니다. 자세한 내용은 [식 트리](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)를 참조하세요.
+-   식 트리. DLR은 식 트리를 사용하여 언어 의미 체계를 나타냅니다. 이 목적으로 DLR은 제어 흐름, 할당 및 기타 언어 모델링 노드를 포함하도록 LINQ 식 트리를 확장했습니다. 자세한 내용은 [식 트리(C#)](../../csharp/programming-guide/concepts/expression-trees/index.md) 또는 [식 트리(Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)를 참조하세요.
 
 -   호출 사이트 캐싱. *동적 호출 사이트*는 코드에서 동적 개체에 대해 `a + b` 또는 `a.b()` 같은 작업을 수행하는 위치입니다. DLR은 `a` 및 `b`의 특징(대개 이러한 개체의 형식)과 작업 정보를 캐시합니다. 해당 작업이 이전에 수행된 적이 있으면 DLR은 빠른 디스패치를 위해 캐시에서 모든 필요한 정보를 검색합니다.
 
@@ -96,5 +96,6 @@ DLR은 호출 사이트에서 바인더를 사용하여 .NET Framework뿐 아니
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>
 - [공용 언어 런타임](../../../docs/standard/clr.md)
-- [식 트리](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
+- [식 트리(C#)](../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [식 트리(Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)
 - [연습: 동적 개체 만들기 및 사용](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

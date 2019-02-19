@@ -23,17 +23,17 @@ helpviewer_keywords:
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 24112edc3ac28124953974463233800c51da5cfc
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: ab4a31195a202929c8485349cbf43235faea8e2d
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453085"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56221240"
 ---
 # <a name="reflection-in-the-net-framework"></a>.NET Framework의 리플렉션
-<xref:System.Reflection> 네임스페이스의 클래스와 <xref:System.Type?displayProperty=nameWithType>을 함께 사용하여 로드된 [어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) 및 어셈블리 내에 정의된 형식(예: [클래스](../../../docs/standard/base-types/common-type-system.md#classes), [인터페이스](../../../docs/standard/base-types/common-type-system.md#interfaces), [값 형식](https://msdn.microsoft.com/library/c9c567f8-8ab1-4d88-834d-00f7d92418de))에 대한 정보를 가져올 수 있습니다. 리플렉션을 사용하여 런타임에 형식 인스턴스를 만들고 이 인스턴스를 호출 및 액세스할 수도 있습니다. 리플렉션의 특정 측면에 대한 항목은 이 개요의 끝부분에서 [관련 항목](#related_topics)을 참조하세요.  
+<xref:System.Reflection> 네임스페이스의 클래스와 <xref:System.Type?displayProperty=nameWithType>을 함께 사용하여 로드된 [어셈블리](../app-domains/assemblies-in-the-common-language-runtime.md) 및 어셈블리 내에 정의된 형식(예: [클래스](../../standard/base-types/common-type-system.md#classes), [인터페이스](../../standard/base-types/common-type-system.md#interfaces), [값 형식](../../csharp/language-reference/keywords/value-types.md))에 대한 정보를 가져올 수 있습니다. 리플렉션을 사용하여 런타임에 형식 인스턴스를 만들고 이 인스턴스를 호출 및 액세스할 수도 있습니다. 리플렉션의 특정 측면에 대한 항목은 이 개요의 끝부분에서 [관련 항목](#related_topics)을 참조하세요.
   
- [공용 언어 런타임](../../../docs/standard/clr.md) 로더는 같은 응용 프로그램 범위가 포함된 개체 주위의 경계를 구성하는 [응용 프로그램 도메인](../../../docs/framework/app-domains/application-domains.md)을 관리합니다. 이 관리에는 각 어셈블리를 적절한 응용 프로그램 도메인으로 로드하는 작업과 각 어셈블리 내에서 형식 계층 구조의 메모리 레이아웃을 제어하는 작업이 포함됩니다.  
+ [공용 언어 런타임](../../../docs/standard/clr.md) 로더는 같은 애플리케이션 범위가 포함된 개체 주위의 경계를 구성하는 [애플리케이션 도메인](../../../docs/framework/app-domains/application-domains.md)을 관리합니다. 이 관리에는 각 어셈블리를 적절한 애플리케이션 도메인으로 로드하는 작업과 각 어셈블리 내에서 형식 계층 구조의 메모리 레이아웃을 제어하는 작업이 포함됩니다.  
   
  [어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)에는 모듈이 포함되고, 모듈에는 형식이 포함되고, 형식에는 멤버가 포함됩니다. 리플렉션은 어셈블리, 모듈 및 형식을 캡슐화하는 개체를 제공합니다. 리플렉션을 사용하여 동적으로 형식 인스턴스를 만들거나, 형식을 기존 개체에 바인딩하거나, 기존 개체에서 형식을 가져올 수 있습니다. 그리고 나서 해당 형식의 메서드를 호출하거나 필드 및 속성에 액세스할 수 있습니다. 리플렉션의 일반적인 용도는 다음과 같습니다.  
   
@@ -53,11 +53,11 @@ ms.locfileid: "49453085"
   
 -   <xref:System.Reflection.ParameterInfo>를 사용하여 매개 변수 이름, 데이터 형식, 매개 변수가 입력 또는 출력 매개 변수인지 여부, 메서드 서명에서 매개 변수의 위치와 같은 정보를 검색합니다.  
   
--   <xref:System.Reflection.CustomAttributeData>를 사용하여 응용 프로그램 도메인의 리플렉션 전용 컨텍스트에서 작업할 때 사용자 지정 특성에 대한 정보를 검색합니다. <xref:System.Reflection.CustomAttributeData>를 사용하면 특성 인스턴스를 만들지 않고 특성을 검사할 수 있습니다.  
+-   <xref:System.Reflection.CustomAttributeData>를 사용하여 애플리케이션 도메인의 리플렉션 전용 컨텍스트에서 작업할 때 사용자 지정 특성에 대한 정보를 검색합니다. <xref:System.Reflection.CustomAttributeData>를 사용하면 특성 인스턴스를 만들지 않고 특성을 검사할 수 있습니다.  
   
  <xref:System.Reflection.Emit> 네임스페이스의 클래스는 런타임에 빌드할 수 있는 특수한 형태의 리플렉션을 제공합니다.  
   
- 리플렉션을 사용하여 사용자가 형식을 선택하고 해당 형식에 대한 정보를 볼 수 있도록 하는 형식 브라우저라는 응용 프로그램을 만들 수도 있습니다.  
+ 리플렉션을 사용하여 사용자가 형식을 선택하고 해당 형식에 대한 정보를 볼 수 있도록 하는 형식 브라우저라는 애플리케이션을 만들 수도 있습니다.  
   
  리플렉션의 다른 용도는 다음과 같습니다. JScript와 같은 언어용 컴파일러에서는 리플렉션을 사용하여 기호 테이블을 생성합니다. <xref:System.Runtime.Serialization> 네임스페이스의 클래스에서는 리플렉션을 사용하여 데이터에 액세스하고 보관할 필드를 결정합니다. <xref:System.Runtime.Remoting> 네임스페이스의 클래스에서는 직렬화를 통해 간접적으로 리플렉션을 사용합니다.  
   

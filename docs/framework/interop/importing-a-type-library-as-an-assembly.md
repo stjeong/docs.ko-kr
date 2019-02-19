@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3e346b326255ea46babc2e4c9101a1724671514d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 133d70058cc8151b22d31a3211d48188095e5f07
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54517572"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56218909"
 ---
 # <a name="importing-a-type-library-as-an-assembly"></a>형식 라이브러리를 어셈블리로 가져오기
 COM 형식 정의는 일반적으로 형식 라이브러리에 있습니다. 반면 CLS 규격 컴파일러는 어셈블리에서 형식 메타데이터를 생성합니다. 형식 정보의 두 가지 소스는 약간 다릅니다. 이 항목에서는 형식 라이브러리에서 메타데이터를 생성하기 위한 기술을 설명합니다. 결과 어셈블리를 interop 어셈블리라고 하고 포함된 형식 정보를 통해 .NET Framework 애플리케이션이 COM 형식을 사용할 수 있습니다.  
@@ -31,7 +31,7 @@ COM 형식 정의는 일반적으로 형식 라이브러리에 있습니다. 반
   
 -   디자인 타임 전용 interop 어셈블리 사용: [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]부터 interop 어셈블리의 형식 정보를 실행 파일에 포함하도록 컴파일러에 지시할 수 있습니다. 컴파일러는 애플리케이션에서 사용하는 형식 정보만 포함합니다. Interop 어셈블리를 애플리케이션에 배포할 필요는 없습니다. 이것이 권장되는 방법입니다.  
   
--   interop 어셈블리 배포: interop 어셈블리에 대한 표준 참조를 만들 수 있습니다. 이 경우 interop 어셈블리를 애플리케이션에 배포해야 합니다. 이 방법을 적용하는데 전용 COM 구성 요소를 사용하지 않을 경우 관리 코드에 통합하려는 COM 구성 요소의 작성자가 게시한 PIA(주 interop 어셈블리)를 항상 참조하세요. 주 interop 어셈블리를 생성 및 사용하는 방법에 대한 자세한 내용은 [주 Interop 어셈블리](https://msdn.microsoft.com/library/b977a8be-59a0-40a0-a806-b11ffba5c080(v=vs.100))를 참조하세요.  
+-   interop 어셈블리 배포: interop 어셈블리에 대한 표준 참조를 만들 수 있습니다. 이 경우 interop 어셈블리를 애플리케이션에 배포해야 합니다. 이 방법을 적용하는데 전용 COM 구성 요소를 사용하지 않을 경우 관리 코드에 통합하려는 COM 구성 요소의 작성자가 게시한 PIA(주 interop 어셈블리)를 항상 참조하세요. 주 interop 어셈블리를 생성 및 사용하는 방법에 대한 자세한 내용은 [주 Interop 어셈블리](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))를 참조하세요.  
   
  디자인 타임 전용 interop 어셈블리를 사용할 경우 COM 구성 요소의 작성자가 게시한 주 interop 어셈블리의 형식 정보를 포함할 수 있습니다. 그러나 주 interop 어셈블리를 애플리케이션에 배포할 필요는 없습니다.  
   
@@ -44,7 +44,7 @@ COM 형식 정의는 일반적으로 형식 라이브러리에 있습니다. 반
   
 -   Visual Studio  
   
-     Visual Studio는 형식 라이브러리의 COM 형식을 어셈블리의 메타데이터로 자동으로 변환합니다. 자세한 내용은 [방법: 형식 라이브러리에 참조 추가](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md) 및 [연습: Microsoft Office 어셈블리의 형식 정보 포함](https://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3(v=vs.100))을 참조하세요.  
+     Visual Studio는 형식 라이브러리의 COM 형식을 어셈블리의 메타데이터로 자동으로 변환합니다. 자세한 내용은 [방법: 형식 라이브러리에 참조 추가](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md), [연습: Visual Studio에서 Microsoft Office 어셈블리의 형식 정보 포함(C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md) 및 [연습: Visual Studio에서 Microsoft Office 어셈블리의 형식 정보 포함(Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md).  
   
 -   [형식 라이브러리 가져오기(Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
   
@@ -66,19 +66,20 @@ COM 형식 정의는 일반적으로 형식 라이브러리에 있습니다. 반
   
     -   형식 라이브러리-어셈블리 변환 규칙에 대한 이해.  
   
-     사용자 지정 래퍼를 작성하는 것은 고급 기술입니다. 사용자 지정 래퍼를 생성하는 방법에 대한 자세한 내용은 [표준 래퍼 사용자 지정](https://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d(v=vs.100))을 참조하세요.  
+     사용자 지정 래퍼를 작성하는 것은 고급 기술입니다. 사용자 지정 래퍼를 생성하는 방법에 대한 자세한 내용은 [표준 래퍼 사용자 지정](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))을 참조하세요.  
   
- COM interop 가져오기 프로세스에 대한 자세한 내용은 [형식 라이브러리를 어셈블리로 변환 요약](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))을 참조하세요.  
+ COM interop 가져오기 프로세스에 대한 자세한 내용은 [형식 라이브러리를 어셈블리로 변환 요약](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
 - [.NET Framework에 COM 구성 요소 노출](../../../docs/framework/interop/exposing-com-components.md)
-- [형식 라이브러리를 어셈블리로 변환 요약](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))
+- [형식 라이브러리를 어셈블리로 변환 요약](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
 - [Tlbimp.exe(형식 라이브러리 가져오기)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
-- [표준 래퍼 사용자 지정](https://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d(v=vs.100))
-- [관리 코드에서 COM 형식 사용](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))
+- [표준 래퍼 사용자 지정](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))
+- [관리 코드에서 COM 형식 사용](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Interop 프로젝트 컴파일](../../../docs/framework/interop/compiling-an-interop-project.md)
 - [Interop 애플리케이션 배포](../../../docs/framework/interop/deploying-an-interop-application.md)
 - [방법: 형식 라이브러리에 참조 추가](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md)
 - [방법: 형식 라이브러리에서 Interop 어셈블리 생성](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md)
-- [연습: Microsoft Office 어셈블리의 형식 정보 포함](https://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3(v=vs.100))
+- [연습: Visual Studio에서 Microsoft Office 어셈블리의 형식 정보 포함(C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
+- [연습: Visual Studio에서 Microsoft Office 어셈블리의 형식 정보 포함(Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)

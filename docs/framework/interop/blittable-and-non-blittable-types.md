@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8ce1c944257a1a11287b751d9a0f9eb5a88d744f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 726e82e3ce5f8d8924617ac7c7d38468ae279e71
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54596893"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093036"
 ---
 # <a name="blittable-and-non-blittable-types"></a>Blittable 형식 및 비 Blittable 형식
 대부분의 데이터 형식은 관리되는 메모리와 관리되지 않는 메모리 둘 다에서 공통된 표현을 사용하며 interop 마샬러의 특별한 처리가 필요하지 않습니다. 이러한 형식은 관리 코드와 비관리 코드 간에 전달될 때 변환이 필요하지 않기 때문에 *blittable 형식*이라고 합니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "54596893"
   
 -   정수 배열 등 blittable 형식의 1차원 배열. 그러나 blittable 형식의 변수 배열을 포함하는 형식 자체는 blittable이 아닙니다.  
   
--   blittable 형식(및 서식이 지정된 형식으로 마샬링된 경우 클래스)만 포함하는 서식이 지정된 값 형식. 서식이 지정된 값 형식에 대한 자세한 내용은 [값 형식에 대한 기본 마샬링](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a(v=vs.100))을 참조하세요.  
+-   blittable 형식(및 서식이 지정된 형식으로 마샬링된 경우 클래스)만 포함하는 서식이 지정된 값 형식. 서식이 지정된 값 형식에 대한 자세한 내용은 [값 형식에 대한 기본 마샬링](default-marshaling-behavior.md#default-marshaling-for-value-types)을 참조하세요.  
   
  개체 참조는 blittable이 아닙니다. 여기에는 그 자체가 blittable인 개체에 대한 참조 배열이 포함됩니다. 예를 들어 blittable인 구조를 정의할 수 있지만 이러한 구조에 대한 참조 배열을 포함하는 blittable 형식을 정의할 수 없습니다.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "54596893"
   
  관리되는 일부 데이터 형식은 관리되지 않는 환경에서 다른 표현이 필요합니다. 이러한 비 blittable 데이터 형식을 마샬링할 수 있는 형식으로 변환해야 합니다. 예를 들어 관리되는 문자열은 문자열 개체로 변환해야 마샬링할 수 있기 때문에 비 blittable 형식입니다.  
   
- 다음 표에는 <xref:System> 네임스페이스의 비 blittable 형식이 나와 있습니다. 정적 메서드 또는 클래스 인스턴스를 참조하는 데이터 구조인 [대리자](https://msdn.microsoft.com/library/d176ee76-f982-494b-b03d-92e4118896e2(v=vs.100))도 비 blittable입니다.  
+ 다음 표에는 <xref:System> 네임스페이스의 비 blittable 형식이 나와 있습니다. 정적 메서드 또는 클래스 인스턴스를 참조하는 데이터 구조인 [대리자](default-marshaling-behavior.md#default-marshaling-for-delegates)도 비 blittable입니다.  
   
 |비 blittable 형식|설명|  
 |-------------------------|-----------------|  
