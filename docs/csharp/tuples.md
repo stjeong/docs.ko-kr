@@ -3,12 +3,12 @@ title: 튜플 형식 - C# 가이드
 description: C#의 명명되지 않은 튜플 형식과 명명된 튜플 형식에 대한 자세한 정보
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
-ms.openlocfilehash: 32d089d36328d30de344e14fb7e88e80eacf5ed0
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 2c2b25c34555699c196099c0e1c51681fba8c358
+ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155134"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56332756"
 ---
 # <a name="c-tuple-types"></a>C# 튜플 형식 #
 
@@ -26,7 +26,7 @@ C# 튜플은 간단한 구문을 사용하여 정의하는 형식입니다. 이 
 
 .NET Framework에는 제네릭 `Tuple` 클래스가 이미 있습니다. 그러나 이러한 클래스에는 두 가지 주요 제한 사항이 있습니다. 한 가지는 `Tuple` 클래스의 속성 이름이 `Item1`, `Item2` 등으로 지정된다는 것입니다. 이 이름에는 의미 체계 정보가 없습니다. 이러한 `Tuple` 형식을 사용하면 각 속성의 의미를 전달할 수 없습니다. 새로운 언어 기능을 사용하여 튜플의 요소에 대한 의미 있는 의미 체계 이름을 선언하고 사용할 수 있습니다.
 
-`Tuple` 클래스는 참조 형식이므로 더 많은 성능 문제를 일으킵니다. `Tuple` 형식 중 하나를 사용한다는 것은 개체 할당을 의미합니다. 실행 부하 과다 경로에서 많은 작은 개체를 할당하면 응용 프로그램 성능에 크게 영향을 줄 수 있습니다. 그러므로 튜플에 대한 언어 지원은 새 `ValueTuple` 구조체를 활용합니다.
+`Tuple` 클래스는 참조 형식이므로 더 많은 성능 문제를 일으킵니다. `Tuple` 형식 중 하나를 사용한다는 것은 개체 할당을 의미합니다. 실행 부하 과다 경로에서 많은 작은 개체를 할당하면 애플리케이션 성능에 크게 영향을 줄 수 있습니다. 그러므로 튜플에 대한 언어 지원은 새 `ValueTuple` 구조체를 활용합니다.
 
 이러한 결함을 방지하기 위해 `class` 또는 `struct`를 만들어 여러 요소를 전달할 수 있습니다. 하지만 이 경우 작업량이 증가하며 설계 의도가 모호해집니다. `struct` 또는 `class` 생성은 데이터와 동작 둘 다를 사용하여 형식을 정의하는 것을 의미합니다. 단순히 여러 값을 단일 개체에 저장하려는 경우가 많습니다.
 
@@ -82,7 +82,7 @@ C# 7.1부터 튜플에 대한 필드 이름은 튜플을 초기화하는 데 사
 
 이러한 경우는 모호성을 방지합니다. 이러한 이름은 튜플의 필드에 대한 필드 이름으로 사용될 경우 모호성을 일으킬 수 있습니다. 두 경우 모두 컴파일 시간 오류가 발생하지 않습니다. 대신, 프로젝션된 이름이 없는 요소에는 프로젝션된 의미 체계 이름이 없습니다.  다음 예제에서는 이러한 경우를 보여 줍니다.
 
-[!code-csharp[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
+[!code-csharp-interactive[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
 
 이러한 경우에는 튜플 필드 이름 프로젝션을 사용할 수 없을 때 C# 7.0으로 작성된 코드에 대한 새로운 변경 사항이므로 컴파일러 오류가 발생하지 않습니다.
 
@@ -90,29 +90,31 @@ C# 7.1부터 튜플에 대한 필드 이름은 튜플을 초기화하는 데 사
 
 C# 7.3부터 튜플 형식에서는 `==` 및 `!=` 연산자를 지원합니다. 이러한 연산자는 왼쪽 인수의 각 멤버를 오른쪽 인수의 각 멤버와 차례로 비교하여 작동합니다. 이러한 비교는 단락(short-circuit)됩니다. 한 쌍이 같지 않으면 멤버 계산을 즉시 중지합니다. 다음 코드 예제에서는 `==`을 사용하지만 비교 규칙은 모두 `!=`에 적용됩니다. 다음 코드 예제는 두 쌍의 정수에 대한 같은 비교를 보여줍니다.
 
-[!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
+[!code-csharp-interactive[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 
 튜플 같음 테스트를 더 간편하게 만드는 몇 가지 규칙이 있습니다. 튜플 같음은 다음 코드에서처럼 튜플 중 하나가 Null 가능 튜플인 경우 [해제 변환](~/_csharplang/spec/conversions.md#lifted-conversion-operators)을 수행합니다.
 
-
-[!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
+[!code-csharp-interactive[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
 
 또한 튜플 같음은 두 튜플 모두의 각 멤버에 대한 암시적 변환도 수행합니다. 여기에는 해제 변환, 확대 변환 또는 기타 암시적 변환이 포함됩니다. 다음 예제에서는 정수에서 long으로의 암시적 변환으로 인해 integer 2 튜플이 long 2 튜플에 비교될 수 있음을 보여줍니다.
 
-[!code-csharp[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
+[!code-csharp-interactive[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
 
 튜플 멤버의 이름은 같음에 대한 테스트에 참여하지 않습니다. 그러나 피연산자 중 하나가 명시적 이름을 가진 튜플 리터럴인 경우 컴파일러는 해당 이름이 다른 피연산자의 이름과 일치하지 않으면 CS8383 경고를 생성합니다.
 두 피연산자가 모두 튜플 리터럴인 경우에는 다음 예제에서처럼 경고가 오른쪽 피연산자에 있습니다.
 
-[!code-csharp[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
+[!code-csharp-interactive[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
 
 마지막으로 튜플에 중첩된 튜플이 포함될 수 있습니다. 튜플 같음은 다음 예제와 같이 중첩된 튜플을 통해 각 피연산자의 “모양”을 비교합니다.
 
-[!code-csharp[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+[!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+
+모양이 서로 다른 경우 두 튜플이 같은지 비교하는 것은 컴파일 시간 오류입니다. 컴파일러는 두 튜플을 비교하기 위해 중첩된 튜플을 분해하지 않습니다.
 
 ## <a name="assignment-and-tuples"></a>할당 및 튜플
 
-이 언어에서는 같은 수의 요소를 포함하는 튜플 형식 간의 대입을 지원하므로, 각 오른쪽 요소가 해당하는 왼쪽 요소로 암시적으로 변환될 수 있습니다. 다른 변환은 할당에 고려되지 않습니다. 튜플 형식 간에 허용되는 할당 종류를 살펴보겠습니다.
+이 언어에서는 같은 수의 요소를 포함하는 튜플 형식 간의 대입을 지원하므로, 각 오른쪽 요소가 해당하는 왼쪽 요소로 암시적으로 변환될 수 있습니다. 다른 변환은 할당에 고려되지 않습니다. 모양이 서로 다른 경우 한 튜플을 다른 튜플에 할당하는 것은 컴파일 시간 오류입니다. 컴파일러는 두 튜플을 할당하기 위해 중첩된 튜플을 분해하지 않습니다.
+튜플 형식 간에 허용되는 할당 종류를 살펴보겠습니다.
 
 다음 예제에서 사용되는 이러한 변수를 살펴보세요.
 
@@ -199,11 +201,11 @@ private static (double, double, int) ComputeSumAndSumOfSquares(IEnumerable<doubl
 기존에는 쿼리 결과를 무명 형식인 개체 시퀀스로 프로젝션했습니다. 이 경우 주로 메서드의 반환 형식에서 무명 형식의 이름을 편리하게 지정할 수 없기 때문에 많은 제한 사항이 표시되었습니다. `object` 또는 `dynamic`을 결과 형식으로 사용하는 대안의 경우 성능이 훨씬 저하되었습니다.
 
 튜플 형식 시퀀스를 반환하는 것은 간단하며, 컴파일 시간에 IDE 도구를 통해 요소 이름 및 형식을 사용할 수 있습니다.
-예를 들어 ToDo 응용 프로그램을 살펴보세요. 다음과 유사한 클래스를 정의하여 할 일 목록의 단일 항목을 나타낼 수 있습니다.
+예를 들어 ToDo 애플리케이션을 살펴보세요. 다음과 유사한 클래스를 정의하여 할 일 목록의 단일 항목을 나타낼 수 있습니다.
 
 [!code-csharp[ToDoItem](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#14_ToDoItem "To Do Item")]
 
-모바일 응용 프로그램은 제목만 표시되는 현재 할 일 항목의 간단한 형식을 지원할 수 있습니다. 해당 LINQ 쿼리는 ID와 제목만 포함된 프로젝션을 만듭니다. 튜플 시퀀스를 반환하는 메서드는 해당 디자인도 잘 표현합니다.
+모바일 애플리케이션은 제목만 표시되는 현재 할 일 항목의 간단한 형식을 지원할 수 있습니다. 해당 LINQ 쿼리는 ID와 제목만 포함된 프로젝션을 만듭니다. 튜플 시퀀스를 반환하는 메서드는 해당 디자인도 잘 표현합니다.
 
 [!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
 

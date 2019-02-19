@@ -8,12 +8,12 @@ helpviewer_keywords:
 - numeric conversions [C#], implicit
 - types [C#], implicit numeric conversions
 ms.assetid: 72eb5a94-0491-48bf-8032-d7ebfdfeb8d8
-ms.openlocfilehash: ab6506e619c675ddd68237c4ddca870e9e14098f
-ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
+ms.openlocfilehash: 703f60f48e1e569e0ffcab66ff7ccc91d4a49514
+ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54058466"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56093556"
 ---
 # <a name="implicit-numeric-conversions-table-c-reference"></a>암시적 숫자 변환 표(C# 참조)
 
@@ -38,9 +38,9 @@ ms.locfileid: "54058466"
 
 - `int`, `uint`, `long` 또는 `ulong`에서 `float`로 변환하고 `long` 또는 `ulong`에서 `double`로 변환하는 동안 전체 자릿수가 손실될 수도 있지만 크기는 손실되지 않습니다.  
   
-- `char`, `byte` 및 `sbyte` 형식으로의 암시적 변환은 없습니다.  
+- `char`, `byte` 및 `sbyte` 형식으로 암시적 변환은 없습니다.  
 
-- `char`, `double` 및 `decimal` 형식의 암시적 변환은 없습니다.
+- `double` 및 `decimal` 형식에서 암시적 변환은 없습니다.
   
 - `decimal` 형식과 `float` 또는 `double` 형식 간의 암시적 변환은 없습니다.  
   
