@@ -6,12 +6,12 @@ helpviewer_keywords:
 - BindingSource component [Windows Forms], binding controls
 - data binding [Windows Forms], BindingSource component
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
-ms.openlocfilehash: 1a9baa5a602edd0ef91ef7dff5cdc42832bd7532
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e12498bc71957d49893e49e54095b6bb184ac2c3
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54633318"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441920"
 ---
 # <a name="how-to-bind-windows-forms-controls-with-the-bindingsource-component-using-the-designer"></a>방법: 디자이너를 사용 하는 BindingSource 구성 요소를 사용 하 여 Windows Forms 컨트롤 바인딩
 폼에 컨트롤을 추가 하 고 응용 프로그램에 대 한 사용자 인터페이스를 확인한 후 런타임 시 사용자가 변경 하 고 수 응용 프로그램과 관련 된 데이터를 저장 되도록 데이터 원본에 컨트롤을 바인딩할 수 있습니다.  
@@ -63,4 +63,4 @@ ms.locfileid: "54633318"
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.Windows.Forms.BindingNavigator>
 - [새 데이터 소스 추가](/visualstudio/data-tools/add-new-data-sources)
-- [데이터 소스 창](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)
+- [데이터 소스 창](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/6ckyxa83(v=vs.120))

@@ -2,12 +2,12 @@
 title: WCF Visual Studio 템플릿
 ms.date: 03/30/2017
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
-ms.openlocfilehash: a7529b14c3c83f0df7b41581ef18e5192209bc5d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 72239f9e0e6d7882e6a29222c0b68f3bfd5d89d5
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624940"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443239"
 ---
 # <a name="wcf-visual-studio-templates"></a>WCF Visual Studio 템플릿
 Windows Communication Foundation (WCF) Visual Studio 템플릿은 미리 정의 된 프로젝트 및 항목 템플릿 신속 하 게 WCF 서비스와 관련 응용 프로그램을 빌드하려면 Visual Studio에서 사용할 수 있습니다.  
@@ -59,7 +59,7 @@ Windows Communication Foundation (WCF) Visual Studio 템플릿은 미리 정의 
  기존 프로젝트가 웹 프로젝트인 경우 서비스 호스트 파일(service1.svc)도 만들어집니다.  
   
 ### <a name="wcf-wf-service-project-and-item-template"></a>WCF WF 서비스 프로젝트 및 항목 템플릿.  
- 이러한 템플릿은 웹 서비스 처럼 액세스할 수 있는 워크플로 워크플로 서비스를 호스트 하는 WCF 서비스를 만들려면. XAML 또는 필수 프로그래밍 모델에 대한 별도의 템플릿이 존재합니다. 이 템플릿을 사용하여 순차 또는 상태 시스템 워크플로를 만들 수 있습니다. 이러한 워크플로 형식에 대 한 자세한 내용은 참조 하세요. [Windows Workflow Foundation 자습서](https://msdn.microsoft.com/library/e9705654-bd96-4b56-8d98-f1f118112d97)합니다. 워크플로 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [레거시 워크플로 프로젝트 만들기](/visualstudio/workflow-designer/creating-legacy-workflow-projects)합니다.  
+ 이러한 템플릿은 웹 서비스 처럼 액세스할 수 있는 워크플로 워크플로 서비스를 호스트 하는 WCF 서비스를 만들려면. XAML 또는 필수 프로그래밍 모델에 대한 별도의 템플릿이 존재합니다. 이 템플릿을 사용하여 순차 또는 상태 시스템 워크플로를 만들 수 있습니다. 이러한 워크플로 형식에 대 한 자세한 내용은 참조 하세요. [방법: 워크플로 만드는](../windows-workflow-foundation/how-to-create-a-workflow.md)합니다. 워크플로 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [레거시 워크플로 프로젝트 만들기](/visualstudio/workflow-designer/creating-legacy-workflow-projects)합니다.  
   
  Visual Studio 디자이너 응답성 때 워크플로 사용 하는 XOML 형식 대신 코드 기반 합니다. 만들어지는 기본 워크플로 형식은 XOML 워크플로입니다.  
   

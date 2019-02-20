@@ -8,19 +8,19 @@ helpviewer_keywords:
 - application settings [Windows Forms], Windows Forms
 - application settings [Windows Forms], creating
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
-ms.openlocfilehash: ac89851ce9c655ebef3acf2d55ef6659815ca4c9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 52687347707139ba583ef4dfdeebbb41d568e95c
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54558958"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441361"
 ---
 # <a name="how-to-create-application-settings"></a>방법: 응용 프로그램 설정 만들기
 관리 코드를 사용하여 새 응용 프로그램 설정을 만들고, 이러한 설정이 런타임에 자동으로 로드 및 저장되도록 폼의 속성이나 폼의 컨트롤에 바인딩할 수 있습니다.  
   
  다음 절차에서는 <xref:System.Configuration.ApplicationSettingsBase>에서 파생되는 래퍼 클래스를 수동으로 만듭니다. 노출하려는 각 응용 프로그램 설정에 대한 공개적으로 액세스 가능한 속성을 이 클래스에 추가합니다.  
   
- Visual Studio 디자이너에서 최소한의 코드로 이 절차를 수행할 수도 있습니다.  또한 참조 [방법: 디자이너를 사용 하 여 응용 프로그램 설정 만들기](https://msdn.microsoft.com/library/wabtadw6\(v=vs.110\))합니다.  
+ Visual Studio 디자이너에서 최소한의 코드로 이 절차를 수행할 수도 있습니다.  또한 참조 [방법: 디자이너를 사용 하 여 응용 프로그램 설정 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/wabtadw6(v=vs.100))합니다.  
   
 ### <a name="to-create-new-application-settings-programmatically"></a>새 응용 프로그램 설정을 프로그래밍 방식으로 만들려면  
   

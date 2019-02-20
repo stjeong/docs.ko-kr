@@ -5,12 +5,12 @@ helpviewer_keywords:
 - printing [WPF]
 - print system management [WPF]
 ms.assetid: 637911b3-0c78-4493-a4fb-91db56d767cd
-ms.openlocfilehash: 06defe024d7ae9b5a1486188594e05ffdd4e74b7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3f3617dfe7857f1e8ebd2ef5e29675699487f5ab
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54725612"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441631"
 ---
 # <a name="printing-and-print-system-management"></a>인쇄 및 인쇄 시스템 관리
 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] Microsoft.NET Framework 소개 새로운 인쇄 경로 및-대 안으로 [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] 인쇄-및 인쇄 시스템 관리의 폭넓은 집합 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.  
@@ -27,4 +27,4 @@ ms.locfileid: "54725612"
 - <xref:System.Printing.IndexedProperties>
 - <xref:System.Printing.Interop>
 - [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [XPS](https://www.microsoft.com/xps)
+- [XPS 문서](/windows/desktop/printdocs/documents)

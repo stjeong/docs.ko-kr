@@ -9,15 +9,15 @@ helpviewer_keywords:
 - custom controls [Windows Forms], keyboard events using code
 - custom controls [Windows Forms], mouse events using code
 ms.assetid: d9b12787-86f6-4022-8e0f-e12d312c4af2
-ms.openlocfilehash: a60ad943edae3775b00be99c08ad992af935ac13
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8c6319929d4b419cc0a2e1cfd097bfae7d997120
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636454"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443008"
 ---
 # <a name="handling-user-input"></a>사용자 입력 처리
-이 항목에서 제공 하는 기본 키보드 및 마우스 이벤트를 설명 합니다. <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다. 이벤트를 처리할 경우 컨트롤 작성자는 이벤트에 대리자를 연결하는 대신 보호된 `On`*EventName* 메서드를 재정의해야 합니다. 이벤트의 검토는 [구성 요소에서 이벤트 발생](https://msdn.microsoft.com/library/9aebf605-a87d-470b-b7c8-f9abfc8360a0)을 참조하세요.  
+이 항목에서 제공 하는 기본 키보드 및 마우스 이벤트를 설명 합니다. <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다. 이벤트를 처리할 경우 컨트롤 작성자는 이벤트에 대리자를 연결하는 대신 보호된 `On`*EventName* 메서드를 재정의해야 합니다. 이벤트의 검토는 [구성 요소에서 이벤트 발생](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120))을 참조하세요.  
   
 > [!NOTE]
 >  기본 클래스의 인스턴스는 이벤트와 연결 된 데이터가 없는 경우 <xref:System.EventArgs> 인수로 전달 되는 `On` *EventName* 메서드.  

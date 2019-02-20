@@ -2,12 +2,12 @@
 title: 기업 구매 프로세스
 ms.date: 03/30/2017
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-ms.openlocfilehash: 1817b7af00abd9240eb427f61ed9f0255d51c60d
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 511250b8e9c08268ddf917e19fd99281149af08a
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837191"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442245"
 ---
 # <a name="corporate-purchase-process"></a>기업 구매 프로세스
 이 샘플에서는 최상의 제안을 자동으로 선택하는 구매 프로세스를 기반으로 매우 기본적인 RFP(제안 요청서)를 만드는 방법을 보여 줍니다. 여기에서는 <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601> 및 <xref:System.Activities.Statements.ForEach%601>과 사용자 지정 활동을 결합하여 이 프로세스를 나타내는 워크플로를 만듭니다.
@@ -108,7 +108,7 @@ ms.locfileid: "48837191"
 |RequestForProposal|RFP(제안 요청서)는 특정 상품이나 서비스에 대한 제안서를 제출하도록 공급업체에 요청하는 초대장입니다.|  
 |VendorProposal|공급업체가 구체적인 RFP에 대해 제출한 제안서입니다.|  
 |VendorRepository|공급업체의 리포지토리입니다. 이 구현에는 공급업체 인스턴스의 메모리 내 컬렉션과 해당 인스턴스를 노출하기 위한 메서드가 포함됩니다.|  
-|RfpRepository|제안 요청서의 리포지토리입니다. 이 구현에는 스키마화된 지속성에 의해 생성된 제안 요청서의 XML 파일을 쿼리하기 위한 Linq to XML 사용이 포함됩니다. 이 클래스는 구현 [System.Runtime.Persistence.IDataViewMapper](https://msdn.microsoft.com/library/system.runtime.persistence.idataviewmapper(v=vs.110).aspx)합니다.|  
+|RfpRepository|제안 요청서의 리포지토리입니다. 이 구현에는 스키마화된 지속성에 의해 생성된 제안 요청서의 XML 파일을 쿼리하기 위한 Linq to XML 사용이 포함됩니다. |  
 |IOHelper|이 클래스는 모든 I/O 관련 문제(폴더, 경로 등)를 처리합니다.|  
   
 ### <a name="web-client"></a>WebClient  
@@ -127,7 +127,7 @@ ms.locfileid: "48837191"
 |Form|설명|  
 |-|-|  
 |NewRfp|새 제안 요청서를 만들고 제출합니다.|  
-|ShowProposals|활성화된 제안 요청서와 완료된 제안 요청서를 모두 표시합니다. **참고:** 클릭 해야 합니다 **새로 고침** 만들기 또는 제안에 대 한 요청을 수정한 다음 해당 화면에 변경 내용을 표시 하려면 UI의 단추입니다.|  
+|ShowProposals|활성화된 제안 요청서와 완료된 제안 요청서를 모두 표시합니다. **참고:**  클릭 해야 합니다 **새로 고침** 만들기 또는 제안에 대 한 요청을 수정한 다음 해당 화면에 변경 내용을 표시 하려면 UI의 단추입니다.|  
 |SubmitProposal|구체적인 제안 요청서에 대해 공급업체의 제안서를 가져옵니다. 이 창은 공급업체에서만 사용합니다.|  
 |ViewRfp|제안 요청서에 대한 모든 정보(접수된 제안서, 날짜, 금액 및 기타 정보)를 표시합니다. 이 창은 제안 요청서의 작성자만 사용합니다.|  
   
@@ -155,20 +155,20 @@ ms.locfileid: "48837191"
   
 ### <a name="web-client-options"></a>웹 클라이언트 옵션  
   
--   **만들 새 RFP**: 새 요청을 RFP (제안)를 만들고 구매 프로세스 워크플로 시작 합니다.  
+-   **만들 새 RFP**: 새 요청 RFP (제안)을 만들고 구매 프로세스 워크플로 시작 합니다.  
   
 -   **새로 고침**: 활성 및 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
   
--   **보기**: 기존 RFP의 내용을 표시 합니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
+-   **보기**: 기존 RFP의 내용을 보여 줍니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
   
--   View As: 사용자에 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수 합니다 **보기** 활성 Rfp 표의 콤보 상자입니다.  
+-   표시 방법: 사용자에 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **보기** 활성 Rfp 표의 콤보 상자입니다.  
   
 ### <a name="winforms-client-options"></a>WinForms 클라이언트 옵션  
   
--   **Create RFP**: 새 요청을 RFP (제안)를 만들고 구매 프로세스 워크플로 시작 합니다.  
+-   **Create RFP**: 새 요청 RFP (제안)을 만들고 구매 프로세스 워크플로 시작 합니다.  
   
 -   **새로 고침**: 활성 및 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
   
--   **View RFP**: 기존 RFP의 내용을 표시 합니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
+-   **View RFP**: 기존 RFP의 내용을 보여 줍니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
   
--   **연결 계정**: 사용자 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **보기** 활성 Rfp 표의 콤보 상자.
+-   **연결 계정**: 사용자에 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **보기** 활성 Rfp 표의 콤보 상자입니다.

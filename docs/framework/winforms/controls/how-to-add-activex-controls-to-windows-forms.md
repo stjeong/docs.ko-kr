@@ -6,12 +6,12 @@ helpviewer_keywords:
 - forms [Windows Forms], adding ActiveX controls
 - ActiveX controls [Windows Forms], adding
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
-ms.openlocfilehash: 2fa5d81c196e1730eafb177b20b5cba64b2daae1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 52f914b1d6fe5d8a2707e1f4ab176036ebf62cf9
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54721147"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441787"
 ---
 # <a name="how-to-add-activex-controls-to-windows-forms"></a>방법: Windows Forms에 ActiveX 컨트롤 추가
 Windows Forms 디자이너는 호스트 Windows Forms 컨트롤을 최적화 하는 동안에 Windows Forms에서 ActiveX 컨트롤을 배치할 수 있습니다.  
@@ -19,7 +19,7 @@ Windows Forms 디자이너는 호스트 Windows Forms 컨트롤을 최적화 하
 > [!CAUTION]
 >  ActiveX 컨트롤에 추가 되 면 Windows Forms에 대 한 성능 제한이 있습니다.  
   
- ActiveX 컨트롤을 폼에 추가한 해당 도구 상자에 추가 해야 합니다. 자세한 내용은 [사용자 지정 도구 상자 대화 상자, COM 구성 요소](https://msdn.microsoft.com/library/171333f3-f207-4e02-bbdc-17862556212c)합니다.  
+ ActiveX 컨트롤을 폼에 추가한 해당 도구 상자에 추가 해야 합니다. 자세한 내용은 [사용자 지정 도구 상자 대화 상자, COM 구성 요소](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/cby6tzh5(v=vs.100))합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
@@ -35,7 +35,7 @@ Windows Forms 디자이너는 호스트 Windows Forms 컨트롤을 최적화 하
   
 ## <a name="see-also"></a>참고자료
 - [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)
-- [여러 언어 및 라이브러리에서 사용되는 컨트롤 및 프로그래밍 가능한 개체 비교](https://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)
+- [여러 언어 및 라이브러리에서 사용되는 컨트롤 및 프로그래밍 가능한 개체 비교](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))
 - [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)
 - [Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)
 - [개별 Windows Forms 컨트롤 레이블 지정 및 바로 가기 제공](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

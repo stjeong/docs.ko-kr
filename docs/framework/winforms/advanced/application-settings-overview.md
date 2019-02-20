@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dynamic properties
 - user preferences [Windows Forms], tracking
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
-ms.openlocfilehash: b30203aaf36d4fa6c0b06d54da1abc1f99d22afc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 872025c76998311ab9ac6f7ec392d811ffbf0907
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54576904"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441556"
 ---
 # <a name="application-settings-overview"></a>애플리케이션 설정 개요
 이 항목은 애플리케이션 및 사용자를 대신하여 설정 데이터를 만들고 저장하는 방법을 설명합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "54576904"
 - <xref:System.Configuration.LocalFileSettingsProvider>
 - <xref:System.Configuration.IPersistComponentSettings>
 - [방법: 응용 프로그램 설정 유효성 검사](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)
-- [응용 프로그램 설정 관리(.NET)](https://msdn.microsoft.com/library/35254321-ad14-47d9-b8c6-39ab3203c5d9)
+- [응용 프로그램 설정 관리(.NET)](/visualstudio/ide/managing-application-settings-dotnet)
 - [방법: 사용 하 여 런타임에 설정 읽기C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)
 - [응용 프로그램 설정 및 사용자 설정 사용](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)
 - [응용 프로그램 설정 아키텍처](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - combo boxes [Windows Forms], lookup tables
 - ListBox control [Windows Forms], creating lookup tables
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
-ms.openlocfilehash: 264a50cb2f9346ea164cedfbe5ced5e231e246ab
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5f1a2b220c3fb5d348f8aa45fbf07140844c9adf
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54516527"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441625"
 ---
 # <a name="how-to-create-a-lookup-table-for-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>방법: Windows Forms ComboBox, ListBox 또는 CheckedListBox 컨트롤에 대 한 조회 테이블 만들기
 경우에 따라 Windows Form에서는 친숙한 형식으로 데이터를 표시하지만 프로그램에서는 더 의미 있는 형식으로 데이터를 저장하는 데 유용합니다. 예를 들어 음식 주문 양식의 목록 상자에는 메뉴 항목이 이름별로 표시될 수 있습니다. 그러나 주문을 기록하는 데이터 테이블에는 음식을 나타내는 고유 ID 번호가 포함됩니다. 다음 표에서는 음식에 대한 주문 양식 데이터를 저장 및 표시하는 방법의 예를 보여 줍니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "54516527"
   
 2.  데이터 소스에 연결합니다.  
   
-3.  두 테이블 간에 데이터 관계를 설정합니다. 참조 [DataRelation 개체 소개](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)합니다.  
+3.  두 테이블 간에 데이터 관계를 설정합니다. 참조 [DataRelation 개체 소개](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120))합니다.  
   
 4.  다음 속성을 설정합니다. 코드 또는 디자이너에서 설정할 수 있습니다.  
   

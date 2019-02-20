@@ -8,12 +8,12 @@ helpviewer_keywords:
 - errors [Windows Forms Designer]
 - design-time errors [Windows Forms Designer]
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
-ms.openlocfilehash: 26f57b039b8e2fb3c56af926eeb63dc3c4c33b55
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 70ca9c2c0bcaa258acaa7649adad32acdcd90dfb
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54542407"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441647"
 ---
 # <a name="design-time-errors-in-the-windows-forms-designer"></a>Windows Forms 디자이너의 디자인 타임 오류
 이 문서에서는 Windows Forms 디자이너를 로드하지 못할 때 Microsoft Visual Studio에 표시되는 디자인 타임 오류 목록의 의미와 용도에 대해 설명합니다. 이 오류 목록이 표시되면 디자이너에서 버그가 아닌 코드의 오류를 수정하는 보조 기능으로 해석해야 합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "54542407"
  오류 상태를 무시하고 디자이너를 계속 로드할 수 있습니다. 이 작업을 선택하면 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 컨트롤이 디자인 화면에 표시되지 않을 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
-- [디자인 타임 개발 문제 해결](https://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)
+- [디자인 타임 개발 문제 해결](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171843(v=vs.120))
 - [컨트롤 및 구성 요소 제작 문제 해결](../../../../docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)
 - [디자인 타임에 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
-- [Windows Forms 디자이너 오류 메시지](https://msdn.microsoft.com/library/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)
+- [Windows Forms 디자이너 오류 메시지](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233640(v=vs.100))

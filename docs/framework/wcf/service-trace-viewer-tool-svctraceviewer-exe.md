@@ -2,12 +2,12 @@
 title: Service Trace Viewer 도구(SvcTraceViewer.exe)
 ms.date: 03/30/2017
 ms.assetid: 9027efd3-df8d-47ed-8bcd-f53d55ed803c
-ms.openlocfilehash: f5401129601f84a5575a544490244f81b1e759ef
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: be6879810bde30a81ee9fb23e5cf031c4ff1976e
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54510600"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442895"
 ---
 # <a name="service-trace-viewer-tool-svctraceviewerexe"></a>Service Trace Viewer 도구(SvcTraceViewer.exe)
 Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하면 WCF에 의해 생성 되는 진단 추적을 분석할 수 있습니다. Service Trace Viewer는 쉽게 병합, 보기 및 진단, 복구 및 WCF 서비스 문제를 확인할 수 있도록 로그에 추적 메시지를 필터링 하는 방법을 제공 합니다.  
@@ -49,7 +49,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하
 |자세히|-디버그 수준 모두 사용자 코드에 대 한 추적 및 처리 합니다. 다음과 같은 경우에 이 수준을 설정합니다.<br />-알 수 없는 오류가 발생 했을 때 코드의 메서드를 호출한 합니다.<br />-잘못 된 끝점을 구성 하 고 서비스 예약 저장소의 항목이 잠겨 있기 때문에 시작 하지 못했습니다.|  
 |ActivityTracing|처리 동작과 구성 요소 간의 흐름 이벤트입니다.<br /><br /> 이 수준에서 관리자와 개발자가 같은 응용 프로그램 도메인의 응용 프로그램을 서로 연결할 수 있습니다.<br /><br /> -동작 경계 추적: 시작/중지 합니다.<br />-전송에 대 한 추적 합니다.|  
   
- `add`를 사용하여 사용할 추적 수신기의 이름과 형식을 지정할 수 있습니다. 예제 구성에서 수신기 이름은 `sdt`로 지정되고 표준 .NET Framework 추적 수신기(`System.Diagnostics.XmlWriterTraceListener`)는 형식으로 추가됩니다. `initializeData`를 사용하여 해당 수신기의 로그 파일 이름을 설정합니다. 또한 단순한 파일 이름 대신 정규화된 경로를 사용할 수 있습니다.  
+ 
+  `add`를 사용하여 사용할 추적 수신기의 이름과 형식을 지정할 수 있습니다. 예제 구성에서 수신기 이름은 `sdt`로 지정되고 표준 .NET Framework 추적 수신기(`System.Diagnostics.XmlWriterTraceListener`)는 형식으로 추가됩니다. 
+  `initializeData`를 사용하여 해당 수신기의 로그 파일 이름을 설정합니다. 또한 단순한 파일 이름 대신 정규화된 경로를 사용할 수 있습니다.  
   
 ## <a name="using-the-service-trace-viewer-tool"></a>Service Trace Viewer 도구 사용  
   
@@ -154,10 +156,10 @@ Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하
   
 3.  추적 창 및 세부 정보 창에서 추적 정보를 확인합니다.  
   
-###### <a name="expanding-or-collapsing-activity-transfers"></a>동작 전송 확장 또는 축소  
+###### <a name="expanding-or-collapsing-activity-transfers"></a>동작 전송 확장명 또는 축소  
  선택 항목의 활동이 다른 활동으로 전송될 때 활동 전송을 확장할 수 있습니다. 이를 통해 전송을 따라갈 수 있습니다.  
   
- 동작 전송을 확장명 또는 축소하려면  
+ 동작 전송을 확장 또는 축소하려면  
   
 1.  전송 아이콘의 왼쪽에서 "+" 기호로 전송 추적을 찾습니다.  
   
@@ -171,9 +173,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하
 >  동작에 여러 개의 전송이 있고 그 전송 중에 하나를 확장하면 루트에서 새 동작으로 이어지는 동작이 표시됩니다. 이러한 새 활동은 축소된 형식으로 표시됩니다. 이러한 활동의 세부 정보를 확인하려면 그래프의 헤더에서 확장 아이콘을 클릭하여 활동을 세로로 확장하십시오.  
   
 ###### <a name="expanding-or-collapsing-activities-vertically"></a>활동을 세로로 확장 또는 축소  
- 뷰어는 동작을 축소함으로써 동작 그래프에서 불필요한 세부 정보를 숨깁니다. 축소된 활동에서는 개별 추적이 표시되지 않습니다. 전송 추적만 나타납니다. 동작에서의 모든 추적을 보려면 그래프의 헤더에서 동작의 확장 기호를 클릭하여 동작을 세로로 확장하십시오.  
+ 뷰어는 동작을 축소함으로써 동작 그래프에서 불필요한 세부 정보를 숨깁니다. 축소된 활동에서는 개별 추적이 표시되지 않습니다. 전송 추적만 나타납니다. 동작에서의 모든 추적을 보려면 그래프의 헤더에서 동작의 확장명 기호를 클릭하여 동작을 세로로 확장하십시오.  
   
- 동작을 세로로 확장명 또는 축소하려면  
+ 동작을 세로로 확장 또는 축소하려면  
   
 1.  활동을 세로로 확장 하려면 활동 헤더에서 "+" 아이콘을 클릭 합니다.  
   
@@ -452,4 +454,4 @@ Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하
 ## <a name="see-also"></a>참고자료
 - [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
 - [추적 구성](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [종단 간 추적 상관 관계를 위한 작업 추적 및 전파](https://msdn.microsoft.com/library/2c11a905-64f8-47b5-bae5-a74fc666137e)
+- [종단 간 추적](./diagnostics/tracing/end-to-end-tracing.md)

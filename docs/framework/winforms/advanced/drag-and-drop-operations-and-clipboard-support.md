@@ -6,12 +6,12 @@ helpviewer_keywords:
 - drag and drop [Windows Forms], Windows Forms
 - Clipboard [Windows Forms], Windows Forms
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
-ms.openlocfilehash: c2bb3c24298ffe5308af03c5af5bae697a22c33b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 281d102ecd02623e7e18ebf4fc569538ebbdaf7f
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528616"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442011"
 ---
 # <a name="drag-and-drop-operations-and-clipboard-support"></a>끌어서 놓기 작업 및 클립보드 지원
 일련의 이벤트, 특히 <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragLeave> 및 <xref:System.Windows.Forms.Control.DragDrop> 이벤트를 처리하여 Windows 기반 응용 프로그램에서 사용자 끌어서 놓기 작업을 사용하도록 설정할 수 있습니다.  
@@ -42,4 +42,4 @@ ms.locfileid: "43528616"
  끌기 작업을 시작하는 데 중요한 메서드의 복잡성을 설명합니다.  
   
  <xref:System.Windows.Forms.Clipboard>  
- 도 참조 하세요 [방법: 활성 MDI 자식으로 데이터 전송](https://msdn.microsoft.com/library/y0hkh2c8\(v=vs.110\))합니다.
+ 또한 참조 [방법: 활성 MDI 자식으로 데이터를 전송](how-to-send-data-to-the-active-mdi-child.md)합니다.

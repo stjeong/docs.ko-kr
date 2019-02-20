@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DataGrid control [Windows Forms], master-details lists
 - related tables [Windows Forms], displaying in DataGrid control
 ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
-ms.openlocfilehash: 5773c52a1cedfe373d25d42ff78720368ecb7a5e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0c8b1e6240f35032e7c8714138591293b8498dfc
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54632779"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442336"
 ---
 # <a name="how-to-create-master-details-lists-with-the-windows-forms-datagrid-control-using-the-designer"></a>방법: 디자이너를 사용 하 여 Windows Forms DataGrid 컨트롤을 사용 하 여 마스터-세부 목록 만들기
 
@@ -27,10 +27,10 @@ ms.locfileid: "54632779"
   
 ### <a name="to-create-a-master-details-list-in-the-designer"></a>디자이너에서 마스터-세부 정보 목록을 만들려면  
   
-1.  두 개의 추가 <xref:System.Windows.Forms.DataGrid> 폼에 컨트롤을 합니다. 자세한 내용은 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다. Visual Studio 2005에는 <xref:System.Windows.Forms.DataGrid> 컨트롤에 없는 경우는 **도구 상자** 기본적으로. 자세한 내용은 [방법: 도구 상자 항목 추가](https://msdn.microsoft.com/library/458e119e-17fe-450b-b889-e31c128bd7e0)합니다.  
+1.  두 개의 추가 <xref:System.Windows.Forms.DataGrid> 폼에 컨트롤을 합니다. 자세한 내용은 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다. Visual Studio 2005에는 <xref:System.Windows.Forms.DataGrid> 컨트롤에 없는 경우는 **도구 상자** 기본적으로. 자세한 내용은 [방법: 도구 상자 항목 추가](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100))합니다.  
   
     > [!NOTE]
-    >  다음 단계를 사용 하는 Visual Studio 2005에 적용 되지 않습니다.는 **데이터 원본** 디자인 타임 데이터 바인딩에 대 한 창. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) 고 [방법: 관련 데이터에는 Windows Forms 응용 프로그램 표시](https://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd)합니다.  
+    >  다음 단계를 사용 하는 Visual Studio 2005에 적용 되지 않습니다.는 **데이터 원본** 디자인 타임 데이터 바인딩에 대 한 창. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) 고 [방법: 관련 데이터에는 Windows Forms 응용 프로그램 표시](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120))합니다.  
   
 2.  두 개 이상의 테이블을 끌어 **서버 탐색기** 폼입니다.  
   

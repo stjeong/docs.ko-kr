@@ -21,26 +21,28 @@ helpviewer_keywords:
 - I literal type character [Visual Basic]
 - Integer data type
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-ms.openlocfilehash: 2eb1afb1400b8770c4c1ddb0ec90bb44979e702f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b0d24027f00c4ab4ba49f4948a9f5488a2eff3fd
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662805"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443025"
 ---
 # <a name="integer-data-type-visual-basic"></a>정수 데이터 형식 (Visual Basic)
 -2,147,483,648에서 2,147,483,647까지의 값 범위에 속하는 부호 있는 32비트(4바이트) 정수를 저장합니다.  
   
 ## <a name="remarks"></a>설명
- `Integer` 데이터 형식은 32비트 프로세서에서 최적의 성능을 제공합니다. 다른 정수 계열 형식은 메모리에서 로드하고 저장하는 속도가 더 느려집니다.  
+ 
+  `Integer` 데이터 형식은 32비트 프로세서에서 최적의 성능을 제공합니다. 다른 정수 계열 형식은 메모리에서 로드하고 저장하는 속도가 더 느려집니다.  
   
- `Integer`의 기본값은 0입니다.  
+ 
+  `Integer`의 기본값은 0입니다.  
 
 ## <a name="literal-assignments"></a>리터럴 할당
 
 선언 하 고 초기화할 수 있습니다는 `Integer` 변수 (Visual Basic 2017부터) 이진 리터럴을 또는 10 진수 리터럴, 16 진수 리터럴, 8 진수 리터럴을 할당 합니다. 정수 리터럴이 `Integer` 범위를 벗어나는 경우(즉 <xref:System.Int32.MinValue?displayProperty=nameWithType>보다 작거나 <xref:System.Int32.MaxValue?displayProperty=nameWithType>보다 큰 경우) 컴파일 오류가 발생합니다.
 
-다음 예제에서는 10진수, 16진수 및 이진 리터럴로 표현된 16,342와 같은 정수가 `Integer` 값에 할당됩니다.
+다음 예제에서는 10진수, 16진수 및 이진 리터럴로 표현된 90,946와 같은 정수가 `Integer` 값에 할당됩니다.
 
 [!code-vb[integer](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#Int)]  
 
@@ -69,7 +71,8 @@ Dim number = &H_035826I
 
 -   **Interop 고려 사항입니다.** 자동화 개체나 COM 개체와 같은.NET Framework 용으로 작성 되지 구성 요소와 상호 작용 하는 경우에 유의 해야 `Integer` 다른 환경에서 다른 데이터 너비 (16 비트)에 있습니다. 이러한 구성 요소에 16비트 인수를 전달하는 경우 새 Visual Basic 코드에서 이 인수를 `Short` 대신 `Integer`로 선언하십시오.  
   
--   **확대 합니다.** `Integer` 데이터 형식은 `Long`, `Decimal`, `Single` 또는 `Double`로 확대 변환됩니다. 이는 `Integer` 오류 발생 없이 <xref:System.OverflowException?displayProperty=nameWithType>를 이러한 형식 중 하나로 변환할 수 있음을 의미합니다.  
+-   **확대 합니다.** 
+  `Integer` 데이터 형식은 `Long`, `Decimal`, `Single` 또는 `Double`로 확대 변환됩니다. 이는 `Integer` 오류 발생 없이 <xref:System.OverflowException?displayProperty=nameWithType>를 이러한 형식 중 하나로 변환할 수 있음을 의미합니다.  
   
 -   **형식 문자입니다.** 리터럴 형식 문자 `I`를 리터럴에 추가하면 `Integer` 데이터 형식이 됩니다. 식별자 형식 문자 `%`를 식별자에 추가하면 `Integer`가 됩니다.  
   

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF [WCF], troubleshooting
 - Windows Communication Foundation [WCF], troubleshooting
 ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
-ms.openlocfilehash: 5031538c49da34d0fc89442c1170e30ff56a6eff
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2d835b055eba6ca66b64555b44cbde64134e743f
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54505694"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442297"
 ---
 # <a name="wcf-troubleshooting-quickstart"></a>WCF 문제 해결 퀵 스타트
 이 항목에서는 WCF 클라이언트 및 서비스를 개발하는 동안 발생하는 몇 가지 알려진 문제점을 나열합니다. 발생하는 문제가 이 목록에 없는 경우 서비스에 대한 추적을 구성하는 것이 좋습니다. 추적을 구성하면 추적 파일 뷰어로 보고 서비스 내에서 발생하는 예외에 대한 자세한 정보를 얻을 수 있는 추적 파일이 생성됩니다. 추적 구성에 대 한 자세한 내용은 다음을 참조 하세요. [추적 구성](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)합니다. 추적 파일 뷰어에 대 한 자세한 내용은 다음을 참조 하세요. [서비스 추적 뷰어 도구 (SvcTraceViewer.exe)](../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)합니다.  
@@ -102,7 +102,7 @@ public class MyServiceHost : ServiceHost
   
 -   애플리케이션에 연결되는 포트를 열어야 할 수 있습니다. 자세한 내용은 SDK 샘플에서 [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) 을 참조하십시오.  
   
--   그 외 가능한 다른 문제를 보려면 샘플 항목 [Running the Samples in a Workgroup and Across Machines](https://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113)을 참조하십시오.  
+-   다른 가능한 문제에 대 한 샘플 항목을 참조 하세요 [Windows Communication Foundation 샘플 실행](./samples/running-the-samples.md)합니다.  
   
 -   클라이언트가 Windows 자격 증명을 사용하고 예외가 <xref:System.ServiceModel.Security.SecurityNegotiationException>인 경우 다음과 같이 Kerberos를 구성합니다.  
   

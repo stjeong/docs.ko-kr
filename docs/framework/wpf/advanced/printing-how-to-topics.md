@@ -5,12 +5,12 @@ helpviewer_keywords:
 - printing [WPF]
 - print system management [WPF]
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
-ms.openlocfilehash: 0bf581155bb32951a4614818edb50837f608939e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c920aff295fd22cc7faa90c2f9421840f9b60b69
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54726444"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441205"
 ---
 # <a name="printing-how-to-topics"></a>인쇄 방법 항목
 이 섹션의에서 항목에서는 인쇄를 사용 하는 방법을 보여 줍니다 및 인쇄 시스템 관리 기능에 포함 된 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 뿐만 아니라 새 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 인쇄 경로입니다.  
@@ -52,4 +52,4 @@ ms.locfileid: "54726444"
 - <xref:System.Printing.Interop>
 - [인쇄 개요](../../../../docs/framework/wpf/advanced/printing-overview.md)
 - [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [XPS](https://www.microsoft.com/xps)
+- [XPS 문서](/windows/desktop/printdocs/documents)

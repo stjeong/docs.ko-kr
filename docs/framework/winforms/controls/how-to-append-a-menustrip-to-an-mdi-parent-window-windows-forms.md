@@ -1,5 +1,5 @@
 ---
-title: '방법: MDI 부모 창에 MenuStrip 추가(Windows Forms)'
+title: '방법: (Windows Forms) MDI 부모 창에 MenuStrip 추가'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms], appending
 - MDI [Windows Forms], merging menu items
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
-ms.openlocfilehash: bfce2e5c787bd18321d1203286e98d8f75cbf173
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9c39b80c06cae91c43c7a79390cef71ae781489e
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500640"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442749"
 ---
-# <a name="how-to-append-a-menustrip-to-an-mdi-parent-window-windows-forms"></a>방법: MDI 부모 창에 MenuStrip 추가(Windows Forms)
+# <a name="how-to-append-a-menustrip-to-an-mdi-parent-window-windows-forms"></a>방법: (Windows Forms) MDI 부모 창에 MenuStrip 추가
 일부 응용 프로그램에서는 MDI(다중 문서 인터페이스) 자식 창의 종류가 MDI 부모 창과 다를 수 있습니다. 예를 들어 MDI 부모는 스프레드시트이고 MDI 자식은 차트일 수 있습니다. 이 경우 다른 종류의 MDI 자식 창이 활성화될 때 MDI 부모 메뉴의 내용을 MDI 자식 메뉴의 내용으로 업데이트하려고 합니다.  
   
  다음 절차에서는 <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction> 및 <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> 속성을 사용하여 MDI 자식 메뉴를 MDI 부모 메뉴에 추가합니다. MDI 자식 창을 닫으면 MDI 부모에서 추가된 메뉴가 제거됩니다.  
   
- 도 참조 하세요 [다중 문서 MDI (인터페이스) 응용 프로그램](https://msdn.microsoft.com/library/xyhh2e7e\(v=vs.110\))합니다.  
+ 도 참조 하세요 [다중 문서 MDI (인터페이스) 응용 프로그램](../advanced/multiple-document-interface-mdi-applications.md)합니다.  
   
 ### <a name="to-append-a-menu-item-to-an-mdi-parent"></a>MDI 부모에 메뉴 항목을 추가하려면  
   
@@ -68,7 +68,9 @@ ms.locfileid: "43500640"
     }  
     ```  
   
-12. `&Open`<xref:System.Windows.Forms.ToolStripMenuItem>에 다음 코드 예제와 비슷한 코드를 배치하여 이벤트 처리기를 등록합니다.  
+12. 
+  `&Open`
+  <xref:System.Windows.Forms.ToolStripMenuItem>에 다음 코드 예제와 비슷한 코드를 배치하여 이벤트 처리기를 등록합니다.  
   
     ```vb  
     Private Sub openToolStripMenuItem_Click(sender As Object, e As _  

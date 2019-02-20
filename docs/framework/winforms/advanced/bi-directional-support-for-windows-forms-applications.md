@@ -9,21 +9,21 @@ helpviewer_keywords:
 - Windows Forms, bi-directional support
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9e35f097380272822e9dbcda01617cce9fed8fc1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ecd167b46a3d600852b5b12a7f18d0013502523d
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54676850"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442973"
 ---
 # <a name="bi-directional-support-for-windows-forms-applications"></a>Windows Forms 애플리케이션에 대한 양방향 지원
 Visual Studio를 사용 하 여 아랍어 및 히브리어와 같은 양방향 (오른쪽에서 왼쪽) 언어를 지 원하는 Windows 기반 응용 프로그램을 만들 수 있습니다. 여기에는 표준 폼, 대화 상자, MDI 폼 및 이러한 폼에서 사용할 수 있는 모든 컨트롤(즉, <xref:System.Windows.Forms.Control> 네임스페이스의 모든 개체)이 포함됩니다.  
   
 ## <a name="culture-support"></a>문화권 지원  
- 문화권 및 UI 문화권 설정은 애플리케이션에서 날짜, 시간, 통화 및 기타 정보를 사용하는 방법을 결정합니다. 양방향 언어에 대한 문화권 및 UI 문화권 지원은 다른 언어의 경우와 동일합니다.   [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.110\)) 또는 [전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스](https://msdn.microsoft.com/library/94ye9x8c\(v=vs.120\))를 참조하세요.  
+ 문화권 및 UI 문화권 설정은 애플리케이션에서 날짜, 시간, 통화 및 기타 정보를 사용하는 방법을 결정합니다. 양방향 언어에 대한 문화권 및 UI 문화권 지원은 다른 언어의 경우와 동일합니다. 자세한 내용은 [전역 Windows forms 및 web forms에 대 한 문화권 관련 클래스](/visualstudio/ide/culture-specific-classes-for-global-windows-forms-and-web-forms)합니다.  
   
 ## <a name="righttoleft-and-righttoleftlayout-properties"></a>RightToLeft 및 RightToLeftLayout 속성  
- 폼이 파생되는 기본 <xref:System.Windows.Forms.Control> 클래스는 폼과 해당 컨트롤의 읽기 순서를 변경하기 위해 설정할 수 있는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 포함합니다. 폼의 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 설정하는 경우 기본적으로 폼의 컨트롤이 이 설정을 상속합니다. 그러나 대부분의 컨트롤에서 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 개별적으로 설정할 수도 있습니다. 또한 참조 [방법: 세계화를 위한 Windows Forms에서 오른쪽에서 왼쪽 텍스트를 표시할](https://msdn.microsoft.com/library/7d3337xw\(v=vs.110\))합니다.  
+ 폼이 파생되는 기본 <xref:System.Windows.Forms.Control> 클래스는 폼과 해당 컨트롤의 읽기 순서를 변경하기 위해 설정할 수 있는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 포함합니다. 폼의 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 설정하는 경우 기본적으로 폼의 컨트롤이 이 설정을 상속합니다. 그러나 대부분의 컨트롤에서 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성을 개별적으로 설정할 수도 있습니다. 또한 참조 [방법: 세계화를 위한 Windows Forms에서 오른쪽에서 왼쪽 텍스트를 표시할](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7d3337xw(v=vs.100))합니다.  
   
  <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성의 효과는 컨트롤마다 다를 수 있습니다. 일부 컨트롤에서는 속성이 <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.TreeView> 및 <xref:System.Windows.Forms.ToolTip> 컨트롤과 같이 읽기 순서만 설정합니다. 다른 컨트롤에서는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 속성이 읽기 순서와 레이아웃을 둘 다 변경합니다. 여기에는 <xref:System.Windows.Forms.RadioButton>, <xref:System.Windows.Forms.ComboBox> 및 <xref:System.Windows.Forms.CheckBox> 컨트롤이 포함됩니다. 다른 컨트롤에서는 레이아웃을 오른쪽에서 왼쪽으로 미러링하기 위해 <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> 속성을 적용해야 합니다. 다음 표에서는 <xref:System.Windows.Forms.Control.RightToLeft%2A> 및 <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> 속성이 개별 Windows Forms 컨트롤에 미치는 영향에 대한 세부 정보를 제공합니다.  
   
@@ -119,5 +119,5 @@ Visual Studio를 사용 하 여 아랍어 및 히브리어와 같은 양방향 (
   
 ## <a name="see-also"></a>참고자료
 
-- [ASP.NET 웹 응용 프로그램에 대한 양방향 지원](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [ASP.NET 웹 응용 프로그램에 대한 양방향 지원](https://docs.microsoft.com/previous-versions/aspnet/6eedwbtt(v=vs.100))
 - [Windows Forms 응용 프로그램 전역화](globalizing-windows-forms.md)

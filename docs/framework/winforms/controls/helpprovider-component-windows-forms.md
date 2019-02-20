@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Help [Windows Forms], displaying on Windows Forms
 - HelpProvider component [Windows Forms]
 ms.assetid: a09a6e0b-79d8-457f-bb36-86fad2beeada
-ms.openlocfilehash: 63574e6a4f7a9c5a1c2bcb267c64baa5c5e392f3
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: f838f94698375eca27027c4769fcc5f54f96528c
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195656"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443187"
 ---
 # <a name="helpprovider-component-windows-forms"></a>HelpProvider 구성 요소(Windows Forms)
 Windows Forms `HelpProvider` 구성 요소는 HTML 도움말 1.x 도움말 파일(HTML Help Workshop으로 생성된 .chm 파일 또는 .htm 파일)을 Windows 기반 응용 프로그램에 연결하는 데 사용됩니다.  
@@ -33,4 +33,4 @@ Windows Forms `HelpProvider` 구성 요소는 HTML 도움말 1.x 도움말 파�
  [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  사용 방법에 대한 정보 링크를 포함하는 Windows Forms 컨트롤의 전체 목록을 제공합니다.  
   
- 도 참조 하세요 [Windows Forms 응용 프로그램의 도움말 시스템](https://msdn.microsoft.com/library/55dct0a1\(v=vs.110\))입니다.
+ 도 참조 하세요 [Windows Forms 응용 프로그램의 도움말 시스템](../advanced/help-systems-in-windows-forms-applications.md)입니다.

@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom controls [Windows Forms], types
 - controls [Windows Forms], creating
 ms.assetid: 5235fe9d-c36a-4c08-ae76-6cb90b50085e
-ms.openlocfilehash: 5e3337dddcc39517558cf85af76223306d20d2bb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b2193c862b0bfe0ffbdc55f5d7073409b03a040d
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54599701"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442947"
 ---
 # <a name="control-type-recommendations"></a>컨트롤 형식 권장 사항
 .NET Framework는 새 컨트롤을 개발 및 구현하는 기능을 제공합니다. 익숙한 사용자 정의 컨트롤뿐 아니라 이제 고유한 그리기를 수행하는 사용자 지정 컨트롤을 작성할 수 있으며 상속을 통해 기존 컨트롤의 기능을 확장할 수도 있습니다. 만들 컨트롤 형식을 결정하기 어려울 수 있습니다. 이 섹션에서는 상속할 수 있는 다양한 컨트롤 형식 간의 차이점을 요약하고 프로젝트에 대해 선택할 형식과 관련된 고려 사항을 제공합니다.  
   
 > [!NOTE]
->  Web Forms에서 사용할 컨트롤을 작성하려는 경우 [사용자 지정 ASP.NET 서버 컨트롤 개발](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef)을 참조하세요.  
+>  Web Forms에서 사용할 컨트롤을 작성하려는 경우 [사용자 지정 ASP.NET 서버 컨트롤 개발](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100))을 참조하세요.  
   
 ## <a name="inheriting-from-a-windows-forms-control"></a>Windows Forms 컨트롤에서 상속  
  기존 Windows Forms 컨트롤에서 상속된 컨트롤을 파생시킬 수 있습니다. 이 접근 방식을 통해 Windows Forms 컨트롤의 고유 기능을 모두 유지하는 동시에 사용자 지정 속성, 메서드 또는 다른 기능을 추가하여 해당 기능을 확장할 수 있습니다. 예를 들어 숫자만 입력할 수 있고 자동으로 입력을 값으로 변환하는 <xref:System.Windows.Forms.TextBox>에서 파생된 컨트롤을 만들 수 있습니다. 이러한 컨트롤에는 텍스트 상자의 텍스트가 변경될 때마다 호출된 유효성 검사 코드가 포함될 수 있으며 추가 속성인 값이 있을 수 있습니다. 일부 컨트롤에서는 기본 클래스의 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드를 재정의하여 컨트롤의 그래픽 인터페이스에 사용자 지정 모양을 추가할 수도 있습니다.  
@@ -45,39 +45,39 @@ ms.locfileid: "54599701"
   
 -   표준 컨트롤을 통해 사용할 수 없는 사용자 지정 기능을 구현해야 하는 경우  
   
--   [방법: 컨트롤에 표시 된 도구 상자 항목 선택 대화 상자](https://msdn.microsoft.com/library/9yxtkx75\(v=vs.110\))  
+-   [방법: 컨트롤에 표시 된 도구 상자 항목 선택 대화 상자](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
   
 -   [연습: Designerserializationvisibilityattribute를 사용 하 여 표준 형식의 컬렉션 직렬화](serializing-collections-designerserializationvisibilityattribute.md)  
   
--   [연습: 시각적 개체를 사용 하 여 Windows Forms 컨트롤에서 상속C#](https://msdn.microsoft.com/library/5h0k2e6x\(v=vs.110\))  
+-   [연습: 시각적 개체를 사용 하 여 Windows Forms 컨트롤에서 상속C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
   
--   [방법: 컨트롤에 대 한 도구 상자 비트맵 제공](https://msdn.microsoft.com/library/4wk1wc0a\(v=vs.110\))  
+-   [방법: 컨트롤에 대 한 도구 상자 비트맵 제공](how-to-provide-a-toolbox-bitmap-for-a-control.md)  
   
--   [방법: 에서 상속 하는 기존 Windows Forms 컨트롤](https://msdn.microsoft.com/library/7h62478z\(v=vs.110\))  
+-   [방법: 에서 상속 하는 기존 Windows Forms 컨트롤](how-to-inherit-from-existing-windows-forms-controls.md)  
   
--   [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버그](https://msdn.microsoft.com/library/5ytx0z24\(v=vs.110\))  
+-   [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버그](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
   
--   [방법: Control 클래스에서 상속](https://msdn.microsoft.com/library/skcysbt2\(v=vs.110\))  
+-   [방법: Control 클래스에서 상속](how-to-inherit-from-the-control-class.md)  
   
 -   [방법: UserControl의 런타임 동작 테스트](how-to-test-the-run-time-behavior-of-a-usercontrol.md)  
   
--   [방법: 디자인 타임에 컨트롤을 폼의 가장자리에 맞춤](https://msdn.microsoft.com/library/1fxyb15b\(v=vs.110\))  
+-   [방법: 디자인 타임에 컨트롤을 폼의 가장자리에 맞춤](how-to-align-a-control-to-the-edges-of-forms-at-design-time.md)  
   
--   [방법: UserControl 클래스에서 상속](https://msdn.microsoft.com/library/00ctb4z0\(v=vs.110\))  
+-   [방법: UserControl 클래스에서 상속](how-to-inherit-from-the-usercontrol-class.md)  
   
--   [방법: Windows forms 컨트롤 작성](https://msdn.microsoft.com/library/bs3yhkh7\(v=vs.110\))  
+-   [방법: Windows forms 컨트롤 작성](how-to-author-controls-for-windows-forms.md)  
   
--   [방법: 복합 컨트롤 제작](https://msdn.microsoft.com/library/3sf86w5h\(v=vs.110\))  
+-   [방법: 복합 컨트롤 제작](how-to-author-composite-controls.md)  
   
--   [연습: Visual Basic에서 합성 컨트롤 제작](https://msdn.microsoft.com/library/c316f119\(v=vs.110\))  
+-   [연습: Visual Basic에서 합성 컨트롤 제작](walkthrough-authoring-a-composite-control-with-visual-basic.md)  
   
--   [연습: 시각적 개체를 사용 하 여 복합 컨트롤 제작C#](https://msdn.microsoft.com/library/a6h7e207\(v=vs.110\))  
+-   [연습: 시각적 개체를 사용 하 여 복합 컨트롤 제작C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
   
--   [연습: Visual Basic을 사용한 Windows Forms 컨트롤에서 상속](https://msdn.microsoft.com/library/w2a8y03d\(v=vs.110\))  
+-   [연습: Visual Basic을 사용한 Windows Forms 컨트롤에서 상속](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)  
   
--   [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://msdn.microsoft.com/library/307hck25\(v=vs.110\))  
+-   [연습: Visual Studio 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](creating-a-wf-control-design-time-features.md)  
   
--   [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://msdn.microsoft.com/library/307hck25\(v=vs.120\))  
+-   [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))  
   
 ## <a name="see-also"></a>참고자료
 - [방법: 간단한 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)

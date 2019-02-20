@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows Forms controls, adding to form
 - controls [Windows Forms], adding
 ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
-ms.openlocfilehash: 6290fdac63bb22b878035c0cc27bba97300899de
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 29a268f645810d84d9f6fb722e4728842b04ee14
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611360"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443174"
 ---
 # <a name="how-to-add-controls-to-windows-forms"></a>방법: Windows Forms에 컨트롤 추가
 대부분의 폼은 사용자 인터페이스 (UI)를 정의 하도록 폼의 화면에 컨트롤을 추가 하 여 설계 되었습니다. A *제어* 정보를 표시 하거나 사용자 입력을 허용 하는 데 양식의 구성 요소입니다. 컨트롤에 대 한 자세한 내용은 참조 하세요. [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "54611360"
   
 ### <a name="to-draw-a-control-on-a-form"></a>폼에서 컨트롤을 그리려면  
   
-1.  폼을 엽니다. 자세한 내용은 [방법: Windows Forms 디자이너에서 표시할](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5)합니다.  
+1.  폼을 엽니다. 자세한 내용은 [방법: Windows Forms 디자이너에서 표시할](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100))합니다.  
   
 2.  에 **도구 상자**, 폼에 추가 하려는 컨트롤을 클릭 합니다.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54611360"
   
 ### <a name="to-drag-a-control-to-a-form"></a>폼에 컨트롤을 끌기  
   
-1.  폼을 엽니다. 자세한 내용은 [방법: Windows Forms 디자이너에서 표시할](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5)합니다.  
+1.  폼을 엽니다. 자세한 내용은 [방법: Windows Forms 디자이너에서 표시할](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100))합니다.  
   
 2.  에 **도구 상자**, 클릭 컨트롤을 폼으로 끕니다.  
   

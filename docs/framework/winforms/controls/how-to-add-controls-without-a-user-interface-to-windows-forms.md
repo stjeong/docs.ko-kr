@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Windows Forms controls, nonvisual
 - nonvisual controls [Windows Forms]
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
-ms.openlocfilehash: 442a6175b1b378cf3489314e190c58312a327c01
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 26685ff0ff67ac3b7f1b9837cc71cfc0e683b292
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54738591"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442115"
 ---
 # <a name="how-to-add-controls-without-a-user-interface-to-windows-forms"></a>방법: Windows Forms에 사용자 인터페이스가 없는 컨트롤 추가
 보이지 않는 컨트롤 (또는 구성 요소)에 응용 프로그램 기능을 제공합니다. 다른 컨트롤과 달리 구성 요소 사용자에 게 사용자 인터페이스를 제공 하지 않으며 따라서 Windows Forms 디자이너 화면에 표시 될 필요가 없습니다. 구성 요소를 폼에 추가 되 면 Windows Forms 디자이너 구성 요소를 모두 표시 되는 폼의 맨 아래에 크기를 조정할 수 있는 트레이 표시 합니다. 컨트롤에 구성 요소 트레이에 추가 되 면 구성 요소를 선택 하 고 폼에서 다른 컨트롤과 마찬가지로 해당 속성을 설정할 수 있습니다.  
@@ -29,13 +29,13 @@ ms.locfileid: "54738591"
   
 ### <a name="to-add-a-component-to-a-windows-form"></a>Windows 폼에는 구성 요소를 추가 하려면  
   
-1.  폼을 엽니다. 세부 정보를 참조 하세요. [방법: Windows Forms 디자이너에서 표시할](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5)합니다.  
+1.  폼을 엽니다. 자세한 내용은 [방법: Windows Forms 디자이너에서 표시할](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100))합니다.  
   
 2.  에 **도구 상자**, 구성 요소를 클릭 하 고 폼으로 끕니다.  
   
      구성 요소가 구성 요소 트레이에 나타납니다.  
   
- 또한 런타임 시 구성 요소를 폼에 추가할 수 있습니다. 이것이 일반적인 시나리오에서 특히 없으므로 구성 요소 사용자 인터페이스가 있는 컨트롤과 달리 visual는 식입니다. 아래 예제에서는 <xref:System.Windows.Forms.Timer> 구성 요소가 런타임 시 추가 됩니다. (Visual Studio에는 다른 타이머의 수,이 경우에 Windows Forms를 사용 하 여 <xref:System.Windows.Forms.Timer> 구성 요소입니다. Visual Studio에서 다른 타이머에 대 한 자세한 내용은 참조 하세요. [서버 기반 타이머 소개](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).)  
+ 또한 런타임 시 구성 요소를 폼에 추가할 수 있습니다. 이것이 일반적인 시나리오에서 특히 없으므로 구성 요소 사용자 인터페이스가 있는 컨트롤과 달리 visual는 식입니다. 아래 예제에서는 <xref:System.Windows.Forms.Timer> 구성 요소가 런타임 시 추가 됩니다. (Visual Studio에는 다른 타이머의 수,이 경우에 Windows Forms를 사용 하 여 <xref:System.Windows.Forms.Timer> 구성 요소입니다. Visual Studio에서 다른 타이머에 대 한 자세한 내용은 참조 하세요. [서버 기반 타이머 소개](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).)  
   
 > [!CAUTION]
 >  구성 요소는 종종 효율적인 작동을 위해 구성 요소에 대해 설정 해야 하는 컨트롤 관련 속성을 가집니다. 경우는 <xref:System.Windows.Forms.Timer> 설정한 구성 요소 아래에 `Interval` 속성입니다. 때는 반드시 프로젝트에 설정 하는 속성을 해당 구성 요소에 필요한 구성 요소를 추가 합니다.  

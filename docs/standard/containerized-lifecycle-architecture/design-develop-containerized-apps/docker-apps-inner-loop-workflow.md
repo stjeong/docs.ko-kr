@@ -4,12 +4,12 @@ description: Docker 응용 프로그램의 개발에 대 한 "내부 루프" 워
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/23/2018
-ms.openlocfilehash: 03eb4662e55551678105fa9ef25b42cc05c132a5
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: 2d592f92153040d910dcf529ec21770693f5973c
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219090"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442323"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Docker 앱에 대 한 내부 루프 개발 워크플로
 
@@ -120,7 +120,7 @@ DockerFile에서 Docker (예: 포트 80) 런타임에 사용할 TCP 포트를 �
 
 Docker에서 앱을 실행 하는 방법을 알 수 있도록 언어/프레임 워크를 사용 하는 따라 DockerFile에 추가할 수 있는 구성의 다른 줄 있습니다. 예를 들어 포함 된 ENTRYPOINT 줄 해야 \["dotnet", "MyCustomMicroservice.dll"\] 빌드하고 서비스를 실행 하는 방법에 따라 여러 변형을 포함할 수는 있지만.NET Core 앱을 실행 합니다. SDK 및 dotnet CLI 사용 하 여.NET 앱 빌드 및 실행 하는, 경우에 약간 다른 것입니다. 결론은 ENTRYPOINT 줄 및 줄 추가 되도록 응용 프로그램에 대해 선택한 언어/플랫폼에 따라 다릅니다.
 
-**자세한 내용은** 로.NET Core 응용 프로그램에 대 한 Docker 이미지 작성에 대 한 내용은 <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>합니다.
+**자세한 내용은** .NET Core 응용 프로그램에 대 한 Docker 이미지 작성에 대 한 내용은 이동 [ https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images ](../../../core/docker/building-net-docker-images.md)합니다.
 
 사용자 고유의 이미지를 작성 하는 방법에 대 한 자세한 내용은로 이동 [ https://docs.docker.com/engine/\ 자습서/dockerimages/](https://docs.docker.com/engine/tutorials/dockerimages/)합니다.
 

@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - sessions [WCF]
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
-ms.openlocfilehash: 9285f68521770e0dd4fbc8d6f9aa006eccc502c3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ef3ff671175182bdd3b1eab2b17ec0298ff15e1
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54533139"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442726"
 ---
 # <a name="using-sessions"></a>세션 사용
 Windows Communication Foundation (WCF) 응용 프로그램에는 *세션* 메시지 그룹을 대화에 연결 합니다. WCF 세션에서 사용할 수 있는 세션 개체에 다릅니다. [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] 응용 프로그램을 다른 동작을 지원 하 고 다양 한 방법으로 제어 됩니다. 세션 WCF에서 사용 하도록 설정 하는 기능에 설명 응용 프로그램 및 사용 하는 방법입니다.  
@@ -137,7 +137,7 @@ Windows Communication Foundation (WCF) 응용 프로그램에는 *세션* 메시
  계약의 <xref:System.ServiceModel.SessionMode> 열거형과 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> 속성 간에 상호 작용이 있으며, 이를 통해 채널과 특정 서비스 개체 간의 연결을 제어합니다. 자세한 내용은 [세션, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)합니다.  
   
 ### <a name="sharing-instancecontext-objects"></a>InstanceContext 개체 공유  
- 또한 해당 연결을 직접 수행하여 <xref:System.ServiceModel.InstanceContext> 개체와 연결된 세션 기반 채널 또는 호출을 제어할 수도 있습니다. 전체 예제는 [InstanceContextSharing](https://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230)를 참조하세요.  
+ 또한 해당 연결을 직접 수행하여 <xref:System.ServiceModel.InstanceContext> 개체와 연결된 세션 기반 채널 또는 호출을 제어할 수도 있습니다. 
   
 ## <a name="sessions-and-streaming"></a>세션 및 스트리밍  
  WCF에서 스트리밍 전송 모드 많은 양의 데이터 전송할 경우 때 버퍼링 및 전체에서 메모리에서 메시지 처리의 기본 동작에 대해 가능한 대체 합니다. 세션 기반 바인딩을 통해 스트리밍 호출이 수행될 경우 예기치 못한 동작이 발생할 수 있습니다. 모든 스트리밍 호출은 사용 중인 바인딩이 세션을 사용하도록 구성된 경우에도 세션을 지원하지 않는 하나의 채널(데이터그램 채널)을 통해 수행됩니다. 여러 클라이언트에서 세션 기반 바인딩을 통해 동일한 서비스 개체에 대한 스트리밍 호출을 수행하고, 서비스 개체의 동시성 모드가 단일 모드로 설정되고, 서비스 개체의 인스턴스 컨텍스트 모드가 `PerSession`으로 설정된 경우, 모든 호출은 데이터그램 채널을 통해 수행되므로 한 번에 하나의 호출만 처리됩니다. 하나 이상의 클라이언트의 제한 시간이 초과될 수 있습니다. 이 문제는 서비스 개체의 `InstanceContextMode` 를 `PerCall` 로 설정하거나 동시성 모드를 다중 모드로 설정하여 해결할 수 있습니다.  
