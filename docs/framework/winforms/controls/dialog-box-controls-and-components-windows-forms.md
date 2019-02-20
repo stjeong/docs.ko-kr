@@ -7,64 +7,71 @@ helpviewer_keywords:
 - dialog boxes [Windows Forms], Windows Forms
 - Windows Forms, dialog boxes
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
-ms.openlocfilehash: 5af2ce568b4c4bcb66de13f18a29b3f465672ffd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 8a2dcde82c4bdded05fe1d69578b6becb5c1175e
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456414"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441998"
 ---
-# <a name="dialog-box-controls-and-components-windows-forms"></a><span data-ttu-id="8c78c-102">대화 상자 컨트롤 및 구성 요소(Windows Forms)</span><span class="sxs-lookup"><span data-stu-id="8c78c-102">Dialog-Box Controls and Components (Windows Forms)</span></span>
-<span data-ttu-id="8c78c-103">다음 Windows Forms 컨트롤 및 구성 요소는 표준 대화 상자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-103">The following Windows Forms controls and components present standard dialog boxes.</span></span> <span data-ttu-id="8c78c-104">각 대화 상자에서 사용할 수 있는 함수에 대한 자세한 내용은 링크를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="8c78c-104">Follow the links for more information about the functions available in each dialog box.</span></span>  
+# <a name="dialog-box-controls-and-components-windows-forms"></a><span data-ttu-id="ad7b1-102">대화 상자 컨트롤 및 구성 요소(Windows Forms)</span><span class="sxs-lookup"><span data-stu-id="ad7b1-102">Dialog-Box Controls and Components (Windows Forms)</span></span>
+<span data-ttu-id="ad7b1-103">다음 Windows Forms 컨트롤 및 구성 요소는 표준 대화 상자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-103">The following Windows Forms controls and components present standard dialog boxes.</span></span> <span data-ttu-id="ad7b1-104">각 대화 상자에서 사용할 수 있는 함수에 대한 자세한 내용은 링크를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-104">Follow the links for more information about the functions available in each dialog box.</span></span>  
   
-## <a name="reference"></a><span data-ttu-id="8c78c-105">참조</span><span class="sxs-lookup"><span data-stu-id="8c78c-105">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="ad7b1-105">참조</span><span class="sxs-lookup"><span data-stu-id="ad7b1-105">Reference</span></span>  
  <xref:System.Windows.Forms.ColorDialog>  
- <span data-ttu-id="8c78c-106"><xref:System.Windows.Forms.ColorDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-106">Provides reference information about the <xref:System.Windows.Forms.ColorDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-106">
+  <xref:System.Windows.Forms.ColorDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-106">Provides reference information about the <xref:System.Windows.Forms.ColorDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.FontDialog>  
- <span data-ttu-id="8c78c-107"><xref:System.Windows.Forms.FontDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-107">Provides reference information about the <xref:System.Windows.Forms.FontDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-107">
+  <xref:System.Windows.Forms.FontDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-107">Provides reference information about the <xref:System.Windows.Forms.FontDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.OpenFileDialog>  
- <span data-ttu-id="8c78c-108"><xref:System.Windows.Forms.OpenFileDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-108">Provides reference information about the <xref:System.Windows.Forms.OpenFileDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-108">
+  <xref:System.Windows.Forms.OpenFileDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-108">Provides reference information about the <xref:System.Windows.Forms.OpenFileDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.PageSetupDialog>  
- <span data-ttu-id="8c78c-109"><xref:System.Windows.Forms.PageSetupDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-109">Provides reference information about the <xref:System.Windows.Forms.PageSetupDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-109">
+  <xref:System.Windows.Forms.PageSetupDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-109">Provides reference information about the <xref:System.Windows.Forms.PageSetupDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.PrintDialog>  
- <span data-ttu-id="8c78c-110"><xref:System.Windows.Forms.PrintDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-110">Provides reference information about the <xref:System.Windows.Forms.PrintDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-110">
+  <xref:System.Windows.Forms.PrintDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-110">Provides reference information about the <xref:System.Windows.Forms.PrintDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.PrintPreviewDialog>  
- <span data-ttu-id="8c78c-111"><xref:System.Windows.Forms.PrintPreviewDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-111">Provides reference information about the <xref:System.Windows.Forms.PrintPreviewDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-111">
+  <xref:System.Windows.Forms.PrintPreviewDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-111">Provides reference information about the <xref:System.Windows.Forms.PrintPreviewDialog> class and its members.</span></span>  
   
  <xref:System.Windows.Forms.SaveFileDialog>  
- <span data-ttu-id="8c78c-112"><xref:System.Windows.Forms.SaveFileDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-112">Provides reference information about the <xref:System.Windows.Forms.SaveFileDialog> class and its members.</span></span>  
+ <span data-ttu-id="ad7b1-112">
+  <xref:System.Windows.Forms.SaveFileDialog> 클래스 및 해당 멤버에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-112">Provides reference information about the <xref:System.Windows.Forms.SaveFileDialog> class and its members.</span></span>  
   
-## <a name="related-sections"></a><span data-ttu-id="8c78c-113">관련 단원</span><span class="sxs-lookup"><span data-stu-id="8c78c-113">Related Sections</span></span>  
- [<span data-ttu-id="8c78c-114">Windows Forms 대화 상자</span><span class="sxs-lookup"><span data-stu-id="8c78c-114">Dialog Boxes in Windows Forms</span></span>](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
- <span data-ttu-id="8c78c-115">Windows Form에 대한 대화 상자를 만드는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-115">Describes how to create a dialog box for a Windows Form.</span></span>  
+## <a name="related-sections"></a><span data-ttu-id="ad7b1-113">관련 단원</span><span class="sxs-lookup"><span data-stu-id="ad7b1-113">Related Sections</span></span>  
+ [<span data-ttu-id="ad7b1-114">Windows Forms 대화 상자</span><span class="sxs-lookup"><span data-stu-id="ad7b1-114">Dialog Boxes in Windows Forms</span></span>](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
+ <span data-ttu-id="ad7b1-115">Windows Form에 대한 대화 상자를 만드는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-115">Describes how to create a dialog box for a Windows Form.</span></span>  
   
- [<span data-ttu-id="8c78c-116">ColorDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-116">ColorDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-117">사용자가 미리 구성된 대화 상자의 색상표에서 색을 선택하고 해당 색상표에 사용자 지정 색을 추가할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-117">Enables the user to select a color from a palette in a pre-configured dialog box and to add custom colors to that palette.</span></span>  
+ [<span data-ttu-id="ad7b1-116">ColorDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-116">ColorDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-117">사용자가 미리 구성된 대화 상자의 색상표에서 색을 선택하고 해당 색상표에 사용자 지정 색을 추가할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-117">Enables the user to select a color from a palette in a pre-configured dialog box and to add custom colors to that palette.</span></span>  
   
- [<span data-ttu-id="8c78c-118">FolderBrowserDialog 구성 요소 개요(Windows Forms)</span><span class="sxs-lookup"><span data-stu-id="8c78c-118">FolderBrowserDialog Component Overview (Windows Forms)</span></span>](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-119">사용자가 폴더를 찾고 선택할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-119">Enables users to browse and select folders.</span></span>  
+ [<span data-ttu-id="ad7b1-118">FolderBrowserDialog 구성 요소 개요(Windows Forms)</span><span class="sxs-lookup"><span data-stu-id="ad7b1-118">FolderBrowserDialog Component Overview (Windows Forms)</span></span>](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-119">사용자가 폴더를 찾고 선택할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-119">Enables users to browse and select folders.</span></span>  
   
- [<span data-ttu-id="8c78c-120">FontDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-120">FontDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/fontdialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-121">현재 시스템에 설치된 글꼴을 노출합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-121">Exposes the fonts that are currently installed on the system.</span></span>  
+ [<span data-ttu-id="ad7b1-120">FontDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-120">FontDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/fontdialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-121">현재 시스템에 설치된 글꼴을 노출합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-121">Exposes the fonts that are currently installed on the system.</span></span>  
   
- [<span data-ttu-id="8c78c-122">OpenFileDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-122">OpenFileDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/openfiledialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-123">사용자가 미리 구성된 대화 상자를 통해 파일을 열 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-123">Allows users to open files via a pre-configured dialog box.</span></span>  
+ [<span data-ttu-id="ad7b1-122">OpenFileDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-122">OpenFileDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/openfiledialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-123">사용자가 미리 구성된 대화 상자를 통해 파일을 열 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-123">Allows users to open files via a pre-configured dialog box.</span></span>  
   
- [<span data-ttu-id="8c78c-124">PageSetupDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-124">PageSetupDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/pagesetupdialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-125">미리 구성된 대화 상자를 통해 인쇄를 위한 페이지 세부 정보를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-125">Sets page details for printing via a pre-configured dialog box.</span></span>  
+ [<span data-ttu-id="ad7b1-124">PageSetupDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-124">PageSetupDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/pagesetupdialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-125">미리 구성된 대화 상자를 통해 인쇄를 위한 페이지 세부 정보를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-125">Sets page details for printing via a pre-configured dialog box.</span></span>  
   
- [<span data-ttu-id="8c78c-126">PrintDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-126">PrintDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/printdialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-127">프린터 및 인쇄할 페이지를 선택하고 다른 인쇄 관련 설정을 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-127">Selects a printer, chooses the pages to print, and determines other print-related settings.</span></span>  
+ [<span data-ttu-id="ad7b1-126">PrintDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-126">PrintDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/printdialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-127">프린터 및 인쇄할 페이지를 선택하고 다른 인쇄 관련 설정을 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-127">Selects a printer, chooses the pages to print, and determines other print-related settings.</span></span>  
   
- [<span data-ttu-id="8c78c-128">PrintPreviewDialog 컨트롤 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-128">PrintPreviewDialog Control Overview</span></span>](../../../../docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-129">인쇄할 때 나타나는 대로 문서를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-129">Displays a document as it will appear when it is printed.</span></span>  
+ [<span data-ttu-id="ad7b1-128">PrintPreviewDialog 컨트롤 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-128">PrintPreviewDialog Control Overview</span></span>](../../../../docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-129">인쇄할 때 나타나는 대로 문서를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-129">Displays a document as it will appear when it is printed.</span></span>  
   
- [<span data-ttu-id="8c78c-130">SaveFileDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="8c78c-130">SaveFileDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/savefiledialog-component-overview-windows-forms.md)  
- <span data-ttu-id="8c78c-131">저장할 파일 및 저장 위치를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8c78c-131">Selects files to save and where to save them.</span></span>  
+ [<span data-ttu-id="ad7b1-130">SaveFileDialog 구성 요소 개요</span><span class="sxs-lookup"><span data-stu-id="ad7b1-130">SaveFileDialog Component Overview</span></span>](../../../../docs/framework/winforms/controls/savefiledialog-component-overview-windows-forms.md)  
+ <span data-ttu-id="ad7b1-131">저장할 파일 및 저장 위치를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-131">Selects files to save and where to save them.</span></span>  
   
- <span data-ttu-id="8c78c-132">[Windows Forms 대화 상자](https://msdn.microsoft.com/library/2chz8edb\(v=vs.110\))도 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="8c78c-132">Also see [Dialog Boxes in Windows Forms](https://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).</span></span>
+ <span data-ttu-id="ad7b1-132">[Windows Forms 대화 상자](../dialog-boxes-in-windows-forms.md)도 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ad7b1-132">Also see [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md).</span></span>
