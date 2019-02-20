@@ -4,13 +4,8 @@ description: ASP.NET Core 및 Azure를 사용하여 모놀리식 웹 애플리�
 author: ardalis
 ms.author: wiwagn
 ms.date: 01/30/2019
-ms.openlocfilehash: 5e85126cbec23bdebd510b103478b3c362ef71fa
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55827866"
 ---
+
 # <a name="architect-modern-web-applications-with-aspnet-core-and-azure"></a>ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케이션 설계
 
 ![표지 이미지](./media/cover.png)
@@ -107,7 +102,7 @@ Azure에서 호스팅되는 ASP.NET Core를 사용하여 웹 애플리케이션�
 ## <a name="references"></a>참조
 
 - **서버 앱에 대해 .NET Core와 .NET Framework 중에 선택**  
-  <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
+  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[다음](modern-web-applications-characteristics.md)

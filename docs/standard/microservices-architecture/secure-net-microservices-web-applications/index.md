@@ -4,12 +4,6 @@ description: .NET 마이크로 서비스 및 웹 애플리케이션 보안 - ASP
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
-ms.openlocfilehash: e53e6a50c1fdfaff6839a0a1e328047562a47824
-ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56333503"
 ---
 # <a name="make-secure-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 애플리케이션 보안
 
@@ -247,8 +241,6 @@ public void ConfigureServices(IServiceCollection services)
     var identityUrl = Configuration.GetValue<string>("IdentityUrl");
 
     // Add Authentication services
-
-    var identityUrl = configuration.GetValue<string>("IdentityUrl");
 
     services.AddAuthentication(options =>
     {
