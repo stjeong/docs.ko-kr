@@ -3,19 +3,13 @@ title: .NET Framework의 새로운 기능
 ms.custom: updateeachrelease
 ms.date: 04/10/2018
 dev_langs:
-- csharp
-- vb
+  - csharp
+  - vb
 helpviewer_keywords:
-- what's new [.NET Framework]
+  - 'what''s new [.NET Framework]'
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de919789c369c66c52a137bde811c56bf07a6ec9
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54416029"
 ---
 # .NET Framework의 새로운 기능<a name="introduction"></a>
 
@@ -612,7 +606,7 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 
 **WPF 인쇄 API에 대한 새로운 구현**
 
-<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx) 대신, Windows [인쇄 문서 패키지 API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx)를 호출합니다. 이러한 변경 내용이 애플리케이션 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
+<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](/windows/desktop/printdocs/xps-printing) 대신, Windows [인쇄 문서 패키지 API](/windows/desktop/printdocs/tailored-app-printing-api)를 호출합니다. 이러한 변경 내용이 애플리케이션 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
 
 <a name="v462" />
 
@@ -838,7 +832,8 @@ End Function
 
  **SHA-2 해시에 대한 SignedXml 지원**
 
- [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서는 RSA-SHA256, RSA-SHA384 및 RSA-SHA512 PKCS#1 시그니처 메서드, SHA256, SHA384 및 SHA512 참조 다이제스트 알고리즘에 대한 <xref:System.Security.Cryptography.Xml.SignedXml> 클래스 지원을 추가했습니다.
+ 
+  [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서는 RSA-SHA256, RSA-SHA384 및 RSA-SHA512 PKCS#1 시그니처 메서드, SHA256, SHA384 및 SHA512 참조 다이제스트 알고리즘에 대한 <xref:System.Security.Cryptography.Xml.SignedXml> 클래스 지원을 추가했습니다.
 
  URI 상수가 <xref:System.Security.Cryptography.Xml.SignedXml>에 모두 노출됩니다.
 
@@ -976,7 +971,8 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
  **그룹 정렬**
 
- <xref:System.Windows.Data.CollectionView> 개체를 사용하여 데이터를 그룹화하는 응용 프로그램에서는 이제 그룹 정렬 방법을 명시적으로 선언할 수 있습니다. 명시적으로 정렬하면 응용 프로그램에서 그룹을 동적으로 추가 또는 제거하거나 그룹화에 포함된 항목의 속성 값을 변경할 때 발생하는 직관적이지 않은 순서 지정 문제가 해결됩니다. 또한 그룹화 속성 비교를 전체 컬렉션 정렬에서 그룹화 정렬로 전환하여 그룹 만들기 프로세스의 성능을 향상할 수 있습니다.
+ 
+  <xref:System.Windows.Data.CollectionView> 개체를 사용하여 데이터를 그룹화하는 응용 프로그램에서는 이제 그룹 정렬 방법을 명시적으로 선언할 수 있습니다. 명시적으로 정렬하면 응용 프로그램에서 그룹을 동적으로 추가 또는 제거하거나 그룹화에 포함된 항목의 속성 값을 변경할 때 발생하는 직관적이지 않은 순서 지정 문제가 해결됩니다. 또한 그룹화 속성 비교를 전체 컬렉션 정렬에서 그룹화 정렬로 전환하여 그룹 만들기 프로세스의 성능을 향상할 수 있습니다.
 
  그룹 정렬을 지원하기 위해 새 <xref:System.ComponentModel.GroupDescription.SortDescriptions%2A?displayProperty=nameWithType> 및 <xref:System.ComponentModel.GroupDescription.CustomSort%2A?displayProperty=nameWithType> 속성에서 <xref:System.ComponentModel.GroupDescription> 개체에 의해 생성되는 그룹 컬렉션을 정렬하는 방법을 설명합니다. 이 방법은 동일하게 명명된 <xref:System.Windows.Data.ListCollectionView> 속성에서 데이터 항목을 정렬하는 방법을 설명하는 방식과 유사합니다.
 
@@ -1168,7 +1164,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 **샘플**
 
- MSDN에는 많은 [WPF 샘플](https://msdn.microsoft.com/library/ms771633.aspx)이 있습니다. 가장 인기 있는 샘플(사용량에 따라) 200개 이상이 [오픈 소스 GitHub 리포지토리](https://github.com/Microsoft/WPF-Samples)로 이동될 예정입니다. 끌어오기 요청을 보내거나 [GitHub 문제](https://github.com/Microsoft/WPF-Samples/issues)를 열어 샘플 개선에 참여해 주세요.
+ [Microsoft/WPF 샘플](https://github.com/Microsoft/WPF-Samples) GitHub 리포지토리에는 여러 가지 WPF 샘플이 있습니다. 끌어오기 요청을 보내거나 [GitHub 문제](https://github.com/Microsoft/WPF-Samples/issues)를 열어 샘플 개선에 참여해 주세요.
 
  **DirectX 확장**
 
@@ -1316,7 +1312,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
     - **암호화 업데이트**
 
-         <xref:System.Security.Cryptography?displayProperty=nameWithType> API가 [Windows CNG 암호화 API](/windows/desktop/SecCNG/cng-reference)를 지원하도록 업데이트되고 있습니다. 이전 버전의 .NET Framework는 <xref:System.Security.Cryptography?displayProperty=nameWithType> 구현의 기반으로 [이전 버전의 Windows 암호화 API](/windows/desktop/SecCrypto/cryptography-portal)를 전적으로 사용했습니다. CNG API는 특정 범주의 앱에 중요한 [최신 암호화 알고리즘](https://msdn.microsoft.com/library/windows/desktop/bb204775.aspx#suite_b_support)을 지원하기 때문에 CNG API에 대한 지원 요청을 받았습니다.
+         <xref:System.Security.Cryptography?displayProperty=nameWithType> API가 [Windows CNG 암호화 API](/windows/desktop/SecCNG/cng-reference)를 지원하도록 업데이트되고 있습니다. 이전 버전의 .NET Framework는 <xref:System.Security.Cryptography?displayProperty=nameWithType> 구현의 기반으로 [이전 버전의 Windows 암호화 API](/windows/desktop/SecCrypto/cryptography-portal)를 전적으로 사용했습니다. CNG API는 특정 범주의 앱에 중요한 [최신 암호화 알고리즘](/windows/desktop/SecCNG/cng-features#suite-b-support)을 지원하기 때문에 CNG API에 대한 지원 요청을 받았습니다.
 
          .NET Framework 4.6에는 Windows CNG 암호화 API를 지원하는 다음과 같은 새로운 향상 기능이 포함되어 있습니다.
 
@@ -1765,7 +1761,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성능 향상 및 기타 많은 기능을 바인딩하는 모델을 추가합니다. 자세한 내용은 다음 리소스를 참조하세요.
 
-- [ASP.NET 4.5 및 Visual Studio 2012](https://msdn.microsoft.com/library/hh420390(v=vs.110).aspx)
+- [ASP.NET 4.5 및 Visual Studio 2012](https://docs.microsoft.com/previous-versions/aspnet/hh420390(v=vs.110))
 
 - [Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보](/aspnet/visual-studio/overview/2013/release-notes)
 
