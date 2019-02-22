@@ -2,12 +2,12 @@
 title: 매개 변수 및 인수
 description: 에 대해 알아봅니다 F# 매개 변수를 정의 하 고 함수, 메서드 및 속성에 인수를 전달 하기 위한 언어 지원 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 08332ad9ab1c1a05f68ba27b2f1513ad0fe7c4d5
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 65e3b4f8ffb03e81104c963c5e2da7aba2e2b220
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612480"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583500"
 ---
 # <a name="parameters-and-arguments"></a>매개 변수 및 인수
 
@@ -140,7 +140,17 @@ type C =
         printfn "%s" message
 ```
 
-인수로 지정 된 값 `DefaultParameterValue` 형식과 일치 해야 매개 변수 즉, 다음은 허용 되지 않습니다.
+또한 기본 매개 변수 값으로 새 개체를 지정할 수 있습니다. 예를 들어 합니다 `Foo` 멤버는 선택적인 있을 수 있습니다 `CanceallationToken` 대신 입력으로:
+
+```fsharp
+open System.Threading
+open System.Runtime.InteropServices
+type C = 
+    static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
+        printfn "%A" ct
+```
+
+인수로 지정 된 값 `DefaultParameterValue` 매개 변수의 형식과 일치 해야 합니다. 예를 들어, 다음은 허용 되지 않습니다.
 
 ```fsharp
 type C =
@@ -206,6 +216,6 @@ a 1 10 Hello world 1 True
 true
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [멤버](members/index.md)

@@ -1,13 +1,13 @@
 ---
 title: 시퀀스
 description: 사용 하는 방법을 알아봅니다 F# 시퀀스는 많은 경우 데이터의 컬렉션을 정렬 하지만 모든 요소를 사용 하 여 반드시 예상 하지도 않습니다.
-ms.date: 05/16/2016
-ms.openlocfilehash: a86d22c834b377d4e92cfa610cdd3b498dd86dfa
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.date: 02/19/2019
+ms.openlocfilehash: a7791be5e8bd07d81fe9e890fc5896b181f0cb39
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611999"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583929"
 ---
 # <a name="sequences"></a>시퀀스
 
@@ -98,7 +98,7 @@ A *식 시퀀스* 시퀀스 계산 되는 식입니다. 시퀀스 식에는 여�
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/fssequences/snippet13.fs)]
 
-[Seq.unfold](https://msdn.microsoft.com/library/7d9232fc-742e-42bc-bdf7-6f130f0eff21) 상태를 사용 하 고 시퀀스의 각 후속 요소를 생성 하기 위해 변환 하는 계산 함수에서 시퀀스를 생성 합니다. 상태는 각 요소를 계산 하는 데 사용 되 고 각 요소는 계산 된 대로 변경할 수 있는 값만. 두 번째 인수를 `Seq.unfold` 는 시퀀스를 시작 하는 데 사용 되는 초기 값입니다. `Seq.unfold` 옵션 형식을 반환 하 여 시퀀스를 종료 하는 상태에 대 한 사용을 `None` 값입니다. 다음 코드는 시퀀스의 두 가지 예제를 보여 줍니다. `seq1` 하 고 `fib`를 통해 생성 된는 `unfold` 작업 합니다. 첫 번째 `seq1`, 단순한 100 까지의 숫자를 사용 하 여 간단한 시퀀스입니다. 두 번째 `fib`를 사용 하 여 `unfold` 피보나치 시퀀스를 계산 합니다. 피보나치 시퀀스의 각 요소는 이전 두 피보나치 수의 합 이기 때문에 상태 값은 시퀀스에서 이전 두 숫자의 구성 된 튜플입니다. 초기 값은 `(1,1)`, 시퀀스에서 처음 두 번호입니다.
+[Seq.unfold](https://msdn.microsoft.com/library/7d9232fc-742e-42bc-bdf7-6f130f0eff21) 상태를 사용 하 고 시퀀스의 각 후속 요소를 생성 하기 위해 변환 하는 계산 함수에서 시퀀스를 생성 합니다. 상태는 각 요소를 계산 하는 데 사용 되 고 각 요소는 계산 된 대로 변경할 수 있는 값만. 두 번째 인수를 `Seq.unfold` 는 시퀀스를 시작 하는 데 사용 되는 초기 값입니다. `Seq.unfold` 옵션 형식을 반환 하 여 시퀀스를 종료 하는 상태에 대 한 사용을 `None` 값입니다. 다음 코드는 시퀀스의 두 가지 예제를 보여 줍니다. `seq1` 하 고 `fib`를 통해 생성 된는 `unfold` 작업 합니다. 첫 번째 `seq1`, 단순한 20 까지의 숫자를 사용 하 여 간단한 시퀀스입니다. 두 번째 `fib`를 사용 하 여 `unfold` 피보나치 시퀀스를 계산 합니다. 피보나치 시퀀스의 각 요소는 이전 두 피보나치 수의 합 이기 때문에 상태 값은 시퀀스에서 이전 두 숫자의 구성 된 튜플입니다. 초기 값은 `(1,1)`, 시퀀스에서 처음 두 번호입니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/fssequences/snippet14.fs)]
 
@@ -245,7 +245,7 @@ Moving average:
 
 [Seq.fold](https://msdn.microsoft.com/library/30c4c95a-9563-4c96-bbe1-f7aacfd026e3), [Seq.reduce](https://msdn.microsoft.com/library/a2ad4f64-ac69-47d2-92f0-7173d9dfeae9), 및 [Seq.scan](https://msdn.microsoft.com/library/7e2d23e9-f153-4411-a884-b6d415ff627e) 목록에 사용할 수 있는 해당 함수와 같은 됩니다. 시퀀스는 지원이 요약 되어 있는 이러한 함수의 전체 변형은 하위 집합을 지원 합니다. 자세한 내용 및 예제를 참조 하세요 [나열](lists.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)
 - [F# 형식](fsharp-types.md)

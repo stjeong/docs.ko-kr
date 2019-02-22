@@ -10,12 +10,12 @@ helpviewer_keywords:
 - typography [WPF], packaging fonts with applications
 - packaging fonts with applications [WPF]
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
-ms.openlocfilehash: 52ed421ee92eed29bf16815d22e3ec7a8b718a84
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a822167ae5b2758a889c61eed5270e5abb01f961
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54632350"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583422"
 ---
 # <a name="packaging-fonts-with-applications"></a>애플리케이션과 함께 글꼴 패키징
 이 항목에서는 글꼴을 패키지 하는 방법에 대 한 개요를 제공 하면 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램입니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "54632350"
   
  [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 및 [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] 글꼴에는 글꼴에 대 한 글꼴 포함 라이선스 권한을 나타내는 fstype 이라는 형식 플래그가 포함 되어 있습니다. 그러나 이 형식 플래그는 문서에 저장된 포함된 글꼴만 참조하고 애플리케이션에 포함된 글꼴은 참조하지 않습니다. 글꼴 만들어 포함 되는 글꼴에 대 한 권한을 검색할 수 있습니다는 <xref:System.Windows.Media.GlyphTypeface> 개체 및 참조 해당 <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> 속성입니다. "os/2 및 Windows 메트릭" 섹션을 참조 합니다 [OpenType 사양](https://www.microsoft.com/typography/otspec/os2.htm) fsType 플래그에 대 한 자세한 내용은 합니다.  
   
- 합니다 [Microsoft 입력 체계](https://www.microsoft.com/typography/links/) 웹 사이트에 도움이 될 수 있는 사용자 지정 작업에 대 한 글꼴 공급 업체를 찾거나 특정 글꼴 공급 업체를 찾을 연락처 정보가 포함 됩니다.  
+ 합니다 [Microsoft 입력 체계](https://docs.microsoft.com/typography/) 웹 사이트에 도움이 될 수 있는 사용자 지정 작업에 대 한 글꼴 공급 업체를 찾거나 특정 글꼴 공급 업체를 찾을 연락처 정보가 포함 됩니다.  
   
 <a name="adding_fonts_as_content_items"></a>   
 ## <a name="adding-fonts-as-content-items"></a>콘텐츠 항목으로 글꼴 추가  
@@ -175,7 +175,7 @@ ms.locfileid: "54632350"
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Documents.Typography>
 - <xref:System.Windows.Media.FontFamily>
-- [Microsoft 입력 체계: 링크, 뉴스 및 연락처](https://www.microsoft.com/typography/links/)
+- [Microsoft 입력 체계: 링크, 뉴스 및 연락처](https://docs.microsoft.com/typography/)
 - [OpenType 사양](https://www.microsoft.com/typography/otspec/)
 - [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
 - [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)

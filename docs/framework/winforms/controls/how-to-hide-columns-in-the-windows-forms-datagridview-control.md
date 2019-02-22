@@ -9,19 +9,19 @@ helpviewer_keywords:
 - data grids [Windows Forms], hiding columns
 - columns [Windows Forms], hiding
 ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
-ms.openlocfilehash: 673c852b89518e2cb4df6ea98a337acd60bc42cb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 726fa8ee05498ae365409c8330c6e1d9283ae9f5
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54659672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583275"
 ---
 # <a name="how-to-hide-columns-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 열 숨기기
 Windows Forms <xref:System.Windows.Forms.DataGridView> 컨트롤에서 사용할 수 있는 열 중 일부만 표시하려는 경우도 있습니다. 예를 들어 관리 자격 증명을 가진 사용자에게 직원 급여 열을 표시하고 다른 사용자로부터는 숨기려 할 수 있습니다. 또는 많은 열을 포함하지만 이 중에서 일부만 표시하려는 데이터 소스에 컨트롤을 바인딩할 수 있습니다. 이 경우 일반적으로 표시하지 않으려는 열을 숨기는 대신 제거합니다.  
   
  <xref:System.Windows.Forms.DataGridView> 컨트롤에서 열의 <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> 속성 값은 해당 열이 표시되는지 여부를 결정합니다.  
   
- Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [방법: 열에는 Windows Forms DataGridView 컨트롤 디자이너를 사용 하 여](https://msdn.microsoft.com/library/kaswfbes\(v=vs.110\))입니다.  
+ Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [방법: 열에는 Windows Forms DataGridView 컨트롤 디자이너를 사용 하 여](hide-columns-in-the-datagrid-using-the-designer.md)입니다.  
   
 ### <a name="to-hide-a-column-programmatically"></a>프로그래밍 방식으로 열을 숨기려면  
   
@@ -35,7 +35,8 @@ Windows Forms <xref:System.Windows.Forms.DataGridView> 컨트롤에서 사용할
   
 -   이름이 `CustomerID`인 열을 포함하는 이름이 `dataGridView1`인 <xref:System.Windows.Forms.DataGridView> 컨트롤  
   
--   <xref:System?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
+-   
+  <xref:System?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Forms.DataGridView>
