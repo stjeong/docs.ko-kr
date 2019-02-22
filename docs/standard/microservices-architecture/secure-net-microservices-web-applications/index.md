@@ -19,7 +19,7 @@ ms.date: 10/19/2018
 
 **그림 9-1**. API 게이트웨이를 통한 중앙 집중식 인증
 
-서비스에 직접 액세스할 수 있는 경우 Azure Active Directory 또는 STS(보안 토큰 서비스)로 작동하는 전용 인증 마이크로 서비스와 같은 인증 서비스를 사용하여 사용자를 인증할 수 있습니다. 신뢰 결정은 보안 토큰 또는 쿠키를 통해 서비스 간에 공유됩니다. (필요한 경우 [데이터 보호 서비스](/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)를 통해 ASP.NET에서 이러한 토큰을 애플리케이션 간에 공유할 수 있습니다.) 그림 9-2에서는 이 패턴을 보여줍니다.
+서비스에 직접 액세스할 수 있는 경우 Azure Active Directory 또는 STS(보안 토큰 서비스)로 작동하는 전용 인증 마이크로 서비스와 같은 인증 서비스를 사용하여 사용자를 인증할 수 있습니다. 신뢰 결정은 보안 토큰 또는 쿠키를 통해 서비스 간에 공유됩니다. (필요한 경우 [쿠키 공유](/aspnet/core/security/cookie-sharing)를 구현하여 이러한 토큰을 ASP.NET Core 애플리케이션 간에 공유할 수 있습니다.) 그림 9-2에서는 이 패턴을 보여줍니다.
 
 ![마이크로 서비스에 직접 액세스하는 경우 인증 및 권한 부여를 포함하는 트러스트는 마이크로 서비스 간에 공유되고, 전용 마이크로 서비스에서 발급한 보안 토큰에서 처리됩니다.](./media/image2.png)
 
@@ -271,7 +271,7 @@ JWT 전달자 인증 미들웨어는 인증 기관을 사용할 수 없는 경�
 ## <a name="additional-resources"></a>추가 자료
 
 - **애플리케이션 간 쿠키 공유하기** \
-  [*https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing\#sharing-authentication-cookies-between-applications*](/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)
+  [*https://docs.microsoft.com/aspnet/core/security/cookie-sharing*](/aspnet/core/security/cookie-sharing)
 
 - **ID 소개** \
   [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](/aspnet/core/security/authentication/identity)
