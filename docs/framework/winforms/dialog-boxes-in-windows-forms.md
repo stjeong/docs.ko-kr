@@ -6,42 +6,27 @@ helpviewer_keywords:
 - Windows Forms dialog boxes
 - dialogs [Windows Forms], using in Windows Forms
 ms.assetid: d43d022b-451b-490d-9386-dc79d98fbf8a
-ms.openlocfilehash: ef07c087ca43efaf99231453fcb56af0db24234a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: b218be7d845ede7661ba31a1023ec12ec15231ab
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864257"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664760"
 ---
-# <a name="dialog-boxes-in-windows-forms"></a><span data-ttu-id="58f21-102">Windows Forms 대화 상자</span><span class="sxs-lookup"><span data-stu-id="58f21-102">Dialog Boxes in Windows Forms</span></span>
-<span data-ttu-id="58f21-103">대화 상자는 사용자와 상호 작용하고 정보를 검색하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-103">Dialog boxes are used to interact with the user and retrieve information.</span></span> <span data-ttu-id="58f21-104">간단히 말해서 대화 상자는 <xref:System.Windows.Forms.FormBorderStyle> 열거형 속성이 `FixedDialog`로 설정된 폼입니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-104">In simple terms, a dialog box is a form with its <xref:System.Windows.Forms.FormBorderStyle> enumeration property set to `FixedDialog`.</span></span> <span data-ttu-id="58f21-105">Visual Studio에서 Windows Forms 디자이너를 사용 하 여 사용자 고유의 사용자 지정 대화 상자를 생성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-105">You can construct your own custom dialog boxes by using the Windows Forms Designer in Visual Studio.</span></span> <span data-ttu-id="58f21-106">`Label`, `Textbox` 및 `Button`과 같은 컨트롤을 추가하여 특정 필요에 맞게 대화 상자를 사용자 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-106">Add controls such as `Label`, `Textbox`, and `Button` to customize dialog boxes to your specific needs.</span></span> <span data-ttu-id="58f21-107">합니다 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 와 같은 미리 정의 된 대화 상자에도 포함 **파일 열기** 및 응용 프로그램에 사용할 수 있는 메시지 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-107">The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also includes predefined dialog boxes, such as **File Open** and message boxes, which you can adapt for your own applications.</span></span> <span data-ttu-id="58f21-108">자세한 내용은 [대화 상자 컨트롤 및 구성 요소](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-108">For more information, see [Dialog-Box Controls and Components](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md).</span></span>  
+# <a name="dialog-boxes-in-windows-forms"></a><span data-ttu-id="c02d0-102">Windows Forms 대화 상자</span><span class="sxs-lookup"><span data-stu-id="c02d0-102">Dialog Boxes in Windows Forms</span></span>
+<span data-ttu-id="c02d0-103">대화 상자는 사용자와 상호 작용하고 정보를 검색하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-103">Dialog boxes are used to interact with the user and retrieve information.</span></span> <span data-ttu-id="c02d0-104">간단히 말해서 대화 상자는 <xref:System.Windows.Forms.FormBorderStyle> 열거형 속성이 `FixedDialog`로 설정된 폼입니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-104">In simple terms, a dialog box is a form with its <xref:System.Windows.Forms.FormBorderStyle> enumeration property set to `FixedDialog`.</span></span> <span data-ttu-id="c02d0-105">Visual Studio에서 Windows Forms 디자이너를 사용 하 여 사용자 고유의 사용자 지정 대화 상자를 생성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-105">You can construct your own custom dialog boxes by using the Windows Forms Designer in Visual Studio.</span></span> <span data-ttu-id="c02d0-106">
+  `Label`, `Textbox` 및 `Button\`과 같은 컨트롤을 추가하여 특정 필요에 맞게 대화 상자를 사용자 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-106">Add controls such as `Label`, `Textbox`, and `Button` to customize dialog boxes to your specific needs.</span></span> <span data-ttu-id="c02d0-107">합니다 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 와 같은 미리 정의 된 대화 상자에도 포함 **파일 열기** 및 응용 프로그램에 사용할 수 있는 메시지 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-107">The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also includes predefined dialog boxes, such as **File Open** and message boxes, which you can adapt for your own applications.</span></span> <span data-ttu-id="c02d0-108">자세한 내용은 [대화 상자 컨트롤 및 구성 요소](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-108">For more information, see [Dialog-Box Controls and Components](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="58f21-109">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="58f21-109">In This Section</span></span>  
- [<span data-ttu-id="58f21-110">방법: Windows Forms 대화 상자 표시</span><span class="sxs-lookup"><span data-stu-id="58f21-110">How to: Display Dialog Boxes for Windows Forms</span></span>](../../../docs/framework/winforms/how-to-display-dialog-boxes-for-windows-forms.md)  
- <span data-ttu-id="58f21-111">대화 상자 표시에 대한 지침을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-111">Gives directions for showing dialog boxes.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="c02d0-109">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="c02d0-109">In This Section</span></span>  
+ [<span data-ttu-id="c02d0-110">방법: Windows Forms 대화 상자 표시</span><span class="sxs-lookup"><span data-stu-id="c02d0-110">How to: Display Dialog Boxes for Windows Forms</span></span>](../../../docs/framework/winforms/how-to-display-dialog-boxes-for-windows-forms.md)  
+ <span data-ttu-id="c02d0-111">대화 상자 표시에 대한 지침을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-111">Gives directions for showing dialog boxes.</span></span>  
   
--   <span data-ttu-id="58f21-112">[방법: 선택적으로 여러 속성을 사용 하 여 대화 상자 정보 검색](https://msdn.microsoft.com/library/56taefba\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-112">[How to: Retrieve Dialog Box Information Selectively Using Multiple Properties](https://msdn.microsoft.com/library/56taefba\(v=vs.110\))</span></span>  
+## <a name="related-sections"></a><span data-ttu-id="c02d0-112">관련 단원</span><span class="sxs-lookup"><span data-stu-id="c02d0-112">Related Sections</span></span>  
+ [<span data-ttu-id="c02d0-113">대화 상자 컨트롤 및 구성 요소</span><span class="sxs-lookup"><span data-stu-id="c02d0-113">Dialog-Box Controls and Components</span></span>](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)  
+ <span data-ttu-id="c02d0-114">미리 정의된 대화 상자 컨트롤을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-114">Lists the predefined dialog box controls.</span></span>  
   
--   <span data-ttu-id="58f21-113">[방법: 대화 상자의 부모 폼에서 정보를 검색 합니다.](https://msdn.microsoft.com/library/k70t19bb\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-113">[How to: Retrieve Information from the Parent Form of a Dialog Box](https://msdn.microsoft.com/library/k70t19bb\(v=vs.110\))</span></span>  
+ [<span data-ttu-id="c02d0-115">Windows Forms의 모양 변경</span><span class="sxs-lookup"><span data-stu-id="c02d0-115">Changing the Appearance of Windows Forms</span></span>](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
+ <span data-ttu-id="c02d0-116">Windows Forms 응용 프로그램의 모양을 변경하는 방법에 대해 설명하는 항목의 링크가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-116">Contains links to topics that describe how to change the appearance of Windows Forms applications.</span></span>  
   
--   <span data-ttu-id="58f21-114">[대화 상자에 사용자 입력](https://msdn.microsoft.com/library/1s9ws53w\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-114">[User Input to Dialog Boxes](https://msdn.microsoft.com/library/1s9ws53w\(v=vs.110\))</span></span>  
-  
--   <span data-ttu-id="58f21-115">[방법: 대화 상자의 결과 검색](https://msdn.microsoft.com/library/40x40td1\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-115">[How to: Retrieve the Result for Dialog Boxes](https://msdn.microsoft.com/library/40x40td1\(v=vs.110\))</span></span>  
-  
--   <span data-ttu-id="58f21-116">[연습: 대화 상자 정보를 집합적으로 개체를 사용 하 여 검색](https://msdn.microsoft.com/library/cakx2hdw\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-116">[Walkthrough: Retrieving Dialog Box Information Collectively Using Objects](https://msdn.microsoft.com/library/cakx2hdw\(v=vs.110\))</span></span>  
-  
--   <span data-ttu-id="58f21-117">[방법: 대화 상자 닫기 및 사용자 입력 유지](https://msdn.microsoft.com/library/65ad5907\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-117">[How to: Close Dialog Boxes and Retain User Input](https://msdn.microsoft.com/library/65ad5907\(v=vs.110\))</span></span>  
-  
--   <span data-ttu-id="58f21-118">[방법: 디자인 타임에 대화 상자 만들기](https://msdn.microsoft.com/library/55cz5x2c\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-118">[How to: Create Dialog Boxes at Design Time](https://msdn.microsoft.com/library/55cz5x2c\(v=vs.110\))</span></span>  
-  
--   <span data-ttu-id="58f21-119">[방법: 메시지 상자를 표시 합니다.](https://msdn.microsoft.com/library/3tt9e94f\(v=vs.110\))</span><span class="sxs-lookup"><span data-stu-id="58f21-119">[How to: Display Message Boxes](https://msdn.microsoft.com/library/3tt9e94f\(v=vs.110\))</span></span>  
-  
-## <a name="related-sections"></a><span data-ttu-id="58f21-120">관련 단원</span><span class="sxs-lookup"><span data-stu-id="58f21-120">Related Sections</span></span>  
- [<span data-ttu-id="58f21-121">대화 상자 컨트롤 및 구성 요소</span><span class="sxs-lookup"><span data-stu-id="58f21-121">Dialog-Box Controls and Components</span></span>](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)  
- <span data-ttu-id="58f21-122">미리 정의된 대화 상자 컨트롤을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-122">Lists the predefined dialog box controls.</span></span>  
-  
- [<span data-ttu-id="58f21-123">Windows Forms의 모양 변경</span><span class="sxs-lookup"><span data-stu-id="58f21-123">Changing the Appearance of Windows Forms</span></span>](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
- <span data-ttu-id="58f21-124">Windows Forms 응용 프로그램의 모양을 변경하는 방법에 대해 설명하는 항목의 링크가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-124">Contains links to topics that describe how to change the appearance of Windows Forms applications.</span></span>  
-  
- [<span data-ttu-id="58f21-125">TabControl 컨트롤 개요</span><span class="sxs-lookup"><span data-stu-id="58f21-125">TabControl Control Overview</span></span>](../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
- <span data-ttu-id="58f21-126">탭 컨트롤을 대화 상자에 통합하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="58f21-126">Explains how you incorporate the tab control into a dialog box.</span></span>
+ [<span data-ttu-id="c02d0-117">TabControl 컨트롤 개요</span><span class="sxs-lookup"><span data-stu-id="c02d0-117">TabControl Control Overview</span></span>](../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
+ <span data-ttu-id="c02d0-118">탭 컨트롤을 대화 상자에 통합하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c02d0-118">Explains how you incorporate the tab control into a dialog box.</span></span>
