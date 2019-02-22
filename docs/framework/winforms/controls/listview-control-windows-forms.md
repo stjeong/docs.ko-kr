@@ -11,12 +11,12 @@ helpviewer_keywords:
 - ListView control [Windows Forms]
 - list controls [Windows Forms], List view
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
-ms.openlocfilehash: 4472d2a46b27c75d06c5e4cd6fbab18842ed111c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 207b5fcd8bb1242be180898a22ffacf6e5ac9ab1
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54591944"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664889"
 ---
 # <a name="listview-control-windows-forms"></a>ListView 컨트롤(Windows Forms)
 Windows Forms `ListView` 컨트롤은 아이콘이 포함된 항목 목록을 표시합니다. 목록 뷰를 사용하여 Windows 탐색기의 오른쪽 창과 같은 사용자 인터페이스를 만들 수 있습니다.  
@@ -81,9 +81,6 @@ Windows Forms `ListView` 컨트롤은 아이콘이 포함된 항목 목록을 �
   
  [방법: Windows Forms로 다중 창 사용자 인터페이스 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  여러 창으로 Windows Form의 레이아웃을 작성하기 위한 지침을 제공합니다.  
-  
- [Windows XP 기능 및 Windows Forms 컨트롤](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
- <xref:System.Windows.Forms.ListView> 컨트롤에 적용되는 Windows XP 관련 기능을 활용하는 방법을 설명합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

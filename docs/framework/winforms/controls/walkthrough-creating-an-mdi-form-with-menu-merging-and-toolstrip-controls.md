@@ -14,15 +14,16 @@ helpviewer_keywords:
 - MDI forms [Windows Forms], creating
 - MDI forms [Windows Forms], walkthroughs
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
-ms.openlocfilehash: 5924d37d946a8279297ecf479b621f6f827dd5a3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f4e6bc0faf0dc088d919ee929a7bf320d6e169c4
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54536243"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664954"
 ---
 # <a name="walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls"></a>연습: 메뉴 병합 및 ToolStrip 컨트롤을 사용 하 여 MDI 폼 만들기
-<xref:System.Windows.Forms?displayProperty=nameWithType> 네임스페이스는 MDI(다중 문서 인터페이스) 응용 프로그램을 지원하고 <xref:System.Windows.Forms.MenuStrip> 컨트롤은 메뉴 병합을 지원합니다. MDI 폼은 <xref:System.Windows.Forms.ToolStrip> 컨트롤일 수도 있습니다.  
+
+  <xref:System.Windows.Forms?displayProperty=nameWithType> 네임스페이스는 MDI(다중 문서 인터페이스) 응용 프로그램을 지원하고 <xref:System.Windows.Forms.MenuStrip> 컨트롤은 메뉴 병합을 지원합니다. MDI 폼은 <xref:System.Windows.Forms.ToolStrip> 컨트롤일 수도 있습니다.  
   
  이 연습에 사용 하는 방법을 보여 줍니다. <xref:System.Windows.Forms.ToolStripPanel> MDI 폼을 사용 하 여 컨트롤입니다. 폼은 자식 메뉴와 메뉴 병합도 지원합니다. 다음 태스크를이 연습에 설명 되어 있습니다.  
   
@@ -38,7 +39,7 @@ ms.locfileid: "54536243"
   
  메뉴 병합 및 이동 가능한 지 원하는 MDI 폼 작업을 완료 하면 더 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다.  
   
- 참조를 단일 목록으로이 항목의 코드를 복사할 [방법: 메뉴 병합 및 ToolStrip 컨트롤을 사용 하 여 MDI 폼 만들기](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)합니다.  
+ 이 항목의 코드를 단일 목록으로 복사하려면 [방법: 메뉴 병합 및 ToolStrip 컨트롤을 사용 하 여 MDI 폼 만들기](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
@@ -107,7 +108,7 @@ ms.locfileid: "54536243"
   
 1.  라는 새 폼을 추가 `ChildForm` 프로젝트에 있습니다.  
   
-     자세한 내용은 [방법: Windows Forms 프로젝트에 추가](https://msdn.microsoft.com/library/3d7bb25f-fd90-47cf-9378-fa0d764686c1)합니다.  
+     자세한 내용은 [방법: Windows Forms 프로젝트에 추가](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y2xxdce3(v=vs.100))합니다.  
   
 2.  **도구 상자**를 끌어를 <xref:System.Windows.Forms.MenuStrip> 컨트롤을 자식 폼입니다.  
   
@@ -115,7 +116,7 @@ ms.locfileid: "54536243"
   
 4.  에 **항목 컬렉션 편집기** 대화 상자에서 새 <xref:System.Windows.Forms.ToolStripMenuItem> 라는 **ChildMenuItem** 자식 메뉴.  
   
-     자세한 내용은 [ToolStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/e681f3ab-94ba-4b2b-ac64-1dfad46caa25)합니다.  
+     자세한 내용은 [ToolStrip 항목 컬렉션 편집기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100))합니다.  
   
 ## <a name="testing-the-form"></a>형식 테스트  
   

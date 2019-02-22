@@ -10,19 +10,21 @@ helpviewer_keywords:
 - data grids [Windows Forms], font styles
 - data grids [Windows Forms], color styles
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
-ms.openlocfilehash: a9ae5ed5222179d4b3872478ac94e2ec3fc61c28
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1855c7c95638576bf13897e023e07ade5b977d7d
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636146"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664018"
 ---
 # <a name="how-to-set-font-and-color-styles-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤의 글꼴 및 색 스타일 설정
-<xref:System.Windows.Forms.DataGridViewCellStyle> 클래스의 속성을 설정하여 <xref:System.Windows.Forms.DataGridView> 컨트롤 내에 있는 셀의 모양을 지정할 수 있습니다. <xref:System.Windows.Forms.DataGridView> 클래스 및 해당 도우미 클래스의 다양한 속성에서 이 클래스의 인스턴스를 검색하거나 이러한 속성에 할당하기 위해 <xref:System.Windows.Forms.DataGridViewCellStyle> 개체를 인스턴스화할 수 있습니다.  
+
+  <xref:System.Windows.Forms.DataGridViewCellStyle> 클래스의 속성을 설정하여 <xref:System.Windows.Forms.DataGridView> 컨트롤 내에 있는 셀의 모양을 지정할 수 있습니다. <xref:System.Windows.Forms.DataGridView> 클래스 및 해당 도우미 클래스의 다양한 속성에서 이 클래스의 인스턴스를 검색하거나 이러한 속성에 할당하기 위해 <xref:System.Windows.Forms.DataGridViewCellStyle> 개체를 인스턴스화할 수 있습니다.  
   
- 다음 절차에서는 <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> 속성을 사용한 셀 모양의 기본 사용자 지정을 보여 줍니다. 컨트롤의 모든 셀은 행, 열 또는 셀 수준에서 재정의되지 않는 한 이 속성을 통해 지정된 스타일을 상속합니다. 스타일 상속의 예제를 참조 하세요. [방법: Windows Forms DataGridView 컨트롤에 기본 셀 스타일 설정](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)합니다. <xref:System.Windows.Forms.DataGridViewCellStyle> 클래스의 추가 사용에 대한 자세한 내용은 참고 항목 섹션에 나열된 항목을 참조하세요.  
+ 다음 절차에서는 <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> 속성을 사용한 셀 모양의 기본 사용자 지정을 보여 줍니다. 컨트롤의 모든 셀은 행, 열 또는 셀 수준에서 재정의되지 않는 한 이 속성을 통해 지정된 스타일을 상속합니다. 스타일 상속의 예제를 참조 하세요. [방법: Windows Forms DataGridView 컨트롤에 기본 셀 스타일 설정](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)합니다. 
+  <xref:System.Windows.Forms.DataGridViewCellStyle> 클래스의 추가 사용에 대한 자세한 내용은 참고 항목 섹션에 나열된 항목을 참조하세요.  
   
- Visual Studio에서는 이 작업이 광범위하게 지원됩니다.  또한 참조 [방법: Windows Forms DataGridView 컨트롤 디자이너를 사용 하 여 기본 셀 스타일 및 데이터 형식 설정](https://msdn.microsoft.com/library/95y5fz2x\(v=vs.110\))합니다.  
+ Visual Studio에서는 이 작업이 광범위하게 지원됩니다.  또한 참조 [방법: Windows Forms DataGridView 컨트롤 디자이너를 사용 하 여 기본 셀 스타일 및 데이터 형식 설정](default-cell-styles-datagridview.md)합니다.  
   
 ### <a name="to-specify-the-font-used-by-datagridview-cells"></a>DataGridView 셀에서 사용되는 글꼴을 지정하려면  
   
@@ -54,7 +56,8 @@ ms.locfileid: "54636146"
   
 -   `dataGridView1`이라는 <xref:System.Windows.Forms.DataGridView> 컨트롤  
   
--   <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
+-   
+  <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  최대 확장성을 얻으려면 각 요소에 대한 스타일 속성을 별도로 설정하는 대신 동일한 스타일을 사용하는 여러 행, 열 또는 셀에서 <xref:System.Windows.Forms.DataGridViewCellStyle> 개체를 공유해야 합니다. 자세한 내용은 [Windows Forms DataGridView 컨트롤의 크기 조정에 대 한 모범 사례](../../../../docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md)합니다.  

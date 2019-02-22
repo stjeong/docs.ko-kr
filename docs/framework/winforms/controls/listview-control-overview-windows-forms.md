@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ListView control [Windows Forms], about ListView control
 - list views
 ms.assetid: c9ef56c1-3bb1-4101-9f4e-e95e720f2756
-ms.openlocfilehash: 3ac1bc5482d00419ec8a41815633150e30b4039a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8ceed741e72dae46f7f791b7564b7f5c38f82bc2
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54613989"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664629"
 ---
 # <a name="listview-control-overview-windows-forms"></a>ListView 컨트롤 개요(Windows Forms)
 Windows Forms <xref:System.Windows.Forms.ListView> 컨트롤은 아이콘이 포함된 항목 목록을 표시합니다. 목록 뷰를 사용하여 Windows 탐색기의 오른쪽 창과 같은 사용자 인터페이스를 만들 수 있습니다. 컨트롤에는 네 가지 보기 모드에 있습니다. 큰 아이콘, 작은 아이콘, 목록 및 세부 정보입니다.  
@@ -23,7 +23,7 @@ Windows Forms <xref:System.Windows.Forms.ListView> 컨트롤은 아이콘이 포
 > [!NOTE]
 >  타일 추가 뷰 모드를만 Windows XP 및 Windows Server 2003 운영 체제에서 제공 됩니다. 자세한 내용은 [방법: Forms ListView 컨트롤을 Windows의 Tile 보기 사용](../../../../docs/framework/winforms/controls/how-to-enable-tile-view-in-a-windows-forms-listview-control.md)합니다.  
   
- 큰 아이콘 모드를 표시 된 항목 텍스트 옆에 있는 큰 아이콘 항목이는 컨트롤 충분히 큰 경우 여러 열에 나타납니다. SmallIcon 모드를 작은 아이콘을 표시 하는 점을 제외 하면 동일 합니다. 목록 모드를 작은 아이콘을 표시 하지만 항상 단일 열입니다. 자세히 모드는 여러 열에서 항목을 표시합니다. 세부 정보를 참조 하세요. [방법: 열에는 Windows Forms ListView 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md)합니다. 보기 모드에서 결정 됩니다는 <xref:System.Windows.Forms.ListView.View%2A> 속성입니다. 보기 모드의 모든 이미지 목록에서 이미지를 표시할 수 있습니다. 세부 정보를 참조 하세요. [방법: Windows Forms ListView 컨트롤에 대 한 아이콘을 표시](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md)합니다.  
+ 큰 아이콘 모드를 표시 된 항목 텍스트 옆에 있는 큰 아이콘 항목이는 컨트롤 충분히 큰 경우 여러 열에 나타납니다. SmallIcon 모드를 작은 아이콘을 표시 하는 점을 제외 하면 동일 합니다. 목록 모드를 작은 아이콘을 표시 하지만 항상 단일 열입니다. 자세히 모드는 여러 열에서 항목을 표시합니다. 자세한 내용은 [방법: 열에는 Windows Forms ListView 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md)합니다. 보기 모드에서 결정 됩니다는 <xref:System.Windows.Forms.ListView.View%2A> 속성입니다. 보기 모드의 모든 이미지 목록에서 이미지를 표시할 수 있습니다. 자세한 내용은 [방법: Windows Forms ListView 컨트롤에 대 한 아이콘을 표시](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md)합니다.  
   
  다음 표에서 몇 가지를 <xref:System.Windows.Forms.ListView> 멤버와는 사용할 수 있는 보기입니다.  
   
@@ -45,7 +45,7 @@ Windows Forms <xref:System.Windows.Forms.ListView> 컨트롤은 아이콘이 포
   
  <xref:System.Windows.Forms.ListView.Activation%2A> 속성 동작 유형을 목록에서 항목을 활성화 하기 위해 사용자를 수행 해야 결정: 옵션은 <xref:System.Windows.Forms.ItemActivation.Standard>를 <xref:System.Windows.Forms.ItemActivation.OneClick>, 및 <xref:System.Windows.Forms.ItemActivation.TwoClick>합니다. <xref:System.Windows.Forms.ItemActivation.OneClick> 활성화 항목을 활성화 하려면 한 번의 클릭을 해야 합니다. <xref:System.Windows.Forms.ItemActivation.TwoClick> 활성화의 경우 항목을 활성화 하려면 두 번 클릭 항목 텍스트의 색을 변경 하는 한 번의 클릭 합니다. <xref:System.Windows.Forms.ItemActivation.Standard> 활성화의 경우 항목을 활성화 하려면 두 번 클릭 하지만 항목 모양은 변경 되지 않습니다.  
   
- <xref:System.Windows.Forms.ListView> 그룹화, 바둑판식 뷰 및 삽입 표시를 포함 하 여 Windows XP 플랫폼에서도 지 원하는 시각적 스타일 및 기타 기능을 사용할 수 있는 컨트롤입니다. 자세한 내용은 [Windows XP 기능 및 Windows Forms 컨트롤](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)합니다.  
+ <xref:System.Windows.Forms.ListView> 그룹화, 바둑판식 뷰 및 삽입 표시를 포함 하 여 Windows XP 플랫폼에서도 지 원하는 시각적 스타일 및 기타 기능을 사용할 수 있는 컨트롤입니다.  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Windows.Forms.ListView>

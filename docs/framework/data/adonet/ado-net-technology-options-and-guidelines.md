@@ -2,12 +2,12 @@
 title: ADO.NET 기술 옵션 및 지침
 ms.date: 03/30/2017
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
-ms.openlocfilehash: e43fa3ae893a8a18e35693cde364d227e7959398
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: b24e06fef52397a550717893876e1e1cf33f371f
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55828477"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664798"
 ---
 # <a name="adonet-technology-options-and-guidelines"></a>ADO.NET 기술 옵션 및 지침
 ADO.NET 데이터 플랫폼은 여러 릴리스에 걸쳐 만들어진 전략으로, 개발자가 개념적 엔터티 데이터 모델을 기반으로 프로그래밍할 수 있도록 하여 필요한 코딩 및 유지 관리 작업을 줄일 수 있도록 합니다. 이 플랫폼에는 ADO.NET Entity Framework와 관련 기술이 포함됩니다.  
@@ -28,7 +28,7 @@ ADO.NET 데이터 플랫폼은 여러 릴리스에 걸쳐 만들어진 전략으
  Entity SQL은 엔터티 데이터 모델과 상호 작용하도록 디자인된 텍스트 기반의 쿼리 언어입니다. Entity SQL은 상속, 복합 형식 및 명시적 관계와 같은 높은 수준의 모델링 개념 측면에서 쿼리할 수 있는 생성자가 포함된 SQL 언어입니다. 개발자가 개체 서비스와 함께 Entity SQL을 직접 사용할 수도 있습니다. 자세한 내용은 [Entity SQL 언어](../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)합니다.  
   
 ### <a name="entityclient"></a>EntityClient  
- EntityClient는 엔터티 데이터 모델과 상호 작용하는 데 사용할 수 있는 새 .NET Framework 데이터 공급자입니다. EntityClient는 .NET Framework 데이터 공급자의 패턴에 따라 <xref:System.Data.EntityClient.EntityConnection>를 반환하는 <xref:System.Data.EntityClient.EntityCommand> 및 <xref:System.Data.EntityClient.EntityDataReader> 개체를 노출합니다. EntityClient는 Entity SQL 언어와 함께 사용되어 저장소별 데이터 공급자에 대한 유연한 매핑을 제공합니다. 자세한 내용은 [EntityClient and Entity SQL](https://msdn.microsoft.com/library/49202ab9-ac98-4b4b-a05c-140e422bf527)을 참조하세요.  
+ EntityClient는 엔터티 데이터 모델과 상호 작용하는 데 사용할 수 있는 새 .NET Framework 데이터 공급자입니다. EntityClient는 .NET Framework 데이터 공급자의 패턴에 따라 <xref:System.Data.EntityClient.EntityConnection>를 반환하는 <xref:System.Data.EntityClient.EntityCommand> 및 <xref:System.Data.EntityClient.EntityDataReader> 개체를 노출합니다. EntityClient는 Entity SQL 언어와 함께 사용되어 저장소별 데이터 공급자에 대한 유연한 매핑을 제공합니다. 자세한 내용은 [Entity Framework 용 EntityClient 공급자](./ef/entityclient-provider-for-the-entity-framework.md)합니다.  
   
 ### <a name="entity-data-model-tools"></a>엔터티 데이터 모델 도구  
  Entity Framework는 EDM 응용 프로그램을 쉽게 작성할 수 있도록 명령줄 도구, 마법사 및 디자이너를 제공합니다. EntityDataSource 컨트롤은 EDM에 기반한 데이터 바인딩 시나리오를 지원합니다. EntityDataSource 컨트롤의 프로그래밍 화면은 Visual Studio에 포함된 다른 데이터 소스 컨트롤과 유사합니다. 자세한 내용은 [ADO.NET 엔터티 데이터 모델 도구](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))합니다.  

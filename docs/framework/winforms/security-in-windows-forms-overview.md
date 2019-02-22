@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [Windows Forms], about security
 - access control [Windows Forms], Windows Forms
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
-ms.openlocfilehash: a19e6d2ed39c21301b3409cdeb55a569f0d2eff4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a9e90ebc941d07c24f7b14ecf72e5a764bf48d77
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54703382"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664980"
 ---
 # <a name="security-in-windows-forms-overview"></a>Windows Forms의 보안 개요
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 릴리스 이전에는 사용자 컴퓨터에서 실행되는 모든 코드가 컴퓨터의 사용자와 동일한 리소스 액세스 권한을 가졌습니다. 예를 들어 사용자가 파일 시스템에 액세스할 수 있는 경우 코드에서 파일 시스템에 액세스할 수 있었습니다. 사용자가 데이터베이스에 액세스할 수 있는 경우 코드에서 해당 데이터베이스에 액세스할 수 있었습니다. 이러한 권한 또는 사용 권한은 사용자가 명시적으로 로컬 컴퓨터에 설치한 실행 파일의 코드에는 적합할 수 있지만 인터넷 또는 로컬 인트라넷에서 들어오는 잠재적 악성 코드에는 적합하지 않을 수 있습니다. 이 코드는 권한 없이 사용자의 컴퓨터 리소스에 액세스할 수 없어야 합니다.  
@@ -23,14 +23,14 @@ ms.locfileid: "54703382"
  Windows Forms 응용 프로그램을 배포하는 데 사용하는 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 기술은 부분 신뢰, 완전 신뢰 또는 높은 권한으로 부분 신뢰에서 실행되는 응용 프로그램을 쉽게 개발할 수 있도록 도와줍니다. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]에서는 응용 프로그램이 책임 있는 방식으로 로컬 사용자로부터 완전 신뢰 또는 높은 권한을 요청할 수 있도록 권한 상승 및 신뢰할 수 있는 응용 프로그램 배포와 같은 기능을 제공합니다.  
   
 ## <a name="understanding-security-in-the-net-framework"></a>.NET Framework의 보안 이해  
- 코드 액세스 보안을 통해 코드 발생 위치 및 코드 ID의 다른 측면에 따라 다양한 수준으로 코드를 신뢰할 수 있습니다. 공용 언어 런타임에서 보안 정책을 결정하는 데 사용하는 증거에 대한 자세한 내용은 [증거](https://msdn.microsoft.com/library/64ceb7c8-a0b4-46c4-97dc-6c22da0539da)를 참조하세요. 악성 코드로부터 컴퓨터 시스템을 보호하고 의도적으로 또는 실수로 보안이 손상되지 않도록 신뢰할 수 있는 코드를 보호합니다. 코드 액세스 보안을 통해 애플리케이션에 필요한 권한만 지정할 수 있으므로 애플리케이션이 수행할 수 있는 작업에 대한 제어도 강화됩니다. 코드 액세스 보안은 코드에서 단일 코드 액세스 보안 권한 검사를 수행하지 않는 경우에도 공용 언어 런타임을 대상으로 하는 모든 관리 코드에 영향을 줍니다. [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]의 보안에 대한 자세한 내용은 [주요 보안 개념](../../../docs/standard/security/key-security-concepts.md) 및 [코드 액세스 보안 기본 사항](../../../docs/framework/misc/code-access-security-basics.md)을 참조하세요.  
+ 코드 액세스 보안을 통해 코드 발생 위치 및 코드 ID의 다른 측면에 따라 다양한 수준으로 코드를 신뢰할 수 있습니다. 공용 언어 런타임에서 보안 정책을 결정하는 데 사용하는 증거에 대한 자세한 내용은 [증거](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7y5x1hcd(v=vs.100))를 참조하세요. 악성 코드로부터 컴퓨터 시스템을 보호하고 의도적으로 또는 실수로 보안이 손상되지 않도록 신뢰할 수 있는 코드를 보호합니다. 코드 액세스 보안을 통해 애플리케이션에 필요한 권한만 지정할 수 있으므로 애플리케이션이 수행할 수 있는 작업에 대한 제어도 강화됩니다. 코드 액세스 보안은 코드에서 단일 코드 액세스 보안 권한 검사를 수행하지 않는 경우에도 공용 언어 런타임을 대상으로 하는 모든 관리 코드에 영향을 줍니다. [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]의 보안에 대한 자세한 내용은 [주요 보안 개념](../../../docs/standard/security/key-security-concepts.md) 및 [코드 액세스 보안 기본 사항](../../../docs/framework/misc/code-access-security-basics.md)을 참조하세요.  
   
  사용자가 웹 서버 또는 파일 공유에서 직접 Windows Forms 실행 파일을 실행하는 경우 애플리케이션에 부여되는 신뢰 수준은 코드가 상주하는 위치 및 시작 방법에 따라 달라집니다. 애플리케이션이 실행되면 자동으로 평가되고 공용 언어 런타임으로부터 명명된 권한 집합을 받습니다. 기본적으로 로컬 컴퓨터의 코드에는 완전 신뢰 권한 집합이 부여되고, 로컬 네트워크의 코드에는 로컬 인트라넷 권한 집합이 부여되며, 인터넷의 코드에는 인터넷 권한 집합이 부여됩니다.  
   
 > [!NOTE]
 >  [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 버전 1.0 서비스 팩 1과 서비스 팩 2에서는 인터넷 영역 코드 그룹이 Nothing 권한 집합을 받습니다. [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]의 다른 모든 릴리스에서는 인터넷 영역 코드 그룹이 인터넷 권한 집합을 받습니다.  
 >   
->  각 권한 집합에 부여되는 기본 권한은 [기본 보안 정책](https://msdn.microsoft.com/library/2c086873-0894-4f4d-8f7e-47427c1a3b55) 항목에 나열됩니다. 받는 권한에 따라 애플리케이션이 올바르게 실행되거나 보안 예외를 생성합니다.  
+>  각 권한 집합에 부여되는 기본 권한은 [기본 보안 정책](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/03kwzyfc(v=vs.100)) 항목에 나열됩니다. 받는 권한에 따라 애플리케이션이 올바르게 실행되거나 보안 예외를 생성합니다.  
 >   
 >  대부분의 Windows Forms 애플리케이션은 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]를 사용하여 배포됩니다. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 배포를 생성하는 데 사용되는 도구는 앞에서 설명한 것과 다른 보안 기본값을 사용합니다. 자세한 내용은 다음 설명을 참조하세요.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "54703382"
   
  애플리케이션에 부분 신뢰에서 허용하는 것보다 많은 권한이 필요하지만 완전 신뢰로 실행하지 않으려는 경우 필요한 추가 권한만 어설션하는 동시에 부분 신뢰로 실행할 수 있습니다. 예를 들어 부분 신뢰로 실행하지만 사용자의 파일 시스템에 있는 디렉터리에 대한 읽기 전용 액세스 권한을 응용 프로그램에 부여해야 경우 해당 디렉터리에 대해서만 <xref:System.Security.Permissions.FileIOPermission>을 요청할 수 있습니다. 올바르게 사용할 경우 이 접근 방식은 애플리케이션의 기능을 증가시키며 사용자의 보안 위험을 최소화할 수 있습니다.  
   
- 부분 신뢰로 실행되는 애플리케이션을 개발할 때는 애플리케이션이 실행해야 하는 권한 및 애플리케이션이 선택적으로 사용할 수 있는 권한을 추적합니다. 모든 권한을 알고 난 후 애플리케이션 수준에서 권한에 대한 선언적 요청을 해야 합니다. 권한을 요청하면 애플리케이션에 필요한 권한 및 구체적으로 원하지 않는 권한에 대해 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 런타임에 알립니다. 권한 요청에 대한 자세한 내용은 [권한 요청](https://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2)을 참조하세요.  
+ 부분 신뢰로 실행되는 애플리케이션을 개발할 때는 애플리케이션이 실행해야 하는 권한 및 애플리케이션이 선택적으로 사용할 수 있는 권한을 추적합니다. 모든 권한을 알고 난 후 애플리케이션 수준에서 권한에 대한 선언적 요청을 해야 합니다. 권한을 요청하면 애플리케이션에 필요한 권한 및 구체적으로 원하지 않는 권한에 대해 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 런타임에 알립니다. 권한 요청에 대한 자세한 내용은 [권한 요청](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/yd267cce(v=vs.100))을 참조하세요.  
   
  선택적 권한을 요청할 때는 애플리케이션에서 부여되지 않은 권한이 필요한 작업을 수행하는 경우 생성되는 보안 예외를 처리해야 합니다. <xref:System.Security.SecurityException>을 적절히 처리하면 응용 프로그램이 계속 작동할 수 있습니다. 애플리케이션은 예외를 사용하여 사용자에 대해 기능을 사용할 수 없도록 설정할지 여부를 결정할 수 있습니다. 예를 들어 필요한 파일 권한이 부여되지 않은 경우 애플리케이션에서 **저장** 메뉴 옵션을 사용할 수 없습니다.  
   
@@ -75,12 +75,12 @@ ms.locfileid: "54703382"
   
  선택하는 기술은 배포 환경에 따라 달라집니다. 자세한 내용은 [ClickOnce 배포 전략 선택](/visualstudio/deployment/choosing-a-clickonce-deployment-strategy)을 참조하세요.  
   
- 기본적으로 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] Visual Studio를 사용 하 여 배포 된 응용 프로그램 또는 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 도구 (Mage.exe 및 MageUI.exe) 완전 신뢰에 클라이언트 컴퓨터에서 실행 되도록 구성 됩니다. 부분 신뢰를 사용하거나 일부 추가 권한만 사용하여 애플리케이션을 배포하는 경우 이 기본값을 변경해야 합니다. Visual Studio를 사용 하 여이 수행할 수 있습니다 또는 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 도구 MageUI.exe 배포를 구성 합니다. MageUI.exe를 사용 하는 방법에 대 한 자세한 내용은 연습을 참조 하세요. 명령줄에서 ClickOnce 응용 프로그램을 배포 합니다.  또한 참조 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](https://msdn.microsoft.com/library/hafybdaa\(v=vs.110\)) 또는 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한을 설정](https://msdn.microsoft.com/library/hafybdaa\(v=vs.120\))합니다.  
+ 기본적으로 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] Visual Studio를 사용 하 여 배포 된 응용 프로그램 또는 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 도구 (Mage.exe 및 MageUI.exe) 완전 신뢰에 클라이언트 컴퓨터에서 실행 되도록 구성 됩니다. 부분 신뢰를 사용하거나 일부 추가 권한만 사용하여 애플리케이션을 배포하는 경우 이 기본값을 변경해야 합니다. Visual Studio를 사용 하 여이 수행할 수 있습니다 또는 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 도구 MageUI.exe 배포를 구성 합니다. MageUI.exe를 사용 하는 방법에 대 한 자세한 내용은 연습을 참조 하세요. 명령줄에서 ClickOnce 응용 프로그램을 배포 합니다.  또한 참조 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/hafybdaa(v=vs.110)) 또는 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한을 설정](/visualstudio/deployment/how-to-set-custom-permissions-for-a-clickonce-application)합니다.  
   
  [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 및 권한 상승의 보안 측면에 대한 자세한 내용은 [ClickOnce 응용 프로그램 보안](/visualstudio/deployment/securing-clickonce-applications)을 참조하세요. 신뢰할 수 있는 애플리케이션 배포에 대한 자세한 내용은 [신뢰할 수 있는 애플리케이션 배포 개요](/visualstudio/deployment/trusted-application-deployment-overview)를 참조하세요.  
   
 ### <a name="testing-the-application"></a>애플리케이션 테스트  
- Visual Studio를 사용 하 여 Windows Forms 응용 프로그램을 배포한 경우 부분 신뢰 또는 제한 된 권한 집합 개발 환경에서 디버깅을 사용할 수 있습니다.  또한 참조 [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](https://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) 또는 [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](https://msdn.microsoft.com/library/593zkfdf\(v=vs.120\))를 참조하세요.  
+ Visual Studio를 사용 하 여 Windows Forms 응용 프로그램을 배포한 경우 부분 신뢰 또는 제한 된 권한 집합 개발 환경에서 디버깅을 사용할 수 있습니다.  또한 참조 [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions)를 참조하세요.  
   
 ## <a name="see-also"></a>참고자료
 - [Windows Forms 보안](../../../docs/framework/winforms/windows-forms-security.md)

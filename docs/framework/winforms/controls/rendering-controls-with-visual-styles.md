@@ -10,12 +10,12 @@ helpviewer_keywords:
 - user controls [Windows Forms], painting
 - visual styles [Windows Forms], rendering Windows Forms controls
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
-ms.openlocfilehash: fa835663edc54a2e4fd70a038f8900f32b0effba
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9ee357e343c5e060393359f0666886bef6b87b50
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54738549"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664356"
 ---
 # <a name="rendering-controls-with-visual-styles"></a>비주얼 스타일을 사용하여 컨트롤 렌더링
 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 는 지원되는 운영 체제에서 비주얼 스타일을 사용하여 컨트롤 및 기타 Windows UI(사용자 인터페이스) 요소를 렌더링하는 것을 지원합니다. 이 항목에서는 운영 체제의 현재 비주얼 스타일로 컨트롤 및 기타 UI 요소를 렌더링하는 작업에 대한 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 의 몇 가지 지원 수준에 대해 설명합니다.  
@@ -56,7 +56,7 @@ ms.locfileid: "54738549"
   
  <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> 네임스페이스의 주요 클래스는 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> 및 <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>입니다. <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> 는 비주얼 스타일에서 지원하는 컨트롤 또는 사용자 인터페이스 요소를 식별하기 위한 기본 클래스입니다. <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> 자체 외에도 <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> 네임스페이스에는 컨트롤, 컨트롤 파트 또는 비주얼 스타일에서 지원하는 기타 UI 요소의 모든 상태에 대해 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>를 반환하는 `static` 속성을 가지고 있는 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>의 여러 중첩된 클래스가 포함되어 있습니다.  
   
- <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> 는 그리기를 수행하고 운영 체제의 현재 비주얼 스타일에 의해 정의된 각 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> 에 대한 정보를 가져오는 메서드를 제공합니다. 요소에 대해 검색할 수 있는 정보에는 기본 크기, 배경 유형 및 색상 정의가 포함됩니다. <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> 는 Windows Platform SDK의 Windows 셸 부분에서 비주얼 스타일(UxTheme) API의 기능을 래핑합니다. 자세한 내용은 [Windows XP 비주얼 스타일 사용](https://msdn.microsoft.com/library/ms997649.aspx)합니다.  
+ <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> 는 그리기를 수행하고 운영 체제의 현재 비주얼 스타일에 의해 정의된 각 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> 에 대한 정보를 가져오는 메서드를 제공합니다. 요소에 대해 검색할 수 있는 정보에는 기본 크기, 배경 유형 및 색상 정의가 포함됩니다. <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> 는 Windows Platform SDK의 Windows 셸 부분에서 비주얼 스타일(UxTheme) API의 기능을 래핑합니다. 자세한 내용은 [비주얼 스타일이 활성화](/windows/desktop/controls/cookbook-overview)합니다.  
   
  사용에 대 한 자세한 내용은 <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> 하 고 <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>를 참조 하세요 [방법: 비주얼 스타일 요소 렌더링](../../../../docs/framework/winforms/controls/how-to-render-a-visual-style-element.md)합니다.  
   

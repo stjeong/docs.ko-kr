@@ -13,24 +13,25 @@ helpviewer_keywords:
 - Timer component [Windows Forms], initializing
 - procedures [Windows Forms], specific time intervals
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
-ms.openlocfilehash: 6d1149e6a0c8fdb04b37af15feabfd965b5cc993
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6a5a30b77e19e316bdf08234767cab2c9b72b296
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642271"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56663992"
 ---
 # <a name="how-to-run-procedures-at-set-intervals-with-the-windows-forms-timer-component"></a>방법: Windows Forms Timer 구성 요소를 사용 하 여 설정 된 간격 프로시저를 실행 합니다.
 루프가 완료될 때까지 특정 시간 간격으로 실행되거나 설정된 시간 간격이 경과할 때 실행되는 프로시저를 만들려는 경우도 있습니다. <xref:System.Windows.Forms.Timer> 구성 요소는 이러한 프로시저를 가능하게 합니다.  
   
- 이 구성 요소는 Windows Forms 환경에 맞게 설계되었습니다. 서버 환경에 적합한 타이머가 필요한 경우 [서버 기반 타이머 소개](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc)를 참조하세요.  
+ 이 구성 요소는 Windows Forms 환경에 맞게 설계되었습니다. 서버 환경에 적합한 타이머가 필요한 경우 [서버 기반 타이머 소개](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90))를 참조하세요.  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.Timer> 구성 요소를 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 [Windows Forms Timer 구성 요소의 Interval 속성 제한 사항](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md)합니다.  
+>  
+  <xref:System.Windows.Forms.Timer> 구성 요소를 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 [Windows Forms Timer 구성 요소의 Interval 속성 제한 사항](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md)합니다.  
   
-### <a name="to-run-a-procedure-at-set-intervals-with-the-timer-component"></a>Timer 구성 요소를 사용하여 설정된 간격마다 프로시저를 실행하려면  
+## <a name="to-run-a-procedure-at-set-intervals-with-the-timer-component"></a>Timer 구성 요소를 사용하여 설정된 간격마다 프로시저를 실행하려면  
   
-1.  폼에 <xref:System.Windows.Forms.Timer>를 추가합니다. 이 작업을 프로그래밍 방식으로 수행하는 방법은 다음 예제 섹션을 참조하세요. Visual Studio 구성 요소를 폼에 추가 하는 것에 대 한 지원이 있습니다. 또한 참조 [방법: Windows Forms에 사용자 인터페이스가 없는 컨트롤 추가](https://msdn.microsoft.com/library/becyw7bz\(v=vs.110\))합니다.  
+1.  폼에 <xref:System.Windows.Forms.Timer>를 추가합니다. 이 작업을 프로그래밍 방식으로 수행하는 방법은 다음 예제 섹션을 참조하세요. Visual Studio 구성 요소를 폼에 추가 하는 것에 대 한 지원이 있습니다. 또한 참조 [방법: Windows Forms에 사용자 인터페이스가 없는 컨트롤 추가](how-to-add-controls-without-a-user-interface-to-windows-forms.md)합니다.  
   
 2.  타이머에 대한 <xref:System.Windows.Forms.Timer.Interval%2A> 속성(밀리초)을 설정합니다. 이 속성은 프로시저가 다시 실행되기까지 남은 시간을 결정합니다.  
   

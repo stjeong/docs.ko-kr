@@ -13,15 +13,16 @@ helpviewer_keywords:
 - file access [Windows Forms]
 - security [Windows Forms], data access
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
-ms.openlocfilehash: 55e10a929be9c76bd8b33771945cf84f6228980f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2c4aecb4c7c7a15a7a0aad668b697af3ca0b033f
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54679320"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664928"
 ---
 # <a name="more-secure-file-and-data-access-in-windows-forms"></a>Windows Forms의 파일 및 데이터 액세스 추가 보안
-[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 리소스 및 데이터 보호를 위해 권한을 사용합니다. 응용 프로그램이 데이터를 일거나 쓸 수 있는 위치는 응용 프로그램에 부여된 권한에 따라 달라집니다. 응용 프로그램이 부분 신뢰 환경에서 실행되는 경우 데이터에 대한 액세스 권한이 없거나 데이터에 액세스하는 방법을 변경해야 할 수 있습니다.  
+
+  [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 리소스 및 데이터 보호를 위해 권한을 사용합니다. 응용 프로그램이 데이터를 일거나 쓸 수 있는 위치는 응용 프로그램에 부여된 권한에 따라 달라집니다. 응용 프로그램이 부분 신뢰 환경에서 실행되는 경우 데이터에 대한 액세스 권한이 없거나 데이터에 액세스하는 방법을 변경해야 할 수 있습니다.  
   
  보안 제한이 발생할 경우 다음 두가지 옵션이 있습니다. 권한을 어설션(응용 프로그램에 부여되었다고 가정)하거나 부분 신뢰에서 작동하도록 작성된 기능 버전을 사용합니다. 다음 섹션에서는 부분 신뢰 환경에서 실행 중인 응용 프로그램에서 파일, 데이터베이스 및 레지스트리 액세스 작업을 수행하는 방법을 설명합니다.  
   
@@ -45,7 +46,8 @@ ms.locfileid: "54679320"
 |<xref:System.Windows.Forms.SaveFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess.Save>|  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> 메서드가 실제로 호출될 때까지 특정 권한이 요청되지 않습니다.  
+>  
+  <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> 메서드가 실제로 호출될 때까지 특정 권한이 요청되지 않습니다.  
   
  파일 대화 상자를 표시할 수 있는 권한은 응용 프로그램에 <xref:System.Windows.Forms.FileDialog>, <xref:System.Windows.Forms.OpenFileDialog> 및 <xref:System.Windows.Forms.SaveFileDialog> 클래스의 모든 멤버에 대한 모든 권한을 부여하지 않습니다. 각 메서드를 호출하는 데 필요한 정확한 권한은 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 클래스 라이브러리 설명서에서 해당 메서드에 대한 참조 항목을 참조하세요.  
   
@@ -138,7 +140,8 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ### <a name="other-files"></a>기타 파일  
  응용 프로그램 설정을 유지해야 하는 경우와 같이 사용자가 지정하지 않는 파일을 읽거나 써야 하는 경우가 있습니다. 로컬 인트라넷 및 인터넷 영역에서는 로컬 파일에 데이터를 저장할 수 있는 권한이 응용 프로그램에 없습니다. 그러나 응용 프로그램은 격리된 저장소에 데이터를 저장할 수 있습니다. 격리된 저장소는 데이터가 저장된 실제 디렉터리 위치를 포함하는 하나 이상의 격리된 저장소 파일(저장소라고 함)이 포함된 추상 데이터 컴파트먼트(특정 저장소 위치가 아님)입니다. <xref:System.Security.Permissions.FileIOPermission>과 같은 파일 액세스 권한은 필요하지 않습니다. 대신, <xref:System.Security.Permissions.IsolatedStoragePermission> 클래스는 격리된 저장소에 대한 권한을 제어합니다. 기본적으로 로컬 인트라넷 및 인터넷 영역에서 실행 중인 응용 프로그램은 격리된 저장소를 사용하여 데이터를 저장할 수 있습니다. 그러나 디스크 할당량과 같은 설정이 달라질 수 있습니다. 격리 된 저장소에 대 한 자세한 내용은 참조 하세요. [격리 된 저장소](../../../docs/standard/io/isolated-storage.md)합니다.  
   
- 다음 예제에서는 격리된 저장소를 사용하여 저장소에 있는 파일에 데이터를 씁니다. 예제를 사용하려면 <xref:System.Security.Permissions.IsolatedStorageFilePermission> 및 <xref:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser> 열거형 값이 필요합니다. 예제에서는 <xref:System.Windows.Forms.Button> 컨트롤의 특정 속성 값을 읽고 격리된 저장소의 파일에 쓰는 방법을 보여 줍니다. `Read` 함수는 응용 프로그램이 시작된 후에 호출되고 `Write` 함수는 응용 프로그램이 종료되기 전에 호출됩니다. 예제에는 필요 합니다 `Read` 및 `Write` 함수의 멤버로 존재를 <xref:System.Windows.Forms.Form> 포함 하는 <xref:System.Windows.Forms.Button> 라는 컨트롤 `MainButton`.  
+ 다음 예제에서는 격리된 저장소를 사용하여 저장소에 있는 파일에 데이터를 씁니다. 예제를 사용하려면 <xref:System.Security.Permissions.IsolatedStorageFilePermission> 및 <xref:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser> 열거형 값이 필요합니다. 예제에서는 <xref:System.Windows.Forms.Button> 컨트롤의 특정 속성 값을 읽고 격리된 저장소의 파일에 쓰는 방법을 보여 줍니다. 
+  `Read` 함수는 응용 프로그램이 시작된 후에 호출되고 `Write` 함수는 응용 프로그램이 종료되기 전에 호출됩니다. 예제에는 필요 합니다 `Read` 및 `Write` 함수의 멤버로 존재를 <xref:System.Windows.Forms.Form> 포함 하는 <xref:System.Windows.Forms.Button> 라는 컨트롤 `MainButton`.  
   
 ```vb  
 ' Reads the button options from the isolated storage. Uses Default values   
@@ -351,7 +354,7 @@ public void Write()
 ## <a name="database-access"></a>데이터베이스 액세스  
  데이터베이스에 액세스하는 데 필요한 권한은 데이터베이스 공급자에 따라 다릅니다. 그러나 적절한 권한으로 실행 중인 응용 프로그램만 데이터 연결을 통해 데이터베이스에 액세스할 수 있습니다. 데이터베이스에 액세스 하는 데 필요한 사용 권한에 대 한 자세한 내용은 참조 하세요. [코드 액세스 보안 및 ADO.NET](../../../docs/framework/data/adonet/code-access-security.md)합니다.  
   
- 부분 신뢰로 응용 프로그램을 실행하려 하므로 데이터베이스에 직접 액세스할 수 없는 경우 데이터에 액세스하는 대체 방법으로 웹 서비스를 사용할 수 있습니다. 웹 서비스는 네트워크를 통해 프로그래밍 방식으로 액세스할 수 있는 소프트웨어입니다. 웹 서비스를 통해 응용 프로그램은 코드 그룹 영역 간에 데이터를 공유할 수 있습니다. 기본적으로 로컬 인트라넷 및 인터넷 영역의 응용 프로그램에는 동일한 서버에서 호스트된 웹 서비스를 호출할 수 있게 해주는 원본 사이트 액세스 권한이 부여됩니다. 자세한 내용은 참조 [ASP.NET AJAX의 웹 서비스](https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b) 하거나 [Windows Communication Foundation](https://msdn.microsoft.com/library/ms735119.aspx)합니다.  
+ 부분 신뢰로 응용 프로그램을 실행하려 하므로 데이터베이스에 직접 액세스할 수 없는 경우 데이터에 액세스하는 대체 방법으로 웹 서비스를 사용할 수 있습니다. 웹 서비스는 네트워크를 통해 프로그래밍 방식으로 액세스할 수 있는 소프트웨어입니다. 웹 서비스를 통해 응용 프로그램은 코드 그룹 영역 간에 데이터를 공유할 수 있습니다. 기본적으로 로컬 인트라넷 및 인터넷 영역의 응용 프로그램에는 동일한 서버에서 호스트된 웹 서비스를 호출할 수 있게 해주는 원본 사이트 액세스 권한이 부여됩니다. 자세한 내용은 참조 [ASP.NET AJAX의 웹 서비스](https://docs.microsoft.com/previous-versions/aspnet/bb398785(v=vs.100)) 하거나 [Windows Communication Foundation](../wcf/index.md)합니다.  
   
 ## <a name="registry-access"></a>레지스트리 액세스  
  <xref:System.Security.Permissions.RegistryPermission> 클래스는 운영 체제 레지스트리에 대한 액세스를 제어합니다. 기본적으로 로컬에서 실행 중인 응용 프로그램만 레지스트리에 액세스할 수 있습니다.  <xref:System.Security.Permissions.RegistryPermission>은 레지스트리 액세스 시도 권한만 응용 프로그램에 부여합니다. 운영 체제가 여전히 레지스트리에 대한 보안을 적용하므로 액세스가 성공한다는 보장은 없습니다.  

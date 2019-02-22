@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b37c57093662c94f5ad20bf9d01c63223b5901fb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 354375d4758e4ab34d34571257f6414e6a8584f0
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54581985"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664200"
 ---
 # <a name="how-to-create-a-windows-forms-application-from-the-command-line"></a>방법: 명령줄에서 Windows Forms 응용 프로그램 만들기
-다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  또한 참조 [연습: 간단한 Windows Form 만들기](https://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\))합니다.  
+다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  또한 참조 [연습: WPF에서 호스팅하는 Windows Forms 컨트롤](../wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)합니다.  
   
 ## <a name="procedure"></a>프로시저  
   
@@ -35,7 +35,8 @@ ms.locfileid: "54581985"
      [!code-csharp[System.Windows.Forms.BasicForm#3](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.BasicForm#3](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/VB/Form1.vb#3)]  
   
-3.  `Form1`에 대한 기본 생성자를 만듭니다.  
+3.  
+  `Form1`에 대한 기본 생성자를 만듭니다.  
   
      이후 절차에서 생성자에 더 많은 코드를 추가합니다.  
   

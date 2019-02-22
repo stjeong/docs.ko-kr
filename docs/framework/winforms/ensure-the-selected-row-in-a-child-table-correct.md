@@ -16,12 +16,12 @@ helpviewer_keywords:
 - child tables row selection
 - current child position
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
-ms.openlocfilehash: ef2c72fb941aa40eff85af4a83f6c76843dc2d6e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2ecac036bf081959b8ce2ba0afe8fdeed9ed9099
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54547633"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664239"
 ---
 # <a name="how-to-ensure-the-selected-row-in-a-child-table-remains-at-the-correct-position"></a>방법: 올바른 위치에 있는 자식 테이블에서 선택한 행을 유지 합니다.
 Windows Forms에서 데이터 바인딩을 사용할 때 부모/자식 또는 마스터/세부 정보 뷰에 데이터를 표시하는 경우가 많습니다. 이는 동일한 소스의 데이터가 두 컨트롤에 표시되는 데이터 바인딩 시나리오를 가리킵니다. 한 컨트롤에서 선택 항목을 변경하면 두 번째 컨트롤에 표시되는 데이터가 변경됩니다. 예를 들어 첫 번째 컨트롤에는 고객 목록이 포함되고 두 번째 컨트롤에는 첫 번째 컨트롤에서 선택한 고객과 관련된 주문 목록이 포함될 수 있습니다.  
@@ -42,7 +42,8 @@ Windows Forms에서 데이터 바인딩을 사용할 때 부모/자식 또는 �
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#2](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#2)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#2](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#2)]  
   
-4.  부모 통화 관리자에 대한 부모 목록의 <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> 이벤트를 처리합니다. 처리기에서 캐싱 시나리오가 아님을 나타내는 부울 값을 설정합니다. <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged>가 발생하는 경우 부모에 대한 변경 내용은 항목 값 변경이 아니라 목록 위치 변경입니다.  
+4.  부모 통화 관리자에 대한 부모 목록의 <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> 이벤트를 처리합니다. 처리기에서 캐싱 시나리오가 아님을 나타내는 부울 값을 설정합니다. 
+  <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged>가 발생하는 경우 부모에 대한 변경 내용은 항목 값 변경이 아니라 목록 위치 변경입니다.  
   
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#5)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#5)]  
@@ -81,7 +82,7 @@ Windows Forms에서 데이터 바인딩을 사용할 때 부모/자식 또는 �
   
 -   System, System.Data, System.Drawing, System.Windows.Forms and System.XML 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한이 예제에서는 명령줄에서 빌드하는 방법에 대 한 정보를 참조 하세요 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
+ Visual Basic 또는 Visual C#에 대 한이 예제에서는 명령줄에서 빌드하는 방법에 대 한 정보를 참조 하세요 [명령줄에서 빌드](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  
   
 ## <a name="see-also"></a>참고자료
 - [방법: 여러 컨트롤을 확인 동일한 데이터 소스에 바인딩된 동기화 된 상태로 유지](../../../docs/framework/winforms/multiple-controls-bound-to-data-source-synchronized.md)

@@ -3,13 +3,13 @@ title: 높은 확장성 및 가용성을 위한 마이크로 서비스 및 다�
 description: Azure Kubernetes Service를 사용 하 여 앱을 배포 하는 방법에 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
-ms.openlocfilehash: 984a72c9ca8883b338d10fdaa826a6007580372d
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.date: 02/15/2019
+ms.openlocfilehash: 82a1cf7f3cc367bfb8b8f67a130600815f2a21c4
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56221501"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664967"
 ---
 # <a name="deploy-to-azure-kubernetes-service-aks"></a>AKS (Azure Kubernetes Service)에 배포
 
@@ -26,9 +26,9 @@ AKS를 사용 하기 전에 가지 필수 구성 요소가 다음과 같습니�
 > [!NOTE]
 > 에 대 한 전체 정보를 찾으려면:
 >
-> Azure-CLI: [https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest](https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest)
+> Azure-CLI: <https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest>
 >
-> Linux 용 Windows 하위 시스템: [https://docs.microsoft.com/windows/wsl/about](https://docs.microsoft.com/windows/wsl/about)
+> Linux 용 Windows 하위 시스템: <https://docs.microsoft.com/windows/wsl/about>
 
 ## <a name="create-the-aks-environment-in-azure"></a>Azure에서 AKS 환경 만들기
 
