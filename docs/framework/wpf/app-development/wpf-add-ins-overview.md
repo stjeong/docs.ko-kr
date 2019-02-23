@@ -12,12 +12,12 @@ helpviewer_keywords:
 - add-ins [WPF], architecture
 - add-ins [WPF], limitations
 ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
-ms.openlocfilehash: 48981a942461570c0ef822dba9b18cb9a41f59f8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 47e76a1d08f8c85eafa7758ec9fdd80d8ae8afcf
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662740"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746564"
 ---
 # <a name="wpf-add-ins-overview"></a>WPF 추가 기능 개요
 <a name="Introduction"></a> .NET Framework 개발자가 추가 기능 확장성을 지 원하는 응용 프로그램을 만드는 데 사용할 추가 모델을 포함 합니다. 이 추가 기능 모델을 사용하면 애플리케이션 기능과 통합하고 이 기능을 확장하는 추가 기능을 만들 수 있습니다. 일부 시나리오에서는 응용 프로그램 에서도 추가 기능을 통해 제공 되는 사용자 인터페이스를 표시 해야 합니다. 이 항목에서는 WPF 이러한 시나리오, 해당 이점 및 제한 사항 기반이 되는 아키텍처를 사용 하도록 설정 하려면.NET Framework 추가 기능에서 모델을 보강 하는 방법을 보여 줍니다.  
@@ -100,7 +100,7 @@ ms.locfileid: "54662740"
 -   에 <xref:System.SerializableAttribute> 특성을 적용 합니다.  
   
 > [!NOTE]
->  원격으로 사용 가능한.NET Framework 개체의 생성과 관련 된 자세한 내용은 [만드는 개체 원격으로 사용 가능한](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)합니다.  
+>  원격으로 사용 가능한.NET Framework 개체의 생성과 관련 된 자세한 내용은 [만드는 개체 원격으로 사용 가능한](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))합니다.  
   
  WPF UI 유형을 원격으로 사용 가능한 않습니다. 문제를 해결 하려면 WPF 추가 기능을 통해 만든 WPF UI를 호스트 응용 프로그램에서 표시할 수 있도록.NET Framework 추가 기능에서 모델을 확장 합니다. 이 지원은 두 유형을 통해 WPF에서 제공 됩니다: 합니다 <xref:System.AddIn.Contract.INativeHandleContract> 인터페이스 및 구현한 두 가지 정적 메서드를 <xref:System.AddIn.Pipeline.FrameworkElementAdapters> 클래스: <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> 및 <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>합니다. 상위 수준에서는 대략적으로 이러한 형식과 메서드가 다음과 같은 방식으로 사용됩니다.  
   
@@ -286,6 +286,6 @@ ms.locfileid: "54662740"
 - <xref:System.LoaderOptimizationAttribute>
 - [추가 기능 및 확장성](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [응용 프로그램 도메인](../../../../docs/framework/app-domains/application-domains.md)
-- [.NET framework Remoting 개요](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)
-- [개체 사용 가능](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)
+- [.NET framework Remoting 개요](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))
+- [개체 사용 가능](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))
 - [방법 항목](../../../../docs/framework/wpf/app-development/how-to-topics.md)

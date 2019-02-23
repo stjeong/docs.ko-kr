@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics rendering tiers [WPF]
 - graphics [WPF], rendering tiers
 ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
-ms.openlocfilehash: 85631433534a2cd962e398fe435275aa293405a7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ea3c5d2c8d98f75bad164ff16c098401e41e4c5e
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543856"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748585"
 ---
 # <a name="graphics-rendering-tiers"></a>그래픽 렌더링 계층
 렌더링 계층은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 실행하는 디바이스의 그래픽 하드웨어 기능과 성능 수준을 정의합니다.  
@@ -90,7 +90,7 @@ ms.locfileid: "54543856"
 |사용 하는 래스터화된 콘텐츠 <xref:System.Windows.Media.Imaging.RenderTargetBitmap>|사용 하 여 렌더링 된 모든 콘텐츠를 <xref:System.Windows.Media.Imaging.RenderTargetBitmap.Render%2A> 메서드의 <xref:System.Windows.Media.Imaging.RenderTargetBitmap>합니다.|  
 |사용 하는 바둑판식된 콘텐츠 <xref:System.Windows.Media.TileBrush>|콘텐츠를 바둑판식으로 배열 된를 <xref:System.Windows.Media.TileBrush.TileMode%2A> 의 속성을 <xref:System.Windows.Media.TileBrush> 로 설정 되어 <xref:System.Windows.Media.TileMode.Tile>입니다.|  
 |그래픽 하드웨어의 최대 질감 크기를 초과하는 화면|대부분의 그래픽 하드웨어에서 대형 화면의 크기는 2048x2048 또는 4096x4096 픽셀입니다.|  
-|비디오 RAM 요구 사항이 그래픽 하드웨어의 메모리를 초과하는 모든 작업|Windows SDK에서 [WPF 성능 제품군](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)에 포함된 Perforator 도구를 사용하여 애플리케이션 비디오 RAM 사용량을 모니터링할 수 있습니다.|  
+|비디오 RAM 요구 사항이 그래픽 하드웨어의 메모리를 초과하는 모든 작업|Windows SDK에서 [WPF 성능 제품군](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))에 포함된 Perforator 도구를 사용하여 애플리케이션 비디오 RAM 사용량을 모니터링할 수 있습니다.|  
 |계층적 창|계층적 창을 사용하면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션에서 직사각형이 아닌 창의 화면에 맞게 콘텐츠를 렌더링할 수 있습니다. [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] 및 [!INCLUDE[win7](../../../../includes/win7-md.md)]와 같은 WDDM(Windows Display Driver Model)을 지원하는 운영 체제에서 계층적 창은 하드웨어 가속됩니다. [!INCLUDE[winxp](../../../../includes/winxp-md.md)]와 같은 다른 시스템에서는 하드웨어 가속이 없는 소프트웨어를 통해 계층적 창을 렌더링합니다.<br /><br /> 계층적된 창을 설정할 수 있습니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 다음을 설정 하 여 <xref:System.Windows.Window> 속성:<br /><br /> -   <xref:System.Windows.Window.WindowStyle%2A> = <xref:System.Windows.WindowStyle.None><br />-   <xref:System.Windows.Window.AllowsTransparency%2A> = `true`<br />-   <xref:System.Windows.Controls.Control.Background%2A> = <xref:System.Windows.Media.Brushes.Transparent%2A>|  
   
 <a name="other_resources"></a>   
@@ -117,7 +117,7 @@ ms.locfileid: "54543856"
 |Perforator|렌더링 동작을 분석하는 데 사용합니다.|  
 |Visual Profiler|시각적 트리의 요소별로 레이아웃 및 이벤트 처리 같은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 서비스 사용을 프로파일링하는 데 사용합니다.|  
   
- WPF 성능 제품군에서는 성능 데이터의 그래픽 보기를 다양하게 제공합니다. WPF 성능 도구에 대한 자세한 내용은 [WPF 성능 제품군](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)을 참조하세요.  
+ WPF 성능 제품군에서는 성능 데이터의 그래픽 보기를 다양하게 제공합니다. WPF 성능 도구에 대한 자세한 내용은 [WPF 성능 제품군](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))을 참조하세요.  
   
 ### <a name="directx-diagnostic-tool"></a>DirectX 진단 도구  
  [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 진단 도구인 Dxdiag.exe는 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 관련 문제를 해결하는 데 도움을 주도록 설계되었습니다. [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 진단 도구의 기본 설치 폴더는 다음과 같습니다.  
@@ -133,6 +133,6 @@ DirectX 진단 도구 기본 창
 - <xref:System.Windows.Media.RenderCapability>
 - <xref:System.Windows.Media.RenderOptions>
 - [WPF 응용 프로그램 성능 최적화](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [WPF 성능 제품군](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)
+- [WPF 성능 제품군](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))
 - [그래픽 렌더링 레지스트리 설정](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)
 - [애니메이션에 대한 유용한 정보](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

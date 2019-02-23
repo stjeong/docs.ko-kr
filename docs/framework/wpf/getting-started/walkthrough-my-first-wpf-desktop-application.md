@@ -11,12 +11,12 @@ ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
-ms.openlocfilehash: 6ea5997906c0bf34de67a6a125552d2b2c4e1a43
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: bfbe1bb413e0d9f46fe587d7a412af5303685b7a
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150747"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748377"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 
@@ -66,7 +66,7 @@ ms.locfileid: "53150747"
       Visual Studio 프로젝트를 만들고 이라는 기본 응용 프로그램 창에 대 한 디자이너를 엽니다 **MainWindow.xaml**합니다.
 
    > [!NOTE]
-   > 이 연습에서는 <xref:System.Windows.Controls.DataGrid> 컨트롤 이상.NET Framework 4에서 사용할 수 있습니다. 프로젝트가.NET Framework 4를 대상으로 하는지 이상 이어야 합니다. 자세한 내용은 [방법: .NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.
+   > 이 연습에서는 <xref:System.Windows.Controls.DataGrid> 컨트롤 이상.NET Framework 4에서 사용할 수 있습니다. 프로젝트가.NET Framework 4를 대상으로 하는지 이상 이어야 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
 
 2. 오픈 *Application.xaml* (Visual Basic) 또는 *App.xaml* (C#).
 
@@ -327,7 +327,7 @@ ms.locfileid: "53150747"
 
 1. 오픈 *`ExpenseItHome.xaml`* 합니다.
 
-2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 단순 이벤트 처리기를 만들고](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
+2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 단순 이벤트 처리기를 만들고](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb675300(v=vs.100))합니다.
 
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]
 
@@ -353,7 +353,7 @@ ms.locfileid: "53150747"
 3. 애플리케이션을 빌드 및 실행합니다.
 
     > [!NOTE]
-    > 오류가 발생 하는 경우는 <xref:System.Windows.Controls.DataGrid> 찾을 수 없습니다 또는 존재 하지 않거나, 프로젝트가.NET Framework 4 이상을 대상으로 하는지 확인 합니다. 자세한 내용은 [방법: .NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.
+    > 오류가 발생 하는 경우는 <xref:System.Windows.Controls.DataGrid> 찾을 수 없습니다 또는 존재 하지 않거나, 프로젝트가.NET Framework 4 이상을 대상으로 하는지 확인 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
 
 4. 선택 된 **보기** 단추입니다.
 

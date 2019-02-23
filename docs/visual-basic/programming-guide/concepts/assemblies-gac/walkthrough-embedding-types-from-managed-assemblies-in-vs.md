@@ -2,17 +2,17 @@
 title: '연습: Visual Studio (Visual Basic)에서 관리 되는 어셈블리의 형식 포함'
 ms.date: 07/20/2015
 ms.assetid: 56ed12ba-adff-4e9c-a668-7fcba80c4795
-ms.openlocfilehash: 1f6176746b783d020c809fb0b5d55d741ce0148b
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: f14a3e41c00ae307086a6d3745d4ec76b772721c
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245477"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747546"
 ---
 # <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-visual-basic"></a>연습: Visual Studio (Visual Basic)에서 관리 되는 어셈블리의 형식 포함
-강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 응용 프로그램에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
+강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 애플리케이션에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
   
- 형식 포함은 Microsoft Office의 자동화 개체를 사용하는 응용 프로그램과 같은 COM interop에서 자주 사용됩니다. 형식 정보를 포함하면 서로 다른 컴퓨터의 서로 다른 Microsoft Office 버전에서 동일한 빌드의 프로그램을 작동할 수 있습니다. 그러나 완전하게 관리되는 솔루션에서도 형식 포함을 사용할 수 있습니다.  
+ 형식 포함은 Microsoft Office의 자동화 개체를 사용하는 애플리케이션과 같은 COM interop에서 자주 사용됩니다. 형식 정보를 포함하면 서로 다른 컴퓨터의 서로 다른 Microsoft Office 버전에서 동일한 빌드의 프로그램을 작동할 수 있습니다. 그러나 완전하게 관리되는 솔루션에서도 형식 포함을 사용할 수 있습니다.  
   
  다음과 같은 특징이 있는 어셈블리에서 형식 정보를 포함할 수 있습니다.  
   
@@ -222,8 +222,8 @@ End Function
   
 6.  파일 탐색기에서 출력 경로 폴더를 엽니다(예: C:\TypeEquivalenceSample). TypeEquivalenceClient.exe를 두 번 클릭하여 프로그램을 실행합니다. 다시 컴파일하지 않고도 이 프로그램은 TypeEquivalenceRuntime 어셈블리의 새 버전을 반영합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [/link(Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)  
- [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md)  
- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)  
- [어셈블리와 전역 어셈블리 캐시(Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+## <a name="see-also"></a>참고자료
+- [/link(Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)
+- [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md)
+- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)
+- [.NET 어셈블리](../../../../standard/assembly/index.md)

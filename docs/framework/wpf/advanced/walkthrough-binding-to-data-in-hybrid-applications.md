@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hybrid applications [WPF interoperability]
 - data binding [WPF interoperability]
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
-ms.openlocfilehash: ba0d508881d6500d53e9e9781c3cce7185ed845d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2a20dc95467df4baedce2f4acc63f0c029f178c6
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724345"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748494"
 ---
 # <a name="walkthrough-binding-to-data-in-hybrid-applications"></a>연습: 하이브리드 응용 프로그램에서 데이터 바인딩
 사용 하 여 기본 데이터에 대 한 액세스를 사용 하 여 사용자에 게 제공 하는 데 필수적입니다 데이터 소스 컨트롤에 바인딩 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 또는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다. 이 연습에서는 모두 포함 하는 하이브리드 응용 프로그램에서 데이터 바인딩을 사용 하는 방법을 보여 줍니다 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 컨트롤입니다.  
@@ -122,7 +122,7 @@ ms.locfileid: "54724345"
   
 1.  **데이터** 메뉴에서 **새 데이터 소스 추가**합니다.  
   
-2.  에 **데이터 소스 구성 마법사**, 데이터 집합을 사용 하 여 Northwind 데이터베이스에 대 한 연결을 만듭니다. 자세한 내용은 [방법: 데이터베이스의 데이터에에서 연결할](https://msdn.microsoft.com/library/6c56e54e-8834-4297-85aa-cc1a443ba556)합니다.  
+2.  에 **데이터 소스 구성 마법사**, 데이터 집합을 사용 하 여 Northwind 데이터베이스에 대 한 연결을 만듭니다. 자세한 내용은 [방법: 데이터베이스의 데이터에에서 연결할](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120))합니다.  
   
 3.  메시지가 나타나면 합니다 **데이터 소스 구성 마법사**, 연결 문자열을 저장 `NorthwindConnectionString`합니다.  
   

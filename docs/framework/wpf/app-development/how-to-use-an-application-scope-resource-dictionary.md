@@ -9,18 +9,18 @@ helpviewer_keywords:
 - resource dictionaries [WPF], application-scope
 - application-scope resource dictionaries
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
-ms.openlocfilehash: 8df357d3b366a057b2a6072fb69b47a6075df5a0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6cd3e125b5b1a97f5851d4d1845e3e9e384e3d16
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492548"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748559"
 ---
 # <a name="how-to-use-an-application-scope-resource-dictionary"></a>방법: 응용 프로그램 범위 리소스 사전 사용
 이 예제에서는 애플리케이션 범위 사용자 지정 리소스 사전을 정의하고 사용하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
- <xref:System.Windows.Application> 공유 리소스인 <xref:System.Windows.Application.Resources%2A>에 대한 응용 프로그램 범위 저장소를 노출 합니다. 기본적으로 <xref:System.Windows.Application.Resources%2A> 속성은 <xref:System.Windows.ResourceDictionary> 형식의 인스턴스로 초기화 됩니다. 이 인스턴스를 <xref:System.Windows.Application.Resources%2A>를 사용하는 응용 프로그램 범위 속성을 가져오기 및 설정시에 사용 합니다. 자세한 내용은 [방법: Get 및 Set 응용 프로그램 범위 리소스를](https://msdn.microsoft.com/library/39e0420c-c9fc-47dc-8956-fdd95b214095)입니다.
+ <xref:System.Windows.Application> 공유 리소스인 <xref:System.Windows.Application.Resources%2A>에 대한 응용 프로그램 범위 저장소를 노출 합니다. 기본적으로 <xref:System.Windows.Application.Resources%2A> 속성은 <xref:System.Windows.ResourceDictionary> 형식의 인스턴스로 초기화 됩니다. 이 인스턴스를 <xref:System.Windows.Application.Resources%2A>를 사용하는 응용 프로그램 범위 속성을 가져오기 및 설정시에 사용 합니다. 자세한 내용은 [방법: Get 및 Set 응용 프로그램 범위 리소스를](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348547(v=vs.100))입니다.
   
  <xref:System.Windows.Application.Resources%2A>를 사용하여 설정할 다수의 리소스가 있는 경우, 해당 리소스를 저장하고 그것을 대신하여 <xref:System.Windows.Application.Resources%2A>에 설정하도록 사용자 지정 리소스 사전을 대신 사용할 수 있습니다. 다음은 XAML을 사용하여 사용자 지정 리소스 사전을 선언하는 방법을 보여 줍니다.
   

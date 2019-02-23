@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - application management [WPF]
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
-ms.openlocfilehash: ae02f77948da9b1371db1d1b67ce5030d207c0e8
-ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
+ms.openlocfilehash: 83291e82b15f4006ada95d00f6f4981fb7d6b552
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204849"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748104"
 ---
 # <a name="application-management-overview"></a>애플리케이션 관리 개요
 모든 애플리케이션은 애플리케이션 구현 및 관리에 적용하는 일반적인 기능 집합을 공유하는 경향이 있습니다. 이 항목에서는의 기능 개요를 제공 합니다 <xref:System.Windows.Application> 만들고 응용 프로그램을 관리 하기 위한 클래스입니다.  
@@ -362,5 +362,5 @@ ms.locfileid: "55204849"
 - [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)
 - [WPF 응용 프로그램 리소스, 콘텐츠 및 데이터 파일](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
 - [WPF의 Pack URI](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
-- [응용 프로그램 모델: 방법 도움말 항목](https://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)
+- [응용 프로그램 모델: 방법 도움말 항목](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms749013(v=vs.100))
 - [응용 프로그램 개발](../../../../docs/framework/wpf/app-development/index.md)

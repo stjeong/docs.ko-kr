@@ -6,12 +6,12 @@ helpviewer_keywords:
 - element tree [WPF]
 - visual tree [WPF]
 ms.assetid: e83f25e5-d66b-4fc7-92d2-50130c9a6649
-ms.openlocfilehash: 69c91a595861dacd3dcd92666684514bc3b6f4ed
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6d49e9dec1cdbd2942fb9d1b94be32e44ca4311a
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54690412"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748062"
 ---
 # <a name="trees-in-wpf"></a>WPF의 트리
 대부분의 기술에서 요소와 구성 요소는 트리 구조로 구성됩니다. 이 트리 구조에서 개발자는 트리의 개체 노드를 직접 조작하여 애플리케이션의 동작이나 렌더링에 영향을 줍니다. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서도 여러 가지 트리 구조 메타포를 사용하여 프로그램 요소 간의 관계를 정의합니다. 대부분 경우 WPF 개발자는 개념적으로 개체 트리 메타포를 고려하면서 코드로 애플리케이션을 만들거나 XAML로 애플리케이션의 일부를 정의할 수 있지만 XML DOM에서 사용할 수 있는 몇 가지 일반적인 개체 트리 조작 API 대신 특정 API를 호출하거나 특정 태그를 사용하여 이 작업을 수행합니다. WPF 트리 메타포 보기를 제공 하는 두 개의 도우미 클래스를 노출 <xref:System.Windows.LogicalTreeHelper> 고 <xref:System.Windows.Media.VisualTreeHelper>입니다. 또한 WPF 설명서에서는 시각적 트리와 논리 트리라는 용어를 사용하는데 이러한 동일한 트리는 특정 주요 WPF 기능의 동작을 이해하는 데 유용하기 때문입니다. 이 항목에서는 시각적 트리와 논리 트리가 나타내는 항목 정의 전체 개체 트리 개념과 이러한 트리 관계에 대해 설명 하 고 소개 <xref:System.Windows.LogicalTreeHelper> 고 <xref:System.Windows.Media.VisualTreeHelper>s입니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "54690412"
   
 <a name="logical_tree"></a>   
 ## <a name="the-logical-tree"></a>논리 트리  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 해당 요소를 지원하는 개체의 속성을 설정하여 UI 요소에 콘텐츠를 추가합니다. 항목을 추가 하는 예는 <xref:System.Windows.Controls.ListBox> 컨트롤을 조작 하 여 해당 <xref:System.Windows.Controls.ItemsControl.Items%2A> 속성입니다. 이 작업을 수행 하면 항목을 배치 하 고는 <xref:System.Windows.Controls.ItemCollection> 즉는 <xref:System.Windows.Controls.ItemsControl.Items%2A> 속성 값입니다. 마찬가지로, 추가할 개체를 <xref:System.Windows.Controls.DockPanel>, 조작 해당 <xref:System.Windows.Controls.Panel.Children%2A> 속성 값입니다. 여기에서 개체를 추가 하는 <xref:System.Windows.Controls.UIElementCollection>합니다. 코드 예제는 [동적으로 요소 추가](https://msdn.microsoft.com/library/d00f258a-7973-4de7-bc54-a3fc1f638419)를 참조하세요.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 해당 요소를 지원하는 개체의 속성을 설정하여 UI 요소에 콘텐츠를 추가합니다. 항목을 추가 하는 예는 <xref:System.Windows.Controls.ListBox> 컨트롤을 조작 하 여 해당 <xref:System.Windows.Controls.ItemsControl.Items%2A> 속성입니다. 이 작업을 수행 하면 항목을 배치 하 고는 <xref:System.Windows.Controls.ItemCollection> 즉는 <xref:System.Windows.Controls.ItemsControl.Items%2A> 속성 값입니다. 마찬가지로, 추가할 개체를 <xref:System.Windows.Controls.DockPanel>, 조작 해당 <xref:System.Windows.Controls.Panel.Children%2A> 속성 값입니다. 여기에서 개체를 추가 하는 <xref:System.Windows.Controls.UIElementCollection>합니다. 코드 예제를 참조 하세요. [방법: 요소를 동적으로 추가](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms752374(v=vs.100))합니다.  
   
  [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]의 목록 항목을 배치 하는 경우를 <xref:System.Windows.Controls.ListBox> 컨트롤 또는 기타 UI 요소에는 <xref:System.Windows.Controls.DockPanel>, 또한 사용 하 여를 <xref:System.Windows.Controls.ItemsControl.Items%2A> 및 <xref:System.Windows.Controls.Panel.Children%2A> 속성을 명시적 또는 암시적으로 다음 예제와 같이 합니다.  
   

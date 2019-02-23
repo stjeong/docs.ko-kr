@@ -8,12 +8,12 @@ helpviewer_keywords:
 - border thickness [WPF]
 - ThicknessConverter objects [WPF]
 ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
-ms.openlocfilehash: 22215a155f4a204e3edeebc464413d5718290bb4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 653137c0707c2b7ee51f6bdac6bb2501f1845e1a
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54577073"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747345"
 ---
 # <a name="how-to-use-a-thicknessconverter-object"></a>방법: ThicknessConverter 개체 사용
 ## <a name="example"></a>예제  
@@ -30,6 +30,6 @@ ms.locfileid: "54577073"
 - <xref:System.Windows.Thickness>
 - <xref:System.Windows.ThicknessConverter>
 - <xref:System.Windows.Controls.Border>
-- [방법: Margin 속성 변경](https://msdn.microsoft.com/library/8a313efd-5f99-4097-b4c1-8fa49d8379a2)
-- [방법: ListBoxItem을 새 데이터 형식으로 변환](https://msdn.microsoft.com/library/7a080b88-184e-4b27-bb61-d42bafba9727)
+- [방법: Margin 속성 변경](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750561(v=vs.90))
+- [방법: ListBoxItem을 새 데이터 형식으로 변환](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749147(v=vs.90))
 - [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)

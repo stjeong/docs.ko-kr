@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mapping properties [WPF]
 - ElementHost control [WPF], mapping properties
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
-ms.openlocfilehash: bb418b725afd0c38a39e42e50511147d0f616059
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 29356f171506ece0fe35418f682681b19830d71c
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54623224"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746340"
 ---
 # <a name="walkthrough-mapping-properties-using-the-elementhost-control"></a>연습: ElementHost 컨트롤을 사용 하 여 속성 매핑
 
@@ -62,7 +62,7 @@ ms.locfileid: "54623224"
 
 4.  Windows Forms 디자이너에서 `Form1`을 엽니다. 에 대 한 이벤트 처리기를 추가 하려면 폼을 두 번 클릭 합니다 <xref:System.Windows.Forms.Form.Load> 이벤트입니다.
 
-5.  Windows Forms 디자이너로 돌아가서 폼에 대 한 이벤트 처리기를 추가 <xref:System.Windows.Forms.Control.Resize> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용 하 여 이벤트 처리기를 만들](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)합니다.
+5.  Windows Forms 디자이너로 돌아가서 폼에 대 한 이벤트 처리기를 추가 <xref:System.Windows.Forms.Control.Resize> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용 하 여 이벤트 처리기를 만들](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100))합니다.
 
 6.  선언를 <xref:System.Windows.Forms.Integration.ElementHost> 필드에 `Form1` 클래스입니다.
 

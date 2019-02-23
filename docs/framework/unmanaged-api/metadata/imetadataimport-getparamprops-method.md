@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c4e4b163cc783ccd01bc406789f5bf92448c697c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 697a59d80e152fb78164491c2a0eaaa8707f8914
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54685531"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745922"
 ---
 # <a name="imetadataimportgetparamprops-method"></a>IMetaDataImport::GetParamProps 메서드
 지정한 ParamDef 토큰이 참조하는 매개 변수에 대한 메타데이터 값을 가져옵니다.  
@@ -64,7 +64,7 @@ HRESULT GetParamProps (
  [out] 반환 되는 크기의 와이드 문자에서 `szName`합니다.  
   
  `pdwAttr`  
- [out] 매개 변수를 사용 하 여 연결 된 모든 특성 플래그에 대 한 포인터입니다.  
+ [out] 매개 변수를 사용 하 여 연결 된 모든 특성 플래그에 대 한 포인터입니다. 이 비트 마스크의 `CorParamAttr` 값입니다.  
   
  `pdwCPlusTypeFlag`  
  [out] 매개 변수가 지정 하는 플래그에 대 한 포인터를 <xref:System.ValueType>입니다.  
@@ -75,6 +75,10 @@ HRESULT GetParamProps (
  `pcchValue`  
  [out] 크기인 `ppValue` 와이드 문자인 경우 0에 `ppValue` 문자열이 포함 되지 않습니다.  
   
+## <a name="remarks"></a>설명
+
+시퀀스 값 `pulSequence` 매개 변수에 대 한 1부터 시작 합니다. 반환 값에 0의 시퀀스 번호가 있습니다.
+
 ## <a name="requirements"></a>요구 사항  
  **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   

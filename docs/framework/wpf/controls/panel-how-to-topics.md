@@ -7,18 +7,17 @@ helpviewer_keywords:
 - Panel control [WPF], how-to topics
 - controls [WPF], Panel
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
-ms.openlocfilehash: d8ead1a799f1bd7524d171beb3e262baeb4b5fbe
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.openlocfilehash: 309a5df174a2366fda411678d95a9701dcebb9cc
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46493534"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747920"
 ---
 # <a name="panel-how-to-topics"></a>Panel 방법 항목
 이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [방법: layouttransform 속성을 요소에 적용](https://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
  [사용자 지정 패널 요소 만들기](../../../../docs/framework/wpf/controls/how-to-create-a-custom-panel-element.md)  
  [Panel의 OnRender 메서드 재정의](../../../../docs/framework/wpf/controls/how-to-override-the-panel-onrender-method.md)  
  [요소의 높이 속성 설정](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  
@@ -42,6 +41,6 @@ ms.locfileid: "46493534"
 ## <a name="related-sections"></a>관련 단원  
  [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)  
   
- [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [연습: 내 첫 WPF 데스크톱 애플리케이션](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
  [ScrollViewer 개요](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)

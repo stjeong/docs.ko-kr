@@ -7,12 +7,12 @@ helpviewer_keywords:
 - SnapLine class [Windows Forms], walkthroughs
 - Windows Forms controls, arranging
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
-ms.openlocfilehash: 2a2fd47c3ea2e675292c040f08b981a394e8221b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 136a655064fc0c955cadd2f15e5900579e90187a
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543226"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748036"
 ---
 # <a name="walkthrough-arranging-controls-on-windows-forms-using-snaplines"></a>연습: 맞춤선을 사용 하 여 Windows Forms에서 컨트롤 정렬
 폼의 정확한 컨트롤 배치는 많은 응용 프로그램에서 우선 순위가 높습니다. Windows Forms 디자이너를 이렇게 하려면 여러 레이아웃 도구를 제공 합니다. 가장 중요 한 것은 <xref:System.Windows.Forms.Design.Behavior.SnapLine> 기능입니다.  
@@ -154,7 +154,7 @@ ms.locfileid: "54543226"
   
 1.  <xref:System.Windows.Forms.Button> 도구 상자 **에서** 컨트롤을 폼으로 끌어다 놓습니다.  
   
-2.  크기를 조정 합니다 <xref:System.Windows.Forms.Button> 끌어서 크기 조정 핸들의 모서리 중 하나를 선택 하 여 제어 합니다. 세부 정보를 참조 하세요. [방법: Windows Forms에서 컨트롤 크기 조정](../../../../docs/framework/winforms/controls/how-to-resize-controls-on-windows-forms.md)합니다.  
+2.  크기를 조정 합니다 <xref:System.Windows.Forms.Button> 끌어서 크기 조정 핸들의 모서리 중 하나를 선택 하 여 제어 합니다. 자세한 내용은 [방법: Windows Forms에서 컨트롤 크기 조정](../../../../docs/framework/winforms/controls/how-to-resize-controls-on-windows-forms.md)합니다.  
   
 3.  중 하나가 될 때까지 크기 조정 핸들을 끌어는 <xref:System.Windows.Forms.Button> 컨트롤의 테두리 다른 컨트롤에 맞춥니다. 맞춤선에 표시 되는 참고 합니다. 또한 이때 크기 조정 핸들을 맞춤선이 가리키는 위치에 맞춰집니다.  
   
@@ -222,7 +222,7 @@ ms.locfileid: "54543226"
   
 #### <a name="to-disable-snaplines-in-the-design-environment"></a>디자인 환경에서 맞춤선을 사용 하지 않도록 설정  
   
-1.  **도구** 메뉴를 열고 합니다 **옵션** 대화 상자. Windows Forms 디자이너 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Windows Forms 디자이너, 옵션 대화 상자, 일반](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)합니다.  
+1.  **도구** 메뉴를 열고 합니다 **옵션** 대화 상자. Windows Forms 디자이너 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Windows Forms 디자이너, 옵션 대화 상자, 일반](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))합니다.  
   
 2.  선택 된 **일반** 노드. 에 **레이아웃 모드** 섹션에서 선택 항목을 변경 **맞춤선** 에 **SnapToGrid**합니다.  
   

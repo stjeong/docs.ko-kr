@@ -1,5 +1,5 @@
 ---
-title: '연습: DataGrid 컨트롤에서 SQL Server 데이터베이스의 데이터 표시'
+title: '연습: DataGrid 컨트롤에는 SQL Server 데이터베이스에서 데이터를 표시 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - DataGrid [WPF], displaying data from SQL Server
 - controls [WPF], DataGrid
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
-ms.openlocfilehash: e3db65c91e53ee0ed7b5e520bbc4989cd7404816
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 6cf56a853377a9c062009fb8a4082cd5380905c6
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197138"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748416"
 ---
-# <a name="walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control"></a>연습: DataGrid 컨트롤에서 SQL Server 데이터베이스에서 데이터 표시
+# <a name="walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control"></a>연습: DataGrid 컨트롤에는 SQL Server 데이터베이스에서 데이터를 표시 합니다.
 
 이 연습에서는 SQL Server 데이터베이스에서 데이터를 검색 하 고이 해당 데이터를 표시 한 <xref:System.Windows.Controls.DataGrid> 제어 합니다. ADO.NET Entity Framework를 사용 하 여 데이터를 나타내고, LINQ를 사용 하 여 엔터티 클래스에서 지정된 된 데이터를 검색 하는 쿼리를 작성 하는 엔터티 클래스를 만듭니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "47197138"
 
 4.  <xref:System.Windows.Window>를 선택합니다.
 
-5.  에 대 한 이벤트 처리기를 만들고 속성 창 또는 XAML 편집기를 사용 하는 <xref:System.Windows.Window> 라는 `Window_Loaded` 에 대 한는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트입니다. 자세한 내용은 [방법: 간단한 이벤트 처리기를 만들고](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
+5.  에 대 한 이벤트 처리기를 만들고 속성 창 또는 XAML 편집기를 사용 하는 <xref:System.Windows.Window> 라는 `Window_Loaded` 에 대 한는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트입니다. 자세한 내용은 [방법: 단순 이벤트 처리기를 만들고](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb675300(v=vs.100))합니다.
 
      다음은 XAML MainWindow.xaml에 대 한 표시 합니다.
 
@@ -100,4 +100,4 @@ ms.locfileid: "47197138"
 ## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.Controls.DataGrid>
-- [어떻게 수행 할까요 시작 WPF 응용 프로그램에서 Entity Framework 사용](https://go.microsoft.com/fwlink/?LinkId=159868)
+- [어떻게 할까요 WPF 응용 프로그램에서 Entity Framework를 사용 하 여 시작 합니다.](https://go.microsoft.com/fwlink/?LinkId=159868)

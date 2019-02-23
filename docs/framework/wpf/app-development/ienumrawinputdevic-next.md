@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Next method [WPF]
 ms.assetid: 3698b44d-510e-4d18-b32b-85f17188ee26
-ms.openlocfilehash: 329a2cd96346e199ee834856dd6dbfac6175b722
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a1f76bf42da9a311633de39e42dee2055fac4a27
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515319"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745187"
 ---
 # <a name="ienumrawinputdevicnext"></a>IEnumRAWINPUTDEVIC:Next
-다음 열거 `celt` [RAWINPUTDEVICE](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 구조에 반환 되는 열거자의 목록에서 `rgelt` 실제 열거 된 요소 수와 함께 `pceltFetched`입니다.  
+다음 열거 `celt` [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) 구조에 반환 되는 열거자의 목록에서 `rgelt` 실제 열거 된 요소 수와 함께 `pceltFetched`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -26,7 +26,7 @@ HRESULT Next(
 #### <a name="parameters"></a>매개 변수  
  `celt`  
   
- [in] 수가 [RAWINPUTDEVICE](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 에서 반환 된 `rgelt`합니다.  
+ [in] 수가 [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) 에서 반환 된 `rgelt`합니다.  
   
  `rgelt`  
   
@@ -34,7 +34,7 @@ HRESULT Next(
   
  `pceltFetched`  
   
- [out] `rgelt`에 실제로 제공된 요소 수에 대한 포인터입니다. `NULL`가 1이면 호출자가 `rgelt`을 전달할 수 있습니다.  
+ [out] `rgelt`에 실제로 제공된 요소 수에 대한 포인터입니다. `rgelt`가 1이면 호출자가 `NULL`을 전달할 수 있습니다.  
   
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값  
- HRESULT: 제공된 요소 수가 `celt`이면 S_OK이고, 그러지 않으면 S_FALSE입니다.
+ HRESULT: 제공 된 요소 수가 S_OK `celt`; 그렇지 않으면 S_FALSE입니다.

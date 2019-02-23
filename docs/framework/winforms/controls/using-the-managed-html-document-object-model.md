@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - managed HTML DOM
 ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
-ms.openlocfilehash: 1405bb43e971f02bafa892de84a6b8acde2e319b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5c3882e29caa0c327242ed3e815b7c17ef0e2075
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54691426"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746680"
 ---
 # <a name="using-the-managed-html-document-object-model"></a>관리되는 HTML 문서 개체 모델 사용
 관리 되는 HTML DOM (문서 개체 모델) 기반으로 래퍼를 제공 합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Internet Explorer에서 노출 하는 HTML 클래스에 대 한 합니다. 이러한 클래스를 사용 하 여 HTML 페이지에서 호스트를 조작할는 <xref:System.Windows.Forms.WebBrowser> 컨트롤 또는 처음부터 새 페이지를 만들 수 있습니다.  
@@ -39,6 +39,3 @@ ms.locfileid: "54691426"
   
 ## <a name="related-sections"></a>관련 단원  
  [WebBrowser 컨트롤](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
-  
-## <a name="see-also"></a>참고자료
-- [About the DHTML Object Model](https://msdn.microsoft.com/library/default.asp?url=/workshop/author/om/doc_object.asp)(DHTML 개체 모델 정보)

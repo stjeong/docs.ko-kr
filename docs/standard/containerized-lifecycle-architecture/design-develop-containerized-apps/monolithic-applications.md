@@ -3,13 +3,13 @@ title: 모놀리식 응용 프로그램
 description: 컨테이너 화 된 모놀리식 응용 프로그램에 대 한 핵심 개념을 이해 합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
-ms.openlocfilehash: 056f4bd8abf5c482855f38e45435b67b487769fb
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.date: 02/15/2019
+ms.openlocfilehash: eff764472b4a9fc5b699545fc9629cc12d0186ca
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56221357"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747264"
 ---
 # <a name="monolithic-applications"></a>모놀리식 응용 프로그램
 
@@ -19,9 +19,9 @@ ms.locfileid: "56221357"
 
 주 컨테이너 것만 않으며 하나의 프로세스에는 다음 모놀리식 패턴은 충돌은입니다. 그림 4-1에서와 같이 여러 구성 요소/라이브러리 또는 내부 레이어 각 컨테이너를 포함할 수 있습니다.
 
-![](./media/image1.png)
+![모놀리식 앱은 모든 또는 대부분의 단일 프로세스 또는 컨테이너 내에서 해당 기능이 있고 내부 레이어 또는 라이브러리에서 구성 요소화는 것입니다.](./media/image1.png)
 
-그림 4-1: 모놀리식 응용 프로그램 아키텍처의 예
+**그림 4-1.** 모놀리식 응용 프로그램 아키텍처의 예
 
 이 방식의 단점은 때나 응용 프로그램이 증가 함에 따라 크기를 조정 하도록 요구 하는 경우 제공 됩니다. 전체 애플리케이션의 크기를 조정하는 것은 문제가 되지 않습니다. 그러나 대부분의 경우에서 응용 프로그램의 일부 지점은 좁게 크기 조정이 필요로 하는 반면 다른 구성 요소는 덜 사용 합니다.
 
@@ -33,39 +33,49 @@ ms.locfileid: "56221357"
 
 인프라 측면에서 볼 때 각 서버는 동일한 호스트 내에서 여러 응용 프로그램을 실행 하 고 그림 4-2에 표시 된 대로 리소스 사용량에서 효율성의 허용 가능한 비율에 수 있습니다.
 
-![](./media/image2.png)
+![단일 호스트는 별도 컨테이너에서 여러 앱을 실행할 수 있습니다.](./media/image2.png)
 
-그림 4-2: 여러 앱/컨테이너를 실행 하는 호스트
+**그림 4-2.** 여러 앱/컨테이너를 실행 하는 호스트
 
-각 인스턴스에 대 한 전용된 Vm을 사용 하 여 Azure에 모놀리식 응용 프로그램을 배포할 수 있습니다. 사용 하 여 [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), Vm을 쉽게 확장할 수 있습니다. [Azure App Services](https://azure.microsoft.com/services/app-service/)는 VM을 관리하지 않고 모놀리식 응용 프로그램을 실행하고 인스턴스 크기를 쉽게 조정할 수 있습니다. 2016 년부터 Azure App Services 인스턴스를 실행할 수 단일 Docker 컨테이너에 배포를 간소화 합니다. 및 Docker를 사용 하는 단일 VM을 Docker 호스트로 배포를 여러 인스턴스를 실행 합니다. 그림 4-3에서 볼 수 있듯이 Azure 분산 장치를 사용 하 여, 확장을 관리할 수 있습니다.
+마지막으로 가용성 관점에서 모놀리식 응용 프로그램으로 배포 해야 전체 즉, 수행 해야 하는 경우 *멈추고 시작할*, 모든 기능 및 모든 사용자에 게 배포 기간 동안 영향을 받습니다. 특정 상황에서 Azure 및 컨테이너를 사용 하 여 이러한 상황을 최소화 하 고 그림 4-3에 알 수 있듯이 응용 프로그램의 가동 중지 시간이 발생 가능성을 줄일 수 있습니다.
 
-![](./media/image3.png)
+각 인스턴스에 대 한 전용된 Vm을 사용 하 여 Azure에 모놀리식 응용 프로그램을 배포할 수 있습니다. 사용 하 여 [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), Vm을 쉽게 확장할 수 있습니다.
 
-그림 4-3: 여러 호스트를 단일 Docker 응용 프로그램 앱/컨테이너 확장
+사용할 수도 있습니다 [Azure App Services](https://azure.microsoft.com/services/app-service/) 모놀리식 응용 프로그램을 실행 하는 Vm을 관리 하지 않고도 인스턴스를 쉽게 확장 합니다. Azure App Services 배포를 단순화할 Docker 컨테이너에도의 단일 인스턴스를 실행할 수 있습니다.
 
-배포를 통해 기존의 배포 기술로 다양 한 호스트를 관리할 수 있습니다. 같은 명령을 사용 하 여 Docker 호스트를 관리할 수 있습니다 `docker run` 이 전자책의 뒷부분에서 설명 하는 CD (지속적인 업데이트) 파이프라인 같은 자동화를 통해 수동으로.
+여러 Vm을 Docker 호스트로 배포 하 고 임의 개수의 VM 당 컨테이너를 실행할 수 있습니다. 그런 다음 Azure Load Balancer를 사용 하 여 그림 4-3를에서 같이 관리할 수 있습니다 크기 조정.
+
+![모놀리식 앱은 수 수평 확장 각각 실행 되 고 있는 앱 컨테이너에서 다른 호스트에 있습니다.](./media/image3.png)
+
+**그림 4-3** 여러 호스트를 단일 Docker 응용 프로그램 앱/컨테이너 확장
+
+기존의 배포 기술로 통해 호스트의 배포를 관리할 수 있습니다.
+
+같은 명령을 사용 하 여 명령줄에서 Docker 컨테이너를 관리할 수 있습니다 `docker run` 및 `docker-compose up`, 그리고 또한 CD (지속적인 업데이트) 파이프라인에서 자동화 하 고 예를 들어 Azure DevOps 서비스에서 Docker 호스트에 배포할 수 있습니다.
 
 ## <a name="monolithic-application-deployed-as-a-container"></a>컨테이너로 배포된 모놀리식 애플리케이션
 
-컨테이너를 사용 하 여 모놀리식 배포를 관리 하는 이점이 있습니다. 컨테이너 인스턴스의 크기를 확장하는 것은 추가 VM을 배포하는 것보다 훨씬 쉽고 빠릅니다. VM Scale Sets는 Docker 컨테이너를 호스트 하는 데 필요한, Vm 크기를 조정 하는 훌륭한 기능을 설정 하는 시간이 걸립니다. 앱 인스턴스로 배포되는 경우 앱 구성은 VM의 일부로 관리됩니다.
+컨테이너를 사용 하 여 모놀리식 배포를 관리 하는 이점이 있습니다. 컨테이너 인스턴스의 크기를 확장하는 것은 추가 VM을 배포하는 것보다 훨씬 쉽고 빠릅니다.
 
-Docker 이미지로 업데이트를 배포하는 것이 훨씬 더 빠르고 네트워크 효율적입니다. Vn 인스턴스 추가 Vm에서 발생 하는 추가 비용을 제거 Vn 1 인스턴스로 동일한 호스트에 설정할 수 있습니다. Docker 이미지는 일반적으로 롤아웃 속도가 향상 됩니다 (초)에서 시작 합니다. Docker 인스턴스를 분해 하는 것은 호출 하는 것 만큼 쉽습니다는 `docker stop` 명령, 일반적으로 1 초 미만에서 완료 합니다.
+Docker 이미지로 업데이트를 배포하는 것이 훨씬 더 빠르고 네트워크 효율적입니다. Docker 컨테이너는 일반적으로 롤아웃 속도가 향상 됩니다 (초)에서 시작 합니다. Docker 컨테이너를 중지 하는 것은 호출 하는 것 만큼 쉽습니다는 `docker stop` 명령, 일반적으로 1 초 미만에서 완료 합니다.
 
 컨테이너를 디자인 하 여 기본적으로 변경할 수 없기 때문에 일부 특정 구성 또는 디스크에 남아 있는 파일에 대 한 계정에 업데이트 스크립트를 찾기 때문에 손상 된 Vm에 걱정할 필요가 없습니다 있습니다.
 
 모놀리식 앱은 Docker에서 이익을 얻을 수, 이점은 팁만에서 터치 하는 것입니다. 컨테이너 관리에 대 한 더 큰 이점은 여러 인스턴스 및 각 컨테이너 인스턴스의 수명 주기를 관리 하는 컨테이너 orchestrator를 사용 하 여 배포에서 제공 됩니다. 개별적으로 크기를 조정하고, 개발하고, 배포할 수 있는 하위 시스템으로 모놀리식 애플리케이션을 나누는 작업은 마이크로 서비스 영역의 진입점입니다.
 
-## <a name="publishing-a-single-docker-container-app-to-azure-app-service"></a>Azure App Service에 단일 Docker 컨테이너 앱 게시
+컨테이너를 사용 하 여 모놀리식 응용 프로그램 "리프트 앤 시프트" 하 고 응용 프로그램 현대화 할 수 있습니다 하는 방법에 대 한 자세한 내용은이 추가 Microsoft 설명서를 읽을 수 있습니다 [Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기존.NET 응용 프로그램 현대화 ](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/)에서 PDF로 다운로드할 수도 있습니다는 <https://aka.ms/LiftAndShiftWithContainersEbook>합니다.
+
+## <a name="publish-a-single-docker-container-app-to-azure-app-service"></a>Azure App Service에 단일 Docker 컨테이너 앱 게시
 
 하거나 없거나 앱이 Azure에 배포 된 컨테이너의 빠른 유효성 검사를 수행 하는 것을 하기 때문에 단순히 단일 컨테이너 앱을 Azure App Services 확장 가능한 단일 컨테이너 서비스를 제공 하는 훌륭한 방법을 제공 합니다.
 
 Azure App Service를 사용 하는 것은 직관적인 수 있습니다 및 유용한 Git을 제공 하기 때문에 신속 하 게 실행 코드를 사용 하는 통합 Microsoft Visual studio에서 빌드 및 직접 Azure에 배포 합니다. 있지만, 일반적으로 (Docker를 통한 없음), 다른 기능, 프레임 워크 또는 App Services에서 지원 되지 않는 종속성을 필요한 경우 Azure 팀 App Service에서 해당 종속성이 업데이트 될 때까지 대기 하는 데 필요한 하거나 같은 다른 서비스도 전환 Service Fabric, Cloud Services 또는 일반 Vm을 추가로 제어할를 응용 프로그램에 대 한 필수 구성 요소 또는 프레임 워크를 설치할 수 있습니다.
 
-이제 하지만 (2016 년 11 월 Microsoft Connect 2016에서 발표) 그림 4‑4 Visual Studio 2017을 사용 하는 경우와 같이 Azure App Service에서 컨테이너 지원 제공 앱 환경에서 원하는 항목을 포함할 수 있습니다. 종속성에 추가한 앱을 컨테이너에서 실행 되므로, Dockerfile 또는 Docker 이미지에 해당 종속성을 포함 하는 기능을 얻을 수 있습니다.
+그림 4-4에 나와 있는 것 처럼 이제 Visual Studio 2017을 사용 하는 경우에 Azure App Service에서 컨테이너 지원 앱 환경에서 원하는 항목을 포함할 수 있습니다 제공 합니다. 종속성에 추가한 앱을 컨테이너에서 실행 되므로, Dockerfile 또는 Docker 이미지에 해당 종속성을 포함 하는 기능을 얻을 수 있습니다.
 
-![](./media/image4.png)
+![컨테이너 레지스트리에 대 한 선택기를 강조 표시 하는 Azure app service에 게시 하려면 Visual Studio 마법사의 보기입니다.](./media/image4.png)
 
-그림 4-4: Visual Studio 앱/컨테이너에서 컨테이너를 Azure App Service에 게시
+**그림 4-4** Visual Studio 앱/컨테이너에서 컨테이너를 Azure App Service에 게시
 
 게시 흐름은 다른 Docker 레지스트리 또는 Azure Container Registry (레지스트리 근처 Azure에서 배포 및 Azure Active Directory 그룹 및 계정에서 보호) 수는 컨테이너 레지스트리를 통해 이미지를 푸시합니다는 또한 그림 4-4에서 보여 줍니다. Docker 허브 또는 온-프레미스 레지스트리 같은.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - procedures [Visual Basic], structure
 - Visual Basic code, program structure
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
-ms.openlocfilehash: daaafa4877e9fc5abd7e720c5a91aa61f24a686c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 64ac6da99bf304639dfc0de5e24d6d6bdd3e9795
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54686051"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746525"
 ---
 # <a name="structure-of-a-visual-basic-program"></a>Visual Basic 프로그램의 구조
 Visual Basic 프로그램은 표준 구성 요소에서 빌드됩니다. A *솔루션* 하나 이상의 프로젝트를 구성 합니다. A *프로젝트* 에 하나 이상의 어셈블리를 포함할 수 있습니다. 각 *어셈블리* 하나 이상의 소스 파일에서 컴파일됩니다. A *소스 파일* 정의와 클래스, 구조체, 모듈 및 궁극적으로 모든 코드를 포함 하는 인터페이스의 구현을 제공 합니다.  
   
- Visual Basic 프로그램의 이러한 구성 요소에 대 한 자세한 내용은 참조 하세요 [솔루션 및 프로젝트](/visualstudio/ide/solutions-and-projects-in-visual-studio) 하 고 [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)합니다.  
+ Visual Basic 프로그램의 이러한 구성 요소에 대 한 자세한 내용은 참조 하세요 [솔루션 및 프로젝트](/visualstudio/ide/solutions-and-projects-in-visual-studio) 하 고 [.net에서 어셈블리](../../../standard/assembly/index.md)합니다.  
   
 ## <a name="file-level-programming-elements"></a>파일-수준 프로그래밍 요소  
  프로젝트 또는 파일을 시작 하 고 코드 편집기를 열고 올바른 순서에 이미 있는 코드가 표시 됩니다. 모든 코드를 작성할 때는 다음 순서 대로 수행 해야 합니다.  

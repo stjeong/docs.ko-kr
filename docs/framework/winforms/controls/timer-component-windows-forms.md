@@ -6,12 +6,12 @@ helpviewer_keywords:
 - timers
 - timers [Windows Forms], creating
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
-ms.openlocfilehash: 1a00bfa0772273f9374d292e27f5fba174172ca6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1c0ad0b644c0af6a4e0982b1437291e923ca79cc
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499876"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745407"
 ---
 # <a name="timer-component-windows-forms"></a>Timer 구성 요소(Windows Forms)
 Windows Forms <xref:System.Windows.Forms.Timer>는 일정한 간격마다 이벤트를 발생시키는 구성 요소입니다. 이 구성 요소는 Windows Forms 환경에 맞게 설계되었습니다.  
@@ -23,7 +23,7 @@ Windows Forms <xref:System.Windows.Forms.Timer>는 일정한 간격마다 이벤
  [Windows Forms Timer 구성 요소의 Interval 속성에 대한 제한 사항](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md)  
  사용 방법에 영향을 줄 수 있는 타이머 간격의 알려진 제한 사항을 설명합니다.  
   
- [방법: Windows Forms Timer 구성 요소를 사용하여 설정된 간격마다 프로시저 실행](../../../../docs/framework/winforms/controls/run-procedures-at-set-intervals-with-wf-timer-component.md)  
+ [방법: Windows Forms Timer 구성 요소를 사용 하 여 설정 된 간격 프로시저를 실행 합니다.](../../../../docs/framework/winforms/controls/run-procedures-at-set-intervals-with-wf-timer-component.md)  
  Windows 기반 응용 프로그램에서 정기적인 간격에 반응하는 방법을 설명합니다.  
   
 ## <a name="reference"></a>참조  
@@ -36,6 +36,3 @@ Windows Forms <xref:System.Windows.Forms.Timer>는 일정한 간격마다 이벤
 ## <a name="related-sections"></a>관련 단원  
  [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  사용 방법에 대한 정보 링크를 포함하는 Windows Forms 컨트롤의 전체 목록을 제공합니다.  
-  
- [Visual Basic 6.0 사용자를 위한 타이머 컨트롤](https://msdn.microsoft.com/library/38e5184a-1e50-45cf-b936-dae566c0cfc5)  
- 이전 버전과 비교하여 Visual Basic의 타이머 기능 변경 내용을 설명합니다.

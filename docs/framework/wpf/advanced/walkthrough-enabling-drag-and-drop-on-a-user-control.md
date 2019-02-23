@@ -8,12 +8,12 @@ helpviewer_keywords:
 - walkthrough [WPF], drag-and-drop
 - drag-and-drop [WPF], walkthrough
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
-ms.openlocfilehash: 9ffaab4115edec1fc0115b27b8904970854f79d9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a2aa1d09b922809f42fe14bd674c2a87b9e5a3f8
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600676"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747797"
 ---
 # <a name="walkthrough-enabling-drag-and-drop-on-a-user-control"></a>연습: 끌어서 놓기 사용자 컨트롤에서 사용
 
@@ -38,7 +38,7 @@ ms.locfileid: "54600676"
 ## <a name="create-the-application-project"></a>응용 프로그램 프로젝트 만들기
  이 섹션에서는 두 개의 패널을 사용 하 여 기본 페이지를 포함 하는 응용 프로그램 인프라를 만들게 됩니다 및 <xref:System.Windows.Controls.TextBox>합니다.
 
-1.  Visual Basic 또는 Visual C#에서 `DragDropExample`이라는 새 WPF 애플리케이션 프로젝트를 만듭니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)합니다.
+1.  Visual Basic 또는 Visual C#에서 `DragDropExample`이라는 새 WPF 애플리케이션 프로젝트를 만듭니다. 자세한 내용은 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다.
 
 2.  MainWindow.xaml을 엽니다.
 

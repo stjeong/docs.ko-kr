@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF services [WCF]
 - WCF services [WCF], running
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-ms.openlocfilehash: 3a029ef23ba3e9a0dd62e410739fa8734acc202a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 73633c2c6119204f2fb608b32ae794a2e07b27d0
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55277773"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747076"
 ---
 # <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>호스트 및 기본 Windows Communication Foundation 서비스를 실행 하는 방법
 
@@ -101,7 +101,7 @@ Module Service
     Class Program
         Shared Sub Main()
             ' Step 1 Create a URI to serve as the base address
-            Dim baseAddress As New Uri("http://localhost:8000/ServiceModelSamples/Service")
+            Dim baseAddress As New Uri("http://localhost:8000/GettingStarted")
 
             ' Step 2 Create a ServiceHost instance
             Dim selfHost As New ServiceHost(GetType(CalculatorService), baseAddress)
@@ -144,18 +144,17 @@ End Module
 
 **3 단계** – 만듭니다는 <xref:System.ServiceModel.Description.ServiceEndpoint> 인스턴스. 서비스 엔드포인트는 주소, 바인딩 및 서비스 계약으로 구성되어 있습니다. 따라서 <xref:System.ServiceModel.Description.ServiceEndpoint> 생성자는 서비스 계약 인터페이스 형식, 바인딩 및 주소를 사용합니다. 서비스 계약은 사용자가 정의한 `ICalculator`이며 서비스 형식에 구현합니다. 이 예제에 사용된 바인딩은 WS-* 사양을 따르는 엔드포인트에 연결하는 데 사용되는 기본 바인딩인 <xref:System.ServiceModel.WSHttpBinding>입니다. WCF 바인딩에 대한 자세한 내용은 [WCF 바인딩 개요](bindings-overview.md)를 참조하세요. 엔드포인트를 식별하기 위해 주소가 기본 주소에 추가됩니다. 끝점에 대 한 정규화 된 주소 이므로이 코드에서 지정 된 주소는 "CalculatorService" `"http://localhost:8000/GettingStarted/CalculatorService"`합니다.
 
-    > [!IMPORTANT]
-    > Adding a service endpoint is optional when using .NET Framework 4 or later. In these versions, if no endpoints are added in code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).
+> [!IMPORTANT]
+> .NET Framework 4 이상을 사용할 때 서비스 엔드포인트 추가는 선택 사항입니다. 이러한 버전에서 코드 또는 구성에 엔드포인트가 추가되지 않으면 WCF가 기본 주소의 각 결합에 기본 엔드포인트 하나씩을 추가하고 서비스에서 구현한 계약을 추가합니다. 기본 엔드포인트에 대한 자세한 내용은 [엔드포인트 주소 지정](specifying-an-endpoint-address.md)을 참조하세요. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](./samples/simplified-configuration-for-wcf-services.md)을 참조하세요.
 
 **4 단계** – 메타 데이터 교환을 사용 하도록 설정 합니다. 클라이언트는 메타데이터 교환을 사용하여 서비스 작업을 호출하는 데 사용되는 프록시를 생성합니다. 메타데이터 교환을 활성화하려면 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 인스턴스를 만들고 해당 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정한 다음 동작을 <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> 인스턴스의 <xref:System.ServiceModel.ServiceHost> 컬렉션에 추가합니다.
 
 **5 단계** Open –는 <xref:System.ServiceModel.ServiceHost> 들어오는 메시지를 수신 대기 합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. 안전 하 게에서 throw 된 예외를 catch 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.ServiceHost>를 참조 하세요 [사용 하 여 닫기 및 중단 WCF 클라이언트 리소스를 해제 하려면](samples/use-close-abort-release-wcf-client-resources.md)
 
 > [!IMPORTANT]
-> 코드에서 변경한 내용을 반영 하도록 GettingStartedLib에서 App.config를 편집 합니다.
-> 1. 줄 14를 변경 합니다. `<service name="GettingStartedLib.CalculatorService">`
-> 2. 줄 17을 변경 합니다. `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
-> 3. 22 줄을 변경 합니다. `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
+> WCF 서비스 라이브러리에 추가 하면 Visual Studio 호스트할 수 있습니다에 대 한 서비스 호스트를 시작 하 여 디버그 하는 경우. 충돌을 피하기 위해이 비활성화할 수 있습니다. 
+> 1. GettingStartedLib에 대 한 프로젝트 속성을 엽니다.
+> 2. 로 이동 **WCF 옵션** 의 선택을 취소 **WCF 서비스 호스트 시작 디버깅할 때**합니다.
 
 ## <a name="verify-the-service-is-working"></a>서비스가 작동 확인
 
@@ -163,7 +162,7 @@ End Module
 
    서비스는 관리자 권한으로 실행 되어야 합니다. 관리자 권한으로 Visual Studio를 열었으므로 GettingStartedHost도 관리자 권한으로 실행 됩니다. 사용 하 여 새 명령 프롬프트를 열 수도 있습니다 **관리자 권한으로 실행** 내에서 service.exe를 실행 합니다.
 
-2. 웹 브라우저를 열고 서비스의 디버그 페이지인 `http://localhost:8000/GettingStarted/CalculatorService`합니다.
+2. 웹 브라우저를 열고 서비스의 디버그 페이지인 `http://localhost:8000/GettingStarted/`합니다. **참고! 슬래시를 종료 하는 중요 합니다.**
 
 ## <a name="example"></a>예제
 
@@ -249,7 +248,7 @@ namespace GettingStartedHost
         static void Main(string[] args)
         {
             // Step 1 of the address configuration procedure: Create a URI to serve as the base address.
-            Uri baseAddress = new Uri("http://localhost:8000/ServiceModelSamples/Service");
+            Uri baseAddress = new Uri("http://localhost:8000/GettingStarted/");
 
             // Step 2 of the hosting procedure: Create ServiceHost
             ServiceHost selfHost = new ServiceHost(typeof(CalculatorService), baseAddress);
@@ -357,7 +356,7 @@ Module Service
     Class Program
         Shared Sub Main()
             ' Step 1 of the address configuration procedure: Create a URI to serve as the base address.
-            Dim baseAddress As New Uri("http://localhost:8000/ServiceModelSamples/Service")
+            Dim baseAddress As New Uri("http://localhost:8000/GettingStarted/")
 
             ' Step 2 of the hosting procedure: Create ServiceHost
             Dim selfHost As New ServiceHost(GetType(CalculatorService), baseAddress)
@@ -411,3 +410,4 @@ End Module
 
 - [시작](samples/getting-started-sample.md)
 - [자체 호스팅](samples/self-host.md)
+- [서비스 호스팅](hosting-services.md)

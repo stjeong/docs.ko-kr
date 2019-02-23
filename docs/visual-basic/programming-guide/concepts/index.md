@@ -2,12 +2,6 @@
 title: 프로그래밍 개념(Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-ms.openlocfilehash: fbdf2d6de7abf1d8d80ca3e88621fa569248996c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147244"
 ---
 # <a name="programming-concepts-visual-basic"></a>프로그래밍 개념(Visual Basic)
 이 섹션에서는 Visual Basic 언어의 프로그래밍 개념을 설명합니다.  
@@ -16,7 +10,7 @@ ms.locfileid: "53147244"
   
 |제목|설명|  
 |-----------|-----------------|  
-|[어셈블리와 전역 어셈블리 캐시(Visual Basic)](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)|어셈블리를 만들고 사용하는 방법을 설명합니다.|  
+|[.NET 어셈블리](../../../standard/assembly/index.md)|어셈블리를 만들고 사용하는 방법을 설명합니다.|  
 |[Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)|[Async](../../../visual-basic/language-reference/modifiers/async.md) 및 [Await](../../../visual-basic/language-reference/operators/await-operator.md) 키워드를 사용하여 비동기 솔루션을 작성하는 방법을 설명합니다. 연습이 포함되어 있습니다.|  
 |[특성 개요(Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|특성을 사용하여 형식, 필드, 메서드 및 속성 등의 요소를 프로그래밍하는 방법에 대한 추가 정보를 제공하는 방법을 설명합니다.|  
 |[호출자 정보(Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md)|메서드의 호출자에 대한 정보를 가져오는 방법을 설명합니다. 이 정보에는 소스 코드의 파일 경로와 줄 번호 및 호출자의 멤버 이름이 포함됩니다.|  

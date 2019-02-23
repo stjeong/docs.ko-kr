@@ -11,12 +11,12 @@ helpviewer_keywords:
 - custom controls [Windows Forms]
 - controls [Windows Forms], composite
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
-ms.openlocfilehash: cd78a0f2513d0e352efa1b1b866627586e6068bd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 907355ca78b299b34b231b8b8d88353b0dde19c0
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54683926"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746606"
 ---
 # <a name="varieties-of-custom-controls"></a>사용자 지정 컨트롤의 종류
 .NET Framework를 사용하여 새 컨트롤을 개발 및 구현할 수 있습니다. 상속을 통해서 기존 컨트롤 및 친숙한 사용자 정의 컨트롤의 기능을 확장할 수 있습니다. 또한 고유한 그리기를 수행하는 사용자 지정 컨트롤을 작성할 수도 있습니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "54683926"
  만들 컨트롤 종류를 결정하기 어려울 수 있습니다. 이 항목에서는 상속할 수 있는 다양한 종류의 컨트롤 간의 차이점을 강조하고 프로젝트에 대한 특정 종류의 컨트롤을 선택하는 방법에 대한 정보를 제공합니다.  
   
 > [!NOTE]
->  Web Forms에서 사용할 컨트롤 작성에 대한 자세한 내용은 [사용자 지정 ASP.NET 서버 컨트롤 개발](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef)을 참조하세요.  
+>  Web Forms에서 사용할 컨트롤 작성에 대한 자세한 내용은 [사용자 지정 ASP.NET 서버 컨트롤 개발](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100))을 참조하세요.  
   
 ## <a name="base-control-class"></a>기본 컨트롤 클래스  
  <xref:System.Windows.Forms.Control> 클래스는 Windows Forms 컨트롤에 대 한 기본 클래스입니다. Windows Forms 애플리케이션에서 시각적 개체 표시에 필요한 인프라를 제공합니다.  
@@ -104,11 +104,11 @@ ms.locfileid: "54683926"
 ## <a name="custom-design-experience"></a>사용자 지정 디자인 환경  
  사용자 지정 디자인 타임 환경을 구현해야 할 경우 디자이너를 직접 작성할 수 있습니다. 복합 컨트롤에 대 한 사용자 지정 디자이너 클래스에서 파생 된 <xref:System.Windows.Forms.Design.ParentControlDesigner> 또는 <xref:System.Windows.Forms.Design.DocumentDesigner> 클래스입니다. 확장 및 사용자 지정 컨트롤에 대 한 사용자 지정 디자이너 클래스에서 파생 된 <xref:System.Windows.Forms.Design.ControlDesigner> 클래스입니다.  
   
- 사용 하 여는 <xref:System.ComponentModel.DesignerAttribute> 컨트롤 디자이너를 사용 하 여 연결 합니다. 자세한 내용은 [디자인 타임 지원 확장](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2) 고 [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)합니다.  
+ 사용 하 여는 <xref:System.ComponentModel.DesignerAttribute> 컨트롤 디자이너를 사용 하 여 연결 합니다. 자세한 내용은 [디자인 타임 지원 확장](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) 고 [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))합니다.  
   
 ## <a name="see-also"></a>참고자료
 - [.NET Framework에서 사용자 지정 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
 - [방법: 간단한 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)
 - [합성 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-a-composite-windows-forms-control.md)
-- [디자인 타임 지원 확장](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-- [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)
+- [디자인 타임 지원 확장](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
+- [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))

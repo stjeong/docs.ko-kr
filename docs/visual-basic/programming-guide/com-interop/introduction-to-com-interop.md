@@ -5,12 +5,12 @@ helpviewer_keywords:
 - interop assemblies
 - COM interop [Visual Basic], about COM interop
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
-ms.openlocfilehash: 68e750fccd988a9cf7e08b4e7169bd2385d48e1f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e4421cbc40cdccc1dbbaeb459cb12fda0ee407cf
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54734859"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745601"
 ---
 # <a name="introduction-to-com-interop-visual-basic"></a>COM Interop 소개(Visual Basic)
 구성 요소 개체 모델 (COM) 응용 프로그램을 호스트 하는 다른 구성 요소에 해당 기능을 노출 하는 개체 수 있습니다. COM 개체 수년간 프로그래밍 Windows 기초 였을 동안 응용 프로그램은 CLR (공용 언어 런타임)을 위한 많은 이점을 제공 합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "54734859"
   
 -   올바르게 실행 하는 어셈블리에 필요한 사용 권한입니다.  
   
- 어셈블리 및 어셈블리 매니페스트에 대 한 자세한 내용은 참조 하세요. [어셈블리와 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)합니다.  
+ 어셈블리 및 어셈블리 매니페스트에 대 한 자세한 내용은 참조 하세요. [.net에서 어셈블리](../../../standard/assembly/index.md)합니다.  
   
 ### <a name="importing-and-exporting-type-libraries"></a>가져오기 및 형식 라이브러리 내보내기  
  Visual Studio에 형식 라이브러리에서 정보를 가져올 수 있도록 Tlbimp 유틸리티를 포함 한 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램입니다. Tlbexp 유틸리티를 사용 하 여 어셈블리에서 형식 라이브러리를 생성할 수 있습니다.  
@@ -57,7 +57,7 @@ ms.locfileid: "54734859"
 - [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 - [비관리 코드와의 상호 운용](../../../framework/interop/index.md)
 - [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
-- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [.NET 어셈블리](../../../standard/assembly/index.md)
 - [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe(형식 라이브러리 내보내기)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
 - [interop 마샬링](../../../framework/interop/interop-marshaling.md)

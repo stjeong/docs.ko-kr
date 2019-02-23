@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hosting Win32 control in WPF [WPF]
 - Win32 code [WPF], WPF interoperation
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
-ms.openlocfilehash: 8e6da9e9e48238c33a3522034c53ecdcb5ec99cc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 047ccd4ea4ba83c8d7427559f3ee76cc3547a430
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54691556"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747533"
 ---
 # <a name="walkthrough-hosting-a-win32-control-in-wpf"></a>연습: WPF에서 Win32 컨트롤 호스팅
 Windows Presentation Foundation (WPF) 응용 프로그램을 만들기 위한 풍부한 환경을 제공 합니다. 그러나 Win32 코드에 상당한 투자를 해야 하는 경우는 것을 더욱 효율적으로 적어도 일부 다시 사용 하는의 WPF 응용 프로그램에서 코드 보다는 완전히 다시 작성 합니다. WPF는 Win32 창의 WPF 페이지를 호스트 하기 위한 간단한 메커니즘을 제공 합니다.  
@@ -140,16 +140,16 @@ Windows Presentation Foundation (WPF) 응용 프로그램을 만들기 위한 �
   
  사용자 수 또한 항목을 선택 목록 상자에서를 클릭 하 여 기존 Win32 응용 프로그램에 대 한 것 처럼 합니다. 표시된 데이터는 사용자가 항목을 선택 또는 추가하여 목록 상자의 상태를 변경할 때마다 업데이트됩니다.  
   
- 항목을 추가 하려면로 송신 되는 목록 상자는 [ `LB_ADDSTRING` 메시지](https://msdn.microsoft.com/library/windows/desktop/bb775181(v=vs.85).aspx)합니다. 항목을 삭제 하려면 송신 [ `LB_GETCURSEL` ](https://msdn.microsoft.com/library/windows/desktop/bb775197(v=vs.85).aspx) 현재 선택 영역의 인덱스를 가져올 차례로 [ `LB_DELETESTRING` ](https://msdn.microsoft.com/library/windows/desktop/bb775183(v=vs.85).aspx) 항목을 삭제 합니다. 샘플도 보냅니다 [ `LB_GETCOUNT` ](https://msdn.microsoft.com/library/windows/desktop/bb775195(v=vs.85).aspx), 반환된 된 값을 사용 하 여 항목의 수를 보여 주는 디스플레이를 업데이트 합니다. 이러한 두 인스턴스 [ `SendMessage` ](https://msdn.microsoft.com/library/windows/desktop/ms644950(v=vs.85).aspx) 이전 섹션에서 설명한 PInvoke 선언 중 하나를 사용 합니다.  
+ 항목을 추가 하려면로 송신 되는 목록 상자는 [ `LB_ADDSTRING` 메시지](/windows/desktop/Controls/lb-addstring)합니다. 항목을 삭제 하려면 송신 [ `LB_GETCURSEL` ](/windows/desktop/Controls/lb-getcursel) 현재 선택 영역의 인덱스를 가져올 차례로 [ `LB_DELETESTRING` ](/windows/desktop/Controls/lb-deletestring) 항목을 삭제 합니다. 샘플도 보냅니다 [ `LB_GETCOUNT` ](/windows/desktop/Controls/lb-getcount), 반환된 된 값을 사용 하 여 항목의 수를 보여 주는 디스플레이를 업데이트 합니다. 이러한 두 인스턴스 [ `SendMessage` ](/windows/desktop/api/winuser/nf-winuser-sendmessage) 이전 섹션에서 설명한 PInvoke 선언 중 하나를 사용 합니다.  
   
  [!code-csharp[WPFHostingWin32Control#AppendDeleteText](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml.cs#appenddeletetext)]
  [!code-vb[WPFHostingWin32Control#AppendDeleteText](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/Page1.xaml.vb#appenddeletetext)]  
   
- 컨트롤을 전송 하 여 호스트 창에 알립니다 사용자가 항목을 선택 또는 선택 변경 하는 경우는 [ `WM_COMMAND` 메시지](https://msdn.microsoft.com/library/windows/desktop/ms647591(v=vs.85).aspx), 시키는 <xref:System.Windows.Interop.HwndHost.MessageHook> 페이지에 대 한 이벤트입니다. 처리기는 호스트 창의 주 창 프로시저와 같은 정보를 수신합니다. 또한 부울 값에 대 한 참조가 전달 `handled`합니다. 설정한 `handled` 에 `true` 를 나타내고는 메시지를 처리 했으며 추가 처리가 필요 합니다.  
+ 컨트롤을 전송 하 여 호스트 창에 알립니다 사용자가 항목을 선택 또는 선택 변경 하는 경우는 [ `WM_COMMAND` 메시지](/windows/desktop/menurc/wm-command), 시키는 <xref:System.Windows.Interop.HwndHost.MessageHook> 페이지에 대 한 이벤트입니다. 처리기는 호스트 창의 주 창 프로시저와 같은 정보를 수신합니다. 또한 부울 값에 대 한 참조가 전달 `handled`합니다. 설정한 `handled` 에 `true` 를 나타내고는 메시지를 처리 했으며 추가 처리가 필요 합니다.  
   
- [`WM_COMMAND`](https://msdn.microsoft.com/library/windows/desktop/ms647591(v=vs.85).aspx) 처리 하려는 이벤트 인지 여부를 확인 하려면 알림 ID를 확인 해야 하므로 다양 한 이유로에 전송 됩니다. 상위 단언에 포함 된 ID는 `wParam` 매개 변수입니다. 샘플 비트 연산자를 사용 하 여 ID를 추출 사용자에 대 한 선택을 수행 하거나, ID 됩니다 [ `LBN_SELCHANGE` ](https://msdn.microsoft.com/library/windows/desktop/bb775161(v=vs.85).aspx)합니다.  
+ [`WM_COMMAND`](/windows/desktop/menurc/wm-command) 처리 하려는 이벤트 인지 여부를 확인 하려면 알림 ID를 확인 해야 하므로 다양 한 이유로에 전송 됩니다. 상위 단언에 포함 된 ID는 `wParam` 매개 변수입니다. 샘플 비트 연산자를 사용 하 여 ID를 추출 사용자에 대 한 선택을 수행 하거나, ID 됩니다 [ `LBN_SELCHANGE` ](/windows/desktop/Controls/lbn-selchange)합니다.  
   
- 때 [ `LBN_SELCHANGE` ](https://msdn.microsoft.com/library/windows/desktop/bb775161(v=vs.85).aspx) 가 수신 샘플 인덱스를 가져옵니다 선택한 항목의 컨트롤을 전송 하 여를 [ `LB_GETCURSEL` 메시지](https://msdn.microsoft.com/library/windows/desktop/bb775197(v=vs.85).aspx)합니다. 텍스트를 가져오려면 먼저 만듭니다는 <xref:System.Text.StringBuilder>합니다. 보내십시오 컨트롤을 [ `LB_GETTEXT` 메시지](https://msdn.microsoft.com/library/windows/desktop/bb761313(v=vs.85).aspx)합니다. 빈 전달 <xref:System.Text.StringBuilder> 개체는 `wParam` 매개 변수입니다. 때 [ `SendMessage` ](https://msdn.microsoft.com/library/windows/desktop/ms644950(v=vs.85).aspx) 반환 된 <xref:System.Text.StringBuilder> 선택한 항목의 텍스트가 포함 됩니다. 이 이용 [ `SendMessage` ](https://msdn.microsoft.com/library/windows/desktop/ms644950(v=vs.85).aspx) 또 PInvoke 선언 해야 합니다.  
+ 때 [ `LBN_SELCHANGE` ](https://msdn.microsoft.com/library/windows/desktop/bb775161(v=vs.85).aspx) 가 수신 샘플 인덱스를 가져옵니다 선택한 항목의 컨트롤을 전송 하 여를 [ `LB_GETCURSEL` 메시지](/windows/desktop/Controls/lb-getcursel)합니다. 텍스트를 가져오려면 먼저 만듭니다는 <xref:System.Text.StringBuilder>합니다. 보내십시오 컨트롤을 [ `LB_GETTEXT` 메시지](/windows/desktop/Controls/lb-gettext)합니다. 빈 전달 <xref:System.Text.StringBuilder> 개체는 `wParam` 매개 변수입니다. 때 [ `SendMessage` ](/windows/desktop/api/winuser/nf-winuser-sendmessage) 반환 된 <xref:System.Text.StringBuilder> 선택한 항목의 텍스트가 포함 됩니다. 이 이용 [ `SendMessage` ](/windows/desktop/api/winuser/nf-winuser-sendmessage) 또 PInvoke 선언 해야 합니다.  
   
  마지막으로 설정 합니다 `handled` 에 `true` 메시지가 처리 된 것을 나타냅니다.  
   

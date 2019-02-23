@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ToolStripContainer control [Windows Forms]
 - ToolStrip control [Windows Forms], ToolStripContainer
 ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
-ms.openlocfilehash: 260d79b7c6432c3dede5b593eaa3f1e52ed35c5e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 569fccfffe1d117d7ab404f72d0275e7391926da
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54588303"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746800"
 ---
 # <a name="toolstripcontainer-control"></a>ToolStripContainer 컨트롤
 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 <xref:System.Windows.Forms.ToolStripContainer>를 사용하여 기본 제공 래프팅(도킹된 경우 도구 영역 내에서 가로 또는 세로 공간 공유)을 지원합니다.  
@@ -26,16 +26,18 @@ ms.locfileid: "54588303"
  응용 프로그램에 <xref:System.Windows.Forms.ToolStripContainer>를 추가하고 <xref:System.Windows.Forms.ToolStripContainer>의 특정 패널에 컨트롤을 추가하는 방법을 설명합니다.  
   
  [방법: ToolStripContentPanel에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-toolstripcontentpanel.md)  
- <xref:System.Windows.Forms.ToolStripContentPanel>에 컨트롤을 추가하는 방법을 설명합니다.  
+ 
+  <xref:System.Windows.Forms.ToolStripContentPanel>에 컨트롤을 추가하는 방법을 설명합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.ToolStripContainer>  
  <xref:System.Windows.Forms.ToolStripContainer> 컨트롤에 대한 참조 설명서를 제공합니다.  
   
  <xref:System.Windows.Forms.ToolStripContentPanel>  
- <xref:System.Windows.Forms.ToolStripContainer> 컨트롤의 <xref:System.Windows.Forms.ToolStripContentPanel>에 대한 참조 설명서를 제공합니다.  
+ 
+  <xref:System.Windows.Forms.ToolStripContainer> 컨트롤의 <xref:System.Windows.Forms.ToolStripContentPanel>에 대한 참조 설명서를 제공합니다.  
   
- 도 참조 하세요 [ToolStripContainer 작업 대화 상자](https://msdn.microsoft.com/library/ms233647\(v=vs.110\))합니다.  
+ 도 참조 하세요 [ToolStripContainer 작업 대화 상자](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  <xref:System.Windows.Forms.ToolStripPanel>  

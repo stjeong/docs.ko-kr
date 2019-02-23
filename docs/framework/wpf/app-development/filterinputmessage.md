@@ -5,12 +5,12 @@ helpviewer_keywords:
 - raw input [WPF]
 - FilterInputMessage method [WPF]
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
-ms.openlocfilehash: 979fa7b70dc4b43af841c7219d64125caf99e33a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c3620e13951afddc8de25c314de17704548d2366
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642622"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746168"
 ---
 # <a name="filterinputmessage"></a>FilterInputMessage
 E_NOTIMPL이 반환되지 않는 한 메시지를 받을 때마다 PresentationHost.exe에서 호출됩니다.  
@@ -43,4 +43,4 @@ HRESULT FilterInputMessage( [in] MSG* pMsg ) ;
  호스 티 드 응용 프로그램에서 반환 된 원시 입력된 장치 (휴먼 인터페이스 장치)의 집합을 사용 하 여 등록 하 여 원시 입력된 메시지를 받는 [GetRawInputDevices](../../../../docs/framework/wpf/app-development/getrawinputdevices.md)합니다.  
   
 ## <a name="see-also"></a>참고자료
-- [WM_INPUT 알림](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputmessages/wm_input.asp)
+- [WM_INPUT 메시지](/windows/desktop/inputdev/wm-input)

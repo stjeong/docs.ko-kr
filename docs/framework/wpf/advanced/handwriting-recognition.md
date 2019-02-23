@@ -8,18 +8,18 @@ helpviewer_keywords:
 - handwriting recognition [WPF]
 - recognition of handwriting [WPF]
 ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636
-ms.openlocfilehash: 8f520b80970bfeebdfea01a6c722634efd99ffe7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a93c1486f191df31213fc6c85254ecd8801799b8
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54725391"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747303"
 ---
 # <a name="handwriting-recognition"></a>필기 인식
 이 섹션에서는 WPF 플랫폼의 디지털 링크에 관련되므로 인식의 기본 개념을 설명합니다.  
   
 ## <a name="recognition-solutions"></a>인식 솔루션  
- 다음 예에서는 [Microsoft.Ink.InkCollector](https://msdn.microsoft.com/library/microsoft.ink.inkcollector\(v=vs.90\).aspx) 클래스를 사용하여 잉크를 인식하는 방법을 보여줍니다.  
+ 다음 예에서는 [Microsoft.Ink.InkCollector](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583683(v=vs.90)) 클래스를 사용하여 잉크를 인식하는 방법을 보여줍니다.  
   
 > [!NOTE]
 >  이 샘플에서는 필기 인식기를 시스템에 설치해야 합니다.  
@@ -34,4 +34,4 @@ ms.locfileid: "54725391"
  [!code-vb[InkRecognition#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkRecognition/VisualBasic/Window1.xaml.vb#2)]  
   
 ## <a name="see-also"></a>참고자료
-- [Microsoft.Ink.InkCollector](https://msdn.microsoft.com/library/microsoft.ink.inkcollector\(v=vs.90\).aspx)
+- [Microsoft.Ink.InkCollector](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583683(v=vs.90))

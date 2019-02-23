@@ -5,12 +5,12 @@ helpviewer_keywords:
 - printing [WPF]
 - print system management [WPF]
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
-ms.openlocfilehash: c920aff295fd22cc7faa90c2f9421840f9b60b69
-ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
+ms.openlocfilehash: 24899d8a2184c73b50902de4a30c39327576ded1
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56441205"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747358"
 ---
 # <a name="printing-how-to-topics"></a>인쇄 방법 항목
 이 섹션의에서 항목에서는 인쇄를 사용 하는 방법을 보여 줍니다 및 인쇄 시스템 관리 기능에 포함 된 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 뿐만 아니라 새 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 인쇄 경로입니다.  
@@ -30,9 +30,6 @@ ms.locfileid: "56441205"
   
  [인쇄 큐의 하위 집합 열거](../../../../docs/framework/wpf/advanced/how-to-enumerate-a-subset-of-print-queues.md)  
  특정 특성을 가진 프린터 목록을 생성 하기 위한 지침입니다.  
-  
- [NOTINBUILD: 방법: 인쇄 스키마를 확장 하 고 새 인쇄 시스템 클래스 만들기](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885)  
- 확장 된 설명은 어떻게 관리 코드 프로그래머가 특수 인쇄 장치 또는 새로운 기능 또는 일반적이 지 않은 기능을 사용 하 여 프린터에 인쇄 스키마를 확장할 수 있습니다.  
   
  [리플렉션을 사용하지 않고 인쇄 시스템 개체 속성 가져오기](../../../../docs/framework/wpf/advanced/how-to-get-print-system-object-properties-without-reflection.md)  
  시스템 개체의 속성 및 해당 종류를 인쇄 하는 런타임에 검색 하는 방법에 대 한 지침입니다.  
