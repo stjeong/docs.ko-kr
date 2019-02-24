@@ -5,22 +5,22 @@ ms.date: 07/28/2018
 author: billwagner
 ms.author: wiwagn
 ms.custom: seodec18
-ms.openlocfilehash: 6204a28200f1db6350e695a9ab29502c46c25590
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 63fc441d045f62abc6776cac56571a971d64fefd
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129703"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583877"
 ---
 # <a name="how-to-remove-the-net-core-runtime-and-sdk"></a>.NET Core 런타임 및 SDK를 제거하는 방법
 
-시간이 지남에 따라 .NET Core 런타임 및 SDK의 업데이트된 버전을 설치할 때 머신에서 .NET Core의 오래된 버전을 제거합니다. 이전 버전의 런타임을 제거하면 [.NET Core 버전 선택](selection.md)의 문서에서 설명한 대로 공유 프레임워크 응용 프로그램을 실행하기 위해 선택한 런타임이 변경될 수 있습니다.
+시간이 지남에 따라 .NET Core 런타임 및 SDK의 업데이트된 버전을 설치할 때 머신에서 .NET Core의 오래된 버전을 제거합니다. 이전 버전의 런타임을 제거하면 [.NET Core 버전 선택](selection.md)의 문서에서 설명한 대로 공유 프레임워크 애플리케이션을 실행하기 위해 선택한 런타임이 변경될 수 있습니다.
 
 ## <a name="should-i-remove-a-version"></a>버전을 제거해야 하나요?
 
-[.NET Core 버전 선택](selection.md) 동작 및 .NET Core의 런타임 호환성을 업데이트하여 이전 버전을 안전하게 제거할 수 있습니다. .NET Core 런타임 업데이트는 1.x 및 2.x와 같은 주 버전 '대역' 내에서 호환됩니다. 또한 .NET Core SDK의 최신 릴리스는 호환 가능한 방식으로 이전 버전의 런타임을 대상으로 하는 응용 프로그램을 빌드하는 기능을 일반적으로 유지합니다.
+[.NET Core 버전 선택](selection.md) 동작 및 .NET Core의 런타임 호환성을 업데이트하여 이전 버전을 안전하게 제거할 수 있습니다. .NET Core 런타임 업데이트는 1.x 및 2.x와 같은 주 버전 '대역' 내에서 호환됩니다. 또한 .NET Core SDK의 최신 릴리스는 호환 가능한 방식으로 이전 버전의 런타임을 대상으로 하는 애플리케이션을 빌드하는 기능을 일반적으로 유지합니다.
 
-일반적으로 응용 프로그램에 필요한 최신 SDK 및 런타임의 최신 패치 버전만 있으면 됩니다. 이전 SDK 또는 런타임 버전을 유지하는 인스턴스에는 **project.json** 기반 애플리케이션 유지 관리가 포함됩니다. 응용 프로그램에 이전 SDK 또는 런타임에 대한 특정 이유가 없는 경우 이전 버전을 안전하게 제거할 수 있습니다.
+일반적으로 애플리케이션에 필요한 최신 SDK 및 런타임의 최신 패치 버전만 있으면 됩니다. 이전 SDK 또는 런타임 버전을 유지하는 인스턴스에는 **project.json** 기반 애플리케이션 유지 관리가 포함됩니다. 애플리케이션에 이전 SDK 또는 런타임에 대한 특정 이유가 없는 경우 이전 버전을 안전하게 제거할 수 있습니다.
 
 ## <a name="determine-what-is-installed"></a>설치된 버전 확인
 
@@ -158,7 +158,7 @@ Linux에서 .NET Core(SDK 또는 런타임)를 제거하는 옵션이 더 있습
 - [apt-get(8)](https://linux.die.net/man/8/apt-get)은 Debian 기반 시스템(Ubuntu 포함)에서 사용됩니다.
 - [yum(8)](https://linux.die.net/man/8/yum)은 Fedora, CentOS 및 Oracle Linux에서 사용됩니다.
 - [zypper(8)](https://en.opensuse.org/SDB:Zypper_manual_(plain))는 openSUSE 및 SLES(SUSE Linux Enterprise 시스템)에서 사용됩니다.
-- [dnf(8)](https://dnf.readthedocs.io/latest/command_ref.html)는 Fedora에서 사용됩니다.
+- [dnf(8)](https://dnf.readthedocs.io/en/latest/command_ref.html)는 Fedora에서 사용됩니다.
 
 대부분의 경우 패키지를 제거하는 명령은 `remove`입니다.
 
@@ -166,7 +166,7 @@ Linux에서 .NET Core(SDK 또는 런타임)를 제거하는 옵션이 더 있습
 
 SDK가 아닌 런타임만 설치한 머신의 경우, 패키지 이름은 .NET Core 런타임의 경우에는 `dotnet-runtime-<version>`이고 전체 런타임 스택의 경우에는 `aspnetcore-runtime-<version>`입니다.
 
-2.0 이전의 .NET Core 설치는 패키지 관리자를 사용하여 SDK를 제거할 때 호스트 응용 프로그램을 제거하지 않았습니다. `apt-get`을 사용하는 명령은 다음과 같습니다.
+2.0 이전의 .NET Core 설치는 패키지 관리자를 사용하여 SDK를 제거할 때 호스트 애플리케이션을 제거하지 않았습니다. `apt-get`을 사용하는 명령은 다음과 같습니다.
 
 ```bash
 apt-get remove dotnet-host
