@@ -65,7 +65,7 @@ ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 ## <a name="platform-sections"></a>플랫폼 섹션  
  [애플리케이션 도메인](../../framework/app-domains/application-domains.md)  
   
- [어셈블리 및 전역 어셈블리 캐시](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
+ [.NET 어셈블리](../../standard/assembly/index.md)  
   
  [특성](../../csharp/programming-guide/concepts/attributes/index.md)  
   
