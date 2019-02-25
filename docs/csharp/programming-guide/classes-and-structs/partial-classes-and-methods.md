@@ -7,12 +7,12 @@ helpviewer_keywords:
 - partial classes [C#]
 - C# language, partial classes and methods
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-ms.openlocfilehash: b960bbf0a35a917d9143a0f47ce3219b6cb10ab4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5fdb3de03eaa60a4d29d5a0c7e4082a6806b0ec9
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54713317"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56441673"
 ---
 # <a name="partial-classes-and-methods-c-programming-guide"></a>Partial 클래스 및 메서드(C# 프로그래밍 가이드)
 [클래스](../../../csharp/language-reference/keywords/class.md), [구조체](../../../csharp/language-reference/keywords/struct.md), [인터페이스](../../../csharp/language-reference/keywords/interface.md) 또는 메서드의 정의를 둘 이상의 소스 파일에 분할할 수 있습니다. 각 소스 파일에는 형식 또는 메서드 정의 섹션이 있으며 모든 부분은 애플리케이션이 컴파일될 때 결합됩니다.  
@@ -111,7 +111,7 @@ ms.locfileid: "54713317"
 ## <a name="example-1"></a>예제 1  
   
 ### <a name="description"></a>설명  
- 다음 예제에서는 `CoOrds` 클래스의 생성자 및 필드가 하나의 partial 클래스 정의에서 선언되고 `PrintCoOrds` 멤버가 다른 partial 클래스 정의에서 선언됩니다.  
+ 다음 예제에서는 `Coords` 클래스의 생성자 및 필드가 하나의 partial 클래스 정의에서 선언되고 `PrintCoords` 멤버가 다른 partial 클래스 정의에서 선언됩니다.  
   
 ### <a name="code"></a>코드  
  [!code-csharp[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_9.cs)]  

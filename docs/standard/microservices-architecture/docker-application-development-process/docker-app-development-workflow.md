@@ -4,12 +4,12 @@ description: Docker 기반 애플리케이션 개발 워크플로의 세부 정�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
-ms.openlocfilehash: c5c8cc34c70771d3f362f967cc99e76013291faa
-ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
+ms.openlocfilehash: c34d49307408520afc6223a43d1c347dd6cffb97
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55480103"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56584306"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Docker 앱에 대한 개발 워크플로
 
@@ -489,7 +489,7 @@ Visual Studio 2017을 사용하여 다중 컨테이너 애플리케이션을 실
 
 ### <a name="a-note-about-testing-and-deploying-with-orchestrators"></a>오케스트레이터를 사용하여 테스트 및 배포하는 내용에 대한 메모
 
-docker-compose up 및 docker run 명령(또는 Visual Studio에서 컨테이너를 실행하고 디버깅)은 개발 환경에서 컨테이너를 테스트하기에 충분합니다. 하지만 프로덕션 배포의 경우에는 이 접근법을 사용하지 말고 [Kubernetes](https://kubernetes.io/) 또는 [Service Fabric](https://azure.microsoft.com/services/service-fabric/) 같은 오케스트레이터를 대상으로 해야 합니다. Kubernetes를 사용 중인 경우 [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/)로 컨테이너와 [서비스](https://kubernetes.io/docs/concepts/services-networking/service/)를 정리하여 연결해야 합니다. 또한 [배포](https://kubernetes.io/docs/tutorials/k8s201/#deployments)를 사용하여 pod 생성 및 수정을 정리해야 합니다.
+docker-compose up 및 docker run 명령(또는 Visual Studio에서 컨테이너를 실행하고 디버깅)은 개발 환경에서 컨테이너를 테스트하기에 충분합니다. 하지만 프로덕션 배포의 경우에는 이 접근법을 사용하지 말고 [Kubernetes](https://kubernetes.io/) 또는 [Service Fabric](https://azure.microsoft.com/services/service-fabric/) 같은 오케스트레이터를 대상으로 해야 합니다. Kubernetes를 사용 중인 경우 [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/)로 컨테이너와 [서비스](https://kubernetes.io/docs/concepts/services-networking/service/)를 정리하여 연결해야 합니다. 또한 [배포](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)를 사용하여 pod 생성 및 수정을 정리해야 합니다.
 
 ![6 - 앱 또는 마이크로 서비스 테스트](./media/image17.png)
 

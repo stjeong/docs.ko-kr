@@ -3,12 +3,12 @@ title: XML 주석을 사용하여 코드 문서화
 description: XML 문서 주석을 사용하여 코드를 문서화하고 컴파일 시간에 XML 문서 파일을 생성하는 방법을 알아봅니다.
 ms.date: 02/14/2017
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
-ms.openlocfilehash: 4e5efacbb3dcc9121a5ef52ae437af263fd86cff
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: b52fba24750747772c36959324cd16e21067910e
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55271358"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583708"
 ---
 # <a name="documenting-your-code-with-xml-comments"></a>XML 주석을 사용하여 코드 문서화
 
@@ -194,9 +194,9 @@ XML 문서 주석에는 삼중 슬래시(`///`) 및 XML 형식의 주석 본문�
 
 해냈습니다. 코드를 다시 읽을 수 있고 문서 정보가 손실되지 않았습니다.
 
-`filename` 특성은 문서가 포함된 XML 파일의 이름을 나타냅니다.
+`file` 특성은 문서가 포함된 XML 파일의 이름을 나타냅니다.
 
-`path` 특성은 지정된 `filename`에 있는 `tag name`에 대한 [XPath](../standard/data/xml/xpath-queries-and-namespaces.md) 쿼리를 나타냅니다.
+`path` 특성은 지정된 `file`에 있는 `tag name`에 대한 [XPath](../standard/data/xml/xpath-queries-and-namespaces.md) 쿼리를 나타냅니다.
 
 `name` 특성은 주석 앞에 오는 태그의 이름 지정자를 나타냅니다.
 

@@ -1,21 +1,21 @@
 ---
 title: .NET 클래스 라이브러리
-description: .NET 클래스 라이브러리를 사용하여 유용한 기능을 여러 응용 프로그램에서 사용할 수 있는 모듈로 그룹화하는 방법을 알아봅니다.
+description: .NET 클래스 라이브러리를 사용하여 유용한 기능을 여러 애플리케이션에서 사용할 수 있는 모듈로 그룹화하는 방법을 알아봅니다.
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
-ms.openlocfilehash: 8026ac821dfeed03127c894a5768a4c91b13beb3
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: d5b067f299d96b687d44b83e431d89667f2d84f8
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207175"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745770"
 ---
 # <a name="net-class-libraries"></a>.NET 클래스 라이브러리
 
-클래스 라이브러리는 .NET에 대한 [공유 라이브러리](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) 개념입니다. 유용한 기능을 여러 응용 프로그램에서 사용할 수 있는 모듈로 구성 요소화할 수 있게 합니다. 불필요하거나 응용 프로그램 시작 시 알 수 없는 기능을 로드하는 수단으로 사용할 수도 있습니다. 클래스 라이브러리는 [.NET 어셈블리 파일 형식](assembly-format.md)을 사용하여 설명됩니다.
+클래스 라이브러리는 .NET에 대한 [공유 라이브러리](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) 개념입니다. 유용한 기능을 여러 애플리케이션에서 사용할 수 있는 모듈로 구성 요소화할 수 있게 합니다. 불필요하거나 애플리케이션 시작 시 알 수 없는 기능을 로드하는 수단으로 사용할 수도 있습니다. 클래스 라이브러리는 [.NET 어셈블리 파일 형식](assembly/file-format.md)을 사용하여 설명됩니다.
 
 사용할 수 있는 세 가지 유형의 클래스 라이브러리는 다음과 같습니다.
 
