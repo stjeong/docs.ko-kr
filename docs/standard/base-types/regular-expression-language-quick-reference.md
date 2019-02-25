@@ -111,7 +111,7 @@ ms.locfileid: "55204888"
 |------------------------|-----------------|-------------|-------------|  
 |`(` *subexpression* `)`|일치하는 하위 식을 캡처하고 서수(1부터 시작)를 할당합니다.|`(\w)\1`|"deep"의 "ee"|  
 |`(?<` *name* `>` *subexpression* `)`|일치하는 하위 식을 명령된 그룹에 캡처합니다.|`(?<double>\w)\k<double>`|"deep"의 "ee"|  
-|`(?<` *이름1* `-` *이름2* `>` *subexpression* `)`|균형 조정 그룹 정의를 정의합니다. 자세한 내용은 [Grouping Constructs](grouping-constructs-in-regular-expressions.md)의 "균형 조정 그룹 정의" 섹션을 참조하세요.|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"3+2^((1-3)\*(3-1))"의 "((1-3)\*(3-1))"|  
+|`(?<` *이름1* `-` *이름2* `>` *subexpression* `)`|균형 조정 그룹 정의를 정의합니다. 자세한 내용은 [그룹화 구문](grouping-constructs-in-regular-expressions.md)의 "균형 조정 그룹 정의" 섹션을 참조하세요.|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"3+2^((1-3)\*(3-1))"의 "((1-3)\*(3-1))"|  
 |`(?:` *subexpression* `)`|비캡처 그룹을 정의합니다.|`Write(?:Line)?`|"Console.WriteLine()"의 "WriteLine"<br /><br /> "Console.Write(값)"의 "Write"|  
 |`(?imnsx-imnsx:` *subexpression* `)`|*subexpression* 내에서 지정된 옵션을 적용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`A\d{2}(?i:\w+)\b`|"A12xl A12XL a12xl"의 "A12xl", "A12XL"|  
 |`(?=` *subexpression* `)`|너비가 0인 긍정 우측 어설션입니다.|`\w+(?=\.)`|"He is. The dog ran. The sun is out."의 "is", "ran" 및 "out"|  
@@ -185,7 +185,7 @@ ms.locfileid: "55204888"
   
 <a name="options"></a>   
 ## <a name="regular-expression-options"></a>정규식 옵션  
- 정규식 엔진이 정규식 패턴을 해석하는 방법을 제어하는 옵션을 지정할 수 있습니다. 옵션의 대부분은 인라인(정규식 패턴)에서 또는 1개 이상의 <xref:System.Text.RegularExpressions.RegexOptions> 상수로 지정될 수 있습니다. 이 빠른 참조는 인라인 옵션만 나열합니다. 인라인 및 <xref:System.Text.RegularExpressions.RegexOptions> 옵션에 대한 자세한 내용은 [Regular Expression Options](regular-expression-options.md)을 참조하세요.  
+ 정규식 엔진이 정규식 패턴을 해석하는 방법을 제어하는 옵션을 지정할 수 있습니다. 옵션의 대부분은 인라인(정규식 패턴)에서 또는 1개 이상의 <xref:System.Text.RegularExpressions.RegexOptions> 상수로 지정될 수 있습니다. 이 빠른 참조는 인라인 옵션만 나열합니다. 인라인 및 <xref:System.Text.RegularExpressions.RegexOptions> 옵션에 대한 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.  
   
  인라인 옵션을 두 가지 방법으로 지정할 수 있습니다.  
   
@@ -198,9 +198,9 @@ ms.locfileid: "55204888"
 |옵션|설명|무늬|요청 내용|  
 |------------|-----------------|-------------|-------------|  
 |`i`|대/소문자를 구분하지 않는 일치를 사용합니다.|`\b(?i)a(?-i)a\w+\b`|"aardvark AAAuto aaaAuto Adam breakfast"의 "aardvark", "aaaAuto"|  
-|`m`|여러 줄 모드를 사용합니다. `^` 및 `$` 는 각 줄의 시작 및 끝과 일치합니다(문자열의 시작 및 끝이 아님).|예제를 보려면 [Regular Expression Options](regular-expression-options.md)에서 "여러 줄 모드" 섹션을 참조하세요.||  
-|`n`|명명되지 않은 그룹을 캡처하지 않습니다.|예를 들어 [Regular Expression Options](regular-expression-options.md)에서 "명시적 캡처만 해당" 섹션을 참조하세요.||  
-|`s`|한 줄 모드를 사용합니다.|예제를 보려면 [Regular Expression Options](regular-expression-options.md)에서 "한 줄 모드" 섹션을 참조하세요.||  
+|`m`|여러 줄 모드를 사용합니다. `^` 및 `$` 는 각 줄의 시작 및 끝과 일치합니다(문자열의 시작 및 끝이 아님).|예제를 보려면 [정규식 옵션](regular-expression-options.md)에서 "여러 줄 모드" 섹션을 참조하세요.||  
+|`n`|명명되지 않은 그룹을 캡처하지 않습니다.|예를 들어 [정규식 옵션](regular-expression-options.md)에서 "명시적 캡처만 해당" 섹션을 참조하세요.||  
+|`s`|한 줄 모드를 사용합니다.|예제를 보려면 [정규식 옵션](regular-expression-options.md)에서 "한 줄 모드" 섹션을 참조하세요.||  
 |`x`|정규식 패턴에서 이스케이프되지 않은 공백은 무시합니다.|`\b(?x) \d+ \s \w+`|"1 aardvark 2 cats IV centurions"의 "1 aardvark", "2 cats"|  
   
  [맨 위로 이동](#top)  
