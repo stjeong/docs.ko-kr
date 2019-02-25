@@ -31,7 +31,8 @@
 ### [이식성 분석기](standard/analyzers/portability-analyzer.md)
 ### [프레임워크 분석기](standard/analyzers/framework-analyzer.md)
 ## [예외 처리 및 Throw](standard/exceptions/)
-## [.NET 어셈블리 파일 형식](standard/assembly-format.md)
+## [.NET 어셈블리](standard/assembly/index.md)
+### [.NET 어셈블리 파일 형식](standard/assembly/file-format.md) 
 ## [가비지 수집](standard/garbage-collection/)
 ## [제네릭 형식](standard/generics.md)
 ## [대리자 및 람다 식](standard/delegates-lambdas.md)
@@ -270,6 +271,7 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## C#의 새로운 기능
+### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [C# 7.1](csharp/whats-new/csharp-7-1.md)
@@ -520,7 +522,7 @@
 #### [My에 사용할 수 있는 개체 사용자 지정](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [프로그래밍 개념](visual-basic/programming-guide/concepts/index.md)
-### [어셈블리 및 전역 어셈블리 캐시](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+### [.NET 어셈블리](standard/assembly/index.md)
 ### [Async 및 Await를 사용한 비동기 프로그래밍](visual-basic/programming-guide/concepts/async/index.md)
 ### [특성](visual-basic/programming-guide/concepts/attributes/index.md)
 ### [식 트리](visual-basic/programming-guide/concepts/expression-trees/index.md)
