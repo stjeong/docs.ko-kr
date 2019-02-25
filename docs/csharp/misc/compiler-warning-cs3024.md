@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CS3024
 ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
-ms.openlocfilehash: c4c2f915d6172e3c30fc32c5c57fe9921c3f915d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e49c131328f132ae6372167818d084df51ef6c78
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33280347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "56799463"
 ---
 # <a name="compiler-warning-cs3024"></a>컴파일러 경고 CS3024
 'type' 제약 조건 형식이 CLS 규격이 아닙니다.  
@@ -55,5 +55,6 @@ public class Test
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [형식 매개 변수에 대한 제약 조건](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)
+## <a name="see-also"></a>참고자료
+
+- [형식 매개 변수에 대한 제약 조건](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)

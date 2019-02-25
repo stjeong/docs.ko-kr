@@ -1,5 +1,5 @@
 ---
-title: 죄송 하지만 우리 않는&#39;t이 C# 오류에 대 한 구체적인 정보가
+title: 죄송 합니다. 이 C# 오류에 대한 구체적인 정보가 없습니다.
 ms.date: 07/20/2015
 f1_keywords:
 - CS1583
@@ -882,32 +882,33 @@ f1_keywords:
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: 5e9c0aff2df5c46e707fa9f85506758327b58d80
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5b6cf68ea2e08c63abd5c093d9ffc6ed24131cd9
+ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33314072"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "56800323"
 ---
-# <a name="sorry-we-don39t-have-specifics-on-this-c-error"></a>죄송 하지만 우리 않는&#39;t이 C# 오류에 대 한 구체적인 정보가
+# <a name="sorry-we-dont-have-specifics-on-this-c-error"></a>죄송 합니다. 이 C# 오류에 대한 구체적인 정보가 없습니다.
 죄송합니다. 이 오류에 대한 구체적인 정보가 없습니다. 오류 번호와 메시지 텍스트를 검색하여 웹에서 정보를 찾을 수 있습니다. 또는 다음이 포럼 중 하나를 사용 하 여 다른 개발자에 게 요청할 수 있습니다.  
   
  [Visual C# 언어](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharplanguage)  
- 에 대 한 질문과 일반적인 토론 Visual C# 언어 구문 및 컴파일러를 위한 포럼을 제공 합니다.  
+ 시각적 개체에 대 한 일반적인 토론 질문을 위한 포럼을 제공 C# 언어 구문 및 컴파일러.  
   
  [Visual C# IDE](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharpide)  
  Visual Studio 환경에서 작업 하는 방법에 대 한 질문에 대 한 포럼을 제공 합니다.  
   
  [Visual C# 일반](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=csharpgeneral)  
- 에 대 한 질문에 대 한 포럼을 제공 하지 않으며 Visual C# 다른 포럼에서 다루지 않는 합니다.  
+ 에 대 한 질문을 위한 포럼을 제공 하 고 시각적 개체를 사용 하 여 문제 C# 다른 포럼에서 다루지 않습니다.  
   
- [StackOverflow](http://stackoverflow.com/questions/tagged/c%23)  
- 에 대 한 질문에 대 한 포럼을 제공 하지 않으며 Visual C#을 사용 합니다.  
+ [스택 오버플로](https://stackoverflow.com/questions/tagged/c%23)  
+ 에 대 한 질문을 위한 포럼을 제공 하 고 시각적 개체를 사용 하 여 문제 C#입니다.  
   
  다음 항목도 참조하세요.  
  [Visual C# 프로그래머를 위한 추가 리소스](../../csharp/getting-started/additional-resources.md)  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../csharp/programming-guide/index.md)  
- [C# 참조](../../csharp/language-reference/index.md)  
- [의견 보내기](/visualstudio/ide/talk-to-us)  
+## <a name="see-also"></a>참고자료
+
+- [C# 프로그래밍 가이드](../../csharp/programming-guide/index.md)
+- [C# 참조](../../csharp/language-reference/index.md)
+- [의견 보내기](/visualstudio/ide/talk-to-us)
