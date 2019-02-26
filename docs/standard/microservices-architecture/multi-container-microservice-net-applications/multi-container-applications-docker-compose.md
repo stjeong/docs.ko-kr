@@ -1,21 +1,21 @@
 ---
-title: docker-compose.yml을 사용하여 다중 컨테이너 응용 프로그램 정의
+title: docker-compose.yml을 사용하여 다중 컨테이너 애플리케이션 정의
 description: 컨테이너화된 .NET 애플리케이션에 대한 .NET 마이크로 서비스 아키텍처 | docker-compose.yml을 사용하여 다중 컨테이너 애플리케이션용 마이크로 서비스 구성을 지정하는 방법.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
-ms.openlocfilehash: dc9149cb1a17e3af66abd995fd2a2196109e0e05
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: b00b0021f71097f2c6cedcb1ddea7861f1936f84
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145256"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442232"
 ---
-# <a name="defining-your-multi-container-application-with-docker-composeyml"></a>docker-compose.yml을 사용하여 다중 컨테이너 응용 프로그램 정의 
+# <a name="defining-your-multi-container-application-with-docker-composeyml"></a>docker-compose.yml을 사용하여 다중 컨테이너 애플리케이션 정의 
 
-이 가이드에서 [docker compose.yml](https://docs.docker.com/compose/compose-file/) 파일은 섹션 [4단계. 다중 컨테이너 Docker 응용 프로그램을 빌드할 때 docker compose.yml 파일에서 서비스 정의](../docker-application-development-process/docker-app-development-workflow.md#step-4-define-your-services-in-docker-composeyml-when-building-a-multi-container-docker-application)에서 도입되었습니다. 그러나 더 자세히 살펴볼 가치가 있는 docker-compose 파일을 사용하는 다른 방법이 있습니다.
+이 가이드에서 [docker compose.yml](https://docs.docker.com/compose/compose-file/) 파일은 섹션 [4단계. 다중 컨테이너 Docker 애플리케이션을 빌드할 때 docker compose.yml 파일에서 서비스 정의](../docker-application-development-process/docker-app-development-workflow.md#step-4-define-your-services-in-docker-composeyml-when-building-a-multi-container-docker-application)에서 도입되었습니다. 그러나 더 자세히 살펴볼 가치가 있는 docker-compose 파일을 사용하는 다른 방법이 있습니다.
 
-예를 들어 docker-compose.yml 파일에서 다중 컨테이너 응용 프로그램을 배포하려는 방법을 명시적으로 설명할 수 있습니다. 필요에 따라 사용자 지정 Docker 이미지를 작성하려는 방법을 설명할 수도 있습니다. (사용자 지정 Docker 이미지는 Docker CLI를 사용하여 빌드될 수도 있습니다.)
+예를 들어 docker-compose.yml 파일에서 다중 컨테이너 애플리케이션을 배포하려는 방법을 명시적으로 설명할 수 있습니다. 필요에 따라 사용자 지정 Docker 이미지를 작성하려는 방법을 설명할 수도 있습니다. (사용자 지정 Docker 이미지는 Docker CLI를 사용하여 빌드될 수도 있습니다.)
 
 기본적으로 배포하려는 각 컨테이너와 각 컨테이너 배포에 대한 특정 특성을 정의합니다. 다중 컨테이너 배포 설명 파일을 가지면 [docker-compose up](https://docs.docker.com/compose/overview/) CLI 명령으로 오케스트레이션된 단일 작업에서 전체 솔루션을 배포하거나 Visual Studio에서 투명하게 배포할 수 있습니다. 그렇지 않은 경우 명령 줄에서 `docker run` 명령을 사용하여 여러 단계에서 컨테이너별로 배포하는 Docker CLI를 사용해야 합니다. 따라서 docker-compose.yml에 정의된 각 서비스는 정확하게 하나의 이미지 또는 빌드를 지정해야 합니다. 다른 키는 선택 사항이며 `docker run` 명령줄 함수와 유사합니다.
 
@@ -129,7 +129,7 @@ services:
 
 -   컨테이너의 노출된 포트 80을 Docker 호스트 컴퓨터(Linux VM)의 포트 5101에 전달합니다.
 
--   웹 서비스를 sql.data 서비스(컨테이너에서 실행되는 Linux 데이터베이스에 대한 SQL Server 인스턴스)에 연결합니다. 이 종속성을 지정하면 catalog.api 컨테이너는 sql.data 컨테이너가 시작하기 전까지 시작하지 않습니다. catalog.api는 실행 중인 SQL Server 데이터베이스가 먼저 있어야 하기 때문에 중요합니다. 그러나 이러한 종류의 컨테이너 종속성은 Docker가 컨테이너 수준에서만 확인하기 때문에 많은 경우에서 충분하지 않습니다. 경우에 따라 서비스(이 경우 SQL Server)는 여전히 준비되지 않을 수 있으므로 클라이언트 마이크로 서비스에서 지수 백오프로 재시도 논리를 구현하는 것이 좋습니다. 이런 방식으로 종속성 컨테이너가 짧은 시간 동안 준비되지 않는 경우 응용 프로그램은 계속해서 복원됩니다.
+-   웹 서비스를 sql.data 서비스(컨테이너에서 실행되는 Linux 데이터베이스에 대한 SQL Server 인스턴스)에 연결합니다. 이 종속성을 지정하면 catalog.api 컨테이너는 sql.data 컨테이너가 시작하기 전까지 시작하지 않습니다. catalog.api는 실행 중인 SQL Server 데이터베이스가 먼저 있어야 하기 때문에 중요합니다. 그러나 이러한 종류의 컨테이너 종속성은 Docker가 컨테이너 수준에서만 확인하기 때문에 많은 경우에서 충분하지 않습니다. 경우에 따라 서비스(이 경우 SQL Server)는 여전히 준비되지 않을 수 있으므로 클라이언트 마이크로 서비스에서 지수 백오프로 재시도 논리를 구현하는 것이 좋습니다. 이런 방식으로 종속성 컨테이너가 짧은 시간 동안 준비되지 않는 경우 애플리케이션은 계속해서 복원됩니다.
 
 -   외부 서버에 대한 액세스를 허용하도록 구성됩니다. 추가\_호스트 설정을 통해 개발 PC의 로컬 SQL Server 인스턴스와 같은 외부 서버 또는 Docker 호스트 외부의 컴퓨터에 액세스할 수 있습니다(즉, 개발 Docker 호스트인 기본 Linux VM의 외부).
 
@@ -143,15 +143,15 @@ docker-compose.yml 파일은 정의 파일이며 해당 형식을 이해하는 �
 
 #### <a name="development-environments"></a>개발 환경
 
-응용 프로그램을 개발하는 경우 격리된 개발 환경에서 응용 프로그램을 실행할 수 있어야 하는 것은 중요합니다. docker-compose CLI 명령을 사용하여 해당 환경을 만들거나 내부에서 docker-compose를 사용하는 Visual Studio를 사용할 수 있습니다.
+애플리케이션을 개발하는 경우 격리된 개발 환경에서 애플리케이션을 실행할 수 있어야 하는 것은 중요합니다. docker-compose CLI 명령을 사용하여 해당 환경을 만들거나 내부에서 docker-compose를 사용하는 Visual Studio를 사용할 수 있습니다.
 
-docker-compose.yml 파일을 사용하면 모든 응용 프로그램의 서비스 종속성(다른 서비스, 캐시, 데이터베이스, 큐 등)을 구성하고 문서화할 수 있습니다. docker-compose CLI 명령을 사용하여 단일 명령(docker-compose up)으로 각 종속성에 대해 하나 이상의 컨테이너를 만들고 시작할 수 있습니다.
+docker-compose.yml 파일을 사용하면 모든 애플리케이션의 서비스 종속성(다른 서비스, 캐시, 데이터베이스, 큐 등)을 구성하고 문서화할 수 있습니다. docker-compose CLI 명령을 사용하여 단일 명령(docker-compose up)으로 각 종속성에 대해 하나 이상의 컨테이너를 만들고 시작할 수 있습니다.
 
-docker-compose.yml 파일은 Docker 엔진으로 해석되는 구성 파일이지만 다중 컨테이너 응용 프로그램의 구성에 대한 편리한 문서 파일의 역할도 합니다.
+docker-compose.yml 파일은 Docker 엔진으로 해석되는 구성 파일이지만 다중 컨테이너 애플리케이션의 구성에 대한 편리한 문서 파일의 역할도 합니다.
 
 #### <a name="testing-environments"></a>테스트 환경
 
-모든 CD(지속적인 배포) 또는 CI(지속적인 통합) 프로세스의 중요한 부분은 단위 테스트 및 통합 테스트입니다. 이러한 자동화된 테스트는 격리된 환경이 필요하므로 사용자 또는 응용 프로그램 데이터의 다른 변경 내용에 의해 영향을 받지 않습니다.
+모든 CD(지속적인 배포) 또는 CI(지속적인 통합) 프로세스의 중요한 부분은 단위 테스트 및 통합 테스트입니다. 이러한 자동화된 테스트는 격리된 환경이 필요하므로 사용자 또는 애플리케이션 데이터의 다른 변경 내용에 의해 영향을 받지 않습니다.
 
 Docker Compose를 사용하여 다음 명령과 같이 명령 프롬프트 또는 스크립트의 몇 가지 명령에서 매우 쉽게 격리된 해당 환경을 만들고 제거할 수 있습니다.
 
@@ -175,7 +175,7 @@ Compose를 사용하여 원격 Docker 엔진에 배포할 수도 있습니다. �
 
 #### <a name="overriding-the-base-docker-compose-file"></a>기본 docker-compose 파일 재정의
 
-이전 섹션에 표시된 간소화된 예제에서와 같이 단일 docker-compose.yml 파일을 사용할 수 있습니다. 그러나 대부분의 응용 프로그램에 권장하지 않습니다.
+이전 섹션에 표시된 간소화된 예제에서와 같이 단일 docker-compose.yml 파일을 사용할 수 있습니다. 그러나 대부분의 애플리케이션에 권장하지 않습니다.
 
 기본적으로 Compose는 두 개의 파일, docker-compose.yml 및 선택적 docker-compose.override.yml 파일을 읽습니다. 그림 6-11과 같이 Visual Studio를 사용하고 Docker 지원을 활성화 하도록 설정하여, Visual Studio도 애플리케이션의 디버깅을 위한 추가 docker-compose.vs.debug.g.yml 파일을 만듭니다. 기본 솔루션 폴더에서 obj\\Docker\\ 폴더에서 이 파일을 볼 수 있습니다.
 
@@ -187,7 +187,7 @@ Visual Studio Code 또는 Sublime과 같은 편집기를 사용하여 docker-com
 
 규칙에 따라 docker-compose.yml 파일은 기본 구성 및 기타 정적 설정을 포함합니다. 즉, 서비스 구성은 대상으로 하는 배포 환경에 따라 변경되지 않아야 합니다.
 
-해당 이름에서 알 수 있듯이 docker-compose.override.yml 파일은 배포 환경에 따라 달라지는 구성과 같은 기본 구성을 재정의하는 구성 설정을 포함합니다. 또한 서로 다른 이름을 가진 여러 재정의 파일을 포함할 수 있습니다. 재정의 파일은 일반적으로 환경 또는 배포에 관련된 응용 프로그램에 필요한 추가 정보를 포함합니다.
+해당 이름에서 알 수 있듯이 docker-compose.override.yml 파일은 배포 환경에 따라 달라지는 구성과 같은 기본 구성을 재정의하는 구성 설정을 포함합니다. 또한 서로 다른 이름을 가진 여러 재정의 파일을 포함할 수 있습니다. 재정의 파일은 일반적으로 환경 또는 배포에 관련된 애플리케이션에 필요한 추가 정보를 포함합니다.
 
 #### <a name="targeting-multiple-environments"></a>여러 환경을 대상으로 지정
 
@@ -406,7 +406,7 @@ IdentityUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5105
 
 환경 변수는 호스트 환경(Linux, Windows, 클라우드 클러스터 등)에 따라 다양한 방법으로 생성 및 초기화됩니다. 그러나 편리한 방법은 .env 파일을 사용하는 것입니다. docker-compose 파일은 .env 파일의 기본 환경 변수 선언을 지원합니다. 환경 변수에 대한 이러한 값은 기본값입니다. 그러나 각 환경(호스트 OS 또는 클러스터의 환경 변수)에서 정의했을 수 있는 값으로 재정의될 수 있습니다. 이 .env 파일을 docker-compose 명령이 실행되는 폴더에 배치합니다.
 
-다음 예제에서는 eShopOnContainers 응용 프로그램에 대한 [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env) 파일과 같은 .env 파일을 보여 줍니다.
+다음 예제에서는 eShopOnContainers 애플리케이션에 대한 [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env) 파일과 같은 .env 파일을 보여 줍니다.
 
 ```
 # .env file
@@ -430,7 +430,7 @@ docker-compose는 .env 파일의 각 줄이 \<변수\>=\<값\> 형식이 되도�
 
 ### <a name="building-optimized-aspnet-core-docker-images"></a>최적화된 ASP.NET Core Docker 이미지 빌드
 
-인터넷에서 원본의 Docker 및 .NET Core를 탐색하는 경우 원본을 컨테이너에 복사하여 Docker 이미지를 빌드하는 것의 용이함을 보여 주는 Dockerfile을 찾을 수 있습니다. 이러한 예제는 간단한 구성을 사용하는 것을 제안합니다. 응용 프로그램과 함께 제공되는 환경으로 Docker 이미지를 가질 수 있습니다. 다음 예제에서는 이 맥락에서 간단한 Dockerfile을 보여 줍니다.
+인터넷에서 원본의 Docker 및 .NET Core를 탐색하는 경우 원본을 컨테이너에 복사하여 Docker 이미지를 빌드하는 것의 용이함을 보여 주는 Dockerfile을 찾을 수 있습니다. 이러한 예제는 간단한 구성을 사용하는 것을 제안합니다. 애플리케이션과 함께 제공되는 환경으로 Docker 이미지를 가질 수 있습니다. 다음 예제에서는 이 맥락에서 간단한 Dockerfile을 보여 줍니다.
 
 ```
 FROM microsoft/dotnet
@@ -444,21 +444,21 @@ ENTRYPOINT ["dotnet", "run"]
 
 이와 같은 Dockerfile은 작동합니다. 그러나 실질적으로 이미지, 특히 프로덕션 이미지를 최적화할 수 있습니다.
 
-컨테이너 및 마이크로 서비스 모델에서 컨테이너를 지속적으로 시작하고 있습니다. 컨테이너를 사용하는 일반적인 방법은 컨테이너가 삭제 가능하므로 중지 중인 컨테이너를 다시 시작하지 않습니다. 오케스트레이터(예: Kubernetes 및 Azure Service Fabric)는 단순히 이미지의 새 인스턴스를 만듭니다. 즉, 인스턴스화 프로세스의 속도가 더 빨라지도록 빌드될 때 응용 프로그램을 미리 컴파일하여 최적화해야 합니다. 컨테이너가 시작될 때 실행할 준비가 되어야 합니다. .NET Core 및 Docker에 대한 다양한 블로그 게시물에 나와 있는 것처럼 dotnet CLI에서 `dotnet restore` and `dotnet build` 명령을 사용하여 런타임 시 복원 및 컴파일해서는 안 됩니다.
+컨테이너 및 마이크로 서비스 모델에서 컨테이너를 지속적으로 시작하고 있습니다. 컨테이너를 사용하는 일반적인 방법은 컨테이너가 삭제 가능하므로 중지 중인 컨테이너를 다시 시작하지 않습니다. 오케스트레이터(예: Kubernetes 및 Azure Service Fabric)는 단순히 이미지의 새 인스턴스를 만듭니다. 즉, 인스턴스화 프로세스의 속도가 더 빨라지도록 빌드될 때 애플리케이션을 미리 컴파일하여 최적화해야 합니다. 컨테이너가 시작될 때 실행할 준비가 되어야 합니다. .NET Core 및 Docker에 대한 다양한 블로그 게시물에 나와 있는 것처럼 dotnet CLI에서 `dotnet restore` and `dotnet build` 명령을 사용하여 런타임 시 복원 및 컴파일해서는 안 됩니다.
 
 .NET 팀은 .NET Core 및 ASP.NET Core를 컨테이너 최적화된 프레임워크로 만들도록 중요한 작업을 수행하고 있습니다. .NET Core는 작은 메모리 공간을 가진 경량 프레임워크일 뿐만 아니라, 팀은 세가지 주요 시나리오에 최적화된 Docker 이미지를 중점적으로 사용해 <span class="underline">microsoft/dotnet</span>에서 버전 2.1 부터 Docker 허브 레지스트리에 게시했습니다.
 
 1.  **개발**: 여기서 우선 순위는 변경 사항을 신속하게 상호 연결하고 디버그할 수 있는 기능이며, 크기는 부차적 문제입니다.
 
-2.  **빌드**: 우선 순위는 애플리케이션을 컴파일하는 것이며 이진 파일을 최적화하기 위해 이진 파일 및 다른 종속성을 포함합니다.
+2.  **빌드:** 우선 순위는 애플리케이션을 컴파일하고 이진 파일 및 다른 종속성을 포함하여 이진 파일을 최적화하는 것입니다.
 
-3.  **프로덕션**: 컨테이너의 빠른 배포 및 시작이 포커스인 경우, 이러한 이미지는 이진 파일 및 애플리케이션을 실행할 콘텐츠로 제한합니다.
+3.  **프로덕션**: 컨테이너의 빠른 배포 및 시작에 중점을 두는 경우 이러한 이미지는 애플리케이션을 실행하기 위해 필요한 이진 파일 및 콘텐츠로 제한됩니다.
 
 이를 위해.NET 팀은 [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)(Docker 허브)에서 세 가지 기본 변형을 제공합니다.
 
 1.  **sdk**: 개발 및 빌드 시나리오용.
 2.  **런타임**: 프로덕션 시나리오용 및
-3.  **runtime-deps**: [자체 포함된 애플리케이션](https://docs.microsoft.com/dotnet/core/deploying/index#self-contained-deployments-scd)의 프로덕션 시나리오용.
+3.  **runtime-deps**: [자체 포함된 애플리케이션](../../../core/deploying/index.md#self-contained-deployments-scd)의 프로덕션 시나리오용.
 
 런타임 이미지는 aspnetcore\_url의 자동 설정을 포트 80 및 어셈블리의 사전 ngend 캐시에도 제공하여 더 빠른 시작을 할 수 있습니다.
 
@@ -467,8 +467,8 @@ ENTRYPOINT ["dotnet", "run"]
 -   **ASP.NET Core를 사용하여 최적화된 Docker 이미지 빌드** <br/>
     [*https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/*](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
--   **.NET Core 응용 프로그램에 대한 Docker 이미지 작성** <br/>
-    [*https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images)
+-   **.NET Core 애플리케이션에 대한 Docker 이미지 작성** <br/>
+    [*https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 >[!div class="step-by-step"]
 >[이전](data-driven-crud-microservice.md)

@@ -4,12 +4,12 @@ description: .NET 마이크로 서비스 및 웹 애플리케이션의 보안 - 
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
-ms.openlocfilehash: 291d60f941e4280ff120296ce1c392df3300dc44
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: fd2bff04e06bf0561ee0c95d87978f834f192172
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362421"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664044"
 ---
 # <a name="use-azure-key-vault-to-protect-secrets-at-production-time"></a>Azure Key Vault를 사용하여 프로덕션 시 비밀 보호
 
@@ -46,10 +46,10 @@ ms.locfileid: "54362421"
 - **데이터 보호 구성** \
   [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](/aspnet/core/security/data-protection/configuration/overview)
 
-- **키 관리 및 수명** \
-  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
+- **ASP.NET Core에서 데이터 보호 키 관리 및 수명** \
+  [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings*](/aspnet/core/security/data-protection/configuration/default-settings)
 
-- **Microsoft.Extensions.Configuration.KeyPerFile** GitHub 리포지토리. \
+- **Microsoft.Extensions.Configuration.KeyPerFile** GitHub 리포지토리 \
   [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
 
 >[!div class="step-by-step"]

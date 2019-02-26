@@ -3,13 +3,13 @@ title: 아키텍처 원칙
 description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 애플리케이션 설계 | 아키텍처 원칙
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
-ms.openlocfilehash: b7edfc8d0cb3460bb33fb4e54cc93dd18ce2f385
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.date: 02/16/2019
+ms.openlocfilehash: 7d127476e37b9eefa9ddc13d26991145b6245b45
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55828100"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442986"
 ---
 # <a name="architectural-principles"></a>아키텍처 원칙
 
@@ -99,21 +99,10 @@ ms.locfileid: "55828100"
 
 적어도 개별 웹 애플리케이션은 다른 애플리케이션과 데이터베이스를 공유하지 않고 자신의 비즈니스 모델에 대한 자체 지속성 저장소를 통해 자체 바인딩된 컨텍스트가 되기 위해 노력해야 합니다. 바인딩된 컨텍스트 간의 통신은 공유 데이터베이스가 아닌 프로그래밍 방식 인터페이스를 통해 발생하며, 발생하는 변경 내용에 대응하여 비즈니스 논리 및 이벤트가 발생하는 것을 허용합니다. 바인딩된 컨텍스트는 마이크로 서비스와 긴밀하게 매핑되며, 또한 자체적인 개별 바인딩된 컨텍스트로 이상적으로 구현됩니다.
 
-> ### <a name="references--modern-web-applications"></a>참조 - 최신 웹 애플리케이션
-> - **문제의 분리**  
-> <https://deviq.com/separation-of-concerns/>
-> - **캡슐화**  
-> <https://deviq.com/encapsulation/>
-> - **종속성 반전 원칙**  
-> <https://deviq.com/dependency-inversion-principle/>
-> - **명시적 종속성 원칙**  
-> <https://deviq.com/explicit-dependencies-principle/>
-> - **반복 금지**  
-> <https://deviq.com/don-t-repeat-yourself/>
-> - **지속성 무시**  
-> <https://deviq.com/persistence-ignorance/>
-> - **바인딩된 컨텍스트**  
-> <https://martinfowler.com/bliki/BoundedContext.html>
+## <a name="additional-resources"></a>추가 자료
+
+* [JAVA 디자인 패턴: 원칙](https://java-design-patterns.com/principles/)
+* [바인딩된 컨텍스트](https://martinfowler.com/bliki/BoundedContext.html)
 
 >[!div class="step-by-step"]
 >[이전](choose-between-traditional-web-and-single-page-apps.md)

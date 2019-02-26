@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c75f9ffe17d04ad4b8e41a6e1402a3cf4be7e07f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0681ff9c59e77650654495ecd6e6d9f9ded82517
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54722714"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56665097"
 ---
 # <a name="custom-timespan-format-strings"></a>사용자 지정 TimeSpan 서식 문자열
 
@@ -29,7 +29,8 @@ ms.locfileid: "54722714"
 > [!IMPORTANT]
 > 사용자 지정 <xref:System.TimeSpan> 형식 지정자는 일과 시간, 시간과 분 또는 초와 소수 자릿수 초를 구분하는 기호 등의 자리 표시자 구분 기호를 포함하지 않습니다. 대신, 이러한 기호는 사용자 지정 형식 문자열에 문자열 리터럴로 포함되어야 합니다. 예를 들어 `"dd\.hh\:mm"`은 일과 시간의 구분 기호로 마침표(.)를 정의하고 시간과 분의 구분 기호로 콜론(:)을 정의합니다.
 >
-> 사용자 지정 <xref:System.TimeSpan> 형식 지정자도 음수 및 양수 시간 간격을 구분할 수 있도록 하는 부호 기호를 포함하지 않습니다. 부호 기호를 포함하려면 조건부 논리를 사용하여 서식 문자열을 생성해야 합니다. [기타 문자](#Other) 섹션에 예제가 포함되어 있습니다.
+> 사용자 지정 <xref:System.TimeSpan> 형식 지정자도 음수 및 양수 시간 간격을 구분할 수 있도록 하는 부호 기호를 포함하지 않습니다. 부호 기호를 포함하려면 조건부 논리를 사용하여 서식 문자열을 생성해야 합니다. 
+  [기타 문자](#Other) 섹션에 예제가 포함되어 있습니다.
 
 <xref:System.TimeSpan> 값의 문자열 표현은 <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> 메서드의 오버로드 호출을 통해 그리고 <xref:System.String.Format%2A?displayProperty=nameWithType>과 같이 복합 서식 지정을 지원하는 메서드에 의해 생성됩니다. 자세한 내용은 [서식 지정 형식](formatting-types.md) 및 [복합 서식 지정](composite-formatting.md)을 참조하세요. 다음 예제에서는 서식 지정 작업에서 사용자 지정 형식 문자열을 사용하는 방법을 보여줍니다.
 
@@ -43,7 +44,7 @@ ms.locfileid: "54722714"
 
 <a name="table"></a> 다음 표에서는 사용자 지정 날짜 및 시간 형식 지정자에 대해 설명합니다.
 
-| 형식 지정자 | 설명 | 예제 |
+| 형식 지정자 | 설명 | 예 |
 |----------------------|-----------------|-------------|
 |"d", "%d"|시간 간격의 전체 일 수입니다.<br /><br /> 추가 정보: ["d" 사용자 지정 형식 지정자](#dSpecifier).|`new TimeSpan(6, 14, 32, 17, 685):`<br /><br /> `%d` --> "6"<br /><br /> `d\.hh\:mm` --> "6.14:32"|
 |“dd”-“dddddddd”|시간 간격의 전체 일 수로, 필요에 따라 앞에 0으로 채워집니다.<br /><br /> 추가 정보: ["dd"-"dddddddd" 사용자 지정 서식 지정자](#ddSpecifier).|`new TimeSpan(6, 14, 32, 17, 685):`<br /><br /> `ddd` --> "006"<br /><br /> `dd\.hh\:mm` --> "06.14:32"|
@@ -54,7 +55,7 @@ ms.locfileid: "54722714"
 |"s", "%s"|시간, 일 또는 분 수로 계산되지 않은 시간 간격의 전체 초 수입니다. 한 자리 초의 경우 앞에 0이 없습니다.<br /><br /> 추가 정보: ["s" 사용자 지정 형식 지정자](#sSpecifier).|`TimeSpan.FromSeconds(12.965)`:<br /><br /> `%s` --> 12<br /><br /> `s\.fff` --> 12.965|
 |"ss"|시간, 일 또는 분 수로 계산되지 않은 시간 간격의 전체 초 수입니다.  한 자리 초의 경우 앞에 0이 있습니다.<br /><br /> 추가 정보: ["ss" 사용자 지정 형식 지정자](#ssSpecifier).|`TimeSpan.FromSeconds(6.965)`:<br /><br /> `ss` --> 06<br /><br /> `ss\.fff` --> 06.965|
 |"f", "%f"|시간 간격의 1/10초입니다.<br /><br /> 추가 정보: ["f" 사용자 지정 형식 지정자](#fSpecifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `f` --> 8<br /><br /> `ss\.f` --> 06.8|
-|"ff"|시간 간격의 1/100초입니다.<br /><br /> 추가 정보: [“ff” 사용자 지정 형식 지정자](#ffSpecifier)|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `ff` --> 89<br /><br /> `ss\.ff` --> 06.89|
+|"ff"|시간 간격의 1/100초입니다.<br /><br /> 추가 정보: ["ff" 사용자 지정 형식 지정자](#ffSpecifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `ff` --> 89<br /><br /> `ss\.ff` --> 06.89|
 |"fff"|시간 간격의 밀리초입니다.<br /><br /> 추가 정보: ["fff" 사용자 지정 형식 지정자](#f3Specifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `fff` --> 895<br /><br /> `ss\.fff` --> 06.895|
 |"ffff"|시간 간격의 1/10000초입니다.<br /><br /> 추가 정보: ["ffff" 사용자 지정 형식 지정자](#f4Specifier).|`TimeSpan.Parse("0:0:6.8954321")`:<br /><br /> `ffff` --> 8954<br /><br /> `ss\.ffff` --> 06.8954|
 |"fffff"|시간 간격의 1/100000초입니다.<br /><br /> 추가 정보: ["fffff" 사용자 지정 형식 지정자](#f5Specifier).|`TimeSpan.Parse("0:0:6.8954321")`:<br /><br /> `fffff` --> 89543<br /><br /> `ss\.fffff` --> 06.89543|
@@ -68,7 +69,7 @@ ms.locfileid: "54722714"
 |"FFFFFF"|시간 간격의 1/1000000초입니다. 뒤에 오는 소수 자릿수 0은 표시되지 않습니다.<br /><br /> 추가 정보: ["FFFFFF" 사용자 지정 형식 지정자](#F6_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 329179<br /><br /> `TimeSpan.Parse("0:0:3.1000009")`:<br /><br /> `ss\.FFFFFF`: 03.1|
 |"FFFFFFF"|시간 간격의 1/10000000초입니다. 뒤에 오는 소수 자릿수 0이나 연속 일곱 자리 0은 표시되지 않습니다.<br /><br /> 추가 정보: ["FFFFFFF" 사용자 지정 형식 지정자](#F7_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 3291791<br /><br /> `TimeSpan.Parse("0:0:3.1900000")`:<br /><br /> `ss\.FFFFFF`: 03.19|
 |'*string*'|리터럴 문자열 구분 기호입니다.<br /><br /> 추가 정보: [기타 문자](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh':'mm':'ss` --> "14:32:17"|
-|\\|이스케이프 문자입니다.<br /><br /> 추가 정보: [기타 문자](#Other)|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
+|&#92;|이스케이프 문자입니다.<br /><br /> 추가 정보: [기타 문자](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 |기타 문자|이스케이프되지 않은 다른 모든 문자는 사용자 지정 형식 지정자로 해석됩니다.<br /><br /> 추가 정보: [기타 문자](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 
 <a name="dSpecifier"></a> 
