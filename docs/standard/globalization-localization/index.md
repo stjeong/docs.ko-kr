@@ -16,7 +16,7 @@ ms.author: ronpet
 ---
 # <a name="globalizing-and-localizing-net-applications"></a>.NET 애플리케이션 전역화 및 지역화
 
-하나 이상의 언어로 지역화할 수 있는 애플리케이션을 포함하여 [지역화 대비 애플리케이션](https://msdn.microsoft.com/goglobal/bb978433.aspx)의 개발에는 전역화, 지역화 가능성 검토 및 지역화의 세 가지 단계가 포함됩니다.
+하나 이상의 언어로 지역화할 수 있는 애플리케이션을 포함하여 지역화 대비 애플리케이션의 개발에는 세계화, 지역화 가능성 검토 및 지역화의 세 가지 단계가 포함됩니다.
 
 [전역화](globalization.md)
 

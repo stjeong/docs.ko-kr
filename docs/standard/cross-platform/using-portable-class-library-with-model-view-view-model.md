@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7b42f20509b34b934418ed8e870a60713def7387
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 8b48dc67e18411d82f03d29ab244d57575d6d720
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842582"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56835787"
 ---
 # <a name="using-portable-class-library-with-model-view-view-model"></a>Model-View-View Model과 함께 이식 가능한 클래스 라이브러리 사용
 .NET Framework를 사용 하 여 [이식 가능한 클래스 라이브러리](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) 모델-뷰 모델 (MVVM) 패턴을 구현 하 여 여러 플랫폼 간에 어셈블리를 공유 합니다.
@@ -27,7 +27,7 @@ ms.locfileid: "48842582"
 
  ![MVVM 다이어그램으로 이식 가능한](../../../docs/standard/cross-platform/media/portablemvvmdiagram.png "PortableMVVMdiagram")
 
- 이 항목에서는 MVVM 패턴에 대 한 일반 정보를 제공 하지 않습니다. 만 사용 하는 방법에 대 한 정보를 제공 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] MVVM을 구현 합니다. MVVM에 대 한 자세한 내용은 참조는 [MVVM 퀵 스타트](https://msdn.microsoft.com/library/gg430869(v=PandP.40).aspx)합니다.
+ 이 항목에서는 MVVM 패턴에 대 한 일반 정보를 제공 하지 않습니다. 만 사용 하는 방법에 대 한 정보를 제공 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] MVVM을 구현 합니다. MVVM에 대 한 자세한 내용은 참조는 [MVVM 퀵 스타트를 사용 하 여 Prism 라이브러리 5.0 WPF 용](https://docs.microsoft.com/previous-versions/msp-n-p/gg430857(v=pandp.40))합니다.
 
 ## <a name="classes-that-support-mvvm"></a>MVVM을 지 원하는 클래스
  대상 하는 경우는 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], Silverlight 또는 Windows Phone 7.5에 대 한 프로그램 [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] 프로젝트에 다음 클래스는 MVVM 패턴을 구현 하기 위한 사용할 수 있습니다:

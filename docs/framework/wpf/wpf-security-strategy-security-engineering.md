@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Security Development Lifecycle (SDL), critical code management
 - threat modeling [WPF]
 ms.assetid: 0fc04394-4e47-49ca-b0cf-8cd1161d95b9
-ms.openlocfilehash: 6006024f29c37545ce95e579c7b93727d8c6bc67
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2ab6981b85d5b0663fd8e464a840bfbe55f6d3b0
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54547750"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836593"
 ---
 # <a name="wpf-security-strategy---security-engineering"></a>WPF 보안 전략 - 보안 엔지니어링
 신뢰할 수 있는 컴퓨팅은 보안 코드 생성을 보장하기 위한 Microsoft 이니셔티브입니다. 신뢰할 수 있는 컴퓨팅 이니셔티브의 핵심 요소는 [!INCLUDE[TLA#tla_sdl](../../../includes/tlasharptla-sdl-md.md)]입니다. [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)]은 보안 코드 전달이 용이하도록 표준 엔지니어링 프로세스와 함께 사용되는 엔지니어링 방법입니다. [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)]은 형식화, 측정 가능성 및 다음을 비롯한 추가 구조와 모범 사례를 결합하는 10단계로 이루어져 있습니다.  
@@ -94,5 +94,4 @@ ms.locfileid: "54547750"
 - [WPF 부분 신뢰 보안](../../../docs/framework/wpf/wpf-partial-trust-security.md)
 - [WPF 보안 전략 - 플랫폼 보안](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)
 - [신뢰할 수 있는 컴퓨팅](https://www.microsoft.com/mscorp/twc/default.mspx)
-- [응용 프로그램 위협 모델링](https://msdn.microsoft.com/security/securecode/threatmodeling/acetm/)
-- [보안 지침: .NET Framework 2.0](https://msdn.microsoft.com/library/default.asp?url=/library/dnpag2/html/PAGGuidelines0003.asp)
+- [.NET의 보안](../../standard/security/index.md)

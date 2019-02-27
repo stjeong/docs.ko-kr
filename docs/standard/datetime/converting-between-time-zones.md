@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 78f25b657e6cb103797e13e98c3dd61a80003dc2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e08e90f61429f01f360808866fdc3d963323ba23
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701822"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56835345"
 ---
 # <a name="converting-times-between-time-zones"></a>표준 시간대 간 시간 변환
 
@@ -27,7 +27,7 @@ ms.locfileid: "54701822"
 
 ## <a name="converting-to-coordinated-universal-time"></a>UTC로 변환
 
-UTC(협정 세계시)는 고정밀 원자 시간 표준입니다. 전세계의 표준 시간대가 UTC의 양 또는 음 오프셋으로 표시됩니다. 따라서 UTC는 어느 정도 표준 시간대에서 자유롭거나 중립적인 시간을 제공합니다. 컴퓨터 간에 날짜 및 시간의 이식성이 중요한 경우 UTC 시간을 사용하는 것이 좋습니다. (날짜 및 시간을 사용 하 여 기타 모범 사례와 세부 정보에 대 한 참조 [.NET Framework에서 DateTime을 사용한 최상의 코딩 방법](https://msdn.microsoft.com/library/ms973825.aspx).) 개별 표준 시간대를 UTC로 변환하면 시간을 보다 쉽게 비교할 수 있습니다.
+UTC(협정 세계시)는 고정밀 원자 시간 표준입니다. 전세계의 표준 시간대가 UTC의 양 또는 음 오프셋으로 표시됩니다. 따라서 UTC는 어느 정도 표준 시간대에서 자유롭거나 중립적인 시간을 제공합니다. 컴퓨터 간에 날짜 및 시간의 이식성이 중요한 경우 UTC 시간을 사용하는 것이 좋습니다. (날짜 및 시간을 사용 하 여 기타 모범 사례와 세부 정보에 대 한 참조 [.NET Framework에서 DateTime을 사용한 최상의 코딩 방법](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) 개별 표준 시간대를 UTC로 변환하면 시간을 보다 쉽게 비교할 수 있습니다.
 
 > [!NOTE]
 > Serialize 할 수도 있습니다는 <xref:System.DateTimeOffset> 명확 하 게 나타낼 단일 지점 시간에서 구조입니다. 때문에 <xref:System.DateTimeOffset> utc에서 오프셋과 함께 날짜 및 시간 값을 저장 하는 개체, 항상 나타내는 특정 지점 관계의 지정 시간에서을 UTC입니다.

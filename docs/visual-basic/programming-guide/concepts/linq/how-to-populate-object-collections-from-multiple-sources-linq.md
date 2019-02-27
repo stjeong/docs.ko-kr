@@ -2,12 +2,12 @@
 title: '방법: 여러 원본 (LINQ) (Visual Basic)에서 개체 컬렉션 채우기'
 ms.date: 06/22/2018
 ms.assetid: 63062a22-e6a9-42c0-b357-c7c965f58f33
-ms.openlocfilehash: 0228d152539abe3bf0db5a8e5bf4581eaf957b31
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 65c7e2c791ba8331416ee2eee292f1e8c4888712
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54638823"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836359"
 ---
 # <a name="how-to-populate-object-collections-from-multiple-sources-linq-visual-basic"></a>방법: 여러 원본 (LINQ) (Visual Basic)에서 개체 컬렉션 채우기
 
@@ -18,7 +18,7 @@ ms.locfileid: "54638823"
 
 ## <a name="to-create-the-data-file"></a>데이터 파일을 만들려면
 
-- 에 설명 된 대로 names.csv 및 scores.csv 파일을 프로젝트 폴더로 복사 [방법: 서로 다른 파일 (LINQ) (Visual Basic)의 콘텐츠 조인](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)합니다.
+- [방법: 서로 다른 파일 (LINQ) (Visual Basic)의 콘텐츠 조인](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -65,7 +65,7 @@ Class PopulateCollection
                           Let splitScoreLine = scoreLine.Split(New Char() {","})
                           Where Convert.ToInt32(splitName(2)) = Convert.ToInt32(splitScoreLine(0))
                           Select New Student() With {
-                               .FirstName = splitName(0), .LastName = splitName(1), .ID = splitName(2),
+                               .FirstName = splitName(1), .LastName = splitName(0), .ID = splitName(2),
                                .ExamScores = (From scoreAsText In splitScoreLine Skip 1
                                              Select Convert.ToInt32(scoreAsText)).ToList()}
 
@@ -86,18 +86,18 @@ Class PopulateCollection
 End Class
 
 ' Output:
-' The average score of Omelchenko Svetlana is 82.5
-' The average score of O'Donnell Claire is 72.25
-' The average score of Mortensen Sven is 84.5
-' The average score of Garcia Cesar is 88.25
-' The average score of Garcia Debra is 67
-' The average score of Fakhouri Fadi is 92.25
-' The average score of Feng Hanying is 88
-' The average score of Garcia Hugo is 85.75
-' The average score of Tucker Lance is 81.75
-' The average score of Adams Terry is 85.25
-' The average score of Zabokritski Eugene is 83
-' The average score of Tucker Michael is 92
+' The average score of Svetlana Omelchenko is 82.5
+' The average score of Claire O'Donnell is 72.25
+' The average score of Sven Mortensen is 84.5
+' The average score of Cesar Garcia is 88.25
+' The average score of Debra Garcia is 67
+' The average score of Fadi Fakhouri is 92.25
+' The average score of Hanying Feng is 88
+' The average score of Hugo Garcia is 85.75
+' The average score of Lance Tucker is 81.75
+' The average score of Terry Adams is 85.25
+' The average score of Eugene Zabokritski is 83
+' The average score of Michael Tucker is 92
 ```
 
 에 [Select 절](../../../../visual-basic/language-reference/queries/select-clause.md) 절을 개체 이니셜라이저를 각각 새 인스턴스화하는 `Student` 두 소스의 데이터를 사용 하 여 개체입니다.

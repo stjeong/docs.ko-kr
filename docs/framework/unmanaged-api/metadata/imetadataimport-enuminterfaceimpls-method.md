@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c94960478e6b2eb4e7b8f1e9592b0831af3ec686
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 21d70b2702a754b554f06de5dad776ae98ae918d
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603770"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836268"
 ---
 # <a name="imetadataimportenuminterfaceimpls-method"></a>IMetaDataImport::EnumInterfaceImpls 메서드
-인터페이스 구현을 나타내는 MethodDef 토큰을 열거합니다.  
+지정 된 구현 하는 모든 인터페이스를 열거 `TypeDef`합니다. 
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ HRESULT EnumInterfaceImpls (
 );  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+## <a name="parameters"></a>매개 변수  
  `phEnum`  
  [out에서] 열거자에 대 한 포인터입니다.  
   
@@ -61,6 +61,10 @@ HRESULT EnumInterfaceImpls (
 |-------------|-----------------|  
 |`S_OK`|`EnumInterfaceImpls` 성공적으로 반환 합니다.|  
 |`S_FALSE`|열거할 MethodDef 토큰이 있습니다. 이런 경우 `pcImpls` 0으로 설정 됩니다.|  
+
+## <a name="remarks"></a>설명
+
+컬렉션을 반환 하는 열거형 `mdInterfaceImpl` 지정 된 구현 되는 각 인터페이스에 대 한 토큰 `TypeDef`합니다. 인터페이스 토큰 인터페이스를 지정 된 순서 대로 반환 됩니다 (통해 `DefineTypeDef` 또는 `SetTypeDefProps`). 반환 된 속성 `mdInterfaceImpl` 토큰을 사용 하 여 쿼리할 수 있습니다 [GetInterfaceImplProps](imetadataimport-getinterfaceimplprops-method.md)합니다.
   
 ## <a name="requirements"></a>요구 사항  
  **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  

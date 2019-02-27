@@ -7,18 +7,17 @@ helpviewer_keywords:
 - multimedia [WPF]
 - media [WPF]
 ms.assetid: f7d96707-ffb5-486c-9e85-db6f0d5ac547
-ms.openlocfilehash: d7c3a6b01591dd1c7fc7554a6e660f1ca7b12de1
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: afc39b0d079bf273170a649f03a3756953c29eea
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582215"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836398"
 ---
 # <a name="audio-and-video-how-to-topics"></a>오디오 및 비디오 방법 항목
 다음 항목에 사용 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.MediaElement> 응용 프로그램에서 오디오 및 비디오 콘텐츠에 통합 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [방법: 요소를 동적으로 추가 합니다.](https://msdn.microsoft.com/library/d00f258a-7973-4de7-bc54-a3fc1f638419)  
  [MediaElement 제어(재생, 일시 중지, 정지, 볼륨 및 속도)](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
  [Storyboard를 사용하여 MediaElement 제어](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md)  
  [사용자 이벤트를 사용하여 미디어 재생 트리거](../../../../docs/framework/wpf/graphics-multimedia/how-to-trigger-media-playback-with-a-user-event.md)  

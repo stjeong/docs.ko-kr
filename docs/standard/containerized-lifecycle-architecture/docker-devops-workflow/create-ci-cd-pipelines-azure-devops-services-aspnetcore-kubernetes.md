@@ -3,13 +3,13 @@ title: Docker 응용 프로그램에 대 한 외부 루프 DevOps 워크플로�
 description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 애플리케이션 수명 주기
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
-ms.openlocfilehash: 7a98c34bfdbbdc9b34a04c891ca031f454ac4396
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.date: 02/15/2019
+ms.openlocfilehash: 2cd769ce9013a8521c53f36b44ea260ceccd48b7
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56221500"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56834968"
 ---
 # <a name="creating-cicd-pipelines-in-azure-devops-services-for-a-net-core-20-application-on-containers-and-deploying-to-a-kubernetes-cluster"></a>컨테이너 및 Kubernetes 클러스터에 배포 하는.NET Core 2.0 응용 프로그램에 대 한 Azure DevOps 서비스에서 CI/CD 파이프라인 만들기
 
@@ -23,20 +23,20 @@ ms.locfileid: "56221500"
 
 그림 5-13에서와 같이 첫 번째 단계는 빌드/CI 파이프라인. Azure DevOps 서비스에서 코드를 컴파일하려면 코드, Docker 이미지를 만들고 Docker 허브 또는 Azure Container Registry와 같은 Docker 레지스트리로 푸시하는 빌드/CD 파이프라인을 만들 수 있습니다.
 
-![](media/build-ci-pipeline-azure-devops-push-to-docker-registry.png)
+![Azure DevOps, 빌드 프로세스 작업 정의의 브라우저 보기입니다.](media/build-ci-pipeline-azure-devops-push-to-docker-registry.png)
 
 **그림 5-13**. Azure DevOps Docker 이미지를 빌드하고 Docker 레지스트리에 이미지 푸시하기 빌드/CI 파이프라인
 
 두 번째 단계는 배포/릴리스 파이프라인을 만드는 것입니다. Azure DevOps 서비스에서는 그림 5-14에 나와 있는 것 처럼 Azure DevOps 서비스에 대 한 Kubernetes 작업을 사용 하 여 Kubernetes 클러스터를 대상으로 하는 배포 파이프라인을 쉽게 만들 수 있습니다.
 
-![MVC를 배포 합니다.](media/release-cd-pipeline-azure-devops-deploy-to-kubernetes.png)
+![Azure DevOps의 브라우저 보기 Kubernetes 작업 정의를 배포 합니다.](media/release-cd-pipeline-azure-devops-deploy-to-kubernetes.png)
 
 **그림 5-14**. Azure DevOps 서비스 Kubernetes 클러스터에 배포할 릴리스/CD 파이프라인
 
 > [! 연습] eShopModernized Kubernetes에 배포 합니다.
 >
 > Azure DevOps CI/CD 파이프라인의 자세한 연습에 대 한이 게시물을 참조 Kubernetes에 배포 합니다. \
->[https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD))
+><https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 >[!div class="step-by-step"]
 >[이전](docker-application-outer-loop-devops-workflow.md)

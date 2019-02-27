@@ -3,13 +3,13 @@ title: 프로덕션 Docker 환경 관리
 description: 컨테이너 기반 프로덕션 환경을 관리 하는 것에 대 한 주요 내용을 알아야 가져옵니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
-ms.openlocfilehash: 54e2b999f744600d3b6853442bb9ccca004f4e76
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.date: 02/15/2019
+ms.openlocfilehash: f3cf9bc281e94f342cecb1083d886daba03c019d
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219492"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836619"
 ---
 # <a name="manage-production-docker-environments"></a>프로덕션 Docker 환경 관리
 
@@ -23,26 +23,24 @@ Azure Virtual Machine Scale Sets를 사용 하 여 이러한 클러스터를 배
 
 표 6-1의 오 케 스트레이 터, 스케줄러 및 클러스터링 플랫폼 관련 된 일반적인 관리 도구를 나열 합니다.
 
-표 6-1: Docker 관리 도구
+**표 6-1**합니다. Docker 관리 도구
 
-
-| 관리 도구      | 설명           | 관련된 오 케 스트레이 터 |
-|-----------------------|-----------------------|-----------------------|
-| Container Service\(Azure portal의 UI 관리) | [Container Service](https://azure.microsoft.com/services/container-service/) 쉽게 이용할 수를 제공 하는 방법은 시작 [Azure에서 컨테이너 클러스터를 배포](https://docs.microsoft.com/azure/container-service/dcos-swarm/container-service-deployment) Mesosphere DC/OS, Kubernetes 및 Docker Swarm과 같은 인기 있는 오 케 스트레이 터에 따라 합니다. <br /><br /> Container Service는 해당 플랫폼의 구성을 최적화 합니다. 크기, 호스트 수 및 오 케 스트레이 터 도구 옵션을 선택 해야 하 고 나머지 컨테이너 서비스 처리 합니다. | Mesosphere DC/OS <br /><br /> Kubernetes <br /><br /> Docker Swarm |
-| Docker Universal 제어 평면\(온-프레미스 또는 클라우드) | [Docker Universal 제어 평면](https://docs.docker.com/v1.11/ucp/overview/) 는 Docker에서 엔터프라이즈급 클러스터 관리 솔루션입니다. 한 곳에서 전체 클러스터를 관리할 수 있습니다. <br /><br /> Docker Universal 제어 평면 Docker Swarm, Docker Universal 제어 평면 및 Docker Trusted Registry는 Docker 데이터 센터 라는 상업용 제품의 일부로 포함 되어 있습니다. <br /><br /> Docker 데이터 센터에 온-프레미스 설치 되거나 Azure와 같은 공용 클라우드를 프로 비전 합니다. | Docker Swarm\(Container Service를 통해 지원) |
-| Docker 클라우드\(Tutum; 클라우드 SaaS 라고도) | [Docker 클라우드](https://docs.docker.com/docker-cloud/) 는 빌드하고 docker 화 된 응용 프로그램 이미지를 설정 하 고 호스트 인프라를 관리 하는 데 유용한 도구를 테스트 하는 기능을 사용 하 여 오케스트레이션 기능 및 Docker 레지스트리를 제공 하는 호스팅된 관리 서비스 (SaaS) 및를 자동으로 구체적인 인프라에 이미지를 배포할 수 있도록 배포 기능을 추가 합니다. Docker Swarm 클러스터를 실행 하는 Container Service에서 인프라를 SaaS Docker 클라우드 계정에 연결할 수 있습니다. | Docker Swarm\(Container Service를 통해 지원) |
-| Mesosphere Marathon\(온-프레미스 또는 클라우드) | [Marathon](https://mesosphere.github.io/marathon/docs/marathon-ui.html) Mesosphere의 DC/OS 및 Apache Mesos는 프로덕션 급 컨테이너 오케스트레이션 및 스케줄러 플랫폼입니다. <br /><br /> Mesos와 함께 작동 (DC/OS는 Apache Mesos 기반) 컨트롤 장기 실행 서비스를 제공을 [프로세스 및 컨테이너 관리를 위한 웹 UI](https://mesosphere.github.io/marathon/docs/marathon-ui.html)합니다. 웹 UI 관리 도구 제공 | Mesosphere DC/OS\(Apache Mesos 기반; Container Service를 통해 지원) |
-| Google Kubernetes | [Kubernetes](https://kubernetes.io/docs/user-guide/ui/#dashboard-access) 오케스트레이션, 예약 및 클러스터 인프라에 걸쳐 있습니다. 이 컨테이너 중심 인프라를 제공 하는 호스트를 클러스터 전체에서 배포, 크기 조정 및 응용 프로그램 컨테이너의 작업을 자동화 하는 데는 오픈 소스 플랫폼입니다. | Google Kubernetes\(Container Service를 통해 지원) |
+| 관리 도구 | 설명 | 관련된 오 케 스트레이 터 |
+|------------------|-------------|-----------------------|
+| [컨테이너에 대 한 azure Monitor](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview) | Azure는 Kubernetes 관리 도구 전용 | Azure Kubernetes 서비스 (AKS) |
+| [Kubernetes 웹 UI (대시보드)](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) | Kubernetes 관리 도구를 모니터링 하 고 로컬 Kubernetes 클러스터를 관리할 수 있습니다. | AKS(Azure Kubernetes Service)<br/>로컬 Kubernetes |
+| [Service Fabric에 대 한 azure portal](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal)<br/>[Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) | Azure에서 온 프레미스, 로컬 개발 및 기타 클라우드에서 Service Fabric 클러스터를 관리 하는 것에 대 한 온라인 및 데스크톱 버전 | Azure Service Fabric |
+| [컨테이너 모니터링 (Log Analytics)](https://docs.microsoft.com/azure/azure-monitor/insights/containers) | 일반 컨테이너 관리 y 모니터링 솔루션입니다. 통해 Kubernetes 클러스터를 관리할 수 있습니다 [컨테이너에 대 한 Azure Monitor](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview)합니다. | Azure Service Fabric<br/>AKS(Azure Kubernetes Service)<br/>Mesosphere DC/OS를 사용 합니다. |
 
 ## <a name="azure-service-fabric"></a>Azure Service Fabric
 
-클러스터 배포 및 관리에 대 한 다른 선택에는 Azure Service Fabric은입니다. [Service Fabric](https://azure.microsoft.com/services/service-fabric/) 는 개발자 뿐만 아니라 컨테이너 오케스트레이션을 포함 하는 Microsoft 마이크로 서비스 플랫폼 프로그래밍 모델 확장성이 뛰어난 마이크로 서비스 응용 프로그램을 빌드할 수 있습니다. Service Fabric에서와 같이 현재 Linux 미리 보기 버전에서는 Docker를 지원 합니다 [Linux에서 Service Fabric 미리 보기](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-anywhere), 및 Windows 컨테이너에 대 한 [다음 릴리스에서](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview)합니다.
+클러스터 배포 및 관리에 대 한 다른 선택에는 Azure Service Fabric은입니다. [Service Fabric](https://azure.microsoft.com/services/service-fabric/) 는 개발자 뿐만 아니라 컨테이너 오케스트레이션을 포함 하는 Microsoft 마이크로 서비스 플랫폼 프로그래밍 모델 확장성이 뛰어난 마이크로 서비스 응용 프로그램을 빌드할 수 있습니다. Service Fabric Linux 및 Windows 컨테이너에서 Docker를 지원 하 고 Windows 및 Linux 서버에서 실행할 수 있습니다.
 
 다음은 서비스 패브릭 관리 도구:
 
--   [Service Fabric에 대 한 azure portal](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal) 클러스터 관련 작업 (만들기/업데이트/삭제)는 클러스터 또는 인프라 (Vm, 부하 분산 장치, 네트워킹 등)를 구성 합니다.
+- [Service Fabric에 대 한 azure portal](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal) 클러스터 관련 작업 (만들기/업데이트/삭제)는 클러스터 또는 인프라 (Vm, 부하 분산 장치, 네트워킹 등)를 구성 합니다.
 
--   [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) 는 insights 및 Service Fabric 클러스터 노드/v m의 관점에서 응용 프로그램 및 서비스의 관점에서 특정 작업을 제공 하는 특수 한 웹 UI 도구입니다.
+- [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) 특수화 된 웹 UI 및 insights 및 Service Fabric 클러스터, 노드/v m의 관점에서 응용 프로그램 및 서비스의 관점에서 특정 작업을 제공 하는 데스크톱 다중 플랫폼 도구입니다.
 
 >[!div class="step-by-step"]
 >[이전](run-microservices-based-applications-in-production.md)

@@ -1,6 +1,6 @@
 ---
 title: IMetaDataImport::GetInterfaceImplProps 메서드
-ms.date: 03/30/2017
+ms.date: 02/25/2019
 api_name:
 - IMetaDataImport.GetInterfaceImplProps
 api_location:
@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 91cb42a5bf1115de82b5fe28693cb77b66915c9d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dc16d01d45364d1a17f281f859b27c3e48342ff0
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600559"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56835722"
 ---
 # <a name="imetadataimportgetinterfaceimplprops-method"></a>IMetaDataImport::GetInterfaceImplProps 메서드
-에 대 한 메타 데이터 토큰에 대 한 포인터를 가져옵니다는 <xref:System.Type> 지정된 된 메서드를 구현 하 고 해당 메서드를 선언 하는 인터페이스입니다.  
+에 대 한 메타 데이터 토큰에 대 한 포인터를 가져옵니다는 <xref:System.Type> 지정된 된 메서드를 구현 하 고 해당 메서드를 선언 하는 인터페이스입니다.
   
 ## <a name="syntax"></a>구문  
   
@@ -46,6 +46,33 @@ HRESULT GetInterfaceImplProps (
   
  `ptkIface`  
  [out] 구현 된 메서드를 정의 하는 인터페이스를 나타내는 메타 데이터 토큰입니다.  
+
+## <a name="remarks"></a>설명
+
+ 값을 가져옵니다 `iImpl` 를 호출 하 여 합니다 [EnumInterfaceImpls](imetadataimport-enuminterfaceimpls-method.md) 메서드.
+ 
+ 예를 들어, 클래스에는 `mdTypeDef` 이 0x02000007 값 및 해당 형식 토큰에는 세 가지 인터페이스를 구현 함을 토큰: 
+
+- 0x02000003 (TypeDef)
+- 0x0100000A (TypeRef)
+- 0x0200001C (TypeDef)
+
+개념적으로이 정보는으로 인터페이스 구현 테이블에 저장 됩니다.
+
+| 행 번호 | 토큰 클래스 | 토큰 인터페이스 |
+|------------|-------------|-----------------|
+| 4          |             |                 |
+| 5          | 02000007    | 02000003        |
+| 6          | 02000007    | 0100000A        |
+| 7          |             |                 |
+| 8          | 02000007    | 0200001C        |
+
+회수 토큰은 4 바이트 값:
+
+- 하위 3 바이트 행 수를 보유 하거나 제거 합니다.
+- 토큰 유형이 – 0x09를 보유 하는 상위 바이트 `mdtInterfaceImpl`합니다.
+
+`GetInterfaceImplProps` 행에 제공한 토큰이에 저장 된 정보를 반환 합니다 `iImpl` 인수입니다. 
   
 ## <a name="requirements"></a>요구 사항  
  **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  

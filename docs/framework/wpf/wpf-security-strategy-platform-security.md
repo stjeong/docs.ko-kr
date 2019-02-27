@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Windows Presentation Foundation [WPF], about security model
 - security model [WPF], operating system
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
-ms.openlocfilehash: 2252214a8ec217c30842995ea7d4d141e127d5f3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2363042ace7440ee74e4590a2271e87c1389ebcc
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640448"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56836346"
 ---
 # <a name="wpf-security-strategy---platform-security"></a>WPF 보안 전략 - 플랫폼 보안
 운영 체제를 포함 하는 기본 플랫폼의 보안 기능도 활용 다양 한 보안 서비스를 제공 하는 Windows Presentation Foundation (WPF), 합니다 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], 및 [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]합니다. 이러한 계층이 결합되어 다음 그림과 같이 단일 실패 지점을 방지하는 강력한 심층 방어 보안 모델인 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]를 제공합니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "54640448"
   
  지금까지 버퍼 오버런은 많은 강력한 보안 익스플로이트의 원인이 되었습니다. 버퍼 오버런은 공격자는 버퍼의 경계를 지나서 쓰는 악성 코드의 삽입을 허용하는 코드 취약성을 활용하는 경우에 발생합니다. 이 경우 공격자의 코드가 실행되도록 함수의 반환 주소를 덮어써서 코드가 실행되는 프로세스를 공격자가 가로챌 수 있습니다. 그 결과, 가로챈 프로세스와 동일한 권한으로 임의 코드를 실행하는 악성 코드가 생깁니다.  
   
- 높은 수준에서 /GS 컴파일러 플래그는 로컬 문자열 버퍼가 있는 함수의 반환 주소를 보호하기 위해 특수 보안 쿠키를 삽입하여 잠재적인 버퍼 오버런으로부터 보호합니다. 함수가 반환된 후 보안 쿠키를 이전 값과 비교합니다. 값이 변경된 경우 버퍼 오버런이 발생했을 수 있으며 프로세스가 오류 상태로 중지됩니다. 프로세스를 중지하면 잠재적인 악성 코드의 실행이 방지됩니다. 참조 [/GS (버퍼 보안 검사)](https://msdn.microsoft.com/library/8dbf701c.aspx) 대 한 자세한 내용은 합니다.  
+ 높은 수준에서 /GS 컴파일러 플래그는 로컬 문자열 버퍼가 있는 함수의 반환 주소를 보호하기 위해 특수 보안 쿠키를 삽입하여 잠재적인 버퍼 오버런으로부터 보호합니다. 함수가 반환된 후 보안 쿠키를 이전 값과 비교합니다. 값이 변경된 경우 버퍼 오버런이 발생했을 수 있으며 프로세스가 오류 상태로 중지됩니다. 프로세스를 중지하면 잠재적인 악성 코드의 실행이 방지됩니다. 참조 [/GS (버퍼 보안 검사)](/cpp/build/reference/gs-buffer-security-check) 대 한 자세한 내용은 합니다.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 다른 방어 계층을 추가하기 위해 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]는 /GS 플래그로 컴파일됩니다.  
   
@@ -174,7 +174,7 @@ ms.locfileid: "54640448"
   
 <a name="ClickOnce_Deployment"></a>   
 ### <a name="clickonce-deployment"></a>ClickOnce 배포  
- [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] .NET Framework에 포함 되 고 통합 하는 포괄적인 배포 기술 [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (참조 [ClickOnce 배포 개요](https://msdn.microsoft.com/library/142dbbz4.aspx) 자세한). 브라우저에서 호스트된 응용 프로그램은 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]로 배포해야 하지만 독립 실행형 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] 응용 프로그램은 [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포할 수 있습니다.  
+ [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] .NET Framework에 포함 되 고 통합 하는 포괄적인 배포 기술 [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (참조 [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment) 자세한). 브라우저에서 호스트된 응용 프로그램은 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]로 배포해야 하지만 독립 실행형 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] 응용 프로그램은 [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포할 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포된 응용 프로그램에는 [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)]보다 높은 추가 보안 계층이 제공됩니다. 기본적으로 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)]로 배포된 응용 프로그램이 필요한 권한을 요청합니다. 애플리케이션이 배포된 소스 영역에 대한 권한 집합을 초과하지 않는 경우에만 해당 권한이 부여됩니다. 시작 영역의 권한 집합에서 제공하는 것보다 작아도 권한 집합을 필요한 권한으로만 줄이면 애플리케이션이 액세스할 수 있는 리소스 수가 최소한으로 줄어듭니다. 따라서 애플리케이션을 가로채는 경우 클라이언트 컴퓨터의 손상 가능성이 줄어듭니다.  
   
@@ -210,9 +210,6 @@ ms.locfileid: "54640448"
   
 ## <a name="see-also"></a>참고자료
 - [Windows XP SP2의 Microsoft Internet Explorer 6 보안 이해](https://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)
-- [이해 및 Internet Explorer 보호 모드에서 작업](https://msdn.microsoft.com/library/bb250462.aspx)
-- [Windows XP 서비스 팩 3](https://www.microsoft.com/windows/products/windowsxp/sp3/default.mspx)
-- [Windows Vista 보안 가이드](https://www.microsoft.com/downloads/details.aspx?familyid=a3d1bbed-7f35-4e72-bfb5-b84a526c1565&displaylang=en)
 - [코드 액세스 보안](../../../docs/framework/misc/code-access-security.md)
 - [보안](../../../docs/framework/wpf/security-wpf.md)
 - [WPF 부분 신뢰 보안](../../../docs/framework/wpf/wpf-partial-trust-security.md)
