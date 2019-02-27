@@ -4,12 +4,12 @@ description: project.json 및 csproj e요소 간 매핑을 참조하세요.
 author: natemcmaster
 ms.date: 03/13/2017
 ms.custom: seodec18
-ms.openlocfilehash: dc78a6fc43eeb2a9e556bc5a4d8e27db9067ce94
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ac63f18bd42193e964aaeae3c54c887c9c63163
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54682854"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747413"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>project.json 및 csproj 속성 간 매핑
 
@@ -39,7 +39,7 @@ ms.locfileid: "54682854"
 }
 ```
 
-더 이상 지원되지 않습니다. csproj에서는 디렉터리 이름으로 정의되는 프로젝트 파일 이름으로 결정됩니다. 예를 들어, `MyProjectName.csproj`을 입력합니다.
+더 이상 지원되지 않습니다. csproj에서는 보통 디렉터리 이름과 일치하는 프로젝트 파일 이름으로 결정됩니다. 예를 들어 `MyProjectName.csproj`과 같은 형식입니다.
 
 기본적으로 프로젝트 파일 이름은 `<AssemblyName>` 및 `<PackageId>` 속성의 값도 지정합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: 정규화된 형식 이름 지정
-ms.date: 03/14/2018
+ms.date: 02/21/2019
 helpviewer_keywords:
 - names [.NET Framework], fully qualified type names
 - reflection, fully qualified type names
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9281906f5500d954f3a0c7abface4ee43adcb64d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4d73cad94e0e4343c5dd09a3b12131afeabef873
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54628541"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747251"
 ---
 # <a name="specifying-fully-qualified-type-names"></a>정규화된 형식 이름 지정
 다양한 리플렉션 작업에 대한 유효한 입력을 포함하려면 형식 이름을 지정해야 합니다. 정규화된 형식 이름은 어셈블리 이름 사양, 네임스페이스 사양, 형식 이름으로 구성됩니다. 형식 이름 사양은 <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> 등의 메서드에서 사용됩니다.  
   
-## <a name="grammar-for-type-names"></a>형식 이름에 대한 문법  
+## <a name="grammar-for-type-names"></a>형식 이름의 문법  
  문법은 공식 언어의 구문을 정의합니다. 다음 표에서는 유효한 입력을 인식하는 방법을 설명하는 어휘 규칙을 보여 줍니다. 터미널(더 이상 줄일 수 없는 요소)은 모두 대문자로 표시됩니다. 비터미널(더 줄일 수 있는 요소)은 대/소문자가 혼합되어 있거나 작은따옴표가 붙은 문자열로 표시되지만 작은따옴표(')는 구문 자체에 속하지 않습니다. 파이프 문자(&#124;)는 하위 규칙이 있는 규칙을 나타냅니다.  
 
 ```antlr
@@ -41,9 +41,12 @@ ReferenceTypeSpec
 
 SimpleTypeSpec
     : PointerTypeSpec
-    | ArrayTypeSpec
+    | GenericTypeSpec
     | TypeName
     ;
+
+GenericTypeSpec
+   : SimpleTypeSpec ` NUMBER
 
 PointerTypeSpec
     : SimpleTypeSpec '*'
@@ -177,7 +180,10 @@ com.microsoft.crypto, Culture="", PublicKeyToken=a5d015c7d5a0b012
 com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,  
     Version=1.0.0.0  
 ```  
-  
+## <a name="specifying-generic-types"></a>제네릭 형식 지정
+
+SimpleTypeSpec\`NUMBER는 1부터 *n*까지의 제네릭 형식 매개 변수를 갖는 개방형 제네릭 형식을 나타냅니다. 예를 들어, 개방형 제네릭 형식 List\<T> 또는 폐쇄형 제네릭 형식 List\<String>의 참조를 가져오려면 ``Type.GetType("System.Collections.Generic.List`1")``을 사용합니다. 제네릭 형식 Dictionary\<TKey,TValue>의 참조를 가져오려면 ``Type.GetType("System.Collections.Generic.Dictionary`2")``를 사용합니다. 
+
 ## <a name="specifying-pointers"></a>포인터 지정  
  SimpleTypeSpec*는 관리되지 않는 포인터를 나타냅니다. 예를 들어 MyType 형식에 대한 포인터를 가져오려면 `Type.GetType("MyType*")`을 사용합니다. MyType 형식에 대한 포인터의 포인터를 가져오려면 `Type.GetType("MyType**")`을 사용합니다.  
   
@@ -192,7 +198,6 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 -   `Type.GetType("MyArray[]")`은 하한이 0인 1차원 배열을 가져옵니다.  
   
 -   `Type.GetType("MyArray[*]")`은 하한을 알 수 없는 1차원 배열을 가져옵니다.  
-  
 -   `Type.GetType("MyArray[][]")`은 2차원 배열의 배열을 가져옵니다.  
   
 -   `Type.GetType("MyArray[*,*]")` 및 `Type.GetType("MyArray[,]")`은 하한을 알 수 없는 사각형 2차원 배열을 가져옵니다.  

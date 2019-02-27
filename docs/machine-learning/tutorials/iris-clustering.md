@@ -3,15 +3,15 @@ title: 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터�
 description: 클러스터링 시나리오에서 ML.NET을 사용하는 방법 알아보기
 author: pkulikov
 ms.author: johalex
-ms.date: 01/11/2019
+ms.date: 02/19/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 60506a6a8640a4f37e9f181bc88ae4f757502cb9
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: fcbd75597d6fdce8dceffc9d47d06cc13dd11570
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093608"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56664473"
 ---
 # <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET을 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
 
@@ -84,7 +84,7 @@ ms.locfileid: "56093608"
 
 [!code-csharp[Define data classes](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#ClassDefinitions)]
 
-`IrisData`는 입력 데이터 클래스이며 각 데이터 집합의 각 특징에 대한 정의를 포함합니다. [Column](xref:Microsoft.ML.Data.ColumnAttribute) 특성을 사용하여 데이터 집합 파일에서 소스 열의 인덱스를 지정합니다.
+`IrisData`는 입력 데이터 클래스이며 각 데이터 집합의 각 특징에 대한 정의를 포함합니다. [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute) 특성을 사용하여 데이터 세트 파일에서 소스 열의 인덱스를 지정합니다.
 
 `ClusterPrediction` 클래스는 `IrisData` 인스턴스에 적용된 클러스터링 모델의 출력을 나타냅니다. [ColumnName](xref:Microsoft.ML.Data.ColumnNameAttribute) 속성을 사용하여 `PredictedClusterId` 및 `Distances` 필드를 각각 **PredictedLabel** 및 **Score** 열에 바인딩합니다. 클러스터링 작업의 경우 이들 열의 의미는 다음과 같습니다.
 
@@ -127,7 +127,7 @@ ms.locfileid: "56093608"
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-열 이름 및 인덱스는 `IrisData` 클래스에서 정의된 스키마와 일치합니다. <xref:Microsoft.ML.Data.DataKind.R4?displayProperty=nameWithType> 값은 `float` 형식을 지정합니다.
+[제네릭 `CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%60%601(Microsoft.ML.DataOperationsCatalog,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean)) 메서드를 사용하여 `IrisData` 클래스 정의에서 데이터 세트 스키마를 유추합니다.
 
 인스턴스화된 <xref:Microsoft.ML.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.Data.DataView.IDataView> 인스턴스를 만듭니다.
 

@@ -2,12 +2,12 @@
 title: Friend 어셈블리(C#)
 ms.date: 07/20/2015
 ms.assetid: b65ea7de-0801-477a-a39c-e914c2cc107c
-ms.openlocfilehash: e464162f12fe386c37262753331635ea82b128b0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5de27643be8f5ddbf533ebb75b66666fc6bc148b
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54576982"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748195"
 ---
 # <a name="friend-assemblies-c"></a>Friend 어셈블리(C#)
 *friend 어셈블리*는 다른 어셈블리의 [내부](../../../../csharp/language-reference/keywords/internal.md) 형식 및 멤버에 액세스할 수 있는 어셈블리입니다. 어셈블리를 friend 어셈블리로 식별하는 경우 다른 어셈블리에서 액세스할 수 있도록 하기 위해 더 이상 형식 및 멤버를 public으로 표시할 필요가 없습니다. 다음과 같은 시나리오에서 특히 편리합니다.  
@@ -76,5 +76,5 @@ public class ClassWithFriendMethod
 - <xref:System.Security.Permissions.StrongNameIdentityPermission>
 - [방법: 서명되지 않은 Friend 어셈블리 만들기(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [방법: 서명된 Friend 어셈블리 만들기(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
-- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+- [.NET 어셈블리](../../../../standard/assembly/index.md)
 - [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)

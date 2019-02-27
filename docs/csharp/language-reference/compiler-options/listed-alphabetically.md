@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C# compiler, options listed alphabetically
 - Visual C#, compiler options listed alphabetically
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
-ms.openlocfilehash: f2e9ed6ee23367e6ef3cd035ef5a485105da8a27
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7be62b3a97614faea14eb874be58c79246754903
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54653751"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583656"
 ---
 # <a name="c-compiler-options-listed-alphabetically"></a>C# 컴파일러 옵션 사전순 목록
 
@@ -36,6 +36,10 @@ ms.locfileid: "54653751"
 |[-delaysign](delaysign-compiler-option.md)|강력한 이름 키의 공용 부분만 사용하여 어셈블리 서명을 연기합니다.|
 |[-deterministic](deterministic-compiler-option.md)|입력이 동일한 경우 컴파일 간에 이진 콘텐츠가 동일한 어셈블리를 컴파일러에서 출력하도록 합니다.|
 |[-doc](doc-compiler-option.md)|생성할 XML 문서 파일을 지정합니다.|
+|-embed|PDB에 모든 소스 파일을 포함합니다.|
+|-embed:\<file list>|PDB에 특정 파일을 포함합니다.|
+|-errorendlocation|각 오류의 끝 위치에 해당하는 줄과 열을 출력합니다.|
+|-errorlog:\<file>|모든 컴파일러와 분석기 진단을 로그할 파일을 지정합니다.|
 |[-errorreport](errorreport-compiler-option.md)|내부 컴파일러 오류를 처리하는 방법을 지정합니다. prompt, send 또는 none 중에서 선택할 수 있으며 기본값은 none입니다.|
 |[-filealign](filealign-compiler-option.md)|출력 파일 섹션에 사용되는 맞춤을 지정합니다.|
 |[/fullpaths](fullpaths-compiler-option.md)|컴파일러에서 정규화된 경로를 생성하도록 합니다.|
@@ -68,12 +72,14 @@ ms.locfileid: "54653751"
 |[-reference](reference-compiler-option.md)|지정한 어셈블리 파일에서 메타데이터를 참조합니다.|
 |[/refout](refout-compiler-option.md)|주 어셈블리 외에도 참조 어셈블리를 생성합니다.|
 |[/refonly](refonly-compiler-option.md)|주 어셈블리를 대신 참조 어셈블리를 생성합니다.|
+|-reportanalyzer|실행 시간과 같은 추가적인 분석 정보를 보고합니다.|
 |[-resource](resource-compiler-option.md)|지정한 리소스를 포함합니다.|
 |-ruleset:\<file>|특정 진단을 사용하지 않는 규칙 집합 파일을 지정합니다.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다.|
 |[-target](target-compiler-option.md)|네 가지 옵션([-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md)) 중 하나를 사용하여 출력 파일의 형식을 지정합니다.|
 |[/unsafe](unsafe-compiler-option.md)|[안전하지 않은](../../../csharp/language-reference/keywords/unsafe.md) 코드를 허용합니다.|
 |[-utf8output](utf8output-compiler-option.md)|컴파일러 메시지를 UTF-8 인코딩으로 출력합니다.|
+|-version|컴파일러 버전 번호를 표시하고 종료합니다.|
 |[/warn](warn-compiler-option.md)|경고 수준(0-4)을 설정합니다.|
 |[-warnaserror](warnaserror-compiler-option.md)|특정 경고를 오류로 보고합니다.|
 |[-win32icon](win32icon-compiler-option.md)|이 아이콘을 사용하여 출력합니다.|

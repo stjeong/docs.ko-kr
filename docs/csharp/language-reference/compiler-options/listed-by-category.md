@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compiler options [C#], listed by category
 - Visual C#, compiler options listed by category
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.openlocfilehash: 7403b42a48413d28808b49542727c2f07d0ad026
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a2b0668b1d55afc331484339d579752646ffa88b
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54546990"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442414"
 ---
 # <a name="c-compiler-options-listed-by-category"></a>C# 컴파일러 옵션 범주별 목록
 
@@ -54,7 +54,8 @@ ms.locfileid: "54546990"
 |[-reference](reference-compiler-option.md)|어셈블리를 포함하는 파일에서 메타데이터를 가져옵니다.|
 |-analyzer|이 어셈블리에서 분석기를 실행합니다(약식: /a).|
 |-additionalfile|코드 생성에 직접 영향을 주지 않지만 오류 또는 경고를 생성하기 위해 분석기에서 사용할 수 있는 추가 파일에 이름을 지정합니다.|
-
+|-embed|PDB에 모든 소스 파일을 포함합니다.|
+|-embed:\<file list>|PDB에 특정 파일을 포함합니다.|
 ## <a name="debuggingerror-checking"></a>디버깅/오류 검사
 
 |옵션|용도|

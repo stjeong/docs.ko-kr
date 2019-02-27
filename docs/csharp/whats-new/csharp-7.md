@@ -1,14 +1,14 @@
 ---
 title: C# 7.0의 새로운 기능 - C# 가이드
-description: C# 언어의 새 버전 7에서 제공되는 새로운 기능을 간단히 살펴봅니다.
+description: C# 언어 버전 7.0의 새로운 기능을 살펴봅니다.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
-ms.openlocfilehash: 08e9b9d1a991c6dd18477214dec60fba95afc6c9
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 0646eaa999579e5347007dd71defcc643c19c7f9
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415730"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56665084"
 ---
 # <a name="whats-new-in-c-70"></a>C# 7.0의 새로운 기능
 

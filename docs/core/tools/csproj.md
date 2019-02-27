@@ -3,12 +3,12 @@ title: .NET Core용 csproj 형식에 대한 추가 사항
 description: 기존 및 .NET Core csproj 파일 간의 차이점에 대해 알아보기
 author: blackdwarf
 ms.date: 09/22/2017
-ms.openlocfilehash: 74cde39a0bbba65d252d64bcedb91c3949dcf6f2
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: d715a3a30c48f1c3fa837b24ee21b49fa947011a
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54222066"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748012"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core용 csproj 형식에 대한 추가 사항
 
@@ -97,26 +97,26 @@ ms.locfileid: "54222066"
 .NET Core 도구를 사용하고 코드를 빌드하려면 `<Project>` 요소의 해당 ID 중 하나에 대한 `Sdk` 특성 집합이 있어야 합니다. 
 
 ### <a name="packagereference"></a>PackageReference
-프로젝트의 NuGet 종속성을 지정하는 `<PackageReference>` 항목 요소입니다. `Include` 특성은 패키지 ID를 지정합니다. 
+`<PackageReference>` 항목 요소는 [프로젝트에서 NuGet 종속성](/nuget/consume-packages/package-references-in-project-files)을 지정합니다. `Include` 특성은 패키지 ID를 지정합니다. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
 #### <a name="version"></a>버전
-`Version`은 복원할 패키지 버전을 지정합니다. 이 특성은 [NuGet 버전 지정](/nuget/create-packages/dependency-versions#version-ranges) 체계의 규칙을 따릅니다. 기본 동작은 정확한 버전 일치입니다. 예를 들어 `Version="1.2.3"`을 지정하는 것은 정확한 1.2.3 버전의 패키지에 대한 NuGet 표기법 `[1.2.3]`과 동일합니다.
+필수 `Version` 특성은 복원할 패키지의 버전을 지정합니다. 이 특성은 [NuGet 버전 지정](/nuget/reference/package-versioning#version-ranges-and-wildcards) 체계의 규칙을 따릅니다. 기본 동작은 정확한 버전 일치입니다. 예를 들어 `Version="1.2.3"`을 지정하는 것은 정확한 1.2.3 버전의 패키지에 대한 NuGet 표기법 `[1.2.3]`과 동일합니다.
 
 #### <a name="includeassets-excludeassets-and-privateassets"></a>IncludeAssets, ExcludeAssets 및 PrivateAssets
-`IncludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용해야 하는 자산을 지정합니다. 
+`IncludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용해야 하는 자산을 지정합니다. 기본적으로 모든 패키지 자산이 포함됩니다.
 
 `ExcludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하면 안 되는 자산을 지정합니다.
 
-`PrivateAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하지만 다음 프로젝트로 전달하지 말아야 하는 자산을 지정합니다. 
+`PrivateAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하지만 다음 프로젝트로 전달하지 말아야 하는 자산을 지정합니다. 이 특성이 없으면 `Analyzers`, `Build` 및 `ContentFiles` 자산이 기본적으로 비공개가 됩니다.
 
 > [!NOTE]
 > `PrivateAssets`는 *project.json*/*xproj* `SuppressParent` 요소와 같습니다.
 
-이러한 특성은 다음 항목 중 하나 이상을 포함할 수 있습니다.
+이러한 특성은 다음 항목 중 하나 이상을 포함할 수 있습니다. 둘 이상을 포함하는 경우 세미콜론 `;` 문자로 구분합니다.
 
 * `Compile` - lib 폴더의 콘텐츠를 컴파일에 사용할 수 있습니다.
 * `Runtime` - 런타임 폴더의 콘텐츠가 분산됩니다.
@@ -206,12 +206,64 @@ UI 표시를 위한 패키지에 대한 자세한 설명입니다.
 ### <a name="packagerequirelicenseacceptance"></a>PackageRequireLicenseAcceptance
 클라이언트에서, 소비자가 패키지를 설치하기 전에 패키지 라이선스에 동의하도록 물어야 할지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.
 
+### <a name="packagelicenseexpression"></a>PackageLicenseExpression
+
+SPDX 라이선스 식 또는 패키지에 포함된 라이선스 파일의 경로로, 보통 UI 디스플레이와 nuget.org에 표시됩니다.
+
+[SPDX 라이선스 식별자](https://spdx.org/licenses/)에서 전체 식별자 목록을 확인할 수 있습니다. 라이선스 형식 식을 사용하는 경우, NuGet.org에서는 OSI 또는 FSF 승인된 라이선스만 허용합니다.
+
+아래의 [ABNF](https://tools.ietf.org/html/rfc5234)에서 라이선스 식의 정확한 구문을 설명하고 있습니다.
+```cli
+license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
+
+license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>
+
+simple-expression = license-id / license-id”+”
+
+compound-expression =  1*1(simple-expression /
+                simple-expression "WITH" license-exception-id /
+                compound-expression "AND" compound-expression /
+                compound-expression "OR" compound-expression ) /                
+                "(" compound-expression ")" )
+
+license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
+```
+
+> [!NOTE]
+> 한 번에 `PackageLicenseExpression`, `PackageLicenseFile` 및 `PackageLicenseUrl` 중 하나만 지정할 수 있습니다.
+
+### <a name="packagelicensefile"></a>PackageLicenseFile
+
+SPDX 식별자가 할당되지 않은 라이선스나 사용자 지정 라이선스를 사용하는 경우, 패키지에 포함된 라이선스 파일의 경로입니다. (그 밖의 경우에는 `PackageLicenseExpression`이 권장됩니다.)
+
+> [!NOTE]
+> 한 번에 `PackageLicenseExpression`, `PackageLicenseFile` 및 `PackageLicenseUrl` 중 하나만 지정할 수 있습니다.
+
 ### <a name="packagelicenseurl"></a>PackageLicenseUrl
-패키지에 적용되는 라이선스에 대한 URL입니다.
 
-### <a name="packageprojecturl"></a>PackageProjectUrl
-nuget.org뿐만 아니라 종종 UI 표시에 표시되는 패키지의 홈페이지에 대한 URL입니다.
+패키지에 적용되는 라이선스에 대한 URL입니다. (Visual Studio 15.9.4, .NET SDK 2.1.502 및 2.2.101 이후부터 사용되지 않습니다.)
 
+### <a name="packagelicenseexpression"></a>PackageLicenseExpression
+
+[SPDX 라이선스 식별자](https://spdx.org/licenses/) 또는 식입니다(예:`Apache-2.0`).
+
+`PackageLicenseUrl`을 대체하며, `PackageLicenseFile`과 함께 사용할 수 없고, Visual Studio 15.9.4, .NET SDK 2.1.502 또는 2.2.101 이상이 필요합니다.
+
+### <a name="packagelicensefile"></a>PackageLicenseFile
+
+디스크에 있는 라이선스 파일의 경로로, 프로젝트 파일에 상대적인 경로입니다(예: `LICENSE.txt`).
+
+`PackageLicenseUrl`을 대체하며, `PackageLicenseExpression`과 함께 사용할 수 없고, Visual Studio 15.9.4, .NET SDK 2.1.502 또는 2.2.101 이상이 필요합니다.
+
+라이선스 파일이 누락되지 않도록 라이선스 파일을 프로젝트에 명시적으로 추가해야 합니다. 사용 예:
+```xml
+<PropertyGroup>
+  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+</PropertyGroup>
+<ItemGroup>
+  <None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+</ItemGroup>
+```
 ### <a name="packageiconurl"></a>PackageIconUrl
 UI 표시에서 패키지에 대한 아이콘으로 사용하는 투명한 배경의 64x64 이미지에 대한 URL입니다.
 

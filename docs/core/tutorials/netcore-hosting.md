@@ -4,12 +4,12 @@ description: .NET Core 런타임의 작동 방식을 제어해야 하는 고급 
 author: mjrousos
 ms.date: 12/21/2018
 ms.custom: seodec18
-ms.openlocfilehash: deeda8b166d8a22aac88be313d2555e4b9fa5a1c
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 994cc82745d2c473f1126eae9a889c899f5e741a
+ms.sourcegitcommit: 07c4368273b446555cb2c85397ea266b39d5fe50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56583851"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>사용자 지정 .NET Core 호스트를 작성하여 네이티브 코드에서 .NET 런타임 제어
 
@@ -29,7 +29,7 @@ ms.locfileid: "54415522"
 .NET Core를 호스트하는 데 사용할 수 있는 두 가지 API가 있습니다. 이 문서(및 관련 [샘플](https://github.com/dotnet/samples/tree/master/core/hosting))에서는 두 가지 옵션을 다룹니다.
 
 * .NET Core 런타임을 호스팅할 때 권장되는 방법은 [CoreClrHost.h](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h) API를 사용하는 것입니다. 이 API는 런타임을 쉽게 시작 및 중지하고, 관리 코드를 호출하는 데 사용할 수 있는 함수를 제공합니다(관리 exe를 실행하거나 정적 관리 메서드를 호출하는 방식).
-* [mscoree.h](https://github.com/dotnet/coreclr/blob/master/src/pal/prebuilt/inc/mscoree.h)의 `ICLRRuntimeHost2` 인터페이스를 사용하여 .NET Core를 호스트할 수도 있습니다. 이 API는 CoreClrHost.h보다 오래 되었으므로 이를 사용하는 이전 호스트를 보았을 것입니다. 이 API도 여전히 사용할 수 있으며, CoreClrHost보다 호스팅 프로세스에 대한 더 세부적인 제어를 지원합니다. 하지만 대부분의 시나리오에서는 이제 CoreClrHost.h가 권장됩니다. 더 간단한 API이기 때문입니다.
+* [mscoree.h](https://github.com/dotnet/coreclr/blob/master/src/pal/prebuilt/inc/mscoree.h)의 `ICLRRuntimeHost4` 인터페이스를 사용하여 .NET Core를 호스트할 수도 있습니다. 이 API는 CoreClrHost.h보다 오래 되었으므로 이를 사용하는 이전 호스트를 보았을 것입니다. 이 API도 여전히 사용할 수 있으며, CoreClrHost보다 호스팅 프로세스에 대한 더 세부적인 제어를 지원합니다. 하지만 대부분의 시나리오에서는 이제 CoreClrHost.h가 권장됩니다. 더 간단한 API이기 때문입니다.
 
 ## <a name="sample-hosts"></a>샘플 호스트
 자습서에 설명된 단계를 보여주는 [샘플 호스트](https://github.com/dotnet/samples/tree/master/core/hosting)는 GitHub의 dotnet/samples 리포지토리에서 사용할 수 있습니다. 샘플에 있는 주석은 이 자습서에서 번호가 매겨진 단계를 샘플에서 수행되는 위치와 명확하게 연결합니다. 다운로드 지침은 [샘플 및 자습서](../../samples-and-tutorials/index.md#viewing-and-downloading-samples)를 참조하세요.
@@ -64,7 +64,7 @@ CoreCLR 라이브러리를 로드한 후 다음 단계는 `GetProcAddress`(Windo
 
 ### <a name="step-3---prepare-runtime-properties"></a>3단계 - 런타임 속성 준비
 
-런타임을 시작하기 전에 동작을 지정하는 일부 속성을 준비해야 합니다(특히 어셈블리 로더 관련). 
+런타임을 시작하기 전에 동작을 지정하는 일부 속성을 준비해야 합니다(특히 어셈블리 로더 관련).
 
 일반적인 속성은 다음과 같습니다.
 
@@ -96,7 +96,7 @@ mscoree.h 호스팅 API(아래에 설명)와 달리 CoreCLRHost.h API는 런타�
 
 이 샘플에서 호스트는 이제 `managedDelegate`를 호출하여 `ManagedWorker.DoWork` 메서드를 실행할 수 있습니다.
 
-또는 `coreclr_execute_assembly` 함수를 사용하여 관리되는 실행 파일을 실행할 수 있습니다. 이 API는 어셈블리 경로 및 인수 배열을 입력매개 변수로 허용합니다. 해당 경로의 어셈블리를 로드하고 기본 메서드를 호출합니다. 
+또는 `coreclr_execute_assembly` 함수를 사용하여 관리되는 실행 파일을 실행할 수 있습니다. 이 API는 어셈블리 경로 및 인수 배열을 입력매개 변수로 허용합니다. 해당 경로의 어셈블리를 로드하고 기본 메서드를 호출합니다.
 
 ```C++
 int hr = executeAssembly(
@@ -116,12 +116,12 @@ int hr = executeAssembly(
 
 `FreeLibrary`(Windows) 또는 `dlclose`(Linux/Mac)를 사용하여 CoreCLR 라이브러리를 업로드하는 것을 잊지 마세요.
 
-## <a name="creating-a-host-using-mscoreeh"></a>Mscoree.h를 사용하여 호스트 만들기
+## <a name="create-a-host-using-mscoreeh"></a>Mscoree.h를 사용하여 호스트 만들기
 
-이전에 말했듯이 .NET Core 런타임을 호스팅할 때 권장되는 방법은 이제 CoreClrHost.h입니다. CoreClrHost.h 인터페이스로 충분하지 않은 경우에는 `ICLRRuntimeHost2` 인터페이스를 여전히 사용할 수 있습니다(예를 들어 비표준 시작 플래그가 필요하거나 기본 도메인에서 AppDomainManager가 필요한 경우). 이러한 지침에서는 mscoree.h를 사용하여 .NET Core를 호스트하는 방법을 안내합니다.
+이전에 말했듯이 .NET Core 런타임을 호스팅할 때 권장되는 방법은 이제 CoreClrHost.h입니다. CoreClrHost.h 인터페이스로 충분하지 않은 경우에는 `ICLRRuntimeHost4` 인터페이스를 여전히 사용할 수 있습니다(예를 들어 비표준 시작 플래그가 필요하거나 기본 도메인에서 AppDomainManager가 필요한 경우). 이러한 지침에서는 mscoree.h를 사용하여 .NET Core를 호스트하는 방법을 안내합니다.
 
 ### <a name="a-note-about-mscoreeh"></a>mscoree.h에 대한 정보
-`ICLRRuntimeHost2` .NET Core 호스팅 인터페이스는 [MSCOREE.IDL](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)에 정의됩니다. 호스트에서 참조해야 할 이 파일의 헤더 버전(mscoree.h)은 [.NET Core 런타임](https://github.com/dotnet/coreclr/)이 빌드될 때 MIDL을 통해 생성됩니다. .NET Core 런타임을 빌드하지 않으려는 경우 mscoree.h는 dotnet/coreclr 리포지토리에 [미리 빌드된 헤더](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)로 제공됩니다. [.NET Core 런타임 빌드에 대한 지침](https://github.com/dotnet/coreclr#building-the-repository)은 GitHub 리포지토리에서 찾을 수 있습니다. 
+`ICLRRuntimeHost4` .NET Core 호스팅 인터페이스는 [MSCOREE.IDL](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)에 정의됩니다. 호스트에서 참조해야 할 이 파일의 헤더 버전(mscoree.h)은 [.NET Core 런타임](https://github.com/dotnet/coreclr/)이 빌드될 때 MIDL을 통해 생성됩니다. .NET Core 런타임을 빌드하지 않으려는 경우 mscoree.h는 dotnet/coreclr 리포지토리에 [미리 빌드된 헤더](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)로 제공됩니다. [.NET Core 런타임 빌드에 대한 지침](https://github.com/dotnet/coreclr#building-the-repository)은 GitHub 리포지토리에서 찾을 수 있습니다.
 
 ### <a name="step-1---identify-the-managed-entry-point"></a>1단계 - 관리되는 진입점 식별
 필요한 헤더(예: [mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) 및 stdio.h)를 참조한 후 .NET Core 호스트에서는 가장 먼저 사용할 관리되는 진입점을 찾아야 합니다. 샘플 호스트에서는 `main` 메서드가 실행될 관리되는 이진 파일에 대한 경로로 첫 번째 명령줄 인수를 호스트로 사용하여 관리되는 진입점을 찾습니다.
@@ -129,7 +129,7 @@ int hr = executeAssembly(
 [!code-cpp[NetCoreHost#1](~/samples/core/hosting/HostWithMscoree/host.cpp#1)]
 
 ### <a name="step-2---find-and-load-coreclr"></a>2단계 - CoreCLR 찾기 및 로드
-.NET Core 런타임 API는 *CoreCLR.dll*(Windows)에 있습니다. 호스팅 인터페이스(`ICLRRuntimeHost2`)를 가져오려면 *CoreCLR.dll*를 찾고 로드해야 합니다. 호스트에 따라 *CoreCLR.dll*을 찾는 방법에 대한 규칙을 정의합니다. 일부 호스트에서는 잘 알려진 머신 수준의 위치(예: *%programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6*)에 파일이 있습니다. 다른 호스트에서는 *CoreCLR.dll*이 호스트 자체 또는 호스트되는 앱 옆의 위치에서 로드됩니다. 라이브러리를 찾기 위해 환경 변수를 참조할 수 있습니다.
+.NET Core 런타임 API는 *CoreCLR.dll*(Windows)에 있습니다. 호스팅 인터페이스(`ICLRRuntimeHost4`)를 가져오려면 *CoreCLR.dll*를 찾고 로드해야 합니다. 호스트에 따라 *CoreCLR.dll*을 찾는 방법에 대한 규칙을 정의합니다. 일부 호스트에서는 잘 알려진 머신 수준의 위치(예: *%programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6*)에 파일이 있습니다. 다른 호스트에서는 *CoreCLR.dll*이 호스트 자체 또는 호스트되는 앱 옆의 위치에서 로드됩니다. 라이브러리를 찾기 위해 환경 변수를 참조할 수 있습니다.
 
 Linux 또는 Mac에서 핵심 런타임 라이브러리는 각각 *libcoreclr.so* 또는 *libcoreclr.dylib*입니다.
 
@@ -137,13 +137,13 @@ Linux 또는 Mac에서 핵심 런타임 라이브러리는 각각 *libcoreclr.so
 
 [!code-cpp[NetCoreHost#2](~/samples/core/hosting/HostWithMscoree/host.cpp#2)]
 
-### <a name="step-3---get-an-iclrruntimehost2-instance"></a>3단계 - ICLRRuntimeHost2 인스턴스 가져오기
-`ICLRRuntimeHost2` 호스팅 인터페이스는 `GetCLRRuntimeHost`에서 `GetProcAddress`(또는 Linux/Mac에서 `dlsym`)를 호출한 다음 해당 함수를 호출하여 검색됩니다. 
+### <a name="step-3---get-an-iclrruntimehost4-instance"></a>3단계 - ICLRRuntimeHost4 인스턴스 가져오기
+`ICLRRuntimeHost4` 호스팅 인터페이스는 `GetCLRRuntimeHost`에서 `GetProcAddress`(또는 Linux/Mac에서 `dlsym`)를 호출한 다음 해당 함수를 호출하여 검색됩니다.
 
 [!code-cpp[NetCoreHost#3](~/samples/core/hosting/HostWithMscoree/host.cpp#3)]
 
-### <a name="step-4---setting-startup-flags-and-starting-the-runtime"></a>4단계 - 시작 플래그 설정 및 런타임 시작
-`ICLRRuntimeHost2`를 사용하여 이제 전체 런타임의 시작 플래그를 지정하고 런타임을 시작할 수 있습니다. 시작 플래그는 사용할 GC(가비지 수집기)(동시 또는 서버), 단일 AppDomain을 사용할지 여러 AppDomain을 사용할지 여부, 사용할 로더 최적화 정책(도메인 중립적인 어셈블리 로드에 대해)을 결정합니다.
+### <a name="step-4---set-startup-flags-and-start-the-runtime"></a>4단계 - 시작 플래그 설정 및 런타임 시작
+`ICLRRuntimeHost4`를 사용하여 이제 전체 런타임의 시작 플래그를 지정하고 런타임을 시작할 수 있습니다. 시작 플래그는 사용할 GC(가비지 수집기)(동시 또는 서버), 단일 AppDomain을 사용할지 여러 AppDomain을 사용할지 여부, 사용할 로더 최적화 정책(도메인 중립적인 어셈블리 로드에 대해)을 결정합니다.
 
 [!code-cpp[NetCoreHost#4](~/samples/core/hosting/HostWithMscoree/host.cpp#4)]
 
@@ -175,12 +175,12 @@ AppDomain 플래그는 보안 및 interop와 관련된 AppDomain 동작을 지�
 [!code-cpp[NetCoreHost#6](~/samples/core/hosting/HostWithMscoree/host.cpp#6)]
 
 ### <a name="step-6---create-the-appdomain"></a>6단계 - AppDomain 만들기
-모든 AppDomain 플래그 및 속성이 준비되면 `ICLRRuntimeHost2::CreateAppDomainWithManager`를 사용하여 AppDomain을 설정할 수 있습니다. 이 함수는 선택적으로 정규화된 어셈블리 이름 및 형식 이름을 가져와서 도메인의 AppDomain 관리자로 사용합니다. AppDomain 관리자는 호스트에서 AppDomain 동작의 일부 측면을 제어하도록 허용할 수 있고, 호스트에서 사용자 코드를 직접 호출하지 않는 경우 관리 코드를 실행하기 위한 진입점을 제공할 수 있습니다.   
+모든 AppDomain 플래그 및 속성이 준비되면 `ICLRRuntimeHost4::CreateAppDomainWithManager`를 사용하여 AppDomain을 설정할 수 있습니다. 이 함수는 선택적으로 정규화된 어셈블리 이름 및 형식 이름을 가져와서 도메인의 AppDomain 관리자로 사용합니다. AppDomain 관리자는 호스트에서 AppDomain 동작의 일부 측면을 제어하도록 허용할 수 있고, 호스트에서 사용자 코드를 직접 호출하지 않는 경우 관리 코드를 실행하기 위한 진입점을 제공할 수 있습니다.
 
 [!code-cpp[NetCoreHost#7](~/samples/core/hosting/HostWithMscoree/host.cpp#7)]
 
 ### <a name="step-7---run-managed-code"></a>7단계 - 관리 코드 실행
-AppDomain이 실행 중이면 호스트에서 이제 관리 코드를 실행할 수 있습니다. `ICLRRuntimeHost2::ExecuteAssembly`를 사용하여 관리되는 어셈블리의 진입점 메서드를 호출하면 가장 쉽게 관리 코드를 실행할 수 있습니다. 이 함수는 단일 도메인 시나리오에서만 작동합니다.
+AppDomain이 실행 중이면 호스트에서 이제 관리 코드를 실행할 수 있습니다. `ICLRRuntimeHost4::ExecuteAssembly`를 사용하여 관리되는 어셈블리의 진입점 메서드를 호출하면 가장 쉽게 관리 코드를 실행할 수 있습니다. 이 함수는 단일 도메인 시나리오에서만 작동합니다.
 
 [!code-cpp[NetCoreHost#8](~/samples/core/hosting/HostWithMscoree/host.cpp#8)]
 
@@ -189,23 +189,23 @@ AppDomain이 실행 중이면 호스트에서 이제 관리 코드를 실행할 
 ```C++
 void *pfnDelegate = NULL;
 hr = runtimeHost->CreateDelegate(
-  domainId,
-  L"HW, Version=1.0.0.0, Culture=neutral",  // Target managed assembly
-  L"ConsoleApplication.Program",            // Target managed type
-  L"Main",                                  // Target entry point (static method)
-  (INT_PTR*)&pfnDelegate);
+    domainId,
+    L"HW, Version=1.0.0.0, Culture=neutral", // Target managed assembly
+    L"ConsoleApplication.Program",           // Target managed type
+    L"Main",                                 // Target entry point (static method)
+    (INT_PTR*)&pfnDelegate);
 
 ((MainMethodFp*)pfnDelegate)(NULL);
 ```
 
 ### <a name="step-8---clean-up"></a>8단계 - 정리
-마지막으로 호스트는 AppDomain을 언로드하고, 런타임을 중지하고, `ICLRRuntimeHost2` 참조를 릴리스하여 자체 정리해야 합니다.
+마지막으로 호스트는 AppDomain을 언로드하고, 런타임을 중지하고, `ICLRRuntimeHost4` 참조를 릴리스하여 자체 정리해야 합니다.
 
 [!code-cpp[NetCoreHost#9](~/samples/core/hosting/HostWithMscoree/host.cpp#9)]
 
 ## <a name="conclusion"></a>결론
-호스트가 빌드되면 명령줄에서 실행하고 호스트에서 예상하는 인수(예: mscoree example 호스트에서 실행할 관리 앱)를 전달하여 테스트할 수 있습니다. 실행할 호스트에 대해 .NET Core 앱을 지정할 때 `dotnet build`로 생성된 .dll을 사용하세요. 자체 포함된 애플리케이션에 대해 `dotnet publish`로 생성된 실행 파일(.exe 파일)이 실제로 기본 .NET Core 호스트이며(앱이 주 시나리오의 명령줄에서 직접 실행될 수 있음), 사용자 코드는 동일한 이름의 DLL로 컴파일됩니다. 
+호스트가 빌드되면 명령줄에서 실행하고 호스트에서 예상하는 인수(예: mscoree example 호스트에서 실행할 관리 앱)를 전달하여 테스트할 수 있습니다. 실행할 호스트에 대해 .NET Core 앱을 지정할 때 `dotnet build`로 생성된 .dll을 사용하세요. 자체 포함된 애플리케이션에 대해 `dotnet publish`로 생성된 실행 파일(.exe 파일)이 실제로 기본 .NET Core 호스트이며(앱이 주 시나리오의 명령줄에서 직접 실행될 수 있음), 사용자 코드는 동일한 이름의 DLL로 컴파일됩니다.
 
 처음에 작동되지 않으면, 호스트가 예상한 위치에서 *coreclr.dll*을 사용할 수 있고, 필요한 프레임워크 라이브러리가 모두 TPA 목록에 있으며 CoreCLR의 비트 수(32비트 또는 64비트)가 호스트가 빌드된 방식과 일치하는지 다시 확인합니다.
 
-.NET Core 런타임 호스트는 일부 개발자만 필요로 하는 고급 시나리오이지만, 네이티브 프로세스에서 관리 코드를 실행해야 하거나 .NET Core 런타임의 동작에 대해 더 많은 제어권이 필요한 경우 아주 유용할 수 있습니다. .NET Core는 자체를 나란히 실행할 수 있기 때문에 여러 버전의 .NET Core 런타임을 초기화 및 시작하는 호스트를 만들고 동일한 프로세스로 모든 호스트에서 앱을 실행할 수도 있습니다. 
+.NET Core 런타임 호스트는 일부 개발자만 필요로 하는 고급 시나리오이지만, 네이티브 프로세스에서 관리 코드를 실행해야 하거나 .NET Core 런타임의 동작에 대해 더 많은 제어권이 필요한 경우 아주 유용할 수 있습니다. .NET Core는 자체를 나란히 실행할 수 있기 때문에 여러 버전의 .NET Core 런타임을 초기화 및 시작하는 호스트를 만들고 동일한 프로세스로 모든 호스트에서 앱을 실행할 수도 있습니다.

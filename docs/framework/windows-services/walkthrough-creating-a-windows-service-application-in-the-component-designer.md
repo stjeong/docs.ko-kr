@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Windows 서비스 응용 프로그램 만들기
+title: Visual Studio에서 Windows 서비스 애플리케이션 만들기
 ms.date: 09/10/2018
 dev_langs:
 - csharp
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows service applications, creating
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
-ms.openlocfilehash: 79447ede354de104607117f657182023a2e57127
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 52c2f64bbb71e07dcab1fd7cd42662f9ed2c8445
+ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123672"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56665032"
 ---
 # <a name="walkthrough-create-a-windows-service-app"></a>연습: Windows 서비스 앱 만들기
 
@@ -86,7 +86,7 @@ ms.locfileid: "49123672"
 [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
 [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
 
-서비스 응용 프로그램은 오랫동안 실행되도록 설계되므로 대개 시스템의 특정 항목을 폴링하거나 모니터링합니다. 모니터링은 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드에서 설정됩니다. 그러나 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 가 실제로 모니터링을 수행하지는 않습니다. 서비스의 작업이 시작되고 나면 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드가 운영 체제에 반환되어야 하며 무제한 순환하거나 방해가 되어서는 안 됩니다. 간단한 폴링 메커니즘을 설정하려면 <xref:System.Timers.Timer?displayProperty=nameWithType> 구성 요소를 사용할 수 있습니다. 즉, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드에서 구성 요소에 대한 매개 변수를 설정한 다음 <xref:System.Timers.Timer.Enabled%2A> 속성을 `true`로 설정합니다. 타이머는 코드에서 주기적으로 이벤트를 발생시키며 그러는 동안에도 서비스에서는 모니터링을 수행할 수 있습니다. 이렇게 하려면 다음 코드를 사용할 수 있습니다.
+서비스 애플리케이션은 오랫동안 실행되도록 설계되므로 대개 시스템의 특정 항목을 폴링하거나 모니터링합니다. 모니터링은 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드에서 설정됩니다. 그러나 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 가 실제로 모니터링을 수행하지는 않습니다. 서비스의 작업이 시작되고 나면 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드가 운영 체제에 반환되어야 하며 무제한 순환하거나 방해가 되어서는 안 됩니다. 간단한 폴링 메커니즘을 설정하려면 다음과 같이 <xref:System.Timers.Timer?displayProperty=nameWithType> 구성 요소를 사용할 수 있습니다. <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드에서 구성 요소에 매개 변수를 설정한 다음, <xref:System.Timers.Timer.Enabled%2A> 속성을 `true`로 설정합니다. 타이머는 코드에서 주기적으로 이벤트를 발생시키며 그러는 동안에도 서비스에서는 모니터링을 수행할 수 있습니다. 이렇게 하려면 다음 코드를 사용할 수 있습니다.
 
 ```csharp
 // Set up a timer that triggers every minute.
@@ -296,14 +296,14 @@ Windows 서비스를 실행하려면 해당 서비스를 설치해야 합니다.
     > [!IMPORTANT]
     > <xref:System.ServiceProcess.ServiceAccount.LocalSystem> 계정에는 광범위한 권한이 있습니다. 예를 들어, 이 계정은 이벤트 로그에 쓸 수 있습니다. 이 계정을 사용할 때는 악성 소프트웨어의 공격을 받을 가능성이 커지므로 주의해야 합니다. 다른 작업에는 <xref:System.ServiceProcess.ServiceAccount.LocalService> 계정을 사용하는 것이 좋습니다. 이 계정은 로컬 컴퓨터에서 권한 없는 사용자의 역할을 하며 원격 서버에 익명 자격 증명을 제공합니다. <xref:System.ServiceProcess.ServiceAccount.LocalService> 계정을 사용하는 경우 이 예제는 실패합니다. 이벤트 로그에 대한 쓰기 권한이 필요하기 때문입니다.
 
-설치 관리자에 대한 자세한 내용은 [방법: 서비스 응용 프로그램에 설치 관리자 추가](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)를 참조하세요.
+설치 관리자에 대한 자세한 내용은 [방법: 서비스 애플리케이션에 설치 관리자 추가](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)를 참조하세요.
 
 ## <a name="optional-set-startup-parameters"></a>(선택 사항) 시작 매개 변수 설정
 
 다른 실행 파일과 마찬가지로 Windows 서비스에도 명령줄 인수나 시작 매개 변수를 사용할 수 있습니다. 프로세스 시작 매개 변수에 코드를 추가하면 사용자가 Windows 제어판의 서비스 창을 사용하여 고유한 사용자 지정 시작 매개 변수로 서비스를 시작할 수 있습니다. 그러나 이러한 시작 매개 변수는 다음 번에 서비스를 시작할 때 유지되지 않습니다. 시작 매개 변수를 영구적으로 설정하려는 경우 아래 절차에 나와 있는 것처럼 레지스트리에서 설정하면 됩니다.
 
 > [!NOTE]
-> 시작 매개 변수 추가를 결정하기 전에 시작 매개 변수가 서비스로 정보를 전달하는 가장 효율적인 방법인지를 고려합니다. 시작 매개 변수는 쉽게 사용하고 구문 분석할 수 있으며 사용자가 쉽게 재정의할 수 있지만 설명서가 없으면 사용자가 검색하고 사용하기가 어려울 수 있습니다. 일반적으로 서비스에 많은 시작 매개 변수가 필요한 경우에는 레지스트리나 구성 파일을 대신 사용하는 것이 좋습니다. 모든 Windows 서비스에는 레지스트리의 **HKLM\System\CurrentControlSet\services** 아래에 항목이 있습니다. 이 서비스의 키 아래에서 **매개 변수** 하위 키를 사용하여 서비스가 액세스할 수 있는 정보를 저장할 수 있습니다. Windows 서비스의 응용 프로그램 구성 파일은 다른 프로그램 형식에서와 같은 방식으로 사용할 수 있습니다. 예제 코드를 보려면 <xref:System.Configuration.ConfigurationManager.AppSettings%2A>를 참조하세요.
+> 시작 매개 변수 추가를 결정하기 전에 시작 매개 변수가 서비스로 정보를 전달하는 가장 효율적인 방법인지를 고려합니다. 시작 매개 변수는 쉽게 사용하고 구문 분석할 수 있으며 사용자가 쉽게 재정의할 수 있지만 설명서가 없으면 사용자가 검색하고 사용하기가 어려울 수 있습니다. 일반적으로 서비스에 많은 시작 매개 변수가 필요한 경우에는 레지스트리나 구성 파일을 대신 사용하는 것이 좋습니다. 모든 Windows 서비스에는 레지스트리의 **HKLM\System\CurrentControlSet\services** 아래에 항목이 있습니다. 이 서비스의 키 아래에서 **매개 변수** 하위 키를 사용하여 서비스가 액세스할 수 있는 정보를 저장할 수 있습니다. Windows 서비스의 애플리케이션 구성 파일은 다른 프로그램 형식에서와 같은 방식으로 사용할 수 있습니다. 예제 코드를 보려면 <xref:System.Configuration.ConfigurationManager.AppSettings%2A>를 참조하세요.
 
 시작 매개 변수를 추가하려면
 
@@ -409,7 +409,7 @@ Windows 서비스를 실행하려면 해당 서비스를 설치해야 합니다.
 
    프로젝트의 속성 페이지가 나타납니다.
 
-2. **응용 프로그램** 탭의 **시작 개체** 목록에서 **MyNewService.Program**을 선택합니다.
+2. **애플리케이션** 탭의 **시작 개체** 목록에서 **MyNewService.Program**을 선택합니다.
 
 3. **솔루션 탐색기**에서 프로젝트의 상황에 맞는 메뉴를 열고 **빌드**를 선택하여 프로젝트를 빌드합니다(또는 **Ctrl**+**Shift**+**B**를 누름).
 
@@ -431,7 +431,7 @@ Windows 서비스를 실행하려면 해당 서비스를 설치해야 합니다.
 
     **Installutil.exe** 프로세스에서 실패를 보고하는 경우 설치 로그를 확인하여 이유를 찾아보세요. 기본적으로 로그는 서비스 실행 파일과 동일한 폴더에 있습니다. <xref:System.ComponentModel.RunInstallerAttribute> 클래스가 `ProjectInstaller` 클래스에 없거나, 해당 특성이 **true**로 설정되지 않았거나, `ProjectInstaller` 클래스가 **public**으로 표시되지 않은 경우 설치에 실패할 수 있습니다.
 
-자세한 내용은 [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)을 참조하세요.
+자세한 내용은 [방법: 서비스 설치 및 제거](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)를 참조하세요.
 
 ## <a name="start-and-run-the-service"></a>서비스 시작 및 실행
 
@@ -454,7 +454,7 @@ Windows 서비스를 실행하려면 해당 서비스를 설치해야 합니다.
    > [!TIP]
    > Visual Studio에서 **서버 탐색기**를 열고(키보드: **Ctrl**+**Alt**+**S**) 로컬 컴퓨터의 **이벤트 로그** 노드를 확장하면 이벤트 로그에 액세스할 수 있습니다.
 
-2. **이벤트 뷰어**에서 **응용 프로그램 및 서비스 로그**를 확장합니다.
+2. **이벤트 뷰어**에서 **애플리케이션 및 서비스 로그**를 확장합니다.
 
 3. **MyNewLog**(또는 선택적 절차에 따라 명령줄 인수를 추가한 경우 **MyLogFile1**)의 목록을 찾아서 확장합니다. 서비스에서 수행한 두 작업(시작 및 중지)의 항목이 표시됩니다.
 
@@ -472,19 +472,19 @@ Windows 서비스를 실행하려면 해당 서비스를 설치해야 합니다.
     installutil.exe /u MyNewService.exe
     ```
 
-   서비스를 성공적으로 제거한 경우 **installutil.exe**에서 서비스가 성공적으로 제거되었음을 보고합니다. 자세한 내용은 [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)을 참조하세요.
+   서비스를 성공적으로 제거한 경우 **installutil.exe**에서 서비스가 성공적으로 제거되었음을 보고합니다. 자세한 내용은 [방법: 서비스 설치 및 제거](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 서비스가 만들어졌으므로, 다른 사용자가 Windows 서비스를 설치하는 데 사용할 수 있는 독립형 설치 프로그램을 만드는 것이 좋습니다. ClickOnce는 Windows 서비스를 지원하지 않지만 [WiX Toolset](http://wixtoolset.org/)를 사용하여 Windows 서비스용 설치 관리자를 만들 수 있습니다. 다른 아이디어를 보려면 [설치 관리자 패키지 만들기](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client)를 참조하세요.
+이제 서비스가 만들어졌으므로, 다른 사용자가 Windows 서비스를 설치하는 데 사용할 수 있는 독립형 설치 프로그램을 만드는 것이 좋습니다. ClickOnce는 Windows 서비스를 지원하지 않지만 [WiX Toolset](http://wixtoolset.org/)를 사용하여 Windows 서비스용 설치 관리자를 만들 수 있습니다. 다른 아이디어를 보려면 [설치 관리자 패키지 만들기](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop)를 참조하세요.
 
 설치한 서비스에 명령을 보낼 수 있는 <xref:System.ServiceProcess.ServiceController> 구성 요소를 사용해 볼 수 있습니다.
 
-이벤트 로그는 응용 프로그램이 실행될 때 만드는 것보다는 응용 프로그램이 설치될 때 설치 관리자를 사용하여 만드는 것이 좋습니다. 또한 이벤트 로그는 응용 프로그램이 제거되면 설치 관리자에 의해 삭제됩니다. 자세한 내용은 <xref:System.Diagnostics.EventLogInstaller> 참조 페이지를 참조하세요.
+이벤트 로그는 애플리케이션이 실행될 때 만드는 것보다는 애플리케이션이 설치될 때 설치 관리자를 사용하여 만드는 것이 좋습니다. 또한 이벤트 로그는 애플리케이션이 제거되면 설치 관리자에 의해 삭제됩니다. 자세한 내용은 <xref:System.Diagnostics.EventLogInstaller> 참조 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows 서비스 응용 프로그램](../../../docs/framework/windows-services/index.md)
-- [Windows 서비스 응용 프로그램 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [방법: Windows 서비스 응용 프로그램 디버그](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
-- [Services (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)(서비스(Windows))
+- [Windows 서비스 애플리케이션](../../../docs/framework/windows-services/index.md)
+- [Windows 서비스 애플리케이션 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [방법: Windows 서비스 애플리케이션 디버그](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
+- [Services (Windows)](/windows/desktop/Services/services)(서비스(Windows))

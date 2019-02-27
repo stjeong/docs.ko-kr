@@ -2,12 +2,12 @@
 title: '방법: 서명되지 않은 Friend 어셈블리 만들기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 78cbc4f0-b021-4141-a4ff-eb4edbd814ca
-ms.openlocfilehash: 4281aa4d507b2150f65d7d7ff05dd2a2fa8aacd3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7bf9a8bd18a1b98ae5e128ca67ca185baa7d599d
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54703226"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745265"
 ---
 # <a name="how-to-create-unsigned-friend-assemblies-c"></a>방법: 서명되지 않은 Friend 어셈블리 만들기(C#)
 이 예제에서는 서명되지 않은 어셈블리와 함께 friend 어셈블리를 사용하는 방법을 보여 줍니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "54703226"
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+- [.NET 어셈블리](../../../../standard/assembly/index.md)
 - [Friend 어셈블리(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)
 - [방법: 서명된 Friend 어셈블리 만들기(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
 - [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)

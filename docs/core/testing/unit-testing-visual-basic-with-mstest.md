@@ -7,12 +7,12 @@ ms.date: 09/01/2017
 dev_langs:
 - vb
 ms.custom: seodec18
-ms.openlocfilehash: cc4f84551d28ad531713e31a27df723a78b338cb
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: b6036b10e87560a45880f41f30fabc7a348241d0
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242466"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747481"
 ---
 # <a name="unit-testing-visual-basic-net-core-libraries-using-dotnet-test-and-mstest"></a>dotnet test 및 MSTest를 사용하여 Visual Basic .NET Core 라이브러리 유닛 테스트
 
@@ -30,7 +30,7 @@ ms.locfileid: "53242466"
     /PrimeService
 ```
 
-*PrimeService*를 현재 디렉터리로 만들고 [`dotnet new classlib -lang VB`](../tools/dotnet-new.md)를 실행하여 소스 프로젝트를 만듭니다. *Class1.VB*의 이름을 *PrimeService.VB*로 바꿉니다. TDD(테스트 기반 개발)를 사용하기 위해 `PrimeService` 클래스의 실패 구현을 만듭니다.
+*PrimeService*를 현재 디렉터리로 만들고 [`dotnet new classlib -lang VB`](../tools/dotnet-new.md)를 실행하여 소스 프로젝트를 만듭니다. *Class1.VB*의 이름을 *PrimeService.VB*로 바꿉니다. 다음과 같이 `PrimeService` 클래스의 실패 구현을 만듭니다.
 
 ```vb
 Imports System
@@ -94,7 +94,7 @@ GitHub의 [샘플 리포지토리](https://github.com/dotnet/samples/blob/master
 
 ## <a name="creating-the-first-test"></a>첫 번째 테스트 만들기
 
-TDD 접근 방식에서는 하나의 실패 테스트를 작성하고, 통과시키고, 이 프로세스를 반복해야 합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.vb*를 제거하고 새 Visual Basic 파일 *PrimeService_IsPrimeShould.VB*를 만듭니다. 다음 코드를 추가합니다.
+하나의 실패 테스트를 작성하고, 테스트가 성공하도록 만듭니다. 이 작업을 반복합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.vb*를 제거하고 새 Visual Basic 파일 *PrimeService_IsPrimeShould.VB*를 만듭니다. 다음 코드를 추가합니다.
 
 ```vb
 Imports Microsoft.VisualStudio.TestTools.UnitTesting

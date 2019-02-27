@@ -5,12 +5,12 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 11/29/2017
 ms.custom: seodec18
-ms.openlocfilehash: 556da93d6237836dc32fc3f6715909593907ba74
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: f84792e5d973f2b2d8bcf418f68e7038fd7a81f5
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55738736"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747852"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>dotnet 테스트 및 xUnit을 사용하여 .NET Core에서 C# 단위 테스트
 
@@ -28,7 +28,7 @@ ms.locfileid: "55738736"
     /PrimeService
 ```
 
-*PrimeService*를 현재 디렉터리로 만들고 [`dotnet new classlib`](../tools/dotnet-new.md)를 실행하여 소스 프로젝트를 만듭니다. *Class1.cs*의 이름을 *PrimeService.cs*로 바꿉니다. TDD(테스트 기반 개발)를 사용하기 위해 먼저 `PrimeService` 클래스의 실패 구현을 만듭니다.
+*PrimeService*를 현재 디렉터리로 만들고 [`dotnet new classlib`](../tools/dotnet-new.md)를 실행하여 소스 프로젝트를 만듭니다. *Class1.cs*의 이름을 *PrimeService.cs*로 바꿉니다. 먼저 다음과 같이 `PrimeService` 클래스의 실패 구현을 만듭니다.
 
 ```csharp
 using System;
@@ -105,7 +105,7 @@ dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
 
 ## <a name="creating-the-first-test"></a>첫 번째 테스트 만들기
 
-TDD 접근 방식에서는 하나의 실패 테스트를 작성하고, 통과시키고, 이 프로세스를 반복해야 합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.cs*를 제거하고 새 C# 파일 *PrimeService_IsPrimeShould.cs*를 만듭니다. 다음 코드를 추가합니다.
+하나의 실패 테스트를 작성하고, 테스트가 성공하도록 만듭니다. 이 작업을 반복합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.cs*를 제거하고 새 C# 파일 *PrimeService_IsPrimeShould.cs*를 만듭니다. 다음 코드를 추가합니다.
 
 ```csharp
 using Xunit;

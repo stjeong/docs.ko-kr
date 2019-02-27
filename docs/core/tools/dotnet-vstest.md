@@ -3,12 +3,12 @@ title: dotnet vstest 명령
 description: dotnet vtest 명령은 프로젝트와 모든 종속성을 빌드합니다.
 author: guardrex
 ms.date: 05/30/2018
-ms.openlocfilehash: cafd862f6107be9173aad6d610cf6f8fd62e1489
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: d41e901f70b4a3d0647c693fdd8076f771466073
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169030"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56747731"
 ---
 # <a name="dotnet-vstest"></a>dotnet vstest
 
@@ -43,7 +43,7 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 ## <a name="description"></a>설명
 
-`dotnet-vstest` 명령은 `VSTest.Console` 명령줄 애플리케이션을 실행하여 자동화된 단위 및 코딩된 UI 애플리케이션 테스트를 실행합니다.
+`dotnet-vstest` 명령은 `VSTest.Console` 명령줄 애플리케이션을 실행하여 자동화된 단위 테스트를 실행합니다.
 
 ## <a name="arguments"></a>인수
 
@@ -73,11 +73,11 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 `--Framework|/Framework:<Framework Version>`
 
-테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 지원되는 기타 값은 `Framework35`, `Framework40`, `Framework45`, `FrameworkCore10` 및 `FrameworkUap10`입니다.
+테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 지원되는 기타 값에는 `Framework40`, `Framework45`, `FrameworkCore10` 및 `FrameworkUap10`이 있습니다.
 
 `--Parallel|/Parallel`
 
-테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. 설정 파일을 사용하여 명시적인 코어 수를 설정합니다.
+테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. runsettings 파일에서 RunConfiguration 노드 아래의 MaxCpuCount 속성을 설정하여 코어의 개수를 명시적으로 지정합니다.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -162,11 +162,11 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 `--Framework|/Framework:<Framework Version>`
 
-테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 지원되는 기타 값에는 `Framework35`, `Framework40`, `Framework45` 및 `FrameworkCore10`이 있습니다.
+테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 그 밖의 지원되는 값은 `Framework40`, `Framework45` 및 `FrameworkCore10`입니다.
 
 `--Parallel|/Parallel`
 
-테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. 설정 파일을 사용하여 명시적인 코어 수를 설정합니다.
+테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. runsettings 파일에서 RunConfiguration 노드 아래의 MaxCpuCount 속성을 설정하여 코어의 개수를 명시적으로 지정합니다.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -238,11 +238,11 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 `--Framework|/Framework:<Framework Version>`
 
-테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 지원되는 기타 값에는 `Framework35`, `Framework40`, `Framework45` 및 `FrameworkCore10`이 있습니다.
+테스트 실행에 사용되는 대상 .NET Framework 버전입니다. 유효한 값의 예는 `.NETFramework,Version=v4.6` 또는 `.NETCoreApp,Version=v1.0`입니다. 그 밖의 지원되는 값은 `Framework40`, `Framework45` 및 `FrameworkCore10`입니다.
 
 `--Parallel|/Parallel`
 
-테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. 설정 파일을 사용하여 명시적인 코어 수를 설정합니다.
+테스트를 병렬로 실행합니다. 기본적으로 컴퓨터의 사용 가능한 모든 코어를 사용할 수 있습니다. runsettings 파일에서 RunConfiguration 노드 아래의 MaxCpuCount 속성을 설정하여 코어의 개수를 명시적으로 지정합니다.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 

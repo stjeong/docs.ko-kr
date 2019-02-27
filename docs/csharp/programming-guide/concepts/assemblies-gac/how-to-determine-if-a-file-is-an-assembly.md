@@ -2,12 +2,12 @@
 title: '방법: 파일이 어셈블리인지 확인(C#)'
 ms.date: 07/20/2015
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
-ms.openlocfilehash: a147081d16a6b9f7252466a06ebd8fc204e47c2a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 474cc4622e9444cab8e9d611dd9481d5358e10f0
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54681770"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56745252"
 ---
 # <a name="how-to-determine-if-a-file-is-an-assembly-c"></a>방법: 파일이 어셈블리인지 확인(C#)
 파일은 관리되고 해당 메타데이터에 어셈블리 항목을 포함하는 경우에만 어셈블리입니다. 어셈블리 및 메타데이터에 대한 자세한 내용은 [어셈블리 매니페스트](../../../../../docs/framework/app-domains/assembly-manifest.md) 항목을 참조하세요.  
@@ -70,4 +70,4 @@ class TestAssembly
 
 - <xref:System.Reflection.AssemblyName>
 - [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
-- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+- [.NET 어셈블리](../../../../standard/assembly/index.md)

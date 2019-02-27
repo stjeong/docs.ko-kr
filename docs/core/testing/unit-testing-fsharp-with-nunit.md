@@ -6,12 +6,12 @@ ms.date: 10/04/2018
 dev_langs:
 - fsharp
 ms.custom: seodec18
-ms.openlocfilehash: e919da8910129be027ff7e2dbed8c4564738e023
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 384d0ac9f36f9ef9daba851f52d577d97248cd67
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241764"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56746048"
 ---
 # <a name="unit-testing-f-libraries-in-net-core-using-dotnet-test-and-nunit"></a>dotnet test 및 NUnit을 사용하여 .NET Core에서 F# 라이브러리 유닛 테스트
 
@@ -45,7 +45,7 @@ dotnet new sln
 dotnet new classlib -lang F#
 ```
 
-TDD(테스트 기반 개발)를 사용하기 위해 수학 서비스의 실패 구현을 만듭니다.
+다음과 같이 수학 서비스의 실패 구현을 만듭니다.
 
 ```fsharp
 module MyMath =
@@ -116,7 +116,7 @@ dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 
 ## <a name="creating-the-first-test"></a>첫 번째 테스트 만들기
 
-TDD 접근 방식에서는 하나의 실패 테스트를 작성하고, 통과시키고, 이 프로세스를 반복해야 합니다. *UnitTest1.fs*를 열고 다음 코드를 추가합니다.
+하나의 실패 테스트를 작성하고, 테스트가 성공하도록 만듭니다. 이 작업을 반복합니다. *UnitTest1.fs*를 열고 다음 코드를 추가합니다.
 
 ```fsharp
 namespace MathService.Tests

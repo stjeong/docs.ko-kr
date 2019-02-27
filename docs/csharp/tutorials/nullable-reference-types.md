@@ -1,14 +1,14 @@
 ---
 title: nullable 참조 형식을 사용하여 디자인
 description: 이 고급 자습서에서는 nullable 참조 형식을 소개합니다. 참조 값이 null일 수 있는 경우에 대한 디자인 의도를 표현하고 컴파일러가 null일 수 없는 경우를 적용하게 하는 방법을 알아봅니다.
-ms.date: 12/03/2018
+ms.date: 02/19/2019
 ms.custom: mvc
-ms.openlocfilehash: 535efcdc303c17a55f6a4054ea3f5e5ed87e5f28
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 1c0df9b129e9c434eb3b5e6e50144013c2c0462e
+ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56092204"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56442102"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>자습서: nullable 참조 형식 및 nullable이 아닌 참조 형식을 사용하여 디자인 의도를 보다 명확하게 표현
 
@@ -24,7 +24,7 @@ C# 8에서는 nullable 값 형식이 값 형식을 보완하는 것과 동일한
 
 ## <a name="prerequisites"></a>전제 조건
 
-C# 8.0 베타 컴파일러를 포함하여 .NET Core를 실행하도록 머신을 설정해야 합니다. C# 8 베타 컴파일러는 [Visual Studio 2019 Preview 1](https://visualstudio.microsoft.com/vs/preview/) 또는 [.NET Core 3.0 Preview 1](https://dotnet.microsoft.com/download/dotnet-core/3.0)에서 사용할 수 있습니다.
+C# 8.0 베타 컴파일러를 포함하여 .NET Core를 실행하도록 머신을 설정해야 합니다. C# 8 베타 컴파일러는 [Visual Studio 2019 Preview 2](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview) 또는 [.NET Core 3.0 Preview 2](https://dotnet.microsoft.com/download/dotnet-core/3.0)에서 사용할 수 있습니다.
 
 이 자습서에서는 Visual Studio 또는 .NET Core CLI를 포함하여 C# 및 .NET에 익숙하다고 가정합니다.
 
@@ -36,27 +36,16 @@ C# 8.0 베타 컴파일러를 포함하여 .NET Core를 실행하도록 머신�
 
 ## <a name="create-the-application-and-enable-nullable-reference-types"></a>애플리케이션을 만들고 nullable 참조 형식을 사용하도록 설정
 
-Visual Studio 또는 `dotnet new console`을 사용하여 명령줄에서 새로운 콘솔 애플리케이션을 만듭니다. 응용 프로그램 이름을 `NullableIntroduction`으로 지정합니다. 애플리케이션을 만든 후에는 C# 8 베타 기능을 사용하도록 설정해야 합니다. `csproj` 파일을 열고 `PropertyGroup` 요소에 `LangVersion` 요소를 추가합니다.
+Visual Studio 또는 `dotnet new console`을 사용하여 명령줄에서 새로운 콘솔 애플리케이션을 만듭니다. 응용 프로그램 이름을 `NullableIntroduction`으로 지정합니다. 애플리케이션을 만든 후에는 C# 8 베타 기능을 사용하도록 설정해야 합니다. `csproj` 파일을 열고 `PropertyGroup` 요소에 `LangVersion` 요소를 추가합니다. C# 8 프로젝트에서도 **nullable 참조 형식** 기능을 옵트인해야 합니다. 기능이 켜지고 나면 기존 참조 변수 선언이 **nullable이 아닌 참조 형식**으로 바뀌기 때문입니다. 이러한 의사 결정은 기존 코드에 적절한 null 확인이 없는 문제를 찾는 데 도움이 되지만 원래 디자인 의도를 정확하게 반영하지 않을 수 있습니다. `NullableContextOptions`요소를 `enable`로 설정하여 이 기능을 켭니다.
 
 ```xml
 <LangVersion>8.0</LangVersion>
-```
-
-또는 Visual Studio 프로젝트 속성을 통해 C# 8을 사용하도록 설정할 수 있습니다. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **빌드** 탭을 선택하고 **고급...** 을 클릭합니다. 언어 버전 드롭다운에서 **C# 8.0(베타)** 을 선택합니다.
-
-C# 8 프로젝트에서도 **nullable 참조 형식** 기능을 옵트인해야 합니다. 기능이 켜지고 나면 기존 참조 변수 선언이 **nullable이 아닌 참조 형식**으로 바뀌기 때문입니다. 이러한 의사 결정은 기존 코드에 적절한 null 확인이 없는 문제를 찾는 데 도움이 되지만 원래 디자인 의도를 정확하게 반영하지 않을 수 있습니다. 새 pragma를 사용하여 기능을 켭니다.
-
-```csharp
-#nullable enable
-```
-
-소스 파일의 어디에나 앞의 pragma를 추가할 수 있으며, 해당 지점부터 nullable 참조 형식 기능이 켜집니다. pragma는 기능을 끄는 `disable` 인수도 지원합니다.
-
-.csproj 파일에 다음 요소를 추가하여 전체 프로젝트에 대해 **nullable 참조 형식**을 켤 수도 있습니다. 예를 들어 C# 8.0을 사용하도록 설정한 `LangVersion` 요소 바로 다음에 추가합니다.
-
-```xml
 <NullableContextOptions>enable</NullableContextOptions>
 ```
+
+> [!NOTE]
+> 미리 보기 모드가 아닌 C# 8 정식 출시 버전에서는 새로운 프로젝트 템플릿에 의해 `NullableContextOptions` 요소가 추가됩니다. 그때까지는 이 요소를 수동으로 추가해야 합니다.
+
 
 ### <a name="design-the-types-for-the-application"></a>애플리케이션의 형식 디자인
 
@@ -88,10 +77,9 @@ C#으로 프로그래밍한 경우 null 값을 허용하는 참조 형식에 익
 
 ## <a name="build-the-survey-with-nullable-and-non-nullable-types"></a>nullable 형식과 nullable이 아닌 형식을 사용하여 설문 조사 작성
 
-작성하는 첫 번째 코드에서 설문 조사를 만듭니다. 설문 조사 질문과 설문 조사 실행을 모델링하는 클래스를 작성합니다. 설문 조사에는 다음 응답 형식으로 구분되는 세 가지 질문 유형이 있습니다. 예/아니요 응답, 숫자 응답, 텍스트 응답. `public` `SurveyQuestion` 클래스를 만듭니다. `using` 문 바로 뒤에 `#nullable enable` pragma를 포함합니다.
+작성하는 첫 번째 코드에서 설문 조사를 만듭니다. 설문 조사 질문과 설문 조사 실행을 모델링하는 클래스를 작성합니다. 설문 조사에는 다음 응답 형식으로 구분되는 세 가지 질문 유형이 있습니다. 예/아니요 응답, 숫자 응답, 텍스트 응답. `public` `SurveyQuestion` 클래스를 만듭니다.
 
 ```csharp
-#nullable enable
 namespace NullableIntroduction
 {
     public class SurveyQuestion
@@ -100,10 +88,9 @@ namespace NullableIntroduction
 }
 ```
 
-`#nullable enable` pragma를 추가하면 컴파일러가 모든 참조 형식 변수 선언을 **nullable이 아닌** 참조 형식으로 해석합니다. 다음 코드에 표시된 대로 질문 텍스트 및 질문 유형의 속성을 추가하여 첫 번째 경고를 표시할 수 있습니다.
+컴파일러가 모든 참조 형식 변수 선언을 nullable이 활성화된 컨텍스트에 있는 코드의 **nullable이 아닌** 참조 형식으로 해석합니다. 다음 코드에 표시된 대로 질문 텍스트 및 질문 유형의 속성을 추가하여 첫 번째 경고를 표시할 수 있습니다.
 
 ```csharp
-#nullable enable
 namespace NullableIntroduction
 {
     public enum QuestionType
@@ -127,12 +114,11 @@ namespace NullableIntroduction
 
 생성자를 추가하면 경고가 제거됩니다. 생성자 인수도 nullable이 아닌 참조 형식이므로 컴파일러에서 경고를 실행하지 않습니다.
 
-`SurveyRun`이라는 `public` 클래스를 만듭니다. `using` 문 다음에 `#nullable enable` pragma를 포함합니다. 이 클래스에는 다음 코드에 표시된 것처럼 설문 조사에 질문을 추가하는 메서드 및 `SurveyQuestion` 개체 목록이 포함되어 있습니다.
+`SurveyRun`이라는 `public` 클래스를 만듭니다. 이 클래스에는 다음 코드에 표시된 것처럼 설문 조사에 질문을 추가하는 메서드 및 `SurveyQuestion` 개체 목록이 포함되어 있습니다.
 
 ```csharp
 using System.Collections.Generic;
 
-#nullable enable
 namespace NullableIntroduction
 {
     public class SurveyRun
@@ -152,7 +138,7 @@ namespace NullableIntroduction
 
 [!code-csharp[AddQuestions](../../../samples/csharp/NullableIntroduction/NullableIntroduction/Program.cs#AddQuestions)]
 
-파일 맨 위에 `#nullable enable` pragma가 없으면 `AddQuestion` 인수의 텍스트로 `null`을 전달할 때 컴파일러에서 경고를 실행하지 않습니다. `using` 문 다음에 `#nullable enable`을 추가하여 코드를 수정합니다. 다음 줄을 `Main`에 추가하여 시도해 보세요.
+프로젝트 전체가 nullable이 활성화된 컨텍스트이므로 nullable이 아닌 참조 형식을 기대하고 메서드로 `null`을 전달하면 경고가 발생됩니다. 다음 줄을 `Main`에 추가하여 시도해 보세요.
 
 ```csharp
 surveyRun.AddQuestion(QuestionType.Text, default);
@@ -160,7 +146,7 @@ surveyRun.AddQuestion(QuestionType.Text, default);
 
 ## <a name="create-respondents-and-get-answers-to-the-survey"></a>응답자를 만들고 설문 조사에 대한 응답 받기
 
-다음으로, 설문 조사에 대한 응답을 생성하는 코드를 작성합니다. 여기에는 다음과 같은 몇 개의 작은 작업이 포함됩니다.
+다음으로, 설문 조사에 대한 응답을 생성하는 코드를 작성합니다. 이 프로세스에는 몇 개의 작은 작업이 포함됩니다.
 
 1. 응답자 개체를 생성하는 메서드를 빌드합니다. 이러한 개체는 설문 조사를 작성하도록 요청된 사람을 나타냅니다.
 1. 응답자에게 질문하고 응답을 수집하거나 응답자가 응답하지 않았음을 확인하는 과정을 시뮬레이션하는 논리를 빌드합니다.
@@ -169,7 +155,6 @@ surveyRun.AddQuestion(QuestionType.Text, default);
 설문 조사 응답을 나타낼 클래스가 필요하므로 지금 추가합니다. nullable 지원을 사용하도록 설정합니다. 다음 코드에 표시된 대로 `Id` 속성 및 이 속성을 초기화하는 생성자를 추가합니다.
 
 ```csharp
-#nullable enable
 namespace NullableIntroduction
 {
     public class SurveyResponse
@@ -195,6 +180,8 @@ namespace NullableIntroduction
 [!code-csharp[AnswerSurvey](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
 설문 조사 응답의 스토리지는 `Dictionary<int, string>?`로, null일 수 있음을 나타냅니다. 새 언어 기능을 사용하여 컴파일러 및 나중에 코드를 읽는 모든 사람에게 디자인 의도를 선언하고 있습니다. 먼저 null 값을 확인하지 않고 `surveyResponses`를 역참조하는 경우 컴파일러 경고가 표시됩니다. 위에서 `surveyResponses` 변수가 null이 아닌 값으로 설정되었음을 컴파일러가 판별할 수 있으므로 `AnswerSurvey` 메서드에 경고가 표시되지 않습니다.
+
+누락된 응답을 확인하기 위해 `null`을 사용하는 것에서 nullable 참조 형식을 사용할 때 유의해야 할 중요한 점을 확인할 수 있습니다. 즉, 프로그램에서 `null` 값을 모두 제거하는 것이 목표가 되어서는 안 됩니다. 내가 작성하는 코드가 내 설계 의도를 그대로 표현하고 있는지 확인하는 것이 목표가 되어야 합니다. 누락된 값은 코드에서 반드시 표현해야 하는 개념입니다. `null` 값은 누락된 값을 분명하게 표현할 수 있는 방법입니다. `null` 값을 모두 제거하는 것을 목표로 하면 `null`을 사용하지 않고 누락된 값을 표현할 다른 방법을 정의해야 할 뿐입니다.
 
 다음으로, `SurveyRun` 클래스에 `PerformSurvey` 메서드를 작성해야 합니다. `SurveyRun` 클래스에 다음 코드를 추가합니다.
 
@@ -234,6 +221,6 @@ nullable 참조 형식과 nullable이 아닌 참조 형식 간에 형식 선언�
 
 ## <a name="next-steps"></a>다음 단계
 
-nullable 참조 형식에 대한 개요를 읽고 자세히 알아봅니다.
+nullable 참조 형식을 사용할 수 있도록 기존 애플리케이션을 마이그레이션하여 자세히 알아보세요.
 > [!div class="nextstepaction"]
-> [nullable 참조 개요](../nullable-references.md)
+> [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)(nullable 참조 형식을 사용할 수 있도록 애플리케이션 업그레이드)

@@ -4,12 +4,12 @@ description: 감정 예측을 통해 적절한 작업을 수행하는 방법을 
 ms.date: 02/15/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: d6d5cae107e25000add5c8430a35131a79696bc2
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 9afdf1d8369e71f9614ebc2bf327e98d31b988ff
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56092763"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748390"
 ---
 # <a name="tutorial-use-mlnet-in-a-sentiment-analysis-binary-classification-scenario"></a>자습서: 감정 분석 이진 분류 시나리오에서 ML.NET 사용
 
@@ -204,6 +204,9 @@ ML.NET의 변환 파이프라인은 학습 또는 테스트 전에 데이터에 
 다음으로, 텍스트(`SentimentText`) 열을 기계 학습 알고리즘에서 사용되는 `Features`라는 숫자 벡터로 기능화하는 `mlContext.Transforms.Text.FeaturizeText`를 호출합니다. 이는 실제로 파이프라인이 될 <xref:Microsoft.ML.Data.EstimatorChain%601>을 반환하는 래퍼 호출입니다. 이 학습자를 `EstimatorChain`에 추가할 때 `pipeline`으로 이름을 지정합니다. 아래 코드를 다음 코드 줄로 추가합니다.
 
 [!code-csharp[TextFeaturizingEstimator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizingEstimator")]
+
+>[!WARNING]
+> ML.NET 버전 0.10은 변환 매개 변수의 순서를 변경했습니다. 이렇게 하면 애플리케이션을 실행하고 모델을 빌드할 때까지 오류가 발생하지 않습니다. 이전 코드 조각에 설명된 것처럼 변환에 매개 변수 이름을 사용합니다.
 
 이것이 전처리/기능화 단계입니다. ML.NET에서 사용 가능한 추가 구성 요소를 사용하면 모델에서 더 나은 결과를 얻을 수 있습니다.
 
