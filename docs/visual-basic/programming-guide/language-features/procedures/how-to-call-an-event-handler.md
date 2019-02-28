@@ -8,12 +8,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], event handlers
 - procedures [Visual Basic], calling
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
-ms.openlocfilehash: 6fc08e9f16753dc853daff0120661603571d9db4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 58a96ccd06b70d481de335af5c3cd2be565cbd92
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54717976"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973524"
 ---
 # <a name="how-to-call-an-event-handler-in-visual-basic"></a>방법: Visual Basic의 이벤트 처리기를 호출 합니다.
 *이벤트* 작업 또는 항목은-같은 마우스 클릭 이나 신용 한도 초과-응답 코드를 작성할 수 있는 한 일부 프로그램 구성 요소에 의해 인식 합니다. *이벤트 처리기* 이벤트에 응답을 작성 하는 코드입니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "54717976"
   
      다음 예제에서는 이벤트를 정의 및 `WithEvents` 이벤트를 발생 시키는 클래스를 참조 하는 변수입니다. 이벤트 처리 `Sub` 프로시저는 `Handles` 절 클래스와 처리 하는 이벤트를 지정 합니다.  
   
-     [!code-vb[VbVbcnProcedures#4](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)]  
+     [!code-vb[VbVbcnProcedures#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#4)]  
   
 ### <a name="to-call-an-event-handler-using-addhandler"></a>AddHandler를 사용 하 여 이벤트 처리기를 호출 합니다.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "54717976"
   
      다음 예제에서는 정의 `Sub` 처리 하는 절차는 <xref:System.Windows.Forms.Form.Closing> 폼의 이벤트입니다. 사용 하 여는 [AddHandler 문](../../../../visual-basic/language-reference/statements/addhandler-statement.md) 연결 하는 `catchClose` 에 대 한 이벤트 처리기로 프로시저 <xref:System.Windows.Forms.Form.Closing>합니다.  
   
-     [!code-vb[VbVbcnProcedures#5](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)]  
+     [!code-vb[VbVbcnProcedures#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#5)]  
   
      실행 하 여 이벤트에서 이벤트 처리기를 분리할 수 있습니다 합니다 [RemoveHandler 문](../../../../visual-basic/language-reference/statements/removehandler-statement.md)합니다.  
   

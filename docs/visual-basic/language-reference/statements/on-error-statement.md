@@ -22,12 +22,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], handling
 - On Error statement [Visual Basic]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-ms.openlocfilehash: 9916c7197b260436a447a84b22df9b76dc5af4cd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 16a2ee7f16df92db8deb44ff979ec077eefc20aa
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54654888"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56976488"
 ---
 # <a name="on-error-statement-visual-basic"></a>On Error 문(Visual Basic)
 오류 처리 루틴을 사용 하도록 설정 하 고 프로시저;에서 루틴의 위치를 지정 오류 처리 루틴을 사용 하지 않으려면 사용할 수도 있습니다.  
@@ -76,7 +76,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## <a name="throw-statement"></a>Throw 문  
  사용 하 여 발생 하는 오류를 `Err.Raise` 메서드 집합을 `Exception` 의 새로 만든된 인스턴스에 대 한 속성을 <xref:System.Exception> 클래스입니다. 파생 된 예외 형식의 예외 발생을 지원 하기 위해는 `Throw` 언어 문이 지원 됩니다. 이 예외 인스턴스가 throw 되는 단일 매개 변수를 사용 합니다. 다음 예제에서는 기존 예외 처리 지원을 사용 하 여 이러한 기능을 사용할 수 있는 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrErrorHandling#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#17)]  
   
  `On Error GoTo` 문을 예외 클래스에 관계 없이 모든 오류를 포착 합니다.  
   
@@ -94,7 +94,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  오류 처리 코드 오류가 발생 하지 않은 경우 실행을 방지 하려면 배치는 `Exit Sub`하십시오 `Exit Function`, 또는 `Exit Property` 문은 다음 조각 처럼 오류 처리 루틴을 바로 앞:  
   
- [!code-vb[VbVbalrErrorHandling#18](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_2.vb)]  
+ [!code-vb[VbVbalrErrorHandling#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#18)]  
   
  여기에서 오류 처리 코드가 다음과 `Exit Sub` 문 앞에 오는 및는 `End Sub` 문을 프로시저 흐름을 구분 하기 위해. 프로시저에서 아무 곳 이나 오류 처리 코드를 배치할 수 있습니다.  
   
@@ -103,7 +103,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  다른 개체에 액세스 하는 개체를 만드는 경우에 다시 전달 하는 모든 처리 되지 않은 오류를 처리 하려고 해야 합니다. 오류 코드를 매핑할 수 없는 경우 `Err.Number` 고유한 오류 및이 전달 하는 중 하나에 개체의 호출자에 게 다시 합니다. 오류 코드를 추가 하 여 오류를 지정 해야 합니다 `VbObjectError` 상수입니다. 예를 들어 1052는 오류 코드가 다음과 같이 할당 합니다.  
   
- [!code-vb[VbVbalrErrorHandling#19](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_3.vb)]  
+ [!code-vb[VbVbalrErrorHandling#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#19)]  
   
 > [!CAUTION]
 >  Windows 동적 연결 라이브러리 (Dll)를 호출 하는 동안 시스템 오류 예외를 발생 하지 않습니다 및 Visual Basic 오류 트래핑을 사용 하 여 잡아낼 수 없습니다. 성공 또는 실패 (에 따라 API 사양)에 대 한 각 반환 값을 검사 하는 DLL 함수를 호출할 때 오류가 발생 하면 값을 확인 합니다 `Err` 개체의 `LastDLLError` 속성입니다.  

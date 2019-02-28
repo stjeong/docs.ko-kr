@@ -1,5 +1,5 @@
 ---
-title: ICorDebugInternalFrame Interface1
+title: ICorDebugInternalFrame 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugInternalFrame
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1fab8221bd160a74bb44c3ed0721ad4620e93419
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6a1af92cbce84b674058ab2c8af2e15b0070dcd8
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54692797"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974759"
 ---
-# <a name="icordebuginternalframe-interface1"></a>ICorDebugInternalFrame Interface1
+# <a name="icordebuginternalframe-interface"></a>ICorDebugInternalFrame 인터페이스
+
 스택에 런타임 내부 프레임을 나타냅니다. 이 인터페이스는 ICorDebugFrame 인터페이스의 서브 클래스입니다.  
   
 ## <a name="methods"></a>메서드  

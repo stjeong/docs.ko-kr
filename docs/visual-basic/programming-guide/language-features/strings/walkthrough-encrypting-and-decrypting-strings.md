@@ -7,12 +7,12 @@ helpviewer_keywords:
 - decryption [Visual Basic], strings
 - strings [Visual Basic], decrypting
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
-ms.openlocfilehash: ee3bcd1358536e6fd9bed5c4fec7845fdf441d86
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fe91e0062ac35859a3b85eb080d16fb88a6f9aaf
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54723487"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972783"
 ---
 # <a name="walkthrough-encrypting-and-decrypting-strings-in-visual-basic"></a>연습: 암호화 및 Visual Basic의 문자열을 암호 해독
 이 연습에서는 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Security.Cryptography.DESCryptoServiceProvider> 암호화 및 3des(triple Data Encryption Standard의 암호화 서비스 공급자 (CSP) 버전을 사용 하 여 문자열을 해독 하는 클래스 (<xref:System.Security.Cryptography.TripleDES>) 알고리즘입니다. 첫 번째 단계는 3DES 알고리즘을 캡슐화 하 고 base-64로 인코딩된 문자열로 암호화 된 데이터를 저장 하는 간단한 래퍼 클래스를 만드는 것입니다. 그런 다음 해당 래퍼를 사용 하 여 안전 하 게 공개적으로 액세스할 텍스트 파일에서 사용자 개인 데이터를 저장 합니다.  
@@ -28,33 +28,33 @@ ms.locfileid: "54723487"
   
 1.  만들기는 `Simple3Des` 암호화 및 암호 해독 메서드를 캡슐화 하는 클래스입니다.  
   
-     [!code-vb[VbVbalrStrings#38](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)]  
+     [!code-vb[VbVbalrStrings#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#38)]  
   
 2.  암호화 네임 스페이스 가져오기를 포함 하는 파일의 시작 부분에 추가 된 `Simple3Des` 클래스입니다.  
   
-     [!code-vb[VbVbalrStrings#77](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)]  
+     [!code-vb[VbVbalrStrings#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#77)]  
   
 3.  에 `Simple3Des` 클래스 3DES 암호화 서비스 공급자를 저장 하는 개인 필드를 추가 합니다.  
   
-     [!code-vb[VbVbalrStrings#39](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)]  
+     [!code-vb[VbVbalrStrings#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#39)]  
   
 4.  지정 된 길이의 바이트 배열에 지정 된 키의 해시에서 만드는 개인 메서드를 추가 합니다.  
   
-     [!code-vb[VbVbalrStrings#41](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)]  
+     [!code-vb[VbVbalrStrings#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#41)]  
   
 5.  3DES 암호화 서비스 공급자를 초기화 하는 생성자를 추가 합니다.  
   
      합니다 `key` 매개 변수를 `EncryptData` 고 `DecryptData` 메서드.  
   
-     [!code-vb[VbVbalrStrings#40](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)]  
+     [!code-vb[VbVbalrStrings#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#40)]  
   
 6.  문자열을 암호화 하는 공용 메서드를 추가 합니다.  
   
-     [!code-vb[VbVbalrStrings#42](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)]  
+     [!code-vb[VbVbalrStrings#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#42)]  
   
 7.  문자열을 해독 하는 공용 메서드를 추가 합니다.  
   
-     [!code-vb[VbVbalrStrings#43](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)]  
+     [!code-vb[VbVbalrStrings#43](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#43)]  
   
      래퍼 클래스 사용자 자산을 보호 하기 위해 이제 사용할 수 있습니다. 이 예제에서는 공개적으로 액세스할 텍스트 파일에서 사용자 개인 데이터를 안전 하 게 저장에 사용 됩니다.  
   
@@ -62,11 +62,11 @@ ms.locfileid: "54723487"
   
 1.  별도 클래스는 래퍼를 사용 하는 메서드 추가 `EncryptData` 문자열을 암호화 하 고 사용자에 게 작성 방법의 내 문서 폴더입니다.  
   
-     [!code-vb[VbVbalrStrings#78](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)]  
+     [!code-vb[VbVbalrStrings#78](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#78)]  
   
 2.  내 문서 폴더 사용자에서 암호화 된 문자열을 읽는 메서드를 추가 하는 래퍼를 사용 하 여 문자열을 해독 `DecryptData` 메서드.  
   
-     [!code-vb[VbVbalrStrings#79](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)]  
+     [!code-vb[VbVbalrStrings#79](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#79)]  
   
 3.  호출 하는 사용자 인터페이스 코드를 추가 합니다 `TestEncoding` 및 `TestDecoding` 메서드.  
   

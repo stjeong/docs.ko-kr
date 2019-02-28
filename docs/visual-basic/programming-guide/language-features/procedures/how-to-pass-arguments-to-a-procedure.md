@@ -11,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - argument passing [Visual Basic], procedures
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
-ms.openlocfilehash: 6d9daf47b8d9300e9de8add1423fa1824fc62d5d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0bc7c9d09922b7fbef534e6b58389ca343cc1e13
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54691231"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974395"
 ---
 # <a name="how-to-pass-arguments-to-a-procedure-visual-basic"></a>방법: (Visual Basic) 프로시저에 인수 전달
 프로시저를 호출 하는 경우에 인수 목록 괄호로 묶어 프로시저 이름을 뒤에 있습니다. 프로시저에 정의 하는 모든 필수 매개 변수에 해당 하는 인수를 제공 하 고 인수를 선택적으로 제공할 수는 `Optional` 매개 변수입니다. 지정 하지 않으면 경우는 `Optional` 호출에서 매개 변수를 후속 인수를 제공 하는 경우 인수 목록에서 해당 위치를 표시 하려면 쉼표를 포함 해야 합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "54691231"
   
      다음 예제에서는 Visual Basic <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 함수입니다.  
   
-     [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#34)]  
   
      앞의 예제에 표시 될 메시지 문자열은 필요한 첫 번째 인수를 제공 합니다. 메시지 상자에 표시할 단추를 지정 하는 선택적 두 번째 매개 변수에 대 한 인수를 생략 합니다. 호출에 값을 제공 하지 않는 있으므로 `MsgBox` 기본값을 사용 하 여 `MsgBoxStyle.OKOnly`만 표시는 **확인** 단추.  
   

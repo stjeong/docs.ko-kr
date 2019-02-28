@@ -7,12 +7,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - procedures [Visual Basic], returning a value
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-ms.openlocfilehash: 8d9c7f3eadfa0095e0ed49b3a7a207fd3f7f8769
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 10167075e903693df804cba044301e1f1bc6306e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54525458"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974460"
 ---
 # <a name="how-to-call-a-procedure-that-returns-a-value-visual-basic"></a>방법: (Visual Basic) 값을 반환 하는 프로시저 호출
 `Function` 프로시저가 호출 코드에 값을 반환 합니다. 식 또는 대입문의 오른쪽에 있는 이름과 인수를 포함 하 여 프로시저를 호출 합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "54525458"
 ## <a name="example"></a>예제  
  다음 예제에서는 Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> 운영 체제 환경 변수의 값을 검색 합니다. 첫 번째 줄에서는 `Environ` 내에서 식과 두 번째 줄에서에서 호출 대입문 합니다. `Environ` 변수 이름을 유일한 인수로 변수로 사용 합니다. 호출 코드에 변수 값을 반환합니다.  
   
- [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
+ [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
 ## <a name="see-also"></a>참고자료
 - [Function 프로시저](./function-procedures.md)

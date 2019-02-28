@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Mid statement [Visual Basic]
 - strings [Visual Basic], replacing
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
-ms.openlocfilehash: 47034b3699f4dfee67d36e72d4b22898d469c900
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ee0f2e771a938619bf988263b176464080e60e7a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54700301"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974837"
 ---
 # <a name="mid-statement"></a>Mid 문
 지정 된 수의 문자 대체를 `String` 다른 문자열에서 문자를 사용 하 여 변수입니다.  
@@ -55,12 +55,12 @@ Mid( _
  Visual Basic에는 <xref:Microsoft.VisualBasic.Strings.Mid%2A> 함수 및 `Mid` 문입니다. 이러한 요소는 모두 문자열에서 문자의 지정된 된 수에 작동 하지만 `Mid` 해당 문자를 반환 하는 함수는 `Mid` 문은 문자를 대체 합니다. 자세한 내용은 <xref:Microsoft.VisualBasic.Strings.Mid%2A>을 참조하세요.  
   
 > [!NOTE]
->  `MidB` 이전 버전의 Visual Basic의 문 문자가 아닌 바이트를의 부분 문자열을 대체 합니다. 더블 바이트 문자 집합 (DBCS) 애플리케이션의 문자열을 변환에 주로 사용 됩니다. 모든 Visual Basic 문자열은 유니코드, 및 `MidB` 는 지원 되지 않습니다.  
+>  `MidB` 이전 버전의 Visual Basic의 문 문자가 아닌 바이트를의 부분 문자열을 대체 합니다. 더블 바이트 문자 집합 (DBCS) 응용 프로그램의 문자열을 변환에 주로 사용 됩니다. 모든 Visual Basic 문자열은 유니코드, 및 `MidB` 는 지원 되지 않습니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 `Mid` 문을 다른 문자열에 지정 된 개수의 문자열 변수에 문자를 바꿉니다.  
   
- [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  
+ [!code-vb[VbVbalrStrings#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#5)]  
   
 ## <a name="requirements"></a>요구 사항  
  **네임스페이스:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

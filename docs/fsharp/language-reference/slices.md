@@ -2,12 +2,12 @@
 title: 조각 (F#)
 description: 기존 분할 영역을 사용 하는 방법에 알아봅니다 F# 데이터 형식 및 다른 데이터 형식에 대 한 사용자 고유의 조각을 정의 하는 방법입니다.
 ms.date: 01/22/2019
-ms.openlocfilehash: c204c6cbb195b33998b92dd940313a132ecc321d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 60b57d4eea40bb26dc43d8255dd933b63ac6303c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54746714"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970113"
 ---
 # <a name="slices"></a>조각
 
@@ -95,7 +95,7 @@ F# 핵심 라이브러리를 정의 하지 않습니다 `GetSlice`3D 배열에 �
 
 F# 핵심 라이브러리는 형식의 제한 된 집합에 대 한 슬라이스를 정의 합니다. 자세한 데이터 형식에 대 한 조각을 정의 하려는 경우 형식 정의 자체 또는 형식 확장에서이 수행할 수 있습니다.
 
-예를 들어 다음과 같습니다 하는 방법에 대 한 슬라이스를 정의할 수 있습니다는 <xref:System.ArraySegment`1> 편리한 데이터 조작을 위한 클래스:
+예를 들어 다음과 같습니다 하는 방법에 대 한 슬라이스를 정의할 수 있습니다는 <xref:System.ArraySegment%601> 편리한 데이터 조작을 위한 클래스:
 
 ```fsharp
 open System
@@ -112,7 +112,7 @@ let slice = arr.[2..5] //[ 3; 4; 5]
 
 ### <a name="use-inlining-to-avoid-boxing-if-it-is-necessary"></a>필요한 경우 boxing을 방지 하려면 인라인 처리 사용
 
-좋습니다 구조체 실제로 된 형식에 대 한 조각을 정의 하는 경우 있습니다 `inline` 는 `GetSlice` 멤버입니다. F# 컴파일러 조각화의 결과로 모든 힙 할당을 방지 하는 선택적 인수를 최적화 합니다. 이 같은 구문을 조각화 하는 데 매우 중요 <xref:System.Span`1> 는 힙에 할당 수는 없습니다.
+좋습니다 구조체 실제로 된 형식에 대 한 조각을 정의 하는 경우 있습니다 `inline` 는 `GetSlice` 멤버입니다. F# 컴파일러 조각화의 결과로 모든 힙 할당을 방지 하는 선택적 인수를 최적화 합니다. 이 같은 구문을 조각화 하는 데 매우 중요 <xref:System.Span%601> 힙에 할당할 수 없습니다.
 
 ```fsharp
 open System

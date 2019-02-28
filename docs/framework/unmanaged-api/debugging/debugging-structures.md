@@ -8,14 +8,15 @@ helpviewer_keywords:
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 18bf03fee1a95c898e8273fa839e41a86b2d1c32
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: f50db519410b9513725c3dc10637421ba8bb37ec
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55828373"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965230"
 ---
 # <a name="debugging-structures"></a>디버깅 구조체
+
 이 섹션에서는 디버깅 API에서 사용하는 관리되지 않는 구조체에 대해 설명합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
@@ -25,7 +26,7 @@ ms.locfileid: "55828373"
 
  [CLR_DEBUGGING_VERSION 구조체](../../../../docs/framework/unmanaged-api/debugging/clr-debugging-version-structure.md) 는 CLR (공용 언어 런타임) 디버깅을 위해의 제품 버전을 정의 합니다.
 
- [CodeChunkInfo 구조체 1](../../../../docs/framework/unmanaged-api/debugging/codechunkinfo-structure.md) 메모리에서 코드의 단일 청크를 나타냅니다.
+ [CodeChunkInfo 구조체](../../../../docs/framework/unmanaged-api/debugging/codechunkinfo-structure.md) 메모리에서 코드의 단일 청크를 나타냅니다.
 
  [COR_ACTIVE_FUNCTION](cor-active-function-structure.md) 스레드 프레임에서 현재 활성화 된 함수에 대 한 정보를 포함 합니다.
 
@@ -71,9 +72,8 @@ ms.locfileid: "55828373"
 
  [StackTrace_SimpleContext 구조체](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md) 전체 대신 사용할 수 있는 단순 컨텍스트를 제공 `CONTEXT` 구조입니다.
 
-
-
 ## <a name="related-sections"></a>관련 단원
+
  [디버깅 Coclass](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)
 
  [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

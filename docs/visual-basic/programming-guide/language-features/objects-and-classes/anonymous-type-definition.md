@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [Visual Basic], type definition
 ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
-ms.openlocfilehash: 9cb03eab00033c3d08b51de7524e9489198d6d76
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e74b4c7298a80f724031cc4ac1feb49ebae8f7cb
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54678403"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975617"
 ---
 # <a name="anonymous-type-definition-visual-basic"></a>익명 형식 정의(Visual Basic)
 무명 형식의 인스턴스 선언에 대 한 응답, 컴파일러는 형식에 대해 지정된 된 속성을 포함 하는 새 클래스 정을 만듭니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "54678403"
 ## <a name="compiler-generated-code"></a>컴파일러에서 생성 된 코드  
  다음 정의 대 한 `product`, 컴파일러는 속성을 포함 하는 새 클래스 정의 만듭니다 `Name`를 `Price`, 및 `OnHand`합니다.  
   
- [!code-vb[VbVbalrAnonymousTypes#25](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#25)]  
   
  클래스 정의 다음과 유사한 속성 정의 포함합니다. 이 없는 `Set` 키 속성에 대 한 메서드. 키 속성의 값은 읽기 전용입니다.  
   
@@ -66,13 +66,13 @@ End Class
   
      다음 예제에서 예를 들어 `Equals` 반환 `True` 동안만 `employee01` 및 `employee08`합니다. 새 인스턴스를 일치 하지 않습니다 이유를 지정 하는 각 줄 앞의 주석이 `employee01`합니다.  
   
-     [!code-vb[VbVbalrAnonymousTypes#24](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#24)]  
   
 -   `GetHashcode` 적절 하 게 고유 GetHashCode 알고리즘을 제공합니다. 알고리즘의 해시 코드를 계산 합니다. 키 속성만 사용 합니다.  
   
 -   `ToString` 다음 예제에서와 같이 연결 된 속성 값의 문자열을 반환 합니다. 키 및 키가 아닌 속성을 모두 포함 됩니다.  
   
-     [!code-vb[VbVbalrAnonymousTypes#29](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#29)]  
   
  익명 형식의 명시적으로 명명 된 속성은 이러한 생성 된 메서드와 충돌 하지 않습니다. 즉, 사용할 수 없습니다 `.Equals`, `.GetHashCode`, 또는 `.ToString` 속성 이름을 지정 합니다.  
   

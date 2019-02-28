@@ -1,15 +1,9 @@
 ---
-title: F# Interactive(fsi.exe) 참조
-description: 에 대해 알아봅니다 하는 방법 F# Interactive (fsi.exe) 실행 하는 F# 대화형으로 나 콘솔에서 실행할 코드 F# 스크립트입니다.
+title: 'F# Interactive(fsi.exe) 참조'
+description: '에 대해 알아봅니다 하는 방법 F# Interactive (fsi.exe) 실행 하는 F# 대화형으로 나 콘솔에서 실행할 코드 F# 스크립트입니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 0fccc818f0a4b3d6d09a69e91da1f5c337c53a44
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611063"
 ---
-# <a name="interactive-programming-with-f"></a>F#을 사용한 대화형 프로그래밍 #
+# <a name="interactive-programming-with-f"></a>F # 사용한 대화형 프로그래밍\#
 
 > [!NOTE]
 > 이 문서에서는 현재 Windows만을 위한 환경에 대해 설명합니다.  다시 작성될 예정입니다.
@@ -44,7 +38,7 @@ F# Interactive는 Visual Studio에서 실행할 때 프로젝트와 독립적으
 설정을 조정하여 F# Interactive 명령줄 인수(옵션)를 제어할 수 있습니다. 이렇게 하려면 **도구** 메뉴에서 **옵션...** 을 선택하고 **F# 도구**를 확장합니다. 변경 가능한 두 가지 설정은 F# Interactive 옵션과 **64비트 F# Interactive** 설정(F# Interactive를 64비트 컴퓨터에서 실행하는 경우만 해당)입니다. 이 설정은 전용 64비트 버전의 fsi.exe 또는 fsianycpu.exe(컴퓨터 아키텍처를 사용하여 32비트 또는 64비트 프로세스로 실행할지 여부를 결정)를 실행할지 여부를 결정합니다.
 
 
-## <a name="scripting-with-f"></a>F#을 사용한 스크립팅 #
+## <a name="scripting-with-f"></a>F #을 사용한 스크립팅\#
 스크립트는 파일 확장명 **.fsx** 또는 **.fsscript**를 사용합니다. 소스 코드를 컴파일한 다음 나중에 컴파일된 어셈블리를 실행하는 대신 **fsi.exe**를 실행하고 F# 소스 코드의 스크립트 파일 이름을 지정하면 F# Interactive가 코드를 읽어 실시간으로 실행합니다.
 
 

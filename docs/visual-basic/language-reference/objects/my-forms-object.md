@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-ms.openlocfilehash: 17042f60eb27c41640ef5d8c927c7acc5bc73183
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3ee93814a4f06c39099c50617a10b8974c6f1555
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54712628"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974005"
 ---
 # <a name="myforms-object"></a>My.Forms 개체
 현재 프로젝트에 선언 된 각 Windows form의 인스턴스에 액세스 하기 위한 속성을 제공 합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "54712628"
 ## <a name="example"></a>예제  
  이 예제에서는 기본 제목을 변경 `SidebarMenu` 폼입니다.  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyForms/VB/Class1.vb#2)]  
   
  이 예제가 작동 하려면 프로젝트가 있어야 라는 폼을 `SidebarMenu`입니다.  
   

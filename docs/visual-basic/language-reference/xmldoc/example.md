@@ -5,12 +5,12 @@ helpviewer_keywords:
 - example XML tag
 - <example> XML tag
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
-ms.openlocfilehash: 75e6f966f8baac2fd3c863c7caea939d80bfc41b
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: a1dea0bcc40de8dea986e93a25617f607383ec21
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55255526"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969221"
 ---
 # <a name="example-visual-basic"></a>\<예제 > (Visual Basic)
 멤버에 대 한 예제를 지정합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "55255526"
 ## <a name="example"></a>예제  
  이 예제에서는 합니다 `<example>` 태그 사용에 대 한 예제를 포함 하는 `ID` 필드입니다.  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/example_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
 ## <a name="see-also"></a>참고자료
 - [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

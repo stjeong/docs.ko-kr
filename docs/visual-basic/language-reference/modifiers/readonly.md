@@ -10,12 +10,12 @@ helpviewer_keywords:
 - properties [Visual Basic], read-only
 - read-only variables
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
-ms.openlocfilehash: 741374cc375e33868239161af23a38af7680b290
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c4f13964c09b60d02cd5e9f5fc9e2998d7758c3d
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54684069"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979309"
 ---
 # <a name="readonly-visual-basic"></a>ReadOnly(Visual Basic)
 변수 또는 속성을 읽을 수 있지만 기록 되지 않습니다 지정 합니다.  
@@ -24,7 +24,8 @@ ms.locfileid: "54684069"
   
 ## <a name="rules"></a>규칙  
   
--   **선언 컨텍스트입니다.** `ReadOnly`는 모듈 수준에서만 사용할 수 있습니다. 즉, 선언 컨텍스트는 `ReadOnly` 요소 클래스, 구조체 또는 모듈 이어야 하며 원본 파일, 네임 스페이스 또는 프로시저 수는 없습니다.  
+-   **선언 컨텍스트입니다.** 
+  `ReadOnly`는 모듈 수준에서만 사용할 수 있습니다. 즉, 선언 컨텍스트는 `ReadOnly` 요소 클래스, 구조체 또는 모듈 이어야 하며 원본 파일, 네임 스페이스 또는 프로시저 수는 없습니다.  
   
 -   **결합 된 한정자입니다.** 지정할 수 없습니다 `ReadOnly` 와 함께 `Static` 같은 선언에 있습니다.  
   
@@ -53,9 +54,10 @@ ms.locfileid: "54684069"
 ## <a name="example"></a>예제  
  다음 예제에서는 정의 `ReadOnly` 직원 고용 날짜에 대 한 속성입니다. 속성 값을 내부적으로 클래스 저장소는 `Private` 변수와 유일한 코드 클래스 내에서 해당 값을 변경할 수 있습니다. 그러나 속성은 `Public`, 클래스에 액세스할 수 있는 모든 코드는 속성을 읽을 수 있습니다.  
   
- [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/VisualBasic/readonly_1.vb)]  
+ [!code-vb[VbVbalrKeywords#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#4)]  
   
- `ReadOnly` 한정자는 다음 컨텍스트에서 사용할 수 있습니다.  
+ 
+  `ReadOnly` 한정자는 다음 컨텍스트에서 사용할 수 있습니다.  
   
  [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
@@ -63,4 +65,4 @@ ms.locfileid: "54684069"
   
 ## <a name="see-also"></a>참고자료
 - [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
-- [키워드](../../../visual-basic/language-reference/keywords/index.md)
+- [C++ 키워드](../../../visual-basic/language-reference/keywords/index.md)

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - loops, exiting
 - Loop keyword [Visual Basic], Do...Loop statement
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
-ms.openlocfilehash: 8c965dc89794654127e4b872c6aebf55c8902468
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c7c7987508260a0181904feacf3782f66066309f
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54525152"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968207"
 ---
 # <a name="doloop-statement-visual-basic"></a>Do...Loop 문(Visual Basic)
 반복 하는 동안 문 블록을 한 `Boolean` 조건은 `True` 조건이 있을 때까지 또는 `True`합니다.  
@@ -55,8 +55,10 @@ Loop { While | Until } condition
 |용어|정의|  
 |---|---|  
 |`Do`|필수 요소. 정의의 시작을 `Do` 루프입니다.|  
-|`While`|`Until`를 사용하는 경우를 제외하고는 필수입니다. 될 때까지 루프 반복 `condition` 는 `False`합니다.|  
-|`Until`|`While`를 사용하는 경우를 제외하고는 필수입니다. 될 때까지 루프 반복 `condition` 는 `True`합니다.|  
+|`While`|
+  `Until`를 사용하는 경우를 제외하고는 필수입니다. 될 때까지 루프 반복 `condition` 는 `False`합니다.|  
+|`Until`|
+  `While`를 사용하는 경우를 제외하고는 필수입니다. 될 때까지 루프 반복 `condition` 는 `True`합니다.|  
 |`condition`|선택 사항입니다. `Boolean` 식입니다. 하는 경우 `condition` 됩니다 `Nothing`, Visual Basic로 처리 `False`합니다.|  
 |`statements`|선택 사항입니다. While 또는 until 반복 되는 하나 이상의 문을 `condition` 는 `True`합니다.|  
 |`Continue Do`|선택 사항입니다. 다음 반복으로 제어를 전송 합니다 `Do` 루프입니다.|  
@@ -89,22 +91,22 @@ Loop { While | Until } condition
 ## <a name="example"></a>예제  
  다음 예제에서는 루프에서 문을 계속 실행 될 때까지 `index` 변수 10 보다 큽니다. `Until` 루프의 끝에 절이 있습니다.  
   
- [!code-vb[VbVbalrStatements#131](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#131](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#131)]  
   
 ## <a name="example"></a>예제  
  다음 예에서는 `While` 절 대신는 `Until` 절 및 `condition` 끝 대신 루프의 시작 부분에서 테스트 합니다.  
   
- [!code-vb[VbVbalrStatements#132](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#132](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#132)]  
   
 ## <a name="example"></a>예제  
  다음 예에서 `condition` 루프를 중지 때는 `index` 변수가 100을 초과 합니다. 그러나 `If` 루프에서 문을 사용 하면는 `Exit Do` 문의 인덱스 변수는 10 보다 큰 경우에 루프를 중지 합니다.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#133](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#133)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 텍스트 파일에 모든 줄을 읽습니다. <xref:System.IO.File.OpenText%2A> 메서드는 파일을 열고 반환을 <xref:System.IO.StreamReader> 문자를 읽고 있는 합니다. 에 `Do...Loop` 조건을 <xref:System.IO.StreamReader.Peek%2A> 메서드는 `StreamReader` 추가 문자가 있는지 여부를 결정 합니다.  
   
- [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#134](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#134)]  
   
 ## <a name="see-also"></a>참고자료
 - [루프 구조](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

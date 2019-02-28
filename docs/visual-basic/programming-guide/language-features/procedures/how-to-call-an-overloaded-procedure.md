@@ -8,12 +8,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure calls [Visual Basic], overloaded
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-ms.openlocfilehash: 8320bc550c818fd2bea53f75107709eab8456096
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f13fdae9617fa2af21978979cad6f90a15140a4a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706419"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970001"
 ---
 # <a name="how-to-call-an-overloaded-procedure-visual-basic"></a>방법: 오버 로드 된 프로시저 호출 (Visual Basic)
 프로시저 오버 로드의 장점은 호출의 유연한입니다. 호출 코드를 프로시저에 전달 하 고 단일 프로시저 이름을 전달 하는 어떤 인수 없이 호출 하는 데 필요한 정보를 가져올 수 있습니다.  
@@ -28,9 +28,9 @@ ms.locfileid: "54706419"
   
      다음 예제에서는 합니다 `post` 프로시저에서 선언 [방법: 여러 버전의 프로시저 정의](./how-to-define-multiple-versions-of-a-procedure.md)합니다. 고객 id를 받아 인지 여부를 확인을 `String` 또는 `Integer`, 한 다음 두 경우 모두 같은 프로시저를 호출 합니다.  
   
-     [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#56)]  
   
-     [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_2.vb)]  
+     [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

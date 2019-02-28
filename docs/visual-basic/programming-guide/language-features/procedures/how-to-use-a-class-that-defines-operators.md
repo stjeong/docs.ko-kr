@@ -11,12 +11,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-ms.openlocfilehash: 372d3f663109597fc2d25c5d75a9efa6b3648682
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 358e81904f48ad844351a20a448b615a0fef8f89
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640684"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972519"
 ---
 # <a name="how-to-use-a-class-that-defines-operators-visual-basic"></a>방법: 연산자 (Visual Basic)를 정의 하는 클래스를 사용 합니다.
 클래스 또는 고유한 연산자를 정의 하는 구조를 사용 하는 경우에 Visual Basic에서 이러한 연산자를 액세스할 수 있습니다.  
@@ -26,9 +26,9 @@ ms.locfileid: "54640684"
 ## <a name="example"></a>예제  
  다음 예제에서는 SQL 구조에 액세스 <xref:System.Data.SqlTypes.SqlString>, 변환 연산자를 정의 하는 ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md)) SQL 문자열 및 Visual Basic 문자열 간에 양방향으로. 사용 하 여 `CType(` *SQL 문자열 식*, `String)` Visual Basic 문자열로 SQL 문자열을 변환 하 고 `CType(` *Visual Basic 문자열 식을*, <xref:System.Data.SqlTypes.SqlString> `)` 반대 방향으로 변환 합니다.  
   
- [!code-vb[VbVbcnProcedures#30](./codesnippet/VisualBasic/how-to-use-a-class-that-defines-operators_1.vb)]  
+ [!code-vb[VbVbcnProcedures#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#30)]  
   
- [!code-vb[VbVbcnProcedures#31](./codesnippet/VisualBasic/how-to-use-a-class-that-defines-operators_2.vb)]  
+ [!code-vb[VbVbcnProcedures#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#31)]  
   
  <xref:System.Data.SqlTypes.SqlString> 구조 정의 변환 연산자 ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md))에서 `String` 에 <xref:System.Data.SqlTypes.SqlString> 에서 다른 <xref:System.Data.SqlTypes.SqlString> 에 `String`입니다. 할당 하는 문을 `title` 하 `jobTitle` 첫 번째 연산자의 사용 및 <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 함수 호출에서는 두 번째입니다.  
   

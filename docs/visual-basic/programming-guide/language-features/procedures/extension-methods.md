@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extending data types [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
-ms.openlocfilehash: c34108b9eb53da77a48afb5d270dce9a32289c99
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a0c1721027307243fbad587afe996cc5f07a6928
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731116"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970550"
 ---
 # <a name="extension-methods-visual-basic"></a>확장 메서드(Visual Basic)
 확장 메서드는 파생된 형식을 새로 만들지 않고 이미 정의 되어 있는 데이터 형식에 사용자 지정 기능을 추가 하는 개발자를 사용 합니다. 확장 메서드 수 있도록 기존 형식의 인스턴스 메서드인 것 처럼 호출할 수 있는 메서드를 작성 합니다.  
@@ -27,17 +27,17 @@ ms.locfileid: "54731116"
 ### <a name="description"></a>설명  
  다음 예제에서는 정의 `Print` 확장을 <xref:System.String> 데이터 형식입니다. 메서드를 사용 하 여 `Console.WriteLine` 문자열로 표시 합니다. 매개 변수를 `Print` 메서드를 `aString`를 확장 하도록 설정 된 <xref:System.String> 클래스입니다.  
   
- [!code-vb[VbVbalrExtensionMethods#1](./codesnippet/VisualBasic/extension-methods_1.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/StringExtensions.vb#1)]  
   
  확장 특성을 사용 하 여 확장 메서드 정의가 표시 됩니다 `<Extension()>`합니다. 메서드가 정의 된 모듈을 표시 하는 것은 선택적 이지만 각 확장 메서드를 표시 합니다. <xref:System.Runtime.CompilerServices> 확장 특성에 액세스 하기 위해 가져올 수 있어야 합니다.  
   
  확장 메서드는 모듈 안에만 선언할 수 있습니다. 일반적으로 확장 메서드가 정의 되어 있는 모듈 호출 되는 것과 동일한 모듈이 아닙니다. 대신 확장 메서드를 포함 하는 모듈을 가져온 가져와야 범위로 가져와야 할 경우. 포함 된 모듈 뒤 `Print` 는 범위에 메서드를 호출할 수와 같은 인수를 사용 하는 일반 인스턴스 메서드인 것 처럼 `ToUpper`:  
   
- [!code-vb[VbVbalrExtensionMethods#2](./codesnippet/VisualBasic/extension-methods_2.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class1.vb#2)]  
   
  다음 예에서 `PrintAndPunctuate`, 확장 이기도 <xref:System.String>,이 이번에 두 개의 매개 변수를 사용 하 여 정의 합니다. 첫 번째 매개 변수를 `aString`를 설정 하는 확장 메서드에서 확장할 <xref:System.String>합니다. 두 번째 매개 변수를 `punc`, 문장 부호 중 여 메서드를 호출할 때 인수로 전달 되는 문자열 이어야 것입니다. 메서드는 문장 뒤에 문자열을 표시 합니다.  
   
- [!code-vb[VbVbalrExtensionMethods#3](./codesnippet/VisualBasic/extension-methods_3.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class2.vb#3)]  
   
  메서드는 문자열 인수에 대 한 전송 하 여 `punc`: `example.PrintAndPunctuate(".")`  
   
@@ -111,7 +111,7 @@ End Module
   
  런타임에 바인딩에서는 확장 메서드를 사용 하는 것이 아닙니다. 다음 예에서 문은 `anObject.PrintMe()` 발생을 <xref:System.MissingMemberException> 예외, 표시 되는 경우 동일한 예외를 두 번째 `PrintMe` 확장 메서드 정의가 삭제 되었습니다.  
   
- [!code-vb[VbVbalrExtensionMethods#9](./codesnippet/VisualBasic/extension-methods_4.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class6.vb#9)]  
   
 ## <a name="best-practices"></a>모범 사례  
  확장 메서드는 기존 형식을 확장 하는 편리 하 고 강력한 방법을 제공 합니다. 그러나이 성공적으로 사용 하려면 일부의 사항이 있습니다 고려해 야 합니다. 이러한 고려 사항은 주로 클래스 라이브러리 작성에 적용 되지만 확장 메서드를 사용 하는 모든 응용 프로그램에 영향을 줄 수 있습니다.  
@@ -131,23 +131,23 @@ End Module
 ## <a name="extension-methods-instance-methods-and-properties"></a>확장 메서드, 인스턴스 메서드 및 속성  
  범위 내 인스턴스 메서드에 호출 문의 인수와 호환 되는 서명에 있는 경우 인스턴스 메서드는 모든 확장 메서드보다 선택 됩니다. 인스턴스 메서드가 확장 메서드를 더 잘 일치 하는 경우에 우선 순위를 있습니다. 다음 예에서 `ExampleClass` 라는 인스턴스 메서드를 포함 `ExampleMethod` 매개 변수 형식이 있는 `Integer`합니다. 확장 메서드 `ExampleMethod` 확장 `ExampleClass`, 형식의 매개 변수가 하나이 고 `Long`입니다.  
   
- [!code-vb[VbVbalrExtensionMethods#4](./codesnippet/VisualBasic/extension-methods_5.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class4.vb#4)]  
   
  첫 번째 호출은 `ExampleMethod` 하기 때문에 다음 코드에서 확장 메서드를 호출 `arg1` 됩니다 `Long` 와 호환 됩니다는 `Long` 확장 메서드의 매개 변수입니다. 두 번째 호출 `ExampleMethod` 에 `Integer` 인수를 `arg2`, 인스턴스 메서드를 호출 합니다.  
   
- [!code-vb[VbVbalrExtensionMethods#5](./codesnippet/VisualBasic/extension-methods_6.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class4.vb#5)]  
   
  이제 역방향 두 메서드에 있는 매개 변수의 데이터 형식:  
   
- [!code-vb[VbVbalrExtensionMethods#6](./codesnippet/VisualBasic/extension-methods_7.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class5.vb#6)]  
   
  이번 `Main` 번 모두 인스턴스 메서드를 호출 합니다. 이므로 둘 다 `arg1` 및 `arg2` 확대 변환이 있는 `Long`, 인스턴스 메서드가 확장 메서드 두 경우 모두 보다 우선 합니다.  
   
- [!code-vb[VbVbalrExtensionMethods#7](./codesnippet/VisualBasic/extension-methods_8.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Class5.vb#7)]  
   
  따라서 확장 메서드는 기존 인스턴스 메서드를 바꿀 수 없습니다. 그러나 확장 메서드가 인스턴스 메서드와 동일한 이름이 되었으나 서명을 충돌 하지 않는 경우 두 방법 모두를 액세스할 수 있습니다. 예를 들어 경우 클래스 `ExampleClass` 라는 메서드가 있는 `ExampleMethod` 아니요 인수, 동일한 이름의 확장 메서드를 사용 하지만 다음 코드와 같이 서로 다른 서명 허용 됩니다.  
   
- [!code-vb[VbVbalrExtensionMethods#8](./codesnippet/VisualBasic/extension-methods_9.vb)]  
+ [!code-vb[VbVbalrExtensionMethods#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/Module3.vb#8)]  
   
  이 코드에서 출력을 아래와 같습니다.  
   

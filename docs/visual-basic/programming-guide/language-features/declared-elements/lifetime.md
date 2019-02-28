@@ -10,12 +10,12 @@ helpviewer_keywords:
 - lifetime [Visual Basic], Visual Basic
 - lifetime [Visual Basic]
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
-ms.openlocfilehash: 4c52d426fe5194a6eb61b232b8f17669b4477f16
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 15fb6895836de95d37081c44973f455622da178e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54667390"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56976046"
 ---
 # <a name="lifetime-in-visual-basic"></a>Visual Basic의 수명
 합니다 *수명* 선언 된 요소의 기간 자신이 하는 동안 사용할 수 있습니다. 변수는 수명이 하는 유일한 요소입니다. 이 목적을 위해 컴파일러가 처리 프로시저 매개 변수 및 변수의 특별 한 경우로 반환 합니다. 변수의 수명 값을 보관할 수 있는 기간을 나타냅니다. 해당 값은 해당 수명 동안 변경할 수 있지만 항상 어떤 값을 가집니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "54667390"
  다음 예제에서는 사용 하 여 변수를 선언 합니다 [정적](../../../../visual-basic/language-reference/modifiers/static.md) 키워드입니다. (참고 필요 하지 않은 `Dim` 키워드 때를 [Dim 문](../../../../visual-basic/language-reference/statements/dim-statement.md) 와 같은 한정자를 사용 하 여 `Static`.)  
   
 ### <a name="code"></a>코드  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
+ [!code-vb[VbVbalrKeywords#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#13)]  
   
 ### <a name="comments"></a>설명  
  변수, 이전 예제의 `applesSold` 계속 절차 다음에 나오는 존재 `runningTotal` 호출 코드로 반환 합니다. 다음 번 `runningTotal` 가 호출 `applesSold` 는 이전에 계산 된 값을 유지 합니다.  

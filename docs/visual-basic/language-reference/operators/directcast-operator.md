@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - DirectCast keyword [Visual Basic]
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
-ms.openlocfilehash: 4b8ffbe018872c3ae467fb9bf15e3b03595fd640
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 03e632bad538f65d010dfaa12f7eb5da15c11091
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54659776"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979829"
 ---
 # <a name="directcast-operator-visual-basic"></a>DirectCast 연산자(Visual Basic)
 상속 또는 구현에 따라 형식 변환 작업을 소개 합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "54659776"
 ## <a name="example"></a>예제  
  다음 예제에서는 두 개의 사용 `DirectCast`, 런타임에 하나는 실패 하는 성공 합니다.  
   
- [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/VisualBasic/directcast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#1)]  
   
  런타임 형식의 이전 예제의 `q` 는 `Double`합니다. `CType` 때문에 성공 `Double` 변환할 수 `Integer`입니다. 그러나 첫 번째 `DirectCast` 런타임 유형의 때문에 런타임에 실패 `Double` 사용 하 여 상속 관계가 없는 `Integer`한 변환이 존재 하는 경우에 합니다. 두 번째 `DirectCast` 형식에서 변환 되기 때문에 성공 <xref:System.Windows.Forms.Form> 입력할 <xref:System.Windows.Forms.Control>, 올 <xref:System.Windows.Forms.Form> 상속 합니다.  
   

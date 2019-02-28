@@ -1,5 +1,5 @@
 ---
-title: ICorDebugAssembly2 Interface1
+title: ICorDebugAssembly2 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugAssembly2
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3746717bdf62c59103374f74bbabdb3a7ae1ad61
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6980b78dc416e03df578756b7a2ee45a48a4fd5a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554026"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56967141"
 ---
-# <a name="icordebugassembly2-interface1"></a>ICorDebugAssembly2 Interface1
+# <a name="icordebugassembly2-interface"></a>ICorDebugAssembly2 인터페이스
+
 어셈블리를 나타냅니다. 이 인터페이스는 ICorDebugAssembly 인터페이스의 확장입니다.  
   
 ## <a name="methods"></a>메서드  

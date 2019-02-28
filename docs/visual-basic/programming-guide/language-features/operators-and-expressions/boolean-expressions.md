@@ -14,22 +14,22 @@ helpviewer_keywords:
 - operators [Visual Basic], Boolean
 - Visual Basic code, expressions
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
-ms.openlocfilehash: a86df2734d315e5fed0784b0394bb305b15562a9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 065df7d6217dd6f817dee1d11dd0fd4a68b6323c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54562754"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965542"
 ---
 # <a name="boolean-expressions-visual-basic"></a>부울 식(Visual Basic)
 A *부울 식* 값으로 계산 되는 식의 [Boolean 데이터 형식](../../../../visual-basic/language-reference/data-types/boolean-data-type.md): `True` 또는 `False`합니다. `Boolean` 식에는 여러 가지 형식을 취할 수 있습니다. 가장 간단한 방법은 값에 대 한 직접 비교는 `Boolean` 변수를 `Boolean` 리터럴, 다음 예제에서와 같이 합니다.  
   
- [!code-vb[VbVbalrOperators#87](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_1.vb)]  
+ [!code-vb[VbVbalrOperators#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#87)]  
   
 ## <a name="two-meanings-of-the--operator"></a>두 가지 의미는 = 연산자  
  대입문은 `newCustomer = True` 앞의 예제에서 식과 동일 하지만 다른 함수를 수행 하 고 다르게 사용 됩니다. 이전 예제에서는 식 `newCustomer = True` 부울 값을 나타내는 및 `=` 기호는 비교 연산자로 해석 됩니다. 독립 실행형 문에 `=` 로그인 대입 연산자로 해석 되 고 왼쪽에 있는 변수에 오른쪽에 있는 값을 할당 합니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#88](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_2.vb)]  
+ [!code-vb[VbVbalrOperators#88](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#88)]  
   
  자세한 내용은 참조 하세요. [값 비교](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md) 하 고 [문을](../../../../visual-basic/language-reference/statements/index.md)합니다.  
   
@@ -50,7 +50,7 @@ A *부울 식* 값으로 계산 되는 식의 [Boolean 데이터 형식](../../.
 ## <a name="short-circuiting-operators"></a>연산자를 단락 (short-circuiting)  
  논리 연산자 `AndAlso` 하 고 `OrElse` 동작이 라고도 *단락 (short-circuiting)* 합니다. 단락 연산자는 먼저 왼쪽된 피연산자를 계산 합니다. 경우 전체 식의 값을 결정 하는 왼쪽된 피연산자, 오른쪽 식의 계산 하지 않고 프로그램 실행이 계속 합니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#89](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_3.vb)]  
+ [!code-vb[VbVbalrOperators#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#89)]  
   
  앞의 예제는 연산자는 왼쪽된에 있는 식 계산 `45 < 12`합니다. 왼쪽에 있는 식이 때문 `False`, 전체 논리식 이어야 `False`합니다. 프로그램 실행 내에서 코드 실행을 건너뜁니다 따라서 합니다 `If` 오른쪽에 있는 식을 계산 하지 않고 블록 `testFunction(3)`합니다. 이 예제를 호출 하지 않습니다 `testFunction()` 왼쪽된 식에는 전체 식을 falsifies 때문입니다.  
   
@@ -59,7 +59,7 @@ A *부울 식* 값으로 계산 되는 식의 [Boolean 데이터 형식](../../.
 ### <a name="comparison-with-non-short-circuiting-operators"></a>비-단락-(short-circuit) 연산자를 사용 하 여 비교  
  논리 연산자의 양쪽 모두 평가 되는 반면 때 논리 연산자 `And` 고 `Or` 사용 됩니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#90](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_4.vb)]  
+ [!code-vb[VbVbalrOperators#90](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#90)]  
   
  위의 예제에서는 호출 `testFunction()` 왼쪽에 있는 식이 `False`합니다.  
   

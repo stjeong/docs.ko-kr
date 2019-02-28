@@ -1,5 +1,5 @@
 ---
-title: ICorDebugFunction2 Interface1
+title: ICorDebugFunction2 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugFunction2
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 190e2323fb07dbca6e156d7a24397997e54b6da9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d051c7d61d6ade1fc0d313c47125d9c196bcca1d
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540795"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979590"
 ---
-# <a name="icordebugfunction2-interface1"></a>ICorDebugFunction2 Interface1
+# <a name="icordebugfunction2-interface"></a>ICorDebugFunction2 인터페이스
+
 내 코드만 단계별 디버깅에 대 한 지원을 제공 하는 사용자 코드가 아닌 건너뜁니다 ICorDebugFunction 인터페이스를 논리적으로 확장 합니다.  
   
 ## <a name="methods"></a>메서드  

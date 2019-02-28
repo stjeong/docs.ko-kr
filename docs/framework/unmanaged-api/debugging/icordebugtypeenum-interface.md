@@ -1,5 +1,5 @@
 ---
-title: ICorDebugTypeEnum Interface1
+title: ICorDebugTypeEnum 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugTypeEnum
@@ -16,14 +16,14 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d8196267d1b7bd6ac2fb66fe8e099330e531b722
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e9fd108e488cc83dfb55e48fa14df30e085ec1d9
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54513189"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978953"
 ---
-# <a name="icordebugtypeenum-interface1"></a>ICorDebugTypeEnum Interface1
+# <a name="icordebugtypeenum-interface"></a>ICorDebugTypeEnum 인터페이스
 "ICorDebugEnum" 메서드를 구현 하 고 "ICorDebugType" 배열을 열거 합니다.  
   
 ## <a name="methods"></a>메서드  

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - = operator [Visual Basic]
 - = assignment statements [Visual Basic]
 ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
-ms.openlocfilehash: 58dcdfd21fd8701c6ac391672e768819f696aab9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5e6d34802f5f82373d0e8176f3b732a327c55d01
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643554"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56964996"
 ---
 # <a name="-operator-visual-basic"></a>= 연산자(Visual Basic)
 변수 또는 속성에 값을 할당 합니다.  
@@ -43,7 +43,7 @@ variableorproperty = value
 ## <a name="example"></a>예제  
  다음 예제에서는 대입 연산자를 보여 줍니다. 오른쪽 값을 왼쪽에 있는 변수에 할당 됩니다.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#9)]  
   
 ## <a name="see-also"></a>참고자료
 - [&= 연산자](../../../visual-basic/language-reference/operators/and-assignment-operator.md)

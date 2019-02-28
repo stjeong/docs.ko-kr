@@ -1,16 +1,16 @@
 ---
-title: 프로그래밍 개념(Visual Basic)
-ms.date: 07/20/2015
+title: 프로그래밍 개념-Visual Basic
+ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
 ---
 # <a name="programming-concepts-visual-basic"></a>프로그래밍 개념(Visual Basic)
+
 이 섹션에서는 Visual Basic 언어의 프로그래밍 개념을 설명합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
   
 |제목|설명|  
 |-----------|-----------------|  
-|[.NET 어셈블리](../../../standard/assembly/index.md)|어셈블리를 만들고 사용하는 방법을 설명합니다.|  
 |[Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)|[Async](../../../visual-basic/language-reference/modifiers/async.md) 및 [Await](../../../visual-basic/language-reference/operators/await-operator.md) 키워드를 사용하여 비동기 솔루션을 작성하는 방법을 설명합니다. 연습이 포함되어 있습니다.|  
 |[특성 개요(Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|특성을 사용하여 형식, 필드, 메서드 및 속성 등의 요소를 프로그래밍하는 방법에 대한 추가 정보를 제공하는 방법을 설명합니다.|  
 |[호출자 정보(Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md)|메서드의 호출자에 대한 정보를 가져오는 방법을 설명합니다. 이 정보에는 소스 코드의 파일 경로와 줄 번호 및 호출자의 멤버 이름이 포함됩니다.|  
@@ -27,4 +27,5 @@ ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
   
 |||  
 |---|---|  
+|[.NET 어셈블리](../../../standard/assembly/index.md)|어셈블리를 만들고 사용하는 방법을 설명합니다.|  
 |[성능 팁](../../../framework/performance/performance-tips.md) | 애플리케이션의 성능을 향상시키는 데 도움이 되는 여러 가지 기본 규칙에 대해 설명합니다.|

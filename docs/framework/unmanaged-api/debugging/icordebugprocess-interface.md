@@ -1,5 +1,5 @@
 ---
-title: ICorDebugProcess Interface1
+title: ICorDebugProcess 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugProcess
@@ -16,14 +16,14 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ae3f64b466e0d356b540cc9d6f3db881e27ac4aa
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7dc732a8e3419a7ca42f5180d1bd32128ec33417
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54709821"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56967518"
 ---
-# <a name="icordebugprocess-interface1"></a>ICorDebugProcess Interface1
+# <a name="icordebugprocess-interface"></a>ICorDebugProcess 인터페이스
 관리 코드를 실행하는 프로세스를 나타냅니다. 이 인터페이스는 ICorDebugController의 서브 클래스입니다.  
   
 ## <a name="methods"></a>메서드  

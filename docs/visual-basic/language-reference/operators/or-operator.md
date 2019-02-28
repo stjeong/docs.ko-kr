@@ -15,12 +15,12 @@ helpviewer_keywords:
 - logical disjunction
 - disjunction operator [Visual Basic]
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
-ms.openlocfilehash: c2af3864ef19dbf835397968af0913cd62994305
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cbfc94ad70695e9a785375f2460f9f9d8f3a20c5
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54494433"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977541"
 ---
 # <a name="or-operator-visual-basic"></a>Or 연산자(Visual Basic)
 두 논리합 연산을 수행 `Boolean` 식이나 두 숫자 식의 비트 논리합 연산을 수행 합니다.  
@@ -33,13 +33,13 @@ result = expression1 Or expression2
   
 ## <a name="parts"></a>요소  
  `result`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다. 에 대 한 `Boolean` 반면 `result` 가 2의 포함 논리합 `Boolean` 값입니다. 비트 연산의 경우 `result` 두 숫자 비트 패턴의 포함 비트 논리합을 나타내는 숫자 값입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다. 에 대 한 `Boolean` 반면 `result` 가 2의 포함 논리합 `Boolean` 값입니다. 비트 연산의 경우 `result` 두 숫자 비트 패턴의 포함 비트 논리합을 나타내는 숫자 값입니다.  
   
  `expression1`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다.  
   
  `expression2`  
- 필수. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수. 모든 `Boolean` 또는 숫자 식입니다.  
   
 ## <a name="remarks"></a>설명  
  에 대 한 `Boolean` 반면 `result` 됩니다 `False` 두 경우에 `expression1` 및 `expression2` 평가 `False`합니다. 다음 표에서 설명 하는 방법을 `result` 결정 됩니다.  
@@ -77,14 +77,14 @@ result = expression1 Or expression2
 ## <a name="example"></a>예제  
  다음 예제에서는 `Or` 두 식에 포함 논리합 연산을 수행 하는 연산자입니다. 결과 `Boolean` 나타내는 두 식 중 하나 인지 `True`.  
   
- [!code-vb[VbVbalrOperators#35](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#35)]  
   
  앞의 예제 결과 생성 `True`, `True`, 및 `False`, 각각.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Or` 연산자에서 두 숫자 식의 개별 비트를 포함 논리합 연산을 수행 합니다. 피연산자의 해당 비트 중 1로 설정 된 경우 결과 패턴의 비트가 설정 됩니다.  
   
- [!code-vb[VbVbalrOperators#36](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#36)]  
   
  앞의 예제는 각각 10, 14 및 14의 결과 생성합니다.  
   

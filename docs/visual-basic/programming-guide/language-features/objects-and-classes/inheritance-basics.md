@@ -20,12 +20,12 @@ helpviewer_keywords:
 - abstract classes [Visual Basic], inheritance
 - overriding, Overrides keyword
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
-ms.openlocfilehash: ae6b53db3a2cdcefa2b05d68ed953c5e17b279dc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3d772fb81eb13b9454f44ff8ae4256bdb4144caa
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54551789"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970300"
 ---
 # <a name="inheritance-basics-visual-basic"></a>상속 기본 사항(Visual Basic)
 `Inherits` 문을 사용 하 라는 새 클래스를 선언 하는 *파생 클래스*라고 하는 기존 클래스에 따라를 *기본 클래스*. 파생된 클래스 상속 하 고 속성, 메서드, 이벤트, 필드 및 기본 클래스에 정의 된 상수 확장할 수 있습니다. 다음 섹션에서 설명한 상속에 대 한 규칙의 일부 및 방식으로 클래스를 변경 하 여 한정자를 상속 하거나 상속 됩니다.  
@@ -62,14 +62,14 @@ ms.locfileid: "54551789"
   
  다음 예제에서는 기본 클래스를 정의 `Payroll,` 및 파생된 클래스 `BonusPayroll`에서 상속된 된 메서드를 재정의 하는 `PayEmployee`합니다. 프로시저를 `RunPayroll`만들고 전달 합니다는 `Payroll` 개체 및 `BonusPayroll` 함수에 개체 `Pay`를 실행 하는 `PayEmployee` 두 개체의 메서드.  
   
- [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_1.vb)]  
+ [!code-vb[VbVbalrOOP#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#28)]  
   
 ## <a name="the-mybase-keyword"></a>MyBase 키워드  
  `MyBase` 키워드는 클래스의 현재 인스턴스의 기본 클래스를 참조 하는 개체 변수 처럼 동작 합니다. `MyBase` 파생된 클래스에서 섀도 처리 되거나 재정의 되는 기본 클래스 멤버 액세스에 자주 사용 됩니다. 특히 `MyBase.New` 파생된 클래스 생성자에서 기본 클래스 생성자를 명시적으로 호출 하는 데 사용 됩니다.  
   
  예를 들어, 기본 클래스에서 상속 된 메서드를 재정의 하는 파생된 클래스를 디자인 하는 합니다. 재정의 된 메서드는 기본 클래스의 메서드를 호출 하 고 다음 코드 조각에 표시 된 대로 반환 값을 수정할 수 있습니다.  
   
- [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_2.vb)]  
+ [!code-vb[VbVbalrOOP#109](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#109)]  
   
  다음은 사용 제한을 설명 합니다. `MyBase`:  
   

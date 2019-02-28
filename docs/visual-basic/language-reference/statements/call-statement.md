@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Call statement [Visual Basic]
 - procedures [Visual Basic], calling
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
-ms.openlocfilehash: e706650ac6da84d9b4e77fc549811e731be61b92
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6d8fd8060789c4035fd38e41c5de7e43f6330e64
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54594163"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977021"
 ---
 # <a name="call-statement-visual-basic"></a>Call 문(Visual Basic)
 컨트롤을 전송 하는 `Function`, `Sub`, 또는 동적 연결 라이브러리 (DLL) 프로시저.  
@@ -41,7 +41,7 @@ ms.locfileid: "54594163"
 ## <a name="example"></a>예제  
  다음 코드는 두 가지 예제를 보여 줍니다. 여기서는 `Call` 키워드는 프로시저를 호출 하는 데 필요한 합니다. 두 예제에서는 호출된 식 식별자를 사용 하 여 시작 되지 않습니다.  
   
- [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#97](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#97)]  
   
 ## <a name="see-also"></a>참고자료
 - [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: b49475bf7aea8d28ce057c7d4376cf7ad8285a0a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 362d241d1da01ea935ab3bb3dcdfcba30cb8c67e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54506253"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975149"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>LINQ 쿼리 처음 작성(Visual Basic)
 *쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 전용된 쿼리 언어로 표현 됩니다. 시간이 지남에 따라 다른 언어가 개발 되었습니다 다양 한 유형의 데이터 원본에 대 한 예를 들어, 관계형 데이터베이스에 대 한 SQL 및 XML에 대 한 XQuery입니다. 이렇게 하면 응용 프로그램 개발자가 각 유형의 데이터 원본 또는 지원 되는 데이터 형식에 대 한 새 쿼리 언어를 배울 필요 합니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "54506253"
 > [!NOTE]
 >  에 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), 했는지 **Option infer** 로 설정 되어 **에서**합니다.  
   
- [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
+ [!code-vb[VbLINQFirstQuery#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#1)]  
   
  출력:  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54506253"
   
  원본 데이터를 이미 구현 하지 않는 경우 <xref:System.Collections.Generic.IEnumerable%601>, [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자의 기능을 구현 하는 데 필요한 합니다 *표준 쿼리 연산자* 해당 데이터 원본에 대 한 합니다. 예를 들어 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 를 쿼리 가능한 XML 문서를 로드 하는 작업 처리 <xref:System.Xml.Linq.XElement> 다음 예제에서와 같이 입력 합니다. 표준 쿼리 연산자에 대 한 자세한 내용은 참조 하세요. [표준 쿼리 연산자 개요 (Visual Basic)](standard-query-operators-overview.md)합니다.  
   
- [!code-vb[VbLINQFirstQuery#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_2.vb)]  
+ [!code-vb[VbLINQFirstQuery#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#2)]  
   
  사용 하 여 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]에 개체 관계형 매핑을 디자인 타임에 수동으로 또는 사용 하 여 먼저 만들어야 합니다 [LINQ to SQL 도구 Visual Studio에서](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2) Visual Studio에서. 개체에 대해 쿼리를 작성하면 런타임에 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]에서 데이터베이스와의 통신을 처리합니다. 다음 예에서 `customers` 데이터베이스의 특정 테이블을 나타내며 및 <xref:System.Data.Linq.Table%601> 지 원하는 일반 <xref:System.Linq.IQueryable%601>합니다.  
   
@@ -67,7 +67,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  다음 예제에서는 쿼리에서 정수 배열에서 모든 짝수를 반환 합니다 실행 될 때 `numbers`합니다.  
   
- [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
+ [!code-vb[VbLINQFirstQuery#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#1)]  
   
  세 가지 절을 포함 하는 쿼리 식: `From`, `Where`, 및 `Select`합니다. 특정 함수 및 각 쿼리 식 절의 용도 설명 되어 [기본 쿼리 작업 (Visual Basic)](basic-query-operations.md)합니다. 자세한 내용은 [쿼리](../../../../visual-basic/language-reference/queries/index.md)합니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], 쿼리 정의 종종은 변수에 저장 하 고 나중에 실행 합니다. 쿼리 변수를 같은 `evensQuery` 이전 예에서 쿼리 가능 형식 이어야 합니다. 유형의 `evensQuery` 는 `IEnumerable(Of Integer)`, 지역 형식 유추를 사용 하 여 컴파일러에서 할당 합니다.  
   
@@ -79,13 +79,13 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
 ### <a name="deferred-execution"></a>지연된 실행  
  일반적인 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리는 이전 예제에서는 한 선언과 유사 `evensQuery` 정의 됩니다. 이 쿼리를 만들지만 즉시 실행 되지 않습니다. 대신 쿼리 정의가 쿼리 변수에 저장 됩니다 `evensQuery`합니다. 쿼리를 실행할 때는 나중에 일반적으로 사용 하 여는 `For Each` 와 같은 표준 쿼리 연산자를 적용 하거나 값의 시퀀스를 반환 하는 루프 `Count` 또는 `Max`합니다. 이 프로세스 라고 *지연 된 실행*합니다.  
   
- [!code-vb[VbLINQFirstQuery#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_3.vb)]  
+ [!code-vb[VbLINQFirstQuery#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#7)]  
   
  값의 시퀀스를 반복 변수를 사용 하 여 검색된 데이터에 액세스 합니다 `For Each` 루프 (`number` 이전 예제에서). 때문에 쿼리 변수를 `evensQuery`, 쿼리 결과 보다는 쿼리 정의 보유 한 번만 쿼리 변수를 사용 하 여 원하는 만큼 자주 쿼리를 실행할 수 있습니다. 예를 들어, 별도 응용 프로그램에서 지속적으로 업데이트 되는 응용 프로그램에서 데이터베이스가 있을 수 있습니다. 데이터베이스에서 데이터를 검색 하는 쿼리를 만든 후 사용할 수 있습니다는 `For Each` 루프를 반복적으로 쿼리를 실행 될 때마다 최신 데이터를 검색 합니다.  
   
  다음 예제에서는 어떻게 지연 된 실행 작동 합니다. 후 `evensQuery2` 정의 되 고 사용 하 여 실행을 `For Each` 데이터 원본에서 일부 요소 앞의 예에서 같이 루프 `numbers` 변경 됩니다. 다음 두 번째 `For Each` 루프가 실행 `evensQuery2` 다시 합니다. 결과 서로 다른 두 번째로 때문에 합니다 `For Each` 루프가 쿼리를 다시 실행, 새 값을 사용 하 여 `numbers`입니다.  
   
- [!code-vb[VbLINQFirstQuery#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_4.vb)]  
+ [!code-vb[VbLINQFirstQuery#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#3)]  
   
  출력:  
   
@@ -102,15 +102,15 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  다음 쿼리는 정수 배열에서 짝수의 개수를 반환합니다. 쿼리 정의 저장 하지 않으면 및 `numEvens` 단순 `Integer`합니다.  
   
- [!code-vb[VbLINQFirstQuery#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_5.vb)]  
+ [!code-vb[VbLINQFirstQuery#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#4)]  
   
  사용 하 여 동일한 결과 얻을 수 있습니다는 `Aggregate` 메서드.  
   
- [!code-vb[VbLINQFirstQuery#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_6.vb)]  
+ [!code-vb[VbLINQFirstQuery#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#5)]  
   
  호출 하 여 쿼리 실행을 강제할 수도 있습니다는 `ToList` 또는 `ToArray` 쿼리를 즉시 또는 다음 코드 에서처럼 쿼리 변수 (지연) 메서드.  
   
- [!code-vb[VbLINQFirstQuery#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_7.vb)]  
+ [!code-vb[VbLINQFirstQuery#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#6)]  
   
  이전 예에서 `evensQuery3` 쿼리 변수 이지만 `evensList` 은 목록 및 `evensArray` 배열.  
   

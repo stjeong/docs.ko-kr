@@ -15,12 +15,12 @@ helpviewer_keywords:
 - execution
 - Resume statement [Visual Basic]
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
-ms.openlocfilehash: ef6a2e22c1394065ba6127aa3dd388b47238dea8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fcb50a9c7e36bab046be25d7f82f91cfe0f9be8e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624797"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966920"
 ---
 # <a name="resume-statement"></a>Resume 문
 오류 처리 루틴을 완료 된 후 실행을 다시 시작 합니다.  
@@ -55,7 +55,7 @@ Resume [ Next | line ]
 ## <a name="example"></a>예제  
  이 예제에서는 `Resume` 문을 프로시저의 오류 처리를 종료 하 고 오류를 발생 시킨 문 사용 하 여 실행을 다시 시작 합니다. 오류 번호 55 사용을 설명 하기 위해 생성 되는 `Resume` 문입니다.  
   
- [!code-vb[VbVbalrErrorHandling#16](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/resume-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#16)]  
   
 ## <a name="requirements"></a>요구 사항  
  **네임스페이스:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

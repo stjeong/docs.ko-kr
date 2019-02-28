@@ -1,5 +1,5 @@
 ---
-title: 확장명 인덱서 속성(Visual Basic)
+title: 확장 인덱서 속성(Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
 - vb.XmlPropertyExtensionIndexer
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - extension indexer [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
-ms.openlocfilehash: 25a868afded83f28f5f56a9f19e050bbd32b24c0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4aa8dd030d95e0404c037b2c8b674463bb51b267
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54490832"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972555"
 ---
-# <a name="extension-indexer-property-visual-basic"></a>확장명 인덱서 속성(Visual Basic)
+# <a name="extension-indexer-property-visual-basic"></a>확장 인덱서 속성(Visual Basic)
 컬렉션의 개별 요소에 액세스할 수 있도록 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -49,7 +49,7 @@ object(index)
 ## <a name="example"></a>예제  
  다음 예제에서는 컬렉션의 두 번째 자식 노드에 액세스 하려면 확장명 인덱서를 사용 하는 방법을 보여 줍니다 <xref:System.Xml.Linq.XElement> 개체입니다. 이라는 모든 자식 요소를 가져오는 자식 축 속성을 사용 하 여 해당 컬렉션에 액세스 `phone` 에 `contact` 개체입니다.  
   
- [!code-vb[VbXMLSamples#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/extension-indexer-property_1.vb)]  
+ [!code-vb[VbXMLSamples#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#24)]  
   
  이 코드의 텍스트는 다음과 같습니다.  
   

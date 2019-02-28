@@ -14,12 +14,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], ByRef
 - arguments [Visual Basic], changing value
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
-ms.openlocfilehash: 42015e2a024ece75a920deb414d326c88f31249e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2548d7a686f3557d154fc4cc15f6fc8026ac46bf
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54528890"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968376"
 ---
 # <a name="how-to-protect-a-procedure-argument-against-value-changes-visual-basic"></a>방법: 값 변경 (Visual Basic)에 대해 프로시저 인수 보호
 프로시저 매개 변수로 선언 하는 경우 [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), Visual Basic 프로시저 코드에 호출 코드에서 인수를 기본 프로그래밍 요소에 대 한 직접 참조를 제공 합니다. 이렇게 하면 인수의 기반이 되는 호출 코드에서 값을 변경 하는 절차입니다. 일부 경우에 호출 코드에서 이러한 변경 으로부터 보호 하기 좋습니다.  
@@ -29,11 +29,11 @@ ms.locfileid: "54528890"
 ## <a name="example"></a>예제  
  다음 예제에서는 요소를 사용 하는 배열 변수를 받아 두 프로시저를 보여 줍니다. `increase` 프로시저 단순히 각 요소에 1을 추가 합니다. 합니다 `replace` 프로시저 매개 변수는 새 배열을 할당 `a()` 다음 각 요소에 하나를 추가 합니다. 그러나 다시 할당 호출 코드에서 기본 배열 변수를 적용 되지 않습니다.  
   
- [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_1.vb)]  
+ [!code-vb[VbVbcnProcedures#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#35)]  
   
- [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_2.vb)]  
+ [!code-vb[VbVbcnProcedures#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#38)]  
   
- [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_3.vb)]  
+ [!code-vb[VbVbcnProcedures#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#37)]  
   
  첫 번째 `MsgBox` 표시 호출 "increase(n) 후: 11, 21, 31, 41". 때문에 배열의 `n` 참조 형식인 `increase` 전달 메커니즘이 해당 멤버를 변경할 수 있습니다 `ByVal`합니다.  
   

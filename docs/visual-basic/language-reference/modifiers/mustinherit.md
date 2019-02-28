@@ -10,12 +10,12 @@ helpviewer_keywords:
 - abstract classes [Visual Basic], MustInherit class
 - MustInherit keyword [Visual Basic]
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
-ms.openlocfilehash: 7a246e2565ec6d96e828654fef74500c4cf896b8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 124262695f9333ce31c4097662688e0fe30f300d
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54627670"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969533"
 ---
 # <a name="mustinherit-visual-basic"></a>MustInherit(Visual Basic)
 클래스는 기본 클래스로 사용할 수는 및에서 직접 개체를 만들 수를 지정 합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "54627670"
 ## <a name="example"></a>예제  
  다음 예제에서는 강제 상속 및 강제 재정의 보여 줍니다. 기본 클래스 `shape` 변수를 정의 `acrossLine`합니다. 클래스 `circle` 하 고 `square` 에서 파생 `shape`합니다. 정의의 상속 `acrossLine`에서 함수를 정의 해야 하지만 `area` 계산 각 종류의 모양에 대 한 다르기 때문입니다.  
   
- [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/VisualBasic/mustinherit_1.vb)]  
+ [!code-vb[VbVbalrKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#2)]  
   
  선언할 수 있습니다 `shape1` 하 고 `shape2` 형식으로 `shape`입니다. 그러나 개체를 만들 수 없습니다 `shape` 함수의 기능을 포함 하지 않으므로 `area` 표시 되 고 `MustInherit`입니다.  
   
@@ -50,5 +50,5 @@ ms.locfileid: "54627670"
 ## <a name="see-also"></a>참고자료
 - [Inherits 문](../../../visual-basic/language-reference/statements/inherits-statement.md)
 - [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
-- [키워드](../../../visual-basic/language-reference/keywords/index.md)
+- [C++ 키워드](../../../visual-basic/language-reference/keywords/index.md)
 - [상속 기본 사항](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)

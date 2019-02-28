@@ -1,5 +1,5 @@
 ---
-title: ICorDebugEnum Interface1
+title: ICorDebugEnum 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugEnum
@@ -16,21 +16,22 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 97080f7d850e67d635f9a65ee85ad3ddddbb244d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 38aaa21b655136c63a45a7d36c097769882d8c37
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54732754"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969312"
 ---
-# <a name="icordebugenum-interface1"></a>ICorDebugEnum Interface1
+# <a name="icordebugenum-interface"></a>ICorDebugEnum 인터페이스
+
 디버깅 응용 프로그램에서 사용 되는 열거자에 대 한 추상 기본 인터페이스로 사용 합니다.  
   
 ## <a name="methods"></a>메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[Clone 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|이 `ICorDebugEnum` 개체의 복사본을 만듭니다.|  
+|[Clone 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|이 복사본을 만들고 `ICorDebugEnum` 개체입니다.|  
 |[GetCount 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-getcount-method.md)|열거형의 항목 수를 가져옵니다.|  
 |[Reset 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-reset-method.md)|열거형의 시작 부분에 커서를 이동합니다.|  
 |[Skip 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-skip-method.md)|열거형에서 항목의 지정된 된 수 만큼 앞으로 커서를 이동합니다.|  

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - delegate keyword [Visual Basic]
 - Delegate statement [Visual Basic]
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
-ms.openlocfilehash: 1ed2dc91d1a2ea9bade11902aac553e24c0607ad
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c0fb524961cd04b73a8b83094880d5eaa206fe9c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54583667"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965802"
 ---
 # <a name="delegate-statement"></a>Delegate 문
 대리자를 선언 하는 데 사용 합니다. 대리자는 참조 형식을 참조 하는 `Shared` 메서드 형식 또는 개체의 인스턴스 메서드. 매개 변수 및 반환 형식을 일치 하는 프로시저는이 대리자 클래스의 인스턴스를 만드는 데 사용할 수 있습니다. 다음 대리자 인스턴스를 사용 하 여 프로시저에 나중에 호출할 수 있습니다.  
@@ -57,12 +57,12 @@ ms.locfileid: "54583667"
   
  함수의 시그니처는 대리자 형식의 시그니처와 일치해야 합니다. 람다 식에 대한 자세한 내용은 [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)을 참조하세요.  
   
- 대리자에 대 한 자세한 내용은 참조 하세요. [대리자](../../../visual-basic/programming-guide/language-features/delegates/index.md)합니다.  
+ 대리자에 대한 자세한 내용은 [대리자](../../../visual-basic/programming-guide/language-features/delegates/index.md)를 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Delegate` 두 숫자에서 작동 하 고 숫자로 반환에 대 한 대리자를 선언 하는 문입니다. `DelegateTest` 메서드가 형식의 대리자의 인스턴스를 사용 하 고 숫자의 쌍에서 작동 하는 데 사용 합니다.  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  
   
 ## <a name="see-also"></a>참고자료
 - [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)

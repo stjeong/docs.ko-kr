@@ -26,12 +26,12 @@ helpviewer_keywords:
 - declaration statements [Visual Basic]
 - scalar variables [Visual Basic]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-ms.openlocfilehash: 1252c9a93d9c37923b1fd2940a42f1a33b575b8a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6ee30e885a08d3e8302d7b6083c1c65e525006c5
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54617318"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973433"
 ---
 # <a name="redim-statement-visual-basic"></a>ReDim 문(Visual Basic)
 배열 변수의 저장 공간을 다시 할당합니다.  
@@ -51,9 +51,11 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 |`boundlist`|필수 요소. 다시 정의된 배열의 각 차원에 대한 범위 목록입니다.|  
   
 ## <a name="remarks"></a>설명  
- `ReDim` 문을 사용하여 이미 선언된 배열의 차원 중 하나 이상의 크기를 변경할 수 있습니다. 큰 배열이 있고 요소가 더 이상 필요하지 않은 경우 `ReDim`은 배열 크기를 줄여서 메모리를 확보할 수 있습니다. 반면에 배열에 요소가 더 필요한 경우 `ReDim`은 요소를 추가할 수 있습니다.  
+ 
+  `ReDim` 문을 사용하여 이미 선언된 배열의 차원 중 하나 이상의 크기를 변경할 수 있습니다. 큰 배열이 있고 요소가 더 이상 필요하지 않은 경우 `ReDim`은 배열 크기를 줄여서 메모리를 확보할 수 있습니다. 반면에 배열에 요소가 더 필요한 경우 `ReDim`은 요소를 추가할 수 있습니다.  
   
- `ReDim` 문은 배열에만 사용할 수 있으며 스칼라(단일 값만 포함된 변수), 컬렉션 또는 구조체에서는 유효하지 않습니다. 변수를 `Array` 형식으로 선언하는 경우 `ReDim` 문에는 새 배열을 만들 수 있는 충분한 형식 정보가 없습니다.  
+ 
+  `ReDim` 문은 배열에만 사용할 수 있으며 스칼라(단일 값만 포함된 변수), 컬렉션 또는 구조체에서는 유효하지 않습니다. 변수를 `Array` 형식으로 선언하는 경우 `ReDim` 문에는 새 배열을 만들 수 있는 충분한 형식 정보가 없습니다.  
   
  `ReDim` 은 프로시저 수준에서만 사용할 수 있습니다. 따라서 변수의 선언 컨텍스트는 프로시저여야 하며, 소스 파일, 네임스페이스, 인터페이스, 클래스, 구조체, 모듈 또는 블록일 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
   
@@ -63,7 +65,8 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 -   **배열 범위입니다.** `boundlist`의 각 항목은 해당 차원의 하한과 상한을 지정할 수 있습니다. 하한은 항상 0(영)입니다. 상한은 해당 차원에 가능한 최대 인덱스 값이며 차원의 길이(상한에 1을 더한 값)는 아닙니다. 각 차원의 인덱스는 0부터 상한 값까지 다양할 수 있습니다.  
   
-     `boundlist`의 차원 수는 배열의 원래 차원 수(차수)와 일치해야 합니다.  
+     
+  `boundlist`의 차원 수는 배열의 원래 차원 수(차수)와 일치해야 합니다.  
   
 -   **데이터 형식입니다.** `ReDim` 문은 배열 변수나 배열 요소의 데이터 형식을 변경할 수 없습니다.  
   
@@ -88,9 +91,10 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 ## <a name="example"></a>예제  
  다음 예제에서는 배열의 기존 데이터를 손실하지 않고 동적 배열의 마지막 차원 크기를 늘린 다음 데이터를 부분적으로 손실하며 크기를 줄입니다. 마지막으로 크기를 원래 값으로 다시 줄이고 모든 배열 요소를 다시 초기화합니다.  
   
- [!code-vb[VbVbalrStatements#52](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/redim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#52)]  
   
- `Dim` 문은 차원이 세 개인 새 배열을 만듭니다. 각 차원은 범위 10으로 선언되므로 각 차원의 배열 인덱스는 0에서 10까지의 범위일 수 있습니다. 다음 설명에서는 세 개의 차원이 계층, 행 및 열로 지칭됩니다.  
+ 
+  `Dim` 문은 차원이 세 개인 새 배열을 만듭니다. 각 차원은 범위 10으로 선언되므로 각 차원의 배열 인덱스는 0에서 10까지의 범위일 수 있습니다. 다음 설명에서는 세 개의 차원이 계층, 행 및 열로 지칭됩니다.  
   
  첫 번째 `ReDim`은 `intArray` 변수의 기존 배열을 대체하는 새 배열을 만듭니다. `ReDim`은 기존 배열의 모든 요소를 새 배열에 복사합니다. 또한 모든 계층에 있는 각 행의 끝에 열 10개를 더 추가하고 이러한 새 열의 요소를 0(배열의 요소 형식인 `Integer`의 기본값)으로 초기화합니다.  
   

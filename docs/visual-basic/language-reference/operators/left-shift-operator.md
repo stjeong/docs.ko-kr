@@ -8,12 +8,12 @@ helpviewer_keywords:
 - << operator [Visual Basic]
 - operator <<, Visual Basic left shift operator
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
-ms.openlocfilehash: 494a56ec186bdb82d6794fb5c225789b23cddd0c
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 329cdf1aea9ca97db000bb5ced8d9e8d6b7a4f58
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55259984"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970560"
 ---
 # <a name="-operator-visual-basic"></a>\<\< 연산자 (Visual Basic)
 비트 패턴에 산술 왼쪽된 시프트를 수행합니다.  
@@ -26,13 +26,13 @@ result = pattern << amount
   
 ## <a name="parts"></a>요소  
  `result`  
- 필수 요소. 정수 계열 숫자 값입니다. 비트 패턴을 이동한 결과입니다. 데이터 형식은 `pattern`의 형식과 같습니다.  
+ 필수 요소. 정수 계열 숫자 값입니다. 결과 비트 패턴을 이동한입니다. 데이터 형식이 동일 `pattern`합니다.  
   
  `pattern`  
- 필수 요소. 정수 숫자 식입니다. 이동할 비트 패턴입니다. 데이터 형식은 정수 계열 형식(`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long` 또는 `ULong`)이어야 합니다.  
+ 필수 요소. 정수 계열 숫자 식입니다. 이동할 비트 패턴입니다. 데이터 형식은 정수 계열 형식 이어야 합니다 (`SByte`, `Byte`, `Short`, `UShort`를 `Integer`를 `UInteger`를 `Long`, 또는 `ULong`).  
   
  `amount`  
- 필수. 숫자 식입니다. 비트 패턴을 이동할 비트 수입니다. 데이터 형식은 `Integer`이거나 `Integer`로 확장되어야 합니다.  
+ 필수. 숫자 식입니다. 비트 패턴을 이동할 비트 수입니다. 데이터 형식 이어야 합니다 `Integer` 변환할 또는 `Integer`합니다.  
   
 ## <a name="remarks"></a>설명  
  산술 shifts 순환있지 않습니다 즉, 결과의 한쪽 끝에서 벗어나 이동한 비트는 반대쪽 다시 도입 되지 않습니다. 산술 왼쪽 시프트에서 결과 데이터 형식의 범위를 벗어나는 이동 하는 비트는 무시 되 고 오른쪽 비워진 비트 위치 0으로 설정 됩니다.  
@@ -56,7 +56,7 @@ result = pattern << amount
 ## <a name="example"></a>예제  
  다음 예제에서는 `<<` 연산자 정수 값에 왼쪽 시프트는 산술 연산을 수행 합니다. 결과 항상 동일한 데이터 이동 되는 식의 형식에 있습니다.  
   
- [!code-vb[VbVbalrOperators#12](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#12)]  
   
  이전 예제의 결과 다음과 같습니다.  
   

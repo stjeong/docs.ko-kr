@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: afa4e6cd4e99540030d3a9e151da4bbe711d973a
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: d939063aaefb00d4db3de604df0dbd1b2175bf95
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219830"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981610"
 ---
 # <a name="debugging-interfaces"></a>디버깅 인터페이스
 이 단원에서는 CLR(공용 언어 런타임)에서 실행되는 프로그램의 디버깅을 처리하는 관리되지 않는 인터페이스에 대해 설명합니다.  
@@ -46,10 +46,10 @@ ms.locfileid: "56219830"
  [ICorDebug 인터페이스](icordebug-interface.md)\
  개발자가 CLR 환경에서 응용 프로그램을 디버깅하는 데 사용할 수 있는 메서드를 제공합니다.  
   
- [ICorDebugAppDomain Interface1](icordebugappdomain-interface.md)\
+ [ICorDebugAppDomain 인터페이스](icordebugappdomain-interface.md)\
  응용 프로그램 도메인 디버깅에 사용하는 메서드를 제공합니다.  
   
- [ICorDebugAppDomain2 Interface1](icordebugappdomain2-interface.md)\
+ [ICorDebugAppDomain2 인터페이스](icordebugappdomain2-interface.md)\
  배열, 포인터, 함수 포인터 및 ByRef 형식에 사용할 수 있는 메서드를 제공합니다. 이 인터페이스는 `ICorDebugAppDomain` 인터페이스의 확장입니다.  
   
  [ICorDebugAppDomain3 인터페이스](icordebugappdomain3-interface.md)\
@@ -58,55 +58,55 @@ ms.locfileid: "56219830"
  [ICorDebugAppDomain4 인터페이스](icordebugappdomain4-interface.md)\
  논리적으로 확장 합니다 [ICorDebugAppDomain](icordebugappdomain-interface.md) 인터페이스를 COM 호출 가능 래퍼를에서 관리 되는 개체를 가져옵니다.  
   
- [ICorDebugAppDomainEnum Interface1](icordebugappdomainenum-interface.md)\
+ [ICorDebugAppDomainEnum 인터페이스](icordebugappdomainenum-interface.md)\
  열거형의 다음 위치에서 시작하여 지정된 수만큼 `ICorDebugAppDomain` 값을 반환하는 메서드를 제공합니다.  
   
- [ICorDebugArrayValue Interface1](icordebugarrayvalue-interface.md)\
+ [ICorDebugArrayValue 인터페이스](icordebugarrayvalue-interface.md)\
  1차원 배열이나 다차원 배열을 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.  
   
- [ICorDebugAssembly Interface1](icordebugassembly-interface.md)\
+ [ICorDebugAssembly 인터페이스](icordebugassembly-interface.md)\
  어셈블리를 나타냅니다.  
   
- [ICorDebugAssembly2 Interface1](icordebugassembly2-interface.md)\
+ [ICorDebugAssembly2 인터페이스](icordebugassembly2-interface.md)\
  어셈블리를 나타냅니다. 이 인터페이스는 `ICorDebugAssembly` 인터페이스의 확장입니다.  
   
  [ICorDebugAssembly3 인터페이스](icordebugassembly3-interface.md)\
  논리적으로 확장 합니다 [ICorDebugAssembly](icordebugassembly-interface.md) 컨테이너 어셈블리 및 포함 된 어셈블리에 대 한 지원을 제공 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
- [ICorDebugAssemblyEnum Interface1](icordebugassemblyenum-interface.md)\
+ [ICorDebugAssemblyEnum 인터페이스](icordebugassemblyenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugAssembly` 배열을 열거합니다.  
   
  [ICorDebugBlockingObjectEnum 인터페이스](icordebugblockingobjectenum-interface.md)\
  목록에 대 한 열거자를 제공 [CorDebugBlockingObject](cordebugblockingobject-structure.md) 구조입니다.  
   
- [ICorDebugBoxValue Interface1](icordebugboxvalue-interface.md)\
+ [ICorDebugBoxValue 인터페이스](icordebugboxvalue-interface.md)\
  boxed 값 클래스 개체를 나타내는 `ICorDebugHeapValue`의 서브클래스입니다.  
   
- [ICorDebugBreakpoint Interface1](icordebugbreakpoint-interface.md)\
+ [ICorDebugBreakpoint 인터페이스](icordebugbreakpoint-interface.md)\
  함수의 중단점 또는 값에 대한 조사식 위치를 나타냅니다.  
   
- [ICorDebugBreakpointEnum Interface1](icordebugbreakpointenum-interface.md)\
+ [ICorDebugBreakpointEnum 인터페이스](icordebugbreakpointenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugBreakpoint` 배열을 열거합니다.  
   
- [ICorDebugChain Interface1](icordebugchain-interface.md)\
+ [ICorDebugChain 인터페이스](icordebugchain-interface.md)\
  실제 또는 논리 호출 스택의 세그먼트를 나타냅니다.  
   
- [ICorDebugChainEnum Interface1](icordebugchainenum-interface.md)\
+ [ICorDebugChainEnum 인터페이스](icordebugchainenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugChain` 배열을 열거합니다.  
   
- [ICorDebugClass Interface1](icordebugclass-interface.md)\
+ [ICorDebugClass 인터페이스](icordebugclass-interface.md)\
  기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다. 형식이 제네릭이면 `ICorDebugClass`는 인스턴스화되지 않은 제네릭 형식을 나타냅니다.  
   
- [ICorDebugClass2 Interface1](icordebugclass2-interface.md)\
+ [ICorDebugClass2 인터페이스](icordebugclass2-interface.md)\
  제네릭 클래스나 <xref:System.Type> 형식의 메서드 매개 변수를 사용하는 클래스를 나타냅니다. 이 인터페이스는 `ICorDebugClass`를 확장한 것입니다.  
   
- [ICorDebugCode Interface1](icordebugcode-interface1.md)\
+ [ICorDebugCode 인터페이스](icordebugcode-interface1.md)\
  MSIL(Microsoft Intermediate Language) 코드나 네이티브 코드의 세그먼트를 나타냅니다.  
   
- [ICorDebugCode2 Interface1](icordebugcode2-interface.md)\
+ [ICorDebugCode2 인터페이스](icordebugcode2-interface.md)\
  
   `ICorDebugCode`의 기능을 확장하는 메서드를 제공합니다.  
   
@@ -116,17 +116,17 @@ ms.locfileid: "56219830"
  [ICorDebugCode4 인터페이스](icordebugcode4-interface.md)\
  지역 변수 및 함수에 인수를 열거 하는 디버거를 사용 하도록 설정 하는 메서드를 제공 합니다.  
   
- [ICorDebugCodeEnum Interface1](icordebugcodeenum-interface.md)\
+ [ICorDebugCodeEnum 인터페이스](icordebugcodeenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugCode` 배열을 열거합니다.  
   
  [ICorDebugComObjectValue 인터페이스](icordebugcomobjectvalue-interface.md)\
  캐시된 인터페이스 개체를 검색하는 메서드를 제공합니다.  
   
- [ICorDebugContext Interface1](icordebugcontext-interface.md)\
+ [ICorDebugContext 인터페이스](icordebugcontext-interface.md)\
  컨텍스트 개체를 나타냅니다. 이 인터페이스는 아직 구현되지 않았습니다.  
   
- [ICorDebugController Interface1](icordebugcontroller-interface.md)\
+ [ICorDebugController 인터페이스](icordebugcontroller-interface.md)\
  
   <xref:System.Diagnostics.Process>나 <xref:System.AppDomain> 같이 코드 실행 컨텍스트를 제어할 수 있는 범위를 나타냅니다.  
   
@@ -145,19 +145,19 @@ ms.locfileid: "56219830"
  [ICorDebugEditAndContinueErrorInfo 인터페이스](icordebugeditandcontinueerrorinfo-interface.md)\
  사용되지 않습니다. 이 인터페이스를 사용하지 마십시오.  
   
- [ICorDebugEditAndContinueSnapshot Interface1](icordebugeditandcontinuesnapshot-interface.md)\
+ [ICorDebugEditAndContinueSnapshot 인터페이스](icordebugeditandcontinuesnapshot-interface.md)\
  사용되지 않습니다. 이 인터페이스를 사용하지 마십시오.  
   
- [ICorDebugEnum Interface1](icordebugenum-interface1.md)\
+ [ICorDebugEnum 인터페이스](icordebugenum-interface1.md)\
  열거자를 디버깅할 수 있는 추상 기본 인터페이스로 사용합니다.  
   
- [ICorDebugErrorInfoEnum Interface1](icordebugerrorinfoenum-interface.md)\
+ [ICorDebugErrorInfoEnum 인터페이스](icordebugerrorinfoenum-interface.md)\
  사용되지 않습니다. 이 인터페이스를 사용하지 마십시오.  
   
- [ICorDebugEval Interface1](icordebugeval-interface.md)\
+ [ICorDebugEval 인터페이스](icordebugeval-interface.md)\
  디버깅 중인 코드의 컨텍스트 내에서 디버거가 코드를 실행할 수 있도록 하는 메서드를 제공합니다.  
   
- [ICorDebugEval2 Interface1](icordebugeval2-interface.md)\
+ [ICorDebugEval2 인터페이스](icordebugeval2-interface.md)\
  제네릭 형식을 지원하도록 `ICorDebugEval`을 확장합니다.  
   
  [ICorDebugExceptionDebugEvent 인터페이스](icordebugexceptiondebugevent-interface.md)\
@@ -169,36 +169,36 @@ ms.locfileid: "56219830"
  [ICorDebugExceptionObjectValue 인터페이스](icordebugexceptionobjectvalue-interface.md)\
  확장 된 [ICorDebugObjectValue](icordebugobjectvalue-interface.md) 관리 되는 예외 개체에서 스택 추적 정보를 제공 하는 인터페이스입니다.  
   
- [ICorDebugFrame Interface1](icordebugframe-interface.md)\
+ [ICorDebugFrame 인터페이스](icordebugframe-interface.md)\
  현재 스택의 프레임을 나타냅니다.  
   
- [ICorDebugFrameEnum Interface1](icordebugframeenum-interface.md)\
+ [ICorDebugFrameEnum 인터페이스](icordebugframeenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugFrame` 배열을 열거합니다.  
   
- [ICorDebugFunction Interface1](icordebugfunction-interface1.md)\
+ [ICorDebugFunction 인터페이스](icordebugfunction-interface1.md)\
  관리되는 함수 또는 메서드를 나타냅니다.  
   
- [ICorDebugFunction2 Interface1](icordebugfunction2-interface.md)\
+ [ICorDebugFunction2 인터페이스](icordebugfunction2-interface.md)\
  
   `ICorDebugFunction`의 기능을 논리적으로 확장하여 "내 코드만" 단계별 실행 디버깅을 지원합니다.  
   
  [ICorDebugFunction3 인터페이스](icordebugfunction3-interface.md)\
  논리적으로 확장 합니다 [ICorDebugFunction](icordebugfunction-interface1.md) ReJIT 요청의 코드에 대 한 액세스를 제공 하는 인터페이스입니다.  
   
- [ICorDebugFunctionBreakpoint Interface1](icordebugfunctionbreakpoint-interface.md)\
+ [ICorDebugFunctionBreakpoint 인터페이스](icordebugfunctionbreakpoint-interface.md)\
  함수에서 중단점을 지원하기 위해 `ICorDebugBreakpoint`를 확장합니다.  
   
  [ICorDebugGCReferenceEnum 인터페이스](icordebuggcreferenceenum-interface.md)\
  가비지 수집되는 개체에 대한 열거자를 제공합니다.  
   
- [ICorDebugGenericValue Interface1](icordebuggenericvalue-interface.md)\
+ [ICorDebugGenericValue 인터페이스](icordebuggenericvalue-interface.md)\
  모든 값에 적용되는 `ICorDebugValue`의 서브클래스입니다. 이 인터페이스에서는 값의 Get 및 Set 메서드를 제공합니다.  
   
  [ICorDebugGuidToTypeEnum 인터페이스](icordebugguidtotypeenum-interface.md)\
  GUID를 매핑하는 개체와 그에 해당하는 `ICorDebugType` 개체에 대한 열거자를 제공합니다.  
   
- [ICorDebugHandleValue Interface1](icordebughandlevalue-interface.md)\
+ [ICorDebugHandleValue 인터페이스](icordebughandlevalue-interface.md)\
  디버거에서 가비지 수집을 위해 핸들을 만든 대상 참조 값을 나타내는 `ICorDebugReferenceValue`의 서브클래스입니다.  
   
  [ICorDebugHeapEnum 인터페이스](icordebugheapenum-interface.md)\
@@ -207,10 +207,10 @@ ms.locfileid: "56219830"
  [ICorDebugHeapSegmentEnum 인터페이스](icordebugheapsegmentenum-interface.md)\
  관리되는 힙 메모리 영역에 대한 열거자를 제공합니다.  
   
- [ICorDebugHeapValue Interface1](icordebugheapvalue-interface.md)\
+ [ICorDebugHeapValue 인터페이스](icordebugheapvalue-interface.md)\
  CLR 가비지 수집기에서 수집한 개체를 나타내는 `ICorDebugValue`의 서브클래스입니다.  
   
- [ICorDebugHeapValue2 Interface1](icordebugheapvalue2-interface1.md)\
+ [ICorDebugHeapValue2 인터페이스](icordebugheapvalue2-interface1.md)\
  런타임 핸들에 대한 지원을 제공하는 `ICorDebugHeapValue`의 확장입니다.  
   
  [ICorDebugHeapValue3 인터페이스](icordebugheapvalue3-interface.md)\
@@ -222,10 +222,10 @@ ms.locfileid: "56219830"
  [ICorDebugILCode2 인터페이스](icordebugilcode2-interface.md)\
  논리적으로 확장 합니다 [ICorDebugILCode](icordebugilcode-interface.md) 인터페이스 함수의 로컬 변수 서명에 대 한 토큰을 반환 하 고 프로파일러의 계측 된 IL (중간 언어)을 매핑하는 방법을 제공 하기 위해 원래 메서드 IL 오프셋 오프셋 합니다.  
   
- [ICorDebugILFrame Interface1](icordebugilframe-interface.md)\
+ [ICorDebugILFrame 인터페이스](icordebugilframe-interface.md)\
  MSIL 코드의 스택 프레임을 나타냅니다.  
   
- [ICorDebugILFrame2 Interface1](icordebugilframe2-interface.md)\
+ [ICorDebugILFrame2 인터페이스](icordebugilframe2-interface.md)\
  
   `ICorDebugILFrame`에서 논리적으로 확장된 버전입니다.  
   
@@ -238,7 +238,7 @@ ms.locfileid: "56219830"
  [ICorDebugInstanceFieldSymbol 인터페이스](icordebuginstancefieldsymbol-interface.md)\
  인스턴스 필드에 대한 디버그 기호 정보를 나타냅니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
- [ICorDebugInternalFrame Interface1](icordebuginternalframe-interface.md)\
+ [ICorDebugInternalFrame 인터페이스](icordebuginternalframe-interface.md)\
  디버거의 프레임 형식을 식별합니다.  
   
  [ICorDebugInternalFrame2 인터페이스](icordebuginternalframe2-interface.md)\
@@ -268,49 +268,49 @@ ms.locfileid: "56219830"
  [ICorDebugMetaDataLocator 인터페이스](icordebugmetadatalocator-interface.md)\
  디버거에 메타데이터 정보를 제공합니다.  
   
- [ICorDebugModule Interface1](icordebugmodule-interface.md)\
+ [ICorDebugModule 인터페이스](icordebugmodule-interface.md)\
  실행 파일이나 DLL(동적 연결 라이브러리)인 CLR 모듈을 나타냅니다.  
   
- [ICorDebugModule2 Interface1](icordebugmodule2-interface.md)\
+ [ICorDebugModule2 인터페이스](icordebugmodule2-interface.md)\
  
   `ICorDebugModule`에서 논리적으로 확장된 버전입니다.  
   
  [ICorDebugModule3 인터페이스](icordebugmodule3-interface.md)\
  동적 모듈에 대한 기호 판독기를 만듭니다.  
   
- [ICorDebugModuleBreakpoint Interface1](icordebugmodulebreakpoint-interface.md)\
+ [ICorDebugModuleBreakpoint 인터페이스](icordebugmodulebreakpoint-interface.md)\
  특정 모듈에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.  
   
  [ICorDebugModuleDebugEvent 인터페이스](icordebugmoduledebugevent-interface.md)\
  확장 된 [ICorDebugDebugEvent](icordebugdebugevent-interface.md) 모듈 수준 이벤트를 지 원하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
- [ICorDebugModuleEnum Interface1](icordebugmoduleenum-interface.md)\
+ [ICorDebugModuleEnum 인터페이스](icordebugmoduleenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugModule` 배열을 열거합니다.  
   
  [ICorDebugMutableDataTarget 인터페이스](icordebugmutabledatatarget-interface.md)\
  확장 된 [ICorDebugDataTarget](icordebugdatatarget-interface.md) 인터페이스를 변경할 수 있는 데이터 대상을 지원 합니다.  
   
- [ICorDebugNativeFrame Interface1](icordebugnativeframe-interface.md)\
+ [ICorDebugNativeFrame 인터페이스](icordebugnativeframe-interface.md)\
  네이티브 프레임에 사용되는 특수화된 `ICorDebugFrame` 구현입니다.  
   
  [ICorDebugNativeFrame2 인터페이스](icordebugnativeframe2-interface.md)\
  자식 및 부모 프레임 관계를 테스트하는 메서드를 제공합니다.  
   
- [ICorDebugObjectEnum Interface1](icordebugobjectenum-interface.md)\
+ [ICorDebugObjectEnum 인터페이스](icordebugobjectenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 RVA(Relative Virtual Address)로 개체의 배열을 열거합니다.  
   
- [ICorDebugObjectValue Interface1](icordebugobjectvalue-interface.md)\
+ [ICorDebugObjectValue 인터페이스](icordebugobjectvalue-interface.md)\
  개체가 들어 있는 값을 나타내는 `ICorDebugValue`의 서브클래스입니다.  
   
- [ICorDebugObjectValue2 Interface1](icordebugobjectvalue2-interface.md)\
+ [ICorDebugObjectValue2 인터페이스](icordebugobjectvalue2-interface.md)\
  상속 및 재정의 기능을 지원하도록 `ICorDebugObjectValue`를 확장합니다.  
   
- [ICorDebugProcess Interface1](icordebugprocess-interface.md)\
+ [ICorDebugProcess 인터페이스](icordebugprocess-interface.md)\
  관리 코드를 실행하는 프로세스를 나타냅니다.  
   
- [ICorDebugProcess2 Interface1](icordebugprocess2-interface1.md)\
+ [ICorDebugProcess2 인터페이스](icordebugprocess2-interface1.md)\
  
   `ICorDebugProcess`에서 논리적으로 확장된 버전입니다.  
   
@@ -332,11 +332,11 @@ ms.locfileid: "56219830"
  [ICorDebugProcess8 인터페이스](icordebugprocess8-interface.md)\
  논리적으로 확장 합니다 [ICorDebugProcess](icordebugprocess-interface.md) 인터페이스를 사용 하도록 설정 하거나 특정 유형의 사용 하지 않도록 [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) 예외 콜백을 합니다.  
   
- [ICorDebugProcessEnum Interface1](icordebugprocessenum-interface.md)\
+ [ICorDebugProcessEnum 인터페이스](icordebugprocessenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugProcess` 배열을 열거합니다.  
   
- [ICorDebugReferenceValue Interface1](icordebugreferencevalue-interface.md)\
+ [ICorDebugReferenceValue 인터페이스](icordebugreferencevalue-interface.md)\
  참조 형식을 지원하는 `ICorDebugValue`의 서브클래스입니다.  
   
  [ICorDebugRegisterSet 인터페이스](icordebugregisterset-interface.md)\
@@ -360,17 +360,17 @@ ms.locfileid: "56219830"
  [ICorDebugStaticFieldSymbol 인터페이스](icordebugstaticfieldsymbol-interface.md)\
  정적 필드에 대한 디버그 기호 정보를 나타냅니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
- [ICorDebugStepper Interface1](icordebugstepper-interface.md)\
+ [ICorDebugStepper 인터페이스](icordebugstepper-interface.md)\
  디버거에서 수행하는 코드 실행 단계를 나타내며, 명령의 실행/완료를 구분하는 식별자로 사용되고, 단계를 취소하는 방법을 제공합니다.  
   
- [ICorDebugStepper2 Interface1](icordebugstepper2-interface1.md)\
+ [ICorDebugStepper2 인터페이스](icordebugstepper2-interface1.md)\
  JMC(내 코드만) 디버깅을 지원합니다.  
   
- [ICorDebugStepperEnum Interface1](icordebugstepperenum-interface.md)\
+ [ICorDebugStepperEnum 인터페이스](icordebugstepperenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugStepper` 배열을 열거합니다.  
   
- [ICorDebugStringValue Interface1](icordebugstringvalue-interface.md)\
+ [ICorDebugStringValue 인터페이스](icordebugstringvalue-interface.md)\
  문자열 값에 적용되는 `ICorDebugHeapValue`의 서브클래스입니다.  
   
  [ICorDebugSymbolProvider 인터페이스](icordebugsymbolprovider-interface.md)\
@@ -379,11 +379,11 @@ ms.locfileid: "56219830"
  [ICorDebugSymbolProvider2 인터페이스](icordebugsymbolprovider2-interface.md)\
  논리적으로 확장 합니다 [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) 추가 디버그 기호 정보를 검색 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
- [ICorDebugThread Interface1](icordebugthread-interface.md)\
+ [ICorDebugThread 인터페이스](icordebugthread-interface.md)\
  프로세스의 스레드를 나타냅니다. 
   `ICorDebugThread` 인스턴스의 수명은 이 인스턴스가 나타내는 스레드의 수명과 같습니다.  
   
- [ICorDebugThread2 Interface1](icordebugthread2-interface.md)\
+ [ICorDebugThread2 인터페이스](icordebugthread2-interface.md)\
  
   `ICorDebugThread`에서 논리적으로 확장된 버전입니다.  
   
@@ -393,17 +393,17 @@ ms.locfileid: "56219830"
  [ICorDebugThread4 인터페이스](icordebugthread4-interface.md)\
  스레드 차단 정보를 제공합니다.  
   
- [ICorDebugThreadEnum Interface1](icordebugthreadenum-interface1.md)\
+ [ICorDebugThreadEnum 인터페이스](icordebugthreadenum-interface1.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugThread` 배열을 열거합니다.  
   
- [ICorDebugType Interface1](icordebugtype-interface.md)\
+ [ICorDebugType 인터페이스](icordebugtype-interface.md)\
  기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다. 형식이 제네릭이면 `ICorDebugType`는 인스턴스화된 제네릭 형식을 나타냅니다.  
   
  [ICorDebugType2 인터페이스](icordebugtype2-interface.md)\
  확장 된 [ICorDebugType](icordebugtype-interface.md) 기본 형식 또는 복합 (사용자 정의 됨) 형식의 형식 식별자를 검색 하는 인터페이스입니다.  
   
- [ICorDebugTypeEnum Interface1](icordebugtypeenum-interface.md)\
+ [ICorDebugTypeEnum 인터페이스](icordebugtypeenum-interface.md)\
  
   `ICorDebugEnum` 메서드를 구현하고 `ICorDebugType` 배열을 열거합니다.  
   

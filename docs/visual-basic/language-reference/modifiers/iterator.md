@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Iterator keyword [Visual Basic]
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-ms.openlocfilehash: bbc18a8b25e0de128cc2c1828213212adad108ec
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 06188560163491284eab0dcfc4bba6b029e65ce8
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54719497"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969286"
 ---
 # <a name="iterator-visual-basic"></a>반복기(Visual Basic)
 지정 된 함수 또는 `Get` 접근자가 반복기입니다.  
@@ -32,7 +32,8 @@ ms.locfileid: "54719497"
  반복기는 익명 함수를 수 있습니다. 자세한 내용은 [반복기](../../programming-guide/concepts/iterators.md)를 참조하세요.  
   
 ## <a name="usage"></a>사용법  
- `Iterator` 한정자는 다음 컨텍스트에서 사용할 수 있습니다.  
+ 
+  `Iterator` 한정자는 다음 컨텍스트에서 사용할 수 있습니다.  
   
 -   [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)  
   
@@ -41,12 +42,12 @@ ms.locfileid: "54719497"
 ## <a name="example"></a>예제  
  다음 예제에서는 반복기 함수를 보여 줍니다. 반복기 함수에는 `Yield` 문 내에 있는 [에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 루프입니다. 각 반복 합니다 [각각에 대 한](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 문의 본문 `Main` 대 한 호출이 생성를 `Power` 반복기 함수입니다. 반복기 함수를 호출할 때마다 다음에 `Yield` 루프를 반복하는 도중에 `For…Next` 문이 실행됩니다.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## <a name="example"></a>예제  
  다음 예제는 반복기인 `Get` 접근자에 대해 설명합니다. `Iterator` 속성 선언에서 한정자가 있습니다.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  추가 예제를 보려면 [반복기](../../programming-guide/concepts/iterators.md)합니다.  
   

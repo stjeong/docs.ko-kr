@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML documents [Visual Basic], creating
 - document literal [Visual Basic]
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-ms.openlocfilehash: 09ab9d0bf3feeea70ddbc094183406a6fd646c1c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 86780d53c2261b6440f515fc09512fba313667dc
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54690516"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56964957"
 ---
 # <a name="xml-document-literal-visual-basic"></a>XML 문서 리터럴(Visual Basic)
 리터럴 나타내는 <xref:System.Xml.Linq.XDocument> 개체입니다.  
@@ -53,7 +53,7 @@ rootElement
 ## <a name="example"></a>예제  
  다음 예제에서는 XML 선언, 처리 명령, 주석 및 다른 요소를 포함 하는 요소에는 XML 문서를 만듭니다.  
   
- [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Xml.Linq.XElement>

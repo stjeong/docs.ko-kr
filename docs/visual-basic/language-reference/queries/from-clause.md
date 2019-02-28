@@ -10,12 +10,12 @@ helpviewer_keywords:
 - From clause [Visual Basic]
 - From statement [Visual Basic]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-ms.openlocfilehash: fd11d00ebfa42eda272db39965d25b905bd5c841
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 67f395069c98d8b60eca8c3663fb180a8dd5a2be
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54678787"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978165"
 ---
 # <a name="from-clause-visual-basic"></a>From 절(Visual Basic)
 하나 이상의 범위 변수 및 쿼리 하는 컬렉션을 지정합니다.  
@@ -40,11 +40,11 @@ From element [ As type ] In collection [ _ ]
   
  여러 개 지정할 수 있습니다 `From` 조인할 여러 컬렉션을 식별 하는 쿼리 절. 여러 컬렉션 지정 되 면 이러한 반복 하지 독립적으로 또는 관련 되어 조인할 수 있습니다. 사용 하 여 컬렉션을 암시적으로 연결할 수 있습니다 합니다 `Select` 절 또는 명시적으로 사용 하 여 합니다 `Join` 또는 `Group Join` 절. 대신 지정할 수 있습니다 여러 범위 변수 및 컬렉션을 단일에서 `From` 각 관련된 범위 변수와 다른에서 쉼표로 구분 된 컬렉션을 사용 하 여 절. 다음 코드 예제에는 두 구문 옵션을 보여 줍니다는 `From` 절.  
   
- [!code-vb[VbSimpleQuerySamples#21](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#21)]  
   
  합니다 `From` 범위의 비슷한 쿼리의 범위를 정의 하는 절을 `For` 루프입니다. 따라서 각 `element` 쿼리의 범위에 범위 변수는 고유한 이름이 있어야 합니다. 여러 개 지정할 수 있으므로 `From` 쿼리의 경우 후속 절 `From` 절에 범위 변수를 참조할 수는 `From` 하거나 절은 이전에 범위 변수를 참조할 수 `From` 절. 예를 들어, 다음 예제에서는 중첩 된 `From` 절 있는 두 번째 절에 있는 컬렉션은 속성을 기준으로 첫 번째 절의 범위 변수입니다.  
   
- [!code-vb[VbSimpleQuerySamples#22](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_2.vb)]  
+ [!code-vb[VbSimpleQuerySamples#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#22)]  
   
  각 `From` 절 쿼리를 구체화 하는 추가 쿼리 절 조합 올 수 있습니다. 다음과 같은 방법으로 쿼리를 구체화할 수 있습니다.  
   
@@ -67,7 +67,7 @@ From element [ As type ] In collection [ _ ]
 ## <a name="example"></a>예제  
  다음 쿼리 식에 사용을 `From` 범위 변수를 선언 하는 절 `cust` 각각에 대해 `Customer` 개체는 `customers` 컬렉션입니다. `Where` 절 범위 변수를 사용 하 여 지정된 된 지역에서 고객에 게 출력을 제한 합니다. `For Each` 루프는 쿼리 결과에서 각 고객의 회사 이름을 표시 합니다.  
   
- [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
+ [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
 ## <a name="see-also"></a>참고자료
 - [쿼리](../../../visual-basic/language-reference/queries/index.md)

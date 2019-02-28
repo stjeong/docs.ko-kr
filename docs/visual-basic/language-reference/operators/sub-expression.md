@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Sub Expression [Visual Basic]
 - subroutines [Visual Basic], sub expressions
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
-ms.openlocfilehash: d27ca262aa2349d34d78844e0aea0f96a1ced65c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5e8c66f4f2b21a890b8c61e6fc642ce276df6f60
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54496311"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966725"
 ---
 # <a name="sub-expression-visual-basic"></a>하위 식(Visual Basic)
 매개 변수 및 서브루틴 람다 식을 정의 하는 코드를 선언 합니다.  
@@ -55,7 +55,7 @@ End Sub
 ## <a name="example"></a>예제  
  다음은 콘솔에 값을 기록 하는 람다 식의 예입니다. 두 줄 및 여러 줄 람다 식 구문은 서브루틴을 보여 줍니다. 더 많은 예제를 참조 하세요 [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)합니다.  
   
- [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/sub-expression_1.vb)]  
+ [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
 ## <a name="see-also"></a>참고자료
 - [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)

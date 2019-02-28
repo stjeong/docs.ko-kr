@@ -13,12 +13,12 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
-ms.openlocfilehash: 0c5731fcff3191c192a5e7884c4d5a9566400bc5
-ms.sourcegitcommit: e39d93d358974b9ed4541cedf4e25c0101015c3c
+ms.openlocfilehash: fd01842bdb3a3b168c00e0366dd6fe4c2daf7121
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204810"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974369"
 ---
 # <a name="examples-of-xml-serialization"></a>XML Serialization 예제
 XML serialization은 간단한 것부터 복잡한 것까지 여러 형태를 가집니다. 예를 들어 [XML Serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)에서처럼 공용 필드와 속성으로 간단하게 구성된 클래스를 직렬화할 수 있습니다. 다음 코드 예제에서는 XML serialization을 사용하여 특정 XML 스키마(XSD) 문서를 따르는 XML 스트림을 생성하는 방법을 포함한 여러 가지 고급 시나리오를 보여 줍니다.  
@@ -119,7 +119,7 @@ private void SerializeNode(string filename){
 ```  
   
 ## <a name="serializing-a-class-that-contains-a-field-returning-a-complex-object"></a>복잡한 개체를 반환하는 필드가 포함된 클래스 serialize  
- 속성 또는 필드가 복합 개체(예: 배열 또는 클래스 인스턴스)를 반환하는 경우 [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)는 그 개체를 주 XML 문서 내의 중첩된 요소로 변환합니다. 예를 들어, 다음 코드 예제의 첫째 클래스는 둘째 클래스의 인스턴스를 반환합니다.  
+ 속성 또는 필드가 복잡한 개체(예: 배열 또는 클래스 인스턴스)를 반환하는 경우 <xref:System.Xml.Serialization.XmlSerializer>는 그 개체를 주 XML 문서 내의 중첩된 요소로 변환합니다. 예를 들어, 다음 코드 예제의 첫째 클래스는 둘째 클래스의 인스턴스를 반환합니다.  
   
 ```vb  
 Public Class PurchaseOrder  
@@ -363,7 +363,8 @@ public class Employee {
   
  `CreatePO` 메서드는 `PurchaseOrder`, `Address` 및 `OrderedItem` 클래스 개체를 만들고 public 필드 값을 설정합니다. 메서드는 <xref:System.Xml.Serialization.XmlSerializer>를 serialize하고 deserialize하는 데 사용되는 `PurchaseOrder` 클래스의 인스턴스도 생성합니다. 코드는 serialize될 클래스 형식을 생성자에 전달합니다. 또한 코드는 XML 스트림을 XML 문서에 쓰는 데 사용되는 `FileStream`도 만듭니다.  
   
- `ReadPo` 메서드는 조금 더 간단합니다. deserialize할 개체를 만들고 그 값을 읽습니다. 와 마찬가지로 합니다 `CreatePo` 메서드를 먼저 구성 해야는 <xref:System.Xml.Serialization.XmlSerializer>를 생성자에 deserialize 할 클래스의 형식을 전달 합니다. 또한 XML 문서를 읽기 위해 <xref:System.IO.FileStream>이 필요합니다. 개체를 deserialize하기 위해 <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>을 인수로 사용하여 <xref:System.IO.FileStream> 메서드를 호출합니다. deserialize된 개체는 `PurchaseOrder` 형식의 개체 변수로 캐스팅되어야 합니다. 그런 다음 코드는 deserialize된 `PurchaseOrder`의 값을 읽습니다. 작성된 PO.xml 파일을 읽어 실제 XML 출력을 볼 수 있습니다.  
+ 
+  `ReadPo` 메서드는 조금 더 간단합니다. deserialize할 개체를 만들고 그 값을 읽습니다. 와 마찬가지로 합니다 `CreatePo` 메서드를 먼저 구성 해야는 <xref:System.Xml.Serialization.XmlSerializer>를 생성자에 deserialize 할 클래스의 형식을 전달 합니다. 또한 XML 문서를 읽기 위해 <xref:System.IO.FileStream>이 필요합니다. 개체를 deserialize하기 위해 <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>을 인수로 사용하여 <xref:System.IO.FileStream> 메서드를 호출합니다. deserialize된 개체는 `PurchaseOrder` 형식의 개체 변수로 캐스팅되어야 합니다. 그런 다음 코드는 deserialize된 `PurchaseOrder`의 값을 읽습니다. 작성된 PO.xml 파일을 읽어 실제 XML 출력을 볼 수 있습니다.  
   
 ```vb  
 Imports System  
@@ -767,6 +768,6 @@ public class Test
 - [XML serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)
 - [특성을 사용하여 XML serialization 제어](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
 - [XML serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)
-- [XmlSerializer 클래스](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)
+- [XmlSerializer 클래스](xref:System.Xml.Serialization.XmlSerializer)
 - [방법: 개체 serialize](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [방법: 개체 deserialize](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

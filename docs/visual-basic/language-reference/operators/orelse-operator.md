@@ -11,12 +11,12 @@ helpviewer_keywords:
 - short-circuit evaluation
 - OrElse operator [Visual Basic]
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-ms.openlocfilehash: 70bbfef54d3f716e0e7463a39ee15e8480066695
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d5a0a3420d86df67e38df390ce98fbbe43c69459
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603016"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981358"
 ---
 # <a name="orelse-operator-visual-basic"></a>OrElse 연산자(Visual Basic)
 두 식에 포함 논리합을 단락 (short-circuiting)를 수행 합니다.  
@@ -57,14 +57,14 @@ result = expression1 OrElse expression2
 ## <a name="example"></a>예제  
  다음 예제에서는 `OrElse` 두 식에 논리 분리를 수행 하는 연산자입니다. 결과 `Boolean` 나타내는 두 식 중 하나가 true 인지 여부를 합니다. 첫 번째 식이 `True`, 두 번째는 평가 되지 않습니다.  
   
- [!code-vb[VbVbalrOperators#37](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/orelse-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#37)]  
   
  이전 예제의 결과는 `True`하십시오 `True`, 및 `False` 각각. 계산에서 `firstCheck`, 첫 번째는 이미 이므로는 두 번째 식은 계산 되지 않습니다 `True`합니다. 그러나 두 번째 식 계산에서 계산 됩니다 `secondCheck`합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제는 `If`... `Then` 두 프로시저 호출을 포함 하는 문이 있습니다. 첫 번째 호출에서 반환 하는 경우 `True`, 두 번째 절차는 호출 되지 않습니다. 두 번째 절차는 코드의이 섹션에서는 실행 될 때 항상 수행 해야 하는 중요 한 작업을 수행 하는 경우 예기치 않은 결과가 발생할 수 있습니다이 있습니다.  
   
- [!code-vb[VbVbalrOperators#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/orelse-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#38)]  
   
 ## <a name="see-also"></a>참고자료
 - [논리/비트 연산자 (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)

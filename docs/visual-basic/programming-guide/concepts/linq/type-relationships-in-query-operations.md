@@ -11,12 +11,12 @@ helpviewer_keywords:
 - inferring type information [LINQ in Visual Basic]
 - relationships [LINQ in Visual Basic]
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
-ms.openlocfilehash: 519b10cfa374290a2d924cce2bd3e39683ca080f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d72a55cadce287979fad25396327680e1f0e0aaf
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731129"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979101"
 ---
 # <a name="type-relationships-in-query-operations-visual-basic"></a>쿼리 작업의 형식 관계(Visual Basic)
 사용 되는 변수 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 쿼리 작업은 강력한 형식 이어야 하며 서로 호환 되어야 합니다. 강력한 형식 지정 데이터 원본, 쿼리 자체 및 쿼리 실행에 사용 됩니다. 다음 그림에서는 설명 하는 용어를 식별 하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 합니다. 쿼리 부분에 대 한 자세한 내용은 참조 하세요. [기본 쿼리 작업 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md)합니다.  
@@ -28,7 +28,7 @@ LINQ 쿼리의 부분
   
  Visual Basic 편리 강력한 형식 지정 라고도 지역 형식 유추를 구현 하 여 *암시적 형식 지정*합니다. 기능은 이전 예제에서 사용 됩니다 하 고 표시 될 전체에서 사용 되는 것은 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 샘플 및 설명서입니다. Visual basic에서 지역 형식 유추를 사용 하 여 수행 됩니다는 `Dim` 문 없이 `As` 절. 다음 예에서 `city` 문자열로 강력 하 게 형식화 됩니다.  
   
- [!code-vb[VbLINQTypeRels#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_1.vb)]  
+ [!code-vb[VbLINQTypeRels#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQTypeRels/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  경우에만 작동 하는 지역 형식 유추 `Option Infer` 로 설정 된 `On`합니다. 자세한 내용은 [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)합니다.  
@@ -37,16 +37,16 @@ LINQ 쿼리의 부분
   
  데이터 원본에서 반환 되는 형식과 일치 하지 않는 범위 변수에 명시적 형식을 지정 해야 합니다. 사용 하 여 범위 변수의 형식을 지정할 수 있습니다는 `As` 절. 그러나이 인해 오류로 변환 되는 경우는 [축소 변환을](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md) 및 `Option Strict` 로 설정 되어 `On`합니다. 따라서 데이터 원본에서 검색 된 값에서 변환을 수행 하는 것이 좋습니다. 사용 하 여 명시적 범위 변수 형식으로 값을 데이터 원본에서 변환할 수는 <xref:System.Linq.Enumerable.Cast%2A> 메서드. 선택한 값을 캐스트할 수도 있습니다는 `Select` 명시적 형식 범위 변수 형식에서 다른 절. 이러한 요소는 다음 코드에 나와 있습니다.  
   
- [!code-vb[VbLINQTypeRels#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_2.vb)]  
+ [!code-vb[VbLINQTypeRels#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQTypeRels/VB/Class1.vb#4)]  
   
 ## <a name="queries-that-return-entire-elements-of-the-source-data"></a>원본 데이터의 전체 요소를 반환 하는 쿼리  
  다음 예제와 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 원본 데이터에서 선택한 요소의 시퀀스를 반환 하는 작업을 쿼리 합니다. 원본 `names`, 문자열의 배열을 포함 쿼리 출력은 M으로 시작 하는 문자열을 포함 하는 시퀀스입니다.  
   
- [!code-vb[VbLINQTypeRels#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_3.vb)]  
+ [!code-vb[VbLINQTypeRels#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQTypeRels/VB/Class1.vb#2)]  
   
  이 다음 코드와 동일 하지만 훨씬 더 간결 하 고 더 쉽게 작성할 수 있습니다. 쿼리에서 지역 형식 유추를 사용 하는 것은 Visual Basic의 기본 스타일입니다.  
   
- [!code-vb[VbLINQTypeRels#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_4.vb)]  
+ [!code-vb[VbLINQTypeRels#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQTypeRels/VB/Class1.vb#3)]  
   
  유형은 암시적 또는 명시적으로 결정 됩니다 없이 모두 이전 코드 예제에서는 다음 관계가 있습니다.  
   

@@ -1,5 +1,5 @@
 ---
-title: ICorDebugModule2 Interface1
+title: ICorDebugModule2 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugModule2
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7c65d2da485664691ff71044eb4e44f12108ce5b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 192f2476aff91d3a8302d070852ab2a3722d137c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54707598"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970131"
 ---
-# <a name="icordebugmodule2-interface1"></a>ICorDebugModule2 Interface1
+# <a name="icordebugmodule2-interface"></a>ICorDebugModule2 인터페이스
+
 ICorDebugModule 인터페이스를 논리적으로 확장으로 사용 됩니다.  
   
 ## <a name="methods"></a>메서드  

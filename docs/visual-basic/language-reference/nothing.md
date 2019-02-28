@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Nothing keyword [Visual Basic]
 - Nothing keyword [Visual Basic], syntax
 ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
-ms.openlocfilehash: b4a9acb5a43898ef616bbc6bb97f2f4f96d206b8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b8dfc166681dbadf1d2f4ba5a985011f5427f50a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54496951"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981428"
 ---
 # <a name="nothing-visual-basic"></a>Nothing(Visual Basic)
 모든 데이터 형식의 기본 값을 나타냅니다. 기본값은 참조 형식에 대해는 `null` 참조 합니다. 값 형식에 대 한 기본값의 값 형식은 nullable 인지에 따라 달라 집니다.  
@@ -30,11 +30,11 @@ ms.locfileid: "54496951"
   
  Null을 허용 하는 값 형식 변수에 있으면 할당 `Nothing` 를 설정 하기 기본값으로 선언 된 형식에 대 한 합니다. 변수 멤버를 포함 하는 형식임을 하는 경우 모두 기본값으로 설정 됩니다. 다음 예에서는 스칼라 형식에 대 한이 설명 합니다.  
   
- [!code-vb[VbVbalrKeywords#7](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_1.vb)]  
+ [!code-vb[VbVbalrKeywords#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class2.vb#7)]  
   
  할당 변수는 참조 형식의 경우 `Nothing` 변수를 설정는 `null` 변수 형식의 참조입니다. 로 설정 된 변수는 `null` 참조 개체와 연결 되어 있지 않습니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrKeywords#8](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_2.vb)]  
+ [!code-vb[VbVbalrKeywords#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class3.vb#8)]  
   
  변수는 참조 (또는 null 허용 값 입력) 하는지 여부를 확인 하는 경우 `null`를 사용 하지 마세요 `= Nothing` 또는 `<> Nothing`합니다. 항상 사용 하 여 `Is Nothing` 또는 `IsNot Nothing`합니다.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "54496951"
   
  다음 예제에서는 사용 하는 비교는 `Is` 고 `IsNot` 연산자입니다.  
   
- [!code-vb[VbVbalrKeywords#9](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_3.vb)]  
+ [!code-vb[VbVbalrKeywords#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class4.vb#9)]  
   
  사용 하지 않고 변수를 선언 하는 경우는 `As` 절으로 설정 하 고 `Nothing`, 변수의 형식이 `Object`합니다. 이러한 예로 `Dim something = Nothing`합니다. 컴파일 타임 오류가 발생 하는 예제의 경우 `Option Strict` 에 및 `Option Infer` 꺼져 있습니다.  
   

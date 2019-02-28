@@ -1,20 +1,14 @@
 ---
-title: F# 가이드
-description: 이 가이드에서는 F#, .NET에서 실행되는 함수형 프로그래밍 언어에 대한 다양한 교육 자료에 대한 개요를 제공합니다.
+title: 'F# 가이드'
+description: '이 가이드에서는 F#, .NET에서 실행되는 함수형 프로그래밍 언어에 대한 다양한 교육 자료에 대한 개요를 제공합니다.'
 author: cartermp
 ms.date: 08/03/2018
-ms.openlocfilehash: 5cd5bd95373c8a52a8d2b2348a51970560e8b272
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50188367"
 ---
 # <a name="f-guide"></a>F# 가이드
 
 F# 가이드는 F# 언어를 배우기 위한 많은 리소스를 제공합니다.
 
-## <a name="learning-f"></a>F# 학습 #
+## <a name="learning-f"></a>Learning F\#
 
 [F#이란](what-is-fsharp.md)에서는 F# 언어 및 F# 프로그래밍에 대해 간략한 코드 샘플을 사용하여 설명합니다. F#을 처음 접하는 경우에 권장됩니다.
 

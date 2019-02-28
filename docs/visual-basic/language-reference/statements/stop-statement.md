@@ -12,12 +12,12 @@ helpviewer_keywords:
 - processes, interrupting
 - execution [Visual Basic], stopping
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
-ms.openlocfilehash: fa9a1942903dff6f673d87b67ebcad047a410425
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 590ac27ebab881353a69077aabdf7a2def3396a6
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624784"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56967851"
 ---
 # <a name="stop-statement-visual-basic"></a>Stop 문(Visual Basic)
 실행을 일시 중단 합니다.  
@@ -39,7 +39,7 @@ Stop
 ## <a name="example"></a>예제  
  이 예제에서는 합니다 `Stop` 각 반복에 대 한 실행을 일시 중단 하는 문을 `For...Next` 루프입니다.  
   
- [!code-vb[VbVbalrStatements#56](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/stop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#56)]  
   
 ## <a name="see-also"></a>참고자료
 - [End 문](../../../visual-basic/language-reference/statements/end-statement.md)

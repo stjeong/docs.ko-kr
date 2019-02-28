@@ -81,12 +81,12 @@ helpviewer_keywords:
 - rounding numbers [Visual Basic], banker's rounding
 - type conversion [Visual Basic], Visual Basic vs. .NET Framework
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
-ms.openlocfilehash: be5e1b5fff1feb8ef4cc2ff7fcbca193aafcd781
-ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.openlocfilehash: ea7cc2c7f988617de67bf0ea46aeb3396acdf4b1
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55674882"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980622"
 ---
 # <a name="type-conversion-functions-visual-basic"></a>형식 변환 함수(Visual Basic)
 이러한 함수는 변환 코드가 식을 계산 하는 코드의 일부인 즉 인라인으로 컴파일됩니다. 때때로 성능을 향상 시키는 변환을 수행 하는 프로시저에 대 한 호출이 있습니다. 각 함수는 식에서 특정 데이터 형식으로 강제 변환합니다.  
@@ -198,73 +198,73 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 ## <a name="cbool-example"></a>CBool 예제  
  다음 예제에서는 합니다 `CBool` 함수 식을 변환할 `Boolean` 값입니다. 식이 0이 아닌 값으로 계산 될 경우 `CBool` 반환 `True`이 고, 그렇지 않으면 반환 `False`합니다.  
   
- [!code-vb[VbVbalrFunctions#1](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_1.vb)]  
+ [!code-vb[VbVbalrFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#1)]  
   
 ## <a name="cbyte-example"></a>CByte 예제  
  다음 예제에서는 합니다 `CByte` 식을 변환 하는 함수를 `Byte`입니다.  
   
- [!code-vb[VbVbalrFunctions#2](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_2.vb)]  
+ [!code-vb[VbVbalrFunctions#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#2)]  
   
 ## <a name="cchar-example"></a>CChar 예제  
  다음 예제에서는 합니다 `CChar` 의 첫 번째 문자를 변환 하는 함수를 `String` 식을 `Char` 형식.  
   
- [!code-vb[VbVbalrFunctions#3](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_3.vb)]  
+ [!code-vb[VbVbalrFunctions#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#3)]  
   
  입력된 인수 `CChar` 데이터 형식 이어야 합니다 `Char` 또는 `String`합니다. 사용할 수 없습니다 `CChar` 때문에 숫자를 문자로 변환할 `CChar` 숫자 데이터 형식을 허용할 수 없습니다. 다음 예제에서는 코드 포인트 (문자 코드)를 나타내는 숫자를 가져오고 해당 문자로 변환 합니다. 사용 하 여는 <xref:Microsoft.VisualBasic.Interaction.InputBox%2A> 숫자의 문자열을 가져올 함수 `CInt` 형식으로 문자열을 변환할 `Integer`, 및 `ChrW` 숫자 형식으로 변환 `Char`합니다.  
   
- [!code-vb[VbVbalrFunctions#4](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_4.vb)]  
+ [!code-vb[VbVbalrFunctions#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#4)]  
   
 ## <a name="cdate-example"></a>CDate 예제  
  다음 예제에서는 합니다 `CDate` 문자열을 변환 하는 함수 `Date` 값입니다. 일반적으로 하드 코딩 된 날짜 및 시간 문자열 (이 예제 에서처럼)으로 권장 되지 않습니다. 날짜 리터럴과 #Feb 12, 1969 # 등의 시간 리터럴을 사용 하 여 및 # 4시 45분: 23 PM #를 대신 합니다.  
   
- [!code-vb[VbVbalrFunctions#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_5.vb)]  
+ [!code-vb[VbVbalrFunctions#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#5)]  
   
 ## <a name="cdbl-example"></a>CDbl 예제  
- [!code-vb[VbVbalrFunctions#6](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_6.vb)]  
+ [!code-vb[VbVbalrFunctions#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#6)]  
   
 ## <a name="cdec-example"></a>CDec 예제  
  다음 예제에서는 합니다 `CDec` 숫자 값으로 변환 하는 함수 `Decimal`합니다.  
   
- [!code-vb[VbVbalrFunctions#7](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_7.vb)]  
+ [!code-vb[VbVbalrFunctions#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#7)]  
   
 ## <a name="cint-example"></a>CInt 예제  
  다음 예제에서는 합니다 `CInt` 함수에 값을 변환할 `Integer`합니다.  
   
- [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_8.vb)]  
+ [!code-vb[VbVbalrFunctions#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#8)]  
 
 ## <a name="clng-example"></a>CLng 예제
  다음 예제에서는 합니다 `CLng` 값을 변환 하는 함수 `Long`합니다.  
   
- [!code-vb[VbVbalrFunctions#9](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_9.vb)]  
+ [!code-vb[VbVbalrFunctions#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#9)]  
   
 ## <a name="cobj-example"></a>CObj 예제  
  다음 예제에서는 합니다 `CObj` 숫자 값으로 변환 하는 함수 `Object`합니다. `Object` 변수 자체에 4 바이트 포인터를 가리키는 포함 된 `Double` 값이 할당 합니다.  
   
- [!code-vb[VbVbalrFunctions#10](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_10.vb)]  
+ [!code-vb[VbVbalrFunctions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#10)]  
   
 ## <a name="csbyte-example"></a>CSByte 예제  
  다음 예제에서는 합니다 `CSByte` 숫자 값으로 변환 하는 함수 `SByte`합니다.  
   
- [!code-vb[VbVbalrFunctions#11](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_11.vb)]  
+ [!code-vb[VbVbalrFunctions#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#11)]  
   
 ## <a name="cshort-example"></a>CShort 예제  
  다음 예제에서는 합니다 `CShort` 숫자 값으로 변환 하는 함수 `Short`합니다.  
   
- [!code-vb[VbVbalrFunctions#12](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_12.vb)]  
+ [!code-vb[VbVbalrFunctions#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#12)]  
   
 ## <a name="csng-example"></a>CSng 예제  
  다음 예제에서는 합니다 `CSng` 값을 변환 하는 함수 `Single`합니다.  
   
- [!code-vb[VbVbalrFunctions#13](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_13.vb)]  
+ [!code-vb[VbVbalrFunctions#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#13)]  
   
 ## <a name="cstr-example"></a>CStr 예제  
  다음 예제에서는 합니다 `CStr` 숫자 값으로 변환 하는 함수 `String`합니다.  
   
- [!code-vb[VbVbalrFunctions#14](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_14.vb)]  
+ [!code-vb[VbVbalrFunctions#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#14)]  
   
  다음 예제에서는 합니다 `CStr` 변환할 함수 `Date` 값을 `String` 값입니다.  
   
- [!code-vb[VbVbalrFunctions#15](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_15.vb)]  
+ [!code-vb[VbVbalrFunctions#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#15)]  
   
  `CStr` 항상 렌더링을 `Date` 예를 들어, 현재 로캘에 대 한 표준 짧은 형식으로 값 "2003 년 6 월 15 오후 4시 35분: 47"입니다. 그러나 `CStr` 를 표시 하지 않습니다 합니다 *중립 값* 1/1/0001의 날짜와 시간에 대 한 00시: 00입니다.  
   
@@ -273,17 +273,17 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 ## <a name="cuint-example"></a>CUInt 예제  
  다음 예제에서는 합니다 `CUInt` 숫자 값으로 변환 하는 함수 `UInteger`합니다.  
   
- [!code-vb[VbVbalrFunctions#16](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_16.vb)]  
+ [!code-vb[VbVbalrFunctions#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#16)]  
   
 ## <a name="culng-example"></a>CULng 예제  
  다음 예제에서는 합니다 `CULng` 숫자 값으로 변환 하는 함수 `ULong`합니다.  
   
- [!code-vb[VbVbalrFunctions#17](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_17.vb)]  
+ [!code-vb[VbVbalrFunctions#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#17)]  
   
 ## <a name="cushort-example"></a>CUShort 예제  
  다음 예제에서는 합니다 `CUShort` 숫자 값으로 변환 하는 함수 `UShort`합니다.  
   
- [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
+ [!code-vb[VbVbalrFunctions#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#18)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>

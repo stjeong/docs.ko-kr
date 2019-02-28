@@ -13,12 +13,12 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - bitwise comparison [Visual Basic]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-ms.openlocfilehash: 2cdc272c07f3b30f61716f0c5ae72f0655c3f46b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 090ae67c1e5f04c5d9c4f6aed7f8131d8f830166
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54597322"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968857"
 ---
 # <a name="and-operator-visual-basic"></a>And 연산자(Visual Basic)
 두 논리 결합을 수행 `Boolean` 식이나 두 숫자 식에 비트 결합 합니다.  
@@ -31,13 +31,13 @@ result = expression1 And expression2
   
 ## <a name="parts"></a>요소  
  `result`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다. 부울 비교를 위해 `result` 는 두 개의 논리 결합을 `Boolean` 값입니다. 비트 연산의 경우 `result` 는 두 숫자 비트 패턴의 비트 결합을 나타내는 숫자 값입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다. 부울 비교를 위해 `result` 는 두 개의 논리 결합을 `Boolean` 값입니다. 비트 연산의 경우 `result` 는 두 숫자 비트 패턴의 비트 결합을 나타내는 숫자 값입니다.  
   
  `expression1`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다.  
   
  `expression2`  
- 필수. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수. 모든 `Boolean` 또는 숫자 식입니다.  
   
 ## <a name="remarks"></a>설명  
  부울 비교를 위해 `result` 됩니다 `True` 두 경우에 `expression1` 및 `expression2` 평가 `True`합니다. 다음 표에서 설명 하는 방법을 `result` 결정 됩니다.  
@@ -75,14 +75,14 @@ result = expression1 And expression2
 ## <a name="example"></a>예제  
  다음 예제에서는 `And` 두 식에 논리 결합을 수행 하는 연산자입니다. 결과 `Boolean` 식을 모두 있는지 여부를 나타내는 값 `True`합니다.  
   
- [!code-vb[VbVbalrOperators#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#22)]  
   
  앞의 예제 결과 생성 `True` 고 `False`, 각각.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `And` 두 숫자 식의 개별 비트에 논리 결합을 수행 하는 연산자입니다. 피연산자의 해당 비트가 모두 1로 설정 하는 경우 결과 패턴의 비트가 설정 됩니다.  
   
- [!code-vb[VbVbalrOperators#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#23)]  
   
  앞의 예제는 각각 8, 2 및 0의 결과 생성합니다.  
   

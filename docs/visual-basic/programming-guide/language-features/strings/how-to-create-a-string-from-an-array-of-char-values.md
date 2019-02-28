@@ -5,18 +5,18 @@ helpviewer_keywords:
 - examples [Visual Basic], arrays
 - examples [Visual Basic], Char data type
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
-ms.openlocfilehash: a067474d6b32589a34b031d5c3ea4e5a4be55834
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0d3a4caf0967ab77de7d91470e43e52521dbd2da
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611464"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975513"
 ---
 # <a name="how-to-create-a-string-from-an-array-of-char-values-visual-basic"></a>방법: Char 값 (Visual Basic)으로 이루어진 배열로 문자열 만들기
 이 예제에서는 개별 문자에서 문자열 "abcd"를 만듭니다.  
   
 ## <a name="example"></a>예제  
- [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-a-string-from-an-array-of-char-values_1.vb)]  
+ [!code-vb[VbVbalrStrings#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#61)]  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
  이 메서드는 특수 요구 사항이 없습니다.  

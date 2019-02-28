@@ -17,36 +17,36 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - declarations [Visual Basic], namespaces
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-ms.openlocfilehash: 0336ac54c6a0dadeb9758bcb15477fe96dbfcc65
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9edb809624727aba5c40b410d0356804257bf516
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54513700"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56964659"
 ---
 # <a name="enumerations-and-name-qualification-visual-basic"></a>열거형 및 이름 한정(Visual Basic)
 일반적으로 열거형의 멤버를 참조 하는 경우 멤버 이름을 열거형 이름으로 정규화 해야 합니다. 예를 들어, 참조 하는 `Sunday` 소속 프로그램 `Days` 열거형을 다음 구문을 사용:  
   
- [!code-vb[VbEnumsTask#18](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_1.vb)]  
+ [!code-vb[VbEnumsTask#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#18)]  
   
 ## <a name="using-the-imports-statement"></a>Imports 문을 사용 하 여  
  정규화 된 이름을 추가 하 여 방지할 수는 `Imports` 문을 다음 예제와 같이 코드의 네임 스페이스 선언 섹션:  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
+ [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
   
  `Imports` 문에 참조 된 프로젝트 및 어셈블리에서 내 네임 스페이스 이름을 가져옵니다 동일한 문에 표시 되는 모듈 프로젝트입니다. 이 문이 추가 되 면 다음 예제와 같이, 한정자 없이 열거형 멤버를 참조할 수 있습니다.  
   
- [!code-vb[VbEnumsTask#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_3.vb)]  
+ [!code-vb[VbEnumsTask#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#24)]  
   
  열거형에 관련 된 상수 집합으로 구성 하 여 다른 컨텍스트에서 이름과 상수를 사용할 수 있습니다. 요일 상수에 대 한 동일한 이름을 사용할 수는 예를 들어 합니다 `Days` 및 `WorkDays` 열거형입니다. 사용 하는 경우는 `Imports` 열거형을 사용 하 여 문을 않도록 주의 해야 참조가 모호해 지지 않도록 합니다. 다음 예제를 참조하세요.  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
+ [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
   
- [!code-vb[VbEnumsTask#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_4.vb)]  
+ [!code-vb[VbEnumsTask#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#25)]  
   
  가정 `Monday` 둘 다의 구성원은 `Days` 열거형 및 `Workdays` 열거형이이 코드는 컴파일러 오류를 생성 합니다. 각 상수를 참조할 때 참조가 모호해 지지 않도록, 열거를 사용 하 여 상수 이름을 한정 합니다. 다음 코드를 참조 하는 `Saturday` 의 상수를 `Days` 및 `WorkDays` 열거형입니다.  
   
- [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_5.vb)]  
+ [!code-vb[VbEnumsTask#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#32)]  
   
 ## <a name="see-also"></a>참고자료
 - [상수 및 열거형](../../../../visual-basic/language-reference/constants-and-enumerations.md)

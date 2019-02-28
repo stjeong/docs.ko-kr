@@ -7,12 +7,12 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: 7bbce77034ce334b7c2b7f58a224fca38736385a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f65875caa16bfe00866cc3cd6fd0c0b22b034576
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532765"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970534"
 ---
 # <a name="interface-statement-visual-basic"></a>Interface 문(Visual Basic)
 인터페이스의 이름을 선언 하 고 인터페이스를 구성 하는 멤버의 정의 소개 합니다.  
@@ -95,7 +95,7 @@ End Interface
   
      클래스 인스턴스를 변수에 할당할 경우 해당 멤버의 액세스 수준을 변수의 데이터 형식 인지 기본 인터페이스를 구현 하는 클래스에서 달라질 수 있습니다. 다음은 이에 대한 예입니다.  
   
-     [!code-vb[VbVbalrStatements#39](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#39)]  
   
      클래스 멤버를 통해 액세스 하는 경우 `varAsInterface`, 모든 공용 액세스 권한을 가져야 합니다. 그러나 통해 멤버에 액세스 하는 경우 `varAsClass`는 `Sub` 프로시저 `doSomething` 개인 액세스 권한이 있습니다.  
   
@@ -108,7 +108,7 @@ End Interface
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Interface` 라는 인터페이스를 정의 하는 문을 `thisInterface`를 사용 하 여 구현 되어야 하는 `Property` 문 및 `Function` 문.  
   
- [!code-vb[VbVbalrStatements#40](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#40)]  
   
  합니다 `Property` 하 고 `Function` 문을로 끝나는 블록이 도입 되지 않습니다 `End Property` 및 `End Function` 인터페이스 내에서. 인터페이스에는 해당 멤버의 서명만 정의합니다. 전체 `Property` 하 고 `Function` 블록을 구현 하는 클래스에서 표시 `thisInterface`합니다.  
   

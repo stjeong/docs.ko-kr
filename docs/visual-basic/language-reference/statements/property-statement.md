@@ -11,12 +11,12 @@ helpviewer_keywords:
 - property procedures [Visual Basic], Property statements
 - Property keyword [Visual Basic]
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
-ms.openlocfilehash: 4c92e7b3892fa35035935d5db317c72d74814ab8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0b8bec965e5a149466863cde7a2646128469cbd0
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54512985"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972172"
 ---
 # <a name="property-statement"></a>Property Statement
 이름 속성 및 저장 하 고 속성의 값을 검색 하는 데 속성 프로시저를 선언 합니다.  
@@ -124,7 +124,8 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `implementslist`  
   
-     `Implements`가 제공된 경우 필수입니다. 구현 되는 속성 목록입니다.  
+     
+  `Implements`가 제공된 경우 필수입니다. 구현 되는 속성 목록입니다.  
   
      `implementedproperty [ , implementedproperty ... ]`  
   
@@ -190,22 +191,22 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   **값을 반환 합니다.** 값을 반환 하는 `Get` 프로시저, 속성 이름에 값을 할당 하거나 포함을 `Return` 문입니다. 다음 예제에서는 속성 이름에 반환 값을 할당 `quoteForTheDay` 를 사용 하 여는 `Exit Property` 문을 반환 합니다.  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#27)]  
   
-     [!code-vb[VbVbalrStatements#28](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_2.vb)]  
+     [!code-vb[VbVbalrStatements#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#28)]  
   
      사용 하는 경우 `Exit Property` 값을 할당 하지 않고 `name`는 `Get` 프로시저가 속성의 데이터 형식에 대 한 기본값을 반환 합니다.  
   
      `Return` 문은 한 번에 할당 된 `Get` 프로시저 반환 값 및 절차를 종료 합니다. 다음 예제에서는이 보여 줍니다.  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#27)]  
   
-     [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_3.vb)]  
+     [!code-vb[VbVbalrStatements#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#29)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 클래스에서 속성을 선언 합니다.  
   
- [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#51)]  
   
 ## <a name="see-also"></a>참고자료
 - [자동으로 구현된 속성](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)

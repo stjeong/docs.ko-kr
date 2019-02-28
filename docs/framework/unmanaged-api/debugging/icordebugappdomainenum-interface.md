@@ -1,5 +1,5 @@
 ---
-title: ICorDebugAppDomainEnum Interface1
+title: ICorDebugAppDomainEnum 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugAppDomainEnum
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3759be77cd6e6265eb8328669c88225067b99bfd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4c340eb76f3c1c570aa0c9ffa1d461f33d330175
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54509716"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981506"
 ---
-# <a name="icordebugappdomainenum-interface1"></a>ICorDebugAppDomainEnum Interface1
+# <a name="icordebugappdomainenum-interface"></a>ICorDebugAppDomainEnum 인터페이스
+
 제공 된 `Next` 지정된 된 수를 반환 하는 메서드 `ICorDebugAppDomainEnum` 열거형의 다음 위치에서 시작 하는 값입니다. 이 인터페이스는 "ICorDebugEnum"의 하위 클래스입니다.  
   
 ## <a name="methods"></a>메서드  

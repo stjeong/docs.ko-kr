@@ -15,12 +15,12 @@ helpviewer_keywords:
 - comparison operators [Visual Basic], comparing numeric values
 - operators [Visual Basic], comparison
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
-ms.openlocfilehash: db9eef215b16c95a40dfc622bb29443dd1736943
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cd7ee90e749be76012cf7143787bc6f1d096da03
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54552036"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969377"
 ---
 # <a name="comparison-operators-in-visual-basic"></a>Comparison Operators in Visual Basic
 두 식을 비교 하 고 반환 하는 비교 연산자는 `Boolean` 해당 값의 관계를 나타내는 값입니다. 숫자 값, 문자열, 비교 연산자 및 개체를 비교 연산자를 비교 하는 데는 연산자입니다. 세 가지 유형의 모든 연산자는 여기에 설명 되어 있습니다.  
@@ -61,17 +61,17 @@ ms.locfileid: "54552036"
 ## <a name="comparing-objects"></a>개체 비교  
  Visual Basic을 사용 하 여 두 개체 참조 변수 비교 합니다 [Is 연산자](../../../../visual-basic/language-reference/operators/is-operator.md) 하며 [IsNot 연산자](../../../../visual-basic/language-reference/operators/isnot-operator.md)합니다. 두 개의 참조 변수는 동일한 개체 인스턴스를 참조 하는 경우를 확인 하려면 이러한 연산자 중 하나를 사용할 수 있습니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#65](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#65](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#65)]  
   
  위의 예에서 `x Is y` 로 `True`이므로 두 변수가 동일한 인스턴스를 참조 합니다. 다음 예제를 사용 하 여이 결과 대조해 보세요.  
   
- [!code-vb[VbVbalrOperators#66](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#66](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#66)]  
   
  위의 예에서 `x Is y` 로 `False`변수 형식이 같은 개체를 참조 하지만 해당 형식의 다른 인스턴스를 참조 하므로, 합니다.  
   
  동일한 인스턴스를 가리키지 않는 두 개체에 대 한 테스트 하려는 경우는 `IsNot` 연산자를 사용 하면 번거로울 문법적으로 조합 하지 않아도 `Not` 고 `Is`입니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#67](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#67)]  
   
  위의 예에서 `If a IsNot b` 같습니다 `If Not a Is b`합니다.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "54552036"
   
  때 `typename` 는 인터페이스 형식을 지정 합니다. 그런 다음 `TypeOf`... `Is` 식 반환 `True` 개체 인터페이스 형식을 구현 하는 경우. 때 `typename` 형식인 클래스 식 반환 `True` 개체가 지정된 된 클래스에서 파생 된 클래스 또는 지정된 된 클래스의 인스턴스인 경우. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbalrOperators#68](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#68](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#68)]  
   
  앞의 예제에는 `TypeOf x Is Control` 식이 `True` 때문에 형식의 `x` 은 `Button`에서 상속 하는 `Control`합니다.  
   

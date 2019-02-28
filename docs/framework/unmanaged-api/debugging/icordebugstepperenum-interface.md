@@ -1,5 +1,5 @@
 ---
-title: ICorDebugStepperEnum Interface1
+title: ICorDebugStepperEnum 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugStepperEnum
@@ -16,14 +16,14 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4d9585fc3d10f7f58c7949eaef517e545d51010e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ad6c48b08fbdc660fdaa7ce5bfda3a6c0529662a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54572138"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980730"
 ---
-# <a name="icordebugstepperenum-interface1"></a>ICorDebugStepperEnum Interface1
+# <a name="icordebugstepperenum-interface"></a>ICorDebugStepperEnum 인터페이스
 ICorDebugEnum 메서드를 구현 하 고 ICorDebugStepper 배열을 열거 합니다.  
   
 ## <a name="methods"></a>메서드  

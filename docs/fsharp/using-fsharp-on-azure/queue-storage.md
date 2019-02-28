@@ -1,16 +1,16 @@
 ---
-title: F#을 사용 하 여 Azure Queue storage 시작
+title: 사용 하 여 Azure 큐 저장소 시작F#
 description: Azure 큐는 응용 프로그램 구성 요소 간에 안정적이 고 비동기 메시징을 제공 합니다. 클라우드 메시징을 사용 하면 독립적으로 확장할 응용 프로그램 구성 요소입니다.
 author: sylvanc
 ms.date: 09/20/2016
-ms.openlocfilehash: 14bbc657f965fc262d2a83b1fdf982fe5e75d55e
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 58a46dfe905a32be77a13d11df8f0544546ea0ed
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "33569420"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974278"
 ---
-# <a name="get-started-with-azure-queue-storage-using-f"></a>F#을 사용 하 여 Azure Queue storage 시작 #
+# <a name="get-started-with-azure-queue-storage-using-f"></a>F를 사용 하 여 Azure Queue storage 시작\#
 
 Azure Queue storage는 응용 프로그램 구성 요소 간에 클라우드 메시징을 제공 합니다. 눈금에 대 한 응용 프로그램을 디자인, 응용 프로그램 구성 요소는 종종 분리 독립적으로 확장할 수 있도록. Queue storage는 클라우드, 데스크톱, 온-프레미스 서버를 또는 모바일 장치에서에서 실행 중인지 여부를 응용 프로그램 구성 요소 간의 통신을 위한 비동기 메시징을 제공 합니다. 큐 저장소는 비동기 작업 관리와 프로세스 워크플로 작성도 지원 합니다.
 
@@ -25,9 +25,9 @@ Azure Queue storage는 응용 프로그램 구성 요소 간에 클라우드 메
 이 가이드를 사용 하려면 먼저 [Azure storage 계정 만들기](/azure/storage/storage-create-storage-account)합니다.
 또한이 계정에 대 한 저장소 액세스 키를 해야 합니다.
 
-## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트와 시작 F# 대화형
+## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트 및 시작 F# 대화형
 
-이 문서의 샘플에에서는 F# 응용 프로그램 또는 F# 스크립트에서 사용할 수 있습니다. F# 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `queues.fsx`, F# 개발 환경에서.
+이 문서의 샘플에서 사용할 수는 F# 응용 프로그램 또는 F# 스크립트입니다. 만들려는 F# 스크립트를 사용 하 여 파일을 만듭니다는 `.fsx` 예를 들어 확장 `queues.fsx`에서 F# 개발 환경입니다.
 
 다음을 사용 하 여는 [패키지 관리자](package-management.md) 와 같은 [Paket](https://fsprojects.github.io/Paket/) 또는 [NuGet](https://www.nuget.org/) 설치 하는 `WindowsAzure.Storage` 패키지 및 참조 `WindowsAzure.Storage.dll` 를사용하여스크립트에서`#r`지시문입니다.
 

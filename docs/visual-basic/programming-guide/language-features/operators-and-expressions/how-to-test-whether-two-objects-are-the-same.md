@@ -9,12 +9,12 @@ helpviewer_keywords:
 - objects [Visual Basic], variables referring to same
 - Visual Basic code, operators
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.openlocfilehash: 4130dfbe70682e28b6bb15db633ede2790e20aa3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d13671f284863fa7bf56964c2b9b963c25e8ea52
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595554"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977450"
 ---
 # <a name="how-to-test-whether-two-objects-are-the-same-visual-basic"></a>방법: 두 개체가 동일한 (Visual Basic) 인지 여부를 테스트합니다
 두 변수 개체를 참조 하는 경우 사용할 수 있습니다 합니다 `Is` 또는 `IsNot` 연산자 또는 둘 다에서 동일한 인스턴스를 참조 하는지 확인 합니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "54595554"
   
 -   사용 된 [Is 연산자](../../../../visual-basic/language-reference/operators/is-operator.md) 또는 [IsNot 연산자](../../../../visual-basic/language-reference/operators/isnot-operator.md) 피연산자로 두 변수를 사용 하 여 합니다.  
   
-     [!code-vb[VbVbalrOperators#69](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-test-whether-two-objects-are-the-same_1.vb)]  
+     [!code-vb[VbVbalrOperators#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#69)]  
   
  두 개체가 같은 인스턴스를 참조 하는 여부에 따라 특정 작업을 수행 하려는 경우. 앞의 예제에서는 컨트롤 비교 `c` 폼에 있는 활성 컨트롤에 대해 `f`합니다. 활성 컨트롤이 없는 경우 없는 경우 하나 하지 않은 동일한 컨트롤 인스턴스로 `c`, 그런 다음 `If` 추가적인 처리 없이 문은 실패 하 고 프로시저에서 반환 합니다.  
   

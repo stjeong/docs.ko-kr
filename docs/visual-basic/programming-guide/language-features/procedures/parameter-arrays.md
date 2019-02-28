@@ -10,12 +10,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: eac637c0fcaaded25a54332b2f1188876ef5f29a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e059f471f78262320f1968c12192de710876aef4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54711884"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966582"
 ---
 # <a name="parameter-arrays-visual-basic"></a>매개 변수 배열(Visual Basic)
 일반적으로 프로시저 선언에 지정 하는 보다 많은 인수를 사용 하 여 프로시저를 호출할 수 없습니다. 불특정 개수의 인수를 해야 하는 경우 선언 수를 *매개 변수 배열*, 프로시저 매개 변수에 대해 값의 배열에 적용할 수 있습니다. 프로시저를 정의 하는 경우 매개 변수 배열의 요소 수를 알 필요가 없습니다. 배열 크기는 개별적으로 각 프로시저를 호출 하 여 결정 됩니다.  
@@ -48,13 +48,13 @@ ms.locfileid: "54711884"
 ## <a name="example"></a>예제  
  다음 예제에서는 정의 하 고 함수를 호출 `calcSum`합니다. 합니다 `ParamArray` 매개 변수 한정자 `args` 가변 개수의 인수를 수락 하는 함수를 사용 하도록 설정 합니다.  
   
- [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-arrays_1.vb)]  
+ [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
   
  다음 예제에서는 매개 변수 배열에 있는 프로시저를 정의 하 고 매개 변수 배열에 전달 되는 모든 배열 요소 값을 출력 합니다.  
   
- [!code-vb[VbVbcnProcedures#48](./codesnippet/VisualBasic/parameter-arrays_2.vb)]  
+ [!code-vb[VbVbcnProcedures#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#48)]  
   
- [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
+ [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>

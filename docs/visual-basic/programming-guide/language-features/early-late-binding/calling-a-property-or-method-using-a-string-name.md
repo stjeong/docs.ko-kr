@@ -12,12 +12,12 @@ helpviewer_keywords:
 - properties [Visual Basic], setting at run time
 - CallByName function
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.openlocfilehash: 865270cfc8089d0bf229d9de7a7775dd2a3361d4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: eb9d214d7bb226a4e14cb42e78bffd940049838d
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731525"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56967531"
 ---
 # <a name="calling-a-property-or-method-using-a-string-name-visual-basic"></a>문자열 이름을 사용하여 속성 또는 메서드 호출(Visual Basic)
 대부분의 경우에서 디자인 타임에 개체의 메서드와 속성을 검색 하 고 처리 하는 코드를 작성할 수 있습니다. 그러나 경우에 따라 모르고 개체의 속성 및 메서드에 대 한 사전에 또는 속성을 지정 하거나 런타임에 메서드를 실행 하려면 최종 사용자의 유연성 할 수 있습니다.  
@@ -35,11 +35,11 @@ ms.locfileid: "54731525"
   
  클래스를 포함 하는 어셈블리에 대 한 참조를 추가 한다고 가정 `MathClass`, 라는 새 함수를 있는 `SquareRoot`다음 코드 에서처럼:  
   
- [!code-vb[VbVbalrOOP#53](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_1.vb)]  
+ [!code-vb[VbVbalrOOP#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#53)]  
   
  응용 프로그램 컨트롤 호출 되는 메서드 및 해당 인수에 텍스트 상자 컨트롤을 사용할 수 없습니다. 예를 들어 경우 `TextBox1` 평가할 식이 포함 및 `TextBox2` 는 함수의 이름을 입력 하는 데에 사용할 수는 다음 코드를 호출 하는 `SquareRoot` 의 식에서 함수 `TextBox1`:  
   
- [!code-vb[VbVbalrOOP#54](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_2.vb)]  
+ [!code-vb[VbVbalrOOP#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#54)]  
   
  "64"를 입력 하는 경우 `TextBox1`, "SquareRoot"에서 `TextBox2`를 호출 합니다 `CallMath` 프로시저, 숫자의 제곱근 `TextBox1` 평가 됩니다. 예제에서 코드를 호출 하는 `SquareRoot` 함수 (그러면 필수 인수로 평가할 식이 포함 된 문자열) 및 "8"을 반환 `TextBox1` (64의 제곱근). 물론에서 잘못 된 문자열을 입력 하면 `TextBox2`메서드는 추가 필수 인수 있으면 런타임 오류가 발생 하는 경우 문자열 메서드를 대신 속성의 이름을 포함 합니다. 사용 하는 경우 강력한 오류 처리 코드를 추가 해야 `CallByName` 이러한 또는 다른 오류를 예상할 수 있습니다.  
   

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: 7bbc3bcadb318203688a3b8ecae18e723e82c8ab
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 036985a7b60afedc1e8ef0854c619ea8515e5ffe
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54560746"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974304"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>방법: 숫자 값 (Visual Basic)를 계산 합니다.
 숫자 식 사용 하 여 숫자 값을 계산할 수 있습니다. A *숫자 식* 리터럴, 상수 및 숫자 값을 나타내는 변수를 포함 하는 식과 해당 값에 대해 작동 하는 연산자가 있습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "54560746"
   
 -   다음 예제에서는 숫자 식에 변수를 나타내는 값을 할당 하는 대입문을 사용할 수 있습니다.  
   
-     [!code-vb[VbVbalrOperators#82](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_1.vb)]  
+     [!code-vb[VbVbalrOperators#82](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#82)]  
   
      이전 예제에서는 같음 연산자의 오른쪽에 있는 식의 값 (`=`)를 변수에 할당 됩니다 `j` 연산자의 좌 변에 있는 하므로 `j` 276으로 계산 합니다.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "54560746"
   
 -   괄호를 사용 하 여 먼저 수행 하려는 작업을 묶습니다. 다음 예제에서는 피연산자와 연산자를 사용 하 여 두 개의 서로 다른 결과 보여 줍니다.  
   
-     [!code-vb[VbVbalrOperators#83](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_2.vb)]  
+     [!code-vb[VbVbalrOperators#83](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#83)]  
   
      앞의 예제에 대 한 계산에 `j` 더하기 연산자를 수행 합니다. (`+`) 첫 번째 때문에 괄호로 `(67 + i)` 일반 우선 순위 및 할당 된 값을 재정의 `j` 은 276 (4 회 69). 에 대 한 계산 `k` 일반 우선 순위 연산자 수행 (`*` 하기 전에 `+`), 및 할당 된 값 `k` 은 270 (268 + 2).  
   

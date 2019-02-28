@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Byte data type
 - data types [Visual Basic], assigning
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
-ms.openlocfilehash: 8c9787d52667dc026d3fe62ac7f4b3de7e838a93
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 217778a21fb9f231f448436ca5a68c42e5837566
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54519790"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977528"
 ---
 # <a name="byte-data-type-visual-basic"></a>Byte 데이터 형식 (Visual Basic)
 값 범위에 있는 0에서 255 까지의 부호 없는 8 비트 (1 바이트) 정수를 보유 합니다.
@@ -21,7 +21,8 @@ ms.locfileid: "54519790"
 
 사용 된 `Byte` 이진 데이터를 포함 하도록 데이터 형식입니다.  
   
-`Byte`의 기본값은 0입니다.
+
+  `Byte`의 기본값은 0입니다.
 
 ## <a name="literal-assignments"></a>리터럴 할당
 
@@ -62,7 +63,7 @@ Dim number As Byte = &H_6A
 
  다음 예에서 `b` 되는 `Byte` 변수입니다. 문은 변수의 범위 및 비트 시프트 연산자의 응용 프로그램을 보여 줍니다.
 
-[!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/byte-data-type_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#16)]  
 
 ## <a name="see-also"></a>참고자료
 

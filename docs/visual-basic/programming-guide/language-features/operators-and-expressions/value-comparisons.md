@@ -10,12 +10,12 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - expressions [Visual Basic], comparing
 ms.assetid: 60da0c76-9458-4afc-97e9-44a7939c064c
-ms.openlocfilehash: 23733741a79506730187d5735a20f3848e43da1d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 50054b9e32f4d49a34c1bb1a5c79129662019aee
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724816"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965910"
 ---
 # <a name="value-comparisons-visual-basic"></a>값 비교(Visual Basic)
 숫자 변수 값을 비교 하는 식을 생성 하려면 비교 연산자를 사용할 수 있습니다. 이러한 식은 반환을 `Boolean` 비교가 true 인지에 따라 값 false입니다. 이러한 식의 예는 다음과 같습니다.  
@@ -34,15 +34,15 @@ ms.locfileid: "54724816"
   
  값을 비교 하는 식에서 가장 흔히 사용 됩니다 `If...Then` 다음 예제와 같이 생성 합니다.  
   
- [!code-vb[VbVbalrOperators#84](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_1.vb)]  
+ [!code-vb[VbVbalrOperators#84](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#84)]  
   
  `=` 기호는 대입 연산자 뿐만 아니라 비교 연산자입니다. 비교 연산자로 사용 하는 다음 예제에서와 같이 왼쪽의 값이 오른쪽의 값과 같으면 여부를 평가 합니다.  
   
- [!code-vb[VbVbalrOperators#85](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_2.vb)]  
+ [!code-vb[VbVbalrOperators#85](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#85)]  
   
  비교 식을 어디서 나 사용할 수도 있습니다는 `Boolean` 값이 필요한, 예:는 `If`, `While`, `Loop`, 또는 `ElseIf` 문을에 할당 하거나 값을 전달 하는 경우 또는 `Boolean` 변수입니다. 다음 예제에서는 비교 식에서 반환 된 값에 할당 되는 `Boolean` 변수입니다.  
   
- [!code-vb[VbVbalrOperators#86](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_3.vb)]  
+ [!code-vb[VbVbalrOperators#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#86)]  
   
 ## <a name="see-also"></a>참고자료
 - [부울 식](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)

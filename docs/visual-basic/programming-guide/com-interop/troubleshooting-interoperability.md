@@ -16,12 +16,12 @@ helpviewer_keywords:
 - interoperability, sharing components
 - shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-ms.openlocfilehash: 413c9331611d3406c13df58f25db1ef0255339b6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dc5262d62d32ad3f79c4f4e2c4d9f862dbce3727
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54517671"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56976891"
 ---
 # <a name="troubleshooting-interoperability-visual-basic"></a>상호 운용성 문제 해결(Visual Basic)
 COM 및 관리 코드의 상호 운용 하는 경우는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], 다음과 같은 일반적인 문제 중 하나 이상을 발생할 수 있습니다.  
@@ -57,11 +57,11 @@ COM 및 관리 코드의 상호 운용 하는 경우는 [!INCLUDE[dnprdnshort](~
 ##  <a name="vbconinteroperabilitymarshalinganchor6"></a> .NET Framework 클래스의 인스턴스 만들기  
  인스턴스를 만들 수는 일반적으로 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 를 사용 하 여 클래스를 `New` 클래스 이름으로 문을 합니다. COM 클래스를 interop 어셈블리에서 표시 하는 것이 사용할 수 있는 유일한 경우는 `New` 인터페이스를 사용 하 여 문을 합니다. 사용 하 여 COM 클래스를 사용 하는 경우는 `Inherits` 문을 클래스와 마찬가지로 인터페이스를 사용할 수 있습니다. 다음 코드를 만드는 방법을 보여 줍니다는 `Command` Microsoft ActiveX 데이터 개체 2.8 라이브러리 COM 개체에 대 한 참조가 있는 프로젝트의 개체:  
   
- [!code-vb[VbVbalrInterop#20](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)]  
+ [!code-vb[VbVbalrInterop#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#20)]  
   
  그러나 COM 클래스를 기반으로 파생 클래스를 사용할 경우 다음 코드와 같이 COM 클래스를 나타내는 interop 클래스를 사용 해야 합니다.  
   
- [!code-vb[VbVbalrInterop#21](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)]  
+ [!code-vb[VbVbalrInterop#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#21)]  
   
 > [!NOTE]
 >  Interop 어셈블리는 암시적으로 COM 클래스를 나타내는 인터페이스를 구현 합니다. 사용 하지 않아야 합니다 `Implements` 오류나 이러한 인터페이스를 구현 하는 문이 생성 됩니다.  
@@ -81,19 +81,19 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  Visual Basic.NET에서는 항상 만들어야 COM 개체의 인스턴스 메서드를 사용할 수 있습니다. Visual Basic에서 이러한 메서드를 사용 하려면 원하는 클래스의 변수를 선언 하 고 새 키워드를 사용 하 여 개체를 개체 변수에 할당 합니다. `Shared` 되도록 하려는 경우에 키워드를 사용할 수 있습니다 클래스의 인스턴스를 하나만 생성 됩니다.  
   
- [!code-vb[VbVbalrInterop#23](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)]  
+ [!code-vb[VbVbalrInterop#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#23)]  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor9"></a> 이벤트 처리기에서 처리 되지 않은 오류  
  하나의 일반적인 상호 운용성 문제는 COM 개체에서 발생 한 이벤트를 처리 하는 이벤트 처리기에 오류가 포함 됩니다. 특히 사용 하 여 오류에 대 한 확인 되지 않으면 이러한 오류가 무시 됩니다 `On Error` 또는 `Try...Catch...Finally` 문입니다. 예를 들어, 다음 예제에서는 Microsoft ActiveX 데이터 개체 2.8 라이브러리 COM 개체에 대 한 참조가 있는 Visual Basic.NET 프로젝트에서입니다.  
   
- [!code-vb[VbVbalrInterop#24](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)]  
+ [!code-vb[VbVbalrInterop#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#24)]  
   
  이 예제에서는 예상 대로 오류가 발생 했습니다. 그러나 없이 동일한 예제를 시도 하는 경우는 `Try...Catch...Finally` 사용 하는 경우에 따라 오류 블록 무시 됩니다는 `OnError Resume Next` 문입니다. 오류를 처리 하지 않고 0으로 나누기 자동으로 실패합니다. 이러한 오류는 처리 되지 않은 예외 오류를 발생 하지 않습니다, 이므로 일부 형식의 COM 개체의 이벤트를 처리 하는 이벤트 처리기에서 예외 처리를 사용 하는 중요 합니다.  
   
 ### <a name="understanding-com-interop-errors"></a>COM interop 오류 이해  
  오류를 처리 하지 interop 호출이 종종 정보만 제공 하는 오류를 생성 합니다. 가능 하면 구조화 된 오류 발생 시 문제에 대 한 자세한 정보를 제공 하려면 처리를 사용 합니다. 이 응용 프로그램을 디버깅할 때 특히 유용할 수 있습니다. 예를 들어:  
   
- [!code-vb[VbVbalrInterop#25](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)]  
+ [!code-vb[VbVbalrInterop#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#25)]  
   
  예외 개체의 내용을 검사 하 여 오류 설명을, HRESULT를 COM 오류의 소스 등의 정보를 찾을 수 있습니다.  
   
@@ -113,11 +113,11 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  호출 되는 프로시저에 대 한 액세스를 해야 하는 경우 사용 하 여이 오류를 방지할 수 있습니다 합니다 `ByVal` 키워드를 허용 하는 매개 변수를 선언 `ReadOnly` 속성입니다. 예를 들어:  
   
- [!code-vb[VbVbalrInterop#26](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)]  
+ [!code-vb[VbVbalrInterop#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#26)]  
   
  호출 되는 프로시저에 대 한 소스 코드에 액세스할 수 없으면 속성을 호출 하는 프로시저에 대괄호를 추가 하 여 값으로 전달 되도록 할 수 있습니다. 예를 들어, Microsoft ActiveX 데이터 개체 2.8 라이브러리 COM 개체에 대 한 참조가 있는 프로젝트에서 사용할 수 있습니다.  
   
- [!code-vb[VbVbalrInterop#27](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)]  
+ [!code-vb[VbVbalrInterop#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#27)]  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor12"></a> Interop을 노출 하는 어셈블리 배포  
  몇 가지 고유한 과제를 제공 COM 인터페이스를 노출 하는 어셈블리를 배포 합니다. 예를 들어, 잠재적인 문제를 별도 응용 프로그램에서 동일한 COM 어셈블리를 참조할 때 발생 합니다. 어셈블리의 새 버전을 설치 하 고 다른 응용 프로그램은 이전 버전의 어셈블리를 사용 하 여 계속 하는 경우이 상황이 일반적입니다. DLL을 공유 하는 어셈블리를 제거 하는 경우 있습니다 수 하지 못할 다른 어셈블리에 있습니다.  

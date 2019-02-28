@@ -14,12 +14,12 @@ helpviewer_keywords:
 - logical negation
 - operators [Visual Basic], negation
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.openlocfilehash: cd93316ada1fcf0997922f71a8efc5a3cf411d09
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: db88b61518a52a70553c037fdd95f9a135dcb268
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54614589"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981220"
 ---
 # <a name="not-operator-visual-basic"></a>Not 연산자(Visual Basic)
 논리 부정 연산을 수행 하는 `Boolean` 식 또는 숫자 식에 비트 부정을 합니다.  
@@ -32,10 +32,10 @@ result = Not expression
   
 ## <a name="parts"></a>요소  
  `result`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다.  
   
  `expression`  
- 필수. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수. 모든 `Boolean` 또는 숫자 식입니다.  
   
 ## <a name="remarks"></a>설명  
  에 대 한 `Boolean` 식에 다음 표에서 설명 하는 방법을 `result` 결정 됩니다.  
@@ -64,14 +64,14 @@ result = Not expression
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Not` 의 논리 부정 연산을 수행 하는 연산자는 `Boolean` 식입니다. 결과 `Boolean` 역순으로 식의 값을 나타내는 값입니다.  
   
- [!code-vb[VbVbalrOperators#33](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/not-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#33)]  
   
  앞의 예제 결과 생성 `False` 고 `True`, 각각.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Not` 연산자는 숫자 식의 개별 비트 논리 부정 연산을 수행 합니다. 결과 패턴의 비트가 부호 비트를 포함 하 여 피연산자 패턴에 해당 비트의 반대입니다.  
   
- [!code-vb[VbVbalrOperators#34](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/not-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#34)]  
   
  앞의 예제는 각각 – 11 고 –9,-7, 결과 생성합니다.  
   

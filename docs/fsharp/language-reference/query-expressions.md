@@ -2,12 +2,12 @@
 title: 쿼리 식
 description: LINQ에 대 한 쿼리 식 지원에 대해 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: e4a36305b607f573c29744f50a841be078c8061f
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: e3ad2d4ebf09fff17aba80fcb3fc9853ec06af47
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611375"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977986"
 ---
 # <a name="query-expressions"></a>쿼리 식
 
@@ -511,7 +511,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
     <th>F#쿼리 식 (대/소문자 구분)</th>
   </tr>
 <tr><td>
-테이블에서 모든 필드를 선택 합니다.</br>
+테이블에서 모든 필드를 선택 합니다.<br>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 </code></pre>
@@ -2428,7 +2428,7 @@ module Queries2 = begin
 end
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)
 - [Linq.QueryBuilder 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)

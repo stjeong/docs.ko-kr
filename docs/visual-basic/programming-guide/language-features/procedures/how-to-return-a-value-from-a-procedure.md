@@ -6,12 +6,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], returning from
 - procedures [Visual Basic], returning a value
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
-ms.openlocfilehash: 38b0673f5725077eec9253021eec4216e66504a2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 45f175de647887a406f8ae87dae492a5fe58cca9
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54615252"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56976735"
 ---
 # <a name="how-to-return-a-value-from-a-procedure-visual-basic"></a>방법: 프로시저 (Visual Basic)에서 값을 반환 합니다.
 `Function` 프로시저 반환 값 호출 코드를 실행 하 여를 `Return` 문 또는 발생 하는 `Exit Function` 또는 `End Function` 문.  
@@ -26,11 +26,11 @@ ms.locfileid: "54615252"
   
      다음 `Function` 프로시저 제일 긴 쪽 또는 정삼각형의 빗변을 계산 하 고 호출 코드에 반환 합니다.  
   
-     [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
      다음 예제에서는 일반적인 호출 `hypotenuse`, 반환 된 값을 저장 하는 합니다.  
   
-     [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_2.vb)]  
+     [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
 ### <a name="to-return-a-value-using-exit-function-or-end-function"></a>Exit 함수 또는 최종 함수를 사용 하 여 값을 반환 하려면  
   

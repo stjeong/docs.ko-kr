@@ -10,19 +10,19 @@ helpviewer_keywords:
 - functions [Visual Basic], calling recursively
 - recursion
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
-ms.openlocfilehash: b5cbe0dfa8053a93cde9c92ffe87f0eae15d3efd
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: 97cceb833da0ef6f9ee4e3dab5abb1f2ba73a94e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55739295"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56969325"
 ---
 # <a name="recursive-procedures-visual-basic"></a>재귀 프로시저(Visual Basic)
 A *재귀* 절차는 자신을 호출 하는 것입니다. 일반적으로이 Visual Basic 코드를 작성 하는 가장 효과적인 방법은 없습니다.  
   
  다음 절차는 재귀를 사용 하 여 원래 인수로의 계승을 계산 합니다.  
   
- [!code-vb[VbVbcnProcedures#51](./codesnippet/VisualBasic/recursive-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#51)]  
   
 ## <a name="considerations-with-recursive-procedures"></a>재귀 프로시저를 사용 하 여 고려 사항  
  **제한 조건**합니다. 재귀를 종료할 수 있는 하나 이상의 조건에 대해 테스트 하는 재귀 프로시저를 디자인 해야 하 고 적절 한 수의 재귀 호출 내에서 이러한 조건이 충족 되는 있는 경우도 처리 해야 합니다. 오류 없이 충족 될 수 있는 하나 이상의 조건 없이 프로시저 무한 루프로 실행 하는 위험 수준이 높은 실행 합니다.  

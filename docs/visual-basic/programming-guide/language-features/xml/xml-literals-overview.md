@@ -7,12 +7,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], XML literals
 - literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.openlocfilehash: c6d2600b590e01fff062828f8e0f48d9cfad0190
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1f0e50de6217e01a7bcb68ab27a9595d91981dd4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54681393"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968829"
 ---
 # <a name="xml-literals-overview-visual-basic"></a>XML 리터럴 개요(Visual Basic)
 *XML 리터럴* Visual Basic 코드에 직접 XML을 통합할 수 있습니다. XML 리터럴 구문을 나타내는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체 되며 XML 1.0 구문과 비슷합니다. 이렇게 하면 쉽게 코드에 동일한 최종 XML 구조 때문에 XML 요소와 문서를 프로그래밍 방식으로 만들 수 있습니다.  
@@ -26,11 +26,11 @@ ms.locfileid: "54681393"
 ## <a name="simple-literals"></a>간단한 리터럴  
  만들 수는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 입력 하거나 유효한 XML에 붙여 넣어 Visual Basic 코드의 개체입니다. XML 요소 리터럴의 반환을 <xref:System.Xml.Linq.XElement> 개체입니다. 자세한 내용은 [XML 요소 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) 하 고 [XML 리터럴 및 XML 1.0 사양에](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)입니다. 다음 예제에서는 몇 가지 자식 요소가 있는 XML 요소를 만듭니다.  
   
- [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_1.vb)]  
+ [!code-vb[VbXMLSamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#5)]  
   
  XML 리터럴을 사용 하 여 시작 하 여 XML 문서를 만들 수 있습니다 `<?xml version="1.0"?>`다음 예제에서와 같이 합니다. XML 문서 리터럴의 반환을 <xref:System.Xml.Linq.XDocument> 개체입니다. 자세한 내용은 [XML 문서 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)합니다.  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#6)]  
   
 > [!NOTE]
 >  Visual Basic의 XML 리터럴 구문을 구문에 XML 1.0 사양과 일치 하지 않습니다. 자세한 내용은 [XML 리터럴 및 XML 1.0 사양에](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)입니다.  
@@ -47,12 +47,12 @@ ms.locfileid: "54681393"
   
  예를 들어, 다음 코드를 사용 하 여 포함 된 쿼리를의 멤버에서 XML 요소를 만드는 합니다 `phoneNumbers2` 배열을 추가한 다음 요소 자식으로 `contact2`입니다.  
   
- [!code-vb[VbXMLSamples#7](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_3.vb)]  
+ [!code-vb[VbXMLSamples#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#7)]  
   
 ## <a name="how-the-compiler-creates-objects-from-xml-literals"></a>컴파일러가는 XML 리터럴에서 개체를 만드는 방법  
  Visual Basic 컴파일러는 XML 리터럴을 해당 호출으로 변환 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 구축 하는 생성자를 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체입니다. 예를 들어, Visual Basic 컴파일러는 변환 다음 코드 예제에 대 한 호출을 <xref:System.Xml.Linq.XProcessingInstruction> XML 버전 명령에 대 한 생성자를 호출 합니다 <xref:System.Xml.Linq.XElement> 생성자에 대 한는 `<contact>`, `<name>`, 및 `<phone>` 요소 및에 대 한 호출을 <xref:System.Xml.Linq.XAttribute> 에 대 한 생성자는 `type` 특성입니다. 특히, 다음 예제의 특성 지정, Visual Basic 컴파일러를 호출 합니다 <xref:System.Xml.Linq.XAttribute.%23ctor%28System.Xml.Linq.XName%2CSystem.Object%29> 생성자를 두 번입니다. 첫 번째 값을 전달 `type` 에 대 한 합니다 `name` 매개 변수와 값 `home` 에 대 한는 `value` 매개 변수입니다. 두 번째는 값을 전달할 수도 `type` 에 대 한 합니다 `name` 매개 변수 이지만 값 `work` 에 대 한는 `value` 매개 변수입니다.  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#6)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Xml.Linq.XElement>

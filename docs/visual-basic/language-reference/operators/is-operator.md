@@ -9,12 +9,12 @@ helpviewer_keywords:
 - TypeOf...Is expression
 - Is operator [Visual Basic]
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
-ms.openlocfilehash: a78189a6b82100665ac07b9d7c89590613ec1e1f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c4b23bb2d81d1f5272a5813123681da7406c3368
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54745625"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980344"
 ---
 # <a name="is-operator-visual-basic"></a>Is 연산자(Visual Basic)
 두 개체 참조 변수를 비교합니다.  
@@ -46,7 +46,7 @@ result = object1 Is object2
 ## <a name="example"></a>예제  
  다음 예제에서는 `Is` 개체 참조의 쌍을 비교 연산자입니다. 결과에 할당 되는 `Boolean` 두 개체가 동일한 지 여부를 나타내는 값입니다.  
   
- [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/is-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#27)]  
   
  위 예제에 사용할 수 있습니다는 `Is` 연산자 둘 다를 테스트 하려면 초기 바인딩 및 런타임에 바인딩된 개체입니다.  
   

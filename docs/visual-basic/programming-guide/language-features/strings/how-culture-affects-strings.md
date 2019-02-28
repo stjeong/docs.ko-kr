@@ -5,12 +5,12 @@ helpviewer_keywords:
 - locale [Visual Basic], effect on strings
 - strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.openlocfilehash: 9f796583e1e38c31960868b1e6f20288587fa076
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b9e9b4e199e4504e21b365706ea60d63c9d5fb87
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543450"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980947"
 ---
 # <a name="how-culture-affects-strings-in-visual-basic"></a>Visual Basic에서 문화권이 문자열에 영향을 주는 방식
 이 도움말 페이지는 Visual Basic 문자열 변환과 비교를 수행 하려면 문화권 정보를 사용 하는 방법을 설명 합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "54543450"
   
  문화권의 문자열에 날짜를 변환, 전달 된 <xref:System.Globalization.CultureInfo> 날짜 개체의 개체 <xref:System.DateTime.ToString%28System.IFormatProvider%29> 메서드. 예를 들어, 다음 코드에서는 "2005-07-04 00시: 00" 응용 프로그램의 문화권 설정에 관계 없이 합니다.  
   
- [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
+ [!code-vb[VbVbalrConcepts#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConcepts/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  날짜 리터럴은 항상 영어 culture에 따라 해석 됩니다.  
@@ -60,11 +60,11 @@ ms.locfileid: "54543450"
   
  `StrComp` 정렬 순서를 기반으로 하는 두 비교 문자열 간의 관계를 나타내는 정수를 반환 합니다. 결과 대 한 양수 값을 첫 번째 문자열이 두 번째 문자열 보다 크면 임을 나타냅니다. 음수 결과 첫 번째 문자열은 작은 나타내고 0 문자열이 같은지를 나타냅니다.  
   
- [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
+ [!code-vb[VbVbalrStrings#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
   
  사용할 수도 있습니다는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 의 파트너는 `StrComp` 함수를 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드. 이것이 기본 string 클래스의 정적, 오버 로드 된 방법입니다. 다음 예제에서는이 메서드를 사용 하는 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
+ [!code-vb[VbVbalrStrings#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#48)]  
   
  비교를 수행 하는 방법 보다 세부적으로 제어에 대 한 추가 오버 로드를 사용할 수 있습니다는 <xref:System.String.Compare%2A> 메서드. 사용 하 여 합니다 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 사용할 수는 `comparisonType` 사용할 비교 형식을 지정 하는 인수입니다.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "54543450"
 |`InvariantCulture` 또는 `InvariantCultureIgnoreCase`|고정 문화권에서 문자열 해석에 따라 비교 합니다.<br /><br /> 이 다른 합니다 `Ordinal` 및 `OrdinalIgnoreCase`고정 문화권은 허용 된 범위를 벗어나는 문자가 해당 고정 문자로 취급 하므로, 합니다.|고정된 정렬 순서가 필요한 비교 데이터를 유지 하거나 언어적으로 관련 된 데이터를 표시 하는 경우에 이러한 값을 사용 합니다.|  
   
 ### <a name="security-considerations"></a>보안 고려 사항  
- 애플리케이션에서 비교 또는 대/소문자 변경 작업의 결과에 따라 보안 결정 다음 작업을 사용 해야 합니다 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 통과 `Ordinal` 또는 `OrdinalIgnoreCase` 에 대 한는 `comparisonType` 인수입니다.  
+ 응용 프로그램에서 비교 또는 대/소문자 변경 작업의 결과에 따라 보안 결정 다음 작업을 사용 해야 합니다 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 통과 `Ordinal` 또는 `OrdinalIgnoreCase` 에 대 한는 `comparisonType` 인수입니다.  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Globalization.CultureInfo>

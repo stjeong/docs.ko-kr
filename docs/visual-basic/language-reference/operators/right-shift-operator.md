@@ -10,12 +10,12 @@ helpviewer_keywords:
 - operator >>
 - right shift operators [Visual Basic]
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
-ms.openlocfilehash: b40ed11747e057d620a9a45dd1361081f38acec8
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 46bc87c653742c8469ffaff1decb9549a29feaeb
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260504"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972081"
 ---
 # <a name="-operator-visual-basic"></a>>> 연산자(Visual Basic)
 비트 패턴에 산술 오른쪽 시프트를 수행합니다.  
@@ -28,13 +28,13 @@ result = pattern >> amount
   
 ## <a name="parts"></a>요소  
  `result`  
- 필수 요소. 정수 계열 숫자 값입니다. 비트 패턴을 이동한 결과입니다. 데이터 형식은 `pattern`의 형식과 같습니다.  
+ 필수 요소. 정수 계열 숫자 값입니다. 결과 비트 패턴을 이동한입니다. 데이터 형식이 동일 `pattern`합니다.  
   
  `pattern`  
- 필수 요소. 정수 숫자 식입니다. 이동할 비트 패턴입니다. 데이터 형식은 정수 계열 형식(`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long` 또는 `ULong`)이어야 합니다.  
+ 필수 요소. 정수 계열 숫자 식입니다. 이동할 비트 패턴입니다. 데이터 형식은 정수 계열 형식 이어야 합니다 (`SByte`, `Byte`, `Short`, `UShort`를 `Integer`를 `UInteger`를 `Long`, 또는 `ULong`).  
   
  `amount`  
- 필수. 숫자 식입니다. 비트 패턴을 이동할 비트 수입니다. 데이터 형식은 `Integer`이거나 `Integer`로 확장되어야 합니다.  
+ 필수. 숫자 식입니다. 비트 패턴을 이동할 비트 수입니다. 데이터 형식 이어야 합니다 `Integer` 변환할 또는 `Integer`합니다.  
   
 ## <a name="remarks"></a>설명  
  산술 shifts 순환있지 않습니다 즉, 결과의 한쪽 끝에서 벗어나 이동한 비트는 반대쪽 다시 도입 되지 않습니다. 산술 오른쪽 시프트에서 가장 오른쪽 비트 위치를 넘어 이동 하는 비트 무시 되 고 왼쪽 (기호) 비트 비워진 왼쪽 비트 위치로 전파 됩니다. 즉 `pattern` 음수 값을 가진 비워진된 위치 중 하나로 설정 됩니다; 그렇지 않으면 0으로 설정 됩니다.  
@@ -60,7 +60,7 @@ result = pattern >> amount
 ## <a name="example"></a>예제  
  다음 예제에서는 `>>` 정수 값에 산술 오른쪽 시프트를 수행 하는 연산자입니다. 결과 항상 동일한 데이터 이동 되는 식의 형식에 있습니다.  
   
- [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#14)]  
   
  앞의 예제 결과 다음과 같습니다.  
   
@@ -78,7 +78,7 @@ result = pattern >> amount
   
  다음 예에서는 음수 값에 산술 shifts를 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#55)]  
   
  앞의 예제 결과 다음과 같습니다.  
   

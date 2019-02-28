@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: 2bd120c11e42648d1ca0304bbf9338f1cf569c48
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: 758d3334fd9d3b01e088246cf2fe28c5b03576d6
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065871"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973732"
 ---
 # <a name="myresources-object"></a>My.Resources 개체
 응용 프로그램의 리소스에 액세스 하기 위한 속성 및 클래스를 제공 합니다.  
@@ -53,29 +53,29 @@ ms.locfileid: "55065871"
 ## <a name="example"></a>예제  
  라는 문자열 리소스에는 폼의 제목을 설정 하는이 예제 `Form1Title` 응용 프로그램 리소스 파일에서입니다. 예제가 작동 하려면 응용 프로그램 이라는 문자열로 있어야 `Form1Title` 해당 리소스 파일에 있습니다.  
   
- [!code-vb[VbVbalrMyResources#1](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_1.vb)]  
+ [!code-vb[VbVbalrMyResources#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#1)]  
   
 ## <a name="example"></a>예제  
  이 예제에서는 명명 된 아이콘을 폼의 아이콘 설정 `Form1Icon` 는 응용 프로그램의 리소스 파일에 저장 됩니다. 예제가 작동 하려면 응용 프로그램 이라는 아이콘이 있어야 `Form1Icon` 해당 리소스 파일에 있습니다.  
   
- [!code-vb[VbVbalrMyResources#2](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_2.vb)]  
+ [!code-vb[VbVbalrMyResources#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#2)]  
   
 ## <a name="example"></a>예제  
  명명 된 이미지 리소스에는 폼의 배경 이미지를 설정 하는이 예제 `Form1Background`, 응용 프로그램 리소스 파일에 있습니다. 이 예제가 작동 하려면 응용 프로그램 명명 된 이미지 리소스 있어야 `Form1Background` 해당 리소스 파일에 있습니다.  
   
- [!code-vb[VbVbalrMyResources#3](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_3.vb)]  
+ [!code-vb[VbVbalrMyResources#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#3)]  
   
 ## <a name="example"></a>예제  
  이 예제에서는 명명 된 오디오 리소스로 저장 되는 소리를 재생 `Form1Greeting` 응용 프로그램의 리소스 파일입니다. 이 예제에서 응용 프로그램 이라는 오디오 리소스가 있어야 `Form1Greeting` 해당 리소스 파일에 있습니다. `My.Computer.Audio.Play` 방법은 Windows Forms 응용 프로그램에 대해서만 사용할 수 있습니다.  
   
- [!code-vb[VbVbalrMyResources#4](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_4.vb)]  
+ [!code-vb[VbVbalrMyResources#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#4)]  
   
 ## <a name="example"></a>예제  
  이 예제에서는 프랑스어 문화권 버전의 응용 프로그램의 문자열 리소스를 검색합니다. 리소스 이름은 `Message`합니다. 문화권을 변경 하는 합니다 `My.Resources` 개체를 사용 하 여 <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.ChangeUICulture%2A>입니다.  
   
  이 예제가 작동 하려면 응용 프로그램 이라는 문자열로 있어야 `Message` 리소스 파일 및 응용 프로그램 있어야 Resources.fr-FR.resx, 해당 리소스 파일의 프랑스어 문화권 버전입니다. 응용 프로그램 리소스 파일의 프랑스어 문화권 버전이 없는 경우는 `My.Resource` 개체는 기본 문화권 리소스 파일에서 리소스를 검색 합니다.  
   
- [!code-vb[VbVbalrMyResources#10](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_5.vb)]  
+ [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
 ## <a name="see-also"></a>참고자료
 - [애플리케이션 리소스 관리(.NET)](/visualstudio/ide/managing-application-resources-dotnet)

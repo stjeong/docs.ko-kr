@@ -10,12 +10,12 @@ helpviewer_keywords:
 - operator /=
 - compound assignment statements [Visual Basic]
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
-ms.openlocfilehash: 8507d81d3060192640bf9a84e67ad39111c455b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c8fb990533d9db90eacf76aff424ea3cf96b0875
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537571"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970521"
 ---
 # <a name="-operator-visual-basic"></a>/= 연산자(Visual Basic)
 변수 또는 속성의 값을 식의 값으로 나누고 부동 소수점 결과 변수 또는 속성에 할당 합니다.  
@@ -46,7 +46,7 @@ variableorproperty /= expression
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `/=` 연산자를 하나 `Integer` 할당 첫 번째 변수 몫을 두 번째 변수입니다.  
   
- [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
 ## <a name="see-also"></a>참고자료
 - [/ 연산자 (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)

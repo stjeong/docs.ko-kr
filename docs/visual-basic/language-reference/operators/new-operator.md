@@ -11,12 +11,12 @@ helpviewer_keywords:
 - New constraint
 - New keyword [Visual Basic]
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
-ms.openlocfilehash: 0e8ec5877cba5f5cf97e1677460da06fd87cce1c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dda23ef3ff49bd32474f39f5ae1807e57bdc2a62
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54587556"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980466"
 ---
 # <a name="new-operator-visual-basic"></a>New 연산자(Visual Basic)
 소개는 `New` 새 개체 인스턴스를 만들려면 절 형식 매개 변수에 생성자 제약 조건이 지정 또는 식별을 `Sub` 클래스 생성자로 프로시저입니다.  
@@ -26,11 +26,11 @@ ms.locfileid: "54587556"
   
  사용할 수는 `New` 선언문 또는 대입문 절. 문이 실행 될 때 제공한 인수를 전달 하며, 지정된 된 클래스의 적절 한 생성자를 호출 합니다. 다음 예제에서는 인스턴스를 만들어이 `Customer` 클래스는 두 명의 생성자는 매개 변수를 사용 하는 및 문자열 매개 변수를 사용 하는 것입니다.  
   
- [!code-vb[VbVbalrKeywords#11](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class6.vb#11)]  
   
  배열 클래스 이므로 `New` 다음 예와에서 같이 새 배열 인스턴스를 만들 수 있습니다.  
   
- [!code-vb[VbVbalrKeywords#12](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_2.vb)]  
+ [!code-vb[VbVbalrKeywords#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class6.vb#12)]  
   
  CLR (공용 언어 런타임) throw는 <xref:System.OutOfMemoryException> 새 인스턴스를 만드는 메모리가 부족 한 경우 오류가 발생 합니다.  
   
@@ -39,7 +39,8 @@ ms.locfileid: "54587556"
   
  생성자를 클래스에 대 한 프로시저를 만들려면의 이름을 설정를 `Sub` 하는 절차는 `New` 키워드입니다. 자세한 내용은 참조 하세요. [개체 수명: 개체가 만들어지고 제거 하는 방법을](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)합니다.  
   
- `New` 키워드는 다음 컨텍스트에서 사용할 수 있습니다.  
+ 
+  `New` 키워드는 다음 컨텍스트에서 사용할 수 있습니다.  
   
  [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
@@ -49,7 +50,7 @@ ms.locfileid: "54587556"
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.OutOfMemoryException>
-- [키워드](../../../visual-basic/language-reference/keywords/index.md)
+- [C++ 키워드](../../../visual-basic/language-reference/keywords/index.md)
 - [형식 목록](../../../visual-basic/language-reference/statements/type-list.md)
 - [Visual Basic의 제네릭 형식](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
 - [개체 수명: 개체가 만들어지고 제거 하는 방법](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

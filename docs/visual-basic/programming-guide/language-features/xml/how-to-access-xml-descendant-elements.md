@@ -7,18 +7,18 @@ helpviewer_keywords:
 - descendent axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: aabfa258-4112-4e7e-bab9-403f96072ef7
-ms.openlocfilehash: f1248109dfcc853f701ea2ab61edc67d768e9663
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1edbbc052bbf319d91f1f944451312e7d67594ca
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54666178"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973862"
 ---
 # <a name="how-to-access-xml-descendant-elements-visual-basic"></a>방법: XML 하위 요소 액세스 (Visual Basic)
 이 예제는 하위 항목 축 속성을 사용 하 여 지정 된 이름이 있는 XML 요소 아래에 포함 된 모든 XML 요소에 액세스 하는 방법을 보여 줍니다. 사용 하 여 특히 합니다 `Value` 속성을 하는 컬렉션의 첫 번째 요소의 값을 가져옵니다는 `name` 하위 축 속성에서 반환 합니다. 합니다 `name` 하위 축 속성 이라는 모든 요소를 가져옵니다 `name` 에 포함 되어 있는 `contacts` 개체입니다. 또한이 예제에서는 합니다 `phone` 이라는 모든 하위 요소를 액세스 하는 하위 항목 축 속성 `phone` 에 포함 되어 있는 `contacts` 개체입니다.  
   
 ## <a name="example"></a>예제  
- [!code-vb[VbXMLSamples#31](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-descendant-elements_1.vb)]  
+ [!code-vb[VbXMLSamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#31)]  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
  이 예제에는 다음 사항이 필요합니다.  

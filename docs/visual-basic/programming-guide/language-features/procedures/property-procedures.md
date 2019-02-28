@@ -13,12 +13,12 @@ helpviewer_keywords:
 - property procedures
 - Get statement [Visual Basic], property procedures
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
-ms.openlocfilehash: e61cf907ac2c5c04aa86c03a73bda7fcfcb8122d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d0a0003409f0abc277d92f4e68981d9ffd901a41
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54710484"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971535"
 ---
 # <a name="property-procedures-visual-basic"></a>Property 프로시저(Visual Basic)
 속성 프로시저는 일련의 모듈, 클래스 또는 구조체에서 사용자 지정 속성을 조작 하는 Visual Basic 문 합니다. 속성 프로시저는 라고도 *속성 접근자*합니다.  
@@ -99,11 +99,11 @@ End Property
 ### <a name="illustration-of-declaration-and-call"></a>선언 및 호출의 그림  
  다음과 같은 속성이 두 구성 요소 이름, 이름 및 성 전체 이름을 저장합니다. 호출 코드를 읽을 때 `fullName`, `Get` 프로시저는 두 구성 요소 이름을 결합을 전체 이름을 반환 합니다. 호출 코드에서 새 전체 이름으로 할당 하는 경우는 `Set` 프로시저 두 구성 요소 이름으로 중단 하려고 합니다. 공간을 찾지 못하면, 모든 첫 번째 이름으로 저장 합니다.  
   
- [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/property-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#8)]  
   
  다음 예제에서는 속성 프로시저를 호출 하는 일반적인 `fullName`합니다.  
   
- [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

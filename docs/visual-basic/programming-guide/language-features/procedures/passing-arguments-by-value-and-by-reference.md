@@ -9,12 +9,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], passing by value or by reference
 - argument passing [Visual Basic], by value or by reference
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
-ms.openlocfilehash: 86dc813c264f45e4f9c2cdf8d2dc7e7e6603c4d8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c2c778afea90a90b2b5f83300c2d174db39f3c15
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54725365"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978477"
 ---
 # <a name="passing-arguments-by-value-and-by-reference-visual-basic"></a>값 및 참조로 인수 전달(Visual Basic)
 Visual Basic의 프로시저에 인수를 전달할 수 있습니다 *값별로* 하거나 *참조별*합니다. 이 *전달 메커니즘*, 프로시저가 호출 코드에서 인수를 기본 프로그래밍 요소를 수정할 수 있는지 여부를 결정 합니다. 프로시저 선언을 지정 하 여 각 매개 변수의 전달 메커니즘을 결정 합니다 [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) 하거나 [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) 키워드입니다.  
@@ -66,7 +66,7 @@ Visual Basic의 프로시저에 인수를 전달할 수 있습니다 *값별로*
  다음 예제에서는 값으로 인수를 전달 하는 경우 및 참조로 전달 하는 경우를 보여 줍니다. 프로시저 `Calculate` 둘 다 포함 된 `ByVal` 및 `ByRef` 매개 변수입니다. 이자율을 지정 `rate`, 및 금액 합계 `debt`, 프로시저의 작업에 대 한 새 값을 계산 하는 것 `debt` 이자의 원래 값에 적용 한 결과인 `debt`. 때문에 `debt` 되는 `ByRef` 매개 변수를 새 합계에 해당 하는 호출 코드에서 인수 값에 반영 됩니다 `debt`합니다. 매개 변수 `rate` 되는 `ByVal` 매개 변수 때문에 `Calculate` 해당 값을 변경 하지 않아야 합니다.  
   
 ### <a name="code"></a>코드  
- [!code-vb[VbVbcnProcedures#74](./codesnippet/VisualBasic/passing-arguments-by-value-and-by-reference_1.vb)]  
+ [!code-vb[VbVbcnProcedures#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class2.vb#74)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

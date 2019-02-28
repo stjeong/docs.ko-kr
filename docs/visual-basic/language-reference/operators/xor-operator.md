@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Xor keyword [Visual Basic]
 - bitwise comparison [Visual Basic]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-ms.openlocfilehash: af6589206232f01b572cd2b965ba1a0f36d462e1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bc3df1fdee5405445b4534a6982383c49b369b01
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54527122"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980440"
 ---
 # <a name="xor-operator-visual-basic"></a>배타적 or 연산자(Visual Basic)
 두 논리 제외를 수행 `Boolean` 식이나 두 숫자 식에 비트 제외 합니다.  
@@ -35,10 +35,10 @@ result = expression1 Xor expression2
  필수 요소. 모든 `Boolean` 또는 숫자 변수입니다. 부울 비교를 위해 `result` 는 두 개의 논리 제외 (배타적 논리합) `Boolean` 값입니다. 비트 연산의 경우 `result` 두 숫자 비트 패턴의 배타적 비트 연산 (배타적 비트 논리합)를 나타내는 숫자 값입니다.  
   
  `expression1`  
- 필수 요소. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수 요소. 모든 `Boolean` 또는 숫자 식입니다.  
   
  `expression2`  
- 필수. 임의의 `Boolean` 또는 숫자 식입니다.  
+ 필수. 모든 `Boolean` 또는 숫자 식입니다.  
   
 ## <a name="remarks"></a>설명  
  부울 비교를 위해 `result` 은 `True` 경우에 중 하나만 `expression1` 하 고 `expression2` 로 `True`합니다. 즉, 경우에 `expression1` 하 고 `expression2` 평가 반대 `Boolean` 값입니다. 다음 표에서 설명 하는 방법을 `result` 결정 됩니다.  
@@ -78,14 +78,14 @@ result = expression1 Xor expression2
 ## <a name="example"></a>예제  
  다음 예제에서는 `Xor` 두 식에 논리 제외 (배타적 논리합)를 수행 하는 연산자입니다. 결과 `Boolean` 식 중 정확히 하나 인지를 나타내는 값 `True`합니다.  
   
- [!code-vb[VbVbalrOperators#40](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#40)]  
   
  이전 예제의 결과는 `False`하십시오 `True`, 및 `False`각각.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Xor` 두 숫자 식의 개별 비트에 논리 제외 (배타적 논리합)를 수행 하는 연산자입니다. 피연산자의 해당 비트 중 정확히 1로 설정 된 경우 결과 패턴의 비트가 설정 됩니다.  
   
- [!code-vb[VbVbalrOperators#41](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#41)]  
   
  앞의 예제는 각각 2, 12, 14, 결과 생성합니다.  
   

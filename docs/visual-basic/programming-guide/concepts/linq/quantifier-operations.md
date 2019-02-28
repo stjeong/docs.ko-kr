@@ -2,12 +2,12 @@
 title: 수량자 작업 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: ae1a2b73-503c-4f4b-a3fd-31b5adbee67c
-ms.openlocfilehash: 0f732cdb51ed4e26039fc8c1d02b95ad32f901e1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 966bc958d6feac77ebe1c229bfe5dbb993031676
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54551932"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56976748"
 ---
 # <a name="quantifier-operations-visual-basic"></a>수량자 작업 (Visual Basic)
 수량자 작업은 시퀀스에서 조건을 충족하는 요소가 일부인지 전체인지를 나타내는 <xref:System.Boolean> 값을 반환합니다.  
@@ -31,11 +31,11 @@ ms.locfileid: "54551932"
   
  다음 예제에서는 합니다 `Aggregate` 절 및 <xref:System.Linq.Enumerable.All%2A> 확장 메서드를 컬렉션에서 해당 애완 동물 모든 지정 된 기간 보다 오래 된 사람들을 반환 합니다.  
   
- [!code-vb[CsLINQAnyAll#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/quantifier-operations_1.vb)]  
+ [!code-vb[CsLINQAnyAll#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAnyAll/VB/AnyAll.vb#1)]  
   
  다음 예제에서는 합니다 `Aggregate` 절 및 <xref:System.Linq.Enumerable.Any%2A> 반환할 컬렉션에서 해당 사용자가 하나 이상 있는 애완 동물 확장 메서드는 지정 된 기간 보다 오래 된 합니다.  
   
- [!code-vb[CsLINQAnyAll#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/quantifier-operations_2.vb)]  
+ [!code-vb[CsLINQAnyAll#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAnyAll/VB/AnyAll.vb#2)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Linq>

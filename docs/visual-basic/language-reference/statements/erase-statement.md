@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Erase keyword [Visual Basic]
 - Erase statement [Visual Basic]
 ms.assetid: 7a8133d7-b750-4d74-8b66-ba1dd9778d4b
-ms.openlocfilehash: cab3da4465b4671d203036c2d9bcd40662dc234a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5828e28b84ec62c7ed674757090806d73c61caea
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54522442"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966738"
 ---
 # <a name="erase-statement-visual-basic"></a>Erase 문(Visual Basic)
 배열 변수를 해제 하 고 해당 요소에 사용 되는 메모리 할당을 취소 하는 데 사용 합니다.  
@@ -35,7 +35,7 @@ Erase arraylist
 ## <a name="example"></a>예제  
  다음 예제에서는 `Erase` 두 배열을 지우고 해당 메모리를 확보 하는 문 (1000 및 100 저장소 요소 각각). `ReDim` 문은 다음 3 차원 배열에 새 배열 인스턴스를 할당 합니다.  
   
- [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#19)]  
   
 ## <a name="see-also"></a>참고자료
 - [Nothing](../../../visual-basic/language-reference/nothing.md)

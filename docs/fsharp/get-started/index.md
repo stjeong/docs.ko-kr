@@ -1,15 +1,9 @@
 ---
-title: 시작F#
-description: 시작 하는 방법을 확인 합니다 F# 프로그래밍 언어입니다.
+title: '시작F#'
+description: '시작 하는 방법을 확인 합니다 F# 프로그래밍 언어입니다.'
 ms.date: 12/08/2018
-ms.openlocfilehash: df0e98b4d001ceaeca2ebe3d154c6bad57a8a30d
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170823"
 ---
-# <a name="get-started-with-f"></a>시작F# #
+# <a name="get-started-with-f"></a>F #과 함께 시작\#
 
 사용 하 여 시작할 수 있습니다 F# 컴퓨터 또는 온라인입니다.
 
@@ -17,7 +11,7 @@ ms.locfileid: "53170823"
 
 설치 및 사용 방법에 여러 지침 F# 컴퓨터에 처음으로 합니다.  다음 표에서 의사 결정을 내리는 데 사용할 수 있습니다.
 
-| OS | Visual Studio를 선호 합니다. | Visual Studio Code를 선호 합니다. | 명령줄을 선호 합니다. |
+| OS | Prefer Visual Studio | Visual Studio Code를 선호 합니다. | 명령줄을 선호 합니다. |
 | -- |------------------------|--------------------------|-----------------------------|-------------------------|
 | Windows | [Visual Studio 시작](get-started-visual-studio.md) | [Visual Studio Code 및 Ionide 시작](get-started-vscode.md) | [.NET Core CLI를 사용 하 여 시작](get-started-command-line.md) |
 | macOS | [Mac 용 VS를 사용 하 여 시작](get-started-with-visual-studio-for-mac.md) | [Visual Studio Code 및 Ionide 시작](get-started-vscode.md) | [.NET Core CLI를 사용 하 여 시작](get-started-command-line.md) |

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Operator statement [Visual Basic]
 - CType function [Visual Basic], Operator statement
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
-ms.openlocfilehash: 9da2fc05824fa7e412c1c4802852fd00ba2709e0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 44b0a2513f504c8fecec74868130463581b597af
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54658197"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981701"
 ---
 # <a name="operator-statement"></a>Operator Statement
 연산자 기호, 피연산자 및 클래스 또는 구조체에서 연산자 프로시저를 정의 하는 코드를 선언 합니다.  
@@ -168,7 +168,7 @@ End Operator
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 합니다 `Operator` 연산자 프로시저를 포함 하는 구조체의 윤곽선을 정의 하는 문을 합니다 `And`, `Or`, `IsFalse`, 및 `IsTrue` 연산자. `And` 및 `Or` 형식의 두 개의 피연산자 `abc` 반환 형식 및 `abc`합니다. `IsFalse` 및 `IsTrue` 형식의 단일 피연산자를 각각 사용 `abc` 돌아와 `Boolean`합니다. 이러한 정의 사용 하도록 호출 코드를 사용 하면 `And`, `AndAlso`를 `Or`, 및 `OrElse` 형식의 피연산자를 사용 하 여 `abc`입니다.  
   
- [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#44)]  
   
 ## <a name="see-also"></a>참고자료
 - [IsFalse 연산자](../../../visual-basic/language-reference/operators/isfalse-operator.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GetXmlNamespace operator [Visual Basic]
 - GetXmlNamespace keyword [Visual Basic]
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
-ms.openlocfilehash: f9201aa4b2aa9280b9b3a4e0a2badf25ea819088
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e02a7c5c9859352aa07bfaa741b80b7fd18d1da4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54684751"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979907"
 ---
 # <a name="getxmlnamespace-operator-visual-basic"></a>GetXmlNamespace 연산자(Visual Basic)
 가져옵니다는 <xref:System.Xml.Linq.XNamespace> 지정된 된 XML 네임 스페이스 접두사에 해당 하는 개체입니다.  
@@ -39,7 +39,7 @@ GetXmlNamespace(xmlNamespacePrefix)
 ## <a name="example"></a>예제  
  다음 예제에서는 `ns` 는 XML 네임 스페이스 접두사입니다. 다음 네임 스페이스의 접두사는 XML 리터럴을 만들고 정규화 된 이름을 가진 첫 번째 자식 노드에 액세스를 사용 하 여 `ns:phone`입니다. 그런 다음 해당 자식 노드를 전달 합니다 `ShowName` 정규화 된 이름을 사용 하 여 생성 하는 서브루틴은 `GetXmlNamespace` 연산자. 합니다 `ShowName` 서브루틴을 설치 하려면 정규화 된 이름을 전달 합니다 합니다 <xref:System.Xml.Linq.XNode.Ancestors%2A> 메서드를 부모 `ns:contact` 노드.  
   
- [!code-vb[VbXMLSamples#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/getxmlnamespace-operator_1.vb)]  
+ [!code-vb[VbXMLSamples#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/GetXmlNamespace.vb#38)]  
   
  호출 하는 경우 `TestGetXmlNamespace.RunSample()`에 다음 텍스트가 포함 된 메시지 상자가 표시 됩니다.  
   

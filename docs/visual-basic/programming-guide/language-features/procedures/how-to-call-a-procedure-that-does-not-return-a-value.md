@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedures [Visual Basic], calling
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
-ms.openlocfilehash: f85c7a7edf4d05dc50166ad4f30080c2e595cf65
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 899c33e6615e2979ba7abe0f537dbe05fd104beb
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54590645"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965568"
 ---
 # <a name="how-to-call-a-procedure-that-does-not-return-a-value-visual-basic"></a>방법: (Visual Basic) 값을 반환 하지 않는 프로시저 호출
 `Sub` 프로시저가 호출 코드에 값을 반환 하지 않습니다. 호출 명시적으로 독립 실행형 호출 문을 사용 하 여 합니다. 식 내에서 해당 이름을 사용 하 여 호출할 수 없습니다.  
@@ -24,9 +24,9 @@ ms.locfileid: "54590645"
   
 3.  쉼표로 구분 하 여 괄호 안에 인수 목록의 인수를 배치 합니다. 같은 순서로 인수를 지정 해야 하는 `Sub` 프로시저는 해당 매개 변수를 정의 합니다.  
   
-     다음 예제에서는 Visual Basic <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 응용 프로그램 창을 활성화 하는 함수입니다. <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 창 제목이 유일한 인수로 변수로 사용 합니다. 호출 코드에 값을 반환 하지 않습니다. 이 예제에서는 throw Notepad 프로세스를 실행 하지 않는 경우는 <xref:System.ArgumentException>합니다. `Shell` 절차에서는 애플리케이션을 지정 된 경로 가정 합니다.  
+     다음 예제에서는 Visual Basic <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 응용 프로그램 창을 활성화 하는 함수입니다. <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 창 제목이 유일한 인수로 변수로 사용 합니다. 호출 코드에 값을 반환 하지 않습니다. 이 예제에서는 throw Notepad 프로세스를 실행 하지 않는 경우는 <xref:System.ArgumentException>합니다. `Shell` 절차에서는 응용 프로그램을 지정 된 경로 가정 합니다.  
   
-     [!code-vb[VbVbalrCatRef#11](./codesnippet/VisualBasic/how-to-call-a-procedure-that-does-not-return-a-value_1.vb)]  
+     [!code-vb[VbVbalrCatRef#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#11)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.Interaction.Shell%2A>

@@ -2,12 +2,12 @@
 title: XML Serializer 생성기 도구(Sgen.exe)
 ms.date: 03/30/2017
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
-ms.openlocfilehash: aa8671146c241c2867c373aacf3cd12f12aaeb1a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7a0d69ce79a1dbe3e0bd56fd858013447f227fc9
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54743558"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972094"
 ---
 # <a name="xml-serializer-generator-tool-sgenexe"></a>XML Serializer 생성기 도구(Sgen.exe)
 XML Serializer 생성기에서 지정된 어셈블리의 형식에 대해 XML serialization 어셈블리를 만들면 지정된 형식의 개체를 serialize 또는 deserialize할 때 <xref:System.Xml.Serialization.XmlSerializer>의 시작 성능을 높일 수 있습니다.  
@@ -58,5 +58,4 @@ sgen Data.dll
 ## <a name="see-also"></a>참고자료
 
 - [도구](../../../docs/framework/tools/index.md)
-- [XML Web Services 개요](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)
 - [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

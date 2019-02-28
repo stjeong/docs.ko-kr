@@ -5,12 +5,12 @@ helpviewer_keywords:
 - attribute list
 - attributes [Visual Basic], applying
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-ms.openlocfilehash: 9ab55187fef11fba9c794ff0266656860bea3d1f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fb25ecad3b797a4993e7a780823a38a0f0ccbd1f
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672112"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975630"
 ---
 # <a name="attribute-list-visual-basic"></a>특성 목록(Visual Basic)
 선언 된 프로그래밍 요소에 적용할 특성을 지정 합니다. 여러 특성은 쉼표로 구분합니다. 다음은 하나의 특성에 대 한 구문입니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "54672112"
 ## <a name="example"></a>예제  
  적용 하는 다음 예제는 <xref:System.Runtime.InteropServices.DllImportAttribute> 특성의 기본 정의 `Function` 프로시저입니다.  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/attribute-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> 특성 사용된 하는 절차는 관리 되지 않는 동적 연결 라이브러리 (DLL)의 진입점을 나타낸다는 것을 나타냅니다. 특성 위치 인수로 DLL 이름 및 변수 이니셜라이저, 다른 정보를 제공합니다.  
   

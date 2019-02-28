@@ -8,12 +8,12 @@ helpviewer_keywords:
 - troubleshooting procedures
 - procedures [Visual Basic], about procedures
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
-ms.openlocfilehash: 5ef0a485a0b114f465aac694970ec3350b26f35a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e29e4a3b216657b398407701530ad9bfe975dbf6
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54648549"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972003"
 ---
 # <a name="troubleshooting-procedures-visual-basic"></a>프로시저 문제 해결(Visual Basic)
 이 페이지는 프로시저를 사용 하 여 작업할 때 발생할 수 있는 몇 가지 일반적인 문제를 나열 합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "54648549"
   
  **해결 방법:** 반환 되는 배열의 요소를 수정할 수를 지역 변수로 내부 배열을 정의 합니다. 다음 예제에서는 오류 없이 컴파일됩니다.  
   
- [!code-vb[VbVbcnProcedures#66](./codesnippet/VisualBasic/troubleshooting-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#66](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#66)]  
   
 ## <a name="argument-not-being-modified-by-procedure-call"></a>수정 되지 않은 인수 프로시저 호출에서  
  호출 코드에서 인수를 기본 프로그래밍 요소를 변경 하는 절차를 허용 하려는 경우 참조로 전달 해야 합니다. 하지만 값으로 전달 하는 경우에 프로시저 참조 형식 인수 요소에 액세스할 수 있습니다.  
@@ -52,13 +52,13 @@ ms.locfileid: "54648549"
   
  다음 예제에서는 요소를 값으로 배열 변수를 가져오고 작동 하는 두 가지 절차를 정의 합니다. 프로시저 `increase` 각 요소에 추가 하기만 하면 됩니다. 프로시저 `replace` 매개 변수는 새 배열을 할당 `a()` 다음 각 요소에 하나를 추가 합니다. 그러나 다시 할당 영향을 주지 않습니다 호출 코드에서 기본 배열 변수 때문 `a()` 선언 `ByVal`합니다.  
   
- [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/troubleshooting-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#35)]  
   
- [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/troubleshooting-procedures_3.vb)]  
+ [!code-vb[VbVbcnProcedures#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#38)]  
   
  다음 예에서는 호출 `increase` 고 `replace`입니다.  
   
- [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/troubleshooting-procedures_4.vb)]  
+ [!code-vb[VbVbcnProcedures#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#37)]  
   
  첫 번째 `MsgBox` 표시 호출 "increase(n) 후: 11, 21, 31, 41". 때문에 `n` 참조 형식인 `increase` 전달 된 경우에 해당 멤버를 변경할 수 있습니다 `ByVal`합니다.  
   
@@ -66,7 +66,7 @@ ms.locfileid: "54648549"
   
  **해결 방법:** 기본 변수 요소 자체를 수정할 수, 참조로 전달 합니다. 다음 예제에서는 선언에 변경 내용을 표시 `replace` 허용 하는 호출 코드에서 다른 배열로 바꾸는 것입니다.  
   
- [!code-vb[VbVbcnProcedures#64](./codesnippet/VisualBasic/troubleshooting-procedures_5.vb)]  
+ [!code-vb[VbVbcnProcedures#64](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#64)]  
   
 ## <a name="unable-to-define-an-overload"></a>오버 로드를 정의할 수 없습니다.  
  프로시저의 오버 로드 된 버전을 정의 하려는 경우에 이름이 같지만 서로 다른 시그니처를 사용 해야 합니다. 컴파일러에서 동일한 서명으로 오버 로드 선언 구분할 수 없습니다, 하는 경우 오류가 발생 합니다.  
@@ -108,9 +108,9 @@ ms.locfileid: "54648549"
   
  다음 예제에서는 오버 로드 확인 프로세스를 보여 줍니다.  
   
- [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/troubleshooting-procedures_6.vb)]  
+ [!code-vb[VbVbcnProcedures#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#62)]  
   
- [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/troubleshooting-procedures_7.vb)]  
+ [!code-vb[VbVbcnProcedures#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#63)]  
   
  첫 번째 호출에서 컴파일러 첫 번째 오버 로드를 제거 하기 때문에 첫 번째 인수의 형식 (`Short`) 해당 매개 변수의 형식으로 축소 변환 (`Byte`). 두 번째 오버 로드의 각 인수 형식 때문에 다음 세 번째 오버 로드를 제거 (`Short` 하 고 `Single`) 세 번째 오버 로드에서 해당 형식으로 확장 되는지를 (`Integer` 고 `Single`). 두 번째 오버 로드를 컴파일러 호출에 사용 되므로 적은 확대 필요 합니다.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "54648549"
   
  **해결 방법:** 명확 하 게 오버 로드 된 프로시저 호출 수를 사용 하 여 [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) 매개 변수 형식과 인수 데이터 형식과 일치 하도록 합니다. 다음 예제에서는 호출 `z` 두 번째 오버 로드를 확인 하 게 하는 합니다.  
   
- [!code-vb[VbVbcnProcedures#65](./codesnippet/VisualBasic/troubleshooting-procedures_8.vb)]  
+ [!code-vb[VbVbcnProcedures#65](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#65)]  
   
 ### <a name="overload-resolution-with-optional-and-paramarray-arguments"></a>선택적으로 확인 및 ParamArray 인수 오버 로드  
  마지막 매개 변수가 선언 된 점을 제외 하 고 프로시저의 두 오버 로드 시그니처가 동일한 경우 [선택 사항](../../../../visual-basic/language-reference/modifiers/optional.md) 하나로 및 [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) 다른 컴파일러는 해당 프로시저를 호출할 확인 가장 가까운 일치 항목에 따라 합니다. 자세한 내용은 [Overload Resolution](./overload-resolution.md)을 참조하세요.  

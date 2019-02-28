@@ -12,17 +12,17 @@ helpviewer_keywords:
 - inference [Visual Basic]
 - type inference [Visual Basic]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-ms.openlocfilehash: f4edc879af9539a40269336bed97fe206920992a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 62f46f8f9691dd260e4a4c40c0ffccbce4c5beb7
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706750"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973407"
 ---
 # <a name="local-type-inference-visual-basic"></a>지역 형식 유추(Visual Basic)
 Visual Basic 컴파일러를 사용 하 여 *형식 유추* 없이 선언 된 지역 변수의 데이터 형식을 결정 하는 `As` 절. 컴파일러는 초기화 식의 형식에서 변수의 형식을 유추합니다. 그러면 다음 예제에서와 같이 형식을 명시적으로 지정 하지 않고 변수를 선언할 수 있습니다. 선언으로 인해 둘 다 `num1` 고 `num2` 정수로 강력한 형식입니다.  
   
- [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#1)]  
  
 > [!NOTE]
 >  원하지 않는 경우 `num2` 형식으로 이전 예제에는 `Integer`, 같은 선언을 사용 하 여 다른 형식을 지정할 수 있습니다 `Dim num3 As Object = 3` 또는 `Dim num4 As Double = 3`합니다.  
@@ -40,23 +40,23 @@ Visual Basic 컴파일러를 사용 하 여 *형식 유추* 없이 선언 된 �
 ## <a name="examples"></a>예제  
  형식 유추가 발생 하지 않고 지역 변수를 선언할 때는 `As` 절 및 초기화 합니다. 컴파일러는 변수의 형식으로 할당 된 초기 값의 형식을 사용 합니다. 예를 들어 형식의 변수를 선언 코드의 다음 줄은 각각 `String`합니다.  
   
- [!code-vb[VbVbalrTypeInference#2](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#2)]  
   
  다음 코드에는 정수 배열을 만들려면 두 해당 하는 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrTypeInference#3](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_3.vb)]  
+ [!code-vb[VbVbalrTypeInference#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#3)]  
   
  형식 유추를 사용 하 여 루프 제어 변수의 형식을 결정 하는 것이 유용 합니다. 다음 코드에서 컴파일러에서 유추 하는 `number` 은 `Integer` 때문에 `someNumbers2` 이전 예제의 정수의 배열입니다.  
   
- [!code-vb[VbVbalrTypeInference#4](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_4.vb)]  
+ [!code-vb[VbVbalrTypeInference#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#4)]  
   
  지역 형식 유추에서 사용할 수 있습니다 `Using` 문을 다음 예제 에서처럼 리소스 이름의 형식을 설정 합니다.  
   
- [!code-vb[VbVbalrTypeInference#7](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_5.vb)]  
+ [!code-vb[VbVbalrTypeInference#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#7)]  
   
  다음 예제 에서처럼 함수의 반환 값에서 변수의 형식을 유추할 수도 있습니다. 둘 다 `pList1` 하 고 `pList2` 때문에 프로세스의 배열은 `Process.GetProcesses` 프로세스의 배열을 반환 합니다.  
   
- [!code-vb[VbVbalrTypeInference#5](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_6.vb)]  
+ [!code-vb[VbVbalrTypeInference#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#5)]  
   
 ## <a name="option-infer"></a>Option Infer  
  `Option Infer` 지역 형식 유추 특정 파일에서 허용 되는지 여부를 지정할 수 있습니다. 사용 하거나 옵션을 차단 하려면 파일의 시작 부분에 다음 문 중 하나를 입력 합니다.  

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - events [Visual Basic], raising
 - raising events [Visual Basic], walkthroughs
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
-ms.openlocfilehash: f792109f1d1117b5b112e06da1510938e4b8a5ec
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 04f3cab43f7f7f7fc73e0b209b1bacee136513b5
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54580497"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975396"
 ---
 # <a name="walkthrough-declaring-and-raising-events-visual-basic"></a>연습: 선언 및 발생 이벤트 (Visual Basic)
 이 연습에는 선언 하 고 라는 클래스에 이벤트를 발생 하는 방법을 보여 줍니다. `Widget`합니다. 항목을 참고할 하려는 단계를 완료 하면 [연습: 이벤트 처리](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)에서 이벤트를 사용 하는 방법을 보여 주는 `Widget` 응용 프로그램에서 상태 정보를 제공 하는 개체입니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "54580497"
   
 -   사용 된 `Event` 에서 이벤트를 선언 하는 키워드는 `Widget` 클래스. 이벤트 않았을 수 있습니다 `ByVal` 하 고 `ByRef` 인수를으로 `Widget`의 `PercentDone` 이벤트를 보여 줍니다.  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#1](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_1.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#1)]  
   
  호출 하는 개체를 받으면를 `PercentDone` 이벤트는 `Percent` 인수 완료 된 작업의 백분율을 포함 합니다. `Cancel` 인수 설정할 수 있습니다 `True` 이벤트를 발생 시킨 메서드를 취소 합니다.  
   
@@ -59,11 +59,11 @@ ms.locfileid: "54580497"
   
 1.  에 대 한 액세스를 간소화 하는 `Timer` 이 클래스에 의해 사용 되는 속성 추가 `Imports` 클래스 모듈의 선언 섹션의 맨 위에 문을 위에 `Class Widget` 문.  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#2](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_2.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#2)]  
   
 2.  `Widget` 클래스에 다음 코드를 추가합니다.  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#3](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_3.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#3)]  
   
  응용 프로그램 호출 하는 경우는 `LongTask` 메서드를 `Widget` 클래스에서 발생 시키는 `PercentDone` 이벤트 모든 `MinimumInterval` 시간 (초). 이 이벤트는 반환 될 때 `LongTask` 확인 하는 `Cancel` 인수 설정한 `True`합니다.  
   

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Imports statement [Visual Basic], referencing assemblies
 - assemblies [Visual Basic], references
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
-ms.openlocfilehash: d9a227f60edf142832ab41e3ea99f33c53a42229
-ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.openlocfilehash: f3396eb3e758dc456d86de80246de24349680f2e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56748312"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973043"
 ---
 # <a name="references-and-the-imports-statement-visual-basic"></a>참조 및 Imports 문(Visual Basic)
 있습니다 수 외부 개체에 사용할 프로젝트를 선택 하 여 합니다 **참조 추가** 명령 합니다 **프로젝트** 메뉴. Visual Basic에는 형식 라이브러리 하지만 자세한 정보를 포함 하는 같은 어셈블리를 참조할 수 있습니다.  
@@ -36,15 +36,15 @@ ms.locfileid: "56748312"
 ## <a name="using-aliases-with-the-imports-statement"></a>Imports 문을 사용 하 여 별칭을 사용 하 여  
  `Imports` 문을 사용 하면 클래스의 메서드에 대 한 액세스를 쉽게 참조의 정규화 된 이름을 명시적으로 입력할 필요가 없습니다. 별칭을 통해 네임 스페이스의 한 부분에 친숙 한 이름을 지정할 수 있습니다. 캐리지 리턴/줄 바꿈 여러 줄에 표시할 텍스트는 단일 시퀀스의 일부인 예를 들어 합니다 <xref:Microsoft.VisualBasic.ControlChars> 모듈에는 <xref:Microsoft.VisualBasic?displayProperty=nameWithType> 네임 스페이스입니다. 이 상수 별칭 없이 프로그램을 사용 하려면 다음 코드를 입력 해야 합니다.  
   
- [!code-vb[VbVbalrApplication#3](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_1.vb)]  
+ [!code-vb[VbVbalrApplication#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#3)]  
   
  `Imports` 문은 바로 다음 첫 번째 줄은 반드시 `Option` 모듈의 문이 있습니다. 다음 코드 조각 가져오기에 대 한 별칭을 할당 하는 방법을 보여 줍니다는 <xref:Microsoft.VisualBasic.ControlChars?displayProperty=nameWithType> 모듈:  
   
- [!code-vb[VbVbalrApplication#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_2.vb)]  
+ [!code-vb[VbVbalrApplication#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#4)]  
   
  이 네임 스페이스에 대 한 향후 참조 짧아집니다 될 수 있습니다.  
   
- [!code-vb[VbVbalrApplication#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_3.vb)]  
+ [!code-vb[VbVbalrApplication#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#5)]  
   
  경우는 `Imports` 문에 별칭 이름을 지정 하지 않은, 한정자 없이 모듈에서 가져온된 네임 스페이스 내에 정의 된 요소를 사용할 수 있습니다. 별칭을 지정 하는 경우 해당 네임 스페이스 내에 포함 된 이름에 대 한 한정자로 사용 되어야 합니다.  
   

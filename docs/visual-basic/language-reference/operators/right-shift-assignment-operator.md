@@ -10,12 +10,12 @@ helpviewer_keywords:
 - compound assignment statements [Visual Basic]
 - '>>= operator [Visual Basic]'
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
-ms.openlocfilehash: 0ea1e03168da12564f148f525af977f29a43bec8
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 0ae4eb16727b2b297088170ada04cfd07d6c7a0a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55265287"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980115"
 ---
 # <a name="-operator-visual-basic"></a>>>= 연산자(Visual Basic)
 변수 또는 속성의 값에 산술 오른쪽 시프트를 수행 하 고 해당 변수 또는 속성으로 결과 할당 합니다.  
@@ -46,7 +46,7 @@ variableorproperty >>= amount
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `>>=` 비트 패턴의 시프트 연산자는 `Integer` 오른쪽으로 지정 된 크기 및 결과 변수에 할당 변수입니다.  
   
- [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#15)]  
   
 ## <a name="see-also"></a>참고자료
 - [>> 연산자](../../../visual-basic/language-reference/operators/right-shift-operator.md)

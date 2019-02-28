@@ -27,12 +27,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 186238d8e823f028caaed2e2618d882d21e1358f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4a2e1704e72e608f5b5fd9c6dace42c144f92bb4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54548952"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56973173"
 ---
 # <a name="declare-statement"></a>Declare Statement
 외부 파일에 구현 된 프로시저에 대 한 참조를 선언 합니다.  
@@ -70,7 +70,8 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 ## <a name="remarks"></a>설명  
  경우에 따라 프로젝트 외부 (예: DLL 또는 코드 리소스) 파일에 정의 된 프로시저를 호출 해야 합니다. 이렇게 하면 Visual Basic 컴파일러 액세스 절차를 올바르게 호출 하는 데 필요한 정보를 프로시저 위치한, 등 식별 방법, 호출 시퀀스 및 반환 형식으로 사용 하는 문자열 문자 집합 없습니다. `Declare` 문 외부 프로시저에 대 한 참조를 만들고이 필요한 정보를 제공 합니다.  
   
- `Declare`는 모듈 수준에서만 사용할 수 있습니다. 즉, 합니다 *선언 컨텍스트* 외부 참조를 클래스, 구조체 또는 모듈 이어야 하며 원본 파일, 네임 스페이스, 인터페이스, 프로시저 또는 블록 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
+ 
+  `Declare`는 모듈 수준에서만 사용할 수 있습니다. 즉, 합니다 *선언 컨텍스트* 외부 참조를 클래스, 구조체 또는 모듈 이어야 하며 원본 파일, 네임 스페이스, 인터페이스, 프로시저 또는 블록 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
   
  외부 참조는 기본적으로 [공용](../../../visual-basic/language-reference/modifiers/public.md) 액세스 합니다. 액세스 한정자를 사용 하 여 해당 액세스 수준을 조정할 수 있습니다.  
   
@@ -132,14 +133,14 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 ## <a name="example"></a>예제  
  다음 예제에서는 선언에 대 한 외부 참조는 `Function` 현재 사용자 이름을 반환 하는 프로시저입니다. 그런 다음 외부 프로시저를 호출 `GetUserNameA` 의 일부로 `getUser` 프로시저입니다.  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#15)]  
   
 ## <a name="example"></a>예제  
  <xref:System.Runtime.InteropServices.DllImportAttribute> 비관리 코드에서 함수를 사용 하는 대체 방법을 제공 합니다. 다음 예제에서는 가져온된 함수를 사용 하지 않고 선언 된 `Declare` 문입니다.  
   
- [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#16)]  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>

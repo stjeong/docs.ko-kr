@@ -11,12 +11,12 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - short-circuit evaluation
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
-ms.openlocfilehash: c9f4d9c880e189eb0ad4834736bdc664eb5b4376
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5ba8be5051d0723fd2654b9733933cd434ac3ac5
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54703564"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965191"
 ---
 # <a name="andalso-operator-visual-basic"></a>AndAlso 연산자(Visual Basic)
 두 식에 논리 결합을 단락 (short-circuiting)를 수행 합니다.  
@@ -55,14 +55,14 @@ result = expression1 AndAlso expression2
 ## <a name="example"></a>예제  
  다음 예제에서는 `AndAlso` 두 식에 논리 결합을 수행 하는 연산자입니다. 결과 `Boolean` 전체 식이 있는지 여부를 나타내는 값이 true입니다. 첫 번째 식이 `False`, 두 번째는 평가 되지 않습니다.  
   
- [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#24)]  
   
  앞의 예제 결과 생성 `True`, `False`, 및 `False`, 각각. 계산에서 `secondCheck`, 첫 번째는 이미 이므로는 두 번째 식은 계산 되지 않습니다 `False`합니다. 그러나 두 번째 식 계산에서 계산 됩니다 `thirdCheck`합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제와 `Function` 배열의 요소 중에서 지정 된 값을 검색 하는 프로시저입니다. 배열이 비어 있는 경우 또는 배열 길이 초과 하는 경우는 `While` 문은 검색 값을 비교 하 여 배열 요소를 테스트 하지 않습니다.  
   
- [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#25)]  
   
 ## <a name="see-also"></a>참고자료
 - [논리/비트 연산자 (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)

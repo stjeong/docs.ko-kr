@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Visual Basic code, operators
 - arithmetic operators [Visual Basic], about arithmetic operators
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
-ms.openlocfilehash: ff0532c87e03e4b502367313e33ddb9bd12ad8cf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2bd88b2df91c38d658e46157a9a83ce44ab9f25c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730739"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981272"
 ---
 # <a name="arithmetic-operators-in-visual-basic"></a>Visual Basic의 산술 연산자
 산술 연산자는 리터럴, 변수, 다른 식, 함수 및 속성 호출 및 상수를 나타내는 숫자 값의 계산을 포함 하는 친숙 한 산술 연산을 수행 하도록 사용 됩니다. 피연산자의 개별 비트 수준에서 역할 및를 왼쪽 또는 오른쪽의 비트 패턴을 이동할 비트 시프트 연산자는 산술 연산자를 사용 하 여 분류 합니다.  
@@ -26,29 +26,29 @@ ms.locfileid: "54730739"
 ## <a name="arithmetic-operations"></a>산술 연산  
  와 함께 식에서 두 값을 추가할 수 있습니다는 [+ 연산자](../../../../visual-basic/language-reference/operators/addition-operator.md), 또는 빼기에서 사용 하 여 다른 합니다 [-연산자 (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)처럼 다음 예제에서는 합니다.  
   
- [!code-vb[VbVbalrOperators#57](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#57)]  
   
  부정도 사용 합니다 [-연산자 (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md), 없지만 하나의 피연산자를 사용 하 여 다음 예제와 같이 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#58](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#58)]  
   
  곱하기와 나누기 사용 합니다 [* 연산자](../../../../visual-basic/language-reference/operators/multiplication-operator.md) 및 [/ 연산자 (Visual Basic)](../../../../visual-basic/language-reference/operators/floating-point-division-operator.md)다음 예제 처럼 각각.  
   
- [!code-vb[VbVbalrOperators#59](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#59](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#59)]  
   
  지 수 연산을 사용 하 여는 [^ 연산자](../../../../visual-basic/language-reference/operators/exponentiation-operator.md)같이 다음 예에서는 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#60](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#60](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#60)]  
   
  정수 나누기가 사용 하 여 실행 합니다 [\ 연산자 (Visual Basic)](../../../../visual-basic/language-reference/operators/integer-division-operator.md)합니다. 정수 나누기 몫을 반환 합니다, 그리고 즉, 횟수를 나타내는 정수 제 분할할 수 있습니다 나머지 고려 하지 않고 피제수로 합니다. Divisor와 dividend 모두 정수 계열 형식 이어야 합니다 (`SByte`, `Byte`, `Short`, `UShort`를 `Integer`를 `UInteger`, `Long`, 및 `ULong`)이이 연산자에 대 한 합니다. 먼저 다른 모든 형식은 정수 계열 형식으로 변환 합니다. 다음 예제에서는 정수 나누기를 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#61](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_5.vb)]  
+ [!code-vb[VbVbalrOperators#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#61)]  
   
  모듈러스 산술를 사용 하 여 수행 되는 [Mod 연산자](../../../../visual-basic/language-reference/operators/mod-operator.md)합니다. 이 연산자는 정수 횟수도 하 피제수를 나누는 나눈 나머지를 반환 합니다. 피제수와 제수의 정수 형식이 면 반환된 된 값은 정수입니다. Divisor와 dividend 부동 소수점 형식이 면 반환 된 값을 부동 소수점 이기도 합니다. 다음 예제에서는이 동작을 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#62](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_6.vb)]  
+ [!code-vb[VbVbalrOperators#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#62)]  
   
- [!code-vb[VbVbalrOperators#63](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_7.vb)]  
+ [!code-vb[VbVbalrOperators#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#63)]  
   
 ### <a name="attempted-division-by-zero"></a>0으로 나누기  
  0으로 나누기는 관련 된 데이터 형식에 따라 다른 결과입니다. 정수 계열 사업부의 (`SByte`, `Byte`, `Short`, `UShort`, `Integer`를 `UInteger`, `Long`, `ULong`), [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] throw를 <xref:System.DivideByZeroException> 예외입니다. 나누기 작업에 `Decimal` 또는 `Single` 데이터 형식으로는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 도 throw를 <xref:System.DivideByZeroException> 예외.  
@@ -80,7 +80,7 @@ ms.locfileid: "54730739"
   
  다음 예에서는 이동는 `Integer` 왼쪽과 오른쪽 값입니다.  
   
- [!code-vb[VbVbalrOperators#64](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_8.vb)]  
+ [!code-vb[VbVbalrOperators#64](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#64)]  
   
  산술 shifts 오버플로 예외를 생성 하지 않습니다.  
   

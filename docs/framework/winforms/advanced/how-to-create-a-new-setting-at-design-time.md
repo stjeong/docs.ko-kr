@@ -5,17 +5,17 @@ helpviewer_keywords:
 - application settings [Windows Forms], design time
 - application settings [Windows Forms], creating
 ms.assetid: c5d60a66-6507-462f-a81f-e3bc0a804e16
-ms.openlocfilehash: 160d4a9f560479b3a66b2cf4d7712b24551fabee
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c936adb6d4d80032b862994c21178a505da6789b
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54558704"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56964255"
 ---
 # <a name="how-to-create-a-new-setting-at-design-time"></a>방법: 디자인 타임에 새 설정 만들기
 설정 디자이너를 사용 하 여 디자인 타임에 새 설정을 만들 수 있습니다. 설정 디자이너에 새 설정 만들기 및 해당 설정에 대 한 속성을 지정할 수 있는 모눈 스타일 인터페이스입니다. 이름, 값, 형식 및 새로운 설정에 대 한 범위를 지정 해야 합니다. 설정의 만든 후 코드에서 액세스할 수 있는 것입니다.  
   
-### <a name="to-create-a-new-setting-at-design-time-in-c"></a>디자인 타임에 새 설정을 만들려면C#  
+### <a name="to-create-a-new-setting-at-design-time-in-c"></a>C에서 디자인 타임에 새 설정을 만들려면\#
   
 1.  **솔루션 탐색기**를 확장 합니다 **속성** 프로젝트의 노드.  
   

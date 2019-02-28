@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For...Next statements
 - For statement [Visual Basic]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.openlocfilehash: 703a30a558067b386c6bb5288012094418d61ca7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7b12a1b1b8d116cc906459407240fca4302460e4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54746275"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968727"
 ---
 # <a name="fornext-statement-visual-basic"></a>For...Next 문(Visual Basic)
 문 그룹을 지정한 횟수 만큼을 반복합니다.  
@@ -67,11 +67,11 @@ Next [ counter ]
   
  다음 예제에서는 `index` 변수 값이 1로 시작 및 종료 후의 값은 루프가 반복 될 때마다 증분됩니다 `index` 5에 도달 합니다.  
   
- [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#111](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#111)]  
   
  다음 예제에서는 `number` 변수는 2에서 시작 하 고 값의 끝에서 끝나는 루프의 각 반복에서 0.25 줄어 `number` 0에 도달 합니다. 합니다 `Step` 인수의 `-.25` 0.25 루프의 각 반복 하 여 값을 줄입니다.  
   
- [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#112](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#112)]  
   
 > [!TIP]
 >  [하는 동안... While 문 종료](../../../visual-basic/language-reference/statements/while-end-while-statement.md) 또는 [수행 하는 중... Loop 문은](../../../visual-basic/language-reference/statements/do-loop-statement.md) 때 알 수 없는 사전에 루프에서 문을 실행 횟수에 적합 합니다. 그러나 아는 경우 루프는 특정 횟수 만큼 실행 된 `For`... `Next` 루프는 것이 좋습니다. 루프를 먼저 입력 하는 경우에 반복 횟수를 결정 합니다.  
@@ -79,7 +79,7 @@ Next [ counter ]
 ## <a name="nesting-loops"></a>중첩 루프  
  중첩할 수 있습니다 `For` 루프 내에서 다른 한 루프를 배치 하 여 합니다. 다음 예제에서는 중첩 된 `For`... `Next` 다른 단계 값이 있는 구조입니다. 외부 루프는 루프의 각 반복에 대해 문자열을 만듭니다. 내부 루프의 각 반복에 대해 루프 카운터 변수를 감소 시킵니다 루프입니다.  
   
- [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#113](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#113)]  
   
  루프를 중첩 하는 경우 각 루프는 고유 해야 `counter` 변수입니다.  
   
@@ -160,17 +160,17 @@ Next [ counter ]
 ## <a name="example"></a>예제  
  다음 예제에서는 제네릭 목록에서 모든 요소를 제거합니다. 대신는 [각각에 대 한 중... 다음 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md), 예제에 나와 있는 `For`... `Next` 내림차순으로 반복 하는 문입니다. 때문에 예제에서는이 기술을 사용 하는 `removeAt` 메서드 인해 제거 된 요소를 더 낮은 인덱스 값을 갖기 after 요소입니다.  
   
- [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_5.vb)]  
+ [!code-vb[VbVbalrStatements#114](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#114)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 사용 하 여 선언 된 열거형 반복을 [Enum 문](../../../visual-basic/language-reference/statements/enum-statement.md)합니다.  
   
- [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_6.vb)]  
+ [!code-vb[VbVbalrStatements#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#116)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 문 매개 변수를 사용 하 여에 대 한 연산자 오버 로드 된 클래스는 `+`, `-`를 `>=`, 및 `<=` 연산자입니다.  
   
- [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
+ [!code-vb[VbVbalrStatements#117](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Collections.Generic.List%601>

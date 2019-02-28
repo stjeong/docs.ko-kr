@@ -19,12 +19,12 @@ helpviewer_keywords:
 - floating-point numbers [Visual Basic], comparison
 - floating-point numbers
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-ms.openlocfilehash: e67339beac42fe6dc32925c8733bec2889739733
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3e7190f3ba63b6af9f7f402fbc23b4268c329856
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54728072"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974746"
 ---
 # <a name="troubleshooting-data-types-visual-basic"></a>데이터 형식 문제 해결(Visual Basic)
 이 페이지는 기본 데이터 형식에 대 한 작업을 수행할 때 발생할 수 있는 몇 가지 일반적인 문제를 나열 합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "54728072"
   
  다음 예제에서는 두 개의 잘못 된 및 올바른 비교 `Double` 값입니다.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#10)]  
   
  앞의 예제에서는 <xref:System.Double.ToString%2A> 메서드를 <xref:System.Double> 인스턴스보다 정확도 향상을 지정할 수 있도록 구조체는 `CStr` 키워드 사용 합니다. 기본값은 15 자리까지 하지만 "G17" 형식으로 17 자리를 확장 합니다.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "54728072"
   
  다음 예제에서는 부동 소수점 피연산자의 잠재적 부정확성을 보여 줍니다.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#11)]  
   
  앞의 예제에서는 <xref:System.Double.ToString%2A> 메서드를 <xref:System.Double> 인스턴스보다 정확도 향상을 지정할 수 있도록 구조체는 `CStr` 키워드 사용 합니다. 기본값은 15 자리까지 하지만 "G17" 형식으로 17 자리를 확장 합니다.  
   
@@ -89,7 +89,7 @@ ms.locfileid: "54728072"
   
  다음 예제에서는 리터럴을 성공 및 실패 한 할당을 `Char` 변수입니다.  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#12)]  
   
  에 항상 위험 축소 변환을 사용 하 여 런타임에 실패할 수 있습니다. 예를 들어 변환 `String` 를 `Char` 실패할 수 있습니다를 `String` 값 두 개 이상의 문자를 포함 합니다. 따라서 사용을 더 잘 프로그래밍은 `C` 문자를 입력 합니다.  
   

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - item XML tag
 - <term> XML tag
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
-ms.openlocfilehash: 522450e4efcecaf74968ddb492b536aa98dc0b13
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 8964b34d94daf18e078e515b65588f5273c76199
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260292"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970191"
 ---
 # <a name="list-visual-basic"></a>\<목록 > (Visual Basic)
 목록 또는 테이블을 정의합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "55260292"
 ## <a name="example"></a>예제  
  이 예제에서는 `<list>` 주의 섹션의 글머리 기호 목록을 정의 하는 태그입니다.  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
 ## <a name="see-also"></a>참고자료
 - [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

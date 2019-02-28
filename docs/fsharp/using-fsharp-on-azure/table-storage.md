@@ -3,14 +3,14 @@ title: 사용 하 여 Azure Table storage 시작F#
 description: Azure Table storage 또는 Azure Cosmos DB를 사용 하 여 클라우드에 구조화 된 데이터를 저장 합니다.
 author: sylvanc
 ms.date: 03/26/2018
-ms.openlocfilehash: 45a5d845dcedb5c3ea07cc4540f66bad23338a88
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2b74a33023065ea809c2d7eb6202b1a254018422
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54152075"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966010"
 ---
-# <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>Azure Table storage 및 Azure Cosmos DB Table API를 통해 시작F# # 
+# <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>Azure Table storage와 F를 사용 하 여 Azure Cosmos DB Table API 시작\#
 
 Azure Table storage는 클라우드에 구조화 된 NoSQL 데이터를 저장 하는 서비스입니다. Table storage는 스키마 없이 디자인을 사용 하 여 키/특성 저장소입니다. 테이블 저장소는 스키마 때문에 응용 프로그램 진화에 필요에 따라 데이터에 맞게 쉽습니다. 데이터 액세스가 빠르고 비용 효율적으로 모든 종류의 응용 프로그램입니다. 테이블 저장소는 일반적으로 전통적인 SQL 비슷한 양의 데이터에 비해 비용이 매우 낮습니다.
 

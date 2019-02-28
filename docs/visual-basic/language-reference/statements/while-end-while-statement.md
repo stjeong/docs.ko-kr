@@ -9,12 +9,12 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: 72263ddb7930373ab2a4843ea08974cb08d1b42f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 269a4c0f069b3837959b04f8463f96e7c5d5fdf7
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54617328"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970151"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>While...End While 문(Visual Basic)
 지정된 된 조건과 일련의 문 실행 `True`합니다.  
@@ -39,7 +39,8 @@ End While
 |`statements`|선택 사항입니다. 하나 이상의 문 다음 `While`는 실행 될 때마다 `condition` 는 `True`합니다.|  
 |`Continue While`|선택 사항입니다. 다음 반복으로 제어를 전송 합니다 `While` 블록입니다.|  
 |`Exit While`|선택 사항입니다. 밖으로 제어를 전송 합니다 `While` 블록입니다.|  
-|`End While`|필수 요소. `While` 블록의 정의를 종료합니다.|  
+|`End While`|필수 요소. 
+  `While` 블록의 정의를 종료합니다.|  
   
 ## <a name="remarks"></a>설명  
  사용 된 `While...End While` 조건이으로 문을 횟수 무한히 반복 하려는 경우 구조체 `True`. 조건을 테스트 하는 위치 또는 결과 항목을 사용 하 여 더 많은 유연성이 것을 선호할 수에 대 한 테스트 하려는 경우는 [수행 하는 중... 문이 루프](../../../visual-basic/language-reference/statements/do-loop-statement.md)합니다. 문을 횟수 만큼 반복 하려는 경우는 [에 대 한 중... 다음 문을](../../../visual-basic/language-reference/statements/for-next-statement.md) 일반적으로 것이 좋습니다.  
@@ -69,17 +70,17 @@ End While
 ## <a name="example"></a>예제  
  다음 예제에서는 루프에서 문을 계속 실행 될 때까지 `index` 변수 10 보다 큽니다.  
   
- [!code-vb[VbVbalrStatements#171](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
   
 ## <a name="example"></a>예제  
  다음 예제를 사용 합니다 `Continue While` 및 `Exit While` 문입니다.  
   
- [!code-vb[VbVbalrStatements#172](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 텍스트 파일에 모든 줄을 읽습니다. <xref:System.IO.File.OpenText%2A> 메서드는 파일을 열고 반환을 <xref:System.IO.StreamReader> 문자를 읽고 있는 합니다. 에 `While` 조건을 <xref:System.IO.StreamReader.Peek%2A> 메서드의 `StreamReader` 파일에 추가 문자가 포함 되어 있는지 여부를 결정 합니다.  
   
- [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
 ## <a name="see-also"></a>참고자료
 - [루프 구조](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

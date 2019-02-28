@@ -1,5 +1,5 @@
 ---
-title: ICorDebugClass Interface1
+title: ICorDebugClass 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugClass
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d12d952fe540b2ec36d058ae2100f0cf5c8e6bcf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9beb8930143cbb0cc7dd8dd68a65b42d92563e31
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54710219"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56972055"
 ---
-# <a name="icordebugclass-interface1"></a>ICorDebugClass Interface1
+# <a name="icordebugclass-interface"></a>ICorDebugClass 인터페이스
+
 기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다. 형식이 제네릭이면 `ICorDebugClass`는 인스턴스화되지 않은 제네릭 형식을 나타냅니다.  
   
 ## <a name="methods"></a>메서드  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - variables [Visual Basic], enumeration
 - constants [Visual Basic], enumerated
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-ms.openlocfilehash: f1086fdc26f1909e751617b78e0cd31f2a8b1b95
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 662dc63b69a8229693471909a50b0c4f336b5637
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54656663"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965698"
 ---
 # <a name="enum-statement-visual-basic"></a>Enum 문(Visual Basic)
 열거형을 선언 하 고 해당 멤버의 값을 정의 합니다.  
@@ -79,7 +79,8 @@ End Enum
   
 -   `End` `Enum`  
   
-     `Enum` 블록을 종료합니다.  
+     
+  `Enum` 블록을 종료합니다.  
   
 ## <a name="remarks"></a>설명  
  서로 논리적으로 관련 된 변경 되지 않는 값 집합에 있는 경우 열거형의 함께 정의할 수 있습니다. 열거형 및 해당 값 보다 쉽게 기억할 수 있는 해당 멤버에 대 한 의미 있는 이름을 제공 합니다. 다음 코드에서 여러 위치에서 열거형 멤버를 사용할 수 있습니다.  
@@ -139,37 +140,37 @@ End Enum
 ## <a name="example"></a>예제  
  다음 예제에서는 `Enum` 문을 사용하는 방법을 보여 줍니다. 멤버 라고 보면 `EggSizeEnum.Medium`, 아니라 `Medium`합니다.  
   
- [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_1.vb)]  
+ [!code-vb[VbEnumsTask#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#41)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서 메서드는 외부는 `Egg` 클래스입니다. 따라서 `EggSizeEnum` 으로 정규화 `Egg.EggSizeEnum`합니다.  
   
- [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_2.vb)]  
+ [!code-vb[VbEnumsTask#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#42)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Enum` 명명 된 상수 값을 관련된 집합을 정의 합니다. 이 경우 값은 색을 데이터베이스에 대 한 데이터 입력 폼 디자인 하도록 선택할 수 있습니다.  
   
- [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_3.vb)]  
+ [!code-vb[VbEnumsTask#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#30)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 양수와 음수 모두를 포함 하는 값을 보여 줍니다.  
   
- [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_4.vb)]  
+ [!code-vb[VbEnumsTask#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#31)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `As` 절을 사용 하 여를 지정 합니다 `datatype` 열거형의 합니다.  
   
- [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_5.vb)]  
+ [!code-vb[VbEnumsTask#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#6)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 비트 열거형을 사용 하는 방법을 보여 줍니다. 여러 값의 비트 열거형 인스턴스에 할당할 수 있습니다. `Enum` 선언에 포함 된 <xref:System.FlagsAttribute> 열거형 플래그 집합으로 처리할 수 있음을 나타내는 특성입니다.  
   
- [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_6.vb)]  
+ [!code-vb[VbEnumsTask#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#61)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 열거형을 반복합니다. 사용 된 <xref:System.Enum.GetNames%2A> 열거형의 멤버 이름의 배열을 검색 하는 방법 및 <xref:System.Enum.GetValues%2A> 멤버 값의 배열을 검색 하 합니다.  
   
- [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
+ [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Enum>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - resources [Visual Basic], disposing
 - Using statement [Visual Basic]
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
-ms.openlocfilehash: fd553430e56bbc5c21c9bdb25fc6b67eea530739
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1cf0772bf4e9a77474849c59454617261475fa76
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595398"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56966088"
 ---
 # <a name="using-statement-visual-basic"></a>Using 문(Visual Basic)
 시작을 선언 된 `Using` 블록과 선택적으로 블록을 제어 하는 시스템 리소스를 가져옵니다.  
@@ -107,7 +107,7 @@ End Try
   
  때문에 <xref:System.IO.TextWriter> 및 <xref:System.IO.TextReader> 클래스 구현 합니다 <xref:System.IDisposable> 인터페이스 코드를 사용할 수 `Using` 파일 올바르게 닫힌 후 쓰기 및 읽기 작업을 확인 하는 문.  
   
- [!code-vb[VbVbalrStatements#50](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/using-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#50)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.IDisposable>

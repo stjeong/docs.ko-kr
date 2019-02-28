@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic]
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
-ms.openlocfilehash: cc1222feed338f88142c4a6a7d6520fa458b5c11
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4afcd57a9133515cecc72da856f67e4e3d5ff717
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54734041"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970963"
 ---
 # <a name="how-to-create-a-property-visual-basic"></a>방법: 속성 (Visual Basic) 만들기
 속성 정의 간에 묶습니다를 `Property` 문 및 `End Property` 문. 이 정의 내에서 정의 `Get` 프로시저는 `Set` 프로시저 중 하나 또는 둘 다. 이러한 프로시저 내에서 모든 속성의 코드에 표시 됩니다.  
@@ -54,11 +54,11 @@ ms.locfileid: "54734041"
 ## <a name="example"></a>예제  
  다음 예제에서는 두 구성 요소 이름, 첫 번째 이름과 마지막 이름으로 전체 이름을 저장 하는 읽기/쓰기 속성을 만듭니다. 호출 코드를 읽을 때 `fullName`, `Get` 프로시저는 두 구성 요소 이름을 결합을 전체 이름을 반환 합니다. 호출 코드에서 새 전체 이름으로 할당 하는 경우는 `Set` 프로시저 두 구성 요소 이름으로 중단 하려고 합니다. 공간을 찾지 못하면, 모든 첫 번째 이름으로 저장 합니다.  
   
- [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/how-to-create-a-property_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#8)]  
   
  다음 예제에서는 속성 프로시저를 호출 하는 일반적인 `fullName`합니다. 속성 값을 설정 하는 첫 번째 호출 및 두 번째 호출에서 검색 합니다.  
   
- [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/how-to-create-a-property_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

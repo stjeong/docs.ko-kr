@@ -5,12 +5,12 @@ helpviewer_keywords:
 - <summary> XML tag
 - summary XML tag
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
-ms.openlocfilehash: 3f40177b717452f316672c29c6455faf33e01b4d
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 531cac9bfec24577c22cb52962b2ac1eb740c5c8
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55282713"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975500"
 ---
 # <a name="summary-visual-basic"></a>\<요약 > (Visual Basic)
 멤버의 요약을 지정합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "55282713"
 ## <a name="example"></a>예제  
  이 예제에서는 합니다 `<summary>` 태그를 설명 하는 `ResetCounter` 메서드 및 `Counter` 속성입니다.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## <a name="see-also"></a>참고자료
 - [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

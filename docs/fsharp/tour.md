@@ -2,14 +2,14 @@
 title: F# 둘러보기
 description: F# 코드 샘플을 사용 하 여이 자습서에서 언어 프로그래밍의 주요 기능 중 일부를 검토 합니다.
 ms.date: 11/06/2018
-ms.openlocfilehash: 72ecb9e71e5d039f5a62f74ad594fac82269f304
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: d741f7066517ad9bc004e2a89ba0d85a1d4c424d
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145525"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968298"
 ---
-# <a name="tour-of-f"></a>F# 둘러보기 #
+# <a name="tour-of-f"></a>F 둘러보기\#
 
 F#에 대해 자세히 알아보려면 읽기 및 F# 코드를 작성 하는 가장 좋은 방법은 합니다. 이 문서는 F# 언어의 주요 기능 중 일부 둘러보기 프록시로 컴퓨터에서 실행할 수 있는 몇 가지 코드 조각을 제공 합니다. 개발 환경을 설정 하는 데 대 한 자세한 내용은 체크 아웃 [Getting Started](tutorials/getting-started/index.md)합니다.
 

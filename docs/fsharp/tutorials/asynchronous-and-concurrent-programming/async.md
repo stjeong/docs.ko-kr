@@ -2,14 +2,14 @@
 title: 비동기 프로그래밍
 description: 에 대해 알아봅니다 하는 방법 F# 는 사용 하기 쉬운 및 언어에 자연 스러운 언어 수준 프로그래밍 모델을 통해 비동기 프로그래밍이 수행 됩니다.
 ms.date: 06/20/2016
-ms.openlocfilehash: e18697708741eef066a76bbffe35882f3639bb68
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 18ba4873cd3dba6d9548a07c4487306d96adab61
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53614482"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980089"
 ---
-# <a name="async-programming-in-f"></a>비동기 프로그래밍F# #
+# <a name="async-programming-in-f"></a>F #의 비동기 프로그래밍\#
 
 > [!NOTE]
 > 이 문서에 일부 잘못 된 검색 된 합니다.  다시 작성 되 고 됩니다.  참조 [문제 #666](https://github.com/dotnet/docs/issues/666) 변경 내용에 대해 자세히 알아보려면 합니다.
@@ -53,7 +53,7 @@ printfn "%s" html
 
 또한 정상적인 `let`, `use`, 및 `do` 키워드는 일반 함수 에서처럼 비동기 버전과 함께 사용할 수 있습니다.
 
-## <a name="how-to-start-async-code-in-f"></a>비동기 코드를 시작 하는 방법F# #
+## <a name="how-to-start-async-code-in-f"></a>F #의 비동기 코드를 시작 하는 방법\#
 
 앞에서 설명한 대로 비동기 코드는 명시적으로 시작 해야 하는 다른 컨텍스트에서 수행할 작업에 대 한 사양입니다. 이렇게 하려면 두 가지는 다음과 같습니다.
 
@@ -152,7 +152,7 @@ for html in htmlList do
 
  F#컴파일러는 매우 엄격한, "async" 코드를 동기적으로 실행 하므로 같은 까다로운 작업을 수행 하는 거의 불가능 합니다. 경고에서 제공 하는 경우 것을 알게 하는 방법을 생각 하는 코드를 실행 하지 않습니다. 즐거운 컴파일러를 만들 수 있는, 경우 예상 대로 코드를 실행할 가능성이 높습니다.
 
-## <a name="for-the-cvb-programmer-looking-into-f"></a>에 대 한는 C#살펴볼 /VB 프로그래머가F# #
+## <a name="for-the-cvb-programmer-looking-into-f"></a>에 대 한는 C#F 살펴볼 /VB 프로그래머가\#
 
 이 섹션에서는 비동기 모델에 익숙한 가정 C#/VB. 그렇지 않은 경우 [의 비동기 프로그래밍 C# ](../../../csharp/async.md) 시작 합니다.
 

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.openlocfilehash: b3a486cb886e8f39081f30a2849e2d14573cf5e0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1b4e703cb3f723ea283f725d0f4ce4711dca3c9e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54676343"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56967817"
 ---
 # <a name="mywebservices-object"></a>My.WebServices 개체
 만들기 및 현재 프로젝트에서 참조 하는 각 XML 웹 서비스의 단일 인스턴스 액세스에 대 한 속성을 제공 합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "54676343"
 ## <a name="example"></a>예제  
  이 예제에서는 호출을 `FahrenheitToCelsius` 메서드는 `TemperatureConverter` XML 웹 서비스 결과 반환 합니다.  
   
- [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-webservices-object_1.vb)]  
+ [!code-vb[VbVbalrMyWebService#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWebService/VB/Form1.vb#1)]  
   
  이 예제가 작동 하려면 프로젝트가 라는 웹 서비스를 참조 해야 합니다 `Converter`에 해당 웹 서비스를 노출 해야 하 고는 `ConvertTemperature` 메서드. 자세한 내용은 [응용 프로그램 웹 서비스 액세스](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)합니다.  
   

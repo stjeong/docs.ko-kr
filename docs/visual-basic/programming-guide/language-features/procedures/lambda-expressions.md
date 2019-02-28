@@ -9,12 +9,12 @@ helpviewer_keywords:
 - expressions [Visual Basic], lambda
 - inline functions [Visual Basic]
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
-ms.openlocfilehash: 3d2cab1c40b1a84e9a3b6bed885b2a0020e53f01
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: de09612ee978ee809ee07f0db2e37b14533760da
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54529478"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974811"
 ---
 # <a name="lambda-expressions-visual-basic"></a>람다 식(Visual Basic)
 A *람다 식* 은 함수 또는 서브루틴 대리자 유효한 모든 곳에서 사용할 수 있는 이름이 없는 합니다. 람다 식은 함수 또는 서브루틴 수 있으며 한 줄 또는 여러 줄 수 있습니다. 람다 식에는 현재 범위에서 값을 전달할 수 있습니다.  
@@ -26,19 +26,19 @@ A *람다 식* 은 함수 또는 서브루틴 대리자 유효한 모든 곳에�
   
  다음 예제는 해당 인수를 증가 시키고 값을 반환 하는 람다 식입니다. 함수에 대 한 모두를 단일 줄 및 여러 줄 람다 식 구문을 보여 줍니다.  
   
- [!code-vb[VbVbalrLambdas#14](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_1.vb)]  
+ [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
  다음 예제는 콘솔에 값을 기록 하는 람다 식입니다. 모두 단일 줄 및 여러 줄 람다 식 구문은 서브루틴을 보여 줍니다.  
   
- [!code-vb[VbVbalrLambdas#15](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_2.vb)]  
+ [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
  앞의 예제에서는 람다 식 변수 이름에 할당 된 알 수 있습니다. 변수를 참조할 때마다 람다 식을 호출 합니다. 또한 선언 하 고 다음 예와에서 같이 동시에 람다 식을 호출할 수 있습니다.  
   
- [!code-vb[VbVbalrLambdas#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_3.vb)]  
+ [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
  람다 식은 함수 호출의 값으로 반환 될 수 있습니다 (예제에 표시 된 대로 합니다 [상황에 맞는](#context) 이 항목의 뒷부분에 나오는 섹션), 다음에 표시 된 대로 대리자 형식을 사용 하는 매개 변수를 인수로 전달 하거나 예입니다.  
   
- [!code-vb[VbVbalrLambdas#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_4.vb)]  
+ [!code-vb[VbVbalrLambdas#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class2.vb#8)]  
   
 ## <a name="lambda-expression-syntax"></a>람다 식 구문  
  람다 식의 구문은 유사 표준 함수 또는 서브루틴의 합니다. 차이점은 다음과 같습니다.  
@@ -114,7 +114,7 @@ End Class
   
  지역 변수 및 매개 변수를 포함 하는 범위에 대 한 액세스는 해당 범위의 수명을 넘어서는 확장할 수 있습니다. 으로 참조 하는 람다 식을 대리자를 가비지 컬렉션에 사용할 수 없는 원본 환경에서 변수에 대 한 보존 됩니다. 다음 예에서 변수 `target` 로컬인 `makeTheGame`, 메서드는 람다 식 `playTheGame` 정의 됩니다. 반환 된 람다 식에 할당 하는 참고 `takeAGuess` 에서 `Main`, 여전히 로컬 변수에 대 한 액세스를 권한이 `target`합니다.  
   
- [!code-vb[VbVbalrLambdas#12](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_5.vb)]  
+ [!code-vb[VbVbalrLambdas#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class6.vb#12)]  
   
  다음 예제에서는 광범위 한 중첩 된 람다 식의 액세스 권한 보여 줍니다. 반환된 된 람다 식이 실행 되는 시기 `Main` 으로 `aDel`, 이러한 요소에 액세스 합니다.  
   
@@ -128,16 +128,16 @@ End Class
   
 -   중첩 된 람다 식의 매개 변수: `level2`  
   
- [!code-vb[VbVbalrLambdas#9](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_6.vb)]  
+ [!code-vb[VbVbalrLambdas#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class3.vb#9)]  
   
 ## <a name="converting-to-a-delegate-type"></a>대리자 형식으로 변환  
  람다 식은 호환 되는 대리자 형식으로 암시적으로 변환할 수 있습니다. 호환성에 대 한 일반 요구 사항에 대 한 정보를 참조 하세요 [완화 된 대리자 변환](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)합니다. 다음 코드 예제를 암시적으로 변환 하는 람다 식을 표시 하는 예를 들어 `Func(Of Integer, Boolean)` 또는 일치 하는 대리자 서명입니다.  
   
- [!code-vb[VbVbalrLambdas#16](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_7.vb)]  
+ [!code-vb[VbVbalrLambdas#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#16)]  
   
  다음 코드 예제에서는 암시적으로 변환 하는 람다 식을 보여 줍니다. `Sub(Of Double, String, Double)` 또는 일치 하는 대리자 서명입니다.  
   
- [!code-vb[VbVbalrLambdas#23](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_8.vb)]  
+ [!code-vb[VbVbalrLambdas#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/class7.vb#23)]  
   
  람다 식을 대리자에 할당 하거나 프로시저에 인수로 전달할 때 매개 변수 이름을 지정할 수 있지만 형식을 가져오도록 수 대리자에서 해당 데이터 형식은 생략 합니다.  
   
@@ -145,11 +145,11 @@ End Class
   
 -   다음 예제에서는 정의 반환 하는 람다 식 `True` nullable 인수에 값을 할당된 하는 경우 및 `False` 의 값이 `Nothing`합니다.  
   
-     [!code-vb[VbVbalrLambdas#4](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_9.vb)]  
+     [!code-vb[VbVbalrLambdas#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#4)]  
   
 -   다음 예제에서는 배열에서 마지막 요소의 인덱스를 반환 하는 람다 식을 정의 합니다.  
   
-     [!code-vb[VbVbalrLambdas#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_10.vb)]  
+     [!code-vb[VbVbalrLambdas#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#5)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

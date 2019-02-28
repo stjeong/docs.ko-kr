@@ -8,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b93dd3b1d08a939e03ccfa52f7fb2e97c97d7e96
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3c970e14bfb3f8f8afcc97568e221d2e1cc15198
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600091"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978243"
 ---
 # <a name="ialink-interface"></a>IALink 인터페이스
 .NET Framework 어셈블리 생성에 도움이 됩니다. 무엇 보다도 인터페이스는 다중 모듈 어셈블리에 대 한 어셈블리 매니페스트를 작성, 강력한 이름의 어셈블리를 서명 및 netmodule 만들기에 도움이 되는 메서드를 포함 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [AddFile Method1](../../../../docs/framework/unmanaged-api/alink/addfile-method.md)  
+ [AddFile 메서드](../../../../docs/framework/unmanaged-api/alink/addfile-method.md)  
   
- [AddImport Method1](../../../../docs/framework/unmanaged-api/alink/addimport-method.md)  
+ [AddImport 메서드](../../../../docs/framework/unmanaged-api/alink/addimport-method.md)  
   
  [CloseAssembly 메서드](../../../../docs/framework/unmanaged-api/alink/closeassembly-method.md)  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54600091"
   
  [GetResolutionScope 메서드](../../../../docs/framework/unmanaged-api/alink/getresolutionscope-method.md)  
   
- [GetScope Method1](../../../../docs/framework/unmanaged-api/alink/getscope-method.md)  
+ [GetScope 메서드](../../../../docs/framework/unmanaged-api/alink/getscope-method.md)  
   
  [GetWin32ResBlob 메서드](../../../../docs/framework/unmanaged-api/alink/getwin32resblob-method.md)  
   

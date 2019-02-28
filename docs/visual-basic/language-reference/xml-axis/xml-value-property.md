@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], Value
 - XML Value property [Visual Basic]
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
-ms.openlocfilehash: 54bd18b050ca58c286bfca3972b242348c61fe45
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7cf1dbb1d9dafa9c690b4043da5a6f36469e8d7a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737613"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965347"
 ---
 # <a name="xml-value-property-visual-basic"></a>XML Value 속성(Visual Basic)
 컬렉션의 첫 번째 요소의 값에 대 한 액세스를 제공 <xref:System.Xml.Linq.XElement> 개체입니다.  
@@ -50,7 +50,7 @@ object.Value
 ## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Xml.Linq.XElement.Value%2A> 컬렉션의 첫 번째 노드에 액세스 하는 속성 <xref:System.Xml.Linq.XElement> 개체입니다. 이 예제에서는 자식 축 속성을 사용 하 여 라는 모든 자식 노드의 컬렉션을 가져옵니다 `phone` 에 `contact` 개체입니다.  
   
- [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_1.vb)]  
+ [!code-vb[VbXMLSamples#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples7.vb#15)]  
   
  이 코드의 텍스트는 다음과 같습니다.  
   
@@ -59,7 +59,7 @@ object.Value
 ## <a name="example"></a>예제  
  다음 예제에는 컬렉션에서 XML 특성의 값을 가져오는 방법을 보여 줍니다 <xref:System.Xml.Linq.XAttribute> 개체입니다. 이 예제에서는 값을 표시할 특성 축 속성을 사용 합니다 `type` 특성의 모든는 `phone` 요소입니다.  
   
- [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_2.vb)]  
+ [!code-vb[VbXMLSamples#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples7.vb#16)]  
   
  이 코드의 텍스트는 다음과 같습니다.  
   

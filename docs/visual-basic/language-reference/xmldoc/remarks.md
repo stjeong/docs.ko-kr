@@ -5,12 +5,12 @@ helpviewer_keywords:
 - <remarks> XML tag
 - remarks XML tag
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
-ms.openlocfilehash: 7125f6079811421bc5a7abdce2e13d591a299630
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 90f358aad8e3219b2e3cb3e9b996a24b3138828b
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55269330"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970833"
 ---
 # <a name="remarks-visual-basic"></a>\<설명 > (Visual Basic)
 멤버에 대 한 설명 부분을 지정합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "55269330"
 ## <a name="example"></a>예제  
  이 예제에서는 `<remarks>` 기능을 설명 하는 태그를 `UpdateRecord` 메서드는 하지 않습니다.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/remarks_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## <a name="see-also"></a>참고자료
 - [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

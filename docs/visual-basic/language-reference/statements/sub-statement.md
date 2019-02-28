@@ -29,12 +29,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], Sub statements
 - Visual Basic code, Sub procedures
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.openlocfilehash: e7015474a0617b76ca537d2e84e8d7bfc72b6e12
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6984e7e9f8695ff5bccdde01171733e740a5d6a7
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737665"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965958"
 ---
 # <a name="sub-statement-visual-basic"></a>Sub 문(Visual Basic)
 선언 하 고 이름, 매개 변수를 정의 하는 코드는 `Sub` 프로시저입니다.  
@@ -126,7 +126,8 @@ End Sub
   
 -   `implementslist`  
   
-     `Implements`가 제공된 경우 필수입니다. 구현할 `Sub` 프로시저 목록입니다.  
+     
+  `Implements`가 제공된 경우 필수입니다. 구현할 `Sub` 프로시저 목록입니다.  
   
      `implementedprocedure [ , implementedprocedure ... ]`  
   
@@ -145,7 +146,8 @@ End Sub
   
 -   `eventlist`  
   
-     `Handles`가 제공된 경우 필수입니다. 이 프로시저에서 처리 하는 이벤트 목록입니다.  
+     
+  `Handles`가 제공된 경우 필수입니다. 이 프로시저에서 처리 하는 이벤트 목록입니다.  
   
      `eventspecifier [ , eventspecifier ... ]`  
   
@@ -217,14 +219,14 @@ End Sub
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Sub` 을 이름, 매개 변수 및 코드의 본문을 형성 하는 정의 `Sub` 프로시저입니다.  
   
- [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#58)]  
   
 ## <a name="example"></a>예제  
  다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync` 에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 합니다. `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 문에 다음과 같이 정수가 생성: `Dim result As Integer = Await delayTask`합니다.  
   
  `startButton_Click` 절차는의 예는 `Async Sub` 프로시저입니다. 때문에 `DoSomethingAsync` 되는 `Async` 함수에 대 한 호출에 대 한 작업 `DoSomethingAsync` 다음 문 에서처럼 대기 해야 합니다: `Await DoSomethingAsync()`합니다. 합니다 `startButton_Click` `Sub` 프로시저를 사용 하 여 정의 되어야 합니다는 `Async` 한정자 있기 때문에 `Await` 식입니다.  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
+ [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
 ## <a name="see-also"></a>참고자료
 - [Implements 문](implements-statement.md)

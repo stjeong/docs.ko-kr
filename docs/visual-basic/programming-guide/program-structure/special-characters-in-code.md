@@ -30,12 +30,12 @@ helpviewer_keywords:
 - exclamation point operator (!)
 - Visual Basic code, special characters
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
-ms.openlocfilehash: 1541ac1793c9f3c082b688fecd4eb82fb5b59590
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 17b5fcc2be2730abfd7ee0090f9f34053e81c5f8
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54726730"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971899"
 ---
 # <a name="special-characters-in-code-visual-basic"></a>코드의 특수 문자(Visual Basic)
 경우에 따라 영문자 또는 숫자 하지 않은 문자 즉, 코드에서 특수 문자를 사용 해야 합니다. 문장 부호 및 특수 문자는 Visual Basic 문자 집합의 프로그램 텍스트 컴파일러 또는 컴파일된 프로그램이 수행 하는 작업을 정의 하는 데 구성에서 사용이 다양 한 경우 이러한 특수 문자는 수행할 작업을 지정하지 않습니다.  
@@ -43,14 +43,14 @@ ms.locfileid: "54726730"
 ## <a name="parentheses"></a>괄호  
  와 같은 프로시저를 정의 하는 경우 괄호를 사용 하는 `Sub` 또는 `Function`합니다. 모든 프로시저 인수 목록을 괄호로 묶어야 합니다. 또한 괄호를 사용 하면 논리 그룹으로 변수 또는 인수를 배치 하는 데 특히 복잡 한 식의 연산자 우선 순위는 기본 순서 재정의를 합니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbcnConventions#11](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_1.vb)]  
+ [!code-vb[VbVbcnConventions#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#11)]  
   
  값을 이전 코드의 실행 `d` 8.225의 값은 `e` 3입니다. 에 대 한 계산 `d` 의 기본 우선 순위를 사용 하 여 `/` 위에 `+` 와 같습니다 `d = b + (c / a)`합니다. 계산에 괄호 `e` 기본 우선 순위를 무시 합니다.  
   
 ## <a name="separators"></a>Separators  
  구분 기호 그 이름이 의미 하는 무엇을 수행 합니다: 여러 코드 섹션입니다. Visual Basic에서 구분 기호 문자는 콜론 (`:`). 별도 줄이 아니라 한 줄에 여러 개의 문을 포함 하려는 경우 구분 기호를 사용 합니다. 이 공간을 저장 하 고 코드의 가독성을 향상 시킵니다. 다음 예제에는 콜론으로 구분 된 세 가지 문을 보여 줍니다.  
   
- [!code-vb[VbVbcnConventions#12](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_2.vb)]  
+ [!code-vb[VbVbcnConventions#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#12)]  
   
  자세한 내용은 [방법: 코드에서 문 분리 및 결합](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)합니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54726730"
 ## <a name="concatenation"></a>연결 연산  
  사용 하 여는 `&` 에 대 한 연산자 *연결*, 또는 문자열을 함께 연결 합니다. 혼동 하지 마십시오는 `+` 숫자 값을 함께 추가 하는 연산자입니다. 사용 하는 경우는 `+` 연산자를 숫자 값에서 작동 하는 경우 잘못 된 결과 얻을 수 있습니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbcnConventions#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_3.vb)]  
+ [!code-vb[VbVbcnConventions#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#13)]  
   
  값을 이전 코드의 실행 `resultA` 21.01의 값은 `resultB` "10.0111로 실행" 됩니다.  
   
@@ -69,12 +69,12 @@ ms.locfileid: "54726730"
 ### <a name="dot--operator"></a>점 (입니다.) 연산자  
  사용 된 `.` 클래스, 구조체, 인터페이스 또는 열거형 멤버 액세스 연산자로 연산자입니다. 필드, 속성, 이벤트 또는 메서드 멤버 수 있습니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbcnConventions#14](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_4.vb)]  
+ [!code-vb[VbVbcnConventions#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#14)]  
   
 ### <a name="exclamation-point--operator"></a>느낌표 (!) 연산자  
  사용 된 `!` 사전 액세스 연산자를 클래스 또는 인터페이스 에서만 연산자. 클래스 또는 인터페이스에는 단일을 허용 하는 기본 속성이 있어야 `String` 인수입니다. 바로 다음에 오는 식별자는 `!` 연산자의 기본 속성을 문자열로 전달 된 인수 값이 됩니다. 다음은 이에 대한 예입니다.  
   
- [!code-vb[VbVbcnConventions#15](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_5.vb)]  
+ [!code-vb[VbVbcnConventions#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#15)]  
   
  3 개의 출력 줄 `MsgBox` 값의 모든 디스플레이 `32856`합니다. 속성에 대 한 일반적인 액세스를 사용 하는 첫 번째 줄 `index`, 두 번째 사실을 활용 하는 `index` 클래스의 기본 속성은 `hasDefault`, 세 번째 클래스에 대 한 사전 액세스를 사용 하 여 합니다.  
   

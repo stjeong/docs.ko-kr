@@ -11,12 +11,12 @@ helpviewer_keywords:
 - conditional operator [Visual Basic]
 - If Operator [Visual Basic]
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
-ms.openlocfilehash: 82dc3e851f1f98ca689acc21f03cbbe68a4e974e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 25b0d7e85fe1c1e0d0589b4b9a9db2d85ca71526
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54686675"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965912"
 ---
 # <a name="if-operator-visual-basic"></a>If 연산자(Visual Basic)
 사용 조건에 따라 두 값 중 하나를 반환 하는 평가 단락 (short-circuit). `If` 세 개의 인수를 사용 하 여 또는 두 개의 인수를 사용 하 여 연산자를 호출할 수 있습니다.  
@@ -40,11 +40,11 @@ If( [argument1,] argument2, argument3 )
   
  `If` 처럼 작동 하는 세 개의 인수를 사용 하 여 호출 되는 연산자는 `IIf` 함수를 사용 한다는 점을 제외 하 고 단락 (short-circuit) 계산 합니다. `IIf` 함수는 항상 해당 인수의 모든 세를 계산 하지만 `If` 세 개의 인수가 있는 연산자 중 두 개만 계산 합니다. 첫 번째 `If` 인수가 계산 되 고로 캐스팅 결과 `Boolean` 값을 `True` 또는 `False`합니다. 값이 `True`, `argument2` 가 평가 하 고 해당 값이 반환 하지만 `argument3` 평가 되지 않습니다. 경우 값을 `Boolean` 식이 `False`, `argument3` 는 평가 하 고 해당 값이 반환 하지만 `argument2` 평가 되지 않습니다. 다음 예제에서는 사용법을 보여 줍니다. `If` 세 개의 인수를 사용 하는 경우:  
   
- [!code-vb[VbVbalrOperators#100](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/if-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#100](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#100)]  
   
  값을 보여 주는 다음 예제에서는 평가 단락 (short-circuit). 이 예제에서는 변수를 나누는 데 두 시도 보여 줍니다 `number` 변수로 `divisor` 경우를 제외 하 고 `divisor` 0입니다. 이런 경우 0이 반환 되어야 합니다 및 하지 수행 되도록 하면 런타임 오류가 발생 하 게 됩니다 나누기를 수행 합니다. 때문에 `If` 사용 되는 식 평가 단락 (short-circuit), 두 번째 또는 첫 번째 인수의 값에 따라 세 번째 인수를 평가 합니다. 첫 번째 인수가 true 이면 제 수 0이 아니면 및 두 번째 인수를 평가 하 고 나누기를 수행 해도 됩니다. 첫 번째 인수가 false 이면 세 번째 인수에만 평가 되 고 0이 반환 됩니다. 따라서 제 수 0 인 경우 하지 나누기 하지 않으며 오류가 발생 하는 데 이루어집니다. 그러나 때문에 `IIf` 사용 하지 않는 평가 단락 (short-circuit), 두 번째 인수는 첫 번째 인수가 false 인 경우에 계산 됩니다. 이 런타임에 0으로 나누기 오류가 발생합니다.  
   
- [!code-vb[VbVbalrOperators#101](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/if-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#101)]  
   
 ## <a name="if-operator-called-with-two-arguments"></a>연산자는 두 개의 인수를 사용 하 여 호출 하는 경우  
  첫 번째 인수 `If` 생략할 수 있습니다. 이 연산자를를 두 개의 인수를 사용 하 여 호출할 수 있습니다. 다음과 같은 경우에만 적용 되는 `If` 연산자는 두 개의 인수를 사용 하 여 호출 됩니다.  
@@ -58,7 +58,7 @@ If( [argument1,] argument2, argument3 )
   
  경우는 `Boolean` 인수를 생략 하면, 첫 번째 인수는 참조 또는 nullable 형식 이어야 합니다. 첫 번째 인수를 평가 하는 경우 `Nothing`, 두 번째 인수의 값이 반환 됩니다. 다른 모든 경우에 첫 번째 인수의 값이 반환 됩니다. 다음 예제에서는이 평가 작동 원리를 보여 줍니다.  
   
- [!code-vb[VbVbalrOperators#102](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/if-operator_3.vb)]  
+ [!code-vb[VbVbalrOperators#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#102)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.Interaction.IIf%2A>

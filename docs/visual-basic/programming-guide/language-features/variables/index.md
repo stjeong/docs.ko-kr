@@ -2,15 +2,9 @@
 title: Visual Basic의 변수
 ms.date: 07/20/2015
 helpviewer_keywords:
-- variables [Visual Basic]
-- values [Visual Basic], storing
+  - 'variables [Visual Basic]'
+  - 'values [Visual Basic], storing'
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
-ms.openlocfilehash: 50b82285d31d40adfce07a61cd7902cdb2809a52
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672229"
 ---
 # <a name="variables-in-visual-basic"></a>Visual Basic의 변수
 Visual Basic을 사용 하 여 계산을 수행할 때 값을 저장 해야 하는 경우가 많습니다. 예를 들어 여러 값을 계산하여 비교하고 비교 결과에 따라 값에서 다른 작업을 수행해야 할 수 있습니다. 값을 비교하려면 값을 보존해야 합니다.  
@@ -23,7 +17,7 @@ Visual Basic을 사용 하 여 계산을 수행할 때 값을 저장 해야 하�
 ## <a name="assigning-values"></a>값 할당  
  다음 예제와 같이 대입문을 사용하여 계산을 수행하고 결과를 변수에 할당합니다.  
   
- [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrVariables#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  이 예제의 등호(`=`)는 같음 연산자가 아닌 대입 연산자입니다. 값이 `applesSold` 변수에 할당됩니다.  

@@ -1,5 +1,5 @@
 ---
-title: ICorDebugProcess2 Interface1
+title: ICorDebugProcess2 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugProcess2
@@ -16,14 +16,14 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0b37cb8ecd178b90a4dcd2d2eab9fa7c4cd3211d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c3009ee6a2ba22771a2132032744f76ca527c422
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647324"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965685"
 ---
-# <a name="icordebugprocess2-interface1"></a>ICorDebugProcess2 Interface1
+# <a name="icordebugprocess2-interface"></a>ICorDebugProcess2 인터페이스
 관리 코드를 실행 하는 프로세스를 나타내는 ICorDebugProcess 인터페이스를 논리적으로 확장 합니다.  
   
 ## <a name="methods"></a>메서드  

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - joining [LINQ in Visual Basic]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.openlocfilehash: fd1025d056dfb11d2253a39defb384c1d05efa32
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 66255a9bfa2a4f9acb33073bae755efbab61042e
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54553700"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977987"
 ---
 # <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>방법: 조인 (Visual Basic)를 사용 하 여 데이터와 LINQ 결합
 Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용 하면 컬렉션 간의 공통 값을 기반으로 하는 여러 컬렉션의 콘텐츠를 결합할 수 있습니다. 이러한 값 이라고 *키* 값입니다. 관계형 데이터베이스 개념에 익숙한 개발자는 `Join` INNER JOIN으로 절 및 `Group Join` 으로 효과적으로 LEFT OUTER JOIN 절.  
@@ -29,8 +29,8 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 2.  이 항목에서는 사용 샘플은 `Person` 및 `Pet` 유형 및 다음 코드 예제에서 데이터입니다. 이 코드는 기본 복사 `Module1` Visual Basic에서 생성 하는 모듈입니다.  
   
-     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_1.vb)]  
-    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_2.vb)]  
+     [!code-vb[VbLINQHowTos#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#1)]  
+    [!code-vb[VbLINQHowTos#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#2)]  
   
 ## <a name="perform-an-inner-join-by-using-the-join-clause"></a>Join 절을 사용 하 여 내부 조인 수행  
  INNER JOIN 두 컬렉션에서 데이터를 결합합니다. 지정된 된 키 값과 일치 하는 항목이 포함 됩니다. 다른 컬렉션에 일치 하는 항목이 없는 두 컬렉션에서 모든 항목은 제외 됩니다.  
@@ -45,7 +45,7 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 1.  다음 코드를 추가 합니다 `Module1` 모두 암시적 및 명시적 내부 조인 예제를 볼 프로젝트에서 모듈입니다.  
   
-     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_3.vb)]  
+     [!code-vb[VbLINQHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#4)]  
   
 ## <a name="perform-a-left-outer-join-by-using-the-group-join-clause"></a>Group Join 절을 사용 하 여 왼쪽된 우선 외부 조인 수행  
  LEFT OUTER JOIN 조인 및 값 조인의 오른쪽에 있는 컬렉션에서 일치 하는 왼쪽 컬렉션에서 모든 항목을 포함 합니다. 왼쪽 컬렉션의 일치 하는 항목이 없는 조인의 오른쪽에 있는 컬렉션에서 모든 항목은 쿼리 결과에서 제외 됩니다.  
@@ -58,7 +58,7 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 1.  다음 코드를 추가 합니다 `Module1` 그룹화 된 왼쪽된 외부 조인 및 그룹화 되지 않은 왼쪽된 외부 조인을 둘 다의 예제를 보려면 프로젝트에서 모듈입니다.  
   
-     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_4.vb)]  
+     [!code-vb[VbLINQHowTos#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#3)]  
   
 ## <a name="perform-a-join-by-using-a-composite-key"></a>복합 키를 사용 하 여 조인 수행  
  사용할 수는 `And` 키워드를 `Join` 또는 `Group Join` 조인 중인 컬렉션에서 일치 시킬 때 사용 하는 여러 키 필드를 식별 하는 절 값입니다. `And` 키워드 지정는 모든 조인할 수는 항목에 대 한 키 필드와 일치 해야 합니다.  
@@ -67,7 +67,7 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 1.  다음 코드를 추가 합니다 `Module1` 의 복합 키를 사용 하는 조인 예제를 보려면 프로젝트에서 모듈입니다.  
   
-     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_5.vb)]  
+     [!code-vb[VbLINQHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#5)]  
   
 ## <a name="run-the-code"></a>코드를 실행 합니다.  
   
@@ -75,7 +75,7 @@ Visual Basic에서 제공 합니다 `Join` 고 `Group Join` 쿼리 절을 사용
   
 1.  대체는 `Sub Main` 에 `Module1` 이 항목의 예제를 실행 하려면 다음 코드를 사용 하 여 프로젝트에서 모듈입니다.  
   
-     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_6.vb)]  
+     [!code-vb[VbLINQHowTos#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#6)]  
   
 2.  F5 키를 눌러 예제를 실행 합니다.  
   

@@ -2,12 +2,12 @@
 title: Web Services Generics Serialization 기술 샘플
 ms.date: 03/30/2017
 ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
-ms.openlocfilehash: 27e0a7621bc77b62e36a0bbbdfa25f0ec3778798
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 59224df97d54ac089293068bbb5dfa3fe26a8d8c
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636588"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971873"
 ---
 # <a name="web-services-generics-serialization-technology-sample"></a>Web Services Generics Serialization 기술 샘플
 [샘플 다운로드](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/GenericsSerialization.zip.exe)  
@@ -32,7 +32,8 @@ ms.locfileid: "54636588"
 > [!NOTE]
 >  다음 단계는 샘플을 빌드하는 데 필요합니다.  
   
-1.  [!INCLUDE[fileExplorer](../../../includes/fileexplorer-md.md)]를 열고 \CS 하위 디렉터리로 이동합니다.  
+1.  
+  [!INCLUDE[fileExplorer](../../../includes/fileexplorer-md.md)]를 열고 \CS 하위 디렉터리로 이동합니다.  
   
 2.  GenericsService 하위 디렉터리의 아이콘을 마우스 오른쪽 단추로 클릭하고 **공유 및 보안**을 선택합니다.  
   
@@ -61,7 +62,7 @@ ms.locfileid: "54636588"
 2.  형식 `http://localhost/[virtual directory]/Service.asmx`여기서 `[virtual directory]` 는 샘플을 빌드할 때 만든 가상 디렉터리를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 이 샘플에서는 웹 서비스의 정의에 대한 링크가 포함된 기본 ASP.NET 페이지를 표시합니다. 웹 서비스의 소스 코드를 수정할 수 있을 뿐 아니라 화면 표시를 사용자 지정할 수도 있습니다. 자세한 내용은 [XML Web Service 클라이언트 빌드](https://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c)를 참조하세요.  
+ 이 샘플에서는 웹 서비스의 정의에 대한 링크가 포함된 기본 ASP.NET 페이지를 표시합니다. 웹 서비스의 소스 코드를 수정할 수 있을 뿐 아니라 화면 표시를 사용자 지정할 수도 있습니다. 자세한 내용은 [XML Web Service 클라이언트 빌드](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w3h45ebk(v=vs.100))를 참조하세요.  
   
 ## <a name="see-also"></a>참고자료
 
@@ -69,4 +70,4 @@ ms.locfileid: "54636588"
 - <xref:System.Web.Services>
 - <xref:System.Xml.Serialization>
 - [serialization](../../../docs/standard/serialization/index.md)
-- [ASP.NET 및 XML Web Service 클라이언트를 사용하여 만든 XML Web Services](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)
+- [ASP.NET 및 XML Web Service 클라이언트를 사용하여 만든 XML Web Services](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))

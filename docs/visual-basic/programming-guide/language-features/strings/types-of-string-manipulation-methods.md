@@ -5,12 +5,12 @@ helpviewer_keywords:
 - strings [Visual Basic], manipulating [Visual Basic]
 - string manipulation
 ms.assetid: 905055cd-7f50-48fb-9eed-b0995af1dc1f
-ms.openlocfilehash: fa579303ad268a88269f360bdf626f9590c5d6a2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a75984d0eb64ef8c18def3ae59d5e1f4b6d20ce2
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54648497"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56980347"
 ---
 # <a name="types-of-string-manipulation-methods-in-visual-basic"></a>Visual Basic의 문자열 조작 메서드 유형
 분석 하 고 문자열을 조작 하는 여러 가지가 있습니다. 메서드 중 일부는 Visual Basic 언어의 일부인 있고에 내재 된 `String` 클래스.  
@@ -18,7 +18,7 @@ ms.locfileid: "54648497"
 ## <a name="visual-basic-language-and-the-net-framework"></a>Visual Basic 언어 및.NET Framework  
  Visual Basic 메서드는 언어의 기본 기능으로 사용 됩니다. 코드에서 자격 증명 없이 사용할 수 있습니다. 다음 예제에서는 일반적인 Visual Basic 문자열 조작 명령 사용 하는 방법을 보여 줍니다.  
   
- [!code-vb[VbVbalrStrings#44](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/types-of-string-manipulation-methods_1.vb)]  
+ [!code-vb[VbVbalrStrings#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#44)]  
   
  이 예제는 `Mid` 함수에서 직접 작업을 수행 `aString` 값을 할당 하 고 `bString`입니다.  
   
@@ -30,14 +30,14 @@ ms.locfileid: "54648497"
 #### <a name="shared-methods"></a>공유 메서드  
  발생 하는 방법은 공유 메서드는 `String` 클래스 자체와 작동 하도록 해당 클래스의 인스턴스를 필요로 하지 않습니다. 이러한 메서드는 클래스의 이름으로 한정할 수 있습니다 (`String`)의 인스턴스 대신는 `String` 클래스입니다. 예를 들어:  
   
- [!code-vb[VbVbalrStrings#45](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/types-of-string-manipulation-methods_2.vb)]  
+ [!code-vb[VbVbalrStrings#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#45)]  
   
  앞의 예제에는 <xref:System.String.Copy%2A?displayProperty=nameWithType> 메서드는 정적 메서드를 식에 사용 되는 역할은 지정 하 고 결과 값을 할당 `bString`합니다.  
   
 #### <a name="instance-methods"></a>인스턴스 메서드  
  인스턴스 메서드는 반면,의 특정 인스턴스에서 stem `String` 및 인스턴스 이름으로 정규화 해야 합니다. 예를 들어:  
   
- [!code-vb[VbVbalrStrings#46](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/types-of-string-manipulation-methods_3.vb)]  
+ [!code-vb[VbVbalrStrings#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#46)]  
   
  이 예제는 <xref:System.String.Substring%2A?displayProperty=nameWithType> 메서드는 인스턴스 메서드입니다 `String` (즉, `aString`). 작업 수행 `aString` 해당 값을 할당 하 고 `bString`입니다.  
   

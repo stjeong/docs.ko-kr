@@ -9,12 +9,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 54203dfa-c24b-463f-9942-d5153e89e762
-ms.openlocfilehash: 76d0769456e30766b830023c1f27381ceca59cbb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fe5c314fe4e39c8a06803037da29b51148188e14
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521532"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974642"
 ---
 # <a name="how-to-define-a-conversion-operator-visual-basic"></a>방법: 변환 연산자 (Visual Basic)를 정의 합니다.
 클래스 또는 구조체를 정의한 경우 해당 클래스 또는 구조체 형식 및 다른 데이터 형식 간의 형식 변환 연산자를 정의할 수 있습니다 (같은 `Integer`, `Double`, 또는 `String`).  
@@ -26,11 +26,11 @@ ms.locfileid: "54521532"
 ## <a name="example"></a>예제  
  다음 예제에서는 라는 구조 간의 변환 연산자를 정의 `digit` 및 `Byte`합니다.  
   
- [!code-vb[VbVbcnProcedures#27](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_1.vb)]  
+ [!code-vb[VbVbcnProcedures#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#27)]  
   
  구조를 테스트할 수 있습니다 `digit` 다음 코드를 사용 합니다.  
   
- [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
+ [!code-vb[VbVbcnProcedures#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#28)]  
   
 ## <a name="see-also"></a>참고자료
 - [연산자 프로시저](./operator-procedures.md)

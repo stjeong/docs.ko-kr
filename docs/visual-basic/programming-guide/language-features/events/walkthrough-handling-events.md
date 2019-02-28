@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WithEvents keyword [Visual Basic], walkthroughs
 - event handlers [Visual Basic], walkthroughs
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
-ms.openlocfilehash: 2af8fe5557e452db1ef3a72de35582b18117cc30
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0757c3ce0528f76eab5607e20ebca2e66a903900
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54553739"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974148"
 ---
 # <a name="walkthrough-handling-events-visual-basic"></a>연습: 이벤트 처리 (Visual Basic)
 이것이 이벤트로 작업 하는 방법을 보여 주는 두 항목 중 두 번째 숫자입니다. 첫 번째 항목인 [연습: 선언 및 발생 이벤트](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)를 선언 하 고 이벤트를 발생 하는 방법을 보여 줍니다. 이 섹션에서는 다음 연습에서 클래스 및 형식을 사용 하 여 수행한 이벤트를 처리 하는 방법을 보여 줍니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "54553739"
   
 1.  다음 코드를 배치할 `Form1`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_1.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#4)]  
   
      합니다 `WithEvents` 키워드를 지정 하는 변수의 `mWidget` 개체의 이벤트를 처리 하는 데 사용 됩니다. 개체를 만들 수는 클래스의 이름을 제공 하 여 개체의 종류를 지정 합니다.  
   
@@ -47,13 +47,13 @@ ms.locfileid: "54553739"
   
 3.  다음 코드를 `mWidget_PercentDone` 이벤트 처리기에 추가합니다.  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_2.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#5)]  
   
      때마다 합니다 `PercentDone` 이벤트가 발생 하면 이벤트 프로시저에서 완료 백분율을 표시는 `Label` 제어 합니다. 합니다 `DoEvents` 메서드를 사용 하면 다시 그리기를 위해 레이블을 사용자 클릭을 기회를 제공 하 고는 **취소** 단추입니다.  
   
 4.  다음 코드를 추가 합니다 `Button2_Click` 이벤트 처리기:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_3.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#6)]  
   
  클릭할 경우는 **취소** 하는 동안 단추 `LongTask` 실행 되는 `Button2_Click` 이벤트가 실행 될 즉시는 `DoEvents` 문을 통해 되려면 이벤트가 처리 합니다. 클래스 수준 변수 `mblnCancel` 로 설정 된 `True`, 및 `mWidget_PercentDone` 이벤트에서 그런 다음 테스트 하 고 설정 합니다 `ByRef Cancel` 인수를 `True`입니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "54553739"
   
 3.  다음 코드를 추가 합니다 `Form1_Load` 이벤트 프로시저를 만드는 `Widget`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_4.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#7)]  
   
  이 코드를 실행 하는 경우에 Visual Basic 만듭니다는 `Widget` 개체 및 해당 이벤트와 관련 된 이벤트 절차 연결할 `mWidget`합니다. 점에서, 때마다 합니다 `Widget` 발생 시킵니다 해당 `PercentDone` 이벤트는 `mWidget_PercentDone` 이벤트 프로시저가 실행 됩니다.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "54553739"
   
 -   다음 코드를 `Button1_Click` 이벤트 처리기에 추가합니다.  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_5.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#8)]  
   
  전에 `LongTask` 메서드가 호출 되는 표시 된 완료율를 초기화 해야 레이블과 클래스 수준 `Boolean` 으로 설정 되어 있어야 해당 메서드를 취소에 대 한 플래그 `False`.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54553739"
   
 -   코드의 다음 줄을 추가 합니다 `Button1_Click` 줄 바로 앞에 나오는 절차 `mWidget.LongTask(12.2, 0.33)`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_6.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#9)]  
   
  위의 코드에서는 새 `Widget` 단추를 클릭할 때마다 합니다. 즉시 합니다 `LongTask` 메서드가 완료 되 면에 대 한 참조를 `Widget` 출시 되 면 및 `Widget` 소멸 됩니다.  
   

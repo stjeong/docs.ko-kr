@@ -14,12 +14,12 @@ helpviewer_keywords:
 - powers
 - arithmetic operators [Visual Basic], exponentiation
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
-ms.openlocfilehash: 2fb52a57a9d96f93c31ab1419e81e7f05967f831
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ce9cd527aff1203f30543b03f1520d429d038da3
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54659718"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978957"
 ---
 # <a name="-operator-visual-basic"></a>^ 연산자(Visual Basic)
 한 숫자가 다른 숫자의 거듭제곱 수를 발생 시킵니다.  
@@ -56,7 +56,7 @@ number ^ exponent
 ## <a name="example"></a>예제  
  다음 예제에서는 `^` 숫자의 지 수의 거듭제곱을 발생 시키는 연산자입니다. 결과 첫 번째 피연산자에서 두 번째의 거듭제곱입니다.  
   
- [!code-vb[VbVbalrOperators#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#20)]  
   
  앞의 예제 결과 다음과 같습니다.  
   

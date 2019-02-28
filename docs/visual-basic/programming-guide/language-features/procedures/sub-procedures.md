@@ -11,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], Sub
 - syntax [Visual Basic], Sub procedures
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
-ms.openlocfilehash: f558c61d2e81471e167e97816ff47bc4465c5f51
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 646d7d217891dc8ea5b78f7ce30fce19fab08316
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54638121"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56977580"
 ---
 # <a name="sub-procedures-visual-basic"></a>Sub 프로시저(Visual Basic)
 A `Sub` 절차는 일련의 Visual Basic 문으로 둘러싸인 합니다 `Sub` 및 `End Sub` 문. `Sub` 프로시저는 작업을 수행한 다음 호출 코드에 제어를 반환 하지만 호출 코드에 값을 반환 하지는 않습니다.  
@@ -66,11 +66,11 @@ A `Sub` 절차는 일련의 Visual Basic 문으로 둘러싸인 합니다 `Sub` 
 ### <a name="illustration-of-declaration-and-call"></a>선언 및 호출의 그림  
  다음 `Sub` 프로시저는 응용 프로그램에서 수행 하려는 작업을 컴퓨터 사용자에 게 알려 타임 스탬프를 표시 합니다. 모든 작업의 시작 부분에이 코드를 복제 하는 대신 응용 프로그램 호출 `tellOperator` 다양 한 위치에서. 문자열을 전달 하는 각 호출의 `task` 시작 하려는 작업을 식별 하는 인수입니다.  
   
- [!code-vb[VbVbcnProcedures#2](./codesnippet/VisualBasic/sub-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#2)]  
   
  다음 예제에서는 일반적인 호출 `tellOperator`합니다.  
   
- [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#3)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

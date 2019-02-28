@@ -8,12 +8,12 @@ helpviewer_keywords:
 - strings [Visual Basic], converting to arrays
 - string conversion [Visual Basic], arrays
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
-ms.openlocfilehash: 9d68e3d90c52d6a4312ccb7c0c9610968e7a4b55
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 63368f41aec674922ae44a3f1c9816709b981c9b
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603757"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974408"
 ---
 # <a name="how-to-convert-a-string-to-an-array-of-characters-in-visual-basic"></a>방법: Visual Basic에서 문자 배열에 문자열 변환
 경우에 따라 문자열을 구문 분석 하는 경우 처럼 문자열 내에서 해당 문자의 위치 및 문자열의 문자에 대 한 데이터가 있어야 유용 합니다. 문자열을 호출 하 여 문자열에서 문자의 배열을 가져올 수는 방법을 보여 주는이 예제 <xref:System.String.ToCharArray%2A> 메서드.  
@@ -21,12 +21,12 @@ ms.locfileid: "54603757"
 ## <a name="example"></a>예제  
  이 예제에서는 문자열을 분할 하는 방법에 설명를 `Char` 배열 및 문자열을 분할 하는 방법을 `String` 해당 유니코드 텍스트 문자의 배열입니다. 이러한 차이 대 한 이유는 두 개 이상의 유니코드 텍스트 문자를 구성할 수 있습니다 `Char` 문자 (서로게이트 쌍 등을 결합 문자 시퀀스). 자세한 내용은 <xref:System.Globalization.TextElementEnumerator> 하 고 [유니코드 표준](https://www.unicode.org/standard/standard.html)합니다.  
   
- [!code-vb[VbVbalrStrings#75](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_1.vb)]  
+ [!code-vb[VbVbalrStrings#75](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class4.vb#75)]  
   
 ## <a name="example"></a>예제  
  유니코드 텍스트 문자를 문자열로 분할할 하기가 더 어렵습니다이 하지만 문자열의 시각적 표현에 대 한 정보가 필요한 경우에 필요 합니다. 이 예제에서는 <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> 메서드 문자열을 구성 하는 유니코드 텍스트 문자에 대 한 정보입니다.  
   
- [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_2.vb)]  
+ [!code-vb[VbVbalrStrings#76](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class4.vb#76)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.String.Chars%2A>

@@ -5,17 +5,17 @@ helpviewer_keywords:
 - application settings [Windows Forms], design time
 - application settings [Windows Forms], changing
 ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
-ms.openlocfilehash: 0ec90e326a3ac615ee140ebb61081bdd5c5c0a8c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f40b6b6e38785b1e8dcc9061f8cf0b459f4ed8b5
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54541107"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965282"
 ---
 # <a name="how-to-change-the-value-of-an-existing-setting-at-design-time"></a>방법: 디자인 타임에 기존 설정 값 변경
 프로젝트에 기존 설정의 값을 편집 하려면 Visual Studio를 사용할 수 있습니다.  
   
-### <a name="to-change-the-value-of-an-existing-setting-at-design-time-in-c"></a>디자인 타임에 기존 설정 값을 변경 하려면C#  
+### <a name="to-change-the-value-of-an-existing-setting-at-design-time-in-c"></a>C에서 디자인 타임에 기존 설정 값을 변경 하려면\#
   
 1.  **솔루션 탐색기**를 확장 합니다 **속성** 프로젝트의 노드.  
   

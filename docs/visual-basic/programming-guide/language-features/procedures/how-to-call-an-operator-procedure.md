@@ -11,12 +11,12 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: fc658dd7ef001c8d3ef7761bd2a7889f70e9e4a3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ab9dd9e3f9abdd8379a59ed458c47d5ec8b4f2ad
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54667585"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978971"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>방법: 연산자 프로시저 (Visual Basic)를 호출 합니다.
 연산자 기호를 사용 하 여 식에서 연산자 프로시저를 호출 합니다. 호출 하는 변환 연산자의 경우는 [CType 함수](../../../../visual-basic/language-reference/functions/ctype-function.md) 다른 데이터 형식에서 값을 변환할 수 있습니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "54667585"
 ## <a name="example"></a>예제  
  다음 예제에서는 두 개의 <xref:System.TimeSpan> 구조를 함께 추가 하 고 제 3의 결과 저장 <xref:System.TimeSpan> 구조입니다. <xref:System.TimeSpan> 구조는 여러 표준 연산자를 오버 로드할 연산자 프로시저를 정의 합니다.  
   
- [!code-vb[VbVbcnProcedures#29](./codesnippet/VisualBasic/how-to-call-an-operator-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
   
  때문에 <xref:System.TimeSpan> 표준 오버 로드 `+` 연산자 앞의 예제 연산자 프로시저 호출의 값을 계산할 때 `combinedSpan`합니다.  
   

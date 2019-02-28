@@ -3,14 +3,14 @@ title: 사용 하 여 Azure Blob storage 시작F#
 description: Azure Blob storage 사용 하 여 클라우드에 구조화 되지 않은 데이터를 저장 합니다.
 author: sylvanc
 ms.date: 09/20/2016
-ms.openlocfilehash: 31c3017d6f43afb6b534d21d18d618b1c2903bf1
-ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
+ms.openlocfilehash: e38f58fefa63f922bcb1a78254249a3626bfac43
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56664993"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981909"
 ---
-# <a name="get-started-with-azure-blob-storage-using-f"></a>사용 하 여 Azure Blob storage 시작F# #
+# <a name="get-started-with-azure-blob-storage-using-f"></a>F를 사용 하 여 Azure Blob storage 시작\#
 
 Azure Blob Storage는 클라우드에서 구조화되지 않은 데이터를 개체/Blob으로 저장하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 애플리케이션 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob 스토리지를 개체 스토리지라고도 합니다.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic], Mod
 - math operators [Visual Basic]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-ms.openlocfilehash: d74e1f7aaaa22d68c49f4e40ca557511a48e0554
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6bb34eb810f6e2d0b0d631f5891e3e65aa0b170f
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54525029"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981402"
 ---
 # <a name="mod-operator-visual-basic"></a>Mod 연산자 (Visual Basic)
 두 숫자를 나누고 나머지만 반환 합니다.  
@@ -36,7 +36,7 @@ number1 Mod number2
  필수. 임의의 숫자 식입니다.  
   
 ## <a name="supported-types"></a>지원 되는 형식  
- 모든 숫자 형식입니다. 여기에 부동 소수점 및 부호 없는 형식 및 `Decimal`합니다.  
+ 모든 숫자 형식. 여기에 부동 소수점 및 부호 없는 형식 및 `Decimal`합니다.  
   
 ## <a name="result"></a>결과
 
@@ -45,7 +45,7 @@ number1 Mod number2
 > [!NOTE]
 > 간에 차이가 *나머지* 하 고 *모듈러스* 수학에서 음수 값에 대해 다른 결과 사용 하 여 합니다. 합니다 `Mod` .NET Framework, Visual Basic의 연산자 `op_Modulus` 연산자 및 내부 [rem](<xref:System.Reflection.Emit.OpCodes.Rem>) 나머지 작업을 모두 수행 하는 IL 명령입니다.
 
-결과 `Mod` 는 피제수의 부호를 유지 하는 작업 `number1`, 이므로 양수 또는 음수일 수 있습니다. 결과 항상 범위 (-`number2`, `number2`), 배타적입니다. 예를 들어:
+결과 `Mod` 는 피제수의 부호를 유지 하는 작업 `number1`, 이므로 양수 또는 음수일 수 있습니다. 결과 항상 범위 (-`number2`, `number2`), 배타적입니다. 예를 들면,
 
 ```vb
 Public Module Example
@@ -93,12 +93,12 @@ End Module
 ## <a name="example"></a>예제  
  다음 예제에서는 `Mod` 두 숫자를 나누고 나머지만 반환 하는 연산자입니다. 부동 소수점 숫자로 번호 이거나을 사용 하는 경우 나머지를 나타내는 부동 소수점 숫자로 만들어집니다.  
   
- [!code-vb[VbVbalrOperators#31](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#31)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 부동 소수점 피연산자의 잠재적 부정확성을 보여 줍니다. 피연산자가 첫 번째 문에서 `Double`, 0.2는 저장 된 값이 0.20000000000000001 인 무한 반복 이진 되 소수입니다. 두 번째 문에 리터럴 형식 문자 `D` 대 한 두 피연산자를 강제로 `Decimal`, 0.2에 정확한 표현이 고 합니다.  
   
- [!code-vb[VbVbalrOperators#32](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
