@@ -1,17 +1,11 @@
 ---
-title: 인터페이스 - C# 프로그래밍 가이드
+title: '인터페이스 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords:
-- interfaces [C#]
-- C# language, interfaces
+  - 'interfaces [C#]'
+  - 'C# language, interfaces'
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-ms.openlocfilehash: 26748902be1c67ed8032fca63ff39f3626a5d673
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54681818"
 ---
 # <a name="interfaces-c-programming-guide"></a>인터페이스(C# 프로그래밍 가이드)
 
@@ -21,7 +15,7 @@ ms.locfileid: "54681818"
   
 다음 예제와 같이 [인터페이스](../../language-reference/keywords/interface.md) 키워드를 사용하여 인터페이스를 정의합니다.  
   
-[!code-csharp[csProgGuideInheritance#47](../classes-and-structs/codesnippet/CSharp/interfaces_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#47)]  
 
 구조체의 이름은 유효한 C# [식별자 이름](../inside-a-program/identifier-names.md)이어야 합니다. 규칙에 따라 인터페이스 이름은 대문자 `I`로 시작합니다.
 
