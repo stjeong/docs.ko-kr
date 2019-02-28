@@ -8,38 +8,38 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure calls [Visual Basic], overloaded
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-ms.openlocfilehash: 8320bc550c818fd2bea53f75107709eab8456096
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f13fdae9617fa2af21978979cad6f90a15140a4a
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706419"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56970001"
 ---
-# <a name="how-to-call-an-overloaded-procedure-visual-basic"></a><span data-ttu-id="9072b-102">방법: 오버 로드 된 프로시저 호출 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="9072b-102">How to: Call an Overloaded Procedure (Visual Basic)</span></span>
-<span data-ttu-id="9072b-103">프로시저 오버 로드의 장점은 호출의 유연한입니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-103">The advantage of overloading a procedure is in the flexibility of the call.</span></span> <span data-ttu-id="9072b-104">호출 코드를 프로시저에 전달 하 고 단일 프로시저 이름을 전달 하는 어떤 인수 없이 호출 하는 데 필요한 정보를 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-104">The calling code can obtain the information it needs to pass to the procedure and then call a single procedure name, no matter what arguments it is passing.</span></span>  
+# <a name="how-to-call-an-overloaded-procedure-visual-basic"></a><span data-ttu-id="78491-102">방법: 오버 로드 된 프로시저 호출 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="78491-102">How to: Call an Overloaded Procedure (Visual Basic)</span></span>
+<span data-ttu-id="78491-103">프로시저 오버 로드의 장점은 호출의 유연한입니다.</span><span class="sxs-lookup"><span data-stu-id="78491-103">The advantage of overloading a procedure is in the flexibility of the call.</span></span> <span data-ttu-id="78491-104">호출 코드를 프로시저에 전달 하 고 단일 프로시저 이름을 전달 하는 어떤 인수 없이 호출 하는 데 필요한 정보를 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="78491-104">The calling code can obtain the information it needs to pass to the procedure and then call a single procedure name, no matter what arguments it is passing.</span></span>  
   
-### <a name="to-call-a-procedure-that-has-more-than-one-version-defined"></a><span data-ttu-id="9072b-105">정의 된 버전이 둘 이상 있는 프로시저를 호출 하려면</span><span class="sxs-lookup"><span data-stu-id="9072b-105">To call a procedure that has more than one version defined</span></span>  
+### <a name="to-call-a-procedure-that-has-more-than-one-version-defined"></a><span data-ttu-id="78491-105">정의 된 버전이 둘 이상 있는 프로시저를 호출 하려면</span><span class="sxs-lookup"><span data-stu-id="78491-105">To call a procedure that has more than one version defined</span></span>  
   
-1.  <span data-ttu-id="9072b-106">호출 코드에서 프로시저에 전달할 데이터를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-106">In the calling code, determine which data to pass to the procedure.</span></span>  
+1.  <span data-ttu-id="78491-106">호출 코드에서 프로시저에 전달할 데이터를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-106">In the calling code, determine which data to pass to the procedure.</span></span>  
   
-2.  <span data-ttu-id="9072b-107">프로시저 호출 인수 목록의 데이터를 표시 합니다. 일반적인 방법으로 작성 합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-107">Write the procedure call in the normal way, presenting the data in the argument list.</span></span> <span data-ttu-id="9072b-108">인수는 프로시저에 정의 된 버전 중 하나에 매개 변수 목록과 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-108">Be sure the arguments match the parameter list in one of the versions defined for the procedure.</span></span>  
+2.  <span data-ttu-id="78491-107">프로시저 호출 인수 목록의 데이터를 표시 합니다. 일반적인 방법으로 작성 합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-107">Write the procedure call in the normal way, presenting the data in the argument list.</span></span> <span data-ttu-id="78491-108">인수는 프로시저에 정의 된 버전 중 하나에 매개 변수 목록과 일치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-108">Be sure the arguments match the parameter list in one of the versions defined for the procedure.</span></span>  
   
-3.  <span data-ttu-id="9072b-109">호출 프로시저의 버전을 확인할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-109">You do not have to determine which version of the procedure to call.</span></span> <span data-ttu-id="9072b-110">Visual Basic에서 인수 목록과 일치 하는 버전 제어를 전달 합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-110">Visual Basic passes control to the version matching your argument list.</span></span>  
+3.  <span data-ttu-id="78491-109">호출 프로시저의 버전을 확인할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="78491-109">You do not have to determine which version of the procedure to call.</span></span> <span data-ttu-id="78491-110">Visual Basic에서 인수 목록과 일치 하는 버전 제어를 전달 합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-110">Visual Basic passes control to the version matching your argument list.</span></span>  
   
-     <span data-ttu-id="9072b-111">다음 예제에서는 합니다 `post` 프로시저에서 선언 [방법: 여러 버전의 프로시저 정의](./how-to-define-multiple-versions-of-a-procedure.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-111">The following example calls the `post` procedure declared in [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md).</span></span> <span data-ttu-id="9072b-112">고객 id를 받아 인지 여부를 확인을 `String` 또는 `Integer`, 한 다음 두 경우 모두 같은 프로시저를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="9072b-112">It obtains the customer identification, determines whether it is a `String` or an `Integer`, and then in either case calls the same procedure.</span></span>  
+     <span data-ttu-id="78491-111">다음 예제에서는 합니다 `post` 프로시저에서 선언 [방법: 여러 버전의 프로시저 정의](./how-to-define-multiple-versions-of-a-procedure.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-111">The following example calls the `post` procedure declared in [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md).</span></span> <span data-ttu-id="78491-112">고객 id를 받아 인지 여부를 확인을 `String` 또는 `Integer`, 한 다음 두 경우 모두 같은 프로시저를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="78491-112">It obtains the customer identification, determines whether it is a `String` or an `Integer`, and then in either case calls the same procedure.</span></span>  
   
-     [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#56)]  
   
-     [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_2.vb)]  
+     [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
-## <a name="see-also"></a><span data-ttu-id="9072b-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="9072b-113">See also</span></span>
-- [<span data-ttu-id="9072b-114">절차</span><span class="sxs-lookup"><span data-stu-id="9072b-114">Procedures</span></span>](./index.md)
-- [<span data-ttu-id="9072b-115">프로시저 매개 변수 및 인수</span><span class="sxs-lookup"><span data-stu-id="9072b-115">Procedure Parameters and Arguments</span></span>](./procedure-parameters-and-arguments.md)
-- [<span data-ttu-id="9072b-116">프로시저 오버로딩</span><span class="sxs-lookup"><span data-stu-id="9072b-116">Procedure Overloading</span></span>](./procedure-overloading.md)
-- [<span data-ttu-id="9072b-117">프로시저 문제 해결</span><span class="sxs-lookup"><span data-stu-id="9072b-117">Troubleshooting Procedures</span></span>](./troubleshooting-procedures.md)
-- [<span data-ttu-id="9072b-118">방법: 여러 버전의 프로시저 정의</span><span class="sxs-lookup"><span data-stu-id="9072b-118">How to: Define Multiple Versions of a Procedure</span></span>](./how-to-define-multiple-versions-of-a-procedure.md)
-- [<span data-ttu-id="9072b-119">방법: 선택적 매개 변수를 사용 하는 프로시저 오버 로드</span><span class="sxs-lookup"><span data-stu-id="9072b-119">How to: Overload a Procedure that Takes Optional Parameters</span></span>](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
-- [<span data-ttu-id="9072b-120">방법: 무한 개수의 매개 변수를 사용 하는 프로시저 오버 로드</span><span class="sxs-lookup"><span data-stu-id="9072b-120">How to: Overload a Procedure that Takes an Indefinite Number of Parameters</span></span>](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
-- [<span data-ttu-id="9072b-121">프로시저를 오버로드할 때 고려해야 할 사항</span><span class="sxs-lookup"><span data-stu-id="9072b-121">Considerations in Overloading Procedures</span></span>](./considerations-in-overloading-procedures.md)
-- [<span data-ttu-id="9072b-122">오버로드 확인</span><span class="sxs-lookup"><span data-stu-id="9072b-122">Overload Resolution</span></span>](./overload-resolution.md)
-- [<span data-ttu-id="9072b-123">오버로드</span><span class="sxs-lookup"><span data-stu-id="9072b-123">Overloads</span></span>](../../../../visual-basic/language-reference/modifiers/overloads.md)
+## <a name="see-also"></a><span data-ttu-id="78491-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="78491-113">See also</span></span>
+- [<span data-ttu-id="78491-114">절차</span><span class="sxs-lookup"><span data-stu-id="78491-114">Procedures</span></span>](./index.md)
+- [<span data-ttu-id="78491-115">프로시저 매개 변수 및 인수</span><span class="sxs-lookup"><span data-stu-id="78491-115">Procedure Parameters and Arguments</span></span>](./procedure-parameters-and-arguments.md)
+- [<span data-ttu-id="78491-116">프로시저 오버로딩</span><span class="sxs-lookup"><span data-stu-id="78491-116">Procedure Overloading</span></span>](./procedure-overloading.md)
+- [<span data-ttu-id="78491-117">프로시저 문제 해결</span><span class="sxs-lookup"><span data-stu-id="78491-117">Troubleshooting Procedures</span></span>](./troubleshooting-procedures.md)
+- [<span data-ttu-id="78491-118">방법: 여러 버전의 프로시저 정의</span><span class="sxs-lookup"><span data-stu-id="78491-118">How to: Define Multiple Versions of a Procedure</span></span>](./how-to-define-multiple-versions-of-a-procedure.md)
+- [<span data-ttu-id="78491-119">방법: 선택적 매개 변수를 사용 하는 프로시저 오버 로드</span><span class="sxs-lookup"><span data-stu-id="78491-119">How to: Overload a Procedure that Takes Optional Parameters</span></span>](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
+- [<span data-ttu-id="78491-120">방법: 무한 개수의 매개 변수를 사용 하는 프로시저 오버 로드</span><span class="sxs-lookup"><span data-stu-id="78491-120">How to: Overload a Procedure that Takes an Indefinite Number of Parameters</span></span>](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
+- [<span data-ttu-id="78491-121">프로시저를 오버로드할 때 고려해야 할 사항</span><span class="sxs-lookup"><span data-stu-id="78491-121">Considerations in Overloading Procedures</span></span>](./considerations-in-overloading-procedures.md)
+- [<span data-ttu-id="78491-122">오버로드 확인</span><span class="sxs-lookup"><span data-stu-id="78491-122">Overload Resolution</span></span>](./overload-resolution.md)
+- [<span data-ttu-id="78491-123">오버로드</span><span class="sxs-lookup"><span data-stu-id="78491-123">Overloads</span></span>](../../../../visual-basic/language-reference/modifiers/overloads.md)

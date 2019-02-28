@@ -1,5 +1,5 @@
 ---
-title: ICorDebugGenericValue Interface1
+title: ICorDebugGenericValue 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugGenericValue
@@ -16,42 +16,43 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ce4c1b73ab806958627bb68bfdcfcae890bc5e67
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ad2209c6e28c7749bd149902e5b696955ee7f13f
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54709834"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56981987"
 ---
-# <a name="icordebuggenericvalue-interface1"></a><span data-ttu-id="0bbc5-102">ICorDebugGenericValue Interface1</span><span class="sxs-lookup"><span data-stu-id="0bbc5-102">ICorDebugGenericValue Interface1</span></span>
-<span data-ttu-id="0bbc5-103">모든 값에 적용 되는 "ICorDebugValue"의 하위 클래스.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-103">A subclass of "ICorDebugValue" that applies to all values.</span></span> <span data-ttu-id="0bbc5-104">이 인터페이스에서는 값의 Get 및 Set 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-104">This interface provides Get and Set methods for the value.</span></span>  
+# <a name="icordebuggenericvalue-interface"></a><span data-ttu-id="e27bb-102">ICorDebugGenericValue 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e27bb-102">ICorDebugGenericValue Interface</span></span>
+
+<span data-ttu-id="e27bb-103">모든 값에 적용 되는 "ICorDebugValue"의 하위 클래스.</span><span class="sxs-lookup"><span data-stu-id="e27bb-103">A subclass of "ICorDebugValue" that applies to all values.</span></span> <span data-ttu-id="e27bb-104">이 인터페이스에서는 값의 Get 및 Set 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-104">This interface provides Get and Set methods for the value.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="0bbc5-105">메서드</span><span class="sxs-lookup"><span data-stu-id="0bbc5-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="e27bb-105">메서드</span><span class="sxs-lookup"><span data-stu-id="e27bb-105">Methods</span></span>  
   
-|<span data-ttu-id="0bbc5-106">메서드</span><span class="sxs-lookup"><span data-stu-id="0bbc5-106">Method</span></span>|<span data-ttu-id="0bbc5-107">설명</span><span class="sxs-lookup"><span data-stu-id="0bbc5-107">Description</span></span>|  
+|<span data-ttu-id="e27bb-106">메서드</span><span class="sxs-lookup"><span data-stu-id="e27bb-106">Method</span></span>|<span data-ttu-id="e27bb-107">설명</span><span class="sxs-lookup"><span data-stu-id="e27bb-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="0bbc5-108">GetValue 메서드</span><span class="sxs-lookup"><span data-stu-id="0bbc5-108">GetValue Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-getvalue-method.md)|<span data-ttu-id="0bbc5-109">지정된 된 버퍼에 값을 복사합니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-109">Copies the value into the specified buffer.</span></span>|  
-|[<span data-ttu-id="0bbc5-110">SetValue 메서드</span><span class="sxs-lookup"><span data-stu-id="0bbc5-110">SetValue Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-setvalue-method.md)|<span data-ttu-id="0bbc5-111">지정된 된 버퍼에서 새 값을 복사합니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-111">Copies a new value from the specified buffer.</span></span>|  
+|[<span data-ttu-id="e27bb-108">GetValue 메서드</span><span class="sxs-lookup"><span data-stu-id="e27bb-108">GetValue Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-getvalue-method.md)|<span data-ttu-id="e27bb-109">지정된 된 버퍼에 값을 복사합니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-109">Copies the value into the specified buffer.</span></span>|  
+|[<span data-ttu-id="e27bb-110">SetValue 메서드</span><span class="sxs-lookup"><span data-stu-id="e27bb-110">SetValue Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-setvalue-method.md)|<span data-ttu-id="e27bb-111">지정된 된 버퍼에서 새 값을 복사합니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-111">Copies a new value from the specified buffer.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="0bbc5-112">설명</span><span class="sxs-lookup"><span data-stu-id="0bbc5-112">Remarks</span></span>  
- <span data-ttu-id="0bbc5-113">`ICorDebugGenericValue` 비-원격 이기 때문에 하위 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-113">`ICorDebugGenericValue` is a sub-interface because it is non-remotable.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="e27bb-112">설명</span><span class="sxs-lookup"><span data-stu-id="e27bb-112">Remarks</span></span>  
+ <span data-ttu-id="e27bb-113">`ICorDebugGenericValue` 비-원격 이기 때문에 하위 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-113">`ICorDebugGenericValue` is a sub-interface because it is non-remotable.</span></span>  
   
- <span data-ttu-id="0bbc5-114">참조 형식에 대해 값이 참조의 콘텐츠 대신 참조 합니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-114">For reference types, the value is the reference rather than the contents of the reference.</span></span>  
+ <span data-ttu-id="e27bb-114">참조 형식에 대해 값이 참조의 콘텐츠 대신 참조 합니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-114">For reference types, the value is the reference rather than the contents of the reference.</span></span>  
   
- <span data-ttu-id="0bbc5-115">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-115">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+ <span data-ttu-id="e27bb-115">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-115">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="0bbc5-116">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-116">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+>  <span data-ttu-id="e27bb-116">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e27bb-116">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="0bbc5-117">요구 사항</span><span class="sxs-lookup"><span data-stu-id="0bbc5-117">Requirements</span></span>  
- <span data-ttu-id="0bbc5-118">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="0bbc5-118">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e27bb-117">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e27bb-117">Requirements</span></span>  
+ <span data-ttu-id="e27bb-118">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="e27bb-118">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="0bbc5-119">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="0bbc5-119">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="e27bb-119">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e27bb-119">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="0bbc5-120">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="0bbc5-120">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="e27bb-120">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e27bb-120">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="0bbc5-121">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0bbc5-121">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="e27bb-121">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e27bb-121">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0bbc5-122">참고자료</span><span class="sxs-lookup"><span data-stu-id="0bbc5-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e27bb-122">참고자료</span><span class="sxs-lookup"><span data-stu-id="e27bb-122">See also</span></span>
 
-- [<span data-ttu-id="0bbc5-123">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="0bbc5-123">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [<span data-ttu-id="e27bb-123">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e27bb-123">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

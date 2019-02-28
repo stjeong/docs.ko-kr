@@ -1,5 +1,5 @@
 ---
-title: ICorDebugProcess2 Interface1
+title: ICorDebugProcess2 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugProcess2
@@ -16,41 +16,41 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0b37cb8ecd178b90a4dcd2d2eab9fa7c4cd3211d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c3009ee6a2ba22771a2132032744f76ca527c422
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647324"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56965685"
 ---
-# <a name="icordebugprocess2-interface1"></a><span data-ttu-id="64f06-102">ICorDebugProcess2 Interface1</span><span class="sxs-lookup"><span data-stu-id="64f06-102">ICorDebugProcess2 Interface1</span></span>
-<span data-ttu-id="64f06-103">관리 코드를 실행 하는 프로세스를 나타내는 ICorDebugProcess 인터페이스를 논리적으로 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-103">A logical extension of the ICorDebugProcess interface, which represents a process running managed code.</span></span>  
+# <a name="icordebugprocess2-interface"></a><span data-ttu-id="5acd0-102">ICorDebugProcess2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="5acd0-102">ICorDebugProcess2 Interface</span></span>
+<span data-ttu-id="5acd0-103">관리 코드를 실행 하는 프로세스를 나타내는 ICorDebugProcess 인터페이스를 논리적으로 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-103">A logical extension of the ICorDebugProcess interface, which represents a process running managed code.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="64f06-104">메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="5acd0-104">메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-104">Methods</span></span>  
   
-|<span data-ttu-id="64f06-105">메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-105">Method</span></span>|<span data-ttu-id="64f06-106">설명</span><span class="sxs-lookup"><span data-stu-id="64f06-106">Description</span></span>|  
+|<span data-ttu-id="5acd0-105">메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-105">Method</span></span>|<span data-ttu-id="5acd0-106">설명</span><span class="sxs-lookup"><span data-stu-id="5acd0-106">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="64f06-107">ClearUnmanagedBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-107">ClearUnmanagedBreakpoint Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-clearunmanagedbreakpoint-method.md)|<span data-ttu-id="64f06-108">이전 호출에 의해 설정 된 지정된 된 오프셋에서 중단점을 제거 `ICorDebugProcess2::SetUnmanagedBreakpoint`합니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-108">Removes a breakpoint at the specified offset that was set by an earlier call to `ICorDebugProcess2::SetUnmanagedBreakpoint`.</span></span>|  
-|[<span data-ttu-id="64f06-109">GetDesiredNGENCompilerFlags 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-109">GetDesiredNGENCompilerFlags Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getdesiredngencompilerflags-method.md)|<span data-ttu-id="64f06-110">이 참조 하는 프로세스에 이미지를 로드 하는 CLR (공용 언어 런타임)에 대 한 설정 해야 하는 플래그를 가져옵니다 `ICorDebugProcess2`합니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-110">Gets the flags that must be set for the common language runtime (CLR) to load the image into the process referenced by this `ICorDebugProcess2`.</span></span>|  
-|[<span data-ttu-id="64f06-111">GetReferenceValueFromGCHandle 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-111">GetReferenceValueFromGCHandle Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getreferencevaluefromgchandle-method.md)|<span data-ttu-id="64f06-112">처리 가비지 컬렉션에 있는 지정된 된 관리 되는 개체에 대 한 참조 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-112">Gets a reference pointer to the specified managed object that has a garbage collection handle.</span></span>|  
-|[<span data-ttu-id="64f06-113">GetThreadForTaskID 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-113">GetThreadForTaskID Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getthreadfortaskid-method.md)|<span data-ttu-id="64f06-114">지정된 된 식별자를 사용 하 여 작업 실행 되는 스레드를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-114">Gets the thread upon which the task with the specified identifier is executing.</span></span>|  
-|[<span data-ttu-id="64f06-115">GetVersion 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-115">GetVersion Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getversion-method.md)|<span data-ttu-id="64f06-116">디버깅 중인 프로세스가 실행 되는 CLR의 버전을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-116">Gets the version of the CLR upon which the process being debugged is running.</span></span>|  
-|[<span data-ttu-id="64f06-117">SetDesiredNGENCompilerFlags 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-117">SetDesiredNGENCompilerFlags Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setdesiredngencompilerflags-method.md)|<span data-ttu-id="64f06-118">디버깅 중인 프로세스에 이미지를 로드 하려면-just-in-time (JIT) 컴파일러에 필요한 플래그를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-118">Sets the flags that are required for the just-in-time (JIT) compiler to load an image into the process being debugged.</span></span>|  
-|[<span data-ttu-id="64f06-119">SetUnmanagedBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="64f06-119">SetUnmanagedBreakpoint Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setunmanagedbreakpoint-method.md)|<span data-ttu-id="64f06-120">지정 된 네이티브 이미지 오프셋을 관리 되지 않는 중단점을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-120">Sets an unmanaged breakpoint at the specified native image offset.</span></span>|  
+|[<span data-ttu-id="5acd0-107">ClearUnmanagedBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-107">ClearUnmanagedBreakpoint Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-clearunmanagedbreakpoint-method.md)|<span data-ttu-id="5acd0-108">이전 호출에 의해 설정 된 지정된 된 오프셋에서 중단점을 제거 `ICorDebugProcess2::SetUnmanagedBreakpoint`합니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-108">Removes a breakpoint at the specified offset that was set by an earlier call to `ICorDebugProcess2::SetUnmanagedBreakpoint`.</span></span>|  
+|[<span data-ttu-id="5acd0-109">GetDesiredNGENCompilerFlags 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-109">GetDesiredNGENCompilerFlags Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getdesiredngencompilerflags-method.md)|<span data-ttu-id="5acd0-110">이 참조 하는 프로세스에 이미지를 로드 하는 CLR (공용 언어 런타임)에 대 한 설정 해야 하는 플래그를 가져옵니다 `ICorDebugProcess2`합니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-110">Gets the flags that must be set for the common language runtime (CLR) to load the image into the process referenced by this `ICorDebugProcess2`.</span></span>|  
+|[<span data-ttu-id="5acd0-111">GetReferenceValueFromGCHandle 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-111">GetReferenceValueFromGCHandle Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getreferencevaluefromgchandle-method.md)|<span data-ttu-id="5acd0-112">처리 가비지 컬렉션에 있는 지정된 된 관리 되는 개체에 대 한 참조 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-112">Gets a reference pointer to the specified managed object that has a garbage collection handle.</span></span>|  
+|[<span data-ttu-id="5acd0-113">GetThreadForTaskID 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-113">GetThreadForTaskID Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getthreadfortaskid-method.md)|<span data-ttu-id="5acd0-114">지정된 된 식별자를 사용 하 여 작업 실행 되는 스레드를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-114">Gets the thread upon which the task with the specified identifier is executing.</span></span>|  
+|[<span data-ttu-id="5acd0-115">GetVersion 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-115">GetVersion Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getversion-method.md)|<span data-ttu-id="5acd0-116">디버깅 중인 프로세스가 실행 되는 CLR의 버전을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-116">Gets the version of the CLR upon which the process being debugged is running.</span></span>|  
+|[<span data-ttu-id="5acd0-117">SetDesiredNGENCompilerFlags 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-117">SetDesiredNGENCompilerFlags Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setdesiredngencompilerflags-method.md)|<span data-ttu-id="5acd0-118">디버깅 중인 프로세스에 이미지를 로드 하려면-just-in-time (JIT) 컴파일러에 필요한 플래그를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-118">Sets the flags that are required for the just-in-time (JIT) compiler to load an image into the process being debugged.</span></span>|  
+|[<span data-ttu-id="5acd0-119">SetUnmanagedBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="5acd0-119">SetUnmanagedBreakpoint Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setunmanagedbreakpoint-method.md)|<span data-ttu-id="5acd0-120">지정 된 네이티브 이미지 오프셋을 관리 되지 않는 중단점을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-120">Sets an unmanaged breakpoint at the specified native image offset.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="64f06-121">설명</span><span class="sxs-lookup"><span data-stu-id="64f06-121">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="5acd0-121">설명</span><span class="sxs-lookup"><span data-stu-id="5acd0-121">Remarks</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="64f06-122">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="64f06-122">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+>  <span data-ttu-id="5acd0-122">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5acd0-122">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="64f06-123">요구 사항</span><span class="sxs-lookup"><span data-stu-id="64f06-123">Requirements</span></span>  
- <span data-ttu-id="64f06-124">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="64f06-124">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="5acd0-123">요구 사항</span><span class="sxs-lookup"><span data-stu-id="5acd0-123">Requirements</span></span>  
+ <span data-ttu-id="5acd0-124">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="5acd0-124">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="64f06-125">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="64f06-125">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="5acd0-125">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="5acd0-125">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="64f06-126">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="64f06-126">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="5acd0-126">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="5acd0-126">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="64f06-127">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="64f06-127">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="5acd0-127">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5acd0-127">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="64f06-128">참고자료</span><span class="sxs-lookup"><span data-stu-id="64f06-128">See also</span></span>
-- [<span data-ttu-id="64f06-129">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="64f06-129">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a><span data-ttu-id="5acd0-128">참고자료</span><span class="sxs-lookup"><span data-stu-id="5acd0-128">See also</span></span>
+- [<span data-ttu-id="5acd0-129">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="5acd0-129">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
