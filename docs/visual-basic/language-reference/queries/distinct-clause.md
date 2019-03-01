@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Distinct statement [Visual Basic]
 - queries [Visual Basic], Distinct
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
-ms.openlocfilehash: 3761f6d6ba97e7f1a824b70b18a50dae820c7e51
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 00a2e52bd6669869bb2e25bc2857f1598da5763f
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54710042"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971249"
 ---
 # <a name="distinct-clause-visual-basic"></a>Distinct 절(Visual Basic)
 후속 쿼리 절에 중복 값을 제거 하려면 현재 범위 변수 값을 제한 합니다.  
@@ -30,7 +30,7 @@ Distinct
 ## <a name="example"></a>예제  
  다음 쿼리 식은 고객 주문 목록과 고객 목록에 조인합니다. `Distinct` 절이 고유한 고객 이름 목록을 반환 하 고 주문 날짜를 포함 합니다.  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
 ## <a name="see-also"></a>참고자료
 - [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

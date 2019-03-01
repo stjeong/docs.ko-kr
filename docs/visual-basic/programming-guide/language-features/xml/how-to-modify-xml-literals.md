@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML literals [Visual Basic]
 - XML literals [Visual Basic], modifying
 ms.assetid: 4e864522-a37a-43a2-8236-af80277c5482
-ms.openlocfilehash: 7a01fdc9d0541b5d277c2f283e25e9a1cef3b862
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6e11c1ed4cfe4edc1c88dbbff2e9f555b1a028c4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636341"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974720"
 ---
 # <a name="how-to-modify-xml-literals-visual-basic"></a>방법: XML 리터럴 (Visual Basic)를 수정 합니다.
 Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. 추가 및 요소 및 특성을 삭제할 수도 있고, 새 XML 요소를 사용 하 여 기존 요소를 바꿀 수도 있습니다. 이 항목에서는 기존 XML 리터럴 수정 하는 방법의 몇 가지 예를 제공 합니다.  
@@ -22,7 +22,7 @@ Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. �
   
      모든 값을 업데이트 하는 다음 코드 예제는 \<가격 > XML 문서의 요소입니다.  
   
-     [!code-vb[VbXmlSamples2#4](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_1.vb)]  
+     [!code-vb[VbXmlSamples2#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#4)]  
   
      다음은 샘플 소스 XML 및이 코드 예제에서 XML을 수정 합니다.  
   
@@ -65,7 +65,7 @@ Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. �
   
 1.  리터럴 xml 특성을 추가 하려면 먼저 리터럴 XML에 대 한 참조를 가져옵니다. 그런 다음 새 XML 특성 축 속성을 추가 하 여 특성을 추가할 수 있습니다. 새 추가할 수도 있습니다 <xref:System.Xml.Linq.XAttribute> 개체를 사용 하 여 리터럴 XML <xref:System.Xml.Linq.XContainer.Add%2A> 메서드. 다음 예제에서는 두 옵션을 보여 줍니다.  
   
-     [!code-vb[VbXmlSamples2#5](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_2.vb)]  
+     [!code-vb[VbXmlSamples2#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#5)]  
   
      다음은 샘플 소스 XML 및이 코드 예제에서 XML을 수정 합니다.  
   
@@ -111,7 +111,7 @@ Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. �
   
      다음 예제에서는 각이 방법을의 예를 보여 줍니다.  
   
-     [!code-vb[VbXmlSamples2#6](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_3.vb)]  
+     [!code-vb[VbXmlSamples2#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#6)]  
   
      다음은 샘플 소스 XML 및이 코드 예제에서 XML을 수정 합니다.  
   
@@ -155,7 +155,7 @@ Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. �
   
 1.  XML 리터럴에서 요소 또는 특성을 제거 하 여 요소 또는 특성 및 호출에 대 한 참조를 가져올는 `Remove` 메서드를 다음 예제에서와 같이 합니다.  
   
-     [!code-vb[VbXmlSamples2#7](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_4.vb)]  
+     [!code-vb[VbXmlSamples2#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#7)]  
   
      다음은 샘플 소스 XML 및이 코드 예제에서 XML을 수정 합니다.  
   
@@ -203,7 +203,7 @@ Visual Basic XML 리터럴 수정 하는 편리한 방법을 제공 합니다. �
   
      다음 코드 예제에서는 모든 바꿉니다 \<설명 > 요소는 \<추상 > 요소입니다. 내용의 \<설명 > 요소는 새 유지 \<추상 > 요소를 사용 하 여를 <xref:System.Xml.Linq.XContainer.Nodes%2A> 의 속성을 \<설명 > <xref:System.Xml.Linq.XElement> 개체입니다.  
   
-     [!code-vb[VbXmlSamples2#8](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_5.vb)]  
+     [!code-vb[VbXmlSamples2#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB/Module2.vb#8)]  
   
      다음은 샘플 소스 XML 및이 코드 예제에서 XML을 수정 합니다.  
   

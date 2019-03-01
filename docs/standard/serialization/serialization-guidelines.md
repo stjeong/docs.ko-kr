@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: 20676b53d21931987139288e29c009c8348ce6ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: abe593e9c132f4fc151983d6c4dc04bd13627120
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54690893"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56978412"
 ---
 # <a name="serialization-guidelines"></a>Serialization 지침
 이 문서에서는 serialize될 API를 디자인할 때 고려해야 할 지침을 보여 줍니다.  
@@ -69,10 +69,12 @@ ms.locfileid: "54690893"
      [!code-csharp[SerializationGuidelines#3](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#3)]
      [!code-vb[SerializationGuidelines#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#3)]  
   
-     <xref:System.Runtime.Serialization.OnDeserializedAttribute> 특성은 가장 일반적으로 사용되는 콜백 특성입니다. 패밀리의 다른 특성은 다음과 같습니다. <xref:System.Runtime.Serialization.OnDeserializingAttribute>,    
-    <xref:System.Runtime.Serialization.OnSerializingAttribute> 및 <xref:System.Runtime.Serialization.OnSerializedAttribute> 이 특성은 deserialization하기 전, serialization하기 전 및 마지막으로 serialization한 후에 각각 실행되는 콜백을 표시하는 데 사용할 수 있습니다.  
+     
+      <xref:System.Runtime.Serialization.OnDeserializedAttribute> 특성은 가장 일반적으로 사용되는 콜백 특성입니다. 패밀리의 다른 특성은 다음과 같습니다. <xref:System.Runtime.Serialization.OnDeserializingAttribute>,    
+<xref:System.Runtime.Serialization.OnSerializingAttribute> 및 <xref:System.Runtime.Serialization.OnSerializedAttribute> 이 특성은 deserialization하기 전, serialization하기 전 및 마지막으로 serialization한 후에 각각 실행되는 콜백을 표시하는 데 사용할 수 있습니다.  
   
-4.  <xref:System.Runtime.Serialization.KnownTypeAttribute>를 사용하여 복합 개체 그래프를 deserialize할 때 사용되어야 하는 추상 형식을 나타내는 것이 좋습니다.  
+4.  
+  <xref:System.Runtime.Serialization.KnownTypeAttribute>를 사용하여 복합 개체 그래프를 deserialize할 때 사용되어야 하는 추상 형식을 나타내는 것이 좋습니다.  
   
      예를 들어 deserialize된 데이터 멤버의 형식이 추상 클래스로 표현되는 경우 직렬 변환기가 인스턴스화할 추상 형식을 결정하고 멤버에 할당하려면 *알려진 형식* 정보가 필요합니다. 특성을 사용하여 알려진 형식을 지정하지 않으면 알려진 형식을 serializer 생성자에 전달하여 명시적으로 serializer에 전달하거나 구성 파일에 지정해야 합니다.  
   
@@ -87,7 +89,8 @@ ms.locfileid: "54690893"
   
 6.  서로 다른 버전의 형식 간에 라운드트립이 가능하도록 <xref:System.Runtime.Serialization.IExtensibleDataObject> 인터페이스를 구현하는 것이 좋습니다.  
   
-     이 인터페이스를 사용하면 serializer에서 라운드트립하는 동안 데이터가 손실되지 않습니다. <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> 속성은 현재 버전에서는 알 수 없는 이후 버전 형식의 모든 데이터를 저장합니다. 이후에 현재 버전을 이후 버전으로 직렬화하거나 deserialize하면 **ExtensionData** 속성 값을 통해 직렬화된 스트림에서 추가 데이터를 사용할 수 있습니다.  
+     이 인터페이스를 사용하면 serializer에서 라운드트립하는 동안 데이터가 손실되지 않습니다. 
+  <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> 속성은 현재 버전에서는 알 수 없는 이후 버전 형식의 모든 데이터를 저장합니다. 이후에 현재 버전을 이후 버전으로 직렬화하거나 deserialize하면 **ExtensionData** 속성 값을 통해 직렬화된 스트림에서 추가 데이터를 사용할 수 있습니다.  
   
      [!code-csharp[SerializationGuidelines#5](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#5)]
      [!code-vb[SerializationGuidelines#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#5)]  
@@ -104,7 +107,8 @@ ms.locfileid: "54690893"
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
   
-2.  XML Serialization 특성을 적용하는 방법보다 serialize된 XML의 모양을 더 구체적으로 제어하려면 <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 것이 좋습니다. 인터페이스의 두 가지 방법 <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> 고 <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, serialize 된 XML 스트림을 완전히 제어할 수 있습니다. <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> 특성을 적용하여 형식에 대해 생성되는 XML 스키마를 제어할 수도 있습니다.  
+2.  XML Serialization 특성을 적용하는 방법보다 serialize된 XML의 모양을 더 구체적으로 제어하려면 <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 것이 좋습니다. 인터페이스의 두 가지 방법 <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> 고 <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, serialize 된 XML 스트림을 완전히 제어할 수 있습니다. 
+  <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> 특성을 적용하여 형식에 대해 생성되는 XML 스키마를 제어할 수도 있습니다.  
   
 #### <a name="supporting-runtime-serialization"></a>런타임 Serialization 지원  
  *Runtime serialization*은 .NET Remoting에 사용되는 기술입니다. .NET Remoting을 사용하여 형식이 전송될 것으로 판단되면 해당 형식이 런타임 serialization을 지원하는지 확인해야 합니다.  
@@ -144,6 +148,6 @@ ms.locfileid: "54690893"
 - [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)
 - [데이터 계약 직렬 변환기에서 지원하는 형식](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
 - [이진 serialization](binary-serialization.md)
-- [원격 개체](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)
+- [.NET remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [XML 및 SOAP serialization](xml-and-soap-serialization.md)
 - [보안 및 Serialization](../../../docs/framework/misc/security-and-serialization.md)

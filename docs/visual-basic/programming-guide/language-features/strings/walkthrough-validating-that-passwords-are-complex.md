@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - String data type [Visual Basic], validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.openlocfilehash: 7bb0e3ff0d021e9923f2e1bd8ced882c6a263d15
-ms.sourcegitcommit: facefcacd7ae2e5645e463bc841df213c505ffd4
+ms.openlocfilehash: fb95871f347bf1093701a428a8b925f884d17a56
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55738567"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979699"
 ---
 # <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>연습: 암호의 복합성 검사 (Visual Basic)
 이 메서드는 몇 가지 강력한 암호 특성에 대 한 확인 하 고 실패에 대 한 암호를 확인 하는 정보를 사용 하 여 문자열 매개 변수를 업데이트 합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "55738567"
 ## <a name="example"></a>예제  
   
 ### <a name="code"></a>코드  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
+ [!code-vb[VbVbcnRegEx#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
  해당 암호가 들어 있는 문자열을 전달 하 여이 메서드를 호출 합니다.  

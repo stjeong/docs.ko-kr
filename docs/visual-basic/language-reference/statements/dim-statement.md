@@ -29,12 +29,12 @@ helpviewer_keywords:
 - Dim statement [Visual Basic], syntax
 - variables [Visual Basic], member and local
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
-ms.openlocfilehash: 487e2ff55f256bc06a463043dd2849a404eb82cd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9e2370c1b17bfdf103072ff33bf42c4c77706550
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54567739"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975202"
 ---
 # <a name="dim-statement-visual-basic"></a>Dim 문(Visual Basic)
 선언 하 고 하나 이상의 변수에 대 한 저장소 공간을 할당 합니다.  
@@ -196,7 +196,7 @@ Dim a, b, c As Single, x, y As Double, i As Integer
 ```  
   
 ## <a name="arrays"></a>배열  
- 보유 하는 변수를 선언할 수는 *배열*, 여러 값을 포함할 수 있는 합니다. 배열을 포함 하는 변수를 지정 하려면에 따라 해당 `variablename` 괄호를 사용 하 여 즉시 합니다. 배열에 대 한 자세한 내용은 참조 하세요. [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)합니다.  
+ 보유 하는 변수를 선언할 수는 *배열*, 여러 값을 포함할 수 있는 합니다. 배열을 포함 하는 변수를 지정 하려면에 따라 해당 `variablename` 괄호를 사용 하 여 즉시 합니다. 배열에 대한 자세한 내용은 [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)을 참조하세요.  
   
  하 한과 배열의 각 차원의 상한을 지정할 수 있습니다. 이 작업을 수행 하려면 포함는 `boundslist` 괄호 안에 있습니다. 각 차원에 대 한는 `boundslist` 상한값 및 하한값을 필요에 따라 지정 합니다. 하 한은 항상 0 있는지 여부를 지정 합니다. 각 인덱스는 0부터 상한 값에서 달라질 수 있습니다.  
   
@@ -251,8 +251,10 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
   
 |데이터 형식 지정 여부|이니셜라이저 지정 여부|예제|결과|  
 |---|---|---|---|  
-|아니요|아니요|`Dim qty`|하는 경우 [Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md) 은 변수로 off (기본값), `Nothing`합니다.<br /><br /> `Option Strict`가 on이면 컴파일 시간 오류가 발생합니다.|  
-|아니요|예|`Dim qty = 5`|하는 경우 [Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md) 이니셜라이저의 변수는 데이터 형식 (기본값)입니다. 참조 [지역 형식 유추](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)합니다.<br /><br /> `Option Infer`가 off이고 `Option Strict`고 off이면 변수가 `Object`의 데이터 형식을 사용합니다.<br /><br /> `Option Infer`가 off이고 `Option Strict`는 on이면 컴파일 타임 오류가 발생합니다.|  
+|아니요|아니요|`Dim qty`|하는 경우 [Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md) 은 변수로 off (기본값), `Nothing`합니다.<br /><br /> 
+  `Option Strict`가 on이면 컴파일 시간 오류가 발생합니다.|  
+|아니요|예|`Dim qty = 5`|하는 경우 [Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md) 이니셜라이저의 변수는 데이터 형식 (기본값)입니다. 참조 [지역 형식 유추](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)합니다.<br /><br /> 
+  `Option Infer`가 off이고 `Option Strict`고 off이면 변수가 `Object`의 데이터 형식을 사용합니다.<br /><br /> `Option Infer`가 off이고 `Option Strict`는 on이면 컴파일 타임 오류가 발생합니다.|  
 |예|아니요|`Dim qty As Integer`|변수는 데이터 형식의 기본값으로 초기화됩니다. 이 섹션 뒷부분에 나오는 표를 참조 하세요.|  
 |예|예|`Dim qty  As Integer = 5`|이니셜라이저의 데이터 형식을 지정한 데이터 형식으로 변환할 수 없으면 컴파일 시간 오류가 발생합니다.|  
   
@@ -299,19 +301,19 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
 ## <a name="example"></a>예제  
  다음 예에서는 변수를 사용 하 여 선언 된 `Dim` 다양 한 옵션을 사용 하 여 문을 합니다.  
   
- [!code-vb[VbVbalrStatements#141](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#141](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#141)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 1에서 30 사이의 소수를 나열 합니다. 지역 변수의 범위는 코드 주석에 설명 되어 있습니다.  
   
- [!code-vb[VbVbalrStatements#142](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#142](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#142)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `speedValue` 클래스 수준 변수 선언 됩니다. `Private` 키워드는 변수를 선언 하는 데 사용 됩니다. 변수는 모든 프로시저에서 액세스할 수 있습니다는 `Car` 클래스입니다.  
   
- [!code-vb[VbVbalrStatements#144](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#144](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#144)]  
   
- [!code-vb[VbVbalrStatements#145](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#145](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#145)]  
   
 ## <a name="see-also"></a>참고자료
 - [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)

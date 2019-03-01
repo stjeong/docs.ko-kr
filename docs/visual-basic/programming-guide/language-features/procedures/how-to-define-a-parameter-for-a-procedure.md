@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedure parameters [Visual Basic], defining
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
-ms.openlocfilehash: 3893b87f50b37116b596b35b32c61ca81e47b3e5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 01b150d70c07897f8217ed6958e3654aa28fdf51
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54660803"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971795"
 ---
 # <a name="how-to-define-a-parameter-for-a-procedure-visual-basic"></a>방법: 프로시저 (Visual Basic)에 대 한 매개 변수를 정의 합니다.
 A *매개 변수* 호출 코드를 호출할 때 프로시저에 값을 전달할 수 있습니다. 동일한 방식으로 변수를 선언 하면 해당 이름 및 데이터 형식을 지정 하는 프로시저에 대 한 각 매개 변수를 선언 합니다. 전달 메커니즘을 지정할 수도 있습니다 및 선택적 매개 변수 인지 합니다.  
@@ -36,7 +36,7 @@ A *매개 변수* 호출 코드를 호출할 때 프로시저에 값을 전달�
   
      개요를 정의 하는 다음 예제는 `Sub` 세 개의 매개 변수를 사용 하 여 프로시저입니다. 처음 두 개는 필수 되며 세 번째 옵션입니다. 매개 변수 선언 매개 변수 목록에 쉼표로 구분 됩니다.  
   
-     [!code-vb[VbVbcnProcedures#33](./codesnippet/VisualBasic/how-to-define-a-parameter-for-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#33)]  
   
      첫 번째 매개 변수가 허용을 `customer` 개체 및 `updateCustomer` 전달 되는 변수를 직접 업데이트할 수 있습니다 `c` 인수가 전달 되기 때문에 [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)합니다. 프로시저 전달 되므로 마지막 두 인수의 값을 변경할 수 없습니다 [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md)합니다.  
   

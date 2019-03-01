@@ -5,12 +5,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], about LINQ to XML
 - LINQ [Visual Basic], LINQ to XML
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
-ms.openlocfilehash: 13997b8588e11eb3600a6fd838e0514069d0e62a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d2f9ca8fe453f120dd52f4c4b20e75b9f933b251
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54539027"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56974122"
 ---
 # <a name="overview-of-linq-to-xml-in-visual-basic"></a>Visual Basic의 LINQ to XML 개요
 Visual Basic에 대 한 지원을 제공 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] XML 리터럴과 XML 축 속성을 통해. 이 옵션을 사용 하면 Visual Basic 코드에서 XML을 사용 하 여 작업에 대 한 친숙 하 고 편리한 구문을 사용할 수 있습니다. *XML 리터럴* 코드에서 직접 XML을 포함할 수 있도록 합니다. *XML 축 속성* 액세스 자식 노드, 하위 노드 및 XML 리터럴의 특성 수입니다. 자세한 내용은 [XML 리터럴 개요](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md) 하 고 [Visual Basic의 XML에 액세스](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)합니다.  
@@ -25,21 +25,21 @@ Visual Basic에 대 한 지원을 제공 [!INCLUDE[sqltecxlinq](~/includes/sqlte
 ## <a name="creating-xml"></a>XML 만들기  
  Visual Basic에서 XML 트리를 만드는 두 가지가 있습니다. 코드에서 직접 리터럴 XML를 선언할 수 있습니다 하거나 사용할 수 있습니다는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] Api 트리를 만들 수 있습니다. 두 프로세스 모두 XML 트리의 최종 구조를 반영 하는 코드를 사용 합니다. 예를 들어, 다음 코드 예제는 XML 요소를 만듭니다.  
   
- [!code-vb[VbXmlSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_1.vb)]  
+ [!code-vb[VbXmlSamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#5)]  
   
  자세한 내용은 [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)합니다.  
   
 ## <a name="accessing-and-navigating-xml"></a>액세스 하 고 XML 탐색  
  Visual Basic XML 축 속성에 액세스 하 고 XML 구조를 탐색을 제공 합니다. 이러한 속성을 사용 하 여 XML 자식 요소 이름을 지정 하 여 XML 요소 및 특성에 액세스할 수 있습니다. 명시적으로 호출할 수 있습니다 또는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 탐색 하 고 특성과 해당 요소를 찾는 방법입니다. 예를 들어, 다음 코드 예제에서는 특성에는 XML 요소의 자식 요소를 가리키는 XML 축 속성을 사용 합니다. 사용 하 여 코드 예제는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 자식 요소를 검색 하 고 효과적인 변환을 수행 하는 XML 요소로 출력 하 여 쿼리 합니다.  
   
- [!code-vb[VbXmlSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_2.vb)]  
+ [!code-vb[VbXmlSamples#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples3.vb#8)]  
   
  자세한 내용은 [Visual Basic의 XML에 액세스](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)합니다.  
   
 ## <a name="xml-namespaces"></a>XML 네임스페이스  
  Visual Basic을 사용 하면 사용 하 여 전역 XML 네임 스페이스에 대 한 별칭을 지정할 수 있습니다는 `Imports` 문입니다. 다음 예제에서는 사용 하는 방법의 `Imports` 을 XML 네임 스페이스를 가져오기 위한 문:  
   
- [!code-vb[VbXMLSamples#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_3.vb)]  
+ [!code-vb[VbXMLSamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#1)]  
   
  XML 축 속성에 액세스 하 고 XML 문서 및 요소에 대 한 XML 리터럴을 선언 하는 경우 XML 네임 스페이스 별칭을 사용할 수 있습니다.  
   
@@ -50,16 +50,16 @@ Visual Basic에 대 한 지원을 제공 [!INCLUDE[sqltecxlinq](~/includes/sqlte
 ### <a name="using-xml-namespaces-in-xml-literals"></a>XML 리터럴의 XML 네임 스페이스를 사용 하 여  
  다음 예제에서는 만드는 방법을 보여 줍니다.는 <xref:System.Xml.Linq.XElement> 전역 네임 스페이스를 사용 하는 개체 `ns`:  
   
- [!code-vb[VbXMLSamples#2](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_4.vb)]  
+ [!code-vb[VbXMLSamples#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#2)]  
   
  Visual Basic 컴파일러는 XML 리터럴의 XML 네임 스페이스를 사용 하는 것에 대 한 XML 표기를 사용 하는 해당 코드에 XML 네임 스페이스 별칭을 포함 하는 변환 된 `xmlns` 특성입니다. 컴파일된 경우 이전 섹션의 예제 코드에서는 기본적으로 동일한 실행 코드를 다음 예제와 같이 생성 합니다.  
   
- [!code-vb[VbXMLSamples#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_5.vb)]  
+ [!code-vb[VbXMLSamples#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#3)]  
   
 ### <a name="using-xml-namespaces-in-xml-axis-properties"></a>XML 네임 스페이스를 사용 하 여 XML 축 속성  
  XML 리터럴에서 선언 된 XML 네임 스페이스가 XML 축 속성에서 사용 하기 위해 사용할 수 없는 경우 그러나 XML 축 속성을 사용 하 여 전역 네임 스페이스를 사용할 수 있습니다. 로컬 요소 이름과에서 XML 네임 스페이스 접두사를 구분 하려면 콜론을 사용 합니다. 예를 들면 다음과 같습니다.  
   
- [!code-vb[VbXMLSamples#4](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/overview-of-linq-to-xml_6.vb)]  
+ [!code-vb[VbXMLSamples#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#4)]  
   
 ## <a name="see-also"></a>참고자료
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
