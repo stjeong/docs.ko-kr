@@ -15,7 +15,7 @@ C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하
   
  이 예제에서 메서드는 0으로 나누기를 테스트하고 오류를 catch합니다. 예외 처리를 사용하지 않을 경우 이 프로그램은 **DivideByZeroException이(가) 처리되지 않았습니다.** 오류를 나타내며 종료됩니다.  
   
- [!code-csharp[csProgGuideExceptions#18](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exceptions-and-exception-handling_1.cs)]  
+ [!code-csharp[csProgGuideExceptions#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExceptions/CS/Exceptions.cs#18)]  
   
 ## <a name="exceptions-overview"></a>예외 개요  
  예외는 다음과 같은 속성을 갖습니다.  

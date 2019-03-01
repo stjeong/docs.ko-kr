@@ -4,12 +4,6 @@ description: WMI 및 성능 카운터 정보에 대한 .NET Framework 관리되�
 author: rpetrusha
 ms.author: ronpet
 ms.date: 11/06/2017
-ms.openlocfilehash: 6e105bc28b6011c3177216aba996eb85c0766ac8
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44069513"
 ---
 # <a name="windows-management-instrumentation-wmi-and-performance-counters-unmanaged-api-reference"></a>WMI(Windows Management Instrumentation) 및 성능 카운터(관리되지 않는 API 참조)
 
@@ -73,5 +67,6 @@ API에는 다음 함수가 포함됩니다.
 | [VerifyClient 함수](verifyclientkey.md) | 클라이언트 키가 올바른 보안을 유지하는지 확인합니다. |
 | [WritePropertyValue 함수](writepropertyvalue.md) | 지정된 수의 바이트를 속성 핸들로 식별되는 속성에 씁니다. |
 
- ## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
+
 [관리되지 않는 API 참조](../index.md) 

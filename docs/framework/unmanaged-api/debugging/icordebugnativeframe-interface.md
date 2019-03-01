@@ -1,5 +1,5 @@
 ---
-title: ICorDebugNativeFrame Interface1
+title: ICorDebugNativeFrame 인터페이스
 ms.date: 03/30/2017
 api_name:
 - ICorDebugNativeFrame
@@ -16,14 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c923b54f791cd8ff794538d4687ca0329e62c87e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fbdb17bcd502b75da0a73d9a36cf36d6564320bc
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54547029"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975487"
 ---
-# <a name="icordebugnativeframe-interface1"></a>ICorDebugNativeFrame Interface1
+# <a name="icordebugnativeframe-interface"></a>ICorDebugNativeFrame 인터페이스
+
 네이티브 프레임에 사용 되는 ICorDebugFrame의 특수화 된 구현입니다.  
   
 ## <a name="methods"></a>메서드  
