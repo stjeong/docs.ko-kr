@@ -16,7 +16,7 @@ ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
 ## <a name="declaring-and-initializing-strings"></a>문자열 선언 및 초기화  
  다음 예제에서와 같이 다양한 방법으로 문자열을 선언하고 초기화할 수 있습니다.  
   
- [!code-csharp[csProgGuideStrings#1](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideStrings#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#1)]  
   
  문자 배열이 포함된 문자열을 초기화할 경우를 제외하고는 문자열 개체를 만들기 위해 [new](../../../csharp/language-reference/keywords/new-operator.md) 연산자를 사용하지 않습니다.  
   
@@ -84,16 +84,16 @@ C# 6.0 이상에서 사용 가능한 [‘보간된 문자열’](../../language-
 ## <a name="substrings"></a>부분 문자열  
  부분 문자열은 문자열에 포함된 임의의 문자 시퀀스입니다. 원래 문자열 일부에서 새 문자열을 만들려면 <xref:System.String.Substring%2A> 메서드를 사용하세요. <xref:System.String.IndexOf%2A> 메서드를 사용하면 부분 문자열 항목을 하나 이상 검색할 수 있습니다. 지정된 부분 문자열의 모든 항목을 새 문자열로 바꾸려면 <xref:System.String.Replace%2A> 메서드를 사용하세요. <xref:System.String.Substring%2A> 메서드와 마찬가지로, <xref:System.String.Replace%2A>는 실제로 새 문자열을 반환하며, 원래 문자열은 수정되지 않습니다. 자세한 내용은 [방법: 검색 문자열](../../how-to/search-strings.md) 및 [방법: 문자열 내용 수정](../../how-to/modify-string-contents.md)을 참조하세요.  
   
- [!code-csharp[csProgGuideStrings#7](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_7.cs)]  
+ [!code-csharp[csProgGuideStrings#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#9)]  
   
 ## <a name="accessing-individual-characters"></a>개별 문자 액세스  
  다음 예제와 같이 인덱스 값이 있는 배열 표기법을 사용하여 개별 문자에 대한 읽기 전용 액세스 권한을 얻을 수 있습니다.  
   
- [!code-csharp[csProgGuideStrings#9](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_8.cs)]  
+ [!code-csharp[csProgGuideStrings#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#8)]  
   
  문자열에서 개별 문자를 수정해야 하는 기능이 <xref:System.String> 메서드에서 제공되지 않는 경우에는 <xref:System.Text.StringBuilder> 개체를 사용하여 개별 문자를 "현재 위치"에서 수정한 후 새 문자열을 만들어 <xref:System.Text.StringBuilder> 메서드로 결과를 저장할 수 있습니다. 다음 예제에서는 특정 방식으로 원래 문자열을 수정한 다음 나중에 사용할 수 있도록 결과를 저장해야 한다고 가정합니다.  
   
- [!code-csharp[csProgGuideStrings#8](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_9.cs)]  
+ [!code-csharp[csProgGuideStrings#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#27)]  
   
 ## <a name="null-strings-and-empty-strings"></a>null 문자열 및 빈 문자열  
  빈 문자열은 문자가 포함되지 않은 <xref:System.String?displayProperty=nameWithType> 개체의 인스턴스입니다. 빈 문자열은 빈 텍스트 필드를 나타내는 다양한 프로그래밍 시나리오에서 자주 사용됩니다. 빈 문자열은 유효한 <xref:System.String?displayProperty=nameWithType> 개체이므로 빈 문자열에 대해 메서드를 호출할 수 있습니다. 빈 문자열은 다음과 같이 초기화됩니다.  
@@ -104,12 +104,12 @@ string s = String.Empty;
   
  반면, null 문자열은 <xref:System.String?displayProperty=nameWithType> 개체의 인스턴스를 참조하지 않으므로 null 문자열에서 메서드를 호출하려고 하면 <xref:System.NullReferenceException>이 발생합니다. 그러나 다른 문자열과 연결 및 비교 작업에서는 null 문자열을 사용할 수 있습니다. 다음 예제에는 null 문자열에 대한 참조로 예외가 발생하거나 발생하지 않는 몇 가지 경우가 나와 있습니다.  
   
- [!code-csharp[csProgGuideStrings#27](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_10.cs)]  
+ [!code-csharp[csProgGuideStrings#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#20)]  
   
 ## <a name="using-stringbuilder-for-fast-string-creation"></a>빠른 문자열 생성을 위한 StringBuilder 사용  
  .NET에서 문자열 작업은 고도로 최적화되어 있으므로 대부분의 경우 성능에 크게 영향을 주지 않습니다. 그러나 수백 번 또는 수천 번 실행하는 타이트 루프와 같은 일부 시나리오에서는 문자열 작업이 성능에 영향을 미칠 수 있습니다. 프로그램이 여러 문자열 조작을 수행하는 경우에는 <xref:System.Text.StringBuilder> 클래스에서 개선된 성능을 제공하는 문자열 버퍼를 만듭니다. <xref:System.Text.StringBuilder> 문자열을 사용하면 개별 문자를 다시 할당할 수도 있지만 기본 제공 문자열 데이터 형식을 지원하지는 않습니다. 예를 들어 이 코드는 새 문자열을 만들지 않고 문자열의 콘텐츠를 변경합니다.  
   
- [!code-csharp[csProgGuideStrings#20](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_11.cs)]  
+ [!code-csharp[csProgGuideStrings#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#15)]  
   
  이 예제에서 <xref:System.Text.StringBuilder> 개체는 숫자 형식 집합에서 문자열을 만드는 데 사용됩니다.  
   
