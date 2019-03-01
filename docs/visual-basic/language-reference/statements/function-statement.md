@@ -28,12 +28,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Function statements
 - Handles keyword [Visual Basic], Function statements
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-ms.openlocfilehash: 5018aebb0401ce5a1c46ecf04a7c65ca676271e7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 947507cb813437facc2b2343ff6f1a5d50f4dd98
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54565906"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56971639"
 ---
 # <a name="function-statement-visual-basic"></a>Function 문(Visual Basic)
 선언 하 고 이름, 매개 변수를 정의 하는 코드는 `Function` 프로시저입니다.  
@@ -129,7 +129,8 @@ End Function
   
 -   `implementslist`  
   
-     `Implements`가 제공된 경우 필수입니다. 구현할 `Function` 프로시저 목록입니다.  
+     
+  `Implements`가 제공된 경우 필수입니다. 구현할 `Function` 프로시저 목록입니다.  
   
      `implementedprocedure [ , implementedprocedure ... ]`  
   
@@ -148,7 +149,8 @@ End Function
   
 -   `eventlist`  
   
-     `Handles`가 제공된 경우 필수입니다. 이 프로시저에서 처리 하는 이벤트 목록입니다.  
+     
+  `Handles`가 제공된 경우 필수입니다. 이 프로시저에서 처리 하는 이벤트 목록입니다.  
   
      `eventspecifier [ , eventspecifier ... ]`  
   
@@ -193,11 +195,11 @@ End Function
   
  `Return` 문을 동시에 반환 값을 할당 하 고 다음 예와 같이 함수를 종료 합니다.  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#24)]  
   
  함수 이름에 반환 값을 할당 하는 다음 예제에서는 `myFunction` 를 사용 하 여는 `Exit Function` 문을 반환 합니다.  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#23)]  
   
  합니다 `Exit Function` 하 고 `Return` 문을 사용 하면 즉시 종료를 `Function` 프로시저입니다. 임의 개수의 `Exit Function` 하 고 `Return` 문을 프로시저에서 아무 곳 이나 나타날 수 있으며 함께 사용할 수 있습니다 `Exit Function` 및 `Return` 문.  
   
@@ -240,19 +242,19 @@ End Function
 ## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Function` 이름, 매개 변수 및 코드의 본문을 형성 하는 declare 문을 `Function` 프로시저입니다. `ParamArray` 한정자를 사용 하면 가변 개수의 인수를 수락 하는 함수입니다.  
   
- [!code-vb[VbVbalrStatements#25](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#25)]  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 앞의 예제에서 선언 된 함수를 호출 합니다.  
   
- [!code-vb[VbVbalrStatements#26](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
   
 ## <a name="example"></a>예제  
  다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync` 에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 정수가 생성 합니다. 본이 방침에 설명 되어이: `Dim result As Integer = Await delayTask`합니다.  
   
  `startButton_Click` 절차는의 예는 `Async Sub` 프로시저입니다. 때문에 `DoSomethingAsync` 되는 `Async` 함수에 대 한 호출에 대 한 작업 `DoSomethingAsync` 다음 문을 보여 주듯이 대기할 수 있어야 합니다: `Await DoSomethingAsync()`합니다. 합니다 `startButton_Click` `Sub` 프로시저를 사용 하 여 정의 되어야 합니다는 `Async` 한정자 있기 때문에 `Await` 식입니다.  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
+ [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
 ## <a name="see-also"></a>참고자료
 - [Sub 문](sub-statement.md)

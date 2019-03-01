@@ -17,12 +17,12 @@ helpviewer_keywords:
 - procedure overloading
 - procedures [Visual Basic], parameter lists
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
-ms.openlocfilehash: 3cb11079241da4815c6e7bde4a76123965a95514
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4d90b81049197fbbf4a767b17399d3e9c80be0f7
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54712524"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56975474"
 ---
 # <a name="procedure-overloading-visual-basic"></a>프로시저 오버로딩(Visual Basic)
 *오버 로드* 프로시저 이름은 같지만 다른 매개 변수 목록을 사용 하 여 여러 버전에서 정의 의미 합니다. 오버 로드의 용도 이름으로 구분할 필요 없이 프로시저의 밀접 한 관련이 있는 여러 버전을 정의 하는 것입니다. 매개 변수 목록 변경 하 여이 작업을 수행 합니다.  
@@ -67,12 +67,12 @@ ms.locfileid: "54712524"
 ## <a name="multiple-versions-of-a-procedure"></a>여러 버전의 프로시저  
  작성 하는 가정 된 `Sub` 고객 계정 번호로 또는 이름으로 참조할 수 있게 되기를 원하는 고객의 잔액 하에 대 한 트랜잭션을 게시 하는 절차입니다. 이 위해 서로 다른 두 정의할 수 있습니다 `Sub` 다음 예제와 같이 프로시저:  
   
- [!code-vb[VbVbcnProcedures#73](./codesnippet/VisualBasic/procedure-overloading_1.vb)]  
+ [!code-vb[VbVbcnProcedures#73](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#73)]  
   
 ### <a name="overloaded-versions"></a>오버 로드 된 버전  
  대신 단일 프로시저 이름을 오버 로드 하는 것입니다. 사용할 수는 [오버 로드](../../../../visual-basic/language-reference/modifiers/overloads.md) 키워드를 각 매개 변수 목록에 대 한 프로시저의 버전을 다음과 같이 정의 합니다.  
   
- [!code-vb[VbVbcnProcedures#72](./codesnippet/VisualBasic/procedure-overloading_2.vb)]  
+ [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]  
   
 #### <a name="additional-overloads"></a>추가 오버 로드  
  트랜잭션 시간을 허용 하려는 경우 `Decimal` 또는 `Single`, 추가로 오버 로드 하면 `post` 이 변형에 대 한 허용 하도록 합니다. 이 경우 앞의 예제에서 오버 로드 각각에 네 개 있는 `Sub` 프로시저 이름이 같지만 네 개의 서로 다른 서명 합니다.  
@@ -80,9 +80,9 @@ ms.locfileid: "54712524"
 ## <a name="advantages-of-overloading"></a>오버 로드의 장점  
  프로시저 오버 로드의 장점은 호출의 유연한입니다. 사용 하는 `post` 앞의 예제에서 선언 된 프로시저 호출 코드로 고객 id를 가져올 수 있습니다를 `String` 또는 `Integer`, 다음 두 경우 모두 동일한 프로시저를 호출 합니다. 다음 예제는 이러한 과정을 보여 줍니다.  
   
- [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/procedure-overloading_3.vb)]  
+ [!code-vb[VbVbcnProcedures#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#56)]  
   
- [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/procedure-overloading_4.vb)]  
+ [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
 ## <a name="see-also"></a>참고자료
 - [절차](./index.md)

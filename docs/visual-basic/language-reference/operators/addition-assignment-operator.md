@@ -10,12 +10,12 @@ helpviewer_keywords:
 - += operator [Visual Basic], appending strings
 - compound assignment statements [Visual Basic]
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
-ms.openlocfilehash: cfe987929099fc73ba3af9fe92b5871275c5396e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7fdf5cd422cf2a4081372bc14e74ed7463393520
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54617553"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979855"
 ---
 # <a name="-operator-visual-basic"></a>+= 연산자(Visual Basic)
 숫자 변수 또는 속성의 값에 숫자 식의 값을 추가 하 고 그 결과 변수 또는 속성에 할당 합니다. 연결을 사용할 수도 있습니다는 `String` 식을 `String` 변수 또는 속성 및 변수 또는 속성에 결과 할당 합니다.  
@@ -51,9 +51,9 @@ variableorproperty += expression
 ## <a name="example"></a>예제  
  다음 예제에서는 `+=` 다른 하나의 변수 값을 결합 하는 연산자입니다. 첫 번째 부분에서는 `+=` 다른 하나의 값을 추가 하려면 숫자 변수를 사용 합니다. 두 번째 부분에서는 `+=` 사용 하 여 `String` 다른 하나의 값을 연결 하는 변수입니다. 두 경우 모두 결과 첫 번째 변수에 할당 됩니다.  
   
- [!code-vb[VbVbalrOperators#7](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#7)]  
   
- [!code-vb[VbVbalrOperators#8](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-assignment-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#8)]  
   
  변수의 `num1` 의 값과 13, 이제는 `str1` 은 "103"입니다.  
   

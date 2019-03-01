@@ -9,12 +9,12 @@ helpviewer_keywords:
 - SyncLock statement [Visual Basic]
 - locks, threads
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
-ms.openlocfilehash: 5a931199ff8d09412d536a173f3cd12e451def64
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 3a12c3ac7250ee2904d571406d5008d451c9dc35
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48845982"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979816"
 ---
 # <a name="synclock-statement"></a>SyncLock 문
 블록을 실행 하기 전에 문 블록에 대 한 배타적 잠금을 획득 합니다.  
@@ -29,7 +29,7 @@ End SyncLock
   
 ## <a name="parts"></a>요소  
  `lockobject`  
- 필수. 개체 참조로 계산 되는 식입니다.  
+ 필수 요소. 개체 참조로 계산 되는 식입니다.  
   
  `block`  
  선택 사항입니다. 잠금을 획득할 때 실행 하는 문 블록입니다.  
@@ -81,13 +81,13 @@ End SyncLock
  경우는 `simpleMessageList` 클래스가 단일 모든 인스턴스에서 해당 변수는 메시지 목록을 공유 `messagesList` 하 고 `messagesLast` 로 선언 됩니다 `Shared`합니다. 이 예에서 변수 `messagesLock` 역시 `Shared`모든 인스턴스에 사용 되는 단일 잠금 개체가 있을 수 있도록 합니다.  
   
 ### <a name="code"></a>코드  
- [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_1.vb)]  
+ [!code-vb[VbVbalrThreading#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrThreading/VB/Class1.vb#1)]  
   
 ### <a name="description"></a>설명  
  다음 예제에서는 스레드 및 `SyncLock`합니다. 으로 `SyncLock` 문이 있으면 문 블록은 임계 영역이 및 `balance` 음수 되지 됩니다. 주석으로 처리 합니다 `SyncLock` 및 `End SyncLock` 문을 생략의 효과 확인 하려면를 `SyncLock` 키워드입니다.  
   
 ### <a name="code"></a>코드  
- [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_2.vb)]  
+ [!code-vb[VbVbalrThreading#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrThreading/VB/class2.vb#21)]  
   
 ### <a name="comments"></a>설명  
   

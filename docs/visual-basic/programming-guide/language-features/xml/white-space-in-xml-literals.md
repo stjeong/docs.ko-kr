@@ -5,12 +5,12 @@ helpviewer_keywords:
 - white space [XML in Visual Basic]
 - XML literals [Visual Basic], white space
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
-ms.openlocfilehash: 56466856bc70f4bde428f7087efdf4e71a50021f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ef371a984d03485ccaf1ee5d61aa3cf39d80ef32
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54689148"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979062"
 ---
 # <a name="white-space-in-xml-literals-visual-basic"></a>XML 리터럴의 공백(Visual Basic)
 Visual Basic 컴파일러를 만들 때 XML 리터럴에서 유효 공백 문자만 포함 된 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체입니다. 불필요 한 공백 문자는 포함 되지 않습니다.  
@@ -34,7 +34,7 @@ Visual Basic 컴파일러를 만들 때 XML 리터럴에서 유효 공백 문자
 ## <a name="examples"></a>예제  
  다음 예제에서는 두 개의 XML 요소를 외부 및 내부를 포함합니다. 두 요소 텍스트 내용에 공백이 포함 되어 있습니다. 공백 및 XML 요소가 포함 되어 있으므로 외부 요소에서 공백을 중요 하지 않습니다. 요소의 내부에 공백을 공백 및 텍스트 있기 때문에 유효 합니다.  
   
- [!code-vb[VbXMLSamples#29](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/white-space-in-xml-literals_1.vb)]  
+ [!code-vb[VbXMLSamples#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#29)]  
   
  를 실행 하는 경우이 코드는 다음 텍스트를 표시 합니다.  
   

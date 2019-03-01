@@ -8,12 +8,12 @@ helpviewer_keywords:
 - element literal [Visual Basic]
 - XML literals [Visual Basic], element
 ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
-ms.openlocfilehash: 54ad162a1a720a1645a3b413e6518d2ccfd37bbe
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 71e6cf3e6169434ea0a28f8691cf82f6c8e8a030
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595918"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979935"
 ---
 # <a name="xml-element-literal-visual-basic"></a>XML 요소 리터럴(Visual Basic)
 
@@ -119,7 +119,7 @@ ms.locfileid: "54595918"
 ## <a name="example"></a>예제  
  다음 예제에서는 두 중첩 된 빈 요소가 포함 된 간단한 XML 요소를 만드는 방법을 보여 줍니다.  
   
- [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples9.vb#20)]  
   
  다음 텍스트를 표시합니다. 리터럴 빈 요소의 구조를 유지 됨을 알 수 있습니다.  
   
@@ -133,7 +133,7 @@ ms.locfileid: "54595918"
 ## <a name="example"></a>예제  
  다음 예제에서는 포함 된 식을 사용 하 여 요소 이름과 특성을 만드는 방법을 보여 줍니다.  
   
- [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_2.vb)]  
+ [!code-vb[VbXMLSamples#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples9.vb#21)]  
   
  이 코드의 텍스트는 다음과 같습니다.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "54595918"
 ## <a name="example"></a>예제  
  다음 예제에서는 `ns`를 XML 네임스페이스 접두사로 선언한 다음 XML 리터럴 만들려는 네임 스페이스의 접두사를 사용 하 고 요소의 마지막 폼을 표시 합니다.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_3.vb)]  
+ [!code-vb[VbXMLSamples#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples10.vb#22)]  
   
  이 코드의 텍스트는 다음과 같습니다.  
   
