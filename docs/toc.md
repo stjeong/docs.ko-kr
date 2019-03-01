@@ -27,12 +27,12 @@
 ### [기본 형식](standard/base-types/)
 ## [.NET 클래스 라이브러리](standard/class-libraries.md)
 ## [분석기](standard/analyzers/index.md)
-### [API 분석기](standard/analyzers/api-analyzer.md) 
+### [API 분석기](standard/analyzers/api-analyzer.md)
 ### [이식성 분석기](standard/analyzers/portability-analyzer.md)
 ### [프레임워크 분석기](standard/analyzers/framework-analyzer.md)
 ## [예외 처리 및 Throw](standard/exceptions/)
 ## [.NET 어셈블리](standard/assembly/index.md)
-### [.NET 어셈블리 파일 형식](standard/assembly/file-format.md) 
+### [.NET 어셈블리 파일 형식](standard/assembly/file-format.md)
 ## [가비지 수집](standard/garbage-collection/)
 ## [제네릭 형식](standard/generics.md)
 ## [대리자 및 람다 식](standard/delegates-lambdas.md)
@@ -93,7 +93,6 @@
 ### [.NET Core 2.1의 새로운 기능](core/whats-new/dotnet-core-2-1.md)
 ### [.NET Core 2.0의 새로운 기능](core/whats-new/dotnet-core-2-0.md)
 ## [자습서](core/tutorials/index.md)
-### [Visual Studio 2017을 사용하여 Windows에서 완전한 .NET Core 솔루션 구축](core/tutorials/using-on-windows-full-solution.md)
 ### [macOS에서 .NET Core 시작](core/tutorials/using-on-macos.md)
 ### [Visual Studio for Mac을 사용하여 macOS에서 .NET Core 시작](core/tutorials/using-on-mac-vs.md)
 ### [Visual Studio for Mac을 사용하여 macOS에서 완전한 .NET Core 솔루션 빌드](core/tutorials/using-on-mac-vs-full-solution.md)
@@ -101,7 +100,6 @@
 ### [.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트](core/tutorials/testing-with-cli.md)
 ### [플랫폼 간 도구로 라이브러리 개발](core/tutorials/libraries.md)
 ### [ASP.NET Core 애플리케이션 개발](core/tutorials/aspnet-core.md)
-### [.NET Core 1.0에 대한 패키지 종속성 버전을 관리하는 방법](core/tutorials/managing-package-dependency-versions.md)
 ### [네이티브 코드에서 .NET Core 호스트](core/tutorials/netcore-hosting.md)
 ### [dotnet용 사용자 지정 템플릿 새로 만들기](core/tutorials/create-custom-template.md)
 ## [패키지, 메타패키지 및 프레임워크](core/packages.md)
@@ -270,7 +268,9 @@
 ## [C# 둘러보기](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
+<!-- markdownlint-disable MD003 -->
 ## C#의 새로운 기능
+<!-- markdownlint-enable MD003 -->
 ### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
@@ -522,9 +522,11 @@
 #### [My에 사용할 수 있는 개체 사용자 지정](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [프로그래밍 개념](visual-basic/programming-guide/concepts/index.md)
-### [.NET 어셈블리](standard/assembly/index.md)
 ### [Async 및 Await를 사용한 비동기 프로그래밍](visual-basic/programming-guide/concepts/async/index.md)
 ### [특성](visual-basic/programming-guide/concepts/attributes/index.md)
+### [호출자 정보](visual-basic/programming-guide/concepts/caller-information.md)
+### [컬렉션](visual-basic/programming-guide/concepts/collections.md)
+### [공 분산 및 반공 분산](visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
 ### [식 트리](visual-basic/programming-guide/concepts/expression-trees/index.md)
 ### [반복기](visual-basic/programming-guide/concepts/iterators.md)
 ### [LINQ(Language-Integrated Query)](visual-basic/programming-guide/concepts/linq/index.md)
@@ -1211,7 +1213,7 @@
 #### [중간 파이프라인 데이터 값 검사](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [회귀 모델 학습](machine-learning/how-to-guides/train-regression-model-ml-net.md)
 #### [PFI를 사용하여 모델 기능 중요도 파악](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
-### 학습된 모델 사용  
+### 학습된 모델 사용
 #### [PredictionEngine을 사용하여 한 번에 하나씩 예측 수행](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 #### [학습된 모델 운용](machine-learning/how-to-guides/consuming-model-ml-net.md)
 ### Infer.NET

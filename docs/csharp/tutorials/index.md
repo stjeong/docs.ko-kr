@@ -1,19 +1,13 @@
 ---
-title: C# 자습서
-description: C# 자습서를 탐색하여 C# 프로그램을 빌드하는 방법과 C# 언어 기능에 관해 학습합니다.
+title: 'C# 자습서'
+description: 'C# 자습서를 탐색하여 C# 프로그램을 빌드하는 방법과 C# 언어 기능에 관해 학습합니다.'
 ms.date: 10/25/2018
-ms.openlocfilehash: f49754a9d6fa7523d88fa5ce3a7f57501f434878
-ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54084669"
 ---
 # <a name="c-tutorials"></a>C# 자습서
 
 C# 자습서를 시작합니다. 브라우저에서 실행할 수 있는 대화형 단원을 시작합니다. 최신 자습서 및 고급 자습서는 머신에서 .NET 개발 도구를 사용해 C# 프로그램을 만드는 데 도움이 됩니다.
 
-## <a name="introduction-to-c-interactive-tutorials"></a>C# 소개 대화형 자습서 #
+## <a name="introduction-to-c-interactive-tutorials"></a>C# 소개 대화형 자습서
 
 첫 번째 단원에서는 작은 코드 조각을 사용하여 C# 개념을 설명합니다. C# 구문의 기본 사항과 문자열, 숫자 및 부울과 같은 데이터 형식을 사용하는 방법에 대해 학습합니다. 모두 대화형이며, 몇 분 내에 코드를 작성하여 실행할 수 있습니다. 이 첫 번째 단원에서는 프로그래밍이나 C# 언어에 대한 사전 지식이 없다고 가정합니다.
 
@@ -47,7 +41,7 @@ C# 자습서를 시작합니다. 브라우저에서 실행할 수 있는 대화�
 
 Hello World 단원 다음에 나오는 모든 소개 자습서는 자체 로컬 개발 환경에서 볼 수 있습니다. 각 자습서가 끝날 때 다음 단원을 온라인으로 진행할지, 사용자 머신에서 진행할지 결정합니다. 환경을 설정하고 사용자 머신에서 다음 자습서를 진행하는 데 유용한 링크가 있습니다.
 
-## <a name="explore-new-features-in-c"></a>C#의 새 기능 살펴보기 #
+## <a name="explore-new-features-in-c"></a>C\#의 새 기능 살펴보기
 
 이 [대화형 탐색](exploration/csharp-6.yml)에서 [C# 6](../whats-new/csharp-6.md)의 새 기능을 사용해 보세요.
 

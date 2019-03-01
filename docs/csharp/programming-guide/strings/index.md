@@ -1,17 +1,11 @@
 ---
-title: 문자열 - C# 프로그래밍 가이드
+title: '문자열 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-- C# language, strings
-- strings [C#]
+  - 'C# language, strings'
+  - 'strings [C#]'
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
-ms.openlocfilehash: ba0c9abe9a38962ab19a204019abd3ac89ae6915
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236364"
 ---
 # <a name="strings-c-programming-guide"></a>문자열(C# 프로그래밍 가이드)
 문자열은 값이 텍스트인 <xref:System.String> 형식의 개체입니다. 내부적으로 텍스트는 <xref:System.Char> 개체의 순차적 읽기 전용 컬렉션으로 저장됩니다. C# 문자열의 끝에 null 종료 문자가 없으므로 C# 문자열에는 포함된 null 문자('\0')를 여러 개 사용할 수 있습니다. 문자열의 <xref:System.String.Length%2A> 속성은 유니코드 문자 수가 아닌 포함된 `Char` 개체 수를 나타냅니다. 문자열에서 개별 유니코드 코드 포인트에 액세스하려면 <xref:System.Globalization.StringInfo> 개체를 사용합니다.  
@@ -31,22 +25,22 @@ ms.locfileid: "53236364"
 ## <a name="immutability-of-string-objects"></a>문자열 개체의 불변성  
  문자열 개체는 *변경할 수 없습니다*. 즉, 생성된 후에는 바꿀 수 없습니다. 실제로 문자열을 수정하는 것으로 나타나는 모든 <xref:System.String> 메서드 및 C# 연산자는 새로운 문자열 개체에 결과를 반환합니다. 다음 예제에서 `s1` 및 `s2`의 콘텐츠는 단일 문자열을 형성하도록 연결되며, 두 개의 원본 문자열은 변경되지 않습니다. `+=` 연산자는 결합된 콘텐츠를 포함하는 새 문자열을 만듭니다. 새 개체는 `s1` 변수에 할당되며, 참조를 유지하는 변수가 없으므로 `s1`에 할당된 원래 개체는 가비지 수집을 위해 해제됩니다.  
   
- [!code-csharp[csProgGuideStrings#2](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_2.cs)]  
+ [!code-csharp[csProgGuideStrings#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#2)]  
   
  문자열 "수정"은 실제로 새 문자열을 만드는 것이므로 문자열에 대한 참조를 만들 때 주의해야 합니다. 문자열에 대한 참조를 만든 후 원래 문자열을 "수정"하더라도 참조는 문자열을 수정할 때 만든 새 개체가 아니라 원래 개체를 계속 가리킵니다. 이 동작은 다음 코드에서 볼 수 있습니다.  
   
- [!code-csharp[csProgGuideStrings#25](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_3.cs)]  
+ [!code-csharp[csProgGuideStrings#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#25)]  
   
  원래 문자열에 대한 검색 및 바꾸기 작업과 같이, 수정을 기반으로 하는 새 문자열 작성 방법에 대한 자세한 내용은 [방법: 문자열 내용 수정](../../how-to/modify-string-contents.md)을 참조하세요.  
   
 ## <a name="regular-and-verbatim-string-literals"></a>일반 및 축자 문자열 리터럴  
  다음 예제와 같이 C#에서 제공하는 이스케이프 문자를 포함해야 하는 경우 일반 문자열 리터럴을 사용합니다.  
   
- [!code-csharp[csProgGuideStrings#3](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_4.cs)]  
+ [!code-csharp[csProgGuideStrings#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#3)]  
   
  문자열 텍스트에 백슬래시 문자가 포함된 경우 가독성을 높이고 편의를 위해 축자 문자열을 사용합니다(예: 파일 경로). 축자 문자열에서는 문자열 텍스트의 일부로 줄 바꿈 문자가 유지되므로 여러 줄 문자열을 초기화하는 데 사용할 수 있습니다. 축자 문자열 내에 따옴표를 포함하려면 큰따옴표를 사용하세요. 다음 예제에서는 몇 가지 일반적인 축자 문자열에 대한 사용을 보여 줍니다.  
   
- [!code-csharp[csProgGuideStrings#4](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_5.cs)]  
+ [!code-csharp[csProgGuideStrings#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#4)]  
   
 ## <a name="string-escape-sequences"></a>문자열 이스케이프 시퀀스  
   
