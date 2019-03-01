@@ -2,12 +2,12 @@
 title: WS Transport With Message Credential
 ms.date: 03/30/2017
 ms.assetid: 0d092f3a-b309-439b-920b-66d8f46a0e3c
-ms.openlocfilehash: 9495dea69e489321360b1f4e24fea7d1e84fa038
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fb923fd4d7271f7f364d24743c3f9f6393ef8f9f
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54690217"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57200587"
 ---
 # <a name="ws-transport-with-message-credential"></a>WS Transport With Message Credential
 이 샘플에서는 메시지로 전달되는 클라이언트 자격 증명과 SSL 전송 보안을 조합하여 사용하는 방법을 보여 줍니다. 이 샘플에서는 `wsHttpBinding` 바인딩을 사용합니다.  
@@ -16,7 +16,8 @@ ms.locfileid: "54690217"
   
  이 샘플에서는 `UserName` 자격 증명 형식을 사용하여 클라이언트를 서비스에 인증합니다.  
   
- 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다. `wsHttpBinding` 바인딩은 클라이언트 및 서비스의 응용 프로그램 구성 파일에서 지정 및 구성됩니다.  
+ 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다. 
+  `wsHttpBinding` 바인딩은 클라이언트 및 서비스의 응용 프로그램 구성 파일에서 지정 및 구성됩니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -61,7 +62,7 @@ public string GetCallerIdentity()
   
  지정된 주소에서는 https:// 체계를 사용합니다. 바인딩 구성에서는 보안 모드를 `TransportWithMessageCredential`로 설정합니다. 서비스의 Web.config 파일에도 같은 보안 모드를 지정해야 합니다.  
   
- Https에 액세스 하려고 할 때 보안 경고가 나타납니다이 샘플에 사용 된 인증서는 Makecert.exe를 사용 하 여 만든 테스트 인증서 이므로: 주소, 같은 `https://localhost/servicemodelsamples/service.svc `, 브라우저에서 합니다. 현재 위치에서 테스트 인증서를 사용 하려면 WCF 클라이언트를 허용 하려면 일부 추가 코드를 보안 경고를 표시 하지 않으려면 클라이언트에 추가 되었습니다. 이 코드 및 함께 사용되는 클래스는 프로덕션 인증서를 사용할 때에는 필요가 없습니다.  
+ Https에 액세스 하려고 할 때 보안 경고가 나타납니다이 샘플에 사용 된 인증서는 Makecert.exe를 사용 하 여 만든 테스트 인증서 이므로: 주소, 같은 `https://localhost/servicemodelsamples/service.svc`, 브라우저에서 합니다. 현재 위치에서 테스트 인증서를 사용 하려면 WCF 클라이언트를 허용 하려면 일부 추가 코드를 보안 경고를 표시 하지 않으려면 클라이언트에 추가 되었습니다. 이 코드 및 함께 사용되는 클래스는 프로덕션 인증서를 사용할 때에는 필요가 없습니다.  
 
 ```csharp
 // WARNING: This code is only needed for test certificates such as those created by makecert. It is   

@@ -2,15 +2,9 @@
 title: 이벤트(Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
-- events [Visual Basic], about events
-- events [Visual Basic]
+  - 'events [Visual Basic], about events'
+  - 'events [Visual Basic]'
 ms.assetid: 8fb0353a-e41b-4e23-b78f-da65db832f70
-ms.openlocfilehash: 08bd3b3c7ff5608193de0cdc1a869e0918c9e96e
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065793"
 ---
 # <a name="events-visual-basic"></a>이벤트(Visual Basic)
 일련의 순서를 실제로 실행 되는 절차로 Visual Studio 프로젝트를 시각화할 수 있지만 대부분의 프로그램은 이벤트 구동 방식-라는 외부 발생 요인에 따라 결정 됩니다 실행 흐름이 *이벤트*합니다.  
@@ -23,12 +17,12 @@ ms.locfileid: "55065793"
 ### <a name="declaring-events"></a>이벤트 선언  
  다음 예제와 같이 `Event` 키워드를 사용하여 클래스, 구조체, 모듈 및 인터페이스를 사용하여 이벤트를 선언합니다.  
   
- [!code-vb[VbVbalrEvents#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_1.vb)]  
+ [!code-vb[VbVbalrEvents#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#24)]  
   
 ### <a name="raising-events"></a>이벤트 발생  
  이벤트는 중요한 문제가 발생했음을 알리는 메시지와 같습니다. 메시지를 브로드캐스트하는 동작을 이벤트 *발생*이라고 합니다. 사용 하 여 이벤트를 발생 시킬 있습니다 Visual basic의 경우는 `RaiseEvent` 다음 예제와 같이 문:  
   
- [!code-vb[VbVbalrEvents#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_2.vb)]  
+ [!code-vb[VbVbalrEvents#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#25)]  
   
  선언된 클래스, 모듈 또는 구조체의 범위 내에서 이벤트가 발생되어야 합니다. 예를 들어 파생 클래스는 기본 클래스에서 상속된 이벤트를 발생시킬 수 없습니다.  
   
@@ -49,7 +43,7 @@ ms.locfileid: "55065793"
 ### <a name="withevents-and-the-handles-clause"></a>WithEvents 및 Handles 절  
  `WithEvents` 문 및 `Handles` 절은 이벤트 처리기를 지정하는 선언적 방법을 제공합니다. `WithEvents` 키워드로 선언된 개체에 의해 발생된 이벤트는 다음 그림과 같이 해당 이벤트에 대한 `Handles` 문을 사용하는 모든 프로시저에 의해 처리될 수 있습니다.  
   
- [!code-vb[VbVbalrEvents#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_3.vb)]  
+ [!code-vb[VbVbalrEvents#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#1)]  
   
  `WithEvents` 문 및 `Handles` 절은 선언적 구문을 사용하여 이벤트 처리를 보다 쉽게 코딩하고 읽고 디버그할 수 있도록 하므로 이벤트 처리기에 가장 적합합니다. 그러나 `WithEvents` 변수를 사용할 때는 다음과 같은 제한 사항이 적용됩니다.  
   
@@ -65,18 +59,18 @@ ms.locfileid: "55065793"
   
  일부 경우에서와 같은 폼 이나 컨트롤에 연관 된 이벤트를 사용 하 여 Visual Basic 자동으로 빈 이벤트 처리기 스텁 및 이벤트와 연결 합니다. 예를 들어 디자인 모드에서 폼의 명령 단추를 두 번 클릭 하면 Visual Basic 빈 이벤트 처리기를 만듭니다 및 `WithEvents` 다음 코드와 같이 명령 버튼에 대 한 변수:  
   
- [!code-vb[VbVbalrEvents#26](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_4.vb)]  
+ [!code-vb[VbVbalrEvents#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#26)]  
   
 ### <a name="addhandler-and-removehandler"></a>AddHandler 및 RemoveHandler  
  `AddHandler` 문은 둘 다 이벤트 처리기를 지정할 수 있다는 측면에서 `Handles` 절과 비슷합니다. 그러나 `AddHandler`를 `RemoveHandler`와 함께 사용하면 `Handles` 절보다 유연성이 높아져서 이벤트와 연결된 이벤트 처리기를 동적으로 추가, 제거 및 변경할 수 있습니다. 공유 이벤트 또는 구조체의 이벤트를 처리하려는 경우 `AddHandler`를 사용해야 합니다.  
   
  `AddHandler`는 두 개의 인수, 즉 컨트롤과 같은 이벤트 전송자의 이벤트 이름과 대리자로 평가되는 식을 사용합니다. `AddressOf` 문은 항상 대리자에 대한 참조를 반환하므로 `AddHandler`를 사용할 경우 대리자 클래스를 명시적으로 지정할 필요가 없습니다. 다음 예제에서는 개체에 의해 발생하는 이벤트와 이벤트 처리기를 연결합니다.  
   
- [!code-vb[VbVbalrEvents#28](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_5.vb)]  
+ [!code-vb[VbVbalrEvents#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#28)]  
   
  이벤트 처리기에서 이벤트의 연결을 끊는 `RemoveHandler`는 `AddHandler`와 동일한 구문을 사용합니다. 예를 들어:  
   
- [!code-vb[VbVbalrEvents#29](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_6.vb)]  
+ [!code-vb[VbVbalrEvents#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#29)]  
   
  다음 예제에서 이벤트 처리기는 이벤트와 연결되고 이벤트가 발생합니다. 이벤트 처리기는 이벤트를 catch하고 메시지를 표시합니다.  
   
@@ -84,16 +78,16 @@ ms.locfileid: "55065793"
   
  마지막으로 두 번째 이벤트 처리기가 제거되고 세 번째로 해당 이벤트가 발생합니다. 해당 이벤트와 연결된 이벤트 처리기가 더 이상 없으므로 아무 작업도 수행되지 않습니다.  
   
- [!code-vb[VbVbalrEvents#38](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_7.vb)]  
+ [!code-vb[VbVbalrEvents#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class2.vb#38)]  
   
 ## <a name="handling-events-inherited-from-a-base-class"></a>기본 클래스에서 상속된 이벤트 처리  
  기본 클래스에서 특성을 상속하는 클래스인 *파생 클래스*는 `Handles MyBase` 문을 사용하여 기본 클래스에 의해 발생된 이벤트를 처리할 수 있습니다.  
   
-#### <a name="to-handle-events-from-a-base-class"></a>기본 클래스의 이벤트를 처리하려면  
+### <a name="to-handle-events-from-a-base-class"></a>기본 클래스의 이벤트를 처리하려면  
   
 -   이벤트 처리기 프로시저의 선언 줄에 `Handles MyBase.`*eventname* 문을 추가하여 파생 클래스에서 이벤트 처리기를 선언합니다. 여기서 *eventname*은 처리하는 기본 클래스의 이벤트 이름입니다. 예를 들어:  
   
-     [!code-vb[VbVbalrEvents#12](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_8.vb)]  
+     [!code-vb[VbVbalrEvents#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#12)]  
   
 ## <a name="related-sections"></a>관련 단원  
   
@@ -102,7 +96,7 @@ ms.locfileid: "55065793"
 |[연습: 이벤트 선언 및 발생](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)|클래스의 이벤트를 선언하고 발생시키는 방법에 대한 단계별 설명을 제공합니다.|  
 |[연습: 이벤트 처리](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)|이벤트 처리기 프로시저를 작성하는 방법을 보여 줍니다.|  
 |[방법: 차단을 방지 하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|이벤트 처리기를 비동기적으로 호출할 수 있는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
-|[방법: 메모리를 절약 하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|이벤트가 처리될 때만 메모리를 사용하는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
+|[방법: 메모리를 절약하는 사용자 지정 이벤트 선언](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|이벤트가 처리될 때만 메모리를 사용하는 사용자 지정 이벤트를 정의하는 방법을 보여 줍니다.|  
 |[Visual Basic에서 상속된 이벤트 처리기 관련 문제 해결](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|상속된 구성 요소의 이벤트 처리기에서 발생하는 일반적인 문제에 대해 설명합니다.|  
 |[이벤트](../../../../standard/events/index.md)|[!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]의 이벤트 모델 개요를 제공합니다.|  
 |[Windows Forms에서 이벤트 처리기 만들기](../../../../framework/winforms/creating-event-handlers-in-windows-forms.md)|Windows Forms 개체와 관련된 이벤트로 작업하는 방법을 설명합니다.|  

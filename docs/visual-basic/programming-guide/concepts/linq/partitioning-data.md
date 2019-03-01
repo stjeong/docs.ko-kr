@@ -2,12 +2,12 @@
 title: 데이터 분할 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
-ms.openlocfilehash: afbbd479d3dadd69b81cdd6aead0a4263b92dfe9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 06db2ac3e556e647fed576a7fa0c89b881b748c9
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54728270"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57202147"
 ---
 # <a name="partitioning-data-visual-basic"></a>데이터 분할 (Visual Basic)
 LINQ의 분할은 요소를 다시 정렬한 후 섹션 중 하나를 반환하지 않고 입력 시퀀스를 두 개의 섹션으로 나누는 작업을 가리킵니다.  
@@ -32,22 +32,22 @@ LINQ의 분할은 요소를 다시 정렬한 후 섹션 중 하나를 반환하�
 ### <a name="skip"></a>Skip  
  다음 코드 예제에서는 `Skip` 절 나머지를 반환 하기 전에 문자열의 배열에서 처음 4 개의 문자열을 건너뛰고 Visual Basic의 배열에 있는 문자열입니다.  
   
- [!code-vb[CsLINQPartitioning#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/partitioning-data_1.vb)]  
+ [!code-vb[CsLINQPartitioning#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#1)]  
   
 ### <a name="skipwhile"></a>SkipWhile  
  다음 코드 예제에서는 `Skip While` Visual Basic에서 문자열의 첫 번째 문자는 배열에서 문자열을 건너뛸 절 "a"입니다. 나머지 문자열 배열에 반환 됩니다.  
   
- [!code-vb[CsLINQPartitioning#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/partitioning-data_2.vb)]  
+ [!code-vb[CsLINQPartitioning#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#2)]  
   
 ### <a name="take"></a>Take  
  다음 코드 예제에서는 `Take` 절 Visual basic의 문자열 배열에서 처음 두 문자열을 반환 합니다.  
   
- [!code-vb[CsLINQPartitioning#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/partitioning-data_3.vb)]  
+ [!code-vb[CsLINQPartitioning#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#3)]  
   
 ### <a name="takewhile"></a>TakeWhile  
  다음 코드 예제에서는 `Take While` 절 Visual Basic에서 문자열의 길이 5 개 이하의 배열에서 문자열을 반환 합니다.  
   
- [!code-vb[CsLINQPartitioning#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/partitioning-data_4.vb)]  
+ [!code-vb[CsLINQPartitioning#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#4)]  
   
 ## <a name="see-also"></a>참고자료
 - <xref:System.Linq>

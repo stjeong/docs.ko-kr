@@ -2,16 +2,11 @@
 title: WCF Data Services 4.5
 ms.date: 03/30/2017
 helpviewer_keywords:
-- Astoria
-- WCF Data Services, getting started
+  - Astoria
+  - 'WCF Data Services, getting started'
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
-ms.openlocfilehash: 6fd81a6bd4449cc0ef11b68320f366368d5edb7e
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56092490"
 ---
+
 # <a name="wcf-data-services-45"></a>WCF Data Services 4.5
 
 WCF Data Services (이전의 "ADO.NET Data Services")를 사용 하는 서비스를 만들 수 있도록.NET Framework의 구성 요소인 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 노출 하 고의 의미 체계를 사용 하 여 웹 또는 인트라넷을 통해 데이터를 사용 [ (REST) representational state transfer](https://go.microsoft.com/fwlink/?LinkId=113919)합니다. OData는 URI로 주소를 지정할 수 있는 리소스로 데이터를 노출합니다. 데이터는 표준 HTTP 동사인 GET, PUT, POST 및 DELETE를 사용하여 액세스되고 변경됩니다. OData의 엔터티-관계 규칙을 사용 합니다 [엔터티 데이터 모델](../../../../docs/framework/data/adonet/entity-data-model.md) 리소스 연결으로 관련 된 엔터티 집합으로 노출 합니다.
@@ -28,111 +23,111 @@ WCF Data Services에는 일반.NET Framework 클라이언트 응용 프로그램
 
 바로 시작...
 
--   [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
 
--   [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 
--   [Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=192782)
+- [Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=192782)
 
--   [Windows Phone 개발을 위한 Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=214535)
+- [Windows Phone 개발을 위한 Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=214535)
 
 방금 코드가 표시 하는 중...
 
--   [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
 
--   [방법: 데이터 서비스 쿼리 실행](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)
+- [방법: 데이터 서비스 쿼리 실행](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)
 
--   [방법: Windows Presentation Foundation 요소에 데이터 바인딩](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)
+- [방법: Windows Presentation Foundation 요소에 데이터 바인딩](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)
 
 OData에 대 한 자세한 하려고 하는 중...
 
- -   [백서: OData 소개](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [백서: OData 소개](https://go.microsoft.com/fwlink/?LinkId=220867)
 
--   [Open Data Protocol 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=184554)
+- [Open Data Protocol 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=184554)
 
--   [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+- [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
 
--   [OData: 질문과 대답](https://go.microsoft.com/fwlink/?LinkId=185867)
+- [OData: 질문과 대답](https://go.microsoft.com/fwlink/?LinkId=185867)
 
 비디오 시청 하고자 하는 중...
 
--   [WCF Data Services 초보자 가이드](https://go.microsoft.com/fwlink/?LinkId=220864)
+- [WCF Data Services 초보자 가이드](https://go.microsoft.com/fwlink/?LinkId=220864)
 
--   [WCF Data Services 개발자 비디오](https://go.microsoft.com/fwlink/?LinkId=220861)
+- [WCF Data Services 개발자 비디오](https://go.microsoft.com/fwlink/?LinkId=220861)
 
--   [OData: 개발자가 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=185866)
+- [OData: 개발자가 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=185866)
 
 종단 간 예제를 참조 하려고 하는 중...
 
--   [MSDN 샘플 갤러리의 WCF Data Services 설명서 샘플](https://go.microsoft.com/fwlink/?LinkID=220865)
+- [MSDN 샘플 갤러리의 WCF Data Services 설명서 샘플](https://go.microsoft.com/fwlink/?LinkID=220865)
 
--   [MSDN 샘플 갤러리의 기타 WCF Data Services 샘플](https://go.microsoft.com/fwlink/?LinkId=220866)
+- [MSDN 샘플 갤러리의 기타 WCF Data Services 샘플](https://go.microsoft.com/fwlink/?LinkId=220866)
 
--   [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+- [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
 
 Visual Studio와의 통합 방식
 
--   [데이터 서비스 클라이언트 라이브러리 생성](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)
+- [데이터 서비스 클라이언트 라이브러리 생성](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)
 
--   [데이터 서비스 만들기](../../../../docs/framework/data/wcf/creating-the-data-service.md)
+- [데이터 서비스 만들기](../../../../docs/framework/data/wcf/creating-the-data-service.md)
 
--   [Entity Framework 공급자](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+- [Entity Framework 공급자](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
 
 수행 가능 작업
 
--   [개요](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)
+- [개요](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)
 
--   [백서: OData 소개](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [백서: OData 소개](https://go.microsoft.com/fwlink/?LinkId=220867)
 
--   [애플리케이션 시나리오](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)
+- [애플리케이션 시나리오](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)
 
 Silverlight를 사용 하려고 하는 중...
 
--   [Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=192782)
+- [Silverlight 빠른 시작](https://go.microsoft.com/fwlink/?LinkID=192782)
 
--   [WCF Data Services(Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)
+- [WCF Data Services(Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)
 
--   [Silverlight 시작](https://go.microsoft.com/fwlink/?LinkId=148366)
+- [Silverlight 시작](https://go.microsoft.com/fwlink/?LinkId=148366)
 
 LINQ를 사용 하려고 하는 중...
 
--   [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
+- [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
 
--   [LINQ 고려 사항](../../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md)
+- [LINQ 고려 사항](../../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md)
 
--   [방법: 데이터 서비스 쿼리 실행](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)
+- [방법: 데이터 서비스 쿼리 실행](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)
 
 여전히 몇 가지 자세한 정보가 필요 하는 중...
 
--   [WCF Data Services 팀 블로그](https://go.microsoft.com/fwlink/?LinkID=150511)
+- [WCF Data Services 팀 블로그](https://go.microsoft.com/fwlink/?LinkID=150511)
 
--   [리소스](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)
+- [리소스](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)
 
--   [WCF Data Services 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=220868)
+- [WCF Data Services 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=220868)
 
--   [Open Data Protocol 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=184554)
+- [Open Data Protocol 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=184554)
 
 ## <a name="in-this-section"></a>섹션 내용
 
- [개요](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)
+[개요](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)
 
- WCF Data Services에서 사용할 수 있는 기능에 대 한 개요를 제공합니다.
+WCF Data Services에서 사용할 수 있는 기능에 대 한 개요를 제공합니다.
 
- [WCF Data Services 5.0의에서 새로운 기능](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+[WCF Data Services 5.0의에서 새로운 기능](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 
- 새 OData 기능에 대 한 지원과 WCF Data Services의 새로운 기능을 설명합니다.
+새 OData 기능에 대 한 지원과 WCF Data Services의 새로운 기능을 설명합니다.
 
- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+[시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 
- 노출 하 고 WCF Data Services를 사용 하 여 OData 피드를 사용 하는 방법을 설명 합니다.
+노출 하 고 WCF Data Services를 사용 하 여 OData 피드를 사용 하는 방법을 설명 합니다.
 
- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+[WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 
- 만들기 및 OData 피드를 노출 하는 데이터 서비스를 구성 하는 방법을 설명 합니다.
+만들기 및 OData 피드를 노출 하는 데이터 서비스를 구성 하는 방법을 설명 합니다.
 
- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+[WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
 
- 클라이언트 라이브러리를 사용 하 여.NET Framework 클라이언트 응용 프로그램에서 OData 피드를 사용 하는 방법에 설명 합니다.
+클라이언트 라이브러리를 사용 하 여.NET Framework 클라이언트 응용 프로그램에서 OData 피드를 사용 하는 방법에 설명 합니다.
 
 ## <a name="see-also"></a>참고자료
 

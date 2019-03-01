@@ -30,12 +30,12 @@ helpviewer_keywords:
 - Is operator [Visual Basic]
 - comparison operators [Visual Basic], Visual Basicl
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-ms.openlocfilehash: bf7ff1870a523903babd7140e0d8271f9946064b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a816b1097c0a9628bb2889d39be5c029beaa3c63
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54628060"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57200990"
 ---
 # <a name="comparison-operators-visual-basic"></a>비교 연산자(Visual Basic)
 Visual Basic에 정의 된 비교 연산자는 다음과 같습니다.  
@@ -146,7 +146,7 @@ result = string Like pattern
 ## <a name="example"></a>예제  
  다음 예제에서는 식을 비교 하는 데 사용할 수 있는 관계 비교 연산자의 다양 한 용도 보여 줍니다. 관계 비교 연산자는 반환 된 `Boolean` 명시 된 식의 결과가 있는지 여부를 나타내는 결과입니다 `True`합니다. 적용 하는 경우는 `>` 고 `<` 연산자를 문자열 비교가 수행 되는 문자열의 일반 사전순 정렬 순서를 사용 하 여 합니다. 이 순서 로캘 설정에 따라 달라질 수 있습니다. 정렬이 대/소문자 구분 인지 여부에 따라 달라 집니다 합니다 [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) 설정 합니다.  
   
- [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#1)]  
   
  앞의 예제에서 첫 번째 비교 반환 `False` 나머지 비교 돌아와 `True`합니다.  
   

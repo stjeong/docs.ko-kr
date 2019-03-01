@@ -8,12 +8,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic]
 - types [Visual Basic], anonymous
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.openlocfilehash: 5ff3b12e85b9ab7fb8341bb8665a057165e78816
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 824481c9c73d496998d5810c620b2317c1ec252a
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56968026"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57203443"
 ---
 # <a name="anonymous-types-visual-basic"></a>익명 형식(Visual Basic)
 Visual Basic 데이터 형식에 대 한 클래스 정의 작성 하지 않고 개체를 만드는 데 사용할 수 있는 익명 형식을 지원 합니다. 대신 컴파일러가 클래스를 생성합니다. 클래스는 사용 가능한 이름이 없으므로에서 직접 상속 <xref:System.Object>, 개체를 선언할 때 지정 하는 속성을 포함 합니다. 데이터 형식의 이름을 지정 하지 않으면 때문 이라고 하는 *무명 형식*합니다.  
@@ -81,7 +81,7 @@ Visual Basic 데이터 형식에 대 한 클래스 정의 작성 하지 않고 �
 ### <a name="read-only-values"></a>읽기 전용 값  
  키 속성의 값을 변경할 수 없습니다. 예를 들어 `prod8` 이전 예에서 합니다 `Name` 및 `Price` 필드는 `read-only`, 하지만 `OnHand` 변경할 수 있습니다.  
   
- [!code-vb[VbVbalrAnonymousTypes#8](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-types_8.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#8)]  
   
 ## <a name="anonymous-types-from-query-expressions"></a>쿼리 식에서 무명 형식  
  쿼리 식에서는 무명 형식 만들 항상 필요 하지 않습니다. 가능한 경우 열 데이터를 저장할 기존 형식을 사용 합니다. 이 쿼리가 데이터 원본 또는 각 레코드의 필드 하나에에서 전체 레코드 중 하나를 반환할 때 발생 합니다. 다음 코드 예에서 `customers` 은 개체의 컬렉션을 `Customer` 클래스. 클래스에는 여러 속성이 및 순서에 관계 없이 쿼리 결과 하나 이상의 포함할 수 있습니다. 처음 두 예제에서는 익명 형식이 없습니다이 명명 된 형식의 요소를 선택 하는 쿼리 때문에 필요 합니다.  

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], handling
 - On Error statement [Visual Basic]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-ms.openlocfilehash: 16a2ee7f16df92db8deb44ff979ec077eefc20aa
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 5dc432f8e62430d48954b2c049cab3ebae4d442e
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976488"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57203745"
 ---
 # <a name="on-error-statement-visual-basic"></a>On Error 문(Visual Basic)
 오류 처리 루틴을 사용 하도록 설정 하 고 프로시저;에서 루틴의 위치를 지정 오류 처리 루틴을 사용 하지 않으려면 사용할 수도 있습니다.  
@@ -111,7 +111,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## <a name="example"></a>예제  
  이 예제에서는 먼저 사용 하 여는 `On Error GoTo` 문을 프로시저 내에서 오류 처리 루틴을의 위치를 지정 합니다. 예제에서는 0으로 나누려 할 6 오류 번호를 생성 합니다. 오류 처리 루틴에서 오류가 처리 되 고 제어 오류를 발생 시킨 명령문에 반환 됩니다. `On Error GoTo 0` 문을 오류 잡기를 해제 합니다. 그런 다음 `On Error Resume Next` 문을 다음 문으로 생성 된 오류에 대 한 컨텍스트를 특정 알 수 있도록 오류 트래핑을 지연 시키려면 사용 합니다. `Err.Clear` 의 선택을 취소 하는 데 사용 되는 `Err` 오류가 처리 되 면 개체의 속성입니다.  
   
- [!code-vb[VbVbalrErrorHandling#20](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_4.vb)]  
+ [!code-vb[VbVbalrErrorHandling#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#20)]  
   
 ## <a name="requirements"></a>요구 사항  
  **네임스페이스:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

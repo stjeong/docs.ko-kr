@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For...Next statements
 - For statement [Visual Basic]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.openlocfilehash: 7b12a1b1b8d116cc906459407240fca4302460e4
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 5048d48cc22ebe405ef54dc207ac96b6c274078a
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56968727"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57202628"
 ---
 # <a name="fornext-statement-visual-basic"></a>For...Next 문(Visual Basic)
 문 그룹을 지정한 횟수 만큼을 반복합니다.  
@@ -92,7 +92,7 @@ Next [ counter ]
   
  다음 예제를 사용 합니다 `Continue For` 및 `Exit For` 문입니다.  
   
- [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#115](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#115)]  
   
  개수에 관계 없이 입력할 수 있습니다 `Exit For` 문에서 `For`...`Next` 루프입니다. 사용 하는 경우 내에 중첩 된 `For`...`Next` 루프 `Exit For` 가장 안쪽의 루프를 끝내 고 다음 더 높은 수준의 중첩 컨트롤을 이동 합니다.  
   

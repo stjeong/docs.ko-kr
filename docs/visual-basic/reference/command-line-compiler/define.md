@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /define compiler option [Visual Basic]
 - define compiler option [Visual Basic]
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
-ms.openlocfilehash: 3560ea14236bfa2fffbc309847e8ef9e4b821de9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c21223cc353b7a4614511aa97340c6bc5d61e70e
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54739273"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57200660"
 ---
 # <a name="-define-visual-basic"></a>-정의 (Visual Basic)
 조건부 컴파일러 상수를 정의합니다.  
@@ -32,7 +32,8 @@ ms.locfileid: "54739273"
 |용어|정의|  
 |---|---|  
 |`symbol`|필수 요소. 정의할 기호입니다.|  
-|`value`|선택 사항입니다. `symbol`을 할당할 값입니다. 하는 경우 `value` 문자열은 백슬래시/따옴표 시퀀스로 묶어야 (\\") 따옴표 대신 합니다. 값을 지정하지 않으면 True가 지정됩니다.|  
+|`value`|선택 사항입니다. 
+  `symbol`을 할당할 값입니다. 하는 경우 `value` 문자열은 백슬래시/따옴표 시퀀스로 묶어야 (\\") 따옴표 대신 합니다. 값을 지정하지 않으면 True가 지정됩니다.|  
   
 ## <a name="remarks"></a>설명  
  `-define` 옵션은 사용과 비슷합니다는 `#Const` 사용 하 여 정의 하는 상수를 제외 하 고 원본 파일에서 전처리기 지시문 `-define` 공용 이며 프로젝트의 모든 파일에 적용 합니다.  
@@ -50,7 +51,7 @@ ms.locfileid: "54739273"
 ## <a name="example"></a>예제  
  다음 코드는 두 조건부 컴파일러 상수를 정의한 다음 사용합니다.  
   
- [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
+ [!code-vb[VbVbalrCompiler#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#45)]  
   
 ## <a name="see-also"></a>참고자료
 - [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)

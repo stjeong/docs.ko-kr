@@ -17,12 +17,12 @@ helpviewer_keywords:
 - operators [Visual Basic], negation
 - minus operator [Visual Basic]
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
-ms.openlocfilehash: 8526f632b7e54c03bd16c3af70375179cd7cf277
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0c10fc3998469e19d5be744ea8fb4faed25f1a2a
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724475"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57201224"
 ---
 # <a name="--operator-visual-basic"></a>- 연산자(Visual Basic)
 두 숫자 식 또는 숫자 식의 음수 값 간의 차이 반환합니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "54724475"
  결과 데이터 형식은 데이터 유형에 대 한 적절 한 숫자 형식 `expression1` 고 `expression2`입니다. "정수 산술" 표를 참조 하십시오 [연산자 결과의 데이터 형식](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md)합니다.  
   
 ## <a name="supported-types"></a>지원 형식  
- 모든 숫자 형식입니다. 여기에 부동 소수점 및 부호 없는 형식 및 `Decimal`합니다.  
+ 모든 숫자 형식. 여기에 부동 소수점 및 부호 없는 형식 및 `Decimal`합니다.  
   
 ## <a name="remarks"></a>설명  
  이전에 표시 된 구문에 나오는 첫 번째 사용 합니다 `–` 연산자가 합니다 *이진* 두 숫자 식의 차이점에 대해 빼기 산술 연산자.  
@@ -63,7 +63,7 @@ ms.locfileid: "54724475"
 ## <a name="example"></a>예제  
  다음 예제에서는 `–` 연산자가 두 숫자 간의 차이 반환 하 고 계산 및 숫자를 부정 합니다.  
   
- [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/subtraction-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#10)]  
   
  이러한 문 실행 한 후 다음 `binaryResult` 124.45 포함 및 `unaryResult` –334.90을 포함 합니다.  
   

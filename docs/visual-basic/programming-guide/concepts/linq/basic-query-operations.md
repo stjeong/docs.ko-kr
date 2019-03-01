@@ -15,12 +15,12 @@ helpviewer_keywords:
 - grouping data [LINQ in Visual Basic]
 - Select clause [LINQ in Visual Basic]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-ms.openlocfilehash: 5ca92324dec1d4fa8885a610a6e246640f4a5752
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 141040a715487b3cbcfff1c3b9969a0869c8a3d8
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973030"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57201713"
 ---
 # <a name="basic-query-operations-visual-basic"></a>기본 쿼리 작업(Visual Basic)
 이 항목에서는에 대 한 간략 한 소개 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] Visual Basic의 경우에 쿼리에서 수행 하는 작업의 일반적인 종류의 일부에 대 한 식입니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -85,7 +85,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
      다음 예에서 반환 되는 요소는 무명 형식의 인스턴스 이기 때문에 참조할 수 없습니다를 형식 이름으로 다른 곳에서 코드에서. 컴파일러에서 지정 된 이름 형식에 대 한 일반적인 Visual Basic 코드에서 잘못 된 문자가 있습니다. 다음 예의 쿼리에 의해 반환 되는 컬렉션의 요소에서 `londonCusts4` 무명 형식의 인스턴스인  
   
-     [!code-vb[VbLINQBasicOps#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_6.vb)]  
+     [!code-vb[VbLINQBasicOps#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#6)]  
   
      또는  
   

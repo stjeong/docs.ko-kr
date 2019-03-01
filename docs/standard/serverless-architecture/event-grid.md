@@ -4,12 +4,12 @@ description: Azure Event Grid는 안정적인 이벤트 배달 및 이벤트별 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: a10fc6a47322de5db40870b1b727edc5559a27f6
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 4970130ede0c96c645129ee6c8c7d54cb1114042
+ms.sourcegitcommit: 79066169e93d9d65203028b21983574ad9dcf6b4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145891"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57212185"
 ---
 # <a name="event-grid"></a>Event Grid
 
@@ -98,7 +98,7 @@ Event Grid를 사용 하는 데 필요한 주요 이점은 Azure에서 생성 �
 |  | Microsoft.Resources.ResourceDeleteSuccess | 리소스 삭제 작업이 성공할 때 발생 합니다. |
 |  | Microsoft.Resources.ResourceDeleteFailure | 리소스 삭제 작업이 실패할 때 발생 합니다. |
 | | Microsoft.Resources.ResourceDeleteCancel | 리소스 삭제 작업이 취소 될 때 발생 합니다. 이 이벤트에는 템플릿 배포가 취소 될 때 발생 합니다. |
-| Blob 저장소 | Microsoft.Storage.BlobCreated | Blob을 만들 때 발생 합니다. |
+| Blob Storage | Microsoft.Storage.BlobCreated | Blob을 만들 때 발생 합니다. |
 | | Microsoft.Storage.BlobDeleted | Blob을 삭제할 때 발생 합니다. |
 | Event hubs | Microsoft.EventHub.CaptureFileCreated | 캡처 파일을 만들 때 발생 합니다.
 | IoT Hub | Microsoft.Devices.DeviceCreated | IoT hub에 장치를 등록할 때 게시 합니다. |
@@ -124,7 +124,7 @@ Event Grid의 하나라도 온-프레미스를 실행 하는 응용 프로그램
 * [Application Insights](https://docs.microsoft.com/azure/application-insights)
 * [Application Insights 분석](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)
 * [Azure: 서버 리스 Azure Functions를 사용 하 여 클라우드로 앱 가져오기](https://channel9.msdn.com/events/Connect/2017/E102)
-* [Azure Event Grid](https://docs.microsoft.com/azure/azure-event-grid/overview)
+* [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
 * [Azure Event Grid 이벤트 스키마](https://docs.microsoft.com/azure/event-grid/event-schema)
 * [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs)
 * [Azure Functions 설명서](https://docs.microsoft.com/azure/azure-functions)

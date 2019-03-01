@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrIO_CyclicOperation
 ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
-ms.openlocfilehash: 253e7ff1d457827a2e1cb9f64eae4bfa971a3798
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 39373cd368282f3b109b450189561366b9e74484
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54645875"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57200574"
 ---
 # <a name="could-not-complete-operation-since-target-directory-is-under-source-directory"></a>대상 디렉터리가 소스 디렉터리 아래에 있기 때문에 작업을 완료할 수 없습니다.
 순환 작업이 실패했습니다. 순환 작업이 계속 실행되므로 완료할 수 없습니다. 예를 들어 개체 A는 개체 B에서 상속하려고 하고 개체 B는 개체 A에서 상속하려고 합니다.  
@@ -20,4 +20,4 @@ ms.locfileid: "54645875"
   
 ## <a name="see-also"></a>참고자료
 - [오류 형식](../../visual-basic/programming-guide/language-features/error-types.md)
-- [디버깅 기본 사항: 중단점](https://msdn.microsoft.com/library/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)
+- [Visual Studio 디버거에서 중단점을 사용 합니다.](/visualstudio/debugger/using-breakpoints)

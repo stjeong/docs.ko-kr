@@ -15,12 +15,12 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: e95f9d75ab9db07b55257bbf6ca951a898b2fb2f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9ff57029768c89e584fd2d7381fd79e38fbed14f
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54735093"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57203456"
 ---
 # <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>방법: 개수, 합 또는 평균 데이터 LINQ (Visual Basic)를 사용 하 여
 언어 통합 쿼리 (LINQ)를 사용 하면 쉽게 데이터베이스 정보에 액세스 하 고 쿼리를 실행 합니다.  
@@ -73,7 +73,7 @@ ms.locfileid: "54735093"
   
      다음 코드를 추가 합니다 `Load` 의 속성으로 노출 되는 테이블을 쿼리 하는 이벤트에 <xref:System.Data.Linq.DataContext> 및 개수, 합계, 및 결과 평균 합니다. 샘플을 사용 합니다 `Aggregate` 단일 결과 쿼리 하는 절 및 `Group By` 평균을 표시 하는 절 결과 그룹화 합니다.  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form6.vb#13)]  
   
 4.  F5 키를 눌러 프로젝트를 실행 하 고 결과 확인 합니다.  
   

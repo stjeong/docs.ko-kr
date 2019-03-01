@@ -11,12 +11,12 @@ ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
-ms.openlocfilehash: bfbe1bb413e0d9f46fe587d7a412af5303685b7a
-ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.openlocfilehash: ace9e339a65c14e69e1a672880e392c7e09d36e8
+ms.sourcegitcommit: 79066169e93d9d65203028b21983574ad9dcf6b4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56748377"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57212380"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 
@@ -205,9 +205,9 @@ ms.locfileid: "56748377"
 
 10. 명명 된 이미지를 추가할 *watermark.png* 프로젝트입니다. 사용자 고유의 이미지를 만들기, 샘플 코드에서 파일을 복사 하거나 가져올 수 있습니다 [여기](https://github.com/dotnet/docs/blob/master/docs/framework/wpf/getting-started/media/watermark.png)합니다.
 
-   1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가** > **기존 항목**를 누르거나 **Shift**+**Alt** + **는**합니다.
+    1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가** > **기존 항목**를 누르거나 **Shift**+**Alt** + **는**합니다.
 
-   2. 에 **기존 항목 추가** 대화 상자를 사용 하 고 선택한 이미지 파일을 찾은 **추가**합니다.
+    2. 에 **기존 항목 추가** 대화 상자를 사용 하 고 선택한 이미지 파일을 찾은 **추가**합니다.
 
 ## <a name="build-and-run-the-application"></a>응용 프로그램 빌드 및 실행
 

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - / operator [Visual Basic]
 - math operators [Visual Basic]
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
-ms.openlocfilehash: 2036ec8009cfc72a20bcd828d7bc0b252e620cab
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7d9b02a9c997ffcfdd61e277a6ed3779d8821831
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54610827"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57202459"
 ---
 # <a name="-operator-visual-basic"></a>/ 연산자(Visual Basic)
 두 숫자를 나누고 부동 소수점 결과 반환 합니다.  
@@ -76,7 +76,7 @@ expression1 / expression2
 ## <a name="example"></a>예제  
  이 예제에서는 `/` 부동 소수점 나누기를 수행 하는 연산자입니다. 결과는 두 피연산자의 몫입니다.  
   
- [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#16)]  
   
  앞의 예제에서 식에는 2.5 및 3.333333 값을 반환 합니다. 결과 항상 부동 소수점 (`Double`) 경우에 두 피연산자가 정수 상수입니다.  
   

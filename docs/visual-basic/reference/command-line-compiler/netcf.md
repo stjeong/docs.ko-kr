@@ -9,12 +9,12 @@ helpviewer_keywords:
 - netcf compiler option [Visual Basic]
 - /netcf compiler option [Visual Basic]
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
-ms.openlocfilehash: 2a359f4bf44887e7c7bc5422d485988b24f45600
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 987a948d739f6b9e8e5a3e8fc6eadbfd60003723
+ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976475"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57203060"
 ---
 # <a name="-netcf"></a>-netcf
 
@@ -46,7 +46,7 @@ ms.locfileid: "56976475"
   
 -   합니다 [자동](../../../visual-basic/language-reference/modifiers/auto.md)를 [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md), 및 [유니코드](../../../visual-basic/language-reference/modifiers/unicode.md) 한정자는 사용 하지 않도록 설정 합니다. 구문의 합니다 [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md) 로 문 수정 됩니다 `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`합니다. 다음 코드의 결과 보여 줍니다. `-netcf` 를 컴파일할 때.  
   
-     [!code-vb[VbVbalrCompiler#36](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_3.vb)]  
+     [!code-vb[VbVbalrCompiler#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#36)]  
   
 -   Visual Basic에서 제거 된 Visual Basic 6.0 키워드를 사용 하 여 다른 오류를 생성 하면 `-netcf` 사용 됩니다. 이 키워드에 대 한 오류 메시지를 영향을 줍니다.  
   
