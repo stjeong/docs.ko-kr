@@ -1,14 +1,9 @@
 ---
-title: 방법 문서(C# 가이드)
+title: '방법 문서(C# 가이드)'
 description: 유용한 팁 및 간단하고 집중된 코드 샘플의 컬렉션
 ms.date: 12/20/2017
-ms.openlocfilehash: 9326235341ee38e46f4204b7b3d7f67cae2774af
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260193"
 ---
+
 # <a name="how-to-c"></a>방법(C#)
 
 C# 가이드의 방법 섹션에서 일반적인 질문에 대한 빠른 답변을 찾을 수 있습니다. 경우에 따라 문서는 여러 섹션에 나타날 수 있습니다. 여러 검색 경로를 쉽게 찾을 수 있도록 했습니다. 
@@ -113,7 +108,7 @@ LINQ를 사용하면 LINQ 쿼리 식 패턴을 지원하는 데이터 소스를 
 - [데이터 원본의 요소를 정렬합니다](../programming-guide/concepts/linq/how-to-sort-elements.md).
 - [여러 키로 요소를 정렬합니다](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
 - [프로젝션 형식을 제어합니다](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
-- [소스 시퀀스에서 값 발생 수를 카운트합니다](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
+- [소스 시퀀스에서 값의 발생 수를 카운트합니다](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
 - [중간 값을 계산합니다](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
 - [여러 원본의 데이터를 병합합니다](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [두 시퀀스 간의 차집합을 반환합니다](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
