@@ -7,12 +7,12 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
-ms.openlocfilehash: 12e911fb899cb85121c129b762828cdda01e64f1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 780a51e3e0f61f292c997202614e43a85dd90820
+ms.sourcegitcommit: a532e8314c3a4b5b039656567fedff9787a31957
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193085"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57250925"
 ---
 # <a name="how-to-use-a-windows-communication-foundation-client"></a>방법: Windows Communication Foundation 클라이언트 사용
 
@@ -135,13 +135,28 @@ End Module
 GettingStartedHost의 출력은 다음과 같아야 합니다.
 
 ```text
-The service is ready.Press <ENTER> to terminate service.Received Add(100,15.99)Return: 115.99Received Subtract(145,76.54)Return: 68.46Received Multiply(9,81.25)Return: 731.25Received Divide(22,7)Return: 3.14285714285714
+The service is ready.
+Press <ENTER> to terminate service.
+
+Received Add(100,15.99)
+Return: 115.99
+Received Subtract(145,76.54)
+Return: 68.46
+Received Multiply(9,81.25)
+Return: 731.25
+Received Divide(22,7)
+Return: 3.14285714285714
 ```
 
 GettingStartedClient의 출력은 다음과 같아야 합니다.
 
 ```text
-Add(100,15.99) = 115.99Subtract(145,76.54) = 68.46Multiply(9,81.25) = 731.25Divide(22,7) = 3.14285714285714Press <ENTER> to terminate client.
+Add(100,15.99) = 115.99
+Subtract(145,76.54) = 68.46
+Multiply(9,81.25) = 731.25
+Divide(22,7) = 3.14285714285714
+
+Press <ENTER> to terminate client.
 ```
 
 ## <a name="see-also"></a>참고자료
@@ -151,6 +166,6 @@ Add(100,15.99) = 115.99Subtract(145,76.54) = 68.46Multiply(9,81.25) = 731.25Divi
 - [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md)
 - [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)
 - [방법: 이중 계약 만들기](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
-- [방법: 이중 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [방법: 이중 계약을와 함께 access Services](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
 - [시작](../../../docs/framework/wcf/samples/getting-started-sample.md)
 - [자체 호스팅](../../../docs/framework/wcf/samples/self-host.md)
