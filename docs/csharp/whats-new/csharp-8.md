@@ -119,11 +119,11 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
         // other cases removed for brevity...
         _ => 0M
     };
-    ```
+```
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
-### Tuple patterns
+### <a name="tuple-patterns"></a>Tuple patterns
 
 Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
 
@@ -139,11 +139,11 @@ public static string RockPaperScissors(string first, string second)
         ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
         (_, _) => "tie"
     };
-    ```
+```
 
 The messages indicate the winner. The discard case represents the three combinations for ties, or other text inputs.
 
-### Positional patterns
+### <a name="positional-patterns"></a>Positional patterns
 
 Some types include a `Deconstruct` method that deconstructs its properties into discrete variables. When a `Deconstruct` method is accessible, you can use **positional patterns** to inspect properties of the object and use those properties for a pattern.  Consider the following `Point` class that includes a `Deconstruct` method to create discrete variables for `X` and `Y`:
 
