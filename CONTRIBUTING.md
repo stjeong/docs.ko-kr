@@ -107,7 +107,7 @@ docs 리포지토리에서 새 콘텐츠를 추가함에 따라 이러한 디렉
 
 자세한 내용은 [샘플 Readme](https://github.com/dotnet/samples/blob/master/README.md)를 참조하세요.
 
-## <a name="the-c-interactive-experience"></a>C# 대화형 환경 #
+## <a name="the-c-interactive-experience"></a>C# 대화형 환경
 
 C#의 짧은 코드 샘플은 `csharp-interactive` 언어 태그를 사용하여 브라우저에서 실행되는 C# 샘플을 지정할 수 있습니다. 인라인 코드 샘플은 `csharp-interactive` 태그를 사용합니다. 소스에서 포함된 코드 조각의 경우 `code-csharp-interactive` 태그를 사용합니다. 이러한 코드 샘플은 문서에 코드 창과 출력 창을 표시합니다. 사용자가 샘플을 실행하고 나면 출력 창에 대화형 코드 실행에서 생성된 출력이 모두 표시됩니다. 
 

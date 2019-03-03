@@ -7,9 +7,6 @@
 | Xamarin.Mac                | 3.0    | 3.0    | 3.0   | 3.0   | 3.0   | 3.0                | 3.0                | 3.8                 |
 | Xamarin.Android            | 7.0    | 7.0    | 7.0   | 7.0   | 7.0   | 7.0                | 7.0                | 8.0                 |
 | UWP | 10.0   | 10.0   | 10.0  | 10.0  | 10.0  | 10.0.16299         | 10.0.16299         | 10.0.16299          |
-| Windows                    | 8.0    | 8.0    | 8.1   |       |       |                    |                    |                     |
-| Windows Phone              | 8.1    | 8.1    | 8.1   |       |       |                    |                    |                     |
-| Windows Phone Silverlight  | 8.0    |        |       |       |       |                    |                    |                     |
 | Unity                      | 2018.1 | 2018.1 | 2018.1| 2018.1| 2018.1| 2018.1             |  2018.1            | 2018.1              |
 
 <sup>1 .NET Framework용으로 나열된 버전은 .NET Core 2.0 SDK 이상 버전의 도구에 적용됩니다. 이전 버전에서는 .NET Standard 1.5 이상에서 다른 매핑을 사용했습니다. Visual Studio 2017로 업그레이드할 수 없는 경우 [Visual Studio 2015용 .NET Core 도구를 다운로드](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)할 수 있습니다.</sup>

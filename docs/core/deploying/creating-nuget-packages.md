@@ -5,12 +5,12 @@ author: cartermp
 ms.date: 06/20/2016
 ms.technology: dotnet-cli
 ms.custom: seodec18
-ms.openlocfilehash: 14e3dc265991634b4ef4814fb149f0aaebbcfab6
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 1add3470799b75ebb92c67eed3509523e510ab6c
+ms.sourcegitcommit: 79066169e93d9d65203028b21983574ad9dcf6b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170056"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211795"
 ---
 # <a name="how-to-create-a-nuget-package-with-net-core-command-line-interface-cli-tools"></a>.NET Core CLI(명령줄 인터페이스) 도구를 사용하여 NuGet 패키지를 만드는 방법
 
@@ -28,13 +28,13 @@ NuGet을 통해 배포하려는 놀라운 새 라이브러리를 작성했다고
 패키지가 복원되었는지 확인한 후 라이브러리가 있는 디렉터리로 이동할 수 있습니다.
 
 ```console
-$ cd src/SuperAwesomeLibrary`
+cd src/SuperAwesomeLibrary
 ```
 
 그러면 명령줄에서 단일 명령만 표시됩니다.
 
 ```console
-$ dotnet pack
+dotnet pack
 ```
 
 이제 `/bin/Debug` 폴더가 다음과 같이 표시됩니다.
@@ -50,7 +50,7 @@ SuperAwesomeLibrary.1.0.0.symbols.nupkg
 그러면 디버그할 수 있는 패키지가 생성됩니다. 릴리스 이진 파일과 함께 NuGet 패키지를 빌드하려는 경우 `--configuration`(또는 `-c`) 스위치를 추가하고 `release`를 인수로 사용하기만 하면 됩니다.
 
 ```console
-$ dotnet pack --configuration release
+dotnet pack --configuration release
 ```
 
 이제 `/bin` 폴더에 릴리스 이진 파일과 함께 NuGet 패키지를 포함하는 `release` 폴더가 있습니다.

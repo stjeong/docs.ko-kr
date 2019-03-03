@@ -5,12 +5,12 @@ author: cartermp
 ms.date: 09/10/2018
 ms.technology: dotnet-cli
 ms.custom: seodec18
-ms.openlocfilehash: eaa2bd3327cf76522c74dad07a5a9e0e268a3b55
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c57326f038eee4069de9064cb2798d2004b0dbdd
+ms.sourcegitcommit: 79066169e93d9d65203028b21983574ad9dcf6b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54605957"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57212172"
 ---
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작
 
@@ -30,13 +30,13 @@ GitHub의 dotnet/samples 리포지토리에서 [샘플 코드를 보거나 다�
 명령 프롬프트를 열고 *Hello*라는 폴더를 만듭니다. 만든 폴더로 이동하고 다음을 입력합니다.
 
 ```console
-$ dotnet new console
-$ dotnet run
+dotnet new console
+dotnet run
 ```
 
 이제 간단한 연습을 해보겠습니다.
 
-1. `$ dotnet new console`
+1. `dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  애플리케이션에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
 
@@ -59,12 +59,12 @@ $ dotnet run
 
    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-   `dotnet new`는 [`dotnet restore`](../tools/dotnet-restore.md)를 암시적으로 호출합니다. `dotnet restore`는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자)을 호출하여 종속성 트리를 복원합니다. NuGet은 *Hello.csproj* 파일을 분석하고, 파일에 정의된 종속성을 다운로드하고(또는 머신의 캐시에서 종속성을 가져오고), 샘플을 컴파일 및 실행하는 데 필요한 *obj/project.assets.json* 파일을 작성합니다. 
-   
+   `dotnet new`는 [`dotnet restore`](../tools/dotnet-restore.md)를 암시적으로 호출합니다. `dotnet restore`는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자)을 호출하여 종속성 트리를 복원합니다. NuGet은 *Hello.csproj* 파일을 분석하고, 파일에 정의된 종속성을 다운로드하고(또는 머신의 캐시에서 종속성을 가져오고), 샘플을 컴파일 및 실행하는 데 필요한 *obj/project.assets.json* 파일을 작성합니다.
+
    > [!IMPORTANT]
    > SDK의 .NET Core 1.x 버전을 사용하는 경우 `dotnet new`를 호출한 후 `dotnet restore`를 직접 호출해야 합니다.
 
-2. `$ dotnet run`
+2. `dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md)은 [`dotnet build`](../tools/dotnet-build.md)를 호출하여 빌드 대상이 빌드되었는지를 확인하고 `dotnet <assembly.dll>`을 호출하여 대상 애플리케이션을 실행합니다.
 
@@ -74,6 +74,7 @@ $ dotnet run
     ```
 
     또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 애플리케이션을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp2.1\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 애플리케이션이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 애플리케이션에 인수를 지정할 수도 있습니다.
+
     ```console
     $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!

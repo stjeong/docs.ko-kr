@@ -5,12 +5,12 @@ author: mlacouture
 ms.date: 01/19/2017
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 9070c42a7cef389a2a13f6be6f26f7dafd7f25e2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: e5b41b6e5d747cd99a80930bb64e36839af4ab66
+ms.sourcegitcommit: 79066169e93d9d65203028b21983574ad9dcf6b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244780"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211899"
 ---
 # <a name="using-microsoft-xml-serializer-generator-on-net-core"></a>.NET Core에서 Microsoft XML Serializer Generator 사용
 
@@ -34,8 +34,8 @@ ms.locfileid: "53244780"
 
 > [!TIP]
 > 코드 편집기를 설치해야 하나요? [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)를 체험해 보세요.
-  
-## <a name="use-microsoft-xml-serializer-generator-in-a-net-core-console-application"></a>.NET Core 콘솔 애플리케이션에서 Microsoft XML Serializer Generator 사용 
+
+## <a name="use-microsoft-xml-serializer-generator-in-a-net-core-console-application"></a>.NET Core 콘솔 애플리케이션에서 Microsoft XML Serializer Generator 사용
 
 다음 지침은 .NET Core 콘솔 애플리케이션에서 Microsoft XML Serializer Generator를 사용하는 방법을 보여 줍니다.
 
@@ -49,7 +49,7 @@ dotnet new console
 
 ### <a name="add-a-reference-to-the-microsoftxmlserializergenerator-package-in-the-myapp-project"></a>MyApp 프로젝트에서 Microsoft.XmlSerializer.Generator 패키지에 대한 참조 추가
 
-[`dotnet add package`](../tools//dotnet-add-package.md) 명령을 사용하여 프로젝트에 참조를 추가합니다. 
+[`dotnet add package`](../tools//dotnet-add-package.md) 명령을 사용하여 프로젝트에 참조를 추가합니다.
 
 유형:
 
@@ -107,7 +107,7 @@ var serializer = new System.Xml.Serialization.XmlSerializer(typeof(MyClass));
 콘솔 창에 다음 명령을 입력합니다.
 
 ```console
-$ dotnet run
+dotnet run
 ```
 
 > [!NOTE]
@@ -116,7 +116,7 @@ $ dotnet run
 > [!IMPORTANT]
 > 이 자습서에 나와 있는 애플리케이션 실행을 위한 명령과 단계는 개발하는 동안에만 사용됩니다. 앱을 배포할 준비가 되면 .NET Core 앱에 대한 여러 [배포 전략](../deploying/index.md) 및 [`dotnet publish`](../tools/dotnet-publish.md) 명령을 살펴보세요.
 
-모든 항목이 성공하면 *MyApp.XmlSerializers.dll*이라는 어셈블리가 출력 폴더에 생성됩니다. 
+모든 항목이 성공하면 *MyApp.XmlSerializers.dll*이라는 어셈블리가 출력 폴더에 생성됩니다.
 
 지금까지 다음 작업을 수행했습니다.
 > [!div class="checklist"]
